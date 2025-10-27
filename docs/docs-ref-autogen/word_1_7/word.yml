@@ -125,6 +125,10 @@ interfaces:
   - word!Word.Interfaces.BodyData:interface
   - word!Word.Interfaces.BodyLoadOptions:interface
   - word!Word.Interfaces.BodyUpdateData:interface
+  - word!Word.Interfaces.BookmarkCollectionData:interface
+  - word!Word.Interfaces.BookmarkCollectionUpdateData:interface
+  - word!Word.Interfaces.BookmarkData:interface
+  - word!Word.Interfaces.BookmarkUpdateData:interface
   - word!Word.Interfaces.BorderCollectionData:interface
   - word!Word.Interfaces.BorderCollectionUpdateData:interface
   - word!Word.Interfaces.BorderData:interface
@@ -148,6 +152,18 @@ interfaces:
   - word!Word.Interfaces.CheckboxContentControlData:interface
   - word!Word.Interfaces.CheckboxContentControlLoadOptions:interface
   - word!Word.Interfaces.CheckboxContentControlUpdateData:interface
+  - word!Word.Interfaces.CoauthorCollectionData:interface
+  - word!Word.Interfaces.CoauthorCollectionUpdateData:interface
+  - word!Word.Interfaces.CoauthorData:interface
+  - word!Word.Interfaces.CoauthoringData:interface
+  - word!Word.Interfaces.CoauthoringLockCollectionData:interface
+  - word!Word.Interfaces.CoauthoringLockCollectionUpdateData:interface
+  - word!Word.Interfaces.CoauthoringLockData:interface
+  - word!Word.Interfaces.CoauthoringLockUpdateData:interface
+  - word!Word.Interfaces.CoauthoringUpdateCollectionData:interface
+  - word!Word.Interfaces.CoauthoringUpdateCollectionUpdateData:interface
+  - word!Word.Interfaces.CoauthoringUpdateData:interface
+  - word!Word.Interfaces.CoauthoringUpdateUpdateData:interface
   - word!Word.Interfaces.CollectionLoadOptions:interface
   - word!Word.Interfaces.ColorFormatData:interface
   - word!Word.Interfaces.ColorFormatUpdateData:interface
@@ -167,6 +183,12 @@ interfaces:
   - word!Word.Interfaces.CommentReplyLoadOptions:interface
   - word!Word.Interfaces.CommentReplyUpdateData:interface
   - word!Word.Interfaces.CommentUpdateData:interface
+  - word!Word.Interfaces.ConditionalStyleData:interface
+  - word!Word.Interfaces.ConditionalStyleUpdateData:interface
+  - word!Word.Interfaces.ConflictCollectionData:interface
+  - word!Word.Interfaces.ConflictCollectionUpdateData:interface
+  - word!Word.Interfaces.ConflictData:interface
+  - word!Word.Interfaces.ConflictUpdateData:interface
   - word!Word.Interfaces.ContentControlCollectionData:interface
   - word!Word.Interfaces.ContentControlCollectionLoadOptions:interface
   - word!Word.Interfaces.ContentControlCollectionUpdateData:interface
@@ -218,7 +240,10 @@ interfaces:
   - word!Word.Interfaces.DocumentPropertiesLoadOptions:interface
   - word!Word.Interfaces.DocumentPropertiesUpdateData:interface
   - word!Word.Interfaces.DocumentUpdateData:interface
+  - word!Word.Interfaces.DropCapData:interface
   - word!Word.Interfaces.DropDownListContentControlData:interface
+  - word!Word.Interfaces.EditorData:interface
+  - word!Word.Interfaces.EditorUpdateData:interface
   - word!Word.Interfaces.FieldCollectionData:interface
   - word!Word.Interfaces.FieldCollectionLoadOptions:interface
   - word!Word.Interfaces.FieldCollectionUpdateData:interface
@@ -238,10 +263,22 @@ interfaces:
   - word!Word.Interfaces.GlowFormatUpdateData:interface
   - word!Word.Interfaces.GroupContentControlData:interface
   - word!Word.Interfaces.GroupContentControlUpdateData:interface
+  - word!Word.Interfaces.HeadingStyleCollectionData:interface
+  - word!Word.Interfaces.HeadingStyleCollectionUpdateData:interface
+  - word!Word.Interfaces.HeadingStyleData:interface
+  - word!Word.Interfaces.HeadingStyleUpdateData:interface
+  - word!Word.Interfaces.HtmlDivisionCollectionData:interface
+  - word!Word.Interfaces.HtmlDivisionCollectionUpdateData:interface
+  - word!Word.Interfaces.HtmlDivisionData:interface
+  - word!Word.Interfaces.HtmlDivisionUpdateData:interface
   - word!Word.Interfaces.HyperlinkCollectionData:interface
   - word!Word.Interfaces.HyperlinkCollectionUpdateData:interface
   - word!Word.Interfaces.HyperlinkData:interface
   - word!Word.Interfaces.HyperlinkUpdateData:interface
+  - word!Word.Interfaces.IndexCollectionData:interface
+  - word!Word.Interfaces.IndexCollectionUpdateData:interface
+  - word!Word.Interfaces.IndexData:interface
+  - word!Word.Interfaces.IndexUpdateData:interface
   - word!Word.Interfaces.InlinePictureCollectionData:interface
   - word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface
   - word!Word.Interfaces.InlinePictureCollectionUpdateData:interface
@@ -252,6 +289,8 @@ interfaces:
   - word!Word.Interfaces.LineFormatUpdateData:interface
   - word!Word.Interfaces.LineNumberingData:interface
   - word!Word.Interfaces.LineNumberingUpdateData:interface
+  - word!Word.Interfaces.LinkFormatData:interface
+  - word!Word.Interfaces.LinkFormatUpdateData:interface
   - word!Word.Interfaces.ListCollectionData:interface
   - word!Word.Interfaces.ListCollectionLoadOptions:interface
   - word!Word.Interfaces.ListCollectionUpdateData:interface
@@ -266,7 +305,12 @@ interfaces:
   - word!Word.Interfaces.ListLevelData:interface
   - word!Word.Interfaces.ListLevelUpdateData:interface
   - word!Word.Interfaces.ListLoadOptions:interface
+  - word!Word.Interfaces.ListTemplateCollectionData:interface
+  - word!Word.Interfaces.ListTemplateCollectionUpdateData:interface
   - word!Word.Interfaces.ListTemplateData:interface
+  - word!Word.Interfaces.ListTemplateGalleryCollectionData:interface
+  - word!Word.Interfaces.ListTemplateGalleryCollectionUpdateData:interface
+  - word!Word.Interfaces.ListTemplateGalleryData:interface
   - word!Word.Interfaces.ListTemplateUpdateData:interface
   - word!Word.Interfaces.NoteItemCollectionData:interface
   - word!Word.Interfaces.NoteItemCollectionLoadOptions:interface
@@ -274,6 +318,8 @@ interfaces:
   - word!Word.Interfaces.NoteItemData:interface
   - word!Word.Interfaces.NoteItemLoadOptions:interface
   - word!Word.Interfaces.NoteItemUpdateData:interface
+  - word!Word.Interfaces.OleFormatData:interface
+  - word!Word.Interfaces.OleFormatUpdateData:interface
   - word!Word.Interfaces.PageCollectionData:interface
   - word!Word.Interfaces.PageCollectionUpdateData:interface
   - word!Word.Interfaces.PageData:interface
@@ -298,13 +344,28 @@ interfaces:
   - word!Word.Interfaces.RangeCollectionUpdateData:interface
   - word!Word.Interfaces.RangeData:interface
   - word!Word.Interfaces.RangeLoadOptions:interface
+  - word!Word.Interfaces.RangeScopedCollectionData:interface
+  - word!Word.Interfaces.RangeScopedCollectionUpdateData:interface
   - word!Word.Interfaces.RangeUpdateData:interface
+  - word!Word.Interfaces.ReadabilityStatisticCollectionData:interface
+  - word!Word.Interfaces.ReadabilityStatisticCollectionUpdateData:interface
+  - word!Word.Interfaces.ReadabilityStatisticData:interface
   - word!Word.Interfaces.ReflectionFormatData:interface
   - word!Word.Interfaces.ReflectionFormatUpdateData:interface
   - word!Word.Interfaces.RepeatingSectionContentControlData:interface
   - word!Word.Interfaces.RepeatingSectionContentControlUpdateData:interface
   - word!Word.Interfaces.RepeatingSectionItemData:interface
   - word!Word.Interfaces.RepeatingSectionItemUpdateData:interface
+  - word!Word.Interfaces.ReviewerCollectionData:interface
+  - word!Word.Interfaces.ReviewerCollectionUpdateData:interface
+  - word!Word.Interfaces.ReviewerData:interface
+  - word!Word.Interfaces.ReviewerUpdateData:interface
+  - word!Word.Interfaces.RevisionCollectionData:interface
+  - word!Word.Interfaces.RevisionCollectionUpdateData:interface
+  - word!Word.Interfaces.RevisionData:interface
+  - word!Word.Interfaces.RevisionsFilterData:interface
+  - word!Word.Interfaces.RevisionsFilterUpdateData:interface
+  - word!Word.Interfaces.RevisionUpdateData:interface
   - word!Word.Interfaces.SearchOptionsData:interface
   - word!Word.Interfaces.SearchOptionsLoadOptions:interface
   - word!Word.Interfaces.SearchOptionsUpdateData:interface
@@ -314,6 +375,8 @@ interfaces:
   - word!Word.Interfaces.SectionData:interface
   - word!Word.Interfaces.SectionLoadOptions:interface
   - word!Word.Interfaces.SectionUpdateData:interface
+  - word!Word.Interfaces.SelectionData:interface
+  - word!Word.Interfaces.SelectionUpdateData:interface
   - word!Word.Interfaces.SettingCollectionData:interface
   - word!Word.Interfaces.SettingCollectionLoadOptions:interface
   - word!Word.Interfaces.SettingCollectionUpdateData:interface
@@ -364,6 +427,22 @@ interfaces:
   - word!Word.Interfaces.TableColumnUpdateData:interface
   - word!Word.Interfaces.TableData:interface
   - word!Word.Interfaces.TableLoadOptions:interface
+  - word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionData:interface
+  - >-
+    word!Word.Interfaces.TableOfAuthoritiesCategoryCollectionUpdateData:interface
+  - word!Word.Interfaces.TableOfAuthoritiesCategoryData:interface
+  - word!Word.Interfaces.TableOfAuthoritiesCollectionData:interface
+  - word!Word.Interfaces.TableOfAuthoritiesCollectionUpdateData:interface
+  - word!Word.Interfaces.TableOfAuthoritiesData:interface
+  - word!Word.Interfaces.TableOfAuthoritiesUpdateData:interface
+  - word!Word.Interfaces.TableOfContentsCollectionData:interface
+  - word!Word.Interfaces.TableOfContentsCollectionUpdateData:interface
+  - word!Word.Interfaces.TableOfContentsData:interface
+  - word!Word.Interfaces.TableOfContentsUpdateData:interface
+  - word!Word.Interfaces.TableOfFiguresCollectionData:interface
+  - word!Word.Interfaces.TableOfFiguresCollectionUpdateData:interface
+  - word!Word.Interfaces.TableOfFiguresData:interface
+  - word!Word.Interfaces.TableOfFiguresUpdateData:interface
   - word!Word.Interfaces.TableRowCollectionData:interface
   - word!Word.Interfaces.TableRowCollectionLoadOptions:interface
   - word!Word.Interfaces.TableRowCollectionUpdateData:interface
@@ -374,6 +453,9 @@ interfaces:
   - word!Word.Interfaces.TableStyleLoadOptions:interface
   - word!Word.Interfaces.TableStyleUpdateData:interface
   - word!Word.Interfaces.TableUpdateData:interface
+  - word!Word.Interfaces.TabStopCollectionData:interface
+  - word!Word.Interfaces.TabStopCollectionUpdateData:interface
+  - word!Word.Interfaces.TabStopData:interface
   - word!Word.Interfaces.TemplateCollectionData:interface
   - word!Word.Interfaces.TemplateCollectionUpdateData:interface
   - word!Word.Interfaces.TemplateData:interface
@@ -391,11 +473,20 @@ interfaces:
   - word!Word.Interfaces.TrackedChangeCollectionUpdateData:interface
   - word!Word.Interfaces.TrackedChangeData:interface
   - word!Word.Interfaces.TrackedChangeLoadOptions:interface
+  - word!Word.Interfaces.ViewData:interface
+  - word!Word.Interfaces.ViewUpdateData:interface
+  - word!Word.Interfaces.WebSettingsData:interface
+  - word!Word.Interfaces.WebSettingsUpdateData:interface
   - word!Word.Interfaces.WindowCollectionData:interface
   - word!Word.Interfaces.WindowCollectionUpdateData:interface
   - word!Word.Interfaces.WindowData:interface
+  - word!Word.Interfaces.WindowUpdateData:interface
   - word!Word.Interfaces.XmlMappingData:interface
   - word!Word.Interfaces.XmlMappingUpdateData:interface
+  - word!Word.Interfaces.XmlNodeCollectionData:interface
+  - word!Word.Interfaces.XmlNodeCollectionUpdateData:interface
+  - word!Word.Interfaces.XmlNodeData:interface
+  - word!Word.Interfaces.XmlNodeUpdateData:interface
   - word!Word.ParagraphAddedEventArgs:interface
   - word!Word.ParagraphChangedEventArgs:interface
   - word!Word.ParagraphDeletedEventArgs:interface

@@ -206,11 +206,11 @@ properties:
       content: 'title?: string;'
       return:
         type: string
-  - name: xmlapping
+  - name: xmlMapping
     uid: >-
-      word!Word.Interfaces.RepeatingSectionContentControlUpdateData#xmlapping:member
+      word!Word.Interfaces.RepeatingSectionContentControlUpdateData#xmlMapping:member
     package: word!
-    fullName: xmlapping
+    fullName: xmlMapping
     summary: >-
       Returns an `XmlMapping` object that represents the mapping of the content
       control to XML data in the data store of the document.
@@ -221,6 +221,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'xmlapping?: Word.Interfaces.XmlMappingUpdateData;'
+      content: 'xmlMapping?: Word.Interfaces.XmlMappingUpdateData;'
       return:
         type: <xref uid="word!Word.Interfaces.XmlMappingUpdateData:interface" />

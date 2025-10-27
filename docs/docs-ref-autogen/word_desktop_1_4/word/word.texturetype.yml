@@ -1,0 +1,44 @@
+### YamlMime:TSEnum
+name: Word.TextureType
+uid: word!Word.TextureType:enum
+package: word!
+fullName: Word.TextureType
+summary: Specifies the texture type for the selected fill.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: mixed
+    uid: word!Word.TextureType.mixed:member
+    package: word!
+    summary: >-
+      Mixed texture type. Used when multiple shapes with different texture types
+      are selected.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Mixed"'
+  - name: preset
+    uid: word!Word.TextureType.preset:member
+    package: word!
+    summary: >-
+      A predefined texture selected from the built-in texture gallery.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Preset"'
+  - name: userDefined
+    uid: word!Word.TextureType.userDefined:member
+    package: word!
+    summary: >-
+      A custom texture defined by the user, typically from an image file.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"UserDefined"'

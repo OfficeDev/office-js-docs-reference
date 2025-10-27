@@ -18,10 +18,10 @@ properties:
     fullName: areRulersDisplayed
     summary: Specifies whether rulers are displayed for the window or pane.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'areRulersDisplayed?: boolean;'
@@ -35,10 +35,10 @@ properties:
       Specifies whether thumbnail images of the pages in a document are
       displayed along the left side of the Microsoft Word document window.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'areThumbnailsDisplayed?: boolean;'
@@ -52,10 +52,10 @@ properties:
       Specifies the caption text for the window that is displayed in the title
       bar of the document or application window.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'caption?: string;'
@@ -69,10 +69,10 @@ properties:
       Specifies the horizontal scroll position as a percentage of the document
       width.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'horizontalPercentScrolled?: number;'
@@ -86,10 +86,10 @@ properties:
       Specifies the default start-up mode for the Japanese Input Method Editor
       (IME).
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -107,10 +107,10 @@ properties:
     fullName: isDocumentMapVisible
     summary: Specifies whether the document map is visible.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isDocumentMapVisible?: boolean;'
@@ -124,10 +124,10 @@ properties:
       Specifies whether the email message header is visible in the document
       window. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isEnvelopeVisible?: boolean;'
@@ -140,10 +140,10 @@ properties:
     fullName: isHorizontalScrollBarDisplayed
     summary: Specifies whether a horizontal scroll bar is displayed for the window.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isHorizontalScrollBarDisplayed?: boolean;'
@@ -157,10 +157,10 @@ properties:
       Specifies whether the vertical scroll bar appears on the left side of the
       document window.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isLeftScrollBarDisplayed?: boolean;'
@@ -174,10 +174,10 @@ properties:
       Specifies whether the vertical ruler appears on the right side of the
       document window in print layout view.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isRightRulerDisplayed?: boolean;'
@@ -189,10 +189,10 @@ properties:
     fullName: isSplit
     summary: Specifies whether the window is split into multiple panes.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isSplit?: boolean;'
@@ -204,10 +204,10 @@ properties:
     fullName: isVerticalRulerDisplayed
     summary: Specifies whether a vertical ruler is displayed for the window or pane.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isVerticalRulerDisplayed?: boolean;'
@@ -219,10 +219,10 @@ properties:
     fullName: isVerticalScrollBarDisplayed
     summary: Specifies whether a vertical scroll bar is displayed for the window.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isVerticalScrollBarDisplayed?: boolean;'
@@ -234,10 +234,10 @@ properties:
     fullName: isVisible
     summary: Specifies whether the window is visible.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isVisible?: boolean;'
@@ -249,10 +249,10 @@ properties:
     fullName: next
     summary: Gets the next document window in the collection of open document windows.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'next?: Word.Interfaces.WindowUpdateData;'
@@ -264,10 +264,10 @@ properties:
     fullName: previous
     summary: Gets the previous document window in the collection open document windows.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'previous?: Word.Interfaces.WindowUpdateData;'
@@ -281,10 +281,10 @@ properties:
       Specifies how Microsoft Word displays source documents after a compare and
       merge process.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -300,25 +300,42 @@ properties:
     fullName: splitVertical
     summary: Specifies the vertical split percentage for the window.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'splitVertical?: number;'
+      return:
+        type: number
+  - name: state
+    uid: word!Word.Interfaces.WindowUpdateData#state:member
+    package: word!
+    fullName: state
+    summary: Specifies the state of the document window or task window.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'splitVertical?: number;'
+      content: 'state?: Word.WindowState | "Normal" | "Maximize" | "Minimize";'
       return:
-        type: number
+        type: >-
+          <xref uid="word!Word.WindowState:enum" /> | "Normal" | "Maximize" |
+          "Minimize"
   - name: styleAreaWidth
     uid: word!Word.Interfaces.WindowUpdateData#styleAreaWidth:member
     package: word!
     fullName: styleAreaWidth
     summary: Specifies the width of the style area in points.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'styleAreaWidth?: number;'
@@ -332,29 +349,12 @@ properties:
       Specifies the vertical scroll position as a percentage of the document
       length.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'verticalPercentScrolled?: number;'
       return:
         type: number
-  - name: windowState
-    uid: word!Word.Interfaces.WindowUpdateData#windowState:member
-    package: word!
-    fullName: windowState
-    summary: Specifies the state of the document window or task window.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'windowState?: Word.WindowState | "Normal" | "Maximize" | "Minimize";'
-      return:
-        type: >-
-          <xref uid="word!Word.WindowState:enum" /> | "Normal" | "Maximize" |
-          "Minimize"

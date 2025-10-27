@@ -1140,10 +1140,10 @@ methods:
     fullName: closeUp()
     summary: Removes any spacing before the paragraph.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'closeUp(): void;'
@@ -1709,10 +1709,10 @@ methods:
     fullName: indent()
     summary: Indents the paragraph by one level.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'indent(): void;'
@@ -1725,10 +1725,10 @@ methods:
     fullName: indentCharacterWidth(count)
     summary: Indents the paragraph by a specified number of characters.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'indentCharacterWidth(count: number): void;'
@@ -1747,10 +1747,10 @@ methods:
       Indents the first line of the paragraph by the specified number of
       characters.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'indentFirstLineCharacterWidth(count: number): void;'
@@ -2617,7 +2617,7 @@ methods:
 
 
       await Word.run(async (context) => {
-        // Inserts a text box at the beginning of the first paragraph in header.
+        // Inserts a text box at the beginning of the first paragraph in the header.
         const headerFooterBody: Word.Body = context.document.sections.getFirst().getHeader(Word.HeaderFooterType.primary);
         headerFooterBody.load("paragraphs");
         const firstParagraph: Word.Paragraph = headerFooterBody.paragraphs.getFirst();
@@ -2662,10 +2662,10 @@ methods:
       Joins a list paragraph with the closest list above or below this
       paragraph.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'joinList(): void;'
@@ -2752,10 +2752,10 @@ methods:
     fullName: next(count)
     summary: Returns a `Paragraph` object that represents the next paragraph.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'next(count: number): Word.Paragraph;'
@@ -2772,10 +2772,10 @@ methods:
     fullName: openOrCloseUp()
     summary: Toggles the spacing before the paragraph.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'openOrCloseUp(): void;'
@@ -2788,10 +2788,10 @@ methods:
     fullName: openUp()
     summary: Sets spacing before the paragraph to 12 points.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'openUp(): void;'
@@ -2804,10 +2804,10 @@ methods:
     fullName: outdent()
     summary: Removes one level of indent for the paragraph.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'outdent(): void;'
@@ -2822,10 +2822,10 @@ methods:
       Applies the next heading level style (Heading 1 through Heading 8) to the
       paragraph.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'outlineDemote(): void;'
@@ -2838,10 +2838,10 @@ methods:
     fullName: outlineDemoteToBody()
     summary: Demotes the paragraph to body text by applying the Normal style.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'outlineDemoteToBody(): void;'
@@ -2856,10 +2856,10 @@ methods:
       Applies the previous heading level style (Heading 1 through Heading 8) to
       the paragraph.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'outlinePromote(): void;'
@@ -2872,10 +2872,10 @@ methods:
     fullName: previous(count)
     summary: Returns the previous paragraph as a `Paragraph` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'previous(count: number): Word.Paragraph;'
@@ -2894,10 +2894,10 @@ methods:
       Removes manual paragraph formatting (formatting not applied using a
       style).
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'reset(): void;'
@@ -2912,10 +2912,10 @@ methods:
       Resets the paragraph that uses custom list levels to the original level
       settings.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resetAdvanceTo(): void;'
@@ -3046,10 +3046,10 @@ methods:
     fullName: selectNumber()
     summary: Selects the number or bullet in a list.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'selectNumber(): void;'
@@ -3064,10 +3064,10 @@ methods:
       Separates a list into two separate lists. For numbered lists, the new list
       restarts numbering at the starting number, usually 1.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'separateList(): void;'
@@ -3172,10 +3172,10 @@ methods:
     fullName: space1()
     summary: Sets the paragraph to single spacing.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'space1(): void;'
@@ -3188,10 +3188,10 @@ methods:
     fullName: space1Pt5()
     summary: Sets the paragraph to 1.5-line spacing.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'space1Pt5(): void;'
@@ -3204,10 +3204,10 @@ methods:
     fullName: space2()
     summary: Sets the paragraph to double spacing.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'space2(): void;'
@@ -3344,10 +3344,10 @@ methods:
     fullName: tabHangingIndent(count)
     summary: Sets a hanging indent to a specified number of tab stops.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tabHangingIndent(count: number): void;'
@@ -3364,10 +3364,10 @@ methods:
     fullName: tabIndent(count)
     summary: Sets the left indent for the paragraph to a specified number of tab stops.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tabIndent(count: number): void;'

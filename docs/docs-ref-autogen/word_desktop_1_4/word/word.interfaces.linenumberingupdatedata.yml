@@ -1,0 +1,99 @@
+### YamlMime:TSType
+name: Word.Interfaces.LineNumberingUpdateData
+uid: word!Word.Interfaces.LineNumberingUpdateData:interface
+package: word!
+fullName: Word.Interfaces.LineNumberingUpdateData
+summary: >-
+  An interface for updating data on the `LineNumbering` object, for use in
+  `lineNumbering.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: countBy
+    uid: word!Word.Interfaces.LineNumberingUpdateData#countBy:member
+    package: word!
+    fullName: countBy
+    summary: Specifies the numeric increment for line numbers.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'countBy?: number;'
+      return:
+        type: number
+  - name: distanceFromText
+    uid: word!Word.Interfaces.LineNumberingUpdateData#distanceFromText:member
+    package: word!
+    fullName: distanceFromText
+    summary: >-
+      Specifies the distance (in points) between the right edge of line numbers
+      and the left edge of the document text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'distanceFromText?: number;'
+      return:
+        type: number
+  - name: isActive
+    uid: word!Word.Interfaces.LineNumberingUpdateData#isActive:member
+    package: word!
+    fullName: isActive
+    summary: >-
+      Specifies if line numbering is active for the specified document, section,
+      or sections.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isActive?: boolean;'
+      return:
+        type: boolean
+  - name: restartMode
+    uid: word!Word.Interfaces.LineNumberingUpdateData#restartMode:member
+    package: word!
+    fullName: restartMode
+    summary: >-
+      Specifies the way line numbering runs; that is, whether it starts over at
+      the beginning of a new page or section, or runs continuously.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        restartMode?: Word.NumberingRule | "RestartContinuous" |
+        "RestartSection" | "RestartPage";
+      return:
+        type: >-
+          <xref uid="word!Word.NumberingRule:enum" /> | "RestartContinuous" |
+          "RestartSection" | "RestartPage"
+  - name: startingNumber
+    uid: word!Word.Interfaces.LineNumberingUpdateData#startingNumber:member
+    package: word!
+    fullName: startingNumber
+    summary: Specifies the starting line number.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startingNumber?: number;'
+      return:
+        type: number

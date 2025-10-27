@@ -1,0 +1,164 @@
+### YamlMime:TSType
+name: Word.Interfaces.BuildingBlockLoadOptions
+uid: word!Word.Interfaces.BuildingBlockLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.BuildingBlockLoadOptions
+summary: >-
+  Represents a building block in a template. A building block is pre-built
+  content, similar to autotext, that may contain text, images, and formatting.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: category
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#category:member
+    package: word!
+    fullName: category
+    summary: >-
+      Returns a `BuildingBlockCategory` object that represents the category for
+      the building block.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'category?: Word.Interfaces.BuildingBlockCategoryLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.BuildingBlockCategoryLoadOptions:interface"
+          />
+  - name: description
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#description:member
+    package: word!
+    fullName: description
+    summary: Specifies the description for the building block.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#id:member
+    package: word!
+    fullName: id
+    summary: Returns the internal identification number for the building block.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: index
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#index:member
+    package: word!
+    fullName: index
+    summary: Returns the position of this building block in a collection.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
+  - name: insertType
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#insertType:member
+    package: word!
+    fullName: insertType
+    summary: >-
+      Specifies a `DocPartInsertType` value that represents how to insert the
+      contents of the building block into the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insertType?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of the building block.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: >-
+      Returns a `BuildingBlockTypeItem` object that represents the type for the
+      building block.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.Interfaces.BuildingBlockTypeItemLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.BuildingBlockTypeItemLoadOptions:interface"
+          />
+  - name: value
+    uid: word!Word.Interfaces.BuildingBlockLoadOptions#value:member
+    package: word!
+    fullName: value
+    summary: Specifies the contents of the building block.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type: boolean

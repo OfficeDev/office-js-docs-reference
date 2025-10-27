@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Word.Interfaces.BibliographyData
+uid: word!Word.Interfaces.BibliographyData:interface
+package: word!
+fullName: Word.Interfaces.BibliographyData
+summary: >-
+  An interface describing the data returned by calling
+  `bibliography.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bibliographyStyle
+    uid: word!Word.Interfaces.BibliographyData#bibliographyStyle:member
+    package: word!
+    fullName: bibliographyStyle
+    summary: Specifies the name of the active style to use for the bibliography.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bibliographyStyle?: string;'
+      return:
+        type: string
+  - name: sources
+    uid: word!Word.Interfaces.BibliographyData#sources:member
+    package: word!
+    fullName: sources
+    summary: >-
+      Returns a `SourceCollection` object that represents all the sources
+      contained in the bibliography.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sources?: Word.Interfaces.SourceData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.SourceData:interface" />[]

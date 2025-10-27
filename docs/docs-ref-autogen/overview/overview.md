@@ -3,7 +3,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 ms.localizationpriority: high
-ms.date: 10/13/2025
+ms.date: 10/28/2025
 ---
 
 # Office Add-ins JavaScript API reference
@@ -77,6 +77,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <ul>
             <li><a href="/javascript/api/word?view=word-js-preview&preserve-view=true">WordApi Preview</a></li>
             <li><a href="/javascript/api/word?view=word-js-online&preserve-view=true">WordApiOnline 1.1</a></li>
+            <li><a href="/javascript/api/word?view=word-js-desktop-1.4&preserve-view=true">WordApiDesktop 1.4</a></li>
             <li><a href="/javascript/api/word?view=word-js-desktop-1.3&preserve-view=true">WordApiDesktop 1.3</a></li>
             <li><a href="/javascript/api/word?view=word-js-desktop-1.2&preserve-view=true">WordApiDesktop 1.2</a></li>
             <li><a href="/javascript/api/word?view=word-js-desktop-1.1&preserve-view=true">WordApiDesktop 1.1</a></li>
@@ -138,11 +139,12 @@ The following is a list of APIs for the [supported Office host applications](/of
 
 ## Special requirement sets
 
-Online-only and desktop-only requirement sets are special requirement sets. An online-only requirement set contains the latest APIs for the web version of the supporting applications (currently Excel and Word). A desktop-only requirement set contains the latest APIs for the Windows and Mac versions of the supporting applications (currently Word). `WordApiDesktop` requirement sets are also supported on iPad. APIs in these requirement sets aren't fully supported across all platforms. For more information, see one of the following as applicable.
+Online-only and desktop-only requirement sets are special requirement sets. An online-only requirement set contains the latest APIs for the web version of the supporting applications (currently Excel and Word). A desktop-only requirement set contains the latest APIs for the Windows and Mac versions of the supporting applications (currently Excel and Word). `WordApiDesktop` requirement sets may also be supported on iPad. APIs in these requirement sets aren't fully supported across all platforms. For more information, see the following as applicable.
 
 - `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/javascript/api/requirement-sets/excel/excel-api-online-requirement-set)
 - `ExcelApiDesktop 1.1`: [Excel JavaScript API desktop-only requirement set 1.1](/javascript/api/requirement-sets/excel/excel-api-desktop-1-1-requirement-set)
 - `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/javascript/api/requirement-sets/word/word-api-online-requirement-set)
+- `WordApiDesktop 1.4`: [Word JavaScript API desktop-only requirement set 1.4](/javascript/api/requirement-sets/word/word-api-desktop-1.4-requirement-set)
 - `WordApiDesktop 1.3`: [Word JavaScript API desktop-only requirement set 1.3](/javascript/api/requirement-sets/word/word-api-desktop-1.3-requirement-set)
 - `WordApiDesktop 1.2`: [Word JavaScript API desktop-only requirement set 1.2](/javascript/api/requirement-sets/word/word-api-desktop-1.2-requirement-set)
 - `WordApiDesktop 1.1`: [Word JavaScript API desktop-only requirement set 1.1](/javascript/api/requirement-sets/word/word-api-desktop-1.1-requirement-set)

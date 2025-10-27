@@ -12,7 +12,6 @@ enums:
   - word!Word.ArrowheadWidth:enum
   - word!Word.AutoFitBehavior:enum
   - word!Word.AutoMacro:enum
-  - word!Word.BaselineAlignment:enum
   - word!Word.BevelType:enum
   - word!Word.BodyType:enum
   - word!Word.BorderLineStyle:enum
@@ -24,7 +23,6 @@ enums:
   - word!Word.BuiltInStyleName:enum
   - word!Word.CalendarType:enum
   - word!Word.CalendarTypeBidirectional:enum
-  - word!Word.CaptionLabelType:enum
   - word!Word.CaptionPosition:enum
   - word!Word.CellPaddingLocation:enum
   - word!Word.ChangeTrackingMode:enum
@@ -64,7 +62,6 @@ enums:
   - word!Word.DropPosition:enum
   - word!Word.EditorType:enum
   - word!Word.EmphasisMark:enum
-  - word!Word.EndnoteLocation:enum
   - word!Word.ErrorCodes:enum
   - word!Word.EventSource:enum
   - word!Word.EventType:enum
@@ -83,7 +80,6 @@ enums:
   - word!Word.FillType:enum
   - word!Word.FlowDirection:enum
   - word!Word.FontBias:enum
-  - word!Word.FootnoteLocation:enum
   - word!Word.FrameSizeRule:enum
   - word!Word.GeometricShapeType:enum
   - word!Word.GoToDirection:enum
@@ -113,7 +109,6 @@ enums:
   - word!Word.LineDashStyle:enum
   - word!Word.LineEndingType:enum
   - word!Word.LineFormatStyle:enum
-  - word!Word.LineSpacing:enum
   - word!Word.LineWidth:enum
   - word!Word.LinkType:enum
   - word!Word.ListApplyTo:enum
@@ -127,7 +122,6 @@ enums:
   - word!Word.MergeTarget:enum
   - word!Word.MovementType:enum
   - word!Word.NoteItemType:enum
-  - word!Word.NoteNumberStyle:enum
   - word!Word.NumberForm:enum
   - word!Word.NumberingRule:enum
   - word!Word.NumberSpacing:enum
@@ -141,7 +135,6 @@ enums:
   - word!Word.PageOrientation:enum
   - word!Word.PageSetupVerticalAlignment:enum
   - word!Word.PaperSize:enum
-  - word!Word.PasteDataType:enum
   - word!Word.PasteFormatType:enum
   - word!Word.PatternType:enum
   - word!Word.PreferredWidthType:enum
@@ -159,8 +152,6 @@ enums:
   - word!Word.ProtectionType:enum
   - word!Word.RangeLocation:enum
   - word!Word.ReadingLayoutMargin:enum
-  - word!Word.ReadingOrder:enum
-  - word!Word.ReferenceKind:enum
   - word!Word.ReferenceType:enum
   - word!Word.ReflectionType:enum
   - word!Word.RelativeHorizontalPosition:enum
@@ -199,7 +190,7 @@ enums:
   - word!Word.SortFieldType:enum
   - word!Word.SortOrder:enum
   - word!Word.SpecialPane:enum
-  - word!Word.Statistic:enum
+  - word!Word.StatisticType:enum
   - word!Word.StoryType:enum
   - word!Word.StyleType:enum
   - word!Word.StylisticSet:enum
@@ -208,11 +199,9 @@ enums:
   - word!Word.TableCellInsertionLocation:enum
   - word!Word.TableDirection:enum
   - word!Word.TableFieldSeparator:enum
-  - word!Word.TableFormat:enum
   - word!Word.TableFormatType:enum
   - word!Word.TargetBrowser:enum
   - word!Word.TemplateType:enum
-  - word!Word.TextboxTightWrap:enum
   - word!Word.TextOrientation:enum
   - word!Word.TextureAlignment:enum
   - word!Word.TextureType:enum
@@ -220,7 +209,6 @@ enums:
   - word!Word.TrackedChangeType:enum
   - word!Word.TrailingCharacter:enum
   - word!Word.TwoLinesInOneType:enum
-  - word!Word.Underline:enum
   - word!Word.UnderlineType:enum
   - word!Word.UseFormattingFrom:enum
   - word!Word.VerticalAlignment:enum
@@ -460,7 +448,6 @@ interfaces:
   - word!Word.HyperlinkAddOptions:interface
   - word!Word.IndexAddOptions:interface
   - word!Word.IndexMarkAllEntriesOptions:interface
-  - word!Word.IndexMarkEntryOptions:interface
   - word!Word.InsertFileOptions:interface
   - word!Word.InsertShapeOptions:interface
   - word!Word.Interfaces.AnnotationCollectionData:interface
@@ -958,15 +945,13 @@ interfaces:
   - word!Word.Interfaces.XmlNodeLoadOptions:interface
   - word!Word.Interfaces.XmlNodeUpdateData:interface
   - word!Word.ListFormatCountNumberedItemsOptions:interface
+  - word!Word.ListTemplateAddOptions:interface
   - word!Word.ListTemplateApplyOptions:interface
-  - word!Word.ListTemplateCollectionAddOptions:interface
   - word!Word.ParagraphAddedEventArgs:interface
   - word!Word.ParagraphChangedEventArgs:interface
   - word!Word.ParagraphDeletedEventArgs:interface
   - word!Word.SelectionConvertToTableOptions:interface
   - word!Word.SelectionDeleteOptions:interface
-  - word!Word.SelectionGoToOptions:interface
-  - word!Word.SelectionInsertCrossReferenceOptions:interface
   - word!Word.SelectionInsertDateTimeOptions:interface
   - word!Word.SelectionInsertFormulaOptions:interface
   - word!Word.SelectionInsertSymbolOptions:interface

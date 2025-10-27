@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: Word.ContentControlDateStorageFormat
+uid: word!Word.ContentControlDateStorageFormat:enum
+package: word!
+fullName: Word.ContentControlDateStorageFormat
+summary: >-
+  Date storage formats for
+  [Word.DatePickerContentControl](xref:word!Word.DatePickerContentControl:class)<!--
+  -->.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: date
+    uid: word!Word.ContentControlDateStorageFormat.date:member
+    package: word!
+    summary: >-
+      Stores the date as a date object.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Date"'
+  - name: dateTime
+    uid: word!Word.ContentControlDateStorageFormat.dateTime:member
+    package: word!
+    summary: >-
+      Stores the date as a date-time object.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DateTime"'
+  - name: text
+    uid: word!Word.ContentControlDateStorageFormat.text:member
+    package: word!
+    summary: >-
+      Stores the date as text.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Text"'

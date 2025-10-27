@@ -1,0 +1,885 @@
+### YamlMime:TSType
+name: Word.Interfaces.FontLoadOptions
+uid: word!Word.Interfaces.FontLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.FontLoadOptions
+summary: Represents a font.
+remarks: >-
+  \[ [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.FontLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: allCaps
+    uid: word!Word.Interfaces.FontLoadOptions#allCaps:member
+    package: word!
+    fullName: allCaps
+    summary: >-
+      Specifies whether the font is formatted as all capital letters, which
+      makes lowercase letters appear as uppercase letters. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text has the **All Caps** attribute.
+
+
+      - `false`<!-- -->: None of the text has the **All Caps** attribute.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **All Caps** attribute.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allCaps?: boolean;'
+      return:
+        type: boolean
+  - name: bold
+    uid: word!Word.Interfaces.FontLoadOptions#bold:member
+    package: word!
+    fullName: bold
+    summary: >-
+      Specifies whether the font is bold. `true` if the font is formatted as
+      bold, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type: boolean
+  - name: boldBidirectional
+    uid: word!Word.Interfaces.FontLoadOptions#boldBidirectional:member
+    package: word!
+    fullName: boldBidirectional
+    summary: >-
+      Specifies whether the font is formatted as bold in a right-to-left
+      language document. The possible values are as follows:
+
+
+      - `true`<!-- -->: All the text is bold.
+
+
+      - `false`<!-- -->: None of the text is bold.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is bold.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'boldBidirectional?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: word!Word.Interfaces.FontLoadOptions#color:member
+    package: word!
+    fullName: color
+    summary: >-
+      Specifies the color for the font. You can provide the value in the
+      '\#RRGGBB' format or the color name.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: colorIndex
+    uid: word!Word.Interfaces.FontLoadOptions#colorIndex:member
+    package: word!
+    fullName: colorIndex
+    summary: Specifies a `ColorIndex` value that represents the color for the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'colorIndex?: boolean;'
+      return:
+        type: boolean
+  - name: colorIndexBidirectional
+    uid: word!Word.Interfaces.FontLoadOptions#colorIndexBidirectional:member
+    package: word!
+    fullName: colorIndexBidirectional
+    summary: >-
+      Specifies the color for the `Font` object in a right-to-left language
+      document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'colorIndexBidirectional?: boolean;'
+      return:
+        type: boolean
+  - name: contextualAlternates
+    uid: word!Word.Interfaces.FontLoadOptions#contextualAlternates:member
+    package: word!
+    fullName: contextualAlternates
+    summary: Specifies whether contextual alternates are enabled for the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contextualAlternates?: boolean;'
+      return:
+        type: boolean
+  - name: diacriticColor
+    uid: word!Word.Interfaces.FontLoadOptions#diacriticColor:member
+    package: word!
+    fullName: diacriticColor
+    summary: >-
+      Specifies the color to be used for diacritics for the `Font` object. You
+      can provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'diacriticColor?: boolean;'
+      return:
+        type: boolean
+  - name: disableCharacterSpaceGrid
+    uid: word!Word.Interfaces.FontLoadOptions#disableCharacterSpaceGrid:member
+    package: word!
+    fullName: disableCharacterSpaceGrid
+    summary: >-
+      Specifies whether Microsoft Word ignores the number of characters per line
+      for the corresponding `Font` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableCharacterSpaceGrid?: boolean;'
+      return:
+        type: boolean
+  - name: doubleStrikeThrough
+    uid: word!Word.Interfaces.FontLoadOptions#doubleStrikeThrough:member
+    package: word!
+    fullName: doubleStrikeThrough
+    summary: >-
+      Specifies whether the font has a double strikethrough. `true` if the font
+      is formatted as double strikethrough text, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'doubleStrikeThrough?: boolean;'
+      return:
+        type: boolean
+  - name: emboss
+    uid: word!Word.Interfaces.FontLoadOptions#emboss:member
+    package: word!
+    fullName: emboss
+    summary: >-
+      Specifies whether the font is formatted as embossed. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text is embossed.
+
+
+      - `false`<!-- -->: None of the text is embossed.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is embossed.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emboss?: boolean;'
+      return:
+        type: boolean
+  - name: emphasisMark
+    uid: word!Word.Interfaces.FontLoadOptions#emphasisMark:member
+    package: word!
+    fullName: emphasisMark
+    summary: >-
+      Specifies an `EmphasisMark` value that represents the emphasis mark for a
+      character or designated character string.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emphasisMark?: boolean;'
+      return:
+        type: boolean
+  - name: engrave
+    uid: word!Word.Interfaces.FontLoadOptions#engrave:member
+    package: word!
+    fullName: engrave
+    summary: >-
+      Specifies whether the font is formatted as engraved. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text is engraved.
+
+
+      - `false`<!-- -->: None of the text is engraved.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is engraved.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'engrave?: boolean;'
+      return:
+        type: boolean
+  - name: fill
+    uid: word!Word.Interfaces.FontLoadOptions#fill:member
+    package: word!
+    fullName: fill
+    summary: >-
+      Returns a `FillFormat` object that contains fill formatting properties for
+      the font used by the range of text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fill?: Word.Interfaces.FillFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.FillFormatLoadOptions:interface" />
+  - name: glow
+    uid: word!Word.Interfaces.FontLoadOptions#glow:member
+    package: word!
+    fullName: glow
+    summary: >-
+      Returns a `GlowFormat` object that represents the glow formatting for the
+      font used by the range of text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'glow?: Word.Interfaces.GlowFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.GlowFormatLoadOptions:interface" />
+  - name: hidden
+    uid: word!Word.Interfaces.FontLoadOptions#hidden:member
+    package: word!
+    fullName: hidden
+    summary: >-
+      Specifies whether the font is tagged as hidden. `true` if the font is
+      formatted as hidden text, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type: boolean
+  - name: highlightColor
+    uid: word!Word.Interfaces.FontLoadOptions#highlightColor:member
+    package: word!
+    fullName: highlightColor
+    summary: >-
+      Specifies the highlight color. To set it, use a value either in the
+      '\#RRGGBB' format or the color name. To remove highlight color, set it to
+      `null`<!-- -->. The returned highlight color can be in the '\#RRGGBB'
+      format, an empty string for mixed highlight colors, or `null` for no
+      highlight color. Note: Only the default highlight colors are available in
+      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise",
+      "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed",
+      "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
+      for Windows Desktop, any other color is converted to the closest color
+      when applied to the font.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlightColor?: boolean;'
+      return:
+        type: boolean
+  - name: italic
+    uid: word!Word.Interfaces.FontLoadOptions#italic:member
+    package: word!
+    fullName: italic
+    summary: >-
+      Specifies whether the font is italicized. `true` if the font is
+      italicized, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type: boolean
+  - name: italicBidirectional
+    uid: word!Word.Interfaces.FontLoadOptions#italicBidirectional:member
+    package: word!
+    fullName: italicBidirectional
+    summary: >-
+      Specifies whether the font is italicized in a right-to-left language
+      document. The possible values are as follows:
+
+
+      - `true`<!-- -->: All the text is italicized.
+
+
+      - `false`<!-- -->: None of the text is italicized.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is
+      italicized.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'italicBidirectional?: boolean;'
+      return:
+        type: boolean
+  - name: kerning
+    uid: word!Word.Interfaces.FontLoadOptions#kerning:member
+    package: word!
+    fullName: kerning
+    summary: >-
+      Specifies the minimum font size for which Microsoft Word will adjust
+      kerning automatically.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kerning?: boolean;'
+      return:
+        type: boolean
+  - name: ligature
+    uid: word!Word.Interfaces.FontLoadOptions#ligature:member
+    package: word!
+    fullName: ligature
+    summary: Specifies the ligature setting for the `Font` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ligature?: boolean;'
+      return:
+        type: boolean
+  - name: line
+    uid: word!Word.Interfaces.FontLoadOptions#line:member
+    package: word!
+    fullName: line
+    summary: Returns a `LineFormat` object that specifies the formatting for a line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'line?: Word.Interfaces.LineFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.LineFormatLoadOptions:interface" />
+  - name: name
+    uid: word!Word.Interfaces.FontLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of the font.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: nameAscii
+    uid: word!Word.Interfaces.FontLoadOptions#nameAscii:member
+    package: word!
+    fullName: nameAscii
+    summary: >-
+      Specifies the font used for Latin text (characters with character codes
+      from 0 (zero) through 127).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameAscii?: boolean;'
+      return:
+        type: boolean
+  - name: nameBidirectional
+    uid: word!Word.Interfaces.FontLoadOptions#nameBidirectional:member
+    package: word!
+    fullName: nameBidirectional
+    summary: Specifies the font name in a right-to-left language document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameBidirectional?: boolean;'
+      return:
+        type: boolean
+  - name: nameFarEast
+    uid: word!Word.Interfaces.FontLoadOptions#nameFarEast:member
+    package: word!
+    fullName: nameFarEast
+    summary: Specifies the East Asian font name.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameFarEast?: boolean;'
+      return:
+        type: boolean
+  - name: nameOther
+    uid: word!Word.Interfaces.FontLoadOptions#nameOther:member
+    package: word!
+    fullName: nameOther
+    summary: Specifies the font used for characters with codes from 128 through 255.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameOther?: boolean;'
+      return:
+        type: boolean
+  - name: numberForm
+    uid: word!Word.Interfaces.FontLoadOptions#numberForm:member
+    package: word!
+    fullName: numberForm
+    summary: Specifies the number form setting for an OpenType font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberForm?: boolean;'
+      return:
+        type: boolean
+  - name: numberSpacing
+    uid: word!Word.Interfaces.FontLoadOptions#numberSpacing:member
+    package: word!
+    fullName: numberSpacing
+    summary: Specifies the number spacing setting for the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberSpacing?: boolean;'
+      return:
+        type: boolean
+  - name: outline
+    uid: word!Word.Interfaces.FontLoadOptions#outline:member
+    package: word!
+    fullName: outline
+    summary: >-
+      Specifies if the font is formatted as outlined. The possible values are as
+      follows:
+
+
+      - `true`<!-- -->: All the text is outlined.
+
+
+      - `false`<!-- -->: None of the text is outlined.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is outlined.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outline?: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: word!Word.Interfaces.FontLoadOptions#position:member
+    package: word!
+    fullName: position
+    summary: Specifies the position of text (in points) relative to the base line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type: boolean
+  - name: reflection
+    uid: word!Word.Interfaces.FontLoadOptions#reflection:member
+    package: word!
+    fullName: reflection
+    summary: >-
+      Returns a `ReflectionFormat` object that represents the reflection
+      formatting for a shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reflection?: Word.Interfaces.ReflectionFormatLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ReflectionFormatLoadOptions:interface"
+          />
+  - name: scaling
+    uid: word!Word.Interfaces.FontLoadOptions#scaling:member
+    package: word!
+    fullName: scaling
+    summary: Specifies the scaling percentage applied to the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scaling?: boolean;'
+      return:
+        type: boolean
+  - name: shadow
+    uid: word!Word.Interfaces.FontLoadOptions#shadow:member
+    package: word!
+    fullName: shadow
+    summary: >-
+      Specifies if the font is formatted as shadowed. The possible values are as
+      follows:
+
+
+      - `true`<!-- -->: All the text is shadowed.
+
+
+      - `false`<!-- -->: None of the text is shadowed.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is shadowed.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shadow?: boolean;'
+      return:
+        type: boolean
+  - name: size
+    uid: word!Word.Interfaces.FontLoadOptions#size:member
+    package: word!
+    fullName: size
+    summary: Specifies the font size in points.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type: boolean
+  - name: sizeBidirectional
+    uid: word!Word.Interfaces.FontLoadOptions#sizeBidirectional:member
+    package: word!
+    fullName: sizeBidirectional
+    summary: Specifies the font size in points for right-to-left text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sizeBidirectional?: boolean;'
+      return:
+        type: boolean
+  - name: smallCaps
+    uid: word!Word.Interfaces.FontLoadOptions#smallCaps:member
+    package: word!
+    fullName: smallCaps
+    summary: >-
+      Specifies whether the font is formatted as small caps, which makes
+      lowercase letters appear as small uppercase letters. The possible values
+      are as follows:
+
+
+      - `true`<!-- -->: All the text has the **Small Caps** attribute.
+
+
+      - `false`<!-- -->: None of the text has the **Small Caps** attribute.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text has the
+      **Small Caps** attribute.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'smallCaps?: boolean;'
+      return:
+        type: boolean
+  - name: spacing
+    uid: word!Word.Interfaces.FontLoadOptions#spacing:member
+    package: word!
+    fullName: spacing
+    summary: Specifies the spacing between characters.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spacing?: boolean;'
+      return:
+        type: boolean
+  - name: strikeThrough
+    uid: word!Word.Interfaces.FontLoadOptions#strikeThrough:member
+    package: word!
+    fullName: strikeThrough
+    summary: >-
+      Specifies whether the font has a strikethrough. `true` if the font is
+      formatted as strikethrough text, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strikeThrough?: boolean;'
+      return:
+        type: boolean
+  - name: stylisticSet
+    uid: word!Word.Interfaces.FontLoadOptions#stylisticSet:member
+    package: word!
+    fullName: stylisticSet
+    summary: Specifies the stylistic set for the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stylisticSet?: boolean;'
+      return:
+        type: boolean
+  - name: subscript
+    uid: word!Word.Interfaces.FontLoadOptions#subscript:member
+    package: word!
+    fullName: subscript
+    summary: >-
+      Specifies whether the font is a subscript. `true` if the font is formatted
+      as subscript, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type: boolean
+  - name: superscript
+    uid: word!Word.Interfaces.FontLoadOptions#superscript:member
+    package: word!
+    fullName: superscript
+    summary: >-
+      Specifies whether the font is a superscript. `true` if the font is
+      formatted as superscript, otherwise, `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type: boolean
+  - name: textColor
+    uid: word!Word.Interfaces.FontLoadOptions#textColor:member
+    package: word!
+    fullName: textColor
+    summary: Returns a `ColorFormat` object that represents the color for the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textColor?: Word.Interfaces.ColorFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ColorFormatLoadOptions:interface" />
+  - name: textShadow
+    uid: word!Word.Interfaces.FontLoadOptions#textShadow:member
+    package: word!
+    fullName: textShadow
+    summary: >-
+      Returns a `ShadowFormat` object that specifies the shadow formatting for
+      the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textShadow?: Word.Interfaces.ShadowFormatLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ShadowFormatLoadOptions:interface" />
+  - name: threeDimensionalFormat
+    uid: word!Word.Interfaces.FontLoadOptions#threeDimensionalFormat:member
+    package: word!
+    fullName: threeDimensionalFormat
+    summary: >-
+      Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D)
+      effect formatting properties for the font.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        threeDimensionalFormat?:
+        Word.Interfaces.ThreeDimensionalFormatLoadOptions;
+      return:
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.ThreeDimensionalFormatLoadOptions:interface"
+          />
+  - name: underline
+    uid: word!Word.Interfaces.FontLoadOptions#underline:member
+    package: word!
+    fullName: underline
+    summary: Specifies the font's underline type. `none` if the font isn't underlined.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type: boolean
+  - name: underlineColor
+    uid: word!Word.Interfaces.FontLoadOptions#underlineColor:member
+    package: word!
+    fullName: underlineColor
+    summary: >-
+      Specifies the color of the underline for the `Font` object. You can
+      provide the value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underlineColor?: boolean;'
+      return:
+        type: boolean
