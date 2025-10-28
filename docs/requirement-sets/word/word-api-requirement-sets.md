@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 10/28/2025
+ms.date: 10/30/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
