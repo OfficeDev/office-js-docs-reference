@@ -4219,7 +4219,7 @@ export declare namespace Office {
          * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** \> **Mail** \> **Layout** \> **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want to honor the user's settings when
@@ -4229,7 +4229,7 @@ export declare namespace Office {
          *
          * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
          * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
-         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * setting is temporarily changed to **Individual messages: Do not group messages** \> **Only a single message** or **Show email as individual messages** during the `setAsync` call.
          * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
          *
          * **Errors**:
@@ -4289,7 +4289,7 @@ export declare namespace Office {
          * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** \> **Mail** \> **Layout** \> **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies in a conversation thread with more than one message, if you want to honor the user's settings when
@@ -4299,7 +4299,7 @@ export declare namespace Office {
          *
          * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
          * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
-         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * setting is temporarily changed to **Individual messages: Do not group messages** \> **Only a single message** or **Show email as individual messages** during the `setAsync` call.
          * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
          *
          * **Errors**:
