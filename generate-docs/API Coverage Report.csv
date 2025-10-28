@@ -9361,7 +9361,7 @@ outlook,Office.LoadedMessageRead,"getSharedPropertiesAsync(callback)",Method,Fin
 outlook,Office.LoadedMessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Excellent,false
 outlook,Office.LoadedMessageRead,"unloadAsync(options, callback)",Method,Good,false
 outlook,Office.LoadedMessageRead,"unloadAsync(callback)",Method,Good,false
-outlook,Office.LocalClientTime,N/A,Interface,Good,false
+outlook,Office.LocalClientTime,N/A,Interface,Good,true
 outlook,Office.LocalClientTime,"date",Property,Good,false
 outlook,Office.LocalClientTime,"hours",Property,Great,false
 outlook,Office.LocalClientTime,"milliseconds",Property,Good,false
@@ -9392,7 +9392,7 @@ outlook,Office.Mailbox,"userProfile",Property,Fine,false
 outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, options, callback)",Method,Excellent,true
 outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, callback)",Method,Excellent,false
 outlook,Office.Mailbox,"convertToEwsId(id, restVersion)",Method,Fine,true
-outlook,Office.Mailbox,"convertToLocalClientTime(timeValue)",Method,Excellent,false
+outlook,Office.Mailbox,"convertToLocalClientTime(timeValue)",Method,Excellent,true
 outlook,Office.Mailbox,"convertToRestId(id, restVersion)",Method,Poor,true
 outlook,Office.Mailbox,"convertToUtcClientTime(input)",Method,Excellent,true
 outlook,Office.Mailbox,"displayAppointmentForm(itemId)",Method,Excellent,true
@@ -17560,8 +17560,8 @@ word,Word.Shape,"relativeVerticalPosition",Property,Fine,false
 word,Word.Shape,"relativeVerticalSize",Property,Fine,false
 word,Word.Shape,"rotation",Property,Great,false
 word,Word.Shape,"shapeGroup",Property,Excellent,false
-word,Word.Shape,"textFrame",Property,Fine,false
-word,Word.Shape,"textWrap",Property,Fine,false
+word,Word.Shape,"textFrame",Property,Fine,true
+word,Word.Shape,"textWrap",Property,Fine,true
 word,Word.Shape,"top",Property,Fine,false
 word,Word.Shape,"topRelative",Property,Fine,false
 word,Word.Shape,"type",Property,Fine,true
@@ -17584,7 +17584,7 @@ word,Word.Shape,"set(properties)",Method,Good,false
 word,Word.Shape,"toJSON()",Method,Excellent,false
 word,Word.Shape,"track()",Method,Excellent,false
 word,Word.Shape,"untrack()",Method,Excellent,false
-word,Word.ShapeAutoSize,N/A,Enum,Poor,false
+word,Word.ShapeAutoSize,N/A,Enum,Poor,true
 word,Word.ShapeAutoSize,"mixed",EnumField,Good,false
 word,Word.ShapeAutoSize,"none",EnumField,Fine,false
 word,Word.ShapeAutoSize,"shapeToFitText",EnumField,Fine,false
@@ -17652,7 +17652,7 @@ word,Word.ShapeScaleFrom,"scaleFromTopLeft",EnumField,Fine,false
 word,Word.ShapeScaleType,N/A,Enum,Good,false
 word,Word.ShapeScaleType,"currentSize",EnumField,Fine,false
 word,Word.ShapeScaleType,"originalSize",EnumField,Fine,false
-word,Word.ShapeTextOrientation,N/A,Enum,Great,false
+word,Word.ShapeTextOrientation,N/A,Enum,Great,true
 word,Word.ShapeTextOrientation,"eastAsianHorizontalRotated",EnumField,Good,false
 word,Word.ShapeTextOrientation,"eastAsianVertical",EnumField,Good,false
 word,Word.ShapeTextOrientation,"horizontal",EnumField,Fine,false
@@ -17660,18 +17660,18 @@ word,Word.ShapeTextOrientation,"mixed",EnumField,Good,false
 word,Word.ShapeTextOrientation,"none",EnumField,Fine,false
 word,Word.ShapeTextOrientation,"vertical",EnumField,Good,false
 word,Word.ShapeTextOrientation,"vertical270",EnumField,Good,false
-word,Word.ShapeTextVerticalAlignment,N/A,Enum,Great,false
+word,Word.ShapeTextVerticalAlignment,N/A,Enum,Great,true
 word,Word.ShapeTextVerticalAlignment,"bottom",EnumField,Fine,false
 word,Word.ShapeTextVerticalAlignment,"middle",EnumField,Fine,false
 word,Word.ShapeTextVerticalAlignment,"top",EnumField,Fine,false
-word,Word.ShapeTextWrap,N/A,Class,Fine,false
+word,Word.ShapeTextWrap,N/A,Class,Fine,true
 word,Word.ShapeTextWrap,"bottomDistance",Property,Great,false
 word,Word.ShapeTextWrap,"context",Property,Excellent,false
 word,Word.ShapeTextWrap,"leftDistance",Property,Great,false
 word,Word.ShapeTextWrap,"rightDistance",Property,Great,false
-word,Word.ShapeTextWrap,"side",Property,Great,false
+word,Word.ShapeTextWrap,"side",Property,Great,true
 word,Word.ShapeTextWrap,"topDistance",Property,Great,false
-word,Word.ShapeTextWrap,"type",Property,Great,false
+word,Word.ShapeTextWrap,"type",Property,Great,true
 word,Word.ShapeTextWrap,"load(options)",Method,Excellent,false
 word,Word.ShapeTextWrap,"load(propertyNames)",Method,Excellent,false
 word,Word.ShapeTextWrap,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -17680,13 +17680,13 @@ word,Word.ShapeTextWrap,"set(properties)",Method,Good,false
 word,Word.ShapeTextWrap,"toJSON()",Method,Excellent,false
 word,Word.ShapeTextWrap,"track()",Method,Excellent,false
 word,Word.ShapeTextWrap,"untrack()",Method,Excellent,false
-word,Word.ShapeTextWrapSide,N/A,Enum,Great,false
+word,Word.ShapeTextWrapSide,N/A,Enum,Great,true
 word,Word.ShapeTextWrapSide,"both",EnumField,Fine,false
 word,Word.ShapeTextWrapSide,"largest",EnumField,Fine,false
 word,Word.ShapeTextWrapSide,"left",EnumField,Fine,false
 word,Word.ShapeTextWrapSide,"none",EnumField,Good,false
 word,Word.ShapeTextWrapSide,"right",EnumField,Fine,false
-word,Word.ShapeTextWrapType,N/A,Enum,Excellent,false
+word,Word.ShapeTextWrapType,N/A,Enum,Excellent,true
 word,Word.ShapeTextWrapType,"behind",EnumField,Fine,false
 word,Word.ShapeTextWrapType,"front",EnumField,Fine,false
 word,Word.ShapeTextWrapType,"inline",EnumField,Fine,false
@@ -18618,17 +18618,17 @@ word,Word.TextColumnCollection,"setIsEvenlySpaced(value)",Method,Poor,false
 word,Word.TextColumnCollection,"toJSON()",Method,Excellent,false
 word,Word.TextColumnCollection,"track()",Method,Excellent,false
 word,Word.TextColumnCollection,"untrack()",Method,Excellent,false
-word,Word.TextFrame,N/A,Class,Good,false
-word,Word.TextFrame,"autoSizeSetting",Property,Great,false
+word,Word.TextFrame,N/A,Class,Good,true
+word,Word.TextFrame,"autoSizeSetting",Property,Great,true
 word,Word.TextFrame,"bottomMargin",Property,Great,false
 word,Word.TextFrame,"context",Property,Excellent,false
 word,Word.TextFrame,"hasText",Property,Great,false
 word,Word.TextFrame,"leftMargin",Property,Great,false
 word,Word.TextFrame,"noTextRotation",Property,Excellent,false
-word,Word.TextFrame,"orientation",Property,Great,false
+word,Word.TextFrame,"orientation",Property,Great,true
 word,Word.TextFrame,"rightMargin",Property,Great,false
 word,Word.TextFrame,"topMargin",Property,Great,false
-word,Word.TextFrame,"verticalAlignment",Property,Great,false
+word,Word.TextFrame,"verticalAlignment",Property,Great,true
 word,Word.TextFrame,"wordWrap",Property,Fine,false
 word,Word.TextFrame,"load(options)",Method,Excellent,false
 word,Word.TextFrame,"load(propertyNames)",Method,Excellent,false
