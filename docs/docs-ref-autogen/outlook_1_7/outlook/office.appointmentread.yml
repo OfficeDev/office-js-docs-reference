@@ -267,7 +267,13 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
 
 
-      console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
+      const time = Office.context.mailbox.item.end;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment ends (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
 
       ```
 
@@ -1036,7 +1042,13 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
 
 
-      console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
+      const time = Office.context.mailbox.item.start;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment starts (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
 
       ```
 

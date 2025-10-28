@@ -9361,7 +9361,7 @@ outlook,Office.LoadedMessageRead,"getSharedPropertiesAsync(callback)",Method,Fin
 outlook,Office.LoadedMessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Excellent,false
 outlook,Office.LoadedMessageRead,"unloadAsync(options, callback)",Method,Good,false
 outlook,Office.LoadedMessageRead,"unloadAsync(callback)",Method,Good,false
-outlook,Office.LocalClientTime,N/A,Interface,Good,false
+outlook,Office.LocalClientTime,N/A,Interface,Good,true
 outlook,Office.LocalClientTime,"date",Property,Good,false
 outlook,Office.LocalClientTime,"hours",Property,Great,false
 outlook,Office.LocalClientTime,"milliseconds",Property,Good,false
@@ -9392,7 +9392,7 @@ outlook,Office.Mailbox,"userProfile",Property,Fine,false
 outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, options, callback)",Method,Excellent,true
 outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, callback)",Method,Excellent,false
 outlook,Office.Mailbox,"convertToEwsId(id, restVersion)",Method,Fine,true
-outlook,Office.Mailbox,"convertToLocalClientTime(timeValue)",Method,Excellent,false
+outlook,Office.Mailbox,"convertToLocalClientTime(timeValue)",Method,Excellent,true
 outlook,Office.Mailbox,"convertToRestId(id, restVersion)",Method,Poor,true
 outlook,Office.Mailbox,"convertToUtcClientTime(input)",Method,Excellent,true
 outlook,Office.Mailbox,"displayAppointmentForm(itemId)",Method,Excellent,true
