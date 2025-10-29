@@ -2509,7 +2509,7 @@ methods:
 
 
       await Word.run(async (context) => {
-        // Inserts a text box at the beginning of the first paragraph in header.
+        // Inserts a text box at the beginning of the first paragraph in the header.
         const headerFooterBody: Word.Body = context.document.sections.getFirst().getHeader(Word.HeaderFooterType.primary);
         headerFooterBody.load("paragraphs");
         const firstParagraph: Word.Paragraph = headerFooterBody.paragraphs.getFirst();
