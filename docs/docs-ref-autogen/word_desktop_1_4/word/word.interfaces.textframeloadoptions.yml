@@ -1,0 +1,194 @@
+### YamlMime:TSType
+name: Word.Interfaces.TextFrameLoadOptions
+uid: word!Word.Interfaces.TextFrameLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.TextFrameLoadOptions
+summary: >-
+  Represents the text frame of a [Word.Shape](xref:word!Word.Shape:class)
+  object.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.TextFrameLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: autoSizeSetting
+    uid: word!Word.Interfaces.TextFrameLoadOptions#autoSizeSetting:member
+    package: word!
+    fullName: autoSizeSetting
+    summary: >-
+      Specifies the automatic sizing settings for the text frame. A text frame
+      can be set to automatically fit the text to the text frame, to
+      automatically fit the text frame to the text, or not perform any automatic
+      sizing.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoSizeSetting?: boolean;'
+      return:
+        type: boolean
+  - name: bottomMargin
+    uid: word!Word.Interfaces.TextFrameLoadOptions#bottomMargin:member
+    package: word!
+    fullName: bottomMargin
+    summary: Specifies the bottom margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomMargin?: boolean;'
+      return:
+        type: boolean
+  - name: hasText
+    uid: word!Word.Interfaces.TextFrameLoadOptions#hasText:member
+    package: word!
+    fullName: hasText
+    summary: >-
+      Returns `true` if the text frame contains text, otherwise, `false`<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasText?: boolean;'
+      return:
+        type: boolean
+  - name: leftMargin
+    uid: word!Word.Interfaces.TextFrameLoadOptions#leftMargin:member
+    package: word!
+    fullName: leftMargin
+    summary: Specifies the left margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftMargin?: boolean;'
+      return:
+        type: boolean
+  - name: noTextRotation
+    uid: word!Word.Interfaces.TextFrameLoadOptions#noTextRotation:member
+    package: word!
+    fullName: noTextRotation
+    summary: >-
+      Specifies whether the text in the text frame shouldn't rotate when the
+      shape is rotated.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'noTextRotation?: boolean;'
+      return:
+        type: boolean
+  - name: orientation
+    uid: word!Word.Interfaces.TextFrameLoadOptions#orientation:member
+    package: word!
+    fullName: orientation
+    summary: >-
+      Specifies the angle to which the text is oriented for the text frame. See
+      `Word.ShapeTextOrientation` for details.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'orientation?: boolean;'
+      return:
+        type: boolean
+  - name: rightMargin
+    uid: word!Word.Interfaces.TextFrameLoadOptions#rightMargin:member
+    package: word!
+    fullName: rightMargin
+    summary: Specifies the right margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightMargin?: boolean;'
+      return:
+        type: boolean
+  - name: topMargin
+    uid: word!Word.Interfaces.TextFrameLoadOptions#topMargin:member
+    package: word!
+    fullName: topMargin
+    summary: Specifies the top margin, in points, of the text frame.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topMargin?: boolean;'
+      return:
+        type: boolean
+  - name: verticalAlignment
+    uid: word!Word.Interfaces.TextFrameLoadOptions#verticalAlignment:member
+    package: word!
+    fullName: verticalAlignment
+    summary: >-
+      Specifies the vertical alignment of the text frame. See
+      `Word.ShapeTextVerticalAlignment` for details.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type: boolean
+  - name: wordWrap
+    uid: word!Word.Interfaces.TextFrameLoadOptions#wordWrap:member
+    package: word!
+    fullName: wordWrap
+    summary: Determines whether lines break automatically to fit text inside the shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'wordWrap?: boolean;'
+      return:
+        type: boolean

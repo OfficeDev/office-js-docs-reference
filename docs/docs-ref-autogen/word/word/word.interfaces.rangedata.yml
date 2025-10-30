@@ -16,10 +16,10 @@ properties:
     fullName: bold
     summary: Specifies whether the range is formatted as bold.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bold?: boolean;'
@@ -33,10 +33,10 @@ properties:
       Specifies whether the range is formatted as bold in a right-to-left
       language document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'boldBidirectional?: boolean;'
@@ -50,10 +50,10 @@ properties:
       Returns a `BorderUniversalCollection` object that represents all the
       borders for the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Word.Interfaces.BorderUniversalData[];'
@@ -67,10 +67,10 @@ properties:
       Specifies a `CharacterCase` value that represents the case of the text in
       the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -88,10 +88,10 @@ properties:
     fullName: characterWidth
     summary: Specifies the character width of the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'characterWidth?: Word.CharacterWidth | "Half" | "Full";'
@@ -103,10 +103,10 @@ properties:
     fullName: combineCharacters
     summary: Specifies if the range contains combined characters.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'combineCharacters?: boolean;'
@@ -120,10 +120,10 @@ properties:
       Returns a `ConflictCollection` object that contains all the
       [Word.Conflict](xref:word!Word.Conflict:class) objects in the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'conflicts?: Word.Interfaces.ConflictData[];'
@@ -137,10 +137,10 @@ properties:
       Specifies if Microsoft Word ignores the number of characters per line for
       the corresponding `Range` object.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'disableCharacterSpaceGrid?: boolean;'
@@ -154,10 +154,10 @@ properties:
       Specifies the emphasis mark for a character or designated character
       string.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -174,10 +174,10 @@ properties:
     fullName: end
     summary: Specifies the ending character position of the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'end?: number;'
@@ -206,10 +206,10 @@ properties:
       Specifies the width (in the current measurement units) in which Microsoft
       Word fits the text in the current selection or range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'fitTextWidth?: number;'
@@ -255,10 +255,10 @@ properties:
     fullName: grammarChecked
     summary: Specifies if a grammar check has been run on the range or document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'grammarChecked?: boolean;'
@@ -287,10 +287,10 @@ properties:
     fullName: highlightColorIndex
     summary: Specifies the highlight color for the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -310,10 +310,10 @@ properties:
     fullName: horizontalInVertical
     summary: Specifies the formatting for horizontal text set within vertical text.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -365,10 +365,10 @@ properties:
     fullName: id
     summary: Specifies the ID for the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: string;'
@@ -412,10 +412,10 @@ properties:
       Gets if the range is collapsed and is located at the end-of-row mark in a
       table.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isEndOfRowMark?: boolean;'
@@ -427,10 +427,10 @@ properties:
     fullName: isTextVisibleOnScreen
     summary: Gets whether the text in the range is visible on the screen.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isTextVisibleOnScreen?: boolean;'
@@ -442,10 +442,10 @@ properties:
     fullName: italic
     summary: Specifies if the font or range is formatted as italic.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'italic?: boolean;'
@@ -459,10 +459,10 @@ properties:
       Specifies if the font or range is formatted as italic (right-to-left
       languages).
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'italicBidirectional?: boolean;'
@@ -476,10 +476,10 @@ properties:
       Specifies whether the range of Japanese language text is hiragana or
       katakana.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'kana?: Word.Kana | "Katakana" | "Hiragana";'
@@ -935,10 +935,10 @@ properties:
       Specifies if all nonprinting characters (such as hidden text, tab marks,
       space marks, and paragraph marks) are displayed.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'showAll?: boolean;'
@@ -950,10 +950,10 @@ properties:
     fullName: spellingChecked
     summary: Specifies if spelling has been checked throughout the range or document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'spellingChecked?: boolean;'
@@ -965,10 +965,10 @@ properties:
     fullName: start
     summary: Specifies the starting character position of the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'start?: number;'
@@ -980,10 +980,10 @@ properties:
     fullName: storyLength
     summary: Gets the number of characters in the story that contains the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'storyLength?: number;'
@@ -995,10 +995,10 @@ properties:
     fullName: storyType
     summary: Gets the story type for the range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1198,10 +1198,10 @@ properties:
       Specifies whether Microsoft Word sets two lines of text in one and
       specifies the characters that enclose the text, if any.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1225,13 +1225,16 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        underline?: Word.Underline | "None" | "Single" | "Words" | "Double" |
-        "Dotted" | "Thick" | "Dash" | "DotDash" | "DotDotDash" | "Wavy" |
-        "WavyHeavy" | "DottedHeavy" | "DashHeavy" | "DotDashHeavy" |
-        "DotDotDashHeavy" | "DashLong" | "DashLongHeavy" | "WavyDouble";
+        underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
+        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
+        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
+        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
+        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type: >-
-          <xref uid="word!Word.Underline:enum" /> | "None" | "Single" | "Words"
-          | "Double" | "Dotted" | "Thick" | "Dash" | "DotDash" | "DotDotDash" |
-          "Wavy" | "WavyHeavy" | "DottedHeavy" | "DashHeavy" | "DotDashHeavy" |
-          "DotDotDashHeavy" | "DashLong" | "DashLongHeavy" | "WavyDouble"
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
+          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
+          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
+          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
+          | "WaveHeavy" | "WaveDouble"

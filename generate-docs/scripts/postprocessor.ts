@@ -25,7 +25,7 @@ const EXCEL_ICON_SET_FILTER = [
     "ThreeTrafficLights2Set", "ThreeTrianglesSet"
 ];
 
-const OUTLOOK_FILTER_ITEMS = ['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message'];
+const OUTLOOK_FILTER_ITEMS = ['Appointment', 'ItemCompose', 'ItemRead', 'Message'];
 
 const NAMESPACE_REPLACEMENTS = {
     outlook: [
@@ -47,6 +47,7 @@ const SPECIAL_EXCEL_VERSIONS = [
 ];
 
 const SPECIAL_WORD_VERSIONS = [
+    { folder: "word_desktop_1_4", version: 9.15 },
     { folder: "word_desktop_1_3", version: 9.10 },
     { folder: "word_desktop_1_2", version: 9.5 },
     { folder: "word_desktop_1_1", version: 8.5 },

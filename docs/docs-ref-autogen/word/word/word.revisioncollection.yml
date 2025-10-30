@@ -7,11 +7,11 @@ summary: >-
   A collection of [Word.Revision](xref:word!Word.Revision:class) objects that
   represent the changes marked with revision marks in a range or document.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \[ [API set: WordApiDesktop
+  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -24,7 +24,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -37,7 +37,7 @@ properties:
     summary: Gets the loaded child items in this collection.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: Word.Revision[];'
@@ -52,11 +52,11 @@ methods:
       Accepts all the tracked changes in the document or range, removes all
       revision marks, and incorporates the changes into the document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'acceptAll(): void;'
@@ -95,7 +95,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -121,7 +121,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.RevisionCollection;'
@@ -143,7 +143,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -166,11 +166,11 @@ methods:
     fullName: rejectAll()
     summary: Rejects all the tracked changes in the document or range.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rejectAll(): void;'
@@ -193,7 +193,7 @@ methods:
       items.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.RevisionCollectionData;'
@@ -216,7 +216,7 @@ methods:
       track the parent collection.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.RevisionCollection;'
@@ -237,7 +237,7 @@ methods:
       effect.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.RevisionCollection;'

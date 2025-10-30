@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.ReviewerData
+uid: word!Word.Interfaces.ReviewerData:interface
+package: word!
+fullName: Word.Interfaces.ReviewerData
+summary: >-
+  An interface describing the data returned by calling `reviewer.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

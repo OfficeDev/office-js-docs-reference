@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.XmlNodeCollectionUpdateData
+uid: word!Word.Interfaces.XmlNodeCollectionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.XmlNodeCollectionUpdateData
+summary: >-
+  An interface for updating data on the `XmlNodeCollection` object, for use in
+  `xmlNodeCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.XmlNodeCollectionUpdateData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.XmlNodeData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.XmlNodeData:interface" />[]

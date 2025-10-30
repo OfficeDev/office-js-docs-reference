@@ -273,11 +273,11 @@ properties:
       content: 'title?: boolean;'
       return:
         type: boolean
-  - name: xmlapping
+  - name: xmlMapping
     uid: >-
-      word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#xmlapping:member
+      word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#xmlMapping:member
     package: word!
-    fullName: xmlapping
+    fullName: xmlMapping
     summary: >-
       Returns an `XmlMapping` object that represents the mapping of the content
       control to XML data in the data store of the document.
@@ -288,6 +288,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'xmlapping?: Word.Interfaces.XmlMappingLoadOptions;'
+      content: 'xmlMapping?: Word.Interfaces.XmlMappingLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.XmlMappingLoadOptions:interface" />

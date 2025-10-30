@@ -35,8 +35,6 @@ items:
                 uid: word!Word.AutoFitBehavior:enum
               - name: AutoMacro
                 uid: word!Word.AutoMacro:enum
-              - name: BaselineAlignment
-                uid: word!Word.BaselineAlignment:enum
               - name: BevelType
                 uid: word!Word.BevelType:enum
               - name: BodyType
@@ -59,8 +57,6 @@ items:
                 uid: word!Word.CalendarType:enum
               - name: CalendarTypeBidirectional
                 uid: word!Word.CalendarTypeBidirectional:enum
-              - name: CaptionLabelType
-                uid: word!Word.CaptionLabelType:enum
               - name: CaptionPosition
                 uid: word!Word.CaptionPosition:enum
               - name: CellPaddingLocation
@@ -139,8 +135,6 @@ items:
                 uid: word!Word.EditorType:enum
               - name: EmphasisMark
                 uid: word!Word.EmphasisMark:enum
-              - name: EndnoteLocation
-                uid: word!Word.EndnoteLocation:enum
               - name: ErrorCodes
                 uid: word!Word.ErrorCodes:enum
               - name: EventSource
@@ -177,8 +171,6 @@ items:
                 uid: word!Word.FlowDirection:enum
               - name: FontBias
                 uid: word!Word.FontBias:enum
-              - name: FootnoteLocation
-                uid: word!Word.FootnoteLocation:enum
               - name: FrameSizeRule
                 uid: word!Word.FrameSizeRule:enum
               - name: GeometricShapeType
@@ -237,8 +229,6 @@ items:
                 uid: word!Word.LineEndingType:enum
               - name: LineFormatStyle
                 uid: word!Word.LineFormatStyle:enum
-              - name: LineSpacing
-                uid: word!Word.LineSpacing:enum
               - name: LineWidth
                 uid: word!Word.LineWidth:enum
               - name: LinkType
@@ -265,8 +255,6 @@ items:
                 uid: word!Word.MovementType:enum
               - name: NoteItemType
                 uid: word!Word.NoteItemType:enum
-              - name: NoteNumberStyle
-                uid: word!Word.NoteNumberStyle:enum
               - name: NumberForm
                 uid: word!Word.NumberForm:enum
               - name: NumberingRule
@@ -293,8 +281,6 @@ items:
                 uid: word!Word.PageSetupVerticalAlignment:enum
               - name: PaperSize
                 uid: word!Word.PaperSize:enum
-              - name: PasteDataType
-                uid: word!Word.PasteDataType:enum
               - name: PasteFormatType
                 uid: word!Word.PasteFormatType:enum
               - name: PatternType
@@ -329,10 +315,6 @@ items:
                 uid: word!Word.RangeLocation:enum
               - name: ReadingLayoutMargin
                 uid: word!Word.ReadingLayoutMargin:enum
-              - name: ReadingOrder
-                uid: word!Word.ReadingOrder:enum
-              - name: ReferenceKind
-                uid: word!Word.ReferenceKind:enum
               - name: ReferenceType
                 uid: word!Word.ReferenceType:enum
               - name: ReflectionType
@@ -409,8 +391,8 @@ items:
                 uid: word!Word.SortOrder:enum
               - name: SpecialPane
                 uid: word!Word.SpecialPane:enum
-              - name: Statistic
-                uid: word!Word.Statistic:enum
+              - name: StatisticType
+                uid: word!Word.StatisticType:enum
               - name: StoryType
                 uid: word!Word.StoryType:enum
               - name: StyleType
@@ -427,16 +409,12 @@ items:
                 uid: word!Word.TableDirection:enum
               - name: TableFieldSeparator
                 uid: word!Word.TableFieldSeparator:enum
-              - name: TableFormat
-                uid: word!Word.TableFormat:enum
               - name: TableFormatType
                 uid: word!Word.TableFormatType:enum
               - name: TargetBrowser
                 uid: word!Word.TargetBrowser:enum
               - name: TemplateType
                 uid: word!Word.TemplateType:enum
-              - name: TextboxTightWrap
-                uid: word!Word.TextboxTightWrap:enum
               - name: TextOrientation
                 uid: word!Word.TextOrientation:enum
               - name: TextureAlignment
@@ -451,8 +429,6 @@ items:
                 uid: word!Word.TrailingCharacter:enum
               - name: TwoLinesInOneType
                 uid: word!Word.TwoLinesInOneType:enum
-              - name: Underline
-                uid: word!Word.Underline:enum
               - name: UnderlineType
                 uid: word!Word.UnderlineType:enum
               - name: UseFormattingFrom
@@ -737,8 +713,6 @@ items:
             uid: word!Word.IndexCollection:class
           - name: IndexMarkAllEntriesOptions
             uid: word!Word.IndexMarkAllEntriesOptions:interface
-          - name: IndexMarkEntryOptions
-            uid: word!Word.IndexMarkEntryOptions:interface
           - name: InlinePicture
             uid: word!Word.InlinePicture:class
           - name: InlinePictureCollection
@@ -769,12 +743,12 @@ items:
             uid: word!Word.ListLevelCollection:class
           - name: ListTemplate
             uid: word!Word.ListTemplate:class
+          - name: ListTemplateAddOptions
+            uid: word!Word.ListTemplateAddOptions:interface
           - name: ListTemplateApplyOptions
             uid: word!Word.ListTemplateApplyOptions:interface
           - name: ListTemplateCollection
             uid: word!Word.ListTemplateCollection:class
-          - name: ListTemplateCollectionAddOptions
-            uid: word!Word.ListTemplateCollectionAddOptions:interface
           - name: ListTemplateGallery
             uid: word!Word.ListTemplateGallery:class
           - name: ListTemplateGalleryCollection
@@ -851,10 +825,6 @@ items:
             uid: word!Word.SelectionConvertToTableOptions:interface
           - name: SelectionDeleteOptions
             uid: word!Word.SelectionDeleteOptions:interface
-          - name: SelectionGoToOptions
-            uid: word!Word.SelectionGoToOptions:interface
-          - name: SelectionInsertCrossReferenceOptions
-            uid: word!Word.SelectionInsertCrossReferenceOptions:interface
           - name: SelectionInsertDateTimeOptions
             uid: word!Word.SelectionInsertDateTimeOptions:interface
           - name: SelectionInsertFormulaOptions
@@ -1886,6 +1856,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.4 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.4-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.3 requirement set
             href: >-

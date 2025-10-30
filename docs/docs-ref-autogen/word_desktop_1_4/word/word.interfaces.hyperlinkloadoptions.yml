@@ -1,0 +1,184 @@
+### YamlMime:TSType
+name: Word.Interfaces.HyperlinkLoadOptions
+uid: word!Word.Interfaces.HyperlinkLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.HyperlinkLoadOptions
+summary: Represents a hyperlink in a Word document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: address
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#address:member
+    package: word!
+    fullName: address
+    summary: Specifies the address (for example, a file name or URL) of the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type: boolean
+  - name: emailSubject
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#emailSubject:member
+    package: word!
+    fullName: emailSubject
+    summary: Specifies the text string for the hyperlink's subject line.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emailSubject?: boolean;'
+      return:
+        type: boolean
+  - name: isExtraInfoRequired
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#isExtraInfoRequired:member
+    package: word!
+    fullName: isExtraInfoRequired
+    summary: Returns `true` if extra information is required to resolve the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isExtraInfoRequired?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#name:member
+    package: word!
+    fullName: name
+    summary: Returns the name of the `Hyperlink` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained within the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: screenTip
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#screenTip:member
+    package: word!
+    fullName: screenTip
+    summary: >-
+      Specifies the text that appears as a ScreenTip when the mouse pointer is
+      positioned over the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'screenTip?: boolean;'
+      return:
+        type: boolean
+  - name: subAddress
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#subAddress:member
+    package: word!
+    fullName: subAddress
+    summary: Specifies a named location in the destination of the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subAddress?: boolean;'
+      return:
+        type: boolean
+  - name: target
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#target:member
+    package: word!
+    fullName: target
+    summary: Specifies the name of the frame or window in which to load the hyperlink.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: boolean;'
+      return:
+        type: boolean
+  - name: textToDisplay
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#textToDisplay:member
+    package: word!
+    fullName: textToDisplay
+    summary: Specifies the hyperlink's visible text in the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textToDisplay?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.HyperlinkLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: Returns the hyperlink type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

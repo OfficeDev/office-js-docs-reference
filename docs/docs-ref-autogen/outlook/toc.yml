@@ -73,6 +73,8 @@ items:
                 uid: outlook!Office.MailboxEnums.WeekNumber:enum
           - name: AppointmentCompose
             uid: outlook!Office.AppointmentCompose:interface
+          - name: AppointmentForm
+            uid: outlook!Office.AppointmentForm:interface
           - name: AppointmentRead
             uid: outlook!Office.AppointmentRead:interface
           - name: AppointmentTimeChangedEventArgs
@@ -1118,6 +1120,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.4 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.4-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.3 requirement set
             href: >-

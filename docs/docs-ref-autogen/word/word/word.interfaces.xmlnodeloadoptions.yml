@@ -5,10 +5,10 @@ package: word!
 fullName: Word.Interfaces.XmlNodeLoadOptions
 summary: Represents a single XML node applied to the document.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -22,7 +22,7 @@ properties:
       (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -34,10 +34,10 @@ properties:
     fullName: baseName
     summary: Gets the name of the element without any prefix.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'baseName?: boolean;'
@@ -51,10 +51,10 @@ properties:
       Gets the first child node if this is a parent node. Returns `null` if the
       node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'firstChild?: Word.Interfaces.XmlNodeLoadOptions;'
@@ -68,10 +68,10 @@ properties:
       Gets whether this XML node has child nodes. Always returns `false` for
       attribute nodes since they cannot have children.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hasChildNodes?: boolean;'
@@ -85,10 +85,10 @@ properties:
       Gets the last child node if this is a parent node. Returns `null` if the
       node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lastChild?: Word.Interfaces.XmlNodeLoadOptions;'
@@ -103,10 +103,10 @@ properties:
       is contained within a table cell or contains a table row. Returns `null`
       if the node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'level?: boolean;'
@@ -120,10 +120,10 @@ properties:
       Gets the Uniform Resource Identifier (URI) of the schema namespace for
       this XML node.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'namespaceUri?: boolean;'
@@ -137,57 +137,25 @@ properties:
       Gets the next element in the document that's at the same level as this XML
       node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'nextSibling?: Word.Interfaces.XmlNodeLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.XmlNodeLoadOptions:interface" />
-  - name: nodeType
-    uid: word!Word.Interfaces.XmlNodeLoadOptions#nodeType:member
-    package: word!
-    fullName: nodeType
-    summary: Gets the type of node.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'nodeType?: boolean;'
-      return:
-        type: boolean
-  - name: nodeValue
-    uid: word!Word.Interfaces.XmlNodeLoadOptions#nodeValue:member
-    package: word!
-    fullName: nodeValue
-    summary: >-
-      Specifies the value of this XML node. For element nodes, represents the
-      text content; for attribute nodes, represents the attribute value.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'nodeValue?: boolean;'
-      return:
-        type: boolean
   - name: ownerDocument
     uid: word!Word.Interfaces.XmlNodeLoadOptions#ownerDocument:member
     package: word!
     fullName: ownerDocument
     summary: Gets the parent document of this XML node.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ownerDocument?: Word.Interfaces.DocumentLoadOptions;'
@@ -199,10 +167,10 @@ properties:
     fullName: parentNode
     summary: Gets the parent element of this XML node.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentNode?: Word.Interfaces.XmlNodeLoadOptions;'
@@ -216,10 +184,10 @@ properties:
       Specifies the text displayed for this element if it contains no text. Only
       applies to element nodes, not attribute nodes.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'placeholderText?: boolean;'
@@ -233,10 +201,10 @@ properties:
       Gets the previous element in the document that's at the same level as this
       XML node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'previousSibling?: Word.Interfaces.XmlNodeLoadOptions;'
@@ -250,10 +218,10 @@ properties:
       Gets the portion of a document that is contained in this XML node. Returns
       `null` if the node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'range?: Word.Interfaces.RangeLoadOptions;'
@@ -267,13 +235,28 @@ properties:
       Specifies the text contained within the XML element. Returns an empty
       string if the node type is `attribute`<!-- -->.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.XmlNodeLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: Gets the type of node.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'text?: boolean;'
+      content: 'type?: boolean;'
       return:
         type: boolean
   - name: validationErrorText
@@ -284,10 +267,10 @@ properties:
       Gets the description for a validation error on this `XmlNode` object. May
       not be meaningful for attribute nodes.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'validationErrorText?: boolean;'
@@ -301,12 +284,29 @@ properties:
       Gets whether this element is valid according to the attached schema. May
       not be meaningful for attribute nodes.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'validationStatus?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: word!Word.Interfaces.XmlNodeLoadOptions#value:member
+    package: word!
+    fullName: value
+    summary: >-
+      Specifies the value of this XML node. For element nodes, represents the
+      text content; for attribute nodes, represents the attribute value.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'validationStatus?: boolean;'
+      content: 'value?: boolean;'
       return:
         type: boolean
