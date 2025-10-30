@@ -3,6 +3,22 @@
         {
             "className": "Office.Dialog",
             "exemptedFieldCount": 4
+        },
+        {
+            "className": "Office.Message",
+            "exemptedFieldCount": 0
+        },
+        {
+            "className": "Office.ItemCompose",
+            "exemptedFieldCount": 0
+        },
+        {
+            "className": "Office.ItemRead",
+            "exemptedFieldCount": 0
+        },
+        {
+            "className": "Office.Appointment",
+            "exemptedFieldCount": 0
         }
     ]
 }

@@ -59,6 +59,8 @@ items:
                 uid: outlook!Office.MailboxEnums.WeekNumber:enum
           - name: AppointmentCompose
             uid: outlook!Office.AppointmentCompose:interface
+          - name: AppointmentForm
+            uid: outlook!Office.AppointmentForm:interface
           - name: AppointmentRead
             uid: outlook!Office.AppointmentRead:interface
           - name: AppointmentTimeChangedEventArgs

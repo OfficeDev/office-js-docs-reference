@@ -25,7 +25,7 @@ const EXCEL_ICON_SET_FILTER = [
     "ThreeTrafficLights2Set", "ThreeTrianglesSet"
 ];
 
-const OUTLOOK_FILTER_ITEMS = ['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message'];
+const OUTLOOK_FILTER_ITEMS = ['Appointment', 'ItemCompose', 'ItemRead', 'Message'];
 
 const NAMESPACE_REPLACEMENTS = {
     outlook: [
