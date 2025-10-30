@@ -777,6 +777,26 @@ methods:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
+
+
+      const time = Office.context.mailbox.item.start;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment starts (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3000,7 +3020,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->**: **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -3122,7 +3142,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      -->**: **read/write mailbox**
 
 
       **[Applicable Outlook
