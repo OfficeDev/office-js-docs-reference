@@ -9055,7 +9055,7 @@ outlook,Office.AppointmentCompose,"sendAsync(options, callback)",Method,Poor,tru
 outlook,Office.AppointmentCompose,"sendAsync(callback)",Method,Poor,true
 outlook,Office.AppointmentCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
-outlook,Office.AppointmentForm,N/A,Interface,Great,false
+outlook,Office.AppointmentForm,N/A,Interface,Great,true
 outlook,Office.AppointmentForm,"body",Property,Great,false
 outlook,Office.AppointmentForm,"end",Property,Excellent,false
 outlook,Office.AppointmentForm,"location",Property,Excellent,false
