@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.HtmlDivisionData
+uid: word!Word.Interfaces.HtmlDivisionData:interface
+package: word!
+fullName: Word.Interfaces.HtmlDivisionData
+summary: >-
+  An interface describing the data returned by calling
+  `htmlDivision.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

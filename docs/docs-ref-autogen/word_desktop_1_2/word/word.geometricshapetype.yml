@@ -3,7 +3,9 @@ name: Word.GeometricShapeType
 uid: word!Word.GeometricShapeType:enum
 package: word!
 fullName: Word.GeometricShapeType
-summary: Specifies the shape type for a  object.
+summary: >-
+  Specifies the shape type for a
+  [ShapeType.geometricShape](xref:word!Word.ShapeType:enum) object.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

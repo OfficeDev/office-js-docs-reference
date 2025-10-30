@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.RevisionsFilterData
+uid: word!Word.Interfaces.RevisionsFilterData:interface
+package: word!
+fullName: Word.Interfaces.RevisionsFilterData
+summary: >-
+  An interface describing the data returned by calling
+  `revisionsFilter.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

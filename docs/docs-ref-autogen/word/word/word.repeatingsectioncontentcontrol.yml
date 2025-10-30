@@ -285,10 +285,10 @@ properties:
       content: 'title: string;'
       return:
         type: string
-  - name: xmlapping
-    uid: word!Word.RepeatingSectionContentControl#xmlapping:member
+  - name: xmlMapping
+    uid: word!Word.RepeatingSectionContentControl#xmlMapping:member
     package: word!
-    fullName: xmlapping
+    fullName: xmlMapping
     summary: >-
       Returns an `XmlMapping` object that represents the mapping of the content
       control to XML data in the data store of the document.
@@ -299,7 +299,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly xmlapping: Word.XmlMapping;'
+      content: 'readonly xmlMapping: Word.XmlMapping;'
       return:
         type: <xref uid="word!Word.XmlMapping:class" />
 methods:

@@ -7,10 +7,10 @@ summary: >-
   Represents a collection of [Word.Range](xref:word!Word.Range:class) objects
   that represents each character, word, or sentence.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -23,7 +23,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -36,7 +36,7 @@ properties:
     summary: Gets the loaded child items in this collection.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: Word.Range[];'
@@ -72,7 +72,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -98,7 +98,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.RangeScopedCollection;'
@@ -120,7 +120,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -153,7 +153,7 @@ methods:
       collection's items.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.RangeScopedCollectionData;'
@@ -178,7 +178,7 @@ methods:
       track the parent collection.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.RangeScopedCollection;'
@@ -199,7 +199,7 @@ methods:
       effect.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.RangeScopedCollection;'

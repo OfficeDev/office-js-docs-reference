@@ -5,7 +5,7 @@ package: word!
 fullName: Word.DocumentRangeOptions
 summary: >-
   Provides configuration options for the
-  [Document.range](xref:word!Word.Document:class) method.
+  [Document.getRange](xref:word!Word.Document:class) method.
 remarks: >-
   \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

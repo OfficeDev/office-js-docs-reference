@@ -1,0 +1,491 @@
+### YamlMime:TSType
+name: Word.Interfaces.PageSetupLoadOptions
+uid: word!Word.Interfaces.PageSetupLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.PageSetupLoadOptions
+summary: Represents the page setup settings for a Word document or section.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.PageSetupLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: bookFoldPrinting
+    uid: word!Word.Interfaces.PageSetupLoadOptions#bookFoldPrinting:member
+    package: word!
+    fullName: bookFoldPrinting
+    summary: Specifies whether Microsoft Word prints the document as a booklet.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bookFoldPrinting?: boolean;'
+      return:
+        type: boolean
+  - name: bookFoldPrintingSheets
+    uid: word!Word.Interfaces.PageSetupLoadOptions#bookFoldPrintingSheets:member
+    package: word!
+    fullName: bookFoldPrintingSheets
+    summary: Specifies the number of pages for each booklet.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bookFoldPrintingSheets?: boolean;'
+      return:
+        type: boolean
+  - name: bookFoldReversePrinting
+    uid: word!Word.Interfaces.PageSetupLoadOptions#bookFoldReversePrinting:member
+    package: word!
+    fullName: bookFoldReversePrinting
+    summary: >-
+      Specifies if Microsoft Word reverses the printing order for book fold
+      printing of bidirectional or Asian language documents.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bookFoldReversePrinting?: boolean;'
+      return:
+        type: boolean
+  - name: bottomMargin
+    uid: word!Word.Interfaces.PageSetupLoadOptions#bottomMargin:member
+    package: word!
+    fullName: bottomMargin
+    summary: >-
+      Specifies the distance (in points) between the bottom edge of the page and
+      the bottom boundary of the body text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomMargin?: boolean;'
+      return:
+        type: boolean
+  - name: charsLine
+    uid: word!Word.Interfaces.PageSetupLoadOptions#charsLine:member
+    package: word!
+    fullName: charsLine
+    summary: Specifies the number of characters per line in the document grid.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'charsLine?: boolean;'
+      return:
+        type: boolean
+  - name: differentFirstPageHeaderFooter
+    uid: >-
+      word!Word.Interfaces.PageSetupLoadOptions#differentFirstPageHeaderFooter:member
+    package: word!
+    fullName: differentFirstPageHeaderFooter
+    summary: Specifies whether the first page has a different header and footer.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'differentFirstPageHeaderFooter?: boolean;'
+      return:
+        type: boolean
+  - name: footerDistance
+    uid: word!Word.Interfaces.PageSetupLoadOptions#footerDistance:member
+    package: word!
+    fullName: footerDistance
+    summary: >-
+      Specifies the distance between the footer and the bottom of the page in
+      points.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'footerDistance?: boolean;'
+      return:
+        type: boolean
+  - name: gutter
+    uid: word!Word.Interfaces.PageSetupLoadOptions#gutter:member
+    package: word!
+    fullName: gutter
+    summary: >-
+      Specifies the amount (in points) of extra margin space added to each page
+      in a document or section for binding.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gutter?: boolean;'
+      return:
+        type: boolean
+  - name: gutterPosition
+    uid: word!Word.Interfaces.PageSetupLoadOptions#gutterPosition:member
+    package: word!
+    fullName: gutterPosition
+    summary: Specifies on which side the gutter appears in a document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gutterPosition?: boolean;'
+      return:
+        type: boolean
+  - name: gutterStyle
+    uid: word!Word.Interfaces.PageSetupLoadOptions#gutterStyle:member
+    package: word!
+    fullName: gutterStyle
+    summary: >-
+      Specifies whether Microsoft Word uses gutters for the current document
+      based on a right-to-left language or a left-to-right language.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gutterStyle?: boolean;'
+      return:
+        type: boolean
+  - name: headerDistance
+    uid: word!Word.Interfaces.PageSetupLoadOptions#headerDistance:member
+    package: word!
+    fullName: headerDistance
+    summary: >-
+      Specifies the distance between the header and the top of the page in
+      points.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headerDistance?: boolean;'
+      return:
+        type: boolean
+  - name: layoutMode
+    uid: word!Word.Interfaces.PageSetupLoadOptions#layoutMode:member
+    package: word!
+    fullName: layoutMode
+    summary: Specifies the layout mode for the current document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'layoutMode?: boolean;'
+      return:
+        type: boolean
+  - name: leftMargin
+    uid: word!Word.Interfaces.PageSetupLoadOptions#leftMargin:member
+    package: word!
+    fullName: leftMargin
+    summary: >-
+      Specifies the distance (in points) between the left edge of the page and
+      the left boundary of the body text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftMargin?: boolean;'
+      return:
+        type: boolean
+  - name: lineNumbering
+    uid: word!Word.Interfaces.PageSetupLoadOptions#lineNumbering:member
+    package: word!
+    fullName: lineNumbering
+    summary: >-
+      Specifies a `LineNumbering` object that represents the line numbers for
+      the `PageSetup` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineNumbering?: Word.Interfaces.LineNumberingLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.LineNumberingLoadOptions:interface" />
+  - name: linesPage
+    uid: word!Word.Interfaces.PageSetupLoadOptions#linesPage:member
+    package: word!
+    fullName: linesPage
+    summary: Specifies the number of lines per page in the document grid.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linesPage?: boolean;'
+      return:
+        type: boolean
+  - name: mirrorMargins
+    uid: word!Word.Interfaces.PageSetupLoadOptions#mirrorMargins:member
+    package: word!
+    fullName: mirrorMargins
+    summary: >-
+      Specifies if the inside and outside margins of facing pages are the same
+      width.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mirrorMargins?: boolean;'
+      return:
+        type: boolean
+  - name: oddAndEvenPagesHeaderFooter
+    uid: >-
+      word!Word.Interfaces.PageSetupLoadOptions#oddAndEvenPagesHeaderFooter:member
+    package: word!
+    fullName: oddAndEvenPagesHeaderFooter
+    summary: Specifies whether odd and even pages have different headers and footers.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'oddAndEvenPagesHeaderFooter?: boolean;'
+      return:
+        type: boolean
+  - name: orientation
+    uid: word!Word.Interfaces.PageSetupLoadOptions#orientation:member
+    package: word!
+    fullName: orientation
+    summary: Specifies the orientation of the page.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'orientation?: boolean;'
+      return:
+        type: boolean
+  - name: pageHeight
+    uid: word!Word.Interfaces.PageSetupLoadOptions#pageHeight:member
+    package: word!
+    fullName: pageHeight
+    summary: Specifies the page height in points.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageHeight?: boolean;'
+      return:
+        type: boolean
+  - name: pageWidth
+    uid: word!Word.Interfaces.PageSetupLoadOptions#pageWidth:member
+    package: word!
+    fullName: pageWidth
+    summary: Specifies the page width in points.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageWidth?: boolean;'
+      return:
+        type: boolean
+  - name: paperSize
+    uid: word!Word.Interfaces.PageSetupLoadOptions#paperSize:member
+    package: word!
+    fullName: paperSize
+    summary: Specifies the paper size of the page.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paperSize?: boolean;'
+      return:
+        type: boolean
+  - name: rightMargin
+    uid: word!Word.Interfaces.PageSetupLoadOptions#rightMargin:member
+    package: word!
+    fullName: rightMargin
+    summary: >-
+      Specifies the distance (in points) between the right edge of the page and
+      the right boundary of the body text.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightMargin?: boolean;'
+      return:
+        type: boolean
+  - name: sectionDirection
+    uid: word!Word.Interfaces.PageSetupLoadOptions#sectionDirection:member
+    package: word!
+    fullName: sectionDirection
+    summary: Specifies the reading order and alignment for the specified sections.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sectionDirection?: boolean;'
+      return:
+        type: boolean
+  - name: sectionStart
+    uid: word!Word.Interfaces.PageSetupLoadOptions#sectionStart:member
+    package: word!
+    fullName: sectionStart
+    summary: Specifies the type of section break for the specified object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sectionStart?: boolean;'
+      return:
+        type: boolean
+  - name: showGrid
+    uid: word!Word.Interfaces.PageSetupLoadOptions#showGrid:member
+    package: word!
+    fullName: showGrid
+    summary: Specifies whether to show the grid.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showGrid?: boolean;'
+      return:
+        type: boolean
+  - name: suppressEndnotes
+    uid: word!Word.Interfaces.PageSetupLoadOptions#suppressEndnotes:member
+    package: word!
+    fullName: suppressEndnotes
+    summary: >-
+      Specifies if endnotes are printed at the end of the next section that
+      doesn't suppress endnotes.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suppressEndnotes?: boolean;'
+      return:
+        type: boolean
+  - name: topMargin
+    uid: word!Word.Interfaces.PageSetupLoadOptions#topMargin:member
+    package: word!
+    fullName: topMargin
+    summary: Specifies the top margin of the page in points.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topMargin?: boolean;'
+      return:
+        type: boolean
+  - name: twoPagesOnOne
+    uid: word!Word.Interfaces.PageSetupLoadOptions#twoPagesOnOne:member
+    package: word!
+    fullName: twoPagesOnOne
+    summary: Specifies whether to print two pages per sheet.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'twoPagesOnOne?: boolean;'
+      return:
+        type: boolean
+  - name: verticalAlignment
+    uid: word!Word.Interfaces.PageSetupLoadOptions#verticalAlignment:member
+    package: word!
+    fullName: verticalAlignment
+    summary: >-
+      Specifies the vertical alignment of text on each page in a document or
+      section.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type: boolean

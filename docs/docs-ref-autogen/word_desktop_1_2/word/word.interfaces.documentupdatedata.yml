@@ -12,6 +12,21 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: activeWindow
+    uid: word!Word.Interfaces.DocumentUpdateData#activeWindow:member
+    package: word!
+    fullName: activeWindow
+    summary: Gets the active window for the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activeWindow?: Word.Interfaces.WindowUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.WindowUpdateData:interface" />
   - name: body
     uid: word!Word.Interfaces.DocumentUpdateData#body:member
     package: word!

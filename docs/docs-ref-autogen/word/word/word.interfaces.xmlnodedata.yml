@@ -18,10 +18,10 @@ properties:
     fullName: baseName
     summary: Gets the name of the element without any prefix.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'baseName?: string;'
@@ -35,10 +35,10 @@ properties:
       Gets whether this XML node has child nodes. Always returns `false` for
       attribute nodes since they cannot have children.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hasChildNodes?: boolean;'
@@ -53,10 +53,10 @@ properties:
       is contained within a table cell or contains a table row. Returns `null`
       if the node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'level?: Word.XmlNodeLevel | "Inline" | "Paragraph" | "Row" | "Cell";'
@@ -72,45 +72,13 @@ properties:
       Gets the Uniform Resource Identifier (URI) of the schema namespace for
       this XML node.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'namespaceUri?: string;'
-      return:
-        type: string
-  - name: nodeType
-    uid: word!Word.Interfaces.XmlNodeData#nodeType:member
-    package: word!
-    fullName: nodeType
-    summary: Gets the type of node.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'nodeType?: Word.XmlNodeType | "Element" | "Attribute";'
-      return:
-        type: <xref uid="word!Word.XmlNodeType:enum" /> | "Element" | "Attribute"
-  - name: nodeValue
-    uid: word!Word.Interfaces.XmlNodeData#nodeValue:member
-    package: word!
-    fullName: nodeValue
-    summary: >-
-      Specifies the value of this XML node. For element nodes, represents the
-      text content; for attribute nodes, represents the attribute value.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'nodeValue?: string;'
       return:
         type: string
   - name: placeholderText
@@ -121,10 +89,10 @@ properties:
       Specifies the text displayed for this element if it contains no text. Only
       applies to element nodes, not attribute nodes.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'placeholderText?: string;'
@@ -138,15 +106,30 @@ properties:
       Specifies the text contained within the XML element. Returns an empty
       string if the node type is `attribute`<!-- -->.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: type
+    uid: word!Word.Interfaces.XmlNodeData#type:member
+    package: word!
+    fullName: type
+    summary: Gets the type of node.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'text?: string;'
+      content: 'type?: Word.XmlNodeType | "Element" | "Attribute";'
       return:
-        type: string
+        type: <xref uid="word!Word.XmlNodeType:enum" /> | "Element" | "Attribute"
   - name: validationErrorText
     uid: word!Word.Interfaces.XmlNodeData#validationErrorText:member
     package: word!
@@ -155,10 +138,10 @@ properties:
       Gets the description for a validation error on this `XmlNode` object. May
       not be meaningful for attribute nodes.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'validationErrorText?: string;'
@@ -172,12 +155,29 @@ properties:
       Gets whether this element is valid according to the attached schema. May
       not be meaningful for attribute nodes.
     remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'validationStatus?: Word.XmlValidationStatus | "Ok" | "Custom";'
+      return:
+        type: <xref uid="word!Word.XmlValidationStatus:enum" /> | "Ok" | "Custom"
+  - name: value
+    uid: word!Word.Interfaces.XmlNodeData#value:member
+    package: word!
+    fullName: value
+    summary: >-
+      Specifies the value of this XML node. For element nodes, represents the
+      text content; for attribute nodes, represents the attribute value.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'validationStatus?: Word.XmlValidationStatus | "Ok" | "Custom";'
+      content: 'value?: string;'
       return:
-        type: <xref uid="word!Word.XmlValidationStatus:enum" /> | "Ok" | "Custom"
+        type: string

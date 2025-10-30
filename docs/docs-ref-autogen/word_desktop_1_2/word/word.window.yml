@@ -190,8 +190,28 @@ properties:
       return:
         type: <xref uid="word!Word.PaneCollection:class" />
 methods:
-  - name: load(propertyNames)
+  - name: load(options)
     uid: word!Word.Window#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.WindowLoadOptions): Word.Window;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.WindowLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Window:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.Window#load:member(2)
     package: word!
     fullName: load(propertyNames)
     summary: >-
@@ -213,7 +233,7 @@ methods:
         type: <xref uid="word!Word.Window:class" />
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: word!Word.Window#load:member(2)
+    uid: word!Word.Window#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
@@ -243,6 +263,57 @@ methods:
                     }
       return:
         type: <xref uid="word!Word.Window:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.Window#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.WindowUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.WindowUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.Window#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Window): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.Window:class" />
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: word!Word.Window#toJSON:member(1)

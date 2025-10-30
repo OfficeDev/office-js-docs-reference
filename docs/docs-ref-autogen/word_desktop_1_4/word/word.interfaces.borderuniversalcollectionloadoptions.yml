@@ -1,0 +1,166 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderUniversalCollectionLoadOptions
+uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.BorderUniversalCollectionLoadOptions
+summary: >-
+  Represents the collection of
+  [Word.BorderUniversal](xref:word!Word.BorderUniversal:class) objects.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: artStyle
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#artStyle:member
+    package: word!
+    fullName: artStyle
+    summary: >-
+      For EACH ITEM in the collection: Specifies the graphical page-border
+      design for the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'artStyle?: boolean;'
+      return:
+        type: boolean
+  - name: artWidth
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#artWidth:member
+    package: word!
+    fullName: artWidth
+    summary: >-
+      For EACH ITEM in the collection: Specifies the width (in points) of the
+      graphical page border specified in the `artStyle` property.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'artWidth?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#color:member
+    package: word!
+    fullName: color
+    summary: >-
+      For EACH ITEM in the collection: Specifies the color for the
+      `BorderUniversal` object. You can provide the value in the '\#RRGGBB'
+      format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: colorIndex
+    uid: >-
+      word!Word.Interfaces.BorderUniversalCollectionLoadOptions#colorIndex:member
+    package: word!
+    fullName: colorIndex
+    summary: >-
+      For EACH ITEM in the collection: Specifies the color for the
+      `BorderUniversal` or [Word.Font](xref:word!Word.Font:class) object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'colorIndex?: boolean;'
+      return:
+        type: boolean
+  - name: inside
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#inside:member
+    package: word!
+    fullName: inside
+    summary: >-
+      For EACH ITEM in the collection: Returns `true` if an inside border can be
+      applied to the specified object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inside?: boolean;'
+      return:
+        type: boolean
+  - name: isVisible
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: 'For EACH ITEM in the collection: Specifies whether the border is visible.'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
+      return:
+        type: boolean
+  - name: lineStyle
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#lineStyle:member
+    package: word!
+    fullName: lineStyle
+    summary: 'For EACH ITEM in the collection: Specifies the line style of the border.'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineStyle?: boolean;'
+      return:
+        type: boolean
+  - name: lineWidth
+    uid: word!Word.Interfaces.BorderUniversalCollectionLoadOptions#lineWidth:member
+    package: word!
+    fullName: lineWidth
+    summary: >-
+      For EACH ITEM in the collection: Specifies the line width of an object's
+      border.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineWidth?: boolean;'
+      return:
+        type: boolean

@@ -1943,6 +1943,10 @@ items:
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
             displayName: Word
+          - name: WordApiDesktop 1.4 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.4-requirement-set.md
+            displayName: Word
           - name: WordApiDesktop 1.3 requirement set
             href: >-
               ../../requirement-sets/word/word-api-desktop-1.3-requirement-set.md
