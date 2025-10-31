@@ -12015,7 +12015,7 @@ word,Word.BorderLocation,"left",EnumField,Fine,false
 word,Word.BorderLocation,"outside",EnumField,Fine,false
 word,Word.BorderLocation,"right",EnumField,Fine,false
 word,Word.BorderLocation,"top",EnumField,Fine,false
-word,Word.BorderType,N/A,Enum,Fine,true
+word,Word.BorderType,N/A,Enum,Poor,true
 word,Word.BorderType,"dashDotStroked",EnumField,Fine,false
 word,Word.BorderType,"dashed",EnumField,Fine,false
 word,Word.BorderType,"dashedSmall",EnumField,Fine,false
