@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 10/09/2025
+ms.date: 11/03/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -110,6 +110,20 @@ Added an object that represents an attachment in a decrypted message.
 #### [Office.DecryptedMessageBody](/javascript/api/outlook/office.decryptedmessagebody?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the body of a decrypted message.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Store even more custom data for a mail item during an Outlook session
+
+#### [Office.context.mailbox.item.sessionData.setAsync](/javascript/api/outlook/office.sessiondata?view=outlook-js-preview&preserve-view=true#outlook-office-sessiondata-setasync-member)
+
+Increased the `SessionData` object limit to 2,621,440 characters.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
