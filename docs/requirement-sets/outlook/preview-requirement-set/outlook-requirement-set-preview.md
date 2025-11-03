@@ -123,7 +123,7 @@ Added an object that represents the body of a decrypted message.
 
 #### [Office.context.mailbox.item.sessionData.setAsync](/javascript/api/outlook/office.sessiondata?view=outlook-js-preview&preserve-view=true#outlook-office-sessiondata-setasync-member)
 
-Updated the `SessionData` object limit to 2,621,440 characters.
+Increased the `SessionData` object limit to 2,621,440 characters.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 
