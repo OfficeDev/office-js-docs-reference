@@ -180,6 +180,37 @@ properties:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the first geometric shape found in the document body.
+        const geometricShape: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.geometricShape])
+          .getFirstOrNullObject();
+        geometricShape.load();
+        await context.sync();
+
+        if (geometricShape.isNullObject) {
+          console.log("No geometric shapes found in the document body.");
+          return;
+        }
+
+        console.log(
+          `First geometric shape found in the document body is of type ${geometricShape.geometricShapeType}:`,
+          geometricShape,
+        );
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

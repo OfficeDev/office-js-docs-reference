@@ -87,6 +87,29 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the moon geometric shapes from the document body.
+        const moons: Word.ShapeCollection = context.document.body.shapes.getByGeometricTypes([
+          Word.GeometricShapeType.moon,
+        ]);
+        moons.load();
+        await context.sync();
+
+        console.log("Moons found in the document body:", moons);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

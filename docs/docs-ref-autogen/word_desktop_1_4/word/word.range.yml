@@ -3022,6 +3022,32 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a moon geometric shape at the beginning of the selection.
+        const selection: Word.Range = context.document.getSelection();
+        const shapeOptions: Word.InsertShapeOptions = {
+          height: 120,
+          width: 120,
+          left: 120,
+        };
+        selection.insertGeometricShape(Word.GeometricShapeType.moon, shapeOptions);
+        await context.sync();
+
+        console.log("Inserted a heptagon.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

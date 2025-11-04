@@ -14429,7 +14429,7 @@ word,Word.FrameSizeRule,N/A,Enum,Good,false
 word,Word.FrameSizeRule,"atLeast",EnumField,Excellent,false
 word,Word.FrameSizeRule,"auto",EnumField,Fine,false
 word,Word.FrameSizeRule,"exact",EnumField,Excellent,false
-word,Word.GeometricShapeType,N/A,Enum,Excellent,false
+word,Word.GeometricShapeType,N/A,Enum,Excellent,true
 word,Word.GeometricShapeType,"accentBorderCallout1",EnumField,Fine,false
 word,Word.GeometricShapeType,"accentBorderCallout2",EnumField,Fine,false
 word,Word.GeometricShapeType,"accentBorderCallout3",EnumField,Fine,false
@@ -16654,7 +16654,7 @@ word,Word.Range,"insertField(insertLocation, fieldType, text, removeFormatting)"
 word,Word.Range,"insertField(insertLocation, fieldType, text, removeFormatting)",Method,Good,false
 word,Word.Range,"insertFileFromBase64(base64File, insertLocation)",Method,Fine,true
 word,Word.Range,"insertFootnote(insertText)",Method,Fine,true
-word,Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
+word,Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,true
 word,Word.Range,"insertGeometricShape(geometricShapeType, insertShapeOptions)",Method,Fine,false
 word,Word.Range,"insertHtml(html, insertLocation)",Method,Fine,true
 word,Word.Range,"insertInlinePictureFromBase64(base64EncodedImage, insertLocation)",Method,Fine,true
@@ -17443,7 +17443,7 @@ word,Word.Shape,"body",Property,Good,true
 word,Word.Shape,"canvas",Property,Excellent,false
 word,Word.Shape,"context",Property,Excellent,false
 word,Word.Shape,"fill",Property,Fine,false
-word,Word.Shape,"geometricShapeType",Property,Good,false
+word,Word.Shape,"geometricShapeType",Property,Good,true
 word,Word.Shape,"height",Property,Poor,false
 word,Word.Shape,"heightRelative",Property,Fine,false
 word,Word.Shape,"id",Property,Great,false
@@ -17492,7 +17492,7 @@ word,Word.ShapeAutoSize,"textToFitShape",EnumField,Fine,false
 word,Word.ShapeCollection,N/A,Class,Good,true
 word,Word.ShapeCollection,"context",Property,Excellent,false
 word,Word.ShapeCollection,"items",Property,Poor,false
-word,Word.ShapeCollection,"getByGeometricTypes(types)",Method,Good,false
+word,Word.ShapeCollection,"getByGeometricTypes(types)",Method,Good,true
 word,Word.ShapeCollection,"getById(id)",Method,Great,false
 word,Word.ShapeCollection,"getByIdOrNullObject(id)",Method,Excellent,false
 word,Word.ShapeCollection,"getByIds(ids)",Method,Fine,false
