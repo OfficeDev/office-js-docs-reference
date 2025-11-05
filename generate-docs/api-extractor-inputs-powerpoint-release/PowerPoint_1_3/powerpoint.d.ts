@@ -1013,7 +1013,7 @@ export declare namespace PowerPoint {
             */
             $top?: number;
             /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If `top` is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
         }

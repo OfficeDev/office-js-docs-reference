@@ -15,6 +15,11 @@
                              "replace":  "): OfficeExtension.ClientResult\u003cstring[]\u003e;",
                              "isRegex":  true,
                              "description":  "Remove importedStylesConflictBehavior parameter from method signature when removing WordApiDesktop 1.1"
+                         },
+                         {
+                             "find":  "{@link Word.Border | border}",
+                             "replace":  "border",
+                             "description":  "Remove link to Border object when removing WordApiDesktop 1.1"
                          }
                      ],
     "excludedFieldPatterns":  [

@@ -7816,7 +7816,7 @@ export declare namespace Word {
         after = "After",
     }
     /**
-     * Represents the location of a {@link https://learn.microsoft.com/javascript/api/word/word.border | border}.
+     * Represents the location of a border.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -7911,7 +7911,7 @@ export declare namespace Word {
     }
     
     /**
-     * The {@link https://learn.microsoft.com/javascript/api/word/word.border | border} types.
+     * The border types.
      *
      * @remarks
      * [Api set: WordApi 1.3]

@@ -15306,7 +15306,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
+         * **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in.
+         * In classic Outlook on Windows, you can preview an increased character limit of up to 2,621,440 characters per add-in. To test the updated limit, join the
+         * {@link https://aka.ms/MSFT365InsiderProgram | Microsoft 365 Insider program}, then choose the Beta Channel in the classic Outlook on Windows client.
+         * Your client must be on Version 2510 (Build 19317.20000) or later.
          *
          * @param name - The session data key.
          * @param value - The session data value as a string.
@@ -15326,7 +15329,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
+         * **Important**: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in.
+         * In classic Outlook on Windows, you can preview an increased character limit of up to 2,621,440 characters per add-in. To test the updated limit, join the
+         * {@link https://aka.ms/MSFT365InsiderProgram | Microsoft 365 Insider program}, then choose the Beta Channel in the classic Outlook on Windows client.
+         * Your client must be on Version 2510 (Build 19317.20000) or later.
          *
          * @param name - The session data key.
          * @param value - The session data value as a string.
