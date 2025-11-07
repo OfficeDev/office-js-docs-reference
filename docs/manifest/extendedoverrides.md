@@ -1,7 +1,7 @@
 ---
 title: ExtendedOverrides element in the manifest file
 description: Specifies the URLs for a JSON-formatted extension of the manifest.
-ms.date: 02/12/2025
+ms.date: 11/06/2025
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +45,7 @@ The **\<ExtendedOverrides\>** element can contain the following child element de
 <OfficeApp ...>
   <!-- other elements omitted -->
   <ExtendedOverrides Url="http://contoso.com/addinmetadata/extended-manifest-overrides.json"
-                     ResourceUrl="https://contoso.com/addin/my-resources.json">
+                     ResourcesUrl="https://contoso.com/addin/my-resources.json">
   </ExtendedOverrides>
 </OfficeApp>
 ```
