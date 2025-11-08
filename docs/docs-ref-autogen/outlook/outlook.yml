@@ -36,6 +36,7 @@ interfaces:
   - outlook!Office.EnhancedLocation:interface
   - outlook!Office.EnhancedLocationsChangedEventArgs:interface
   - outlook!Office.Entities:interface
+  - outlook!Office.Ews:interface
   - outlook!Office.From:interface
   - outlook!Office.InfobarClickedEventArgs:interface
   - outlook!Office.InfobarDetails:interface

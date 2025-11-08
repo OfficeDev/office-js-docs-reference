@@ -20,11 +20,15 @@
 |[PageSetup](/javascript/api/powerpoint/powerpoint.pagesetup)|[slideHeight](/javascript/api/powerpoint/powerpoint.pagesetup#powerpoint-powerpoint-pagesetup-slideheight-member)|Specifies the height of the slides in the presentation, in points.|
 ||[slideWidth](/javascript/api/powerpoint/powerpoint.pagesetup#powerpoint-powerpoint-pagesetup-slidewidth-member)|Specifies the width of the slides in the presentation, in points.|
 |[ParagraphFormat](/javascript/api/powerpoint/powerpoint.paragraphformat)|[indentLevel](/javascript/api/powerpoint/powerpoint.paragraphformat#powerpoint-powerpoint-paragraphformat-indentlevel-member)|Represents the indent level of the paragraph.|
-|[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[pageSetup](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-pagesetup-member)|Returns the page setup information whose properties control slide setup attributes for the presentation.|
+|[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[getActiveSlideOrNullObject()](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-getactiveslideornullobject-member(1))|Returns the current active PowerPoint.Slide that is visible in the editing area.|
+||[pageSetup](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-pagesetup-member)|Returns the page setup information whose properties control slide setup attributes for the presentation.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[adjustments](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-adjustments-member)|Returns an `Adjustments` object that contains adjustment values for all the adjustments in this shape.|
+||[altTextDescription](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-alttextdescription-member)|The alt text description of the Shape.|
+||[altTextTitle](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-alttexttitle-member)|The alt text title of the Shape.|
 ||[creationId](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-creationid-member)|Gets the creation ID of the shape.|
 ||[getImageAsBase64(options?: PowerPoint.ShapeGetImageOptions)](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-getimageasbase64-member(1))|Renders an image of the shape.|
 ||[getTextFrameOrNullObject()](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-gettextframeornullobject-member(1))|Returns the PowerPoint.TextFrame object of this `Shape`.|
+||[isDecorative](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-isdecorative-member)|Represents whether the shape is decorative or not.|
 ||[rotation](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-rotation-member)|Specifies the rotation, in degrees, of the shape around the z-axis.|
 ||[setHyperlink(options?: PowerPoint.HyperlinkAddOptions)](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-sethyperlink-member(1))|Sets a hyperlink on this `Shape` with the specified options.|
 ||[visible](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-visible-member)|Specifies if the shape is visible.|

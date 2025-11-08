@@ -381,7 +381,7 @@ methods:
 
         const numShapes = shapes.items.length;
         if (numShapes === 0) {
-          console.log("No shapes found in document body.");
+          console.log("No shapes found in the document body.");
           return;
         }
 

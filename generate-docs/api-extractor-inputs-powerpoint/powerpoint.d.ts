@@ -102,6 +102,16 @@ export declare namespace PowerPoint {
          */
         readonly title: string;
         /**
+         * Returns the current active {@link PowerPoint.Slide} that is visible in the editing area.
+                    If there's no active slide, an object with an `isNullObject` property set to `true` is returned.
+                    For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getActiveSlideOrNullObject(): PowerPoint.Slide;
+        /**
          * Returns the selected shapes in the current slide of the presentation.
                     If no shapes are selected, an empty collection is returned.
          *
@@ -8113,6 +8123,29 @@ export declare namespace PowerPoint {
          */
         readonly textFrame: PowerPoint.TextFrame;
         /**
+         * The alt text description of the Shape.
+                    
+                    Alt text provides alternative, text-based representations of the information contained in the Shape.
+                    This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        altTextDescription: string;
+        /**
+         * The alt text title of the Shape.
+                    
+                    Alt text provides alternative, text-based representations of the information contained in the Shape.
+                    This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+                    A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        altTextTitle: string;
+        /**
          * Gets the creation ID of the shape. Returns `null` if the shape has no creation ID.
          *
          * @remarks
@@ -8134,6 +8167,17 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly id: string;
+        /**
+         * Represents whether the shape is decorative or not.
+                    
+                    Decorative objects add visual interest but aren't informative (e.g. stylistic borders).
+                    People using screen readers will hear these are decorative so they know they aren't missing any important information.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isDecorative: boolean;
         /**
          * The distance, in points, from the left side of the shape to the left side of the slide.
          *
@@ -9882,12 +9926,46 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
             /**
+             * The alt text description of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: string;
+            /**
+             * The alt text title of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: string;
+            /**
              * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
              * @remarks
              * [Api set: PowerPointApi 1.4]
              */
             height?: number;
+            /**
+             * Represents whether the shape is decorative or not.
+                        
+                        Decorative objects add visual interest but aren't informative (e.g. stylistic borders).
+                        People using screen readers will hear these are decorative so they know they aren't missing any important information.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDecorative?: boolean;
             /**
              * The distance, in points, from the left side of the shape to the left side of the slide.
              *
@@ -10984,6 +11062,29 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
             /**
+             * The alt text description of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: string;
+            /**
+             * The alt text title of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: string;
+            /**
              * Gets the creation ID of the shape. Returns `null` if the shape has no creation ID.
              *
              * @remarks
@@ -11005,6 +11106,17 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: string;
+            /**
+             * Represents whether the shape is decorative or not.
+                        
+                        Decorative objects add visual interest but aren't informative (e.g. stylistic borders).
+                        People using screen readers will hear these are decorative so they know they aren't missing any important information.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDecorative?: boolean;
             /**
              * The distance, in points, from the left side of the shape to the left side of the slide.
              *
@@ -12516,6 +12628,29 @@ export declare namespace PowerPoint {
              */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
+             * For EACH ITEM in the collection: The alt text description of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             * For EACH ITEM in the collection: The alt text title of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
              * For EACH ITEM in the collection: Gets the creation ID of the shape. Returns `null` if the shape has no creation ID.
              *
              * @remarks
@@ -12537,6 +12672,17 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Represents whether the shape is decorative or not.
+                        
+                        Decorative objects add visual interest but aren't informative (e.g. stylistic borders).
+                        People using screen readers will hear these are decorative so they know they aren't missing any important information.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDecorative?: boolean;
             /**
              * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the slide.
              *
@@ -13116,6 +13262,29 @@ export declare namespace PowerPoint {
              */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
+             * For EACH ITEM in the collection: The alt text description of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             * For EACH ITEM in the collection: The alt text title of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
              * For EACH ITEM in the collection: Gets the creation ID of the shape. Returns `null` if the shape has no creation ID.
              *
              * @remarks
@@ -13137,6 +13306,17 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Represents whether the shape is decorative or not.
+                        
+                        Decorative objects add visual interest but aren't informative (e.g. stylistic borders).
+                        People using screen readers will hear these are decorative so they know they aren't missing any important information.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDecorative?: boolean;
             /**
              * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the slide.
              *
@@ -13364,6 +13544,29 @@ export declare namespace PowerPoint {
              */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
+             * The alt text description of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             * The alt text title of the Shape.
+                        
+                        Alt text provides alternative, text-based representations of the information contained in the Shape.
+                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the shape.
+                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
              * Gets the creation ID of the shape. Returns `null` if the shape has no creation ID.
              *
              * @remarks
@@ -13385,6 +13588,17 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
+            /**
+             * Represents whether the shape is decorative or not.
+                        
+                        Decorative objects add visual interest but aren't informative (e.g. stylistic borders).
+                        People using screen readers will hear these are decorative so they know they aren't missing any important information.
+             *
+             * @remarks
+             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDecorative?: boolean;
             /**
              * The distance, in points, from the left side of the shape to the left side of the slide.
              *
