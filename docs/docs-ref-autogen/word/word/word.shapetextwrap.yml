@@ -27,7 +27,7 @@ remarks: >-
     await context.sync();
 
     if (shape.isNullObject) {
-      console.log("No shapes with text boxes found in main document.");
+      console.log("No shapes with text boxes found in the main document.");
       return;
     }
 

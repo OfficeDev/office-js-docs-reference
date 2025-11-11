@@ -255,6 +255,30 @@ properties:
       return:
         type: string
 methods:
+  - name: getActiveSlideOrNullObject()
+    uid: powerpoint!PowerPoint.Presentation#getActiveSlideOrNullObject:member(1)
+    package: powerpoint!
+    fullName: getActiveSlideOrNullObject()
+    summary: >-
+      Returns the current active
+      [PowerPoint.Slide](xref:powerpoint!PowerPoint.Slide:class) that is visible
+      in the editing area. If there's no active slide, an object with an
+      `isNullObject` property set to `true` is returned. For further
+      information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getActiveSlideOrNullObject(): PowerPoint.Slide;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Slide:class" />
+        description: ''
   - name: getSelectedShapes()
     uid: powerpoint!PowerPoint.Presentation#getSelectedShapes:member(1)
     package: powerpoint!
