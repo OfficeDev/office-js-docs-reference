@@ -8256,7 +8256,7 @@ office,OfficeExtension.UpdateOptions,N/A,Interface,Excellent,false
 office,OfficeExtension.UpdateOptions,"throwOnReadOnly",Property,Excellent,false
 office,N/A,N/A,Package,Missing,false
 office,N/A,"Office.initialize(reason)",Method,Excellent,true
-office,N/A,"Office.isSetSupported(name, minVersion)",Method,Great,false
+office,N/A,"Office.isSetSupported(name, minVersion)",Method,Excellent,false
 office,N/A,"Office.onReady(callback)",Method,Excellent,true
 office,N/A,"Office.select(expression, callback)",Method,Excellent,true
 office,N/A,"Office.useShortNamespace(useShortNamespace)",Method,Fine,true
@@ -10577,6 +10577,7 @@ powerpoint,PowerPoint.Presentation,"slideMasters",Property,Great,false
 powerpoint,PowerPoint.Presentation,"slides",Property,Good,false
 powerpoint,PowerPoint.Presentation,"tags",Property,Good,false
 powerpoint,PowerPoint.Presentation,"title",Property,Fine,false
+powerpoint,PowerPoint.Presentation,"getActiveSlideOrNullObject()",Method,Excellent,false
 powerpoint,PowerPoint.Presentation,"getSelectedShapes()",Method,Great,true
 powerpoint,PowerPoint.Presentation,"getSelectedSlides()",Method,Great,true
 powerpoint,PowerPoint.Presentation,"getSelectedTextRange()",Method,Excellent,true
@@ -10592,6 +10593,8 @@ powerpoint,PowerPoint.RequestContext,"application",Property,Missing,false
 powerpoint,PowerPoint.RequestContext,"presentation",Property,Missing,false
 powerpoint,PowerPoint.Shape,N/A,Class,Poor,true
 powerpoint,PowerPoint.Shape,"adjustments",Property,Excellent,false
+powerpoint,PowerPoint.Shape,"altTextDescription",Property,Fine,false
+powerpoint,PowerPoint.Shape,"altTextTitle",Property,Good,false
 powerpoint,PowerPoint.Shape,"context",Property,Excellent,false
 powerpoint,PowerPoint.Shape,"creationId",Property,Great,false
 powerpoint,PowerPoint.Shape,"customXmlParts",Property,Good,false
@@ -10599,6 +10602,7 @@ powerpoint,PowerPoint.Shape,"fill",Property,Fine,true
 powerpoint,PowerPoint.Shape,"group",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"height",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"id",Property,Poor,false
+powerpoint,PowerPoint.Shape,"isDecorative",Property,Good,false
 powerpoint,PowerPoint.Shape,"left",Property,Fine,true
 powerpoint,PowerPoint.Shape,"level",Property,Great,false
 powerpoint,PowerPoint.Shape,"lineFormat",Property,Fine,false
@@ -10755,7 +10759,7 @@ powerpoint,PowerPoint.ShapeLineFormat,"load(options)",Method,Excellent,false
 powerpoint,PowerPoint.ShapeLineFormat,"load(propertyNames)",Method,Excellent,false
 powerpoint,PowerPoint.ShapeLineFormat,"load(propertyNamesAndPaths)",Method,Excellent,false
 powerpoint,PowerPoint.ShapeLineFormat,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.ShapeLineStyle,N/A,Enum,Good,false
+powerpoint,PowerPoint.ShapeLineStyle,N/A,Enum,Good,true
 powerpoint,PowerPoint.ShapeLineStyle,"single",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeLineStyle,"thickBetweenThin",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeLineStyle,"thickThin",EnumField,Fine,false
@@ -12423,11 +12427,11 @@ word,Word.CalendarType,"western",EnumField,Fine,false
 word,Word.CalendarTypeBidirectional,N/A,Enum,Great,false
 word,Word.CalendarTypeBidirectional,"bidirectional",EnumField,Fine,false
 word,Word.CalendarTypeBidirectional,"gregorian",EnumField,Fine,false
-word,Word.Canvas,N/A,Class,Good,false
+word,Word.Canvas,N/A,Class,Good,true
 word,Word.Canvas,"context",Property,Excellent,false
 word,Word.Canvas,"id",Property,Great,false
 word,Word.Canvas,"shape",Property,Good,false
-word,Word.Canvas,"shapes",Property,Good,false
+word,Word.Canvas,"shapes",Property,Good,true
 word,Word.Canvas,"load(options)",Method,Excellent,false
 word,Word.Canvas,"load(propertyNames)",Method,Excellent,false
 word,Word.Canvas,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -16764,7 +16768,7 @@ word,Word.ReflectionType,"type6",EnumField,Fine,false
 word,Word.ReflectionType,"type7",EnumField,Fine,false
 word,Word.ReflectionType,"type8",EnumField,Fine,false
 word,Word.ReflectionType,"type9",EnumField,Fine,false
-word,Word.RelativeHorizontalPosition,N/A,Enum,Fine,false
+word,Word.RelativeHorizontalPosition,N/A,Enum,Fine,true
 word,Word.RelativeHorizontalPosition,"character",EnumField,Fine,false
 word,Word.RelativeHorizontalPosition,"column",EnumField,Fine,false
 word,Word.RelativeHorizontalPosition,"insideMargin",EnumField,Fine,false
@@ -16773,14 +16777,14 @@ word,Word.RelativeHorizontalPosition,"margin",EnumField,Fine,false
 word,Word.RelativeHorizontalPosition,"outsideMargin",EnumField,Fine,false
 word,Word.RelativeHorizontalPosition,"page",EnumField,Fine,false
 word,Word.RelativeHorizontalPosition,"rightMargin",EnumField,Fine,false
-word,Word.RelativeSize,N/A,Enum,Fine,false
+word,Word.RelativeSize,N/A,Enum,Fine,true
 word,Word.RelativeSize,"bottomMargin",EnumField,Fine,false
 word,Word.RelativeSize,"insideMargin",EnumField,Fine,false
 word,Word.RelativeSize,"margin",EnumField,Fine,false
 word,Word.RelativeSize,"outsideMargin",EnumField,Fine,false
 word,Word.RelativeSize,"page",EnumField,Fine,false
 word,Word.RelativeSize,"topMargin",EnumField,Fine,false
-word,Word.RelativeVerticalPosition,N/A,Enum,Fine,false
+word,Word.RelativeVerticalPosition,N/A,Enum,Fine,true
 word,Word.RelativeVerticalPosition,"bottomMargin",EnumField,Fine,false
 word,Word.RelativeVerticalPosition,"insideMargin",EnumField,Fine,false
 word,Word.RelativeVerticalPosition,"line",EnumField,Fine,false
@@ -17440,12 +17444,12 @@ word,Word.Shape,N/A,Class,Fine,true
 word,Word.Shape,"allowOverlap",Property,Great,false
 word,Word.Shape,"altTextDescription",Property,Excellent,false
 word,Word.Shape,"body",Property,Good,true
-word,Word.Shape,"canvas",Property,Excellent,false
+word,Word.Shape,"canvas",Property,Excellent,true
 word,Word.Shape,"context",Property,Excellent,false
 word,Word.Shape,"fill",Property,Fine,true
 word,Word.Shape,"geometricShapeType",Property,Good,true
 word,Word.Shape,"height",Property,Poor,false
-word,Word.Shape,"heightRelative",Property,Fine,false
+word,Word.Shape,"heightRelative",Property,Fine,true
 word,Word.Shape,"id",Property,Great,false
 word,Word.Shape,"isChild",Property,Fine,false
 word,Word.Shape,"left",Property,Fine,false
@@ -17454,12 +17458,12 @@ word,Word.Shape,"lockAspectRatio",Property,Great,false
 word,Word.Shape,"name",Property,Poor,false
 word,Word.Shape,"parentCanvas",Property,Good,false
 word,Word.Shape,"parentGroup",Property,Good,false
-word,Word.Shape,"relativeHorizontalPosition",Property,Fine,false
-word,Word.Shape,"relativeHorizontalSize",Property,Fine,false
-word,Word.Shape,"relativeVerticalPosition",Property,Fine,false
-word,Word.Shape,"relativeVerticalSize",Property,Fine,false
+word,Word.Shape,"relativeHorizontalPosition",Property,Fine,true
+word,Word.Shape,"relativeHorizontalSize",Property,Fine,true
+word,Word.Shape,"relativeVerticalPosition",Property,Fine,true
+word,Word.Shape,"relativeVerticalSize",Property,Fine,true
 word,Word.Shape,"rotation",Property,Great,false
-word,Word.Shape,"shapeGroup",Property,Excellent,false
+word,Word.Shape,"shapeGroup",Property,Excellent,true
 word,Word.Shape,"textFrame",Property,Fine,true
 word,Word.Shape,"textWrap",Property,Fine,true
 word,Word.Shape,"top",Property,Fine,false
@@ -17472,11 +17476,11 @@ word,Word.Shape,"delete()",Method,Fine,true
 word,Word.Shape,"load(options)",Method,Excellent,false
 word,Word.Shape,"load(propertyNames)",Method,Excellent,false
 word,Word.Shape,"load(propertyNamesAndPaths)",Method,Excellent,false
-word,Word.Shape,"moveHorizontally(distance)",Method,Fine,false
-word,Word.Shape,"moveVertically(distance)",Method,Fine,false
+word,Word.Shape,"moveHorizontally(distance)",Method,Fine,true
+word,Word.Shape,"moveVertically(distance)",Method,Fine,true
+word,Word.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Good,true
 word,Word.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Good,false
-word,Word.Shape,"scaleHeight(scaleFactor, scaleType, scaleFrom)",Method,Good,false
-word,Word.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Good,false
+word,Word.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Good,true
 word,Word.Shape,"scaleWidth(scaleFactor, scaleType, scaleFrom)",Method,Good,false
 word,Word.Shape,"select(selectMultipleShapes)",Method,Poor,true
 word,Word.Shape,"set(properties, options)",Method,Good,false
@@ -17535,7 +17539,7 @@ word,Word.ShapeGroup,N/A,Class,Good,true
 word,Word.ShapeGroup,"context",Property,Excellent,false
 word,Word.ShapeGroup,"id",Property,Great,false
 word,Word.ShapeGroup,"shape",Property,Fine,false
-word,Word.ShapeGroup,"shapes",Property,Good,false
+word,Word.ShapeGroup,"shapes",Property,Good,true
 word,Word.ShapeGroup,"load(options)",Method,Excellent,false
 word,Word.ShapeGroup,"load(propertyNames)",Method,Excellent,false
 word,Word.ShapeGroup,"load(propertyNamesAndPaths)",Method,Excellent,false
@@ -17545,11 +17549,11 @@ word,Word.ShapeGroup,"toJSON()",Method,Excellent,false
 word,Word.ShapeGroup,"track()",Method,Excellent,false
 word,Word.ShapeGroup,"ungroup()",Method,Good,true
 word,Word.ShapeGroup,"untrack()",Method,Excellent,false
-word,Word.ShapeScaleFrom,N/A,Enum,Excellent,false
+word,Word.ShapeScaleFrom,N/A,Enum,Excellent,true
 word,Word.ShapeScaleFrom,"scaleFromBottomRight",EnumField,Fine,false
 word,Word.ShapeScaleFrom,"scaleFromMiddle",EnumField,Fine,false
 word,Word.ShapeScaleFrom,"scaleFromTopLeft",EnumField,Fine,false
-word,Word.ShapeScaleType,N/A,Enum,Good,false
+word,Word.ShapeScaleType,N/A,Enum,Good,true
 word,Word.ShapeScaleType,"currentSize",EnumField,Fine,false
 word,Word.ShapeScaleType,"originalSize",EnumField,Fine,false
 word,Word.ShapeTextOrientation,N/A,Enum,Great,true

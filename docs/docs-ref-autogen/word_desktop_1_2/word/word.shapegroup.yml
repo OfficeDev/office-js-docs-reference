@@ -22,17 +22,18 @@ remarks: >-
 
 
   await Word.run(async (context) => {
-    // Groups the shapes (including text boxes) found in the document body.
+    // Groups the shapes (including text boxes and pictures) found in the document body.
     const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
       Word.ShapeType.geometricShape,
       Word.ShapeType.textBox,
+      Word.ShapeType.picture,
     ]);
     shapes.load("items");
     await context.sync();
 
     const numShapes = shapes.items.length;
     if (numShapes === 0) {
-      console.log("No shapes found in document body.");
+      console.log("No shapes found in the document body.");
       return;
     }
 
@@ -108,6 +109,39 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Moves the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
+        firstShapeGroup.moveHorizontally(-10);
+        firstShapeGroup.moveVertically(50);
+
+        console.log("Moved the first shape group.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -306,7 +340,9 @@ methods:
 
       await Word.run(async (context) => {
         // Ungroups the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.group]).getFirstOrNullObject();
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
         firstShapeGroup.load("shapeGroup/shapes");
         await context.sync();
 
@@ -316,10 +352,10 @@ methods:
         }
 
         let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to ungroup first shape group found in document body:", shapeGroup.shapes);
+        console.log("About to ungroup the first shape group found in the document body:", shapeGroup.shapes);
         shapeGroup.ungroup();
 
-        console.log("Ungrouped first shape group.");
+        console.log("Ungrouped the first shape group.");
       });
 
       ```

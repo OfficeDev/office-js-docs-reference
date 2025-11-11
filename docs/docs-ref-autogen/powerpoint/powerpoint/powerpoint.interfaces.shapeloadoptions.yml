@@ -50,6 +50,55 @@ properties:
           <xref
           uid="powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions:interface"
           />
+  - name: altTextDescription
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#altTextDescription:member
+    package: powerpoint!
+    fullName: altTextDescription
+    summary: >-
+      The alt text description of the Shape.
+
+
+      Alt text provides alternative, text-based representations of the
+      information contained in the Shape. This information is useful for people
+      with vision or cognitive impairments who may not be able to see or
+      understand the shape.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: boolean;'
+      return:
+        type: boolean
+  - name: altTextTitle
+    uid: powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#altTextTitle:member
+    package: powerpoint!
+    fullName: altTextTitle
+    summary: >-
+      The alt text title of the Shape.
+
+
+      Alt text provides alternative, text-based representations of the
+      information contained in the Shape. This information is useful for people
+      with vision or cognitive impairments who may not be able to see or
+      understand the shape. A title can be read to a person with a disability
+      and is used to determine whether they wish to hear the description of the
+      content.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle?: boolean;'
+      return:
+        type: boolean
   - name: creationId
     uid: powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#creationId:member
     package: powerpoint!
@@ -141,6 +190,28 @@ properties:
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isDecorative
+    uid: powerpoint!PowerPoint.Interfaces.ShapeLoadOptions#isDecorative:member
+    package: powerpoint!
+    fullName: isDecorative
+    summary: >-
+      Represents whether the shape is decorative or not.
+
+
+      Decorative objects add visual interest but aren't informative (e.g.
+      stylistic borders). People using screen readers will hear these are
+      decorative so they know they aren't missing any important information.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isDecorative?: boolean;'
       return:
         type: boolean
   - name: left
