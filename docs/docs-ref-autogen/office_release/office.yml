@@ -224,6 +224,10 @@ functions:
     uid: office!Office.isSetSupported:function(1)
     package: office!
     summary: >-
+      **WARNING**: This API returns inaccurate values when used on desktop
+      applications. Use `Office.context.requirements.isSetSupported` instead.
+
+
       Checks if the specified requirement set is supported by the Office
       application.
     remarks: ''

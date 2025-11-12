@@ -17679,6 +17679,7 @@ PowerPoint.ShapeLineDashStyle:enum:
       // Change the dash style for shapes of the type `line`.
       shapes.items.forEach((shape) => {
         if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
           shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
         }
       });
@@ -17701,6 +17702,7 @@ PowerPoint.ShapeLineFormat:class:
       // Change the dash style for shapes of the type `line`.
       shapes.items.forEach((shape) => {
         if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
           shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
         }
       });
@@ -17723,6 +17725,7 @@ PowerPoint.ShapeLineFormat#dashStyle:member:
       // Change the dash style for shapes of the type `line`.
       shapes.items.forEach((shape) => {
         if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
           shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
         }
       });
@@ -17790,6 +17793,7 @@ PowerPoint.ShapeType:enum:
       // Change the dash style for shapes of the type `line`.
       shapes.items.forEach((shape) => {
         if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
           shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
         }
       });
@@ -18154,6 +18158,29 @@ PowerPoint.SlideLayoutCollection#load:member(2):
           console.log("    Layout name: " + layoutsInMaster.items[j].name + " Layout ID: " + layoutsInMaster.items[j].id);
         }
       }
+    });
+PowerPoint.ShapeLineStyle:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Changes the dash style of every line in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get the type of shape for every shape in the collection.
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type");
+      await context.sync();
+
+      // Change the dash style for shapes of the type `line`.
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.line) {
+          shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
+          shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
+        }
+      });
+      await context.sync();
     });
 PowerPoint.SlideMaster:class:
   - >-
@@ -20755,7 +20782,7 @@ Word.Body#shapes:member:
           }
         });
       } else {
-        console.log("No shapes found in main document.");
+        console.log("No shapes found in the main document.");
       }
     });
 Word.Body#tables:member:
@@ -21104,6 +21131,51 @@ Word.BuiltInStyleName:enum:
       sentence.styleBuiltIn = Word.BuiltInStyleName.intenseReference;
 
       await context.sync();
+    });
+Word.Canvas:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
+
+
+    await Word.run(async (context) => {
+      // Inserts a canvas in the document.
+      const canvasShape: Word.Shape = context.document.getSelection().insertCanvas();
+      canvasShape.load();
+      await context.sync();
+
+      canvasShape.select();
+      console.log("Inserted canvas:", canvasShape);
+
+      const canvas: Word.Canvas = canvasShape.canvas;
+      canvas.load("shape,shapes");
+      await context.sync();
+
+      console.log("Canvas object:", canvas);
+    });
+Word.Canvas#shapes:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
+
+
+    await Word.run(async (context) => {
+      // Gets the first canvas found in the document body.
+      const canvasShape: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.canvas])
+        .getFirstOrNullObject();
+      canvasShape.load();
+      canvasShape.load("canvas/shapes");
+      await context.sync();
+
+      if (canvasShape.isNullObject) {
+        console.log("No canvases found in the document body.");
+        return;
+      }
+
+      console.log("First canvas found in the document body:", canvasShape);
+      console.log("Shapes associated with the first canvas:", canvasShape.canvas.shapes);
+      canvasShape.select();
     });
 Word.CellPaddingLocation:enum:
   - >-
@@ -26563,6 +26635,7 @@ Word.Paragraph#insertGeometricShape:member(1):
     await Word.run(async (context) => {
       const body: Word.Body = context.document.body;
       body.clear();
+      const lastParagraph: Word.Paragraph = body.paragraphs.getLast();
 
       // Inserts a text box.
       const textBoxOptions: Word.InsertShapeOptions = {
@@ -26571,7 +26644,7 @@ Word.Paragraph#insertGeometricShape:member(1):
         height: 100,
         width: 100,
       };
-      body.paragraphs.getLast().insertTextBox("placeholder text", textBoxOptions);
+      lastParagraph.insertTextBox("placeholder text", textBoxOptions);
 
       // Inserts a geometric shape.
       const geometricShapeOptions: Word.InsertShapeOptions = {
@@ -26579,7 +26652,17 @@ Word.Paragraph#insertGeometricShape:member(1):
         width: 120,
         left: 120,
       };
-      body.paragraphs.getLast().insertGeometricShape(Word.GeometricShapeType.star24, geometricShapeOptions);
+      lastParagraph.insertGeometricShape(Word.GeometricShapeType.star24, geometricShapeOptions);
+
+      // Inserts a picture.
+      const pictureOptions: Word.InsertShapeOptions = {
+        top: 120,
+        left: 60,
+        height: 150,
+        width: 150,
+      };
+      lastParagraph.insertPictureFromBase64(getPictureBase64(), pictureOptions);
+
       await context.sync();
     });
 Word.Paragraph#insertText:member(1):
@@ -27658,6 +27741,88 @@ Word.RangeLocation:enum:
         console.log(sentencesToTheEndOfParagraph.items[i].text);
       }
     });
+Word.RelativeHorizontalPosition:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
+      firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
+      firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
+
+      console.log("Changed the position of the first shape group.");
+    });
+Word.RelativeSize:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log(
+        "About to change the relative size of the first shape group found in the document body:",
+        shapeGroup.shapes,
+      );
+      firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+      firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+      firstShapeGroup.heightRelative = 50;
+
+      console.log("Changed the relative size of the first shape group.");
+    });
+Word.RelativeVerticalPosition:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
+      firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
+      firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
+
+      console.log("Changed the position of the first shape group.");
+    });
 Word.SaveBehavior:enum:
   - >-
     // Link to full sample:
@@ -27993,6 +28158,142 @@ Word.Shape#delete:member(1):
 
       console.log("The first text box in document was deleted.");
     });
+Word.Shape#group:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Groups the shapes (including text boxes and pictures) found in the document body.
+      const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
+        Word.ShapeType.geometricShape,
+        Word.ShapeType.textBox,
+        Word.ShapeType.picture,
+      ]);
+      shapes.load("items");
+      await context.sync();
+
+      const numShapes = shapes.items.length;
+      if (numShapes === 0) {
+        console.log("No shapes found in the document body.");
+        return;
+      }
+
+      console.log(`Number of shapes to group: ${numShapes}`);
+
+      const groupedShape: Word.Shape = shapes.group();
+      groupedShape.load("shapeGroup/shapes");
+      await context.sync();
+
+      const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
+      console.log("Shapes grouped:", shapeGroup.shapes);
+      groupedShape.select();
+    });
+Word.Shape#moveHorizontally:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Moves the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
+      firstShapeGroup.moveHorizontally(-10);
+      firstShapeGroup.moveVertically(50);
+
+      console.log("Moved the first shape group.");
+    });
+Word.Shape#moveVertically:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Moves the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
+      firstShapeGroup.moveHorizontally(-10);
+      firstShapeGroup.moveVertically(50);
+
+      console.log("Moved the first shape group.");
+    });
+Word.Shape#scaleHeight:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Scales the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
+      firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
+      firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
+
+      console.log("Scaled the first shape group.");
+    });
+Word.Shape#scaleWidth:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Scales the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
+      firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
+      firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
+
+      console.log("Scaled the first shape group.");
+    });
 Word.Shape#select:member(1):
   - >-
     // Link to full sample:
@@ -28000,17 +28301,18 @@ Word.Shape#select:member(1):
 
 
     await Word.run(async (context) => {
-      // Groups the shapes (including text boxes) found in the document body.
+      // Groups the shapes (including text boxes and pictures) found in the document body.
       const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
         Word.ShapeType.geometricShape,
         Word.ShapeType.textBox,
+        Word.ShapeType.picture,
       ]);
       shapes.load("items");
       await context.sync();
 
       const numShapes = shapes.items.length;
       if (numShapes === 0) {
-        console.log("No shapes found in document body.");
+        console.log("No shapes found in the document body.");
         return;
       }
 
@@ -28044,6 +28346,27 @@ Word.Shape#body:member:
       await context.sync();
 
       console.log("New content control properties:", newControl);
+    });
+Word.Shape#canvas:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
+
+
+    await Word.run(async (context) => {
+      // Inserts a canvas in the document.
+      const canvasShape: Word.Shape = context.document.getSelection().insertCanvas();
+      canvasShape.load();
+      await context.sync();
+
+      canvasShape.select();
+      console.log("Inserted canvas:", canvasShape);
+
+      const canvas: Word.Canvas = canvasShape.canvas;
+      canvas.load("shape,shapes");
+      await context.sync();
+
+      console.log("Canvas object:", canvas);
     });
 Word.Shape#fill:member:
   - >-
@@ -28097,6 +28420,180 @@ Word.Shape#geometricShapeType:member:
         geometricShape,
       );
     });
+Word.Shape#heightRelative:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log(
+        "About to change the relative size of the first shape group found in the document body:",
+        shapeGroup.shapes,
+      );
+      firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+      firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+      firstShapeGroup.heightRelative = 50;
+
+      console.log("Changed the relative size of the first shape group.");
+    });
+Word.Shape#relativeHorizontalPosition:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
+      firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
+      firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
+
+      console.log("Changed the position of the first shape group.");
+    });
+Word.Shape#relativeHorizontalSize:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log(
+        "About to change the relative size of the first shape group found in the document body:",
+        shapeGroup.shapes,
+      );
+      firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+      firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+      firstShapeGroup.heightRelative = 50;
+
+      console.log("Changed the relative size of the first shape group.");
+    });
+Word.Shape#relativeVerticalPosition:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
+      firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
+      firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
+
+      console.log("Changed the position of the first shape group.");
+    });
+Word.Shape#relativeVerticalSize:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log(
+        "About to change the relative size of the first shape group found in the document body:",
+        shapeGroup.shapes,
+      );
+      firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+      firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+      firstShapeGroup.heightRelative = 50;
+
+      console.log("Changed the relative size of the first shape group.");
+    });
+Word.Shape#shapeGroup:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Groups the shapes (including text boxes and pictures) found in the document body.
+      const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
+        Word.ShapeType.geometricShape,
+        Word.ShapeType.textBox,
+        Word.ShapeType.picture,
+      ]);
+      shapes.load("items");
+      await context.sync();
+
+      const numShapes = shapes.items.length;
+      if (numShapes === 0) {
+        console.log("No shapes found in the document body.");
+        return;
+      }
+
+      console.log(`Number of shapes to group: ${numShapes}`);
+
+      const groupedShape: Word.Shape = shapes.group();
+      groupedShape.load("shapeGroup/shapes");
+      await context.sync();
+
+      const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
+      console.log("Shapes grouped:", shapeGroup.shapes);
+      groupedShape.select();
+    });
 Word.Shape#textFrame:member:
   - >-
     // Link to full sample:
@@ -28110,7 +28607,7 @@ Word.Shape#textFrame:member:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -28129,7 +28626,7 @@ Word.Shape#textWrap:member:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -28157,7 +28654,7 @@ Word.Shape#type:member:
           }
         });
       } else {
-        console.log("No shapes found in main document.");
+        console.log("No shapes found in the main document.");
       }
     });
 Word.ShapeAutoSize:enum:
@@ -28173,7 +28670,7 @@ Word.ShapeAutoSize:enum:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -28206,7 +28703,7 @@ Word.ShapeCollection:class:
           }
         });
       } else {
-        console.log("No shapes found in main document.");
+        console.log("No shapes found in the main document.");
       }
     });
 Word.ShapeCollection#getByGeometricTypes:member(1):
@@ -28279,7 +28776,7 @@ Word.ShapeCollection#getFirstOrNullObject:member(1):
 
       console.log(
         shape.isNullObject
-          ? "No shapes with text boxes found in main document."
+          ? "No shapes with text boxes found in the main document."
           : `Text in first text box: ${shape.body.text}`
       );
     });
@@ -28290,17 +28787,18 @@ Word.ShapeCollection#group:member(1):
 
 
     await Word.run(async (context) => {
-      // Groups the shapes (including text boxes) found in the document body.
+      // Groups the shapes (including text boxes and pictures) found in the document body.
       const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
         Word.ShapeType.geometricShape,
         Word.ShapeType.textBox,
+        Word.ShapeType.picture,
       ]);
       shapes.load("items");
       await context.sync();
 
       const numShapes = shapes.items.length;
       if (numShapes === 0) {
-        console.log("No shapes found in document body.");
+        console.log("No shapes found in the document body.");
         return;
       }
 
@@ -28433,17 +28931,18 @@ Word.ShapeGroup:class:
 
 
     await Word.run(async (context) => {
-      // Groups the shapes (including text boxes) found in the document body.
+      // Groups the shapes (including text boxes and pictures) found in the document body.
       const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
         Word.ShapeType.geometricShape,
         Word.ShapeType.textBox,
+        Word.ShapeType.picture,
       ]);
       shapes.load("items");
       await context.sync();
 
       const numShapes = shapes.items.length;
       if (numShapes === 0) {
-        console.log("No shapes found in document body.");
+        console.log("No shapes found in the document body.");
         return;
       }
 
@@ -28465,7 +28964,9 @@ Word.ShapeGroup#ungroup:member(1):
 
     await Word.run(async (context) => {
       // Ungroups the first set of grouped shapes (including text boxes) found in the document body.
-      const firstShapeGroup: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.group]).getFirstOrNullObject();
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
       firstShapeGroup.load("shapeGroup/shapes");
       await context.sync();
 
@@ -28475,10 +28976,88 @@ Word.ShapeGroup#ungroup:member(1):
       }
 
       let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-      console.log("About to ungroup first shape group found in document body:", shapeGroup.shapes);
+      console.log("About to ungroup the first shape group found in the document body:", shapeGroup.shapes);
       shapeGroup.ungroup();
 
-      console.log("Ungrouped first shape group.");
+      console.log("Ungrouped the first shape group.");
+    });
+Word.ShapeGroup#shapes:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Moves the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
+      firstShapeGroup.moveHorizontally(-10);
+      firstShapeGroup.moveVertically(50);
+
+      console.log("Moved the first shape group.");
+    });
+Word.ShapeScaleFrom:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Scales the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
+      firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
+      firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
+
+      console.log("Scaled the first shape group.");
+    });
+Word.ShapeScaleType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+    await Word.run(async (context) => {
+      // Scales the first set of grouped shapes (including text boxes) found in the document body.
+      const firstShapeGroup: Word.Shape = context.document.body.shapes
+        .getByTypes([Word.ShapeType.group])
+        .getFirstOrNullObject();
+      firstShapeGroup.load("shapeGroup/shapes");
+      await context.sync();
+
+      if (firstShapeGroup.isNullObject) {
+        console.log("No shape groups found in the document body.");
+        return;
+      }
+
+      let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+      console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
+      firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
+      firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
+
+      console.log("Scaled the first shape group.");
     });
 Word.ShapeTextOrientation:enum:
   - >-
@@ -28493,7 +29072,7 @@ Word.ShapeTextOrientation:enum:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -28517,7 +29096,7 @@ Word.ShapeTextVerticalAlignment:enum:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -28541,7 +29120,7 @@ Word.ShapeTextWrap:class:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -28669,7 +29248,7 @@ Word.ShapeType:enum:
           }
         });
       } else {
-        console.log("No shapes found in main document.");
+        console.log("No shapes found in the main document.");
       }
     });
 Word.Style:class:
@@ -29522,7 +30101,7 @@ Word.TextFrame:class:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -29541,7 +30120,7 @@ Word.TextFrame#autoSizeSetting:member:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -29565,7 +30144,7 @@ Word.TextFrame#orientation:member:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 
@@ -29589,7 +30168,7 @@ Word.TextFrame#verticalAlignment:member:
       await context.sync();
 
       if (shape.isNullObject) {
-        console.log("No shapes with text boxes found in main document.");
+        console.log("No shapes with text boxes found in the main document.");
         return;
       }
 

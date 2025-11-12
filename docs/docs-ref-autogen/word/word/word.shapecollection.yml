@@ -37,7 +37,7 @@ remarks: >-
         }
       });
     } else {
-      console.log("No shapes found in main document.");
+      console.log("No shapes found in the main document.");
     }
   });
 
@@ -335,7 +335,7 @@ methods:
 
         console.log(
           shape.isNullObject
-            ? "No shapes with text boxes found in main document."
+            ? "No shapes with text boxes found in the main document."
             : `Text in first text box: ${shape.body.text}`
         );
       });
@@ -371,17 +371,18 @@ methods:
 
 
       await Word.run(async (context) => {
-        // Groups the shapes (including text boxes) found in the document body.
+        // Groups the shapes (including text boxes and pictures) found in the document body.
         const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
           Word.ShapeType.geometricShape,
           Word.ShapeType.textBox,
+          Word.ShapeType.picture,
         ]);
         shapes.load("items");
         await context.sync();
 
         const numShapes = shapes.items.length;
         if (numShapes === 0) {
-          console.log("No shapes found in document body.");
+          console.log("No shapes found in the document body.");
           return;
         }
 
