@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 11/03/2025
+ms.date: 11/13/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -68,6 +68,20 @@ Added a new object that represents the all-day event property of an appointment 
 Added a new property that represents if an appointment is an all-day event.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Customize the Smart Alerts dialog message using Markdown in Outlook on Mac
+
+#### [errorMessageMarkdown](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-smartalertseventcompletedoptions-errormessagemarkdown-member) property of the `event.completed` method
+
+Updated the `errorMessageMarkdown` property of the `event.completed` method for support in Outlook on Mac.
+
+**Available in**: Outlook on Mac
 
 <br>
 
