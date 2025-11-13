@@ -10118,7 +10118,7 @@ powerpoint,PowerPoint.Borders,"load(options)",Method,Excellent,false
 powerpoint,PowerPoint.Borders,"load(propertyNames)",Method,Excellent,false
 powerpoint,PowerPoint.Borders,"load(propertyNamesAndPaths)",Method,Excellent,false
 powerpoint,PowerPoint.Borders,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.BulletFormat,N/A,Class,Fine,false
+powerpoint,PowerPoint.BulletFormat,N/A,Class,Fine,true
 powerpoint,PowerPoint.BulletFormat,"context",Property,Excellent,false
 powerpoint,PowerPoint.BulletFormat,"style",Property,Excellent,false
 powerpoint,PowerPoint.BulletFormat,"type",Property,Excellent,false
@@ -10520,7 +10520,7 @@ powerpoint,PowerPoint.PageSetup,"load(options)",Method,Excellent,false
 powerpoint,PowerPoint.PageSetup,"load(propertyNames)",Method,Excellent,false
 powerpoint,PowerPoint.PageSetup,"load(propertyNamesAndPaths)",Method,Excellent,false
 powerpoint,PowerPoint.PageSetup,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.ParagraphFormat,N/A,Class,Fine,false
+powerpoint,PowerPoint.ParagraphFormat,N/A,Class,Fine,true
 powerpoint,PowerPoint.ParagraphFormat,"bulletFormat",Property,Fine,false
 powerpoint,PowerPoint.ParagraphFormat,"context",Property,Excellent,false
 powerpoint,PowerPoint.ParagraphFormat,"horizontalAlignment",Property,Excellent,false
@@ -10639,7 +10639,7 @@ powerpoint,PowerPoint.ShapeAddOptions,"height",Property,Excellent,false
 powerpoint,PowerPoint.ShapeAddOptions,"left",Property,Excellent,false
 powerpoint,PowerPoint.ShapeAddOptions,"top",Property,Excellent,false
 powerpoint,PowerPoint.ShapeAddOptions,"width",Property,Excellent,false
-powerpoint,PowerPoint.ShapeAutoSize,N/A,Enum,Poor,false
+powerpoint,PowerPoint.ShapeAutoSize,N/A,Enum,Poor,true
 powerpoint,PowerPoint.ShapeAutoSize,"autoSizeMixed",EnumField,Good,false
 powerpoint,PowerPoint.ShapeAutoSize,"autoSizeNone",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeAutoSize,"autoSizeShapeToFitText",EnumField,Fine,false
@@ -10666,7 +10666,7 @@ powerpoint,PowerPoint.ShapeFill,N/A,Class,Fine,true
 powerpoint,PowerPoint.ShapeFill,"context",Property,Excellent,false
 powerpoint,PowerPoint.ShapeFill,"foregroundColor",Property,Fine,true
 powerpoint,PowerPoint.ShapeFill,"transparency",Property,Excellent,true
-powerpoint,PowerPoint.ShapeFill,"type",Property,Good,false
+powerpoint,PowerPoint.ShapeFill,"type",Property,Good,true
 powerpoint,PowerPoint.ShapeFill,"clear()",Method,Poor,false
 powerpoint,PowerPoint.ShapeFill,"load(options)",Method,Excellent,false
 powerpoint,PowerPoint.ShapeFill,"load(propertyNames)",Method,Excellent,false
@@ -10674,7 +10674,7 @@ powerpoint,PowerPoint.ShapeFill,"load(propertyNamesAndPaths)",Method,Excellent,f
 powerpoint,PowerPoint.ShapeFill,"setImage(base64EncodedImage)",Method,Fine,true
 powerpoint,PowerPoint.ShapeFill,"setSolidColor(color)",Method,Good,true
 powerpoint,PowerPoint.ShapeFill,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.ShapeFillType,N/A,Enum,Good,false
+powerpoint,PowerPoint.ShapeFillType,N/A,Enum,Good,true
 powerpoint,PowerPoint.ShapeFillType,"gradient",EnumField,Great,false
 powerpoint,PowerPoint.ShapeFillType,"noFill",EnumField,Great,false
 powerpoint,PowerPoint.ShapeFillType,"pattern",EnumField,Great,false
@@ -10694,12 +10694,12 @@ powerpoint,PowerPoint.ShapeFont,"smallCaps",Property,Excellent,false
 powerpoint,PowerPoint.ShapeFont,"strikethrough",Property,Excellent,false
 powerpoint,PowerPoint.ShapeFont,"subscript",Property,Excellent,false
 powerpoint,PowerPoint.ShapeFont,"superscript",Property,Excellent,false
-powerpoint,PowerPoint.ShapeFont,"underline",Property,Excellent,false
+powerpoint,PowerPoint.ShapeFont,"underline",Property,Excellent,true
 powerpoint,PowerPoint.ShapeFont,"load(options)",Method,Excellent,false
 powerpoint,PowerPoint.ShapeFont,"load(propertyNames)",Method,Excellent,false
 powerpoint,PowerPoint.ShapeFont,"load(propertyNamesAndPaths)",Method,Excellent,false
 powerpoint,PowerPoint.ShapeFont,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.ShapeFontUnderlineStyle,N/A,Enum,Poor,false
+powerpoint,PowerPoint.ShapeFontUnderlineStyle,N/A,Enum,Poor,true
 powerpoint,PowerPoint.ShapeFontUnderlineStyle,"dash",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeFontUnderlineStyle,"dashHeavy",EnumField,Fine,false
 powerpoint,PowerPoint.ShapeFontUnderlineStyle,"dashLong",EnumField,Fine,false
@@ -11338,7 +11338,7 @@ powerpoint,PowerPoint.TagCollection,"load(propertyNames)",Method,Excellent,false
 powerpoint,PowerPoint.TagCollection,"load(propertyNamesAndPaths)",Method,Excellent,false
 powerpoint,PowerPoint.TagCollection,"toJSON()",Method,Excellent,false
 powerpoint,PowerPoint.TextFrame,N/A,Class,Fine,true
-powerpoint,PowerPoint.TextFrame,"autoSizeSetting",Property,Fine,false
+powerpoint,PowerPoint.TextFrame,"autoSizeSetting",Property,Fine,true
 powerpoint,PowerPoint.TextFrame,"bottomMargin",Property,Fine,false
 powerpoint,PowerPoint.TextFrame,"context",Property,Excellent,false
 powerpoint,PowerPoint.TextFrame,"hasText",Property,Good,false
@@ -11359,7 +11359,7 @@ powerpoint,PowerPoint.TextRange,"context",Property,Excellent,false
 powerpoint,PowerPoint.TextRange,"font",Property,Excellent,true
 powerpoint,PowerPoint.TextRange,"hyperlinks",Property,Good,false
 powerpoint,PowerPoint.TextRange,"length",Property,Excellent,false
-powerpoint,PowerPoint.TextRange,"paragraphFormat",Property,Fine,false
+powerpoint,PowerPoint.TextRange,"paragraphFormat",Property,Fine,true
 powerpoint,PowerPoint.TextRange,"start",Property,Excellent,false
 powerpoint,PowerPoint.TextRange,"text",Property,Fine,false
 powerpoint,PowerPoint.TextRange,"getParentTextFrame()",Method,Great,false

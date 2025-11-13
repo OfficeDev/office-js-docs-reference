@@ -304,14 +304,18 @@ properties:
       The maximum number of recipients returned varies per Outlook client.
 
 
-      - classic Windows: 500 recipients
+      - Windows (classic): 500 recipients
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
 
       - Android, classic Mac UI, iOS: 100 recipients
 
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients
-      (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
 
 
       - New Mac UI: No limit
@@ -1396,14 +1400,18 @@ properties:
       The maximum number of recipients returned varies per Outlook client.
 
 
-      - classic Windows: 500 recipients
+      - Windows (classic): 500 recipients
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
 
       - Android, classic Mac UI, iOS: 100 recipients
 
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients
-      (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
 
 
       - New Mac UI: No limit

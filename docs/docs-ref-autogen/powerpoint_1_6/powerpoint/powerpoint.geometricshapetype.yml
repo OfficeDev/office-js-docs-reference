@@ -31,7 +31,7 @@ remarks: >-
       left: 100,
       top: 100,
       height: 150,
-      width: 150
+      width: 150,
     };
     const hexagon: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, shapeOptions);
     hexagon.name = "Hexagon";

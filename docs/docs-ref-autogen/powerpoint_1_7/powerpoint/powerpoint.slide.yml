@@ -336,7 +336,7 @@ methods:
         shape2.load("id");
         await context.sync();
 
-        console.log(`IDs: ${shape1.id}, ${shape2.id}`)
+        console.log(`IDs: ${shape1.id}, ${shape2.id}`);
         slide1.setSelectedShapes([shape1.id, shape2.id]);
         await context.sync();
       });
