@@ -81,13 +81,13 @@ Added a new property that represents if an appointment is an all-day event.
 
 Added an enum to specify the status of tokens in an organization.
 
-**Available in**: Outlook on the web, on Windows (new and classic), and on mobile devices
+**Available in**: Outlook on the web and on Windows (new and classic)
 
 #### [Office.context.mailbox.diagnostics.ews.getTokenStatusAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-ews-gettokenstatusasync-member(1))
 
 Added a method to get the status of EWS callback tokens in an organization.
 
-**Available in**: Outlook on the web, on Windows (new and classic), and on mobile devices
+**Available in**: Outlook on the web and on Windows (new and classic)
 
 <br>
 
