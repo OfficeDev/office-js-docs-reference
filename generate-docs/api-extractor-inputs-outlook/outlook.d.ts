@@ -2948,7 +2948,9 @@ export declare namespace Office {
         *
         * - Web browser, new Mac UI, Android: No limit
         *
-        * - Windows: 500 members
+        * - Windows (new and classic): 500 members
+        *
+        * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 members
         *
         * - Classic Mac UI: 100 members
         *
@@ -2986,6 +2988,8 @@ export declare namespace Office {
         * - Web browser, new Mac UI, Android: No limit
         *
         * - Windows: 500 members
+        *
+        * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 members
         *
         * - Classic Mac UI: 100 members
         *
@@ -3273,7 +3277,9 @@ export declare namespace Office {
          * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each optional attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
          *
-         * - Windows: 500 attendees
+         * - Windows (new and classic): 500 attendees
+         *
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 attendees
          *
          * - Android, classic Mac UI, iOS: 100 attendees
          *
@@ -3321,7 +3327,9 @@ export declare namespace Office {
          * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each required attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
          *
-         * - Windows: 500 attendees
+         * - Windows (new and classic): 500 attendees
+         *
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
          *
          * - Android, classic Mac UI, iOS: 100 attendees
          *
@@ -7864,9 +7872,11 @@ export declare namespace Office {
          * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - classic Windows: 500 recipients
+         * - Windows (classic): 500 recipients
          *
-         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
+         *
+         * - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
          *
          * @remarks
          *
@@ -8188,9 +8198,11 @@ export declare namespace Office {
          * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - classic Windows: 500 recipients
+         * - Windows (classic): 500 recipients
          *
-         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
+         *
+         * - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
          *
          * @remarks
          *
@@ -12141,11 +12153,13 @@ export declare namespace Office {
          * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - classic Windows: 500 recipients
+         * - Windows (classic): 500 recipients
+         *
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
          *
          * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+         * - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
          *
          * - New Mac UI: No limit
          *
@@ -12469,11 +12483,13 @@ export declare namespace Office {
          * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - classic Windows: 500 recipients
+         * - Windows (classic): 500 recipients
+         *
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
          *
          * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients (expanded view)
+         * - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
          *
          * - New Mac UI: No limit
          *
@@ -13774,6 +13790,10 @@ export declare namespace Office {
          * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
+         * - In classic Outlook on Windows, a maximum of 1,000 recipients in a target field is available for preview. To test this increased limit, you must install Version 2511 (Build 19426.20000) or later.
+         * Then, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748 | Microsoft 365 Insider program} and select the
+         * **Beta Channel** option to access Office beta builds.
+         *
          * - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.
          *
@@ -13812,6 +13832,10 @@ export declare namespace Office {
          * - In Outlook on the web, on Windows, and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
+         * - In classic Outlook on Windows, a maximum of 1,000 recipients in a target field is available for preview. To test this increased limit, you must install Version 2511 (Build 19426.20000) or later.
+         * Then, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748 | Microsoft 365 Insider program} and select the
+         * **Beta Channel** option to access Office beta builds.
+         *
          * - In Outlook on Android and on iOS, the `addAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `addAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.
          *
@@ -13845,6 +13869,8 @@ export declare namespace Office {
          * The maximum number of recipients returned by this method varies per Outlook client.
          *
          * - Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), web browser, Mac (classic UI): 500 recipients
+         *
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
          *
          * - Android, iOS: 100 recipients
          *
@@ -13900,6 +13926,8 @@ export declare namespace Office {
          *
          * - Windows ({@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new} and classic), web browser, Mac (classic UI): 500 recipients
          *
+         * - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
+         *
          * - Android, iOS: 100 recipients
          *
          * - Mac (new UI): No limit
@@ -13954,6 +13982,10 @@ export declare namespace Office {
          * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
+         * - In classic Outlook on Windows, a maximum of 1,000 recipients in a target field is available for preview. To test this increased limit, you must install Version 2511 (Build 19426.20000) or later.
+         * Then, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748 | Microsoft 365 Insider program} and select the
+         * **Beta Channel** option to access Office beta builds.
+         *
          * - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.
          *
@@ -13995,6 +14027,10 @@ export declare namespace Office {
          *
          * - In Outlook on the web, on Windows (new and classic), and on Mac (classic UI), you can have a maximum of 500 recipients in a target field.
          * If you need to add more recipients after setting 100 recipients, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+         *
+         * - In classic Outlook on Windows, a maximum of 1,000 recipients in a target field is available for preview. To test this increased limit, you must install Version 2511 (Build 19426.20000) or later.
+         * Then, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748 | Microsoft 365 Insider program} and select the
+         * **Beta Channel** option to access Office beta builds.
          *
          * - In Outlook on Android and on iOS, the `setAsync` method is supported starting in Version 4.2530.0. On these mobile clients, the `setAsync` method isn't
          * supported when a user replies from the the reply field at the bottom of a message.

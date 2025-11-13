@@ -183,11 +183,15 @@ properties:
       The maximum number of recipients returned varies per Outlook client.
 
 
-      - classic Windows: 500 recipients
+      - Windows (classic): 500 recipients
 
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients
-      (expanded view)
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
+
+
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -807,11 +811,15 @@ properties:
       The maximum number of recipients returned varies per Outlook client.
 
 
-      - classic Windows: 500 recipients
+      - Windows (classic): 500 recipients
 
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients
-      (expanded view)
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
+
+
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
