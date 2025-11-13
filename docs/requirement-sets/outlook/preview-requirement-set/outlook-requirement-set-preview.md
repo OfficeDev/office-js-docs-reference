@@ -119,6 +119,20 @@ Added an object that represents the body of a decrypted message.
 
 ---
 
+### Increase the number of recipients in a target field
+
+### [Office.Recipients](/javascript/api/outlook/office.recipients?view=outlook-js-preview&preserve-view=true)
+
+Updated the Recipients APIs to increase the maximum number of recipients in a target field to 1,000.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
 ### Store even more custom data for a mail item during an Outlook session
 
 #### [Office.context.mailbox.item.sessionData.setAsync](/javascript/api/outlook/office.sessiondata?view=outlook-js-preview&preserve-view=true#outlook-office-sessiondata-setasync-member)
