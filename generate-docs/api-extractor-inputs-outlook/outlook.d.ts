@@ -1490,6 +1490,34 @@ export declare namespace Office {
             Subject = "subject"
         }
         /**
+         * Specifies the status of Exchange Web Services (EWS) callback tokens or REST API tokens in an organization.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: Legacy Exchange Online user identity tokens and callback tokens are no longer supported and are turned off across all Microsoft 365 tenants.
+         * If an Outlook add-in requires delegated user access or user identity, we recommend using MSAL (Microsoft Authentication Library) and nested app authentication (NAA).
+         * Exchange user identity tokens are still supported for Exchange on-premises.
+         *
+         * @beta
+         */
+        enum TokenStatus {
+            /**
+             * EWS callback tokens or REST API tokens are turned off in the organization.
+             */
+            Disabled = 0,
+            /**
+             * EWS callback tokens or REST API tokens are supported in the organization.
+             */
+            Enabled = 1,
+            /**
+             * The mailbox is hosted in an Exchange Online environment where EWS tokens are turned off and are no longer supported.
+             */
+            Removed = 2
+        }
+        /**
          * Specifies the week of the month.
          *
          * @remarks
@@ -5691,7 +5719,7 @@ export declare namespace Office {
      */
     export interface Diagnostics {
         /**
-         * Gets an object to identify whether Exchange Web Services (EWS) callback tokens are available in a user's organization.
+         * Gets an object to identify whether Exchange Web Services (EWS) callback tokens are supported in an organization.
          *
          * @remarks
          *
@@ -5701,7 +5729,11 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Important**: Legacy Exchange Online user identity tokens and callback tokens are no longer supported and are turned off across all Microsoft 365 tenants.
+         * **Important**:
+         *
+         * - The `ews` property is available for preview in Outlook on the web and on Windows (new and classic (Version 2510, Build 19328.20000)).
+         *
+         * - Legacy Exchange Online user identity tokens and callback tokens are no longer supported and are turned off across all Microsoft 365 tenants.
          * If an Outlook add-in requires delegated user access or user identity, we recommend using MSAL (Microsoft Authentication Library) and nested app authentication (NAA).
          * Exchange user identity tokens are still supported for Exchange on-premises.
          *
@@ -6470,7 +6502,7 @@ export declare namespace Office {
         urls: string[];
     }
     /**
-     * Provides methods to determine if Exchange Web Services (EWS) callback tokens are available in a user's organization.
+     * Provides methods to determine if Exchange Web Services (EWS) callback tokens are supported in an organization.
      *
      * @remarks
      *
@@ -6488,7 +6520,7 @@ export declare namespace Office {
      */
     export interface Ews {
         /**
-         * Gets the status of EWS callback tokens in a user's organization.
+         * Gets the status of EWS callback tokens in an organization.
          *
          * @remarks
          *
@@ -6497,18 +6529,27 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - The `getTokenStatusAsync` method is available for preview in Outlook on the web and on Windows (new and classic (Version 2510, Build 19328.20000)).
+         *
+         * - The `getTokenStatusAsync` method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+         *
+         * - Calling the `getTokenStatusAsync` method in compose mode requires you to have saved the item. The `saveAsync` method requires a minimum permission level of **read/write item**.
          *
          * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Any data you want to access in the callback function.
-         *                  `isRest`: Identifies whether the token needed will be used for EWS or Outlook REST APIs. By default, the `isRest` property is set to `false`.
+         *                  `isRest`: Identifies whether the token needed is for EWS or Outlook REST APIs. By default, the `isRest` property is set to `false`.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult.
-         *                   The `asyncResult.value` property returns the token status, which can be `Enabled`, `Disabled`, or `Removed`. A `Removed` status indicates that the
-         *                   user's mailbox is hosted in an Exchange Online environment where legacy Exchange tokens are turned off and no longer supported.
+         *                   The `asyncResult.value` property returns the token status, which can be `Office.MailboxEnums.TokenStatus.Enabled`, `Office.MailboxEnums.TokenStatus.Disabled`, or
+         *                   `Office.MailboxEnums.TokenStatus.Removed`. A `Office.MailboxEnums.TokenStatus.Removed` status indicates that the mailbox is hosted in an Exchange Online environment
+         *                   where legacy Exchange tokens are turned off and are no longer supported.
          *
          * @beta
          */
-        getTokenStatusAsync(options: CommonAPI.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getTokenStatusAsync(options: CommonAPI.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult: CommonAPI.AsyncResult<MailboxEnums.TokenStatus>) => void): void;
         /**
-         * Gets the status of EWS callback tokens in a user's organization.
+         * Gets the status of EWS callback tokens in an organization.
          *
          * @remarks
          *
@@ -6518,13 +6559,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - The `getTokenStatusAsync` method is available for preview in Outlook on the web and on Windows (new and classic (Version 2510, Build 19328.20000)).
+         *
+         * - The `getTokenStatusAsync` method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+         *
+         * - Calling the `getTokenStatusAsync` method in compose mode requires you to have saved the item. The `saveAsync` method requires a minimum permission level of **read/write item**.
+         *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult.
-         *                   The `asyncResult.value` property returns the token status, which can be `Enabled`, `Disabled`, or `Removed`. A `Removed` status indicates that the
-         *                   user's mailbox is hosted in an Exchange Online environment where legacy Exchange tokens are turned off and no longer supported.
+         *                   The `asyncResult.value` property returns the token status, which can be `Office.MailboxEnums.TokenStatus.Enabled`, `Office.MailboxEnums.TokenStatus.Disabled`, or
+         *                   `Office.MailboxEnums.TokenStatus.Removed`. A `Office.MailboxEnums.TokenStatus.Removed` status indicates that the mailbox is hosted in an Exchange Online environment
+         *                   where legacy Exchange tokens are turned off and are no longer supported.
          *
          * @beta
          */
-        getTokenStatusAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getTokenStatusAsync(callback: (asyncResult: CommonAPI.AsyncResult<MailboxEnums.TokenStatus>) => void): void;
     }
     /**
      * Provides a method to get the from value of a message in an Outlook add-in.
@@ -9686,7 +9736,8 @@ export declare namespace Office {
          * add-ins to use {@link https://learn.microsoft.com/outlook/rest#outlook-rest-api-via-microsoft-graph | Microsoft Graph}. For guidance, see
          * {@link https://learn.microsoft.com/outlook/rest/compare-graph | Compare Microsoft Graph and Outlook REST API endpoints}.
          *
-         * - To determine if REST or EWS tokens are available in a user's organization, call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`.
+         * - To determine if REST or EWS tokens are available in an organization, call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`.
+         * The `getTokenStatusAsync` method is available for preview in Outlook on the web and on Windows (new and classic (Version 2510, Build 19328.20000)).
          *
          * - This method isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
          *
@@ -9792,7 +9843,8 @@ export declare namespace Office {
          * attachment or item. For example, you can create a remote service to
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
-         * - To determine if REST or EWS tokens are available in a user's organization, call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`.
+         * - To determine if REST or EWS tokens are available in an organization, call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`.
+         * The `getTokenStatusAsync` method is available for preview in Outlook on the web and on Windows (new and classic (Version 2510, Build 19328.20000)).
          *
          * - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
          *

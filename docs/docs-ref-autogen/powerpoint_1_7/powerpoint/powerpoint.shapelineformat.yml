@@ -32,6 +32,7 @@ remarks: >-
     // Change the dash style for shapes of the type `line`.
     shapes.items.forEach((shape) => {
       if (shape.type === PowerPoint.ShapeType.line) {
+        shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
         shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
       }
     });
@@ -112,6 +113,7 @@ properties:
         // Change the dash style for shapes of the type `line`.
         shapes.items.forEach((shape) => {
           if (shape.type === PowerPoint.ShapeType.line) {
+            shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
             shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
           }
         });

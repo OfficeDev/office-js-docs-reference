@@ -22,10 +22,11 @@ remarks: >-
 
 
   await Word.run(async (context) => {
-    // Groups the shapes (including text boxes) found in the document body.
+    // Groups the shapes (including text boxes and pictures) found in the document body.
     const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
       Word.ShapeType.geometricShape,
       Word.ShapeType.textBox,
+      Word.ShapeType.picture,
     ]);
     shapes.load("items");
     await context.sync();

@@ -121,4 +121,5 @@ enums:
   - outlook!Office.MailboxEnums.SaveLocation:enum
   - outlook!Office.MailboxEnums.SendModeOverride:enum
   - outlook!Office.MailboxEnums.SourceProperty:enum
+  - outlook!Office.MailboxEnums.TokenStatus:enum
   - outlook!Office.MailboxEnums.WeekNumber:enum

@@ -90,7 +90,7 @@ properties:
         const minNewShapeHeight = 50;
         for (let i = 0; i < 20; i++) {
           const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(
-            PowerPoint.GeometricShapeType.rectangle
+            PowerPoint.GeometricShapeType.rectangle,
           );
           rectangle.height = getRandomBetween(minNewShapeWidth, maxNewShapeWidth);
           rectangle.width = getRandomBetween(minNewShapeHeight, maxNewShapeHeight);
@@ -173,6 +173,33 @@ properties:
       \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Changes the selected shapes fill color to red.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items/fill/type");
+        await context.sync();
+        shapes.items.map((shape) => {
+          const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+          console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
+          shape.fill.setSolidColor("red");
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -309,9 +336,11 @@ methods:
       await PowerPoint.run(async (context) => {
         const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
-        shapes.load("items");
+        shapes.load("items/fill/type");
         await context.sync();
         shapes.items.map((shape) => {
+          const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+          console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
           shape.fill.setSolidColor("red");
         });
         await context.sync();

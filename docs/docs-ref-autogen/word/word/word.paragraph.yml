@@ -2145,6 +2145,7 @@ methods:
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         body.clear();
+        const lastParagraph: Word.Paragraph = body.paragraphs.getLast();
 
         // Inserts a text box.
         const textBoxOptions: Word.InsertShapeOptions = {
@@ -2153,7 +2154,7 @@ methods:
           height: 100,
           width: 100,
         };
-        body.paragraphs.getLast().insertTextBox("placeholder text", textBoxOptions);
+        lastParagraph.insertTextBox("placeholder text", textBoxOptions);
 
         // Inserts a geometric shape.
         const geometricShapeOptions: Word.InsertShapeOptions = {
@@ -2161,7 +2162,17 @@ methods:
           width: 120,
           left: 120,
         };
-        body.paragraphs.getLast().insertGeometricShape(Word.GeometricShapeType.star24, geometricShapeOptions);
+        lastParagraph.insertGeometricShape(Word.GeometricShapeType.star24, geometricShapeOptions);
+
+        // Inserts a picture.
+        const pictureOptions: Word.InsertShapeOptions = {
+          top: 120,
+          left: 60,
+          height: 150,
+          width: 150,
+        };
+        lastParagraph.insertPictureFromBase64(getPictureBase64(), pictureOptions);
+
         await context.sync();
       });
 

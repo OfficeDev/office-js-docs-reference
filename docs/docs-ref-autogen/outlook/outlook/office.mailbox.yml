@@ -2219,9 +2219,11 @@ methods:
       -->.
 
 
-      - To determine if REST or EWS tokens are available in a user's
-      organization, call
-      `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`<!-- -->.
+      - To determine if REST or EWS tokens are available in an organization,
+      call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`<!-- -->.
+      The `getTokenStatusAsync` method is available for preview in Outlook on
+      the web and on Windows (new and classic (Version 2510, Build
+      19328.20000)).
 
 
       - This method isn't supported if you load an add-in in an Outlook.com or
@@ -2433,9 +2435,11 @@ methods:
       -->.
 
 
-      - To determine if REST or EWS tokens are available in a user's
-      organization, call
-      `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`<!-- -->.
+      - To determine if REST or EWS tokens are available in an organization,
+      call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`<!-- -->.
+      The `getTokenStatusAsync` method is available for preview in Outlook on
+      the web and on Windows (new and classic (Version 2510, Build
+      19328.20000)).
 
 
       - Calling the `getCallbackTokenAsync` method in read mode requires a

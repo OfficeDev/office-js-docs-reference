@@ -34,7 +34,7 @@ remarks: >-
         }
       });
     } else {
-      console.log("No shapes found in main document.");
+      console.log("No shapes found in the main document.");
     }
   });
 

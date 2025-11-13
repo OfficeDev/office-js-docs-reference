@@ -182,9 +182,11 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
-        shapes.load("items");
+        shapes.load("items/fill/type");
         await context.sync();
         shapes.items.map((shape) => {
+          const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+          console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
           shape.fill.setSolidColor("red");
         });
         await context.sync();

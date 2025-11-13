@@ -36,7 +36,10 @@ remarks: >-
     }
 
     let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-    console.log("About to change the relative size of the first shape group found in the document body:", shapeGroup.shapes);
+    console.log(
+      "About to change the relative size of the first shape group found in the document body:",
+      shapeGroup.shapes,
+    );
     firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
     firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
     firstShapeGroup.heightRelative = 50;

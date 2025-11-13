@@ -40,15 +40,17 @@ remarks: >-
   await PowerPoint.run(async (context) => {
     const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
-        left: 100,
-        top: 400,
-        height: 50,
-        width: 150
-      });
+      left: 100,
+      top: 400,
+      height: 50,
+      width: 150,
+    });
     braces.name = "Braces";
     braces.textFrame.textRange.text = "Shape text";
     braces.textFrame.textRange.font.color = "purple";
+    braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
     braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
+    braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
 
     return context.sync();
   });

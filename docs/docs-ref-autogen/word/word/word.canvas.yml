@@ -10,6 +10,34 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
+
+
+  await Word.run(async (context) => {
+    // Inserts a canvas in the document.
+    const canvasShape: Word.Shape = context.document.getSelection().insertCanvas();
+    canvasShape.load();
+    await context.sync();
+
+    canvasShape.select();
+    console.log("Inserted canvas:", canvasShape);
+
+    const canvas: Word.Canvas = canvasShape.canvas;
+    canvas.load("shape,shapes");
+    await context.sync();
+
+    console.log("Canvas object:", canvas);
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -69,6 +97,37 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the first canvas found in the document body.
+        const canvasShape: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.canvas])
+          .getFirstOrNullObject();
+        canvasShape.load();
+        canvasShape.load("canvas/shapes");
+        await context.sync();
+
+        if (canvasShape.isNullObject) {
+          console.log("No canvases found in the document body.");
+          return;
+        }
+
+        console.log("First canvas found in the document body:", canvasShape);
+        console.log("Shapes associated with the first canvas:", canvasShape.canvas.shapes);
+        canvasShape.select();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
