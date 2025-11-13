@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 11/11/2025
+ms.date: 11/13/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -77,11 +77,17 @@ Added a new property that represents if an appointment is an all-day event.
 
 ### Check if Exchange Web Services (EWS) tokens are supported in an organization
 
+#### [Office.MailboxEnums.TokenStatus](/javascript/api/outlook/office.mailboxenums.tokenstatus?view=outlook-js-preview&preserve-view=true)
+
+Added an enum to specify the status of tokens in an organization.
+
+**Available in**: Outlook on the web, on Windows (new and classic), and on mobile devices
+
 #### [Office.context.mailbox.diagnostics.ews.getTokenStatusAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-ews-gettokenstatusasync-member(1))
 
 Added a method to get the status of EWS callback tokens in an organization.
 
-**Available in**: Outlook on the web, on Windows (new and classic), on Mac, and on mobile devices
+**Available in**: Outlook on the web, on Windows (new and classic), and on mobile devices
 
 <br>
 
