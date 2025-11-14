@@ -7435,7 +7435,7 @@ office,Office.FileType,N/A,Enum,Great,true
 office,Office.FileType,"Compressed",EnumField,Excellent,false
 office,Office.FileType,"Pdf",EnumField,Great,false
 office,Office.FileType,"Text",EnumField,Good,false
-office,Office.FilterType,N/A,Enum,Excellent,false
+office,Office.FilterType,N/A,Enum,Excellent,true
 office,Office.FilterType,"All",EnumField,Good,false
 office,Office.FilterType,"OnlyVisible",EnumField,Good,false
 office,Office.GetBindingDataOptions,N/A,Interface,Good,false
@@ -7451,7 +7451,7 @@ office,Office.GetBindingDataOptions,"valueFormat",Property,Excellent,false
 office,Office.GetFileOptions,N/A,Interface,Good,false
 office,Office.GetFileOptions,"asyncContext",Property,Excellent,false
 office,Office.GetFileOptions,"sliceSize",Property,Good,false
-office,Office.GetSelectedDataOptions,N/A,Interface,Good,false
+office,Office.GetSelectedDataOptions,N/A,Interface,Good,true
 office,Office.GetSelectedDataOptions,"asyncContext",Property,Excellent,false
 office,Office.GetSelectedDataOptions,"filterType",Property,Excellent,false
 office,Office.GetSelectedDataOptions,"valueFormat",Property,Excellent,false
