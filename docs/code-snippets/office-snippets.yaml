@@ -4184,11 +4184,11 @@ Office.FilterType:enum:
         Office.CoercionType.Text,
         options,
         (asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-        console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
-        } else {
-        console.log(`The selected data is "${asyncResult.value}".`);
-        }
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
     });
 Office.GetSelectedDataOptions:interface:
   - |-
@@ -4209,11 +4209,11 @@ Office.GetSelectedDataOptions:interface:
         Office.CoercionType.Text,
         options,
         (asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-        console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
-        } else {
-        console.log(`The selected data is "${asyncResult.value}".`);
-        }
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
     });
 Office.HostType:enum:
   - |-
@@ -4677,11 +4677,11 @@ Office.ValueFormat:enum:
         Office.CoercionType.Text,
         options,
         (asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-        console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
-        } else {
-        console.log(`The selected data is "${asyncResult.value}".`);
-        }
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
     });
 Office.VisibilityMode:enum:
   - |-
