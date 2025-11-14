@@ -931,7 +931,11 @@ properties:
       attendees returned varies per Outlook client.
 
 
-      - Windows: 500 attendees
+      - Windows (new and classic): 500 attendees
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 attendees
 
 
       - Android, classic Mac UI, iOS: 100 attendees
@@ -1101,7 +1105,11 @@ properties:
       attendees returned varies per Outlook client.
 
 
-      - Windows: 500 attendees
+      - Windows (new and classic): 500 attendees
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
 
       - Android, classic Mac UI, iOS: 100 attendees

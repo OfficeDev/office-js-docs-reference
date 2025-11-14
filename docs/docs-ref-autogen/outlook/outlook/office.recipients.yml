@@ -61,6 +61,14 @@ methods:
       `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
 
+      - In classic Outlook on Windows, a maximum of 1,000 recipients in a target
+      field is available for preview. To test this increased limit, you must
+      install Version 2511 (Build 19426.20000) or later. Then, join the
+      [Microsoft 365 Insider
+      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748)
+      and select the **Beta Channel** option to access Office beta builds.
+
+
       - In Outlook on Android and on iOS, the `addAsync` method is supported
       starting in Version 4.2530.0. On these mobile clients, the `addAsync`
       method isn't supported when a user replies from the the reply field at the
@@ -189,6 +197,14 @@ methods:
       but be mindful of the recipient limit of the field.
 
 
+      - In classic Outlook on Windows, a maximum of 1,000 recipients in a target
+      field is available for preview. To test this increased limit, you must
+      install Version 2511 (Build 19426.20000) or later. Then, join the
+      [Microsoft 365 Insider
+      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748)
+      and select the **Beta Channel** option to access Office beta builds.
+
+
       - In Outlook on Android and on iOS, the `addAsync` method is supported
       starting in Version 4.2530.0. On these mobile clients, the `addAsync`
       method isn't supported when a user replies from the the reply field at the
@@ -272,6 +288,10 @@ methods:
       - Windows
       ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
       and classic), web browser, Mac (classic UI): 500 recipients
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
 
       - Android, iOS: 100 recipients
@@ -392,6 +412,10 @@ methods:
       - Windows
       ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
       and classic), web browser, Mac (classic UI): 500 recipients
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
 
       - Android, iOS: 100 recipients
@@ -610,6 +634,14 @@ methods:
       `addAsync` repeatedly, but be mindful of the recipient limit of the field.
 
 
+      - In classic Outlook on Windows, a maximum of 1,000 recipients in a target
+      field is available for preview. To test this increased limit, you must
+      install Version 2511 (Build 19426.20000) or later. Then, join the
+      [Microsoft 365 Insider
+      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748)
+      and select the **Beta Channel** option to access Office beta builds.
+
+
       - In Outlook on Android and on iOS, the `setAsync` method is supported
       starting in Version 4.2530.0. On these mobile clients, the `setAsync`
       method isn't supported when a user replies from the the reply field at the
@@ -708,6 +740,14 @@ methods:
       UI), you can have a maximum of 500 recipients in a target field. If you
       need to add more recipients after setting 100 recipients, you can call
       `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+
+
+      - In classic Outlook on Windows, a maximum of 1,000 recipients in a target
+      field is available for preview. To test this increased limit, you must
+      install Version 2511 (Build 19426.20000) or later. Then, join the
+      [Microsoft 365 Insider
+      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-windows/4401748)
+      and select the **Beta Channel** option to access Office beta builds.
 
 
       - In Outlook on Android and on iOS, the `setAsync` method is supported
