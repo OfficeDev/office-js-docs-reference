@@ -69,6 +69,8 @@ items:
                 uid: outlook!Office.MailboxEnums.SendModeOverride:enum
               - name: SourceProperty
                 uid: outlook!Office.MailboxEnums.SourceProperty:enum
+              - name: TokenStatus
+                uid: outlook!Office.MailboxEnums.TokenStatus:enum
               - name: WeekNumber
                 uid: outlook!Office.MailboxEnums.WeekNumber:enum
           - name: AppointmentCompose
@@ -133,6 +135,8 @@ items:
             uid: outlook!Office.EnhancedLocationsChangedEventArgs:interface
           - name: Entities
             uid: outlook!Office.Entities:interface
+          - name: Ews
+            uid: outlook!Office.Ews:interface
           - name: From
             uid: outlook!Office.From:interface
           - name: InfobarClickedEventArgs

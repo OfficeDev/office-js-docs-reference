@@ -29,11 +29,11 @@ remarks: |-
       Office.CoercionType.Text,
       options,
       (asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-      console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
-      } else {
-      console.log(`The selected data is "${asyncResult.value}".`);
-      }
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+          } else {
+              console.log(`The selected data is "${asyncResult.value}".`);
+          }
   });
   ```
 
