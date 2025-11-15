@@ -2219,6 +2219,13 @@ methods:
       -->.
 
 
+      - To determine if REST or EWS tokens are available in an organization,
+      call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`<!-- -->.
+      The `getTokenStatusAsync` method is available for preview in Outlook on
+      the web and on Windows (new and classic (Version 2510, Build 19328.20000
+      and later)).
+
+
       - This method isn't supported if you load an add-in in an Outlook.com or
       Gmail mailbox.
 
@@ -2426,6 +2433,13 @@ methods:
       remote service to [get attachments from the selected
       item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!--
       -->.
+
+
+      - To determine if REST or EWS tokens are available in an organization,
+      call `Office.context.mailbox.diagnostics.ews.getTokenStatusAsync`<!-- -->.
+      The `getTokenStatusAsync` method is available for preview in Outlook on
+      the web and on Windows (new and classic (Version 2510, Build 19328.20000
+      and later)).
 
 
       - Calling the `getCallbackTokenAsync` method in read mode requires a

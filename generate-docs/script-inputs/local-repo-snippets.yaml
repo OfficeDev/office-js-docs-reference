@@ -5782,6 +5782,57 @@ Office.FileProperties:interface:
             }
         });
     }
+
+Office.FilterType:enum:
+  - |-
+    /* Set the selection options. These will:
+     - Pass the string "myContext" to the callback.
+     - Include both visible and hidden data.
+     - Return the formatted values of the selection 
+         (for an Excel date, 1/1/2023 instead of 44928).
+     */  
+    const options: Office.GetSelectedDataOptions = {
+        asyncContext: "myContext",
+        filterType: Office.FilterType.All,
+        valueFormat: Office.ValueFormat.Formatted
+    }
+
+    // Get the selected data in the Office document as text.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        options,
+        (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+    });
+Office.GetSelectedDataOptions:interface:
+  - |-
+    /* Set the selection options. These will:
+     - Pass the string "myContext" to the callback.
+     - Include both visible and hidden data.
+     - Return the formatted values of the selection 
+         (for an Excel date, 1/1/2023 instead of 44928).
+     */  
+    const options: Office.GetSelectedDataOptions = {
+        asyncContext: "myContext",
+        filterType: Office.FilterType.All,
+        valueFormat: Office.ValueFormat.Formatted
+    }
+
+    // Get the selected data in the Office document as text.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        options,
+        (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+    });
 Office.HostType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -6224,6 +6275,32 @@ Office.Urls#javascriptRuntimeUrl:member:
     const url = Office.context.urls.javascriptRuntimeUrl;
     const regex = /=([^&]+)/;
     console.log(`First parameter value: ${url.match(regex)[1]}`);
+
+Office.ValueFormat:enum:
+  - |-
+    /* Set the selection options. These will:
+     - Pass the string "myContext" to the callback.
+     - Include both visible and hidden data.
+     - Return the formatted values of the selection 
+         (for an Excel date, 1/1/2023 instead of 44928).
+     */  
+    const options: Office.GetSelectedDataOptions = {
+        asyncContext: "myContext",
+        filterType: Office.FilterType.All,
+        valueFormat: Office.ValueFormat.Formatted
+    }
+
+    // Get the selected data in the Office document as text.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        options,
+        (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+    });
 Office.VisibilityMode:enum:
   - |-
     Office.onReady(() => {
