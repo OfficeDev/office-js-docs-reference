@@ -9196,6 +9196,7 @@ outlook,Office.DelayDeliveryTime,"getAsync(callback)",Method,Poor,true
 outlook,Office.DelayDeliveryTime,"setAsync(datetime, options, callback)",Method,Poor,false
 outlook,Office.DelayDeliveryTime,"setAsync(datetime, callback)",Method,Poor,true
 outlook,Office.Diagnostics,N/A,Interface,Fine,true
+outlook,Office.Diagnostics,"ews",Property,Great,false
 outlook,Office.Diagnostics,"hostName",Property,Great,false
 outlook,Office.Diagnostics,"hostVersion",Property,Excellent,false
 outlook,Office.Diagnostics,"OWAView",Property,Excellent,false
@@ -9252,6 +9253,9 @@ outlook,Office.Entities,"meetingSuggestions",Property,Deprecated,true
 outlook,Office.Entities,"phoneNumbers",Property,Deprecated,true
 outlook,Office.Entities,"taskSuggestions",Property,Deprecated,true
 outlook,Office.Entities,"urls",Property,Deprecated,true
+outlook,Office.Ews,N/A,Interface,Great,false
+outlook,Office.Ews,"getTokenStatusAsync(options, callback)",Method,Fine,false
+outlook,Office.Ews,"getTokenStatusAsync(callback)",Method,Fine,false
 outlook,Office.From,N/A,Interface,Great,false
 outlook,Office.From,"getAsync(options, callback)",Method,Excellent,true
 outlook,Office.From,"getAsync(callback)",Method,Excellent,false
@@ -9722,6 +9726,10 @@ outlook,Office.MailboxEnums.SendModeOverride,"PromptUser",EnumField,Excellent,fa
 outlook,Office.MailboxEnums.SourceProperty,N/A,Enum,Great,true
 outlook,Office.MailboxEnums.SourceProperty,"Body",EnumField,Fine,false
 outlook,Office.MailboxEnums.SourceProperty,"Subject",EnumField,Fine,false
+outlook,Office.MailboxEnums.TokenStatus,N/A,Enum,Great,false
+outlook,Office.MailboxEnums.TokenStatus,"Disabled",EnumField,Fine,false
+outlook,Office.MailboxEnums.TokenStatus,"Enabled",EnumField,Fine,false
+outlook,Office.MailboxEnums.TokenStatus,"Removed",EnumField,Fine,false
 outlook,Office.MailboxEnums.WeekNumber,N/A,Enum,Good,true
 outlook,Office.MailboxEnums.WeekNumber,"First",EnumField,Poor,false
 outlook,Office.MailboxEnums.WeekNumber,"Second",EnumField,Poor,false

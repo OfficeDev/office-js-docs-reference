@@ -67,6 +67,52 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: ews
+    uid: outlook!Office.Diagnostics#ews:member
+    package: outlook!
+    fullName: ews
+    summary: >-
+      Gets an object to identify whether Exchange Web Services (EWS) callback
+      tokens are supported in an organization.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - The `ews` property is available for preview in Outlook on the web and on
+      Windows (new and classic (Version 2510, Build 19328.20000 and later)).
+
+
+      - Legacy Exchange Online user identity tokens and callback tokens are no
+      longer supported and are turned off across all Microsoft 365 tenants. If
+      an Outlook add-in requires delegated user access or user identity, we
+      recommend using MSAL (Microsoft Authentication Library) and nested app
+      authentication (NAA). Exchange user identity tokens are still supported
+      for Exchange on-premises. For more information, see [Nested app
+      authentication
+      FAQ](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!--
+      -->.
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'ews: Ews;'
+      return:
+        type: <xref uid="outlook!Office.Ews:interface" />
   - name: hostName
     uid: outlook!Office.Diagnostics#hostName:member
     package: outlook!
