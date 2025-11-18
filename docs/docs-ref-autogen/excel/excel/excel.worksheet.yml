@@ -2080,7 +2080,7 @@ events:
           // Register the onProtectionChanged event handler.
           sheet.onProtectionChanged.add(checkProtection);
           await context.sync();
-          console.log("Added a worksheet protection change event handler.");
+          console.log("Added a worksheet protection change event handler.");
       });
 
 
@@ -2095,7 +2095,7 @@ events:
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
-              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
               console.log("    ID of changed worksheet: " + worksheetId + ".");
               console.log("    Source of change event: " + source + ".");
           });
