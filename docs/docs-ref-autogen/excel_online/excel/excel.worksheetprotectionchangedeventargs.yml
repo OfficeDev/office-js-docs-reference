@@ -59,7 +59,7 @@ properties:
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
-              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
               console.log("    ID of changed worksheet: " + worksheetId + ".");
               console.log("    Source of change event: " + source + ".");
           });
@@ -133,7 +133,7 @@ properties:
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
-              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
               console.log("    ID of changed worksheet: " + worksheetId + ".");
               console.log("    Source of change event: " + source + ".");
           });
@@ -191,7 +191,7 @@ properties:
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
-              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
               console.log("    ID of changed worksheet: " + worksheetId + ".");
               console.log("    Source of change event: " + source + ".");
           });

@@ -1192,7 +1192,6 @@ methods:
           foundRange.load("address");
           await context.sync();
 
-
           console.log(foundRange.address);
       });
 
