@@ -400,7 +400,7 @@ events:
               const addedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
 
               // Load the added comment's data.
-              addedComment.load(["content", "authorName", "creationDate"]);
+              addedComment.load(["content","authorName","creationDate"]);
 
               await context.sync();
 
@@ -471,7 +471,7 @@ events:
               const changedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
 
               // Load the changed comment's data.
-              changedComment.load(["content", "authorName", "creationDate"]);
+              changedComment.load(["content","authorName","creationDate"]);
 
               await context.sync();
 

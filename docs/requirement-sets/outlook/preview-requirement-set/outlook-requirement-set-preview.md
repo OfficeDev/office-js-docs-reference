@@ -83,7 +83,7 @@ Added an enum to specify the status of tokens in an organization.
 
 **Available in**: Outlook on the web and on Windows (new and classic)
 
-#### [Office.context.mailbox.diagnostics.ews.getTokenStatusAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-ews-gettokenstatusasync-member(1))
+#### [Office.context.mailbox.diagnostics.ews.getTokenStatusAsync](/javascript/api/outlook/office.ews?view=outlook-js-preview&preserve-view=true#outlook-office-ews-gettokenstatusasync-member(1))
 
 Added a method to get the status of EWS callback tokens in an organization.
 
