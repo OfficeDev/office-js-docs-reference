@@ -14943,6 +14943,10 @@ export declare namespace Office {
          *
          * **Important**
          *
+         * - The `errorMessageMarkdown` property is available for preview in Outlook on Mac starting in Version 16.103 (Build 25102433). To test the property, join the
+         * {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program} and
+         * select the **Beta Channel** option to access Office beta builds.
+         *
          * - The formatted error message must be 500 characters or less.
          *
          * - For guidance on supported Markdown elements, see 
