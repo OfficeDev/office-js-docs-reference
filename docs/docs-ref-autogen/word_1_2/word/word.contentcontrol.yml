@@ -353,7 +353,7 @@ properties:
           let contentControl = paragraphs.items[i].insertContentControl();
           // For even, tag "even".
           if (i % 2 === 0) {
-            contentControl.tag="even";
+            contentControl.tag = "even";
           } else {
             contentControl.tag = "odd";
           }

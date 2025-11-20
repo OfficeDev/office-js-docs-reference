@@ -1757,7 +1757,7 @@ methods:
         { isInline: true },
         function(result) {
           if (result.status == Office.AsyncResultStatus.Succeeded) {
-            const signature = (document.getElementById("signature") as HTMLInputElement).value +"<img src='cid:myImage.png'>";
+            const signature = (document.getElementById("signature") as HTMLInputElement).value + "<img src='cid:myImage.png'>";
             console.log(`Setting signature to "${signature}".`);
             Office.context.mailbox.item.body.setSignatureAsync(
               signature,
@@ -2689,13 +2689,13 @@ methods:
             let attachmentType;
             switch (attachment.attachmentType) {
               case Office.MailboxEnums.AttachmentType.Cloud:
-                attachmentType="Attachment is stored in a cloud location";
+                attachmentType = "Attachment is stored in a cloud location";
                 break;
               case Office.MailboxEnums.AttachmentType.File:
-                attachmentType="Attachment is a file";
+                attachmentType = "Attachment is a file";
                 break;
               case Office.MailboxEnums.AttachmentType.Item:
-                attachmentType="Attachment is an Exchange item";
+                attachmentType = "Attachment is an Exchange item";
                 break;
             }
             console.log(

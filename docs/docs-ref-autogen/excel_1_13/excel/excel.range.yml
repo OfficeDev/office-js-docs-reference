@@ -1697,7 +1697,7 @@ methods:
         // Use the direct dependents API to loop through direct dependents of the active cell.
         for (let i = 0; i < directDependents.areas.items.length; i++) {
           // Highlight and print the address of each dependent cell.
-          directDependents.areas.items[i].format.fill.color="Yellow";
+          directDependents.areas.items[i].format.fill.color = "Yellow";
           console.log(`  ${directDependents.areas.items[i].address}`);
         }
         await context.sync();
@@ -1749,8 +1749,8 @@ methods:
 
         // Use the direct precedents API to loop through precedents of the active cell.
         for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-          // Highlight and console the address of each precedent cell.
-          directPrecedents.areas.items[i].format.fill.color="Yellow";
+          // Highlight and print out the address of each direct precedent cell.
+          directPrecedents.areas.items[i].format.fill.color = "Yellow";
           console.log(`  ${directPrecedents.areas.items[i].address}`);
         }
         await context.sync();

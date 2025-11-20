@@ -132,7 +132,7 @@ properties:
         // Log each custom property to the console.
         // Note that your document may have more properties than those you have set using this snippet.
         customDocProperties.items.forEach((property) => {
-          console.log(`${property.key}:${property.value}`);
+          console.log(`${property.key}: ${property.value}`);
         });
       });
 
