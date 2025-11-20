@@ -4358,8 +4358,6 @@ Office.Slice:interface:
     // This example demonstrates how to read file slices using the Office.Slice interface.
     // Each slice represents a portion of the document file and includes the data, 
     // index, and size properties.
-
-    // Retrieve the document file and initiate the slice-by-slice reading process.
     Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 }, 
         function (result) {
             if (result.status === Office.AsyncResultStatus.Succeeded) {
@@ -4371,50 +4369,64 @@ Office.Slice:interface:
                 console.log(`File sliced into ${sliceCount} parts.`);
 
                 // Get the first slice.
-                getSliceAsync(file, 0, sliceCount, fileData, slicesReceived);
+                getSliceAsync(file, 0, sliceCount);
+
+                /**
+                 * Recursively retrieves slices from the file.
+                 * @param file - The Office.File object to retrieve slices from.
+                 * @param sliceIndex - The zero-based index of the slice to retrieve.
+                 * @param totalSlices - The total number of slices in the file.
+                 */
+                function getSliceAsync(file, sliceIndex, totalSlices) {
+                    file.getSliceAsync(sliceIndex, function (sliceResult) {
+                        if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
+                            const slice: Office.Slice = sliceResult.value;
+                            
+                            // Access the properties of the Slice.
+                            console.log(`Processing slice ${slice.index + 1} of ${totalSlices}`);
+                            console.log(`Slice size: ${slice.size} bytes`);
+                            
+                            // Store the slice data.
+                            fileData[slice.index] = slice.data;
+                            slicesReceived++;
+
+                            // Check if we've received all slices.
+                            if (slicesReceived === totalSlices) {
+                                file.closeAsync();
+                                console.log("All slices received. File data complete.");
+                                
+                                // Process the complete file data.
+                                processFileData(fileData);
+                            } else {
+                                // Get the next slice.
+                                getSliceAsync(file, sliceIndex + 1, totalSlices);
+                            }
+                        } else {
+                            console.error(`Error getting slice: ${sliceResult.error.message}`);
+                        }
+                    });
+                }
+
+                /**
+                 * Processes the complete file data by combining all slices.
+                 * @param data - An array of slice data arrays to combine.
+                 */
+                function processFileData(data) {
+                    // Combine all slice data into a complete file.
+                    let combinedData = [];
+                    for (let i = 0; i < data.length; i++) {
+                        combinedData = combinedData.concat(data[i]);
+                    }
+                    
+                    console.log(`File processing complete. Total bytes: ${combinedData.length}`);
+                    // At this point, combinedData contains the complete file content.
+                    // You can now save it, send it to a server, or process it further.
+                }
             } else {
                 console.error(`Error getting file: ${result.error.message}`);
             }
         }
     );
-
-    // This function recursively retrieves each slice of the file and stores the data.
-    // Once all the slices are received, it closes the file and processes the complete data.
-    function getSliceAsync(file, sliceIndex, totalSlices, fileData, slicesReceived) {
-        file.getSliceAsync(sliceIndex, function (sliceResult) {
-            if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
-                const slice: Office.Slice = sliceResult.value;
-                
-                // Access the properties of the Slice.
-                console.log(`Processing slice ${slice.index + 1} of ${totalSlices}`);
-                console.log(`Slice size: ${slice.size} bytes`);
-                
-                // Store the slice data.
-                fileData[slice.index] = slice.data;
-                slicesReceived++;
-
-                // Check if we've received all slices.
-                if (slicesReceived === totalSlices) {
-                    file.closeAsync();
-                    console.log("All slices received. File data complete.");
-                    
-                    // Process the complete file data.
-                    processFileData(fileData);
-                } else {
-                    // Get the next slice.
-                    getSliceAsync(file, sliceIndex + 1, totalSlices, fileData, slicesReceived);
-                }
-            } else {
-                console.error(`Error getting slice: ${sliceResult.error.message}`);
-            }
-        });
-    }
-
-    // This function processes the complete file data after all the slices have been received.
-    function processFileData(data) {
-        // Combine all slice data into a complete file.
-        console.log("Processing complete file data...");
-    }
 Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
