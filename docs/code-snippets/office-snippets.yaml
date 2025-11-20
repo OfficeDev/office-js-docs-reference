@@ -4416,7 +4416,7 @@ Office.Slice:interface:
                     // Combine all slice data into a complete file.
                     let combinedData = [];
                     for (let i = 0; i < data.length; i++) {
-                        combinedData = combinedData.concat(data[i]);
+                        combinedData.push(...data[i]);
                     }
                     
                     console.log(`File processing complete. Total bytes: ${combinedData.length}`);
