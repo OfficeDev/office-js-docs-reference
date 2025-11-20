@@ -5846,10 +5846,10 @@ export declare namespace Office {
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on the web                                          </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>                                     </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
-         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><th>                             </th><th> Office on the web      </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Pdf</code>        </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Not supported          </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -5881,10 +5881,10 @@ export declare namespace Office {
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on the web                                          </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>                                     </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
-         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><th>                             </th><th> Office on the web      </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Pdf</code>        </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Not supported          </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -8609,12 +8609,12 @@ export declare namespace Office {
          *
          * - **Web (Word)**: 330 px
          *
-         * - **Windows**: 51 px
+         * - **Windows, Mac**: 51 px
          *
          * If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
          *
          * @param width - The width of a task pane in pixels. The minimum and maximum constraints vary by platform. In Excel on the web, the width must be between
-         *              350 and 500 px (inclusive). In Word on the web, the width must be between 330 and 500 px (inclusive). In Office on Windows, the width
+         *              350 and 500 px (inclusive). In Word on the web, the width must be between 330 and 500 px (inclusive). In Office on Windows and on Mac, the width
          *              must be between 51 px and 50% of the client window.
          */
         setWidth(width: number): void;

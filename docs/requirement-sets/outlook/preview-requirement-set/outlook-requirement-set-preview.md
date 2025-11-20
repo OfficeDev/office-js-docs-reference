@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 11/13/2025
+ms.date: 11/20/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -75,11 +75,31 @@ Added a new property that represents if an appointment is an all-day event.
 
 ---
 
+### Check if Exchange Web Services (EWS) tokens are supported in an organization
+
+#### [Office.MailboxEnums.TokenStatus](/javascript/api/outlook/office.mailboxenums.tokenstatus?view=outlook-js-preview&preserve-view=true)
+
+Added an enum to specify the status of tokens in an organization.
+
+**Available in**: Outlook on the web and on Windows (new and classic)
+
+#### [Office.context.mailbox.diagnostics.ews.getTokenStatusAsync](/javascript/api/outlook/office.ews?view=outlook-js-preview&preserve-view=true#outlook-office-ews-gettokenstatusasync-member(1))
+
+Added a method to get the status of EWS callback tokens in an organization.
+
+**Available in**: Outlook on the web and on Windows (new and classic)
+
+<br>
+
+---
+
+---
+
 ### Customize the Smart Alerts dialog message using Markdown in Outlook on Mac
 
 #### [errorMessageMarkdown](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-smartalertseventcompletedoptions-errormessagemarkdown-member) property of the `event.completed` method
 
-Updated the `errorMessageMarkdown` property of the `event.completed` method for support in Outlook on Mac.
+Updated the `errorMessageMarkdown` property of the `event.completed` method to include support in Outlook on Mac.
 
 **Available in**: Outlook on Mac
 
@@ -124,6 +144,20 @@ Added an object that represents an attachment in a decrypted message.
 #### [Office.DecryptedMessageBody](/javascript/api/outlook/office.decryptedmessagebody?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the body of a decrypted message.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Increase the number of recipients in a target field
+
+### [Office.Recipients](/javascript/api/outlook/office.recipients?view=outlook-js-preview&preserve-view=true)
+
+Updated the Recipients APIs to increase the maximum number of recipients in a target field to 1,000.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 

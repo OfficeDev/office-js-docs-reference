@@ -74,7 +74,7 @@ methods:
 
         await context.sync();
 
-        console.log(`Successfully set custom worksheet property ${userKey}:${userValue}.`);
+        console.log(`Successfully set custom worksheet property ${userKey}: ${userValue}.`);
       });
 
       ```

@@ -1570,7 +1570,7 @@ Excel.ChartSeries#getDimensionValues:member(1):
       await context.sync();
 
       // Log the information.
-      console.log(`Series ${category.value} - X:${xValues.value},Y:${yValues.value},Bubble:${bubbleSize.value}`);
+      console.log(`Series ${category.value} - X: ${xValues.value}, Y: ${yValues.value}, Bubble: ${bubbleSize.value}`);
     });
 Excel.ChartSeries#setBubbleSizes:member(1):
   - >-
@@ -2040,7 +2040,7 @@ Excel.ChartSeriesDimension:enum:
       await context.sync();
 
       // Log the information.
-      console.log(`Series ${category.value} - X:${xValues.value},Y:${yValues.value},Bubble:${bubbleSize.value}`);
+      console.log(`Series ${category.value} - X: ${xValues.value}, Y: ${yValues.value}, Bubble: ${bubbleSize.value}`);
     });
 Excel.ChartTitle#getSubstring:member(1):
   - >-
@@ -2309,7 +2309,7 @@ Excel.CommentCollection#onAdded:member:
 
     async function commentAdded(event: Excel.CommentAddedEventArgs) {
         // Retrieve the added comment using the comment ID.
-        // Note: This function assumes only a single comment is added at a time. 
+        // Note: This function assumes only a single comment is added at a time.
         await Excel.run(async (context) => {
             const addedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
 
@@ -2321,9 +2321,9 @@ Excel.CommentCollection#onAdded:member:
             // Print out the added comment's data.
             console.log(`A comment was added:`);
             console.log(`    ID: ${event.commentDetails[0].commentId}`);
-            console.log(`    Comment content:${addedComment.content}`);
-            console.log(`    Comment author:${addedComment.authorName}`);
-            console.log(`    Creation date:${addedComment.creationDate}`);
+            console.log(`    Comment content: ${addedComment.content}`);
+            console.log(`    Comment author: ${addedComment.authorName}`);
+            console.log(`    Creation date: ${addedComment.creationDate}`);
         });
     }
 Excel.CommentCollection#onChanged:member:
@@ -2351,7 +2351,7 @@ Excel.CommentCollection#onChanged:member:
 
     async function commentChanged(event: Excel.CommentChangedEventArgs) {
         // Retrieve the changed comment using the comment ID.
-        // Note: This function assumes only a single comment is changed at a time. 
+        // Note: This function assumes only a single comment is changed at a time.
         await Excel.run(async (context) => {
             const changedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
 
@@ -2393,7 +2393,7 @@ Excel.CommentCollection#onDeleted:member:
 
     async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
         // Print out the deleted comment's ID.
-        // Note: This function assumes only a single comment is deleted at a time. 
+        // Note: This function assumes only a single comment is deleted at a time.
         await Excel.run(async (context) => {
             console.log(`A comment was deleted:`);
             console.log(`    ID: ${event.commentDetails[0].commentId}`);
@@ -3278,7 +3278,7 @@ Excel.CustomPropertyCollection#add:member(1):
 
       await context.sync();
 
-      console.log(`Successfully set custom document property ${userKey}:${userValue}.`);
+      console.log(`Successfully set custom document property ${userKey}: ${userValue}.`);
     });
 Excel.CustomXmlPart#delete:member(1):
   - >-
@@ -3924,7 +3924,7 @@ Excel.DocumentProperties#custom:member:
       // Log each custom property to the console.
       // Note that your document may have more properties than those you have set using this snippet.
       customDocProperties.items.forEach((property) => {
-        console.log(`${property.key}:${property.value}`);
+        console.log(`${property.key}: ${property.value}`);
       });
     });
 Excel.DoubleCellValue#numberFormat:member:
@@ -4432,12 +4432,12 @@ Excel.Functions#sum:member(1):
 
 
     await Excel.run(async (context) => {
-      // This function uses VLOOKUP to find data in the "Wrench" row 
+      // This function uses VLOOKUP to find data in the "Wrench" row
       // on the worksheet, and then it uses SUM to combine the values.
       let range = context.workbook.worksheets.getItem("Sample").getRange("A1:D4");
 
       // Get the values in the second, third, and fourth columns in the "Wrench" row,
-      // and combine those values with SUM. 
+      // and combine those values with SUM.
       let sumOfTwoLookups = context.workbook.functions.sum(
         context.workbook.functions.vlookup("Wrench", range, 2, false),
         context.workbook.functions.vlookup("Wrench", range, 3, false),
@@ -6011,7 +6011,7 @@ Excel.Range#getDirectPrecedents:member(1):
 
       // Use the direct precedents API to loop through precedents of the active cell.
       for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-        // Highlight and console the address of each precedent cell.
+        // Highlight and print out the address of each direct precedent cell.
         directPrecedents.areas.items[i].format.fill.color = "Yellow";
         console.log(`  ${directPrecedents.areas.items[i].address}`);
       }
@@ -6035,7 +6035,7 @@ Excel.Range#getPrecedents:member(1):
 
       // Use the precedents API to loop through precedents of the active cell.
       for (let i = 0; i < precedents.areas.items.length; i++) {
-        // Highlight and console the address of each precedent cell.
+        // Highlight and print out the address of each precedent cell.
         precedents.areas.items[i].format.fill.color = "Orange";
         console.log(`  ${precedents.areas.items[i].address}`);
       }
@@ -6283,7 +6283,6 @@ Excel.Range#find:member(1):
         
         foundRange.load("address");
         await context.sync();
-
 
         console.log(foundRange.address);
     });
@@ -8362,7 +8361,7 @@ Excel.WorkbookRangeAreas#areas:member:
 
       // Use the direct precedents API to loop through precedents of the active cell.
       for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-        // Highlight and console the address of each precedent cell.
+        // Highlight and print out the address of each direct precedent cell.
         directPrecedents.areas.items[i].format.fill.color = "Yellow";
         console.log(`  ${directPrecedents.areas.items[i].address}`);
       }
@@ -8383,7 +8382,7 @@ Excel.Worksheet#customProperties:member:
       // Log each custom property to the console.
       // Note that your document may have more properties than those you have set using this snippet.
       customWorksheetProperties.items.forEach((property) => {
-        console.log(`${property.key}:${property.value}`);
+        console.log(`${property.key}: ${property.value}`);
       });
     });
 Excel.Worksheet#onColumnSorted:member:
@@ -8525,7 +8524,7 @@ Excel.Worksheet#onProtectionChanged:member:
         // Register the onProtectionChanged event handler.
         sheet.onProtectionChanged.add(checkProtection);
         await context.sync();
-        console.log("Added a worksheet protection change event handler.");
+        console.log("Added a worksheet protection change event handler.");
     });
   - >-
     // Link to full sample:
@@ -8540,7 +8539,7 @@ Excel.Worksheet#onProtectionChanged:member:
             const protectionStatus = event.isProtected;
             const worksheetId = event.worksheetId;
             const source = event.source;
-            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
             console.log("    ID of changed worksheet: " + worksheetId + ".");
             console.log("    Source of change event: " + source + ".");
         });
@@ -8953,7 +8952,7 @@ Excel.WorksheetCustomPropertyCollection#add:member(1):
 
       await context.sync();
 
-      console.log(`Successfully set custom worksheet property ${userKey}:${userValue}.`);
+      console.log(`Successfully set custom worksheet property ${userKey}: ${userValue}.`);
     });
 Excel.WorksheetFreezePanes#freezeAt:member(1):
   - >-
@@ -9097,7 +9096,7 @@ Excel.WorksheetProtectionChangedEventArgs#isProtected:member:
             const protectionStatus = event.isProtected;
             const worksheetId = event.worksheetId;
             const source = event.source;
-            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
             console.log("    ID of changed worksheet: " + worksheetId + ".");
             console.log("    Source of change event: " + source + ".");
         });
@@ -9116,7 +9115,7 @@ Excel.WorksheetProtectionChangedEventArgs#source:member:
             const protectionStatus = event.isProtected;
             const worksheetId = event.worksheetId;
             const source = event.source;
-            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
             console.log("    ID of changed worksheet: " + worksheetId + ".");
             console.log("    Source of change event: " + source + ".");
         });
@@ -9135,7 +9134,7 @@ Excel.WorksheetProtectionChangedEventArgs#worksheetId:member:
             const protectionStatus = event.isProtected;
             const worksheetId = event.worksheetId;
             const source = event.source;
-            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+            console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
             console.log("    ID of changed worksheet: " + worksheetId + ".");
             console.log("    Source of change event: " + source + ".");
         });
@@ -9183,7 +9182,8 @@ Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(1):
 
 
     const base64String =
-      "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
+    "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
+
     Office.context.mailbox.item.addFileAttachmentFromBase64Async(
       base64String,
       "logo.png",
@@ -11042,7 +11042,7 @@ Office.Body#prependAsync:member(1):
 
     /* This snippet adds text to the beginning of the message or appointment's
     body. 
-      
+
       When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
     */
 
@@ -11145,7 +11145,7 @@ Office.Body#setSelectedDataAsync:member(1):
 
     /* This snippet replaces selected text in a message or appointment's body
     with specified text.
-      
+
       If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
     */
 
@@ -11481,6 +11481,33 @@ Office.Diagnostics:interface:
         console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
         break;
     }
+Office.Diagnostics#ews:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-token-status.yaml
+
+
+    Office.context.mailbox.diagnostics.ews.getTokenStatusAsync({ isRest: false
+    }, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.log(result.error.message);
+        return;
+      }
+      const status = result.value;
+      switch (status) {
+        case Office.MailboxEnums.TokenStatus.Enabled:
+          console.log("EWS callback tokens are enabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Disabled:
+          console.log("EWS callback tokens are disabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Removed:
+          console.log(
+            "The organization has an Exchange Online environment. Legacy Exchange tokens are no longer supported.",
+          );
+          break;
+      }
+    });
 Office.Display#body:member:
   - >-
     // Link to full sample:
@@ -11787,6 +11814,33 @@ Office.EnhancedLocation#removeAsync:member(1):
         console.log(`Successfully removed locations ${JSON.stringify(locations)}`);
       } else {
         console.error(`Failed to remove locations. Error message: ${result.error.message}`);
+      }
+    });
+Office.Ews:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-token-status.yaml
+
+
+    Office.context.mailbox.diagnostics.ews.getTokenStatusAsync({ isRest: false
+    }, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.log(result.error.message);
+        return;
+      }
+      const status = result.value;
+      switch (status) {
+        case Office.MailboxEnums.TokenStatus.Enabled:
+          console.log("EWS callback tokens are enabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Disabled:
+          console.log("EWS callback tokens are disabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Removed:
+          console.log(
+            "The organization has an Exchange Online environment. Legacy Exchange tokens are no longer supported.",
+          );
+          break;
       }
     });
 Office.From#getAsync:member(1):
@@ -12355,22 +12409,22 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'+
-        '  <soap:Header><t:RequestServerVersion Version="Exchange2010" /></soap:Header>'+
-        '  <soap:Body>'+
-        '    <m:CreateItem MessageDisposition="SendAndSaveCopy">'+
-        '      <m:SavedItemFolderId><t:DistinguishedFolderId Id="sentitems" /></m:SavedItemFolderId>'+
-        '      <m:Items>'+
-        '        <t:Message>'+
-        '          <t:Subject>Hello, Outlook!</t:Subject>'+
-        '          <t:Body BodyType="HTML">This message was sent from a ScriptLab code sample, used from ' + Office.context.mailbox.diagnostics.hostName + ', version ' + Office.context.mailbox.diagnostics.hostVersion + '!</t:Body>'+
-        '          <t:ToRecipients>'+
-        '            <t:Mailbox><t:EmailAddress>' + Office.context.mailbox.userProfile.emailAddress + '</t:EmailAddress></t:Mailbox>'+
-        '          </t:ToRecipients>'+
-        '        </t:Message>'+
-        '      </m:Items>'+
-        '    </m:CreateItem>'+
-        '  </soap:Body>'+
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">' +
+        '  <soap:Header><t:RequestServerVersion Version="Exchange2010" /></soap:Header>' +
+        '  <soap:Body>' +
+        '    <m:CreateItem MessageDisposition="SendAndSaveCopy">' +
+        '      <m:SavedItemFolderId><t:DistinguishedFolderId Id="sentitems" /></m:SavedItemFolderId>' +
+        '      <m:Items>' +
+        '        <t:Message>' +
+        '          <t:Subject>Hello, Outlook!</t:Subject>' +
+        '          <t:Body BodyType="HTML">This message was sent from a ScriptLab code sample, used from ' + Office.context.mailbox.diagnostics.hostName + ', version ' + Office.context.mailbox.diagnostics.hostVersion + '!</t:Body>' +
+        '          <t:ToRecipients>' +
+        '            <t:Mailbox><t:EmailAddress>' + Office.context.mailbox.userProfile.emailAddress + '</t:EmailAddress></t:Mailbox>' +
+        '          </t:ToRecipients>' +
+        '        </t:Message>' +
+        '      </m:Items>' +
+        '    </m:CreateItem>' +
+        '  </soap:Body>' +
         '</soap:Envelope>';
 
     Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
@@ -13042,6 +13096,33 @@ Office.MailboxEnums.SourceProperty:enum:
         console.error(asyncResult.error);
       }
     });
+Office.MailboxEnums.TokenStatus:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-token-status.yaml
+
+
+    Office.context.mailbox.diagnostics.ews.getTokenStatusAsync({ isRest: false
+    }, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.log(result.error.message);
+        return;
+      }
+      const status = result.value;
+      switch (status) {
+        case Office.MailboxEnums.TokenStatus.Enabled:
+          console.log("EWS callback tokens are enabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Disabled:
+          console.log("EWS callback tokens are disabled.");
+          break;
+        case Office.MailboxEnums.TokenStatus.Removed:
+          console.log(
+            "The organization has an Exchange Online environment. Legacy Exchange tokens are no longer supported.",
+          );
+          break;
+      }
+    });
 Office.MailboxEnums.WeekNumber:enum:
   - >-
     // Link to full sample:
@@ -13193,7 +13274,8 @@ Office.MessageCompose#addFileAttachmentFromBase64Async:member(1):
 
 
     const base64String =
-      "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
+    "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
+
     Office.context.mailbox.item.addFileAttachmentFromBase64Async(
       base64String,
       "logo.png",
@@ -15987,6 +16069,37 @@ PowerPoint.BorderProperties#weight:member:
       });
       await context.sync();
     });
+PowerPoint.BulletFormat:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+    // Gets navigational (complex) properties of the selected text range.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+      textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+      await context.sync();
+
+      console.log("Font properties of selected text range:");
+      console.log(`\tallCaps: ${textRange.font.allCaps}`);
+      console.log(`\tbold: ${textRange.font.bold}`);
+      console.log(`\tcolor: ${textRange.font.color}`);
+      console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+      console.log(`\titalic: ${textRange.font.italic}`);
+      console.log(`\tname: ${textRange.font.name}`);
+      console.log(`\tsize: ${textRange.font.size}`);
+      console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+      console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+      console.log(`\tsubscript: ${textRange.font.subscript}`);
+      console.log(`\tsuperscript: ${textRange.font.superscript}`);
+      console.log(`\tunderline: ${textRange.font.underline}`);
+
+      console.log("Paragraph format properties of selected text range:");
+      console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+      console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
+    });
 PowerPoint.ConnectorType:enum:
   - >-
     // Link to full sample:
@@ -16004,13 +16117,12 @@ PowerPoint.ConnectorType:enum:
 
       // For a line, left and top are the coordinates of the start point,
       // while height and width are the coordinates of the end point.
-      const line: PowerPoint.Shape = shapes.addLine(PowerPoint.ConnectorType.straight, 
-          { 
-            left: 400, 
-            top: 200, 
-            height: 20, 
-            width: 150 
-          });
+      const line: PowerPoint.Shape = shapes.addLine(PowerPoint.ConnectorType.straight, {
+        left: 400,
+        top: 200,
+        height: 20,
+        width: 150,
+      });
       line.name = "StraightLine";
 
       await context.sync();
@@ -16402,7 +16514,7 @@ PowerPoint.GeometricShapeType:enum:
         left: 100,
         top: 100,
         height: 150,
-        width: 150
+        width: 150,
       };
       const hexagon: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, shapeOptions);
       hexagon.name = "Hexagon";
@@ -16489,6 +16601,37 @@ PowerPoint.InsertSlideOptions:interface:
         presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
         await context.sync();
     });
+PowerPoint.ParagraphFormat:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+    // Gets navigational (complex) properties of the selected text range.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+      textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+      await context.sync();
+
+      console.log("Font properties of selected text range:");
+      console.log(`\tallCaps: ${textRange.font.allCaps}`);
+      console.log(`\tbold: ${textRange.font.bold}`);
+      console.log(`\tcolor: ${textRange.font.color}`);
+      console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+      console.log(`\titalic: ${textRange.font.italic}`);
+      console.log(`\tname: ${textRange.font.name}`);
+      console.log(`\tsize: ${textRange.font.size}`);
+      console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+      console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+      console.log(`\tsubscript: ${textRange.font.subscript}`);
+      console.log(`\tsuperscript: ${textRange.font.superscript}`);
+      console.log(`\tunderline: ${textRange.font.underline}`);
+
+      console.log("Paragraph format properties of selected text range:");
+      console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+      console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
+    });
 PowerPoint.ParagraphHorizontalAlignment:enum:
   - >-
     // Link to full sample:
@@ -16514,6 +16657,78 @@ PowerPoint.ParagraphHorizontalAlignment:enum:
       });
       await context.sync();
     });
+PowerPoint.PlaceholderFormat:class:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Gets the placeholder shapes in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get properties for every shape in the collection.
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type,name");
+      await context.sync();
+
+      const placeholderShapes = [];
+      console.log(`Number of shapes found: ${shapes.items.length}`);
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.placeholder) {
+          // Load placeholderFormat property.
+          // PowerPoint throws an exception if you try to load this property on a shape that isn't a placeholder type.
+          shape.load("placeholderFormat");
+          placeholderShapes.push(shape);
+        }
+      });
+      await context.sync();
+
+      console.log(`Number of placeholder shapes found: ${placeholderShapes.length}`);
+      for (let i = 0; i < placeholderShapes.length; i++) {
+        let currentPlaceholder: PowerPoint.PlaceholderFormat = placeholderShapes[i].placeholderFormat;
+        let placeholderType = currentPlaceholder.type as PowerPoint.PlaceholderType;
+        let placeholderContainedType = currentPlaceholder.containedType as PowerPoint.ShapeType;
+        console.log(`Shape "${placeholderShapes[i].name}" placeholder properties:`);
+        console.log(`\ttype: ${placeholderType}`);
+        console.log(`\tcontainedType: ${placeholderContainedType}`);
+      }
+    });
+PowerPoint.PlaceholderType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Gets the placeholder shapes in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get properties for every shape in the collection.
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type,name");
+      await context.sync();
+
+      const placeholderShapes = [];
+      console.log(`Number of shapes found: ${shapes.items.length}`);
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.placeholder) {
+          // Load placeholderFormat property.
+          // PowerPoint throws an exception if you try to load this property on a shape that isn't a placeholder type.
+          shape.load("placeholderFormat");
+          placeholderShapes.push(shape);
+        }
+      });
+      await context.sync();
+
+      console.log(`Number of placeholder shapes found: ${placeholderShapes.length}`);
+      for (let i = 0; i < placeholderShapes.length; i++) {
+        let currentPlaceholder: PowerPoint.PlaceholderFormat = placeholderShapes[i].placeholderFormat;
+        let placeholderType = currentPlaceholder.type as PowerPoint.PlaceholderType;
+        let placeholderContainedType = currentPlaceholder.containedType as PowerPoint.ShapeType;
+        console.log(`Shape "${placeholderShapes[i].name}" placeholder properties:`);
+        console.log(`\ttype: ${placeholderType}`);
+        console.log(`\tcontainedType: ${placeholderContainedType}`);
+      }
+    });
 PowerPoint.Presentation:class:
   - >-
     // Link to full sample:
@@ -16534,6 +16749,28 @@ PowerPoint.Presentation:class:
         };
         presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
         await context.sync();
+    });
+PowerPoint.Presentation#getActiveSlideOrNullObject:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/presentation-get-active-slide.yaml
+
+
+    await PowerPoint.run(async (context) => {
+      // Gets the active slide in the presentation.
+      const slide: PowerPoint.Slide = context.presentation.getActiveSlideOrNullObject();
+      slide.load("id");
+      const activeSlideImage = slide.getImageAsBase64({ height: 200 });
+      await context.sync();
+
+      if (slide.isNullObject) {
+        console.log("There are no slides in this presentation.");
+        return;
+      }
+
+      console.log(`Active slide ID: ${slide.id}`);
+
+      updateSlideImage(activeSlideImage.value);
     });
 PowerPoint.Presentation#getSelectedShapes:member(1):
   - >-
@@ -16717,7 +16954,7 @@ PowerPoint.Presentation#getSelectedTextRange:member(1):
       txtExplained = txtExplained.replace(/\v/g, "<font color=red>VV</font>");
       let finalTable = "";
       finalTable +=
-        "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        "<table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
       finalTable += "<tr><td>Raw</td><td>" + textRange.text + "</td></tr>";
       finalTable += "<tr><td>Html</td><td>" + txtHtml + "</td></tr>";
       finalTable += "<tr><td>Exp</td><td>" + txtExplained + "</td></tr>";
@@ -16725,7 +16962,7 @@ PowerPoint.Presentation#getSelectedTextRange:member(1):
       finalTable += "<tr><td>Length</td><td>" + textRange.length + "</td></tr>";
       finalTable += "</table>";
       const outputSpan = document.getElementById("outputSpan");
-      outputSpan.innerHTML = ""
+      outputSpan.innerHTML = "";
       outputSpan.innerHTML += finalTable;
     });
   - >-
@@ -16738,7 +16975,10 @@ PowerPoint.Presentation#getSelectedTextRange:member(1):
     await PowerPoint.run(async (context) => {
       const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
       const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
-      const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
+      const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(
+        savedTextTextRangeStart,
+        savedTextTextRangeLength,
+      );
       textRange.setSelected();
       await context.sync();
     });
@@ -16978,9 +17218,11 @@ PowerPoint.Shape#fill:member:
     await PowerPoint.run(async (context) => {
       const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
       const shapeCount = shapes.getCount();
-      shapes.load("items");
+      shapes.load("items/fill/type");
       await context.sync();
       shapes.items.map((shape) => {
+        const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+        console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
         shape.fill.setSolidColor("red");
       });
       await context.sync();
@@ -17070,6 +17312,42 @@ PowerPoint.Shape#left:member:
       await context.sync();
       currentLeft = 0;
       if (currentTop > slideHeight - 200) currentTop = 0;
+    });
+PowerPoint.Shape#placeholderFormat:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+    // Gets the placeholder shapes in the slide.
+
+    await PowerPoint.run(async (context) => {
+      // Get properties for every shape in the collection.
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      shapes.load("type,name");
+      await context.sync();
+
+      const placeholderShapes = [];
+      console.log(`Number of shapes found: ${shapes.items.length}`);
+      shapes.items.forEach((shape) => {
+        if (shape.type === PowerPoint.ShapeType.placeholder) {
+          // Load placeholderFormat property.
+          // PowerPoint throws an exception if you try to load this property on a shape that isn't a placeholder type.
+          shape.load("placeholderFormat");
+          placeholderShapes.push(shape);
+        }
+      });
+      await context.sync();
+
+      console.log(`Number of placeholder shapes found: ${placeholderShapes.length}`);
+      for (let i = 0; i < placeholderShapes.length; i++) {
+        let currentPlaceholder: PowerPoint.PlaceholderFormat = placeholderShapes[i].placeholderFormat;
+        let placeholderType = currentPlaceholder.type as PowerPoint.PlaceholderType;
+        let placeholderContainedType = currentPlaceholder.containedType as PowerPoint.ShapeType;
+        console.log(`Shape "${placeholderShapes[i].name}" placeholder properties:`);
+        console.log(`\ttype: ${placeholderType}`);
+        console.log(`\tcontainedType: ${placeholderContainedType}`);
+      }
     });
 PowerPoint.Shape#top:member:
   - >-
@@ -17221,12 +17499,43 @@ PowerPoint.ShapeAddOptions:interface:
         left: 100,
         top: 100,
         height: 150,
-        width: 150
+        width: 150,
       };
       const hexagon: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, shapeOptions);
       hexagon.name = "Hexagon";
 
       await context.sync();
+    });
+PowerPoint.ShapeAutoSize:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
+
+
+    // This function gets the collection of shapes on the first slide,
+
+    // and adds a brace pair, {}, to the collection, while specifying its
+
+    // location and size. Then it names the shape, sets its text and font
+
+    // color, and centers it inside the braces.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
+        left: 100,
+        top: 400,
+        height: 50,
+        width: 150,
+      });
+      braces.name = "Braces";
+      braces.textFrame.textRange.text = "Shape text";
+      braces.textFrame.textRange.font.color = "purple";
+      braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
+      braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
+      braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
+
+      return context.sync();
     });
 PowerPoint.ShapeCollection:class:
   - >-
@@ -17268,7 +17577,7 @@ PowerPoint.ShapeCollection#addGeometricShape:member(1):
         left: 100,
         top: 100,
         height: 150,
-        width: 150
+        width: 150,
       };
       const hexagon: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, shapeOptions);
       hexagon.name = "Hexagon";
@@ -17322,13 +17631,12 @@ PowerPoint.ShapeCollection#addLine:member(1):
 
       // For a line, left and top are the coordinates of the start point,
       // while height and width are the coordinates of the end point.
-      const line: PowerPoint.Shape = shapes.addLine(PowerPoint.ConnectorType.straight, 
-          { 
-            left: 400, 
-            top: 200, 
-            height: 20, 
-            width: 150 
-          });
+      const line: PowerPoint.Shape = shapes.addLine(PowerPoint.ConnectorType.straight, {
+        left: 400,
+        top: 200,
+        height: 20,
+        width: 150,
+      });
       line.name = "StraightLine";
 
       await context.sync();
@@ -17362,13 +17670,12 @@ PowerPoint.ShapeCollection#addTextBox:member(1):
 
     await PowerPoint.run(async (context) => {
       const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-      const textbox: PowerPoint.Shape = shapes.addTextBox("Hello!", 
-          { 
-            left: 100, 
-            top: 300, 
-            height: 300, 
-            width: 450 
-          });
+      const textbox: PowerPoint.Shape = shapes.addTextBox("Hello!", {
+        left: 100,
+        top: 300,
+        height: 300,
+        width: 450,
+      });
       textbox.name = "Textbox";
 
       return context.sync();
@@ -17517,9 +17824,11 @@ PowerPoint.ShapeFill#setSolidColor:member(1):
     await PowerPoint.run(async (context) => {
       const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
       const shapeCount = shapes.getCount();
-      shapes.load("items");
+      shapes.load("items/fill/type");
       await context.sync();
       shapes.items.map((shape) => {
+        const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+        console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
         shape.fill.setSolidColor("red");
       });
       await context.sync();
@@ -17541,7 +17850,7 @@ PowerPoint.ShapeFill#foregroundColor:member:
       const minNewShapeHeight = 50;
       for (let i = 0; i < 20; i++) {
         const rectangle: PowerPoint.Shape = currentSlide.shapes.addGeometricShape(
-          PowerPoint.GeometricShapeType.rectangle
+          PowerPoint.GeometricShapeType.rectangle,
         );
         rectangle.height = getRandomBetween(minNewShapeWidth, maxNewShapeWidth);
         rectangle.width = getRandomBetween(minNewShapeHeight, maxNewShapeHeight);
@@ -17576,18 +17885,76 @@ PowerPoint.ShapeFill#transparency:member:
       });
       await context.sync();
     });
+PowerPoint.ShapeFill#type:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+    // Changes the selected shapes fill color to red.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      shapes.load("items/fill/type");
+      await context.sync();
+      shapes.items.map((shape) => {
+        const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+        console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
+        shape.fill.setSolidColor("red");
+      });
+      await context.sync();
+    });
+PowerPoint.ShapeFillType:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+    // Changes the selected shapes fill color to red.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+      const shapeCount = shapes.getCount();
+      shapes.load("items/fill/type");
+      await context.sync();
+      shapes.items.map((shape) => {
+        const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+        console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
+        shape.fill.setSolidColor("red");
+      });
+      await context.sync();
+    });
 PowerPoint.ShapeFont:class:
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
 
 
-    // Sets the color of the selected text range to green.
+    // Gets navigational (complex) properties of the selected text range.
 
     await PowerPoint.run(async (context) => {
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-      textRange.font.color = "green";
+      textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
       await context.sync();
+
+      console.log("Font properties of selected text range:");
+      console.log(`\tallCaps: ${textRange.font.allCaps}`);
+      console.log(`\tbold: ${textRange.font.bold}`);
+      console.log(`\tcolor: ${textRange.font.color}`);
+      console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+      console.log(`\titalic: ${textRange.font.italic}`);
+      console.log(`\tname: ${textRange.font.name}`);
+      console.log(`\tsize: ${textRange.font.size}`);
+      console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+      console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+      console.log(`\tsubscript: ${textRange.font.subscript}`);
+      console.log(`\tsuperscript: ${textRange.font.superscript}`);
+      console.log(`\tunderline: ${textRange.font.underline}`);
+
+      console.log("Paragraph format properties of selected text range:");
+      console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+      console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
     });
 PowerPoint.ShapeFont#color:member:
   - >-
@@ -17601,6 +17968,68 @@ PowerPoint.ShapeFont#color:member:
       const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
       textRange.font.color = "green";
       await context.sync();
+    });
+PowerPoint.ShapeFont#underline:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
+
+
+    // This function gets the collection of shapes on the first slide,
+
+    // and adds a brace pair, {}, to the collection, while specifying its
+
+    // location and size. Then it names the shape, sets its text and font
+
+    // color, and centers it inside the braces.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
+        left: 100,
+        top: 400,
+        height: 50,
+        width: 150,
+      });
+      braces.name = "Braces";
+      braces.textFrame.textRange.text = "Shape text";
+      braces.textFrame.textRange.font.color = "purple";
+      braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
+      braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
+      braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
+
+      return context.sync();
+    });
+PowerPoint.ShapeFontUnderlineStyle:enum:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
+
+
+    // This function gets the collection of shapes on the first slide,
+
+    // and adds a brace pair, {}, to the collection, while specifying its
+
+    // location and size. Then it names the shape, sets its text and font
+
+    // color, and centers it inside the braces.
+
+    await PowerPoint.run(async (context) => {
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
+        left: 100,
+        top: 400,
+        height: 50,
+        width: 150,
+      });
+      braces.name = "Braces";
+      braces.textFrame.textRange.text = "Shape text";
+      braces.textFrame.textRange.font.color = "purple";
+      braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
+      braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
+      braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
+
+      return context.sync();
     });
 PowerPoint.ShapeGroup:class:
   - >-
@@ -17742,9 +18171,11 @@ PowerPoint.ShapeScopedCollection:class:
     await PowerPoint.run(async (context) => {
       const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
       const shapeCount = shapes.getCount();
-      shapes.load("items");
+      shapes.load("items/fill/type");
       await context.sync();
       shapes.items.map((shape) => {
+        const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+        console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
         shape.fill.setSolidColor("red");
       });
       await context.sync();
@@ -17971,7 +18402,7 @@ PowerPoint.Slide#setSelectedShapes:member(1):
       shape2.load("id");
       await context.sync();
 
-      console.log(`IDs: ${shape1.id}, ${shape2.id}`)
+      console.log(`IDs: ${shape1.id}, ${shape2.id}`);
       slide1.setSelectedShapes([shape1.id, shape2.id]);
       await context.sync();
     });
@@ -19354,20 +19785,38 @@ PowerPoint.TextFrame:class:
       textRange10.setSelected();
       await context.sync();
     });
-PowerPoint.TextRange:class:
+PowerPoint.TextFrame#autoSizeSetting:member:
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
 
-    // Sets the color of the selected text range to green.
+    // This function gets the collection of shapes on the first slide,
+
+    // and adds a brace pair, {}, to the collection, while specifying its
+
+    // location and size. Then it names the shape, sets its text and font
+
+    // color, and centers it inside the braces.
 
     await PowerPoint.run(async (context) => {
-      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-      textRange.font.color = "green";
-      await context.sync();
+      const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+      const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
+        left: 100,
+        top: 400,
+        height: 50,
+        width: 150,
+      });
+      braces.name = "Braces";
+      braces.textFrame.textRange.text = "Shape text";
+      braces.textFrame.textRange.font.color = "purple";
+      braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
+      braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
+      braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
+
+      return context.sync();
     });
-PowerPoint.TextRange#font:member:
+PowerPoint.TextRange:class:
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
@@ -19424,9 +19873,56 @@ PowerPoint.TextRange#setSelected:member(1):
     await PowerPoint.run(async (context) => {
       const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
       const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
-      const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
+      const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(
+        savedTextTextRangeStart,
+        savedTextTextRangeLength,
+      );
       textRange.setSelected();
       await context.sync();
+    });
+PowerPoint.TextRange#font:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+    // Sets the color of the selected text range to green.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+      textRange.font.color = "green";
+      await context.sync();
+    });
+PowerPoint.TextRange#paragraphFormat:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+    // Gets navigational (complex) properties of the selected text range.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+      textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+      await context.sync();
+
+      console.log("Font properties of selected text range:");
+      console.log(`\tallCaps: ${textRange.font.allCaps}`);
+      console.log(`\tbold: ${textRange.font.bold}`);
+      console.log(`\tcolor: ${textRange.font.color}`);
+      console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+      console.log(`\titalic: ${textRange.font.italic}`);
+      console.log(`\tname: ${textRange.font.name}`);
+      console.log(`\tsize: ${textRange.font.size}`);
+      console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+      console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+      console.log(`\tsubscript: ${textRange.font.subscript}`);
+      console.log(`\tsuperscript: ${textRange.font.superscript}`);
+      console.log(`\tunderline: ${textRange.font.underline}`);
+
+      console.log("Paragraph format properties of selected text range:");
+      console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+      console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
     });
 PowerPoint.TextRun:interface:
   - >-
@@ -19494,15 +19990,17 @@ PowerPoint.TextVerticalAlignment:enum:
     await PowerPoint.run(async (context) => {
       const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
       const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
-          left: 100,
-          top: 400,
-          height: 50,
-          width: 150
-        });
+        left: 100,
+        top: 400,
+        height: 50,
+        width: 150,
+      });
       braces.name = "Braces";
       braces.textFrame.textRange.text = "Shape text";
       braces.textFrame.textRange.font.color = "purple";
+      braces.textFrame.textRange.font.underline = PowerPoint.ShapeFontUnderlineStyle.heavy;
       braces.textFrame.verticalAlignment = PowerPoint.TextVerticalAlignment.middleCentered;
+      braces.textFrame.autoSizeSetting = PowerPoint.ShapeAutoSize.autoSizeShapeToFitText;
 
       return context.sync();
     });
@@ -27497,7 +27995,7 @@ Word.Range#insertContentControl:member(1):
         await context.sync();
 
       if (customerContentControls.items.length === 0) {
-        for (let i = 0; i < results.items.length; i++) { 
+        for (let i = 0; i < results.items.length; i++) {
             results.items[i].font.bold = true;
             let cc: Word.ContentControl = results.items[i].insertContentControl();
             cc.tag = "customer";  // This value is used in the next step of this sample.

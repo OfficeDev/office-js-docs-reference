@@ -185,7 +185,11 @@ properties:
       - Web browser, new Mac UI, Android: No limit
 
 
-      - Windows: 500 members
+      - Windows (new and classic): 500 members
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 members
 
 
       - Classic Mac UI: 100 members
@@ -239,6 +243,10 @@ properties:
 
 
       - Windows: 500 members
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 members
 
 
       - Classic Mac UI: 100 members
