@@ -272,6 +272,35 @@ methods:
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/presentation-get-active-slide.yaml
+
+
+      await PowerPoint.run(async (context) => {
+        // Gets the active slide in the presentation.
+        const slide: PowerPoint.Slide = context.presentation.getActiveSlideOrNullObject();
+        slide.load("id");
+        const activeSlideImage = slide.getImageAsBase64({ height: 200 });
+        await context.sync();
+
+        if (slide.isNullObject) {
+          console.log("There are no slides in this presentation.");
+          return;
+        }
+
+        console.log(`Active slide ID: ${slide.id}`);
+
+        updateSlideImage(activeSlideImage.value);
+      });
+
+      ```
+
     isPreview: true
     isDeprecated: false
     syntax:
