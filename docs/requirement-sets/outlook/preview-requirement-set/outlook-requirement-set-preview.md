@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 11/14/2025
+ms.date: 11/20/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -88,6 +88,20 @@ Added an enum to specify the status of tokens in an organization.
 Added a method to get the status of EWS callback tokens in an organization.
 
 **Available in**: Outlook on the web and on Windows (new and classic)
+
+<br>
+
+---
+
+---
+
+### Customize the Smart Alerts dialog message using Markdown in Outlook on Mac
+
+#### [errorMessageMarkdown](/javascript/api/outlook/office.smartalertseventcompletedoptions?view=outlook-js-preview&preserve-view=true#outlook-office-smartalertseventcompletedoptions-errormessagemarkdown-member) property of the `event.completed` method
+
+Updated the `errorMessageMarkdown` property of the `event.completed` method to include support in Outlook on Mac.
+
+**Available in**: Outlook on Mac
 
 <br>
 

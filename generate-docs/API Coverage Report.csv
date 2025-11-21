@@ -8109,7 +8109,7 @@ office,Office.Settings,"set(name, value)",Method,Excellent,true
 office,Office.SettingsChangedEventArgs,N/A,Interface,Excellent,false
 office,Office.SettingsChangedEventArgs,"settings",Property,Good,false
 office,Office.SettingsChangedEventArgs,"type",Property,Great,false
-office,Office.Slice,N/A,Interface,Great,false
+office,Office.Slice,N/A,Interface,Great,true
 office,Office.Slice,"data",Property,Excellent,false
 office,Office.Slice,"index",Property,Poor,false
 office,Office.Slice,"size",Property,Poor,false
@@ -10585,7 +10585,7 @@ powerpoint,PowerPoint.Presentation,"slideMasters",Property,Great,false
 powerpoint,PowerPoint.Presentation,"slides",Property,Good,false
 powerpoint,PowerPoint.Presentation,"tags",Property,Good,false
 powerpoint,PowerPoint.Presentation,"title",Property,Fine,false
-powerpoint,PowerPoint.Presentation,"getActiveSlideOrNullObject()",Method,Excellent,false
+powerpoint,PowerPoint.Presentation,"getActiveSlideOrNullObject()",Method,Excellent,true
 powerpoint,PowerPoint.Presentation,"getSelectedShapes()",Method,Great,true
 powerpoint,PowerPoint.Presentation,"getSelectedSlides()",Method,Great,true
 powerpoint,PowerPoint.Presentation,"getSelectedTextRange()",Method,Excellent,true
