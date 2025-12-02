@@ -580,10 +580,17 @@ export declare namespace Excel {
     }
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
-     * The `extensionHardening` Windows registry key affects the `base64File` param. The file extension defined by the param must match the real file type of the file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
-     * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
+     * Creates and opens a new workbook. Optionally, the workbook can be pre-populated
+     * with a Base64-encoded .xlsx file.
+
+     * Note: Macros can be a security risk. If this API is used to create a workbook that
+     * includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog
+     * in the Excel UI. The user must select the "Trust add-in" button to proceed.
      *
+     * Note: The `extensionHardening` Windows registry key affects the `base64File` param.
+     * The file extension defined by the param must match the real file type of the file.
+     * If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error:
+     * "This operation is not allowed due to the extension hardening policy."
      * [Api set: ExcelApi 1.8]
      *
      * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.

@@ -19,6 +19,18 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"AnnotationAdded"'
+  - name: augmentationLoopUploadStatusChanged
+    uid: excel!Excel.EventType.augmentationLoopUploadStatusChanged:member
+    package: excel!
+    summary: >-
+      AugmentationLoopUploadStatusChanged represents the type of event
+      registered when the upload status of the augmentation loop changes.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"AugmentationLoopUploadStatusChanged"'
   - name: chartActivated
     uid: excel!Excel.EventType.chartActivated:member
     package: excel!

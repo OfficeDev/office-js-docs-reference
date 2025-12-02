@@ -1,6 +1,9 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Application](/javascript/api/excel/excel.application)|[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
+|[AutorunEventCompletedOptions](/javascript/api/excel/excel.autoruneventcompletedoptions)|[allowEvent](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-allowevent-member)|Specifies whether to allow the event to proceed.|
+||[autorunEventType](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-autoruneventtype-member)|Specifies the type of autorun event to be completed if allowed.|
+||[message](/javascript/api/excel/excel.autoruneventcompletedoptions#excel-excel-autoruneventcompletedoptions-message-member)|If provided, specifies an optional error message if the event isn't allowed to proceed.|
 |[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The Base64-encoded string.|
 ||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the Base64-encoded image.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
@@ -93,7 +96,7 @@
 ||[refresh()](/javascript/api/excel/excel.query#excel-excel-query-refresh-member(1))|Refreshes the query.|
 |[QueryCollection](/javascript/api/excel/excel.querycollection)|[refreshAll()](/javascript/api/excel/excel.querycollection#excel-excel-querycollection-refreshall-member(1))|Refresh all queries.|
 |[Range](/javascript/api/excel/excel.range)|[togglePythonMarshalMode(marshalMode?: Excel.PythonMarshalMode)](/javascript/api/excel/excel.range#excel-excel-range-togglepythonmarshalmode-member(1))|Sets the marshaling mode of the Python in Excel formula =PY.|
-|[RequestContext](/javascript/api/excel/excel.requestcontext)|[setInvocation(invocation: { invocationId: number isInCFSyncScenario: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
+|[RequestContext](/javascript/api/excel/excel.requestcontext)|[setInvocation(invocation: { invocationId: number isInSyncExecution: boolean })](/javascript/api/excel/excel.requestcontext#excel-excel-requestcontext-setinvocation-member(1))||
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addLocalImageReference(address: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addlocalimagereference-member(1))|Creates a reference for the local image stored in the cell address and displays it as a floating shape over cells.|
 ||[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
 |[ShapeFont](/javascript/api/excel/excel.shapefont)|[strikethrough](/javascript/api/excel/excel.shapefont#excel-excel-shapefont-strikethrough-member)|Specifies the strikethrough status of font.|
@@ -122,7 +125,8 @@
 ||[errorType](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.timeouterrorcellvalue#excel-excel-timeouterrorcellvalue-type-member)|Represents the type of this cell value.|
 |[Window](/javascript/api/excel/excel.window)|[rangeSelection](/javascript/api/excel/excel.window#excel-excel-window-rangeselection-member)|Gets the range selection in the window.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[autorunEventCompleted(AutorunEventCompletedOptions: Excel.AutorunEventCompletedOptions)](/javascript/api/excel/excel.workbook#excel-excel-workbook-autoruneventcompleted-member(1))|Notifies the host application that the add-in's code has finished running in an autorun event.|
+||[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
 ||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
