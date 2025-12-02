@@ -17,7 +17,7 @@ remarks: >-
 isPreview: false
 isDeprecated: true
 customDeprecatedMessage: >-
-  As of \[Api set: ExcelApi 1.19\], use
+  As of ExcelApi 1.19, use
   [DoubleCellValue](https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue)
   instead.
 type: interface
@@ -36,7 +36,7 @@ properties:
 
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: 'Deprecated since \[Api set: ExcelApi 1.19\].'
+    customDeprecatedMessage: Deprecated since ExcelApi 1.19.
     syntax:
       content: 'basicType?: RangeValueType.double | "Double";'
       return:
@@ -55,7 +55,7 @@ properties:
 
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: 'Deprecated since \[Api set: ExcelApi 1.19\].'
+    customDeprecatedMessage: Deprecated since ExcelApi 1.19.
     syntax:
       content: 'basicValue: number;'
       return:
@@ -80,7 +80,7 @@ properties:
 
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: 'Deprecated since \[Api set: ExcelApi 1.19\].'
+    customDeprecatedMessage: Deprecated since ExcelApi 1.19.
     syntax:
       content: 'numberFormat: string;'
       return:
@@ -97,7 +97,7 @@ properties:
 
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: 'Deprecated since \[Api set: ExcelApi 1.19\].'
+    customDeprecatedMessage: Deprecated since ExcelApi 1.19.
     syntax:
       content: 'type: CellValueType.formattedNumber | "FormattedNumber";'
       return:

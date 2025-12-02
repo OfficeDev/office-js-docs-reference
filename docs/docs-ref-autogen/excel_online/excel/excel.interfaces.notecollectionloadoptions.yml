@@ -64,7 +64,9 @@ properties:
     uid: excel!Excel.Interfaces.NoteCollectionLoadOptions#height:member
     package: excel!
     fullName: height
-    summary: 'For EACH ITEM in the collection: Specifies the height of the note.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the height of the note. Note:
+      This property is not supported in Excel on the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -82,7 +84,8 @@ properties:
     fullName: visible
     summary: >-
       For EACH ITEM in the collection: Specifies the visibility of the note. A
-      value of `true` means the note is shown.
+      value of `true` means the note is shown. Note: This property is not
+      supported in Excel on the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -98,7 +101,9 @@ properties:
     uid: excel!Excel.Interfaces.NoteCollectionLoadOptions#width:member
     package: excel!
     fullName: width
-    summary: 'For EACH ITEM in the collection: Specifies the width of the note.'
+    summary: >-
+      For EACH ITEM in the collection: Specifies the width of the note. Note:
+      This property is not supported in Excel on the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

@@ -39,7 +39,7 @@ constructors:
       content: |-
         constructor(url?: string | Session, invocation?: {
                     invocationId: number;
-                    isInCFSyncScenario: boolean;
+                    isInSyncExecution: boolean;
                 });
       parameters:
         - id: url
@@ -50,7 +50,7 @@ constructors:
           type: |-
             {
                         invocationId: number;
-                        isInCFSyncScenario: boolean;
+                        isInSyncExecution: boolean;
                     }
 properties:
   - name: application
@@ -108,7 +108,7 @@ methods:
       content: |-
         setInvocation(invocation: {
                     invocationId: number;
-                    isInCFSyncScenario: boolean;
+                    isInSyncExecution: boolean;
                 }): void;
       parameters:
         - id: invocation
@@ -116,7 +116,7 @@ methods:
           type: |-
             {
                         invocationId: number;
-                        isInCFSyncScenario: boolean;
+                        isInSyncExecution: boolean;
                     }
       return:
         type: void

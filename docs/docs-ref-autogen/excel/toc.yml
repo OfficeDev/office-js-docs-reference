@@ -38,6 +38,8 @@ items:
                 uid: excel!Excel.ArrowheadWidth:enum
               - name: AutoFillType
                 uid: excel!Excel.AutoFillType:enum
+              - name: AutorunEventType
+                uid: excel!Excel.AutorunEventType:enum
               - name: Base64EncodingType
                 uid: excel!Excel.Base64EncodingType:enum
               - name: BindingType
@@ -465,6 +467,8 @@ items:
             uid: excel!Excel.ArrayCellValue:interface
           - name: AutoFilter
             uid: excel!Excel.AutoFilter:class
+          - name: AutorunEventCompletedOptions
+            uid: excel!Excel.AutorunEventCompletedOptions:interface
           - name: Base64EncodedImage
             uid: excel!Excel.Base64EncodedImage:interface
           - name: BasicCardLayout
