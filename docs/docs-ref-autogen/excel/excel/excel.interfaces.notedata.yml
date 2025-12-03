@@ -46,7 +46,9 @@ properties:
     uid: excel!Excel.Interfaces.NoteData#height:member
     package: excel!
     fullName: height
-    summary: Specifies the height of the note.
+    summary: >-
+      Specifies the height of the note. Note: This property is not supported in
+      Excel on the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -64,7 +66,7 @@ properties:
     fullName: visible
     summary: >-
       Specifies the visibility of the note. A value of `true` means the note is
-      shown.
+      shown. Note: This property is not supported in Excel on the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -80,7 +82,9 @@ properties:
     uid: excel!Excel.Interfaces.NoteData#width:member
     package: excel!
     fullName: width
-    summary: Specifies the width of the note.
+    summary: >-
+      Specifies the width of the note. Note: This property is not supported in
+      Excel on the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

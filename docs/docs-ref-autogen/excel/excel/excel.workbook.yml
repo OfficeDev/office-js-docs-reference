@@ -707,6 +707,31 @@ properties:
       return:
         type: <xref uid="excel!Excel.WorksheetCollection:class" />
 methods:
+  - name: autorunEventCompleted(AutorunEventCompletedOptions)
+    uid: excel!Excel.Workbook#autorunEventCompleted:member(1)
+    package: excel!
+    fullName: autorunEventCompleted(AutorunEventCompletedOptions)
+    summary: >-
+      Notifies the host application that the add-in's code has finished running
+      in an autorun event.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        autorunEventCompleted(AutorunEventCompletedOptions:
+        Excel.AutorunEventCompletedOptions): void;
+      parameters:
+        - id: AutorunEventCompletedOptions
+          description: Required. Options for completing the autorun event.
+          type: <xref uid="excel!Excel.AutorunEventCompletedOptions:interface" />
+      return:
+        type: void
+        description: ''
   - name: close(closeBehavior)
     uid: excel!Excel.Workbook#close:member(1)
     package: excel!
@@ -770,7 +795,7 @@ methods:
     package: excel!
     fullName: focus()
     summary: >-
-      Sets focus on the workbook. This will cause the grid or the currently
+      Sets focus on the workbook. This causes the Excel grid or the currently
       active object to receive keyboard events.
     remarks: >-
       \[ [API set: ExcelApiDesktop
@@ -1109,12 +1134,19 @@ methods:
     fullName: insertWorksheetsFromBase64(base64File, options)
     summary: >-
       Inserts the specified worksheets from a source workbook into the current
-      workbook. The `extensionHardening` Windows registry key affects this API.
-      The file extension defined by the `base64File` param must match the real
-      file type of the inserted file. If `extensionHardening` is set to deny
-      mismatches and the file extension does not match the real file type, this
-      API throws the following error: "This operation is not allowed due to the
-      extension hardening policy."
+      workbook.
+
+
+      The `extensionHardening` Windows registry key affects this API. The file
+      extension defined by the `base64File` param must match the real file type
+      of the inserted file. If `extensionHardening` is set to deny mismatches
+      and the file extension does not match the real file type, this API throws
+      the following error: "This operation is not allowed due to the extension
+      hardening policy."
+
+
+      *Note**: This API is currently only supported for Office on Windows,
+      Mac, and the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

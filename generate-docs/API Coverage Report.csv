@@ -140,6 +140,14 @@ excel,Excel.AutoFilter,"load(propertyNamesAndPaths)",Method,Excellent,false
 excel,Excel.AutoFilter,"reapply()",Method,Great,true
 excel,Excel.AutoFilter,"remove()",Method,Poor,true
 excel,Excel.AutoFilter,"toJSON()",Method,Excellent,false
+excel,Excel.AutorunEventCompletedOptions,N/A,Interface,Excellent,false
+excel,Excel.AutorunEventCompletedOptions,"allowEvent",Property,Excellent,false
+excel,Excel.AutorunEventCompletedOptions,"autorunEventType",Property,Excellent,false
+excel,Excel.AutorunEventCompletedOptions,"message",Property,Excellent,false
+excel,Excel.AutorunEventType,N/A,Enum,Good,false
+excel,Excel.AutorunEventType,"onDocumentSave",EnumField,Good,false
+excel,Excel.AutorunEventType,"onDocumentSaveAs",EnumField,Good,false
+excel,Excel.AutorunEventType,"unknown",EnumField,Fine,false
 excel,Excel.Base64EncodedImage,N/A,Interface,Poor,false
 excel,Excel.Base64EncodedImage,"data",Property,Fine,false
 excel,Excel.Base64EncodedImage,"type",Property,Poor,false
@@ -3352,6 +3360,7 @@ excel,Excel.EventTriggerSource,"thisLocalAddin",EnumField,Fine,false
 excel,Excel.EventTriggerSource,"unknown",EnumField,Fine,false
 excel,Excel.EventType,N/A,Enum,Missing,false
 excel,Excel.EventType,"annotationAdded",EnumField,Fine,false
+excel,Excel.EventType,"augmentationLoopUploadStatusChanged",EnumField,Great,false
 excel,Excel.EventType,"chartActivated",EnumField,Good,false
 excel,Excel.EventType,"chartAdded",EnumField,Good,false
 excel,Excel.EventType,"chartDeactivated",EnumField,Good,false
@@ -4656,9 +4665,9 @@ excel,Excel.Note,N/A,Class,Poor,true
 excel,Excel.Note,"authorName",Property,Poor,false
 excel,Excel.Note,"content",Property,Good,true
 excel,Excel.Note,"context",Property,Excellent,false
-excel,Excel.Note,"height",Property,Good,true
+excel,Excel.Note,"height",Property,Excellent,true
 excel,Excel.Note,"visible",Property,Excellent,true
-excel,Excel.Note,"width",Property,Good,true
+excel,Excel.Note,"width",Property,Excellent,true
 excel,Excel.Note,"delete()",Method,Fine,true
 excel,Excel.Note,"getLocation()",Method,Poor,false
 excel,Excel.Note,"load(options)",Method,Excellent,false
@@ -6792,6 +6801,7 @@ excel,Excel.Workbook,"timelineStyles",Property,Fine,false
 excel,Excel.Workbook,"use1904DateSystem",Property,Fine,false
 excel,Excel.Workbook,"usePrecisionAsDisplayed",Property,Excellent,false
 excel,Excel.Workbook,"worksheets",Property,Fine,false
+excel,Excel.Workbook,"autorunEventCompleted(AutorunEventCompletedOptions)",Method,Great,false
 excel,Excel.Workbook,"close(closeBehavior)",Method,Poor,true
 excel,Excel.Workbook,"close(closeBehavior)",Method,Poor,false
 excel,Excel.Workbook,"focus()",Method,Good,false

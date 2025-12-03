@@ -5798,7 +5798,7 @@ export declare namespace Excel {
      * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
      * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
      *
-     * @deprecated As of [Api set: ExcelApi 1.19], use {@link https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue | DoubleCellValue} instead.
+     * @deprecated As of ExcelApi 1.19, use {@link https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue | DoubleCellValue} instead.
      *
      * @remarks
      * [Api set: ExcelApi 1.16]
@@ -5807,7 +5807,7 @@ export declare namespace Excel {
         /**
          * Represents the type of this cell value.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -5816,7 +5816,7 @@ export declare namespace Excel {
         /**
          * Represents the value that would be returned by `Range.values` for a cell with this value.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -5825,7 +5825,7 @@ export declare namespace Excel {
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -5837,7 +5837,7 @@ export declare namespace Excel {
          * Number format strings must conform to Excel guidelines.
          * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -7291,10 +7291,17 @@ export declare namespace Excel {
     }
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
-     * The `extensionHardening` Windows registry key affects the `base64File` param. The file extension defined by the param must match the real file type of the file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
-     * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
+     * Creates and opens a new workbook. Optionally, the workbook can be pre-populated
+     * with a Base64-encoded .xlsx file.
+
+     * Note: Macros can be a security risk. If this API is used to create a workbook that
+     * includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog
+     * in the Excel UI. The user must select the "Trust add-in" button to proceed.
      *
+     * Note: The `extensionHardening` Windows registry key affects the `base64File` param.
+     * The file extension defined by the param must match the real file type of the file.
+     * If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error:
+     * "This operation is not allowed due to the extension hardening policy."
      * [Api set: ExcelApi 1.8]
      *
      * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.
@@ -7508,7 +7515,6 @@ export declare namespace Excel {
          *
          * When false, each `context.sync()` call creates an undo record.
          * When true, all `context.sync()` calls in a single `Excel.run` are merged into one `undo` group.
-         * 
          * @remarks
          * [Api set: ExcelApi 1.20]
          */
@@ -10527,8 +10533,7 @@ export declare namespace Excel {
          */
         close(closeBehavior?: "Save" | "SkipSave"): void;
         /**
-         * Sets focus on the workbook. This will cause the grid or the currently active object
-                    to receive keyboard events.
+         * Sets focus on the workbook. This causes the Excel grid or the currently active object to receive keyboard events.
          *
          * @remarks
          * [Api set: ExcelApiDesktop 1.1]
@@ -10623,7 +10628,10 @@ export declare namespace Excel {
         getSelectedRanges(): Excel.RangeAreas;
         /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
-         * The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
+                    
+                     The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
+                     
+                     **Note**: This API is currently only supported for Office on Windows, Mac, and the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -38772,6 +38780,7 @@ export declare namespace Excel {
         content: string;
         /**
          * Specifies the height of the note.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -38779,6 +38788,7 @@ export declare namespace Excel {
         height: number;
         /**
          * Specifies the visibility of the note. A value of `true` means the note is shown.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -38786,6 +38796,7 @@ export declare namespace Excel {
         visible: boolean;
         /**
          * Specifies the width of the note.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -48544,6 +48555,7 @@ export declare namespace Excel {
             content?: string;
             /**
              * Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -48551,6 +48563,7 @@ export declare namespace Excel {
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -48558,6 +48571,7 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -55793,6 +55807,7 @@ export declare namespace Excel {
             content?: string;
             /**
              * Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -55800,6 +55815,7 @@ export declare namespace Excel {
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -55807,6 +55823,7 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -67693,6 +67710,7 @@ export declare namespace Excel {
             content?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -67700,6 +67718,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -67707,6 +67726,7 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]

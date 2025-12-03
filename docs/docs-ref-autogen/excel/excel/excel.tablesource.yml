@@ -15,7 +15,7 @@ fields:
     uid: excel!Excel.TableSource.external:member
     package: excel!
     summary: >-
-      External data source (such as Microsoft SharePoint Foundation).
+      An external data source, such as Microsoft SharePoint Foundation.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -26,7 +26,7 @@ fields:
     uid: excel!Excel.TableSource.model:member
     package: excel!
     summary: >-
-      Power Pivot model.
+      A Power Pivot model.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -37,7 +37,7 @@ fields:
     uid: excel!Excel.TableSource.query:member
     package: excel!
     summary: >-
-      Query data source.
+      A Power Query query data source.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -48,7 +48,7 @@ fields:
     uid: excel!Excel.TableSource.range:member
     package: excel!
     summary: >-
-      An Excel range object.
+      A range object in this worksheet.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW
@@ -59,7 +59,7 @@ fields:
     uid: excel!Excel.TableSource.xml:member
     package: excel!
     summary: >-
-      XML data source.
+      An XML data source.
 
 
       * \[ [API set: ExcelApi BETA (PREVIEW

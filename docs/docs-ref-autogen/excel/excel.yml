@@ -9,6 +9,7 @@ enums:
   - excel!Excel.ArrowheadStyle:enum
   - excel!Excel.ArrowheadWidth:enum
   - excel!Excel.AutoFillType:enum
+  - excel!Excel.AutorunEventType:enum
   - excel!Excel.Base64EncodingType:enum
   - excel!Excel.BindingType:enum
   - excel!Excel.BlockedErrorCellValueSubType:enum
@@ -396,6 +397,7 @@ classes:
 interfaces:
   - excel!Excel.AllowEditRangeOptions:interface
   - excel!Excel.ArrayCellValue:interface
+  - excel!Excel.AutorunEventCompletedOptions:interface
   - excel!Excel.Base64EncodedImage:interface
   - excel!Excel.BasicCardLayout:interface
   - excel!Excel.BasicCompactLayout:interface
@@ -1157,19 +1159,21 @@ functions:
     package: excel!
     summary: >-
       Creates and opens a new workbook. Optionally, the workbook can be
-      pre-populated with a Base64-encoded .xlsx file. The `extensionHardening`
-      Windows registry key affects the `base64File` param. The file extension
-      defined by the param must match the real file type of the file. If
-      `extensionHardening` is set to deny mismatches and the file extension does
-      not match the real file type, this API throws the following error: "This
-      operation is not allowed due to the extension hardening policy." Note:
-      Macros can be a security risk. If this API is used to create a workbook
-      that includes a macro, the add-in user will be prompted with a "Trust this
-      add-in?" dialog in the Excel UI. The user must select the "Trust add-in"
-      button to proceed.
+      pre-populated with a Base64-encoded .xlsx file.
 
 
-      \[ [API set: ExcelApi
+      Note: Macros can be a security risk. If this API is used to create a
+      workbook that includes a macro, the add-in user will be prompted with a
+      "Trust this add-in?" dialog in the Excel UI. The user must select the
+      "Trust add-in" button to proceed.
+
+
+      Note: The `extensionHardening` Windows registry key affects the
+      `base64File` param. The file extension defined by the param must match the
+      real file type of the file. If `extensionHardening` is set to deny
+      mismatches and the file extension does not match the real file type, this
+      API throws the following error: "This operation is not allowed due to the
+      extension hardening policy." \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 

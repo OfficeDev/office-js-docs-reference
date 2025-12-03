@@ -6429,7 +6429,7 @@ export declare namespace Excel {
      * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
      * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
      *
-     * @deprecated As of [Api set: ExcelApi 1.19], use {@link https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue | DoubleCellValue} instead.
+     * @deprecated As of ExcelApi 1.19, use {@link https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue | DoubleCellValue} instead.
      *
      * @remarks
      * [Api set: ExcelApi 1.16]
@@ -6438,7 +6438,7 @@ export declare namespace Excel {
         /**
          * Represents the type of this cell value.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6447,7 +6447,7 @@ export declare namespace Excel {
         /**
          * Represents the value that would be returned by `Range.values` for a cell with this value.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6456,7 +6456,7 @@ export declare namespace Excel {
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -6468,7 +6468,7 @@ export declare namespace Excel {
          * Number format strings must conform to Excel guidelines.
          * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
          *
-         * @deprecated Deprecated since [Api set: ExcelApi 1.19].
+         * @deprecated Deprecated since ExcelApi 1.19.
          *
          * @remarks
          * [Api set: ExcelApi 1.16]
@@ -8961,10 +8961,17 @@ export declare namespace Excel {
     }
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
-     * The `extensionHardening` Windows registry key affects the `base64File` param. The file extension defined by the param must match the real file type of the file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
-     * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
+     * Creates and opens a new workbook. Optionally, the workbook can be pre-populated
+     * with a Base64-encoded .xlsx file.
+
+     * Note: Macros can be a security risk. If this API is used to create a workbook that
+     * includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog
+     * in the Excel UI. The user must select the "Trust add-in" button to proceed.
      *
+     * Note: The `extensionHardening` Windows registry key affects the `base64File` param.
+     * The file extension defined by the param must match the real file type of the file.
+     * If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error:
+     * "This operation is not allowed due to the extension hardening policy."
      * [Api set: ExcelApi 1.8]
      *
      * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.
@@ -9158,11 +9165,11 @@ export declare namespace Excel {
     export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | Session, invocation?: {
             invocationId: number;
-            isInCFSyncScenario: boolean;
+            isInSyncExecution: boolean;
         });
         setInvocation(invocation: {
             invocationId: number;
-            isInCFSyncScenario: boolean;
+            isInSyncExecution: boolean;
         }): void;
         readonly workbook: Workbook;
         readonly application: Application;
@@ -9185,7 +9192,6 @@ export declare namespace Excel {
          *
          * When false, each `context.sync()` call creates an undo record.
          * When true, all `context.sync()` calls in a single `Excel.run` are merged into one `undo` group.
-         * 
          * @remarks
          * [Api set: ExcelApi 1.20]
          */
@@ -14219,6 +14225,66 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.IterativeCalculationData;
     }
     /**
+     * Specifies the type of autorun event.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum AutorunEventType {
+        /**
+         * The autorun event type is unknown.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        unknown = "Unknown",
+        /**
+         * The autorun event type is triggered when the document is saved.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        onDocumentSave = "OnDocumentSave",
+        /**
+         * The autorun event type is triggered when the document is saved as a new file.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        onDocumentSaveAs = "OnDocumentSaveAs"
+    }
+    /**
+     * Specifies the options for completing an autorun event.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface AutorunEventCompletedOptions {
+        /**
+         * Specifies whether to allow the event to proceed. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        allowEvent: boolean;
+        /**
+         * Specifies the type of autorun event to be completed if allowed. The default value is `unknown`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autorunEventType: Excel.AutorunEventType | "Unknown" | "OnDocumentSave" | "OnDocumentSaveAs";
+        /**
+         * If provided, specifies an optional error message if the event isn't allowed to proceed. The default value is "" (empty string).
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        message?: string;
+    }
+    /**
      * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges.
                 To learn more about the workbook object model, read {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
      *
@@ -14498,6 +14564,16 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Workbook): void;
         /**
+         * Notifies the host application that the add-in's code has finished running in an autorun event.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param AutorunEventCompletedOptions - Required. Options for completing the autorun event.
+         */
+        autorunEventCompleted(AutorunEventCompletedOptions: Excel.AutorunEventCompletedOptions): void;
+        /**
          * Close current workbook.
          *
          * @remarks
@@ -14516,8 +14592,7 @@ export declare namespace Excel {
          */
         close(closeBehavior?: "Save" | "SkipSave"): void;
         /**
-         * Sets focus on the workbook. This will cause the grid or the currently active object
-                    to receive keyboard events.
+         * Sets focus on the workbook. This causes the Excel grid or the currently active object to receive keyboard events.
          *
          * @remarks
          * [Api set: ExcelApiDesktop 1.1]
@@ -14612,7 +14687,10 @@ export declare namespace Excel {
         getSelectedRanges(): Excel.RangeAreas;
         /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
-         * The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
+                    
+                     The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
+                     
+                     **Note**: This API is currently only supported for Office on Windows, Mac, and the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -19648,35 +19726,35 @@ export declare namespace Excel {
      */
     enum TableSource {
         /**
-         * External data source (such as Microsoft SharePoint Foundation).
+         * An external data source, such as Microsoft SharePoint Foundation.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         external = "External",
         /**
-         * An Excel range object.
+         * A range object in this worksheet.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         range = "Range",
         /**
-         * XML data source.
+         * An XML data source.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         xml = "Xml",
         /**
-         * Query data source.
+         * A Power Query query data source.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         query = "Query",
         /**
-         * Power Pivot model.
+         * A Power Pivot model.
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -40692,7 +40770,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        externalCodeServiceDiffResultReceived = "ExternalCodeServiceDiffResultReceived"
+        externalCodeServiceDiffResultReceived = "ExternalCodeServiceDiffResultReceived",
+        /**
+         * AugmentationLoopUploadStatusChanged represents the type of event registered when the upload status of the augmentation loop changes.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        augmentationLoopUploadStatusChanged = "AugmentationLoopUploadStatusChanged"
     }
     /**
      * @remarks
@@ -43634,6 +43718,7 @@ export declare namespace Excel {
         content: string;
         /**
          * Specifies the height of the note.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -43641,6 +43726,7 @@ export declare namespace Excel {
         height: number;
         /**
          * Specifies the visibility of the note. A value of `true` means the note is shown.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -43648,6 +43734,7 @@ export declare namespace Excel {
         visible: boolean;
         /**
          * Specifies the width of the note.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -53629,6 +53716,7 @@ export declare namespace Excel {
             content?: string;
             /**
              * Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -53636,6 +53724,7 @@ export declare namespace Excel {
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -53643,6 +53732,7 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -61327,6 +61417,7 @@ export declare namespace Excel {
             content?: string;
             /**
              * Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -61334,6 +61425,7 @@ export declare namespace Excel {
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -61341,6 +61433,7 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -74096,6 +74189,7 @@ export declare namespace Excel {
             content?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -74103,6 +74197,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -74110,6 +74205,7 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
