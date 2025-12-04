@@ -1524,7 +1524,11 @@ methods:
           '</soap:Envelope>';
 
       Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
-          console.log(result);
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              console.log(`Failed to make EWS request: ${result.error.message}.`);
+              return;
+          }
+          console.log(result.value);
       });
 
       ```

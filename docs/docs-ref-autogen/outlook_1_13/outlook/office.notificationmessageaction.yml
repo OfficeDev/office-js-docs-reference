@@ -59,7 +59,13 @@ remarks: >-
 
 
   Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-  handleResult);
+  (result) => {
+    if (result.status === Office.AsyncResultStatus.Failed) {
+      console.log(`Failed to add insight notification with id = ${id}. Try using a different ID.`);
+      return;
+    }
+    console.log(`Added insight notification with id = ${id}.`);
+  });
 
   ```
 

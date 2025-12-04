@@ -45,8 +45,7 @@ remarks: >-
       console.log(asyncResult.error.message);
       return;
     }
-
-    console.log(asyncResult.value);
+    console.log(JSON.stringify(asyncResult.value));
   });
 
   ```

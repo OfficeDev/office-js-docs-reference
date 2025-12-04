@@ -567,7 +567,13 @@ properties:
           message: "Progress indicator with id = " + id
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added progress notification with id = ${id}.`);
+      });
 
 
       ...
@@ -586,7 +592,13 @@ properties:
           persistent: false
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -605,7 +617,13 @@ properties:
           persistent: true
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added persistent informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -620,8 +638,7 @@ properties:
           console.log(asyncResult.error.message);
           return;
         }
-
-        console.log(asyncResult.value);
+        console.log(JSON.stringify(asyncResult.value));
       });
 
 
@@ -641,7 +658,13 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);
+        (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to replace notification with id = ${id}. ${result.error.message}.`);
+            return;
+          }
+          console.log(`Replaced notification with id = ${id}.`);
+        });
 
       ...
 
@@ -651,8 +674,14 @@ properties:
       const id = (document.getElementById("notificationId") as
       HTMLInputElement).value;
 
-      Office.context.mailbox.item.notificationMessages.removeAsync(id,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result)
+      => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
+          return;
+        }
+        console.log(`Removed notification with id = ${id}.`);
+      });
 
       ```
 
@@ -1419,7 +1448,11 @@ methods:
         getFileName(attachmentUrl),
         { isInline: false },
         (result) => {
-          console.log(result);
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to add attachment: ${result.error.message}.`);
+            return;
+          }
+          console.log(`Added attachment with ID: ${result.value}`);
         }
       );
 
@@ -1665,7 +1698,11 @@ methods:
         "logo.png",
         { isInline: false },
         (result) => {
-          console.log(result);
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to add attachment from Base64-encoded string: ${result.error.message}.`);
+            return;
+          }
+          console.log(`Added attachment from a Base64-encoded string with ID: ${result.value}`);
         }
       );
 
@@ -3592,7 +3629,6 @@ methods:
             console.error(result.error.message);
             return;
           }
-
           console.log(`Attachment removed successfully.`);
         }
       );
