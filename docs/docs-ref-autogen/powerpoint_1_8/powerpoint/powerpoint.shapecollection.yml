@@ -655,7 +655,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
 
-      await PowerPoint.run(async function(context) {
+      await PowerPoint.run(async function (context) {
         const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
         const shape: PowerPoint.Shape = slide.shapes.getItemAt(0);
         shape.tags.add("MOUNTAIN", "Denali");

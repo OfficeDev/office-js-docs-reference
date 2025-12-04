@@ -34,7 +34,13 @@ remarks: >-
       message: "Error notification message with id = " + id
     };
   Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-  handleResult);
+  (result) => {
+    if (result.status === Office.AsyncResultStatus.Failed) {
+      console.log(`Failed to add error notification with id = ${id}. Try using a different ID.`);
+      return;
+    }
+    console.log(`Added error notification with id = ${id}.`);
+  });
 
   ```
 
