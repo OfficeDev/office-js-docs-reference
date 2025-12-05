@@ -677,7 +677,11 @@ methods:
         getFileName(attachmentUrl),
         { isInline: false },
         (result) => {
-          console.log(result);
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to add attachment: ${result.error.message}.`);
+            return;
+          }
+          console.log(`Added attachment with ID: ${result.value}`);
         }
       );
 
@@ -1352,7 +1356,6 @@ methods:
             console.error(result.error.message);
             return;
           }
-
           console.log(`Attachment removed successfully.`);
         }
       );
