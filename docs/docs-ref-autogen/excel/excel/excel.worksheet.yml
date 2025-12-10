@@ -154,7 +154,7 @@ properties:
         // Log each custom property to the console.
         // Note that your document may have more properties than those you have set using this snippet.
         customWorksheetProperties.items.forEach((property) => {
-          console.log(`${property.key}:${property.value}`);
+          console.log(`${property.key}: ${property.value}`);
         });
       });
 
@@ -758,6 +758,44 @@ methods:
       return:
         type: void
         description: ''
+  - name: checkSpelling(options)
+    uid: excel!Excel.Worksheet#checkSpelling:member(1)
+    package: excel!
+    fullName: checkSpelling(options)
+    summary: >-
+      Checks the spelling of words in this worksheet. This method opens the
+      Spelling dialog box in the Excel UI.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checkSpelling(options?: Excel.CheckSpellingOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. The options for checking spelling.
+          type: <xref uid="excel!Excel.CheckSpellingOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: clearArrows()
+    uid: excel!Excel.Worksheet#clearArrows:member(1)
+    package: excel!
+    fullName: clearArrows()
+    summary: Clears the tracer arrows from the worksheet.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearArrows(): void;'
+      return:
+        type: void
+        description: ''
   - name: copy(positionType, relativeTo)
     uid: excel!Excel.Worksheet#copy:member(1)
     package: excel!
@@ -880,6 +918,29 @@ methods:
       content: 'delete(): void;'
       return:
         type: void
+        description: ''
+  - name: evaluate(name)
+    uid: excel!Excel.Worksheet#evaluate:member(1)
+    package: excel!
+    fullName: evaluate(name)
+    summary: >-
+      Returns the evaluation result of a formula string. Only formula input is
+      supported. If the formula name is invalid, the `InvalidArgument` error is
+      thrown.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'evaluate(name: string): OfficeExtension.ClientResult<any>;'
+      parameters:
+        - id: name
+          description: The name of the formula to run.
+          type: string
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;any&gt;
         description: ''
   - name: findAll(text, criteria)
     uid: excel!Excel.Worksheet#findAll:member(1)
@@ -2019,7 +2080,7 @@ events:
           // Register the onProtectionChanged event handler.
           sheet.onProtectionChanged.add(checkProtection);
           await context.sync();
-          console.log("Added a worksheet protection change event handler.");
+          console.log("Added a worksheet protection change event handler.");
       });
 
 
@@ -2034,7 +2095,7 @@ events:
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
-              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
               console.log("    ID of changed worksheet: " + worksheetId + ".");
               console.log("    Source of change event: " + source + ".");
           });

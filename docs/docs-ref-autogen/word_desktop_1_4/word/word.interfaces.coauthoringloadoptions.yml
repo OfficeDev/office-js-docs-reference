@@ -1,0 +1,92 @@
+### YamlMime:TSType
+name: Word.Interfaces.CoauthoringLoadOptions
+uid: word!Word.Interfaces.CoauthoringLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.CoauthoringLoadOptions
+summary: >-
+  Represents the `Coauthoring` object. This tracks the updates, changes,
+  conflicts, and other interactions in the document done through coauthoring.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.CoauthoringLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: canCoauthor
+    uid: word!Word.Interfaces.CoauthoringLoadOptions#canCoauthor:member
+    package: word!
+    fullName: canCoauthor
+    summary: Gets whether this document can be coauthored.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canCoauthor?: boolean;'
+      return:
+        type: boolean
+  - name: canMerge
+    uid: word!Word.Interfaces.CoauthoringLoadOptions#canMerge:member
+    package: word!
+    fullName: canMerge
+    summary: Gets whether the document can be automatically merged.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canMerge?: boolean;'
+      return:
+        type: boolean
+  - name: me
+    uid: word!Word.Interfaces.CoauthoringLoadOptions#me:member
+    package: word!
+    fullName: me
+    summary: Gets a `Coauthor` object that represents the current user.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'me?: Word.Interfaces.CoauthorLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CoauthorLoadOptions:interface" />
+  - name: pendingUpdates
+    uid: word!Word.Interfaces.CoauthoringLoadOptions#pendingUpdates:member
+    package: word!
+    fullName: pendingUpdates
+    summary: Gets whether the document has pending updates that have not been accepted.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pendingUpdates?: boolean;'
+      return:
+        type: boolean

@@ -40,6 +40,7 @@ interfaces:
   - office!Office.Document:interface
   - office!Office.DocumentSelectionChangedEventArgs:interface
   - office!Office.Error:interface
+  - office!Office.ExtensionLifeCycle:interface
   - office!Office.File:interface
   - office!Office.FileProperties:interface
   - office!Office.GetBindingDataOptions:interface
@@ -67,6 +68,7 @@ interfaces:
   - office!Office.Slice:interface
   - office!Office.Tab:interface
   - office!Office.TableBinding:interface
+  - office!Office.TaskPane:interface
   - office!Office.TextBinding:interface
   - office!Office.UI:interface
   - office!Office.Urls:interface
@@ -222,6 +224,10 @@ functions:
     uid: office!Office.isSetSupported:function(1)
     package: office!
     summary: >-
+      **WARNING**: This API returns inaccurate values when used on desktop
+      applications. Use `Office.context.requirements.isSetSupported` instead.
+
+
       Checks if the specified requirement set is supported by the Office
       application.
     remarks: ''
@@ -279,6 +285,25 @@ functions:
         description: >-
           A Promise that contains the application and platform info, once
           initialization is completed.
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          Office.onReady(function(info) {
+              if (info.host === Office.HostType.Excel) {
+                  // Do Excel-specific initialization (for example, make add-in task pane's
+                  // appearance compatible with Excel "green").
+              }
+              if (info.platform === Office.PlatformType.PC) {
+                  // Make minor layout changes in the task pane.
+              }
+              console.log(`Office.js is now ready in ${info.host} on ${info.platform}`);
+          });
+
+          ```
   - name: Office.select(expression, callback)
     uid: office!Office.select:function(1)
     package: office!

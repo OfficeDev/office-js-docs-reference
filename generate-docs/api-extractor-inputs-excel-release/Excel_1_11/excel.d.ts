@@ -580,9 +580,17 @@ export declare namespace Excel {
     }
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
-     * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
+     * Creates and opens a new workbook. Optionally, the workbook can be pre-populated
+     * with a Base64-encoded .xlsx file.
+
+     * Note: Macros can be a security risk. If this API is used to create a workbook that
+     * includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog
+     * in the Excel UI. The user must select the "Trust add-in" button to proceed.
      *
+     * Note: The `extensionHardening` Windows registry key affects the `base64File` param.
+     * The file extension defined by the param must match the real file type of the file.
+     * If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error:
+     * "This operation is not allowed due to the extension hardening policy."
      * [Api set: ExcelApi 1.8]
      *
      * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.
@@ -791,6 +799,7 @@ export declare namespace Excel {
          * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
+        
     }
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -965,7 +974,7 @@ export declare namespace Excel {
      */
     export interface ChangedEventDetail {
         /**
-         * Represents the value after the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the value after the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -974,7 +983,7 @@ export declare namespace Excel {
         
         
         /**
-         * Represents the value before the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the value before the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -1878,6 +1887,7 @@ export declare namespace Excel {
     export class Application extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
          *
@@ -1894,6 +1904,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly iterativeCalculation: Excel.IterativeCalculation;
+        
         /**
          * Returns the Excel calculation engine version used for the last full recalculation.
          *
@@ -1963,6 +1974,8 @@ export declare namespace Excel {
          * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.
          */
         calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
+        
+        
         /**
          * Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
          *
@@ -1979,6 +1992,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         suspendScreenUpdatingUntilNextSync(): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2303,6 +2317,7 @@ export declare namespace Excel {
          * @param closeBehavior - workbook close behavior.
          */
         close(closeBehavior?: "Save" | "SkipSave"): void;
+        
         /**
          * Gets the currently active cell from the workbook.
          *
@@ -2727,6 +2742,8 @@ export declare namespace Excel {
          * @param markAllDirty - True, to mark all as dirty.
          */
         calculate(markAllDirty: boolean): void;
+        
+        
         /**
          * Copies a worksheet and places it at the specified position.
          *
@@ -2756,6 +2773,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
+        
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
          *
@@ -3031,6 +3049,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.WorksheetData;
     }
+    
     /**
      * Represents a collection of worksheet objects that are part of the workbook.
      *
@@ -3586,6 +3605,7 @@ export declare namespace Excel {
          */
         readonly columnIndex: number;
         
+        
         /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
@@ -3727,7 +3747,7 @@ export declare namespace Excel {
          */
         readonly valueTypes: Excel.RangeValueType[][];
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -3786,6 +3806,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         calculate(): void;
+        
         /**
          * Clear range values and formatting, such as fill and border.
          *
@@ -4348,6 +4369,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         showCard(): void;
+        
         /**
          * Shows the details of the row or column group.
          *
@@ -4366,6 +4388,7 @@ export declare namespace Excel {
          * @param groupOption - Specifies whether to show the details of grouped rows or grouped columns.
          */
         showGroupDetails(groupOption: "ByRows" | "ByColumns"): void;
+        
         /**
          * Ungroups columns and rows for an outline.
          *
@@ -5379,7 +5402,7 @@ export declare namespace Excel {
          */
         readonly valueTypes: Excel.RangeValueType[][];
         /**
-         * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.3]
@@ -6175,7 +6198,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          *
          * @param address - A `Range` object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3.  Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]
-         * @param hasHeaders - A boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.
+         * @param hasHeaders - A Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.
          */
         add(address: Range | string, hasHeaders: boolean): Excel.Table;
         /**
@@ -6686,7 +6709,7 @@ export declare namespace Excel {
          */
         name: string;
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -6874,7 +6897,7 @@ export declare namespace Excel {
          */
         readonly index: number;
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -7232,7 +7255,7 @@ export declare namespace Excel {
         inCellDropDown: boolean;
         /**
          * Source of the list for data validation
-                    When setting the value, it can be passed in as a `Range` object, or a string that contains a comma-separated number, boolean, or date.
+                    When setting the value, it can be passed in as a `Range` object, or a string that contains a comma-separated number, Boolean, or date.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -11011,7 +11034,7 @@ export declare namespace Excel {
          */
         position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
         /**
-         * Represents a boolean value that determines if the chart title has a shadow.
+         * Represents a Boolean value that determines if the chart title has a shadow.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -16825,6 +16848,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
     }
+    
+    
     /**
      * An object encapsulating a style's format and other properties.
      *
@@ -17783,6 +17808,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly headersFooters: Excel.HeaderFooterGroup;
+        
         /**
          * The worksheet's black and white print option.
          *
@@ -17895,6 +17921,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+        
         /**
          * The worksheet's right margin, in points, for use when printing.
          *
@@ -18133,6 +18160,12 @@ export declare namespace Excel {
     export class HeaderFooter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
+        
+        
         /**
          * The center footer of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -18259,14 +18292,14 @@ export declare namespace Excel {
          */
         state: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
         /**
-         * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+         * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         useSheetMargins: boolean;
         /**
-         * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+         * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -18307,6 +18340,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.HeaderFooterGroupData;
     }
+    
+    
     /**
      * @remarks
      * [Api set: ExcelApi 1.9]
@@ -19573,6 +19608,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly shape: Excel.Shape;
+        
+        
+        
+        
+        
+        
+        
         /**
          * Specifies the shape identifier for the image object.
          *
@@ -19587,6 +19629,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly format: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Image): void;
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -24894,24 +24946,6 @@ export declare namespace Excel {
          */
         commentChanged = "CommentChanged",
         /**
-         * `RefreshRequestCompleted` represents the type of event registered on a `LinkedDataType` and occurs when a request to refresh a data source is completed.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted",
-        /**
-         * `RefreshModeChanged` represents the type of event registered on a `LinkedDataType` and occurs when the linked data type refresh mode is changed.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeRefreshModeChanged = "LinkedDataTypeRefreshModeChanged",
-        /**
-         * `LinkedDataTypeAdded` represents the type of event registered on a `LinkedDataType` and occurs when a new linked data type is added to the workbook.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeLinkedDataTypeAdded = "LinkedDataTypeLinkedDataTypeAdded",
-        /**
          * `WorksheetFormulaChanged` represents the type of event registered on a worksheet and occurs when a formula is changed.
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -26939,7 +26973,7 @@ export declare namespace Excel {
      */
     enum SpecialCellValueType {
         /**
-         * Cells that have errors, boolean, numeric, or string values.
+         * Cells that have errors, Boolean, numeric, or string values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -26951,7 +26985,7 @@ export declare namespace Excel {
          */
         errors = "Errors",
         /**
-         * Cells that have errors or boolean values.
+         * Cells that have errors or Boolean values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -26969,13 +27003,13 @@ export declare namespace Excel {
          */
         errorsText = "ErrorsText",
         /**
-         * Cells that have errors, boolean, or numeric values.
+         * Cells that have errors, Boolean, or numeric values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         errorsLogicalNumber = "ErrorsLogicalNumber",
         /**
-         * Cells that have errors, boolean, or string values.
+         * Cells that have errors, Boolean, or string values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -26987,25 +27021,25 @@ export declare namespace Excel {
          */
         errorsNumberText = "ErrorsNumberText",
         /**
-         * Cells that have a boolean value.
+         * Cells that have a Boolean value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logical = "Logical",
         /**
-         * Cells that have a boolean or numeric value.
+         * Cells that have a Boolean or numeric value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logicalNumbers = "LogicalNumbers",
         /**
-         * Cells that have a boolean or string value.
+         * Cells that have a Boolean or string value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logicalText = "LogicalText",
         /**
-         * Cells that have a boolean, numeric, or string value.
+         * Cells that have a Boolean, numeric, or string value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -27513,6 +27547,14 @@ export declare namespace Excel {
          */
         help = "Help"
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -31400,6 +31442,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
+            
             /**
             * Returns the iterative calculation settings.
             In Excel on Windows and Mac, the settings will apply to the Excel Application.
@@ -31574,6 +31617,7 @@ export declare namespace Excel {
              */
             columnHidden?: boolean;
             
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -31635,7 +31679,7 @@ export declare namespace Excel {
              */
             style?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -31702,7 +31746,7 @@ export declare namespace Excel {
              */
             numberFormat?: any[][];
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -31851,7 +31895,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -31868,7 +31912,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -33658,7 +33702,7 @@ export declare namespace Excel {
              */
             position?: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -35310,6 +35354,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -35422,6 +35467,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -35447,6 +35493,12 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `HeaderFooter` object, for use in `headerFooter.set({ ... })`. */
         export interface HeaderFooterUpdateData {
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -35534,19 +35586,33 @@ export declare namespace Excel {
              */
             state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface for updating data on the `HeaderFooterPicture` object, for use in `headerFooterPicture.set({ ... })`. */
+        export interface HeaderFooterPictureUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `PageBreakCollection` object, for use in `pageBreakCollection.set({ ... })`. */
         export interface PageBreakCollectionUpdateData {
@@ -35703,6 +35769,16 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             width?: number;
+        }
+        /** An interface for updating data on the `Image` object, for use in `image.set({ ... })`. */
+        export interface ImageUpdateData {
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `GroupShapeCollection` object, for use in `groupShapeCollection.set({ ... })`. */
         export interface GroupShapeCollectionUpdateData {
@@ -36083,6 +36159,49 @@ export declare namespace Excel {
             
             
         }
+        /** An interface for updating data on the `Window` object, for use in `window.set({ ... })`. */
+        export interface WindowUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
+        export interface WindowCollectionUpdateData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
+        export interface PaneCollectionUpdateData {
+            items?: Excel.Interfaces.PaneData[];
+        }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
             
@@ -36126,6 +36245,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `application.toJSON()`. */
         export interface ApplicationData {
+            
             /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
@@ -36142,6 +36262,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationData;
+            
             /**
              * Returns the Excel calculation engine version used for the last full recalculation.
              *
@@ -36655,6 +36776,7 @@ export declare namespace Excel {
              */
             columnIndex?: number;
             
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -36796,7 +36918,7 @@ export declare namespace Excel {
              */
             valueTypes?: Excel.RangeValueType[][];
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -36981,7 +37103,7 @@ export declare namespace Excel {
              */
             valueTypes?: Excel.RangeValueType[][];
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -37274,7 +37396,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -37298,7 +37420,7 @@ export declare namespace Excel {
              */
             index?: number;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -39278,7 +39400,7 @@ export declare namespace Excel {
              */
             position?: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -41263,6 +41385,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupData;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -41375,6 +41498,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -41400,6 +41524,12 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `headerFooter.toJSON()`. */
         export interface HeaderFooterData {
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -41487,19 +41617,33 @@ export declare namespace Excel {
              */
             state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface describing the data returned by calling `headerFooterPicture.toJSON()`. */
+        export interface HeaderFooterPictureData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `pageBreak.toJSON()`. */
         export interface PageBreakData {
@@ -41822,6 +41966,13 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `image.toJSON()`. */
         export interface ImageData {
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the shape identifier for the image object.
              *
@@ -42333,6 +42484,62 @@ export declare namespace Excel {
             
             
         }
+        /** An interface describing the data returned by calling `window.toJSON()`. */
+        export interface WindowData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
+        export interface WindowCollectionData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface describing the data returned by calling `pane.toJSON()`. */
+        export interface PaneData {
+            
+        }
+        /** An interface describing the data returned by calling `paneCollection.toJSON()`. */
+        export interface PaneCollectionData {
+            items?: Excel.Interfaces.PaneData[];
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
@@ -42386,6 +42593,7 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
@@ -42959,6 +43167,7 @@ export declare namespace Excel {
              */
             columnIndex?: boolean;
             
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -43100,7 +43309,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -43285,7 +43494,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -43376,7 +43585,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -44110,7 +44319,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -44160,7 +44369,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -44194,7 +44403,7 @@ export declare namespace Excel {
              */
             index?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -44228,7 +44437,7 @@ export declare namespace Excel {
              */
             index?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -47129,7 +47338,7 @@ export declare namespace Excel {
              */
             position?: boolean;
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -50365,6 +50574,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -50477,6 +50687,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: boolean;
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -50509,6 +50720,12 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -50603,20 +50820,21 @@ export declare namespace Excel {
              */
             state?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
         }
+        
         /**
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -50737,6 +50955,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             columnIndex?: boolean;
+            
             
             /**
              * For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
@@ -50879,7 +51098,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -51602,6 +51821,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             shape?: Excel.Interfaces.ShapeLoadOptions;
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the shape identifier for the image object.
              *
@@ -52496,6 +52722,10 @@ export declare namespace Excel {
              */
             name?: boolean;
         }
+        
+        
+        
+        
         
         
         

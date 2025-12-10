@@ -31,7 +31,7 @@ properties:
     uid: word!Word.Interfaces.CanvasData#shape:member
     package: word!
     fullName: shape
-    summary: Gets the Shape object associated with the canvas.
+    summary: Gets the `Shape` object associated with the canvas.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -47,8 +47,8 @@ properties:
     package: word!
     fullName: shapes
     summary: >-
-      Gets the collection of Shape objects. Currently, only text boxes,
-      pictures, and geometric shapes are supported.
+      Gets the collection of [Word.Shape](xref:word!Word.Shape:class) objects.
+      Currently, only text boxes, pictures, and geometric shapes are supported.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

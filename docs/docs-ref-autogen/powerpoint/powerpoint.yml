@@ -8,7 +8,10 @@ interfaces:
   - powerpoint!PowerPoint.BorderProperties:interface
   - powerpoint!PowerPoint.FillProperties:interface
   - powerpoint!PowerPoint.FontProperties:interface
+  - powerpoint!PowerPoint.HyperlinkAddOptions:interface
   - powerpoint!PowerPoint.InsertSlideOptions:interface
+  - powerpoint!PowerPoint.Interfaces.AdjustmentsData:interface
+  - powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.BindingCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.BindingCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData:interface
@@ -50,6 +53,11 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionLoadOptions:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.MarginsData:interface
   - powerpoint!PowerPoint.Interfaces.MarginsLoadOptions:interface
@@ -153,9 +161,9 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TableRowData:interface
   - powerpoint!PowerPoint.Interfaces.TableRowLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TableRowUpdateData:interface
-  - powerpoint!PowerPoint.Interfaces.TableStyleOptionsData:interface
-  - powerpoint!PowerPoint.Interfaces.TableStyleOptionsLoadOptions:interface
-  - powerpoint!PowerPoint.Interfaces.TableStyleOptionsUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsData:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface
@@ -185,6 +193,7 @@ interfaces:
   - powerpoint!PowerPoint.TableRowProperties:interface
   - powerpoint!PowerPoint.TextRun:interface
 classes:
+  - powerpoint!PowerPoint.Adjustments:class
   - powerpoint!PowerPoint.Application:class
   - powerpoint!PowerPoint.Binding:class
   - powerpoint!PowerPoint.BindingCollection:class
@@ -199,6 +208,7 @@ classes:
   - powerpoint!PowerPoint.DocumentProperties:class
   - powerpoint!PowerPoint.Hyperlink:class
   - powerpoint!PowerPoint.HyperlinkCollection:class
+  - powerpoint!PowerPoint.HyperlinkScopedCollection:class
   - powerpoint!PowerPoint.Margins:class
   - powerpoint!PowerPoint.PageSetup:class
   - powerpoint!PowerPoint.ParagraphFormat:class
@@ -234,7 +244,7 @@ classes:
   - powerpoint!PowerPoint.TableColumnCollection:class
   - powerpoint!PowerPoint.TableRow:class
   - powerpoint!PowerPoint.TableRowCollection:class
-  - powerpoint!PowerPoint.TableStyleOptions:class
+  - powerpoint!PowerPoint.TableStyleSettings:class
   - powerpoint!PowerPoint.Tag:class
   - powerpoint!PowerPoint.TagCollection:class
   - powerpoint!PowerPoint.TextFrame:class
@@ -248,6 +258,7 @@ enums:
   - powerpoint!PowerPoint.DocumentPropertyType:enum
   - powerpoint!PowerPoint.ErrorCodes:enum
   - powerpoint!PowerPoint.GeometricShapeType:enum
+  - powerpoint!PowerPoint.HyperlinkType:enum
   - powerpoint!PowerPoint.InsertSlideFormatting:enum
   - powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum
   - powerpoint!PowerPoint.PlaceholderType:enum
@@ -306,7 +317,7 @@ functions:
 
 
           reader.onload = (event) => {
-            // Remove the metadata before the base64-encoded string.
+            // Remove the metadata before the Base64-encoded string.
             const startIndex = reader.result.toString().indexOf("base64,");
             const copyBase64 = reader.result.toString().substr(startIndex + 7);
 
@@ -314,7 +325,7 @@ functions:
           };
 
 
-          // Read in the file as a data URL so we can parse the base64-encoded
+          // Read in the file as a data URL so we can parse the Base64-encoded
           string.
 
           reader.readAsDataURL(myFile.files[0]);
@@ -350,7 +361,25 @@ functions:
             =&gt; <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
       return:
         type: <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // *.run methods automatically create an
+          OfficeExtension.ClientRequestContext
+
+          // object to work with the Office file.
+
+          await PowerPoint.run(async (context) => {
+            const presentation = context.presentation;
+            // Interact with the PowerPoint presentation...
+          });
+
+          ```
   - name: PowerPoint.run(object, batch)
     uid: powerpoint!PowerPoint.run:function(2)
     package: powerpoint!

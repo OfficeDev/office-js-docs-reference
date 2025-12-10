@@ -1,8 +1,39 @@
 {
     "exemptions": [
         {
+            "packageName": "excel",
+            "className": "N/A",
+            "exemptedFieldCount": 4
+        },
+        {
+            "packageName": "office",
+            "className": "N/A",
+            "exemptedFieldCount": 5
+        },
+        {
+            "packageName": "office",
             "className": "Office.Dialog",
             "exemptedFieldCount": 4
+        },
+        {
+            "packageName": "outlook",
+            "className": "Office.Message",
+            "exemptedFieldCount": 0
+        },
+        {
+            "packageName": "outlook",
+            "className": "Office.ItemCompose",
+            "exemptedFieldCount": 0
+        },
+        {
+            "packageName": "outlook",
+            "className": "Office.ItemRead",
+            "exemptedFieldCount": 0
+        },
+        {
+            "packageName": "outlook",
+            "className": "Office.Appointment",
+            "exemptedFieldCount": 0
         }
     ]
 }

@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableColumnUpdateData
+uid: word!Word.Interfaces.TableColumnUpdateData:interface
+package: word!
+fullName: Word.Interfaces.TableColumnUpdateData
+summary: >-
+  An interface for updating data on the `TableColumn` object, for use in
+  `tableColumn.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

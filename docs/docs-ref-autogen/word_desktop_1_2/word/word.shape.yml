@@ -18,7 +18,7 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
 
   await Word.run(async (context) => {
@@ -78,11 +78,39 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Represents the body object of the shape. Only applies to text boxes and
+      Represents the `Body` object of the shape. Only applies to text boxes and
       geometric shapes.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a content control into the first paragraph in the first text box.
+        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.textBox])
+          .getFirst();
+        firstShapeWithTextBox.load("type/body");
+        await context.sync();
+
+        const firstParagraphInTextBox: Word.Paragraph = firstShapeWithTextBox.body.paragraphs.getFirst();
+        const newControl: Word.ContentControl = firstParagraphInTextBox.insertContentControl();
+        newControl.load();
+        await context.sync();
+
+        console.log("New content control properties:", newControl);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -97,12 +125,41 @@ properties:
     summary: >-
       Gets the canvas associated with the shape. An object with its
       `isNullObject` property set to `true` will be returned if the shape type
-      isn't "Canvas". For further information, see [*OrNullObject methods and
+      isn't `canvas`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a canvas in the document.
+        const canvasShape: Word.Shape = context.document.getSelection().insertCanvas();
+        canvasShape.load();
+        await context.sync();
+
+        canvasShape.select();
+        console.log("Inserted canvas:", canvasShape);
+
+        const canvas: Word.Canvas = canvasShape.canvas;
+        canvas.load("shape,shapes");
+        await context.sync();
+
+        console.log("Canvas object:", canvas);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -134,6 +191,41 @@ properties:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the color fill properties of the first moon found in the document body.
+        const moon: Word.Shape = context.document.body.shapes
+          .getByGeometricTypes([Word.GeometricShapeType.moon])
+          .getFirstOrNullObject();
+        moon.load("fill");
+        await context.sync();
+
+        if (moon.isNullObject) {
+          console.log("No moons found in the document body.");
+          return;
+        }
+
+        const moonFill: Word.ShapeFill = moon.fill;
+        const moonFillType = moonFill.type as Word.ShapeFillType;
+
+        console.log("Color fill properties of the first moon found in the document body:");
+        console.log(`\tForeground color: ${moonFill.foregroundColor}`);
+        console.log(`\tBackground color: ${moonFill.backgroundColor}`);
+        console.log(`\tTransparency: ${moonFill.transparency}`);
+        console.log(`\tFill type: ${moonFillType}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,6 +242,37 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the first geometric shape found in the document body.
+        const geometricShape: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.geometricShape])
+          .getFirstOrNullObject();
+        geometricShape.load();
+        await context.sync();
+
+        if (geometricShape.isNullObject) {
+          console.log("No geometric shapes found in the document body.");
+          return;
+        }
+
+        console.log(
+          `First geometric shape found in the document body is of type ${geometricShape.geometricShapeType}:`,
+          geometricShape,
+        );
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -285,6 +408,43 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log(
+          "About to change the relative size of the first shape group found in the document body:",
+          shapeGroup.shapes,
+        );
+        firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+        firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+        firstShapeGroup.heightRelative = 50;
+
+        console.log("Changed the relative size of the first shape group.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -438,6 +598,39 @@ properties:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
+        firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
+        firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
+
+        console.log("Changed the position of the first shape group.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -463,6 +656,43 @@ properties:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log(
+          "About to change the relative size of the first shape group found in the document body:",
+          shapeGroup.shapes,
+        );
+        firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+        firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+        firstShapeGroup.heightRelative = 50;
+
+        console.log("Changed the relative size of the first shape group.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -485,6 +715,39 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
+        firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
+        firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
+
+        console.log("Changed the position of the first shape group.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -510,6 +773,43 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log(
+          "About to change the relative size of the first shape group found in the document body:",
+          shapeGroup.shapes,
+        );
+        firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+        firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+        firstShapeGroup.heightRelative = 50;
+
+        console.log("Changed the relative size of the first shape group.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -545,13 +845,52 @@ properties:
     summary: >-
       Gets the shape group associated with the shape. An object with its
       `isNullObject` property set to `true` will be returned if the shape type
-      isn't "GroupShape". For further information, see [*OrNullObject methods
-      and
+      isn't `groupShape`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Groups the shapes (including text boxes and pictures) found in the document body.
+        const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
+          Word.ShapeType.geometricShape,
+          Word.ShapeType.textBox,
+          Word.ShapeType.picture,
+        ]);
+        shapes.load("items");
+        await context.sync();
+
+        const numShapes = shapes.items.length;
+        if (numShapes === 0) {
+          console.log("No shapes found in the document body.");
+          return;
+        }
+
+        console.log(`Number of shapes to group: ${numShapes}`);
+
+        const groupedShape: Word.Shape = shapes.group();
+        groupedShape.load("shapeGroup/shapes");
+        await context.sync();
+
+        const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
+        console.log("Shapes grouped:", shapeGroup.shapes);
+        groupedShape.select();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -563,10 +902,36 @@ properties:
     uid: word!Word.Shape#textFrame:member
     package: word!
     fullName: textFrame
-    summary: Gets the text frame object of the shape.
+    summary: Gets the `TextFrame` object of the shape.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the text frame of the first text box in the main document.
+        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
+        shape.load("textFrame");
+        await context.sync();
+
+        if (shape.isNullObject) {
+          console.log("No shapes with text boxes found in the main document.");
+          return;
+        }
+
+        console.log("Text frame of first text box:", shape.textFrame);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -582,6 +947,32 @@ properties:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets text wrap properties of the first text box in the main document.
+        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
+        shape.load("textWrap");
+        await context.sync();
+
+        if (shape.isNullObject) {
+          console.log("No shapes with text boxes found in the main document.");
+          return;
+        }
+
+        console.log("Text wrap properties of first text box:", shape.textWrap);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -646,23 +1037,26 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
 
       await Word.run(async (context) => {
-        // Gets text boxes in main document.
+        // Gets text boxes in the main document.
         const shapes: Word.ShapeCollection = context.document.body.shapes;
         shapes.load();
         await context.sync();
 
         if (shapes.items.length > 0) {
-          shapes.items.forEach(function(shape, index) {
+          console.log(`Number of shapes found in the main document: ${shapes.items.length}`);
+          shapes.items.forEach(function (shape, index) {
             if (shape.type === Word.ShapeType.textBox) {
               console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
+            } else {
+              console.log(`Shape ${index} in the main document doesn't have a text box.`);
             }
           });
         } else {
-          console.log("No shapes found in main document.");
+          console.log("No shapes found in the main document.");
         }
       });
 
@@ -743,15 +1137,12 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
 
       await Word.run(async (context) => {
         // Deletes the first text box.
-        context.document.body.shapes
-          .getByTypes([Word.ShapeType.textBox])
-          .getFirst()
-          .delete();
+        context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirst().delete();
         await context.sync();
 
         console.log("The first text box in document was deleted.");
@@ -849,6 +1240,39 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Moves the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
+        firstShapeGroup.moveHorizontally(-10);
+        firstShapeGroup.moveVertically(50);
+
+        console.log("Moved the first shape group.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -856,9 +1280,9 @@ methods:
       parameters:
         - id: distance
           description: >-
-            Required. Specifies how far the shape is to be moved horizontally,
-            in points. Use a positive value to move the shape right. Use a
-            negative value to move the shape left.
+            Specifies how far the shape is to be moved horizontally, in points.
+            Use a positive value to move the shape right. Use a negative value
+            to move the shape left.
           type: number
       return:
         type: void
@@ -872,6 +1296,39 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Moves the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
+        firstShapeGroup.moveHorizontally(-10);
+        firstShapeGroup.moveVertically(50);
+
+        console.log("Moved the first shape group.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -879,9 +1336,9 @@ methods:
       parameters:
         - id: distance
           description: >-
-            Required. Specifies how far the shape is to be moved vertically, in
-            points. Use a positive value to move the shape up. Use a negative
-            value to move the shape down.
+            Specifies how far the shape is to be moved vertically, in points.
+            Use a positive value to move the shape up. Use a negative value to
+            move the shape down.
           type: number
       return:
         type: void
@@ -898,6 +1355,39 @@ methods:
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Scales the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
+        firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
+        firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
+
+        console.log("Scaled the first shape group.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -980,6 +1470,39 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Scales the first set of grouped shapes (including text boxes) found in the document body.
+        const firstShapeGroup: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.group])
+          .getFirstOrNullObject();
+        firstShapeGroup.load("shapeGroup/shapes");
+        await context.sync();
+
+        if (firstShapeGroup.isNullObject) {
+          console.log("No shape groups found in the document body.");
+          return;
+        }
+
+        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+        console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
+        firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
+        firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
+
+        console.log("Scaled the first shape group.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1057,6 +1580,45 @@ methods:
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+      await Word.run(async (context) => {
+        // Groups the shapes (including text boxes and pictures) found in the document body.
+        const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
+          Word.ShapeType.geometricShape,
+          Word.ShapeType.textBox,
+          Word.ShapeType.picture,
+        ]);
+        shapes.load("items");
+        await context.sync();
+
+        const numShapes = shapes.items.length;
+        if (numShapes === 0) {
+          console.log("No shapes found in the document body.");
+          return;
+        }
+
+        console.log(`Number of shapes to group: ${numShapes}`);
+
+        const groupedShape: Word.Shape = shapes.group();
+        groupedShape.load("shapeGroup/shapes");
+        await context.sync();
+
+        const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
+        console.log("Shapes grouped:", shapeGroup.shapes);
+        groupedShape.select();
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1065,7 +1627,7 @@ methods:
         - id: selectMultipleShapes
           description: >-
             Optional. Whether to select multiple floating shapes. The default
-            value is false.
+            value is `false`<!-- -->.
           type: boolean
       return:
         type: void

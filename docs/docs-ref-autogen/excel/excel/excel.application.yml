@@ -12,6 +12,23 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: activeWindow
+    uid: excel!Excel.Application#activeWindow:member
+    package: excel!
+    fullName: activeWindow
+    summary: >-
+      Returns a `window` object that represents the active window (the window on
+      top). Read-only.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly activeWindow: Excel.Window;'
+      return:
+        type: <xref uid="excel!Excel.Window:class" />
   - name: calculationEngineVersion
     uid: excel!Excel.Application#calculationEngineVersion:member
     package: excel!
@@ -236,6 +253,21 @@ properties:
       content: 'readonly useSystemSeparators: boolean;'
       return:
         type: boolean
+  - name: windows
+    uid: excel!Excel.Application#windows:member
+    package: excel!
+    fullName: windows
+    summary: Returns all the open Excel windows.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly windows: Excel.WindowCollection;'
+      return:
+        type: <xref uid="excel!Excel.WindowCollection:class" />
 methods:
   - name: calculate(calculationType)
     uid: excel!Excel.Application#calculate:member(1)
@@ -309,6 +341,54 @@ methods:
             Specifies the calculation type to use. See `Excel.CalculationType`
             for details.
           type: '"Recalculate" | "Full" | "FullRebuild"'
+      return:
+        type: void
+        description: ''
+  - name: checkSpelling(word, options)
+    uid: excel!Excel.Application#checkSpelling:member(1)
+    package: excel!
+    fullName: checkSpelling(word, options)
+    summary: >-
+      Checks the spelling of a single word. Returns `true` if the word is
+      spelled correctly, otherwise returns `false`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        checkSpelling(word: string, options?: Excel.CheckSpellingOptions):
+        OfficeExtension.ClientResult<boolean>;
+      parameters:
+        - id: word
+          description: The word that you want to check.
+          type: string
+        - id: options
+          description: Optional. The options for checking spelling.
+          type: <xref uid="excel!Excel.CheckSpellingOptions:interface" />
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: ''
+  - name: enterEditingMode()
+    uid: excel!Excel.Application#enterEditingMode:member(1)
+    package: excel!
+    fullName: enterEditingMode()
+    summary: >-
+      Enters editing mode for the selected range in the active worksheet. This
+      method is equivalent to using "F2" when selecting a cell or range in the
+      Excel UI.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enterEditingMode(): void;'
       return:
         type: void
         description: ''
@@ -559,5 +639,45 @@ methods:
       content: 'toJSON(): Excel.Interfaces.ApplicationData;'
       return:
         type: <xref uid="excel!Excel.Interfaces.ApplicationData:interface" />
+        description: ''
+  - name: union(firstRange, secondRange, additionalRanges)
+    uid: excel!Excel.Application#union:member(1)
+    package: excel!
+    fullName: union(firstRange, secondRange, additionalRanges)
+    summary: >-
+      Returns a `RangeAreas` object that represents the union of two or more
+      `Range` or `RangeAreas` objects. The input `Range` or `RangeAreas` objects
+      must be from the same worksheet. The maximum number of parameters is 30,
+      including the first two.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        union(firstRange: Range | RangeAreas, secondRange: Range | RangeAreas,
+        ...additionalRanges: (Range | RangeAreas)[]): Excel.RangeAreas;
+      parameters:
+        - id: firstRange
+          description: The first `Range` or `RangeAreas` object.
+          type: >-
+            <xref uid="excel!Excel.Range:class" /> | <xref
+            uid="excel!Excel.RangeAreas:class" />
+        - id: secondRange
+          description: The second `Range` or `RangeAreas` object.
+          type: >-
+            <xref uid="excel!Excel.Range:class" /> | <xref
+            uid="excel!Excel.RangeAreas:class" />
+        - id: additionalRanges
+          description: >-
+            Optional. Additional `Range` or `RangeAreas` objects to include in
+            the union, up to 28 more.
+          type: >-
+            (<xref uid="excel!Excel.Range:class" /> | <xref
+            uid="excel!Excel.RangeAreas:class" />)[]
+      return:
+        type: <xref uid="excel!Excel.RangeAreas:class" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

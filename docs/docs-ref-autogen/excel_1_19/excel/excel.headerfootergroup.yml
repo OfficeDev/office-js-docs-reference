@@ -121,8 +121,8 @@ properties:
     package: excel!
     fullName: useSheetMargins
     summary: >-
-      Gets or sets a flag indicating if headers/footers are aligned with the
-      page margins set in the page layout options for the worksheet.
+      Specifies a flag indicating if headers/footers are aligned with the page
+      margins set in the page layout options for the worksheet.
     remarks: >-
       \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -138,7 +138,7 @@ properties:
     package: excel!
     fullName: useSheetScale
     summary: >-
-      Gets or sets a flag indicating if headers/footers should be scaled by the
+      Specifies a flag indicating if headers/footers should be scaled by the
       page percentage scale set in the page layout options for the worksheet.
     remarks: >-
       \[ [API set: ExcelApi

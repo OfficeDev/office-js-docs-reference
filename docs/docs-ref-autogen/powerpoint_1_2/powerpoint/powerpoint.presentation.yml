@@ -3,7 +3,12 @@ name: PowerPoint.Presentation
 uid: powerpoint!PowerPoint.Presentation:class
 package: powerpoint!
 fullName: PowerPoint.Presentation
-summary: ''
+summary: >-
+  The `Presentation` object is the top-level object with one or more slides that
+  contain the contents of the presentation. To learn more about the PowerPoint
+  object model, see [PowerPoint JavaScript object
+  model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
+  -->.
 remarks: >-
   \[ [API set: PowerPointApi
   1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -76,8 +81,11 @@ properties:
     uid: powerpoint!PowerPoint.Presentation#title:member
     package: powerpoint!
     fullName: title
-    summary: ''
-    remarks: ''
+    summary: Returns the title of the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

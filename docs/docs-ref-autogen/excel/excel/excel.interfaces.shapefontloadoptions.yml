@@ -117,6 +117,84 @@ properties:
       content: 'size?: boolean;'
       return:
         type: boolean
+  - name: strikethrough
+    uid: excel!Excel.Interfaces.ShapeFontLoadOptions#strikethrough:member
+    package: excel!
+    fullName: strikethrough
+    summary: >-
+      Specifies the strikethrough status of font. A `null` value indicates that
+      the entire range doesn't have a uniform strikethrough setting.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type: boolean
+  - name: subscript
+    uid: excel!Excel.Interfaces.ShapeFontLoadOptions#subscript:member
+    package: excel!
+    fullName: subscript
+    summary: >-
+      Specifies the subscript status of font. Returns `true` if all the fonts of
+      the range are subscript. Returns `false` if all the fonts of the range are
+      superscript or normal (neither superscript, nor subscript). Returns `null`
+      otherwise.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type: boolean
+  - name: superscript
+    uid: excel!Excel.Interfaces.ShapeFontLoadOptions#superscript:member
+    package: excel!
+    fullName: superscript
+    summary: >-
+      Specifies the superscript status of font. Returns `true` if all the fonts
+      of the range are superscript. Returns `false` if all the fonts of the
+      range are subscript or normal (neither superscript, nor subscript).
+      Returns `null` otherwise.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type: boolean
+  - name: tintAndShade
+    uid: excel!Excel.Interfaces.ShapeFontLoadOptions#tintAndShade:member
+    package: excel!
+    fullName: tintAndShade
+    summary: >-
+      Specifies a double that lightens or darkens a color for the range font.
+      The value is between -1 (darkest) and 1 (brightest), with 0 for the
+      original color. A `null` value indicates that the entire range doesn't
+      have a uniform font `tintAndShade` setting.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type: boolean
   - name: underline
     uid: excel!Excel.Interfaces.ShapeFontLoadOptions#underline:member
     package: excel!

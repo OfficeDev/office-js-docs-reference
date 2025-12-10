@@ -283,6 +283,8 @@ export declare namespace Office {
      */
     export function initialize(reason: InitializationReason): void;
     /**
+     * **WARNING**: This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
+     * 
      * Checks if the specified requirement set is supported by the Office application.
      * @param name - Set name; e.g., "MatrixBindings".
      * @param minVersion - The minimum required version; e.g., "1.4".
@@ -606,19 +608,28 @@ export declare namespace Office {
          */
         BindingSelectionChanged,
         /**
-         * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
+         * Occurs when a dialog is closed or when dialog navigation failed.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogEventReceived,
         /**
-         * Triggers when a dialog sends a message via `messageParent`.
+         * Occurs when a dialog sends a message using `Office.context.ui.messageParent`.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogMessageReceived,
         /**
-         * Triggers when a host page sends a message to a child dialog box with `messageChild`.
+         * Occurs when a host page sends a message to a child dialog box with `Dialog.messageChild`.
+         *
+         * For guidance on how to implement a dialog in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins | Use the Office dialog API in Office Add-ins}.
          */
         DialogParentMessageReceived,
         /**
-         * Triggers when a document-level selection happens in Excel or Word.
+         * Occurs when a document-level selection happens in Excel or Word.
          */
         DocumentSelectionChanged,
         /**
@@ -694,15 +705,15 @@ export declare namespace Office {
          */
         DragAndDropEvent,
         /**
-         * Triggers when a `customXmlPart` node is deleted.
+         * Occurs when a `customXmlPart` node is deleted.
          */
         NodeDeleted,
         /**
-         * Triggers when a `customXmlPart` node is inserted.
+         * Occurs when a `customXmlPart` node is inserted.
          */
         NodeInserted,
         /**
-         * Triggers when a `customXmlPart` node is replaced.
+         * Occurs when a `customXmlPart` node is replaced.
          */
         NodeReplaced,
         /**
@@ -747,7 +758,7 @@ export declare namespace Office {
          */
         RecurrenceChanged,
         /**
-         * Triggers when a Resource selection happens in Project.
+         * Occurs when a Resource selection happens in Project.
          */
         ResourceSelectionChanged,
         /**
@@ -784,11 +795,11 @@ export declare namespace Office {
          */
         SpamReporting,
         /**
-         * Triggers when a Task selection happens in Project.
+         * Occurs when a Task selection happens in Project.
          */
         TaskSelectionChanged,
         /**
-         * Triggers when a View selection happens in Project.
+         * Occurs when a View selection happens in Project.
          */
         ViewSelectionChanged
     }
@@ -860,7 +871,7 @@ export declare namespace Office {
      * Specifies the Office application in which the add-in is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+     * **Important**: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
      */
     enum HostType {
         /**
@@ -932,7 +943,7 @@ export declare namespace Office {
      * Specifies the OS or other platform on which the Office application is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+     * **Important**: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
      */
     enum PlatformType {
         /**
@@ -4657,7 +4668,7 @@ export declare namespace Office {
          * Gets information about the environment in which the add-in is running.
          * 
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.
+         * **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5.
          * For all Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
          * property to get similar information.
@@ -4699,7 +4710,7 @@ export declare namespace Office {
          * Contains the Office application in which the add-in is running.
          *
          * @remarks
-         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * **Important**: In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
@@ -4746,7 +4757,7 @@ export declare namespace Office {
          * @remarks
          * **Important**:
          *
-         * - In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * - In Outlook, this property is available starting with Mailbox requirement set 1.5. You can also use the
          * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
          * Mailbox requirement sets, you can use the 
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
@@ -4830,7 +4841,7 @@ export declare namespace Office {
      * Provides information about the environment in which the add-in is running.
      * 
      * @remarks
-     * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
+     * **Important**: In Outlook, this object is available starting with Mailbox requirement set 1.5.
      * For all Mailbox requirement sets, you can use the 
      * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
      * property to get similar information.
@@ -5835,10 +5846,10 @@ export declare namespace Office {
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on the web                                          </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>                                     </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
-         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><th>                             </th><th> Office on the web      </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Pdf</code>        </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Not supported          </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -5870,10 +5881,10 @@ export declare namespace Office {
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on the web                                          </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>                                     </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
-         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><th>                             </th><th> Office on the web      </th><th> Office on Windows                                          </th><th> Office on Mac                                              </th><th> Office on iPad                          </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Pdf</code>        </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td> Not supported                           </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code> </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Not supported          </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -6870,6 +6881,23 @@ export declare namespace Office {
          * Gets the name of the error.
          */
         name: string;
+    }
+    /**
+     * Provides options to manage the user interface of an Office Add-in while the add-in is running.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface ExtensionLifeCycle {
+        /**
+         * Gets an object that represents the task pane of an add-in.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         */
+        taskpane: TaskPane;
     }
     /**
      * Represents the document file associated with an Office Add-in.
@@ -8559,6 +8587,37 @@ export declare namespace Office {
          * - If you overwrite or update an existing table, the existing rows are not altered.
          */
         rows: any[][];
+    }
+    /**
+     * Provides methods to manage the task pane of an add-in.
+     *
+     * @remarks
+     *
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+     */
+    export interface TaskPane {
+        /**
+         * Sets the width of the task pane of an add-in in pixels.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets | TaskPaneApi 1.1}
+         *
+         * **Important**: The default width of the task pane of an add-in varies depending on the platform.
+         *
+         * - **Web (Excel)**: 350 px
+         *
+         * - **Web (Word)**: 330 px
+         *
+         * - **Windows, Mac**: 51 px
+         *
+         * If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
+         *
+         * @param width - The width of a task pane in pixels. The minimum and maximum constraints vary by platform. In Excel on the web, the width must be between
+         *              350 and 500 px (inclusive). In Word on the web, the width must be between 330 and 500 px (inclusive). In Office on Windows and on Mac, the width
+         *              must be between 51 px and 50% of the client window.
+         */
+        setWidth(width: number): void;
     }
     /**
      * Represents a bound text selection in the document.

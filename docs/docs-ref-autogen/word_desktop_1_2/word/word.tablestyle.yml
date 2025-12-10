@@ -3,7 +3,7 @@ name: Word.TableStyle
 uid: word!Word.TableStyle:class
 package: word!
 fullName: Word.TableStyle
-summary: Represents the TableStyle object.
+summary: Represents the `TableStyle` object.
 remarks: >-
   \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -79,8 +79,8 @@ properties:
     package: word!
     fullName: allowBreakAcrossPage
     summary: >-
-      Specifies whether lines in tables formatted with a specified style break
-      across pages.
+      Specifies whether lines in tables formatted with a style break across
+      pages.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

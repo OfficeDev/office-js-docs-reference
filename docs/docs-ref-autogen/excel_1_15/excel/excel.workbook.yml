@@ -850,12 +850,24 @@ methods:
       workbook.
 
 
+      The `extensionHardening` Windows registry key affects this API. The file
+      extension defined by the `base64File` param must match the real file type
+      of the inserted file. If `extensionHardening` is set to deny mismatches
+      and the file extension does not match the real file type, this API throws
+      the following error: "This operation is not allowed due to the extension
+      hardening policy."
+
+
       *Note**: This API is currently only supported for Office on Windows,
       Mac, and the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This API is currently only supported for Office on Windows, Mac, and the
+      web.
 
 
       #### Examples

@@ -119,7 +119,7 @@ tryCatch(async () => {
 
     console.log("\ncreate file: excel.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-excel-release/excel_online/excel.d.ts',
+        '../api-extractor-inputs-excel-release/excel_online/excel-init.d.ts',
         handleCommonImports(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true),
         "excel",
         forceRebuild
@@ -286,7 +286,10 @@ function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, keywo
     const jsonRoot = "../json";
     const yamlRoot = "../yaml";
     
-    let existingDts = fsx.readFileSync(dtsFilePath).toString();
+    let existingDts = "";
+    if (fsx.existsSync(dtsFilePath)) {
+        existingDts = fsx.readFileSync(dtsFilePath).toString();
+    }
     if (existingDts !== dtsContent || forceNew) {
         fsx.writeFileSync(dtsFilePath, dtsContent);
         

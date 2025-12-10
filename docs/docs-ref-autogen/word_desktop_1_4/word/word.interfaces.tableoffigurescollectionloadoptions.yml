@@ -1,0 +1,270 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableOfFiguresCollectionLoadOptions
+uid: word!Word.Interfaces.TableOfFiguresCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.TableOfFiguresCollectionLoadOptions
+summary: >-
+  Represents a collection of
+  [Word.TableOfFigures](xref:word!Word.TableOfFigures:class) objects in a Word
+  document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: areBuiltInHeadingStylesUsed
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#areBuiltInHeadingStylesUsed:member
+    package: word!
+    fullName: areBuiltInHeadingStylesUsed
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether built-in heading styles
+      are used for the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'areBuiltInHeadingStylesUsed?: boolean;'
+      return:
+        type: boolean
+  - name: areFieldsUsed
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#areFieldsUsed:member
+    package: word!
+    fullName: areFieldsUsed
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether [Table of Contents
+      Entry (TC)
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      are included in the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'areFieldsUsed?: boolean;'
+      return:
+        type: boolean
+  - name: areHyperlinksUsedOnWeb
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#areHyperlinksUsedOnWeb:member
+    package: word!
+    fullName: areHyperlinksUsedOnWeb
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether entries in the table of
+      figures should be formatted as hyperlinks when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'areHyperlinksUsedOnWeb?: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersHiddenOnWeb
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#arePageNumbersHiddenOnWeb:member
+    package: word!
+    fullName: arePageNumbersHiddenOnWeb
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the page numbers in the
+      table of figures should be hidden when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersHiddenOnWeb?: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersIncluded
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#arePageNumbersIncluded:member
+    package: word!
+    fullName: arePageNumbersIncluded
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether page numbers are
+      included in the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersIncluded?: boolean;'
+      return:
+        type: boolean
+  - name: arePageNumbersRightAligned
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#arePageNumbersRightAligned:member
+    package: word!
+    fullName: arePageNumbersRightAligned
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether page numbers are
+      aligned with the right margin in the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'arePageNumbersRightAligned?: boolean;'
+      return:
+        type: boolean
+  - name: captionLabel
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#captionLabel:member
+    package: word!
+    fullName: captionLabel
+    summary: >-
+      For EACH ITEM in the collection: Specifies the label that identifies the
+      items to be included in the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'captionLabel?: boolean;'
+      return:
+        type: boolean
+  - name: isLabelIncluded
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#isLabelIncluded:member
+    package: word!
+    fullName: isLabelIncluded
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the caption label and
+      caption number are included in the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLabelIncluded?: boolean;'
+      return:
+        type: boolean
+  - name: lowerHeadingLevel
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#lowerHeadingLevel:member
+    package: word!
+    fullName: lowerHeadingLevel
+    summary: >-
+      For EACH ITEM in the collection: Specifies the ending heading level for
+      the table of figures. Must be a value from 1 to 9 and greater than
+      `upperHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lowerHeadingLevel?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      For EACH ITEM in the collection: Gets the portion of a document that is
+      this table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: tabLeader
+    uid: word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#tabLeader:member
+    package: word!
+    fullName: tabLeader
+    summary: >-
+      For EACH ITEM in the collection: Specifies the character between entries
+      and their page numbers in the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabLeader?: boolean;'
+      return:
+        type: boolean
+  - name: tableId
+    uid: word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#tableId:member
+    package: word!
+    fullName: tableId
+    summary: >-
+      For EACH ITEM in the collection: Specifies a one-letter identifier from
+      [TC
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      that's used for the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tableId?: boolean;'
+      return:
+        type: boolean
+  - name: upperHeadingLevel
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresCollectionLoadOptions#upperHeadingLevel:member
+    package: word!
+    fullName: upperHeadingLevel
+    summary: >-
+      For EACH ITEM in the collection: Specifies the starting heading level for
+      the table of figures. Must be a value from 1 to 9 and smaller than
+      `lowerHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upperHeadingLevel?: boolean;'
+      return:
+        type: boolean

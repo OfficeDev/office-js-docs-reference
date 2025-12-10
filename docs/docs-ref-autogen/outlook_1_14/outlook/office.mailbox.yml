@@ -220,7 +220,7 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
 
 
       // Get the EWS URL and EWS item ID.
@@ -659,20 +659,17 @@ methods:
       **Important**:
 
 
-      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
-      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
-      and
-      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens have been turned off by default for most Exchange Online tenants.
-      Administrators can reenable legacy tokens for tenants and add-ins until
-      June 2025. In October 2025, legacy tokens will be completely turned off
-      for all tenants. This is part of [Microsoft's Secure Future
-      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
-      -->, which gives organizations the tools needed to respond to the current
-      threat landscape. Exchange user identity tokens will still work for
-      Exchange on-premises. Nested app authentication (NAA) is the recommended
-      approach for tokens going forward. For more information, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      - Legacy Exchange Online [user identity
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
+      and [callback
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
+      are no longer supported and are turned off across all Microsoft 365
+      tenants. If an Outlook add-in requires delegated user access or user
+      identity, we recommend using [MSAL (Microsoft Authentication Library) and
+      nested app
+      authentication](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!--
+      -->. Exchange user identity tokens are still supported for Exchange
+      on-premises.
 
 
       - This method isn't supported in Outlook on Android or on iOS. For more
@@ -694,7 +691,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
 
 
       // Get the EWS URL and EWS item ID.
@@ -777,6 +774,26 @@ methods:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
+
+
+      const time = Office.context.mailbox.item.start;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment starts (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -832,7 +849,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
 
 
       // Get the EWS URL and EWS item ID.
@@ -2176,20 +2193,17 @@ methods:
       **Important**:
 
 
-      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
-      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
-      and
-      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens have been turned off by default for most Exchange Online tenants.
-      Administrators can reenable legacy tokens for tenants and add-ins until
-      June 2025. In October 2025, legacy tokens will be completely turned off
-      for all tenants. This is part of [Microsoft's Secure Future
-      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
-      -->, which gives organizations the tools needed to respond to the current
-      threat landscape. Exchange user identity tokens will still work for
-      Exchange on-premises. Nested app authentication (NAA) is the recommended
-      approach for tokens going forward. For more information, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      - Legacy Exchange Online [user identity
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
+      and [callback
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
+      are no longer supported and are turned off across all Microsoft 365
+      tenants. If an Outlook add-in requires delegated user access or user
+      identity, we recommend using [MSAL (Microsoft Authentication Library) and
+      nested app authentication
+      (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!--
+      -->. Exchange user identity tokens are still supported for Exchange
+      on-premises.
 
 
       - The Outlook REST v2.0 and beta endpoints are now deprecated. However,
@@ -2302,9 +2316,9 @@ methods:
       - `GenericTokenError: An internal error has occurred.` - In Exchange
       Online environments, this error occurs when the token can't be retrieved
       because legacy Exchange tokens for Outlook add-ins are turned off. We
-      recommend using NAA as a single sign-on solution for your add-in. For
-      guidance on how to implement NAA, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      recommend using
+      [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)
+      as a single sign-on solution for your add-in.
 
 
       - `HTTPRequestFailure: The request has failed. Please look at the
@@ -2315,8 +2329,9 @@ methods:
       at the diagnostics object for more information.` - In Exchange Online
       environments, this error occurs when the token can't be retrieved because
       legacy Exchange tokens for Outlook add-ins are turned off. We recommend
-      using NAA as a single sign-on solution for your add-in. For guidance on
-      how to implement NAA, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
+      using
+      [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)
+      as a single sign-on solution for your add-in.
 
 
       - `NetworkError: The user is no longer connected to the network. Please
@@ -2388,20 +2403,17 @@ methods:
       **Important**:
 
 
-      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
-      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
-      and
-      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens have been turned off by default for most Exchange Online tenants.
-      Administrators can reenable legacy tokens for tenants and add-ins until
-      June 2025. In October 2025, legacy tokens will be completely turned off
-      for all tenants. This is part of [Microsoft's Secure Future
-      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
-      -->, which gives organizations the tools needed to respond to the current
-      threat landscape. Exchange user identity tokens will still work for
-      Exchange on-premises. Nested app authentication (NAA) is the recommended
-      approach for tokens going forward. For more information, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      - Legacy Exchange Online [user identity
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
+      and [callback
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
+      are no longer supported and are turned off across all Microsoft 365
+      tenants. If an Outlook add-in requires delegated user access or user
+      identity, we recommend using [MSAL (Microsoft Authentication Library) and
+      nested app authentication
+      (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!--
+      -->. Exchange user identity tokens are still supported for Exchange
+      on-premises.
 
 
       - You can pass both the token and either an attachment identifier or item
@@ -2454,9 +2466,9 @@ methods:
       - `GenericTokenError: An internal error has occurred.` - In Exchange
       Online environments, this error occurs when the token can't be retrieved
       because legacy Exchange tokens for Outlook add-ins are turned off. We
-      recommend using NAA as a single sign-on solution for your add-in. For
-      guidance on how to implement NAA, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      recommend using
+      [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)
+      as a single sign-on solution for your add-in.
 
 
       - `HTTPRequestFailure: The request has failed. Please look at the
@@ -2467,8 +2479,9 @@ methods:
       at the diagnostics object for more information.` - In Exchange Online
       environments, this error occurs when the token can't be retrieved because
       legacy Exchange tokens for Outlook add-ins are turned off. We recommend
-      using NAA as a single sign-on solution for your add-in. For guidance on
-      how to implement NAA, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
+      using
+      [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)
+      as a single sign-on solution for your add-in.
 
 
       - `NetworkError: The user is no longer connected to the network. Please
@@ -2481,7 +2494,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-callback-token.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/user-callback-token.yaml
 
 
       Office.context.mailbox.getCallbackTokenAsync((result) => {
@@ -2883,20 +2896,17 @@ methods:
       **Important**:
 
 
-      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
-      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
-      and
-      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens have been turned off by default for most Exchange Online tenants.
-      Administrators can reenable legacy tokens for tenants and add-ins until
-      June 2025. In October 2025, legacy tokens will be completely turned off
-      for all tenants. This is part of [Microsoft's Secure Future
-      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
-      -->, which gives organizations the tools needed to respond to the current
-      threat landscape. Exchange user identity tokens will still work for
-      Exchange on-premises. Nested app authentication (NAA) is the recommended
-      approach for tokens going forward. For more information, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      - Legacy Exchange Online [user identity
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
+      and [callback
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
+      are no longer supported and are turned off across all Microsoft 365
+      tenants. If an Outlook add-in requires delegated user access or user
+      identity, we recommend using [MSAL (Microsoft Authentication Library) and
+      nested app authentication
+      (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!--
+      -->. Exchange user identity tokens are still supported for Exchange
+      on-premises.
 
 
       - The `getUserIdentityTokenAsync` method returns a token that you can use
@@ -2920,9 +2930,9 @@ methods:
       - `GenericTokenError: An internal error has occurred.` - In Exchange
       Online environments, this error occurs when the token can't be retrieved
       because legacy Exchange tokens for Outlook add-ins are turned off. We
-      recommend using NAA as a single sign-on solution for your add-in. For
-      guidance on how to implement NAA, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      recommend using
+      [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)
+      as a single sign-on solution for your add-in.
 
 
       - `HTTPRequestFailure: The request has failed. Please look at the
@@ -2933,8 +2943,9 @@ methods:
       at the diagnostics object for more information.` - In Exchange Online
       environments, this error occurs when the token can't be retrieved because
       legacy Exchange tokens for Outlook add-ins are turned off. We recommend
-      using NAA as a single sign-on solution for your add-in. For guidance on
-      how to implement NAA, see the [FAQ page](https://aka.ms/naafaq)<!-- -->.
+      using
+      [NAA](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)
+      as a single sign-on solution for your add-in.
 
 
       - `NetworkError: The user is no longer connected to the network. Please
@@ -2947,7 +2958,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/user-identity-token.yaml
 
 
       Office.context.mailbox.getUserIdentityTokenAsync((result) => {
@@ -3015,20 +3026,17 @@ methods:
       **Important**:
 
 
-      - Legacy Exchange tokens are deprecated. Legacy Exchange [user
-      identity](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
-      and
-      [callback](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
-      tokens have been turned off by default for most Exchange Online tenants.
-      Administrators can reenable legacy tokens for tenants and add-ins until
-      June 2025. In October 2025, legacy tokens will be completely turned off
-      for all tenants. This is part of [Microsoft's Secure Future
-      Initiative](https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/)<!--
-      -->, which gives organizations the tools needed to respond to the current
-      threat landscape. Exchange user identity tokens will still work for
-      Exchange on-premises. Nested app authentication (NAA) is the recommended
-      approach for tokens going forward. For more information, see the [FAQ
-      page](https://aka.ms/naafaq)<!-- -->.
+      - Legacy Exchange Online [user identity
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token)
+      and [callback
+      tokens](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens)
+      are no longer supported and are turned off across all Microsoft 365
+      tenants. If an Outlook add-in requires delegated user access or user
+      identity, we recommend using [MSAL (Microsoft Authentication Library) and
+      nested app authentication
+      (NAA)](https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in)<!--
+      -->. Exchange user identity tokens are still supported for Exchange
+      on-premises.
 
 
       - To enable the `makeEwsRequestAsync` method to make EWS requests, the
@@ -3080,7 +3088,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/get-icaluid-as-attendee.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/get-icaluid-as-attendee.yaml
 
 
       const ewsId = Office.context.mailbox.item.itemId;
@@ -3120,26 +3128,30 @@ methods:
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'+
-          '  <soap:Header><t:RequestServerVersion Version="Exchange2010" /></soap:Header>'+
-          '  <soap:Body>'+
-          '    <m:CreateItem MessageDisposition="SendAndSaveCopy">'+
-          '      <m:SavedItemFolderId><t:DistinguishedFolderId Id="sentitems" /></m:SavedItemFolderId>'+
-          '      <m:Items>'+
-          '        <t:Message>'+
-          '          <t:Subject>Hello, Outlook!</t:Subject>'+
-          '          <t:Body BodyType="HTML">This message was sent from a ScriptLab code sample, used from ' + Office.context.mailbox.diagnostics.hostName + ', version ' + Office.context.mailbox.diagnostics.hostVersion + '!</t:Body>'+
-          '          <t:ToRecipients>'+
-          '            <t:Mailbox><t:EmailAddress>' + Office.context.mailbox.userProfile.emailAddress + '</t:EmailAddress></t:Mailbox>'+
-          '          </t:ToRecipients>'+
-          '        </t:Message>'+
-          '      </m:Items>'+
-          '    </m:CreateItem>'+
-          '  </soap:Body>'+
+      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">' +
+          '  <soap:Header><t:RequestServerVersion Version="Exchange2010" /></soap:Header>' +
+          '  <soap:Body>' +
+          '    <m:CreateItem MessageDisposition="SendAndSaveCopy">' +
+          '      <m:SavedItemFolderId><t:DistinguishedFolderId Id="sentitems" /></m:SavedItemFolderId>' +
+          '      <m:Items>' +
+          '        <t:Message>' +
+          '          <t:Subject>Hello, Outlook!</t:Subject>' +
+          '          <t:Body BodyType="HTML">This message was sent from a ScriptLab code sample, used from ' + Office.context.mailbox.diagnostics.hostName + ', version ' + Office.context.mailbox.diagnostics.hostVersion + '!</t:Body>' +
+          '          <t:ToRecipients>' +
+          '            <t:Mailbox><t:EmailAddress>' + Office.context.mailbox.userProfile.emailAddress + '</t:EmailAddress></t:Mailbox>' +
+          '          </t:ToRecipients>' +
+          '        </t:Message>' +
+          '      </m:Items>' +
+          '    </m:CreateItem>' +
+          '  </soap:Body>' +
           '</soap:Envelope>';
 
       Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
-          console.log(result);
+          if (result.status === Office.AsyncResultStatus.Failed) {
+              console.log(`Failed to make EWS request: ${result.error.message}.`);
+              return;
+          }
+          console.log(result.value);
       });
 
       ```

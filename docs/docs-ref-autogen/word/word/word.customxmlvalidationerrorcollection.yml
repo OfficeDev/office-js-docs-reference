@@ -112,7 +112,7 @@ methods:
       content: 'getItem(index: number): Word.CustomXmlValidationError;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a paragraph object.
+          description: The location of a `CustomXmlValidationError` object.
           type: number
       return:
         type: <xref uid="word!Word.CustomXmlValidationError:class" />

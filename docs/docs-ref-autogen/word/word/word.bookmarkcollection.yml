@@ -7,10 +7,10 @@ summary: >-
   A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that
   represent the bookmarks in the specified selection, range, or document.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -23,7 +23,7 @@ properties:
       process to the Office host application's process.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -36,23 +36,52 @@ properties:
     summary: Gets the loaded child items in this collection.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: Word.Bookmark[];'
       return:
         type: <xref uid="word!Word.Bookmark:class" />[]
 methods:
+  - name: add(name, range)
+    uid: word!Word.BookmarkCollection#add:member(1)
+    package: word!
+    fullName: add(name, range)
+    summary: Returns a `Bookmark` object that represents a bookmark added to a range.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'add(name: string, range: Word.Range): Word.Bookmark;'
+      parameters:
+        - id: name
+          description: >-
+            The name of the bookmark. The name cannot be more than 40 characters
+            or include more than one word. Also, the name must begin with a
+            letter. It can include both numbers and letters, but not spaces. If
+            you need to separate words, use an underscore.
+          type: string
+        - id: range
+          description: >-
+            Optional. The range of text marked by the bookmark. A bookmark can
+            be set to a collapsed range (the insertion point).
+          type: <xref uid="word!Word.Range:class" />
+      return:
+        type: <xref uid="word!Word.Bookmark:class" />
+        description: A new `Bookmark` object.
   - name: exists(name)
     uid: word!Word.BookmarkCollection#exists:member(1)
     package: word!
     fullName: exists(name)
     summary: Determines whether the specified bookmark exists.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'exists(name: string): OfficeExtension.ClientResult<boolean>;'
@@ -82,7 +111,7 @@ methods:
       content: 'getItem(index: number): Word.Bookmark;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a `Bookmark` object.
+          description: The location of a `Bookmark` object.
           type: number
       return:
         type: <xref uid="word!Word.Bookmark:class" />
@@ -96,7 +125,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -122,7 +151,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.BookmarkCollection;'
@@ -144,7 +173,7 @@ methods:
       must call `context.sync()` before reading the properties.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -177,7 +206,7 @@ methods:
       items.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.BookmarkCollectionData;'
@@ -200,7 +229,7 @@ methods:
       track the parent collection.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.BookmarkCollection;'
@@ -221,7 +250,7 @@ methods:
       effect.
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.BookmarkCollection;'

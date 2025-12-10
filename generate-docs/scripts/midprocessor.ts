@@ -4,7 +4,7 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 19;
+const CURRENT_EXCEL_RELEASE = 20;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 15;
 const CURRENT_WORD_RELEASE = 9;
@@ -178,6 +178,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/excel/snippets.yaml", yaml.dump(excelSnippets), "excel");
     writeSnippetFileAndClearYamlIfNew("../json/excel_online/snippets.yaml", yaml.dump(excelSnippets), "excel");
+    writeSnippetFileAndClearYamlIfNew("../json/excel_desktop_1_1/snippets.yaml", yaml.dump(excelSnippets), "excel");
     for (let i = CURRENT_EXCEL_RELEASE; i > 0; i--) {
         writeSnippetFileAndClearYamlIfNew(`../json/excel_1_${i}/snippets.yaml`, yaml.dump(excelSnippets), "excel");
     }
@@ -203,6 +204,8 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.dump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_4/snippets.yaml", yaml.dump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_3/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_2/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_desktop_1_1/snippets.yaml", yaml.dump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_5_hidden_document/snippets.yaml", yaml.dump(wordSnippets), "word");
@@ -255,6 +258,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle ExcelApiDesktop 1.1 case.
+        console.log(`\nStarting ${host}_desktop_1_1...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_1/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_1/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_1`);
     } else if (host === "word") {
         currentRelease = CURRENT_WORD_RELEASE;
         // Handle WordApiOnline corner case.
@@ -262,6 +270,16 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle WordApiDesktop 1.4 case.
+        console.log(`\nStarting ${host}_desktop_1_4...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_4/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_4/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_4`);
+        // Handle WordApiDesktop 1.3 case.
+        console.log(`\nStarting ${host}_desktop_1_3...`);
+        json = fsx.readFileSync(`${jsonPath}_desktop_1_3/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_desktop_1_3/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_desktop_1_3`);
         // Handle WordApiDesktop 1.2 case.
         console.log(`\nStarting ${host}_desktop_1_2...`);
         json = fsx.readFileSync(`${jsonPath}_desktop_1_2/${fileName}`).toString();

@@ -5,10 +5,10 @@ package: word!
 fullName: Word.Interfaces.RepeatingSectionContentControlLoadOptions
 summary: Represents the `RepeatingSectionContentControl` object.
 remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -22,7 +22,7 @@ properties:
       (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -37,10 +37,10 @@ properties:
       Specifies whether users can add or remove sections from this repeating
       section content control by using the user interface.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'allowInsertDeleteSection?: boolean;'
@@ -53,10 +53,10 @@ properties:
     fullName: appearance
     summary: Specifies the appearance of the content control.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appearance?: boolean;'
@@ -71,10 +71,10 @@ properties:
       Specifies the red-green-blue (RGB) value of the color of the content
       control. You can provide the value in the '\#RRGGBB' format.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'color?: boolean;'
@@ -86,10 +86,10 @@ properties:
     fullName: id
     summary: Returns the identification for the content control.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
@@ -104,10 +104,10 @@ properties:
       Specifies whether to remove the content control from the active document
       when the user edits the contents of the control.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isTemporary?: boolean;'
@@ -123,10 +123,10 @@ properties:
       surrounds text, paragraphs, table cells, or table rows; or if it is
       inline.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'level?: boolean;'
@@ -142,10 +142,10 @@ properties:
       means that the user can't delete it from the active document, `false`
       means it can be deleted.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockContentControl?: boolean;'
@@ -161,10 +161,10 @@ properties:
       editable). `true` means the user can't edit the contents, `false` means
       the contents are editable.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockContents?: boolean;'
@@ -179,10 +179,10 @@ properties:
       Returns a `BuildingBlock` object that represents the placeholder text for
       the content control.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'placeholderText?: Word.Interfaces.BuildingBlockLoadOptions;'
@@ -197,10 +197,10 @@ properties:
       Gets a `Range` object that represents the contents of the content control
       in the active document.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'range?: Word.Interfaces.RangeLoadOptions;'
@@ -215,10 +215,10 @@ properties:
       Specifies the name of the repeating section items used in the context menu
       associated with this repeating section content control.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'repeatingSectionItemTitle?: boolean;'
@@ -233,10 +233,10 @@ properties:
       Returns whether the placeholder text for the content control is being
       displayed.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'showingPlaceholderText?: boolean;'
@@ -248,10 +248,10 @@ properties:
     fullName: tag
     summary: Specifies a tag to identify the content control.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tag?: boolean;'
@@ -264,20 +264,20 @@ properties:
     fullName: title
     summary: Specifies the title for the content control.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'title?: boolean;'
       return:
         type: boolean
-  - name: xmlapping
+  - name: xmlMapping
     uid: >-
-      word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#xmlapping:member
+      word!Word.Interfaces.RepeatingSectionContentControlLoadOptions#xmlMapping:member
     package: word!
-    fullName: xmlapping
+    fullName: xmlMapping
     summary: >-
       Returns an `XmlMapping` object that represents the mapping of the content
       control to XML data in the data store of the document.
@@ -288,6 +288,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'xmlapping?: Word.Interfaces.XmlMappingLoadOptions;'
+      content: 'xmlMapping?: Word.Interfaces.XmlMappingLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.XmlMappingLoadOptions:interface" />

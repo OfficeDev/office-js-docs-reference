@@ -90,8 +90,8 @@ methods:
     package: powerpoint!
     fullName: getItemAt(index)
     summary: >-
-      Gets a hyperlink using its zero-based index in the collection. An error is
-      thrown if the index is out of range.
+      Gets a hyperlink using its zero-based index in the collection. Throws an
+      `InvalidArgument` exception if the index is out of range.
     remarks: >-
       \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -107,9 +107,7 @@ methods:
           type: number
       return:
         type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />
-        description: >-
-          The hyperlink at the given index. An error is thrown if index is out
-          of range.
+        description: The hyperlink at the given index.
   - name: load(options)
     uid: powerpoint!PowerPoint.HyperlinkCollection#load:member(1)
     package: powerpoint!

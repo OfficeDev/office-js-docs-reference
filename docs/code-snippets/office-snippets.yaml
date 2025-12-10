@@ -1,3 +1,76 @@
+
+Office.initialize:function(1):
+  - |-
+    // You can use the value of the InitializationEnumeration to implement different logic for
+    // when the add-in is first inserted versus when it is already part of the document.
+    // The following example shows some simple logic that uses the value of the reason parameter
+    // to display how the task pane or content add-in was initialized.
+    Office.initialize = function (reason) {
+        // Checks for the DOM to load using the jQuery ready method.
+        $(document).ready(function () {
+        // After the DOM is loaded, code specific to the add-in can run.
+        // Display initialization reason.
+        if (reason == "inserted")
+        write("The add-in was just inserted.");
+
+        if (reason == "documentOpened")
+        write("The add-in is already part of the document.");
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.onReady:function(1):
+  - |-
+    Office.onReady(function(info) {
+        if (info.host === Office.HostType.Excel) {
+            // Do Excel-specific initialization (for example, make add-in task pane's
+            // appearance compatible with Excel "green").
+        }
+        if (info.platform === Office.PlatformType.PC) {
+            // Make minor layout changes in the task pane.
+        }
+        console.log(`Office.js is now ready in ${info.host} on ${info.platform}`);
+    });
+Office.select:function(1):
+  - |-
+    // The following code example uses the select function to retrieve a binding with the id "cities" from
+    // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
+    // dataChanged event of the binding.
+    function addBindingDataChangedEventHandler() {
+        Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
+        function (eventArgs) {
+            doSomethingWithBinding(eventArgs.binding);
+        });
+    }
+Office.useShortNamespace:function(1):
+  - |-
+    function startUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(true);
+        }
+        else {
+            Office.useShortNamespace(true);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    function stopUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(false);
+        }
+        else {
+            Office.useShortNamespace(false);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
 Office.Actions#areShortcutsInUse:member(1):
   - |-
     // Checks if a specific keyboard shortcut is in use.
@@ -2914,29 +2987,6 @@ Office.FileType:enum:
         // Now all the file content is stored in 'fileContent' variable,
         // you can do something with it, such as print, fax...
     }
-Office.initialize:function(1):
-  - |-
-    // You can use the value of the InitializationEnumeration to implement different logic for
-    // when the add-in is first inserted versus when it is already part of the document.
-    // The following example shows some simple logic that uses the value of the reason parameter
-    // to display how the task pane or content add-in was initialized.
-    Office.initialize = function (reason) {
-        // Checks for the DOM to load using the jQuery ready method.
-        $(document).ready(function () {
-        // After the DOM is loaded, code specific to the add-in can run.
-        // Display initialization reason.
-        if (reason == "inserted")
-        write("The add-in was just inserted.");
-
-        if (reason == "documentOpened")
-        write("The add-in is already part of the document.");
-        });
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
 Office.MatrixBinding#columnCount:member:
   - |-
     function showBindingColumnCount() {
@@ -4014,6 +4064,11 @@ Office.EventType:enum:
             });
         });
     }
+Office.ExtensionLifeCycle:interface:
+  - |-
+    // Adjust the width of the task pane.
+    const width = 500;
+    Office.extensionLifeCycle.taskpane.setWidth(width);
 Office.File:interface:
   - |-
     // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
@@ -4109,6 +4164,57 @@ Office.FileProperties:interface:
             }
         });
     }
+
+Office.FilterType:enum:
+  - |-
+    /* Set the selection options. These will:
+     - Pass the string "myContext" to the callback.
+     - Include both visible and hidden data.
+     - Return the formatted values of the selection 
+         (for an Excel date, 1/1/2023 instead of 44928).
+     */  
+    const options: Office.GetSelectedDataOptions = {
+        asyncContext: "myContext",
+        filterType: Office.FilterType.All,
+        valueFormat: Office.ValueFormat.Formatted
+    }
+
+    // Get the selected data in the Office document as text.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        options,
+        (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+    });
+Office.GetSelectedDataOptions:interface:
+  - |-
+    /* Set the selection options. These will:
+     - Pass the string "myContext" to the callback.
+     - Include both visible and hidden data.
+     - Return the formatted values of the selection 
+         (for an Excel date, 1/1/2023 instead of 44928).
+     */  
+    const options: Office.GetSelectedDataOptions = {
+        asyncContext: "myContext",
+        filterType: Office.FilterType.All,
+        valueFormat: Office.ValueFormat.Formatted
+    }
+
+    // Get the selected data in the Office document as text.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        options,
+        (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+    });
 Office.HostType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -4181,17 +4287,6 @@ Office.RibbonUpdaterData#tabs:member:
         const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
         await Office.ribbon.requestUpdate(ribbonUpdater);
     }
-Office.select:function(1):
-  - |-
-    // The following code example uses the select function to retrieve a binding with the id "cities" from
-    // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
-    // dataChanged event of the binding.
-    function addBindingDataChangedEventHandler() {
-        Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
-        function (eventArgs) {
-            doSomethingWithBinding(eventArgs.binding);
-        });
-    }
 Office.Settings#addHandlerAsync:member(2):
   - |-
     function addSelectionChangedEventHandler() {
@@ -4258,6 +4353,81 @@ Office.Settings#saveAsync:member(2):
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Slice:interface:
+  - |-
+    // This example demonstrates how to read file slices using the Office.Slice interface.
+    // Each slice represents a portion of the document file and includes the data, 
+    // index, and size properties.
+    Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 }, 
+        function (result) {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                const file = result.value;
+                const sliceCount = file.sliceCount;
+                let slicesReceived = 0;
+                let fileData = [];
+
+                console.log(`File sliced into ${sliceCount} parts.`);
+
+                // Get the first slice.
+                getSliceAsync(file, 0, sliceCount);
+
+                /**
+                 * Recursively retrieves slices from the file.
+                 * @param file - The Office.File object to retrieve slices from.
+                 * @param sliceIndex - The zero-based index of the slice to retrieve.
+                 * @param totalSlices - The total number of slices in the file.
+                 */
+                function getSliceAsync(file, sliceIndex, totalSlices) {
+                    file.getSliceAsync(sliceIndex, function (sliceResult) {
+                        if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
+                            const slice: Office.Slice = sliceResult.value;
+                            
+                            // Access the properties of the Slice.
+                            console.log(`Processing slice ${slice.index + 1} of ${totalSlices}`);
+                            console.log(`Slice size: ${slice.size} bytes`);
+                            
+                            // Store the slice data.
+                            fileData[slice.index] = slice.data;
+                            slicesReceived++;
+
+                            // Check if we've received all slices.
+                            if (slicesReceived === totalSlices) {
+                                file.closeAsync();
+                                console.log("All slices received. File data complete.");
+                                
+                                // Process the complete file data.
+                                processFileData(fileData);
+                            } else {
+                                // Get the next slice.
+                                getSliceAsync(file, sliceIndex + 1, totalSlices);
+                            }
+                        } else {
+                            file.closeAsync();
+                            console.error(`Error getting slice: ${sliceResult.error.message}`);
+                        }
+                    });
+                }
+
+                /**
+                 * Processes the complete file data by combining all slices.
+                 * @param data - An array of slice data arrays to combine.
+                 */
+                function processFileData(data) {
+                    // Combine all slice data into a complete file.
+                    let combinedData = [];
+                    for (let i = 0; i < data.length; i++) {
+                        combinedData.push(...data[i]);
+                    }
+                    
+                    console.log(`File processing complete. Total bytes: ${combinedData.length}`);
+                    // At this point, combinedData contains the complete file content.
+                    // You can now save it, send it to a server, or process it further.
+                }
+            } else {
+                console.error(`Error getting file: ${result.error.message}`);
+            }
+        }
+    );
 Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
@@ -4461,6 +4631,11 @@ Office.TableData#rows:member:
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
     }
+Office.TaskPane:interface:
+  - |-
+    // Adjust the width of the task pane.
+    const width = 500;
+    Office.extensionLifeCycle.taskpane.setWidth(width);
 Office.ThemeId:enum:
   - |-
     // The following example sets the color of a heading based on the current Office theme.
@@ -4557,32 +4732,32 @@ Office.Urls#javascriptRuntimeUrl:member:
     const url = Office.context.urls.javascriptRuntimeUrl;
     const regex = /=([^&]+)/;
     console.log(`First parameter value: ${url.match(regex)[1]}`);
-Office.useShortNamespace:function(1):
+
+Office.ValueFormat:enum:
   - |-
-    function startUsingShortNamespace() {
-        if (typeof Office === 'undefined') {
-            Microsoft.Office.WebExtension.useShortNamespace(true);
-        }
-        else {
-            Office.useShortNamespace(true);
-        }
-        write('Office alias is now ' + typeof Office);
+    /* Set the selection options. These will:
+     - Pass the string "myContext" to the callback.
+     - Include both visible and hidden data.
+     - Return the formatted values of the selection 
+         (for an Excel date, 1/1/2023 instead of 44928).
+     */  
+    const options: Office.GetSelectedDataOptions = {
+        asyncContext: "myContext",
+        filterType: Office.FilterType.All,
+        valueFormat: Office.ValueFormat.Formatted
     }
 
-    function stopUsingShortNamespace() {
-        if (typeof Office === 'undefined') {
-            Microsoft.Office.WebExtension.useShortNamespace(false);
-        }
-        else {
-            Office.useShortNamespace(false);
-        }
-        write('Office alias is now ' + typeof Office);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
+    // Get the selected data in the Office document as text.
+    Office.context.document.getSelectedDataAsync(
+        Office.CoercionType.Text,
+        options,
+        (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error(`${asyncResult.asyncContext}: asyncResult.error.message`);
+            } else {
+                console.log(`The selected data is "${asyncResult.value}".`);
+            }
+    });
 Office.VisibilityMode:enum:
   - |-
     Office.onReady(() => {

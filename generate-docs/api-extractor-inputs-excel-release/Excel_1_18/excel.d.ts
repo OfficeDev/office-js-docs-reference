@@ -374,8 +374,6 @@ export declare namespace Excel {
         tooManyCells = "TooManyCells",
         /**
          * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
-         * 
-         * Warning: `lambdaInCell` was deprecated in ExcelApi 1.19.
          *
          * @deprecated Deprecated since ExcelApi 1.19.
          *
@@ -5554,7 +5552,56 @@ export declare namespace Excel {
          */
         fieldName?: string;
     }
-    
+    /**
+     * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
+     * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
+     *
+     * @deprecated As of ExcelApi 1.19, use {@link https://learn.microsoft.com/javascript/api/excel/excel.doublecellvalue | DoubleCellValue} instead.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.16]
+     */
+    export interface FormattedNumberCellValue {
+        /**
+         * Represents the type of this cell value.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
+        type: CellValueType.formattedNumber | "FormattedNumber";
+        /**
+         * Represents the value that would be returned by `Range.values` for a cell with this value.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
+        basicValue: number;
+        /**
+         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
+        basicType?: RangeValueType.double | "Double";
+        /**
+         * Returns the number format string that is used to display this value.
+         * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
+         * Number format strings must conform to Excel guidelines.
+         * To learn more, see {@link https://support.microsoft.com/office/c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+         *
+         * @deprecated Deprecated since ExcelApi 1.19.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.16]
+         */
+        numberFormat: string;
+    }
     /**
      * Represents the value of a cell containing a #GETTING_DATA error.
      *
@@ -5702,7 +5749,7 @@ export declare namespace Excel {
         provider?: CellValueProviderAttributes;
     }
     /**
-     * Represents the value of a cell containing a #N/A! error.
+     * Represents the value of a cell containing a #N/A error.
      *
      * @remarks
      * [Api set: ExcelApi 1.16]
@@ -5723,7 +5770,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.16]
          */
-        basicValue?: "#N/A!" | string;
+        basicValue?: "#N/A" | string;
         /**
          * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
          *
@@ -6906,9 +6953,17 @@ export declare namespace Excel {
     }
     /**
      *
-     * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a Base64-encoded .xlsx file.
-     * Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in" button to proceed.
+     * Creates and opens a new workbook. Optionally, the workbook can be pre-populated
+     * with a Base64-encoded .xlsx file.
+
+     * Note: Macros can be a security risk. If this API is used to create a workbook that
+     * includes a macro, the add-in user will be prompted with a "Trust this add-in?" dialog
+     * in the Excel UI. The user must select the "Trust add-in" button to proceed.
      *
+     * Note: The `extensionHardening` Windows registry key affects the `base64File` param.
+     * The file extension defined by the param must match the real file type of the file.
+     * If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error:
+     * "This operation is not allowed due to the extension hardening policy."
      * [Api set: ExcelApi 1.8]
      *
      * @param base64File - Optional. The Base64-encoded .xlsx file. The default value is null.
@@ -7117,6 +7172,7 @@ export declare namespace Excel {
          * The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`.
          */
         delayForCellEdit?: boolean;
+        
     }
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -8474,7 +8530,7 @@ export declare namespace Excel {
      */
     export interface ChangedEventDetail {
         /**
-         * Represents the value after the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the value after the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -8497,7 +8553,7 @@ export declare namespace Excel {
          */
         valueAsJsonBefore: CellValue;
         /**
-         * Represents the value before the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the value before the change. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -9642,6 +9698,7 @@ export declare namespace Excel {
     export class Application extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
          *
@@ -9658,6 +9715,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly iterativeCalculation: Excel.IterativeCalculation;
+        
         /**
          * Returns the Excel calculation engine version used for the last full recalculation.
          *
@@ -9727,6 +9785,8 @@ export declare namespace Excel {
          * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.
          */
         calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
+        
+        
         /**
          * Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
          *
@@ -9743,6 +9803,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         suspendScreenUpdatingUntilNextSync(): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -10079,6 +10140,7 @@ export declare namespace Excel {
          * @param closeBehavior - workbook close behavior.
          */
         close(closeBehavior?: "Save" | "SkipSave"): void;
+        
         /**
          * Gets the currently active cell from the workbook.
          *
@@ -10154,10 +10216,14 @@ export declare namespace Excel {
         /**
          * Inserts the specified worksheets from a source workbook into the current workbook.
                     
+                     The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
+                     
                      **Note**: This API is currently only supported for Office on Windows, Mac, and the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
+         * 
+         * This API is currently only supported for Office on Windows, Mac, and the web.
          *
          * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param options - Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
@@ -10549,6 +10615,8 @@ export declare namespace Excel {
          * @param markAllDirty - True, to mark all as dirty.
          */
         calculate(markAllDirty: boolean): void;
+        
+        
         /**
          * Copies a worksheet and places it at the specified position.
          *
@@ -10578,6 +10646,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
+        
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
          *
@@ -10885,6 +10954,7 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.WorksheetData;
     }
+    
     /**
      * Represents a collection of worksheet objects that are part of the workbook.
      *
@@ -11515,6 +11585,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.18]
          */
         control: CellControl;
+        
         /**
          * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
          *
@@ -11678,7 +11749,7 @@ export declare namespace Excel {
          */
         readonly valueTypes: Excel.RangeValueType[][];
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -11687,7 +11758,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
          *
          * @remarks
@@ -11696,7 +11767,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
          *
          * @remarks
@@ -11753,6 +11824,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         calculate(): void;
+        
         /**
          * Clear range values and formatting, such as fill and border.
          *
@@ -12432,6 +12504,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         showCard(): void;
+        
         /**
          * Shows the details of the row or column group.
          *
@@ -12450,6 +12523,7 @@ export declare namespace Excel {
          * @param groupOption - Specifies whether to show the details of grouped rows or grouped columns.
          */
         showGroupDetails(groupOption: "ByRows" | "ByColumns"): void;
+        
         /**
          * Ungroups columns and rows for an outline.
          *
@@ -13582,7 +13656,7 @@ export declare namespace Excel {
          */
         readonly valueTypes: Excel.RangeValueType[][];
         /**
-         * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
          *
          * @remarks
          * [Api set: ExcelApi 1.3]
@@ -13590,7 +13664,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
          *
          * @remarks
@@ -13599,7 +13673,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
          *
          * @remarks
@@ -14008,7 +14082,7 @@ export declare namespace Excel {
         readonly value: any;
         /**
          * A JSON representation of the values in this named item.
-                    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
          *
          * @remarks
@@ -14017,7 +14091,7 @@ export declare namespace Excel {
         readonly valueAsJson: CellValue | string;
         /**
          * A JSON representation of the values in this named item.
-                    Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
          *
          * @remarks
@@ -14114,7 +14188,7 @@ export declare namespace Excel {
         readonly values: any[][];
         /**
          * A JSON representation of the values in this named item array.
-                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
          *
          * @remarks
@@ -14123,7 +14197,7 @@ export declare namespace Excel {
         readonly valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in this named item array.
-                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
          *
          * @remarks
@@ -14426,7 +14500,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          *
          * @param address - A `Range` object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3.  Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]
-         * @param hasHeaders - A boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.
+         * @param hasHeaders - A Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.
          */
         add(address: Range | string, hasHeaders: boolean): Excel.Table;
         /**
@@ -14966,7 +15040,7 @@ export declare namespace Excel {
          */
         name: string;
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -14975,7 +15049,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this table column.
-                    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
          *
          * @remarks
@@ -14984,7 +15058,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this table column.
-                    Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
          *
          * @remarks
@@ -15186,7 +15260,7 @@ export declare namespace Excel {
          */
         readonly index: number;
         /**
-         * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+         * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                     If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
          *
          * @remarks
@@ -15195,7 +15269,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this table row.
-                    Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
          *
          * @remarks
@@ -15204,7 +15278,7 @@ export declare namespace Excel {
         valuesAsJson: CellValue[][];
         /**
          * A JSON representation of the values in the cells in this table row.
-                    Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
          *
          * @remarks
@@ -15560,7 +15634,7 @@ export declare namespace Excel {
         inCellDropDown: boolean;
         /**
          * Source of the list for data validation
-                    When setting the value, it can be passed in as a `Range` object, or a string that contains a comma-separated number, boolean, or date.
+                    When setting the value, it can be passed in as a `Range` object, or a string that contains a comma-separated number, Boolean, or date.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -19556,7 +19630,7 @@ export declare namespace Excel {
          */
         position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
         /**
-         * Represents a boolean value that determines if the chart title has a shadow.
+         * Represents a Boolean value that determines if the chart title has a shadow.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -23791,7 +23865,7 @@ export declare namespace Excel {
          */
         readonly key: string;
         /**
-         * Gets or sets the value of the custom property.
+         * Specifies the value of the custom property.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -25903,6 +25977,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
     }
+    
+    
     /**
      * An object encapsulating a style's format and other properties.
      *
@@ -26871,6 +26947,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly headersFooters: Excel.HeaderFooterGroup;
+        
         /**
          * The worksheet's black and white print option.
          *
@@ -26983,6 +27060,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+        
         /**
          * The worksheet's right margin, in points, for use when printing.
          *
@@ -27221,6 +27299,12 @@ export declare namespace Excel {
     export class HeaderFooter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
+        
+        
         /**
          * The center footer of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -27347,14 +27431,14 @@ export declare namespace Excel {
          */
         state: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
         /**
-         * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+         * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         useSheetMargins: boolean;
         /**
-         * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+         * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -27395,6 +27479,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.HeaderFooterGroupData;
     }
+    
+    
     /**
      * @remarks
      * [Api set: ExcelApi 1.9]
@@ -28785,6 +28871,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly shape: Excel.Shape;
+        
+        
+        
+        
+        
+        
+        
         /**
          * Specifies the shape identifier for the image object.
          *
@@ -28799,6 +28892,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly format: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Image): void;
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -34240,24 +34343,6 @@ export declare namespace Excel {
          */
         commentChanged = "CommentChanged",
         /**
-         * `RefreshRequestCompleted` represents the type of event registered on a `LinkedDataType` and occurs when a request to refresh a data source is completed.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted",
-        /**
-         * `RefreshModeChanged` represents the type of event registered on a `LinkedDataType` and occurs when the linked data type refresh mode is changed.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeRefreshModeChanged = "LinkedDataTypeRefreshModeChanged",
-        /**
-         * `LinkedDataTypeAdded` represents the type of event registered on a `LinkedDataType` and occurs when a new linked data type is added to the workbook.
-         * @remarks
-         * [Api set: ExcelApi 1.7]
-         */
-        linkedDataTypeLinkedDataTypeAdded = "LinkedDataTypeLinkedDataTypeAdded",
-        /**
          * `WorksheetFormulaChanged` represents the type of event registered on a worksheet and occurs when a formula is changed.
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -36285,7 +36370,7 @@ export declare namespace Excel {
      */
     enum SpecialCellValueType {
         /**
-         * Cells that have errors, boolean, numeric, or string values.
+         * Cells that have errors, Boolean, numeric, or string values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -36297,7 +36382,7 @@ export declare namespace Excel {
          */
         errors = "Errors",
         /**
-         * Cells that have errors or boolean values.
+         * Cells that have errors or Boolean values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -36315,13 +36400,13 @@ export declare namespace Excel {
          */
         errorsText = "ErrorsText",
         /**
-         * Cells that have errors, boolean, or numeric values.
+         * Cells that have errors, Boolean, or numeric values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         errorsLogicalNumber = "ErrorsLogicalNumber",
         /**
-         * Cells that have errors, boolean, or string values.
+         * Cells that have errors, Boolean, or string values.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -36333,25 +36418,25 @@ export declare namespace Excel {
          */
         errorsNumberText = "ErrorsNumberText",
         /**
-         * Cells that have a boolean value.
+         * Cells that have a Boolean value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logical = "Logical",
         /**
-         * Cells that have a boolean or numeric value.
+         * Cells that have a Boolean or numeric value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logicalNumbers = "LogicalNumbers",
         /**
-         * Cells that have a boolean or string value.
+         * Cells that have a Boolean or string value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         logicalText = "LogicalText",
         /**
-         * Cells that have a boolean, numeric, or string value.
+         * Cells that have a Boolean, numeric, or string value.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -37049,6 +37134,7 @@ export declare namespace Excel {
         content: string;
         /**
          * Specifies the height of the note.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -37056,6 +37142,7 @@ export declare namespace Excel {
         height: number;
         /**
          * Specifies the visibility of the note. A value of `true` means the note is shown.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -37063,6 +37150,7 @@ export declare namespace Excel {
         visible: boolean;
         /**
          * Specifies the width of the note.
+         * Note: This property is not supported in Excel on the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.18]
@@ -37117,6 +37205,14 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.NoteData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * An object containing the result of a function-evaluation operation
      *
@@ -40999,6 +41095,7 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `Application` object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
+            
             /**
             * Returns the iterative calculation settings.
             In Excel on Windows and Mac, the settings will apply to the Excel Application.
@@ -41180,6 +41277,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: CellControl;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -41241,7 +41339,7 @@ export declare namespace Excel {
              */
             style?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -41250,7 +41348,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -41259,7 +41357,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -41324,7 +41422,7 @@ export declare namespace Excel {
              */
             numberFormat?: any[][];
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -41332,7 +41430,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -41341,7 +41439,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -41489,7 +41587,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -41498,7 +41596,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -41507,7 +41605,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -41522,7 +41620,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -41531,7 +41629,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -41540,7 +41638,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -43382,7 +43480,7 @@ export declare namespace Excel {
              */
             position?: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -44243,7 +44341,7 @@ export declare namespace Excel {
         /** An interface for updating data on the `WorksheetCustomProperty` object, for use in `worksheetCustomProperty.set({ ... })`. */
         export interface WorksheetCustomPropertyUpdateData {
             /**
-             * Gets or sets the value of the custom property.
+             * Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -45093,6 +45191,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -45205,6 +45304,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -45230,6 +45330,12 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the `HeaderFooter` object, for use in `headerFooter.set({ ... })`. */
         export interface HeaderFooterUpdateData {
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -45317,19 +45423,33 @@ export declare namespace Excel {
              */
             state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface for updating data on the `HeaderFooterPicture` object, for use in `headerFooterPicture.set({ ... })`. */
+        export interface HeaderFooterPictureUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `PageBreakCollection` object, for use in `pageBreakCollection.set({ ... })`. */
         export interface PageBreakCollectionUpdateData {
@@ -45486,6 +45606,16 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             width?: number;
+        }
+        /** An interface for updating data on the `Image` object, for use in `image.set({ ... })`. */
+        export interface ImageUpdateData {
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `GroupShapeCollection` object, for use in `groupShapeCollection.set({ ... })`. */
         export interface GroupShapeCollectionUpdateData {
@@ -45870,6 +46000,7 @@ export declare namespace Excel {
             content?: string;
             /**
              * Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -45877,6 +46008,7 @@ export declare namespace Excel {
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -45884,11 +46016,55 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
              */
             width?: number;
+        }
+        /** An interface for updating data on the `Window` object, for use in `window.set({ ... })`. */
+        export interface WindowUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`. */
+        export interface WindowCollectionUpdateData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`. */
+        export interface PaneCollectionUpdateData {
+            items?: Excel.Interfaces.PaneData[];
         }
         /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
         export interface AllowEditRangeData {
@@ -45971,6 +46147,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `application.toJSON()`. */
         export interface ApplicationData {
+            
             /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
@@ -45987,6 +46164,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationData;
+            
             /**
              * Returns the Excel calculation engine version used for the last full recalculation.
              *
@@ -46531,6 +46709,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: CellControl;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -46694,7 +46873,7 @@ export declare namespace Excel {
              */
             valueTypes?: Excel.RangeValueType[][];
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -46703,7 +46882,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -46712,7 +46891,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -46913,7 +47092,7 @@ export declare namespace Excel {
              */
             valueTypes?: Excel.RangeValueType[][];
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -46921,7 +47100,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -46930,7 +47109,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -47021,7 +47200,7 @@ export declare namespace Excel {
             value?: any;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
@@ -47030,7 +47209,7 @@ export declare namespace Excel {
             valueAsJson?: CellValue | string;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
              *
              * @remarks
@@ -47063,7 +47242,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
              *
              * @remarks
@@ -47072,7 +47251,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
              *
              * @remarks
@@ -47254,7 +47433,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -47263,7 +47442,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -47272,7 +47451,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -47294,7 +47473,7 @@ export declare namespace Excel {
              */
             index?: number;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -47303,7 +47482,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -47312,7 +47491,7 @@ export declare namespace Excel {
             valuesAsJson?: CellValue[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -49344,7 +49523,7 @@ export declare namespace Excel {
              */
             position?: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -50506,7 +50685,7 @@ export declare namespace Excel {
              */
             key?: string;
             /**
-             * Gets or sets the value of the custom property.
+             * Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -51436,6 +51615,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupData;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -51548,6 +51728,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -51573,6 +51754,12 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `headerFooter.toJSON()`. */
         export interface HeaderFooterData {
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -51660,19 +51847,33 @@ export declare namespace Excel {
              */
             state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
+        }
+        /** An interface describing the data returned by calling `headerFooterPicture.toJSON()`. */
+        export interface HeaderFooterPictureData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `pageBreak.toJSON()`. */
         export interface PageBreakData {
@@ -52015,6 +52216,13 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `image.toJSON()`. */
         export interface ImageData {
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the shape identifier for the image object.
              *
@@ -52536,6 +52744,7 @@ export declare namespace Excel {
             content?: string;
             /**
              * Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -52543,6 +52752,7 @@ export declare namespace Excel {
             height?: number;
             /**
              * Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -52550,11 +52760,68 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
              */
             width?: number;
+        }
+        /** An interface describing the data returned by calling `window.toJSON()`. */
+        export interface WindowData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `windowCollection.toJSON()`. */
+        export interface WindowCollectionData {
+            items?: Excel.Interfaces.WindowData[];
+        }
+        /** An interface describing the data returned by calling `pane.toJSON()`. */
+        export interface PaneData {
+            
+        }
+        /** An interface describing the data returned by calling `paneCollection.toJSON()`. */
+        export interface PaneCollectionData {
+            items?: Excel.Interfaces.PaneData[];
         }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
@@ -52719,6 +52986,7 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
@@ -53311,6 +53579,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: boolean;
+            
             /**
              * Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -53474,7 +53743,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -53483,7 +53752,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -53492,7 +53761,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -53693,7 +53962,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -53701,7 +53970,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -53710,7 +53979,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -53800,7 +54069,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
              *
              * @remarks
              * [Api set: ExcelApi 1.3]
@@ -53808,7 +54077,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
@@ -53817,7 +54086,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
              *
              * @remarks
@@ -53956,7 +54225,7 @@ export declare namespace Excel {
             value?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
@@ -53965,7 +54234,7 @@ export declare namespace Excel {
             valueAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
              *
              * @remarks
@@ -54059,7 +54328,7 @@ export declare namespace Excel {
             value?: boolean;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
@@ -54068,7 +54337,7 @@ export declare namespace Excel {
             valueAsJson?: boolean;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
              *
              * @remarks
@@ -54110,7 +54379,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
              *
              * @remarks
@@ -54119,7 +54388,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in this named item array.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
              *
              * @remarks
@@ -54598,7 +54867,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -54607,7 +54876,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -54616,7 +54885,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -54664,7 +54933,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -54673,7 +54942,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
@@ -54682,7 +54951,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
              *
              * @remarks
@@ -54714,7 +54983,7 @@ export declare namespace Excel {
              */
             index?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -54723,7 +54992,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -54732,7 +55001,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -54764,7 +55033,7 @@ export declare namespace Excel {
              */
             index?: boolean;
             /**
-             * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -54773,7 +55042,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
@@ -54782,7 +55051,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
              *
              * @remarks
@@ -57765,7 +58034,7 @@ export declare namespace Excel {
              */
             position?: boolean;
             /**
-             * Represents a boolean value that determines if the chart title has a shadow.
+             * Represents a Boolean value that determines if the chart title has a shadow.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -59610,7 +59879,7 @@ export declare namespace Excel {
              */
             key?: boolean;
             /**
-             * Gets or sets the value of the custom property.
+             * Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -59636,7 +59905,7 @@ export declare namespace Excel {
              */
             key?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the value of the custom property.
+             * For EACH ITEM in the collection: Specifies the value of the custom property.
              *
              * @remarks
              * [Api set: ExcelApi 1.12]
@@ -61241,6 +61510,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;
+            
             /**
              * The worksheet's black and white print option.
              *
@@ -61353,6 +61623,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: boolean;
+            
             /**
              * The worksheet's right margin, in points, for use when printing.
              *
@@ -61385,6 +61656,12 @@ export declare namespace Excel {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
+            
+            
             /**
              * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.
@@ -61479,20 +61756,21 @@ export declare namespace Excel {
              */
             state?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetMargins?: boolean;
             /**
-             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
+             * Specifies a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
              */
             useSheetScale?: boolean;
         }
+        
         /**
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -61621,6 +61899,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.18]
              */
             control?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
              *
@@ -61784,7 +62063,7 @@ export declare namespace Excel {
              */
             valueTypes?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or Boolean. Cells that contain an error will return the error string.
                         If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
              *
              * @remarks
@@ -61793,7 +62072,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
@@ -61802,7 +62081,7 @@ export declare namespace Excel {
             valuesAsJson?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values.
                         Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
              *
              * @remarks
@@ -62646,6 +62925,13 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             shape?: Excel.Interfaces.ShapeLoadOptions;
+            
+            
+            
+            
+            
+            
+            
             /**
              * Specifies the shape identifier for the image object.
              *
@@ -63579,6 +63865,7 @@ export declare namespace Excel {
             content?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the height of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -63586,6 +63873,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the visibility of the note. A value of `true` means the note is shown.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -63593,6 +63881,7 @@ export declare namespace Excel {
             visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width of the note.
+             * Note: This property is not supported in Excel on the web.
              *
              * @remarks
              * [Api set: ExcelApi 1.18]
@@ -63646,6 +63935,10 @@ export declare namespace Excel {
              */
             width?: boolean;
         }
+        
+        
+        
+        
         /**
          * An object containing the result of a function-evaluation operation
          *

@@ -3,7 +3,7 @@ name: Word.Application
 uid: word!Word.Application:class
 package: word!
 fullName: Word.Application
-summary: Represents the application object.
+summary: Represents the `Application` object.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -115,10 +115,88 @@ methods:
       content: 'createDocument(base64File?: string): Word.DocumentCreated;'
       parameters:
         - id: base64File
-          description: Optional. The Base64-encoded .docx file. The default value is null.
+          description: >-
+            Optional. The Base64-encoded .docx file. The default value is
+            `null`<!-- -->.
           type: string
       return:
         type: <xref uid="word!Word.DocumentCreated:class" />
+        description: ''
+  - name: load(options)
+    uid: word!Word.Application#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.ApplicationLoadOptions):
+        Word.Application;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.ApplicationLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.Application:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.Application#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Application;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.Application:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.Application#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Application;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.Application:class" />
         description: ''
   - name: newObject(context)
     uid: word!Word.Application.newObject:member(1)
@@ -181,10 +259,61 @@ methods:
         OfficeExtension.ClientResult<string>;
       parameters:
         - id: base64File
-          description: Required. The template file.
+          description: The template file.
           type: string
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.Application#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ApplicationUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.ApplicationUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.Application#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Application): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.Application:class" />
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: word!Word.Application#toJSON:member(1)
@@ -203,14 +332,8 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        toJSON(): {
-                    [key: string]: string;
-                };
+      content: 'toJSON(): Word.Interfaces.ApplicationData;'
       return:
-        type: |-
-          {
-                      [key: string]: string;
-                  }
+        type: <xref uid="word!Word.Interfaces.ApplicationData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

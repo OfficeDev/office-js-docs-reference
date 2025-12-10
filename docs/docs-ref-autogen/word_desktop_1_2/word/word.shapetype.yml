@@ -15,23 +15,26 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
 
   await Word.run(async (context) => {
-    // Gets text boxes in main document.
+    // Gets text boxes in the main document.
     const shapes: Word.ShapeCollection = context.document.body.shapes;
     shapes.load();
     await context.sync();
 
     if (shapes.items.length > 0) {
-      shapes.items.forEach(function(shape, index) {
+      console.log(`Number of shapes found in the main document: ${shapes.items.length}`);
+      shapes.items.forEach(function (shape, index) {
         if (shape.type === Word.ShapeType.textBox) {
           console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
+        } else {
+          console.log(`Shape ${index} in the main document doesn't have a text box.`);
         }
       });
     } else {
-      console.log("No shapes found in main document.");
+      console.log("No shapes found in the main document.");
     }
   });
 

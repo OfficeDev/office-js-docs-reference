@@ -141,10 +141,10 @@ methods:
       content: 'add(key: string, value: any): Word.Setting;'
       parameters:
         - id: key
-          description: Required. The setting's key, which is case-sensitive.
+          description: The setting's key, which is case-sensitive.
           type: string
         - id: value
-          description: Required. The setting's value.
+          description: The setting's value.
           type: any
       return:
         type: <xref uid="word!Word.Setting:class" />
@@ -205,7 +205,7 @@ methods:
     uid: word!Word.SettingCollection#getCount:member(1)
     package: word!
     fullName: getCount()
-    summary: Gets the count of settings.
+    summary: Gets the number of items in the collection.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -258,7 +258,7 @@ methods:
     package: word!
     fullName: getItem(key)
     summary: >-
-      Gets a setting object by its key, which is case-sensitive. Throws an
+      Gets a `Setting` object by its key, which is case-sensitive. Throws an
       `ItemNotFound` error if the setting doesn't exist.
     remarks: >-
       \[ [API set: WordApi
@@ -298,7 +298,7 @@ methods:
       content: 'getItem(key: string): Word.Setting;'
       parameters:
         - id: key
-          description: The key that identifies the setting object.
+          description: The key that identifies the `Setting` object.
           type: string
       return:
         type: <xref uid="word!Word.Setting:class" />
@@ -308,8 +308,8 @@ methods:
     package: word!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a setting object by its key, which is case-sensitive. If the setting
-      doesn't exist, then this method will return an object with its
+      Gets a `Setting` object by its key, which is case-sensitive. If the
+      setting doesn't exist, then this method will return an object with its
       `isNullObject` property set to `true`<!-- -->. For further information,
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
@@ -365,7 +365,7 @@ methods:
       content: 'getItemOrNullObject(key: string): Word.Setting;'
       parameters:
         - id: key
-          description: Required. The key that identifies the setting object.
+          description: The key that identifies the `Setting` object.
           type: string
       return:
         type: <xref uid="word!Word.Setting:class" />

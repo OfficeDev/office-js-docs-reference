@@ -10,6 +10,38 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: altTextDescription
+    uid: excel!Excel.Interfaces.TableData#altTextDescription:member
+    package: excel!
+    fullName: altTextDescription
+    summary: Specifies the alternative text for accessibility.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type: string
+  - name: altTextTitle
+    uid: excel!Excel.Interfaces.TableData#altTextTitle:member
+    package: excel!
+    fullName: altTextTitle
+    summary: Specifies a summary for the table, such as one used by screen readers.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle?: string;'
+      return:
+        type: string
   - name: autoFilter
     uid: excel!Excel.Interfaces.TableData#autoFilter:member
     package: excel!
@@ -40,6 +72,22 @@ properties:
       content: 'columns?: Excel.Interfaces.TableColumnData[];'
       return:
         type: <xref uid="excel!Excel.Interfaces.TableColumnData:interface" />[]
+  - name: comment
+    uid: excel!Excel.Interfaces.TableData#comment:member
+    package: excel!
+    fullName: comment
+    summary: Specifies a comment associated with the table.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comment?: string;'
+      return:
+        type: string
   - name: highlightFirstColumn
     uid: excel!Excel.Interfaces.TableData#highlightFirstColumn:member
     package: excel!
@@ -88,6 +136,22 @@ properties:
       content: 'id?: string;'
       return:
         type: string
+  - name: isActive
+    uid: excel!Excel.Interfaces.TableData#isActive:member
+    package: excel!
+    fullName: isActive
+    summary: Retrieves whether the table is currently active.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isActive?: boolean;'
+      return:
+        type: boolean
   - name: legacyId
     uid: excel!Excel.Interfaces.TableData#legacyId:member
     package: excel!
@@ -240,6 +304,26 @@ properties:
       content: 'sort?: Excel.Interfaces.TableSortData;'
       return:
         type: <xref uid="excel!Excel.Interfaces.TableSortData:interface" />
+  - name: source
+    uid: excel!Excel.Interfaces.TableData#source:member
+    package: excel!
+    fullName: source
+    summary: Retrieves the data source type from which the table originates.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        source?: Excel.TableSource | "External" | "Range" | "Xml" | "Query" |
+        "Model";
+      return:
+        type: >-
+          <xref uid="excel!Excel.TableSource:enum" /> | "External" | "Range" |
+          "Xml" | "Query" | "Model"
   - name: style
     uid: excel!Excel.Interfaces.TableData#style:member
     package: excel!

@@ -4,9 +4,9 @@ uid: word!Word.Document:class
 package: word!
 fullName: Word.Document
 summary: >-
-  The Document object is the top level object. A Document object contains one or
-  more sections, content controls, and the body that contains the contents of
-  the document.
+  The `Document` object is the top level object. A `Document` object contains
+  one or more sections, content controls, and the body that contains the
+  contents of the document.
 remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -48,7 +48,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the main document. The body is the text that
+      Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
       \[ [API set: WordApi
@@ -112,7 +112,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: >-
-      Gets the collection of content control objects in the document. This
+      Gets the collection of `ContentControl` objects in the document. This
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
@@ -196,7 +196,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
+      `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -211,7 +211,7 @@ properties:
     uid: word!Word.Document#sections:member
     package: word!
     fullName: sections
-    summary: Gets the collection of section objects in the document.
+    summary: Gets the collection of `Section` objects in the document.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -282,7 +282,7 @@ methods:
       content: 'deleteBookmark(name: string): void;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: void
@@ -304,7 +304,7 @@ methods:
       content: 'getBookmarkRange(name: string): Word.Range;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -329,7 +329,7 @@ methods:
       content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
       parameters:
         - id: name
-          description: Required. The case-insensitive bookmark name.
+          description: The case-insensitive bookmark name.
           type: string
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -556,8 +556,8 @@ methods:
       parameters:
         - id: saveBehavior
           description: >-
-            Optional. The save behavior must be 'Save' or 'Prompt'. Default
-            value is 'Save'.
+            Optional. The save behavior must be `save` or `prompt`<!-- -->.
+            Default value is `save`<!-- -->.
           type: <xref uid="word!Word.SaveBehavior:enum" />
         - id: fileName
           description: >-
@@ -587,8 +587,8 @@ methods:
       parameters:
         - id: saveBehavior
           description: >-
-            Optional. The save behavior must be 'Save' or 'Prompt'. Default
-            value is 'Save'.
+            Optional. The save behavior must be `save` or `prompt`<!-- -->.
+            Default value is `save`<!-- -->.
           type: '"Save" | "Prompt"'
         - id: fileName
           description: >-

@@ -88,6 +88,22 @@ properties:
       content: 'readonly font: PowerPoint.ShapeFont;'
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeFont:class" />
+  - name: hyperlinks
+    uid: powerpoint!PowerPoint.TextRange#hyperlinks:member
+    package: powerpoint!
+    fullName: hyperlinks
+    summary: Returns a collection of hyperlinks that exist on this `TextRange`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly hyperlinks: PowerPoint.HyperlinkScopedCollection;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.HyperlinkScopedCollection:class" />
   - name: length
     uid: powerpoint!PowerPoint.TextRange#length:member
     package: powerpoint!
@@ -120,6 +136,44 @@ properties:
       \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+      // Gets navigational (complex) properties of the selected text range.
+
+      await PowerPoint.run(async (context) => {
+        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+        textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
+        await context.sync();
+
+        console.log("Font properties of selected text range:");
+        console.log(`\tallCaps: ${textRange.font.allCaps}`);
+        console.log(`\tbold: ${textRange.font.bold}`);
+        console.log(`\tcolor: ${textRange.font.color}`);
+        console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
+        console.log(`\titalic: ${textRange.font.italic}`);
+        console.log(`\tname: ${textRange.font.name}`);
+        console.log(`\tsize: ${textRange.font.size}`);
+        console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
+        console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
+        console.log(`\tsubscript: ${textRange.font.subscript}`);
+        console.log(`\tsuperscript: ${textRange.font.superscript}`);
+        console.log(`\tunderline: ${textRange.font.underline}`);
+
+        console.log("Paragraph format properties of selected text range:");
+        console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
+        console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -292,6 +346,34 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.TextRange:class" />
         description: ''
+  - name: setHyperlink(options)
+    uid: powerpoint!PowerPoint.TextRange#setHyperlink:member(1)
+    package: powerpoint!
+    fullName: setHyperlink(options)
+    summary: >-
+      Sets a hyperlink on this `TextRange` with the specified options. This will
+      delete all existing hyperlinks on this `TextRange`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setHyperlink(options?: PowerPoint.HyperlinkAddOptions):
+        PowerPoint.Hyperlink;
+      parameters:
+        - id: options
+          description: Optional. The options for the hyperlink.
+          type: <xref uid="powerpoint!PowerPoint.HyperlinkAddOptions:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />
+        description: >-
+          The newly created
+          [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)
+          object.
   - name: setSelected()
     uid: powerpoint!PowerPoint.TextRange#setSelected:member(1)
     package: powerpoint!
@@ -350,7 +432,10 @@ methods:
       await PowerPoint.run(async (context) => {
         const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
         const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
-        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
+        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(
+          savedTextTextRangeStart,
+          savedTextTextRangeLength,
+        );
         textRange.setSelected();
         await context.sync();
       });

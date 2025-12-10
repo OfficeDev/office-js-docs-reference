@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.HeadingStyleCollectionUpdateData
+uid: word!Word.Interfaces.HeadingStyleCollectionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.HeadingStyleCollectionUpdateData
+summary: >-
+  An interface for updating data on the `HeadingStyleCollection` object, for use
+  in `headingStyleCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.HeadingStyleCollectionUpdateData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.HeadingStyleData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.HeadingStyleData:interface" />[]

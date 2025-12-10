@@ -38,6 +38,8 @@ items:
                 uid: excel!Excel.ArrowheadWidth:enum
               - name: AutoFillType
                 uid: excel!Excel.AutoFillType:enum
+              - name: AutorunEventType
+                uid: excel!Excel.AutorunEventType:enum
               - name: Base64EncodingType
                 uid: excel!Excel.Base64EncodingType:enum
               - name: BindingType
@@ -258,8 +260,6 @@ items:
                 uid: excel!Excel.KeyboardDirection:enum
               - name: LabelFilterCondition
                 uid: excel!Excel.LabelFilterCondition:enum
-              - name: LinkedDataTypeRefreshMode
-                uid: excel!Excel.LinkedDataTypeRefreshMode:enum
               - name: LinkedDataTypeState
                 uid: excel!Excel.LinkedDataTypeState:enum
               - name: LinkedEntityDataDomainRefreshMode
@@ -282,6 +282,8 @@ items:
                 uid: excel!Excel.PageOrientation:enum
               - name: PaperType
                 uid: excel!Excel.PaperType:enum
+              - name: PictureColorType
+                uid: excel!Excel.PictureColorType:enum
               - name: PictureFormat
                 uid: excel!Excel.PictureFormat:enum
               - name: PivotAxis
@@ -328,6 +330,8 @@ items:
                 uid: excel!Excel.RowHiddenChangeType:enum
               - name: SaveBehavior
                 uid: excel!Excel.SaveBehavior:enum
+              - name: ScrollWorkbookTabPosition
+                uid: excel!Excel.ScrollWorkbookTabPosition:enum
               - name: SearchDirection
                 uid: excel!Excel.SearchDirection:enum
               - name: ShapeAutoSize
@@ -384,6 +388,8 @@ items:
                 uid: excel!Excel.SpillErrorCellValueSubType:enum
               - name: SubtotalLocationType
                 uid: excel!Excel.SubtotalLocationType:enum
+              - name: TableSource
+                uid: excel!Excel.TableSource:enum
               - name: TimeoutErrorCellValueSubType
                 uid: excel!Excel.TimeoutErrorCellValueSubType:enum
               - name: TopBottomSelectionType
@@ -394,6 +400,12 @@ items:
                 uid: excel!Excel.ValueFilterCondition:enum
               - name: VerticalAlignment
                 uid: excel!Excel.VerticalAlignment:enum
+              - name: WindowState
+                uid: excel!Excel.WindowState:enum
+              - name: WindowType
+                uid: excel!Excel.WindowType:enum
+              - name: WindowView
+                uid: excel!Excel.WindowView:enum
               - name: WorkbookLinksRefreshMode
                 uid: excel!Excel.WorkbookLinksRefreshMode:enum
               - name: WorksheetPositionType
@@ -455,6 +467,8 @@ items:
             uid: excel!Excel.ArrayCellValue:interface
           - name: AutoFilter
             uid: excel!Excel.AutoFilter:class
+          - name: AutorunEventCompletedOptions
+            uid: excel!Excel.AutorunEventCompletedOptions:interface
           - name: Base64EncodedImage
             uid: excel!Excel.Base64EncodedImage:interface
           - name: BasicCardLayout
@@ -649,6 +663,8 @@ items:
             uid: excel!Excel.ChartTrendlineLabelFormat:class
           - name: CheckboxCellControl
             uid: excel!Excel.CheckboxCellControl:interface
+          - name: CheckSpellingOptions
+            uid: excel!Excel.CheckSpellingOptions:interface
           - name: ColorScaleConditionalFormat
             uid: excel!Excel.ColorScaleConditionalFormat:class
           - name: ColumnProperties
@@ -831,6 +847,8 @@ items:
             uid: excel!Excel.HeaderFooter:class
           - name: HeaderFooterGroup
             uid: excel!Excel.HeaderFooterGroup:class
+          - name: HeaderFooterPicture
+            uid: excel!Excel.HeaderFooterPicture:class
           - name: Icon
             uid: excel!Excel.Icon:interface
           - name: IconSetConditionalFormat
@@ -847,12 +865,6 @@ items:
             uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
           - name: Line
             uid: excel!Excel.Line:class
-          - name: LinkedDataType
-            uid: excel!Excel.LinkedDataType:class
-          - name: LinkedDataTypeAddedEventArgs
-            uid: excel!Excel.LinkedDataTypeAddedEventArgs:interface
-          - name: LinkedDataTypeCollection
-            uid: excel!Excel.LinkedDataTypeCollection:class
           - name: LinkedEntityCellValue
             uid: excel!Excel.LinkedEntityCellValue:interface
           - name: LinkedEntityDataDomain
@@ -925,6 +937,10 @@ items:
             uid: excel!Excel.PageLayoutMarginOptions:interface
           - name: PageLayoutZoomOptions
             uid: excel!Excel.PageLayoutZoomOptions:interface
+          - name: Pane
+            uid: excel!Excel.Pane:class
+          - name: PaneCollection
+            uid: excel!Excel.PaneCollection:class
           - name: PivotDateFilter
             uid: excel!Excel.PivotDateFilter:interface
           - name: PivotField
@@ -1005,10 +1021,6 @@ items:
             uid: excel!Excel.ReferencedValue:type
           - name: RefErrorCellValue
             uid: excel!Excel.RefErrorCellValue:interface
-          - name: RefreshModeChangedEventArgs
-            uid: excel!Excel.RefreshModeChangedEventArgs:interface
-          - name: RefreshRequestCompletedEventArgs
-            uid: excel!Excel.RefreshRequestCompletedEventArgs:interface
           - name: RemoveDuplicatesResult
             uid: excel!Excel.RemoveDuplicatesResult:class
           - name: ReplaceCriteria
@@ -1141,6 +1153,10 @@ items:
             uid: excel!Excel.ValueTypeNotAvailableCellValue:interface
           - name: WebImageCellValue
             uid: excel!Excel.WebImageCellValue:interface
+          - name: Window
+            uid: excel!Excel.Window:class
+          - name: WindowCollection
+            uid: excel!Excel.WindowCollection:class
           - name: Workbook
             uid: excel!Excel.Workbook:class
           - name: WorkbookActivatedEventArgs
@@ -1346,6 +1362,8 @@ items:
                 uid: office!Office.DocumentSelectionChangedEventArgs:interface
               - name: Error
                 uid: office!Office.Error:interface
+              - name: ExtensionLifeCycle
+                uid: office!Office.ExtensionLifeCycle:interface
               - name: File
                 uid: office!Office.File:interface
               - name: FileProperties
@@ -1402,6 +1420,8 @@ items:
                 uid: office!Office.TableBinding:interface
               - name: TableData
                 uid: office!Office.TableData:class
+              - name: TaskPane
+                uid: office!Office.TaskPane:interface
               - name: TextBinding
                 uid: office!Office.TextBinding:interface
               - name: UI
@@ -1411,6 +1431,7 @@ items:
               - name: VisibilityModeChangedMessage
                 uid: office!Office.VisibilityModeChangedMessage:interface
           - name: OfficeExtension
+            uid: ''
             items:
               - name: ClientObject
                 uid: office!OfficeExtension.ClientObject:class
@@ -1700,6 +1721,13 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApiDesktop 1.1 requirement set
+            href: >-
+              ../../requirement-sets/excel/excel-api-desktop-1-1-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.20 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-20-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.19 requirement set
             href: ../../requirement-sets/excel/excel-api-1-19-requirement-set.md
@@ -2081,6 +2109,14 @@ items:
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
             displayName: Word
+          - name: WordApiDesktop 1.4 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.4-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.3 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.3-requirement-set.md
+            displayName: Word
           - name: WordApiDesktop 1.2 requirement set
             href: >-
               ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
@@ -2145,3 +2181,5 @@ items:
             href: ../../requirement-sets/common/ribbon-api-requirement-sets.md
           - name: Shared Runtime requirement sets
             href: ../../requirement-sets/common/shared-runtime-requirement-sets.md
+          - name: Task Pane API requirement sets
+            href: ../../requirement-sets/common/task-pane-api-requirement-sets.md

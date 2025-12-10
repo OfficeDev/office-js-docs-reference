@@ -68,6 +68,45 @@ properties:
       return:
         type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />[]
 methods:
+  - name: add(target, options)
+    uid: powerpoint!PowerPoint.HyperlinkCollection#add:member(1)
+    package: powerpoint!
+    fullName: add(target, options)
+    summary: >-
+      Adds a hyperlink to the specified target with the given options. If the
+      target already contains any hyperlinks, they will be deleted. The new
+      hyperlink may appear anywhere in the collection and is not guaranteed to
+      be added at the end.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        add(target: TextRange | Shape, options?:
+        PowerPoint.HyperlinkAddOptions): PowerPoint.Hyperlink;
+      parameters:
+        - id: target
+          description: >-
+            The target to add the hyperlink to. Can be a
+            [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+            or a [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!--
+            -->.
+          type: >-
+            <xref uid="powerpoint!PowerPoint.TextRange:class" /> | <xref
+            uid="powerpoint!PowerPoint.Shape:class" />
+        - id: options
+          description: Optional. The options for the hyperlink.
+          type: <xref uid="powerpoint!PowerPoint.HyperlinkAddOptions:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />
+        description: >-
+          The newly created
+          [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)
+          object.
   - name: getCount()
     uid: powerpoint!PowerPoint.HyperlinkCollection#getCount:member(1)
     package: powerpoint!
@@ -90,8 +129,8 @@ methods:
     package: powerpoint!
     fullName: getItemAt(index)
     summary: >-
-      Gets a hyperlink using its zero-based index in the collection. An error is
-      thrown if the index is out of range.
+      Gets a hyperlink using its zero-based index in the collection. Throws an
+      `InvalidArgument` exception if the index is out of range.
     remarks: >-
       \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -107,9 +146,7 @@ methods:
           type: number
       return:
         type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />
-        description: >-
-          The hyperlink at the given index. An error is thrown if index is out
-          of range.
+        description: The hyperlink at the given index.
   - name: load(options)
     uid: powerpoint!PowerPoint.HyperlinkCollection#load:member(1)
     package: powerpoint!

@@ -1,7 +1,7 @@
 ---
 title: Image Coercion requirement sets
 description: Support for Image Coercion requirement sets with Office Add-ins across Excel, OneNote, PowerPoint, and Word.
-ms.date: 04/15/2024
+ms.date: 11/07/2025
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -16,20 +16,20 @@ ImageCoercion 1.1 enables conversion to an image (`Office.CoercionType.Image`) w
 
 - Excel on Windows
   - Microsoft 365 subscription
-  - perpetual Office 2016 and later
+  - perpetual Office 2021 and later
 - Excel on Mac
 - Excel on iPad
 - OneNote on the web
 - PowerPoint on the web
 - PowerPoint on Windows
   - Microsoft 365 subscription
-  - perpetual Office 2016 and later
+  - perpetual Office 2021 and later
 - PowerPoint on Mac
 - PowerPoint on iPad
 - Word on the web
 - Word on Windows
   - Microsoft 365 subscription
-  - perpetual Office 2016 and later
+  - perpetual Office 2021 and later
 - Word on Mac
 - Word on iPad
 
@@ -39,19 +39,19 @@ ImageCoercion 1.2 enables conversion to SVG format (`Office.CoercionType.XmlSvg`
 
 - Excel on Windows
   - Microsoft 365 subscription
-  - retail perpetual Office 2016 and later
-  - volume-licensed perpetual Office 2021 and later
+  - retail perpetual Office 2021 and later
+  - volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc) Office 2021 and later
 - Excel on Mac
 - PowerPoint on the web
 - PowerPoint on Windows
   - Microsoft 365 subscription
-  - retail perpetual Office 2016 and later
-  - volume-licensed perpetual Office 2021 and later
+  - retail perpetual Office 2021 and later
+  - volume-licensed perpetual/LTSC Office 2021 and later
 - PowerPoint on Mac
 - Word on Windows
   - Microsoft 365 subscription
-  - retail perpetual Office 2016 and later
-  - volume-licensed perpetual Office 2021 and later
+  - retail perpetual Office 2021 and later
+  - volume-licensed perpetual/LTSC Office 2021 and later
 - Word on Mac
 
 ## Office Common API requirement sets

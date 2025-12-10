@@ -1,0 +1,312 @@
+### YamlMime:TSType
+name: Word.HtmlDivision
+uid: word!Word.HtmlDivision:class
+package: word!
+fullName: Word.HtmlDivision
+summary: ''
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.HtmlDivision#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: htmlDivisions
+    uid: word!Word.HtmlDivision#htmlDivisions:member
+    package: word!
+    fullName: htmlDivisions
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly htmlDivisions: Word.HtmlDivisionCollection;'
+      return:
+        type: <xref uid="word!Word.HtmlDivisionCollection:class" />
+  - name: leftIndent
+    uid: word!Word.HtmlDivision#leftIndent:member
+    package: word!
+    fullName: leftIndent
+    summary: Specifies the left indent value (in points) for this HTML division.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent: number;'
+      return:
+        type: number
+  - name: range
+    uid: word!Word.HtmlDivision#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Gets a `Range` object that represents the portion of a document that's
+      contained in this HTML division.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly range: Word.Range;'
+      return:
+        type: <xref uid="word!Word.Range:class" />
+  - name: rightIndent
+    uid: word!Word.HtmlDivision#rightIndent:member
+    package: word!
+    fullName: rightIndent
+    summary: Specifies the right indent (in points) for this HTML division.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightIndent: number;'
+      return:
+        type: number
+  - name: spaceAfter
+    uid: word!Word.HtmlDivision#spaceAfter:member
+    package: word!
+    fullName: spaceAfter
+    summary: Specifies the amount of spacing (in points) after this HTML division.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceAfter: number;'
+      return:
+        type: number
+  - name: spaceBefore
+    uid: word!Word.HtmlDivision#spaceBefore:member
+    package: word!
+    fullName: spaceBefore
+    summary: Specifies the spacing (in points) before this HTML division.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceBefore: number;'
+      return:
+        type: number
+methods:
+  - name: delete()
+    uid: word!Word.HtmlDivision#delete:member(1)
+    package: word!
+    fullName: delete()
+    summary: Deletes this HTML division.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: htmlDivisionParent(levelsUp)
+    uid: word!Word.HtmlDivision#htmlDivisionParent:member(1)
+    package: word!
+    fullName: htmlDivisionParent(levelsUp)
+    summary: >-
+      Returns an `HtmlDivision` object that represents a parent division of the
+      current HTML division.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'htmlDivisionParent(levelsUp?: number): Word.HtmlDivision;'
+      parameters:
+        - id: levelsUp
+          description: >-
+            Optional. The number of levels to go up to retrieve the parent
+            division.
+          type: number
+      return:
+        type: <xref uid="word!Word.HtmlDivision:class" />
+        description: ''
+  - name: load(options)
+    uid: word!Word.HtmlDivision#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.HtmlDivisionLoadOptions):
+        Word.HtmlDivision;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.HtmlDivisionLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="word!Word.HtmlDivision:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.HtmlDivision#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.HtmlDivision;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.HtmlDivision:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.HtmlDivision#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.HtmlDivision;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.HtmlDivision:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.HtmlDivision#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.HtmlDivision`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.HtmlDivisionData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.HtmlDivisionData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.HtmlDivisionData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.HtmlDivision#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.HtmlDivision;'
+      return:
+        type: <xref uid="word!Word.HtmlDivision:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.HtmlDivision#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.HtmlDivision;'
+      return:
+        type: <xref uid="word!Word.HtmlDivision:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

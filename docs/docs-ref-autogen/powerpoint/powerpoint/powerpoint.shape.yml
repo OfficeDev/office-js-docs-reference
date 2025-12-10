@@ -42,6 +42,72 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: adjustments
+    uid: powerpoint!PowerPoint.Shape#adjustments:member
+    package: powerpoint!
+    fullName: adjustments
+    summary: >-
+      Returns an `Adjustments` object that contains adjustment values for all
+      the adjustments in this shape.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly adjustments: PowerPoint.Adjustments;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Adjustments:class" />
+  - name: altTextDescription
+    uid: powerpoint!PowerPoint.Shape#altTextDescription:member
+    package: powerpoint!
+    fullName: altTextDescription
+    summary: >-
+      The alt text description of the Shape.
+
+
+      Alt text provides alternative, text-based representations of the
+      information contained in the Shape. This information is useful for people
+      with vision or cognitive impairments who may not be able to see or
+      understand the shape.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription: string;'
+      return:
+        type: string
+  - name: altTextTitle
+    uid: powerpoint!PowerPoint.Shape#altTextTitle:member
+    package: powerpoint!
+    fullName: altTextTitle
+    summary: >-
+      The alt text title of the Shape.
+
+
+      Alt text provides alternative, text-based representations of the
+      information contained in the Shape. This information is useful for people
+      with vision or cognitive impairments who may not be able to see or
+      understand the shape. A title can be read to a person with a disability
+      and is used to determine whether they wish to hear the description of the
+      content.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle: string;'
+      return:
+        type: string
   - name: context
     uid: powerpoint!PowerPoint.Shape#context:member
     package: powerpoint!
@@ -57,6 +123,24 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: <xref uid="powerpoint!PowerPoint.RequestContext:class" />
+  - name: creationId
+    uid: powerpoint!PowerPoint.Shape#creationId:member
+    package: powerpoint!
+    fullName: creationId
+    summary: >-
+      Gets the creation ID of the shape. Returns `null` if the shape has no
+      creation ID.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly creationId: string | null;'
+      return:
+        type: string | null
   - name: customXmlParts
     uid: powerpoint!PowerPoint.Shape#customXmlParts:member
     package: powerpoint!
@@ -98,9 +182,11 @@ properties:
       await PowerPoint.run(async (context) => {
         const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
-        shapes.load("items");
+        shapes.load("items/fill/type");
         await context.sync();
         shapes.items.map((shape) => {
+          const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+          console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
           shape.fill.setSolidColor("red");
         });
         await context.sync();
@@ -239,6 +325,28 @@ properties:
       content: 'readonly id: string;'
       return:
         type: string
+  - name: isDecorative
+    uid: powerpoint!PowerPoint.Shape#isDecorative:member
+    package: powerpoint!
+    fullName: isDecorative
+    summary: >-
+      Represents whether the shape is decorative or not.
+
+
+      Decorative objects add visual interest but aren't informative (e.g.
+      stylistic borders). People using screen readers will hear these are
+      decorative so they know they aren't missing any important information.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isDecorative: boolean;'
+      return:
+        type: boolean
   - name: left
     uid: powerpoint!PowerPoint.Shape#left:member
     package: powerpoint!
@@ -377,6 +485,49 @@ properties:
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+      // Gets the placeholder shapes in the slide.
+
+      await PowerPoint.run(async (context) => {
+        // Get properties for every shape in the collection.
+        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+        shapes.load("type,name");
+        await context.sync();
+
+        const placeholderShapes = [];
+        console.log(`Number of shapes found: ${shapes.items.length}`);
+        shapes.items.forEach((shape) => {
+          if (shape.type === PowerPoint.ShapeType.placeholder) {
+            // Load placeholderFormat property.
+            // PowerPoint throws an exception if you try to load this property on a shape that isn't a placeholder type.
+            shape.load("placeholderFormat");
+            placeholderShapes.push(shape);
+          }
+        });
+        await context.sync();
+
+        console.log(`Number of placeholder shapes found: ${placeholderShapes.length}`);
+        for (let i = 0; i < placeholderShapes.length; i++) {
+          let currentPlaceholder: PowerPoint.PlaceholderFormat = placeholderShapes[i].placeholderFormat;
+          let placeholderType = currentPlaceholder.type as PowerPoint.PlaceholderType;
+          let placeholderContainedType = currentPlaceholder.containedType as PowerPoint.ShapeType;
+          console.log(`Shape "${placeholderShapes[i].name}" placeholder properties:`);
+          console.log(`\ttype: ${placeholderType}`);
+          console.log(`\tcontainedType: ${placeholderContainedType}`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1067,6 +1218,34 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: ''
+  - name: setHyperlink(options)
+    uid: powerpoint!PowerPoint.Shape#setHyperlink:member(1)
+    package: powerpoint!
+    fullName: setHyperlink(options)
+    summary: >-
+      Sets a hyperlink on this `Shape` with the specified options. This will
+      delete any existing hyperlink on this `Shape`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setHyperlink(options?: PowerPoint.HyperlinkAddOptions):
+        PowerPoint.Hyperlink;
+      parameters:
+        - id: options
+          description: Optional. The options for the hyperlink.
+          type: <xref uid="powerpoint!PowerPoint.HyperlinkAddOptions:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Hyperlink:class" />
+        description: >-
+          The newly created
+          [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)
+          object.
   - name: setZOrder(position)
     uid: powerpoint!PowerPoint.Shape#setZOrder:member(1)
     package: powerpoint!

@@ -246,6 +246,23 @@ properties:
       content: 'readonly format: Excel.RangeFormat;'
       return:
         type: <xref uid="excel!Excel.RangeFormat:class" />
+  - name: formulaArray
+    uid: excel!Excel.Range#formulaArray:member
+    package: excel!
+    fullName: formulaArray
+    summary: >-
+      Specifies the array formula of a range. If the specified range doesn't
+      contain an array formula, this property returns `null`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulaArray: string;'
+      return:
+        type: string
   - name: formulas
     uid: excel!Excel.Range#formulas:member
     package: excel!
@@ -759,7 +776,7 @@ properties:
     fullName: values
     summary: >-
       Represents the raw values of the specified range. The data returned could
-      be a string, number, or boolean. Cells that contain an error will return
+      be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
     remarks: >-
@@ -802,7 +819,7 @@ properties:
       A JSON representation of the values in the cells in this range. Unlike
       `Range.values`<!-- -->, `Range.valuesAsJson` supports all data types which
       can be in a cell. Examples include formatted number values and web images,
-      in addition to the standard boolean, number, and string values. Data
+      in addition to the standard Boolean, number, and string values. Data
       returned from this API always aligns with the en-US locale. To retrieve
       data in the user's display locale, use `Range.valuesAsJsonLocal`<!-- -->.
     remarks: >-
@@ -858,7 +875,7 @@ properties:
       A JSON representation of the values in the cells in this range. Unlike
       `Range.values`<!-- -->, `Range.valuesAsJsonLocal` supports all data types
       which can be in a cell. Examples include formatted number values and web
-      images, in addition to the standard boolean, number, and string values.
+      images, in addition to the standard Boolean, number, and string values.
       Data returned from this API always aligns with the user's display locale.
       To retrieve data independent of locale, use `Range.valuesAsJson`<!-- -->.
     remarks: >-
@@ -1045,6 +1062,28 @@ methods:
     isDeprecated: false
     syntax:
       content: 'calculate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: checkSpelling(options)
+    uid: excel!Excel.Range#checkSpelling:member(1)
+    package: excel!
+    fullName: checkSpelling(options)
+    summary: >-
+      Checks the spelling of words in this range. This method opens the Spelling
+      dialog box in the Excel UI.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checkSpelling(options?: Excel.CheckSpellingOptions): void;'
+      parameters:
+        - id: options
+          description: Optional. The options for checking spelling.
+          type: <xref uid="excel!Excel.CheckSpellingOptions:interface" />
       return:
         type: void
         description: ''
@@ -1418,7 +1457,6 @@ methods:
           
           foundRange.load("address");
           await context.sync();
-
 
           console.log(foundRange.address);
       });
@@ -1977,7 +2015,7 @@ methods:
 
         // Use the direct precedents API to loop through precedents of the active cell.
         for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-          // Highlight and console the address of each precedent cell.
+          // Highlight and print out the address of each direct precedent cell.
           directPrecedents.areas.items[i].format.fill.color = "Yellow";
           console.log(`  ${directPrecedents.areas.items[i].address}`);
         }
@@ -2679,7 +2717,7 @@ methods:
 
         // Use the precedents API to loop through precedents of the active cell.
         for (let i = 0; i < precedents.areas.items.length; i++) {
-          // Highlight and console the address of each precedent cell.
+          // Highlight and print out the address of each precedent cell.
           precedents.areas.items[i].format.fill.color = "Orange";
           console.log(`  ${precedents.areas.items[i].address}`);
         }
@@ -4232,6 +4270,29 @@ methods:
       return:
         type: void
         description: ''
+  - name: showDependents(remove)
+    uid: excel!Excel.Range#showDependents:member(1)
+    package: excel!
+    fullName: showDependents(remove)
+    summary: Draws tracer arrows to the direct dependents of the range.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showDependents(remove?: boolean): void;'
+      parameters:
+        - id: remove
+          description: >-
+            Optional. Set to `true` to remove one level of tracer arrows to
+            direct dependents. Set to `false` to expand one level of tracer
+            arrows. The default value is `false`<!-- -->.
+          type: boolean
+      return:
+        type: void
+        description: ''
   - name: showGroupDetails(groupOption)
     uid: excel!Excel.Range#showGroupDetails:member(1)
     package: excel!
@@ -4275,6 +4336,29 @@ methods:
             Specifies whether to show the details of grouped rows or grouped
             columns.
           type: '"ByRows" | "ByColumns"'
+      return:
+        type: void
+        description: ''
+  - name: showPrecedents(remove)
+    uid: excel!Excel.Range#showPrecedents:member(1)
+    package: excel!
+    fullName: showPrecedents(remove)
+    summary: Draws tracer arrows to the direct precedents of the range.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showPrecedents(remove?: boolean): void;'
+      parameters:
+        - id: remove
+          description: >-
+            Optional. Set to `true` to remove one level of tracer arrows to
+            direct precedents. Set to `false` to expand one level of tracer
+            arrows. The default value is `false`<!-- -->.
+          type: boolean
       return:
         type: void
         description: ''

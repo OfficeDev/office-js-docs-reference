@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Word.ExportOptimizeFor
+uid: word!Word.ExportOptimizeFor:enum
+package: word!
+fullName: Word.ExportOptimizeFor
+summary: Specifies the optimization target for document export.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: onScreen
+    uid: word!Word.ExportOptimizeFor.onScreen:member
+    package: word!
+    summary: >-
+      Optimizes for on-screen display.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OnScreen"'
+  - name: print
+    uid: word!Word.ExportOptimizeFor.print:member
+    package: word!
+    summary: >-
+      Optimizes for print.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Print"'

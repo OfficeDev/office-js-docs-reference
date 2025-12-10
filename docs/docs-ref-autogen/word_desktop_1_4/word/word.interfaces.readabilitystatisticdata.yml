@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: Word.Interfaces.ReadabilityStatisticData
+uid: word!Word.Interfaces.ReadabilityStatisticData:interface
+package: word!
+fullName: Word.Interfaces.ReadabilityStatisticData
+summary: >-
+  An interface describing the data returned by calling
+  `readabilityStatistic.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: word!Word.Interfaces.ReadabilityStatisticData#name:member
+    package: word!
+    fullName: name
+    summary: Returns the name of the readability statistic.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: value
+    uid: word!Word.Interfaces.ReadabilityStatisticData#value:member
+    package: word!
+    fullName: value
+    summary: Returns the value of the grammar statistic.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: number;'
+      return:
+        type: number

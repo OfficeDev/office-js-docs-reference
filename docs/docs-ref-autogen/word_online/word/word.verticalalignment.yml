@@ -3,7 +3,7 @@ name: Word.VerticalAlignment
 uid: word!Word.VerticalAlignment:enum
 package: word!
 fullName: Word.VerticalAlignment
-summary: ''
+summary: Represents the vertical alignment of text.
 remarks: >-
   \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -39,6 +39,9 @@ fields:
     uid: word!Word.VerticalAlignment.bottom:member
     package: word!
     summary: >-
+      Bottom vertical alignment.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
@@ -46,6 +49,9 @@ fields:
     uid: word!Word.VerticalAlignment.center:member
     package: word!
     summary: >-
+      Center vertical alignment.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Center"'
@@ -53,6 +59,9 @@ fields:
     uid: word!Word.VerticalAlignment.mixed:member
     package: word!
     summary: >-
+      Mixed vertical alignment.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
@@ -60,6 +69,9 @@ fields:
     uid: word!Word.VerticalAlignment.top:member
     package: word!
     summary: >-
+      Top vertical alignment.
+
+
       * \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'

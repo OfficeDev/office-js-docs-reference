@@ -102,14 +102,16 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: This enum is only supported in Outlook on the web and new Outlook on Windows. On these platforms, users can organize their messages as
-         * conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         * **Important**: This enum is only supported in Outlook on the web, on mobile devices (starting in Version 4.2538.0), and in the new Outlook on Windows.
          *
-         * The `BodyMode` enum supports the following message organization settings.
+         * In Outlook on the web and the new Outlook on Windows, users can organize their messages as conversations or individual messages in
+         * **Settings** \> **Mail** \> **Layout** \> **Message organization**. This user setting affects the portion of the body of a message that's displayed.
+         * The `BodyMode` enum supports the following message organization settings on these clients.
          *
-         * - Conversations: **Group messages by conversation** > **All messages from the selected conversation** or **Show email grouped by conversation** > **Newest on top**\/**Newest on bottom**
+         * - Conversations: **Group messages by conversation** \> **All messages from the selected conversation** or
+         * **Show email grouped by conversation** \> **Newest on top**\/**Newest on bottom**
          *
-         * - Individual messages: **Do not group messages** > **Only a single message** or **Show email as individual messages**
+         * - Individual messages: **Do not group messages** \> **Only a single message** or **Show email as individual messages**
          *
          * For more information, see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}.
          */
@@ -119,9 +121,11 @@ export declare namespace Office {
              */
             FullBody = 0,
             /**
-             * The body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
-             * If messages are organized by conversation, it specifies only the current body of the reply. Conversely, if messages are organized as individual
+             * In Outlook on the web and the new Outlook on Windows, the body mode depends on the user's current setting for message organization (that is, messages are organized as conversations or individual messages).
+             * If messages are organized by conversation, it specifies the body of the current reply. Conversely, if messages are organized as individual
              * messages, it specifies the entire body of a message, including previous messages from the same conversation thread.
+             *
+             * In Outlook on mobile, specifies the body of the current reply.
              */
             HostConfig = 1
         }
@@ -1512,6 +1516,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the `location` property instead.
+         * For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         enhancedLocation: EnhancedLocation;
         /**
@@ -1532,9 +1540,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: Location;
         /**
@@ -2941,6 +2955,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the `location` property instead.
+         * For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         enhancedLocation: EnhancedLocation;
         /**
@@ -2996,9 +3014,15 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage
+         * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
          */
         location: string;
         /**
@@ -3860,6 +3884,24 @@ export declare namespace Office {
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * **Important**:
+         *
+         * - The `contentId` property is only supported in Outlook on the web and Outlook on Windows (new and classic (preview)).
+         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
+         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
+         *
+         * - Starting November 15, 2025, changes to how inline images are represented in the HTML body of Outlook emails in
+         * Outlook on the web and the new Outlook on Windows will begin rolling out to production users.
+         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
+         * After the change, the image will be represented by a content ID (`cid`) in the `src` attribute instead.
+         * As a result, you'll need to update your add-in's parsing logic if you parse the attachment ID from the HTML editor or
+         * get the Base64 value of the image from the URL in the `src` attribute. For more information, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         */
+        contentId: string;
+        /**
          * Gets the index of the attachment.
          */
         id: string;
@@ -4108,16 +4150,23 @@ export declare namespace Office {
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
          *
-         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
-         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
-         * Otherwise, you may receive an unexpected value, such as an empty string.
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, specifying `Office.CoercionType.Text`
+         * in the `getAsync` call may not always provide reliable formatting. Specify `Office.CoercionType.Html` instead especially if the body contains
+         * formatted elements, such as tables, lists, and links.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
-         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * - In Outlook on the web and in the new Outlook on Windows, users can organize their messages as conversations or individual messages in
+         * **Settings** \> **Mail** \> **Layout** \> **Message organization** (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
          * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
+         *
+         * - In Outlook on mobile devices, the `bodyMode` property is available starting with Version 4.2538.0.
+         *
+         * - In Outlook on mobile devices, specifying `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` returns the body of the current reply.
+         *
+         * - In Outlook on mobile devices, while in quick reply mode (the reply field at the bottom of the message), only the body of the current reply is returned.
+         * This applies even if `bodyMode: CommonAPI.MailboxEnums.BodyMode.FullBody` is specified in the `getAsync` call.
          *
          * - The `bodyMode` option isn't supported on a message that's loaded using the `loadItemByIdAsync` method. For more information, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
@@ -4125,9 +4174,9 @@ export declare namespace Office {
          * @param coercionType - The format for the returned body.
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Any data you want to access in the callback function.
-         *        `bodyMode`: In Outlook on the web and new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is returned.
+         *        `bodyMode`: In Outlook on the web, on mobile devices, and in the new Outlook on Windows, specifies whether only the body of the current message or the entire body of a message conversation is returned.
          *        If a value isn't specified, `bodyMode` defaults to `Office.MailboxEnums.BodyMode.FullBody`, which returns the entire body of a message conversation. The `bodyMode` property only
-         *        applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic), on Mac, and on mobile devices.
+         *        applies to replies on the Message Compose surface. It's ignored in Outlook on Windows (classic) and on Mac.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *        of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
          */
@@ -4148,16 +4197,23 @@ export declare namespace Office {
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
          * render efficiently with its rendering engine.
          *
-         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
-         * if the body contains formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
-         * Otherwise, you may receive an unexpected value, such as an empty string.
+         * - In Outlook on the web and {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows}, specifying `Office.CoercionType.Text`
+         * in the `getAsync` call may not always provide reliable formatting. Specify `Office.CoercionType.Html` instead especially if the body contains
+         * formatted elements, such as tables, lists, and links.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
-         * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
+         * - In Outlook on the web and in the new Outlook on Windows, users can organize their messages as conversations or individual messages in
+         * **Settings** \> **Mail** \> **Layout** \> **Message organization** (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want the returned body to reflect the user's setting,
          * specify the `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` parameter in your `getAsync` call. If messages are grouped by conversation,
          * only the body of the current reply is returned. Conversely, if messages are displayed individually, the entire conversation thread is returned.
+         *
+         * - In Outlook on mobile devices, the `bodyMode` property is available starting with Version 4.2538.0.
+         *
+         * - In Outlook on mobile devices, specifying `bodyMode: CommonAPI.MailboxEnums.BodyMode.HostConfig` returns the body of the current reply.
+         *
+         * - In Outlook on mobile devices, while in quick reply mode (the reply field at the bottom of the message), only the body of the current reply is returned.
+         * This applies even if `bodyMode: CommonAPI.MailboxEnums.BodyMode.FullBody` is specified in the `getAsync` call.
          *
          * @param coercionType - The format for the returned body.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -4343,7 +4399,7 @@ export declare namespace Office {
          * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** \> **Mail** \> **Layout** \> **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies to a conversation thread with more than one message, if you want to honor the user's settings when
@@ -4353,7 +4409,7 @@ export declare namespace Office {
          *
          * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
          * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
-         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * setting is temporarily changed to **Individual messages: Do not group messages** \> **Only a single message** or **Show email as individual messages** during the `setAsync` call.
          * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
          *
          * **Errors**:
@@ -4413,7 +4469,7 @@ export declare namespace Office {
          * - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
          * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.
          *
-         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** > **Mail** > **Layout** > **Message organization**
+         * - In Outlook on the web and new Outlook on Windows, users can organize their messages as conversations or individual messages in **Settings** \> **Mail** \> **Layout** \> **Message organization**
          * (see {@link https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042 | Change how the message list is displayed in Outlook}).
          * This setting affects how much of a message's body is displayed to the user (that is, the entire conversation thread of a message or just the current message).
          * In Message Compose mode, particularly for replies in a conversation thread with more than one message, if you want to honor the user's settings when
@@ -4423,7 +4479,7 @@ export declare namespace Office {
          *
          * - In Outlook on the web and new Outlook on Windows, if the `bodyMode` property isn't specified or is set to `Office.MailboxEnums.BodyMode.FullBody`, the entire body of a message,
          * including previous messages from the conversation thread, is replaced. This applies even if a user's messages are organized by conversation. In this scenario, the user's
-         * setting is temporarily changed to **Individual messages: Do not group messages** > **Only a single message** or **Show email as individual messages** during the `setAsync` call.
+         * setting is temporarily changed to **Individual messages: Do not group messages** \> **Only a single message** or **Show email as individual messages** during the `setAsync` call.
          * A notification is shown to the user to alert them to this change. Once the call completes, the user's setting is reinstated.
          *
          * **Errors**:
@@ -5358,6 +5414,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     *
+     * **Important**: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the Office.Location API instead.
+     * For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface EnhancedLocation {
         /**
@@ -5403,9 +5463,6 @@ export declare namespace Office {
         /**
          * Gets the set of locations associated with the appointment.
          *
-         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
-         * added as appointment locations aren't returned by this method.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
@@ -5413,18 +5470,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - The `getAsync` method doesn't return {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | personal contact groups} that
+         * were added to the **Location** field of an appointment.
+         *
+         * - If a location was added using `Office.context.mailbox.item.location.setAsync`, its location type is `Office.MailboxEnums.LocationType.Custom`.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. An array of `Office.LocationDetails` objects representing the locations of the
+         *        appointment is returned in the `asyncResult.value` property.
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
         /**
          * Gets the set of locations associated with the appointment.
          *
-         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
-         * added as appointment locations aren't returned by this method.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
@@ -5432,8 +5494,16 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - The `getAsync` method doesn't return {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | personal contact groups} that
+         * were added to the **Location** field of an appointment.
+         *
+         * - If a location was added using `Office.context.mailbox.item.location.setAsync`, its location type is `Office.MailboxEnums.LocationType.Custom`.
+         *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. An array of `Office.LocationDetails` objects representing the locations of the
+         *        appointment is returned in the `asyncResult.value` property.
          */
         getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
         /**
@@ -6053,6 +6123,10 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: The Office.EnhancedLocation API was introduced in Mailbox requirement set 1.8. Use the EnhancedLocation API to better identify and manage
+     * appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment | Get or set the location when composing an appointmnt in Outlook}.
      */
     export interface Location {
         /**
@@ -6104,6 +6178,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
+         *
          * **Errors**:
          *
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
@@ -6127,6 +6204,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: To ensure that multiple locations resolve correctly in Outlook, separate them with a semicolon and a space. For example,
+         * "Conference Room 1; Conference Room 2".
          *
          * **Errors**:
          *
@@ -6377,12 +6457,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
-         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
-         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
-         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * - Legacy Exchange Online {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity tokens} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback tokens} are no longer supported and are turned off across all Microsoft 365 tenants.
+         * If an Outlook add-in requires delegated user access or user identity, we recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | MSAL (Microsoft Authentication Library) and nested app authentication}.
+         * Exchange user identity tokens are still supported for Exchange on-premises.
          *
          * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
@@ -6897,12 +6976,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
-         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
-         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
-         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * - Legacy Exchange Online {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity tokens} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback tokens} are no longer supported and are turned off across all Microsoft 365 tenants.
+         * If an Outlook add-in requires delegated user access or user identity, we recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | MSAL (Microsoft Authentication Library) and nested app authentication (NAA)}.
+         * Exchange user identity tokens are still supported for Exchange on-premises.
          *
          * - The Outlook REST v2.0 and beta endpoints are now deprecated. However, privately released and AppSource-hosted add-ins are able to use the REST service
          * until extended support ends for Outlook 2019 on October 14, 2025. Traffic from these add-ins is automatically identified for exemption. This exemption also
@@ -6966,14 +7044,13 @@ export declare namespace Office {
          * property to view details about the error.
          *
          * - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens
-         * for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the
-         * {@link https://aka.ms/naafaq | FAQ page}.
+         * for Outlook add-ins are turned off. We recommend using {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | NAA} as a single sign-on solution for your add-in. 
          *
          * - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
          *
          * - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments,
-         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in.
-         * For guidance on how to implement NAA, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | NAA} as a single sign-on solution for your add-in.
          *
          * - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
          *
@@ -7002,12 +7079,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
-         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
-         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
-         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * - Legacy Exchange Online {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity tokens} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback tokens} are no longer supported and are turned off across all Microsoft 365 tenants.
+         * If an Outlook add-in requires delegated user access or user identity, we recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | MSAL (Microsoft Authentication Library) and nested app authentication (NAA)}.
+         * Exchange user identity tokens are still supported for Exchange on-premises.
          *
          * - You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses
          * the token as a bearer authorization token to call the Exchange Web Services (EWS)
@@ -7036,14 +7112,13 @@ export declare namespace Office {
          * property to view details about the error.
          *
          * - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens
-         * for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the
-         * {@link https://aka.ms/naafaq | FAQ page}.
+         * for Outlook add-ins are turned off. We recommend using {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | NAA} as a single sign-on solution for your add-in. 
          *
          * - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
          *
          * - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments,
-         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in.
-         * For guidance on how to implement NAA, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | NAA} as a single sign-on solution for your add-in.
          *
          * - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
          *
@@ -7135,12 +7210,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
-         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
-         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
-         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * - Legacy Exchange Online {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity tokens} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback tokens} are no longer supported and are turned off across all Microsoft 365 tenants.
+         * If an Outlook add-in requires delegated user access or user identity, we recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | MSAL (Microsoft Authentication Library) and nested app authentication (NAA)}.
+         * Exchange user identity tokens are still supported for Exchange on-premises.
          *
          * - The `getUserIdentityTokenAsync` method returns a token that you can use to identify and
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication | authenticate the add-in and user with an external system}.
@@ -7153,14 +7227,13 @@ export declare namespace Office {
          * property to view details about the error.
          *
          * - `GenericTokenError: An internal error has occurred.` - In Exchange Online environments, this error occurs when the token can't be retrieved because legacy Exchange tokens
-         * for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in. For guidance on how to implement NAA, see the
-         * {@link https://aka.ms/naafaq | FAQ page}.
+         * for Outlook add-ins are turned off. We recommend using {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | NAA} as a single sign-on solution for your add-in. 
          *
          * - `HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.`
          *
          * - `InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.` - In Exchange Online environments,
-         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using NAA as a single sign-on solution for your add-in.
-         * For guidance on how to implement NAA, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * this error occurs when the token can't be retrieved because legacy Exchange tokens for Outlook add-ins are turned off. We recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | NAA} as a single sign-on solution for your add-in.
          *
          * - `NetworkError: The user is no longer connected to the network. Please check your network connection and try again.`
          *
@@ -7187,12 +7260,11 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Legacy Exchange tokens are deprecated. Legacy Exchange {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity} and
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback} tokens have been turned off by default for most Exchange Online tenants.
-         * Administrators can reenable legacy tokens for tenants and add-ins until June 2025. In October 2025, legacy tokens will be completely turned off for all tenants.
-         * This is part of {@link https://blogs.microsoft.com/on-the-issues/2023/11/02/secure-future-initiative-sfi-cybersecurity-cyberattacks/ | Microsoft's Secure Future Initiative},
-         * which gives organizations the tools needed to respond to the current threat landscape. Exchange user identity tokens will still work for Exchange on-premises.
-         * Nested app authentication (NAA) is the recommended approach for tokens going forward. For more information, see the {@link https://aka.ms/naafaq | FAQ page}.
+         * - Legacy Exchange Online {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token | user identity tokens} and
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens | callback tokens} are no longer supported and are turned off across all Microsoft 365 tenants.
+         * If an Outlook add-in requires delegated user access or user identity, we recommend using
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/enable-nested-app-authentication-in-your-add-in | MSAL (Microsoft Authentication Library) and nested app authentication (NAA)}.
+         * Exchange user identity tokens are still supported for Exchange on-premises.
          *
          * - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set `OAuthAuthentication` to `true` on the
          * Client Access Server EWS directory .

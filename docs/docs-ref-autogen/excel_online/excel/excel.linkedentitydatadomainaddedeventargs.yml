@@ -71,6 +71,9 @@ properties:
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
+
+      This property isn't supported in Excel on the web.
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -31,6 +31,24 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: creationId
+    uid: powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#creationId:member
+    package: powerpoint!
+    fullName: creationId
+    summary: >-
+      Gets the creation ID of the shape group. Returns `null` if the shape group
+      has no creation ID.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'creationId?: boolean;'
+      return:
+        type: boolean
   - name: id
     uid: powerpoint!PowerPoint.Interfaces.ShapeGroupLoadOptions#id:member
     package: powerpoint!

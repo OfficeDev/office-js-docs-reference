@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.DocumentKind
+uid: word!Word.DocumentKind:enum
+package: word!
+fullName: Word.DocumentKind
+summary: Specifies the kind or purpose of a document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: email
+    uid: word!Word.DocumentKind.email:member
+    package: word!
+    summary: >-
+      Represents an email document.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Email"'
+  - name: letter
+    uid: word!Word.DocumentKind.letter:member
+    package: word!
+    summary: >-
+      Represents a letter document.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Letter"'
+  - name: notSpecified
+    uid: word!Word.DocumentKind.notSpecified:member
+    package: word!
+    summary: >-
+      Represents a document with no specified kind.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"NotSpecified"'

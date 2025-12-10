@@ -3,7 +3,12 @@ name: PowerPoint.Presentation
 uid: powerpoint!PowerPoint.Presentation:class
 package: powerpoint!
 fullName: PowerPoint.Presentation
-summary: ''
+summary: >-
+  The `Presentation` object is the top-level object with one or more slides that
+  contain the contents of the presentation. To learn more about the PowerPoint
+  object model, see [PowerPoint JavaScript object
+  model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
+  -->.
 remarks: >-
   \[ [API set: PowerPointApi
   1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -237,8 +242,11 @@ properties:
     uid: powerpoint!PowerPoint.Presentation#title:member
     package: powerpoint!
     fullName: title
-    summary: ''
-    remarks: ''
+    summary: Returns the title of the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -247,6 +255,59 @@ properties:
       return:
         type: string
 methods:
+  - name: getActiveSlideOrNullObject()
+    uid: powerpoint!PowerPoint.Presentation#getActiveSlideOrNullObject:member(1)
+    package: powerpoint!
+    fullName: getActiveSlideOrNullObject()
+    summary: >-
+      Returns the current active
+      [PowerPoint.Slide](xref:powerpoint!PowerPoint.Slide:class) that is visible
+      in the editing area. If there's no active slide, an object with an
+      `isNullObject` property set to `true` is returned. For further
+      information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/presentation-get-active-slide.yaml
+
+
+      await PowerPoint.run(async (context) => {
+        // Gets the active slide in the presentation.
+        const slide: PowerPoint.Slide = context.presentation.getActiveSlideOrNullObject();
+        slide.load("id");
+        const activeSlideImage = slide.getImageAsBase64({ height: 200 });
+        await context.sync();
+
+        if (slide.isNullObject) {
+          console.log("There are no slides in this presentation.");
+          return;
+        }
+
+        console.log(`Active slide ID: ${slide.id}`);
+
+        updateSlideImage(activeSlideImage.value);
+      });
+
+      ```
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getActiveSlideOrNullObject(): PowerPoint.Slide;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Slide:class" />
+        description: ''
   - name: getSelectedShapes()
     uid: powerpoint!PowerPoint.Presentation#getSelectedShapes:member(1)
     package: powerpoint!
@@ -500,7 +561,7 @@ methods:
         txtExplained = txtExplained.replace(/\v/g, "<font color=red>VV</font>");
         let finalTable = "";
         finalTable +=
-          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+          "<table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
         finalTable += "<tr><td>Raw</td><td>" + textRange.text + "</td></tr>";
         finalTable += "<tr><td>Html</td><td>" + txtHtml + "</td></tr>";
         finalTable += "<tr><td>Exp</td><td>" + txtExplained + "</td></tr>";
@@ -508,7 +569,7 @@ methods:
         finalTable += "<tr><td>Length</td><td>" + textRange.length + "</td></tr>";
         finalTable += "</table>";
         const outputSpan = document.getElementById("outputSpan");
-        outputSpan.innerHTML = ""
+        outputSpan.innerHTML = "";
         outputSpan.innerHTML += finalTable;
       });
 
@@ -521,7 +582,10 @@ methods:
       await PowerPoint.run(async (context) => {
         const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
         const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
-        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
+        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(
+          savedTextTextRangeStart,
+          savedTextTextRangeLength,
+        );
         textRange.setSelected();
         await context.sync();
       });

@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API requirement sets
 description: Office Add-in requirement set information for Excel builds.
-ms.date: 05/13/2025
+ms.date: 11/07/2025
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -12,17 +12,19 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 ## Requirement set availability
 
-Excel add-ins run across multiple versions of Office, including Office 2016 or later on Windows, and Office on the web, Mac, and iPad. The following table lists the Excel requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
+Excel add-ins run across multiple versions of Office, including Office 2021 or later on Windows, and Office on the web, Mac, and iPad. The following table lists the Excel requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 > [!NOTE]
 > To use APIs in any of the numbered requirement sets or `ExcelApiOnline`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
 >
 > For information about using preview APIs, see the [Excel JavaScript preview APIs](excel-preview-apis.md) article.
 
-| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual</li></ul> | Office on Mac | Office on iPad |
+| Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](excel-preview-apis.md)  | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
 | [ExcelApiOnline](excel-api-online-requirement-set.md) | Latest (see [requirement set page](excel-api-online-requirement-set.md)) | Not applicable | Not applicable | Not applicable | Not applicable |
+| [ExcelApiDesktop 1.1](excel-api-desktop-1-1-requirement-set.md) | Not supported | Version 2509 (Build 19231.20156) | Not supported | Version 16.102 (25101223) | Not supported |
+| [ExcelApi 1.20](excel-api-1-20-requirement-set.md) | Supported | Version 2509 (Build 19201.20002) | Not supported | Version 16.100 (25081015) | Version 16.100 |
 | [ExcelApi 1.19](excel-api-1-19-requirement-set.md) | Supported | Version 2504 (Build 18730.20088) | Not supported | Version 16.96 (25042021) | Version 16.96 |
 | [ExcelApi 1.18](excel-api-1-18-requirement-set.md) | Supported | Version 2501 (Build 18429.20040) | Not supported | Version 16.93 (25011212) | Version 16.93 |
 | [ExcelApi 1.17](excel-api-1-17-requirement-set.md) | Supported | Version 2302 (Build 16130.20332) | Office 2024: Version 2302 (Build 16130.20332) | Version 16.70 (23021201) | Version 16.70 |

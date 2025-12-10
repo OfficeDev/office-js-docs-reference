@@ -90,6 +90,11 @@ properties:
       Specifies the height, in points, of the table. A default value is used
       when this parameter isn't provided. Throws an `InvalidArgument` exception
       when set with a negative value.
+
+
+      Note: If the table height isn't evenly divisible by the number of rows,
+      PowerPoint sets it to the nearest possible value. For example, a height of
+      400 for 3 rows may result in an actual height of 399.9999.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
@@ -455,6 +460,11 @@ properties:
       Specifies the width, in points, of the table. A default value is used when
       this parameter isn't provided. Throws an `InvalidArgument` exception when
       set with a negative value.
+
+
+      Note: If the table width isn't evenly divisible by the number of columns,
+      PowerPoint sets it to the nearest possible value. For example, a width of
+      400 for 3 columns may result in an actual width of 399.9999.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)

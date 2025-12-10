@@ -12,6 +12,54 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: altTextDescription
+    uid: excel!Excel.Interfaces.TableUpdateData#altTextDescription:member
+    package: excel!
+    fullName: altTextDescription
+    summary: Specifies the alternative text for accessibility.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type: string
+  - name: altTextTitle
+    uid: excel!Excel.Interfaces.TableUpdateData#altTextTitle:member
+    package: excel!
+    fullName: altTextTitle
+    summary: Specifies a summary for the table, such as one used by screen readers.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle?: string;'
+      return:
+        type: string
+  - name: comment
+    uid: excel!Excel.Interfaces.TableUpdateData#comment:member
+    package: excel!
+    fullName: comment
+    summary: Specifies a comment associated with the table.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comment?: string;'
+      return:
+        type: string
   - name: highlightFirstColumn
     uid: excel!Excel.Interfaces.TableUpdateData#highlightFirstColumn:member
     package: excel!

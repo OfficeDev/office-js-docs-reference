@@ -43,7 +43,7 @@ properties:
     fullName: alignment
     summary: >-
       Specifies the alignment of the table against the page column. The value
-      can be 'Left', 'Centered', or 'Right'.
+      can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -99,7 +99,7 @@ properties:
     uid: word!Word.Table#fields:member
     package: word!
     fullName: fields
-    summary: Gets the collection of field objects in the table.
+    summary: Gets the collection of `Field` objects in the table.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -148,7 +148,8 @@ properties:
     fullName: horizontalAlignment
     summary: >-
       Specifies the horizontal alignment of every cell in the table. The value
-      can be 'Left', 'Centered', 'Right', or 'Justified'.
+      can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or
+      `justified`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -666,7 +667,7 @@ properties:
     fullName: verticalAlignment
     summary: >-
       Specifies the vertical alignment of every cell in the table. The value can
-      be 'Top', 'Center', or 'Bottom'.
+      be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -741,13 +742,13 @@ methods:
       parameters:
         - id: insertLocation
           description: >-
-            Required. It must be 'Start' or 'End', corresponding to the
+            It must be `start` or `end`<!-- -->, corresponding to the
             appropriate side of the table.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | "Start" | "End"
         - id: columnCount
-          description: Required. Number of columns to add.
+          description: Number of columns to add.
           type: number
         - id: values
           description: >-
@@ -778,12 +779,12 @@ methods:
         string[][]): Word.TableRowCollection;
       parameters:
         - id: insertLocation
-          description: Required. It must be 'Start' or 'End'.
+          description: It must be `start` or `end`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.start:member" /> | <xref
             uid="word!Word.InsertLocation.end:member" /> | "Start" | "End"
         - id: rowCount
-          description: Required. Number of rows to add.
+          description: Number of rows to add.
           type: number
         - id: values
           description: >-
@@ -856,7 +857,7 @@ methods:
       content: 'deleteColumns(columnIndex: number, columnCount?: number): void;'
       parameters:
         - id: columnIndex
-          description: Required. The first column to delete.
+          description: The first column to delete.
           type: number
         - id: columnCount
           description: Optional. The number of columns to delete. Default 1.
@@ -879,7 +880,7 @@ methods:
       content: 'deleteRows(rowIndex: number, rowCount?: number): void;'
       parameters:
         - id: rowIndex
-          description: Required. The first row to delete.
+          description: The first row to delete.
           type: number
         - id: rowCount
           description: Optional. The number of rows to delete. Default 1.
@@ -944,7 +945,7 @@ methods:
       content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
       parameters:
         - id: borderLocation
-          description: Required. The border location.
+          description: The border location.
           type: <xref uid="word!Word.BorderLocation:enum" />
       return:
         type: <xref uid="word!Word.TableBorder:class" />
@@ -967,7 +968,7 @@ methods:
         Word.TableBorder;
       parameters:
         - id: borderLocation
-          description: Required. The border location.
+          description: The border location.
           type: >-
             "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
             "InsideVertical" | "Inside" | "Outside" | "All"
@@ -1013,10 +1014,10 @@ methods:
       content: 'getCell(rowIndex: number, cellIndex: number): Word.TableCell;'
       parameters:
         - id: rowIndex
-          description: Required. The index of the row.
+          description: The index of the row.
           type: number
         - id: cellIndex
-          description: Required. The index of the cell in the row.
+          description: The index of the cell in the row.
           type: number
       return:
         type: <xref uid="word!Word.TableCell:class" />
@@ -1044,10 +1045,10 @@ methods:
         Word.TableCell;
       parameters:
         - id: rowIndex
-          description: Required. The index of the row.
+          description: The index of the row.
           type: number
         - id: cellIndex
-          description: Required. The index of the cell in the row.
+          description: The index of the cell in the row.
           type: number
       return:
         type: <xref uid="word!Word.TableCell:class" />
@@ -1095,8 +1096,8 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -1119,8 +1120,8 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -1266,8 +1267,8 @@ methods:
       parameters:
         - id: rangeLocation
           description: >-
-            Optional. The range location must be 'Whole', 'Start', 'End', or
-            'After'.
+            Optional. The range location must be `whole`<!-- -->, `start`<!--
+            -->, `end`<!-- -->, or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
             uid="word!Word.RangeLocation.start:member" /> | <xref
@@ -1311,10 +1312,10 @@ methods:
         "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
-          description: Required. The paragraph text to be inserted.
+          description: The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -1339,13 +1340,13 @@ methods:
         "After", values?: string[][]): Word.Table;
       parameters:
         - id: rowCount
-          description: Required. The number of rows in the table.
+          description: The number of rows in the table.
           type: number
         - id: columnCount
-          description: Required. The number of columns in the table.
+          description: The number of columns in the table.
           type: number
         - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
+          description: The value must be `before` or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref
             uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
@@ -1448,16 +1449,16 @@ methods:
         lastCell: number): Word.TableCell;
       parameters:
         - id: topRow
-          description: Required. The row of the first cell
+          description: The row of the first cell.
           type: number
         - id: firstCell
-          description: Required. The index of the first cell in its row
+          description: The index of the first cell in its row.
           type: number
         - id: bottomRow
-          description: Required. The row of the last cell
+          description: The row of the last cell.
           type: number
         - id: lastCell
-          description: Required. The index of the last cell in its row
+          description: The index of the last cell in its row.
           type: number
       return:
         type: <xref uid="word!Word.TableCell:class" />
@@ -1467,8 +1468,8 @@ methods:
     package: word!
     fullName: search(searchText, searchOptions)
     summary: >-
-      Performs a search with the specified SearchOptions on the scope of the
-      table object. The search results are a collection of range objects.
+      Performs a search with the specified search options on the scope of the
+      `Table` object. The search results are a collection of `Range` objects.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1488,7 +1489,7 @@ methods:
                 }): Word.RangeCollection;
       parameters:
         - id: searchText
-          description: Required. The search text.
+          description: The search text.
           type: string
         - id: searchOptions
           description: Optional. Options for the search.
@@ -1523,8 +1524,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -1547,8 +1548,8 @@ methods:
       parameters:
         - id: selectionMode
           description: >-
-            Optional. The selection mode must be 'Select', 'Start', or 'End'.
-            'Select' is the default.
+            Optional. The selection mode must be `select`<!-- -->, `start`<!--
+            -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void
@@ -1622,11 +1623,11 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
         - id: cellPadding
-          description: Required. The cell padding.
+          description: The cell padding.
           type: number
       return:
         type: void
@@ -1649,11 +1650,11 @@ methods:
       parameters:
         - id: cellPaddingLocation
           description: >-
-            Required. The cell padding location must be 'Top', 'Left', 'Bottom',
-            or 'Right'.
+            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
+            `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
-          description: Required. The cell padding.
+          description: The cell padding.
           type: number
       return:
         type: void

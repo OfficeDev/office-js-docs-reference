@@ -1,3 +1,11 @@
+Excel.run:function(1):
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
 Excel.createWorkbook:function(1):
   - |-
     const myFile = <HTMLInputElement>document.getElementById("file");

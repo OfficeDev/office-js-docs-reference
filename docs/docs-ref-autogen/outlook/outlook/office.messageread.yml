@@ -304,14 +304,18 @@ properties:
       The maximum number of recipients returned varies per Outlook client.
 
 
-      - classic Windows: 500 recipients
+      - Windows (classic): 500 recipients
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
 
       - Android, classic Mac UI, iOS: 100 recipients
 
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients
-      (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
 
 
       - New Mac UI: No limit
@@ -582,7 +586,13 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
 
 
-      console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
+      const time = Office.context.mailbox.item.end;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment ends (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
 
       ```
 
@@ -997,7 +1007,13 @@ properties:
           message: "Progress indicator with id = " + id
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added progress notification with id = ${id}.`);
+      });
 
 
       ...
@@ -1016,7 +1032,13 @@ properties:
           persistent: false
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -1035,7 +1057,13 @@ properties:
           persistent: true
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added persistent informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -1050,8 +1078,7 @@ properties:
           console.log(asyncResult.error.message);
           return;
         }
-
-        console.log(asyncResult.value);
+        console.log(JSON.stringify(asyncResult.value));
       });
 
 
@@ -1071,7 +1098,13 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);
+        (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to replace notification with id = ${id}. ${result.error.message}.`);
+            return;
+          }
+          console.log(`Replaced notification with id = ${id}.`);
+        });
 
       ...
 
@@ -1081,8 +1114,14 @@ properties:
       const id = (document.getElementById("notificationId") as
       HTMLInputElement).value;
 
-      Office.context.mailbox.item.notificationMessages.removeAsync(id,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result)
+      => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
+          return;
+        }
+        console.log(`Removed notification with id = ${id}.`);
+      });
 
       ```
 
@@ -1314,7 +1353,13 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
 
 
-      console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
+      const time = Office.context.mailbox.item.start;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment starts (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
 
       ```
 
@@ -1384,14 +1429,18 @@ properties:
       The maximum number of recipients returned varies per Outlook client.
 
 
-      - classic Windows: 500 recipients
+      - Windows (classic): 500 recipients
+
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
 
       - Android, classic Mac UI, iOS: 100 recipients
 
 
-      - Web browser, new Outlook: 20 recipients (collapsed view), 500 recipients
-      (expanded view)
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
 
 
       - New Mac UI: No limit

@@ -18,6 +18,15 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
+
+  **Important**: To manage the locations of an appointment in Outlook
+  clients that don't support Mailbox requirement set 1.8, use the
+  Office.Location API instead. For guidance on selecting the right location API
+  for your scenario, see [Get or set the location when composing an appointmnt
+  in
+  Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+  -->.
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -165,13 +174,7 @@ methods:
     uid: outlook!Office.EnhancedLocation#getAsync:member(1)
     package: outlook!
     fullName: getAsync(options, callback)
-    summary: >-
-      Gets the set of locations associated with the appointment.
-
-
-      **Note**: [Personal contact
-      groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
-      added as appointment locations aren't returned by this method.
+    summary: Gets the set of locations associated with the appointment.
     remarks: >-
       \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -186,6 +189,19 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - The `getAsync` method doesn't return [personal contact
+      groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
+      that were added to the **Location** field of an appointment.
+
+
+      - If a location was added using
+      `Office.context.mailbox.item.location.setAsync`<!-- -->, its location type
+      is `Office.MailboxEnums.LocationType.Custom`<!-- -->.
 
 
       #### Examples
@@ -234,7 +250,9 @@ methods:
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. An
+            array of `Office.LocationDetails` objects representing the locations
+            of the appointment is returned in the `asyncResult.value` property.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;<xref uid="outlook!Office.LocationDetails:interface" />[]&gt;)
@@ -246,13 +264,7 @@ methods:
     uid: outlook!Office.EnhancedLocation#getAsync:member(2)
     package: outlook!
     fullName: getAsync(callback)
-    summary: >-
-      Gets the set of locations associated with the appointment.
-
-
-      **Note**: [Personal contact
-      groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
-      added as appointment locations aren't returned by this method.
+    summary: Gets the set of locations associated with the appointment.
     remarks: >-
       \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -268,6 +280,19 @@ methods:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
+
+      **Important**:
+
+
+      - The `getAsync` method doesn't return [personal contact
+      groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
+      that were added to the **Location** field of an appointment.
+
+
+      - If a location was added using
+      `Office.context.mailbox.item.location.setAsync`<!-- -->, its location type
+      is `Office.MailboxEnums.LocationType.Custom`<!-- -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,7 +304,9 @@ methods:
           description: >-
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. An
+            array of `Office.LocationDetails` objects representing the locations
+            of the appointment is returned in the `asyncResult.value` property.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;<xref uid="outlook!Office.LocationDetails:interface" />[]&gt;)

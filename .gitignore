@@ -10,3 +10,6 @@ _dependentPackages/
 *.DS_Store
 build-errors.txt
 build-log.txt
+tools/dts-utilities*
+tools/version-remover*
+tools/whats-new*

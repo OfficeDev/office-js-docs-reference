@@ -112,7 +112,7 @@ properties:
     package: word!
     fullName: underline
     summary: >-
-      Specifies a value that indicates the comment text's underline type. 'None'
+      Specifies a value that indicates the comment text's underline type. `none`
       if the comment text isn't underlined.
     remarks: >-
       \[ [API set: WordApi

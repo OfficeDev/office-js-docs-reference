@@ -36,7 +36,8 @@ properties:
     fullName: alignment
     summary: >-
       For EACH ITEM in the collection: Specifies the alignment for a paragraph.
-      The value can be 'left', 'centered', 'right', or 'justified'.
+      The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or
+      `justified`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

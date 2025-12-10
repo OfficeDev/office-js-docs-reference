@@ -289,14 +289,14 @@ methods:
     summary: >-
       Exports the slide to its own presentation file, returned as Base64-encoded
       data.
+
+
+      Note: This method is optimized to export a single slide. Exporting
+      multiple slides can impact performance.
     remarks: >-
       \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
-
-
-      This method is optimized to export a single slide. Exporting multiple
-      slides can impact performance.
 
 
       #### Examples
@@ -538,7 +538,7 @@ methods:
         shape2.load("id");
         await context.sync();
 
-        console.log(`IDs: ${shape1.id}, ${shape2.id}`)
+        console.log(`IDs: ${shape1.id}, ${shape2.id}`);
         slide1.setSelectedShapes([shape1.id, shape2.id]);
         await context.sync();
       });

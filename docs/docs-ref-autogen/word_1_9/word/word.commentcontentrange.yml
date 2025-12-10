@@ -3,7 +3,7 @@ name: Word.CommentContentRange
 uid: word!Word.CommentContentRange:class
 package: word!
 fullName: Word.CommentContentRange
-summary: ''
+summary: Represents a content range within a comment.
 remarks: >-
   \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -47,7 +47,7 @@ properties:
     uid: word!Word.CommentContentRange#bold:member
     package: word!
     fullName: bold
-    summary: Specifies a value that indicates whether the comment text is bold.
+    summary: Specifies whether the comment text is bold.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -110,7 +110,7 @@ properties:
     uid: word!Word.CommentContentRange#italic:member
     package: word!
     fullName: italic
-    summary: Specifies a value that indicates whether the comment text is italicized.
+    summary: Specifies whether the comment text is italicized.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -125,9 +125,7 @@ properties:
     uid: word!Word.CommentContentRange#strikeThrough:member
     package: word!
     fullName: strikeThrough
-    summary: >-
-      Specifies a value that indicates whether the comment text has a
-      strikethrough.
+    summary: Specifies whether the comment text has a strikethrough.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -158,8 +156,8 @@ properties:
     package: word!
     fullName: underline
     summary: >-
-      Specifies a value that indicates the comment text's underline type. 'None'
-      if the comment text isn't underlined.
+      Specifies the comment text's underline type. `none` if the comment text
+      isn't underlined.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -202,12 +200,12 @@ methods:
         | "Start" | "End" | "Before" | "After"): Word.CommentContentRange;
       parameters:
         - id: text
-          description: Required. The text to be inserted in to the CommentContentRange.
+          description: The text to be inserted in to the `CommentContentRange`<!-- -->.
           type: string
         - id: insertLocation
           description: >-
-            Required. The value must be 'Replace', 'Start', 'End', 'Before', or
-            'After'.
+            The value must be `replace`<!-- -->, `start`<!-- -->, `end`<!-- -->,
+            `before`<!-- -->, or `after`<!-- -->.
           type: >-
             <xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" |
             "End" | "Before" | "After"

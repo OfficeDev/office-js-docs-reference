@@ -210,22 +210,6 @@ properties:
       content: 'isDirty: boolean;'
       return:
         type: boolean
-  - name: linkedDataTypes
-    uid: excel!Excel.Workbook#linkedDataTypes:member
-    package: excel!
-    fullName: linkedDataTypes
-    summary: Returns a collection of linked data types that are part of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly linkedDataTypes: Excel.LinkedDataTypeCollection;'
-      return:
-        type: <xref uid="excel!Excel.LinkedDataTypeCollection:class" />
   - name: linkedEntityDataDomains
     uid: excel!Excel.Workbook#linkedEntityDataDomains:member
     package: excel!
@@ -723,6 +707,31 @@ properties:
       return:
         type: <xref uid="excel!Excel.WorksheetCollection:class" />
 methods:
+  - name: autorunEventCompleted(AutorunEventCompletedOptions)
+    uid: excel!Excel.Workbook#autorunEventCompleted:member(1)
+    package: excel!
+    fullName: autorunEventCompleted(AutorunEventCompletedOptions)
+    summary: >-
+      Notifies the host application that the add-in's code has finished running
+      in an autorun event.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        autorunEventCompleted(AutorunEventCompletedOptions:
+        Excel.AutorunEventCompletedOptions): void;
+      parameters:
+        - id: AutorunEventCompletedOptions
+          description: Required. Options for completing the autorun event.
+          type: <xref uid="excel!Excel.AutorunEventCompletedOptions:interface" />
+      return:
+        type: void
+        description: ''
   - name: close(closeBehavior)
     uid: excel!Excel.Workbook#close:member(1)
     package: excel!
@@ -781,51 +790,21 @@ methods:
       return:
         type: void
         description: ''
-  - name: enterPreviewMode()
-    uid: excel!Excel.Workbook#enterPreviewMode:member(1)
+  - name: focus()
+    uid: excel!Excel.Workbook#focus:member(1)
     package: excel!
-    fullName: enterPreviewMode()
+    fullName: focus()
     summary: >-
-      Enters Scratchpad Preview Mode for the workbook, showing changes suggested
-      by Copilot to the user.
+      Sets focus on the workbook. This causes the Excel grid or the currently
+      active object to receive keyboard events.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'enterPreviewMode(): void;'
-      return:
-        type: void
-        description: ''
-  - name: exitPreviewMode(applyChanges)
-    uid: excel!Excel.Workbook#exitPreviewMode:member(1)
-    package: excel!
-    fullName: exitPreviewMode(applyChanges)
-    summary: >-
-      Exits Scratchpad Preview Mode for the workbook. This method should be
-      called once the user decides to apply or discard changes suggested by
-      Copilot.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'exitPreviewMode(applyChanges: boolean): void;'
-      parameters:
-        - id: applyChanges
-          description: >-
-            A Boolean value that specifies whether the user wants to apply the
-            changes proposed by Copilot shown in Preview Mode (`true`<!-- -->),
-            or discard the changes shown in Preview Mode (`false`<!-- -->). The
-            default value is `false`<!-- -->, as accepting changes should be an
-            active and explicit choice by the user.
-          type: boolean
+      content: 'focus(): void;'
       return:
         type: void
         description: ''
@@ -913,8 +892,8 @@ methods:
     package: excel!
     fullName: getActiveShape()
     summary: >-
-      Gets the active shape in the workbook. Throws an `ItemNotFound` if there
-      is no active shape.
+      Gets the active shape in the workbook. Throws an `ItemNotFound` error if
+      there is no active shape.
     remarks: >-
       \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -1158,12 +1137,24 @@ methods:
       workbook.
 
 
+      The `extensionHardening` Windows registry key affects this API. The file
+      extension defined by the `base64File` param must match the real file type
+      of the inserted file. If `extensionHardening` is set to deny mismatches
+      and the file extension does not match the real file type, this API throws
+      the following error: "This operation is not allowed due to the extension
+      hardening policy."
+
+
       *Note**: This API is currently only supported for Office on Windows,
       Mac, and the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      This API is currently only supported for Office on Windows, Mac, and the
+      web.
 
 
       #### Examples

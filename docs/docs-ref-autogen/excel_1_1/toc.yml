@@ -288,6 +288,8 @@ items:
                 uid: office!Office.DocumentSelectionChangedEventArgs:interface
               - name: Error
                 uid: office!Office.Error:interface
+              - name: ExtensionLifeCycle
+                uid: office!Office.ExtensionLifeCycle:interface
               - name: File
                 uid: office!Office.File:interface
               - name: FileProperties
@@ -344,6 +346,8 @@ items:
                 uid: office!Office.TableBinding:interface
               - name: TableData
                 uid: office!Office.TableData:class
+              - name: TaskPane
+                uid: office!Office.TaskPane:interface
               - name: TextBinding
                 uid: office!Office.TextBinding:interface
               - name: UI
@@ -353,6 +357,7 @@ items:
               - name: VisibilityModeChangedMessage
                 uid: office!Office.VisibilityModeChangedMessage:interface
           - name: OfficeExtension
+            uid: ''
             items:
               - name: ClientObject
                 uid: office!OfficeExtension.ClientObject:class
@@ -642,6 +647,13 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApiDesktop 1.1 requirement set
+            href: >-
+              ../../requirement-sets/excel/excel-api-desktop-1-1-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.20 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-20-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.19 requirement set
             href: ../../requirement-sets/excel/excel-api-1-19-requirement-set.md
@@ -1023,6 +1035,14 @@ items:
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
             displayName: Word
+          - name: WordApiDesktop 1.4 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.4-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.3 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.3-requirement-set.md
+            displayName: Word
           - name: WordApiDesktop 1.2 requirement set
             href: >-
               ../../requirement-sets/word/word-api-desktop-1.2-requirement-set.md
@@ -1087,3 +1107,5 @@ items:
             href: ../../requirement-sets/common/ribbon-api-requirement-sets.md
           - name: Shared Runtime requirement sets
             href: ../../requirement-sets/common/shared-runtime-requirement-sets.md
+          - name: Task Pane API requirement sets
+            href: ../../requirement-sets/common/task-pane-api-requirement-sets.md

@@ -1,0 +1,45 @@
+### YamlMime:TSType
+name: Office.ExtensionLifeCycle
+uid: office!Office.ExtensionLifeCycle:interface
+package: office!
+fullName: Office.ExtensionLifeCycle
+summary: >-
+  Provides options to manage the user interface of an Office Add-in while the
+  add-in is running.
+remarks: >-
+  **Requirement set**: [TaskPaneAPI
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Adjust the width of the task pane.
+
+  const width = 500;
+
+  Office.extensionLifeCycle.taskpane.setWidth(width);
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: taskpane
+    uid: office!Office.ExtensionLifeCycle#taskpane:member
+    package: office!
+    fullName: taskpane
+    summary: Gets an object that represents the task pane of an add-in.
+    remarks: >-
+      **Requirement set**: [TaskPaneAPI
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'taskpane: TaskPane;'
+      return:
+        type: <xref uid="office!Office.TaskPane:interface" />

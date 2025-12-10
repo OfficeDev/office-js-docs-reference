@@ -3,7 +3,7 @@ name: Word.Alignment
 uid: word!Word.Alignment:enum
 package: word!
 fullName: Word.Alignment
-summary: ''
+summary: Represents the horizontal alignment of text.
 remarks: >-
   \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -74,6 +74,9 @@ fields:
     uid: word!Word.Alignment.mixed:member
     package: word!
     summary: >-
+      Mixed horizontal alignment.
+
+
       * \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'

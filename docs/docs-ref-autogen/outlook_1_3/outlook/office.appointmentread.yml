@@ -267,7 +267,13 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
 
 
-      console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
+      const time = Office.context.mailbox.item.end;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment ends (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
 
       ```
 
@@ -451,6 +457,11 @@ properties:
       The `location` property returns a string that contains the location of the
       appointment.
     remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -459,6 +470,16 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**: The `enhancedLocation` property was introduced in
+      Mailbox requirement set 1.8. Use the `enhancedLocation` property to better
+      identify and manage appointment locations, especially if you need to
+      determine the location type. For guidance on selecting the right location
+      API for your scenario, see [Get or set the location when composing an
+      appointmnt in
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+      -->.
 
 
       #### Examples
@@ -582,7 +603,13 @@ properties:
           message: "Progress indicator with id = " + id
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added progress notification with id = ${id}.`);
+      });
 
 
       ...
@@ -601,7 +628,13 @@ properties:
           persistent: false
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -620,7 +653,13 @@ properties:
           persistent: true
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added persistent informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -635,8 +674,7 @@ properties:
           console.log(asyncResult.error.message);
           return;
         }
-
-        console.log(asyncResult.value);
+        console.log(JSON.stringify(asyncResult.value));
       });
 
 
@@ -656,7 +694,13 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);
+        (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to replace notification with id = ${id}. ${result.error.message}.`);
+            return;
+          }
+          console.log(`Replaced notification with id = ${id}.`);
+        });
 
       ...
 
@@ -666,8 +710,14 @@ properties:
       const id = (document.getElementById("notificationId") as
       HTMLInputElement).value;
 
-      Office.context.mailbox.item.notificationMessages.removeAsync(id,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result)
+      => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
+          return;
+        }
+        console.log(`Removed notification with id = ${id}.`);
+      });
 
       ```
 
@@ -882,7 +932,13 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
 
 
-      console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
+      const time = Office.context.mailbox.item.start;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment starts (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
 
       ```
 

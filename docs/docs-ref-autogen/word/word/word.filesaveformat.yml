@@ -1,0 +1,266 @@
+### YamlMime:TSEnum
+name: Word.FileSaveFormat
+uid: word!Word.FileSaveFormat:enum
+package: word!
+fullName: Word.FileSaveFormat
+summary: Represents the file format to use when saving a document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: document
+    uid: word!Word.FileSaveFormat.document:member
+    package: word!
+    summary: >-
+      Represents Microsoft Office Word 97 - 2003 binary file format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Document"'
+  - name: documentDefault
+    uid: word!Word.FileSaveFormat.documentDefault:member
+    package: word!
+    summary: >-
+      Represents Word default document file format. For Word, this is the DOCX
+      format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DocumentDefault"'
+  - name: dosText
+    uid: word!Word.FileSaveFormat.dosText:member
+    package: word!
+    summary: >-
+      Represents Microsoft DOS text format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DosText"'
+  - name: dosTextLineBreaks
+    uid: word!Word.FileSaveFormat.dosTextLineBreaks:member
+    package: word!
+    summary: >-
+      Represents Microsoft DOS text with line breaks preserved.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"DosTextLineBreaks"'
+  - name: filteredHtml
+    uid: word!Word.FileSaveFormat.filteredHtml:member
+    package: word!
+    summary: >-
+      Represents filtered HTML format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FilteredHtml"'
+  - name: flatXml
+    uid: word!Word.FileSaveFormat.flatXml:member
+    package: word!
+    summary: >-
+      Represents Open XML file format saved as a single XML file.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FlatXml"'
+  - name: flatXmlMacroEnabled
+    uid: word!Word.FileSaveFormat.flatXmlMacroEnabled:member
+    package: word!
+    summary: >-
+      Represents Open XML file format with macros enabled saved as a single XML
+      file.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FlatXmlMacroEnabled"'
+  - name: flatXmlTemplate
+    uid: word!Word.FileSaveFormat.flatXmlTemplate:member
+    package: word!
+    summary: >-
+      Represents Open XML template format saved as a single XML file.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FlatXmlTemplate"'
+  - name: flatXmlTemplateMacroEnabled
+    uid: word!Word.FileSaveFormat.flatXmlTemplateMacroEnabled:member
+    package: word!
+    summary: >-
+      Represents Open XML template format with macros enabled saved as a single
+      XML file.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FlatXmlTemplateMacroEnabled"'
+  - name: html
+    uid: word!Word.FileSaveFormat.html:member
+    package: word!
+    summary: >-
+      Represents standard HTML format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Html"'
+  - name: openDocumentText
+    uid: word!Word.FileSaveFormat.openDocumentText:member
+    package: word!
+    summary: >-
+      Represents OpenDocument Text format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OpenDocumentText"'
+  - name: pdf
+    uid: word!Word.FileSaveFormat.pdf:member
+    package: word!
+    summary: >-
+      Represents PDF format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Pdf"'
+  - name: rtf
+    uid: word!Word.FileSaveFormat.rtf:member
+    package: word!
+    summary: >-
+      Represents Rich Text Format (RTF).
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Rtf"'
+  - name: strictOpenXmlDocument
+    uid: word!Word.FileSaveFormat.strictOpenXmlDocument:member
+    package: word!
+    summary: >-
+      Represents Strict Open XML document format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"StrictOpenXmlDocument"'
+  - name: template
+    uid: word!Word.FileSaveFormat.template:member
+    package: word!
+    summary: >-
+      Represents Word template format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Template"'
+  - name: text
+    uid: word!Word.FileSaveFormat.text:member
+    package: word!
+    summary: >-
+      Represents Microsoft Windows text format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Text"'
+  - name: textLineBreaks
+    uid: word!Word.FileSaveFormat.textLineBreaks:member
+    package: word!
+    summary: >-
+      Represents Windows text format with line breaks preserved.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"TextLineBreaks"'
+  - name: unicodeText
+    uid: word!Word.FileSaveFormat.unicodeText:member
+    package: word!
+    summary: >-
+      Represents Unicode text format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"UnicodeText"'
+  - name: webArchive
+    uid: word!Word.FileSaveFormat.webArchive:member
+    package: word!
+    summary: >-
+      Represents Web archive format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"WebArchive"'
+  - name: xml
+    uid: word!Word.FileSaveFormat.xml:member
+    package: word!
+    summary: >-
+      Represents Extensible Markup Language (XML) format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Xml"'
+  - name: xmlDocument
+    uid: word!Word.FileSaveFormat.xmlDocument:member
+    package: word!
+    summary: >-
+      Represents XML document format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"XmlDocument"'
+  - name: xmlDocumentMacroEnabled
+    uid: word!Word.FileSaveFormat.xmlDocumentMacroEnabled:member
+    package: word!
+    summary: >-
+      Represents XML document format with macros enabled.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"XmlDocumentMacroEnabled"'
+  - name: xmlTemplate
+    uid: word!Word.FileSaveFormat.xmlTemplate:member
+    package: word!
+    summary: >-
+      Represents XML template format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"XmlTemplate"'
+  - name: xmlTemplateMacroEnabled
+    uid: word!Word.FileSaveFormat.xmlTemplateMacroEnabled:member
+    package: word!
+    summary: >-
+      Represents XML template format with macros enabled.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"XmlTemplateMacroEnabled"'
+  - name: xps
+    uid: word!Word.FileSaveFormat.xps:member
+    package: word!
+    summary: >-
+      Represents XPS format.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Xps"'

@@ -1,0 +1,35 @@
+{
+    "excludedFieldPatterns":  [
+                                  "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+                              ],
+    "excludedFieldNames":  [
+                               "load",
+                               "set",
+                               "toJSON",
+                               "context",
+                               "track",
+                               "untrack"
+                           ],
+    "excludedClassPatterns":  [
+                                  "LoadOptions$",
+                                  "Data$"
+                              ],
+    "includeStaticFields":  false,
+    "includeEnums":  false,
+    "filterUnionAdditions": true,
+    "linkConfigs":  [
+                        {
+                            "pathPattern":  "javascript/api/excel",
+                            "description":  "Standard URL pattern for Excel APIs",
+                            "globalFunctionTemplate":  "/javascript/api/excel/#excel-excel-{fieldName}-function(1)",
+                            "interfaceMemberTemplate":  "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}{suffix}",
+                            "classMemberTemplate":  "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}{suffix}",
+                            "typeAliasTemplate":  "/javascript/api/excel/excel.{className}",
+                            "name":  "Excel Standard Pattern",
+                            "classTemplate":  "/javascript/api/excel/excel.{className}",
+                            "interfaceTemplate":  "/javascript/api/excel/excel.{className}",
+                            "enumMemberTemplate":  "/javascript/api/excel/excel.{className}#excel-excel-{className}-{fieldName}",
+                            "enumTemplate":  "/javascript/api/excel/excel.{className}"
+                        }
+                    ]
+}

@@ -1,0 +1,213 @@
+### YamlMime:TSType
+name: Excel.Interfaces.HeaderFooterPictureLoadOptions
+uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface
+package: excel!
+fullName: Excel.Interfaces.HeaderFooterPictureLoadOptions
+summary: Represents a picture in the header or footer of a worksheet.
+remarks: >-
+  \[ [API set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#$all:member
+    package: excel!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: brightness
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#brightness:member
+    package: excel!
+    fullName: brightness
+    summary: >-
+      Specifies the brightness of the picture. The value for this property must
+      be a number from 0.0 (dimmest) to 1.0 (brightest).
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'brightness?: boolean;'
+      return:
+        type: boolean
+  - name: colorType
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#colorType:member
+    package: excel!
+    fullName: colorType
+    summary: Specifies the type of color transformation of the picture.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'colorType?: boolean;'
+      return:
+        type: boolean
+  - name: contrast
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#contrast:member
+    package: excel!
+    fullName: contrast
+    summary: >-
+      Specifies the contrast of the picture. The value for this property must be
+      a number from 0.0 (least contrast) to 1.0 (most contrast).
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contrast?: boolean;'
+      return:
+        type: boolean
+  - name: cropBottom
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#cropBottom:member
+    package: excel!
+    fullName: cropBottom
+    summary: >-
+      Specifies the number of points that are cropped off the bottom of the
+      picture.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cropBottom?: boolean;'
+      return:
+        type: boolean
+  - name: cropLeft
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#cropLeft:member
+    package: excel!
+    fullName: cropLeft
+    summary: >-
+      Specifies the number of points that are cropped off the left side of the
+      picture.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cropLeft?: boolean;'
+      return:
+        type: boolean
+  - name: cropRight
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#cropRight:member
+    package: excel!
+    fullName: cropRight
+    summary: >-
+      Specifies the number of points that are cropped off the right side of the
+      picture.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cropRight?: boolean;'
+      return:
+        type: boolean
+  - name: cropTop
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#cropTop:member
+    package: excel!
+    fullName: cropTop
+    summary: >-
+      Specifies the number of points that are cropped off the top of the
+      picture.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cropTop?: boolean;'
+      return:
+        type: boolean
+  - name: filename
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#filename:member
+    package: excel!
+    fullName: filename
+    summary: >-
+      Specifies the URL (on the intranet or the web) or path (local or network)
+      to the location where the source object is saved.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'filename?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#height:member
+    package: excel!
+    fullName: height
+    summary: Specifies the height of the picture in points.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: lockAspectRatio
+    uid: >-
+      excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#lockAspectRatio:member
+    package: excel!
+    fullName: lockAspectRatio
+    summary: >-
+      Specifies a value that indicates whether the picture retains its original
+      proportions when resized. `true` if it retains its proportions; otherwise,
+      `false`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: excel!Excel.Interfaces.HeaderFooterPictureLoadOptions#width:member
+    package: excel!
+    fullName: width
+    summary: Specifies the width of the picture in points.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

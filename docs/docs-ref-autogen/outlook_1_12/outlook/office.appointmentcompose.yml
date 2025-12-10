@@ -234,7 +234,10 @@ properties:
           console.error(`Action failed with message ${result.error.message}`);
           return;
         }
-        console.log(`Appointment ends: ${result.value}`);
+
+        const time = result.value;
+        const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+        console.log(`Appointment ends (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
       });
 
 
@@ -289,6 +292,15 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**: To manage the locations of an appointment in Outlook
+      clients that don't support Mailbox requirement set 1.8, use the `location`
+      property instead. For guidance on selecting the right location API for
+      your scenario, see [Get or set the location when composing an appointmnt
+      in
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+      -->.
 
 
       #### Examples
@@ -434,6 +446,11 @@ properties:
       provides methods that are used to get and set the location of the
       appointment.
     remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -442,6 +459,16 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      **Important**: The `enhancedLocation` property was introduced in
+      Mailbox requirement set 1.8. Use the `enhancedLocation` property to better
+      identify and manage appointment locations, especially if you need to
+      determine the location type. For guidance on selecting the right location
+      API for your scenario, see [Get or set the location when composing an
+      appointmnt in
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+      -->.
 
 
       #### Examples
@@ -540,7 +567,13 @@ properties:
           message: "Progress indicator with id = " + id
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added progress notification with id = ${id}.`);
+      });
 
 
       ...
@@ -559,7 +592,13 @@ properties:
           persistent: false
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -578,7 +617,13 @@ properties:
           persistent: true
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added persistent informational notification with id = ${id}.`);
+      });
 
 
       ...
@@ -593,8 +638,7 @@ properties:
           console.log(asyncResult.error.message);
           return;
         }
-
-        console.log(asyncResult.value);
+        console.log(JSON.stringify(asyncResult.value));
       });
 
 
@@ -614,7 +658,13 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);
+        (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to replace notification with id = ${id}. ${result.error.message}.`);
+            return;
+          }
+          console.log(`Replaced notification with id = ${id}.`);
+        });
 
       ...
 
@@ -624,8 +674,14 @@ properties:
       const id = (document.getElementById("notificationId") as
       HTMLInputElement).value;
 
-      Office.context.mailbox.item.notificationMessages.removeAsync(id,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result)
+      => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
+          return;
+        }
+        console.log(`Removed notification with id = ${id}.`);
+      });
 
       ```
 
@@ -1140,7 +1196,10 @@ properties:
           console.error(`Action failed with message ${result.error.message}`);
           return;
         }
-        console.log(`Appointment starts: ${result.value}`);
+
+        const time = result.value;
+        const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+        console.log(`Appointment starts (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
       });
 
 
@@ -1322,7 +1381,11 @@ methods:
         getFileName(attachmentUrl),
         { isInline: false },
         (result) => {
-          console.log(result);
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to add attachment: ${result.error.message}.`);
+            return;
+          }
+          console.log(`Added attachment with ID: ${result.value}`);
         }
       );
 
@@ -1561,13 +1624,18 @@ methods:
 
 
       const base64String =
-        "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
+      "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
+
       Office.context.mailbox.item.addFileAttachmentFromBase64Async(
         base64String,
         "logo.png",
         { isInline: false },
         (result) => {
-          console.log(result);
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to add attachment from Base64-encoded string: ${result.error.message}.`);
+            return;
+          }
+          console.log(`Added attachment from a Base64-encoded string with ID: ${result.value}`);
         }
       );
 
@@ -3494,7 +3562,6 @@ methods:
             console.error(result.error.message);
             return;
           }
-
           console.log(`Attachment removed successfully.`);
         }
       );

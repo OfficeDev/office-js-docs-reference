@@ -375,15 +375,16 @@ methods:
 
       - In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->, if the body contains formatted elements, such as tables, lists, and
-      links, specify `Office.CoercionType.Html` in the `getAsync` call.
-      Otherwise, you may receive an unexpected value, such as an empty string.
+      -->, specifying `Office.CoercionType.Text` in the `getAsync` call may not
+      always provide reliable formatting. Specify `Office.CoercionType.Html`
+      instead especially if the body contains formatted elements, such as
+      tables, lists, and links.
 
 
-      - In Outlook on the web and new Outlook on Windows, users can organize
-      their messages as conversations or individual messages in **Settings**
-      &gt; **Mail** &gt; **Layout** &gt; **Message organization**
-      (see [Change how the message list is displayed in
+      - In Outlook on the web and in the new Outlook on Windows, users can
+      organize their messages as conversations or individual messages in
+      **Settings** &gt; **Mail** &gt; **Layout** &gt; **Message
+      organization** (see [Change how the message list is displayed in
       Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
@@ -394,6 +395,22 @@ methods:
       call. If messages are grouped by conversation, only the body of the
       current reply is returned. Conversely, if messages are displayed
       individually, the entire conversation thread is returned.
+
+
+      - In Outlook on mobile devices, the `bodyMode` property is available
+      starting with Version 4.2538.0.
+
+
+      - In Outlook on mobile devices, specifying `bodyMode:
+      Office.MailboxEnums.BodyMode.HostConfig` returns the body of the current
+      reply.
+
+
+      - In Outlook on mobile devices, while in quick reply mode (the reply field
+      at the bottom of the message), only the body of the current reply is
+      returned. This applies even if `bodyMode:
+      Office.MailboxEnums.BodyMode.FullBody` is specified in the `getAsync`
+      call.
 
 
       - The `bodyMode` option isn't supported on a message that's loaded using
@@ -417,14 +434,14 @@ methods:
           description: >-
             An object literal that contains one or more of the following
             properties. `asyncContext`<!-- -->: Any data you want to access in
-            the callback function. `bodyMode`<!-- -->: In Outlook on the web and
-            new Outlook on Windows, specifies whether only the body of the
-            current message or the entire body of a message conversation is
-            returned. If a value isn't specified, `bodyMode` defaults to
-            `Office.MailboxEnums.BodyMode.FullBody`<!-- -->, which returns the
-            entire body of a message conversation. The `bodyMode` property only
-            applies to replies on the Message Compose surface. It's ignored in
-            Outlook on Windows (classic), on Mac, and on mobile devices.
+            the callback function. `bodyMode`<!-- -->: In Outlook on the web, on
+            mobile devices, and in the new Outlook on Windows, specifies whether
+            only the body of the current message or the entire body of a message
+            conversation is returned. If a value isn't specified, `bodyMode`
+            defaults to `Office.MailboxEnums.BodyMode.FullBody`<!-- -->, which
+            returns the entire body of a message conversation. The `bodyMode`
+            property only applies to replies on the Message Compose surface.
+            It's ignored in Outlook on Windows (classic) and on Mac.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & {
             bodyMode?: <xref uid="outlook!Office.MailboxEnums.BodyMode:enum" />
@@ -476,15 +493,16 @@ methods:
 
       - In Outlook on the web and [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->, if the body contains formatted elements, such as tables, lists, and
-      links, specify `Office.CoercionType.Html` in the `getAsync` call.
-      Otherwise, you may receive an unexpected value, such as an empty string.
+      -->, specifying `Office.CoercionType.Text` in the `getAsync` call may not
+      always provide reliable formatting. Specify `Office.CoercionType.Html`
+      instead especially if the body contains formatted elements, such as
+      tables, lists, and links.
 
 
-      - In Outlook on the web and new Outlook on Windows, users can organize
-      their messages as conversations or individual messages in **Settings**
-      &gt; **Mail** &gt; **Layout** &gt; **Message organization**
-      (see [Change how the message list is displayed in
+      - In Outlook on the web and in the new Outlook on Windows, users can
+      organize their messages as conversations or individual messages in
+      **Settings** &gt; **Mail** &gt; **Layout** &gt; **Message
+      organization** (see [Change how the message list is displayed in
       Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
       -->). This setting affects how much of a message's body is displayed to
       the user (that is, the entire conversation thread of a message or just the
@@ -495,6 +513,22 @@ methods:
       call. If messages are grouped by conversation, only the body of the
       current reply is returned. Conversely, if messages are displayed
       individually, the entire conversation thread is returned.
+
+
+      - In Outlook on mobile devices, the `bodyMode` property is available
+      starting with Version 4.2538.0.
+
+
+      - In Outlook on mobile devices, specifying `bodyMode:
+      Office.MailboxEnums.BodyMode.HostConfig` returns the body of the current
+      reply.
+
+
+      - In Outlook on mobile devices, while in quick reply mode (the reply field
+      at the bottom of the message), only the body of the current reply is
+      returned. This applies even if `bodyMode:
+      Office.MailboxEnums.BodyMode.FullBody` is specified in the `getAsync`
+      call.
 
 
       #### Examples
@@ -779,7 +813,7 @@ methods:
 
       /* This snippet adds text to the beginning of the message or appointment's
       body. 
-        
+
         When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
@@ -1664,7 +1698,7 @@ methods:
 
       /* This snippet replaces selected text in a message or appointment's body
       with specified text.
-        
+
         If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 

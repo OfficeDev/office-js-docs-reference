@@ -3,10 +3,37 @@ name: Word.GeometricShapeType
 uid: word!Word.GeometricShapeType:enum
 package: word!
 fullName: Word.GeometricShapeType
-summary: Specifies the shape type for a `GeometricShape` object.
+summary: >-
+  Specifies the shape type for a
+  [ShapeType.geometricShape](xref:word!Word.ShapeType:enum) object.
 remarks: >-
   \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
+
+
+  await Word.run(async (context) => {
+    // Inserts a heptagon geometric shape at the beginning of the selection.
+    const selection: Word.Range = context.document.getSelection();
+    const shapeOptions: Word.InsertShapeOptions = {
+      height: 120,
+      width: 120,
+    };
+    selection.insertGeometricShape(Word.GeometricShapeType.heptagon, shapeOptions);
+    await context.sync();
+
+    console.log("Inserted a heptagon.");
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false

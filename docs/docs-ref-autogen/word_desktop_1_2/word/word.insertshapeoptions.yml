@@ -15,7 +15,7 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-shapes-text-boxes.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
 
   await Word.run(async (context) => {
@@ -44,7 +44,7 @@ properties:
     uid: word!Word.InsertShapeOptions#height:member
     package: word!
     fullName: height
-    summary: Represents the height of the shape being inserted.
+    summary: If provided, specifies the height of the shape being inserted.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -59,7 +59,7 @@ properties:
     uid: word!Word.InsertShapeOptions#left:member
     package: word!
     fullName: left
-    summary: Represents the left position of the shape being inserted.
+    summary: If provided, specifies the left position of the shape being inserted.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -74,7 +74,7 @@ properties:
     uid: word!Word.InsertShapeOptions#top:member
     package: word!
     fullName: top
-    summary: Represents the top position of the shape being inserted.
+    summary: If provided, specifies the top position of the shape being inserted.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -89,7 +89,7 @@ properties:
     uid: word!Word.InsertShapeOptions#width:member
     package: word!
     fullName: width
-    summary: Represents the width of the shape being inserted.
+    summary: If provided, specifies the width of the shape being inserted.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

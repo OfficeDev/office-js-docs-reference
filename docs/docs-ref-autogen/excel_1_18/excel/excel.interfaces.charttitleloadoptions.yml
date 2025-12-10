@@ -134,7 +134,7 @@ properties:
     package: excel!
     fullName: showShadow
     summary: >-
-      Represents a boolean value that determines if the chart title has a
+      Represents a Boolean value that determines if the chart title has a
       shadow.
     remarks: >-
       \[ [API set: ExcelApi
