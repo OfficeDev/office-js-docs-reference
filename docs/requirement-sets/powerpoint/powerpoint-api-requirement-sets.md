@@ -15,7 +15,7 @@ The following table lists the PowerPoint requirement sets, the supported Office 
 | Requirement set | Office on the web | Office on Windows<ul><li>Microsoft 365 subscription</li><li>retail perpetual</li></ul> | Office on Windows<ul><li>volume-licensed perpetual/[LTSC](/office/dev/add-ins/resources/resources-glossary#long-term-service-channel-ltsc)</li></ul> | Office on Mac | Office on iPad |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](powerpoint-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)). |
-| [PowerPointApi 1.10](powerpoint-api-1-10-requirement-set.md) | Supported | Version nnnn (Build xxxxx.yyyyy) | Not available | Version 16.nnn (xxxxxxxx) | Not available |
+| [PowerPointApi 1.10](powerpoint-api-1-10-requirement-set.md) | Supported | Version 2601 (Build 19610.20002) | Not available | Version 16.105 (25121030) | Not available |
 | [PowerPointApi 1.9](powerpoint-api-1-9-requirement-set.md) | Supported | Version 2508 (Build 19127.20154) | Not available | Version 16.100 (25082415) | Not available |
 | [PowerPointApi 1.8](powerpoint-api-1-8-requirement-set.md) | Supported | Version 2504 (Build 18730.20030) | Not available | Version 16.96 (25041326) | Not available |
 | [PowerPointApi 1.7](powerpoint-api-1-7-requirement-set.md) | Supported | Version 2412 (Build 18324.20030) | Not available | Version 16.92 (24120731) | Not available |
