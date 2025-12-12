@@ -70,7 +70,7 @@ PowerPoint JavaScript API 1.9 includes APIs to format and manage tables within p
 
 ## PowerPoint JavaScript API 1.10
 
-TODO - Update: PowerPoint JavaScript API 1.10 includes APIs to format and manage tables within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.10](powerpoint-api-1-10-requirement-set.md).
+PowerPoint JavaScript API 1.10 includes APIs to better manage accessibility, slide background, and hyperlinks within presentations. For more information, see [PowerPoint JavaScript API requirement set 1.10](powerpoint-api-1-10-requirement-set.md).
 
 ## How to use PowerPoint requirement sets at runtime and in the manifest
 

@@ -1,14 +1,14 @@
 ---
 title: PowerPoint JavaScript API requirement set 1.10
 description: Details about the PowerPointApi 1.10 requirement set.
-ms.date: 09/16/2025
+ms.date: 12/16/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
 
 # What's new in PowerPoint JavaScript API 1.10
 
-TODO - Update: PowerPointApi 1.10 added APIs to format and manage tables in the presentation.
+PowerPointApi 1.10 added APIs to better manage accessibility, slide background, and hyperlinks in the presentation.
 
 ## API list
 
