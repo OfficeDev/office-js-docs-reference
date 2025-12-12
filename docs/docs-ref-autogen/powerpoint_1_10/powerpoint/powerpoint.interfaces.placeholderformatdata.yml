@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.PlaceholderFormatData
+uid: powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.PlaceholderFormatData
+summary: >-
+  An interface describing the data returned by calling
+  `placeholderFormat.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: containedType
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#containedType:member
+    package: powerpoint!
+    fullName: containedType
+    summary: >-
+      Gets the type of the shape contained within the placeholder. See
+      [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
+      details. Returns `null` if the placeholder is empty.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        containedType?: PowerPoint.ShapeType | "Unsupported" | "Image" |
+        "GeometricShape" | "Group" | "Line" | "Table" | "Callout" | "Chart" |
+        "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" | "Media" |
+        "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" | null;
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" |
+          "Image" | "GeometricShape" | "Group" | "Line" | "Table" | "Callout" |
+          "Chart" | "ContentApp" | "Diagram" | "Freeform" | "Graphic" | "Ink" |
+          "Media" | "Model3D" | "Ole" | "Placeholder" | "SmartArt" | "TextBox" |
+          null
+  - name: type
+    uid: powerpoint!PowerPoint.Interfaces.PlaceholderFormatData#type:member
+    package: powerpoint!
+    fullName: type
+    summary: >-
+      Returns the type of this placeholder. See
+      [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: PowerPoint.PlaceholderType | "Unsupported" | "Date" |
+        "SlideNumber" | "Footer" | "Header" | "Title" | "Body" | "CenterTitle" |
+        "Subtitle" | "VerticalTitle" | "VerticalBody" | "Content" | "Chart" |
+        "Table" | "OnlinePicture" | "SmartArt" | "Media" | "VerticalContent" |
+        "Picture" | "Cameo";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.PlaceholderType:enum" /> |
+          "Unsupported" | "Date" | "SlideNumber" | "Footer" | "Header" | "Title"
+          | "Body" | "CenterTitle" | "Subtitle" | "VerticalTitle" |
+          "VerticalBody" | "Content" | "Chart" | "Table" | "OnlinePicture" |
+          "SmartArt" | "Media" | "VerticalContent" | "Picture" | "Cameo"
