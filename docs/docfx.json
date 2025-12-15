@@ -716,6 +716,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.10",
+        "src": "docs-ref-autogen/powerpoint_1_10",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "powerpoint-js-1.10",
+        "src": "docs-ref-autogen/powerpoint_1_10",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "visio-js-1.1",
         "src": "docs-ref-autogen/visio",
         "dest": "api/office-js-docs-reference"
@@ -1156,6 +1168,10 @@
       "powerpoint-js-1.9": {
         "dest": "powerpoint-js-1.9",
         "moniker_range": "powerpoint-js-1.9"
+      },
+      "powerpoint-js-1.10": {
+        "dest": "powerpoint-js-1.10",
+        "moniker_range": "powerpoint-js-1.10"
       },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",

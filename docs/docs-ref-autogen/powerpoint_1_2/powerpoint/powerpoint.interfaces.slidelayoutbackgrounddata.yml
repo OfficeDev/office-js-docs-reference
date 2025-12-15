@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideLayoutBackgroundData
+uid: powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideLayoutBackgroundData
+summary: >-
+  An interface describing the data returned by calling
+  `slideLayoutBackground.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
