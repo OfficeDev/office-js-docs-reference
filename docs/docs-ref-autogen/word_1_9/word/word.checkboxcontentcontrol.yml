@@ -3,7 +3,7 @@ name: Word.CheckboxContentControl
 uid: word!Word.CheckboxContentControl:class
 package: word!
 fullName: Word.CheckboxContentControl
-summary: The data specific to content controls of type CheckBox.
+summary: Represents the data specific to content controls of type `CheckBox`<!-- -->.
 remarks: >-
   \[ [API set: WordApi
   1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

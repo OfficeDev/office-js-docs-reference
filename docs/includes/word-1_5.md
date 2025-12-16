@@ -12,26 +12,26 @@
 ||[onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member)|Occurs when the content control is entered.|
 ||[onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)|Occurs when the content control is exited, for example, when the cursor leaves the content control.|
 ||[onSelectionChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onselectionchanged-member)|Occurs when selection within the content control is changed.|
-|[ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs)|[eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)|The event type.|
+|[ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs)|[eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)|Specifies the event type.|
 ||[ids](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-ids-member)|Gets the content control IDs.|
-||[source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)|The source of the event.|
+||[source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)|Specifies the source of the event.|
 |[ContentControlCollection](/javascript/api/word/word.contentcontrolcollection)|[getByChangeTrackingStates(changeTrackingStates: Word.ChangeTrackingState[])](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbychangetrackingstates-member(1))|Gets the content controls that have the specified tracking state.|
-|[ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs)|[eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)|The event type.|
+|[ContentControlDataChangedEventArgs](/javascript/api/word/word.contentcontroldatachangedeventargs)|[eventType](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-eventtype-member)|Specifies the event type.|
 ||[ids](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-ids-member)|Gets the content control IDs.|
-||[source](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-source-member)|The source of the event.|
-|[ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs)|[eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)|The event type.|
+||[source](/javascript/api/word/word.contentcontroldatachangedeventargs#word-word-contentcontroldatachangedeventargs-source-member)|Specifies the source of the event.|
+|[ContentControlDeletedEventArgs](/javascript/api/word/word.contentcontroldeletedeventargs)|[eventType](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-eventtype-member)|Specifies the event type.|
 ||[ids](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-ids-member)|Gets the content control IDs.|
-||[source](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-source-member)|The source of the event.|
-|[ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs)|[eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)|The event type.|
+||[source](/javascript/api/word/word.contentcontroldeletedeventargs#word-word-contentcontroldeletedeventargs-source-member)|Specifies the source of the event.|
+|[ContentControlEnteredEventArgs](/javascript/api/word/word.contentcontrolenteredeventargs)|[eventType](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-eventtype-member)|Specifies the event type.|
 ||[ids](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-ids-member)|Gets the content control IDs.|
-||[source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)|The source of the event.|
-|[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|The event type.|
+||[source](/javascript/api/word/word.contentcontrolenteredeventargs#word-word-contentcontrolenteredeventargs-source-member)|Specifies the source of the event.|
+|[ContentControlExitedEventArgs](/javascript/api/word/word.contentcontrolexitedeventargs)|[eventType](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-eventtype-member)|Specifies the event type.|
 ||[ids](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-ids-member)|Gets the content control IDs.|
-||[source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)|The source of the event.|
+||[source](/javascript/api/word/word.contentcontrolexitedeventargs#word-word-contentcontrolexitedeventargs-source-member)|Specifies the source of the event.|
 |[ContentControlOptions](/javascript/api/word/word.contentcontroloptions)|[types](/javascript/api/word/word.contentcontroloptions#word-word-contentcontroloptions-types-member)|An array of content control types, item must be `richText`, `plainText`, `checkBox`, `dropDownList`, `comboBox`, `buildingBlockGallery`, `datePicker`, `repeatingSection`, `picture`, or `group`.|
-|[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|The event type.|
+|[ContentControlSelectionChangedEventArgs](/javascript/api/word/word.contentcontrolselectionchangedeventargs)|[eventType](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-eventtype-member)|Specifies the event type.|
 ||[ids](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-ids-member)|Gets the content control IDs.|
-||[source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)|The source of the event.|
+||[source](/javascript/api/word/word.contentcontrolselectionchangedeventargs#word-word-contentcontrolselectionchangedeventargs-source-member)|Specifies the source of the event.|
 |[Document](/javascript/api/word/word.document)|[addStyle(name: string, type: Word.StyleType)](/javascript/api/word/word.document#word-word-document-addstyle-member(1))|Adds a style into the document by name and type.|
 ||[close(closeBehavior?: Word.CloseBehavior)](/javascript/api/word/word.document#word-word-document-close-member(1))|Closes the current document.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.document#word-word-document-getcontentcontrols-member(1))|Gets the currently supported content controls in the document.|
