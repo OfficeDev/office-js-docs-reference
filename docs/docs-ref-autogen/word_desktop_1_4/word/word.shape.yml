@@ -78,7 +78,7 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Represents the `Body` object of the shape. Only applies to text boxes and
+      Gets the `Body` object of the shape. Only applies to text boxes and
       geometric shapes.
     remarks: >-
       \[ [API set: WordApiDesktop
@@ -237,8 +237,8 @@ properties:
     package: word!
     fullName: geometricShapeType
     summary: >-
-      The geometric shape type of the shape. It will be null if isn't a
-      geometric shape.
+      Specifies the geometric shape type of the shape. It will be null if isn't
+      a geometric shape.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -386,7 +386,7 @@ properties:
     uid: word!Word.Shape#height:member
     package: word!
     fullName: height
-    summary: The height, in points, of the shape.
+    summary: Specifies the height, in points, of the shape.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -402,9 +402,9 @@ properties:
     package: word!
     fullName: heightRelative
     summary: >-
-      The percentage of shape height to vertical relative size, see
-      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an
-      inline or child shape, it can't be set.
+      Specifies the percentage of shape height to the relative vertical size
+      (that is, the `relativeVerticalSize` property). For an inline or child
+      shape, it can't be set.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -487,11 +487,10 @@ properties:
     package: word!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the horizontal
-      relative position, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
-      -->. For an inline shape, it will return 0 and can't be set. For a child
-      shape in a canvas or group, it's relative to the top left corner.
+      Specifies the distance, in points, from the left side of the shape to the
+      relative horizontal position (that is, the `relativeHorizontalPosition`
+      property). For an inline shape, it will return 0 and can't be set. For a
+      child shape in a canvas or group, it's relative to the top left corner.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -507,10 +506,10 @@ properties:
     package: word!
     fullName: leftRelative
     summary: >-
-      The relative left position as a percentage from the left side of the shape
-      to the horizontal relative position, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
-      -->. For an inline or child shape, it will return 0 and can't be set.
+      Specifies the relative left position as a percentage from the left side of
+      the shape to the relative horizontal position (that is, the
+      `relativeHorizontalalPosition` property). For an inline or child shape, it
+      will return 0 and can't be set.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -540,7 +539,7 @@ properties:
     uid: word!Word.Shape#name:member
     package: word!
     fullName: name
-    summary: The name of the shape.
+    summary: Specifies the name of the shape.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -590,8 +589,8 @@ properties:
     package: word!
     fullName: relativeHorizontalPosition
     summary: >-
-      The relative horizontal position of the shape. For an inline shape, it
-      can't be set. For details, see
+      Specifies the relative horizontal position of the shape. For an inline
+      shape, it can't be set. For details, see
       [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
       -->.
     remarks: >-
@@ -648,10 +647,8 @@ properties:
     package: word!
     fullName: relativeHorizontalSize
     summary: >-
-      The relative horizontal size of the shape. For an inline or child shape,
-      it can't be set. For details, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
-      -->.
+      Specifies the relative horizontal size of the shape. Use with the
+      `widthRelative` property. For an inline or child shape, it can't be set.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -708,8 +705,8 @@ properties:
     package: word!
     fullName: relativeVerticalPosition
     summary: >-
-      The relative vertical position of the shape. For an inline shape, it can't
-      be set. For details, see
+      Specifies the relative vertical position of the shape. For an inline
+      shape, it can't be set. For details, see
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
       -->.
     remarks: >-
@@ -766,10 +763,8 @@ properties:
     package: word!
     fullName: relativeVerticalSize
     summary: >-
-      The relative vertical size of the shape. For an inline or child shape, it
-      can't be set. For details, see
-      [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
-      -->.
+      Specifies the relative vertical size of the shape. Use with the
+      `heightRelative` property. For an inline or child shape, it can't be set.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -985,11 +980,10 @@ properties:
     package: word!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the vertical
-      relative position (see
-      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
-      -->). For an inline shape, it will return 0 and can't be set. For a child
-      shape in a canvas or group, it's relative to the top left corner.
+      Specifies the distance, in points, from the top edge of the shape to the
+      relative vertical position (that is, the `relativeVerticalPosition`
+      property). For an inline shape, it will return 0 and can't be set. For a
+      child shape in a canvas or group, it's relative to the top left corner.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1005,10 +999,10 @@ properties:
     package: word!
     fullName: topRelative
     summary: >-
-      The relative top position as a percentage from the top edge of the shape
-      to the vertical relative position, see
-      [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
-      -->. For an inline or child shape, it will return 0 and can't be set.
+      Specifies the relative top position as a percentage from the top edge of
+      the shape to the relative vertical position (that is, the
+      `relativeVerticalPosition` property). For an inline or child shape, it
+      will return 0 and can't be set.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1091,7 +1085,7 @@ properties:
     uid: word!Word.Shape#width:member
     package: word!
     fullName: width
-    summary: The width, in points, of the shape.
+    summary: Specifies the width, in points, of the shape.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1107,9 +1101,9 @@ properties:
     package: word!
     fullName: widthRelative
     summary: >-
-      The percentage of shape width to horizontal relative size, see
-      [Word.RelativeSize](xref:word!Word.RelativeSize:enum)<!-- -->. For an
-      inline or child shape, it can't be set.
+      Specifies the percentage of shape width to the relative horizontal size
+      (that is, the `relativeHorizontalSize` property). For an inline or child
+      shape, it can't be set.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

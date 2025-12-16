@@ -4,7 +4,7 @@ uid: word!Word.DocumentCreated:class
 package: word!
 fullName: Word.DocumentCreated
 summary: >-
-  The `DocumentCreated` object is the top level object created by
+  The `DocumentCreated` object is the top-level object created by
   `Application.createDocument`<!-- -->. A `DocumentCreated` object is a special
   `Document` object.
 remarks: >-

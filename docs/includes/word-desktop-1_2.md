@@ -41,27 +41,27 @@
 ||[shapes](/javascript/api/word/word.range#word-word-range-shapes-member)|Gets the collection of `Shape` objects anchored in the range, including both inline and floating shapes.|
 |[Shape](/javascript/api/word/word.shape)|[allowOverlap](/javascript/api/word/word.shape#word-word-shape-allowoverlap-member)|Specifies whether a given shape can overlap other shapes.|
 ||[altTextDescription](/javascript/api/word/word.shape#word-word-shape-alttextdescription-member)|Specifies a string that represents the alternative text associated with the shape.|
-||[body](/javascript/api/word/word.shape#word-word-shape-body-member)|Represents the `Body` object of the shape.|
+||[body](/javascript/api/word/word.shape#word-word-shape-body-member)|Gets the `Body` object of the shape.|
 ||[canvas](/javascript/api/word/word.shape#word-word-shape-canvas-member)|Gets the canvas associated with the shape.|
 ||[delete()](/javascript/api/word/word.shape#word-word-shape-delete-member(1))|Deletes the shape and its content.|
 ||[fill](/javascript/api/word/word.shape#word-word-shape-fill-member)|Returns the fill formatting of the shape.|
-||[geometricShapeType](/javascript/api/word/word.shape#word-word-shape-geometricshapetype-member)|The geometric shape type of the shape.|
-||[height](/javascript/api/word/word.shape#word-word-shape-height-member)|The height, in points, of the shape.|
-||[heightRelative](/javascript/api/word/word.shape#word-word-shape-heightrelative-member)|The percentage of shape height to vertical relative size, see Word.RelativeSize.|
+||[geometricShapeType](/javascript/api/word/word.shape#word-word-shape-geometricshapetype-member)|Specifies the geometric shape type of the shape.|
+||[height](/javascript/api/word/word.shape#word-word-shape-height-member)|Specifies the height, in points, of the shape.|
+||[heightRelative](/javascript/api/word/word.shape#word-word-shape-heightrelative-member)|Specifies the percentage of shape height to the relative vertical size (that is, the `relativeVerticalSize` property).|
 ||[id](/javascript/api/word/word.shape#word-word-shape-id-member)|Gets an integer that represents the shape identifier.|
 ||[isChild](/javascript/api/word/word.shape#word-word-shape-ischild-member)|Check whether this shape is a child of a group shape or a canvas shape.|
-||[left](/javascript/api/word/word.shape#word-word-shape-left-member)|The distance, in points, from the left side of the shape to the horizontal relative position, see Word.RelativeHorizontalPosition.|
-||[leftRelative](/javascript/api/word/word.shape#word-word-shape-leftrelative-member)|The relative left position as a percentage from the left side of the shape to the horizontal relative position, see Word.RelativeHorizontalPosition.|
+||[left](/javascript/api/word/word.shape#word-word-shape-left-member)|Specifies the distance, in points, from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalPosition` property).|
+||[leftRelative](/javascript/api/word/word.shape#word-word-shape-leftrelative-member)|Specifies the relative left position as a percentage from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalalPosition` property).|
 ||[lockAspectRatio](/javascript/api/word/word.shape#word-word-shape-lockaspectratio-member)|Specifies if the aspect ratio of this shape is locked.|
 ||[moveHorizontally(distance: number)](/javascript/api/word/word.shape#word-word-shape-movehorizontally-member(1))|Moves the shape horizontally by the number of points.|
 ||[moveVertically(distance: number)](/javascript/api/word/word.shape#word-word-shape-movevertically-member(1))|Moves the shape vertically by the number of points.|
-||[name](/javascript/api/word/word.shape#word-word-shape-name-member)|The name of the shape.|
+||[name](/javascript/api/word/word.shape#word-word-shape-name-member)|Specifies the name of the shape.|
 ||[parentCanvas](/javascript/api/word/word.shape#word-word-shape-parentcanvas-member)|Gets the top-level parent canvas shape of this child shape.|
 ||[parentGroup](/javascript/api/word/word.shape#word-word-shape-parentgroup-member)|Gets the top-level parent group shape of this child shape.|
-||[relativeHorizontalPosition](/javascript/api/word/word.shape#word-word-shape-relativehorizontalposition-member)|The relative horizontal position of the shape.|
-||[relativeHorizontalSize](/javascript/api/word/word.shape#word-word-shape-relativehorizontalsize-member)|The relative horizontal size of the shape.|
-||[relativeVerticalPosition](/javascript/api/word/word.shape#word-word-shape-relativeverticalposition-member)|The relative vertical position of the shape.|
-||[relativeVerticalSize](/javascript/api/word/word.shape#word-word-shape-relativeverticalsize-member)|The relative vertical size of the shape.|
+||[relativeHorizontalPosition](/javascript/api/word/word.shape#word-word-shape-relativehorizontalposition-member)|Specifies the relative horizontal position of the shape.|
+||[relativeHorizontalSize](/javascript/api/word/word.shape#word-word-shape-relativehorizontalsize-member)|Specifies the relative horizontal size of the shape.|
+||[relativeVerticalPosition](/javascript/api/word/word.shape#word-word-shape-relativeverticalposition-member)|Specifies the relative vertical position of the shape.|
+||[relativeVerticalSize](/javascript/api/word/word.shape#word-word-shape-relativeverticalsize-member)|Specifies the relative vertical size of the shape.|
 ||[rotation](/javascript/api/word/word.shape#word-word-shape-rotation-member)|Specifies the rotation, in degrees, of the shape.|
 ||[scaleHeight(scaleFactor: number, scaleType: Word.ShapeScaleType, scaleFrom?: Word.ShapeScaleFrom)](/javascript/api/word/word.shape#word-word-shape-scaleheight-member(1))|Scales the height of the shape by a specified factor.|
 ||[scaleWidth(scaleFactor: number, scaleType: Word.ShapeScaleType, scaleFrom?: Word.ShapeScaleFrom)](/javascript/api/word/word.shape#word-word-shape-scalewidth-member(1))|Scales the width of the shape by a specified factor.|
@@ -69,12 +69,12 @@
 ||[shapeGroup](/javascript/api/word/word.shape#word-word-shape-shapegroup-member)|Gets the shape group associated with the shape.|
 ||[textFrame](/javascript/api/word/word.shape#word-word-shape-textframe-member)|Gets the `TextFrame` object of the shape.|
 ||[textWrap](/javascript/api/word/word.shape#word-word-shape-textwrap-member)|Returns the text wrap formatting of the shape.|
-||[top](/javascript/api/word/word.shape#word-word-shape-top-member)|The distance, in points, from the top edge of the shape to the vertical relative position (see Word.RelativeVerticalPosition).|
-||[topRelative](/javascript/api/word/word.shape#word-word-shape-toprelative-member)|The relative top position as a percentage from the top edge of the shape to the vertical relative position, see Word.RelativeVerticalPosition.|
+||[top](/javascript/api/word/word.shape#word-word-shape-top-member)|Specifies the distance, in points, from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property).|
+||[topRelative](/javascript/api/word/word.shape#word-word-shape-toprelative-member)|Specifies the relative top position as a percentage from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property).|
 ||[type](/javascript/api/word/word.shape#word-word-shape-type-member)|Gets the shape type.|
 ||[visible](/javascript/api/word/word.shape#word-word-shape-visible-member)|Specifies if the shape is visible.|
-||[width](/javascript/api/word/word.shape#word-word-shape-width-member)|The width, in points, of the shape.|
-||[widthRelative](/javascript/api/word/word.shape#word-word-shape-widthrelative-member)|The percentage of shape width to horizontal relative size, see Word.RelativeSize.|
+||[width](/javascript/api/word/word.shape#word-word-shape-width-member)|Specifies the width, in points, of the shape.|
+||[widthRelative](/javascript/api/word/word.shape#word-word-shape-widthrelative-member)|Specifies the percentage of shape width to the relative horizontal size (that is, the `relativeHorizontalSize` property).|
 |[ShapeCollection](/javascript/api/word/word.shapecollection)|[getByGeometricTypes(types: Word.GeometricShapeType[])](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbygeometrictypes-member(1))|Gets the shapes that have the specified geometric types.|
 ||[getById(id: number)](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyid-member(1))|Gets a shape by its identifier.|
 ||[getByIdOrNullObject(id: number)](/javascript/api/word/word.shapecollection#word-word-shapecollection-getbyidornullobject-member(1))|Gets a shape by its identifier.|
