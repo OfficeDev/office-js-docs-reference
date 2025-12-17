@@ -3,7 +3,7 @@ name: Word.ComboBoxContentControl
 uid: word!Word.ComboBoxContentControl:class
 package: word!
 fullName: Word.ComboBoxContentControl
-summary: The data specific to content controls of type `comboBox`<!-- -->.
+summary: Represents the data specific to content controls of type `comboBox`<!-- -->.
 remarks: >-
   \[ [API set: WordApi
   1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

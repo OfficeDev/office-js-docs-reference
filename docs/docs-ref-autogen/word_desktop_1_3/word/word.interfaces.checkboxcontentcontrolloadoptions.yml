@@ -3,7 +3,7 @@ name: Word.Interfaces.CheckboxContentControlLoadOptions
 uid: word!Word.Interfaces.CheckboxContentControlLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CheckboxContentControlLoadOptions
-summary: The data specific to content controls of type CheckBox.
+summary: Represents the data specific to content controls of type `CheckBox`<!-- -->.
 remarks: >-
   \[ [API set: WordApi
   1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

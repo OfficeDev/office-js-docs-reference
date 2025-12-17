@@ -12,7 +12,7 @@ const HOST_VERSION_MAP = [
     { host: "excel", versions: 21 }, // not including online or desktop
     { host: "onenote", versions: 1 },
     { host: "outlook", versions: 16 },
-    { host: "powerpoint", versions: 10 },
+    { host: "powerpoint", versions: 11 },
     { host: "visio", versions: 1 },
     { host: "word", versions: 10 } // not including online or desktop
 ];

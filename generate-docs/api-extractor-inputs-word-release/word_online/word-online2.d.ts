@@ -1157,7 +1157,7 @@ export declare namespace Word {
     
     
     /**
-     * The data specific to content controls of type CheckBox.
+     * Represents the data specific to content controls of type `CheckBox`.
      *
      * @remarks
      * [Api set: WordApi 1.7]
@@ -3808,7 +3808,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.DocumentData;
     }
     /**
-     * The `DocumentCreated` object is the top level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
+     * The `DocumentCreated` object is the top-level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -4199,7 +4199,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.DocumentPropertiesData;
     }
     /**
-     * The data specific to content controls of type `dropDownList`.
+     * Represents the data specific to content controls of type `dropDownList`.
      *
      * @remarks
      * [Api set: WordApi 1.9]
@@ -4262,7 +4262,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.DropDownListContentControlData;
     }
     /**
-     * The data specific to content controls of type `comboBox`.
+     * Represents the data specific to content controls of type `comboBox`.
      *
      * @remarks
      * [Api set: WordApi 1.9]
@@ -10713,7 +10713,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Represents the `Body` object of the shape. Only applies to text boxes and geometric shapes.
+         * Gets the `Body` object of the shape. Only applies to text boxes and geometric shapes.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -10783,21 +10783,21 @@ export declare namespace Word {
          */
         altTextDescription: string;
         /**
-         * The geometric shape type of the shape. It will be null if isn't a geometric shape.
+         * Specifies the geometric shape type of the shape. It will be null if isn't a geometric shape.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         geometricShapeType: Word.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
         /**
-         * The height, in points, of the shape.
+         * Specifies the height, in points, of the shape.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         height: number;
         /**
-         * The percentage of shape height to vertical relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+         * Specifies the percentage of shape height to the relative vertical size (that is, the `relativeVerticalSize` property). For an inline or child shape, it can't be set.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -10818,14 +10818,14 @@ export declare namespace Word {
          */
         readonly isChild: boolean;
         /**
-         * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+         * Specifies the distance, in points, from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         left: number;
         /**
-         * The relative left position as a percentage from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline or child shape, it will return 0 and can't be set.
+         * Specifies the relative left position as a percentage from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalalPosition` property). For an inline or child shape, it will return 0 and can't be set.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -10839,35 +10839,35 @@ export declare namespace Word {
          */
         lockAspectRatio: boolean;
         /**
-         * The name of the shape.
+         * Specifies the name of the shape.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         name: string;
         /**
-         * The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+         * Specifies the relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         relativeHorizontalPosition: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
         /**
-         * The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+         * Specifies the relative horizontal size of the shape. Use with the `widthRelative` property. For an inline or child shape, it can't be set.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         relativeHorizontalSize: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
         /**
-         * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
+         * Specifies the relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         relativeVerticalPosition: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
         /**
-         * The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+         * Specifies the relative vertical size of the shape. Use with the `heightRelative` property. For an inline or child shape, it can't be set.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -10881,14 +10881,14 @@ export declare namespace Word {
          */
         rotation: number;
         /**
-         * The distance, in points, from the top edge of the shape to the vertical relative position (see {@link Word.RelativeVerticalPosition}). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+         * Specifies the distance, in points, from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         top: number;
         /**
-         * The relative top position as a percentage from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline or child shape, it will return 0 and can't be set.
+         * Specifies the relative top position as a percentage from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline or child shape, it will return 0 and can't be set.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -10909,14 +10909,14 @@ export declare namespace Word {
          */
         visible: boolean;
         /**
-         * The width, in points, of the shape.
+         * Specifies the width, in points, of the shape.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
          */
         width: number;
         /**
-         * The percentage of shape width to horizontal relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+         * Specifies the percentage of shape width to the relative horizontal size (that is, the `relativeHorizontalSize` property). For an inline or child shape, it can't be set.
          *
          * @remarks
          * [Api set: WordApiDesktop 1.2]
@@ -11905,7 +11905,7 @@ export declare namespace Word {
      */
     export interface ContentControlAddedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -11919,7 +11919,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -11934,7 +11934,7 @@ export declare namespace Word {
      */
     export interface ContentControlDataChangedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -11948,7 +11948,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -11963,7 +11963,7 @@ export declare namespace Word {
      */
     export interface ContentControlDeletedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -11977,7 +11977,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -11992,7 +11992,7 @@ export declare namespace Word {
      */
     export interface ContentControlEnteredEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -12006,7 +12006,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -12021,7 +12021,7 @@ export declare namespace Word {
      */
     export interface ContentControlExitedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -12035,7 +12035,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -12051,7 +12051,7 @@ export declare namespace Word {
      */
     export interface ContentControlSelectionChangedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -12065,7 +12065,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -12080,14 +12080,14 @@ export declare namespace Word {
      */
     export interface ParagraphAddedEventArgs {
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.6]
          */
         source: Word.EventSource | "Local" | "Remote";
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.6]
@@ -12109,14 +12109,14 @@ export declare namespace Word {
      */
     export interface ParagraphChangedEventArgs {
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.6]
          */
         source: Word.EventSource | "Local" | "Remote";
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.6]
@@ -12138,14 +12138,14 @@ export declare namespace Word {
      */
     export interface ParagraphDeletedEventArgs {
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.6]
          */
         source: Word.EventSource | "Local" | "Remote";
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.6]
@@ -13085,7 +13085,7 @@ export declare namespace Word {
         mixed = "Mixed",
     }
     /**
-     * The {@link Word.Border | border} types.
+     * Represents the {@link Word.Border | border} type.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -19515,7 +19515,7 @@ export declare namespace Word {
         /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
             /**
-            * Represents the `Body` object of the shape. Only applies to text boxes and geometric shapes.
+            * Gets the `Body` object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApiDesktop 1.2]
@@ -19585,35 +19585,35 @@ export declare namespace Word {
              */
             altTextDescription?: string;
             /**
-             * The geometric shape type of the shape. It will be null if isn't a geometric shape.
+             * Specifies the geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             geometricShapeType?: Word.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
-             * The height, in points, of the shape.
+             * Specifies the height, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             height?: number;
             /**
-             * The percentage of shape height to vertical relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * Specifies the percentage of shape height to the relative vertical size (that is, the `relativeVerticalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             heightRelative?: number;
             /**
-             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * Specifies the distance, in points, from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             left?: number;
             /**
-             * The relative left position as a percentage from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * Specifies the relative left position as a percentage from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -19627,35 +19627,35 @@ export declare namespace Word {
              */
             lockAspectRatio?: boolean;
             /**
-             * The name of the shape.
+             * Specifies the name of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             name?: string;
             /**
-             * The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative horizontal size of the shape. Use with the `widthRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
+             * Specifies the relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative vertical size of the shape. Use with the `heightRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -19669,14 +19669,14 @@ export declare namespace Word {
              */
             rotation?: number;
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position (see {@link Word.RelativeVerticalPosition}). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * Specifies the distance, in points, from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             top?: number;
             /**
-             * The relative top position as a percentage from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * Specifies the relative top position as a percentage from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -19690,14 +19690,14 @@ export declare namespace Word {
              */
             visible?: boolean;
             /**
-             * The width, in points, of the shape.
+             * Specifies the width, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             width?: number;
             /**
-             * The percentage of shape width to horizontal relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * Specifies the percentage of shape width to the relative horizontal size (that is, the `relativeHorizontalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -23156,7 +23156,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
             /**
-            * Represents the `Body` object of the shape. Only applies to text boxes and geometric shapes.
+            * Gets the `Body` object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApiDesktop 1.2]
@@ -23226,21 +23226,21 @@ export declare namespace Word {
              */
             altTextDescription?: string;
             /**
-             * The geometric shape type of the shape. It will be null if isn't a geometric shape.
+             * Specifies the geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             geometricShapeType?: Word.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
-             * The height, in points, of the shape.
+             * Specifies the height, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             height?: number;
             /**
-             * The percentage of shape height to vertical relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * Specifies the percentage of shape height to the relative vertical size (that is, the `relativeVerticalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -23261,14 +23261,14 @@ export declare namespace Word {
              */
             isChild?: boolean;
             /**
-             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * Specifies the distance, in points, from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             left?: number;
             /**
-             * The relative left position as a percentage from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * Specifies the relative left position as a percentage from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -23282,35 +23282,35 @@ export declare namespace Word {
              */
             lockAspectRatio?: boolean;
             /**
-             * The name of the shape.
+             * Specifies the name of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             name?: string;
             /**
-             * The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative horizontal size of the shape. Use with the `widthRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalSize?: Word.RelativeSize | "Margin" | "Page" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
+             * Specifies the relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
             /**
-             * The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative vertical size of the shape. Use with the `heightRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -23324,14 +23324,14 @@ export declare namespace Word {
              */
             rotation?: number;
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position (see {@link Word.RelativeVerticalPosition}). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * Specifies the distance, in points, from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             top?: number;
             /**
-             * The relative top position as a percentage from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * Specifies the relative top position as a percentage from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -23352,14 +23352,14 @@ export declare namespace Word {
              */
             visible?: boolean;
             /**
-             * The width, in points, of the shape.
+             * Specifies the width, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             width?: number;
             /**
-             * The percentage of shape width to horizontal relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * Specifies the percentage of shape width to the relative horizontal size (that is, the `relativeHorizontalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -24326,7 +24326,7 @@ export declare namespace Word {
         
         
         /**
-         * The data specific to content controls of type CheckBox.
+         * Represents the data specific to content controls of type `CheckBox`.
          *
          * @remarks
          * [Api set: WordApi 1.7]
@@ -25391,7 +25391,7 @@ export declare namespace Word {
             
         }
         /**
-         * The `DocumentCreated` object is the top level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
+         * The `DocumentCreated` object is the top-level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -28929,7 +28929,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Represents the `Body` object of the shape. Only applies to text boxes and geometric shapes.
+            * Gets the `Body` object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApiDesktop 1.2]
@@ -28999,21 +28999,21 @@ export declare namespace Word {
              */
             altTextDescription?: boolean;
             /**
-             * The geometric shape type of the shape. It will be null if isn't a geometric shape.
+             * Specifies the geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             geometricShapeType?: boolean;
             /**
-             * The height, in points, of the shape.
+             * Specifies the height, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             height?: boolean;
             /**
-             * The percentage of shape height to vertical relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * Specifies the percentage of shape height to the relative vertical size (that is, the `relativeVerticalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29034,14 +29034,14 @@ export declare namespace Word {
              */
             isChild?: boolean;
             /**
-             * The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * Specifies the distance, in points, from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             left?: boolean;
             /**
-             * The relative left position as a percentage from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * Specifies the relative left position as a percentage from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29055,35 +29055,35 @@ export declare namespace Word {
              */
             lockAspectRatio?: boolean;
             /**
-             * The name of the shape.
+             * Specifies the name of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             name?: boolean;
             /**
-             * The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalPosition?: boolean;
             /**
-             * The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative horizontal size of the shape. Use with the `widthRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalSize?: boolean;
             /**
-             * The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
+             * Specifies the relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeVerticalPosition?: boolean;
             /**
-             * The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * Specifies the relative vertical size of the shape. Use with the `heightRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29097,14 +29097,14 @@ export declare namespace Word {
              */
             rotation?: boolean;
             /**
-             * The distance, in points, from the top edge of the shape to the vertical relative position (see {@link Word.RelativeVerticalPosition}). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * Specifies the distance, in points, from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             top?: boolean;
             /**
-             * The relative top position as a percentage from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * Specifies the relative top position as a percentage from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29125,14 +29125,14 @@ export declare namespace Word {
              */
             visible?: boolean;
             /**
-             * The width, in points, of the shape.
+             * Specifies the width, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             width?: boolean;
             /**
-             * The percentage of shape width to horizontal relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * Specifies the percentage of shape width to the relative horizontal size (that is, the `relativeHorizontalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29203,7 +29203,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Represents the `Body` object of the shape. Only applies to text boxes and geometric shapes.
+            * For EACH ITEM in the collection: Gets the `Body` object of the shape. Only applies to text boxes and geometric shapes.
             *
             * @remarks
             * [Api set: WordApiDesktop 1.2]
@@ -29273,21 +29273,21 @@ export declare namespace Word {
              */
             altTextDescription?: boolean;
             /**
-             * For EACH ITEM in the collection: The geometric shape type of the shape. It will be null if isn't a geometric shape.
+             * For EACH ITEM in the collection: Specifies the geometric shape type of the shape. It will be null if isn't a geometric shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             geometricShapeType?: boolean;
             /**
-             * For EACH ITEM in the collection: The height, in points, of the shape.
+             * For EACH ITEM in the collection: Specifies the height, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             height?: boolean;
             /**
-             * For EACH ITEM in the collection: The percentage of shape height to vertical relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * For EACH ITEM in the collection: Specifies the percentage of shape height to the relative vertical size (that is, the `relativeVerticalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29308,14 +29308,14 @@ export declare namespace Word {
              */
             isChild?: boolean;
             /**
-             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * For EACH ITEM in the collection: Specifies the distance, in points, from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             left?: boolean;
             /**
-             * For EACH ITEM in the collection: The relative left position as a percentage from the left side of the shape to the horizontal relative position, see {@link Word.RelativeHorizontalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * For EACH ITEM in the collection: Specifies the relative left position as a percentage from the left side of the shape to the relative horizontal position (that is, the `relativeHorizontalalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29329,35 +29329,35 @@ export declare namespace Word {
              */
             lockAspectRatio?: boolean;
             /**
-             * For EACH ITEM in the collection: The name of the shape.
+             * For EACH ITEM in the collection: Specifies the name of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: The relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * For EACH ITEM in the collection: Specifies the relative horizontal position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalPosition?: boolean;
             /**
-             * For EACH ITEM in the collection: The relative horizontal size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * For EACH ITEM in the collection: Specifies the relative horizontal size of the shape. Use with the `widthRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeHorizontalSize?: boolean;
             /**
-             * For EACH ITEM in the collection: The relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
+             * For EACH ITEM in the collection: Specifies the relative vertical position of the shape. For an inline shape, it can't be set. For details, see {@link Word.RelativeVerticalPosition}.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             relativeVerticalPosition?: boolean;
             /**
-             * For EACH ITEM in the collection: The relative vertical size of the shape. For an inline or child shape, it can't be set. For details, see {@link Word.RelativeHorizontalPosition}.
+             * For EACH ITEM in the collection: Specifies the relative vertical size of the shape. Use with the `heightRelative` property. For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29371,14 +29371,14 @@ export declare namespace Word {
              */
             rotation?: boolean;
             /**
-             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative position (see {@link Word.RelativeVerticalPosition}). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
+             * For EACH ITEM in the collection: Specifies the distance, in points, from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline shape, it will return 0 and can't be set. For a child shape in a canvas or group, it's relative to the top left corner.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             top?: boolean;
             /**
-             * For EACH ITEM in the collection: The relative top position as a percentage from the top edge of the shape to the vertical relative position, see {@link Word.RelativeVerticalPosition}. For an inline or child shape, it will return 0 and can't be set.
+             * For EACH ITEM in the collection: Specifies the relative top position as a percentage from the top edge of the shape to the relative vertical position (that is, the `relativeVerticalPosition` property). For an inline or child shape, it will return 0 and can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
@@ -29399,14 +29399,14 @@ export declare namespace Word {
              */
             visible?: boolean;
             /**
-             * For EACH ITEM in the collection: The width, in points, of the shape.
+             * For EACH ITEM in the collection: Specifies the width, in points, of the shape.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]
              */
             width?: boolean;
             /**
-             * For EACH ITEM in the collection: The percentage of shape width to horizontal relative size, see {@link Word.RelativeSize}. For an inline or child shape, it can't be set.
+             * For EACH ITEM in the collection: Specifies the percentage of shape width to the relative horizontal size (that is, the `relativeHorizontalSize` property). For an inline or child shape, it can't be set.
              *
              * @remarks
              * [Api set: WordApiDesktop 1.2]

@@ -6,6 +6,7 @@ summary: ''
 interfaces:
   - powerpoint!PowerPoint.AddSlideOptions:interface
   - powerpoint!PowerPoint.InsertSlideOptions:interface
+  - powerpoint!PowerPoint.Interfaces.AdjustmentsData:interface
   - powerpoint!PowerPoint.Interfaces.BindingCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.BindingCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.BindingData:interface
@@ -32,9 +33,14 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkData:interface
+  - powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.MarginsData:interface
   - powerpoint!PowerPoint.Interfaces.MarginsUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.PageSetupData:interface
+  - powerpoint!PowerPoint.Interfaces.PageSetupUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface
@@ -60,16 +66,35 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData:interface
+  - >-
+    powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundData:interface
+  - powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface
   - powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface
+  - powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundData:interface
   - powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface
