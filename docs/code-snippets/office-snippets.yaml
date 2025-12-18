@@ -4428,6 +4428,20 @@ Office.Slice:interface:
             }
         }
     );
+Office.SlideRange:interface:
+  - |-
+    Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            const slideRange: Office.SlideRange = asyncResult.value;
+            console.log(`Selected ${slideRange.slides.length} slide(s)`);
+            slideRange.slides.forEach(slide => {
+                console.log(`Slide ${slide.index}: ${slide.title} (ID: ${slide.id})`);
+            });
+        }
+        else {
+            console.error(asyncResult.error.message);
+        }
+    });
 Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
