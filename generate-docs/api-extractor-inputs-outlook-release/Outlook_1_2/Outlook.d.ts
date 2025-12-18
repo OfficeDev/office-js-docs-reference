@@ -1583,6 +1583,24 @@ export declare namespace Office {
          */
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview).
+         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
+         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
+         *
+         * - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025.
+         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
+         * Now, the image is represented by a content ID (`cid`) in the `src` attribute instead.
+         * If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic.
+         * For more information, see {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         */
+        contentId: string;
+        /**
          * Gets the MIME content type of the attachment.
          *
          * **Warning**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained
@@ -3821,11 +3839,6 @@ export declare namespace Office {
         /**
          * Gets the email address of the sender of a message.
          *
-         * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-         *
-         * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
-         *
          * The `from` property returns an `EmailAddressDetails` object.
          *
          * @remarks
@@ -3833,6 +3846,15 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         *
+         * **Important**: 
+         *
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the delegator's email address and the `sender` property returns the delegate's address. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
+         *
+         * - The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
          */
         from: EmailAddressDetails;
         /**
@@ -3960,16 +3982,19 @@ export declare namespace Office {
         /**
          * Gets the email address of the sender of an email message.
          *
-         * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-         *
-         * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
-         *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the delegator's email address and the `sender` property returns the delegate's address. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
+         *
+         * - The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
          */
         sender: EmailAddressDetails;
         /**

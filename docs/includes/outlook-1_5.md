@@ -4,10 +4,14 @@
 ||[type](/javascript/api/outlook/office.draganddropeventargs#outlook-office-draganddropeventargs-type-member)|Gets the type of the event.|
 |[DragoverEventData](/javascript/api/outlook/office.dragovereventdata)|[pageX](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-pagex-member)|Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.|
 ||[pageY](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-pagey-member)|Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.|
+||[taskPaneX](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-taskpanex-member)|Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.|
+||[taskPaneY](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-taskpaney-member)|Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.|
 ||[type](/javascript/api/outlook/office.dragovereventdata#outlook-office-dragovereventdata-type-member)|Gets the type of drag-and-drop event.|
 |[DropEventData](/javascript/api/outlook/office.dropeventdata)|[dataTransfer](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-datatransfer-member)|Gets the messages or file attachments being dragged and dropped into an add-in's task pane.|
 ||[pageX](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-pagex-member)|Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.|
 ||[pageY](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-pagey-member)|Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.|
+||[taskPaneX](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-taskpanex-member)|Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.|
+||[taskPaneY](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-taskpaney-member)|Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.|
 ||[type](/javascript/api/outlook/office.dropeventdata#outlook-office-dropeventdata-type-member)|Gets the type of drag-and-drop event.|
 |[DroppedItemDetails](/javascript/api/outlook/office.droppeditemdetails)|[fileContent](/javascript/api/outlook/office.droppeditemdetails#outlook-office-droppeditemdetails-filecontent-member)|Gets the contents of the file being dragged and dropped.|
 ||[name](/javascript/api/outlook/office.droppeditemdetails#outlook-office-droppeditemdetails-name-member)|Gets the name of the file being dragged and dropped.|
