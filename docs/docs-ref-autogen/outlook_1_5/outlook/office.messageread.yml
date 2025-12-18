@@ -435,19 +435,8 @@ properties:
     uid: outlook!Office.MessageRead#from:member
     package: outlook!
     fullName: from
-    summary: >-
+    summary: |-
       Gets the email address of the sender of a message.
-
-
-      The `from` and `sender` properties represent the same person unless the
-      message is sent by a delegate. In that case, the `from` property
-      represents the delegator, and the `sender` property represents the
-      delegate.
-
-
-      **Note**: The `recipientType` property of the `EmailAddressDetails`
-      object in the `from` property is undefined.
-
 
       The `from` property returns an `EmailAddressDetails` object.
     remarks: >-
@@ -459,6 +448,23 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - The `from` and `sender` properties represent the same person unless the
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the delegator's email address and
+      the `sender` property returns the delegate's address. For information
+      about mailbox delegation, see [Manage permissions for recipients in
+      Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
+
+
+      - The `recipientType` property of the `EmailAddressDetails` object in the
+      `from` property is undefined.
 
 
       #### Examples
@@ -964,18 +970,7 @@ properties:
     uid: outlook!Office.MessageRead#sender:member
     package: outlook!
     fullName: sender
-    summary: >-
-      Gets the email address of the sender of an email message.
-
-
-      The `from` and `sender` properties represent the same person unless the
-      message is sent by a delegate. In that case, the `from` property
-      represents the delegator, and the `sender` property represents the
-      delegate.
-
-
-      **Note**: The `recipientType` property of the `EmailAddressDetails`
-      object in the `sender` property is undefined.
+    summary: Gets the email address of the sender of an email message.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -985,6 +980,23 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - The `from` and `sender` properties represent the same person unless the
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the delegator's email address and
+      the `sender` property returns the delegate's address. For information
+      about mailbox delegation, see [Manage permissions for recipients in
+      Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
+
+
+      - The `recipientType` property of the `EmailAddressDetails` object in the
+      `sender` property is undefined.
 
 
       #### Examples

@@ -22,6 +22,7 @@
 ||[loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void, userContext?: any)](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-loadcustompropertiesasync-member(1))|Asynchronously loads custom properties for this add-in on the selected item.|
 ||[location](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-location-member)|Gets the location of an appointment.|
 |[AttachmentDetails](/javascript/api/outlook/office.attachmentdetails)|[attachmentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-attachmenttype-member)|Gets a value that indicates the attachment's type.|
+||[contentId](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-contentid-member)|Gets the content identifier of an inline attachment.|
 ||[contentType](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-contenttype-member)|Gets the MIME content type of the attachment.|
 ||[id](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-id-member)|Gets the Exchange attachment ID of the attachment.|
 ||[isInline](/javascript/api/outlook/office.attachmentdetails#outlook-office-attachmentdetails-isinline-member)|Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.|
