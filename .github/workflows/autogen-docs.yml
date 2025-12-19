@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '45 10 * * TUE'
     - cron: '45 10 * * THU'
+  workflow_dispatch:
 jobs:
   autogen-docs:
     runs-on: windows-latest

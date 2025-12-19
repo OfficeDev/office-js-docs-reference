@@ -9130,6 +9130,7 @@ outlook,Office.AttachmentContent,"content",Property,Fine,false
 outlook,Office.AttachmentContent,"format",Property,Excellent,false
 outlook,Office.AttachmentDetails,N/A,Interface,Excellent,true
 outlook,Office.AttachmentDetails,"attachmentType",Property,Fine,false
+outlook,Office.AttachmentDetails,"contentId",Property,Good,false
 outlook,Office.AttachmentDetails,"contentType",Property,Deprecated,false
 outlook,Office.AttachmentDetails,"id",Property,Good,false
 outlook,Office.AttachmentDetails,"isInline",Property,Good,false
@@ -9225,11 +9226,15 @@ outlook,Office.DragAndDropEventArgs,"type",Property,Fine,false
 outlook,Office.DragoverEventData,N/A,Interface,Great,true
 outlook,Office.DragoverEventData,"pageX",Property,Fine,false
 outlook,Office.DragoverEventData,"pageY",Property,Fine,false
+outlook,Office.DragoverEventData,"taskPaneX",Property,Fine,false
+outlook,Office.DragoverEventData,"taskPaneY",Property,Fine,false
 outlook,Office.DragoverEventData,"type",Property,Good,false
 outlook,Office.DropEventData,N/A,Interface,Great,true
 outlook,Office.DropEventData,"dataTransfer",Property,Fine,false
 outlook,Office.DropEventData,"pageX",Property,Fine,false
 outlook,Office.DropEventData,"pageY",Property,Fine,false
+outlook,Office.DropEventData,"taskPaneX",Property,Fine,false
+outlook,Office.DropEventData,"taskPaneY",Property,Fine,false
 outlook,Office.DropEventData,"type",Property,Good,false
 outlook,Office.DroppedItemDetails,N/A,Interface,Fine,true
 outlook,Office.DroppedItemDetails,"fileContent",Property,Fine,false
@@ -9848,7 +9853,7 @@ outlook,Office.MessageRead,"location",Property,Excellent,true
 outlook,Office.MessageRead,"normalizedSubject",Property,Good,true
 outlook,Office.MessageRead,"notificationMessages",Property,Fine,true
 outlook,Office.MessageRead,"recurrence",Property,Excellent,true
-outlook,Office.MessageRead,"sender",Property,Excellent,true
+outlook,Office.MessageRead,"sender",Property,Fine,true
 outlook,Office.MessageRead,"seriesId",Property,Excellent,true
 outlook,Office.MessageRead,"start",Property,Excellent,true
 outlook,Office.MessageRead,"subject",Property,Excellent,true

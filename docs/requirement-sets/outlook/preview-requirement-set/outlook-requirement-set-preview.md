@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 11/20/2025
+ms.date: 12/18/2025
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -144,6 +144,26 @@ Added an object that represents an attachment in a decrypted message.
 #### [Office.DecryptedMessageBody](/javascript/api/outlook/office.decryptedmessagebody?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the body of a decrypted message.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Get the content identifier of an inline attachment in classic Outlook on Windows
+
+#### [contentId property in compose mode](/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-preview&preserve-view=true#outlook-office-attachmentdetailscompose-contentid-member)
+
+Updated the `contentId` property in compose mode to extend support to classic Outlook on Windows.
+
+**Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
+
+#### [contentId property in read mode](/javascript/api/outlook/office.attachmentdetails?view=outlook-js-preview&preserve-view=true#outlook-office-attachmentdetails-contentid-member)
+
+Updated the `contentId` property in read mode to extend support to classic Outlook on Windows.
 
 **Available in**: Classic Outlook on Windows (Microsoft 365 subscription)
 

@@ -337,9 +337,13 @@ properties:
 
 
       - The `from` and `sender` properties represent the same person unless the
-      message is sent by a delegate. In that case, the `from` property
-      represents the delegator, and the `sender` property represents the
-      delegate.
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the delegator's email address and
+      the `sender` property returns the delegate's address. For information
+      about mailbox delegation, see [Manage permissions for recipients in
+      Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
 
 
       - The `recipientType` property of the `EmailAddressDetails` object in the
@@ -660,9 +664,13 @@ properties:
 
 
       - The `from` and `sender` properties represent the same person unless the
-      message is sent by a delegate. In that case, the `from` property
-      represents the delegator, and the `sender` property represents the
-      delegate.
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the delegator's email address and
+      the `sender` property returns the delegate's address. For information
+      about mailbox delegation, see [Manage permissions for recipients in
+      Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
 
 
       - The `recipientType` property of the `EmailAddressDetails` object in the
