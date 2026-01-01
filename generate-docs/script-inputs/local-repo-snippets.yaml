@@ -2788,7 +2788,7 @@ Office.Context#officeTheme:member:
         // Apply theme colors to a CSS class.
         $("body").css("background-color", bodyBackgroundColor);
 
-        if (Office.context.officeTheme.isDarkTheme()) {
+        if (Office.context.officeTheme.isDarkTheme) {
             $("h1").css("color", controlForegroundColor);
         }
     }
@@ -4646,7 +4646,7 @@ Office.OfficeTheme:interface:
         // Apply theme colors to a CSS class.
         $("body").css("background-color", bodyBackgroundColor);
 
-        if (Office.context.officeTheme.isDarkTheme()) {
+        if (Office.context.officeTheme.isDarkTheme) {
             $("h1").css("color", controlForegroundColor);
         }
     }
