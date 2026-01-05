@@ -12426,6 +12426,7 @@ export declare namespace Excel {
         /**
          * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
                     The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
+                    Note: When a range is moved to a new address using this API, the new range object should be retrieved using the new address.
          *
          * @remarks
          * [Api set: ExcelApi 1.11]

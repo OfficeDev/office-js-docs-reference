@@ -5313,7 +5313,7 @@ excel,Excel.Range,"load(options)",Method,Excellent,false
 excel,Excel.Range,"load(propertyNames)",Method,Excellent,true
 excel,Excel.Range,"load(propertyNamesAndPaths)",Method,Excellent,false
 excel,Excel.Range,"merge(across)",Method,Fine,true
-excel,Excel.Range,"moveTo(destinationRange)",Method,Great,true
+excel,Excel.Range,"moveTo(destinationRange)",Method,Excellent,true
 excel,Excel.Range,"removeDuplicates(columns, includesHeader)",Method,Great,true
 excel,Excel.Range,"replaceAll(text, replacement, criteria)",Method,Excellent,false
 excel,Excel.Range,"select()",Method,Fine,true
@@ -7370,6 +7370,14 @@ office,Office.Document,"getResourceFieldAsync(resourceId, fieldId, options, call
 office,Office.Document,"getResourceFieldAsync(resourceId, fieldId, callback)",Method,Good,true
 office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
 office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
 office,Office.Document,"getSelectedResourceAsync(options, callback)",Method,Fine,false
 office,Office.Document,"getSelectedResourceAsync(callback)",Method,Fine,true
 office,Office.Document,"getSelectedTaskAsync(options, callback)",Method,Fine,false
@@ -8123,6 +8131,12 @@ office,Office.Slice,N/A,Interface,Great,true
 office,Office.Slice,"data",Property,Excellent,false
 office,Office.Slice,"index",Property,Poor,false
 office,Office.Slice,"size",Property,Poor,false
+office,Office.Slide,N/A,Interface,Excellent,false
+office,Office.Slide,"id",Property,Poor,false
+office,Office.Slide,"index",Property,Good,false
+office,Office.Slide,"title",Property,Poor,false
+office,Office.SlideRange,N/A,Interface,Great,true
+office,Office.SlideRange,"slides",Property,Fine,false
 office,Office.StartupBehavior,N/A,Enum,Great,true
 office,Office.StartupBehavior,"load",EnumField,Poor,false
 office,Office.StartupBehavior,"none",EnumField,Poor,false

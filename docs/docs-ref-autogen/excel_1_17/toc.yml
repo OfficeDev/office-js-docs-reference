@@ -1250,6 +1250,10 @@ items:
                 uid: office!Office.SettingsChangedEventArgs:interface
               - name: Slice
                 uid: office!Office.Slice:interface
+              - name: Slide
+                uid: office!Office.Slide:interface
+              - name: SlideRange
+                uid: office!Office.SlideRange:interface
               - name: Tab
                 uid: office!Office.Tab:interface
               - name: TableBinding

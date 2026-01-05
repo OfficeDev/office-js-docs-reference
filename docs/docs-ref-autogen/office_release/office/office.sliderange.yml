@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Office.SlideRange
+uid: office!Office.SlideRange:interface
+package: office!
+fullName: Office.SlideRange
+summary: >-
+  Represents the selected slides in a PowerPoint presentation. This object is
+  returned when calling  with
+  [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)
+  in PowerPoint.
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange,
+  (asyncResult) => {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          const slideRange: Office.SlideRange = asyncResult.value;
+          console.log(`Selected ${slideRange.slides.length} slide(s)`);
+          slideRange.slides.forEach(slide => {
+              console.log(`Slide ${slide.index}: ${slide.title} (ID: ${slide.id})`);
+          });
+      }
+      else {
+          console.error(asyncResult.error.message);
+      }
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: slides
+    uid: office!Office.SlideRange#slides:member
+    package: office!
+    fullName: slides
+    summary: Gets an array of the selected slides.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'slides: Slide[];'
+      return:
+        type: <xref uid="office!Office.Slide:interface" />[]

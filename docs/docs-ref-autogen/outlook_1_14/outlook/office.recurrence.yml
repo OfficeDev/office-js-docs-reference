@@ -178,7 +178,7 @@ methods:
 
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->**: Compose
 
 
       #### Examples
@@ -254,7 +254,7 @@ methods:
 
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      -->**: Compose
 
     isPreview: false
     isDeprecated: false
