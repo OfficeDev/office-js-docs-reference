@@ -2788,7 +2788,7 @@ Office.Context#officeTheme:member:
         // Apply theme colors to a CSS class.
         $("body").css("background-color", bodyBackgroundColor);
 
-        if (Office.context.officeTheme.isDarkTheme()) {
+        if (Office.context.officeTheme.isDarkTheme) {
             $("h1").css("color", controlForegroundColor);
         }
     }
@@ -4646,7 +4646,7 @@ Office.OfficeTheme:interface:
         // Apply theme colors to a CSS class.
         $("body").css("background-color", bodyBackgroundColor);
 
-        if (Office.context.officeTheme.isDarkTheme()) {
+        if (Office.context.officeTheme.isDarkTheme) {
             $("h1").css("color", controlForegroundColor);
         }
     }
@@ -6046,6 +6046,20 @@ Office.Slice:interface:
             }
         }
     );
+Office.SlideRange:interface:
+  - |-
+    Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            const slideRange: Office.SlideRange = asyncResult.value;
+            console.log(`Selected ${slideRange.slides.length} slide(s)`);
+            slideRange.slides.forEach(slide => {
+                console.log(`Slide ${slide.index}: ${slide.title} (ID: ${slide.id})`);
+            });
+        }
+        else {
+            console.error(asyncResult.error.message);
+        }
+    });
 Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
