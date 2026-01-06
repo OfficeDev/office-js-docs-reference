@@ -130,6 +130,22 @@ Office.ActiveView:enum:
             showMessage("The current view is " + activeView);
         }
     });
+Office.Addin#beforeDocumentCloseNotification:member:
+  - |-
+    // Enable the before document close modal notification dialog. 
+    async function enableNotification() {
+        await Office.addin.beforeDocumentCloseNotification.enable(); 
+    }
+
+    // Add an event handler to detect when the document close operation is cancelled.
+    Office.addin.beforeDocumentCloseNotification.onCloseActionCancelled(async function () {
+        // When the document close attempt is cancelled, write a message to the active range in the worksheet.
+        await Excel.run(async (context) => {
+            const range = context.workbook.getSelectedRange();
+            range.values = [["Detected onCloseActionCancelled event."]];
+            await context.sync();
+        });
+    });
 Office.Addin#onVisibilityModeChanged:member(1):
   - |-
     Office.onReady(() => {
@@ -618,7 +634,19 @@ Office.BeforeDocumentCloseNotification:interface:
             range.values = [["Detected onCloseActionCancelled event."]];
             await context.sync();
         });
-    });    
+    });
+Office.BeforeDocumentCloseNotification#disable:member(1):
+  - |-
+    // Disable the dialog that pops up when the user tries to close the document.
+    async function disableCloseNotification() {
+        await Office.addin.beforeDocumentCloseNotification.disable(); 
+    }  
+Office.BeforeDocumentCloseNotification#enable:member(1):
+  - |-
+    // Enable the dialog that pops up and asks the user for confirmation when they try to close the document.
+    async function enableCloseNotification() {
+        await Office.addin.beforeDocumentCloseNotification.enable(); 
+    }   
 Office.Binding#addHandlerAsync:member(2):
   - |-
     // The following code sample calls the select function of the Office object to access the binding
@@ -2447,28 +2475,6 @@ Office.Document#getFilePropertiesAsync:member(2):
     }
 Office.Document#getSelectedDataAsync:member(1):
   - |-
-    // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
-    // user's current selection as text, and then display it in the add-in's page.
-
-    // Displays the user's current selection.
-    function showSelection() {
-        Office.context.document.getSelectedDataAsync(
-            Office.CoercionType.Text,
-            {
-                valueFormat: Office.ValueFormat.Unformatted,
-                filterType: Office.FilterType.All
-            },
-            (result) => {
-                const dataValue = result.value;
-                write('Selected data is: ' + dataValue);
-            }
-        );
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-  - |-
     // To read the value of the current selection, you need to write a callback function that reads the selection.
     // The following example shows how to:
     // 1. Pass an anonymous callback function that reads the value of the current selection
@@ -2499,44 +2505,6 @@ Office.Document#getSelectedDataAsync:member(1):
     // Function that writes to a div with id='message' on the page.
     function write(message){
         document.getElementById('message').innerText += message; 
-    }
-  - |-
-    // The following code example gets the values of the selected cells. It uses the optional
-    // asyncContext parameter to pass some text to the callback function.
-    // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page controls are defined in the content div in the page body:
-    // <input id="get-info" type="button" value="Get info" /><br />
-    // <span id="message"></span>
-
-    // The onReady function must be run each time a new page is loaded.
-    Office.onReady(() => {
-        $(document).ready(() => {
-            // After the DOM is loaded, add-in-specific code can run.
-            $('#get-info').on("click", getSelectedText);
-        });
-    });
-
-    // Gets the text from the selected cells in the document, and displays it in the add-in.
-    function getSelectedText() {
-        Office.context.document.getSelectedDataAsync(
-            Office.CoercionType.Text,
-            { asyncContext: "Some related info" },
-            (result) => {
-                if (result.status === Office.AsyncResultStatus.Failed) {
-                    onError(result.error);
-                }
-                else {
-                    const output = String.format(
-                        'Selected text: {0}<br/>Passed info: {1}',
-                        result.value, result.asyncContext);
-                    $('#message').html(output);
-                }
-            }
-        );
-    }
-
-    function onError(error) {
-        $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
     }
 Office.Document#goToByIdAsync:member(2):
   - |-
