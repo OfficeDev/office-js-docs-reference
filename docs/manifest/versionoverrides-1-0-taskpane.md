@@ -1,7 +1,7 @@
 ---
 title: VersionOverrides 1.0 element in the manifest file for a task pane add-in
 description: Reference documentation of the VersionOverrides element (task pane) for Office Add-ins manifest (XML) files.
-ms.date: 04/03/2025
+ms.date: 01/06/2026
 ms.localizationpriority: medium
 ---
 
@@ -67,7 +67,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 The following is a simple example. For more complex examples, see the manifests for the sample add-ins in [Office Add-in code samples](https://github.com/OfficeDev/Office-Add-in-samples).
 
 ```xml
-<OfficeApp ... xsi:type="Taskpane">
+<OfficeApp ... xsi:type="TaskPaneApp">
 ...
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
     <Description resid="residDescription" />
