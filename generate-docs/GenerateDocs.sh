@@ -204,8 +204,6 @@ npx whats-new api-extractor-inputs-word-release/word_1_3/word.d.ts api-extractor
 npx whats-new api-extractor-inputs-word-release/word_1_2/word.d.ts api-extractor-inputs-word-release/word_1_1/word.d.ts ../docs/includes/word-1_2 javascript/api/word/ configs/word-1_2-config.json
 npx whats-new api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-inputs/word-base.d.ts ../docs/includes/word-1_1 javascript/api/word/ configs/word-1_1-config.json
 
-popd
-
 if [ ! -d "json/office" ]; then
     echo Running API Extractor for Office preview.
     pushd api-extractor-inputs-office
