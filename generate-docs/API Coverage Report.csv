@@ -5313,7 +5313,7 @@ excel,Excel.Range,"load(options)",Method,Excellent,false
 excel,Excel.Range,"load(propertyNames)",Method,Excellent,true
 excel,Excel.Range,"load(propertyNamesAndPaths)",Method,Excellent,false
 excel,Excel.Range,"merge(across)",Method,Fine,true
-excel,Excel.Range,"moveTo(destinationRange)",Method,Great,true
+excel,Excel.Range,"moveTo(destinationRange)",Method,Excellent,true
 excel,Excel.Range,"removeDuplicates(columns, includesHeader)",Method,Great,true
 excel,Excel.Range,"replaceAll(text, replacement, criteria)",Method,Excellent,false
 excel,Excel.Range,"select()",Method,Fine,true
@@ -7135,7 +7135,7 @@ office,Office.AddBindingFromSelectionOptions,"asyncContext",Property,Excellent,f
 office,Office.AddBindingFromSelectionOptions,"columns",Property,Poor,false
 office,Office.AddBindingFromSelectionOptions,"id",Property,Good,false
 office,Office.Addin,N/A,Interface,Fine,false
-office,Office.Addin,"beforeDocumentCloseNotification",Property,Great,false
+office,Office.Addin,"beforeDocumentCloseNotification",Property,Great,true
 office,Office.Addin,"getStartupBehavior()",Method,Fine,false
 office,Office.Addin,"hide()",Method,Poor,false
 office,Office.Addin,"onVisibilityModeChanged(handler)",Method,Fine,true
@@ -7180,8 +7180,8 @@ office,Office.AuthOptions,"forceAddAccount",Property,Deprecated,false
 office,Office.AuthOptions,"forceConsent",Property,Deprecated,false
 office,Office.AuthOptions,"forMSGraphAccess",Property,Excellent,false
 office,Office.BeforeDocumentCloseNotification,N/A,Interface,Great,true
-office,Office.BeforeDocumentCloseNotification,"disable()",Method,Great,false
-office,Office.BeforeDocumentCloseNotification,"enable()",Method,Great,false
+office,Office.BeforeDocumentCloseNotification,"disable()",Method,Great,true
+office,Office.BeforeDocumentCloseNotification,"enable()",Method,Great,true
 office,Office.BeforeDocumentCloseNotification,"onCloseActionCancelled(handler)",Method,Excellent,false
 office,Office.Binding,N/A,Interface,Excellent,false
 office,Office.Binding,"document",Property,Good,true
@@ -7369,6 +7369,14 @@ office,Office.Document,"getResourceByIndexAsync(resourceIndex, callback)",Method
 office,Office.Document,"getResourceFieldAsync(resourceId, fieldId, options, callback)",Method,Good,false
 office,Office.Document,"getResourceFieldAsync(resourceId, fieldId, callback)",Method,Good,true
 office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,true
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
 office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
 office,Office.Document,"getSelectedResourceAsync(options, callback)",Method,Fine,false
 office,Office.Document,"getSelectedResourceAsync(callback)",Method,Fine,true
@@ -8123,6 +8131,12 @@ office,Office.Slice,N/A,Interface,Great,true
 office,Office.Slice,"data",Property,Excellent,false
 office,Office.Slice,"index",Property,Poor,false
 office,Office.Slice,"size",Property,Poor,false
+office,Office.Slide,N/A,Interface,Excellent,false
+office,Office.Slide,"id",Property,Poor,false
+office,Office.Slide,"index",Property,Good,false
+office,Office.Slide,"title",Property,Poor,false
+office,Office.SlideRange,N/A,Interface,Great,true
+office,Office.SlideRange,"slides",Property,Fine,false
 office,Office.StartupBehavior,N/A,Enum,Great,true
 office,Office.StartupBehavior,"load",EnumField,Poor,false
 office,Office.StartupBehavior,"none",EnumField,Poor,false
@@ -9845,7 +9859,7 @@ outlook,Office.MessageRead,"dateTimeModified",Property,Good,true
 outlook,Office.MessageRead,"display",Property,Good,true
 outlook,Office.MessageRead,"end",Property,Excellent,true
 outlook,Office.MessageRead,"from",Property,Excellent,true
-outlook,Office.MessageRead,"internetMessageId",Property,Excellent,true
+outlook,Office.MessageRead,"internetMessageId",Property,Good,true
 outlook,Office.MessageRead,"itemClass",Property,Fine,true
 outlook,Office.MessageRead,"itemId",Property,Good,true
 outlook,Office.MessageRead,"itemType",Property,Excellent,true

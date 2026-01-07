@@ -6112,7 +6112,8 @@ export declare namespace Office {
          * **Important**: 
          *
          * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
-         * In this case, the `from` property returns the delegator's email address and the `sender` property returns the delegate's address. For information about mailbox delegation, see
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
          * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
          *
          * - The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
@@ -6121,15 +6122,20 @@ export declare namespace Office {
         /**
          * Gets the internet message identifier for an email message.
          *
-         * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
-         * consider using {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get this
-         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | property from the server}.
-         *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
+         * consider using one of the following options depending on your Exchange environment.
+         *
+         * - For Exchange Online, use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/microsoft-graph | Microsoft Graph} to get the
+         * {@link https://learn.microsoft.com/graph/api/resources/message | internetMessageId} property.
+         *
+         * - For Exchange Server (on-premises), use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get the
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | InternetMessageId} property from the server.
          */
         internetMessageId: string;
         /**
@@ -6307,7 +6313,8 @@ export declare namespace Office {
          * **Important**:
          *
          * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
-         * In this case, the `from` property returns the delegator's email address and the `sender` property returns the delegate's address. For information about mailbox delegation, see
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
          * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
          *
          * - The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
@@ -7578,7 +7585,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -7596,7 +7603,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. The `value` property of the result is a `Recurrence` object.

@@ -66,6 +66,8 @@ interfaces:
   - office!Office.Settings:interface
   - office!Office.SettingsChangedEventArgs:interface
   - office!Office.Slice:interface
+  - office!Office.Slide:interface
+  - office!Office.SlideRange:interface
   - office!Office.Tab:interface
   - office!Office.TableBinding:interface
   - office!Office.TaskPane:interface
