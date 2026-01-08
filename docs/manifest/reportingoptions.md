@@ -1,7 +1,7 @@
 ---
 title: ReportingOptions element in the manifest file
 description: The ReportingOptions element specifies the reporting options listed in the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 12/18/2025
+ms.date: 01/13/2026
 ms.localizationpriority: medium
 ---
 
