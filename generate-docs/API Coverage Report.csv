@@ -8276,7 +8276,7 @@ office,OfficeExtension.TrackedObjects,"add(object)",Method,Excellent,false
 office,OfficeExtension.TrackedObjects,"add(objects)",Method,Excellent,false
 office,OfficeExtension.TrackedObjects,"remove(object)",Method,Excellent,false
 office,OfficeExtension.TrackedObjects,"remove(objects)",Method,Excellent,false
-office,OfficeExtension.UpdateOptions,N/A,Interface,Excellent,false
+office,OfficeExtension.UpdateOptions,N/A,Interface,Excellent,true
 office,OfficeExtension.UpdateOptions,"throwOnReadOnly",Property,Excellent,false
 office,N/A,N/A,Package,Missing,false
 office,N/A,"Office.initialize(reason)",Method,Excellent,true
