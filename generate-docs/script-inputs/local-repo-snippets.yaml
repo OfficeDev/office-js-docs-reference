@@ -6514,7 +6514,21 @@ OfficeExtension.LoadOption#top:member:
                 }
             })
         });
+OfficeExtension.UpdateOptions:interface:
+  - |-
+    // Update a range in an Excel worksheet using the RangeUpdateData interface.
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B2:E2");
 
+        // Configure the set operation to still run if a readonly property is included.
+        // All settable properties will be updated.
+        const options: OfficeExtension.UpdateOptions = {throwOnReadOnly: false};
+
+        // Set the range with some data from another source (`updateData` is set elsewhere).
+        range.set(updateData, options);
+        await context.sync();
+    });
 OfficeRuntime.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
