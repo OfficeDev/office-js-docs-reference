@@ -140,10 +140,11 @@ properties:
       Outlook client and its version.
 
 
-      - In Outlook on the web, new Outlook on Windows, and classic Outlook on
-      Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel`
-      property customizes the text of the **Take Action** button. The
-      **Take Action** button only appears on the Smart Alerts dialog if the
+      - In Outlook on the web, on Mac (in preview starting in Version 16.105
+      (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows
+      starting in Version 2412 (Build 18324.20000), the `cancelLabel` property
+      customizes the text of the **Take Action** button. The **Take
+      Action** button only appears on the Smart Alerts dialog if the
       `commandId` option is configured in the `event.completed` call. The option
       must be configured if you want to customize the text of the dialog button.
       In this implementation, the **Don't Send** button cancels the item
@@ -159,13 +160,10 @@ properties:
       notifying users of this updated experience.
 
 
-      - In earlier supported versions of classic Outlook on Windows (versions
-      prior to Version 2412 (Build 18324.20000) that support [Mailbox
-      requirement set
-      1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!--
-      -->), and Outlook on Mac, the `cancelLabel` property customizes the text
-      of the **Don't Send** button. The **Don't Send** button cancels
-      the item being sent.
+      - In classic Outlook on Windows (prior to Version 2412 (Build 18324.20000)
+      and Outlook on Mac (prior to Version 16.105 (Build 25121117)), the
+      `cancelLabel` property customizes the text of the **Don't Send**
+      button. The **Don't Send** button cancels the item being sent.
 
     isPreview: false
     isDeprecated: false
@@ -224,26 +222,28 @@ properties:
 
       The button in the Smart Alerts dialog that opens a task pane or runs a
       function varies depending on the Outlook client and version. In Outlook on
-      the web, new Outlook on Windows, and classic Outlook on Windows starting
-      in Version 2412 (Build 18324.20000), the **Take Action** button opens
-      a task pane or runs a function. In this implementation, the **Don't
-      Send** button cancels the item being sent. Its text and functionality
-      can't be customized. In earlier supported versions of classic Outlook on
-      Windows (versions prior to Version 2412 (Build 18324.20000) that support
-      [Mailbox requirement set
+      the web, on Mac (in preview starting in Version 16.105 (Build 25121117)),
+      new Outlook on Windows, and classic Outlook on Windows starting in Version
+      2412 (Build 18324.20000), the **Take Action** button opens a task pane
+      or runs a function. In this implementation, the **Don't Send** button
+      cancels the item being sent. Its text and functionality can't be
+      customized. In earlier supported versions of classic Outlook on Windows
+      (versions prior to Version 2412 (Build 18324.20000) that support [Mailbox
+      requirement set
       1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!--
       -->), and Outlook on Mac, the **Don't Send** button opens a task pane
       or runs a function.
 
 
-      If you customized the text and functionality of the **Don't Send**
-      button in your Smart Alerts add-in prior to Version 2412 (Build
-      18324.20000) of classic Outlook on Windows, no additional action is needed
-      to implement the **Take Action** button in the latest supported
-      versions. The default or customized **Take Action** button will
-      automatically appear the next time a user receives a Smart Alerts dialog.
-      Although no implementation changes are needed, we recommend notifying
-      users of this updated experience.
+      If you've already customized the text and functionality of the **Don't
+      Send** button in your Smart Alerts add-in prior to Version 2412 (Build
+      18324.20000) of classic Outlook on Windows or prior to Version 16.105
+      (Build 25121117) of Outlook on Mac, no additional action is needed to
+      implement the **Take Action** button in the latest supported versions.
+      The default or customized **Take Action** button will automatically
+      appear the next time a user receives a Smart Alerts dialog. Although no
+      implementation changes are needed, we recommend notifying users of this
+      updated experience.
 
 
       If you specify a command ID that doesn't exist, depending on your Outlook
@@ -260,6 +260,13 @@ properties:
       a button for the function is also added to the ribbon or action bar of the
       Outlook client. Use the `contextData` option to distinguish when a user
       runs the function from the Smart Alerts dialog.
+
+
+      Programming a button in the Smart Alerts dialog to run a function is
+      available for preview in Outlook on Mac starting in Version 16.105 (Build
+      25121117). To test this feature, join the [Microsoft 365 Insider
+      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756)
+      and select the **Beta Channel** option to access Office beta builds.
 
     isPreview: false
     isDeprecated: false
