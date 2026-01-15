@@ -220,6 +220,7 @@ function createTocNode(name: string, uid?: string, items?: any[]): any {
  * Processes the "what's new" markdown files in the includes folder to fix enum member links.
  * The whats-new tool generates empty link text for enum members like `[](url)`.
  * This function extracts the field name from the URL and replaces the empty link with plain text.
+ * It also escapes angle brackets in generic type parameters to prevent invalid HTML tag warnings.
  */
 function processWhatsNewMarkdownFiles(): void {
     console.log(`Processing what's new markdown files in: ${includesLocation}`);
@@ -243,6 +244,11 @@ function processWhatsNewMarkdownFiles(): void {
                 // Capitalize the first letter of the field name
                 return fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
             });
+            
+            // Escape angle brackets in generic type parameters to prevent invalid HTML tag warnings.
+            // This matches patterns like <void>, <string>, <TypeName>, <Type1 | Type2>, etc.
+            // that appear in method signatures and are interpreted as HTML tags by the build system.
+            content = content.replace(/<([A-Za-z][A-Za-z0-9]*(?:\[\])?(?:\s*\|\s*[A-Za-z][A-Za-z0-9]*(?:\[\])?)*)>/g, '\\<$1\\>');
             
             fsx.writeFileSync(filePath, content);
         });
