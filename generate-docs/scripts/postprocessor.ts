@@ -178,6 +178,7 @@ interface ApiYaml {
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const tocTemplateLocation = path.resolve("../../docs");
+const includesLocation = path.resolve("../../docs/includes");
 
 // Utility functions
 function processFilesInDirectory(
@@ -213,6 +214,40 @@ function capitalizeHostName(name: string): string {
 
 function createTocNode(name: string, uid?: string, items?: any[]): any {
     return { name, uid: uid || "", items: items || [] };
+}
+
+/**
+ * Processes the "what's new" markdown files in the includes folder to fix enum member links.
+ * The whats-new tool generates empty link text for enum members like `[](url)`.
+ * This function extracts the field name from the URL and replaces the empty link with plain text.
+ */
+function processWhatsNewMarkdownFiles(): void {
+    console.log(`Processing what's new markdown files in: ${includesLocation}`);
+    
+    if (!fsx.existsSync(includesLocation)) {
+        console.log(`Includes directory not found, skipping markdown processing`);
+        return;
+    }
+
+    fsx.readdirSync(includesLocation)
+        .filter(filename => filename.endsWith('.md'))
+        .forEach(filename => {
+            const filePath = path.join(includesLocation, filename);
+            let content = fsx.readFileSync(filePath, "utf8");
+            
+            // Fix empty enum member links: [](url#...-fieldname-member) -> fieldName
+            // The pattern matches links with empty text that have a URL containing an enum member anchor
+            // Example: [](/javascript/api/outlook/office.attachmenttype#outlook-office-attachmenttype-base64-member)
+            // Will become: Base64
+            content = content.replace(/\[\]\(([^)]+#[^)]*-([a-z0-9]+)-member)\)/gi, (match, url, fieldName) => {
+                // Capitalize the first letter of the field name
+                return fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
+            });
+            
+            fsx.writeFileSync(filePath, content);
+        });
+    
+    console.log(`Completed processing what's new markdown files`);
 }
 
 // Main processing functions
@@ -413,6 +448,9 @@ tryCatch(async () => {
     // Step 10: Move common TOCs and cleanup
     moveCommonTocs();
     cleanupTemporaryFiles();
+
+    // Step 11: Process what's new markdown files (fix enum member links)
+    processWhatsNewMarkdownFiles();
 
     console.log(`\nPostprocessor script complete\n`);
     process.exit(0);
