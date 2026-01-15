@@ -2,7 +2,7 @@
 |:---|:---|:---|
 |[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[sendAsync(callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sendasync-member(1))|Sends the appointment being composed.|
 ||[sendAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sendasync-member(1))|Sends the appointment being composed.|
-|[AttachmentType](/javascript/api/outlook/office.attachmenttype)|Base64|The attachment is a Base64-encoded file.|
+|[AttachmentType](/javascript/api/outlook/office.mailboxenums.attachmenttype)|Base64|The attachment is a Base64-encoded file.|
 |[InitializationContextChangedEventArgs](/javascript/api/outlook/office.initializationcontextchangedeventargs)|[initializationContextData](/javascript/api/outlook/office.initializationcontextchangedeventargs#outlook-office-initializationcontextchangedeventargs-initializationcontextdata-member)|Represents the data to be passed to an add-in's task pane from an actionable message, notification message, Smart Alerts dialog, or integrated|
 ||[type](/javascript/api/outlook/office.initializationcontextchangedeventargs#outlook-office-initializationcontextchangedeventargs-type-member)|Represents the type of the event.|
 |[LoadedMessageCompose](/javascript/api/outlook/office.loadedmessagecompose)|[bcc](/javascript/api/outlook/office.loadedmessagecompose#outlook-office-loadedmessagecompose-bcc-member)|Gets the recipients on the **Bcc** (blind carbon copy) line of a message.|

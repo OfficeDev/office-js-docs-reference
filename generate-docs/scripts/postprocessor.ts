@@ -244,6 +244,38 @@ function processWhatsNewMarkdownFiles(): void {
                 // Capitalize the first letter of the field name
                 return fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
             });
+
+            // Fix incorrect Outlook MailboxEnums links.
+            // The whats-new tool incorrectly generates links like /javascript/api/outlook/office.attachmenttype
+            // instead of /javascript/api/outlook/office.mailboxenums.attachmenttype for enums under MailboxEnums namespace.
+            // Dynamically discover MailboxEnums by reading YAML files from the outlook folder.
+            // Exclude names that also exist as interfaces/classes to avoid incorrect replacements.
+            const outlookYamlDir = path.join(docsSource, "outlook", "outlook");
+            if (fsx.existsSync(outlookYamlDir)) {
+                const allYamlFiles = fsx.readdirSync(outlookYamlDir);
+                
+                // Get all MailboxEnums enum names
+                const mailboxEnumNames = allYamlFiles
+                    .filter(f => f.startsWith("office.mailboxenums.") && f.endsWith(".yml"))
+                    .map(f => f.replace("office.mailboxenums.", "").replace(".yml", ""));
+                
+                // Get all interface/class names (non-enum types)
+                const interfaceNames = allYamlFiles
+                    .filter(f => f.startsWith("office.") && !f.includes("mailboxenums") && f.endsWith(".yml"))
+                    .map(f => f.replace("office.", "").replace(".yml", ""));
+                
+                // Exclude enum names that also exist as interfaces to avoid incorrect replacements
+                // (e.g., RecurrenceTimeZone exists as both Office.RecurrenceTimeZone interface and Office.MailboxEnums.RecurrenceTimeZone enum)
+                const safeEnumNames = mailboxEnumNames.filter(name => !interfaceNames.includes(name));
+                
+                if (safeEnumNames.length > 0) {
+                    const mailboxEnumPattern = new RegExp(
+                        `(/javascript/api/outlook/office\\.)(${safeEnumNames.join('|')})(\\)|#)`,
+                        'gi'
+                    );
+                    content = content.replace(mailboxEnumPattern, '$1mailboxenums.$2$3');
+                }
+            }
             
             // Escape angle brackets in generic type parameters to prevent invalid HTML tag warnings.
             // This matches patterns like <void>, <string>, <TypeName>, <Type1 | Type2>, etc.
