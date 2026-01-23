@@ -1,11 +1,11 @@
 CustomFunctions.Associate(id, functionObject):function:
   - |- 
     /**
-    * Adds two numbers together
+    * Adds two numbers together.
     * @customfunction
-    * @param {number} first First number
-    * @param {number} second Second number
-    * @returns {number} The sum of the two numbers
+    * @param {number} first First number.
+    * @param {number} second Second number.
+    * @returns {number} The sum of the two numbers.
     */
     // Define your custom function.
     function add(first, second) {
@@ -13,7 +13,7 @@ CustomFunctions.Associate(id, functionObject):function:
     }
 
     // Associate the "add" function with its ID from the JSON metadata. In this sample, the JSON metadata ID is "ADD".
-    CustomFunctions.associate("ADD", add);    
+    CustomFunctions.associate("ADD", add);
 CustomFunctions.Associate(mappings):function:
   - |- 
     /**
