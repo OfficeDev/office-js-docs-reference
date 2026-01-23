@@ -23,3 +23,47 @@ OfficeRuntime.Auth#getAccessToken:member(1):
           }
       }
     }
+OfficeRuntime.displayWebDialog:function(1):
+  - |-
+    /**
+     * Opens an authentication dialog from a custom function.
+     * @customfunction AUTH.LOGIN
+     * @returns A promise that resolves to the authentication result.
+     */
+    async function authLogin(): Promise<string> {
+      const dialogUrl = "https://your-addin-domain.com/auth-dialog.html";
+
+      return new Promise((resolve, reject) => {
+        OfficeRuntime.displayWebDialog(dialogUrl, {
+          height: "50%",
+          width: "40%",
+
+          onMessage: (message: string, dialog?: OfficeRuntime.Dialog) => {
+            // Handle messages sent from the dialog via window.opener.postMessage().
+            const data = JSON.parse(message);
+
+            if (data.type === "auth-success") {
+              // Process the authentication token
+              dialog?.close();
+              resolve(`Signed in as ${data.username}`);
+            } else if (data.type === "auth-error") {
+              dialog?.close();
+              reject(new Error(data.errorMessage));
+            }
+          },
+
+          onClose: () => {
+            // Handle the user closing the dialog.
+            resolve("Dialog closed");
+          },
+
+          onRuntimeError: (error: Error, dialog?: OfficeRuntime.Dialog) => {
+            // Handle runtime errors from the dialog.
+            dialog?.close();
+            reject(error);
+          },
+        }).catch((error) => {
+          reject(new Error(`Failed to open dialog: ${error.message}`));
+        });
+      });
+    }

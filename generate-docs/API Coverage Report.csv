@@ -8314,7 +8314,7 @@ office-runtime,OfficeRuntime.Storage,"removeItems(keys)",Method,Good,false
 office-runtime,OfficeRuntime.Storage,"setItem(key, value)",Method,Great,false
 office-runtime,OfficeRuntime.Storage,"setItems(keyValues)",Method,Great,false
 office-runtime,N/A,N/A,Package,Missing,false
-office-runtime,N/A,"OfficeRuntime.displayWebDialog(url, options)",Method,Fine,false
+office-runtime,N/A,"OfficeRuntime.displayWebDialog(url, options)",Method,Fine,true
 onenote,OneNote.Application,N/A,Class,Good,false
 onenote,OneNote.Application,"context",Property,Excellent,false
 onenote,OneNote.Application,"notebooks",Property,Excellent,false
