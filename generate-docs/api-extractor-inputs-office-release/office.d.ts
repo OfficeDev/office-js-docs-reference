@@ -245,9 +245,14 @@ export declare namespace Office {
      */
     const devicePermission: DevicePermission;
     /**
+     * Provides options to manage the user interface of an Office Add-in while the add-in is running.
+     */
+    const extensionLifeCycle: ExtensionLifeCycle;
+    /**
      * Represents the ribbon associated with the Office application.
      */
     const ribbon: Ribbon;
+
     /**
      * Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document.
      *
