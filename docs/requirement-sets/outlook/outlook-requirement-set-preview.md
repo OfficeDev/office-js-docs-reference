@@ -20,7 +20,7 @@ To use preview APIs:
 
 - You may need to configure the **Targeted release** option on your Microsoft 365 tenant to preview features in Outlook on the web. For more information, see the "Targeted release" section of [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release).
 
-The preview requirement set includes all of the features of [requirement set 1.15](../requirement-set-1.15/outlook-requirement-set-1.15.md).
+The preview requirement set includes all of the features of [requirement set 1.15](outlook-requirement-set-1.15.md).
 
 > [!IMPORTANT]
 > This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set isn't fully implemented yet, and clients won't accurately report support for it. You shouldn't specify this requirement set in your add-in manifest.
