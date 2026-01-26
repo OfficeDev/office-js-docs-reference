@@ -27,7 +27,7 @@ Mailbox requirement set 1.9 includes all of the features of [requirement set 1.8
 
 The following table lists the APIs introduced in Mailbox requirement set 1.9. To view API reference documentation for all APIs supported by Mailbox requirement set 1.9 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.9&preserve-view=true).
 
-[!INCLUDE [outlook-1_9](../../../includes/outlook-1_9.md)]
+[!INCLUDE [outlook-1_9](../../includes/outlook-1_9.md)]
 
 ## Manifest updates
 

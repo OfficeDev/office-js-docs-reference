@@ -34,7 +34,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 This extension point enables an add-in to activate based on supported events in both the desktop and mobile form factors. To learn more about event-based activation and for the full list of supported events, see [Activate add-ins with events](/office/dev/add-ins/develop/event-based-activation).
 
 > [!IMPORTANT]
-> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
 
 #### Child elements
 
@@ -316,7 +316,7 @@ This extension point puts buttons on the ribbon for the form that's displayed to
 This extension point adds a module extension add-in to the Outlook navigation bar. It also adds buttons to a custom tab on the ribbon for the module extension. To learn how to create module extensions, see [Module extension Outlook add-ins](/office/dev/add-ins/outlook/extension-module-outlook-add-ins).
 
 > [!IMPORTANT]
-> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
 
 #### Child elements
 
@@ -392,7 +392,7 @@ This extension point puts a mode-appropriate toggle in the command surface for a
 > [!NOTE]
 > This extension point is only supported on Android and iOS with a Microsoft 365 subscription.
 >
-> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
 
 #### Child elements
 
@@ -437,7 +437,7 @@ This extension point puts a **Log** action button contextually in the command su
 > [!NOTE]
 > This extension point is only supported on Android and iOS with a Microsoft 365 subscription.
 >
-> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
 
 #### Child elements
 
@@ -480,7 +480,7 @@ The images specified in the **\<Icon\>** element should be in grayscale using he
 This extension point adds an event handler for a specified event. For more information about using this extension point, see [On-send feature for Outlook add-ins](/office/dev/add-ins/outlook/outlook-on-send-addins).
 
 > [!IMPORTANT]
-> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
 
 > [!NOTE]
 > [Smart Alerts](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events), which is a newer version of the on-send feature, uses the [LaunchEvent extension point](#launchevent) to enable event activation in an add-in. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#differences-between-smart-alerts-and-the-on-send-feature). We invite you to [try out Smart Alerts by completing the walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
@@ -508,7 +508,7 @@ The containing [VersionOverrides](versionoverrides.md) element must have an **xs
 > [!NOTE]
 >
 > - This element type is available to [Outlook clients that support requirement sets 1.6 and later](../requirement-sets/outlook/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
-> - Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events isn't available with this extension point.
+> - Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) isn't available with this extension point.
 
 |  Element |  Description  |
 |:-----|:-----|

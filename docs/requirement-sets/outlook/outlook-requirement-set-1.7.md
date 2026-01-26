@@ -29,7 +29,7 @@ Mailbox requirement set 1.7 includes all of the features of [requirement set 1.6
 
 The following table lists the APIs introduced in Mailbox requirement set 1.7. To view API reference documentation for all APIs supported by Mailbox requirement set 1.7 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.7&preserve-view=true).
 
-[!INCLUDE [outlook-1_7](../../../includes/outlook-1_7.md)]
+[!INCLUDE [outlook-1_7](../../includes/outlook-1_7.md)]
 
 ## Events
 

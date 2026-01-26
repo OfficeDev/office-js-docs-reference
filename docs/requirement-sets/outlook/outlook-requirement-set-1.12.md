@@ -28,7 +28,7 @@ Mailbox requirement set 1.12 includes all of the features of [requirement set 1.
 
 The following table lists the APIs introduced in Mailbox requirement set 1.12. To view API reference documentation for all APIs supported by Mailbox requirement set 1.12 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.12&preserve-view=true).
 
-[!INCLUDE [outlook-1_12](../../../includes/outlook-1_12.md)]
+[!INCLUDE [outlook-1_12](../../includes/outlook-1_12.md)]
 
 ## Manifest updates
 

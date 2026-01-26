@@ -32,7 +32,7 @@ Mailbox requirement set 1.14 includes all of the features of [requirement set 1.
 
 The following table lists the APIs introduced in Mailbox requirement set 1.14. To view API reference documentation for all APIs supported by Mailbox requirement set 1.14 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.14&preserve-view=true).
 
-[!INCLUDE [outlook-1_14](../../../includes/outlook-1_14.md)]
+[!INCLUDE [outlook-1_14](../../includes/outlook-1_14.md)]
 
 ## Events
 

@@ -39,7 +39,7 @@ This attribute specifies the kind of action performed when the user selects the 
 Once the user selects a button that kicks off the `ExecuteFunction` action, the add-in times out after 5 minutes if it hasn't completed by then.
 
 > [!IMPORTANT]
-> Outlook: Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available when **xsi:type** is `ExecuteFunction`.
+> Outlook: Registering `Mailbox` and `Item` [events](/javascript/api/office/office.eventtype) is not available when **xsi:type** is `ExecuteFunction`.
 
 ## Child elements
 

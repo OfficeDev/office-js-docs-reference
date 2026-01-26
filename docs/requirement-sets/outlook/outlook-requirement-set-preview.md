@@ -43,7 +43,7 @@ The following features are in preview.
 
 The following table lists the Outlook JavaScript APIs currently in preview. To view API reference documentation for all Outlook JavaScript APIs (including preview APIs and previously released APIs), see [Outlook APIs](/javascript/api/outlook?view=outlook-js-preview&preserve-view=true).
 
-[!INCLUDE [outlook-preview](../../../includes/outlook-preview.md)]
+[!INCLUDE [outlook-preview](../../includes/outlook-preview.md)]
 
 ## See also
 

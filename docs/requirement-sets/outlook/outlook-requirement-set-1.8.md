@@ -33,7 +33,7 @@ Mailbox requirement set 1.8 includes all of the features of [requirement set 1.7
 
 The following table lists the APIs introduced in Mailbox requirement set 1.8. To view API reference documentation for all APIs supported by Mailbox requirement set 1.8 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.8&preserve-view=true).
 
-[!INCLUDE [outlook-1_8](../../../includes/outlook-1_8.md)]
+[!INCLUDE [outlook-1_8](../../includes/outlook-1_8.md)]
 
 ## Events
 

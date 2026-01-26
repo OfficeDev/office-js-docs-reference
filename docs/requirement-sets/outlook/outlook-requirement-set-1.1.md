@@ -27,17 +27,17 @@ Mailbox requirement set 1.1 includes all of the [Common API requirement sets](..
 - Added methods to display existing messages and appointments.
 - Added the ability to make Exchange Web Services (EWS) requests directly from an add-in.
 
-    [!INCLUDE [legacy-exchange-online](../../../includes/legacy-exchange-online.md)]
+    [!INCLUDE [legacy-exchange-online](../../includes/legacy-exchange-online.md)]
 - Added support for custom properties and roaming settings to store add-in data. For more information, see [Get and set add-in metadata for an Outlook add-in](/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in).
 - Added methods to detect and extract entities (such as addresses, phone numbers, and URLs) from item bodies.
 
-    [!INCLUDE [outlook-contextual-add-ins-retirement](../../../includes/outlook-contextual-add-ins-retirement.md)]
+    [!INCLUDE [outlook-contextual-add-ins-retirement](../../includes/outlook-contextual-add-ins-retirement.md)]
 
 ## API list
 
 The following table lists the APIs introduced in Mailbox requirement set 1.1. To view API reference documentation for all APIs supported by Mailbox requirement set 1.1, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.1&preserve-view=true).
 
-[!INCLUDE [outlook-1_1](../../../includes/outlook-1_1.md)]
+[!INCLUDE [outlook-1_1](../../includes/outlook-1_1.md)]
 
 ## See also
 

@@ -28,7 +28,7 @@ Mailbox requirement set 1.15 includes all of the features of [requirement set 1.
 
 The following table lists the APIs introduced in Mailbox requirement set 1.15. To view API reference documentation for all APIs supported by Mailbox requirement set 1.15 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.15&preserve-view=true).
 
-[!INCLUDE [outlook-1_15](../../../includes/outlook-1_15.md)]
+[!INCLUDE [outlook-1_15](../../includes/outlook-1_15.md)]
 
 ## Events
 

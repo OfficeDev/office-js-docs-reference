@@ -23,14 +23,14 @@ Mailbox requirement set 1.3 includes all of the features of [requirement set 1.2
 - Added methods to get or set the entire body of a message or appointment. For more information, see [Get or set the body of a message or appointment in Outlook](/office/dev/add-ins/outlook/insert-data-in-the-body).
 - Added methods to convert item IDs between EWS and REST formats.
 
-    [!INCLUDE [legacy-exchange-online](../../../includes/legacy-exchange-online.md)]
+    [!INCLUDE [legacy-exchange-online](../../includes/legacy-exchange-online.md)]
 - Added a property and methods to add, get, replace, and remove [notification messages](/office/dev/add-ins/outlook/notifications) from an item.
 
 ## API list
 
 The following table lists the APIs introduced in Mailbox requirement set 1.3. To view API reference documentation for all APIs supported by Mailbox requirement set 1.3 or earlier, see [Outlook APIs](/javascript/api/outlook?view=outlook-js-1.3&preserve-view=true).
 
-[!INCLUDE [outlook-1_3](../../../includes/outlook-1_3.md)]
+[!INCLUDE [outlook-1_3](../../includes/outlook-1_3.md)]
 
 ## See also
 

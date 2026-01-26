@@ -282,11 +282,11 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.item.md",
-            "redirect_url": "/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item"
+            "redirect_url": "/javascript/api/requirement-sets/outlook/outlook-requirement-set-preview"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.md",
-            "redirect_url": "/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox"
+            "redirect_url": "/javascript/api/requirement-sets/outlook/outlook-requirement-set-preview"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.userProfile.md",
@@ -294,15 +294,15 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.md",
-            "redirect_url": "/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context"
+            "redirect_url": "/javascript/api/requirement-sets/outlook/outlook-requirement-set-preview"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.md",
-            "redirect_url": "/javascript/api/requirement-sets/outlook/preview-requirement-set/office"
+            "redirect_url": "/javascript/api/requirement-sets/outlook/outlook-requirement-set-preview"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/outlook-requirement-set-preview.md",
-            "redirect_url": "/javascript/api/requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview"
+            "redirect_url": "/javascript/api/requirement-sets/outlook/outlook-requirement-set-preview"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.diagnostics.md",
