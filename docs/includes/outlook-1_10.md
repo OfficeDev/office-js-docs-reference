@@ -1,15 +1,25 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[ActionType](/javascript/api/outlook/office.mailboxenums.actiontype)|Showtaskpane|The `showTaskPane` action.|
 |[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[disableClientSignatureAsync(callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-disableclientsignatureasync-member(1))|Disables the Outlook client signature.|
 ||[disableClientSignatureAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-disableclientsignatureasync-member(1))|Disables the Outlook client signature.|
 ||[isClientSignatureEnabledAsync(callback: (asyncResult: Office.AsyncResult\<boolean\>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-isclientsignatureenabledasync-member(1))|Gets if the client signature is enabled.|
 ||[isClientSignatureEnabledAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<boolean\>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-isclientsignatureenabledasync-member(1))|Gets if the client signature is enabled.|
 |[Body](/javascript/api/outlook/office.body)|[setSignatureAsync(data: string, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.body#outlook-office-body-setsignatureasync-member(1))|Adds a signature to the item body if it doesn't have an existing signature.|
 ||[setSignatureAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.body#outlook-office-body-setsignatureasync-member(1))|Adds a signature to the item body if it doesn't have an existing signature.|
+|[ComposeType](/javascript/api/outlook/office.mailboxenums.composetype)|Forward|Forward.|
+||Newmail|New mail.|
+||Reply|Reply.|
+|[InfobarActionType](/javascript/api/outlook/office.mailboxenums.infobaractiontype)|Dismiss|Dismiss action was selected.|
 |[InfobarClickedEventArgs](/javascript/api/outlook/office.infobarclickedeventargs)|[infobarDetails](/javascript/api/outlook/office.infobarclickedeventargs#outlook-office-infobarclickedeventargs-infobardetails-member)|Gets additional details about the notification message.|
 ||[type](/javascript/api/outlook/office.infobarclickedeventargs#outlook-office-infobarclickedeventargs-type-member)|Gets the type of the event.|
 |[InfobarDetails](/javascript/api/outlook/office.infobardetails)|[actionType](/javascript/api/outlook/office.infobardetails#outlook-office-infobardetails-actiontype-member)|The action type.|
 ||[infobarType](/javascript/api/outlook/office.infobardetails#outlook-office-infobardetails-infobartype-member)|The notification type.|
+|[InfobarType](/javascript/api/outlook/office.mailboxenums.infobartype)|Error|Notification displays an error message.|
+||Informational|Notification displays an informational message.|
+||Insight|Notification displays an informational message with actions.|
+||Progressindicator|Notification displays a progress indicator.|
+|[ItemNotificationMessageType](/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype)|Insightmessage|The notification message is an informational message with actions.|
 |[MailboxEvent](/javascript/api/outlook/office.mailboxevent)|[completed()](/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))|Indicates that the event-based or spam-reporting add-in has completed processing an event.|
 |[MessageCompose](/javascript/api/outlook/office.messagecompose)|[disableClientSignatureAsync(callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-disableclientsignatureasync-member(1))|Disables the Outlook client signature.|
 ||[disableClientSignatureAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-disableclientsignatureasync-member(1))|Disables the Outlook client signature.|

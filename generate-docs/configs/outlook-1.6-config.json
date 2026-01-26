@@ -7,7 +7,7 @@
                          }
                      ],
     "includeStaticFields":  false,
-    "includeEnums": false,
+    "includeEnums": true,
     "filterUnionAdditions": false,
     "linkConfigs":  [
                         {

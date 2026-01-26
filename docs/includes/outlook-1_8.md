@@ -24,6 +24,10 @@
 ||[getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<SharedProperties\>) => void)](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-getsharedpropertiesasync-member(1))|Gets the properties of an appointment or message in a shared folder or shared mailbox.|
 |[AttachmentContent](/javascript/api/outlook/office.attachmentcontent)|[content](/javascript/api/outlook/office.attachmentcontent#outlook-office-attachmentcontent-content-member)|The content of an attachment as a string.|
 ||[format](/javascript/api/outlook/office.attachmentcontent#outlook-office-attachmentcontent-format-member)|The string format to use for an attachment's content.|
+|[AttachmentContentFormat](/javascript/api/outlook/office.mailboxenums.attachmentcontentformat)|Base64|The content of the attachment is returned as a Base64-encoded string.|
+||Eml|The content of the attachment is returned as a string representing an .eml formatted file.|
+||Icalendar|The content of the attachment is returned as a string representing an .icalendar formatted file.|
+||Url|The content of the attachment is returned as a string representing a URL.|
 |[AttachmentDetailsCompose](/javascript/api/outlook/office.attachmentdetailscompose)|[attachmentType](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-attachmenttype-member)|Gets a value that indicates the attachment's type.|
 ||[contentId](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-contentid-member)|Gets the content identifier of an inline attachment.|
 ||[id](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-id-member)|Gets the index of the attachment.|
@@ -31,6 +35,8 @@
 ||[name](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-name-member)|Gets the name of the attachment.|
 ||[size](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-size-member)|Gets the size of the attachment in bytes.|
 ||[url](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-url-member)|Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.|
+|[AttachmentStatus](/javascript/api/outlook/office.mailboxenums.attachmentstatus)|Added|An attachment was added to the item.|
+||Removed|An attachment was removed from the item.|
 |[AttachmentsChangedEventArgs](/javascript/api/outlook/office.attachmentschangedeventargs)|[attachmentDetails](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-attachmentdetails-member)|Gets the object that represents the attachment that was added or removed from|
 ||[attachmentStatus](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-attachmentstatus-member)|Specifies whether the attachment was added or removed from a mail item.|
 ||[type](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-type-member)|Gets the type of event that was raised.|
@@ -40,8 +46,40 @@
 ||[getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<CategoryDetails[]\>) => void)](/javascript/api/outlook/office.categories#outlook-office-categories-getasync-member(1))|Gets an item's categories.|
 ||[removeAsync(categories: string[], callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.categories#outlook-office-categories-removeasync-member(1))|Removes categories from an item.|
 ||[removeAsync(categories: string[], options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.categories#outlook-office-categories-removeasync-member(1))|Removes categories from an item.|
+|[CategoryColor](/javascript/api/outlook/office.mailboxenums.categorycolor)|None|Default color or no color mapped.|
+||Preset0|Red|
+||Preset1|Orange|
+||Preset10|Steel|
+||Preset11|DarkSteel|
+||Preset12|Gray|
+||Preset13|DarkGray|
+||Preset14|Black|
+||Preset15|DarkRed|
+||Preset16|DarkOrange|
+||Preset17|DarkBrown|
+||Preset18|DarkYellow|
+||Preset19|DarkGreen|
+||Preset2|Brown|
+||Preset20|DarkTeal|
+||Preset21|DarkOlive|
+||Preset22|DarkBlue|
+||Preset23|DarkPurple|
+||Preset24|DarkCranberry|
+||Preset3|Yellow|
+||Preset4|Green|
+||Preset5|Teal|
+||Preset6|Olive|
+||Preset7|Blue|
+||Preset8|Purple|
+||Preset9|Cranberry|
 |[CategoryDetails](/javascript/api/outlook/office.categorydetails)|[color](/javascript/api/outlook/office.categorydetails#outlook-office-categorydetails-color-member)|The color of the category.|
 ||[displayName](/javascript/api/outlook/office.categorydetails#outlook-office-categorydetails-displayname-member)|The name of the category.|
+|[DelegatePermissions](/javascript/api/outlook/office.mailboxenums.delegatepermissions)|Deleteall|Delegate has permission to delete any items.|
+||Deleteown|Delegate has permission to delete only the items they created.|
+||Editall|Delegate has permission to edit any items.|
+||Editown|Delegate has permission to edit only they items they created.|
+||Read|Delegate has permission to read items.|
+||Write|Delegate has permission to create and write items.|
 |[EnhancedLocation](/javascript/api/outlook/office.enhancedlocation)|[addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1))|Adds to the set of locations associated with the appointment.|
 ||[addAsync(locationIdentifiers: LocationIdentifier[], options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-addasync-member(1))|Adds to the set of locations associated with the appointment.|
 ||[getAsync(callback?: (asyncResult: Office.AsyncResult\<LocationDetails[]\>) => void)](/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))|Gets the set of locations associated with the appointment.|
@@ -61,6 +99,8 @@
 ||[locationIdentifier](/javascript/api/outlook/office.locationdetails#outlook-office-locationdetails-locationidentifier-member)|The `LocationIdentifier` of the location.|
 |[LocationIdentifier](/javascript/api/outlook/office.locationidentifier)|[id](/javascript/api/outlook/office.locationidentifier#outlook-office-locationidentifier-id-member)|The location's unique ID.|
 ||[type](/javascript/api/outlook/office.locationidentifier#outlook-office-locationidentifier-type-member)|The location's type.|
+|[LocationType](/javascript/api/outlook/office.mailboxenums.locationtype)|Custom|A custom location.|
+||Room|A conference room or similar resource that has an SMTP address.|
 |[Mailbox](/javascript/api/outlook/office.mailbox)|[masterCategories](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-mastercategories-member)|Gets an object that provides methods to manage the categories master list associated with a mailbox.|
 |[MasterCategories](/javascript/api/outlook/office.mastercategories)|[addAsync(categories: CategoryDetails[], callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-addasync-member(1))|Adds categories to the master list on a mailbox.|
 ||[addAsync(categories: CategoryDetails[], options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.mastercategories#outlook-office-mastercategories-addasync-member(1))|Adds categories to the master list on a mailbox.|

@@ -2,6 +2,10 @@
 |:---|:---|:---|
 |[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[sensitivity](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivity-member)|Gets or sets the sensitivity level of an appointment.|
 |[AppointmentRead](/javascript/api/outlook/office.appointmentread)|[sensitivity](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-sensitivity-member)|Provides the sensitivity value of the appointment.|
+|[AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype)|Confidential|Treat the item as confidential.|
+||Normal|The item needs no special treatment.|
+||Personal|Treat the item as personal.|
+||Private|Treat the item as private.|
 |[MailboxEvent](/javascript/api/outlook/office.mailboxevent)|[completed(options?: SmartAlertsEventCompletedOptions \| SpamReportingEventCompletedOptions)](/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))|Indicates that the event-based or spam-reporting add-in has completed processing an event.|
 |[MessageCompose](/javascript/api/outlook/office.messagecompose)|[closeAsync(callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))|Closes the current new message being composed.|
 ||[closeAsync(options: Office.AsyncContextOptions & { discardItem: boolean }, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))|Closes the current message being composed with the option to discard unsaved changes.|
@@ -12,11 +16,16 @@
 ||[inReplyTo](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-inreplyto-member)|Gets the internet message ID of the original message being replied to by the current message.|
 |[MessageRead](/javascript/api/outlook/office.messageread)|[getAsFileAsync(callback: (asyncResult: Office.AsyncResult\<string\>) => void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getasfileasync-member(1))|Gets the current message in EML format encoded in Base64.|
 ||[getAsFileAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<string\>) => void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getasfileasync-member(1))|Gets the current message in EML format encoded in Base64.|
+|[MoveSpamItemTo](/javascript/api/outlook/office.mailboxenums.movespamitemto)|Customfolder|Specifies that a reported message is moved to a custom folder in the mailbox.|
+||Deleteditemsfolder|Specifies that a reported message is moved to the **Deleted Items** folder of the mailbox.|
+||Junkfolder|Specifies that a reported message is moved to the **Junk Email** folder of the mailbox.|
+||Nomove|Specifies that a reported message remains in its current folder in the mailbox.|
 |[OfficeThemeChangedEventArgs](/javascript/api/outlook/office.officethemechangedeventargs)|[officeTheme](/javascript/api/outlook/office.officethemechangedeventargs#outlook-office-officethemechangedeventargs-officetheme-member)|Gets the updated Office theme.|
 ||[type](/javascript/api/outlook/office.officethemechangedeventargs#outlook-office-officethemechangedeventargs-type-member)|Gets the type of the event.|
 |[SelectedItemDetails](/javascript/api/outlook/office.selecteditemdetails)|[conversationId](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-conversationid-member)|The identifier of the message conversation that contains the message that's currently selected.|
 ||[hasAttachment](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-hasattachment-member)|Returns `true` if the message that's currently selected contains an attachment.|
 ||[internetMessageId](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-internetmessageid-member)|The internet message identifier of the message that's currently selected.|
+|[SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride)|Promptuser|Provides the **Send Anyway** option in a Smart Alerts dialog when the mail item doesn't meet the conditions of the event-based add-in.|
 |[Sensitivity](/javascript/api/outlook/office.sensitivity)|[getAsync(callback: (asyncResult: Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void)](/javascript/api/outlook/office.sensitivity#outlook-office-sensitivity-getasync-member(1))|Gets the sensitivity level of an appointment.|
 ||[getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<MailboxEnums.AppointmentSensitivityType>) => void)](/javascript/api/outlook/office.sensitivity#outlook-office-sensitivity-getasync-member(1))|Gets the sensitivity level of an appointment.|
 ||[setAsync(sensitivity: MailboxEnums.AppointmentSensitivityType \| string, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.sensitivity#outlook-office-sensitivity-setasync-member(1))|Sets the sensitivity level of an appointment.|

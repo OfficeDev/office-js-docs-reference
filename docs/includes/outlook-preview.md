@@ -29,3 +29,6 @@
 ||[contextData](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#outlook-office-messagedecrypteventcompletedoptions-contextdata-member)|When you use the completed method to signal completion of an event handler|
 ||[emailBody](/javascript/api/outlook/office.messagedecrypteventcompletedoptions#outlook-office-messagedecrypteventcompletedoptions-emailbody-member)|When you use the completed method to signal completion of an event handler|
 |[MessageRead](/javascript/api/outlook/office.messageread)|[display](/javascript/api/outlook/office.messageread#outlook-office-messageread-display-member)|Gets an object to temporarily set the content displayed in the body or subject of a message in read mode.|
+|[TokenStatus](/javascript/api/outlook/office.mailboxenums.tokenstatus)|Disabled|EWS callback tokens or REST API tokens are turned off in the organization.|
+||Enabled|EWS callback tokens or REST API tokens are supported in the organization.|
+||Removed|The mailbox is hosted in an Exchange Online environment where EWS tokens are turned off and are no longer supported.|

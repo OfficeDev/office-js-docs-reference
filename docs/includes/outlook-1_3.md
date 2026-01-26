@@ -9,6 +9,9 @@
 ||[getAsync(coercionType: Office.CoercionType \| string, options: Office.AsyncContextOptions & { bodyMode?: MailboxEnums.BodyMode }, callback?: (asyncResult: Office.AsyncResult\<string\>) => void)](/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))|Returns the entire current body in the format specified by `coercionType`.|
 ||[setAsync(data: string, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))|Replaces the entire body with the specified text.|
 ||[setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions & { bodyMode?: MailboxEnums.BodyMode }, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))|Replaces the entire body with the specified text.|
+|[ItemNotificationMessageType](/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype)|Errormessage|The notification message is an error message.|
+||Informationalmessage|The notification message is an informational message.|
+||Progressindicator|The notification message is a progress indicator.|
 |[Mailbox](/javascript/api/outlook/office.mailbox)|[convertToEwsId(id: string, restVersion: MailboxEnums.RestVersion \| string)](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttoewsid-member(1))|Converts a supported ID into the Exchange Web Services (EWS) format.|
 ||[convertToRestId(id: string, restVersion: MailboxEnums.RestVersion \| string)](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttorestid-member(1))|Converts a supported ID into REST format.|
 |[MessageCompose](/javascript/api/outlook/office.messagecompose)|[close()](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-close-member(1))|Closes the current item that is being composed.|
@@ -29,3 +32,6 @@
 ||[removeAsync(key: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-removeasync-member(1))|Removes a notification message for an item.|
 ||[replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-replaceasync-member(1))|Replaces a notification message that has a given key with another message.|
 ||[replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) => void)](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-replaceasync-member(1))|Replaces a notification message that has a given key with another message.|
+|[RestVersion](/javascript/api/outlook/office.mailboxenums.restversion)|Beta|Beta.|
+||[](/javascript/api/outlook/office.mailboxenums.restversion#outlook-office-restversion-v1_0-member)|Version 1.0.|
+||[](/javascript/api/outlook/office.mailboxenums.restversion#outlook-office-restversion-v2_0-member)|Version 2.0.|
