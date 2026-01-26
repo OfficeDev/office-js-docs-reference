@@ -18,7 +18,7 @@
                      ],
     "includeStaticFields":  false,
     "includeEnums": false,
-    "filterUnionAdditions": true,
+    "filterUnionAdditions": false,
     "linkConfigs":  [
                         {
                             "pathPattern":  "javascript/api/outlook",
