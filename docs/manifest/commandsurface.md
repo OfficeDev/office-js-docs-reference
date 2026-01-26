@@ -19,7 +19,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md)
+- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1.5.md)
 
 ## Contained in
 

@@ -23,7 +23,7 @@ To use preview APIs:
 The preview requirement set includes all of the features of [requirement set 1.15](outlook-requirement-set-1.15.md).
 
 > [!IMPORTANT]
-> This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set isn't fully implemented yet, and clients won't accurately report support for it. You shouldn't specify this requirement set in your add-in manifest.
+> This documentation is for a **preview** [requirement set](outlook-api-requirement-sets.md). This requirement set isn't fully implemented yet, and clients won't accurately report support for it. You shouldn't specify this requirement set in your add-in manifest.
 
 ## Features in preview
 
@@ -48,6 +48,6 @@ The following table lists the Outlook JavaScript APIs currently in preview. To v
 ## See also
 
 - [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
-- [Requirement sets and supported clients](../outlook-api-requirement-sets.md)
+- [Requirement sets and supported clients](outlook-api-requirement-sets.md)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
 - [Build your first Outlook add-in](/office/dev/add-ins/quickstarts/outlook-quickstart)

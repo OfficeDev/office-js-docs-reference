@@ -53,6 +53,6 @@ The following table lists manifest updates introduced in Mailbox requirement set
 ## See also
 
 - [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
-- [Requirement sets and supported clients](../outlook-api-requirement-sets.md)
+- [Requirement sets and supported clients](outlook-api-requirement-sets.md)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
 - [Build your first Outlook add-in](/office/dev/add-ins/quickstarts/outlook-quickstart)

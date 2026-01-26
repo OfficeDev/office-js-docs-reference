@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
 > [!NOTE]
-> This documentation is for a [requirement set](../outlook-api-requirement-sets.md) other than the latest requirement set.
+> This documentation is for a [requirement set](outlook-api-requirement-sets.md) other than the latest requirement set.
 
 ## What's new in 1.5
 
@@ -23,7 +23,7 @@ Mailbox requirement set 1.5 includes all of the features of [requirement set 1.4
     > Outlook REST v2.0 and beta endpoints are deprecated. Use the [Microsoft Graph REST API](/office/dev/add-ins/outlook/microsoft-graph) instead.
 - Added support to mark an attachment as inline.
 - Added support to programmatically close a task pane or dialog.
-- Added support for the [Office.context.diagnostics](office.context.md#diagnostics-contextinformation) property and its related objects.
+- Added support for the [Office.context.diagnostics](/javascript/api/office/office.context#office-office-context-diagnostics-member) property and its related objects.
 - Added an event to determine when an Outlook mail item is selected for viewing while the add-in's task pane is pinned.
 
 ## API list
@@ -43,6 +43,6 @@ The following table lists the [events](/javascript/api/office/office.eventtype?v
 ## See also
 
 - [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
-- [Requirement sets and supported clients](../outlook-api-requirement-sets.md)
+- [Requirement sets and supported clients](outlook-api-requirement-sets.md)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
 - [Build your first Outlook add-in](/office/dev/add-ins/quickstarts/outlook-quickstart)

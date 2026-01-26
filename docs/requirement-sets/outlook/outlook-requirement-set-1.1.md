@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in. Outlook JavaScript API 1.1 (Mailbox 1.1) is the first version of the API.
 
 > [!NOTE]
-> This documentation is for a [requirement set](../outlook-api-requirement-sets.md) other than the latest requirement set.
+> This documentation is for a [requirement set](outlook-api-requirement-sets.md) other than the latest requirement set.
 
 ## What's new in 1.1
 
-Mailbox requirement set 1.1 includes all of the [Common API requirement sets](../../common/office-add-in-requirement-sets.md) supported in Outlook. It added the following features.
+Mailbox requirement set 1.1 includes all of the [Common API requirement sets](../common/office-add-in-requirement-sets.md) supported in Outlook. It added the following features.
 
 - Added methods to get or set the body of messages and appointments. For more information, see [Get or set the body of a message or appointment in Outlook](/office/dev/add-ins/outlook/insert-data-in-the-body).
 - Added methods to add, get, and remove attachments from messages and appointments being composed. For more information, see [Manage an item's attachments in a compose form in Outlook](/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form).
@@ -42,6 +42,6 @@ The following table lists the APIs introduced in Mailbox requirement set 1.1. To
 ## See also
 
 - [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
-- [Requirement sets and supported clients](../outlook-api-requirement-sets.md)
+- [Requirement sets and supported clients](outlook-api-requirement-sets.md)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
 - [Build your first Outlook add-in](/office/dev/add-ins/quickstarts/outlook-quickstart)
