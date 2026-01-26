@@ -1,4 +1,4 @@
-CustomFunctions.Associate(id, functionObject):function:
+CustomFunctions.associate:function(1):
   - |- 
     /**
     * Adds two numbers together.
@@ -14,7 +14,7 @@ CustomFunctions.Associate(id, functionObject):function:
 
     // Associate the "add" function with its ID from the JSON metadata. In this sample, the JSON metadata ID is "ADD".
     CustomFunctions.associate("ADD", add);
-CustomFunctions.Associate(mappings):function:
+CustomFunctions.associate:function(2):
   - |- 
     /**
     * Calculates the area of a rectangle.
