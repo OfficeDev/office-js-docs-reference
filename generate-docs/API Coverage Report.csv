@@ -19,8 +19,8 @@ custom-functions-runtime,CustomFunctions.Invocation,"parameterAddresses",Propert
 custom-functions-runtime,CustomFunctions.StreamingInvocation,N/A,Interface,Great,false
 custom-functions-runtime,CustomFunctions.StreamingInvocation,"setResult",Property,Great,true
 custom-functions-runtime,N/A,N/A,Package,Missing,false
-custom-functions-runtime,N/A,"CustomFunctions.associate(id, functionObject)",Method,Good,false
-custom-functions-runtime,N/A,"CustomFunctions.associate(mappings)",Method,Good,false
+custom-functions-runtime,N/A,"CustomFunctions.associate(id, functionObject)",Method,Good,true
+custom-functions-runtime,N/A,"CustomFunctions.associate(mappings)",Method,Good,true
 excel,Excel.AggregationFunction,N/A,Enum,Good,true
 excel,Excel.AggregationFunction,"automatic",EnumField,Great,false
 excel,Excel.AggregationFunction,"average",EnumField,Great,false
@@ -669,7 +669,7 @@ excel,Excel.CellPropertiesLoadOptions,"textRuns",Property,Great,false
 excel,Excel.CellPropertiesProtection,N/A,Interface,Great,false
 excel,Excel.CellPropertiesProtection,"formulaHidden",Property,Great,false
 excel,Excel.CellPropertiesProtection,"locked",Property,Great,false
-excel,Excel.CellValue,N/A,TypeAlias,Good,false
+excel,Excel.CellValue,N/A,TypeAlias,Good,true
 excel,Excel.CellValueAndPropertyMetadata,N/A,TypeAlias,Excellent,false
 excel,Excel.CellValueAttributionAttributes,N/A,Interface,Great,false
 excel,Excel.CellValueAttributionAttributes,"licenseAddress",Property,Excellent,false
@@ -10507,7 +10507,7 @@ powerpoint,PowerPoint.Hyperlink,"load(options)",Method,Great,false
 powerpoint,PowerPoint.Hyperlink,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.Hyperlink,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.Hyperlink,"toJSON()",Method,Excellent,false
-powerpoint,PowerPoint.HyperlinkAddOptions,N/A,Interface,Great,false
+powerpoint,PowerPoint.HyperlinkAddOptions,N/A,Interface,Great,true
 powerpoint,PowerPoint.HyperlinkAddOptions,"address",Property,Excellent,false
 powerpoint,PowerPoint.HyperlinkAddOptions,"screenTip",Property,Great,false
 powerpoint,PowerPoint.HyperlinkCollection,N/A,Class,Fine,true
@@ -10843,7 +10843,7 @@ powerpoint,PowerPoint.Slide,N/A,Class,Fine,true
 powerpoint,PowerPoint.Slide,"background",Property,Good,false
 powerpoint,PowerPoint.Slide,"context",Property,Excellent,false
 powerpoint,PowerPoint.Slide,"customXmlParts",Property,Great,false
-powerpoint,PowerPoint.Slide,"hyperlinks",Property,Great,false
+powerpoint,PowerPoint.Slide,"hyperlinks",Property,Great,true
 powerpoint,PowerPoint.Slide,"id",Property,Good,false
 powerpoint,PowerPoint.Slide,"index",Property,Excellent,false
 powerpoint,PowerPoint.Slide,"layout",Property,Good,false

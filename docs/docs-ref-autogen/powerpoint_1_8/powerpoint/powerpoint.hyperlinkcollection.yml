@@ -27,9 +27,11 @@ remarks: >-
     const hyperlinksCount = hyperlinks.getCount();
     await context.sync();
 
-    console.log(`${hyperlinksCount.value} hyperlinks found in first selected slide:`);
+    console.log(
+      `${hyperlinksCount.value} hyperlinks found in first selected slide${hyperlinksCount.value === 0 ? "." : ":"}`,
+    );
     for (let link of hyperlinks.items) {
-      console.log(`Address: "${link.address}" (Screen tip: "${link.screenTip}")`);
+      console.log(`Address: "${link.address}" (screen tip: "${link.screenTip}").`);
     }
   });
 
