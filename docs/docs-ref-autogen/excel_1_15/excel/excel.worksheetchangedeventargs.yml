@@ -80,7 +80,7 @@ properties:
                   console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
               }
           });
-      }  
+      }
 
 
       ...
@@ -229,7 +229,7 @@ properties:
                   console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
               }
           });
-      }  
+      }
 
       ```
 

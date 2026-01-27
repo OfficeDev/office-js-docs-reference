@@ -9,6 +9,8 @@ remarks: >-
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
+
+
   Learn more about the types in this type alias through the following links. 
 
 
@@ -26,6 +28,49 @@ remarks: >-
   [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue),
   [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue),
   [Excel.CellValueExtraProperties](/javascript/api/excel/excel.cellvalueextraproperties)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
+
+
+  // This function inserts a web image into the currently selected cell.
+
+  await Excel.run(async (context) => {
+    // Retrieve image data from the task pane and then clear the input fields.
+    const imageUrl = (document.getElementById("url") as HTMLInputElement).value;
+    const imageAltText = (document.getElementById("alt-text") as HTMLInputElement).value;
+    clearForm();
+
+    // Load the active cell.
+    const activeCell = context.workbook.getActiveCell();
+    activeCell.load();
+    await context.sync();
+
+    if (!imageUrl) {
+      console.log("Please enter an image URL.");
+      return;
+    }
+
+    // Create a web image object and assign the image details.
+    const webImage: Excel.WebImageCellValue = {
+      type: "WebImage", /* The string equivalent of `Excel.CellValueType.webImage`. */
+      address: imageUrl,
+      altText: imageAltText     
+    };
+
+    // Insert web image into the active cell.
+    activeCell.valuesAsJson = [[webImage]];
+
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
