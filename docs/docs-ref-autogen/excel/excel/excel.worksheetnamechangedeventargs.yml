@@ -8,6 +8,26 @@ remarks: >-
   \[ [API set: ExcelApi
   1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+
+  async function onNameChanged(event: Excel.WorksheetNameChangedEventArgs) {
+      await Excel.run(async (context) => {
+          console.log(`Handler for worksheet onNameChanged event has been triggered.`);
+          console.log(`    Name before change: ` + event.nameBefore);
+          console.log(`    Name after change: ` + event.nameAfter);
+      });
+  }  
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

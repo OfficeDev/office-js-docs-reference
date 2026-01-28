@@ -35,7 +35,9 @@ remarks: >-
     try {
       await context.sync();
     } catch {
-      console.warn("Confirm that you have at least one slide and you've selected a contiguous range of text on the active slide.");
+      console.warn(
+        "Confirm that you have at least one slide and you've selected a contiguous range of text on the active slide.",
+      );
       return;
     }
 
