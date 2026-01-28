@@ -122,6 +122,42 @@ methods:
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+      // Deletes the first hyperlink found in the selected text on the current
+      slide.
+
+      await PowerPoint.run(async (context) => {
+        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange().load("text");
+        let hyperlink: PowerPoint.Hyperlink = textRange.hyperlinks.getItemAt(0).load("address,screenTip");
+        try {
+          await context.sync();
+        } catch {
+          console.warn(
+            "Confirm that you have at least one slide and you've selected a contiguous range of text containing at least one hyperlink on the active slide.",
+          );
+          return;
+        }
+
+        console.log(
+          `About to delete first link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") found in the selected text "${textRange.text}".`,
+        );
+
+        hyperlink.delete();
+
+        console.log(`Deleted first link found in the selected text "${textRange.text}".`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

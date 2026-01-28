@@ -7014,13 +7014,13 @@ excel,Excel.WorksheetFreezePanes,"getLocation()",Method,Good,false
 excel,Excel.WorksheetFreezePanes,"getLocationOrNullObject()",Method,Excellent,true
 excel,Excel.WorksheetFreezePanes,"toJSON()",Method,Excellent,false
 excel,Excel.WorksheetFreezePanes,"unfreeze()",Method,Fine,true
-excel,Excel.WorksheetMovedEventArgs,N/A,Interface,Excellent,false
+excel,Excel.WorksheetMovedEventArgs,N/A,Interface,Excellent,true
 excel,Excel.WorksheetMovedEventArgs,"positionAfter",Property,Great,false
 excel,Excel.WorksheetMovedEventArgs,"positionBefore",Property,Great,false
 excel,Excel.WorksheetMovedEventArgs,"source",Property,Great,false
 excel,Excel.WorksheetMovedEventArgs,"type",Property,Good,false
 excel,Excel.WorksheetMovedEventArgs,"worksheetId",Property,Great,false
-excel,Excel.WorksheetNameChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetNameChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetNameChangedEventArgs,"nameAfter",Property,Great,false
 excel,Excel.WorksheetNameChangedEventArgs,"nameBefore",Property,Great,false
 excel,Excel.WorksheetNameChangedEventArgs,"source",Property,Great,false
@@ -10500,7 +10500,7 @@ powerpoint,PowerPoint.Hyperlink,"address",Property,Excellent,false
 powerpoint,PowerPoint.Hyperlink,"context",Property,Excellent,false
 powerpoint,PowerPoint.Hyperlink,"screenTip",Property,Great,false
 powerpoint,PowerPoint.Hyperlink,"type",Property,Excellent,false
-powerpoint,PowerPoint.Hyperlink,"delete()",Method,Poor,false
+powerpoint,PowerPoint.Hyperlink,"delete()",Method,Poor,true
 powerpoint,PowerPoint.Hyperlink,"getLinkedShapeOrNullObject()",Method,Excellent,false
 powerpoint,PowerPoint.Hyperlink,"getLinkedTextRangeOrNullObject()",Method,Excellent,false
 powerpoint,PowerPoint.Hyperlink,"load(options)",Method,Great,false
@@ -10667,7 +10667,7 @@ powerpoint,PowerPoint.Shape,"getTextFrameOrNullObject()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"load(options)",Method,Great,false
 powerpoint,PowerPoint.Shape,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.Shape,"load(propertyNamesAndPaths)",Method,Great,false
-powerpoint,PowerPoint.Shape,"setHyperlink(options)",Method,Good,false
+powerpoint,PowerPoint.Shape,"setHyperlink(options)",Method,Good,true
 powerpoint,PowerPoint.Shape,"setZOrder(position)",Method,Good,true
 powerpoint,PowerPoint.Shape,"setZOrder(position)",Method,Good,false
 powerpoint,PowerPoint.Shape,"toJSON()",Method,Excellent,false
