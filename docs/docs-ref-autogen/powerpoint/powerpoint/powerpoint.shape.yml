@@ -1230,6 +1230,39 @@ methods:
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+      // Updates the hyperlink on the first selected shape on the current slide.
+
+      await PowerPoint.run(async (context) => {
+        const shape: PowerPoint.Shape = context.presentation.getSelectedShapes().getItemAt(0).load("type");
+        const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+          address: "https://www.microsoft.com",
+          screenTip: "Updated screen tip of link on shape",
+        };
+        const hyperlink: PowerPoint.Hyperlink = shape.setHyperlink(hyperlinkAddOptions).load("address,screenTip");
+        try {
+          await context.sync();
+        } catch {
+          console.warn("Confirm that you have at least one slide and you've selected a shape on the active slide.");
+          return;
+        }
+
+        console.log(
+          `Updated link on the selected ${shape.type} shape to "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}").`,
+        );
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

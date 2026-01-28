@@ -1,3 +1,49 @@
+CustomFunctions.associate:function(1):
+  - |- 
+    /**
+    * Adds two numbers together.
+    * @customfunction
+    * @param {number} first First number.
+    * @param {number} second Second number.
+    * @returns {number} The sum of the two numbers.
+    */
+    // Define your custom function.
+    function add(first, second) {
+      return first + second;
+    }
+
+    // Associate the "add" function with its ID from the JSON metadata. In this sample, the JSON metadata ID is "ADD".
+    CustomFunctions.associate("ADD", add);
+CustomFunctions.associate:function(2):
+  - |- 
+    /**
+    * Calculates the area of a rectangle.
+    * @customfunction
+    * @param {number} width The width of the rectangle.
+    * @param {number} height The height of the rectangle.
+    * @returns {number} The area of the rectangle.
+    */
+    function calculateArea(width, height) {
+      return width * height;
+    }
+
+    /**
+    * Calculates the perimeter of a rectangle.
+    * @customfunction
+    * @param {number} width The width of the rectangle.
+    * @param {number} height The height of the rectangle.
+    * @returns {number} The perimeter of the rectangle.
+    */
+    function calculatePerimeter(width, height) {
+      return 2 * (width + height);
+    }
+
+    // Associate multiple functions at once using an object that maps JSON metadata IDs to function names.
+    // In this sample, the "calculateArea" and "calculatePerimeter" functions have the JSON metadata IDs "CALCULATEAREA" and "CALCULATEPERIMETER".
+    CustomFunctions.associate({
+      "CALCULATEAREA": calculateArea,
+      "CALCULATEPERIMETER": calculatePerimeter
+    });
 CustomFunctions.Error:class:
   - |- 
     /**
@@ -9264,10 +9310,6 @@ Office.MessageDecryptEventCompletedOptions:interface:
         const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
         const pdfFileName = "Fabrikam_Report_202509";
 
-        // Decrypted content and properties of a mail item.
-        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
-        const emailFileName = "Fabrikam_Report_202508.eml";
-
         // Decrypted properties of a cloud attachment.
         const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
         const cloudFileName = "weekly_forecast.xlsx";
@@ -9283,12 +9325,6 @@ Office.MessageDecryptEventCompletedOptions:interface:
                 content: decryptedPdfFile,
                 isInline: false,
                 name: pdfFileName
-            },
-            {
-                attachmentType: Office.MailboxEnums.AttachmentType.Item,
-                content: decryptedEmailFile,
-                isInline: false,
-                name: emailFileName
             },
             {
                 attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
