@@ -17,6 +17,28 @@ remarks: >-
   \[ [API set: ExcelApi
   1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+
+  async function onWorksheetMoved(event) {
+      await Excel.run(async (context) => {
+          console.log("Handler for worksheet onMoved event has been triggered.");
+          console.log(`    Worksheet ID: ${event.worksheetId}`);
+          console.log(`    Position before move: ${event.positionBefore}`);
+          console.log(`    Position after move: ${event.positionAfter}`);
+          console.log(`    Event source: ${event.source}`);
+      });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

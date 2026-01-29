@@ -5486,6 +5486,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
+         * **Important**: Attachments of type `MailboxEnums.AttachmentType.Item` aren't currently supported.
+         *
          * @beta
          */
         attachmentType: MailboxEnums.AttachmentType;
@@ -12098,6 +12100,10 @@ export declare namespace Office {
          *
          * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
          *
+         * - The `sendAsync` method is available for preview in Outlook on Mac starting in Version 16.105 (Build 25121117).
+         * To test this feature, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
+         *
          * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
          *                  callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
@@ -12132,6 +12138,10 @@ export declare namespace Office {
          * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
          *
          * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
+         * - The `sendAsync` method is available for preview in Outlook on Mac starting in Version 16.105 (Build 25121117).
+         * To test this feature, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
          *                   parameter is an `Office.AsyncResult` object.
@@ -15664,16 +15674,15 @@ export declare namespace Office {
          *
          * The customizable button in the Smart Alerts dialog varies depending on the Outlook client and its version.
          *
-         * - In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel` property customizes the text of the **Take Action** button.
+         * - In Outlook on the web, on Mac (in preview starting in Version 16.105 (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel` property customizes the text of the **Take Action** button.
          * The **Take Action** button only appears on the Smart Alerts dialog if the `commandId` option is configured in the `event.completed` call. The option must be configured
          * if you want to customize the text of the dialog button. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
          * If you previously customized the text of the **Don't Send** button without assigning it a task pane or function command, your custom text won't take effect in the latest Outlook client versions.
          * If you previously assigned a task pane or function command to the **Don't Send** button, no additional action is needed to implement the **Take Action** button in the latest versions.
          * The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog. Although no implementation changes are needed, we recommend notifying users of this updated experience.
          *
-         * - In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
-         * and Outlook on Mac, the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
+         * - In classic Outlook on Windows (prior to Version 2412 (Build 18324.20000) and Outlook on Mac (prior to Version 16.105 (Build 25121117)),
+         * the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
          */
         cancelLabel?: string;
         /**
@@ -15701,13 +15710,13 @@ export declare namespace Office {
          * - **Unified manifest for Microsoft 365**: The "id" property of the task pane or function command in the "controls" array.
          *
          * The button in the Smart Alerts dialog that opens a task pane or runs a function varies depending on the Outlook client and version.
-         * In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the **Take Action** button opens a
+         * In Outlook on the web, on Mac (in preview starting in Version 16.105 (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the **Take Action** button opens a
          * task pane or runs a function. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
          * In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
          * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
          * and Outlook on Mac, the **Don't Send** button opens a task pane or runs a function.
          *
-         * If you customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows,
+         * If you've already customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows or prior to Version 16.105 (Build 25121117) of Outlook on Mac,
          * no additional action is needed to implement the **Take Action** button in the latest supported versions. The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog.
          * Although no implementation changes are needed, we recommend notifying users of this updated experience.
          *
@@ -15718,6 +15727,10 @@ export declare namespace Office {
          *
          * When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client.
          * Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
+         *
+         * Programming a button in the Smart Alerts dialog to run a function is available for preview in Outlook on Mac starting in Version 16.105 (Build 25121117).
+         * To test this feature, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          */
         commandId?: string;
         /**
@@ -15906,6 +15919,10 @@ export declare namespace Office {
          * `Office.MailboxEnums.MoveSpamItemTo.NoMove`.
          *
          * - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
+         *
+         * - The `commandId` option is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this option, join the
+         * {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          */
         commandId?: string;
         /**
@@ -15943,6 +15960,10 @@ export declare namespace Office {
          * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
          * of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using
          * `JSON.parse()` once you retrieve it.
+         *
+         * - The `contextData` option is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this option, join the
+         * {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          */
         contextData?: any;
         /**

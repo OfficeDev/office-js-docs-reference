@@ -1,3 +1,49 @@
+CustomFunctions.associate:function(1):
+  - |- 
+    /**
+    * Adds two numbers together.
+    * @customfunction
+    * @param {number} first First number.
+    * @param {number} second Second number.
+    * @returns {number} The sum of the two numbers.
+    */
+    // Define your custom function.
+    function add(first, second) {
+      return first + second;
+    }
+
+    // Associate the "add" function with its ID from the JSON metadata. In this sample, the JSON metadata ID is "ADD".
+    CustomFunctions.associate("ADD", add);
+CustomFunctions.associate:function(2):
+  - |- 
+    /**
+    * Calculates the area of a rectangle.
+    * @customfunction
+    * @param {number} width The width of the rectangle.
+    * @param {number} height The height of the rectangle.
+    * @returns {number} The area of the rectangle.
+    */
+    function calculateArea(width, height) {
+      return width * height;
+    }
+
+    /**
+    * Calculates the perimeter of a rectangle.
+    * @customfunction
+    * @param {number} width The width of the rectangle.
+    * @param {number} height The height of the rectangle.
+    * @returns {number} The perimeter of the rectangle.
+    */
+    function calculatePerimeter(width, height) {
+      return 2 * (width + height);
+    }
+
+    // Associate multiple functions at once using an object that maps JSON metadata IDs to function names.
+    // In this sample, the "calculateArea" and "calculatePerimeter" functions have the JSON metadata IDs "CALCULATEAREA" and "CALCULATEPERIMETER".
+    CustomFunctions.associate({
+      "CALCULATEAREA": calculateArea,
+      "CALCULATEPERIMETER": calculatePerimeter
+    });
 CustomFunctions.Error:class:
   - |- 
     /**
@@ -6554,6 +6600,50 @@ OfficeRuntime.Auth#getAccessToken:member(1):
           }
       }
     }
+OfficeRuntime.displayWebDialog:function(1):
+  - |-
+    /**
+     * Opens an authentication dialog from a custom function.
+     * @customfunction AUTH.LOGIN
+     * @returns A promise that resolves to the authentication result.
+     */
+    async function authLogin(): Promise<string> {
+      const dialogUrl = "https://your-addin-domain.com/auth-dialog.html";
+
+      return new Promise((resolve, reject) => {
+        OfficeRuntime.displayWebDialog(dialogUrl, {
+          height: "50%",
+          width: "40%",
+
+          onMessage: (message: string, dialog?: OfficeRuntime.Dialog) => {
+            // Handle messages sent from the dialog via window.opener.postMessage().
+            const data = JSON.parse(message);
+
+            if (data.type === "auth-success") {
+              // Process the authentication token
+              dialog?.close();
+              resolve(`Signed in as ${data.username}`);
+            } else if (data.type === "auth-error") {
+              dialog?.close();
+              reject(new Error(data.errorMessage));
+            }
+          },
+
+          onClose: () => {
+            // Handle the user closing the dialog.
+            resolve("Dialog closed");
+          },
+
+          onRuntimeError: (error: Error, dialog?: OfficeRuntime.Dialog) => {
+            // Handle runtime errors from the dialog.
+            dialog?.close();
+            reject(error);
+          },
+        }).catch((error) => {
+          reject(new Error(`Failed to open dialog: ${error.message}`));
+        });
+      });
+    }
 OneNote.run:function(1):
   - |-
     // *.run methods automatically create an OfficeExtension.ClientRequestContext
@@ -8632,13 +8722,15 @@ Office.InfobarClickedEventArgs:interface:
 Office.InitializationContextChangedEventArgs:interface:
   - |-
     // This sample adds an event handler for the InitializationContextChanged event.
-    Office.context.mailbox.addHandlerAsync(Office.EventType.InitializationContextChanged, initializationContextChangedHandler, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-            console.error(`Failed to add event handler: ${asyncResult.error.message}`);
-            return;
-        }
+    Office.onReady(() => {
+        Office.context.mailbox.item.addHandlerAsync(Office.EventType.InitializationContextChanged, initializationContextChangedHandler, (result) => {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.error(`Failed to add event handler: ${result.error.message}`);
+                return;
+            }
 
-        console.log("Event handler added successfully.");
+            console.log("Event handler added successfully.");
+        });
     });
 
     // Handles the InitializationContextChanged event.
@@ -9218,10 +9310,6 @@ Office.MessageDecryptEventCompletedOptions:interface:
         const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
         const pdfFileName = "Fabrikam_Report_202509";
 
-        // Decrypted content and properties of a mail item.
-        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
-        const emailFileName = "Fabrikam_Report_202508.eml";
-
         // Decrypted properties of a cloud attachment.
         const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
         const cloudFileName = "weekly_forecast.xlsx";
@@ -9237,12 +9325,6 @@ Office.MessageDecryptEventCompletedOptions:interface:
                 content: decryptedPdfFile,
                 isInline: false,
                 name: pdfFileName
-            },
-            {
-                attachmentType: Office.MailboxEnums.AttachmentType.Item,
-                content: decryptedEmailFile,
-                isInline: false,
-                name: emailFileName
             },
             {
                 attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
