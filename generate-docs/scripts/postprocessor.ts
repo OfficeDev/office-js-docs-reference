@@ -178,7 +178,6 @@ interface ApiYaml {
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const tocTemplateLocation = path.resolve("../../docs");
-const includesLocation = path.resolve("../../docs/includes");
 
 // Utility functions
 function processFilesInDirectory(
@@ -214,78 +213,6 @@ function capitalizeHostName(name: string): string {
 
 function createTocNode(name: string, uid?: string, items?: any[]): any {
     return { name, uid: uid || "", items: items || [] };
-}
-
-/**
- * Processes the "what's new" markdown files in the includes folder to fix enum member links.
- * The whats-new tool generates empty link text for enum members like `[](url)`.
- * This function extracts the field name from the URL and replaces the empty link with plain text.
- * It also escapes angle brackets in generic type parameters to prevent invalid HTML tag warnings.
- */
-function processWhatsNewMarkdownFiles(): void {
-    console.log(`Processing what's new markdown files in: ${includesLocation}`);
-    
-    if (!fsx.existsSync(includesLocation)) {
-        console.log(`Includes directory not found, skipping markdown processing`);
-        return;
-    }
-
-    fsx.readdirSync(includesLocation)
-        .filter(filename => filename.endsWith('.md'))
-        .forEach(filename => {
-            const filePath = path.join(includesLocation, filename);
-            let content = fsx.readFileSync(filePath, "utf8");
-            
-            // Fix empty enum member links: [](url#...-fieldname-member) -> fieldName
-            // The pattern matches links with empty text that have a URL containing an enum member anchor
-            // Example: [](/javascript/api/outlook/office.attachmenttype#outlook-office-attachmenttype-base64-member)
-            // Will become: Base64
-            content = content.replace(/\[\]\(([^)]+#[^)]*-([a-z0-9]+)-member)\)/gi, (match, url, fieldName) => {
-                // Capitalize the first letter of the field name
-                return fieldName.charAt(0).toUpperCase() + fieldName.slice(1);
-            });
-
-            // Fix incorrect Outlook MailboxEnums links.
-            // The whats-new tool incorrectly generates links like /javascript/api/outlook/office.attachmenttype
-            // instead of /javascript/api/outlook/office.mailboxenums.attachmenttype for enums under MailboxEnums namespace.
-            // Dynamically discover MailboxEnums by reading YAML files from the outlook folder.
-            // Exclude names that also exist as interfaces/classes to avoid incorrect replacements.
-            const outlookYamlDir = path.join(docsSource, "outlook", "outlook");
-            if (fsx.existsSync(outlookYamlDir)) {
-                const allYamlFiles = fsx.readdirSync(outlookYamlDir);
-                
-                // Get all MailboxEnums enum names
-                const mailboxEnumNames = allYamlFiles
-                    .filter(f => f.startsWith("office.mailboxenums.") && f.endsWith(".yml"))
-                    .map(f => f.replace("office.mailboxenums.", "").replace(".yml", ""));
-                
-                // Get all interface/class names (non-enum types)
-                const interfaceNames = allYamlFiles
-                    .filter(f => f.startsWith("office.") && !f.includes("mailboxenums") && f.endsWith(".yml"))
-                    .map(f => f.replace("office.", "").replace(".yml", ""));
-                
-                // Exclude enum names that also exist as interfaces to avoid incorrect replacements
-                // (e.g., RecurrenceTimeZone exists as both Office.RecurrenceTimeZone interface and Office.MailboxEnums.RecurrenceTimeZone enum)
-                const safeEnumNames = mailboxEnumNames.filter(name => !interfaceNames.includes(name));
-                
-                if (safeEnumNames.length > 0) {
-                    const mailboxEnumPattern = new RegExp(
-                        `(/javascript/api/outlook/office\\.)(${safeEnumNames.join('|')})(\\)|#)`,
-                        'gi'
-                    );
-                    content = content.replace(mailboxEnumPattern, '$1mailboxenums.$2$3');
-                }
-            }
-            
-            // Escape angle brackets in generic type parameters to prevent invalid HTML tag warnings.
-            // This matches patterns like <void>, <string>, <TypeName>, <Type1 | Type2>, etc.
-            // that appear in method signatures and are interpreted as HTML tags by the build system.
-            content = content.replace(/<([A-Za-z][A-Za-z0-9]*(?:\[\])?(?:\s*\|\s*[A-Za-z][A-Za-z0-9]*(?:\[\])?)*)>/g, '\\<$1\\>');
-            
-            fsx.writeFileSync(filePath, content);
-        });
-    
-    console.log(`Completed processing what's new markdown files`);
 }
 
 // Main processing functions
@@ -486,9 +413,6 @@ tryCatch(async () => {
     // Step 10: Move common TOCs and cleanup
     moveCommonTocs();
     cleanupTemporaryFiles();
-
-    // Step 11: Process what's new markdown files (fix enum member links)
-    processWhatsNewMarkdownFiles();
 
     console.log(`\nPostprocessor script complete\n`);
     process.exit(0);
