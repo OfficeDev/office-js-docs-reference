@@ -32,10 +32,10 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 **Associated with these requirement sets**:
 
 - [CustomFunctionsRuntime 1.1](../requirement-sets/excel/custom-functions-requirement-sets.md)
-- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1.5.md)
-- [Mailbox 1.6](../requirement-sets/outlook/outlook-requirement-set-1.6.md)
-- [Mailbox 1.10](../requirement-sets/outlook/outlook-requirement-set-1.10.md)
-- [Mailbox 1.14](../requirement-sets/outlook/outlook-requirement-set-1.14.md)
+- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1-5.md)
+- [Mailbox 1.6](../requirement-sets/outlook/outlook-requirement-set-1-6.md)
+- [Mailbox 1.10](../requirement-sets/outlook/outlook-requirement-set-1-10.md)
+- [Mailbox 1.14](../requirement-sets/outlook/outlook-requirement-set-1-14.md)
 
 ## Contained in
 

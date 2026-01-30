@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.7
 
-Mailbox requirement set 1.7 includes all of the features of [requirement set 1.6](outlook-requirement-set-1.6.md). It added the following features.
+Mailbox requirement set 1.7 includes all of the features of [requirement set 1.6](outlook-requirement-set-1-6.md). It added the following features.
 
 - Added a property to get or set the [recurrence pattern](/office/dev/add-ins/outlook/get-and-set-recurrence) of an appointment and get the recurrence pattern of messages that are meeting requests.
 - Added a property to get the ID of the series that an appointment instance belongs to.

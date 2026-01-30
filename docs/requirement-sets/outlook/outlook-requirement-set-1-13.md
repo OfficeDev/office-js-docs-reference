@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.13
 
-Mailbox requirement set 1.13 includes all of the features of [requirement set 1.12](outlook-requirement-set-1.12.md). It added the following features.
+Mailbox requirement set 1.13 includes all of the features of [requirement set 1.12](outlook-requirement-set-1-12.md). It added the following features.
 
 - Added support to activate an add-in without the Reading Pane enabled or a message selected.
 - Added support to manage the delivery data and time of a message.

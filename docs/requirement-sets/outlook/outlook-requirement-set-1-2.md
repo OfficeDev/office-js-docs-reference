@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.2
 
-Mailbox requirement set 1.2 includes all of the features of [requirement set 1.1](outlook-requirement-set-1.1.md). It added the following features.
+Mailbox requirement set 1.2 includes all of the features of [requirement set 1.1](outlook-requirement-set-1-1.md). It added the following features.
 
 - Added methods to get selected data from the subject or body of an appointment or message being composed.
 - Added methods to insert data at the user's cursor position in the subject or body of an appointment or message being composed.

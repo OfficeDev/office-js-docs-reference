@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.3
 
-Mailbox requirement set 1.3 includes all of the features of [requirement set 1.2](outlook-requirement-set-1.2.md). It added the following features.
+Mailbox requirement set 1.3 includes all of the features of [requirement set 1.2](outlook-requirement-set-1-2.md). It added the following features.
 
 - Added support for [function commands](/javascript/api/office/office.addincommands.event?view=outlook-js-1.3&preserve-view=true). For more information, see [Add-in commands](/office/dev/add-ins/design/add-in-commands).
 - Added a method to save an item being composed as a draft.

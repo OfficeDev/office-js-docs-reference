@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.14
 
-Mailbox requirement set 1.14 includes all of the features of [requirement set 1.13](outlook-requirement-set-1.13.md). It added the following features.
+Mailbox requirement set 1.14 includes all of the features of [requirement set 1.13](outlook-requirement-set-1-13.md). It added the following features.
 
 - Added the [integrated spam-reporting](/office/dev/add-ins/outlook/spam-reporting) feature.
 - Added a method to get the Base64 encoding of a message.

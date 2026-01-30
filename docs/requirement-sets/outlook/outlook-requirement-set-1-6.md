@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.6
 
-Mailbox requirement set 1.6 includes all of the features of [requirement set 1.5](outlook-requirement-set-1.5.md). It added the following features.
+Mailbox requirement set 1.6 includes all of the features of [requirement set 1.5](outlook-requirement-set-1-5.md). It added the following features.
 
 - Added methods to get the entities or regular expression matches from the user's selection that activated a contextual add-in.
 

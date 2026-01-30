@@ -22,7 +22,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.9](../requirement-sets/outlook/outlook-requirement-set-1.9.md)
+- [Mailbox 1.9](../requirement-sets/outlook/outlook-requirement-set-1-9.md)
 
 ## Available extended permissions
 

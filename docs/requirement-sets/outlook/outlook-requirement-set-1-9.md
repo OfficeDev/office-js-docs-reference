@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.9
 
-Mailbox requirement set 1.9 includes all of the features of [requirement set 1.8](outlook-requirement-set-1.8.md). It added the following features.
+Mailbox requirement set 1.9 includes all of the features of [requirement set 1.8](outlook-requirement-set-1-8.md). It added the following features.
 
 - Added support to [append content to a mail item on send](/office/dev/add-ins/outlook/append-on-send).
 - Added a method to get all [custom properties](/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in?tabs=custom-properties) of a mail item in a mailbox.

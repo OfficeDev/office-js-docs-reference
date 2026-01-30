@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.4
 
-Mailbox requirement set 1.4 includes all of the features of [requirement set 1.3](outlook-requirement-set-1.3.md). It added the following features.
+Mailbox requirement set 1.4 includes all of the features of [requirement set 1.3](outlook-requirement-set-1-3.md). It added the following features.
 
 - Added [Office.context.ui.displayDialogAsync](/javascript/api/office/office.ui?view=outlook-js-1.4&preserve-view=true#office-office-ui-displaydialogasync-member(1)) to display a dialog box in an Office application. For more information, see [Use the Office dialog API in Office Add-ins](/office/dev/add-ins/develop/dialog-api-in-office-add-ins).
 - Added [Office.context.ui.messageParent](/javascript/api/office/office.ui?view=outlook-js-1.4&preserve-view=true#office-office-ui-messageparent-member(1)) to deliver a message from the dialog box to its parent/opener page.

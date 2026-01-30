@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.8
 
-Mailbox requirement set 1.8 includes all of the features of [requirement set 1.7](outlook-requirement-set-1.7.md). It added the following features.
+Mailbox requirement set 1.8 includes all of the features of [requirement set 1.7](outlook-requirement-set-1-7.md). It added the following features.
 
 - Added methods to get the content of an attachment or get all attachments of an item in compose mode. For more information, see [Manage an item's attachments in a compose form in Outlook](/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form).
 - Added a method to add a file as an attachment using a Base64-encoded string.

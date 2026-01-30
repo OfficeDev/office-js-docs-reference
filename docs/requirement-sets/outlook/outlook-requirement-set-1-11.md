@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.11
 
-Mailbox requirement set 1.11 includes all of the features of [requirement set 1.10](outlook-requirement-set-1.10.md). It added the following features.
+Mailbox requirement set 1.11 includes all of the features of [requirement set 1.10](outlook-requirement-set-1-10.md). It added the following features.
 
 - Added the following new events for [event-based activation](/office/dev/add-ins/develop/event-based-activation#supported-events).
   - `OnAppointmentAttachmentsChanged`

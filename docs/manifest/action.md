@@ -20,8 +20,8 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 **Associated with these requirement sets**:
 
 - [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **\<VersionOverrides\>** is type Taskpane 1.0.
-- [Mailbox 1.3](../requirement-sets/outlook/outlook-requirement-set-1.3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
-- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1.5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
+- [Mailbox 1.3](../requirement-sets/outlook/outlook-requirement-set-1-3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
+- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1-5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
 
 ## Attributes
 
@@ -192,10 +192,10 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1.5.md)
+- [Mailbox 1.5](../requirement-sets/outlook/outlook-requirement-set-1-5.md)
 
 > [!IMPORTANT]
-> Although the **SupportsPinning** element was introduced in [requirement set 1.5](../requirement-sets/outlook/outlook-requirement-set-1.5.md), it's currently only supported for Microsoft 365 subscribers using the following:
+> Although the **SupportsPinning** element was introduced in [requirement set 1.5](../requirement-sets/outlook/outlook-requirement-set-1-5.md), it's currently only supported for Microsoft 365 subscribers using the following:
 >
 > - Modern Outlook on the web
 > - [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
@@ -223,7 +223,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.13](../requirement-sets/outlook/outlook-requirement-set-1.13.md)
+- [Mailbox 1.13](../requirement-sets/outlook/outlook-requirement-set-1-13.md)
 
 ```xml
 <Action xsi:type="ShowTaskpane">
@@ -246,7 +246,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.13](../requirement-sets/outlook/outlook-requirement-set-1.13.md)
+- [Mailbox 1.13](../requirement-sets/outlook/outlook-requirement-set-1-13.md)
 
 > [!NOTE]
 > Although Outlook on the web and new Outlook on Windows support Mailbox requirement set 1.13, an add-in won't activate if the Reading Pane is hidden or a message isn't first selected. To learn more, see [Feature support in Outlook on the web and new Outlook on Windows](/office/dev/add-ins/outlook/contextless#feature-support-in-outlook-on-the-web-and-new-outlook-on-windows).

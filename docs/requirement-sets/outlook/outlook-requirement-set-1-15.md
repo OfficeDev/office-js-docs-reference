@@ -12,7 +12,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.15
 
-Mailbox requirement set 1.15 includes all of the features of [requirement set 1.14](outlook-requirement-set-1.14.md). It added the following features.
+Mailbox requirement set 1.15 includes all of the features of [requirement set 1.14](outlook-requirement-set-1-14.md). It added the following features.
 
 - Added support for radio buttons to format reporting options in the [integrated spam-reporting](/office/dev/add-ins/outlook/spam-reporting) dialog.
 - Added support to include a ["Don't show this message again" checkbox](/office/dev/add-ins/outlook/spam-reporting#suppress-the-preprocessing-dialog) in a spam-reporting dialog that doesn't require input from a user.

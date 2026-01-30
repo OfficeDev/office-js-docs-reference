@@ -15,7 +15,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 ## What's new in 1.10
 
-Mailbox requirement set 1.10 includes all of the features of [requirement set 1.9](outlook-requirement-set-1.9.md). It added the following features.
+Mailbox requirement set 1.10 includes all of the features of [requirement set 1.9](outlook-requirement-set-1-9.md). It added the following features.
 
 - Added support for [event-based activation](/office/dev/add-ins/develop/event-based-activation).
 - Added support for mail signature features.
