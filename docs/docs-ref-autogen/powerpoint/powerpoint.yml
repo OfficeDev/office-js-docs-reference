@@ -48,6 +48,8 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface
   - powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.DocumentPropertiesUpdateData:interface
+  - powerpoint!PowerPoint.Interfaces.GraphicData:interface
+  - powerpoint!PowerPoint.Interfaces.GraphicLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkCollectionLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface
@@ -176,6 +178,7 @@ interfaces:
   - powerpoint!PowerPoint.Interfaces.TextRangeData:interface
   - powerpoint!PowerPoint.Interfaces.TextRangeLoadOptions:interface
   - powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface
+  - powerpoint!PowerPoint.PictureAddOptions:interface
   - powerpoint!PowerPoint.ShapeAddOptions:interface
   - powerpoint!PowerPoint.ShapeGetImageOptions:interface
   - powerpoint!PowerPoint.SlideBackgroundGradientFillOptions:interface
@@ -183,6 +186,7 @@ interfaces:
   - powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions:interface
   - powerpoint!PowerPoint.SlideBackgroundSolidFillOptions:interface
   - powerpoint!PowerPoint.SlideGetImageOptions:interface
+  - powerpoint!PowerPoint.SlideSelectionChangedEventArgs:interface
   - powerpoint!PowerPoint.TableAddOptions:interface
   - powerpoint!PowerPoint.TableCellBorders:interface
   - powerpoint!PowerPoint.TableCellMargins:interface
@@ -206,6 +210,7 @@ classes:
   - powerpoint!PowerPoint.CustomXmlPartCollection:class
   - powerpoint!PowerPoint.CustomXmlPartScopedCollection:class
   - powerpoint!PowerPoint.DocumentProperties:class
+  - powerpoint!PowerPoint.Graphic:class
   - powerpoint!PowerPoint.Hyperlink:class
   - powerpoint!PowerPoint.HyperlinkCollection:class
   - powerpoint!PowerPoint.HyperlinkScopedCollection:class

@@ -201,6 +201,26 @@ properties:
       return:
         type: <xref uid="powerpoint!PowerPoint.ThemeColorScheme:class" />
 methods:
+  - name: delete()
+    uid: powerpoint!PowerPoint.SlideMaster#delete:member(1)
+    package: powerpoint!
+    fullName: delete()
+    summary: >-
+      Deletes the slide master and all child layouts from the presentation. Does
+      nothing if the slide master doesn't exist. Throws the `GeneralException`
+      error if the slide master is in use.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
   - name: load(options)
     uid: powerpoint!PowerPoint.SlideMaster#load:member(1)
     package: powerpoint!

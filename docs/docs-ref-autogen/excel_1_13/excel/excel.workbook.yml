@@ -840,10 +840,6 @@ methods:
       and the file extension does not match the real file type, this API throws
       the following error: "This operation is not allowed due to the extension
       hardening policy."
-
-
-      *Note**: This API is currently only supported for Office on Windows,
-      Mac, and the web.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
@@ -851,7 +847,8 @@ methods:
 
 
       This API is currently only supported for Office on Windows, Mac, and the
-      web.
+      web. In Excel on the web, this API doesn't support inserting charts,
+      comments, PivotTables, or slicers.
 
 
       #### Examples

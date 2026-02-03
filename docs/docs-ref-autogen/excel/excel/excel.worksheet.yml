@@ -949,7 +949,7 @@ methods:
     summary: >-
       Finds all occurrences of the given string based on the criteria specified
       and returns them as a `RangeAreas` object, comprising one or more
-      rectangular ranges.
+      rectangular ranges. Content in hidden worksheets is not returned.
     remarks: >-
       \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -982,7 +982,7 @@ methods:
     summary: >-
       Finds all occurrences of the given string based on the criteria specified
       and returns them as a `RangeAreas` object, comprising one or more
-      rectangular ranges.
+      rectangular ranges. Content in hidden worksheets is not returned.
     remarks: >-
       \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
