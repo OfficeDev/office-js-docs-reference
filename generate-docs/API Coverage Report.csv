@@ -6816,7 +6816,7 @@ excel,Excel.Workbook,"getIsActiveCollabSession()",Method,Excellent,false
 excel,Excel.Workbook,"getLinkedEntityCellValue(linkedEntityCellValueId)",Method,Good,false
 excel,Excel.Workbook,"getSelectedRange()",Method,Excellent,true
 excel,Excel.Workbook,"getSelectedRanges()",Method,Excellent,true
-excel,Excel.Workbook,"insertWorksheetsFromBase64(base64File, options)",Method,Excellent,true
+excel,Excel.Workbook,"insertWorksheetsFromBase64(base64File, options)",Method,Great,true
 excel,Excel.Workbook,"load(options)",Method,Great,false
 excel,Excel.Workbook,"load(propertyNames)",Method,Great,false
 excel,Excel.Workbook,"load(propertyNamesAndPaths)",Method,Great,false
@@ -6898,8 +6898,8 @@ excel,Excel.Worksheet,"copy(positionType, relativeTo)",Method,Fine,true
 excel,Excel.Worksheet,"copy(positionType, relativeTo)",Method,Fine,false
 excel,Excel.Worksheet,"delete()",Method,Excellent,true
 excel,Excel.Worksheet,"evaluate(name)",Method,Excellent,false
-excel,Excel.Worksheet,"findAll(text, criteria)",Method,Great,false
-excel,Excel.Worksheet,"findAllOrNullObject(text, criteria)",Method,Great,true
+excel,Excel.Worksheet,"findAll(text, criteria)",Method,Excellent,false
+excel,Excel.Worksheet,"findAllOrNullObject(text, criteria)",Method,Excellent,true
 excel,Excel.Worksheet,"getCell(row, column)",Method,Good,true
 excel,Excel.Worksheet,"getNext(visibleOnly)",Method,Excellent,true
 excel,Excel.Worksheet,"getNextOrNullObject(visibleOnly)",Method,Excellent,false
@@ -10086,6 +10086,7 @@ outlook,Office.UserProfile,"emailAddress",Property,Good,true
 outlook,Office.UserProfile,"timeZone",Property,Excellent,true
 outlook,N/A,N/A,Package,Missing,false
 powerpoint,PowerPoint.AddSlideOptions,N/A,Interface,Good,true
+powerpoint,PowerPoint.AddSlideOptions,"index",Property,Excellent,false
 powerpoint,PowerPoint.AddSlideOptions,"layoutId",Property,Excellent,false
 powerpoint,PowerPoint.AddSlideOptions,"slideMasterId",Property,Excellent,false
 powerpoint,PowerPoint.Adjustments,N/A,Class,Fine,false
@@ -10495,6 +10496,14 @@ powerpoint,PowerPoint.GeometricShapeType,"wave",EnumField,Great,false
 powerpoint,PowerPoint.GeometricShapeType,"wedgeEllipseCallout",EnumField,Great,false
 powerpoint,PowerPoint.GeometricShapeType,"wedgeRectCallout",EnumField,Great,false
 powerpoint,PowerPoint.GeometricShapeType,"wedgeRRectCallout",EnumField,Great,false
+powerpoint,PowerPoint.Graphic,N/A,Class,Fine,false
+powerpoint,PowerPoint.Graphic,"context",Property,Excellent,false
+powerpoint,PowerPoint.Graphic,"shape",Property,Great,false
+powerpoint,PowerPoint.Graphic,"convertToShape()",Method,Missing,false
+powerpoint,PowerPoint.Graphic,"load(options)",Method,Great,false
+powerpoint,PowerPoint.Graphic,"load(propertyNames)",Method,Great,false
+powerpoint,PowerPoint.Graphic,"load(propertyNamesAndPaths)",Method,Great,false
+powerpoint,PowerPoint.Graphic,"toJSON()",Method,Excellent,false
 powerpoint,PowerPoint.Hyperlink,N/A,Class,Fine,true
 powerpoint,PowerPoint.Hyperlink,"address",Property,Excellent,false
 powerpoint,PowerPoint.Hyperlink,"context",Property,Excellent,false
@@ -10574,6 +10583,11 @@ powerpoint,PowerPoint.ParagraphHorizontalAlignment,"justifyLow",EnumField,Excell
 powerpoint,PowerPoint.ParagraphHorizontalAlignment,"left",EnumField,Great,false
 powerpoint,PowerPoint.ParagraphHorizontalAlignment,"right",EnumField,Great,false
 powerpoint,PowerPoint.ParagraphHorizontalAlignment,"thaiDistributed",EnumField,Great,false
+powerpoint,PowerPoint.PictureAddOptions,N/A,Interface,Great,false
+powerpoint,PowerPoint.PictureAddOptions,"height",Property,Excellent,false
+powerpoint,PowerPoint.PictureAddOptions,"left",Property,Excellent,false
+powerpoint,PowerPoint.PictureAddOptions,"top",Property,Excellent,false
+powerpoint,PowerPoint.PictureAddOptions,"width",Property,Excellent,false
 powerpoint,PowerPoint.PlaceholderFormat,N/A,Class,Fine,true
 powerpoint,PowerPoint.PlaceholderFormat,"containedType",Property,Excellent,false
 powerpoint,PowerPoint.PlaceholderFormat,"context",Property,Excellent,false
@@ -10655,6 +10669,7 @@ powerpoint,PowerPoint.Shape,"visible",Property,Good,false
 powerpoint,PowerPoint.Shape,"width",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"zOrderPosition",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"delete()",Method,Good,true
+powerpoint,PowerPoint.Shape,"getGraphicOrNullObject()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"getImageAsBase64(options)",Method,Fine,false
 powerpoint,PowerPoint.Shape,"getParentSlide()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"getParentSlideLayout()",Method,Excellent,false
@@ -10689,6 +10704,7 @@ powerpoint,PowerPoint.ShapeCollection,"addGeometricShape(geometricShapeType, opt
 powerpoint,PowerPoint.ShapeCollection,"addGroup(values)",Method,Fine,true
 powerpoint,PowerPoint.ShapeCollection,"addLine(connectorType, options)",Method,Good,true
 powerpoint,PowerPoint.ShapeCollection,"addLine(connectorType, options)",Method,Good,false
+powerpoint,PowerPoint.ShapeCollection,"addPicture(base64EncodedImage, options)",Method,Good,false
 powerpoint,PowerPoint.ShapeCollection,"addTable(rowCount, columnCount, options)",Method,Great,true
 powerpoint,PowerPoint.ShapeCollection,"addTextBox(text, options)",Method,Great,true
 powerpoint,PowerPoint.ShapeCollection,"getCount()",Method,Fine,true
@@ -11024,6 +11040,7 @@ powerpoint,PowerPoint.SlideLayout,"name",Property,Good,false
 powerpoint,PowerPoint.SlideLayout,"shapes",Property,Great,false
 powerpoint,PowerPoint.SlideLayout,"themeColorScheme",Property,Great,false
 powerpoint,PowerPoint.SlideLayout,"type",Property,Good,false
+powerpoint,PowerPoint.SlideLayout,"delete()",Method,Excellent,false
 powerpoint,PowerPoint.SlideLayout,"load(options)",Method,Great,false
 powerpoint,PowerPoint.SlideLayout,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideLayout,"load(propertyNamesAndPaths)",Method,Great,false
@@ -11096,6 +11113,7 @@ powerpoint,PowerPoint.SlideMaster,"layouts",Property,Great,false
 powerpoint,PowerPoint.SlideMaster,"name",Property,Great,false
 powerpoint,PowerPoint.SlideMaster,"shapes",Property,Great,false
 powerpoint,PowerPoint.SlideMaster,"themeColorScheme",Property,Great,false
+powerpoint,PowerPoint.SlideMaster,"delete()",Method,Excellent,false
 powerpoint,PowerPoint.SlideMaster,"load(options)",Method,Great,false
 powerpoint,PowerPoint.SlideMaster,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideMaster,"load(propertyNamesAndPaths)",Method,Great,false
@@ -11130,6 +11148,8 @@ powerpoint,PowerPoint.SlideScopedCollection,"load(options)",Method,Great,false
 powerpoint,PowerPoint.SlideScopedCollection,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideScopedCollection,"load(propertyNamesAndPaths)",Method,Great,false
 powerpoint,PowerPoint.SlideScopedCollection,"toJSON()",Method,Excellent,false
+powerpoint,PowerPoint.SlideSelectionChangedEventArgs,N/A,Interface,Fine,false
+powerpoint,PowerPoint.SlideSelectionChangedEventArgs,"slideIds",Property,Great,false
 powerpoint,PowerPoint.Table,N/A,Class,Poor,true
 powerpoint,PowerPoint.Table,"columnCount",Property,Great,false
 powerpoint,PowerPoint.Table,"columns",Property,Great,false

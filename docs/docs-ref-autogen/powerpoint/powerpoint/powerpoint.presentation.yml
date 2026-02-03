@@ -855,4 +855,30 @@ methods:
           <xref
           uid="powerpoint!PowerPoint.Interfaces.PresentationData:interface" />
         description: ''
+events:
+  - name: onSlideSelectionChanged
+    uid: powerpoint!PowerPoint.Presentation#onSlideSelectionChanged:member
+    package: powerpoint!
+    fullName: onSlideSelectionChanged
+    summary: >-
+      Occurs when the selection of slides in the presentation changes. This
+      event is raised when the user selects a different slide or changes the
+      selection of slides. This event is not raised when the selection of the
+      contents (for example, shapes) in the slide changes.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onSlideSelectionChanged:
+        OfficeExtension.EventHandlers<PowerPoint.SlideSelectionChangedEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="powerpoint!PowerPoint.SlideSelectionChangedEventArgs:interface"
+          />&gt;
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

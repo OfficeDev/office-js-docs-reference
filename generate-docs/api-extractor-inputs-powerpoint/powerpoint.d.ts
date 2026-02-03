@@ -185,6 +185,18 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Presentation;
         /**
+         * Occurs when the selection of slides in the presentation changes.
+                    This event is raised when the user selects a different slide or changes the selection of slides.
+                    This event is not raised when the selection of the contents (for example, shapes) in the slide changes.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onSlideSelectionChanged: OfficeExtension.EventHandlers<PowerPoint.SlideSelectionChangedEventArgs>;
+        /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
         * Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
         */
@@ -197,6 +209,15 @@ export declare namespace PowerPoint {
      * [Api set: PowerPointApi 1.3]
      */
     export interface AddSlideOptions {
+        /**
+         * Specifies the 0-based index at which the new slide should be inserted.
+                    If not specified or if the specified index is out of bounds, the new slide will be added at the end of the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        index?: number;
         /**
          * Specifies the ID of a Slide Layout to be used for the new slide.
                     If no `layoutId` is provided, but a `slideMasterId` is provided, then the ID of the first layout from the specified Slide Master will be used.
@@ -552,6 +573,52 @@ export declare namespace PowerPoint {
         * Whereas the original `PowerPoint.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): PowerPoint.Interfaces.CustomXmlPartCollectionData;
+    }
+    /**
+     * Represents a graphic object in PowerPoint.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Graphic extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns the `Shape` object associated with the graphic.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shape: PowerPoint.Shape;
+        convertToShape(): PowerPoint.ShapeScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.GraphicLoadOptions): PowerPoint.Graphic;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.Graphic;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.Graphic;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.Graphic` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.GraphicData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.GraphicData;
     }
     /**
      * Represents the available options when adding a {@link PowerPoint.Hyperlink}.
@@ -3236,6 +3303,53 @@ export declare namespace PowerPoint {
         chartPlus = "ChartPlus",
     }
     /**
+     * Represents the available options when adding a picture (represented by a {@link PowerPoint.Shape} object).
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface PictureAddOptions {
+        /**
+         * Specifies the height, in points, of the picture.
+                    When not provided, the default value is 72 points (1 inch).
+                    Throws an `InvalidArgument` exception when set with a negative value.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height?: number;
+        /**
+         * Specifies the distance, in points, from the left side of the picture to the left side of the slide.
+                    When not provided, the default value is 0.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left?: number;
+        /**
+         * Specifies the distance, in points, from the top edge of the picture to the top edge of the slide.
+                    When not provided, the default value is 0.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top?: number;
+        /**
+         * Specifies the width, in points, of the picture.
+                    When not provided, the default value is 72 points (1 inch).
+                    Throws an `InvalidArgument` exception when set with a negative value.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width?: number;
+    }
+    /**
      * Represents the available options when adding shapes.
      *
      * @remarks
@@ -5450,6 +5564,18 @@ export declare namespace PowerPoint {
          */
         addLine(connectorType?: "Straight" | "Elbow" | "Curve", options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;
         /**
+         * Adds a picture to the slide. Returns a `Shape` object that represents the new picture.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param base64EncodedImage - The base64-encoded image data.
+         * @param options - Optional. Additional options such as the position of the picture.
+         * @returns The newly inserted shape.
+         */
+        addPicture(base64EncodedImage: string, options?: PowerPoint.PictureAddOptions): PowerPoint.Shape;
+        /**
          * Adds a table to the slide. Returns a `Shape` object that represents the new table.
                     Use the `Shape.table` property to get the `Table` object for the shape.
          *
@@ -6944,6 +7070,15 @@ export declare namespace PowerPoint {
          */
         readonly type: PowerPoint.SlideLayoutType | "Blank" | "Chart" | "ChartAndText" | "ClipArtAndText" | "ClipArtAndVerticalText" | "Comparison" | "ContentWithCaption" | "Custom" | "FourObjects" | "LargeObject" | "MediaClipAndText" | "Mixed" | "Object" | "ObjectAndText" | "ObjectAndTwoObjects" | "ObjectOverText" | "OrganizationChart" | "PictureWithCaption" | "SectionHeader" | "Table" | "Text" | "TextAndChart" | "TextAndClipArt" | "TextAndMediaClip" | "TextAndObject" | "TextAndTwoObjects" | "TextOverObject" | "Title" | "TitleOnly" | "TwoColumnText" | "TwoObjects" | "TwoObjectsAndObject" | "TwoObjectsAndText" | "TwoObjectsOverText" | "VerticalText" | "VerticalTitleAndText" | "VerticalTitleAndTextOverChart";
         /**
+         * Deletes the slide layout from the presentation. Does nothing if the slide layout doesn't exist.
+                    Throws the `GeneralException` error if the slide layout is in use.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -7145,6 +7280,15 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly name: string;
+        /**
+         * Deletes the slide master and all child layouts from the presentation. Does nothing if the slide master doesn't exist.
+                    Throws the `GeneralException` error if the slide master is in use.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8029,6 +8173,14 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         delete(): void;
+        /**
+         * Returns a {@link PowerPoint.Graphic} object if this shape is a {@link PowerPoint.ShapeType| ShapeType.graphic}. If this shape isn't a `Graphic`, an object with an `isNullObject` property set to `true` is returned. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getGraphicOrNullObject(): PowerPoint.Graphic;
         /**
          * Renders an image of the shape.
          *
@@ -8922,6 +9074,23 @@ export declare namespace PowerPoint {
         * Whereas the original `PowerPoint.SlideScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): PowerPoint.Interfaces.SlideScopedCollectionData;
+    }
+    /**
+     * Provides information about the slide selection changed event.
+     *
+     * @remarks
+     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface SlideSelectionChangedEventArgs {
+        /**
+         * Gets the array of IDs of the currently selected slides.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        slideIds: string[];
     }
     /**
      * Represents the collection of Slide Masters in the presentation.
@@ -9920,6 +10089,9 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
         export interface CustomXmlPartCollectionData {
             items?: PowerPoint.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling `graphic.toJSON()`. */
+        export interface GraphicData {
         }
         /** An interface describing the data returned by calling `hyperlinkScopedCollection.toJSON()`. */
         export interface HyperlinkScopedCollectionData {
@@ -11207,6 +11379,27 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.7]
              */
             namespaceUri?: boolean;
+        }
+        /**
+         * Represents a graphic object in PowerPoint.
+         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface GraphicLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Returns the `Shape` object associated with the graphic.
+            *
+            * @remarks
+            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shape?: PowerPoint.Interfaces.ShapeLoadOptions;
         }
         /**
          * Represents a scoped collection of hyperlinks.
