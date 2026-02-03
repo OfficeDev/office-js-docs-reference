@@ -42,6 +42,25 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: index
+    uid: powerpoint!PowerPoint.AddSlideOptions#index:member
+    package: powerpoint!
+    fullName: index
+    summary: >-
+      Specifies the 0-based index at which the new slide should be inserted. If
+      not specified or if the specified index is out of bounds, the new slide
+      will be added at the end of the presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'index?: number;'
+      return:
+        type: number
   - name: layoutId
     uid: powerpoint!PowerPoint.AddSlideOptions#layoutId:member
     package: powerpoint!

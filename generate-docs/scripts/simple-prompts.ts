@@ -1,5 +1,5 @@
 
-import inquirer from 'inquirer';
+import * as inquirer from 'inquirer';
 import { cloneDeep, isString, isUndefined } from "lodash";
 
 const NO_CHOICE_SELECTED = '---';
