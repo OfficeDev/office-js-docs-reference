@@ -899,6 +899,31 @@ methods:
       return:
         type: void
         description: ''
+  - name: getGraphicOrNullObject()
+    uid: powerpoint!PowerPoint.Shape#getGraphicOrNullObject:member(1)
+    package: powerpoint!
+    fullName: getGraphicOrNullObject()
+    summary: >-
+      Returns a [PowerPoint.Graphic](xref:powerpoint!PowerPoint.Graphic:class)
+      object if this shape is a
+      [ShapeType.graphic](xref:powerpoint!PowerPoint.ShapeType:enum)<!-- -->. If
+      this shape isn't a `Graphic`<!-- -->, an object with an `isNullObject`
+      property set to `true` is returned. For further information, see
+      [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getGraphicOrNullObject(): PowerPoint.Graphic;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Graphic:class" />
+        description: ''
   - name: getImageAsBase64(options)
     uid: powerpoint!PowerPoint.Shape#getImageAsBase64:member(1)
     package: powerpoint!

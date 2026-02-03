@@ -101,6 +101,8 @@ items:
             uid: powerpoint!PowerPoint.FillProperties:interface
           - name: FontProperties
             uid: powerpoint!PowerPoint.FontProperties:interface
+          - name: Graphic
+            uid: powerpoint!PowerPoint.Graphic:class
           - name: Hyperlink
             uid: powerpoint!PowerPoint.Hyperlink:class
           - name: HyperlinkAddOptions
@@ -117,6 +119,8 @@ items:
             uid: powerpoint!PowerPoint.PageSetup:class
           - name: ParagraphFormat
             uid: powerpoint!PowerPoint.ParagraphFormat:class
+          - name: PictureAddOptions
+            uid: powerpoint!PowerPoint.PictureAddOptions:interface
           - name: PlaceholderFormat
             uid: powerpoint!PowerPoint.PlaceholderFormat:class
           - name: Presentation
@@ -182,6 +186,8 @@ items:
             uid: powerpoint!PowerPoint.SlideMasterCollection:class
           - name: SlideScopedCollection
             uid: powerpoint!PowerPoint.SlideScopedCollection:class
+          - name: SlideSelectionChangedEventArgs
+            uid: powerpoint!PowerPoint.SlideSelectionChangedEventArgs:interface
           - name: Table
             uid: powerpoint!PowerPoint.Table:class
           - name: TableAddOptions
