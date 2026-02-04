@@ -256,6 +256,7 @@ export declare namespace Excel {
         
         /**
          * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+         * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.1 for get, 1.8 for set]
@@ -5576,6 +5577,7 @@ export declare namespace Excel {
             
             /**
              * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+             * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]
@@ -7395,6 +7397,7 @@ export declare namespace Excel {
             
             /**
              * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+             * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]
@@ -9695,6 +9698,7 @@ export declare namespace Excel {
             
             /**
              * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+             * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]

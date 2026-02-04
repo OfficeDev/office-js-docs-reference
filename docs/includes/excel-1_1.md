@@ -184,7 +184,7 @@
 ||[index](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-index-member)|Returns the index number of the column within the columns collection of the table.|
 ||[name](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-name-member)|Specifies the name of the table column.|
 ||[values](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-values-member)|Represents the raw values of the specified range.|
-|[TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection)|[add(index?: number, values?: Array<Array<boolean \| string \| number>> \| boolean \| string \| number, name?: string)](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-add-member(1))|Adds a new column to the table.|
+|[TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection)|[add(index?: number, values?: Array\<Array\<boolean \| string \| number\>\> \| boolean \| string \| number, name?: string)](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-add-member(1))|Adds a new column to the table.|
 ||[count](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-count-member)|Returns the number of columns in the table.|
 ||[getItem(key: number \| string)](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitem-member(1))|Gets a column object by name or ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-getitemat-member(1))|Gets a column based on its position in the collection.|
@@ -193,7 +193,7 @@
 ||[getRange()](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-getrange-member(1))|Returns the range object associated with the entire row.|
 ||[index](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-index-member)|Returns the index number of the row within the rows collection of the table.|
 ||[values](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-values-member)|Represents the raw values of the specified range.|
-|[TableRowCollection](/javascript/api/excel/excel.tablerowcollection)|[add(index?: number, values?: Array<Array<boolean \| string \| number>> \| boolean \| string \| number, alwaysInsert?: boolean)](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-add-member(1))|Adds one or more rows to the table.|
+|[TableRowCollection](/javascript/api/excel/excel.tablerowcollection)|[add(index?: number, values?: Array\<Array\<boolean \| string \| number\>\> \| boolean \| string \| number, alwaysInsert?: boolean)](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-add-member(1))|Adds one or more rows to the table.|
 ||[count](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-count-member)|Returns the number of rows in the table.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-getitemat-member(1))|Gets a row based on its position in the collection.|
 ||[items](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-items-member)|Gets the loaded child items in this collection.|

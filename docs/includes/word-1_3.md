@@ -80,7 +80,7 @@
 ||[setLevelAlignment(level: number, alignment: Word.Alignment)](/javascript/api/word/word.list#word-word-list-setlevelalignment-member(1))|Sets the alignment of the bullet, number, or picture at the specified level in the list.|
 ||[setLevelBullet(level: number, listBullet: Word.ListBullet, charCode?: number, fontName?: string)](/javascript/api/word/word.list#word-word-list-setlevelbullet-member(1))|Sets the bullet format at the specified level in the list.|
 ||[setLevelIndents(level: number, textIndent: number, bulletNumberPictureIndent: number)](/javascript/api/word/word.list#word-word-list-setlevelindents-member(1))|Sets the two indents of the specified level in the list.|
-||[setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: Array<string \| number>)](/javascript/api/word/word.list#word-word-list-setlevelnumbering-member(1))|Sets the numbering format at the specified level in the list.|
+||[setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: Array\<string \| number\>)](/javascript/api/word/word.list#word-word-list-setlevelnumbering-member(1))|Sets the numbering format at the specified level in the list.|
 ||[setLevelStartingNumber(level: number, startingNumber: number)](/javascript/api/word/word.list#word-word-list-setlevelstartingnumber-member(1))|Sets the starting number at the specified level in the list.|
 |[ListCollection](/javascript/api/word/word.listcollection)|[getById(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getbyid-member(1))|Gets a list by its identifier.|
 ||[getByIdOrNullObject(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getbyidornullobject-member(1))|Gets a list by its identifier.|

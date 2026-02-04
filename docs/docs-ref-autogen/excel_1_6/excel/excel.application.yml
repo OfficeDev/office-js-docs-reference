@@ -22,7 +22,8 @@ properties:
       `Automatic`<!-- -->, where Excel controls recalculation;
       `AutomaticExceptTables`<!-- -->, where Excel controls recalculation but
       ignores changes in tables; `Manual`<!-- -->, where calculation is done
-      when the user requests it.
+      when the user requests it. This is a runtime property. The
+      `calculationMode` setting is not persisted in the workbook.
     remarks: >-
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
