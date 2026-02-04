@@ -1718,6 +1718,9 @@ items:
           - name: Overview
             href: ../../requirement-sets/outlook/outlook-api-requirement-sets.md
             displayName: Outlook
+          - name: Item object model
+            href: ../../requirement-sets/outlook/outlook-item-object-model.md
+            displayName: Outlook
           - name: Mailbox preview requirement set
             href: ../../requirement-sets/outlook/outlook-requirement-set-preview.md
             displayName: Outlook
