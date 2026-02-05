@@ -1536,13 +1536,13 @@ methods:
 
 
       Office.context.mailbox.displayNewAppointmentForm({
-        requiredAttendees: ["bob@contoso.com"],
-        optionalAttendees: ["sam@contoso.com"],
+        requiredAttendees: ["bob@contoso.com"] as any,
+        optionalAttendees: ["sam@contoso.com"] as any,
         start: start,
         end: end,
         location: "Home",
         subject: "meeting",
-        resources: ["projector@contoso.com"],
+        resources: ["projector@contoso.com"] as any,
         body: "Hello World!"
       });
 
@@ -1633,13 +1633,13 @@ methods:
 
       Office.context.mailbox.displayNewAppointmentFormAsync(
         {
-          requiredAttendees: ["bob@contoso.com"],
-          optionalAttendees: ["sam@contoso.com"],
+          requiredAttendees: ["bob@contoso.com"] as any,
+          optionalAttendees: ["sam@contoso.com"] as any,
           start: start,
           end: end,
           location: "Home",
           subject: "meeting",
-          resources: ["projector@contoso.com"],
+          resources: ["projector@contoso.com"] as any,
           body: "Hello World!"
         },
         function(asyncResult) {
@@ -3073,21 +3073,23 @@ methods:
 
       async function getSenderEmailAddress(item) {
         const itemId = item.itemId;
-        await new Promise((resolve) => {
+        await new Promise<void>((resolve) => {
           Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
             if (result.status === Office.AsyncResultStatus.Failed) {
               console.log(result.error.message);
+              resolve();
               return;
             }
 
             const loadedItem = result.value;
-            const sender = loadedItem.from.emailAddress;
+            const sender = (loadedItem.from as any).emailAddress;
             appendToListItem(sender);
 
             // Unload the current message before processing another selected message.
             loadedItem.unloadAsync((asyncResult) => {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 console.log(asyncResult.error.message);
+                resolve();
                 return;
               }
 
