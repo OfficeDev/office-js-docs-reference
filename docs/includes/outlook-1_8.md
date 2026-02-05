@@ -91,6 +91,46 @@
 ||[getInitializationContextAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<string\>) =\> void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getinitializationcontextasync-member(1))|Gets initialization data passed when the add-in is activated by an actionable message.|
 ||[getSharedPropertiesAsync(callback: (asyncResult: Office.AsyncResult\<SharedProperties\>) =\> void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getsharedpropertiesasync-member(1))|Gets the properties of an appointment or message in a shared folder or shared mailbox.|
 ||[getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<SharedProperties\>) =\> void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getsharedpropertiesasync-member(1))|Gets the properties of an appointment or message in a shared folder or shared mailbox.|
+|[AttachmentContentFormat](/javascript/api/outlook/office.mailboxenums.attachmentcontentformat)|Base64|The content of the attachment is returned as a Base64-encoded string.|
+||Eml|The content of the attachment is returned as a string representing an .eml formatted file.|
+||ICalendar|The content of the attachment is returned as a string representing an .icalendar formatted file.|
+||Url|The content of the attachment is returned as a string representing a URL.|
+|[AttachmentStatus](/javascript/api/outlook/office.mailboxenums.attachmentstatus)|Added|An attachment was added to the item.|
+||Removed|An attachment was removed from the item.|
+|[CategoryColor](/javascript/api/outlook/office.mailboxenums.categorycolor)|None|Default color or no color mapped.|
+||Preset0|Red|
+||Preset1|Orange|
+||Preset10|Steel|
+||Preset11|DarkSteel|
+||Preset12|Gray|
+||Preset13|DarkGray|
+||Preset14|Black|
+||Preset15|DarkRed|
+||Preset16|DarkOrange|
+||Preset17|DarkBrown|
+||Preset18|DarkYellow|
+||Preset19|DarkGreen|
+||Preset2|Brown|
+||Preset20|DarkTeal|
+||Preset21|DarkOlive|
+||Preset22|DarkBlue|
+||Preset23|DarkPurple|
+||Preset24|DarkCranberry|
+||Preset3|Yellow|
+||Preset4|Green|
+||Preset5|Teal|
+||Preset6|Olive|
+||Preset7|Blue|
+||Preset8|Purple|
+||Preset9|Cranberry|
+|[DelegatePermissions](/javascript/api/outlook/office.mailboxenums.delegatepermissions)|DeleteAll|Delegate has permission to delete any items.|
+||DeleteOwn|Delegate has permission to delete only the items they created.|
+||EditAll|Delegate has permission to edit any items.|
+||EditOwn|Delegate has permission to edit only they items they created.|
+||Read|Delegate has permission to read items.|
+||Write|Delegate has permission to create and write items.|
+|[LocationType](/javascript/api/outlook/office.mailboxenums.locationtype)|Custom|A custom location.|
+||Room|A conference room or similar resource that has an SMTP address.|
 |[SharedProperties](/javascript/api/outlook/office.sharedproperties)|[delegatePermissions](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-delegatepermissions-member)|The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.|
 ||[owner](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-owner-member)|The email address of the owner of a shared item.|
 ||[targetMailbox](/javascript/api/outlook/office.sharedproperties#outlook-office-sharedproperties-targetmailbox-member)|The location of the owner's mailbox for the delegate's access.|

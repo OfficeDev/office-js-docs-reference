@@ -22,3 +22,13 @@
 ||[commandId](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-commandid-member)|The button defined in the manifest.|
 ||[contextData](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-contextdata-member)|Any JSON data the action button needs to pass on to the add-in.|
 |[NotificationMessageDetails](/javascript/api/outlook/office.notificationmessagedetails)|[actions](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-actions-member)|Specifies actions for the message.|
+|[ActionType](/javascript/api/outlook/office.mailboxenums.actiontype)|ShowTaskPane|The `showTaskPane` action.|
+|[ComposeType](/javascript/api/outlook/office.mailboxenums.composetype)|Forward|Forward.|
+||NewMail|New mail.|
+||Reply|Reply.|
+|[InfobarActionType](/javascript/api/outlook/office.mailboxenums.infobaractiontype)|Dismiss|Dismiss action was selected.|
+|[InfobarType](/javascript/api/outlook/office.mailboxenums.infobartype)|Error|Notification displays an error message.|
+||Informational|Notification displays an informational message.|
+||Insight|Notification displays an informational message with actions.|
+||ProgressIndicator|Notification displays a progress indicator.|
+|[ItemNotificationMessageType](/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype)|InsightMessage|The notification message is an informational message with actions.|
