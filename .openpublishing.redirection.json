@@ -278,7 +278,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-preview"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-preview&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.item.md",
@@ -290,7 +290,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-preview"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-preview&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.md",
@@ -306,7 +306,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.1"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.1&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.item.md",
@@ -318,7 +318,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.1"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.1&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.md",
@@ -334,7 +334,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.2"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.2&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.mailbox.item.md",
@@ -346,7 +346,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.2"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.2&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.md",
@@ -362,7 +362,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.3"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.3&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.mailbox.item.md",
@@ -374,7 +374,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.3"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.3&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.md",
@@ -390,7 +390,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.4"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.4&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.mailbox.item.md",
@@ -402,7 +402,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.4"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.4&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.md",
@@ -418,7 +418,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.5"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.5&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.mailbox.item.md",
@@ -430,7 +430,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.5"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.5&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.md",
@@ -446,7 +446,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.6"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.6&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.mailbox.item.md",
@@ -458,7 +458,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.6"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.6&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.md",
@@ -474,7 +474,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.mailbox.diagnostics.md",
-            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.7"
+            "redirect_url": "/javascript/api/outlook/office.diagnostics?view=outlook-js-1.7&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.mailbox.item.md",
@@ -486,7 +486,7 @@
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.mailbox.userProfile.md",
-            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.7"
+            "redirect_url": "/javascript/api/outlook/office.userprofile?view=outlook-js-1.7&preserve-view=true"
         },
         {
             "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.md",
