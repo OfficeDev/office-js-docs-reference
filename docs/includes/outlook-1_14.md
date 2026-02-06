@@ -2,6 +2,7 @@
 |:---|:---|:---|
 |[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[sensitivity](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-sensitivity-member)|Gets or sets the sensitivity level of an appointment.|
 |[AppointmentRead](/javascript/api/outlook/office.appointmentread)|[sensitivity](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-sensitivity-member)|Provides the sensitivity value of the appointment.|
+|[MailboxEvent](/javascript/api/outlook/office.mailboxevent)|[completed(options?: SmartAlertsEventCompletedOptions \| SpamReportingEventCompletedOptions)](/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))|Indicates that the event-based or spam-reporting add-in has completed processing an event.|
 |[MessageCompose](/javascript/api/outlook/office.messagecompose)|[closeAsync(callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))|Closes the current new message being composed.|
 ||[closeAsync(options: Office.AsyncContextOptions & { discardItem: boolean }, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-closeasync-member(1))|Closes the current message being composed with the option to discard unsaved changes.|
 ||[getConversationIndexAsync(callback: (asyncResult: Office.AsyncResult\<string\>) =\> void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-getconversationindexasync-member(1))|Gets the Base64-encoded position of the current message in a conversation thread.|
@@ -11,6 +12,15 @@
 ||[inReplyTo](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-inreplyto-member)|Gets the internet message ID of the original message being replied to by the current message.|
 |[MessageRead](/javascript/api/outlook/office.messageread)|[getAsFileAsync(callback: (asyncResult: Office.AsyncResult\<string\>) =\> void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getasfileasync-member(1))|Gets the current message in EML format encoded in Base64.|
 ||[getAsFileAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<string\>) =\> void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getasfileasync-member(1))|Gets the current message in EML format encoded in Base64.|
+|[AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype)|Confidential|Treat the item as confidential.|
+||Normal|The item needs no special treatment.|
+||Personal|Treat the item as personal.|
+||Private|Treat the item as private.|
+|[MoveSpamItemTo](/javascript/api/outlook/office.mailboxenums.movespamitemto)|CustomFolder|Specifies that a reported message is moved to a custom folder in the mailbox.|
+||DeletedItemsFolder|Specifies that a reported message is moved to the **Deleted Items** folder of the mailbox.|
+||JunkFolder|Specifies that a reported message is moved to the **Junk Email** folder of the mailbox.|
+||NoMove|Specifies that a reported message remains in its current folder in the mailbox.|
+|[SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride)|PromptUser|Provides the **Send Anyway** option in a Smart Alerts dialog when the mail item doesn't meet the conditions of the event-based add-in.|
 |[OfficeThemeChangedEventArgs](/javascript/api/outlook/office.officethemechangedeventargs)|[officeTheme](/javascript/api/outlook/office.officethemechangedeventargs#outlook-office-officethemechangedeventargs-officetheme-member)|Gets the updated Office theme.|
 ||[type](/javascript/api/outlook/office.officethemechangedeventargs#outlook-office-officethemechangedeventargs-type-member)|Gets the type of the event.|
 |[SelectedItemDetails](/javascript/api/outlook/office.selecteditemdetails)|[conversationId](/javascript/api/outlook/office.selecteditemdetails#outlook-office-selecteditemdetails-conversationid-member)|The identifier of the message conversation that contains the message that's currently selected.|

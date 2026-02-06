@@ -145,13 +145,13 @@ Online-only and desktop-only requirement sets are special requirement sets. An o
 - `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/javascript/api/requirement-sets/excel/excel-api-online-requirement-set)
 - `ExcelApiDesktop 1.1`: [Excel JavaScript API desktop-only requirement set 1.1](/javascript/api/requirement-sets/excel/excel-api-desktop-1-1-requirement-set)
 - `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/javascript/api/requirement-sets/word/word-api-online-requirement-set)
-- `WordApiDesktop 1.4`: [Word JavaScript API desktop-only requirement set 1.4](/javascript/api/requirement-sets/word/word-api-desktop-1.4-requirement-set)
-- `WordApiDesktop 1.3`: [Word JavaScript API desktop-only requirement set 1.3](/javascript/api/requirement-sets/word/word-api-desktop-1.3-requirement-set)
-- `WordApiDesktop 1.2`: [Word JavaScript API desktop-only requirement set 1.2](/javascript/api/requirement-sets/word/word-api-desktop-1.2-requirement-set)
-- `WordApiDesktop 1.1`: [Word JavaScript API desktop-only requirement set 1.1](/javascript/api/requirement-sets/word/word-api-desktop-1.1-requirement-set)
-- `WordApiHiddenDocument 1.5`: [Word JavaScript API desktop-only (hidden document) requirement set 1.5](/javascript/api/requirement-sets/word/word-api-1.5-hidden-document-requirement-set)
-- `WordApiHiddenDocument 1.4`: [Word JavaScript API desktop-only (hidden document) requirement set 1.4](/javascript/api/requirement-sets/word/word-api-1.4-hidden-document-requirement-set)
-- `WordApiHiddenDocument 1.3`: [Word JavaScript API desktop-only (hidden document) requirement set 1.3](/javascript/api/requirement-sets/word/word-api-1.3-hidden-document-requirement-set)
+- `WordApiDesktop 1.4`: [Word JavaScript API desktop-only requirement set 1.4](/javascript/api/requirement-sets/word/word-api-desktop-1-4-requirement-set)
+- `WordApiDesktop 1.3`: [Word JavaScript API desktop-only requirement set 1.3](/javascript/api/requirement-sets/word/word-api-desktop-1-3-requirement-set)
+- `WordApiDesktop 1.2`: [Word JavaScript API desktop-only requirement set 1.2](/javascript/api/requirement-sets/word/word-api-desktop-1-2-requirement-set)
+- `WordApiDesktop 1.1`: [Word JavaScript API desktop-only requirement set 1.1](/javascript/api/requirement-sets/word/word-api-desktop-1-1-requirement-set)
+- `WordApiHiddenDocument 1.5`: [Word JavaScript API desktop-only (hidden document) requirement set 1.5](/javascript/api/requirement-sets/word/word-api-1-5-hidden-document-requirement-set)
+- `WordApiHiddenDocument 1.4`: [Word JavaScript API desktop-only (hidden document) requirement set 1.4](/javascript/api/requirement-sets/word/word-api-1-4-hidden-document-requirement-set)
+- `WordApiHiddenDocument 1.3`: [Word JavaScript API desktop-only (hidden document) requirement set 1.3](/javascript/api/requirement-sets/word/word-api-1-3-hidden-document-requirement-set)
 
 > [!NOTE]
 > If you're looking for the JavaScript APIs for developing Office Scripts, visit the [Office Scripts API reference](/javascript/api/office-scripts/overview).

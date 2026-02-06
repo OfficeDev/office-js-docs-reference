@@ -70,6 +70,13 @@
 ||[getRegExMatches()](/javascript/api/outlook/office.messageread#outlook-office-messageread-getregexmatches-member(1))|Returns string values in the selected item that match the regular expressions defined in an add-in only manifest file.|
 ||[getRegExMatchesByName(name: string)](/javascript/api/outlook/office.messageread#outlook-office-messageread-getregexmatchesbyname-member(1))|Returns string values in the selected item that match the named regular expression defined in an add-in only manifest file.|
 ||[loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult\<CustomProperties\>) =\> void, userContext?: any)](/javascript/api/outlook/office.messageread#outlook-office-messageread-loadcustompropertiesasync-member(1))|Asynchronously loads custom properties for this add-in on the selected item.|
+|[AttachmentType](/javascript/api/outlook/office.mailboxenums.attachmenttype)|Cloud|The attachment is stored in a cloud location, such as OneDrive.|
+||File|The attachment is a file.|
+||Item|The attachment is an Exchange item.|
+|[RecipientType](/javascript/api/outlook/office.mailboxenums.recipienttype)|DistributionList|Specifies the recipient is a distribution list containing a list of email addresses.|
+||ExternalUser|Specifies the recipient is an SMTP email address that isn't on the Exchange server.|
+||Other|Specifies the recipient isn't one of the other recipient types.|
+||User|Specifies the recipient is an SMTP email address on the Exchange server.|
 |[Recipients](/javascript/api/outlook/office.recipients)|[addAsync(recipients: Array\<string \| EmailUser \| EmailAddressDetails\>, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1))|Adds a recipient list to the existing recipients for an appointment or message.|
 ||[addAsync(recipients: Array\<string \| EmailUser \| EmailAddressDetails\>, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.recipients#outlook-office-recipients-addasync-member(1))|Adds a recipient list to the existing recipients for an appointment or message.|
 ||[getAsync(callback: (asyncResult: Office.AsyncResult\<EmailAddressDetails[]\>) =\> void)](/javascript/api/outlook/office.recipients#outlook-office-recipients-getasync-member(1))|Gets a recipient list for an appointment or message.|

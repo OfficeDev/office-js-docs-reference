@@ -29,3 +29,9 @@
 ||[removeAsync(key: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-removeasync-member(1))|Removes a notification message for an item.|
 ||[replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-replaceasync-member(1))|Replaces a notification message that has a given key with another message.|
 ||[replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.notificationmessages#outlook-office-notificationmessages-replaceasync-member(1))|Replaces a notification message that has a given key with another message.|
+|[ItemNotificationMessageType](/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype)|ErrorMessage|The notification message is an error message.|
+||InformationalMessage|The notification message is an informational message.|
+||ProgressIndicator|The notification message is a progress indicator.|
+|[RestVersion](/javascript/api/outlook/office.mailboxenums.restversion)|Beta|Beta.|
+||v1_0|Version 1.0.|
+||v2_0|Version 2.0.|

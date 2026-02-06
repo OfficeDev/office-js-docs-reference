@@ -30,6 +30,174 @@
 ||[removeHandlerAsync(eventType: Office.EventType \| string, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-removehandlerasync-member(1))|Removes the event handlers for a supported event type.|
 ||[removeHandlerAsync(eventType: Office.EventType \| string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.messageread#outlook-office-messageread-removehandlerasync-member(1))|Removes the event handlers for a supported event type.|
 ||[seriesId](/javascript/api/outlook/office.messageread#outlook-office-messageread-seriesid-member)|Gets the ID of the series that an instance belongs to.|
+|[Days](/javascript/api/outlook/office.mailboxenums.days)|Day|Day of week.|
+||Fri|Friday|
+||Mon|Monday|
+||Sat|Saturday|
+||Sun|Sunday|
+||Thu|Thursday|
+||Tue|Tuesday|
+||Wed|Wednesday|
+||Weekday|Week day (excludes weekend days): 'Mon', 'Tue', 'Wed', 'Thu', and 'Fri'.|
+||WeekendDay|Weekend day: 'Sat' and 'Sun'.|
+|[Month](/javascript/api/outlook/office.mailboxenums.month)|Apr|April|
+||Aug|August|
+||Dec|December|
+||Feb|February|
+||Jan|January|
+||Jul|July|
+||Jun|June|
+||Mar|March|
+||May|May|
+||Nov|November|
+||Oct|October|
+||Sep|September|
+|[RecurrenceTimeZone](/javascript/api/outlook/office.mailboxenums.recurrencetimezone)|AUSCentralStandardTime|Australia Central Standard Time|
+||AUSEasternStandardTime|AUS Eastern Standard Time|
+||AfghanistanStandardTime|Afghanistan Standard Time|
+||AlaskanStandardTime|Alaskan Standard Time|
+||AleutianStandardTime|Aleutian Standard Time|
+||AltaiStandardTime|Altai Standard Time|
+||ArabStandardTime|Arab Standard Time|
+||ArabianStandardTime|Arabian Standard Time|
+||ArabicStandardTime|Arabic Standard Time|
+||ArgentinaStandardTime|Argentina Standard Time|
+||AstrakhanStandardTime|Astrakhan Standard Time|
+||AtlanticStandardTime|Atlantic Standard Time|
+||AusCentralW_StandardTime|Australia Central West Standard Time|
+||AzerbaijanStandardTime|Azerbaijan Standard Time|
+||AzoresStandardTime|Azores Standard Time|
+||BahiaStandardTime|Bahia Standard Time|
+||BangladeshStandardTime|Bangladesh Standard Time|
+||BelarusStandardTime|Belarus Standard Time|
+||BougainvilleStandardTime|Bougainville Standard Time|
+||CanadaCentralStandardTime|Canada Central Standard Time|
+||CapeVerdeStandardTime|Cape Verde Standard Time|
+||CaucasusStandardTime|Caucasus Standard Time|
+||CenAustraliaStandardTime|Central Australia Standard Time|
+||CentralAmericaStandardTime|Central America Standard Time|
+||CentralAsiaStandardTime|Central Asia Standard Time|
+||CentralBrazilianStandardTime|Central Brazilian Standard Time|
+||CentralEuropeStandardTime|Central Europe Standard Time|
+||CentralEuropeanStandardTime|Central European Standard Time|
+||CentralPacificStandardTime|Central Pacific Standard Time|
+||CentralStandardTime|Central Standard Time|
+||CentralStandardTime_Mexico|Central Standard Time (Mexico)|
+||ChathamIslandsStandardTime|Chatham Islands Standard Time|
+||ChinaStandardTime|China Standard Time|
+||CubaStandardTime|Cuba Standard Time|
+||DatelineStandardTime|Dateline Standard Time|
+||E_AfricaStandardTime|East Africa Standard Time|
+||E_AustraliaStandardTime|East Australia Standard Time|
+||E_EuropeStandardTime|East Europe Standard Time|
+||E_SouthAmericaStandardTime|East South America Standard Time|
+||EasterIslandStandardTime|Easter Island Standard Time|
+||EasternStandardTime|Eastern Standard Time|
+||EasternStandardTime_Mexico|Eastern Standard Time (Mexico)|
+||EgyptStandardTime|Egypt Standard Time|
+||EkaterinburgStandardTime|Ekaterinburg Standard Time|
+||FLEStandardTime|FLE Standard Time|
+||FijiStandardTime|Fiji Standard Time|
+||GMTStandardTime|GMT Standard Time|
+||GTBStandardTime|GTB Standard Time|
+||GeorgianStandardTime|Georgian Standard Time|
+||GreenlandStandardTime|Greenland Standard Time|
+||GreenwichStandardTime|Greenwich Standard Time|
+||HaitiStandardTime|Haiti Standard Time|
+||HawaiianStandardTime|Hawaiian Standard Time|
+||IndiaStandardTime|India Standard Time|
+||IranStandardTime|Iran Standard Time|
+||IsraelStandardTime|Israel Standard Time|
+||JordanStandardTime|Jordan Standard Time|
+||KaliningradStandardTime|Kaliningrad Standard Time|
+||KamchatkaStandardTime|Kamchatka Standard Time|
+||KoreaStandardTime|Korea Standard Time|
+||LibyaStandardTime|Libya Standard Time|
+||LineIslandsStandardTime|Line Islands Standard Time|
+||LordHoweStandardTime|Lord Howe Standard Time|
+||MagadanStandardTime|Magadan Standard Time|
+||MagallanesStandardTime|Magallanes Standard Time|
+||MarquesasStandardTime|Marquesas Standard Time|
+||MauritiusStandardTime|Mauritius Standard Time|
+||MidAtlanticStandardTime|Mid-Atlantic Standard Time|
+||MiddleEastStandardTime|Middle East Standard Time|
+||MontevideoStandardTime|Montevideo Standard Time|
+||MoroccoStandardTime|Morocco Standard Time|
+||MountainStandardTime|Mountain Standard Time|
+||MountainStandardTime_Mexico|Mountain Standard Time (Mexico)|
+||MyanmarStandardTime|Myanmar Standard Time|
+||N_CentralAsiaStandardTime|North Central Asia Standard Time|
+||NamibiaStandardTime|Namibia Standard Time|
+||NepalStandardTime|Nepal Standard Time|
+||NewZealandStandardTime|New Zealand Standard Time|
+||NewfoundlandStandardTime|Newfoundland Standard Time|
+||NorfolkStandardTime|Norfolk Standard Time|
+||NorthAsiaEastStandardTime|North Asia East Standard Time|
+||NorthAsiaStandardTime|North Asia Standard Time|
+||NorthKoreaStandardTime|North Korea Standard Time|
+||OmskStandardTime|Omsk Standard Time|
+||PacificSAStandardTime|Pacific SA Standard Time|
+||PacificStandardTime|Pacific Standard Time|
+||PacificStandardTimeMexico|Pacific Standard Time (Mexico)|
+||PakistanStandardTime|Pakistan Standard Time|
+||ParaguayStandardTime|Paraguay Standard Time|
+||RomanceStandardTime|Romance Standard Time|
+||RussiaTimeZone10|Russia Time Zone 10|
+||RussiaTimeZone11|Russia Time Zone 11|
+||RussiaTimeZone3|Russia Time Zone 3|
+||RussianStandardTime|Russian Standard Time|
+||SAEasternStandardTime|SA Eastern Standard Time|
+||SAPacificStandardTime|SA Pacific Standard Time|
+||SAWesternStandardTime|SA Western Standard Time|
+||SEAsiaStandardTime|Southeast Asia Standard Time|
+||SaintPierreStandardTime|Saint Pierre Standard Time|
+||SakhalinStandardTime|Sakhalin Standard Time|
+||SamoaStandardTime|Samoa Standard Time|
+||SaratovStandardTime|Saratov Standard Time|
+||SingaporeStandardTime|Singapore Standard Time|
+||SouthAfricaStandardTime|South Africa Standard Time|
+||SriLankaStandardTime|Sri Lanka Standard Time|
+||SudanStandardTime|Sudan Standard Time|
+||SyriaStandardTime|Syria Standard Time|
+||TaipeiStandardTime|Taipei Standard Time|
+||TasmaniaStandardTime|Tasmania Standard Time|
+||TocantinsStandardTime|Tocantins Standard Time|
+||TokyoStandardTime|Tokyo Standard Time|
+||TomskStandardTime|Tomsk Standard Time|
+||TongaStandardTime|Tonga Standard Time|
+||TransbaikalStandardTime|Transbaikal Standard Time|
+||TurkeyStandardTime|Turkey Standard Time|
+||TurksAndCaicosStandardTime|Turks And Caicos Standard Time|
+||USEasternStandardTime|United States Eastern Standard Time|
+||USMountainStandardTime|United States Mountain Standard Time|
+||UTC|Coordinated Universal Time (UTC)|
+||UTCMINUS02|Coordinated Universal Time (UTC) - 2 hours|
+||UTCMINUS08|Coordinated Universal Time (UTC) - 8 hours|
+||UTCMINUS09|Coordinated Universal Time (UTC) - 9 hours|
+||UTCMINUS11|Coordinated Universal Time (UTC) - 11 hours|
+||UTCPLUS12|Coordinated Universal Time (UTC) + 12 hours|
+||UTCPLUS13|Coordinated Universal Time (UTC) + 13 hours|
+||UlaanbaatarStandardTime|Ulaanbaatar Standard Time|
+||VenezuelaStandardTime|Venezuela Standard Time|
+||VladivostokStandardTime|Vladivostok Standard Time|
+||W_AustraliaStandardTime|West Australia Standard Time|
+||W_CentralAfricaStandardTime|West Central Africa Standard Time|
+||W_EuropeStandardTime|West Europe Standard Time|
+||W_MongoliaStandardTime|West Mongolia Standard Time|
+||WestAsiaStandardTime|West Asia Standard Time|
+||WestBankStandardTime|West Bank Standard Time|
+||WestPacificStandardTime|West Pacific Standard Time|
+||YakutskStandardTime|Yakutsk Standard Time|
+|[RecurrenceType](/javascript/api/outlook/office.mailboxenums.recurrencetype)|Daily|Daily.|
+||Monthly|Monthly.|
+||Weekday|Weekday.|
+||Weekly|Weekly.|
+||Yearly|Yearly.|
+|[WeekNumber](/javascript/api/outlook/office.mailboxenums.weeknumber)|First|First week of the month.|
+||Fourth|Fourth week of the month.|
+||Last|Last week of the month.|
+||Second|Second week of the month.|
+||Third|Third week of the month.|
 |[Organizer](/javascript/api/outlook/office.organizer)|[getAsync(callback?: (asyncResult: Office.AsyncResult\<EmailAddressDetails\>) =\> void)](/javascript/api/outlook/office.organizer#outlook-office-organizer-getasync-member(1))|Gets the organizer value of an appointment as an EmailAddressDetails object|
 ||[getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<EmailAddressDetails\>) =\> void)](/javascript/api/outlook/office.organizer#outlook-office-organizer-getasync-member(1))|Gets the organizer value of an appointment as an EmailAddressDetails object|
 |[RecipientsChangedEventArgs](/javascript/api/outlook/office.recipientschangedeventargs)|[changedRecipientFields](/javascript/api/outlook/office.recipientschangedeventargs#outlook-office-recipientschangedeventargs-changedrecipientfields-member)|Gets an object that indicates change state of recipients fields.|
