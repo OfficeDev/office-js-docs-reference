@@ -64,10 +64,14 @@ The preprocessor takes the d.ts files and splits them into host-specific section
 
 API Extractor converts the d.ts files into JSON data. This tokenizes all the type data, allowing for easier parsing.
 
-The midprocessor retrieves the code snippets and pairs them with the proper hosts, and cleans up the crosslinking between Outlook and Common API objects.
+The midprocessor retrieves the code snippets from both local files and Script Lab, consolidates them into `snippets.yaml` files for each host/version, and cleans up the crosslinking between Outlook and Common API objects.
 
-API Documenter converts the JSON data into .yml files. The .yml files are converted to markdown by the Open Publishing System that publishes our docs to learn.microsoft.com. API Documenter also contains an Office-specific extension that inserts our code snippets.
+API Documenter converts the JSON data into .yml files. The .yml files are converted to markdown by the Open Publishing System that publishes our docs to learn.microsoft.com. This repository uses the standard version of API Documenter (not a custom Office fork).
 
-The postprocessor cleans up the table of contents and moves the .yml files into the [publishing folder](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/docs-ref-autogen).
+The postprocessor performs several critical transformations:
+- **Snippet injection**: Loads the consolidated `snippets.yaml` files and inserts code examples into the appropriate YAML fields
+- **API set URL mapping**: Converts API set references (e.g., `[API set: ExcelApi 1.1]`) into hyperlinks to the appropriate requirement set documentation pages
+- **TOC cleanup**: Reorganizes the table of contents for better user navigation
+- **Final packaging**: Moves the .yml files into the [publishing folder](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/docs-ref-autogen)
 
 All five of these steps are performed when [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd) is run. That script also handles node module installation, cleans out old file sets, and versions Type Definition files for each requirement set.

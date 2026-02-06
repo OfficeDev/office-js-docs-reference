@@ -179,6 +179,244 @@ const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const tocTemplateLocation = path.resolve("../../docs");
 
+// ===== SNIPPET INJECTION MODULE =====
+
+interface SnippetMap {
+    [uid: string]: string[];  // UID -> array of code snippets
+}
+
+interface SnippetCache {
+    [hostVersion: string]: SnippetMap;  // e.g., "excel_1_15" -> SnippetMap
+}
+
+const snippetCache: SnippetCache = {};
+
+/**
+ * Loads snippets for a specific host/version from the JSON directory.
+ * Caches results to avoid repeated file I/O.
+ */
+function loadSnippetsForHost(hostVersionFolder: string): SnippetMap {
+    const cacheKey = path.basename(hostVersionFolder);
+
+    if (snippetCache[cacheKey]) {
+        return snippetCache[cacheKey];
+    }
+
+    const snippetPath = path.resolve(path.join("../json", cacheKey, "snippets.yaml"));
+
+    if (!fsx.existsSync(snippetPath)) {
+        console.log(`  No snippets file found for ${cacheKey}`);
+        snippetCache[cacheKey] = {};
+        return {};
+    }
+
+    try {
+        const snippetContent = fsx.readFileSync(snippetPath, "utf8");
+        const snippets = jsyaml.load(snippetContent) as SnippetMap;
+        snippetCache[cacheKey] = snippets || {};
+        console.log(`  Loaded ${Object.keys(snippetCache[cacheKey]).length} snippets for ${cacheKey}`);
+        return snippetCache[cacheKey];
+    } catch (error) {
+        console.error(`  Error loading snippets for ${cacheKey}:`, error);
+        snippetCache[cacheKey] = {};
+        return {};
+    }
+}
+
+/**
+ * Formats snippet injection to match current Office API Documenter format.
+ */
+function injectSnippetIntoRemarks(
+    existingRemarks: string,
+    snippetArray: string[]
+): string {
+    // Check if examples section already exists
+    const examplesIndex = existingRemarks.indexOf("#### Examples");
+    if (examplesIndex >= 0) {
+        // Already has examples, don't duplicate
+        return existingRemarks;
+    }
+
+    // Format: Add "#### Examples" section after API set link
+    let examplesSection = "\n\n#### Examples\n";
+
+    snippetArray.forEach((snippet) => {
+        // Extract GitHub link if present (from Script Lab snippets)
+        const linkMatch = snippet.match(/\/\/ Link to full sample:\s*(https:\/\/[^\n]+)/);
+        const codeSnippet = snippet.replace(/\/\/ Link to full sample:.*\n/, "").trim();
+
+        examplesSection += "\n```TypeScript\n";
+        if (linkMatch) {
+            examplesSection += `// Link to full sample: ${linkMatch[1]}\n\n`;
+        }
+        examplesSection += codeSnippet + "\n```\n";
+    });
+
+    return existingRemarks + examplesSection;
+}
+
+/**
+ * Injects code snippets into YAML remarks field.
+ * Matches the current Office API Documenter output format exactly.
+ */
+function injectSnippetsIntoYaml(
+    yamlFilePath: string,
+    snippets: SnippetMap
+): boolean {
+    try {
+        const yamlContent = fsx.readFileSync(yamlFilePath, "utf8");
+        const schemaComment = yamlContent.substring(0, yamlContent.indexOf("\n") + 1);
+        const apiYaml: ApiYaml = jsyaml.load(yamlContent) as ApiYaml;
+
+        let modified = false;
+
+        // Process methods
+        if (apiYaml.methods) {
+            apiYaml.methods.forEach((method: ApiMethodYaml) => {
+                const snippetKey = method.uid;
+                if (snippets[snippetKey]) {
+                    method.remarks = injectSnippetIntoRemarks(
+                        method.remarks || "",
+                        snippets[snippetKey]
+                    );
+                    modified = true;
+                }
+            });
+        }
+
+        // Process properties
+        if (apiYaml.properties) {
+            apiYaml.properties.forEach((property: ApiPropertyYaml) => {
+                const snippetKey = property.uid;
+                if (snippets[snippetKey]) {
+                    property.remarks = injectSnippetIntoRemarks(
+                        property.remarks || "",
+                        snippets[snippetKey]
+                    );
+                    modified = true;
+                }
+            });
+        }
+
+        // Process fields (for enums)
+        if (apiYaml.fields) {
+            apiYaml.fields.forEach((field: ApiFieldYaml) => {
+                const snippetKey = field.uid;
+                if (snippets[snippetKey]) {
+                    field.remarks = injectSnippetIntoRemarks(
+                        field.remarks || "",
+                        snippets[snippetKey]
+                    );
+                    modified = true;
+                }
+            });
+        }
+
+        if (modified) {
+            const newYamlContent = schemaComment + jsyaml.dump(apiYaml);
+            fsx.writeFileSync(yamlFilePath, newYamlContent);
+        }
+
+        return modified;
+    } catch (error) {
+        console.error(`  Error processing ${yamlFilePath}:`, error);
+        return false;
+    }
+}
+
+// ===== API SET URL MAPPING MODULE =====
+
+interface ApiSetUrlMap {
+    [hostName: string]: string;
+}
+
+const API_SET_URL_MAPPINGS: ApiSetUrlMap = {
+    "excel": "/javascript/api/requirement-sets/excel/excel-api-requirement-sets",
+    "outlook": "/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets",
+    "word": "/javascript/api/requirement-sets/word/word-api-requirement-sets",
+    "powerpoint": "/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets",
+    "onenote": "/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets",
+    "visio": "/office/dev/add-ins/reference/overview/visio-javascript-reference-overview",
+    "office": "/office/dev/add-ins/reference/javascript-api-for-office",
+    "office-runtime": "/office/dev/add-ins/reference/javascript-api-for-office",
+    "custom-functions-runtime": "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets"
+};
+
+/**
+ * Maps API set references to hyperlinks in YAML content.
+ * Replaces patterns like "[API set: ExcelApi 1.1]" with
+ * "[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)"
+ */
+function mapApiSetUrls(yamlContent: string, hostName: string): string {
+    const url = API_SET_URL_MAPPINGS[hostName] || API_SET_URL_MAPPINGS["office"];
+
+    // Pattern matches: \[ [API set: ExcelApi 1.1] \]
+    // Replace with: \[ [API set: ExcelApi 1.1](/url) \]
+    const apiSetPattern = /\\\[\s*\[API set:\s*([^\]]+)\]\s*\\\]/g;
+
+    return yamlContent.replace(apiSetPattern, (match, apiSetName) => {
+        return `\\[ [API set: ${apiSetName}](${url}) \\]`;
+    });
+}
+
+/**
+ * Process all YAML files in a host directory and inject snippets + map URLs.
+ */
+function processYamlFilesWithSnippets(hostVersionFolder: string): void {
+    const hostFolderName = path.basename(hostVersionFolder);
+    const hostName = getHostNameFromFilename(hostFolderName);
+
+    console.log(`Processing ${hostFolderName} for snippets and API set URLs...`);
+
+    const snippets = loadSnippetsForHost(hostVersionFolder);
+
+    // Find all YAML files in the host directory
+    const yamlFiles: string[] = [];
+
+    function findYamlFiles(dir: string) {
+        if (!fsx.existsSync(dir)) return;
+
+        fsx.readdirSync(dir).forEach(filename => {
+            const fullPath = path.join(dir, filename);
+            const stats = fsx.lstatSync(fullPath);
+
+            if (stats.isDirectory() && !filename.includes("toc")) {
+                findYamlFiles(fullPath);  // Recurse into subdirectories
+            } else if (filename.endsWith(".yml") && !filename.includes("toc")) {
+                yamlFiles.push(fullPath);
+            }
+        });
+    }
+
+    findYamlFiles(hostVersionFolder);
+
+    let snippetsInjected = 0;
+
+    // Step 1: Inject snippets
+    yamlFiles.forEach(yamlFilePath => {
+        if (injectSnippetsIntoYaml(yamlFilePath, snippets)) {
+            snippetsInjected++;
+        }
+    });
+
+    if (snippetsInjected > 0) {
+        console.log(`  Injected snippets into ${snippetsInjected} files`);
+    }
+
+    // Step 2: Map API set URLs for all YAML files
+    yamlFiles.forEach(yamlFilePath => {
+        try {
+            let yamlContent = fsx.readFileSync(yamlFilePath, "utf8");
+            const updatedContent = mapApiSetUrls(yamlContent, hostName);
+            if (updatedContent !== yamlContent) {
+                fsx.writeFileSync(yamlFilePath, updatedContent);
+            }
+        } catch (error) {
+            console.error(`  Error mapping API set URLs in ${yamlFilePath}:`, error);
+        }
+    });
+}
+
 // Utility functions
 function processFilesInDirectory(
     directory: string,
@@ -322,17 +560,21 @@ function processCustomFunctionsLinks(): void {
 }
 
 function processYamlFiles(): void {
-    console.log(`Adjust YAML files - HREF and type alias expansion.`);
+    console.log(`Adjust YAML files - snippets, API set URLs, HREF, and type alias expansion.`);
     fsx.readdirSync(docsDestination)
         .filter(filename => !filename.includes(".yml"))
         .forEach(filename => {
             const subfolder = path.join(docsDestination, filename);
             const hostName = getHostNameFromFilename(filename);
-            
+
             if (fsx.existsSync(subfolder)) {
+                // *** NEW: Process snippets and URL mapping first ***
+                processYamlFilesWithSnippets(subfolder);
+
+                // Then continue with existing processing
                 fsx.readdirSync(subfolder).forEach(subfilename => {
                     const subfilePath = path.join(subfolder, subfilename);
-                    
+
                     if (subfilename.includes("toc")) {
                         // Update overview HREF
                         const tocContent = fsx.readFileSync(subfilePath).toString()
