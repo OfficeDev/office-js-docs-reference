@@ -4626,12 +4626,6 @@ export declare namespace Office {
      */
     export interface Context {
         /**
-         * Provides information and access to the signed-in user.
-         *
-         * @beta
-         */
-        auth: Auth;
-        /**
          * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
          *
          * @remarks

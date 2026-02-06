@@ -7233,7 +7233,6 @@ office,Office.CoercionType,"Table",EnumField,Excellent,false
 office,Office.CoercionType,"Text",EnumField,Excellent,false
 office,Office.CoercionType,"XmlSvg",EnumField,Excellent,false
 office,Office.Context,N/A,Interface,Good,true
-office,Office.Context,"auth",Property,Great,true
 office,Office.Context,"commerceAllowed",Property,Excellent,true
 office,Office.Context,"contentLanguage",Property,Excellent,true
 office,Office.Context,"diagnostics",Property,Great,true
@@ -8306,13 +8305,13 @@ office-runtime,OfficeRuntime.DisplayWebDialogOptions,"onMessage",Property,Great,
 office-runtime,OfficeRuntime.DisplayWebDialogOptions,"onRuntimeError",Property,Great,false
 office-runtime,OfficeRuntime.DisplayWebDialogOptions,"width",Property,Excellent,false
 office-runtime,OfficeRuntime.Storage,N/A,Interface,Fine,false
-office-runtime,OfficeRuntime.Storage,"getItem(key)",Method,Excellent,false
-office-runtime,OfficeRuntime.Storage,"getItems(keys)",Method,Excellent,false
-office-runtime,OfficeRuntime.Storage,"getKeys()",Method,Great,false
-office-runtime,OfficeRuntime.Storage,"removeItem(key)",Method,Good,false
-office-runtime,OfficeRuntime.Storage,"removeItems(keys)",Method,Good,false
-office-runtime,OfficeRuntime.Storage,"setItem(key, value)",Method,Great,false
-office-runtime,OfficeRuntime.Storage,"setItems(keyValues)",Method,Great,false
+office-runtime,OfficeRuntime.Storage,"getItem(key)",Method,Excellent,true
+office-runtime,OfficeRuntime.Storage,"getItems(keys)",Method,Excellent,true
+office-runtime,OfficeRuntime.Storage,"getKeys()",Method,Great,true
+office-runtime,OfficeRuntime.Storage,"removeItem(key)",Method,Good,true
+office-runtime,OfficeRuntime.Storage,"removeItems(keys)",Method,Good,true
+office-runtime,OfficeRuntime.Storage,"setItem(key, value)",Method,Great,true
+office-runtime,OfficeRuntime.Storage,"setItems(keyValues)",Method,Great,true
 office-runtime,N/A,N/A,Package,Missing,false
 office-runtime,N/A,"OfficeRuntime.displayWebDialog(url, options)",Method,Fine,true
 onenote,OneNote.Application,N/A,Class,Good,false

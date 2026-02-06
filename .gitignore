@@ -6,6 +6,7 @@ _themes*/
 _repo.*/
 _dependentPackages/
 .openpublishing.buildcore.ps1
+.claude/
 .vscode/
 *.DS_Store
 build-errors.txt

@@ -55,6 +55,28 @@ methods:
       feature implemented in Outlook on Windows. This method isn't supported in
       Outlook on Mac or on the web.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Retrieve a value from the shared runtime storage by its key.
+
+      async function getItem() {
+          const key = document.getElementById('readKey').value.trim();
+
+          const value = await OfficeRuntime.storage.getItem(key);
+
+          if (value === null) {
+              console.log(`Item not found - Key "${key}" not found in storage.`);
+          } else {
+              console.log(`Item retrieved successfully - Key: "${key}"\nValue: "${value}"`);
+          }
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,6 +114,31 @@ methods:
       feature implemented in Outlook on Windows. This method isn't supported in
       Outlook on Mac or on the web.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Retrieve a set of default values from the shared runtime storage.
+
+      async function getDefaultSettings() {
+        const keysToRetrieve = [
+            'username',
+            'email',
+            'theme',
+            'lastLogin',
+            'preferences'
+        ];
+
+        const items = await OfficeRuntime.storage.getItems(keysToRetrieve);
+        for (const [key, value] of Object.entries(items)) {
+            console.log(`"${key}": "${value}"`);
+        }
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,6 +174,27 @@ methods:
       feature implemented in Outlook on Windows. This method isn't supported in
       Outlook on Mac or on the web.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Retrieve all keys currently stored in the shared runtime storage.
+
+      async function getAllKeys() {
+        const keys = await OfficeRuntime.storage.getKeys();
+
+        if (keys.length === 0) {
+          console.log('No items in storage.');
+          showStatus('Storage is empty', 'info');
+        } else {
+          console.log(`Found ${keys.length} key(s):\n\n${keys.toString()}`);
+        }
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,6 +225,30 @@ methods:
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
       feature implemented in Outlook on Windows. This method isn't supported in
       Outlook on Mac or on the web.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Delete an item from the shared runtime storage by its key.
+
+      async function removeItem() {
+          const key = document.getElementById('deleteKey').value.trim();
+              
+          // Check if key exists first.
+          const value = await OfficeRuntime.storage.getItem(key);
+
+          if (value === null) {
+              console.log(`Key "${key}" not found`);
+          } else {
+            await OfficeRuntime.storage.removeItem(key);
+            console.log(`Item "${key}" removed successfully`);
+          }
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -192,6 +284,22 @@ methods:
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
       feature implemented in Outlook on Windows. This method isn't supported in
       Outlook on Mac or on the web.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Delete all the items from the shared runtime storage.
+
+      async function clearAllStorage() {
+        const keys = await OfficeRuntime.storage.getKeys();
+        await OfficeRuntime.storage.removeItems(keys);
+        console.log(`All ${keys.length} items cleared from storage`);
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -229,6 +337,23 @@ methods:
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
       feature implemented in Outlook on Windows. This method isn't supported in
       Outlook on Mac or on the web.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Save a key-value pair in the shared runtime storage.
+
+      async function storeValue() {
+        const key = document.getElementById('createKey').value.trim();
+        const value = document.getElementById('createValue').value.trim();
+
+        await OfficeRuntime.storage.setItem(key, value);
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -269,6 +394,28 @@ methods:
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
       feature implemented in Outlook on Windows. This method isn't supported in
       Outlook on Mac or on the web.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Save multiple key-value pairs in the shared runtime storage.
+
+      async function setDefaultSettings() {
+        const demoData = {
+            'username': 'JohnDoe',
+            'email': 'john.doe@example.com',
+            'theme': 'dark',
+            'lastLogin': new Date().toISOString(),
+            'preferences': JSON.stringify({ notifications: true, language: 'en' })
+        };
+
+        await OfficeRuntime.storage.setItems(demoData);
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
