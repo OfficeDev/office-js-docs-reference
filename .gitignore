@@ -13,4 +13,4 @@ build-log.txt
 tools/dts-utilities*
 tools/version-remover*
 tools/whats-new*
-CLAUDE.md
+CLAUDE.md.claude/settings.local.json
