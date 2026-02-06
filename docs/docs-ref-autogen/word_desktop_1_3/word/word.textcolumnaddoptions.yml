@@ -6,9 +6,7 @@ fullName: Word.TextColumnAddOptions
 summary: >-
   Represents options for a new text column in a document or section of a
   document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     summary: >-
       If provided, specifies whether to evenly space all the text columns in the
       document. The default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +36,7 @@ properties:
       document, in points. The default value is -1, which means Word will
       automatically determine the width based on the number of columns and page
       size.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +52,7 @@ properties:
       If provided, specifies the width of the new text column in the document,
       in points. The default value is -1, which means Word will automatically
       determine the width based on the number of columns and page size.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

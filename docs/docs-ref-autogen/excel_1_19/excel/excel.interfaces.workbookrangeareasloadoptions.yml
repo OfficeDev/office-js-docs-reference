@@ -6,9 +6,7 @@ fullName: Excel.Interfaces.WorkbookRangeAreasLoadOptions
 summary: >-
   Represents a collection of one or more rectangular ranges in multiple
   worksheets.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.12\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,10 +36,7 @@ properties:
       Returns an array of addresses in A1-style. Address values contain the
       worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4,
       Sheet1!D1:D4"). Read-only.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false

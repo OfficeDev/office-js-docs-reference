@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.ConflictCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ConflictCollectionLoadOptions
 summary: Represents the coauthoring conflicts in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets a `Range` object that represents the
       portion of the document that's contained in the `Conflict` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +48,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the `RevisionType` for the
       `Conflict` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

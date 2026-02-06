@@ -4,10 +4,7 @@ uid: visio!Visio.Interfaces.DocumentLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentLoadOptions
 summary: Represents the Document class.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +31,7 @@ properties:
     package: visio!
     fullName: application
     summary: Represents a Visio application instance that contains this document.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +44,7 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the DocumentView object.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

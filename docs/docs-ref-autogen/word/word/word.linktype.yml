@@ -4,9 +4,7 @@ uid: word!Word.LinkType:enum
 package: word!
 fullName: Word.LinkType
 summary: Specifies the type of link.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,90 +12,72 @@ fields:
   - name: chart
     uid: word!Word.LinkType.chart:member
     package: word!
-    summary: >-
+    summary: |-
       Microsoft Excel chart.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Chart"'
   - name: dde
     uid: word!Word.LinkType.dde:member
     package: word!
-    summary: >-
+    summary: |-
       Dynamic Data Exchange.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Dde"'
   - name: ddeAuto
     uid: word!Word.LinkType.ddeAuto:member
     package: word!
-    summary: >-
+    summary: |-
       Automatic DDE.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DdeAuto"'
   - name: import
     uid: word!Word.LinkType.import:member
     package: word!
-    summary: >-
+    summary: |-
       Import file.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Import"'
   - name: include
     uid: word!Word.LinkType.include:member
     package: word!
-    summary: >-
+    summary: |-
       Include file.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Include"'
   - name: ole
     uid: word!Word.LinkType.ole:member
     package: word!
-    summary: >-
+    summary: |-
       OLE object.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ole"'
   - name: picture
     uid: word!Word.LinkType.picture:member
     package: word!
-    summary: >-
+    summary: |-
       Picture.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Picture"'
   - name: reference
     uid: word!Word.LinkType.reference:member
     package: word!
-    summary: >-
+    summary: |-
       Reference library.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Reference"'
   - name: text
     uid: word!Word.LinkType.text:member
     package: word!
-    summary: >-
+    summary: |-
       Text.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Text"'

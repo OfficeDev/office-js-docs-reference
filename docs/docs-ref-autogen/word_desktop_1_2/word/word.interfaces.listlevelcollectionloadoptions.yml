@@ -6,9 +6,7 @@ fullName: Word.Interfaces.ListLevelCollectionLoadOptions
 summary: >-
   Contains a collection of [Word.ListLevel](xref:word!Word.ListLevel:class)
   objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
       For EACH ITEM in the collection: Specifies the horizontal alignment of the
       list level. The value can be `left`<!-- -->, `centered`<!-- -->, or
       `right`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets a `Font` object that represents the
       character formatting of the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the name of the style that's
       linked to the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +81,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the number format for the list
       level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +96,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the position (in points) of the
       number or bullet for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +111,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the number style for the
       `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +126,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the list level that must appear
       before it restarts numbering at 1.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -157,9 +141,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the starting number for the
       `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -174,9 +156,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the tab position for the
       `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -191,9 +171,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the position (in points) for
       the second line of wrapping text for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -209,9 +187,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the character inserted after
       the number for the list level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,10 +4,7 @@ uid: word!Word.RevisionsBalloonWidthType:enum
 package: word!
 fullName: Word.RevisionsBalloonWidthType
 summary: Specifies the width type for revision balloons in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -15,22 +12,16 @@ fields:
   - name: percent
     uid: word!Word.RevisionsBalloonWidthType.percent:member
     package: word!
-    summary: >-
+    summary: |-
       Balloon width as a percentage.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Percent"'
   - name: points
     uid: word!Word.RevisionsBalloonWidthType.points:member
     package: word!
-    summary: >-
+    summary: |-
       Balloon width in points.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Points"'

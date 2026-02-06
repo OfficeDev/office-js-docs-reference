@@ -6,9 +6,7 @@ fullName: Word.DocumentCountNumberedItemsOptions
 summary: >-
   Provides configuration options for the
   [Document.countNumberedItems](xref:word!Word.Document:class) method.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
 isPreview: true
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     summary: >-
       If provided, specifies the level of numbering to count. If omitted, all
       levels are counted.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -38,9 +34,7 @@ properties:
     summary: >-
       If provided, specifies the type of numbered items to count. The default
       value is `allNumbers`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false

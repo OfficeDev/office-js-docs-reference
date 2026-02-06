@@ -7,9 +7,7 @@ summary: >-
   Represents a collection of key-value pair setting objects that are part of the
   workbook. The scope is limited to per file and add-in (task-pane or content)
   combination.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The key that represents the ID of the
       setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the value stored for this
       setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

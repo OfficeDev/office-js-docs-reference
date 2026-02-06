@@ -19,9 +19,7 @@ properties:
     summary: >-
       Gets a `CoauthorCollection` object that represents all the coauthors
       currently editing the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     package: word!
     fullName: canCoauthor
     summary: Gets whether this document can be coauthored.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: word!
     fullName: canMerge
     summary: Gets whether the document can be automatically merged.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +60,7 @@ properties:
     summary: >-
       Gets a `ConflictCollection` object that represents all the conflicts in
       the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +75,7 @@ properties:
     summary: >-
       Gets a `CoauthoringLockCollection` object that represents the locks in the
       document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +88,7 @@ properties:
     package: word!
     fullName: me
     summary: Gets a `Coauthor` object that represents the current user.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +101,7 @@ properties:
     package: word!
     fullName: pendingUpdates
     summary: Gets whether the document has pending updates that have not been accepted.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +116,7 @@ properties:
     summary: >-
       Gets a `CoauthoringUpdateCollection` object that represents the most
       recent updates that were merged into the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

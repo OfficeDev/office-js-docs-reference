@@ -6,10 +6,8 @@ fullName: Excel.LinkedEntityDataDomainRefreshMode
 summary: >-
   Represents the refresh mode setting for the `LinkedEntityCellValue` objects of
   a `LinkedEntityDataDomain`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[Api set: ExcelApi 1.19\]
 
   This enum isn't supported in Excel on the web.
 
@@ -19,14 +17,10 @@ fields:
   - name: manual
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.manual:member
     package: excel!
-    summary: >-
+    summary: |-
       Manual refresh by the user. Refresh is not triggered automatically.
 
-
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+      * \[Api set: ExcelApi 1.19\]
 
       This field isn't supported in Excel on the web.
     value: '"Manual"'
@@ -39,9 +33,7 @@ fields:
       load, applicable to linked entity data domains defined by Office Add-ins.
 
 
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
 
 
       This field isn't supported in Excel on the web.
@@ -58,9 +50,7 @@ fields:
       refresh each time the add-in loads.
 
 
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
 
 
       This field isn't supported in Excel on the web.
@@ -68,14 +58,10 @@ fields:
   - name: unknown
     uid: excel!Excel.LinkedEntityDataDomainRefreshMode.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       Refresh mode is unknown or unsupported.
 
-
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+      * \[Api set: ExcelApi 1.19\]
 
       This field isn't supported in Excel on the web.
     value: '"Unknown"'

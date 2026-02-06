@@ -10,9 +10,7 @@ summary: >-
   [SpamReporting](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
   event.
 remarks: >-
-  \[ [API set: Mailbox
-  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox 1.14\]
 
 
   **[Minimum permission
@@ -23,47 +21,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Message Read
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // The following example handles a SpamReporting event to process a reported
-  spam or phishing message.
-
-  function onSpamReport(event) {
-      // Gets the Base64-encoded EML format of a reported message.
-      Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-              return;
-          }
-
-          // Run additional processing operations here.
-
-          /**
-           * Signals that the spam-reporting event has completed processing.
-           * It then moves the reported message to a custom mailbox folder named "Reported Messages"
-           * and shows a post-processing dialog to the user.
-           * If an error occurs while the message is being processed, the `onErrorDeleteItem`
-           * property determines whether the message will be deleted.
-           */
-          const event = asyncResult.asyncContext;
-          event.completed({
-              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
-              folderName: "Reported Messages",
-              onErrorDeleteItem: true,
-              showPostProcessingDialog: {
-                  title: "Contoso Spam Reporting",
-                  description: "Thank you for reporting this message.",
-              },
-          });
-      });
-  }
-
-  ```
 
 isPreview: false
 isDeprecated: false
@@ -80,9 +37,7 @@ properties:
       specifies the ID of the task pane that opens after the message is
       processed.
     remarks: >-
-      \[ [API set: Mailbox
-      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.15\]
 
 
       **[Minimum permission level
@@ -136,31 +91,6 @@ properties:
       program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756)
       and select the **Beta Channel** option to access Office beta builds.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function onSpamReport(event) {
-          // Run operations to process the reported message.
-
-          /**
-           * Signals that the spam-reporting event has completed processing.
-           * A task pane is opened instead of showing a post-processing dialog.
-           * Context data is then passed to the task pane for processing.
-           * To ensure that the task pane opens and receives the context data,
-           * the reported message mustn't be moved from the folder in which it resides.
-           */
-          event.completed({
-              commandId: "msgReadOpenPaneButton",
-              contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
-              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
-          });
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,9 +108,7 @@ properties:
       specifies any JSON data passed to the add-in's task pane after the message
       is processed.
     remarks: >-
-      \[ [API set: Mailbox
-      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.15\]
 
 
       **[Minimum permission level
@@ -244,31 +172,6 @@ properties:
       program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756)
       and select the **Beta Channel** option to access Office beta builds.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function onSpamReport(event) {
-          // Run operations to process the reported message.
-
-          /**
-           * Signals that the spam-reporting event has completed processing.
-           * A task pane is opened instead of showing a post-processing dialog.
-           * Context data is then passed to the task pane for processing.
-           * To ensure that the task pane opens and receives the context data,
-           * the reported message mustn't be moved from the folder in which it resides.
-           */
-          event.completed({
-              commandId: "msgReadOpenPaneButton",
-              contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
-              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
-          });
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -285,9 +188,7 @@ properties:
       to signal that a reported message has finished processing, this property
       specifies the Outlook mailbox folder to which the message will be moved.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.14\]
 
 
       **[Minimum permission level
@@ -330,9 +231,7 @@ properties:
       specifies whether the message is moved to a different folder in the
       mailbox.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.14\]
 
 
       **[Minimum permission level
@@ -389,9 +288,7 @@ properties:
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))<!--
       -->, the reported message remains in its current mailbox folder.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.14\]
 
 
       **[Minimum permission level
@@ -436,9 +333,7 @@ properties:
 
       - `noMove` - Leaves the reported message in its current folder.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.14\]
 
 
       **[Minimum permission level
@@ -471,43 +366,6 @@ properties:
       `postProcessingAction` property will default to `moveToSpamFolder` and
       move the reported message to the **Junk Email** folder.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example handles a SpamReporting event to process a
-      reported spam or phishing message.
-
-      function onSpamReport(event) {
-          // Gets the Base64-encoded EML format of a reported message.
-          Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
-              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                  console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
-                  return;
-              }
-
-              // Run additional processing operations here.
-
-              /**
-               * Signals that the spam-reporting event has completed processing.
-               * It then moves the reported message to the Junk Email folder of the mailbox and shows a
-               * post-processing dialog to the user.
-               */
-              const event = asyncResult.asyncContext;
-              event.completed({
-                  postProcessingAction: "moveToSpamFolder",
-                  showPostProcessingDialog: {
-                      title: "Contoso Spam Reporting",
-                      description: "Thank you for reporting this message.",
-                  },
-              });
-          });
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -528,9 +386,7 @@ properties:
       If this property isn't specified, a dialog isn't shown to the user once
       their reported message is processed.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.14\]
 
 
       **[Minimum permission level

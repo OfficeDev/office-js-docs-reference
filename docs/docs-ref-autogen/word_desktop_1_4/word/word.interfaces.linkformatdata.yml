@@ -19,9 +19,7 @@ properties:
     summary: >-
       Specifies if the link is updated automatically when the container file is
       opened or when the source file is changed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     summary: >-
       Specifies if a `Field`<!-- -->, `InlineShape`<!-- -->, or `Shape` object
       is locked to prevent automatic updating.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     package: word!
     fullName: isPictureSavedWithDocument
     summary: Specifies if the linked picture is saved with the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     summary: >-
       Specifies the path and name of the source file for the linked OLE object,
       picture, or field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +77,7 @@ properties:
     summary: >-
       Gets the name of the source file for the linked OLE object, picture, or
       field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +92,7 @@ properties:
     summary: >-
       Gets the path of the source file for the linked OLE object, picture, or
       field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,9 +105,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the link type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

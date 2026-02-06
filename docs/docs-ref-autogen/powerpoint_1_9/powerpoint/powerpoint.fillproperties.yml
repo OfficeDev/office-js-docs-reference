@@ -4,58 +4,7 @@ uid: powerpoint!PowerPoint.FillProperties:interface
 package: powerpoint!
 fullName: PowerPoint.FillProperties
 summary: Represents the fill formatting of a table cell.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-  // Specifies the font formatting and fill colors of the cells in a table.
-
-  await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-    // Add a table, specifying font formatting and fill colors.
-    shapes.addTable(3, 4, {
-      values: [
-        ["A", "BB", "CCC", "DDDD"],
-        ["E", "FF", "GGG", "HHHH"],
-        ["1", "12", "123", "1234"]
-      ],
-      specificCellProperties: [
-        [
-          { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
-          { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
-          { fill: { color: "red" }, font: { color: "yellow", italic: true } },
-          { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
-        ],
-        [
-          { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
-          { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
-          { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
-          { fill: { color: "red" }, font: { color: "yellow" } }
-        ],
-        [
-          { fill: { color: "red" }, font: { color: "#b0bf1a" } },
-          { fill: { color: "#9966cc" }, font: { color: "yellow" } },
-          { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
-          { fill: { color: "red" }, font: { color: "#fbceb1" } }
-        ]
-      ]
-    });
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -68,58 +17,7 @@ properties:
     summary: >-
       Represents the shape fill color in the hexadecimal format \#RRGGBB (e.g.,
       "FFA500") or as a named HTML color value (e.g., "orange").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the font formatting and fill colors of the cells in a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying font formatting and fill colors.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "GGG", "HHHH"],
-            ["1", "12", "123", "1234"]
-          ],
-          specificCellProperties: [
-            [
-              { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
-              { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
-              { fill: { color: "red" }, font: { color: "yellow", italic: true } },
-              { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
-            ],
-            [
-              { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
-              { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
-              { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
-              { fill: { color: "red" }, font: { color: "yellow" } }
-            ],
-            [
-              { fill: { color: "red" }, font: { color: "#b0bf1a" } },
-              { fill: { color: "#9966cc" }, font: { color: "yellow" } },
-              { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
-              { fill: { color: "red" }, font: { color: "#fbceb1" } }
-            ]
-          ]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -134,10 +32,7 @@ properties:
     summary: >-
       Specifies the transparency percentage of the fill as a value from 0.0
       (opaque) through 1.0 (clear).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

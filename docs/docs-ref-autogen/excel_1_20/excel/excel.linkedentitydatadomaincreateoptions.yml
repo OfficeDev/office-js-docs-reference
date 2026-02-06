@@ -6,10 +6,8 @@ fullName: Excel.LinkedEntityDataDomainCreateOptions
 summary: >-
   Represents options that are used to create the `LinkedEntityDataDomain` object
   being added to the `LinkedEntityDataDomainCollection`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[Api set: ExcelApi 1.19\]
 
   This interface isn't supported in Excel on the web.
 
@@ -22,11 +20,8 @@ properties:
     package: excel!
     fullName: dataProvider
     summary: Specifies the name of the data provider for the linked entity data domain.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[Api set: ExcelApi 1.19\]
 
       This property isn't supported in Excel on the web.
 
@@ -43,11 +38,8 @@ properties:
     summary: >-
       Specifies the ID of the linked entity data domain. This ID must be unique
       across all linked entity data domains defined by this Office Add-in.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[Api set: ExcelApi 1.19\]
 
       This property isn't supported in Excel on the web.
 
@@ -68,11 +60,8 @@ properties:
       metadata for custom functions:
       ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[Api set: ExcelApi 1.19\]
 
       This property isn't supported in Excel on the web.
 
@@ -90,11 +79,8 @@ properties:
       Specifies the name of the linked entity data domain. This name must be
       unique across all linked entity data domains defined by this Office
       Add-in.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[Api set: ExcelApi 1.19\]
 
       This property isn't supported in Excel on the web.
 
@@ -116,11 +102,8 @@ properties:
       `supportedRefreshModes` array contains the value "Periodic". This property
       only applies if the `refreshMode` of the linked entity data domain is set
       to "Periodic".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[Api set: ExcelApi 1.19\]
 
       This property isn't supported in Excel on the web.
 
@@ -145,11 +128,8 @@ properties:
       entity data domain. If the array has the value "Periodic", the
       `periodicRefreshInterval` property must also be set for the linked entity
       data domain.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[Api set: ExcelApi 1.19\]
 
       This property isn't supported in Excel on the web.
 

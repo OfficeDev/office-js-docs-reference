@@ -7,9 +7,7 @@ summary: >-
   Represents a geometric shape inside a worksheet. A geometric shape can be a
   rectangle, block arrow, equation symbol, flowchart item, star, banner,
   callout, or any other basic shape in Excel.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     package: excel!
     fullName: id
     summary: Returns the shape identifier.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     package: excel!
     fullName: shape
     summary: Returns the `Shape` object for the geometric shape.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

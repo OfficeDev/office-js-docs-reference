@@ -4,9 +4,7 @@ uid: excel!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
 summary: Represents a collection of comment reply objects that are part of the comment.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,10 +34,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the email of the comment reply's
       author.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,10 +49,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the name of the comment reply's
       author.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,10 +64,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The comment reply's content. The string
       is plain text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -91,10 +80,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the creation time of the comment
       reply.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,10 +93,7 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the comment reply identifier.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,10 +108,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The entities (e.g., people) that are
       mentioned in comments.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.11\]'
 
     isPreview: false
     isDeprecated: false
@@ -143,10 +123,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The comment reply status. A value of
       `true` means the reply is in the resolved state.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.11\]'
 
     isPreview: false
     isDeprecated: false
@@ -163,10 +140,7 @@ properties:
       For EACH ITEM in the collection: The rich comment content (e.g., mentions
       in comments). This string is not meant to be displayed to end-users. Your
       add-in should only use this to parse rich comment content.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.11\]'
 
     isPreview: false
     isDeprecated: false

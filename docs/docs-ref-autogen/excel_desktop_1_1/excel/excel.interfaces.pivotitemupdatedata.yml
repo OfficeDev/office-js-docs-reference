@@ -19,9 +19,7 @@ properties:
     summary: >-
       Determines whether the item is expanded to show child items or if it's
       collapsed and child items are hidden.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotItem.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the PivotItem is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

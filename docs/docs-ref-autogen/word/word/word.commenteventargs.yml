@@ -4,50 +4,7 @@ uid: word!Word.CommentEventArgs:interface
 package: word!
 fullName: Word.CommentEventArgs
 summary: Provides information about the comments that raised the comment event.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
-
-  // Registers event handlers.
-
-  await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    body.track();
-    await context.sync();
-
-    eventContexts[0] = body.onCommentAdded.add(onEventHandler);
-    eventContexts[1] = body.onCommentChanged.add(onChangedHandler);
-    eventContexts[2] = body.onCommentDeleted.add(onEventHandler);
-    eventContexts[3] = body.onCommentDeselected.add(onEventHandler);
-    eventContexts[4] = body.onCommentSelected.add(onEventHandler);
-    await context.sync();
-
-    console.log("Event handlers registered.");
-  });
-
-
-  ...
-
-
-  async function onChangedHandler(event: Word.CommentEventArgs) {
-    await Word.run(async (context) => {
-      console.log(
-        `${event.type} event detected. ${event.changeType} change made. Event source: ${event.source}. Comment info:`, event.commentDetails
-      );
-    });
-  }
-
-  ```
+remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
 isPreview: true
 isDeprecated: false
@@ -58,9 +15,7 @@ properties:
     package: word!
     fullName: changeType
     summary: Represents how the `commentChanged` event is raised.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -80,9 +35,7 @@ properties:
     summary: >-
       Gets the `CommentDetail` array which contains the IDs and reply IDs of the
       involved comments.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -97,9 +50,7 @@ properties:
     summary: >-
       Specifies the source of the event. It can be local or remote (through
       coauthoring).
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -112,9 +63,7 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the event type. See `Word.EventType` for details.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false

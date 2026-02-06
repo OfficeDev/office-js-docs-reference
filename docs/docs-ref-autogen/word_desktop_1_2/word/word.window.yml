@@ -6,66 +6,7 @@ fullName: Word.Window
 summary: >-
   Represents the window that displays the document. A window can be split to
   contain multiple reading panes.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-
-  await Word.run(async (context) => {
-    // Gets the first paragraph of each page.
-    console.log("Getting first paragraph of each page...");
-
-    // Get the active window.
-    const activeWindow: Word.Window = context.document.activeWindow;
-    activeWindow.load();
-
-    // Get the active pane.
-    const activePane: Word.Pane = activeWindow.activePane;
-    activePane.load();
-
-    // Get all pages.
-    const pages: Word.PageCollection = activePane.pages;
-    pages.load();
-
-    await context.sync();
-
-    // Get page index and paragraphs of each page.
-    const pagesIndexes = [];
-    const pagesNumberOfParagraphs = [];
-    const pagesFirstParagraphText = [];
-    for (let i = 0; i < pages.items.length; i++) {
-      const page = pages.items[i];
-      page.load("index");
-      pagesIndexes.push(page);
-
-      const paragraphs = page.getRange().paragraphs;
-      paragraphs.load("items/length");
-      pagesNumberOfParagraphs.push(paragraphs);
-
-      const firstParagraph = paragraphs.getFirst();
-      firstParagraph.load("text");
-      pagesFirstParagraphText.push(firstParagraph);
-    }
-
-    await context.sync();
-
-    for (let i = 0; i < pagesIndexes.length; i++) {
-      console.log(`Page index: ${pagesIndexes[i].index}`);
-      console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
-      console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
-    }
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -76,57 +17,7 @@ properties:
     package: word!
     fullName: activePane
     summary: Gets the active pane in the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets the pages enclosing the viewport.
-
-        // Get the active window.
-        const activeWindow: Word.Window = context.document.activeWindow;
-        activeWindow.load();
-
-        // Get the active pane.
-        const activePane: Word.Pane = activeWindow.activePane;
-        activePane.load();
-
-        // Get pages enclosing the viewport.
-        const pages: Word.PageCollection = activePane.pagesEnclosingViewport;
-        pages.load();
-
-        await context.sync();
-
-        // Log the number of pages.
-        const pageCount = pages.items.length;
-        console.log(`Number of pages enclosing the viewport: ${pageCount}`);
-
-        // Log index info of these pages.
-        const pagesIndexes = [];
-        for (let i = 0; i < pageCount; i++) {
-          const page = pages.items[i];
-          page.load("index");
-          pagesIndexes.push(page);
-        }
-
-        await context.sync();
-
-        for (let i = 0; i < pagesIndexes.length; i++) {
-          console.log(`Page index: ${pagesIndexes[i].index}`);
-        }
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -154,34 +45,7 @@ properties:
     package: word!
     fullName: panes
     summary: Gets the collection of panes in the window.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets all the panes in the active document window.
-
-        // Get the active window.
-        const activeWindow: Word.Window = context.document.activeWindow;
-        activeWindow.load("panes/items/length");
-
-        await context.sync();
-
-        const panes: Word.PaneCollection = activeWindow.panes;
-        console.log(`Number of panes in the current document window: ${panes.items.length}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false

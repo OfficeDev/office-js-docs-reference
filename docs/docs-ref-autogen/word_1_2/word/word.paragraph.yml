@@ -6,30 +6,7 @@ fullName: Word.Paragraph
 summary: >-
   Represents a single paragraph in a selection, range, content control, or
   document body.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
-
-
-  await Word.run(async (context) => {
-    // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
-    paragraph.load("text");
-
-    await context.sync();
-    console.log(paragraph.text);
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -42,28 +19,7 @@ properties:
     summary: >-
       Specifies the alignment for a paragraph. The value can be `left`<!-- -->,
       `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
-
-
-      await Word.run(async (context) => {
-        // Center last paragraph alignment.
-        context.document.body.paragraphs.getLast().alignment = "Centered";
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +36,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +67,7 @@ properties:
       Specifies the value, in points, for a first line or hanging indent. Use a
       positive value to set a first-line indent, and use a negative value to set
       a hanging indent.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +82,7 @@ properties:
     summary: >-
       Gets the text format of the paragraph. Use this to get and set font name,
       size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -147,9 +97,7 @@ properties:
     summary: >-
       Gets the collection of `InlinePicture` objects in the paragraph. The
       collection doesn't include floating images.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -162,28 +110,7 @@ properties:
     package: word!
     fullName: leftIndent
     summary: Specifies the left indent value, in points, for the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
-
-
-      await Word.run(async (context) => {
-        // Indent the first paragraph.
-        context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
-
-        return context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -198,28 +125,7 @@ properties:
     summary: >-
       Specifies the line spacing, in points, for the specified paragraph. In the
       Word UI, this value is divided by 12.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
-
-
-      await Word.run(async (context) => {
-        // Adjust line spacing.
-        context.document.body.paragraphs.getFirst().lineSpacing = 20;
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -232,28 +138,7 @@ properties:
     package: word!
     fullName: lineUnitAfter
     summary: Specifies the amount of spacing, in grid lines, after the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
-
-
-      await Word.run(async (context) => {
-        // Set the space (in line units) after the first paragraph.
-        context.document.body.paragraphs.getFirst().lineUnitAfter = 1;
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -266,28 +151,7 @@ properties:
     package: word!
     fullName: lineUnitBefore
     summary: Specifies the amount of spacing, in grid lines, before the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
-
-
-      await Word.run(async (context) => {
-        // Set the space (in line units) before the first paragraph.
-        context.document.body.paragraphs.getFirst().lineUnitBefore = 1;
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -300,9 +164,7 @@ properties:
     package: word!
     fullName: outlineLevel
     summary: Specifies the outline level for the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -317,9 +179,7 @@ properties:
     summary: >-
       Gets the content control that contains the paragraph. Throws an
       `ItemNotFound` error if there isn't a parent content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -332,9 +192,7 @@ properties:
     package: word!
     fullName: rightIndent
     summary: Specifies the right indent value, in points, for the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -347,28 +205,7 @@ properties:
     package: word!
     fullName: spaceAfter
     summary: Specifies the spacing, in points, after the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
-
-
-      await Word.run(async (context) => {
-        // Set the space (in points) after the first paragraph.
-        context.document.body.paragraphs.getFirst().spaceAfter = 20;
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -381,9 +218,7 @@ properties:
     package: word!
     fullName: spaceBefore
     summary: Specifies the spacing, in points, before the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -399,51 +234,7 @@ properties:
       Specifies the style name for the paragraph. Use this property for custom
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-
-      // Applies the specified style to a paragraph.
-
-      await Word.run(async (context) => {
-        const styleName = (document.getElementById("style-name-to-use") as HTMLInputElement).value;
-        if (styleName == "") {
-          console.warn("Enter a style name to apply.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
-        style.load();
-        await context.sync();
-
-        if (style.isNullObject) {
-          console.warn(`There's no existing style with the name '${styleName}'.`);
-        } else if (style.type != Word.StyleType.paragraph) {
-          console.log(`The '${styleName}' style isn't a paragraph style.`);
-        } else {
-          const body: Word.Body = context.document.body;
-          body.clear();
-          body.insertParagraph(
-            "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
-            "Start"
-          );
-          const paragraph: Word.Paragraph = body.paragraphs.getFirst();
-          paragraph.style = style.nameLocal;
-          console.log(`'${styleName}' style applied to first paragraph.`);
-        }
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -456,30 +247,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
-
-
-      await Word.run(async (context) => {
-        // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
-        paragraph.load("text");
-
-        await context.sync();
-        console.log(paragraph.text);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -495,40 +263,7 @@ methods:
     summary: >-
       Clears the contents of the `Paragraph` object. The user can perform the
       undo operation on the cleared content.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for all of the paragraphs.
-          paragraphs.load('style');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to clear the contents of the first paragraph.
-          paragraphs.items[0].clear();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Cleared the contents of the first paragraph.');
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -542,40 +277,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the paragraph and its content from the document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the text property for all of the paragraphs.
-          paragraphs.load('text');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to delete the first paragraph.
-          paragraphs.items[0].delete();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Deleted the first paragraph.');
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -596,40 +298,7 @@ methods:
       Mac, Word on the web, etc.). If you need exact fidelity, or consistency
       across platforms, use `Paragraph.getOoxml()` and convert the returned XML
       to HTML.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for all of the paragraphs.
-          paragraphs.load('style');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a set of commands to get the HTML of the first paragraph.
-          const html = paragraphs.items[0].getHtml();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Paragraph HTML: ' + html.value);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -643,40 +312,7 @@ methods:
     package: word!
     fullName: getOoxml()
     summary: Gets the Office Open XML (OOXML) representation of the `Paragraph` object.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for the top 2 paragraphs.
-          paragraphs.load({select: 'style', top: 2} );
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a set of commands to get the OOXML of the first paragraph.
-          const ooxml = paragraphs.items[0].getOoxml();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Paragraph OOXML: ' + ooxml.value);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -690,59 +326,7 @@ methods:
     package: word!
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for the top 2 paragraphs.
-          // We never perform an empty load. We always must request a property.
-          paragraphs.load({select: 'style', top: 2} );
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to get the first paragraph.
-          const paragraph = paragraphs.items[0];
-
-          // Queue a command to insert a page break after the first paragraph.
-          paragraph.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Inserted a page break after the paragraph.');
-      });
-
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
-
-
-      Word.run(async (context) => {
-        context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
-
-        await context.sync();
-        console.log("success");
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -773,8 +357,7 @@ methods:
     fullName: insertContentControl(contentControlType)
     summary: Wraps the `Paragraph` object with a content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[Api set: WordApi 1.1\]
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5.
@@ -783,72 +366,6 @@ methods:
       1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
       `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in
       WordApiDesktop 1.3.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for the top 2 paragraphs.
-          // We never perform an empty load. We always must request a property.
-          paragraphs.load({select: 'style', top: 2} );
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to get the first paragraph.
-          const paragraph = paragraphs.items[0];
-
-          // Queue a command to wrap the first paragraph in a rich text content control.
-          paragraph.insertContentControl();
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Wrapped the first paragraph in a content control.');
-      });
-
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
-
-
-      // Traverses each paragraph of the document and wraps a content control on
-      each with either a even or odd tags.
-
-      await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
-        paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
-
-        await context.sync();
-
-        for (let i = 0; i < paragraphs.items.length; i++) {
-          let contentControl = paragraphs.items[i].insertContentControl();
-          // For even, tag "even".
-          if (i % 2 === 0) {
-            contentControl.tag = "even";
-          } else {
-            contentControl.tag = "odd";
-          }
-        }
-        console.log("Content controls inserted: " + paragraphs.items.length);
-
-        await context.sync();
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -896,8 +413,7 @@ methods:
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document into the paragraph at the specified location.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[Api set: WordApi 1.1\]
 
 
       Insertion isn't supported if the document being inserted contains an
@@ -933,44 +449,7 @@ methods:
     package: word!
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML into the paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for the top 2 paragraphs.
-          // We never perform an empty load. We always must request a property.
-          paragraphs.load({select: 'style', top: 2} );
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to get the first paragraph.
-          const paragraph = paragraphs.items[0];
-
-          // Queue a command to insert HTML content at the end of the first paragraph.
-          paragraph.insertHtml('<strong>Inserted HTML.</strong>', Word.InsertLocation.end);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Inserted HTML content at the end of the first paragraph.');
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1000,45 +479,7 @@ methods:
     package: word!
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts a picture into the paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Create a proxy object for the paragraphs collection.
-          const paragraphs = context.document.body.paragraphs;
-
-          // Queue a command to load the style property for all of the paragraphs.
-          paragraphs.load('style');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-
-          // Queue a command to get the first paragraph.
-          const paragraph = paragraphs.items[0];
-
-          const b64encodedImg = "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
-
-          // Queue a command to insert a base64 encoded image at the beginning of the first paragraph.
-          paragraph.insertInlinePictureFromBase64(b64encodedImg, Word.InsertLocation.start);
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log('Added an image to the first paragraph.');
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1069,9 +510,7 @@ methods:
     package: word!
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML into the paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1101,9 +540,7 @@ methods:
     package: word!
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1129,30 +566,7 @@ methods:
     package: word!
     fullName: insertText(text, insertLocation)
     summary: Inserts text into the paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-in-different-locations.yaml
-
-
-      await Word.run(async (context) => {
-        // Replace the last paragraph.
-        const range: Word.Range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
-        range.font.highlightColor = "black";
-        range.font.color = "white";
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1259,9 +673,7 @@ methods:
       Performs a search with the specified search options on the scope of the
       `Paragraph` object. The search results are a collection of `Range`
       objects.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1300,39 +712,7 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
-
-
-      await Word.run(async (context) => {
-        // If select is called with no parameters, it selects the object.
-        context.document.body.paragraphs.getLast().select();
-
-        await context.sync();
-      });
-
-
-      ...
-
-
-      await Word.run(async (context) => {
-        // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-        context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1352,9 +732,7 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -1399,48 +777,7 @@ methods:
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
-
-
-          await Word.run(async (context) => {
-            const paragraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
-            paragraph.set({
-              leftIndent: 30,
-              font: {
-                bold: true,
-                color: "red"
-              }
-            });
-
-            await context.sync();
-          });
-
-
-          ...
-
-
-          await Word.run(async (context) => {
-            const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
-            const secondParagraph: Word.Paragraph = firstParagraph.getNext();
-            firstParagraph.load("text, font/color, font/bold, leftIndent");
-
-            await context.sync();
-
-            secondParagraph.set(firstParagraph);
-
-            await context.sync();
-          });
-
-          ```
+        description: ''
   - name: set(properties)
     uid: word!Word.Paragraph#set:member(2)
     package: word!

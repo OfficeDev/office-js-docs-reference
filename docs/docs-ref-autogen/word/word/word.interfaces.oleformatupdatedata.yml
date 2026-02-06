@@ -17,9 +17,7 @@ properties:
     package: word!
     fullName: classType
     summary: Specifies the class type for the specified OLE object, picture, or field.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     summary: >-
       Specifies the icon that is used when the `displayAsIcon` property is
       `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: word!
     fullName: iconLabel
     summary: Specifies the text displayed below the icon for the OLE object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +58,7 @@ properties:
     package: word!
     fullName: iconName
     summary: Specifies the program file in which the icon for the OLE object is stored.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +74,7 @@ properties:
     summary: >-
       Specifies whether formatting done in Microsoft Word to the linked OLE
       object is preserved.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

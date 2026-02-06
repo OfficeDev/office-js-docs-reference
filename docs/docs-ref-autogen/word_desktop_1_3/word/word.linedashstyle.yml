@@ -4,9 +4,7 @@ uid: word!Word.LineDashStyle:enum
 package: word!
 fullName: Word.LineDashStyle
 summary: Specifies the dash style for a line.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,130 +12,104 @@ fields:
   - name: dash
     uid: word!Word.LineDashStyle.dash:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dashed line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Dash"'
   - name: dashDot
     uid: word!Word.LineDashStyle.dashDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dash-dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashDot"'
   - name: dashDotDot
     uid: word!Word.LineDashStyle.dashDotDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dash-dot-dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashDotDot"'
   - name: longDash
     uid: word!Word.LineDashStyle.longDash:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a long dash line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LongDash"'
   - name: longDashDot
     uid: word!Word.LineDashStyle.longDashDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a long dash-dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LongDashDot"'
   - name: longDashDotDot
     uid: word!Word.LineDashStyle.longDashDotDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a long dash-dot-dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LongDashDotDot"'
   - name: mixed
     uid: word!Word.LineDashStyle.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a mixed dash style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: roundDot
     uid: word!Word.LineDashStyle.roundDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a round dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"RoundDot"'
   - name: solid
     uid: word!Word.LineDashStyle.solid:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a solid line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Solid"'
   - name: squareDot
     uid: word!Word.LineDashStyle.squareDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a square dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SquareDot"'
   - name: sysDash
     uid: word!Word.LineDashStyle.sysDash:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a system dash line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SysDash"'
   - name: sysDashDot
     uid: word!Word.LineDashStyle.sysDashDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a system dash-dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SysDashDot"'
   - name: sysDot
     uid: word!Word.LineDashStyle.sysDot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a system dot line style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SysDot"'

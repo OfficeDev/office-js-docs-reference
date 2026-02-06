@@ -7,9 +7,7 @@ summary: >-
   Contains a collection of
   [Word.CustomXmlNode](xref:word!Word.CustomXmlNode:class) objects representing
   the XML nodes in a document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the base name of the node without
       the namespace prefix, if one exists.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +54,7 @@ properties:
       has no child elements (or if it isn't of type
       [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
       -->), returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -78,9 +72,7 @@ properties:
       has no child elements (or if it isn't of type
       [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
       -->), the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +88,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the unique address identifier for
       the namespace of the node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -114,9 +104,7 @@ properties:
       For EACH ITEM in the collection: Gets the next sibling node (element,
       comment, or processing instruction) of the current node. If the node is
       the last sibling at its level, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -129,9 +117,7 @@ properties:
     package: word!
     fullName: nodeType
     summary: 'For EACH ITEM in the collection: Gets the type of the current node.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -144,9 +130,7 @@ properties:
     package: word!
     fullName: nodeValue
     summary: 'For EACH ITEM in the collection: Specifies the value of the current node.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -161,9 +145,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the object representing the part
       associated with this node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -179,9 +161,7 @@ properties:
       For EACH ITEM in the collection: Gets the parent element node of the
       current node. If the current node is at the root level, the property
       returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -199,9 +179,7 @@ properties:
       comment, or processing instruction) of the current node. If the current
       node is the first sibling at its level, the property returns `Nothing`<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -214,9 +192,7 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Specifies the text for the current node.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -231,9 +207,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the XML representation of the
       current node and its children.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -249,9 +223,7 @@ properties:
       For EACH ITEM in the collection: Gets a string with the canonicalized
       XPath for the current node. If the node is no longer in the Document
       Object Model (DOM), the property returns an error message.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

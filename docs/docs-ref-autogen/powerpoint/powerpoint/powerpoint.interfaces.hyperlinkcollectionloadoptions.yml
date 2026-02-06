@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.HyperlinkCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkCollectionLoadOptions
 summary: Represents a collection of hyperlinks.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.6\]'
 
 isPreview: false
 isDeprecated: false
@@ -39,10 +36,7 @@ properties:
       For EACH ITEM in the collection: Specifies the address of the hyperlink,
       which can be a URL, a file name or file path, or an email address with the
       `mailto` URI scheme.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,10 +52,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the string displayed when
       hovering over the hyperlink.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,10 +70,7 @@ properties:
       hyperlink is applied to. See
       [PowerPoint.HyperlinkType](xref:powerpoint!PowerPoint.HyperlinkType:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

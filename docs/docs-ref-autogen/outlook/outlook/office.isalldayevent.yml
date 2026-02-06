@@ -7,9 +7,7 @@ summary: >-
   Provides methods to get and set the all-day event status of a meeting in an
   Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox
-  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox preview\]
 
 
   **[Minimum permission
@@ -31,9 +29,7 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets the boolean value indicating whether the event is all day or not.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -75,9 +71,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the boolean value indicating whether the event is all day or not.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -88,26 +82,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-set-isalldayevent.yaml
-
-
-      Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Is this an all-day event? " + asyncResult.value);
-        } else {
-          console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
-        }
-      });
-
-      ```
 
     isPreview: true
     isDeprecated: false
@@ -133,9 +107,7 @@ methods:
     fullName: setAsync(isAllDayEvent, options, callback)
     summary: Sets the all-day event status of an appointment.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       If an appointment is marked as an all-day event: - Start and end time will
@@ -151,27 +123,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-set-isalldayevent.yaml
-
-
-      Office.context.mailbox.item.isAllDayEvent.setAsync(true,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
-        } else {
-          console.log("Appointment set to all-day event.");
-        }
-      });
-
-      ```
 
     isPreview: true
     isDeprecated: false
@@ -206,9 +157,7 @@ methods:
     fullName: setAsync(isAllDayEvent, callback)
     summary: Sets the all-day event status of an appointment.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       If an appointment is marked as an all-day event: - Start and end time will

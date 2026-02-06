@@ -4,37 +4,7 @@ uid: powerpoint!PowerPoint.ShapeFillType:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeFillType
 summary: Specifies a shape's fill type.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-
-  // Changes the selected shapes fill color to red.
-
-  await PowerPoint.run(async (context) => {
-    const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-    const shapeCount = shapes.getCount();
-    shapes.load("items/fill/type");
-    await context.sync();
-    shapes.items.map((shape) => {
-      const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
-      console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
-      shape.fill.setSolidColor("red");
-    });
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -42,66 +12,48 @@ fields:
   - name: gradient
     uid: powerpoint!PowerPoint.ShapeFillType.gradient:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies that the shape should have gradient fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"Gradient"'
   - name: noFill
     uid: powerpoint!PowerPoint.ShapeFillType.noFill:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies that the shape should have no fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"NoFill"'
   - name: pattern
     uid: powerpoint!PowerPoint.ShapeFillType.pattern:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies that the shape should have pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"Pattern"'
   - name: pictureAndTexture
     uid: powerpoint!PowerPoint.ShapeFillType.pictureAndTexture:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies that the shape should have picture or texture fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"PictureAndTexture"'
   - name: slideBackground
     uid: powerpoint!PowerPoint.ShapeFillType.slideBackground:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies that the shape should have slide background fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"SlideBackground"'
   - name: solid
     uid: powerpoint!PowerPoint.ShapeFillType.solid:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies that the shape should have regular solid fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"Solid"'

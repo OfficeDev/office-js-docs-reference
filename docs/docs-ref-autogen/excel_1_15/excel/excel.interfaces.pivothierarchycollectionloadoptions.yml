@@ -6,9 +6,7 @@ fullName: Excel.Interfaces.PivotHierarchyCollectionLoadOptions
 summary: >-
   Represents a collection of all the PivotHierarchies that are part of the
   PivotTable.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: ID of the PivotHierarchy.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: Name of the PivotHierarchy.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

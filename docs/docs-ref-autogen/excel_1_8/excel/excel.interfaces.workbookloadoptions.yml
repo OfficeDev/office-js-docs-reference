@@ -9,9 +9,7 @@ summary: >-
   model, read [Work with workbooks using the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
   -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     package: excel!
     fullName: application
     summary: Represents the Excel application instance that contains this workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     package: excel!
     fullName: bindings
     summary: Represents a collection of bindings that are part of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
     package: excel!
     fullName: name
     summary: Gets the workbook name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +77,7 @@ properties:
     package: excel!
     fullName: properties
     summary: Gets the workbook properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -103,9 +93,7 @@ properties:
     package: excel!
     fullName: protection
     summary: Returns the protection object for a workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +109,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: Returns `true` if the workbook is open in read-only mode.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +122,7 @@ properties:
     package: excel!
     fullName: tables
     summary: Represents a collection of tables associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

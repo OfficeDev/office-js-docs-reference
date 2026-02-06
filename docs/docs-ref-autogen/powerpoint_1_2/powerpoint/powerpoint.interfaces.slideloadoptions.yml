@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLoadOptions
 summary: Represents a single slide of a presentation.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +31,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.2\]'
 
     isPreview: false
     isDeprecated: false

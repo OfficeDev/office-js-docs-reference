@@ -6,31 +6,7 @@ fullName: Word.DropDownListContentControl
 summary: >-
   Represents the data specific to content controls of type `dropDownList`<!--
   -->.
-remarks: >-
-  \[ [API set: WordApi
-  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
-
-
-  // Places a dropdown list content control at the end of the selection.
-
-  await Word.run(async (context) => {
-    let selection = context.document.getSelection();
-    selection.getRange(Word.RangeLocation.end).insertContentControl(Word.ContentControlType.dropDownList);
-    await context.sync();
-
-    console.log("Dropdown list content control inserted at the end of the selection.");
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -56,65 +32,7 @@ properties:
     package: word!
     fullName: listItems
     summary: Gets the collection of list items in the dropdown list content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
-
-
-      // Deletes the provided list item from the first dropdown list content
-      control in the selection.
-
-      await Word.run(async (context) => {
-        const listItemText = (document.getElementById("item-to-delete") as HTMLInputElement).value.trim();
-        const selectedRange: Word.Range = context.document.getSelection();
-        let selectedContentControl = selectedRange
-          .getContentControls({
-            types: [Word.ContentControlType.dropDownList]
-          })
-          .getFirstOrNullObject();
-        selectedContentControl.load("id,dropDownListContentControl");
-        await context.sync();
-
-        if (selectedContentControl.isNullObject) {
-          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
-          parentContentControl.load("id,type,dropDownListContentControl");
-          await context.sync();
-
-          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
-            console.warn("No dropdown list content control is currently selected.");
-            return;
-          } else {
-            selectedContentControl = parentContentControl;
-          }
-        }
-
-        let selectedDropdownList: Word.DropDownListContentControl = selectedContentControl.dropDownListContentControl;
-        selectedDropdownList.listItems.load("items/*");
-        await context.sync();
-
-        let listItems: Word.ContentControlListItemCollection = selectedContentControl.dropDownListContentControl.listItems;
-        let itemToDelete: Word.ContentControlListItem = listItems.items.find((item) => item.displayText === listItemText);
-        if (!itemToDelete) {
-          console.warn(`List item doesn't exist in control with ID ${selectedContentControl.id}: ${listItemText}`)
-          return;
-        }
-        
-        itemToDelete.delete();
-        await context.sync();
-
-        console.log(`List item deleted from control with ID ${selectedContentControl.id}: ${listItemText}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -131,54 +49,7 @@ methods:
       Adds a new list item to this dropdown list content control and returns a
       [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class)
       object.
-    remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
-
-
-      // Adds the provided list item to the first dropdown list content control
-      in the selection.
-
-      await Word.run(async (context) => {
-        const listItemText = (document.getElementById("item-to-add") as HTMLInputElement).value.trim();
-        const selectedRange: Word.Range = context.document.getSelection();
-        let selectedContentControl = selectedRange
-          .getContentControls({
-            types: [Word.ContentControlType.dropDownList]
-          })
-          .getFirstOrNullObject();
-        selectedContentControl.load("id,dropDownListContentControl");
-        await context.sync();
-
-        if (selectedContentControl.isNullObject) {
-          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
-          parentContentControl.load("id,type,dropDownListContentControl");
-          await context.sync();
-
-          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
-            console.warn("No dropdown list content control is currently selected.");
-            return;
-          } else {
-            selectedContentControl = parentContentControl;
-          }
-        }
-
-        selectedContentControl.dropDownListContentControl.addListItem(listItemText);
-        await context.sync();
-
-        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -208,56 +79,7 @@ methods:
     package: word!
     fullName: deleteAllListItems()
     summary: Deletes all list items in this dropdown list content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
-
-
-      // Deletes the list items from first dropdown list content control found
-      in the selection.
-
-      await Word.run(async (context) => {
-        const selectedRange: Word.Range = context.document.getSelection();
-        let selectedContentControl = selectedRange
-          .getContentControls({
-            types: [Word.ContentControlType.dropDownList]
-          })
-          .getFirstOrNullObject();
-        selectedContentControl.load("id,dropDownListContentControl");
-        await context.sync();
-
-        if (selectedContentControl.isNullObject) {
-          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
-          parentContentControl.load("id,type,dropDownListContentControl");
-          await context.sync();
-
-          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
-            console.warn("No dropdown list content control is currently selected.");
-            return;
-          } else {
-            selectedContentControl = parentContentControl;
-          }
-        }
-
-        console.log(
-          `About to delete the list from the dropdown list content control with ID ${selectedContentControl.id}`
-        );
-        selectedContentControl.dropDownListContentControl.deleteAllListItems();
-        await context.sync();
-
-        console.log("Deleted the list from the dropdown list content control.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

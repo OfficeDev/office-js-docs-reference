@@ -8,9 +8,7 @@ summary: >-
   primitive named objects (as seen in the type below), range object, or a
   reference to a range. This object can be used to obtain range object
   associated with names.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     package: excel!
     fullName: name
     summary: The name of the object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,10 +51,8 @@ properties:
       Specifies the type of the value returned by the name's formula. See
       `Excel.NamedItemType` for details.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
-      1.7 for
-      Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7
+      for Array\]
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +68,7 @@ properties:
       Represents the value computed by the name's formula. For a named range, it
       will return the range address. This API returns the \#VALUE! error in the
       Excel UI if it refers to a user-defined function.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +81,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the object is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

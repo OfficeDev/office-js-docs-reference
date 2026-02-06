@@ -6,9 +6,7 @@ fullName: Excel.PresetCriteriaConditionalFormat
 summary: >-
   Represents the preset criteria conditional format such as above average, below
   average, unique values, contains blank, nonblank, error, and noerror.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.6\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,32 +47,7 @@ properties:
     package: excel!
     fullName: rule
     summary: The rule of the conditional format.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:M5");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.presetCriteria);
-          conditionalFormat.preset.format.font.color = "white";
-          conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

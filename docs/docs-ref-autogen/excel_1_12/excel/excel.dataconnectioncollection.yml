@@ -6,9 +6,7 @@ fullName: Excel.DataConnectionCollection
 summary: >-
   Represents a collection of all the data connections that are part of the
   workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -40,9 +38,7 @@ methods:
       workbook. Data connections unsupported by this method are: Power Query
       connections, data connections outside the original workbook (except Power
       BI connections), and connections to data protected by a firewall.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

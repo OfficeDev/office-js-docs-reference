@@ -4,10 +4,7 @@ uid: word!Word.Revision:class
 package: word!
 fullName: Word.Revision
 summary: Represents a single tracked change in a document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +15,7 @@ properties:
     package: word!
     fullName: author
     summary: Gets the name of the user who made the tracked change.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: word!
     fullName: date
     summary: Gets the date and time when the tracked change was made.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +56,7 @@ properties:
     package: word!
     fullName: formatDescription
     summary: Gets the description of tracked formatting changes in the revision.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,10 +69,7 @@ properties:
     package: word!
     fullName: index
     summary: Gets a number that represents the position of this item in a collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +84,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the range of text that was moved
       from one place to another in the document with tracked changes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,10 +99,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the portion of the document that's
       contained within a revision mark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -133,10 +112,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the revision type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -164,10 +140,7 @@ methods:
     summary: >-
       Accepts the tracked change, removes the revision mark, and incorporates
       the change into the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -257,10 +230,7 @@ methods:
     summary: >-
       Rejects the tracked change. The revision marks are removed, leaving the
       original text intact.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

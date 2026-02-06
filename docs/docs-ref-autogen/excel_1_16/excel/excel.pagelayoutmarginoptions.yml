@@ -4,9 +4,7 @@ uid: excel!Excel.PageLayoutMarginOptions:interface
 package: excel!
 fullName: Excel.PageLayoutMarginOptions
 summary: Represents the options in page layout margins.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       Specifies the page layout bottom margin in the unit specified to use for
       printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +32,7 @@ properties:
     summary: >-
       Specifies the page layout footer margin in the unit specified to use for
       printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +47,7 @@ properties:
     summary: >-
       Specifies the page layout header margin in the unit specified to use for
       printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +62,7 @@ properties:
     summary: >-
       Specifies the page layout left margin in the unit specified to use for
       printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +77,7 @@ properties:
     summary: >-
       Specifies the page layout right margin in the unit specified to use for
       printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -104,9 +92,7 @@ properties:
     summary: >-
       Specifies the page layout top margin in the unit specified to use for
       printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

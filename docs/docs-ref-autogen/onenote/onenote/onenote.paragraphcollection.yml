@@ -4,9 +4,7 @@ uid: onenote!OneNote.ParagraphCollection:class
 package: onenote!
 fullName: OneNote.ParagraphCollection
 summary: Represents a collection of Paragraph objects.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of paragraphs in the page.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +59,7 @@ methods:
     summary: >-
       Gets a Paragraph object by ID or by its index in the collection.
       Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,41 +79,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a paragraph on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Get the collection of pageContent items from the page.
-          const pageContents = context.application.getActivePage().contents;
-
-          // Get the first PageContent on the page, and then get its Outline's first paragraph.
-          const pageContent = pageContents.getItemAt(0);
-          const paragraphs = pageContent.outline.paragraphs;
-
-          const firstParagraph = paragraphs.getItemAt(0);
-
-          // Queue a command to load the id and type properties of this paragraph.
-          firstParagraph.load("id,type");
-
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          // Write text from paragraph to console.
-          console.log(
-              "First Paragraph found with id : " + 
-              firstParagraph.id + " and type " + firstParagraph.type);
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -181,33 +139,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.ParagraphCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Get the collection of pageContent items from the page.
-              const pageContents = context.application.getActivePage().contents;
-
-              // Get the first PageContent on the page, and then get its Outline's first paragraph.
-              const pageContent = pageContents.getItem(0);
-              const paragraphs = pageContent.outline.paragraphs;
-              
-              // Queue a command to load the id and type of each paragraph.
-              paragraphs.load("id,type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-              const firstParagraph = paragraphs.items[0];
-              // Write text from first paragraph to console.
-              console.log(
-                  "First Paragraph found with id : " + 
-                  firstParagraph.id + " and type " + firstParagraph.type);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.ParagraphCollection#load:member(3)
     package: onenote!

@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideScopedCollectionLoadOptions
 summary: Represents a collection of slides in the presentation.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.5\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,10 +33,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the unique ID of the slide.'
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,10 +47,7 @@ properties:
     package: powerpoint!
     fullName: layout
     summary: 'For EACH ITEM in the collection: Gets the layout of the slide.'
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -75,10 +66,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the `SlideMaster` object that
       represents the slide's default content.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

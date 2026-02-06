@@ -6,9 +6,7 @@ fullName: Word.TableCellCollectionSplitOptions
 summary: >-
   Represents the options for the
   [TableCellCollection.split](xref:word!Word.TableCellCollection:class) method.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     summary: >-
       If provided, specifies whether to merge the cells with one another before
       splitting them. The default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -38,9 +34,7 @@ properties:
     summary: >-
       If provided, specifies the number of columns that the group of cells is to
       be split into. The default value is 1.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +49,7 @@ properties:
     summary: >-
       If provided, specifies the number of rows that the group of cells is to be
       split into. The default value is 1.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

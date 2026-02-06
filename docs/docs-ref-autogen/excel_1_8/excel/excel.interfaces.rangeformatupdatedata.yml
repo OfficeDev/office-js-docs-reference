@@ -17,9 +17,7 @@ properties:
     package: excel!
     fullName: borders
     summary: Collection of border objects that apply to the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     summary: >-
       Specifies the width of all columns within the range. If the column widths
       are not uniform, `null` will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +48,7 @@ properties:
     package: excel!
     fullName: fill
     summary: Returns the fill object defined on the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +61,7 @@ properties:
     package: excel!
     fullName: font
     summary: Returns the font object defined on the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +76,7 @@ properties:
     summary: >-
       Represents the horizontal alignment for the specified object. See
       `Excel.HorizontalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,9 +95,7 @@ properties:
     package: excel!
     fullName: protection
     summary: Returns the format protection object for a range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -124,9 +112,7 @@ properties:
     summary: >-
       The height of all rows in the range. If the row heights are not uniform,
       `null` will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -143,9 +129,7 @@ properties:
       orientation should be an integer either from -90 to 90, or 180 for
       vertically-oriented text. If the orientation within a range are not
       uniform, then `null` will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -164,9 +148,7 @@ properties:
       range contains more than one row and the rows aren't all the same height.
       Returns `false` otherwise. Note: This property is only intended to be set
       to `true`<!-- -->. Setting it to `false` has no effect.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -185,9 +167,7 @@ properties:
       contains more than one column and the columns aren't all the same height.
       Returns `false` otherwise. Note: This property is only intended to be set
       to `true`<!-- -->. Setting it to `false` has no effect.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -202,9 +182,7 @@ properties:
     summary: >-
       Represents the vertical alignment for the specified object. See
       `Excel.VerticalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -223,9 +201,7 @@ properties:
     summary: >-
       Specifies if Excel wraps the text in the object. A `null` value indicates
       that the entire range doesn't have a uniform wrap setting
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

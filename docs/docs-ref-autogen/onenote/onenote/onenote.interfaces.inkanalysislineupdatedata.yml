@@ -17,10 +17,7 @@ properties:
     package: onenote!
     fullName: paragraph
     summary: Reference to the parent InkAnalysisParagraph.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

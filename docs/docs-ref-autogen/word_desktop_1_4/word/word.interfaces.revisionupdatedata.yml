@@ -19,10 +19,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the range of text that was moved
       from one place to another in the document with tracked changes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -37,10 +34,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the portion of the document that's
       contained within a revision mark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

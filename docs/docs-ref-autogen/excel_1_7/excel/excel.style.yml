@@ -4,9 +4,7 @@ uid: excel!Excel.Style:class
 package: excel!
 fullName: Excel.Style
 summary: An object encapsulating a style's format and other properties.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       A collection of four border objects that represent the style of the four
       borders.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +30,7 @@ properties:
     package: excel!
     fullName: builtIn
     summary: Specifies if the style is a built-in style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +58,7 @@ properties:
     package: excel!
     fullName: fill
     summary: The fill of the style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,36 +71,7 @@ properties:
     package: excel!
     fullName: font
     summary: A `Font` object that represents the font of the style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
-
-      await Excel.run(async (context) => {
-          let style = context.workbook.styles.getItem("Normal");
-          style.font.load("bold, color, italic, name, size");
-          style.fill.load("color");
-
-          await context.sync();
-
-          console.log("Bold: " + style.font.bold);
-          console.log("Font color: " + style.font.color);
-          console.log("Italic: " + style.font.italic);
-          console.log("Name: " + style.font.name);
-          console.log("Size: " + style.font.size);
-          console.log("Fill color: " + style.fill.color);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +84,7 @@ properties:
     package: excel!
     fullName: formulaHidden
     summary: Specifies if the formula will be hidden when the worksheet is protected.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -138,33 +99,7 @@ properties:
     summary: >-
       Represents the horizontal alignment for the style. See
       `Excel.HorizontalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
-
-      await Excel.run(async (context) => {
-          let worksheet = context.workbook.worksheets.getItem("Sample");
-          let range = worksheet.getRange("A1:E1");
-
-          // Apply built-in style. 
-          // Styles are in the Home tab ribbon.
-          range.style = Excel.BuiltInStyle.neutral;
-          range.format.horizontalAlignment = "Right";
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -186,9 +121,7 @@ properties:
       Specifies if the style includes the auto indent, horizontal alignment,
       vertical alignment, wrap text, indent level, and text orientation
       properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,9 +136,7 @@ properties:
     summary: >-
       Specifies if the style includes the color, color index, line style, and
       weight border properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -221,9 +152,7 @@ properties:
       Specifies if the style includes the background, bold, color, color index,
       font style, italic, name, size, strikethrough, subscript, superscript, and
       underline font properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -236,9 +165,7 @@ properties:
     package: excel!
     fullName: includeNumber
     summary: Specifies if the style includes the number format property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -254,9 +181,7 @@ properties:
       Specifies if the style includes the color, color index, invert if
       negative, pattern, pattern color, and pattern color index interior
       properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -271,9 +196,7 @@ properties:
     summary: >-
       Specifies if the style includes the formula hidden and locked protection
       properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -286,9 +209,7 @@ properties:
     package: excel!
     fullName: indentLevel
     summary: An integer from 0 to 250 that indicates the indent level for the style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -301,9 +222,7 @@ properties:
     package: excel!
     fullName: locked
     summary: Specifies if the object is locked when the worksheet is protected.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -316,9 +235,7 @@ properties:
     package: excel!
     fullName: name
     summary: The name of the style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -331,9 +248,7 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: The format code of the number format for the style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -346,9 +261,7 @@ properties:
     package: excel!
     fullName: numberFormatLocal
     summary: The localized format code of the number format for the style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -361,9 +274,7 @@ properties:
     package: excel!
     fullName: readingOrder
     summary: The reading order for the style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -382,9 +293,7 @@ properties:
     summary: >-
       Specifies if text automatically shrinks to fit in the available column
       width.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -399,9 +308,7 @@ properties:
     summary: >-
       Specifies the vertical alignment for the style. See
       `Excel.VerticalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -418,9 +325,7 @@ properties:
     package: excel!
     fullName: wrapText
     summary: Specifies if Excel wraps the text in the object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -434,33 +339,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes this style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
-
-      await Excel.run(async (context) => {
-          let style = context.workbook.styles.getItem("Diagonal Orientation Style");
-
-          // Delete the diagonal orientation style from the style collection.
-          // Styles are in the Home tab ribbon.
-          style.delete();
-
-          await context.sync();
-
-          console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -488,35 +367,7 @@ methods:
           type: <xref uid="excel!Excel.Interfaces.StyleLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.Style:class" />
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
-
-          await Excel.run(async (context) => {
-              let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
-              style.load("textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked");
-
-              await context.sync();
-
-              console.log("Orientation: " + style.textOrientation);
-              console.log("Horizontal alignment: " + style.horizontalAlignment);
-              console.log("Add indent: " + style.autoIndent);
-              console.log("Reading order: " + style.readingOrder);
-              console.log("Wrap text: " + style.wrapText);
-              console.log("Include protection: " + style.includeProtection);
-              console.log("Shrink to fit: " + style.shrinkToFit);
-              console.log("Style locked: " + style.locked);
-          });
-
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: excel!Excel.Style#load:member(2)
     package: excel!

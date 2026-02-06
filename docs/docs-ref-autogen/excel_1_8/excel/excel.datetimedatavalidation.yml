@@ -4,9 +4,7 @@ uid: excel!Excel.DateTimeDataValidation:interface
 package: excel!
 fullName: Excel.DateTimeDataValidation
 summary: Represents the date data validation criteria.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -26,9 +24,7 @@ properties:
       reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving
       the value, it will always be returned as a string formula, for example:
       "=10", "=A1", "=SUM(A1:B5)", etc.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +44,7 @@ properties:
       format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
       When retrieving the value, it will always be returned as a string formula,
       for example: "=10", "=A1", "=SUM(A1:B5)", etc.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -63,9 +57,7 @@ properties:
     package: excel!
     fullName: operator
     summary: The operator to use for validating the data.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

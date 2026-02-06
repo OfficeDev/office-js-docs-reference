@@ -33,41 +33,7 @@ functions:
           type: Function
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          /**
-
-          * Adds two numbers together.
-
-          * @customfunction
-
-          * @param {number} first First number.
-
-          * @param {number} second Second number.
-
-          * @returns {number} The sum of the two numbers.
-
-          */
-
-          // Define your custom function.
-
-          function add(first, second) {
-            return first + second;
-          }
-
-
-          // Associate the "add" function with its ID from the JSON metadata. In
-          this sample, the JSON metadata ID is "ADD".
-
-          CustomFunctions.associate("ADD", add);
-
-          ```
+        description: ''
   - name: CustomFunctions.associate(mappings)
     uid: custom-functions-runtime!CustomFunctions.associate:function(2)
     package: custom-functions-runtime!
@@ -86,62 +52,4 @@ functions:
           type: '{ [key: string]: Function }'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          /**
-
-          * Calculates the area of a rectangle.
-
-          * @customfunction
-
-          * @param {number} width The width of the rectangle.
-
-          * @param {number} height The height of the rectangle.
-
-          * @returns {number} The area of the rectangle.
-
-          */
-
-          function calculateArea(width, height) {
-            return width * height;
-          }
-
-
-          /**
-
-          * Calculates the perimeter of a rectangle.
-
-          * @customfunction
-
-          * @param {number} width The width of the rectangle.
-
-          * @param {number} height The height of the rectangle.
-
-          * @returns {number} The perimeter of the rectangle.
-
-          */
-
-          function calculatePerimeter(width, height) {
-            return 2 * (width + height);
-          }
-
-
-          // Associate multiple functions at once using an object that maps JSON
-          metadata IDs to function names.
-
-          // In this sample, the "calculateArea" and "calculatePerimeter"
-          functions have the JSON metadata IDs "CALCULATEAREA" and
-          "CALCULATEPERIMETER".
-
-          CustomFunctions.associate({
-            "CALCULATEAREA": calculateArea,
-            "CALCULATEPERIMETER": calculatePerimeter
-          });
-
-          ```
+        description: ''

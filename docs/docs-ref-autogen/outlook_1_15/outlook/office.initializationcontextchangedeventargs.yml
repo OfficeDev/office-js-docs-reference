@@ -12,41 +12,7 @@ summary: >-
   dialog, or [integrated
   spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
   dialog when the `Office.EventType.InitializationContextChanged` event occurs.
-remarks: >-
-  \[ [API set: Mailbox
-  1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // This sample adds an event handler for the InitializationContextChanged
-  event.
-
-  Office.onReady(() => {
-      Office.context.mailbox.item.addHandlerAsync(Office.EventType.InitializationContextChanged, initializationContextChangedHandler, (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.error(`Failed to add event handler: ${result.error.message}`);
-              return;
-          }
-
-          console.log("Event handler added successfully.");
-      });
-  });
-
-
-  // Handles the InitializationContextChanged event.
-
-  function initializationContextChangedHandler(event) {
-      console.log(`Event: ${event.type}`);
-      const data = event.initializationContextData;
-      console.log(`Data: ${data}`);
-  }
-
-  ```
+remarks: '\[Api set: Mailbox 1.15\]'
 
 isPreview: false
 isDeprecated: false
@@ -61,10 +27,7 @@ properties:
       Represents the data to be passed to an add-in's task pane from an
       actionable message, notification message, Smart Alerts dialog, or
       integrated spam-reporting dialog.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: '\[Api set: Mailbox 1.15\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,10 +43,7 @@ properties:
       Represents the type of the event. For details, refer to
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: '\[Api set: Mailbox 1.15\]'
 
     isPreview: false
     isDeprecated: false

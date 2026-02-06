@@ -4,9 +4,7 @@ uid: excel!Excel.PivotHierarchy:class
 package: excel!
 fullName: Excel.PivotHierarchy
 summary: Represents the Excel PivotHierarchy.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,43 +30,7 @@ properties:
     package: excel!
     fullName: fields
     summary: Returns the PivotFields associated with the PivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-
-      await Excel.run(async (context) => {
-        // Add a PivotFilter to filter on the values correlated with a row.
-
-        // Get the PivotTable.
-        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-        // Get the "Farm" field.
-        const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
-
-        // Filter to only include rows with more than 500 wholesale crates sold.
-        const filter: Excel.PivotValueFilter = {
-          condition: Excel.ValueFilterCondition.greaterThan,
-          comparator: 500,
-          value: "Sum of Crates Sold Wholesale"
-        };
-
-        // Apply the value filter to the field.
-        field.applyFilter({ valueFilter: filter });
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +43,7 @@ properties:
     package: excel!
     fullName: id
     summary: ID of the PivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +56,7 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

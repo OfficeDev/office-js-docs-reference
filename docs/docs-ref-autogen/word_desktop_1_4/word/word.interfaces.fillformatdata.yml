@@ -19,9 +19,7 @@ properties:
     summary: >-
       Returns a `ColorFormat` object that represents the background color for
       the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     summary: >-
       Returns a `ColorFormat` object that represents the foreground color for
       the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     summary: >-
       Specifies the angle of the gradient fill. The valid range of values is
       from 0 to 359.9.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     package: word!
     fullName: gradientColorType
     summary: Gets the gradient color type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +83,7 @@ properties:
       that black is mixed in with the shape's foreground color to form the
       gradient. A value of 1 means that white is mixed in. Values between 0 and
       1 mean that a darker or lighter shade of the foreground color is mixed in.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +96,7 @@ properties:
     package: word!
     fullName: gradientStyle
     summary: Returns the gradient style for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -129,9 +117,7 @@ properties:
     summary: >-
       Returns the gradient variant for the fill as an integer value from 1 to 4
       for most gradient fills.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -144,9 +130,7 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the object, or the formatting applied to it, is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -161,9 +145,7 @@ properties:
     summary: >-
       Returns a `PatternType` value that represents the pattern applied to the
       fill or line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -207,9 +189,7 @@ properties:
     package: word!
     fullName: presetGradientType
     summary: Returns the preset gradient type for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -233,9 +213,7 @@ properties:
     package: word!
     fullName: presetTexture
     summary: Gets the preset texture.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -260,9 +238,7 @@ properties:
     package: word!
     fullName: rotateWithObject
     summary: Specifies whether the fill rotates with the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -277,9 +253,7 @@ properties:
     summary: >-
       Specifies the alignment (the origin of the coordinate grid) for the tiling
       of the texture fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -298,9 +272,7 @@ properties:
     package: word!
     fullName: textureHorizontalScale
     summary: Specifies the horizontal scaling factor for the texture fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -313,9 +285,7 @@ properties:
     package: word!
     fullName: textureName
     summary: Returns the name of the custom texture file for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -328,9 +298,7 @@ properties:
     package: word!
     fullName: textureOffsetX
     summary: Specifies the horizontal offset of the texture from the origin in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -343,9 +311,7 @@ properties:
     package: word!
     fullName: textureOffsetY
     summary: Specifies the vertical offset of the texture.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -358,9 +324,7 @@ properties:
     package: word!
     fullName: textureTile
     summary: Specifies whether the texture is tiled.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -373,9 +337,7 @@ properties:
     package: word!
     fullName: textureType
     summary: Returns the texture type for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -392,9 +354,7 @@ properties:
     summary: >-
       Specifies the vertical scaling factor for the texture fill as a value
       between 0.0 and 1.0.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -409,9 +369,7 @@ properties:
     summary: >-
       Specifies the degree of transparency of the fill for a shape as a value
       between 0.0 (opaque) and 1.0 (clear).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -424,9 +382,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the fill format type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

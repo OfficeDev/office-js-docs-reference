@@ -4,10 +4,7 @@ uid: visio!Visio.Application:class
 package: visio!
 fullName: Visio.Application
 summary: Represents the Application.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,30 +30,7 @@ properties:
     package: visio!
     fullName: showBorders
     summary: Shows or hides the iframe application borders.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Visio.run(session, function (ctx) {
-          const application = ctx.document.application;
-          application.showToolbars = false;
-          application.showBorders = false;
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -69,10 +43,7 @@ properties:
     package: visio!
     fullName: showToolbars
     summary: Shows or hides the standard toolbars.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -217,10 +188,7 @@ methods:
     package: visio!
     fullName: showToolbar(id, show)
     summary: Sets the visibility of a specific toolbar in the application.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -241,10 +209,7 @@ methods:
     package: visio!
     fullName: showToolbar(id, show)
     summary: Sets the visibility of a specific toolbar in the application.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

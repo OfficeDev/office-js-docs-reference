@@ -6,9 +6,7 @@ fullName: Word.Interfaces.HyperlinkCollectionLoadOptions
 summary: >-
   Contains a collection of [Word.Hyperlink](xref:word!Word.Hyperlink:class)
   objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the address (for example, a
       file name or URL) of the hyperlink.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +50,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the text string for the
       hyperlink's subject line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns `true` if extra information is
       required to resolve the hyperlink.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +81,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the name of the `Hyperlink`
       object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +96,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a `Range` object that represents
       the portion of the document that's contained within the hyperlink.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +111,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the text that appears as a
       ScreenTip when the mouse pointer is positioned over the hyperlink.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +126,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies a named location in the
       destination of the hyperlink.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -157,9 +141,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the name of the frame or window
       in which to load the hyperlink.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -174,9 +156,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the hyperlink's visible text in
       the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -189,9 +169,7 @@ properties:
     package: word!
     fullName: type
     summary: 'For EACH ITEM in the collection: Returns the hyperlink type.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

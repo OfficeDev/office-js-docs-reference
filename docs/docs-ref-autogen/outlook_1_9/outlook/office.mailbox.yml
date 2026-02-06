@@ -29,38 +29,6 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  Office.onReady(() => {
-      document.addEventListener('DOMContentLoaded', () => {
-          // Get a reference to the mailbox and use it to add an event handler.
-          const mailbox = Office.context.mailbox;
-          mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
-              if (result.status === Office.AsyncResultStatus.Failed) {
-                  // Handle error.
-              }
-          });
-      });
-  });
-
-
-  function loadNewItem(eventArgs) {
-      const item = Office.context.mailbox.item;
-
-      // Check that item isn't null.
-      if (item !== null) {
-          // Work with item. For example, define and call a function that
-          // loads the properties of the newly selected item.
-          loadProps(item);
-      }
-  }
-
-  ```
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -119,46 +87,6 @@ properties:
       [Office.context.diagnostics](https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-1.5&preserve-view=true#office-office-context-diagnostics-member)
       property to get similar information.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
-
-
-      // This function gets a mailbox's diagnostic information, such as Outlook
-      client and version, and logs it to the console.
-
-      const diagnostics = Office.context.mailbox.diagnostics;
-
-      console.log(`Client application: ${diagnostics.hostName}`);
-
-      console.log(`Client version: ${diagnostics.hostVersion}`);
-
-
-      switch (diagnostics.OWAView) {
-        case undefined:
-          console.log("Current view (Outlook on the web only): Not applicable. An Outlook desktop client is in use.");
-          break;
-        case Office.MailboxEnums.OWAView.OneColumnNarrow:
-          console.log("Current view (Outlook on the web only): Viewed from an older generation mobile phone");
-          break;
-        case Office.MailboxEnums.OWAView.OneColumn:
-          console.log("Current view (Outlook on the web only): Viewed from a newer generation mobile phone");
-          break;
-        case Office.MailboxEnums.OWAView.TwoColumns:
-          console.log("Current view (Outlook on the web only): Viewed from a tablet");
-          break;
-        case Office.MailboxEnums.OWAView.ThreeColumns:
-          console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
-          break;
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,9 +101,7 @@ properties:
       Gets the URL of the Exchange Web Services (EWS) endpoint for this email
       account.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -212,42 +138,6 @@ properties:
       attachments from the selected
       item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
-
-
-      // Get the EWS URL and EWS item ID.
-
-      console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
-
-      const ewsId = Office.context.mailbox.item.itemId;
-
-      console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
-
-
-      // Convert the EWS item ID to a REST-formatted ID.
-
-      const restId = Office.context.mailbox.convertToRestId(ewsId,
-      Office.MailboxEnums.RestVersion.v2_0);
-
-      console.log("REST item ID: " + restId);
-
-
-      // Convert the REST-formatted ID back to an EWS-formatted ID.
-
-      const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
-      Office.MailboxEnums.RestVersion.v2_0);
-
-      console.log("EWS ID (from REST ID): " + ewsId2);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -313,9 +203,7 @@ properties:
       Gets an object that provides methods to manage the categories master list
       associated with a mailbox.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -326,69 +214,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
-
-
-      Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
-          if (categories && categories.length > 0) {
-            console.log("Master categories:");
-            console.log(JSON.stringify(categories));
-          } else {
-            console.log("There are no categories in the master list.");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-
-      ...
-
-
-      const masterCategoriesToAdd = [
-        {
-          displayName: "TestCategory",
-          color: Office.MailboxEnums.CategoryColor.Preset0
-        }
-      ];
-
-
-      Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Successfully added categories to master list");
-        } else {
-          console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
-        }
-      });
-
-
-      ...
-
-
-      const masterCategoriesToRemove = ["TestCategory"];
-
-
-      Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Successfully removed categories from master list");
-        } else {
-          console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -402,9 +227,7 @@ properties:
     fullName: restUrl
     summary: Gets the URL of the REST endpoint for this email account.
     remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.5\]
 
 
       **[Minimum permission
@@ -447,20 +270,6 @@ properties:
       mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)
       article.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Get the URL of the REST endpoint.
-
-      const restUrl = Office.context.mailbox.restUrl;
-
-      console.log(`REST API URL: ${restUrl}`);
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -500,9 +309,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.5\]
 
 
       **[Minimum permission
@@ -513,38 +320,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Office.onReady(() => {
-          document.addEventListener('DOMContentLoaded', () => {
-              // Get a reference to the mailbox and use it to add an event handler.
-              const mailbox = Office.context.mailbox;
-              mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, (result) => {
-                  if (result.status === Office.AsyncResultStatus.Failed) {
-                      // Handle error.
-                  }
-              });
-          });
-      });
-
-
-      function loadNewItem(eventArgs) {
-          const item = Office.context.mailbox.item;
-
-          // Check that item isn't null.
-          if (item !== null) {
-              // Work with item. For example, define and call a function that
-              // loads the properties of the newly selected item.
-              loadProps(item);
-          }
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -593,9 +368,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.5\]
 
 
       **[Minimum permission
@@ -641,9 +414,7 @@ methods:
     fullName: convertToEwsId(id, restVersion)
     summary: Converts a supported ID into the Exchange Web Services (EWS) format.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -683,42 +454,6 @@ methods:
       Graph](https://graph.microsoft.io/)<!-- -->) use a different format than
       the format used by EWS. The `convertToEwsId` method converts a
       REST-formatted ID into the proper format for EWS.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
-
-
-      // Get the EWS URL and EWS item ID.
-
-      console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
-
-      const ewsId = Office.context.mailbox.item.itemId;
-
-      console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
-
-
-      // Convert the EWS item ID to a REST-formatted ID.
-
-      const restId = Office.context.mailbox.convertToRestId(ewsId,
-      Office.MailboxEnums.RestVersion.v2_0);
-
-      console.log("REST item ID: " + restId);
-
-
-      // Convert the REST-formatted ID back to an EWS-formatted ID.
-
-      const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
-      Office.MailboxEnums.RestVersion.v2_0);
-
-      console.log("EWS ID (from REST ID): " + ewsId2);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -774,26 +509,6 @@ methods:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
-
-
-      const time = Office.context.mailbox.item.start;
-
-      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
-
-      console.log(`Appointment starts (local): ${localTime.month +
-      1}/${localTime.date}/${localTime.year},
-      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -811,9 +526,7 @@ methods:
     fullName: convertToRestId(id, restVersion)
     summary: Converts a supported ID into REST format.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -841,42 +554,6 @@ methods:
       [Microsoft Graph](https://graph.microsoft.io/)<!-- -->). The
       `convertToRestId` method converts an EWS-formatted ID into the proper
       format for REST.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/ids-and-urls.yaml
-
-
-      // Get the EWS URL and EWS item ID.
-
-      console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
-
-      const ewsId = Office.context.mailbox.item.itemId;
-
-      console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
-
-
-      // Convert the EWS item ID to a REST-formatted ID.
-
-      const restId = Office.context.mailbox.convertToRestId(ewsId,
-      Office.MailboxEnums.RestVersion.v2_0);
-
-      console.log("REST item ID: " + restId);
-
-
-      // Convert the REST-formatted ID back to an EWS-formatted ID.
-
-      const ewsId2 = Office.context.mailbox.convertToEwsId(restId,
-      Office.MailboxEnums.RestVersion.v2_0);
-
-      console.log("EWS ID (from REST ID): " + ewsId2);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -923,37 +600,6 @@ methods:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Represents 3:37 PM PDT on Monday, August 26, 2019.
-
-      const input = {
-          date: 26,
-          hours: 15,
-          milliseconds: 2,
-          minutes: 37,
-          month: 7,
-          seconds: 2,
-          timezoneOffset: -420,
-          year: 2019
-      };
-
-
-      // result should be a Date object.
-
-      const result = Office.context.mailbox.convertToUtcClientTime(input);
-
-
-      // Output should be "2019-08-26T22:37:02.002Z".
-
-      console.log(result.toISOString());
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -994,9 +640,7 @@ methods:
       appointment, a blank pane opens on the client computer or device, and no
       error message is returned.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -1014,23 +658,6 @@ methods:
       [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
-
-
-      const itemId = (document.getElementById("itemId") as
-      HTMLInputElement).value;
-
-      Office.context.mailbox.displayAppointmentForm(itemId);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1078,9 +705,7 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -1091,31 +716,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
-
-
-      const itemId = (document.getElementById("itemId") as
-      HTMLInputElement).value;
-
-
-      // The async version will return error 9049 if the item is not found.
-
-      // The async version is only available starting with requirement set 1.9.
-
-      Office.context.mailbox.displayAppointmentFormAsync(itemId,
-      function(asyncResult) {
-        console.log("Result: " + JSON.stringify(asyncResult));
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1180,9 +780,7 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -1239,9 +837,7 @@ methods:
       message will be displayed on the client computer, and no error message is
       returned.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -1268,23 +864,6 @@ methods:
       appointment. Use the `displayAppointmentForm` method to display an
       existing appointment, and `displayNewAppointmentForm` to display a form to
       create a new appointment.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
-
-
-      const itemId = (document.getElementById("itemId") as
-      HTMLInputElement).value;
-
-      Office.context.mailbox.displayMessageForm(itemId);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1330,9 +909,7 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -1343,31 +920,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
-
-
-      const itemId = (document.getElementById("itemId") as
-      HTMLInputElement).value;
-
-
-      // The async version will return error 9049 if the item is not found.
-
-      // The async version is only available starting with requirement set 1.9.
-
-      Office.context.mailbox.displayMessageFormAsync(itemId, function
-      (asyncResult) {
-       console.log("Result: " + JSON.stringify(asyncResult));
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1430,9 +982,7 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -1497,9 +1047,7 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -1517,36 +1065,6 @@ methods:
       [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
-
-
-      const start = new Date();
-
-      const end = new Date();
-
-      end.setHours(start.getHours() + 1);
-
-
-      Office.context.mailbox.displayNewAppointmentForm({
-        requiredAttendees: ["bob@contoso.com"] as any,
-        optionalAttendees: ["sam@contoso.com"] as any,
-        start: start,
-        end: end,
-        location: "Home",
-        subject: "meeting",
-        resources: ["projector@contoso.com"] as any,
-        body: "Hello World!"
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1596,9 +1114,7 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -1609,45 +1125,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
-
-
-      const start = new Date();
-
-      const end = new Date();
-
-      end.setHours(start.getHours() + 1);
-
-
-      // The async version is only available starting with requirement set 1.9,
-
-      // and provides a callback when the new appointment form has been created.
-
-      Office.context.mailbox.displayNewAppointmentFormAsync(
-        {
-          requiredAttendees: ["bob@contoso.com"] as any,
-          optionalAttendees: ["sam@contoso.com"] as any,
-          start: start,
-          end: end,
-          location: "Home",
-          subject: "meeting",
-          resources: ["projector@contoso.com"] as any,
-          body: "Hello World!"
-        },
-        function(asyncResult) {
-          console.log(JSON.stringify(asyncResult));
-        }
-      );
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1714,9 +1191,7 @@ methods:
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -1767,9 +1242,7 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
-      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.6\]
 
 
       **[Minimum permission
@@ -1780,33 +1253,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-message.yaml
-
-
-      Office.context.mailbox.displayNewMessageForm({
-        toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
-        ccRecipients: ["sam@contoso.com"],
-        subject: "Outlook add-ins are cool!",
-        htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
-        attachments: [
-          {
-            type: "file",
-            name: "image.png",
-            url: "https://i.imgur.com/9S36xvA.jpg",
-            isInline: true
-          }
-        ]
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1900,9 +1346,7 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -1913,42 +1357,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-message.yaml
-
-
-      // The async version is only available starting with requirement set 1.9,
-
-      // and provides a callback when the new message form has been created.
-
-      Office.context.mailbox.displayNewMessageFormAsync(
-        {
-          toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
-          ccRecipients: ["sam@contoso.com"],
-          subject: "Outlook add-ins are cool!",
-          htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
-          attachments: [
-            {
-              type: "file",
-              name: "image.png",
-              url: "https://i.imgur.com/9S36xvA.jpg",
-              isInline: true
-            }
-          ]
-        },
-        (asyncResult) => {
-          console.log(JSON.stringify(asyncResult));
-        }
-      );
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2059,9 +1467,7 @@ methods:
       If any of the parameters exceed the specified size limits, or if an
       unknown parameter name is specified, an exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -2175,9 +1581,7 @@ methods:
 
       The token is returned as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.5\]
 
 
       **[Minimum permission
@@ -2385,9 +1789,8 @@ methods:
 
       The token is returned as a string in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
-      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: All support Read mode; Mailbox 1.3 introduced Compose mode
+      support\]
 
 
       **[Minimum permission
@@ -2487,27 +1890,6 @@ methods:
       - `NetworkError: The user is no longer connected to the network. Please
       check your network connection and try again.`
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/user-callback-token.yaml
-
-
-      Office.context.mailbox.getCallbackTokenAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.error(`Token retrieval failed with message: ${result.error.message}`);
-              return;
-          }
-
-          console.log(result.value);
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2565,20 +1947,6 @@ methods:
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the
       mobile application management (MAM) policy.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Checks if the mailbox is managed by Microsoft Intune.
-
-      const isIdentityManaged = Office.context.mailbox.getIsIdentityManaged();
-
-      console.log(`Intune-managed mailbox: ${isIdentityManaged}`);
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2622,26 +1990,6 @@ methods:
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM
       policy.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Checks if the add-in can access data from the device's photo library.
-
-      const isOpenFromPhotoLibraryAllowed =
-      Office.context.mailbox.getIsOpenFromLocationAllowed(Office.MailboxEnums.OpenLocation.PhotoLibrary);
-
-      if (isOpenFromPhotoLibraryAllowed) {
-          console.log("Access to the photo library is allowed.");
-          // Do something.
-      } else {
-          console.log("Access to the photo library isn't allowed.");
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2694,26 +2042,6 @@ methods:
 
       - `MAMServiceNotAvailable`<!-- -->: The client is unable to fetch the MAM
       policy.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Checks if the add-in can save data to SharePoint.
-
-      const isSaveToSharePointAllowed =
-      Office.context.mailbox.getIsSaveToLocationAllowed(Office.MailboxEnums.SaveLocation.SharePoint);
-
-      if (isSaveToSharePointAllowed) {
-          console.log("Saving to SharePoint is allowed.");
-          // Do something.
-      } else {
-          console.log("Saving to SharePoint isn't allowed.");
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2807,27 +2135,6 @@ methods:
       - `NetworkError: The user is no longer connected to the network. Please
       check your network connection and try again.`
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/user-identity-token.yaml
-
-
-      Office.context.mailbox.getUserIdentityTokenAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.error(`Token retrieval failed with message: ${result.error.message}`)
-              return;
-          }
-
-          console.log(result.value);
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2864,9 +2171,7 @@ methods:
       The `makeEwsRequestAsync` method sends an EWS request on behalf of the
       add-in to Exchange.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -2937,81 +2242,6 @@ methods:
       -->. To determine the Outlook client in which your add-in is running, use
       the `mailbox.diagnostics.hostName` property.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-for-exchange-on-premises/get-icaluid-as-attendee.yaml
-
-
-      const ewsId = Office.context.mailbox.item.itemId;
-
-      const request = `<soap:Envelope
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-            <soap:Header><t:RequestServerVersion Version="Exchange2013" /></soap:Header>
-            <soap:Body>
-              <m:GetItem>
-                <m:ItemShape>
-                  <t:BaseShape>AllProperties</t:BaseShape>
-                </m:ItemShape >
-                <m:ItemIds>
-                  <t:ItemId Id="${ewsId}" />
-                </m:ItemIds>
-              </m:GetItem>
-            </soap:Body>
-          </soap:Envelope>`;
-
-      Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(result.error.message);
-          return;
-        }
-
-        console.log(getUID(result.value));
-      });
-
-
-      ...
-
-
-      const request = '<soap:Envelope
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">' +
-          '  <soap:Header><t:RequestServerVersion Version="Exchange2010" /></soap:Header>' +
-          '  <soap:Body>' +
-          '    <m:CreateItem MessageDisposition="SendAndSaveCopy">' +
-          '      <m:SavedItemFolderId><t:DistinguishedFolderId Id="sentitems" /></m:SavedItemFolderId>' +
-          '      <m:Items>' +
-          '        <t:Message>' +
-          '          <t:Subject>Hello, Outlook!</t:Subject>' +
-          '          <t:Body BodyType="HTML">This message was sent from a ScriptLab code sample, used from ' + Office.context.mailbox.diagnostics.hostName + ', version ' + Office.context.mailbox.diagnostics.hostVersion + '!</t:Body>' +
-          '          <t:ToRecipients>' +
-          '            <t:Mailbox><t:EmailAddress>' + Office.context.mailbox.userProfile.emailAddress + '</t:EmailAddress></t:Mailbox>' +
-          '          </t:ToRecipients>' +
-          '        </t:Message>' +
-          '      </m:Items>' +
-          '    </m:CreateItem>' +
-          '  </soap:Body>' +
-          '</soap:Envelope>';
-
-      Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.log(`Failed to make EWS request: ${result.error.message}.`);
-              return;
-          }
-          console.log(result.value);
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3058,9 +2288,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.5\]
 
 
       **[Minimum permission
@@ -3112,9 +2340,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.5\]
 
 
       **[Minimum permission
@@ -3125,24 +2351,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Office.context.mailbox.removeHandlerAsync(Office.EventType.OfficeThemeChanged,
-      (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.error("Failed to remove event handler: " + asyncResult.error.message);
-              return;
-          }
-
-          console.log("Event handler removed successfully.");
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false

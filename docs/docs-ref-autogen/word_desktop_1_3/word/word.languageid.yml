@@ -4,9 +4,7 @@ uid: word!Word.LanguageId:enum
 package: word!
 fullName: Word.LanguageId
 summary: Represents the language ID of a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,1212 +12,970 @@ fields:
   - name: afrikaans
     uid: word!Word.LanguageId.afrikaans:member
     package: word!
-    summary: >-
+    summary: |-
       Afrikaans language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Afrikaans"'
   - name: albanian
     uid: word!Word.LanguageId.albanian:member
     package: word!
-    summary: >-
+    summary: |-
       Albanian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Albanian"'
   - name: amharic
     uid: word!Word.LanguageId.amharic:member
     package: word!
-    summary: >-
+    summary: |-
       Amharic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Amharic"'
   - name: arabic
     uid: word!Word.LanguageId.arabic:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Arabic"'
   - name: arabicAlgeria
     uid: word!Word.LanguageId.arabicAlgeria:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Algerian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicAlgeria"'
   - name: arabicBahrain
     uid: word!Word.LanguageId.arabicBahrain:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Bahraini language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicBahrain"'
   - name: arabicEgypt
     uid: word!Word.LanguageId.arabicEgypt:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Egyptian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicEgypt"'
   - name: arabicIraq
     uid: word!Word.LanguageId.arabicIraq:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Iraqi language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicIraq"'
   - name: arabicJordan
     uid: word!Word.LanguageId.arabicJordan:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Jordanian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicJordan"'
   - name: arabicKuwait
     uid: word!Word.LanguageId.arabicKuwait:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Kuwaiti language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicKuwait"'
   - name: arabicLebanon
     uid: word!Word.LanguageId.arabicLebanon:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Lebanese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicLebanon"'
   - name: arabicLibya
     uid: word!Word.LanguageId.arabicLibya:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Libyan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicLibya"'
   - name: arabicMorocco
     uid: word!Word.LanguageId.arabicMorocco:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Moroccan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicMorocco"'
   - name: arabicOman
     uid: word!Word.LanguageId.arabicOman:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Omani language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicOman"'
   - name: arabicQatar
     uid: word!Word.LanguageId.arabicQatar:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Qatari language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicQatar"'
   - name: arabicSyria
     uid: word!Word.LanguageId.arabicSyria:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Syrian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicSyria"'
   - name: arabicTunisia
     uid: word!Word.LanguageId.arabicTunisia:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Tunisian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicTunisia"'
   - name: arabicUAE
     uid: word!Word.LanguageId.arabicUAE:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic United Arab Emirates language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicUAE"'
   - name: arabicYemen
     uid: word!Word.LanguageId.arabicYemen:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Yemeni language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArabicYemen"'
   - name: armenian
     uid: word!Word.LanguageId.armenian:member
     package: word!
-    summary: >-
+    summary: |-
       Armenian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Armenian"'
   - name: assamese
     uid: word!Word.LanguageId.assamese:member
     package: word!
-    summary: >-
+    summary: |-
       Assamese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Assamese"'
   - name: azeriCyrillic
     uid: word!Word.LanguageId.azeriCyrillic:member
     package: word!
-    summary: >-
+    summary: |-
       Azerbaijani Cyrillic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"AzeriCyrillic"'
   - name: azeriLatin
     uid: word!Word.LanguageId.azeriLatin:member
     package: word!
-    summary: >-
+    summary: |-
       Azerbaijani Latin language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"AzeriLatin"'
   - name: basque
     uid: word!Word.LanguageId.basque:member
     package: word!
-    summary: >-
+    summary: |-
       Basque (Basque).
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Basque"'
   - name: belarusian
     uid: word!Word.LanguageId.belarusian:member
     package: word!
-    summary: >-
+    summary: |-
       Belarusian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Belarusian"'
   - name: belgianDutch
     uid: word!Word.LanguageId.belgianDutch:member
     package: word!
-    summary: >-
+    summary: |-
       Belgian Dutch language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BelgianDutch"'
   - name: belgianFrench
     uid: word!Word.LanguageId.belgianFrench:member
     package: word!
-    summary: >-
+    summary: |-
       Belgian French language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BelgianFrench"'
   - name: bengali
     uid: word!Word.LanguageId.bengali:member
     package: word!
-    summary: >-
+    summary: |-
       Bengali language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Bengali"'
   - name: bulgarian
     uid: word!Word.LanguageId.bulgarian:member
     package: word!
-    summary: >-
+    summary: |-
       Bulgarian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Bulgarian"'
   - name: burmese
     uid: word!Word.LanguageId.burmese:member
     package: word!
-    summary: >-
+    summary: |-
       Burmese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Burmese"'
   - name: catalan
     uid: word!Word.LanguageId.catalan:member
     package: word!
-    summary: >-
+    summary: |-
       Catalan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Catalan"'
   - name: cherokee
     uid: word!Word.LanguageId.cherokee:member
     package: word!
-    summary: >-
+    summary: |-
       Cherokee language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Cherokee"'
   - name: chineseHongKongSAR
     uid: word!Word.LanguageId.chineseHongKongSAR:member
     package: word!
-    summary: >-
+    summary: |-
       Chinese Hong Kong SAR language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ChineseHongKongSAR"'
   - name: chineseMacaoSAR
     uid: word!Word.LanguageId.chineseMacaoSAR:member
     package: word!
-    summary: >-
+    summary: |-
       Chinese Macao SAR language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ChineseMacaoSAR"'
   - name: chineseSingapore
     uid: word!Word.LanguageId.chineseSingapore:member
     package: word!
-    summary: >-
+    summary: |-
       Chinese Singapore language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ChineseSingapore"'
   - name: croatian
     uid: word!Word.LanguageId.croatian:member
     package: word!
-    summary: >-
+    summary: |-
       Croatian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Croatian"'
   - name: czech
     uid: word!Word.LanguageId.czech:member
     package: word!
-    summary: >-
+    summary: |-
       Czech language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Czech"'
   - name: danish
     uid: word!Word.LanguageId.danish:member
     package: word!
-    summary: >-
+    summary: |-
       Danish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Danish"'
   - name: divehi
     uid: word!Word.LanguageId.divehi:member
     package: word!
-    summary: >-
+    summary: |-
       Divehi language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Divehi"'
   - name: dutch
     uid: word!Word.LanguageId.dutch:member
     package: word!
-    summary: >-
+    summary: |-
       Dutch language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Dutch"'
   - name: edo
     uid: word!Word.LanguageId.edo:member
     package: word!
-    summary: >-
+    summary: |-
       Edo language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Edo"'
   - name: englishAUS
     uid: word!Word.LanguageId.englishAUS:member
     package: word!
-    summary: >-
+    summary: |-
       Australian English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishAUS"'
   - name: englishBelize
     uid: word!Word.LanguageId.englishBelize:member
     package: word!
-    summary: >-
+    summary: |-
       Belize English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishBelize"'
   - name: englishCanadian
     uid: word!Word.LanguageId.englishCanadian:member
     package: word!
-    summary: >-
+    summary: |-
       Canadian English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishCanadian"'
   - name: englishCaribbean
     uid: word!Word.LanguageId.englishCaribbean:member
     package: word!
-    summary: >-
+    summary: |-
       Caribbean English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishCaribbean"'
   - name: englishIndonesia
     uid: word!Word.LanguageId.englishIndonesia:member
     package: word!
-    summary: >-
+    summary: |-
       Indonesian English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishIndonesia"'
   - name: englishIreland
     uid: word!Word.LanguageId.englishIreland:member
     package: word!
-    summary: >-
+    summary: |-
       Irish English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishIreland"'
   - name: englishJamaica
     uid: word!Word.LanguageId.englishJamaica:member
     package: word!
-    summary: >-
+    summary: |-
       Jamaican English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishJamaica"'
   - name: englishNewZealand
     uid: word!Word.LanguageId.englishNewZealand:member
     package: word!
-    summary: >-
+    summary: |-
       New Zealand English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishNewZealand"'
   - name: englishPhilippines
     uid: word!Word.LanguageId.englishPhilippines:member
     package: word!
-    summary: >-
+    summary: |-
       Filipino English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishPhilippines"'
   - name: englishSouthAfrica
     uid: word!Word.LanguageId.englishSouthAfrica:member
     package: word!
-    summary: >-
+    summary: |-
       South African English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishSouthAfrica"'
   - name: englishTrinidadTobago
     uid: word!Word.LanguageId.englishTrinidadTobago:member
     package: word!
-    summary: >-
+    summary: |-
       Tobago Trinidad English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishTrinidadTobago"'
   - name: englishUK
     uid: word!Word.LanguageId.englishUK:member
     package: word!
-    summary: >-
+    summary: |-
       United Kingdom English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishUK"'
   - name: englishUS
     uid: word!Word.LanguageId.englishUS:member
     package: word!
-    summary: >-
+    summary: |-
       United States English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishUS"'
   - name: englishZimbabwe
     uid: word!Word.LanguageId.englishZimbabwe:member
     package: word!
-    summary: >-
+    summary: |-
       Zimbabwe English language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EnglishZimbabwe"'
   - name: estonian
     uid: word!Word.LanguageId.estonian:member
     package: word!
-    summary: >-
+    summary: |-
       Estonian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Estonian"'
   - name: faeroese
     uid: word!Word.LanguageId.faeroese:member
     package: word!
-    summary: >-
+    summary: |-
       Faeroese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Faeroese"'
   - name: filipino
     uid: word!Word.LanguageId.filipino:member
     package: word!
-    summary: >-
+    summary: |-
       Filipino language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Filipino"'
   - name: finnish
     uid: word!Word.LanguageId.finnish:member
     package: word!
-    summary: >-
+    summary: |-
       Finnish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Finnish"'
   - name: french
     uid: word!Word.LanguageId.french:member
     package: word!
-    summary: >-
+    summary: |-
       French language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"French"'
   - name: frenchCameroon
     uid: word!Word.LanguageId.frenchCameroon:member
     package: word!
-    summary: >-
+    summary: |-
       French Cameroon language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchCameroon"'
   - name: frenchCanadian
     uid: word!Word.LanguageId.frenchCanadian:member
     package: word!
-    summary: >-
+    summary: |-
       French Canadian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchCanadian"'
   - name: frenchCongoDRC
     uid: word!Word.LanguageId.frenchCongoDRC:member
     package: word!
-    summary: >-
+    summary: |-
       French (Congo (DRC)) language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchCongoDRC"'
   - name: frenchCotedIvoire
     uid: word!Word.LanguageId.frenchCotedIvoire:member
     package: word!
-    summary: >-
+    summary: |-
       French Cote d'Ivoire language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchCotedIvoire"'
   - name: frenchHaiti
     uid: word!Word.LanguageId.frenchHaiti:member
     package: word!
-    summary: >-
+    summary: |-
       French Haiti language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchHaiti"'
   - name: frenchLuxembourg
     uid: word!Word.LanguageId.frenchLuxembourg:member
     package: word!
-    summary: >-
+    summary: |-
       French Luxembourg language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchLuxembourg"'
   - name: frenchMali
     uid: word!Word.LanguageId.frenchMali:member
     package: word!
-    summary: >-
+    summary: |-
       French Mali language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchMali"'
   - name: frenchMonaco
     uid: word!Word.LanguageId.frenchMonaco:member
     package: word!
-    summary: >-
+    summary: |-
       French Monaco language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchMonaco"'
   - name: frenchMorocco
     uid: word!Word.LanguageId.frenchMorocco:member
     package: word!
-    summary: >-
+    summary: |-
       French Morocco language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchMorocco"'
   - name: frenchReunion
     uid: word!Word.LanguageId.frenchReunion:member
     package: word!
-    summary: >-
+    summary: |-
       French Reunion language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchReunion"'
   - name: frenchSenegal
     uid: word!Word.LanguageId.frenchSenegal:member
     package: word!
-    summary: >-
+    summary: |-
       French Senegal language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchSenegal"'
   - name: frenchWestIndies
     uid: word!Word.LanguageId.frenchWestIndies:member
     package: word!
-    summary: >-
+    summary: |-
       French West Indies language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrenchWestIndies"'
   - name: frisianNetherlands
     uid: word!Word.LanguageId.frisianNetherlands:member
     package: word!
-    summary: >-
+    summary: |-
       Frisian Netherlands language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FrisianNetherlands"'
   - name: fulfulde
     uid: word!Word.LanguageId.fulfulde:member
     package: word!
-    summary: >-
+    summary: |-
       Fulfulde language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Fulfulde"'
   - name: gaelicIreland
     uid: word!Word.LanguageId.gaelicIreland:member
     package: word!
-    summary: >-
+    summary: |-
       Irish (Irish) language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"GaelicIreland"'
   - name: gaelicScotland
     uid: word!Word.LanguageId.gaelicScotland:member
     package: word!
-    summary: >-
+    summary: |-
       Scottish Gaelic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"GaelicScotland"'
   - name: galician
     uid: word!Word.LanguageId.galician:member
     package: word!
-    summary: >-
+    summary: |-
       Galician language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Galician"'
   - name: georgian
     uid: word!Word.LanguageId.georgian:member
     package: word!
-    summary: >-
+    summary: |-
       Georgian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Georgian"'
   - name: german
     uid: word!Word.LanguageId.german:member
     package: word!
-    summary: >-
+    summary: |-
       German language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"German"'
   - name: germanAustria
     uid: word!Word.LanguageId.germanAustria:member
     package: word!
-    summary: >-
+    summary: |-
       German Austrian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"GermanAustria"'
   - name: germanLiechtenstein
     uid: word!Word.LanguageId.germanLiechtenstein:member
     package: word!
-    summary: >-
+    summary: |-
       German Liechtenstein language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"GermanLiechtenstein"'
   - name: germanLuxembourg
     uid: word!Word.LanguageId.germanLuxembourg:member
     package: word!
-    summary: >-
+    summary: |-
       German Luxembourg language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"GermanLuxembourg"'
   - name: greek
     uid: word!Word.LanguageId.greek:member
     package: word!
-    summary: >-
+    summary: |-
       Greek language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Greek"'
   - name: guarani
     uid: word!Word.LanguageId.guarani:member
     package: word!
-    summary: >-
+    summary: |-
       Guarani language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Guarani"'
   - name: gujarati
     uid: word!Word.LanguageId.gujarati:member
     package: word!
-    summary: >-
+    summary: |-
       Gujarati language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Gujarati"'
   - name: hausa
     uid: word!Word.LanguageId.hausa:member
     package: word!
-    summary: >-
+    summary: |-
       Hausa language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hausa"'
   - name: hawaiian
     uid: word!Word.LanguageId.hawaiian:member
     package: word!
-    summary: >-
+    summary: |-
       Hawaiian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hawaiian"'
   - name: hebrew
     uid: word!Word.LanguageId.hebrew:member
     package: word!
-    summary: >-
+    summary: |-
       Hebrew language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hebrew"'
   - name: hindi
     uid: word!Word.LanguageId.hindi:member
     package: word!
-    summary: >-
+    summary: |-
       Hindi language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hindi"'
   - name: hungarian
     uid: word!Word.LanguageId.hungarian:member
     package: word!
-    summary: >-
+    summary: |-
       Hungarian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hungarian"'
   - name: ibibio
     uid: word!Word.LanguageId.ibibio:member
     package: word!
-    summary: >-
+    summary: |-
       Ibibio language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Ibibio"'
   - name: icelandic
     uid: word!Word.LanguageId.icelandic:member
     package: word!
-    summary: >-
+    summary: |-
       Icelandic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Icelandic"'
   - name: igbo
     uid: word!Word.LanguageId.igbo:member
     package: word!
-    summary: >-
+    summary: |-
       Igbo language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Igbo"'
   - name: indonesian
     uid: word!Word.LanguageId.indonesian:member
     package: word!
-    summary: >-
+    summary: |-
       Indonesian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Indonesian"'
   - name: inuktitut
     uid: word!Word.LanguageId.inuktitut:member
     package: word!
-    summary: >-
+    summary: |-
       Inuktitut language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Inuktitut"'
   - name: italian
     uid: word!Word.LanguageId.italian:member
     package: word!
-    summary: >-
+    summary: |-
       Italian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Italian"'
   - name: japanese
     uid: word!Word.LanguageId.japanese:member
     package: word!
-    summary: >-
+    summary: |-
       Japanese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Japanese"'
   - name: kannada
     uid: word!Word.LanguageId.kannada:member
     package: word!
-    summary: >-
+    summary: |-
       Kannada language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Kannada"'
   - name: kanuri
     uid: word!Word.LanguageId.kanuri:member
     package: word!
-    summary: >-
+    summary: |-
       Kanuri language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Kanuri"'
   - name: kashmiri
     uid: word!Word.LanguageId.kashmiri:member
     package: word!
-    summary: >-
+    summary: |-
       Kashmiri language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Kashmiri"'
   - name: kazakh
     uid: word!Word.LanguageId.kazakh:member
     package: word!
-    summary: >-
+    summary: |-
       Kazakh language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Kazakh"'
   - name: khmer
     uid: word!Word.LanguageId.khmer:member
     package: word!
-    summary: >-
+    summary: |-
       Khmer language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Khmer"'
   - name: kirghiz
     uid: word!Word.LanguageId.kirghiz:member
     package: word!
-    summary: >-
+    summary: |-
       Kirghiz language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Kirghiz"'
   - name: konkani
     uid: word!Word.LanguageId.konkani:member
     package: word!
-    summary: >-
+    summary: |-
       Konkani language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Konkani"'
   - name: korean
     uid: word!Word.LanguageId.korean:member
     package: word!
-    summary: >-
+    summary: |-
       Korean language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Korean"'
   - name: kyrgyz
     uid: word!Word.LanguageId.kyrgyz:member
     package: word!
-    summary: >-
+    summary: |-
       Kyrgyz language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Kyrgyz"'
   - name: languageNone
     uid: word!Word.LanguageId.languageNone:member
     package: word!
-    summary: >-
+    summary: |-
       No specified language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LanguageNone"'
   - name: lao
     uid: word!Word.LanguageId.lao:member
     package: word!
-    summary: >-
+    summary: |-
       Lao language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Lao"'
   - name: latin
     uid: word!Word.LanguageId.latin:member
     package: word!
-    summary: >-
+    summary: |-
       Latin language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Latin"'
   - name: latvian
     uid: word!Word.LanguageId.latvian:member
     package: word!
-    summary: >-
+    summary: |-
       Latvian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Latvian"'
   - name: lithuanian
     uid: word!Word.LanguageId.lithuanian:member
     package: word!
-    summary: >-
+    summary: |-
       Lithuanian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Lithuanian"'
   - name: macedonianFYROM
     uid: word!Word.LanguageId.macedonianFYROM:member
     package: word!
-    summary: >-
+    summary: |-
       Macedonian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MacedonianFYROM"'
   - name: malayalam
     uid: word!Word.LanguageId.malayalam:member
     package: word!
-    summary: >-
+    summary: |-
       Malayalam language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Malayalam"'
   - name: malayBruneiDarussalam
     uid: word!Word.LanguageId.malayBruneiDarussalam:member
     package: word!
-    summary: >-
+    summary: |-
       Malay Brunei Darussalam language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MalayBruneiDarussalam"'
   - name: malaysian
     uid: word!Word.LanguageId.malaysian:member
     package: word!
-    summary: >-
+    summary: |-
       Malaysian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Malaysian"'
   - name: maltese
     uid: word!Word.LanguageId.maltese:member
     package: word!
-    summary: >-
+    summary: |-
       Maltese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Maltese"'
   - name: manipuri
     uid: word!Word.LanguageId.manipuri:member
     package: word!
-    summary: >-
+    summary: |-
       Manipuri language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Manipuri"'
   - name: marathi
     uid: word!Word.LanguageId.marathi:member
     package: word!
-    summary: >-
+    summary: |-
       Marathi language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Marathi"'
   - name: mexicanSpanish
     uid: word!Word.LanguageId.mexicanSpanish:member
     package: word!
-    summary: >-
+    summary: |-
       Mexican Spanish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MexicanSpanish"'
   - name: mongolian
     uid: word!Word.LanguageId.mongolian:member
     package: word!
-    summary: >-
+    summary: |-
       Mongolian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mongolian"'
   - name: nepali
     uid: word!Word.LanguageId.nepali:member
     package: word!
-    summary: >-
+    summary: |-
       Nepali language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Nepali"'
   - name: noProofing
     uid: word!Word.LanguageId.noProofing:member
@@ -1229,826 +985,661 @@ fields:
       object is grammatically validated using the Microsoft Word proofing tools.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NoProofing"'
   - name: norwegianBokmol
     uid: word!Word.LanguageId.norwegianBokmol:member
     package: word!
-    summary: >-
+    summary: |-
       Norwegian Bokmol language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NorwegianBokmol"'
   - name: norwegianNynorsk
     uid: word!Word.LanguageId.norwegianNynorsk:member
     package: word!
-    summary: >-
+    summary: |-
       Norwegian Nynorsk language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NorwegianNynorsk"'
   - name: oriya
     uid: word!Word.LanguageId.oriya:member
     package: word!
-    summary: >-
+    summary: |-
       Odia (Oriya) language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Oriya"'
   - name: oromo
     uid: word!Word.LanguageId.oromo:member
     package: word!
-    summary: >-
+    summary: |-
       Oromo language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Oromo"'
   - name: pashto
     uid: word!Word.LanguageId.pashto:member
     package: word!
-    summary: >-
+    summary: |-
       Pashto language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Pashto"'
   - name: persian
     uid: word!Word.LanguageId.persian:member
     package: word!
-    summary: >-
+    summary: |-
       Persian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Persian"'
   - name: polish
     uid: word!Word.LanguageId.polish:member
     package: word!
-    summary: >-
+    summary: |-
       Polish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Polish"'
   - name: portuguese
     uid: word!Word.LanguageId.portuguese:member
     package: word!
-    summary: >-
+    summary: |-
       Portuguese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Portuguese"'
   - name: portugueseBrazil
     uid: word!Word.LanguageId.portugueseBrazil:member
     package: word!
-    summary: >-
+    summary: |-
       Portuguese (Brazil) language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PortugueseBrazil"'
   - name: punjabi
     uid: word!Word.LanguageId.punjabi:member
     package: word!
-    summary: >-
+    summary: |-
       Punjabi language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Punjabi"'
   - name: rhaetoRomanic
     uid: word!Word.LanguageId.rhaetoRomanic:member
     package: word!
-    summary: >-
+    summary: |-
       Rhaeto Romanic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"RhaetoRomanic"'
   - name: romanian
     uid: word!Word.LanguageId.romanian:member
     package: word!
-    summary: >-
+    summary: |-
       Romanian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Romanian"'
   - name: romanianMoldova
     uid: word!Word.LanguageId.romanianMoldova:member
     package: word!
-    summary: >-
+    summary: |-
       Romanian Moldova language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"RomanianMoldova"'
   - name: russian
     uid: word!Word.LanguageId.russian:member
     package: word!
-    summary: >-
+    summary: |-
       Russian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Russian"'
   - name: russianMoldova
     uid: word!Word.LanguageId.russianMoldova:member
     package: word!
-    summary: >-
+    summary: |-
       Russian Moldova language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"RussianMoldova"'
   - name: samiLappish
     uid: word!Word.LanguageId.samiLappish:member
     package: word!
-    summary: >-
+    summary: |-
       Sami Lappish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SamiLappish"'
   - name: sanskrit
     uid: word!Word.LanguageId.sanskrit:member
     package: word!
-    summary: >-
+    summary: |-
       Sanskrit language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sanskrit"'
   - name: serbianCyrillic
     uid: word!Word.LanguageId.serbianCyrillic:member
     package: word!
-    summary: >-
+    summary: |-
       Serbian Cyrillic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SerbianCyrillic"'
   - name: serbianLatin
     uid: word!Word.LanguageId.serbianLatin:member
     package: word!
-    summary: >-
+    summary: |-
       Serbian Latin language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SerbianLatin"'
   - name: sesotho
     uid: word!Word.LanguageId.sesotho:member
     package: word!
-    summary: >-
+    summary: |-
       Sesotho language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sesotho"'
   - name: simplifiedChinese
     uid: word!Word.LanguageId.simplifiedChinese:member
     package: word!
-    summary: >-
+    summary: |-
       Simplified Chinese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SimplifiedChinese"'
   - name: sindhi
     uid: word!Word.LanguageId.sindhi:member
     package: word!
-    summary: >-
+    summary: |-
       Sindhi language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sindhi"'
   - name: sindhiPakistan
     uid: word!Word.LanguageId.sindhiPakistan:member
     package: word!
-    summary: >-
+    summary: |-
       Sindhi (Pakistan) language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SindhiPakistan"'
   - name: sinhalese
     uid: word!Word.LanguageId.sinhalese:member
     package: word!
-    summary: >-
+    summary: |-
       Sinhalese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sinhalese"'
   - name: slovak
     uid: word!Word.LanguageId.slovak:member
     package: word!
-    summary: >-
+    summary: |-
       Slovakian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Slovak"'
   - name: slovenian
     uid: word!Word.LanguageId.slovenian:member
     package: word!
-    summary: >-
+    summary: |-
       Slovenian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Slovenian"'
   - name: somali
     uid: word!Word.LanguageId.somali:member
     package: word!
-    summary: >-
+    summary: |-
       Somali language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Somali"'
   - name: sorbian
     uid: word!Word.LanguageId.sorbian:member
     package: word!
-    summary: >-
+    summary: |-
       Sorbian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sorbian"'
   - name: spanish
     uid: word!Word.LanguageId.spanish:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Spanish"'
   - name: spanishArgentina
     uid: word!Word.LanguageId.spanishArgentina:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Argentina language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishArgentina"'
   - name: spanishBolivia
     uid: word!Word.LanguageId.spanishBolivia:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Bolivian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishBolivia"'
   - name: spanishChile
     uid: word!Word.LanguageId.spanishChile:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Chilean language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishChile"'
   - name: spanishColombia
     uid: word!Word.LanguageId.spanishColombia:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Colombian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishColombia"'
   - name: spanishCostaRica
     uid: word!Word.LanguageId.spanishCostaRica:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Costa Rican language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishCostaRica"'
   - name: spanishDominicanRepublic
     uid: word!Word.LanguageId.spanishDominicanRepublic:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Dominican Republic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishDominicanRepublic"'
   - name: spanishEcuador
     uid: word!Word.LanguageId.spanishEcuador:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Ecuadorian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishEcuador"'
   - name: spanishElSalvador
     uid: word!Word.LanguageId.spanishElSalvador:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish El Salvadorian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishElSalvador"'
   - name: spanishGuatemala
     uid: word!Word.LanguageId.spanishGuatemala:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Guatemala language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishGuatemala"'
   - name: spanishHonduras
     uid: word!Word.LanguageId.spanishHonduras:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Honduran language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishHonduras"'
   - name: spanishModernSort
     uid: word!Word.LanguageId.spanishModernSort:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Modern Sort language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishModernSort"'
   - name: spanishNicaragua
     uid: word!Word.LanguageId.spanishNicaragua:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Nicaraguan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishNicaragua"'
   - name: spanishPanama
     uid: word!Word.LanguageId.spanishPanama:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Panamanian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishPanama"'
   - name: spanishParaguay
     uid: word!Word.LanguageId.spanishParaguay:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Paraguayan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishParaguay"'
   - name: spanishPeru
     uid: word!Word.LanguageId.spanishPeru:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Peruvian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishPeru"'
   - name: spanishPuertoRico
     uid: word!Word.LanguageId.spanishPuertoRico:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Puerto Rican language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishPuertoRico"'
   - name: spanishUruguay
     uid: word!Word.LanguageId.spanishUruguay:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Uruguayan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishUruguay"'
   - name: spanishVenezuela
     uid: word!Word.LanguageId.spanishVenezuela:member
     package: word!
-    summary: >-
+    summary: |-
       Spanish Venezuelan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SpanishVenezuela"'
   - name: sutu
     uid: word!Word.LanguageId.sutu:member
     package: word!
-    summary: >-
+    summary: |-
       Sutu language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sutu"'
   - name: swahili
     uid: word!Word.LanguageId.swahili:member
     package: word!
-    summary: >-
+    summary: |-
       Swahili language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Swahili"'
   - name: swedish
     uid: word!Word.LanguageId.swedish:member
     package: word!
-    summary: >-
+    summary: |-
       Swedish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Swedish"'
   - name: swedishFinland
     uid: word!Word.LanguageId.swedishFinland:member
     package: word!
-    summary: >-
+    summary: |-
       Swedish Finnish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SwedishFinland"'
   - name: swissFrench
     uid: word!Word.LanguageId.swissFrench:member
     package: word!
-    summary: >-
+    summary: |-
       Swiss French language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SwissFrench"'
   - name: swissGerman
     uid: word!Word.LanguageId.swissGerman:member
     package: word!
-    summary: >-
+    summary: |-
       Swiss German language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SwissGerman"'
   - name: swissItalian
     uid: word!Word.LanguageId.swissItalian:member
     package: word!
-    summary: >-
+    summary: |-
       Swiss Italian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SwissItalian"'
   - name: syriac
     uid: word!Word.LanguageId.syriac:member
     package: word!
-    summary: >-
+    summary: |-
       Syriac language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Syriac"'
   - name: tajik
     uid: word!Word.LanguageId.tajik:member
     package: word!
-    summary: >-
+    summary: |-
       Tajik language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tajik"'
   - name: tamazight
     uid: word!Word.LanguageId.tamazight:member
     package: word!
-    summary: >-
+    summary: |-
       Tamazight language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tamazight"'
   - name: tamazightLatin
     uid: word!Word.LanguageId.tamazightLatin:member
     package: word!
-    summary: >-
+    summary: |-
       Tamazight Latin language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TamazightLatin"'
   - name: tamil
     uid: word!Word.LanguageId.tamil:member
     package: word!
-    summary: >-
+    summary: |-
       Tamil language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tamil"'
   - name: tatar
     uid: word!Word.LanguageId.tatar:member
     package: word!
-    summary: >-
+    summary: |-
       Tatar language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tatar"'
   - name: telugu
     uid: word!Word.LanguageId.telugu:member
     package: word!
-    summary: >-
+    summary: |-
       Telugu language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Telugu"'
   - name: thai
     uid: word!Word.LanguageId.thai:member
     package: word!
-    summary: >-
+    summary: |-
       Thai language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Thai"'
   - name: tibetan
     uid: word!Word.LanguageId.tibetan:member
     package: word!
-    summary: >-
+    summary: |-
       Tibetan language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tibetan"'
   - name: tigrignaEritrea
     uid: word!Word.LanguageId.tigrignaEritrea:member
     package: word!
-    summary: >-
+    summary: |-
       Tigrigna Eritrea language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TigrignaEritrea"'
   - name: tigrignaEthiopic
     uid: word!Word.LanguageId.tigrignaEthiopic:member
     package: word!
-    summary: >-
+    summary: |-
       Tigrigna Ethiopic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TigrignaEthiopic"'
   - name: traditionalChinese
     uid: word!Word.LanguageId.traditionalChinese:member
     package: word!
-    summary: >-
+    summary: |-
       Traditional Chinese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TraditionalChinese"'
   - name: tsonga
     uid: word!Word.LanguageId.tsonga:member
     package: word!
-    summary: >-
+    summary: |-
       Tsonga language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tsonga"'
   - name: tswana
     uid: word!Word.LanguageId.tswana:member
     package: word!
-    summary: >-
+    summary: |-
       Tswana language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tswana"'
   - name: turkish
     uid: word!Word.LanguageId.turkish:member
     package: word!
-    summary: >-
+    summary: |-
       Turkish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Turkish"'
   - name: turkmen
     uid: word!Word.LanguageId.turkmen:member
     package: word!
-    summary: >-
+    summary: |-
       Turkmen language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Turkmen"'
   - name: ukrainian
     uid: word!Word.LanguageId.ukrainian:member
     package: word!
-    summary: >-
+    summary: |-
       Ukrainian language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Ukrainian"'
   - name: urdu
     uid: word!Word.LanguageId.urdu:member
     package: word!
-    summary: >-
+    summary: |-
       Urdu language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Urdu"'
   - name: uzbekCyrillic
     uid: word!Word.LanguageId.uzbekCyrillic:member
     package: word!
-    summary: >-
+    summary: |-
       Uzbek Cyrillic language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"UzbekCyrillic"'
   - name: uzbekLatin
     uid: word!Word.LanguageId.uzbekLatin:member
     package: word!
-    summary: >-
+    summary: |-
       Uzbek Latin language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"UzbekLatin"'
   - name: venda
     uid: word!Word.LanguageId.venda:member
     package: word!
-    summary: >-
+    summary: |-
       Venda language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Venda"'
   - name: vietnamese
     uid: word!Word.LanguageId.vietnamese:member
     package: word!
-    summary: >-
+    summary: |-
       Vietnamese language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Vietnamese"'
   - name: welsh
     uid: word!Word.LanguageId.welsh:member
     package: word!
-    summary: >-
+    summary: |-
       Welsh language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Welsh"'
   - name: xhosa
     uid: word!Word.LanguageId.xhosa:member
     package: word!
-    summary: >-
+    summary: |-
       Xhosa language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Xhosa"'
   - name: yi
     uid: word!Word.LanguageId.yi:member
     package: word!
-    summary: >-
+    summary: |-
       Yi language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Yi"'
   - name: yiddish
     uid: word!Word.LanguageId.yiddish:member
     package: word!
-    summary: >-
+    summary: |-
       Yiddish language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Yiddish"'
   - name: yoruba
     uid: word!Word.LanguageId.yoruba:member
     package: word!
-    summary: >-
+    summary: |-
       Yoruba language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Yoruba"'
   - name: zulu
     uid: word!Word.LanguageId.zulu:member
     package: word!
-    summary: >-
+    summary: |-
       Zulu language.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Zulu"'

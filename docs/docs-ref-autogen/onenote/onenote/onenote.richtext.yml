@@ -4,9 +4,7 @@ uid: onenote!OneNote.RichText:class
 package: onenote!
 fullName: OneNote.RichText
 summary: Represents a RichText object in a Paragraph.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the RichText object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -48,10 +43,7 @@ properties:
     package: onenote!
     fullName: languageId
     summary: The language id of the text.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +56,7 @@ properties:
     package: onenote!
     fullName: paragraph
     summary: Gets the Paragraph object that contains the RichText object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,10 +69,7 @@ properties:
     package: onenote!
     fullName: style
     summary: Gets the text style of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,10 +82,7 @@ properties:
     package: onenote!
     fullName: text
     summary: Gets the text content of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +96,7 @@ methods:
     package: onenote!
     fullName: getHtml()
     summary: Gets the HTML of the rich text.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -170,61 +150,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.RichText:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Get the collection of pageContent items from the page.
-              const pageContents = context.application.getActivePage().contents;
-
-              // Get the first PageContent on the page, and then get its outline's paragraphs.
-              const outlinePageContents = pageContents.getItem(0);
-              let paragraphs = outlinePageContents.outline.paragraphs;
-              const richTextParagraphs = paragraphs.items;
-              // Queue a command to load the id and type of each page content in the outline.
-              pageContents.load("id,type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-
-              // Load all page contents of type Outline.
-              $.each(pageContents.items, function(index, pageContent) {
-                  if(pageContent.type == 'Outline')
-                  {
-                      pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
-                      outlinePageContents.push(pageContent);
-                  }
-              });
-              await context.sync();
-
-              // Load all rich text paragraphs across outlines.
-              $.each(outlinePageContents, function(index, outlinePageContent) {
-                  const outline = outlinePageContent.outline;
-                  paragraphs = paragraphs.concat(outline.paragraphs.items);
-              });
-              $.each(paragraphs, function(index, paragraph) {
-                  if(paragraph.type == 'RichText')
-                  {
-                      richTextParagraphs.push(paragraph);
-                      paragraph.load("id,richText/text");
-                  }
-              });
-              await context.sync();
-
-              // Display all rich text paragraphs to the console.
-              $.each(richTextParagraphs, function(index, richTextParagraph) {
-                  const richText = richTextParagraph.richText;
-                  console.log(
-                      "Paragraph found with richtext content : " + 
-                      richText.text + " and richtext id : " + richText.id);
-              });
-              await context.sync();
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.RichText#load:member(3)
     package: onenote!

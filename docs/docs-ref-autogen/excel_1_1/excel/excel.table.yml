@@ -8,9 +8,7 @@ summary: >-
   [Work with tables using the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!--
   -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     package: excel!
     fullName: columns
     summary: Represents a collection of all the columns in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +50,7 @@ properties:
       Returns a value that uniquely identifies the table in a given workbook.
       The value of the identifier remains the same even when the table is
       renamed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -76,9 +70,7 @@ properties:
       [Rename an Excel
       table](https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114)
       article.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +83,7 @@ properties:
     package: excel!
     fullName: rows
     summary: Represents a collection of all the rows in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +98,7 @@ properties:
     summary: >-
       Specifies if the header row is visible. This value can be set to show or
       remove the header row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +113,7 @@ properties:
     summary: >-
       Specifies if the total row is visible. This value can be set to show or
       remove the total row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -145,31 +131,7 @@ properties:
       through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook
       can also be specified.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Set table style.
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          table.name = 'Table1-Renamed';
-          table.showTotals = false;
-          table.style = 'TableStyleMedium2';
-          table.load('tableStyle');
-          await context.sync();
-          
-          console.log(table.style);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -183,24 +145,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          table.delete();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -214,27 +159,7 @@ methods:
     package: excel!
     fullName: getDataBodyRange()
     summary: Gets the range object associated with the data body of the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          const tableDataRange = table.getDataBodyRange();
-          tableDataRange.load('address')
-          await context.sync();
-          
-          console.log(tableDataRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -248,27 +173,7 @@ methods:
     package: excel!
     fullName: getHeaderRowRange()
     summary: Gets the range object associated with the header row of the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          const tableHeaderRange = table.getHeaderRowRange();
-          tableHeaderRange.load('address');
-          await context.sync();
-
-          console.log(tableHeaderRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -282,27 +187,7 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Gets the range object associated with the entire table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          const tableRange = table.getRange();
-          tableRange.load('address');    
-          await context.sync();
-          
-          console.log(tableRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -316,27 +201,7 @@ methods:
     package: excel!
     fullName: getTotalRowRange()
     summary: Gets the range object associated with the totals row of the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          const tableTotalsRange = table.getTotalRowRange();
-          tableTotalsRange.load('address');    
-          await context.sync();
-          
-          console.log(tableTotalsRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -386,22 +251,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Table:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Get a table by name.
-          await Excel.run(async (context) => { 
-              const tableName = 'Table1';
-              const table = context.workbook.tables.getItem(tableName);
-              table.load('id')
-              await context.sync();
-              
-              console.log(table.id);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.Table#load:member(3)
     package: excel!

@@ -8,8 +8,7 @@ summary: >-
   to create the appointment. This object provides a method to get the organizer
   value of an appointment in an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox
-  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[Api set: Mailbox 1.7\]
 
 
   **[Minimum permission
@@ -34,9 +33,7 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       object in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -52,27 +49,6 @@ methods:
       **Important**: A `recipientType` property value isn't returned by the
       getAsync method. The appointment organizer is always a user whose email
       address is on the Exchange server.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const apptOrganizer = asyncResult.value;
-          console.log("Organizer: " + apptOrganizer.displayName + " (" + apptOrganizer.emailAddress + ")");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -110,9 +86,7 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       object in the `asyncResult.value` property.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission

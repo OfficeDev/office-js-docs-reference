@@ -4,9 +4,7 @@ uid: excel!Excel.RemoveDuplicatesResult:class
 package: excel!
 fullName: Excel.RemoveDuplicatesResult
 summary: Represents the results from `Range.removeDuplicates`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: removed
     summary: Number of duplicated rows removed by the operation.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,33 +43,7 @@ properties:
     package: excel!
     fullName: uniqueRemaining
     summary: Number of remaining unique rows present in the resulting range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-remove-duplicates.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:D11");
-
-          const deleteResult = range.removeDuplicates([0],true);    
-          deleteResult.load();    
-          await context.sync();
-
-          console.log(deleteResult.removed + " entries with duplicate names removed.");
-          console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: word!Word.FontNameCollection:class
 package: word!
 fullName: Word.FontNameCollection
 summary: Represents a list of the names of all the available fonts.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ methods:
     package: word!
     fullName: getItemAt(index)
     summary: Gets the font name at the specified index.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

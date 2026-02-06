@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.HeadingStyleLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleLoadOptions
 summary: Represents a heading style used in a table of contents or table of figures.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       Specifies the level for the heading style in a table of contents or table
       of figures. Must be a value from 1 to 9.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of style for a heading.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

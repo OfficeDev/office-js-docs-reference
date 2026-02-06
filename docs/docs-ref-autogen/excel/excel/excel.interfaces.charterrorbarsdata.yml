@@ -17,9 +17,7 @@ properties:
     package: excel!
     fullName: endStyleCap
     summary: Specifies if error bars have an end style cap.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: format
     summary: Specifies the formatting type of the error bars.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: excel!
     fullName: include
     summary: Specifies which parts of the error bars to include.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     package: excel!
     fullName: type
     summary: The type of range marked by the error bars.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +79,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies whether the error bars are displayed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

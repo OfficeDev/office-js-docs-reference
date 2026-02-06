@@ -6,9 +6,7 @@ fullName: OneNote.InkAnalysisLine
 summary: >-
   Represents ink analysis data for an identified text line formed by ink
   strokes.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +32,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the InkAnalysisLine object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +45,7 @@ properties:
     package: onenote!
     fullName: paragraph
     summary: Reference to the parent InkAnalysisParagraph.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +58,7 @@ properties:
     package: onenote!
     fullName: words
     summary: Gets the ink analysis words in this ink analysis line.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -19,9 +19,7 @@ properties:
     summary: >-
       Represents the formatting of a chart legend, which includes fill and font
       formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     summary: >-
       Specifies if the chart legend should overlap with the main body of the
       chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
     summary: >-
       Specifies the position of the legend on the chart. See
       `Excel.ChartLegendPosition` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +68,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the chart legend is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,30 +4,7 @@ uid: word!Word.SaveBehavior:enum
 package: word!
 fullName: Word.SaveBehavior
 summary: Specifies the save behavior for `Document.save`<!-- -->.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
-
-
-  // If the document hasn't been saved before, prompts
-
-  // user with options for if or how they want to save.
-
-  await Word.run(async (context) => {
-    context.document.save(Word.SaveBehavior.prompt);
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -40,8 +17,7 @@ fields:
       saved. Won't take effect if the document was previously saved.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Prompt"'
   - name: save
     uid: word!Word.SaveBehavior.save:member
@@ -52,6 +28,5 @@ fields:
       location.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Save"'

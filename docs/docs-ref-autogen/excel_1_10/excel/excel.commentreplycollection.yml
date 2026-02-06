@@ -4,9 +4,7 @@ uid: excel!Excel.CommentReplyCollection:class
 package: excel!
 fullName: Excel.CommentReplyCollection
 summary: Represents a collection of comment reply objects that are part of the comment.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,30 +44,7 @@ methods:
     package: excel!
     fullName: add(content, contentType)
     summary: Creates a comment reply for a comment.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-replies.yaml
-
-
-      await Excel.run(async (context) => {
-          // Adds a reply to the first comment in this worksheet.
-          const sheet = context.workbook.worksheets.getItem("Comments");
-          const comment = sheet.comments.getItemAt(0);
-          comment.replies.add("Add content to this worksheet.");
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -100,10 +75,7 @@ methods:
     package: excel!
     fullName: add(content, contentType)
     summary: Creates a comment reply for a comment.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -134,10 +106,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of comment replies in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -151,10 +120,7 @@ methods:
     package: excel!
     fullName: getItem(commentReplyId)
     summary: Returns a comment reply identified by its ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -172,10 +138,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a comment reply based on its position in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

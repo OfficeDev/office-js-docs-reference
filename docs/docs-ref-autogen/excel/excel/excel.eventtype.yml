@@ -4,9 +4,7 @@ uid: excel!Excel.EventType:enum
 package: excel!
 fullName: Excel.EventType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +12,7 @@ fields:
   - name: annotationAdded
     uid: excel!Excel.EventType.annotationAdded:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* \[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
     value: '"AnnotationAdded"'
   - name: augmentationLoopUploadStatusChanged
     uid: excel!Excel.EventType.augmentationLoopUploadStatusChanged:member
@@ -27,9 +22,7 @@ fields:
       registered when the upload status of the augmentation loop changes.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"AugmentationLoopUploadStatusChanged"'
   - name: chartActivated
     uid: excel!Excel.EventType.chartActivated:member
@@ -39,8 +32,7 @@ fields:
       `ChartCollection` and occurs when a chart activates.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"ChartActivated"'
   - name: chartAdded
     uid: excel!Excel.EventType.chartAdded:member
@@ -50,8 +42,7 @@ fields:
       `ChartCollection` and occurs when a new chart is added to the worksheet.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"ChartAdded"'
   - name: chartDeactivated
     uid: excel!Excel.EventType.chartDeactivated:member
@@ -61,8 +52,7 @@ fields:
       `ChartCollection` and occurs when a chart deactivates.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"ChartDeactivated"'
   - name: chartDeleted
     uid: excel!Excel.EventType.chartDeleted:member
@@ -72,8 +62,7 @@ fields:
       `ChartCollection` and occurs when a chart is deleted from the worksheet.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"ChartDeleted"'
   - name: commentAdded
     uid: excel!Excel.EventType.commentAdded:member
@@ -83,8 +72,7 @@ fields:
       comment collection and occurs when comments are added.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"CommentAdded"'
   - name: commentChanged
     uid: excel!Excel.EventType.commentChanged:member
@@ -94,8 +82,7 @@ fields:
       comment collection and occurs when comments are changed.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"CommentChanged"'
   - name: commentDeleted
     uid: excel!Excel.EventType.commentDeleted:member
@@ -105,8 +92,7 @@ fields:
       comment collection and occurs when comments are deleted.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"CommentDeleted"'
   - name: externalCodeServiceDiffResultReceived
     uid: excel!Excel.EventType.externalCodeServiceDiffResultReceived:member
@@ -117,9 +103,7 @@ fields:
       service.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ExternalCodeServiceDiffResultReceived"'
   - name: linkedEntityDataDomainLinkedEntityDataDomainAdded
     uid: >-
@@ -130,9 +114,7 @@ fields:
       new linked entity data domain is added to the workbook.
 
 
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"LinkedEntityDataDomainLinkedEntityDataDomainAdded"'
   - name: linkedEntityDataDomainRefreshCompleted
     uid: excel!Excel.EventType.linkedEntityDataDomainRefreshCompleted:member
@@ -143,9 +125,7 @@ fields:
       a linked entity data domain is completed.
 
 
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"LinkedEntityDataDomainRefreshCompleted"'
   - name: linkedEntityDataDomainRefreshModeChanged
     uid: excel!Excel.EventType.linkedEntityDataDomainRefreshModeChanged:member
@@ -156,9 +136,7 @@ fields:
       changed.
 
 
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"LinkedEntityDataDomainRefreshModeChanged"'
   - name: linkedWorkbookRefreshCompleted
     uid: excel!Excel.EventType.linkedWorkbookRefreshCompleted:member
@@ -168,8 +146,7 @@ fields:
       a linked Workbook and occurs when a linked workbook completes a refresh.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"LinkedWorkbookRefreshCompleted"'
   - name: linkedWorkbookWorkbookLinksChanged
     uid: excel!Excel.EventType.linkedWorkbookWorkbookLinksChanged:member
@@ -179,8 +156,7 @@ fields:
       workbook link is changed.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"LinkedWorkbookWorkbookLinksChanged"'
   - name: queryQueryRefreshCompleted
     uid: excel!Excel.EventType.queryQueryRefreshCompleted:member
@@ -190,9 +166,7 @@ fields:
       table query refresh is completed.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"QueryQueryRefreshCompleted"'
   - name: rangeValuesPreviewDismissed
     uid: excel!Excel.EventType.rangeValuesPreviewDismissed:member
@@ -202,9 +176,7 @@ fields:
       RangeValuePreview is dismissed.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"RangeValuesPreviewDismissed"'
   - name: ribbonCommandExecuted
     uid: excel!Excel.EventType.ribbonCommandExecuted:member
@@ -214,8 +186,7 @@ fields:
       ribbon and occurs when a user clicks on the ribbon
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"RibbonCommandExecuted"'
   - name: shapeActivated
     uid: excel!Excel.EventType.shapeActivated:member
@@ -225,8 +196,7 @@ fields:
       `Shape` and occurs when the shape activates.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"ShapeActivated"'
   - name: shapeDeactivated
     uid: excel!Excel.EventType.shapeDeactivated:member
@@ -236,8 +206,7 @@ fields:
       `Shape` and occurs when the shape deactivates.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"ShapeDeactivated"'
   - name: tableAdded
     uid: excel!Excel.EventType.tableAdded:member
@@ -247,8 +216,7 @@ fields:
       `TableCollection` and occurs when a table is added.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"TableAdded"'
   - name: tableChanged
     uid: excel!Excel.EventType.tableChanged:member
@@ -258,8 +226,7 @@ fields:
       occurs when data changes.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"TableChanged"'
   - name: tableDeleted
     uid: excel!Excel.EventType.tableDeleted:member
@@ -269,8 +236,7 @@ fields:
       `TableCollection` and occurs when a table is deleted.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"TableDeleted"'
   - name: tableFiltered
     uid: excel!Excel.EventType.tableFiltered:member
@@ -280,8 +246,7 @@ fields:
       `TableCollection` and occurs when the data of a table is filtered.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"TableFiltered"'
   - name: tableSelectionChanged
     uid: excel!Excel.EventType.tableSelectionChanged:member
@@ -291,8 +256,7 @@ fields:
       `Table` and occurs when the selection changes.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"TableSelectionChanged"'
   - name: visualChange
     uid: excel!Excel.EventType.visualChange:member
@@ -302,8 +266,7 @@ fields:
       occurs when there is a visual change.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"VisualChange"'
   - name: visualSelectionChanged
     uid: excel!Excel.EventType.visualSelectionChanged:member
@@ -313,8 +276,7 @@ fields:
       `VisualCollection` and occurs when the visual selection changes.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"VisualSelectionChanged"'
   - name: workbookActivated
     uid: excel!Excel.EventType.workbookActivated:member
@@ -324,8 +286,7 @@ fields:
       workbook is activated.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorkbookActivated"'
   - name: workbookAutoSaveSettingChanged
     uid: excel!Excel.EventType.workbookAutoSaveSettingChanged:member
@@ -335,8 +296,7 @@ fields:
       on a workbook and occurs when there is an auto save setting change.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorkbookAutoSaveSettingChanged"'
   - name: workbookFormulaReferenceStyleChanged
     uid: excel!Excel.EventType.workbookFormulaReferenceStyleChanged:member
@@ -346,9 +306,7 @@ fields:
       registered when the formula reference style has changed on a workbook.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"WorkbookFormulaReferenceStyleChanged"'
   - name: worksheetActivated
     uid: excel!Excel.EventType.worksheetActivated:member
@@ -359,8 +317,7 @@ fields:
       activates.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetActivated"'
   - name: worksheetAdded
     uid: excel!Excel.EventType.worksheetAdded:member
@@ -371,8 +328,7 @@ fields:
       workbook.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetAdded"'
   - name: worksheetCalculated
     uid: excel!Excel.EventType.worksheetCalculated:member
@@ -383,8 +339,7 @@ fields:
       calculated.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetCalculated"'
   - name: worksheetChanged
     uid: excel!Excel.EventType.worksheetChanged:member
@@ -394,8 +349,7 @@ fields:
       `Worksheet` or `WorksheetCollection` and occurs when data changes.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetChanged"'
   - name: worksheetColumnSorted
     uid: excel!Excel.EventType.worksheetColumnSorted:member
@@ -405,8 +359,7 @@ fields:
       worksheet and occurs columns are sorted.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetColumnSorted"'
   - name: worksheetDeactivated
     uid: excel!Excel.EventType.worksheetDeactivated:member
@@ -417,8 +370,7 @@ fields:
       deactivates.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetDeactivated"'
   - name: worksheetDeleted
     uid: excel!Excel.EventType.worksheetDeleted:member
@@ -429,8 +381,7 @@ fields:
       workbook.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetDeleted"'
   - name: worksheetFiltered
     uid: excel!Excel.EventType.worksheetFiltered:member
@@ -441,8 +392,7 @@ fields:
       worksheet is filtered.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetFiltered"'
   - name: worksheetFormatChanged
     uid: excel!Excel.EventType.worksheetFormatChanged:member
@@ -452,8 +402,7 @@ fields:
       worksheet and occurs when a format is changed.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetFormatChanged"'
   - name: worksheetFormulaChanged
     uid: excel!Excel.EventType.worksheetFormulaChanged:member
@@ -463,8 +412,7 @@ fields:
       worksheet and occurs when a formula is changed.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetFormulaChanged"'
   - name: worksheetMoved
     uid: excel!Excel.EventType.worksheetMoved:member
@@ -474,8 +422,7 @@ fields:
       occurs when it is moved within a workbook.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetMoved"'
   - name: worksheetNameChanged
     uid: excel!Excel.EventType.worksheetNameChanged:member
@@ -485,8 +432,7 @@ fields:
       worksheet that occurs when its name changes.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetNameChanged"'
   - name: worksheetProtectionChanged
     uid: excel!Excel.EventType.worksheetProtectionChanged:member
@@ -496,8 +442,7 @@ fields:
       worksheet, and occurs when protection status is changed.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetProtectionChanged"'
   - name: worksheetRowHeightChanged
     uid: excel!Excel.EventType.worksheetRowHeightChanged:member
@@ -507,9 +452,7 @@ fields:
       height of a worksheet row is changed.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"WorksheetRowHeightChanged"'
   - name: worksheetRowHiddenChanged
     uid: excel!Excel.EventType.worksheetRowHiddenChanged:member
@@ -519,8 +462,7 @@ fields:
       worksheet and occurs when a row's hidden state is changed.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetRowHiddenChanged"'
   - name: worksheetRowSorted
     uid: excel!Excel.EventType.worksheetRowSorted:member
@@ -530,8 +472,7 @@ fields:
       worksheet and occurs when rows are sorted.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetRowSorted"'
   - name: worksheetSelectionChanged
     uid: excel!Excel.EventType.worksheetSelectionChanged:member
@@ -541,8 +482,7 @@ fields:
       `Worksheet` and occurs when the selection changes.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetSelectionChanged"'
   - name: worksheetSingleClicked
     uid: excel!Excel.EventType.worksheetSingleClicked:member
@@ -552,8 +492,7 @@ fields:
       worksheet and occurs when a cell is left-clicked or tapped.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetSingleClicked"'
   - name: worksheetVisibilityChanged
     uid: excel!Excel.EventType.worksheetVisibilityChanged:member
@@ -563,6 +502,5 @@ fields:
       worksheet that occurs when its visibility changes.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"WorksheetVisibilityChanged"'

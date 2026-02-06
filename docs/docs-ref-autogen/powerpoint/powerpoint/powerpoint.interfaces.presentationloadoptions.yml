@@ -9,10 +9,7 @@ summary: >-
   object model, see [PowerPoint JavaScript object
   model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
   -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.0\]'
 
 isPreview: false
 isDeprecated: false
@@ -39,10 +36,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the ID of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -57,10 +51,7 @@ properties:
     summary: >-
       Returns the page setup information whose properties control slide setup
       attributes for the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -76,10 +67,7 @@ properties:
     package: powerpoint!
     fullName: properties
     summary: Gets the properties of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -95,10 +83,7 @@ properties:
     package: powerpoint!
     fullName: title
     summary: Returns the title of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.0\]'
 
     isPreview: false
     isDeprecated: false

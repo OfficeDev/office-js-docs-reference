@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.BorderLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BorderLoadOptions
 summary: Represents the `Border` object for text, a paragraph, or a table.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       Specifies the color for the border. Color is specified in ‘\#RRGGBB’
       format or by using the color name.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: word!
     fullName: location
     summary: Gets the location of the border.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +59,7 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the border type for the border.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +72,7 @@ properties:
     package: word!
     fullName: visible
     summary: Specifies whether the border is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -95,9 +85,7 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width for the border.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false

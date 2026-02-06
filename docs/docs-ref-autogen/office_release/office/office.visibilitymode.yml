@@ -4,22 +4,7 @@ uid: office!Office.VisibilityMode:enum
 package: office!
 fullName: Office.VisibilityMode
 summary: Visibility mode of the add-in.
-remarks: |-
-
-
-  #### Examples
-
-  ```TypeScript
-  Office.onReady(() => {
-      Office.addin.onVisibilityModeChanged((args) => {
-          if (args.visibilityMode === Office.VisibilityMode.taskpane) {
-              // Do something when the task pane is visible.
-          }
-      });
-
-      // Other startup tasks.
-  });
-  ```
+remarks: ''
 
 isPreview: false
 isDeprecated: false

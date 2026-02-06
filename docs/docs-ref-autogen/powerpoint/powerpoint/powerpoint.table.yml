@@ -4,44 +4,7 @@ uid: powerpoint!PowerPoint.Table:class
 package: powerpoint!
 fullName: PowerPoint.Table
 summary: Represents a table.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-  // Updates a table's values.
-
-  await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-    // Add a table (which is a type of Shape).
-    const shape = shapes.addTable(4, 3);
-    let table = shape.getTable();
-    table.load();
-    await context.sync();
-
-    // Update values in the table.
-    for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
-      for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
-        const cell = table.getCellOrNullObject(rowIndex, columnIndex);
-        cell.text = generateRandomString();
-      }
-    }
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -52,10 +15,7 @@ properties:
     package: powerpoint!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,10 +28,7 @@ properties:
     package: powerpoint!
     fullName: columns
     summary: Gets the collection of columns in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +56,7 @@ properties:
     package: powerpoint!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -115,10 +69,7 @@ properties:
     package: powerpoint!
     fullName: rows
     summary: Gets the collection of rows in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -131,10 +82,7 @@ properties:
     package: powerpoint!
     fullName: styleSettings
     summary: Gets the table style settings.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -147,10 +95,7 @@ properties:
     package: powerpoint!
     fullName: values
     summary: Gets all of the values in the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -164,10 +109,7 @@ methods:
     package: powerpoint!
     fullName: clear(options)
     summary: Clears table values and formatting.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -185,44 +127,7 @@ methods:
     package: powerpoint!
     fullName: getCellOrNullObject(rowIndex, columnIndex)
     summary: Gets the cell at the specified `rowIndex` and `columnIndex`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Updates a table's values.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table (which is a type of Shape).
-        const shape = shapes.addTable(4, 3);
-        let table = shape.getTable();
-        table.load();
-        await context.sync();
-
-        // Update values in the table.
-        for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
-          for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
-            const cell = table.getCellOrNullObject(rowIndex, columnIndex);
-            cell.text = generateRandomString();
-          }
-        }
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -251,10 +156,7 @@ methods:
     package: powerpoint!
     fullName: getMergedAreas()
     summary: Gets a collection of cells that represent the merged areas of the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -270,10 +172,7 @@ methods:
     package: powerpoint!
     fullName: getShape()
     summary: Gets the shape object for the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -368,10 +267,7 @@ methods:
       Creates a merged area starting at the cell specified by rowIndex and
       columnIndex. The merged area spans across a specified number of rows and
       columns.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

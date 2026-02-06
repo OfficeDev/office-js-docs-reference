@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.SlideBackgroundFill:class
 package: powerpoint!
 fullName: PowerPoint.SlideBackgroundFill
 summary: Represents the fill formatting of a slide background object.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,10 +33,7 @@ properties:
       Returns the fill type of the slide background. See
       [PowerPoint.SlideBackgroundFillType](xref:powerpoint!PowerPoint.SlideBackgroundFillType:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -63,10 +57,7 @@ methods:
       For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -86,10 +77,7 @@ methods:
       For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -110,10 +98,7 @@ methods:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -138,10 +123,7 @@ methods:
       further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -236,10 +218,7 @@ methods:
     summary: >-
       Sets the fill formatting of the slide background to a gradient fill. This
       changes the fill type to `gradient`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -264,10 +243,7 @@ methods:
     summary: >-
       Sets the fill formatting of the slide background to a pattern fill. This
       changes the fill type to `pattern`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -293,10 +269,7 @@ methods:
     summary: >-
       Sets the fill formatting of the slide background to a picture or texture
       fill. This changes the fill type to `pictureOrTexture`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -321,10 +294,7 @@ methods:
     summary: >-
       Sets the fill formatting of the slide background to a solid fill. This
       changes the fill type to `solid`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

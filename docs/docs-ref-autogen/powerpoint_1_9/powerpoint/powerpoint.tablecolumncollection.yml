@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.TableColumnCollection:class
 package: powerpoint!
 fullName: PowerPoint.TableColumnCollection
 summary: Represents a collection of table columns.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -47,10 +44,7 @@ methods:
     package: powerpoint!
     fullName: add(index, count)
     summary: Adds one or more columns to the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,10 +74,7 @@ methods:
     package: powerpoint!
     fullName: deleteColumns(columns)
     summary: Deletes the specified columns from the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -103,10 +94,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of columns in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,10 +108,7 @@ methods:
     package: powerpoint!
     fullName: getItemAt(index)
     summary: Gets the column using its zero-based index in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

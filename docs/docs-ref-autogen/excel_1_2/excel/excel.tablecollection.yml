@@ -6,36 +6,7 @@ fullName: Excel.TableCollection
 summary: >-
   Represents a collection of all the tables that are part of the workbook or
   worksheet, depending on how it was reached.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
-
-  // Add checkboxes to the table.
-
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-    // Get the second column in the table, without the header.
-    const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
-
-    // Change the boolean values to checkboxes.
-    range.control = {
-      type: Excel.CellControlType.checkbox
-    };
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -61,9 +32,7 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of tables in the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -94,25 +63,7 @@ methods:
       worksheet under which the table will be added. If the table cannot be
       added (e.g., because the address is invalid, or the table would overlap
       with another table), an error will be thrown.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const table = context.workbook.tables.add('Sheet1!A1:E7', true);
-          table.load('name');
-          await context.sync();
-          
-          console.log(table.name);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -143,49 +94,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a table by name or ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          table.load('name');
-          await context.sync();
-          
-          console.log(table.name);
-      });
-
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
-
-      // Remove checkboxes from the table.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-        // Get the second column in the table, without the header.
-        const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
-
-        // Change the checkboxes back to boolean values.
-        range.control = {
-          type: Excel.CellControlType.empty
-        };
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,25 +112,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a table based on its position in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const table = context.workbook.tables.getItemAt(0);
-          table.load('name');
-          await context.sync();
-          
-          console.log(table.name);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -281,21 +172,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.TableCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Get the number of tables.
-          await Excel.run(async (context) => { 
-              const tables = context.workbook.tables;
-              tables.load('count');
-              await context.sync();
-              
-              console.log(tables.count);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.TableCollection#load:member(3)
     package: excel!

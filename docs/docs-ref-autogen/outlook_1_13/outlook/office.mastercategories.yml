@@ -15,8 +15,7 @@ summary: >-
   **Important**: In delegate or shared scenarios, the delegate can get the
   categories in the master list but can't add or remove categories.
 remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[Api set: Mailbox 1.8\]
 
 
   **[Minimum permission
@@ -40,9 +39,7 @@ methods:
       Adds categories to the master list on a mailbox. Each category must have a
       unique name but multiple categories can use the same color.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -64,35 +61,6 @@ methods:
 
       - `PermissionDenied`<!-- -->: The user does not have permission to perform
       this action.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
-
-
-      const masterCategoriesToAdd = [
-        {
-          displayName: "TestCategory",
-          color: Office.MailboxEnums.CategoryColor.Preset0
-        }
-      ];
-
-
-      Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Successfully added categories to master list");
-        } else {
-          console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +98,7 @@ methods:
       Adds categories to the master list on a mailbox. Each category must have a
       unique name but multiple categories can use the same color.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -182,9 +148,7 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -228,9 +192,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -241,32 +203,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
-
-
-      Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
-          if (categories && categories.length > 0) {
-            console.log("Master categories:");
-            console.log(JSON.stringify(categories));
-          } else {
-            console.log("There are no categories in the master list.");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -293,9 +229,7 @@ methods:
     fullName: removeAsync(categories, options, callback)
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -313,30 +247,6 @@ methods:
 
       - `PermissionDenied`<!-- -->: The user does not have permission to perform
       this action.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
-
-
-      const masterCategoriesToRemove = ["TestCategory"];
-
-
-      Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Successfully removed categories from master list");
-        } else {
-          console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -372,9 +282,7 @@ methods:
     fullName: removeAsync(categories, callback)
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission

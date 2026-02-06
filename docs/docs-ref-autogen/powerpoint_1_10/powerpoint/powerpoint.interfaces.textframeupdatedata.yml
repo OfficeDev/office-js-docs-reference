@@ -21,10 +21,7 @@ properties:
       The automatic sizing settings for the text frame. A text frame can be set
       to automatically fit the text to the text frame, to automatically fit the
       text frame to the text, or not perform any automatic sizing.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -42,10 +39,7 @@ properties:
     package: powerpoint!
     fullName: bottomMargin
     summary: Represents the bottom margin, in points, of the text frame.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,10 +52,7 @@ properties:
     package: powerpoint!
     fullName: leftMargin
     summary: Represents the left margin, in points, of the text frame.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -74,10 +65,7 @@ properties:
     package: powerpoint!
     fullName: rightMargin
     summary: Represents the right margin, in points, of the text frame.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,10 +78,7 @@ properties:
     package: powerpoint!
     fullName: topMargin
     summary: Represents the top margin, in points, of the text frame.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -110,10 +95,7 @@ properties:
       Represents the vertical alignment of the text frame. See
       [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -131,10 +113,7 @@ properties:
     package: powerpoint!
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

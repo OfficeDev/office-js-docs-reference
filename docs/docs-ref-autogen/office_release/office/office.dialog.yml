@@ -8,50 +8,7 @@ summary: >-
   methods for registering event handlers and closing the dialog.
 remarks: >-
   **Requirement set**:
-  [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // The following example shows how to open a dialog with a specified size. It
-  also shows
-
-  // how to register a function to handle the message when
-  Office.UI.messageParent() is called
-
-  // in the dialog and how to use that handler to close the dialog.
-
-
-  Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-  { height: 30, width: 20 },
-      (asyncResult) => {
-          const dialog = asyncResult.value;
-          dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
-              dialog.close();
-              // Do something to process the message.
-          });
-      }
-  );
-
-
-  // The following example does the same thing in TypeScript.
-
-
-  Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-  { height: 30, width: 20 },
-      (asyncResult: Office.AsyncResult) => {
-          const dialog: Office.Dialog = asyncResult.value;
-          dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
-              dialog.close();
-              // Do something to process the message.
-          });
-      }
-  );
-
-  ```
+  [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 isPreview: false
 isDeprecated: false
@@ -97,51 +54,7 @@ methods:
             number}) =&gt; void
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example shows how to open a dialog with a specified
-          size. It also shows
-
-          // how to register a function to handle the message when
-          Office.UI.messageParent() is called
-
-          // in the dialog and how to use that handler to close the dialog. The
-          implementation of the processMessage() function is omitted.
-
-
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-          { height: 30, width: 20 },
-              (asyncResult) => {
-                  const dialog = asyncResult.value;
-                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
-                      dialog.close();
-                      processMessage(arg);
-                  });
-              }
-          );
-
-
-          // The following example does the same thing in TypeScript.
-
-
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-          { height: 30, width: 20 },
-              (asyncResult: Office.AsyncResult) => {
-                  const dialog: Office.Dialog = asyncResult.value;
-                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
-                      dialog.close();
-                      processMessage(arg);
-                  });
-              }
-          );
-
-          ```
+        description: ''
   - name: close()
     uid: office!Office.Dialog#close:member(1)
     package: office!
@@ -163,51 +76,7 @@ methods:
       content: 'close(): void;'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example shows how to open a dialog with a specified
-          size. It also shows
-
-          // how to register a function to handle the message when
-          Office.UI.messageParent() is called
-
-          // in the dialog and how to use that handler to close the dialog. The
-          implementation of the processMessage() function is omitted.
-
-
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-          { height: 30, width: 20 },
-              (asyncResult) => {
-                  const dialog = asyncResult.value;
-                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
-                      dialog.close();
-                      processMessage(arg);
-                  });
-              }
-          );
-
-
-          // The following example does the same thing in TypeScript.
-
-
-          Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-          { height: 30, width: 20 },
-              (asyncResult: Office.AsyncResult) => {
-                  const dialog: Office.Dialog = asyncResult.value;
-                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
-                      dialog.close();
-                      processMessage(arg);
-                  });
-              }
-          );
-
-          ```
+        description: ''
   - name: messageChild(message, messageOptions)
     uid: office!Office.Dialog#messageChild:member(1)
     package: office!
@@ -223,7 +92,7 @@ methods:
       **Requirement sets**:
 
 
-      - [DialogAPI
+      - [DialogApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
@@ -238,33 +107,6 @@ methods:
 
       Although classic Outlook on Mac doesn't support Mailbox 1.9, it does
       support DialogApi 1.2.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example shows how to send information about the current
-      active worksheet to the dialog.
-
-      await Excel.run(async (context) => {
-          const worksheet = context.workbook.worksheets.getActiveWorksheet();
-          worksheet.load();
-          await context.sync();
-          worksheetPropertiesChanged(worksheet);
-      });
-
-
-      ...
-
-
-      function worksheetPropertiesChanged(currentWorksheet) {
-          const messageToDialog = JSON.stringify(currentWorksheet);
-          dialog.messageChild(messageToDialog);
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false

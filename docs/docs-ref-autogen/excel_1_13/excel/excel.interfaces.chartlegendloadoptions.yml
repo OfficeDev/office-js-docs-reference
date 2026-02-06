@@ -4,9 +4,7 @@ uid: excel!Excel.Interfaces.ChartLegendLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartLegendLoadOptions
 summary: Represents the legend in a chart.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       Represents the formatting of a chart legend, which includes fill and font
       formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +50,7 @@ properties:
     summary: >-
       Specifies the height, in points, of the legend on the chart. Value is
       `null` if the legend is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +65,7 @@ properties:
     summary: >-
       Specifies the left value, in points, of the legend on the chart. Value is
       `null` if the legend is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +80,7 @@ properties:
     summary: >-
       Specifies if the chart legend should overlap with the main body of the
       chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,9 +95,7 @@ properties:
     summary: >-
       Specifies the position of the legend on the chart. See
       `Excel.ChartLegendPosition` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,9 +108,7 @@ properties:
     package: excel!
     fullName: showShadow
     summary: Specifies if the legend has a shadow on the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -135,9 +121,7 @@ properties:
     package: excel!
     fullName: top
     summary: Specifies the top of a chart legend.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -150,9 +134,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the chart legend is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -167,9 +149,7 @@ properties:
     summary: >-
       Specifies the width, in points, of the legend on the chart. Value is
       `null` if the legend is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

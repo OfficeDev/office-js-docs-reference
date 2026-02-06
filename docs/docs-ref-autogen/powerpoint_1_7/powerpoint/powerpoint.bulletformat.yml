@@ -7,48 +7,7 @@ summary: >-
   Represents the bullet formatting properties of a text that is attached to the
   [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)<!--
   -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-
-  // Gets navigational (complex) properties of the selected text range.
-
-  await PowerPoint.run(async (context) => {
-    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-    textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
-    await context.sync();
-
-    console.log("Font properties of selected text range:");
-    console.log(`\tallCaps: ${textRange.font.allCaps}`);
-    console.log(`\tbold: ${textRange.font.bold}`);
-    console.log(`\tcolor: ${textRange.font.color}`);
-    console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
-    console.log(`\titalic: ${textRange.font.italic}`);
-    console.log(`\tname: ${textRange.font.name}`);
-    console.log(`\tsize: ${textRange.font.size}`);
-    console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
-    console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
-    console.log(`\tsubscript: ${textRange.font.subscript}`);
-    console.log(`\tsuperscript: ${textRange.font.superscript}`);
-    console.log(`\tunderline: ${textRange.font.underline}`);
-
-    console.log("Paragraph format properties of selected text range:");
-    console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
-    console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -77,10 +36,7 @@ properties:
       Specifies if the bullets in the paragraph are visible. Returns `null` if
       the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
       includes text fragments with different bullet visibility values.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

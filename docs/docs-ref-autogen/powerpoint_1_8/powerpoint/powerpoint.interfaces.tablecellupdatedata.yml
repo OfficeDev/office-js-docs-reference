@@ -17,10 +17,7 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

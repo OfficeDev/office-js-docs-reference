@@ -17,9 +17,7 @@ properties:
     package: excel!
     fullName: comment
     summary: Specifies the comment associated with this name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     summary: >-
       The formula of the named item. Formulas always start with an equal sign
       ("=").
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the object is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -6,9 +6,7 @@ fullName: Word.CustomXmlAddSchemaOptions
 summary: >-
   Adds one or more schemas to a schema collection that can then be added to a
   stream in the data store and to the schema library.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -22,9 +20,7 @@ properties:
       If provided, specifies the alias of the schema to be added to the
       collection. However, if the alias already exists in the Schema Library,
       the schema can be found using this value.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +36,7 @@ properties:
       If provided, specifies the location of the schema on a disk. If this
       property is specified, the schema is added to the collection and to the
       Schema Library.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -60,9 +54,7 @@ properties:
       the registry (`HKEY_LOCAL_MACHINE` for all users or `HKEY_CURRENT_USER`
       for just the current user). The property defaults to `false` and writes to
       `HKEY_CURRENT_USER`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -78,9 +70,7 @@ properties:
       If provided, specifies the namespace of the schema to be added to the
       collection. However, if the schema already exists in the Schema Library,
       the schema will be retrieved from there.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

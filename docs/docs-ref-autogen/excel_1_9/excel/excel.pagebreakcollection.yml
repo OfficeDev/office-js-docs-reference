@@ -4,9 +4,7 @@ uid: excel!Excel.PageBreakCollection:class
 package: excel!
 fullName: Excel.PageBreakCollection
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,27 +44,7 @@ methods:
     package: excel!
     fullName: add(pageBreakRange)
     summary: Adds a page break before the top-left cell of the range specified.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
-
-      await Excel.run(async (context) => {
-          const farmSheet = context.workbook.worksheets.getItem("Print");
-          farmSheet.horizontalPageBreaks.add("A21:E21");
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +62,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of page breaks in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -100,9 +76,7 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a page break object via the index.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -194,9 +168,7 @@ methods:
     package: excel!
     fullName: removePageBreaks()
     summary: Resets all manual page breaks in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

@@ -17,10 +17,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: onenote!
     fullName: languageId
     summary: The language ID of the text. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: onenote!
     fullName: style
     summary: Gets the text style of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +56,7 @@ properties:
     package: onenote!
     fullName: text
     summary: Gets the text content of the RichText object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -17,10 +17,7 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

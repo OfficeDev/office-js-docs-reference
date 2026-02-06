@@ -7,35 +7,7 @@ summary: >-
   Represents a shape in the header, footer, or document body. Currently, only
   the following shapes are supported: text boxes, geometric shapes, groups,
   pictures, and canvases.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-  await Word.run(async (context) => {
-    // Sets the properties of the first text box.
-    const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
-      .getByTypes([Word.ShapeType.textBox])
-      .getFirst();
-    firstShapeWithTextBox.top = 115;
-    firstShapeWithTextBox.left = 0;
-    firstShapeWithTextBox.width = 50;
-    firstShapeWithTextBox.height = 50;
-    await context.sync();
-
-    console.log("The first text box's properties were updated:", firstShapeWithTextBox);
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,9 +18,7 @@ properties:
     package: word!
     fullName: allowOverlap
     summary: Specifies whether a given shape can overlap other shapes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -63,9 +33,7 @@ properties:
     summary: >-
       Specifies a string that represents the alternative text associated with
       the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,37 +48,7 @@ properties:
     summary: >-
       Gets the `Body` object of the shape. Only applies to text boxes and
       geometric shapes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Inserts a content control into the first paragraph in the first text box.
-        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.textBox])
-          .getFirst();
-        firstShapeWithTextBox.load("type/body");
-        await context.sync();
-
-        const firstParagraphInTextBox: Word.Paragraph = firstShapeWithTextBox.body.paragraphs.getFirst();
-        const newControl: Word.ContentControl = firstParagraphInTextBox.insertContentControl();
-        newControl.load();
-        await context.sync();
-
-        console.log("New content control properties:", newControl);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -129,37 +67,7 @@ properties:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-canvases.yaml
-
-
-      await Word.run(async (context) => {
-        // Inserts a canvas in the document.
-        const canvasShape: Word.Shape = context.document.getSelection().insertCanvas();
-        canvasShape.load();
-        await context.sync();
-
-        canvasShape.select();
-        console.log("Inserted canvas:", canvasShape);
-
-        const canvas: Word.Canvas = canvasShape.canvas;
-        canvas.load("shape,shapes");
-        await context.sync();
-
-        console.log("Canvas object:", canvas);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -187,44 +95,7 @@ properties:
     package: word!
     fullName: fill
     summary: Returns the fill formatting of the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets the color fill properties of the first moon found in the document body.
-        const moon: Word.Shape = context.document.body.shapes
-          .getByGeometricTypes([Word.GeometricShapeType.moon])
-          .getFirstOrNullObject();
-        moon.load("fill");
-        await context.sync();
-
-        if (moon.isNullObject) {
-          console.log("No moons found in the document body.");
-          return;
-        }
-
-        const moonFill: Word.ShapeFill = moon.fill;
-        const moonFillType = moonFill.type as Word.ShapeFillType;
-
-        console.log("Color fill properties of the first moon found in the document body:");
-        console.log(`\tForeground color: ${moonFill.foregroundColor}`);
-        console.log(`\tBackground color: ${moonFill.backgroundColor}`);
-        console.log(`\tTransparency: ${moonFill.transparency}`);
-        console.log(`\tFill type: ${moonFillType}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -239,40 +110,7 @@ properties:
     summary: >-
       Specifies the geometric shape type of the shape. It will be null if isn't
       a geometric shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets the first geometric shape found in the document body.
-        const geometricShape: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.geometricShape])
-          .getFirstOrNullObject();
-        geometricShape.load();
-        await context.sync();
-
-        if (geometricShape.isNullObject) {
-          console.log("No geometric shapes found in the document body.");
-          return;
-        }
-
-        console.log(
-          `First geometric shape found in the document body is of type ${geometricShape.geometricShapeType}:`,
-          geometricShape,
-        );
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -387,9 +225,7 @@ properties:
     package: word!
     fullName: height
     summary: Specifies the height, in points, of the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -405,46 +241,7 @@ properties:
       Specifies the percentage of shape height to the relative vertical size
       (that is, the `relativeVerticalSize` property). For an inline or child
       shape, it can't be set.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log(
-          "About to change the relative size of the first shape group found in the document body:",
-          shapeGroup.shapes,
-        );
-        firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
-        firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
-        firstShapeGroup.heightRelative = 50;
-
-        console.log("Changed the relative size of the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -457,9 +254,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets an integer that represents the shape identifier.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -472,9 +267,7 @@ properties:
     package: word!
     fullName: isChild
     summary: Check whether this shape is a child of a group shape or a canvas shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -491,9 +284,7 @@ properties:
       relative horizontal position (that is, the `relativeHorizontalPosition`
       property). For an inline shape, it will return 0 and can't be set. For a
       child shape in a canvas or group, it's relative to the top left corner.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -510,9 +301,7 @@ properties:
       the shape to the relative horizontal position (that is, the
       `relativeHorizontalalPosition` property). For an inline or child shape, it
       will return 0 and can't be set.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -525,9 +314,7 @@ properties:
     package: word!
     fullName: lockAspectRatio
     summary: Specifies if the aspect ratio of this shape is locked.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -540,9 +327,7 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -557,9 +342,7 @@ properties:
     summary: >-
       Gets the top-level parent canvas shape of this child shape. It will be
       null if it isn't a child shape of a canvas.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -574,9 +357,7 @@ properties:
     summary: >-
       Gets the top-level parent group shape of this child shape. It will be null
       if it isn't a child shape of a group.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -593,42 +374,7 @@ properties:
       shape, it can't be set. For details, see
       [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
-        firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
-        firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
-
-        console.log("Changed the position of the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -649,46 +395,7 @@ properties:
     summary: >-
       Specifies the relative horizontal size of the shape. Use with the
       `widthRelative` property. For an inline or child shape, it can't be set.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log(
-          "About to change the relative size of the first shape group found in the document body:",
-          shapeGroup.shapes,
-        );
-        firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
-        firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
-        firstShapeGroup.heightRelative = 50;
-
-        console.log("Changed the relative size of the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -709,42 +416,7 @@ properties:
       shape, it can't be set. For details, see
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to change the position of the first shape group found in document body:", shapeGroup.shapes);
-        firstShapeGroup.relativeVerticalPosition = Word.RelativeVerticalPosition.insideMargin;
-        firstShapeGroup.relativeHorizontalPosition = Word.RelativeHorizontalPosition.margin;
-
-        console.log("Changed the position of the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -765,46 +437,7 @@ properties:
     summary: >-
       Specifies the relative vertical size of the shape. Use with the
       `heightRelative` property. For an inline or child shape, it can't be set.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log(
-          "About to change the relative size of the first shape group found in the document body:",
-          shapeGroup.shapes,
-        );
-        firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
-        firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
-        firstShapeGroup.heightRelative = 50;
-
-        console.log("Changed the relative size of the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -823,9 +456,7 @@ properties:
     summary: >-
       Specifies the rotation, in degrees, of the shape. Not applicable to Canvas
       shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -844,48 +475,7 @@ properties:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Groups the shapes (including text boxes and pictures) found in the document body.
-        const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
-          Word.ShapeType.geometricShape,
-          Word.ShapeType.textBox,
-          Word.ShapeType.picture,
-        ]);
-        shapes.load("items");
-        await context.sync();
-
-        const numShapes = shapes.items.length;
-        if (numShapes === 0) {
-          console.log("No shapes found in the document body.");
-          return;
-        }
-
-        console.log(`Number of shapes to group: ${numShapes}`);
-
-        const groupedShape: Word.Shape = shapes.group();
-        groupedShape.load("shapeGroup/shapes");
-        await context.sync();
-
-        const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
-        console.log("Shapes grouped:", shapeGroup.shapes);
-        groupedShape.select();
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -898,35 +488,7 @@ properties:
     package: word!
     fullName: textFrame
     summary: Gets the `TextFrame` object of the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets the text frame of the first text box in the main document.
-        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-        shape.load("textFrame");
-        await context.sync();
-
-        if (shape.isNullObject) {
-          console.log("No shapes with text boxes found in the main document.");
-          return;
-        }
-
-        console.log("Text frame of first text box:", shape.textFrame);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -939,35 +501,7 @@ properties:
     package: word!
     fullName: textWrap
     summary: Returns the text wrap formatting of the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets text wrap properties of the first text box in the main document.
-        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-        shape.load("textWrap");
-        await context.sync();
-
-        if (shape.isNullObject) {
-          console.log("No shapes with text boxes found in the main document.");
-          return;
-        }
-
-        console.log("Text wrap properties of first text box:", shape.textWrap);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -984,9 +518,7 @@ properties:
       relative vertical position (that is, the `relativeVerticalPosition`
       property). For an inline shape, it will return 0 and can't be set. For a
       child shape in a canvas or group, it's relative to the top left corner.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1003,9 +535,7 @@ properties:
       the shape to the relative vertical position (that is, the
       `relativeVerticalPosition` property). For an inline or child shape, it
       will return 0 and can't be set.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1020,41 +550,7 @@ properties:
     summary: >-
       Gets the shape type. Currently, only the following shapes are supported:
       text boxes, geometric shapes, groups, pictures, and canvases.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets text boxes in the main document.
-        const shapes: Word.ShapeCollection = context.document.body.shapes;
-        shapes.load();
-        await context.sync();
-
-        if (shapes.items.length > 0) {
-          console.log(`Number of shapes found in the main document: ${shapes.items.length}`);
-          shapes.items.forEach(function (shape, index) {
-            if (shape.type === Word.ShapeType.textBox) {
-              console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
-            } else {
-              console.log(`Shape ${index} in the main document doesn't have a text box.`);
-            }
-          });
-        } else {
-          console.log("No shapes found in the main document.");
-        }
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1071,9 +567,7 @@ properties:
     package: word!
     fullName: visible
     summary: Specifies if the shape is visible. Not applicable to inline shapes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1086,9 +580,7 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width, in points, of the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1104,9 +596,7 @@ properties:
       Specifies the percentage of shape width to the relative horizontal size
       (that is, the `relativeHorizontalSize` property). For an inline or child
       shape, it can't be set.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1120,29 +610,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the shape and its content.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Deletes the first text box.
-        context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirst().delete();
-        await context.sync();
-
-        console.log("The first text box in document was deleted.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1230,42 +698,7 @@ methods:
     package: word!
     fullName: moveHorizontally(distance)
     summary: Moves the shape horizontally by the number of points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Moves the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
-        firstShapeGroup.moveHorizontally(-10);
-        firstShapeGroup.moveVertically(50);
-
-        console.log("Moved the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1286,42 +719,7 @@ methods:
     package: word!
     fullName: moveVertically(distance)
     summary: Moves the shape vertically by the number of points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Moves the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
-        firstShapeGroup.moveHorizontally(-10);
-        firstShapeGroup.moveVertically(50);
-
-        console.log("Moved the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1346,42 +744,7 @@ methods:
       indicate whether you want to scale the shape relative to the original or
       the current size. Shapes other than pictures are always scaled relative to
       their current height.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Scales the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
-        firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
-        firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
-
-        console.log("Scaled the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1419,9 +782,7 @@ methods:
       indicate whether you want to scale the shape relative to the original or
       the current size. Shapes other than pictures are always scaled relative to
       their current height.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1460,42 +821,7 @@ methods:
       indicate whether you want to scale the shape relative to the original or
       the current size. Shapes other than pictures are always scaled relative to
       their current height.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Scales the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to scale the first shape group found in the document body:", shapeGroup.shapes);
-        firstShapeGroup.scaleHeight(0.75, Word.ShapeScaleType.currentSize);
-        firstShapeGroup.scaleWidth(0.5, Word.ShapeScaleType.currentSize, Word.ShapeScaleFrom.scaleFromBottomRight);
-
-        console.log("Scaled the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1533,9 +859,7 @@ methods:
       indicate whether you want to scale the shape relative to the original or
       the current size. Shapes other than pictures are always scaled relative to
       their current height.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -1570,48 +894,7 @@ methods:
     package: word!
     fullName: select(selectMultipleShapes)
     summary: Selects the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Groups the shapes (including text boxes and pictures) found in the document body.
-        const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
-          Word.ShapeType.geometricShape,
-          Word.ShapeType.textBox,
-          Word.ShapeType.picture,
-        ]);
-        shapes.load("items");
-        await context.sync();
-
-        const numShapes = shapes.items.length;
-        if (numShapes === 0) {
-          console.log("No shapes found in the document body.");
-          return;
-        }
-
-        console.log(`Number of shapes to group: ${numShapes}`);
-
-        const groupedShape: Word.Shape = shapes.group();
-        groupedShape.load("shapeGroup/shapes");
-        await context.sync();
-
-        const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
-        console.log("Shapes grouped:", shapeGroup.shapes);
-        groupedShape.select();
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false

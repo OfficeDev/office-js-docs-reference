@@ -6,9 +6,7 @@ fullName: Excel.TimelineStyle
 summary: >-
   Represents a `TimelineStyle`<!-- -->, which defines style elements by region
   in the timeline.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +32,7 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the timeline style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +45,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: Specifies if this `TimelineStyle` object is read-only.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +59,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the table style.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -86,10 +75,7 @@ methods:
     summary: >-
       Creates a duplicate of this timeline style with copies of all the style
       elements.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

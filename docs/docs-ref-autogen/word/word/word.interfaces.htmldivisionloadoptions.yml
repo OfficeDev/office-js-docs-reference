@@ -4,10 +4,7 @@ uid: word!Word.Interfaces.HtmlDivisionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionLoadOptions
 summary: ''
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +31,7 @@ properties:
     package: word!
     fullName: leftIndent
     summary: Specifies the left indent value (in points) for this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -52,10 +46,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the portion of a document that's
       contained in this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,10 +59,7 @@ properties:
     package: word!
     fullName: rightIndent
     summary: Specifies the right indent (in points) for this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,10 +72,7 @@ properties:
     package: word!
     fullName: spaceAfter
     summary: Specifies the amount of spacing (in points) after this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -100,10 +85,7 @@ properties:
     package: word!
     fullName: spaceBefore
     summary: Specifies the spacing (in points) before this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

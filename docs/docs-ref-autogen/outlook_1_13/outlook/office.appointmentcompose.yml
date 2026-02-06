@@ -35,9 +35,7 @@ properties:
     fullName: body
     summary: Gets an object that provides methods for manipulating the body of an item.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -48,32 +46,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // This example gets the body of the item as plain text.
-
-      Office.context.mailbox.item.body.getAsync(
-          "text",
-          { asyncContext: "This is passed to the callback" },
-          function callback(result) {
-              // Do something with the result.
-          });
-
-      // The following is an example of an object that is passed as the result
-      parameter to the callback function.
-
-      {
-          "value": "TEXT of whole body (including threads below)",
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +59,7 @@ properties:
     fullName: categories
     summary: Gets an object that provides methods for managing the item's categories.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -100,87 +70,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
-
-
-      Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
-          if (categories && categories.length > 0) {
-            console.log("Categories assigned to this item:");
-            console.log(JSON.stringify(categories));
-          } else {
-            console.log("There are no categories assigned to this item.");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-
-      ...
-
-
-      // Note: In order for you to successfully add a category,
-
-      // it must be in the mailbox categories master list.
-
-
-      Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const masterCategories = asyncResult.value;
-          if (masterCategories && masterCategories.length > 0) {
-            // Grab the first category from the master list.
-            const categoryToAdd = [masterCategories[0].displayName];
-            Office.context.mailbox.item.categories.addAsync(categoryToAdd, function(asyncResult) {
-              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log(`Successfully assigned category '${categoryToAdd}' to item.`);
-              } else {
-                console.log("categories.addAsync call failed with error: " + asyncResult.error.message);
-              }
-            });
-          } else {
-            console.log("There are no categories in the master list on this mailbox. You can add categories using Office.context.mailbox.masterCategories.addAsync.");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-
-      ...
-
-
-      Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
-          if (categories && categories.length > 0) {
-            // Grab the first category assigned to this item.
-            const categoryToRemove = [categories[0].displayName];
-            Office.context.mailbox.item.categories.removeAsync(categoryToRemove, function(asyncResult) {
-              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log(`Successfully unassigned category '${categoryToRemove}' from this item.`);
-              } else {
-                console.log("categories.removeAsync call failed with error: " + asyncResult.error.message);
-              }
-            });
-          } else {
-            console.log("There are no categories assigned to this item.");
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -219,50 +108,6 @@ properties:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.end.getAsync((result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-
-        const time = result.value;
-        const localTime = Office.context.mailbox.convertToLocalClientTime(time);
-        console.log(`Appointment ends (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
-      });
-
-
-      ...
-
-
-      Office.context.mailbox.item.start.getAsync((result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Get start date failed with message ${result.error.message}`);
-          return;
-        }
-
-        const end = result.value; // Set end to current start date and time.
-        end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
-        Office.context.mailbox.item.end.setAsync(end, (result) => {
-          if (result.status !== Office.AsyncResultStatus.Succeeded) {
-            console.error(`Set end date failed with message ${result.error.message}`);
-            return;
-          }
-          console.log(`Successfully set end date and time to ${end}`);
-        });
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,9 +124,7 @@ properties:
       [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object
       that provides methods to get, remove, or add locations on an item.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -301,84 +144,6 @@ properties:
       in
       Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
-
-
-      Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Failed to get locations. Error message: ${result.error.message}`);
-          return;
-        }
-        const places = result.value;
-        if (places && places.length > 0) {
-          result.value.forEach(function(place) {
-            console.log(`Location: ${place.displayName} (type: ${place.locationIdentifier.type})`);
-            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-              console.log("Email address: " + place.emailAddress);
-            }
-          });
-        } else {
-          console.log("There are no locations.");
-        }
-      });
-
-
-      ...
-
-
-      const locations = [
-        {
-          id: "Contoso",
-          type: Office.MailboxEnums.LocationType.Custom
-        },
-        {
-          id: "room500@test.com",
-          type: Office.MailboxEnums.LocationType.Room
-        }
-      ];
-
-      Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result)
-      => {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-          console.log(`Successfully added locations ${JSON.stringify(locations)}`);
-        } else {
-          console.error(`Failed to add locations. Error message: ${result.error.message}`);
-        }
-      });
-
-
-      ...
-
-
-      const locations = [
-        {
-          id: "Contoso",
-          type: Office.MailboxEnums.LocationType.Custom
-        },
-        {
-          id: "room500@test.com",
-          type: Office.MailboxEnums.LocationType.Room
-        }
-      ];
-
-      Office.context.mailbox.item.enhancedLocation.removeAsync(locations,
-      (result) => {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-          console.log(`Successfully removed locations ${JSON.stringify(locations)}`);
-        } else {
-          console.error(`Failed to remove locations. Error message: ${result.error.message}`);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -407,29 +172,6 @@ properties:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
-
-
-      const itemType = Office.context.mailbox.item.itemType;
-
-      switch (itemType) {
-          case Office.MailboxEnums.ItemType.Appointment:
-              console.log(`Current item is an ${itemType}.`);
-              break;
-          case Office.MailboxEnums.ItemType.Message:
-              console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
-              break;
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -446,9 +188,7 @@ properties:
       provides methods that are used to get and set the location of the
       appointment.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -470,40 +210,6 @@ properties:
       Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
       -->.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.location.getAsync((result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Appointment location: ${result.value}`);
-      });
-
-
-      ...
-
-
-      const location = "my office";
-
-      Office.context.mailbox.item.location.setAsync(location, (result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Successfully set location to ${location}`);
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -516,9 +222,7 @@ properties:
     fullName: notificationMessages
     summary: Gets the notification messages for an item.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -545,145 +249,6 @@ properties:
       APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
-
-      // Adds a progress indicator to the mail item.
-
-      const id = (document.getElementById("notificationId") as
-      HTMLInputElement).value;
-
-      const details =
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
-          message: "Progress indicator with id = " + id
-        };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
-          return;
-        }
-        console.log(`Added progress notification with id = ${id}.`);
-      });
-
-
-      ...
-
-
-      // Adds an informational notification to the mail item.
-
-      const id = (document.getElementById("notificationId") as
-      HTMLInputElement).value;
-
-      const details =
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
-          message: "Non-persistent informational notification message with id = " + id,
-          icon: "PG.Icon.16",
-          persistent: false
-        };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
-          return;
-        }
-        console.log(`Added informational notification with id = ${id}.`);
-      });
-
-
-      ...
-
-
-      // Adds a persistent information notification to the mail item.
-
-      const id = (document.getElementById("notificationId") as
-      HTMLInputElement).value;
-
-      const details =
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
-          message: "Persistent informational notification message with id = " + id,
-          icon: "PG.Icon.16",
-          persistent: true
-        };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
-          return;
-        }
-        console.log(`Added persistent informational notification with id = ${id}.`);
-      });
-
-
-      ...
-
-
-      // Gets all the notification messages and their keys for the current mail
-      item.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
-      => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(asyncResult.error.message);
-          return;
-        }
-        console.log(JSON.stringify(asyncResult.value));
-      });
-
-
-      ...
-
-
-      // Replaces a notification message of a given key with another message.
-
-      const id = (document.getElementById("notificationId") as
-      HTMLInputElement).value;
-
-      Office.context.mailbox.item.notificationMessages.replaceAsync(
-        id,
-        {
-          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
-          message: "Notification message with id = " + id + " has been replaced with an informational message.",
-          icon: "icon2",
-          persistent: false
-        },
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log(`Failed to replace notification with id = ${id}. ${result.error.message}.`);
-            return;
-          }
-          console.log(`Replaced notification with id = ${id}.`);
-        });
-
-      ...
-
-
-      // Removes a notification message from the current mail item.
-
-      const id = (document.getElementById("notificationId") as
-      HTMLInputElement).value;
-
-      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result)
-      => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
-          return;
-        }
-        console.log(`Removed notification with id = ${id}.`);
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -716,55 +281,6 @@ properties:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const apptOptionalAttendees = asyncResult.value;
-          for (let i = 0; i < apptOptionalAttendees.length; i++) {
-            console.log(
-              "Optional attendees: " +
-                apptOptionalAttendees[i].displayName +
-                " (" +
-                apptOptionalAttendees[i].emailAddress +
-                ") - response: " +
-                apptOptionalAttendees[i].appointmentResponse
-            );
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-
-      ...
-
-
-      const email = (document.getElementById("emailOptional") as
-      HTMLInputElement).value;
-
-      const emailArray = [email];
-
-      Office.context.mailbox.item.optionalAttendees.setAsync(emailArray,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Succeeded in setting optional attendees field.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -783,9 +299,7 @@ properties:
       [Organizer](xref:outlook!Office.Organizer:interface) object that provides
       a method to get the organizer value.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -796,27 +310,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const apptOrganizer = asyncResult.value;
-          console.log("Organizer: " + apptOrganizer.displayName + " (" + apptOrganizer.emailAddress + ")");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -846,9 +339,7 @@ properties:
       object is a single appointment or a meeting request of a single
       appointment and NOT a part of a series.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -859,84 +350,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const recurrence = asyncResult.value;
-          if (recurrence === null) {
-            console.log("This is a single appointment.");
-          } else {
-            console.log(`Recurrence pattern: ${JSON.stringify(recurrence)}`);
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-
-      ...
-
-
-      // Important: Can only set the recurrence pattern of an appointment
-      series.
-
-
-      const currentDate = new Date();
-
-      let seriesTimeObject: Office.SeriesTime;
-
-      // Set series start date to tomorrow.
-
-      seriesTimeObject.setStartDate(currentDate.getFullYear(),
-      currentDate.getMonth(), currentDate.getDay() + 1);
-
-      // Set series end date to one year from now.
-
-      seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
-      currentDate.getMonth() + 1, currentDate.getDay());
-
-      // Set start time to 1:30 PM.
-
-      seriesTimeObject.setStartTime(13, 30);
-
-      // Set duration to 30 minutes.
-
-      seriesTimeObject.setDuration(30);
-
-
-      const pattern = {
-        seriesTime: seriesTimeObject,
-        recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
-        recurrenceProperties: {
-          interval: 1,
-          dayOfWeek: Office.MailboxEnums.Days.Tue,
-          weekNumber: Office.MailboxEnums.WeekNumber.Second,
-          month: Office.MailboxEnums.Month.Sep
-        },
-        recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
-      };
-
-
-      Office.context.mailbox.item.recurrence.setAsync(pattern as any,
-      (asyncResult) => {
-        if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
-          return;
-        }
-        console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -969,55 +382,6 @@ properties:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const apptRequiredAttendees = asyncResult.value;
-          for (let i = 0; i < apptRequiredAttendees.length; i++) {
-            console.log(
-              "Required attendees: " +
-                apptRequiredAttendees[i].displayName +
-                " (" +
-                apptRequiredAttendees[i].emailAddress +
-                ") - response: " +
-                apptRequiredAttendees[i].appointmentResponse
-            );
-          }
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-
-      ...
-
-
-      const email = (document.getElementById("emailRequired") as
-      HTMLInputElement).value;
-
-      const emailArray = [email];
-
-      Office.context.mailbox.item.requiredAttendees.setAsync(emailArray,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Succeeded in setting required attendees field.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1032,9 +396,7 @@ properties:
       Gets the object to get or set the [sensitivity
       label](xref:outlook!Office.SensitivityLabel:interface) of an appointment.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -1055,35 +417,6 @@ properties:
       [Manage the sensitivity label of your message or appointment in compose
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
-
-
-      // This snippet gets the current mail item's sensitivity label.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) =>
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-          Office.context.mailbox.item.sensitivityLabel.getAsync((asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log(asyncResult.value);
-            } else {
-              console.log("Action failed with error: " + asyncResult.error.message);
-            }
-          });
-        } else {
-          console.log("Action failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1121,9 +454,7 @@ properties:
       items such as single appointments, series items, or meeting requests and
       returns `undefined` for any other items that aren't meeting requests.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -1134,29 +465,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-series-id.yaml
-
-
-      const seriesId = Office.context.mailbox.item.seriesId;
-
-
-      if (seriesId === undefined) {
-        console.log("This is a message that's not a meeting request.");
-      } else if (seriesId === null) {
-        console.log("This is a single appointment, a parent series, or a meeting request for a series or single meeting.");
-      } else {
-        console.log("This is an instance belonging to series with ID " + seriesId);
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1176,9 +484,7 @@ properties:
       **Important**: The entire SessionData object is limited to 50,000
       characters per add-in.
     remarks: >-
-      \[ [API set: Mailbox
-      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.11\]
 
 
       **[Minimum permission
@@ -1189,27 +495,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
-
-
-      Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult)
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("The sessionData is " + JSON.stringify(asyncResult.value));
-        } else {
-          console.log("Failed to get all sessionData. Error: " + JSON.stringify(asyncResult.error));
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1248,45 +533,6 @@ properties:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
-
-
-      Office.context.mailbox.item.start.getAsync((result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-
-        const time = result.value;
-        const localTime = Office.context.mailbox.convertToLocalClientTime(time);
-        console.log(`Appointment starts (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
-      });
-
-
-      ...
-
-
-      const start = new Date(); // Represents current date and time.
-
-      start.setDate(start.getDate() + 2); // Add 2 days to current date.
-
-      Office.context.mailbox.item.start.setAsync(start, (result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Successfully set start date and time to ${start}`);
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1317,40 +563,6 @@ properties:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
-
-
-      Office.context.mailbox.item.subject.getAsync((result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Subject: ${result.value}`);
-      });
-
-
-      ...
-
-
-      let subject = "Hello World!";
-
-      Office.context.mailbox.item.subject.setAsync(subject, (result) => {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-          return;
-        }
-        console.log(`Successfully set subject to ${subject}`);
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1369,10 +581,8 @@ methods:
       The `addFileAttachmentAsync` method uploads the file at the specified URI
       and attaches it to the item in the compose form.
     remarks: >-
-      \[ [API set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
-      Mailbox 1.8 for Outlook on the web and new Outlook on
-      Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
+      Mailbox 1.8 for Outlook on the web and new Outlook on Windows\]
 
 
       **[Minimum permission
@@ -1430,34 +640,6 @@ methods:
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has
       too many attachments.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-
-      const attachmentUrl = (document.getElementById("attachmentUrl") as
-      HTMLInputElement).value;
-
-      Office.context.mailbox.item.addFileAttachmentAsync(
-        attachmentUrl,
-        getFileName(attachmentUrl),
-        { isInline: false },
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log(`Failed to add attachment: ${result.error.message}.`);
-            return;
-          }
-          console.log(`Added attachment with ID: ${result.value}`);
-        }
-      );
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1512,10 +694,8 @@ methods:
       The `addFileAttachmentAsync` method uploads the file at the specified URI
       and attaches it to the item in the compose form.
     remarks: >-
-      \[ [API set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
-      Mailbox 1.8 for Outlook on the web and new Outlook on
-      Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
+      Mailbox 1.8 for Outlook on the web and new Outlook on Windows\]
 
 
       **[Minimum permission
@@ -1626,9 +806,7 @@ methods:
       You can subsequently use the identifier with the `removeAttachmentAsync`
       method to remove the attachment in the same session.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -1679,64 +857,6 @@ methods:
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has
       too many attachments.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-
-      const base64String =
-      "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
-
-      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
-        base64String,
-        "logo.png",
-        { isInline: false },
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log(`Failed to add attachment from Base64-encoded string: ${result.error.message}.`);
-            return;
-          }
-          console.log(`Added attachment from a Base64-encoded string with ID: ${result.value}`);
-        }
-      );
-
-
-      ...
-
-
-      // Set the signature for the current item with inline image.
-
-      const modIcon1Base64 =
-      "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDRDMxMDg1MjBCNDZFMTExODE2MkM1RUI2M0M4MDYxRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTUxQjgyRjQ2MEQxMUUxODlFMkQwNTYzQ0YwMTUxMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTUxQjgyRTQ2MEQxMUUxODlFMkQwNTYzQ0YwMTUxMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQxMzEwODUyMEI0NkUxMTE4MTYyQzVFQjYzQzgwNjFEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNEMzEwODUyMEI0NkUxMTE4MTYyQzVFQjYzQzgwNjFEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+uC/WfAAAAehJREFUeNpilCzfwEAEkAbiECA2A2J1IOaHin8E4ptAfBaIVwLxU0IGMRKw0B6IW4DYhoE4cASIK6E0VsCEQ1wUiNcB8QESLGOAqj0MxBuhZhBloS4QnwHiQAbygR/UDF1CFupCXSjHQDmQg5qli8tCUBBsQUoQ1AD8UDNFsVk4n0o+w+bT+egWglKjNymmeGhLkqLcG2oHAwtUoIuQDj5OVgZPLUmwRe5aEmAxqYqNpFgKssOcCeplM0KqdST5GfpDDRm0JfkYrj3/SE7QguyQY4ImYYLgCtAS10kHGMw6dzNsv/qC7OwCClJXYlR++v6b4er3j5QmIFcmaNlIL6AOslCIjhYKMTHQGTBBqxh6gXcgC6/R0cKbIAv30dHCfaAKGJTxHxJSqS3Fz9DkowNmywpyMcgA8fF7b8D8VWcfM6w8+4gYC+VB+RCk8hSh0gaUD4/dewvlvUWRe/z+GzGWgex4BGtiOAHxXhoHpzMoSGHZAhSPW2lo2VZYWkHOh4nEtLrIAE+hZmNUwK+B2BOIv1PRsu9QM1/jatNcBtVZ0IREKXgENesyoVYbzNIdFFi2A5tl+NqlL6BB4QBNzsSCU1A9nlAzMAALAQMOQl0qB23qWwKxIlIrDBQ394H4OBCvISYqAAIMACVibHDqsO7zAAAAAElFTkSuQmCC";
-
-      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
-        modIcon1Base64,
-        "myImage.png",
-        { isInline: true },
-        function(result) {
-          if (result.status == Office.AsyncResultStatus.Succeeded) {
-            const signature = (document.getElementById("signature") as HTMLInputElement).value + "<img src='cid:myImage.png'>";
-            console.log(`Setting signature to "${signature}".`);
-            Office.context.mailbox.item.body.setSignatureAsync(
-              signature,
-              { coercionType: "html" },
-              function(asyncResult) {
-                console.log(`setSignatureAsync: ${asyncResult.status}`);
-              }
-            );
-          } else {
-            console.error(`addFileAttachmentFromBase64Async: ${result.error}`);
-          }
-        }
-      );
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1800,9 +920,7 @@ methods:
       You can subsequently use the identifier with the `removeAttachmentAsync`
       method to remove the attachment in the same session.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -1900,9 +1018,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -1913,26 +1029,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function myHandlerFunction(eventarg) {
-          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-              const attachment = eventarg.attachmentDetails;
-              console.log("Event Fired and Attachment Added!");
-              getAttachmentContentAsync(attachment.id, options, callback);
-          }
-      }
-
-
-      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
-      myHandlerFunction, myCallback);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1982,9 +1078,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -2052,9 +1146,7 @@ methods:
       than the item that you're editing. However, this isn't supported and isn't
       recommended.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -2072,37 +1164,6 @@ methods:
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has
       too many attachments.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example adds an existing Outlook item as an attachment
-
-      // with the name "My Attachment".
-
-      function addAttachment() {
-          // EWS ID of item to attach (shortened for readability).
-          const itemId = "AAMkADI1...AAA=";
-
-          // The values in asyncContext can be accessed in the callback.
-          const options = { asyncContext: { var1: 1, var2: 2 } };
-
-          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, (result) => {
-              if (result.status === Office.AsyncResultStatus.Failed) {
-                  console.error("Failed to add attachment: " + result.error.message);
-                  return;
-              }
-
-              console.log("Attachment added successfully.");
-              console.log("var1: " + result.asyncContext.var1);
-              console.log("var2: " + result.asyncContext.var2);
-          });
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2170,9 +1231,7 @@ methods:
       than the item that you're editing. However, this isn't supported and isn't
       recommended.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -2238,9 +1297,7 @@ methods:
       In Outlook on Windows (classic) and on Mac, the `close` method has no
       effect on a reply in the Reading Pane.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -2258,20 +1315,6 @@ methods:
       -->, if the item is an appointment and it has previously been saved using
       `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even
       if no changes have occurred since the item was last saved.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/25-item-save-and-close/close.yaml
-
-
-      Office.context.mailbox.item.close();
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2296,9 +1339,7 @@ methods:
       -->, the API disables the signature option for new mails, replies, and
       forwards. If the signature is selected, this API call disables it.
     remarks: >-
-      \[ [API set: Mailbox
-      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.10\]
 
 
       **[Minimum permission
@@ -2309,29 +1350,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
-
-
-      // Disable the client signature.
-
-      Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult)
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("disableClientSignatureAsync succeeded");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2373,9 +1391,7 @@ methods:
       -->, the API disables the signature option for new mails, replies, and
       forwards. If the signature is selected, this API call disables it.
     remarks: >-
-      \[ [API set: Mailbox
-      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.10\]
 
 
       **[Minimum permission
@@ -2413,9 +1429,7 @@ methods:
       Gets an attachment from a message or appointment and returns it as an
       `AttachmentContent` object.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -2461,38 +1475,6 @@ methods:
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
-
-
-      // Gets the attachments of the current message or appointment in compose
-      mode. The getAttachmentsAsync call can only be used in compose mode.
-
-      Office.context.mailbox.item.getAttachmentsAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.log(result.error.message);
-          return;
-        }
-
-        if (result.value.length <= 0) {
-          console.log("Mail item has no attachments.");
-          return;
-        }
-
-        for (let i = 0; i < result.value.length; i++) {
-          // Log the attachment type and its contents to the console.
-          Office.context.mailbox.item.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
-        }
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2532,9 +1514,7 @@ methods:
       Gets an attachment from a message or appointment and returns it as an
       `AttachmentContent` object.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -2610,9 +1590,7 @@ methods:
     fullName: getAttachmentsAsync(options, callback)
     summary: Gets the item's attachments as an array.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -2630,61 +1608,6 @@ methods:
       attachment to OneDrive and include a link to the file in the mail item.
       However, since only a link is included, `getAttachmentsAsync` doesn't
       return this attachment.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-
-      Office.context.mailbox.item.getAttachmentsAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(result.error.message);
-          return;
-        }
-
-        if (result.value.length > 0) {
-          for (let i = 0; i < result.value.length; i++) {
-            const attachment = result.value[i];
-            let attachmentType;
-            switch (attachment.attachmentType) {
-              case Office.MailboxEnums.AttachmentType.Cloud:
-                attachmentType = "Attachment is stored in a cloud location";
-                break;
-              case Office.MailboxEnums.AttachmentType.File:
-                attachmentType = "Attachment is a file";
-                break;
-              case Office.MailboxEnums.AttachmentType.Item:
-                attachmentType = "Attachment is an Exchange item";
-                break;
-            }
-            console.log(
-              "ID: " +
-                attachment.id +
-                "\n" +
-                "Type: " +
-                attachmentType +
-                "\n" +
-                "Name: " +
-                attachment.name +
-                "\n" +
-                "Size: " +
-                attachment.size +
-                "\n" +
-                "isInline: " +
-                attachment.isInline
-            );
-          }
-        } else {
-          console.log("No attachments on this message.");
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2720,9 +1643,7 @@ methods:
     fullName: getAttachmentsAsync(callback)
     summary: Gets the item's attachments as an array.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -2772,9 +1693,7 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -2785,31 +1704,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Get the initialization context (if present).
-
-      Office.context.mailbox.item.getInitializationContextAsync((asyncResult) =>
-      {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              if (asyncResult.value.length > 0) {
-                  // The value is a string, parse to an object.
-                  const context = JSON.parse(asyncResult.value);
-                  // Do something with context.
-              } else {
-                  // Empty context, treat as no context.
-              }
-          } else {
-              // Handle the error.
-          }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -2847,9 +1741,7 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -2893,9 +1785,7 @@ methods:
 
       When invoked, this method returns the item ID via the callback function.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -2967,9 +1857,7 @@ methods:
 
       When invoked, this method returns the item ID via the callback function.
     remarks: >-
-      \[ [API set: Mailbox
-      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8\]
 
 
       **[Minimum permission
@@ -3003,27 +1891,6 @@ methods:
 
       - `ItemNotSaved`<!-- -->: The ID can't be retrieved until the item is
       saved.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/item-id-compose.yaml
-
-
-      Office.context.mailbox.item.getItemIdAsync((result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              console.error(`getItemIdAsync failed with message: ${result.error.message}`);
-              return;
-          }
-
-          console.log(result.value);
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3064,9 +1931,7 @@ methods:
       selection comes from, call `asyncResult.value.sourceProperty`<!-- -->,
       which will be either `body` or `subject`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.2\]
 
 
       **[Minimum permission
@@ -3077,27 +1942,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Get selected data.
-
-      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
-      { option1: "option1"}, getCallback);
-
-
-      function getCallback(asyncResult) {
-          const text = asyncResult.value.data;
-          const prop = asyncResult.value.sourceProperty;
-
-          console.log(`Selected text in ${prop}: ${text}`);
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3153,9 +1997,7 @@ methods:
       selection comes from, call `asyncResult.value.sourceProperty`<!-- -->,
       which will be either `body` or `subject`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.2\]
 
 
       **[Minimum permission
@@ -3166,29 +2008,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
-
-
-      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const text = asyncResult.value.data;
-          const prop = asyncResult.value.sourceProperty;
-          console.log("Selected text in " + prop + ": " + text);
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3231,10 +2050,8 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
-      shared mailbox
-      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
+      mailbox support\]
 
 
       **[Minimum permission
@@ -3289,10 +2106,8 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
-      shared mailbox
-      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
+      mailbox support\]
 
 
       **[Minimum permission
@@ -3306,29 +2121,6 @@ methods:
 
 
       **Note**: This method isn't supported in Outlook on iOS or on Android.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
-
-
-      Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error("The current folder or mailbox isn't shared.");
-          return;
-        }
-        const sharedProperties = result.value;
-        console.log(`Owner: ${sharedProperties.owner}`);
-        console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
-        console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3367,9 +2159,7 @@ methods:
       are set to "(none)" in Outlook on Windows (classic) or on Mac or disabled
       in Outlook on the web or new Outlook on Windows, returns `false`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.10\]
 
 
       **[Minimum permission
@@ -3380,29 +2170,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
-
-
-      // Check if the client signature is currently enabled.
-
-      Office.context.mailbox.item.isClientSignatureEnabledAsync(function(asyncResult)
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("isClientSignatureEnabledAsync succeeded with result: " + asyncResult.value);
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3445,9 +2212,7 @@ methods:
       are set to "(none)" in Outlook on Windows (classic) or on Mac or disabled
       in Outlook on the web or new Outlook on Windows, returns `false`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.10\]
 
 
       **[Minimum permission
@@ -3498,9 +2263,7 @@ methods:
       `asyncResult.value` property. This object can be used to get, set, save,
       and remove custom properties from the mail item.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       To learn more about custom properties, see [Get and set add-in metadata
@@ -3517,28 +2280,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
-
-
-      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
-          return;
-        }
-
-        customProps = result.value;
-        console.log("Loaded the CustomProperties object.");
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3584,9 +2325,7 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -3611,29 +2350,6 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
-
-
-      Office.context.mailbox.item.removeAttachmentAsync(
-        (document.getElementById("attachmentId") as HTMLInputElement).value,
-        (result) => {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-            console.error(result.error.message);
-            return;
-          }
-          console.log(`Attachment removed successfully.`);
-        }
-      );
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3687,9 +2403,7 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -3754,9 +2468,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -3809,9 +2521,7 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.13/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.7\]
 
 
       **[Minimum permission
@@ -3822,24 +2532,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked,
-      (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.error("Failed to remove event handler: " + asyncResult.error.message);
-              return;
-          }
-
-          console.log("Event handler removed successfully.");
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3876,9 +2568,7 @@ methods:
       no invitation is sent. For existing appointments, an update is sent to
       added or removed attendees.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -3934,27 +2624,6 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/25-item-save-and-close/save.yaml
-
-
-      Office.context.mailbox.item.saveAsync(function (result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-          console.log(`saveAsync succeeded, itemId is ${result.value}`);
-        }
-        else {
-          console.error(`saveAsync failed with message ${result.error.message}`);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -3995,9 +2664,7 @@ methods:
       no invitation is sent. For existing appointments, an update is sent to
       added or removed attendees.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -4054,34 +2721,6 @@ methods:
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Office.context.mailbox.item.saveAsync(
-          function callback(result) {
-              // Process the result.
-          });
-
-      // The following is an example of the
-
-      // `result` parameter passed to the
-
-      // callback function. The `value`
-
-      // property contains the item ID of
-
-      // the item.
-
-      {
-          "value": "AAMkADI5...AAA=",
-          "status": "succeeded"
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4115,9 +2754,7 @@ methods:
       not in the body or subject field, an error is returned. After insertion,
       the cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox
-      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.2\]
 
 
       **[Minimum permission
@@ -4134,40 +2771,6 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
-      coercionType : "html" });
-
-      ```
-
-      ```TypeScript
-
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/set-selected-data.yaml
-
-
-      Office.context.mailbox.item.setSelectedDataAsync("Replaced",
-      function(asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log("Selected text has been updated successfully.");
-        } else {
-          console.error(asyncResult.error);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -4228,9 +2831,7 @@ methods:
       not in the body or subject field, an error is returned. After insertion,
       the cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox
-      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.2\]
 
 
       **[Minimum permission

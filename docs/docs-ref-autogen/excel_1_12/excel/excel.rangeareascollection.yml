@@ -4,9 +4,7 @@ uid: excel!Excel.RangeAreasCollection:class
 package: excel!
 fullName: Excel.RangeAreasCollection
 summary: Contains the collection of cross-workbook level ranges.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.12\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,10 +44,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of `RangeAreas` objects in this collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -63,10 +58,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Returns the `RangeAreas` object based on position in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false

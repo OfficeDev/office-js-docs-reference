@@ -17,10 +17,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Gets the name of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Returns the type of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

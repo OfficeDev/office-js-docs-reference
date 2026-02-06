@@ -4,19 +4,7 @@ uid: onenote!OneNote.RequestContext:class
 package: onenote!
 fullName: OneNote.RequestContext
 summary: ''
-remarks: |-
-
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await OneNote.run(async (context) => {
-      const notebook = context.application.getActiveNotebook();
-      // Interact with the OneNote notebook...
-  });
-  ```
+remarks: ''
 
 isPreview: false
 isDeprecated: false

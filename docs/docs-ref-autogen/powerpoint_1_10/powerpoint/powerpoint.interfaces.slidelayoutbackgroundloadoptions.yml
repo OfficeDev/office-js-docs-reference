@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions
 summary: Represents the background of a slide layout.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,10 +35,7 @@ properties:
     summary: >-
       Specifies whether the slide layout background fill hides or displays
       background graphic objects from the slide master.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,10 +49,7 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Returns the fill formatting of the background.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -77,10 +68,7 @@ properties:
     summary: >-
       Specifies if the slide layout background follows the slide master
       background.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

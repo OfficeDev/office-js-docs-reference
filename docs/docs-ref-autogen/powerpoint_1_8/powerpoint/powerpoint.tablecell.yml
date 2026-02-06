@@ -4,44 +4,7 @@ uid: powerpoint!PowerPoint.TableCell:class
 package: powerpoint!
 fullName: PowerPoint.TableCell
 summary: Represents a table.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-  // Updates a table's values.
-
-  await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-    // Add a table (which is a type of Shape).
-    const shape = shapes.addTable(4, 3);
-    let table = shape.getTable();
-    table.load();
-    await context.sync();
-
-    // Update values in the table.
-    for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
-      for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
-        const cell = table.getCellOrNullObject(rowIndex, columnIndex);
-        cell.text = generateRandomString();
-      }
-    }
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -54,10 +17,7 @@ properties:
     summary: >-
       Gets the number of table columns this cell spans across. Will be greater
       than or equal to 1.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -103,10 +60,7 @@ properties:
     summary: >-
       Gets the number of table rows this cell spans across. Will be greater than
       or equal to 1.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -119,10 +73,7 @@ properties:
     package: powerpoint!
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -135,44 +86,7 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Updates a table's values.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table (which is a type of Shape).
-        const shape = shapes.addTable(4, 3);
-        let table = shape.getTable();
-        table.load();
-        await context.sync();
-
-        // Update values in the table.
-        for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
-          for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
-            const cell = table.getCellOrNullObject(rowIndex, columnIndex);
-            cell.text = generateRandomString();
-          }
-        }
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

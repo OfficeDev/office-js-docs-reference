@@ -19,9 +19,7 @@ properties:
     summary: >-
       Specifies the horizontal alignment of the list level. The value can be
       `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +38,7 @@ properties:
     summary: >-
       Gets a `Font` object that represents the character formatting of the
       `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
     package: word!
     fullName: linkedStyle
     summary: Specifies the name of the style that's linked to the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
     package: word!
     fullName: numberFormat
     summary: Specifies the number format for the list level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +79,7 @@ properties:
     summary: >-
       Specifies the position (in points) of the number or bullet for the
       `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +92,7 @@ properties:
     package: word!
     fullName: numberStyle
     summary: Specifies the number style for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -153,9 +141,7 @@ properties:
     summary: >-
       Specifies the list level that must appear before it restarts numbering at
       1.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -168,9 +154,7 @@ properties:
     package: word!
     fullName: startAt
     summary: Specifies the starting number for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -183,9 +167,7 @@ properties:
     package: word!
     fullName: tabPosition
     summary: Specifies the tab position for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -200,9 +182,7 @@ properties:
     summary: >-
       Specifies the position (in points) for the second line of wrapping text
       for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -215,9 +195,7 @@ properties:
     package: word!
     fullName: trailingCharacter
     summary: Specifies the character inserted after the number for the list level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false

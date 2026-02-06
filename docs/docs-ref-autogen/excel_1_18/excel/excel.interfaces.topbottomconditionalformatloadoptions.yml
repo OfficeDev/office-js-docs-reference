@@ -4,9 +4,7 @@ uid: excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
 summary: Represents a top/bottom conditional format.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.6\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       Returns a format object, encapsulating the conditional format's font,
       fill, borders, and other properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     package: excel!
     fullName: rule
     summary: The criteria of the top/bottom conditional format.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

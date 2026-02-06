@@ -19,10 +19,7 @@ properties:
     summary: >-
       Gets the string used as the date separator. This is based on current
       system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -37,10 +34,7 @@ properties:
     summary: >-
       Gets the format string for a long date value. This is based on current
       system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,10 +49,7 @@ properties:
     summary: >-
       Gets the format string for a long time value. This is based on current
       system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -73,10 +64,7 @@ properties:
     summary: >-
       Gets the format string for a short date value. This is based on current
       system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -91,10 +79,7 @@ properties:
     summary: >-
       Gets the format string for a short date and time value. This is based on
       current system settings.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -109,10 +94,7 @@ properties:
     summary: >-
       Gets the string used as the time separator. This is based on current
       system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false

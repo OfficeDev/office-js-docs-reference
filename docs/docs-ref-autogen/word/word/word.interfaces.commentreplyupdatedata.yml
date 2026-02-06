@@ -17,9 +17,7 @@ properties:
     package: word!
     fullName: content
     summary: Specifies the comment reply's content. The string is plain text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: word!
     fullName: contentRange
     summary: Specifies the commentReply's content range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: word!
     fullName: parentComment
     summary: Gets the parent comment of this reply.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

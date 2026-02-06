@@ -7,9 +7,7 @@ summary: >-
   Specifies the options for inserting a [Table of Authorities Entry (TA)
   field](https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c)<!--
   -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -28,9 +26,7 @@ properties:
       of
       authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -45,9 +41,7 @@ properties:
     summary: >-
       If provided, specifies the long citation for the entry as it will appear
       in a table of authorities.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -63,9 +57,7 @@ properties:
     summary: >-
       If provided, specifies the name of the AutoText entry that contains the
       text of the long citation as it will appear in a table of authorities.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

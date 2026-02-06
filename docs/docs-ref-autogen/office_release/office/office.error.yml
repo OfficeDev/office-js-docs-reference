@@ -32,34 +32,6 @@ properties:
       content: 'code: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          const error = asyncResult.error;
-                      write(error.name + ": " + error.code + " - " + error.message);
-                  });
-          }
-
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```
   - name: message
     uid: office!Office.Error#message:member
     package: office!
@@ -73,34 +45,6 @@ properties:
       content: 'message: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          const error = asyncResult.error;
-                      write(error.name + ": " + error.message);
-                  });
-          }
-
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```
   - name: name
     uid: office!Office.Error#name:member
     package: office!
@@ -114,31 +58,3 @@ properties:
       content: 'name: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // To cause an error to be thrown, select a table or a matrix, and
-          then call the setText function.
-
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          const error = asyncResult.error;
-                      write(error.name + ": " + error.message);
-                  });
-          }
-
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```

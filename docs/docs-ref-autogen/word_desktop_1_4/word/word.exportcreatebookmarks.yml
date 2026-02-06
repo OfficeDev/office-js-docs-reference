@@ -4,9 +4,7 @@ uid: word!Word.ExportCreateBookmarks:enum
 package: word!
 fullName: Word.ExportCreateBookmarks
 summary: Specifies the type of bookmarks to create during export.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,30 +12,24 @@ fields:
   - name: headings
     uid: word!Word.ExportCreateBookmarks.headings:member
     package: word!
-    summary: >-
+    summary: |-
       Creates bookmarks from headings.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Headings"'
   - name: none
     uid: word!Word.ExportCreateBookmarks.none:member
     package: word!
-    summary: >-
+    summary: |-
       Do not create bookmarks.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: wordBookmarks
     uid: word!Word.ExportCreateBookmarks.wordBookmarks:member
     package: word!
-    summary: >-
+    summary: |-
       Creates bookmarks from Word bookmarks.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"WordBookmarks"'

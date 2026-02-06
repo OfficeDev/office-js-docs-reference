@@ -4,29 +4,7 @@ uid: excel!Excel.WorksheetNameChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetNameChangedEventArgs
 summary: Provides information about the worksheet whose name has changed.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
-
-
-  async function onNameChanged(event: Excel.WorksheetNameChangedEventArgs) {
-      await Excel.run(async (context) => {
-          console.log(`Handler for worksheet onNameChanged event has been triggered.`);
-          console.log(`    Name before change: ` + event.nameBefore);
-          console.log(`    Name after change: ` + event.nameAfter);
-      });
-  }  
-
-  ```
+remarks: '\[Api set: ExcelApi 1.17\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,10 +15,7 @@ properties:
     package: excel!
     fullName: nameAfter
     summary: Gets the new name of the worksheet, after the name change.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,10 +28,7 @@ properties:
     package: excel!
     fullName: nameBefore
     summary: Gets the previous name of the worksheet, before the name changed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -69,10 +41,7 @@ properties:
     package: excel!
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,10 +54,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -101,10 +67,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet with the new name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false

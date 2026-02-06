@@ -4,10 +4,7 @@ uid: visio!Visio.Interfaces.CommentLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.CommentLoadOptions
 summary: Represents the Comment.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +31,7 @@ properties:
     package: visio!
     fullName: author
     summary: A string that specifies the name of the author of the comment.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +44,7 @@ properties:
     package: visio!
     fullName: date
     summary: A string that specifies the date when the comment was created.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +57,7 @@ properties:
     package: visio!
     fullName: text
     summary: A string that contains the comment text.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

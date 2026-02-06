@@ -19,10 +19,7 @@ properties:
     summary: >-
       Gets the Image object in the Paragraph. Throws an exception if
       ParagraphType is not Image.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -37,10 +34,7 @@ properties:
     summary: >-
       Gets the Table object in the Paragraph. Throws an exception if
       ParagraphType is not Table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

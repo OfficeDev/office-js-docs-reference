@@ -20,9 +20,7 @@ properties:
       Specifies the preferred width (in points or as a percentage of the window
       width) for the column. The unit of measurement can be specified by the
       `preferredWidthType` property.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     summary: >-
       Specifies the preferred unit of measurement to use for the width of the
       table column.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +54,7 @@ properties:
     summary: >-
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the column.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +69,7 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width of the column, in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

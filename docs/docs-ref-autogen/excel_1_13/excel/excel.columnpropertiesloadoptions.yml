@@ -8,8 +8,7 @@ summary: >-
   "range.getColumnProperties" method.
 
 
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[Api set: ExcelApi 1.9\]
 remarks: ''
 
 isPreview: false
@@ -20,12 +19,10 @@ properties:
     uid: excel!Excel.ColumnPropertiesLoadOptions#columnHidden:member
     package: excel!
     fullName: columnHidden
-    summary: >-
+    summary: |-
       Specifies whether to load on the `columnHidden` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -38,12 +35,10 @@ properties:
     uid: excel!Excel.ColumnPropertiesLoadOptions#columnIndex:member
     package: excel!
     fullName: columnIndex
-    summary: >-
+    summary: |-
       Specifies whether to load on the `columnIndex` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -56,12 +51,10 @@ properties:
     uid: excel!Excel.ColumnPropertiesLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Specifies whether to load on the `format` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false

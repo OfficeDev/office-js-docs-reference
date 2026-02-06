@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.CustomXmlPartCollection:class
 package: powerpoint!
 fullName: PowerPoint.CustomXmlPartCollection
 summary: A collection of custom XML parts.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -47,10 +44,7 @@ methods:
     package: powerpoint!
     fullName: add(xml)
     summary: Adds a new `CustomXmlPart` to the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,10 +66,7 @@ methods:
     summary: >-
       Gets a new scoped collection of custom XML parts whose namespaces match
       the given namespace.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +90,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of custom XML parts in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,10 +104,7 @@ methods:
     package: powerpoint!
     fullName: getItem(id)
     summary: Gets a `CustomXmlPart` based on its ID.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -139,10 +124,7 @@ methods:
     summary: >-
       Gets a `CustomXmlPart` by its zero-based index in the collection. Throws
       an `InvalidArgument` exception when the index is out of range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -167,10 +149,7 @@ methods:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

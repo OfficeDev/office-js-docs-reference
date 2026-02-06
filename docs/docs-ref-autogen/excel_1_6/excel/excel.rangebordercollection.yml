@@ -4,9 +4,7 @@ uid: excel!Excel.RangeBorderCollection:class
 package: excel!
 fullName: Excel.RangeBorderCollection
 summary: Represents the border objects that make up the range border.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: count
     summary: Number of border objects in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,29 +57,7 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a border object using its name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => {
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const range = worksheet.getRange(rangeAddress);
-          const border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
-          border.load('style');
-          await context.sync();
-
-          console.log(border.style);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -103,9 +77,7 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a border object using its name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -131,29 +103,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a border object using its index.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const range = worksheet.getRange(rangeAddress);
-          const border = range.format.borders.getItemAt(0);
-          border.load('sideIndex');
-          await context.sync();
-          
-          console.log(border.sideIndex);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -213,27 +163,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeBorderCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const sheetName = "Sheet1";
-              const rangeAddress = "A1:F8";
-              const worksheet = context.workbook.worksheets.getItem(sheetName);
-              const range = worksheet.getRange(rangeAddress);
-              const borders = range.format.borders;
-              borders.load('items');
-              await context.sync();
-              
-              console.log(borders.count);
-              for (let i = 0; i < borders.items.length; i++) {
-                  console.log(borders.items[i].sideIndex);
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.RangeBorderCollection#load:member(3)
     package: excel!

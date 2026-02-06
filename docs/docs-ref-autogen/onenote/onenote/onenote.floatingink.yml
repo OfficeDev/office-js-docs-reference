@@ -4,9 +4,7 @@ uid: onenote!OneNote.FloatingInk:class
 package: onenote!
 fullName: OneNote.FloatingInk
 summary: Represents a group of ink strokes.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the FloatingInk object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -48,10 +43,7 @@ properties:
     package: onenote!
     fullName: inkStrokes
     summary: Gets the strokes of the FloatingInk object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +56,7 @@ properties:
     package: onenote!
     fullName: pageContent
     summary: Gets the PageContent parent of the FloatingInk object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,40 +110,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.FloatingInk:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Gets the active page.
-              const page = context.application.getActivePage();
-              const contents = page.contents;
-              
-              // Load page contents and their types.
-              page.load('contents/type');
-              await context.sync();
-                  
-              // Load every ink content.
-              $.each(contents.items, function(i, content) {
-                  if (content.type == "Ink")
-                  {
-                      content.load('ink/id');
-                  }                            
-              });
-              await context.sync();
-                  
-              // Log ID of every ink content.
-              $.each(contents.items, function(i, content) {
-                  if (content.type == "Ink")
-                  {
-                      console.log(content.ink.id);
-                  }                            
-              });           
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.FloatingInk#load:member(3)
     package: onenote!

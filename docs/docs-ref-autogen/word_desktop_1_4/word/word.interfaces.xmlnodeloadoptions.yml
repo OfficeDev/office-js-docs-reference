@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.XmlNodeLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.XmlNodeLoadOptions
 summary: Represents a single XML node applied to the document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ properties:
     package: word!
     fullName: baseName
     summary: Gets the name of the element without any prefix.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     summary: >-
       Gets the first child node if this is a parent node. Returns `null` if the
       node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +61,7 @@ properties:
     summary: >-
       Gets whether this XML node has child nodes. Always returns `false` for
       attribute nodes since they cannot have children.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +76,7 @@ properties:
     summary: >-
       Gets the last child node if this is a parent node. Returns `null` if the
       node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +92,7 @@ properties:
       Gets whether this XML element is part of a paragraph, is a paragraph, or
       is contained within a table cell or contains a table row. Returns `null`
       if the node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -119,9 +107,7 @@ properties:
     summary: >-
       Gets the Uniform Resource Identifier (URI) of the schema namespace for
       this XML node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +122,7 @@ properties:
     summary: >-
       Gets the next element in the document that's at the same level as this XML
       node. Returns `null` if the node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +135,7 @@ properties:
     package: word!
     fullName: ownerDocument
     summary: Gets the parent document of this XML node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -166,9 +148,7 @@ properties:
     package: word!
     fullName: parentNode
     summary: Gets the parent element of this XML node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -183,9 +163,7 @@ properties:
     summary: >-
       Specifies the text displayed for this element if it contains no text. Only
       applies to element nodes, not attribute nodes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -200,9 +178,7 @@ properties:
     summary: >-
       Gets the previous element in the document that's at the same level as this
       XML node. Returns `null` if the node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -217,9 +193,7 @@ properties:
     summary: >-
       Gets the portion of a document that is contained in this XML node. Returns
       `null` if the node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -234,9 +208,7 @@ properties:
     summary: >-
       Specifies the text contained within the XML element. Returns an empty
       string if the node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -251,9 +223,7 @@ properties:
     summary: >-
       Gets the description for a validation error on this `XmlNode` object. May
       not be meaningful for attribute nodes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -268,9 +238,7 @@ properties:
     summary: >-
       Gets whether this element is valid according to the attached schema. May
       not be meaningful for attribute nodes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

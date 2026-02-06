@@ -19,9 +19,7 @@ properties:
     summary: >-
       Specifies the appearance of the content control. The value can be
       `boundingBox`<!-- -->, `tags`<!-- -->, or `hidden`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +38,7 @@ properties:
     summary: >-
       Specifies a value that indicates whether the user can delete the content
       control. Mutually exclusive with `removeWhenEdited`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -57,9 +53,7 @@ properties:
     summary: >-
       Specifies a value that indicates whether the user can edit the contents of
       the content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +68,7 @@ properties:
     summary: >-
       Specifies the color of the content control. Color is specified in
       '\#RRGGBB' format or by using the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +81,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +96,7 @@ properties:
     summary: >-
       Gets the text format of the content control. Use this to get and set font
       name, size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +109,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets an integer that represents the content control identifier.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -138,9 +124,7 @@ properties:
     summary: >-
       Gets the collection of `InlinePicture` objects in the content control. The
       collection doesn't include floating images.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -154,8 +138,7 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the content control.
     remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[Api set: WordApi 1.1\]
 
 
       Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly
@@ -175,9 +158,7 @@ properties:
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be
       displayed when the content control is empty.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -192,9 +173,7 @@ properties:
     summary: >-
       Specifies a value that indicates whether the content control is removed
       after it's edited. Mutually exclusive with `cannotDelete`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -210,9 +189,7 @@ properties:
       Specifies the style name for the content control. Use this property for
       custom styles and localized style names. To use the built-in styles that
       are portable between locales, see the `styleBuiltIn` property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -225,9 +202,7 @@ properties:
     package: word!
     fullName: tag
     summary: Specifies a tag to identify a content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -240,9 +215,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -255,9 +228,7 @@ properties:
     package: word!
     fullName: title
     summary: Specifies the title for a content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -273,9 +244,7 @@ properties:
       Gets the content control type. Only rich text, plain text, check box,
       dropdown list, combo box, building block gallery, date picker, repeating
       section, picture, and group content controls are supported currently.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

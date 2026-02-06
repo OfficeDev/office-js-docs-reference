@@ -6,9 +6,7 @@ fullName: Excel.ExternalCodeServiceObjectCellValue
 summary: >-
   Represents the value of a cell containing an External Code Service Object,
   such as Python code formula.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
 isPreview: true
 isDeprecated: false
@@ -21,10 +19,7 @@ properties:
     summary: >-
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -43,10 +38,7 @@ properties:
     summary: >-
       Represents the value that would be returned by `Range.values` for a cell
       with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -59,10 +51,7 @@ properties:
     package: excel!
     fullName: language
     summary: Represents the runtime language of this external code service.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -75,10 +64,7 @@ properties:
     package: excel!
     fullName: preview
     summary: Represents the preview value shown in the cell.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -93,10 +79,7 @@ properties:
     summary: >-
       Represents information about the service that provided the data in this
       `ExternalCodeServiceObjectCellValue`<!-- -->. This field isn't writable.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -109,10 +92,7 @@ properties:
     package: excel!
     fullName: Python_str
     summary: Represents the output of the `str()` function when used on this object.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -125,10 +105,7 @@ properties:
     package: excel!
     fullName: Python_type
     summary: Represents the full type name of this object.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -141,10 +118,7 @@ properties:
     package: excel!
     fullName: Python_typeName
     summary: Represents the short type name of this object.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -157,10 +131,7 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false

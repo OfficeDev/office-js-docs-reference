@@ -4,9 +4,7 @@ uid: excel!Excel.ChartGridlines:class
 package: excel!
 fullName: Excel.ChartGridlines
 summary: Represents major or minor gridlines on a chart axis.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: format
     summary: Represents the formatting of chart gridlines.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the axis gridlines are visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -103,21 +97,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartGridlines:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Set the value axis of Chart1 to show the major gridlines.
-          await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.axes.valueAxis.majorGridlines.visible = true;
-              await context.sync();
-              
-              console.log("Axis Gridlines Added ");
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartGridlines#load:member(3)
     package: excel!

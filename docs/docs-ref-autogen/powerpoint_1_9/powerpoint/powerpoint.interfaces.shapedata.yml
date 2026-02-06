@@ -17,10 +17,7 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,10 +45,7 @@ properties:
     summary: >-
       The distance, in points, from the left side of the shape to the left side
       of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -74,10 +65,7 @@ properties:
       - A level of 1 means the shape is part of a top-level group.
 
       - A level greater than 1 indicates the shape is a nested group.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,10 +78,7 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Specifies the name of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -108,10 +93,7 @@ properties:
     summary: >-
       The distance, in points, from the top edge of the shape to the top edge of
       the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -127,10 +109,7 @@ properties:
       Returns the type of this shape. See
       [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
       details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -153,10 +132,7 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -173,10 +149,7 @@ properties:
       of the order stack. Every shape on a slide has a unique z-order, but each
       slide also has a unique z-order stack, so two shapes on separate slides
       could have the same z-order number.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

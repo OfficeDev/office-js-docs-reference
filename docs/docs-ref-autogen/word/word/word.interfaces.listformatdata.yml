@@ -17,9 +17,7 @@ properties:
     package: word!
     fullName: isSingleList
     summary: Indicates whether the `ListFormat` object contains a single list.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: word!
     fullName: isSingleListTemplate
     summary: Indicates whether the `ListFormat` object contains a single list template.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     summary: >-
       Returns a `List` object that represents the first formatted list contained
       in the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +60,7 @@ properties:
     summary: >-
       Specifies the list level number for the first paragraph for the
       `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +75,7 @@ properties:
     summary: >-
       Gets the string representation of the list value of the first paragraph in
       the range for the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +88,7 @@ properties:
     package: word!
     fullName: listTemplate
     summary: Gets the list template associated with the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +101,7 @@ properties:
     package: word!
     fullName: listType
     summary: Gets the type of the list for the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +122,7 @@ properties:
     summary: >-
       Gets the numeric value of the the first paragraph in the range for the
       `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

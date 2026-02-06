@@ -5,8 +5,7 @@ package: excel!
 fullName: Excel.FunctionCellValue
 summary: Represents a cell value which can be evaluated as a function.
 remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[Api set: ExcelApi 1.19\]
 
 
   Learn more about the types in this type alias through the following links. 

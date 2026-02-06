@@ -10,8 +10,7 @@ summary: >-
   An array of `AttachmentDetails` objects is returned as the `attachments`
   property of an appointment or message item.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[Api set: Mailbox 1.1\]
 
 
   **[Minimum permission
@@ -22,34 +21,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Read
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
-
-
-  const item = Office.context.mailbox.item;
-
-
-  if (item.attachments.length > 0) {
-      for (let i = 0; i < item.attachments.length; i++) {
-          const attachment = item.attachments[i];
-          console.log(`${i+1}. Name: ${attachment.name}`);
-          console.log(`ID: ${attachment.id}`);
-          console.log(`Type: ${attachment.attachmentType}`);
-          console.log(`Inline content: ${attachment.isInline}`);
-          console.log(`Size: ${attachment.size}`);
-      }
-  } else {
-      console.log("This mail item doesn't contain any attachments.");
-  }
-
-  ```
 
 isPreview: false
 isDeprecated: false

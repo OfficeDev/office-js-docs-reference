@@ -19,9 +19,7 @@ properties:
     summary: >-
       Gets the unique identifier, which is meant to be used for easier tracking
       of `Annotation` objects.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     package: word!
     fullName: state
     summary: Gets the state of the annotation.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

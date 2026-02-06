@@ -4,39 +4,7 @@ uid: powerpoint!PowerPoint.TableMergedAreaProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableMergedAreaProperties
 summary: Represents the properties of a merged area of cells in a table.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-  // Specifies the merge areas of a table.
-
-  await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-    // Add a table, specifying one 2x2 merged area.
-    shapes.addTable(3, 4, {
-      values: [
-        ["A", "BB", "CCC", "DDDD"],
-        ["E", "FF", "", "HHHH"],
-        ["1", "", "", "1234"]
-      ],
-      mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
-    });
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -49,39 +17,7 @@ properties:
     summary: >-
       Specifies the number of columns for the merged cells area. Must be 1 or
       greater.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the merge areas of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying one 2x2 merged area.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "", "HHHH"],
-            ["1", "", "", "1234"]
-          ],
-          mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,39 +32,7 @@ properties:
     summary: >-
       Specifies the zero-based index of the column of the top left cell of the
       merged area.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the merge areas of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying one 2x2 merged area.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "", "HHHH"],
-            ["1", "", "", "1234"]
-          ],
-          mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -143,39 +47,7 @@ properties:
     summary: >-
       Specifies the number of rows for the merged cells area. Must be 1 or
       greater.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the merge areas of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying one 2x2 merged area.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "", "HHHH"],
-            ["1", "", "", "1234"]
-          ],
-          mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -190,39 +62,7 @@ properties:
     summary: >-
       Specifies the zero-based index of the row of the top left cell of the
       merged area.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the merge areas of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying one 2x2 merged area.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "", "HHHH"],
-            ["1", "", "", "1234"]
-          ],
-          mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

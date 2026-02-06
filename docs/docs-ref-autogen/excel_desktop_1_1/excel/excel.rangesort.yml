@@ -4,9 +4,7 @@ uid: excel!Excel.RangeSort:class
 package: excel!
 fullName: Excel.RangeSort
 summary: Manages sorting operations on `Range` objects.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ methods:
     package: excel!
     fullName: apply(fields, matchCase, hasHeaders, orientation, method)
     summary: Perform a sort operation.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +64,7 @@ methods:
     package: excel!
     fullName: apply(fields, matchCase, hasHeaders, orientation, method)
     summary: Perform a sort operation.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false

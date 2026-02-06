@@ -17,9 +17,7 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: word!
     fullName: content
     summary: Specifies the comment's content as plain text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +56,7 @@ properties:
     package: word!
     fullName: contentRange
     summary: Specifies the comment's content range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -77,9 +69,7 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -92,9 +82,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +95,7 @@ properties:
     package: word!
     fullName: replies
     summary: Gets the collection of reply objects associated with the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +111,7 @@ properties:
       Specifies the comment thread's status. Setting to `true` resolves the
       comment thread. Getting a value of `true` means that the comment thread is
       resolved.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

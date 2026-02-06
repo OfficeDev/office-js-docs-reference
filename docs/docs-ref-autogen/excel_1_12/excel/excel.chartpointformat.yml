@@ -4,9 +4,7 @@ uid: excel!Excel.ChartPointFormat:class
 package: excel!
 fullName: Excel.ChartPointFormat
 summary: Represents the formatting object for chart points.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       Represents the border format of a chart data point, which includes color,
       style, and weight information.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     summary: >-
       Represents the fill format of a chart, which includes background
       formatting information.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: excel!Excel.ChartAxisTimeUnit:enum
 package: excel!
 fullName: Excel.ChartAxisTimeUnit
 summary: Specifies the unit of time for chart axes and data series.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,21 +12,15 @@ fields:
   - name: days
     uid: excel!Excel.ChartAxisTimeUnit.days:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Days"'
   - name: months
     uid: excel!Excel.ChartAxisTimeUnit.months:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Months"'
   - name: years
     uid: excel!Excel.ChartAxisTimeUnit.years:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Years"'

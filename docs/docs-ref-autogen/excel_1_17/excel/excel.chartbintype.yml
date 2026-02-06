@@ -4,9 +4,7 @@ uid: excel!Excel.ChartBinType:enum
 package: excel!
 fullName: Excel.ChartBinType
 summary: Specifies the bin type of a histogram chart or pareto chart series.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,28 +12,20 @@ fields:
   - name: auto
     uid: excel!Excel.ChartBinType.auto:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Auto"'
   - name: binCount
     uid: excel!Excel.ChartBinType.binCount:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"BinCount"'
   - name: binWidth
     uid: excel!Excel.ChartBinType.binWidth:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"BinWidth"'
   - name: category
     uid: excel!Excel.ChartBinType.category:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Category"'

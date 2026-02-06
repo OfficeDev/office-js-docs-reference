@@ -17,10 +17,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the Paragraph object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -35,10 +32,7 @@ properties:
     summary: >-
       Gets the Image object in the Paragraph. Throws an exception if
       ParagraphType isn't Image. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,10 +47,7 @@ properties:
     summary: >-
       Gets the Ink collection in the Paragraph. Throws an exception if
       ParagraphType isn't Ink. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -69,10 +60,7 @@ properties:
     package: onenote!
     fullName: paragraphs
     summary: The collection of paragraphs under this paragraph. Read only
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,10 +75,7 @@ properties:
     summary: >-
       Gets the RichText object in the Paragraph. Throws an exception if
       ParagraphType is not RichText. Read-only
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,10 +90,7 @@ properties:
     summary: >-
       Gets the Table object in the Paragraph. Throws an exception if
       ParagraphType is not Table. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,10 +103,7 @@ properties:
     package: onenote!
     fullName: type
     summary: Gets the type of the Paragraph object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

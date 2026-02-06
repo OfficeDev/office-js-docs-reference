@@ -4,9 +4,7 @@ uid: word!Word.ListFormat:class
 package: word!
 fullName: Word.ListFormat
 summary: Represents the list formatting characteristics of a range.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: word!
     fullName: isSingleList
     summary: Indicates whether the `ListFormat` object contains a single list.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: word!
     fullName: isSingleListTemplate
     summary: Indicates whether the `ListFormat` object contains a single list template.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +58,7 @@ properties:
     summary: >-
       Returns a `List` object that represents the first formatted list contained
       in the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +73,7 @@ properties:
     summary: >-
       Specifies the list level number for the first paragraph for the
       `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +88,7 @@ properties:
     summary: >-
       Gets the string representation of the list value of the first paragraph in
       the range for the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +101,7 @@ properties:
     package: word!
     fullName: listTemplate
     summary: Gets the list template associated with the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -128,9 +114,7 @@ properties:
     package: word!
     fullName: listType
     summary: Gets the type of the list for the `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +135,7 @@ properties:
     summary: >-
       Gets the numeric value of the the first paragraph in the range for the
       `ListFormat` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -167,9 +149,7 @@ methods:
     package: word!
     fullName: applyBulletDefault(defaultListBehavior)
     summary: Adds bullets and formatting to the paragraphs in the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -189,9 +169,7 @@ methods:
     package: word!
     fullName: applyBulletDefault(defaultListBehavior)
     summary: Adds bullets and formatting to the paragraphs in the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -215,9 +193,7 @@ methods:
     summary: >-
       Applies a list template with a specific level to the paragraphs in the
       range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -243,9 +219,7 @@ methods:
     package: word!
     fullName: applyNumberDefault(defaultListBehavior)
     summary: Adds numbering and formatting to the paragraphs in the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -263,9 +237,7 @@ methods:
     package: word!
     fullName: applyNumberDefault(defaultListBehavior)
     summary: Adds numbering and formatting to the paragraphs in the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -285,9 +257,7 @@ methods:
     package: word!
     fullName: applyOutlineNumberDefault(defaultListBehavior)
     summary: Adds outline numbering and formatting to the paragraphs in the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -307,9 +277,7 @@ methods:
     package: word!
     fullName: applyOutlineNumberDefault(defaultListBehavior)
     summary: Adds outline numbering and formatting to the paragraphs in the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -329,9 +297,7 @@ methods:
     package: word!
     fullName: canContinuePreviousList(listTemplate)
     summary: Determines whether the `ListFormat` object can continue a previous list.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -353,9 +319,7 @@ methods:
     package: word!
     fullName: convertNumbersToText(numberType)
     summary: Converts numbers in the list to plain text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -373,9 +337,7 @@ methods:
     package: word!
     fullName: convertNumbersToText(numberType)
     summary: Converts numbers in the list to plain text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -395,9 +357,7 @@ methods:
     package: word!
     fullName: countNumberedItems(options)
     summary: Counts the numbered items in the list.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -421,9 +381,7 @@ methods:
     package: word!
     fullName: listIndent()
     summary: Indents the list by one level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -437,9 +395,7 @@ methods:
     package: word!
     fullName: listOutdent()
     summary: Outdents the list by one level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -527,9 +483,7 @@ methods:
     package: word!
     fullName: removeNumbers(numberType)
     summary: Removes numbering from the list.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -547,9 +501,7 @@ methods:
     package: word!
     fullName: removeNumbers(numberType)
     summary: Removes numbering from the list.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

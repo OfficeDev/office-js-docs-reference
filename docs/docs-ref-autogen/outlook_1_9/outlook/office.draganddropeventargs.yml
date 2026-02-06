@@ -8,8 +8,7 @@ summary: >-
   attachments being dragged and dropped into an add-in's task pane when the
   `Office.EventType.DragAndDropEvent` event is raised.
 remarks: >-
-  \[ [API set: Mailbox
-  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[Api set: Mailbox 1.5\]
 
 
   To learn more about the drag-and-drop feature and how to implement it across
@@ -17,41 +16,6 @@ remarks: >-
   task pane of an Outlook
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!--
   -->.
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
-
-
-  function dragAndDropEventHandler(event) {
-      Office.context.mailbox.addHandlerAsync(Office.EventType.DragAndDropEvent, (event) => {
-      console.log(`Event type: ${event.type}`);
-
-      const eventData = event.dragAndDropEventData;
-      console.log(`x-coordinate: ${eventData.pageX}, y-coordinate: ${eventData.pageY}`);
-      console.log(`x-coordinate relative to task pane: ${eventData.taskPaneX}, y-coordinate relative to task pane: ${eventData.taskPaneY}`);
-
-      if (eventData.type == "drop") {
-        console.log("Items dropped into task pane.");
-        const files = eventData.dataTransfer.files;
-        files.forEach((file) => {
-          const content = file.fileContent;
-          const name = file.name;
-          const fileType = file.type;
-          console.log(`File name: ${name}`);
-          console.log(`File type: ${fileType}`);
-          console.log(`Contents: ${content.text().then((text) => { console.log(text); })}`);
-        });
-      }
-    });
-  }
-
-  ```
 
 isPreview: false
 isDeprecated: false
@@ -65,10 +29,7 @@ properties:
       Gets the details about the mouse pointer position within an add-in's task
       pane and the messages or file attachments being dragged and dropped into
       the task pane.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: '\[Api set: Mailbox 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +49,7 @@ properties:
       -->.
 
 
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.5\]
     remarks: ''
 
     isPreview: false

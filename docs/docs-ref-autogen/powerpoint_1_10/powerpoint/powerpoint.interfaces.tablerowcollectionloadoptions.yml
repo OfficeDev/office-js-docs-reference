@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.TableRowCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableRowCollectionLoadOptions
 summary: Represents a collection of table rows.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,10 +34,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Retrieves the current height of the row
       in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -57,10 +51,7 @@ properties:
       For EACH ITEM in the collection: Specifies the height of the row in
       points. If the set row height is less than the minimum height, the row
       height will be increased to the minimum height.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -76,10 +67,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the index number of the row
       within the rows collection of the table. Zero-indexed.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

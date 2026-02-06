@@ -7,9 +7,7 @@ summary: >-
   Represents a scoped collection of tables. For each table its top-left corner
   is considered its anchor location, and the tables are sorted top-to-bottom and
   then left-to-right.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -49,9 +47,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of tables in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +64,7 @@ methods:
       Gets the first table in the collection. The tables in the collection are
       sorted top-to-bottom and left-to-right, such that top-left table is the
       first table in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +78,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a table by name or ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -109,10 +101,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.14\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.NoteItemLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.NoteItemLoadOptions
 summary: Represents a footnote or endnote.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.5\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       Represents the body object of the note item. It's the portion of the text
       within the footnote or endnote.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: word!
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +59,7 @@ properties:
     package: word!
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

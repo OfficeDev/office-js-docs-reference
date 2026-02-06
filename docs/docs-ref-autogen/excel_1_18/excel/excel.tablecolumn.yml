@@ -4,9 +4,7 @@ uid: excel!Excel.TableColumn:class
 package: excel!
 fullName: Excel.TableColumn
 summary: Represents a column in a table.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: filter
     summary: Retrieves the filter applied to the column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: excel!
     fullName: id
     summary: Returns a unique key that identifies the column within the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +58,7 @@ properties:
     summary: >-
       Returns the index number of the column within the columns collection of
       the table. Zero-indexed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +71,7 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the table column.
-    remarks: >-
-      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +88,7 @@ properties:
       be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,10 +108,7 @@ properties:
       string values. Data returned from this API always aligns with the en-US
       locale. To retrieve data in the user's display locale, use
       `TableColumn.valuesAsJsonLocal`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -143,10 +128,7 @@ properties:
       and string values. Data returned from this API always aligns with the
       user's display locale. To retrieve data independent of locale, use
       `TableColumn.valuesAsJson`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -160,24 +142,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the column from the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
-          column.delete();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -191,50 +156,7 @@ methods:
     package: excel!
     fullName: getDataBodyRange()
     summary: Gets the range object associated with the data body of the column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          const dataBodyRange = column.getDataBodyRange();
-          dataBodyRange.load('address');
-          await context.sync();
-          
-          console.log(dataBodyRange.address);
-      });
-
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
-
-      // Add checkboxes to the table.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-        // Get the second column in the table, without the header.
-        const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
-
-        // Change the boolean values to checkboxes.
-        range.control = {
-          type: Excel.CellControlType.checkbox
-        };
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -248,27 +170,7 @@ methods:
     package: excel!
     fullName: getHeaderRowRange()
     summary: Gets the range object associated with the header row of the column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          const headerRowRange = columns.getHeaderRowRange();
-          headerRowRange.load('address');
-          await context.sync();
-          
-          console.log(headerRowRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -282,27 +184,7 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Gets the range object associated with the entire column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          const columnRange = columns.getRange();
-          columnRange.load('address');
-          await context.sync();
-          
-          console.log(columnRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -316,27 +198,7 @@ methods:
     package: excel!
     fullName: getTotalRowRange()
     summary: Gets the range object associated with the totals row of the column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          const totalRowRange = columns.getTotalRowRange();
-          totalRowRange.load('address');
-          await context.sync();
-          
-          console.log(totalRowRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -390,21 +252,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.TableColumn:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const tableName = 'Table1';
-              const column = context.workbook.tables.getItem(tableName).columns.getItem(0);
-              column.load('index');
-              await context.sync();
-              
-              console.log(column.index);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.TableColumn#load:member(3)
     package: excel!

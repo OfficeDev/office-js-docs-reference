@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TagCollectionLoadOptions
 summary: Represents the collection of tags.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,10 +34,7 @@ properties:
       For EACH ITEM in the collection: Gets the unique ID of the tag. The `key`
       is unique within the owning `TagCollection` and always stored as uppercase
       letters within the document.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,10 +47,7 @@ properties:
     package: powerpoint!
     fullName: value
     summary: 'For EACH ITEM in the collection: Gets the value of the tag.'
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false

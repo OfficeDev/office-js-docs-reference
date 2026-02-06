@@ -24,10 +24,7 @@ properties:
       information contained in the Shape. This information is useful for people
       with vision or cognitive impairments who may not be able to see or
       understand the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +46,7 @@ properties:
       understand the shape. A title can be read to a person with a disability
       and is used to determine whether they wish to hear the description of the
       content.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +61,7 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,10 +80,7 @@ properties:
       Decorative objects add visual interest but aren't informative (e.g.
       stylistic borders). People using screen readers will hear these are
       decorative so they know they aren't missing any important information.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,10 +95,7 @@ properties:
     summary: >-
       The distance, in points, from the left side of the shape to the left side
       of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -123,10 +108,7 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Specifies the name of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -142,10 +124,7 @@ properties:
       Specifies the rotation, in degrees, of the shape around the z-axis. A
       positive value indicates clockwise rotation, and a negative value
       indicates counterclockwise rotation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -160,10 +139,7 @@ properties:
     summary: >-
       The distance, in points, from the top edge of the shape to the top edge of
       the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -176,10 +152,7 @@ properties:
     package: powerpoint!
     fullName: visible
     summary: Specifies if the shape is visible.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -194,10 +167,7 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

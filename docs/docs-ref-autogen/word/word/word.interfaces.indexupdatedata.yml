@@ -19,9 +19,7 @@ properties:
     summary: >-
       Returns a `Range` object that represents the portion of the document that
       is contained within the index.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     summary: >-
       Specifies the leader character between entries in the index and their
       associated page numbers.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

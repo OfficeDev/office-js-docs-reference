@@ -51,44 +51,6 @@ properties:
       content: 'columnCount: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
-
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
-
-          // and the number of row and columns selected.
-
-          function addSelectionHandler() {
-              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
-              });
-          }
-
-
-          // Display selection start coordinates and row/column count.
-
-          function myHandler(bArgs) {
-              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
-              write("Selection row count: " + bArgs.rowCount);
-              write("Selection col count: " + bArgs.columnCount);
-          }
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```
   - name: rowCount
     uid: office!Office.BindingSelectionChangedEventArgs#rowCount:member
     package: office!
@@ -114,44 +76,6 @@ properties:
       content: 'rowCount: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
-
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
-
-          // and the number of row and columns selected.
-
-          function addSelectionHandler() {
-              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
-              });
-          }
-
-
-          // Display selection start coordinates and row/column count.
-
-          function myHandler(bArgs) {
-              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
-              write("Selection row count: " + bArgs.rowCount);
-              write("Selection col count: " + bArgs.columnCount);
-          }
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```
   - name: startColumn
     uid: office!Office.BindingSelectionChangedEventArgs#startColumn:member
     package: office!
@@ -178,44 +102,6 @@ properties:
       content: 'startColumn: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
-
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
-
-          // and the number of row and columns selected.
-
-          function addSelectionHandler() {
-              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
-              });
-          }
-
-
-          // Display selection start coordinates and row/column count.
-
-          function myHandler(bArgs) {
-              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
-              write("Selection row count: " + bArgs.rowCount);
-              write("Selection col count: " + bArgs.columnCount);
-          }
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```
   - name: startRow
     uid: office!Office.BindingSelectionChangedEventArgs#startRow:member
     package: office!
@@ -242,44 +128,6 @@ properties:
       content: 'startRow: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example adds an event handler for the
-          SelectionChanged event to the binding with an id of myTable.
-
-          // When the user changes the selection, the handler displays the
-          coordinates of the first cell in the selection,
-
-          // and the number of row and columns selected.
-
-          function addSelectionHandler() {
-              Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-                  result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
-              });
-          }
-
-
-          // Display selection start coordinates and row/column count.
-
-          function myHandler(bArgs) {
-              write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
-              write("Selection row count: " + bArgs.rowCount);
-              write("Selection col count: " + bArgs.columnCount);
-          }
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```
   - name: type
     uid: office!Office.BindingSelectionChangedEventArgs#type:member
     package: office!

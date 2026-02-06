@@ -19,9 +19,7 @@ properties:
     summary: >-
       The display name of the worksheet. The name must be fewer than 32
       characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: The visibility of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.\]'
 
     isPreview: false
     isDeprecated: false

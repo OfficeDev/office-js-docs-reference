@@ -4,9 +4,7 @@ uid: excel!Excel.ChartTitle:class
 package: excel!
 fullName: Excel.ChartTitle
 summary: Represents a chart title object of a chart.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     summary: >-
       Represents the formatting of a chart title, which includes fill and font
       formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     summary: >-
       Returns the height, in points, of the chart title. Value is `null` if the
       chart title is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +60,7 @@ properties:
     package: excel!
     fullName: horizontalAlignment
     summary: Specifies the horizontal alignment for chart title.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +80,7 @@ properties:
       Specifies the distance, in points, from the left edge of chart title to
       the left edge of chart area. Value is `null` if the chart title is not
       visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -103,9 +93,7 @@ properties:
     package: excel!
     fullName: overlay
     summary: Specifies if the chart title will overlay the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,9 +108,7 @@ properties:
     summary: >-
       Represents the position of chart title. See `Excel.ChartTitlePosition` for
       details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -141,9 +127,7 @@ properties:
     summary: >-
       Represents a Boolean value that determines if the chart title has a
       shadow.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -156,9 +140,7 @@ properties:
     package: excel!
     fullName: text
     summary: Specifies the chart's title text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -174,29 +156,7 @@ properties:
       Specifies the angle to which the text is oriented for the chart title. The
       value should either be an integer from -90 to 90 or the integer 180 for
       vertically-oriented text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-title-format.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const title = sheet.charts.getItemAt(0).title;
-          title.textOrientation = -45;
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -211,9 +171,7 @@ properties:
     summary: >-
       Specifies the distance, in points, from the top edge of chart title to the
       top of chart area. Value is `null` if the chart title is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -228,9 +186,7 @@ properties:
     summary: >-
       Specifies the vertical alignment of chart title. See
       `Excel.ChartTextVerticalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -247,9 +203,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the chart title is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -264,9 +218,7 @@ properties:
     summary: >-
       Specifies the width, in points, of the chart title. Value is `null` if the
       chart title is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -282,30 +234,7 @@ methods:
     summary: >-
       Get the substring of a chart title. Line break '<!-- -->\\<!-- -->n'
       counts one character.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-title-format.yaml
-
-
-      await Excel.run(async (context) => {
-          let sheet = context.workbook.worksheets.getItem("Sample");
-          let chart = sheet.charts.getItemAt(0);
-
-          // Get first seven characters of the title and color them green.
-          chart.title.getSubstring(0, 7).font.color = "Yellow";
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -366,29 +295,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartTitle:class" />
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Set the text of the chart title to "My Chart" and display it as an
-          overlay on the chart.
-
-          await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              
-              chart.title.text= "My Chart"; 
-              chart.title.visible=true;
-              chart.title.overlay=true;
-              
-              await context.sync();
-              console.log("Char Title Changed");
-          });
-
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartTitle#load:member(3)
     package: excel!
@@ -479,9 +386,7 @@ methods:
     summary: >-
       Sets a string value that represents the formula of chart title using
       A1-style notation.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

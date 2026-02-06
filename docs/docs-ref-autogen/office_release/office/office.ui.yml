@@ -12,22 +12,7 @@ summary: >-
   Office
   Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
   -->.
-remarks: >-
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Get an Office.UI object and use it to open a dialog with a specified size. 
-
-  const uiContext = Office.context.ui;
-
-  uiContext.displayDialogAsync("https://www.contoso.com/myDialog.html", {
-  height: 30, width: 20 });
-
-  ```
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -39,7 +24,7 @@ methods:
     fullName: addHandlerAsync(eventType, handler, options, callback)
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: [DialogAPI
+      **Requirement set**: [DialogApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
@@ -92,45 +77,12 @@ methods:
     fullName: addHandlerAsync(eventType, handler, callback)
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: [DialogAPI
+      **Requirement set**: [DialogApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       You can add multiple event handlers for the specified event type as long
       as the name of each event handler function is unique.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example shows how to add an event handler for the
-      DialogParentMessageReceived event.
-
-      Office.onReady(() => {
-          Office.context.ui.addHandlerAsync(
-              Office.EventType.DialogParentMessageReceived,
-              onMessageFromParent,
-              onRegisterMessageComplete
-          );
-      });
-
-
-      function onMessageFromParent(arg) {
-          const messageFromParent = JSON.parse(arg.message);
-          document.querySelector('h1').textContent = messageFromParent.name;
-      }
-
-
-      function onRegisterMessageComplete(asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log(asyncResult.error.message);
-              return;
-          }
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -180,7 +132,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -200,21 +152,6 @@ methods:
 
 
       - Called from a module extension: No effect.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example shows how to open a browser window to a download
-      page and then close the add-in task pane.
-
-      Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
-
-      Office.context.ui.closeContainer();
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -238,7 +175,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -303,50 +240,6 @@ methods:
       user-defined object or value, if you passed one as the asyncContext
       parameter.</td> </tr> </table>
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example shows how to open a dialog with a specified size.
-      It also shows
-
-      // how to register a function to handle the message when
-      Office.UI.messageParent() is called
-
-      // in the dialog. The implementation of the processMessage() function is
-      omitted.
-
-
-      Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-      { height: 30, width: 20 },
-          (asyncResult) => {
-              const dialog = asyncResult.value;
-              dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
-                  dialog.close();
-                  processMessage(arg);
-              });
-          }
-      );
-
-
-      // The following example does the same thing in TypeScript.
-
-
-      Office.context.ui.displayDialogAsync("https://www.contoso.com/myDialog.html",
-      { height: 30, width: 20 },
-          (asyncResult: Office.AsyncResult) => {
-              const dialog: Office.Dialog = asyncResult.value;
-              dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg: string) => {
-                  dialog.close();
-                  processMessage(arg);
-              });
-          }
-      );
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -390,7 +283,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -490,7 +383,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -500,27 +393,6 @@ methods:
       - If the `messageOptions` parameter is used, [DialogOrigin
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)
       is also required.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example shows how to send a JSON string to the parent.
-      The profile object
-
-      // is returned from some website when a user signs into it.
-
-      function userProfileSignedIn(profile) {
-          const profileMessage = {
-              "name": profile.name,
-              "email": profile.email,
-          };
-          Office.context.ui.messageParent(JSON.stringify(profileMessage));
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -546,23 +418,8 @@ methods:
     fullName: openBrowserWindow(url)
     summary: Opens a browser window and loads the specified URL.
     remarks: >-
-      **Requirement set**: [OpenBrowserWindowAPI
+      **Requirement set**: [OpenBrowserWindowApi
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets)
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example shows how to open a browser window to a download
-      page and then close the add-in task pane.
-
-      Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
-
-      Office.context.ui.closeContainer();
-
-      ```
 
     isPreview: false
     isDeprecated: false

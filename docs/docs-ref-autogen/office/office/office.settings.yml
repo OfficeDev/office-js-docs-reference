@@ -122,31 +122,6 @@ methods:
       You can add multiple event handlers for the specified eventType as long as
       the name of each event handler function is unique.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function addSelectionChangedEventHandler() {
-          Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
-      }
-
-
-      function MyHandler(eventArgs) {
-          write('Event raised: ' + eventArgs.type);
-          doSomethingWithSettings(eventArgs.settings);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,24 +171,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [Settings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function displayMySetting() {
-          write('Current value for mySetting: ' + Office.context.document.settings.get('mySetting'));
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -265,26 +222,6 @@ methods:
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function refreshSettings() {
-          Office.context.document.settings.refreshAsync(function (asyncResult) {
-              write('Settings refreshed with status: ' + asyncResult.status);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -326,18 +263,6 @@ methods:
 
       null is a valid value for a setting. Therefore, assigning null to the
       setting will not remove it from the settings property bag.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function removeMySetting() {
-          Office.context.document.settings.remove('mySetting');
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -449,31 +374,6 @@ methods:
       <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function removeSettingsChangedEventHandler() {
-          Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
-      }
-
-
-      function MyHandler(eventArgs) {
-          write('Event raised: ' + eventArgs.type);
-          doSomethingWithSettings(eventArgs.settings);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -591,26 +491,6 @@ methods:
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function persistSettings() {
-          Office.context.document.settings.saveAsync(function (asyncResult) {
-              write('Settings saved with status: ' + asyncResult.status);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -652,18 +532,6 @@ methods:
       in-memory copy of the settings property bag. After you call the
       Settings.saveAsync method, the value is stored in the document as the
       serialized JSON representation of its data type.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function setMySetting() {
-          Office.context.document.settings.set('mySetting', 'mySetting value');
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: excel!Excel.NamedItemScope:enum
 package: excel!
 fullName: Excel.NamedItemScope
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,14 +12,10 @@ fields:
   - name: workbook
     uid: excel!Excel.NamedItemScope.workbook:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.4\]'
     value: '"Workbook"'
   - name: worksheet
     uid: excel!Excel.NamedItemScope.worksheet:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.4\]'
     value: '"Worksheet"'

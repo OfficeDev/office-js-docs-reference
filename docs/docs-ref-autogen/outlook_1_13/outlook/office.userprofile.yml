@@ -26,9 +26,7 @@ properties:
     fullName: accountType
     summary: Gets the account type of the user associated with the mailbox.
     remarks: >-
-      \[ [API set: Mailbox
-      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.6\]
 
 
       **[Minimum permission
@@ -68,16 +66,6 @@ properties:
       if it's hosted on Exchange Online, the account type value is
       **office365**.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      console.log(Office.context.mailbox.userProfile.accountType);
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,18 +87,6 @@ properties:
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Example: Allie Bellew
-
-      console.log(Office.context.mailbox.userProfile.displayName);
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,18 +107,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Example: allieb@contoso.com
-
-      console.log(Office.context.mailbox.userProfile.emailAddress);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -172,18 +136,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Example: Pacific Standard Time
-
-      console.log(Office.context.mailbox.userProfile.timeZone);
-
-      ```
 
     isPreview: false
     isDeprecated: false

@@ -4,10 +4,7 @@ uid: word!Word.RevisionsMode:enum
 package: word!
 fullName: Word.RevisionsMode
 summary: Specifies the display mode for tracked changes in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -15,33 +12,24 @@ fields:
   - name: balloon
     uid: word!Word.RevisionsMode.balloon:member
     package: word!
-    summary: >-
+    summary: |-
       Balloon.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Balloon"'
   - name: inline
     uid: word!Word.RevisionsMode.inline:member
     package: word!
-    summary: >-
+    summary: |-
       Inline.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Inline"'
   - name: mixed
     uid: word!Word.RevisionsMode.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Mixed.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Mixed"'

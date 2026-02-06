@@ -4,9 +4,7 @@ uid: excel!Excel.QueryCollection:class
 package: excel!
 fullName: Excel.QueryCollection
 summary: Represents the collection of queries in the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.14\]'
 
 isPreview: false
 isDeprecated: false
@@ -40,54 +38,13 @@ properties:
       content: 'readonly items: Excel.Query[];'
       return:
         type: <xref uid="excel!Excel.Query:class" />[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // This function retrieves the query collection in a workbook, 
-          // loads the query items in that collection, and then
-          // logs the name of each query to the console.
-          await Excel.run(async (context) => {
-              const queries = context.workbook.queries; 
-              queries.load("items"); 
-              await context.sync(); 
-
-              console.log("Name of each query: ")
-              console.log("  " + queries.items.map((query) => query.name).join("\n  "));
-          });
-          ```
 methods:
   - name: getCount()
     uid: excel!Excel.QueryCollection#getCount:member(1)
     package: excel!
     fullName: getCount()
     summary: Gets the number of queries in the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // This function retrieves the query collection in a workbook and then 
-
-      // logs the number of queries in the collection to the console.
-
-      await Excel.run(async (context) => { 
-        const queries = context.workbook.queries; 
-        const count = queries.getCount();
-        await context.sync();
-
-        console.log("Query count: " + count.value);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.14\]'
 
     isPreview: false
     isDeprecated: false
@@ -101,10 +58,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a query from the collection based on its name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.14\]'
 
     isPreview: false
     isDeprecated: false

@@ -5,8 +5,7 @@ package: office!
 fullName: Office.Urls
 summary: Provides the URLs of the runtime environments used by an add-in.
 remarks: >-
-  \[ [API set: Mailbox
-  1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  \[Api set: Mailbox 1.14\]
 
 
   **[Minimum permission
@@ -28,8 +27,7 @@ properties:
     fullName: javascriptRuntimeUrl
     summary: Gets the URL of the JavaScript runtime of an add-in.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[Api set: Mailbox 1.14\]
 
 
       **[Minimum permission
@@ -72,28 +70,6 @@ properties:
       - If your add-in uses the unified manifest for Microsoft 365, the URL
       returned matches the value of the `script` property in the
       "extensions.runtimes.code" object.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Get the value of the first parameter of the JavaScript runtime URL.
-
-      // For example, if the URL is
-      https://wwww.contoso.com/training?key1=value1&key2=value2,
-
-      // the following function logs "First parameter value: value1" to the
-      console.
-
-      const url = Office.context.urls.javascriptRuntimeUrl;
-
-      const regex = /=([^&]+)/;
-
-      console.log(`First parameter value: ${url.match(regex)[1]}`);
-
-      ```
 
     isPreview: false
     isDeprecated: false

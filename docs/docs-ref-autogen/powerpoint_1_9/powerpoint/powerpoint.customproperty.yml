@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.CustomProperty:class
 package: powerpoint!
 fullName: PowerPoint.CustomProperty
 summary: Represents a custom property.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: key
     summary: The string that uniquely identifies the custom property.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: powerpoint!
     fullName: type
     summary: The type of the value used for the custom property.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,10 +63,7 @@ properties:
       The value of the custom property. If the value is a string, the maximum
       length 255 characters. Larger strings cause the operation to fail with an
       `InvalidArgument` error.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,10 +77,7 @@ methods:
     package: powerpoint!
     fullName: delete()
     summary: Deletes the custom property.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(npm run build:*)",
-      "Bash(node -e:*)"
+      "Bash(node -e:*)",
+      "Bash(dir:*)",
+      "Bash(npm info:*)",
+      "WebSearch",
+      "Bash(./node_modules/.bin/api-documenter:*)",
+      "Bash(./GenerateDocs.sh:*)"
     ]
   }
 }

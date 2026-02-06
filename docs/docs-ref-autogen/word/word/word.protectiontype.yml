@@ -4,9 +4,7 @@ uid: word!Word.ProtectionType:enum
 package: word!
 fullName: Word.ProtectionType
 summary: Specifies the protection type for a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,51 +12,40 @@ fields:
   - name: allowOnlyComments
     uid: word!Word.ProtectionType.allowOnlyComments:member
     package: word!
-    summary: >-
+    summary: |-
       Only comments are allowed in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AllowOnlyComments"'
   - name: allowOnlyFormFields
     uid: word!Word.ProtectionType.allowOnlyFormFields:member
     package: word!
-    summary: >-
+    summary: |-
       Only form fields are allowed in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AllowOnlyFormFields"'
   - name: allowOnlyReading
     uid: word!Word.ProtectionType.allowOnlyReading:member
     package: word!
-    summary: >-
+    summary: |-
       Only reading is allowed in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AllowOnlyReading"'
   - name: allowOnlyRevisions
     uid: word!Word.ProtectionType.allowOnlyRevisions:member
     package: word!
-    summary: >-
+    summary: |-
       Only revisions are allowed in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AllowOnlyRevisions"'
   - name: noProtection
     uid: word!Word.ProtectionType.noProtection:member
     package: word!
-    summary: >-
+    summary: |-
       No protection is applied to the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"NoProtection"'

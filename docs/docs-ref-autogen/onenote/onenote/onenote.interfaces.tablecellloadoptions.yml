@@ -4,9 +4,7 @@ uid: onenote!OneNote.Interfaces.TableCellLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableCellLoadOptions
 summary: Represents a cell in a OneNote table.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: onenote!
     fullName: cellIndex
     summary: Gets the index of the cell in its row. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +44,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the cell. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +57,7 @@ properties:
     package: onenote!
     fullName: paragraphs
     summary: Gets the collection of Paragraph objects in the TableCell.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,10 +73,7 @@ properties:
     package: onenote!
     fullName: parentRow
     summary: Gets the parent row of the cell.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,10 +88,7 @@ properties:
     package: onenote!
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -118,10 +101,7 @@ properties:
     package: onenote!
     fullName: shadingColor
     summary: Gets and sets the shading color of the cell
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

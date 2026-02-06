@@ -6,35 +6,7 @@ fullName: Visio.DataRefreshCompleteEventArgs
 summary: >-
   Provides information about the document that raised the DataRefreshComplete
   event.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  Visio.run(session, function (ctx) {
-      const document1 = ctx.document;
-      eventResult1 = document1.onDataRefreshComplete.add(
-          function (args){
-              console.log("Data Refresh Result: "+args.success);
-          });
-
-      return ctx.sync().then(function () {
-         console.log("Success");
-      });
-  }).catch(function(error) {
-      console.log("Error: " + error);
-      if (error instanceof OfficeExtension.Error) {
-          console.log("Debug info: " + JSON.stringify(error.debugInfo));
-      }
-  });
-
-  ```
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -45,10 +17,7 @@ properties:
     package: visio!
     fullName: document
     summary: Gets the document object that raised the DataRefreshComplete event.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,10 +30,7 @@ properties:
     package: visio!
     fullName: success
     summary: Gets the success or failure of the DataRefreshComplete event.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

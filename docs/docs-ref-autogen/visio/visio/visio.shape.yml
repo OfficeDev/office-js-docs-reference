@@ -4,10 +4,7 @@ uid: visio!Visio.Shape:class
 package: visio!
 fullName: Visio.Shape
 summary: Represents the Shape class.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +15,7 @@ properties:
     package: visio!
     fullName: comments
     summary: Returns the Comments Collection.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: visio!
     fullName: hyperlinks
     summary: Returns the Hyperlinks collection for a Shape object.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +56,7 @@ properties:
     package: visio!
     fullName: id
     summary: Shape's identifier.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,10 +69,7 @@ properties:
     package: visio!
     fullName: name
     summary: Shape's name.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +84,7 @@ properties:
     summary: >-
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -115,10 +97,7 @@ properties:
     package: visio!
     fullName: shapeDataItems
     summary: Returns the Shape's Data Section.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -131,10 +110,7 @@ properties:
     package: visio!
     fullName: subShapes
     summary: Gets SubShape Collection.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -147,10 +123,7 @@ properties:
     package: visio!
     fullName: text
     summary: Shape's text.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -163,10 +136,7 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the view of the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -182,10 +152,7 @@ methods:
     summary: >-
       Returns the AbsoluteBoundingBox object that specifies absolute bounding
       box of the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -201,10 +168,7 @@ methods:
     package: visio!
     fullName: getBounds()
     summary: Returns the BoundingBox object that specifies bounding box of the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -256,43 +220,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="visio!Visio.Shape:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shapeName = "Sample Name";
-              const shape = activePage.shapes.getItem(shapeName);
-              shape.load(["name", "id", "text", "select"]);
-              return ctx.sync().then(function () {
-                  console.log(shape.name);
-                  console.log(shape.id);
-                  console.log(shape.text);
-                  console.log(shape.select);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
-              shape.view.highlight = { color: "#E7E7E7", width: 100 };
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: visio!Visio.Shape#load:member(3)
     package: visio!

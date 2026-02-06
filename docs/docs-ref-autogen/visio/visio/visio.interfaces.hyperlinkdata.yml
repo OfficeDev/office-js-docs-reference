@@ -17,10 +17,7 @@ properties:
     package: visio!
     fullName: address
     summary: Gets the address of the Hyperlink object. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: visio!
     fullName: description
     summary: Gets the description of a hyperlink. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,10 +45,7 @@ properties:
     summary: >-
       Gets the extra URL request information used to resolve the hyperlink's
       URL. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +58,7 @@ properties:
     package: visio!
     fullName: subAddress
     summary: Gets the sub-address of the Hyperlink object. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

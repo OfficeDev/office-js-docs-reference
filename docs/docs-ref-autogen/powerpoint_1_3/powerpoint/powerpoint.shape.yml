@@ -4,39 +4,7 @@ uid: powerpoint!PowerPoint.Shape:class
 package: powerpoint!
 fullName: PowerPoint.Shape
 summary: Represents a single shape in the slide.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-
-  // Changes the transparency of every geometric shape in the slide.
-
-  await PowerPoint.run(async (context) => {
-    // Get the type of shape for every shape in the collection.
-    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-    shapes.load("type");
-    await context.sync();
-
-    // Change the shape transparency to be halfway transparent.
-    shapes.items.forEach((shape) => {
-      if (shape.type === PowerPoint.ShapeType.geometricShape) {
-        shape.fill.transparency = 0.5;
-      }
-    });
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -62,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -78,10 +43,7 @@ properties:
     package: powerpoint!
     fullName: tags
     summary: Returns a collection of tags in the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,40 +59,7 @@ methods:
     summary: >-
       Deletes the shape from the shape collection. Does nothing if the shape
       doesn't exist.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
-
-      // This function gets the collection of shapes on the first slide,
-
-      // and then iterates through them, deleting each one.
-
-      await PowerPoint.run(async (context) => {
-        const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
-        const shapes: PowerPoint.ShapeCollection = slide.shapes;
-
-        // Load all the shapes in the collection without loading their properties.
-        shapes.load("items/$none");
-
-        await context.sync();
-
-        shapes.items.forEach((shape) => shape.delete());
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false

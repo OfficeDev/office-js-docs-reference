@@ -25,29 +25,6 @@ properties:
       content: 'baseName: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXmlNodeBaseNames() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (let i = 0; i < nodeResults.value.length; i++) {
-                          const node = nodeResults.value[i];
-                          write(node.baseName);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: namespaceUri
     uid: office!Office.CustomXmlNode#namespaceUri:member
     package: office!
@@ -61,29 +38,6 @@ properties:
       content: 'namespaceUri: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXmlNamespaceUri() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (let i = 0; i < nodeResults.value.length; i++) {
-                          const node = nodeResults.value[i];
-                          write(node.namespaceUri);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: nodeType
     uid: office!Office.CustomXmlNode#nodeType:member
     package: office!
@@ -97,29 +51,6 @@ properties:
       content: 'nodeType: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXmlNodeType() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (let i = 0; i < nodeResults.value.length; i++) {
-                          const node = nodeResults.value[i];
-                          write(node.nodeType);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
 methods:
   - name: getNodesAsync(xPath, options, callback)
     uid: office!Office.CustomXmlNode#getNodesAsync:member(1)
@@ -167,35 +98,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function showXmlChildNodes() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (let i = 0; i < nodeResults.value.length; i++) {
-                      const node = nodeResults.value[i];
-                      node.getNodesAsync('*', function (nodeResults) {
-                          write(nodeResults.value.length + " childNodes");
-                      });
-                  }
-              });
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -264,35 +166,6 @@ methods:
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function showXmlNodeValues() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                  for (let i = 0; i < nodeResults.value.length; i++) {
-                      const node = nodeResults.value[i];
-                      node.getNodeValueAsync(function (asyncResult) {
-                          write(asyncResult.value);
-                      });
-                  }
-              });
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,50 +194,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Get the built-in core properties XML part by using its ID. This results
-      in a call to Word.
-
-      Office.context.document.customXmlParts.getByIdAsync(
-          "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
-          
-          // Access the XML part.
-          const xmlPart = getByIdAsyncResult.value;
-          
-          // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-          xmlPart.namespaceManager.addNamespaceAsync(
-              'cp',
-              'http://schemas.openxmlformats.org/package/2006/metadata/core-properties',
-              function () {
-              xmlPart.namespaceManager.addNamespaceAsync(
-                  'dc', 
-                  'http://purl.org/dc/elements/1.1/', 
-                  function () {
-
-                  // Get XML nodes by using an Xpath expression. This results in a call to Word.
-                  xmlPart.getNodesAsync("/cp:coreProperties/dc:title", function (getNodesAsyncResult) {
-                      
-                      // Get the first node returned by using the Xpath expression. 
-                      const node = getNodesAsyncResult.value[0];
-                      
-                      // Get the text value of the node and use the asyncContext. This results in a call to Word. 
-                      // The results are logged to the browser console.
-                      node.getTextAsync({asyncContext: "StateNormal"}, function (getTextAsyncResult) {
-                        console.log("Text of the title element = " + getTextAsyncResult.value;
-                        console.log("The asyncContext value = " + getTextAsyncResult.asyncContext;
-                      });
-                  });
-              });
-          });
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -461,35 +290,6 @@ methods:
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function showXmlNodeInnerXml() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (let i = 0; i < nodeResults.value.length; i++) {
-                      const node = nodeResults.value[i];
-                      node.getXmlAsync(function (asyncResult) {
-                          write(asyncResult.value);
-                      });
-                  }
-              });
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -553,34 +353,6 @@ methods:
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function setXmlNodeValue() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                  for (let i = 0; i < nodeResults.value.length; i++) {
-                      const node = nodeResults.value[i];
-                      write(node);
-                      node.setNodeValueAsync("item number" + i, function (result) { });
-                  }
-              });
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -611,59 +383,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Learn how to set the text value of a node in a custom XML part from the
-      following example.
-
-
-      // Get the built-in core properties XML part by using its ID. This results
-      in a call to Word.
-
-      Office.context.document.customXmlParts.getByIdAsync(
-          "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}",
-          function (getByIdAsyncResult) {
-          
-          // Access the XML part.
-          const xmlPart = getByIdAsyncResult.value;
-          
-          // Add namespaces to the namespace manager. These two calls result in two calls to Word.
-          xmlPart.namespaceManager.addNamespaceAsync(
-              'cp', 
-              'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', 
-              function () {
-              xmlPart.namespaceManager.addNamespaceAsync(
-                  'dc', 
-                  'http://purl.org/dc/elements/1.1/', 
-                  function () {
-
-                  // Get XML nodes by using an Xpath expression. This results in a call to the host.
-                  xmlPart.getNodesAsync("/cp:coreProperties/dc:subject", function (getNodesAsyncResult) {
-                      
-                      // Get the first node returned by using the Xpath expression.
-                      // This will be the subject element in this example.
-                      const subjectNode = getNodesAsyncResult.value[0];
-                      
-                      // Set the text value of the subject node and use the asyncContext. 
-                      // This results in a call to the host.  The results are logged to the browser console.
-                      subjectNode.setTextAsync(
-                          "newSubject", 
-                          {asyncContext: "StateNormal"}, 
-                          function (setTextAsyncResult) {
-                              console.log("The status of the call: " + setTextAsyncResult.status);
-                              console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
-                      });
-                  });
-              });
-          });
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -731,27 +450,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      function setXmlNodeInnerXml() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
-              xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (let i = 0; i < nodeResults.value.length; i++) {
-                      const node = nodeResults.value[i];
-                      node.setXmlAsync("<childNode>" + i + "</childNode>");
-                  }
-              });
-          });
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false

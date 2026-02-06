@@ -7,9 +7,7 @@ summary: >-
   Configurable template for a manual filter to apply to a PivotField. The
   `condition` defines what criteria need to be set in order for the filter to
   operate.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.12\]'
 
 isPreview: false
 isDeprecated: false
@@ -22,10 +20,7 @@ properties:
     summary: >-
       A list of selected items to manually filter. These must be existing and
       valid items from the chosen field.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false

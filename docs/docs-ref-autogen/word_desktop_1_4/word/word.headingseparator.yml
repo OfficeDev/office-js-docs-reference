@@ -4,9 +4,7 @@ uid: word!Word.HeadingSeparator:enum
 package: word!
 fullName: Word.HeadingSeparator
 summary: Specifies the type of separator to use for headings.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,50 +12,40 @@ fields:
   - name: blankLine
     uid: word!Word.HeadingSeparator.blankLine:member
     package: word!
-    summary: >-
+    summary: |-
       A blank line is used as a separator for headings.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"BlankLine"'
   - name: letter
     uid: word!Word.HeadingSeparator.letter:member
     package: word!
-    summary: >-
+    summary: |-
       A single letter is used as a separator for headings.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Letter"'
   - name: letterFull
     uid: word!Word.HeadingSeparator.letterFull:member
     package: word!
-    summary: >-
+    summary: |-
       A full-width letter is used as a separator for headings.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"LetterFull"'
   - name: letterLow
     uid: word!Word.HeadingSeparator.letterLow:member
     package: word!
-    summary: >-
+    summary: |-
       A lowercase letter is used as a separator for headings.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"LetterLow"'
   - name: none
     uid: word!Word.HeadingSeparator.none:member
     package: word!
-    summary: >-
+    summary: |-
       No separator is used for headings.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'

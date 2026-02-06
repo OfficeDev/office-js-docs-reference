@@ -4,9 +4,7 @@ uid: excel!Excel.RowColumnPivotHierarchy:class
 package: excel!
 fullName: Excel.RowColumnPivotHierarchy
 summary: Represents the Excel RowColumnPivotHierarchy.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: fields
     summary: Returns the PivotFields associated with the RowColumnPivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: excel!
     fullName: id
     summary: ID of the RowColumnPivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +56,7 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the RowColumnPivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -77,9 +69,7 @@ properties:
     package: excel!
     fullName: position
     summary: Position of the RowColumnPivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -226,9 +216,7 @@ methods:
     package: excel!
     fullName: setToDefault()
     summary: Reset the RowColumnPivotHierarchy back to its default values.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

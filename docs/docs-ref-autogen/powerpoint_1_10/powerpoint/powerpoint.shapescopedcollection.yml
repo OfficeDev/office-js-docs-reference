@@ -4,37 +4,7 @@ uid: powerpoint!PowerPoint.ShapeScopedCollection:class
 package: powerpoint!
 fullName: PowerPoint.ShapeScopedCollection
 summary: Represents a collection of shapes.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-
-  // Changes the selected shapes fill color to red.
-
-  await PowerPoint.run(async (context) => {
-    const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-    const shapeCount = shapes.getCount();
-    shapes.load("items/fill/type");
-    await context.sync();
-    shapes.items.map((shape) => {
-      const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
-      console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
-      shape.fill.setSolidColor("red");
-    });
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.5\]'
 
 isPreview: false
 isDeprecated: false
@@ -74,44 +44,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of shapes in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-
-      // Gets the shapes you selected on the slide and displays their IDs on the
-      task pane.
-
-      await PowerPoint.run(async (context) => {
-        let finalTable = "";
-        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-        const shapeCount = shapes.getCount();
-        await context.sync();
-        finalTable += "<br>getSelectedShapes.getCount returned:<b>" + shapeCount.value + "</b><br>";
-        finalTable +=
-          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
-        shapes.load("items");
-        await context.sync();
-        shapes.items.map((shape, index) => {
-          finalTable += "<tr><td>" + index + "</td><td>" + shape.id + "</td></tr>";
-        });
-        finalTable += "</table>";
-        const outputSpan = document.getElementById("outputSpan");
-        outputSpan.innerHTML = "";
-        outputSpan.innerHTML += finalTable;
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -127,10 +60,7 @@ methods:
     summary: >-
       Gets a shape using its unique ID. An error is thrown if the shape doesn't
       exist.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -152,10 +82,7 @@ methods:
     summary: >-
       Gets a shape using its zero-based index in the collection. An error is
       thrown if the index is out of range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -180,10 +107,7 @@ methods:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -206,10 +130,7 @@ methods:
       Groups all shapes in this collection into a single shape. If the
       collection contains fewer than two shapes, then this method returns the
       `GeneralException` error.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

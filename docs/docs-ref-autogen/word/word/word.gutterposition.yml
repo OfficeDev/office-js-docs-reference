@@ -4,9 +4,7 @@ uid: word!Word.GutterPosition:enum
 package: word!
 fullName: Word.GutterPosition
 summary: Specifies where the gutter appears in the document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,30 +12,24 @@ fields:
   - name: left
     uid: word!Word.GutterPosition.left:member
     package: word!
-    summary: >-
+    summary: |-
       The gutter appears on the left side of the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Left"'
   - name: right
     uid: word!Word.GutterPosition.right:member
     package: word!
-    summary: >-
+    summary: |-
       The gutter appears on the right side of the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Right"'
   - name: top
     uid: word!Word.GutterPosition.top:member
     package: word!
-    summary: >-
+    summary: |-
       The gutter appears at the top of the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Top"'

@@ -4,9 +4,7 @@ uid: word!Word.DropPosition:enum
 package: word!
 fullName: Word.DropPosition
 summary: Represents the position of a dropped capital letter.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,30 +12,24 @@ fields:
   - name: margin
     uid: word!Word.DropPosition.margin:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dropped capital letter in the margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Margin"'
   - name: none
     uid: word!Word.DropPosition.none:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that there's no dropped capital letter.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: normal
     uid: word!Word.DropPosition.normal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a normal dropped capital letter.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Normal"'

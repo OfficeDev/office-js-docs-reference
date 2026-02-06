@@ -19,9 +19,7 @@ properties:
     summary: >-
       Represents the length of the arrowhead at the beginning of the specified
       line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +38,7 @@ properties:
     summary: >-
       Represents the style of the arrowhead at the beginning of the specified
       line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +57,7 @@ properties:
     summary: >-
       Represents the width of the arrowhead at the beginning of the specified
       line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +74,7 @@ properties:
     package: excel!
     fullName: connectorType
     summary: Represents the connector type for the line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +89,7 @@ properties:
     package: excel!
     fullName: endArrowheadLength
     summary: Represents the length of the arrowhead at the end of the specified line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,9 +106,7 @@ properties:
     package: excel!
     fullName: endArrowheadStyle
     summary: Represents the style of the arrowhead at the end of the specified line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -135,9 +123,7 @@ properties:
     package: excel!
     fullName: endArrowheadWidth
     summary: Represents the width of the arrowhead at the end of the specified line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

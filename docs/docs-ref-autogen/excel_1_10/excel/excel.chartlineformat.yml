@@ -4,9 +4,7 @@ uid: excel!Excel.ChartLineFormat:class
 package: excel!
 fullName: Excel.ChartLineFormat
 summary: Encapsulates the formatting options for line elements.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +15,7 @@ properties:
     package: excel!
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: excel!
     fullName: lineStyle
     summary: Represents the line style. See `Excel.ChartLineStyle` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     package: excel!
     fullName: weight
     summary: Represents weight of the line, in points.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,27 +76,7 @@ methods:
     package: excel!
     fullName: clear()
     summary: Clears the line format of a chart element.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Clear the format of the major gridlines on Chart1. 
-
-      await Excel.run(async (context) => { 
-          const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-          gridlines.format.line.clear();
-          await context.sync();
-          
-          console.log("Chart Major Gridlines Format Cleared");
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -158,21 +130,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartLineFormat:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Set chart major gridlines on value axis to be red.
-          await Excel.run(async (context) => {
-              const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-              gridlines.format.line.color = "#FF0000";
-              await context.sync()
-              
-              console.log("Chart Gridlines Color Updated");
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartLineFormat#load:member(3)
     package: excel!

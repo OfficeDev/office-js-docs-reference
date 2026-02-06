@@ -19,10 +19,7 @@ properties:
     summary: >-
       Gets the name of the data provider for the linked entity data domain. This
       name can change based on the information provided by the data provider.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -38,10 +35,7 @@ properties:
       Gets the ID of the linked entity data domain defined by Office Add-ins.
       This ID is not applicable to linked entity data domains defined by service
       data providers, such as Bing or Power BI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,10 +52,7 @@ properties:
       opened and the `LinkedEntityCellValue` objects of this linked entity data
       domain were last refreshed. Returns `undefined` if `LinkedEntityCellValue`
       objects have not been refreshed since the workbook was opened.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,10 +72,7 @@ properties:
       ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!--
       -->. This ID is not applicable to linked entity data domains defined by
       service data providers, such as Bing or Power BI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +87,7 @@ properties:
     summary: >-
       Gets the name of the linked entity data domain. This name can change based
       on the information provided by the data provider.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -119,10 +104,7 @@ properties:
       Gets the frequency, in seconds, at which `LinkedEntityCellValue` objects
       of this linked entity data domain are refreshed automatically. The refresh
       interval only applies if the `refreshMode` is set to "Periodic".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -141,10 +123,7 @@ properties:
       entity data domain, then the current refresh mode is not changed. If the
       refresh mode is set to "Periodic", the refresh interval is set to the
       `periodicRefreshInterval` of this linked entity data domain.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -165,10 +144,7 @@ properties:
       permanently reserved value for all linked entity data domains which are
       defined by service data providers, such as Bing or Power BI, or defined by
       Office Add-ins. This ID never changes across user sessions.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -185,10 +161,7 @@ properties:
       Gets all the refresh modes supported by the linked entity data domain.
       This array can change based on the information provided by the data
       provider.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false

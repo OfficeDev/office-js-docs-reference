@@ -7,41 +7,7 @@ summary: >-
   Specifies whether the document text should wrap on both sides of the specified
   shape, on either the left or right side only, or on the side of the shape
   that's farther from the respective page margin.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-  await Word.run(async (context) => {
-    // Sets text wrap properties of the first text box.
-    const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
-      .getByTypes([Word.ShapeType.textBox])
-      .getFirstOrNullObject();
-    firstShapeWithTextBox.load("textWrap");
-    await context.sync();
-
-    if (firstShapeWithTextBox.isNullObject) {
-      console.log("No shapes with text boxes found in main document.");
-      return;
-    }
-
-    const textWrap: Word.ShapeTextWrap = firstShapeWithTextBox.textWrap;
-    textWrap.type = Word.ShapeTextWrapType.square;
-    textWrap.side = Word.ShapeTextWrapSide.both;
-
-    console.log("The first text box's text wrap properties were updated:", textWrap);
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -49,50 +15,40 @@ fields:
   - name: both
     uid: word!Word.ShapeTextWrapSide.both:member
     package: word!
-    summary: >-
+    summary: |-
       Both left and right sides of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Both"'
   - name: largest
     uid: word!Word.ShapeTextWrapSide.largest:member
     package: word!
-    summary: >-
+    summary: |-
       Side of the shape that's farther from the respective page margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Largest"'
   - name: left
     uid: word!Word.ShapeTextWrapSide.left:member
     package: word!
-    summary: >-
+    summary: |-
       Left side of the shape only.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Left"'
   - name: none
     uid: word!Word.ShapeTextWrapSide.none:member
     package: word!
-    summary: >-
+    summary: |-
       Has no wrap side property, such as those for inline shapes.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"None"'
   - name: right
     uid: word!Word.ShapeTextWrapSide.right:member
     package: word!
-    summary: >-
+    summary: |-
       Right side of the shape only.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Right"'

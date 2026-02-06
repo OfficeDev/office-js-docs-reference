@@ -19,9 +19,7 @@ properties:
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     package: excel!
     fullName: rule
     summary: Specifies the `Rule` object on this conditional format.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

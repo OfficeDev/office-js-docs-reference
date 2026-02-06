@@ -7,9 +7,7 @@ summary: >-
   Represents a collection of
   [Word.TableOfAuthoritiesCategory](xref:word!Word.TableOfAuthoritiesCategory:class)
   objects in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -49,9 +47,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +63,7 @@ methods:
     summary: >-
       Returns a `TableOfAuthoritiesCategory` object that represents the
       specified item in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

@@ -6,9 +6,7 @@ fullName: Excel.ShapeGroup
 summary: >-
   Represents a shape group inside a worksheet. To get the corresponding `Shape`
   object, use `ShapeGroup.shape`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     package: excel!
     fullName: id
     summary: Specifies the shape identifier.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: excel!
     fullName: shape
     summary: Returns the `Shape` object associated with the group.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +58,7 @@ properties:
     package: excel!
     fullName: shapes
     summary: Returns the collection of `Shape` objects.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -179,31 +171,7 @@ methods:
     package: excel!
     fullName: ungroup()
     summary: Ungroups any grouped shapes in the specified shape group.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-groups.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Shapes");
-
-          const shapeGroup = sheet.shapes.getItem("Group").group;
-          shapeGroup.ungroup();
-          console.log("Shapes ungrouped");
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

@@ -23,10 +23,7 @@ properties:
       alignment values. See
       [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -45,10 +42,7 @@ properties:
     package: powerpoint!
     fullName: indentLevel
     summary: Represents the indent level of the paragraph.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

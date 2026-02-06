@@ -4,9 +4,7 @@ uid: word!Word.ReadingLayoutMargin:enum
 package: word!
 fullName: Word.ReadingLayoutMargin
 summary: Specifies the margin options in reading layout view in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,26 +17,21 @@ fields:
       margins based on the available space.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Automatic"'
   - name: full
     uid: word!Word.ReadingLayoutMargin.full:member
     package: word!
-    summary: >-
+    summary: |-
       Shows margins.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Full"'
   - name: suppress
     uid: word!Word.ReadingLayoutMargin.suppress:member
     package: word!
-    summary: >-
+    summary: |-
       Hides margins.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Suppress"'

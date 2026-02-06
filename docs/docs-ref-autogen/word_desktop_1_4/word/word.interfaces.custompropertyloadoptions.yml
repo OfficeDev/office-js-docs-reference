@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.CustomPropertyLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomPropertyLoadOptions
 summary: Represents a custom property.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ properties:
     package: word!
     fullName: key
     summary: Gets the key of the custom property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     summary: >-
       Gets the value type of the custom property. Possible values are: String,
       Number, Date, Boolean.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
       long, the desktop version of Word will truncate string values to 255
       16-bit chars (possibly creating invalid unicode by breaking up a surrogate
       pair).
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false

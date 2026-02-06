@@ -6,40 +6,7 @@ fullName: PowerPoint.ShapeLineFormat
 summary: >-
   Represents the line formatting for the shape object. For images and geometric
   shapes, line formatting represents the border of the shape.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-
-  // Changes the dash style of every line in the slide.
-
-  await PowerPoint.run(async (context) => {
-    // Get the type of shape for every shape in the collection.
-    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-    shapes.load("type");
-    await context.sync();
-
-    // Change the dash style for shapes of the type `line`.
-    shapes.items.forEach((shape) => {
-      if (shape.type === PowerPoint.ShapeType.line) {
-        shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
-        shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
-      }
-    });
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -52,10 +19,7 @@ properties:
     summary: >-
       Represents the line color in HTML color format, in the form \#RRGGBB
       (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,40 +51,7 @@ properties:
       visible or there are inconsistent dash styles. See
       [PowerPoint.ShapeLineDashStyle](xref:powerpoint!PowerPoint.ShapeLineDashStyle:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
-
-      // Changes the dash style of every line in the slide.
-
-      await PowerPoint.run(async (context) => {
-        // Get the type of shape for every shape in the collection.
-        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
-        shapes.load("type");
-        await context.sync();
-
-        // Change the dash style for shapes of the type `line`.
-        shapes.items.forEach((shape) => {
-          if (shape.type === PowerPoint.ShapeType.line) {
-            shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
-            shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
-          }
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -145,10 +76,7 @@ properties:
       visible or there are inconsistent styles. See
       [PowerPoint.ShapeLineStyle](xref:powerpoint!PowerPoint.ShapeLineStyle:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -168,10 +96,7 @@ properties:
       Specifies the transparency percentage of the line as a value from 0.0
       (opaque) through 1.0 (clear). Returns null when the shape has inconsistent
       transparencies.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -186,10 +111,7 @@ properties:
     summary: >-
       Specifies if the line formatting of a shape element is visible. Returns
       `null` when the shape has inconsistent visibilities.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -204,10 +126,7 @@ properties:
     summary: >-
       Represents the weight of the line, in points. Returns `null` when the line
       isn't visible or there are inconsistent line weights.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

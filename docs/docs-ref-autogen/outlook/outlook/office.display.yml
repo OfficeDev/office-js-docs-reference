@@ -7,9 +7,7 @@ summary: >-
   Provides properties to temporarily set the content displayed in the body or
   subject of a message in read mode.
 remarks: >-
-  \[ [API set: Mailbox
-  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox preview\]
 
 
   **[Minimum permission
@@ -33,9 +31,7 @@ properties:
       Gets an object to temporarily set the content displayed in the body of a
       message in read mode.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -46,38 +42,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
-
-
-      // This snippet temporarily sets the content displayed in the body of a
-      message in read mode.
-
-      // The set content will remain visible until the user switches to a
-      different message in the Reading Pane or closes the window of the current
-      message.
-
-      const bodyText = (document.getElementById("body-text-field") as
-      HTMLInputElement).value;
-
-      Office.context.mailbox.item.display.body.setAsync(bodyText, (asyncResult)
-      => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Action failed with error: ${asyncResult.error.message}`);
-          return;
-        }
-
-        console.log("Temporarily set the content displayed in the body.");
-      });
-
-      ```
 
     isPreview: true
     isDeprecated: false
@@ -93,9 +57,7 @@ properties:
       Gets an object to temporarily set the content displayed in the subject of
       a message in read mode.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -106,38 +68,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
-
-
-      // This snippet temporarily sets the content displayed in the subject
-      field of a message in read mode.
-
-      // The set content will remain visible until the user switches to a
-      different message in the Reading Pane or closes the window of the current
-      message.
-
-      const subjectText = (document.getElementById("subject-text-field") as
-      HTMLInputElement).value;
-
-      Office.context.mailbox.item.display.subject.setAsync(subjectText,
-      (asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Action failed with error: ${asyncResult.error.message}`);
-          return;
-        }
-
-        console.log("Temporarily set the content displayed in the subject field.");
-      });
-
-      ```
 
     isPreview: true
     isDeprecated: false

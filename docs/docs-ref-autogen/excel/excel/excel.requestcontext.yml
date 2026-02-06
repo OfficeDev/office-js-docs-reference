@@ -8,19 +8,7 @@ summary: >-
   the Office add-in and the Excel application run in two different processes,
   the request context is required to get access to the Excel object model from
   the add-in.
-remarks: |-
-
-
-  #### Examples
-
-  ```TypeScript
-  // *.run methods automatically create an OfficeExtension.ClientRequestContext
-  // object to work with the Office file.
-  await Excel.run(async (context: Excel.RequestContext) => {
-    const workbook = context.workbook;
-    // Interact with the Excel workbook...
-  });
-  ```
+remarks: ''
 
 isPreview: false
 isDeprecated: false
@@ -70,9 +58,7 @@ properties:
     uid: excel!Excel.RequestContext#runtime:member
     package: excel!
     fullName: runtime
-    summary: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '\[Api set: ExcelApi 1.5\]'
     remarks: ''
 
     isPreview: false

@@ -13,29 +13,8 @@ remarks: >-
   -->.
 
 
-  **Requirement set**: [RibbonAPI
+  **Requirement set**: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // This snippet enables a control (a button) in a custom ribbon tab.
-
-  // Note that "MyButton", "OfficeAddinTab1", and "CustomGroup111" are defined
-  in the manifest.
-
-  const enableButton = async () => {
-      const button: Control = { id: "MyButton", enabled: true };
-      const parentGroup: Group = { id: "CustomGroup111", controls: [button] };
-      const parentTab: Tab = { id: "OfficeAddinTab1", groups: [parentGroup] };
-      const ribbonUpdater: RibbonUpdaterData = { tabs: [parentTab] };
-      Office.ribbon.requestUpdate(ribbonUpdater);
-  }
-
-  ```
 
 isPreview: false
 isDeprecated: false

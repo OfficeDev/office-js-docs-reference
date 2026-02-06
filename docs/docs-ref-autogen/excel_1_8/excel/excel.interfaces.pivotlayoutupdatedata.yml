@@ -19,9 +19,7 @@ properties:
     summary: >-
       This property indicates the PivotLayoutType of all fields on the
       PivotTable. If fields have different states, this will be null.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     package: excel!
     fullName: showColumnGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     package: excel!
     fullName: showRowGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for rows.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     summary: >-
       This property indicates the `SubtotalLocationType` of all fields on the
       PivotTable. If fields have different states, this will be `null`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

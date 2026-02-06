@@ -6,9 +6,7 @@ fullName: Word.SelectionConvertToTableOptions
 summary: >-
   Represents the options for the
   [Selection.convertToTable](xref:word!Word.Selection:class) method.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
 isPreview: true
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     summary: >-
       If provided, specifies whether to apply borders to the table of the
       specified format. Default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -38,9 +34,7 @@ properties:
     summary: >-
       If provided, specifies whether to apply color formatting to the table of
       the specified format. Default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -55,9 +49,7 @@ properties:
     summary: >-
       If provided, specifies whether to apply special formatting to the first
       column of the specified format. Default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -72,9 +64,7 @@ properties:
     summary: >-
       If provided, specifies whether to apply font formatting to the table of
       the specified format. Default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -89,9 +79,7 @@ properties:
     summary: >-
       If provided, specifies whether to format the first row as a header row of
       the specified format. Default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -106,9 +94,7 @@ properties:
     summary: >-
       If provided, specifies whether to apply special formatting to the last
       column of the specified format. Default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -123,9 +109,7 @@ properties:
     summary: >-
       If provided, specifies whether to apply special formatting to the last row
       of the specified format. Default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -140,9 +124,7 @@ properties:
     summary: >-
       If provided, specifies whether to apply shading to the table of the
       specified format. Default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -157,9 +139,7 @@ properties:
     summary: >-
       If provided, specifies whether to automatically resize the table to fit
       the contents. Default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -175,9 +155,7 @@ properties:
       If provided, specifies the auto-fit behavior for the table. Used when the
       `defaultTableBehavior` property is `enableAutoFit`<!-- -->. The default
       value is `fixed`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -197,9 +175,7 @@ properties:
       If provided, specifies whether Microsoft Word automatically resizes cells
       in a table to fit the contents. The default value is `disableAutoFit`<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -218,9 +194,7 @@ properties:
     summary: >-
       If provided, specifies a preset format to apply to the table. If omitted,
       Word applies the default table format.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -254,9 +228,7 @@ properties:
       If provided, specifies the initial width of each column in the table, in
       points. If omitted, Word calculates and adjusts the column width so that
       the table stretches from margin to margin.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -271,9 +243,7 @@ properties:
     summary: >-
       If provided, specifies the number of columns in the table. If omitted,
       Word determines the number of columns based on the contents of the range.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -288,9 +258,7 @@ properties:
     summary: >-
       If provided, specifies the number of rows in the table. If omitted, Word
       determines the number of rows based on the contents of the range.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -305,9 +273,7 @@ properties:
     summary: >-
       If provided, specifies the character used to separate text into cells. The
       default value is `-`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false

@@ -39,30 +39,6 @@ remarks: >-
   Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
   -->.
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Get the body of the message based on the user's setting for message
-  organization.
-
-  Office.context.mailbox.item.body.getAsync(
-    Office.CoercionType.Html,
-    { bodyMode: Office.MailboxEnums.BodyMode.HostConfig },
-    (bodyResult) => {
-      if (bodyResult.status === Office.AsyncResultStatus.Failed) {
-        console.log(`Failed to get body: ${bodyResult.error.message}`);
-        return;
-      }
-
-      const body = bodyResult.value;
-    }
-  );
-
-  ```
-
 isPreview: false
 isDeprecated: false
 fields:

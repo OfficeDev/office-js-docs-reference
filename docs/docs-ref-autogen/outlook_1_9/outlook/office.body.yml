@@ -8,8 +8,7 @@ summary: >-
   message or appointment. It is returned in the body property of the selected
   item.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[Api set: Mailbox 1.1\]
 
 
   To learn how to get or set the body of a mail item, see [Get or set the body
@@ -36,49 +35,6 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
-
-
-  // Get the current body of the message or appointment.
-
-  Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html,
-  (bodyResult) => {
-    if (bodyResult.status === Office.AsyncResultStatus.Failed) {
-      console.log(`Failed to get body: ${bodyResult.error.message}`);
-      return;
-    }
-
-    // Add the Base64-encoded image to the end of the body.
-    const options = { isInline: true, asyncContext: bodyResult.value };
-    Office.context.mailbox.item.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
-      if (attachResult.status === Office.AsyncResultStatus.Failed) {
-        console.log(`Failed to attach file: ${attachResult.error.message}`);
-        return;
-      }
-
-      let body = attachResult.asyncContext;
-      body += '<img src="cid:sample.png" />';
-
-      Office.context.mailbox.item.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
-        if (setResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to set body: ${setResult.error.message}`);
-          return;
-        }
-        
-        console.log("Inline Base64-encoded image added to the end of the body.");
-      });
-    });
-  });
-
-  ```
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -101,9 +57,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -162,45 +116,6 @@ methods:
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
       set to `Office.CoercionType.Html` but the message body is in plain text.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/append-text-on-send.yaml
-
-
-      // This snippet appends text to the end of the message or appointment's
-      body once it's sent.
-
-      const text = (document.getElementById("text-field") as
-      HTMLInputElement).value;
-
-
-      // It's recommended to call getTypeAsync and pass its returned value to
-      the options.coercionType parameter of the appendOnSendAsync call.
-
-      Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log("Action failed with error: " + asyncResult.error.message);
-          return;
-        }
-
-        const bodyFormat = asyncResult.value;
-        Office.context.mailbox.item.body.appendOnSendAsync(text, { coercionType: bodyFormat }, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            console.log("Action failed with error: " + asyncResult.error.message);
-            return;
-          }
-
-          console.log(`"${text}" will be appended to the body once the message or appointment is sent. Send the mail item to test this feature.`);
-        });
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -255,9 +170,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.9\]
 
 
       **[Minimum permission
@@ -348,9 +261,7 @@ methods:
       Returns the entire current body in the format specified by
       `coercionType`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -466,9 +377,7 @@ methods:
       Returns the entire current body in the format specified by
       `coercionType`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -530,49 +439,6 @@ methods:
       Office.MailboxEnums.BodyMode.FullBody` is specified in the `getAsync`
       call.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
-
-
-      // Get the current body of the message or appointment.
-
-      Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html,
-      (bodyResult) => {
-        if (bodyResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to get body: ${bodyResult.error.message}`);
-          return;
-        }
-
-        // Add the Base64-encoded image to the end of the body.
-        const options = { isInline: true, asyncContext: bodyResult.value };
-        Office.context.mailbox.item.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
-          if (attachResult.status === Office.AsyncResultStatus.Failed) {
-            console.log(`Failed to attach file: ${attachResult.error.message}`);
-            return;
-          }
-
-          let body = attachResult.asyncContext;
-          body += '<img src="cid:sample.png" />';
-
-          Office.context.mailbox.item.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
-            if (setResult.status === Office.AsyncResultStatus.Failed) {
-              console.log(`Failed to set body: ${setResult.error.message}`);
-              return;
-            }
-            
-            console.log("Inline Base64-encoded image added to the end of the body.");
-          });
-        });
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -601,9 +467,7 @@ methods:
     fullName: getTypeAsync(options, callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -622,30 +486,6 @@ methods:
       see [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-body-format.yaml
-
-
-      // Get the mail item's body format (plain text or HTML) and log it to the
-      console.
-
-      Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log("Action failed with error: " + asyncResult.error.message);
-          return;
-        }
-
-        console.log("Body format: " + asyncResult.value);
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -678,9 +518,7 @@ methods:
     fullName: getTypeAsync(callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -725,9 +563,7 @@ methods:
     fullName: prependAsync(data, options, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -801,48 +637,6 @@ methods:
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than
       1,000,000 characters.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-to-item-body.yaml
-
-
-      /* This snippet adds text to the beginning of the message or appointment's
-      body. 
-
-        When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
-      */
-
-      const text = (document.getElementById("text-field") as
-      HTMLInputElement).value;
-
-
-      // It's recommended to call getTypeAsync and pass its returned value to
-      the options.coercionType parameter of the prependAsync call.
-
-      Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log("Action failed with error: " + asyncResult.error.message);
-          return;
-        }
-
-        const bodyFormat = asyncResult.value;
-        Office.context.mailbox.item.body.prependAsync(text, { coercionType: bodyFormat }, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            console.log("Action failed with error: " + asyncResult.error.message);
-            return;
-          }
-
-          console.log(`"${text}" prepended to the body.`);
-        });
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -884,9 +678,7 @@ methods:
     fullName: prependAsync(data, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -990,9 +782,7 @@ methods:
     fullName: setAsync(data, options, callback)
     summary: Replaces the entire body with the specified text.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -1101,79 +891,6 @@ methods:
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
       set to `Office.CoercionType.Html` and the message body is in plain text.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // When including links in HTML markup, you can disable online link
-      preview
-
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-
-      Office.context.mailbox.item.body.setAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          { 
-              coercionType: Office.CoercionType.Html,
-              asyncContext: "This is passed to the callback"
-          },
-          (result) => {
-              // Process the result.
-          }
-      );
-
-
-      // The following is an example of the result parameter passed to the
-      callback function.
-
-      {
-          "value": null,
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
-
-
-      // Get the current body of the message or appointment.
-
-      Office.context.mailbox.item.body.getAsync(Office.CoercionType.Html,
-      (bodyResult) => {
-        if (bodyResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(`Failed to get body: ${bodyResult.error.message}`);
-          return;
-        }
-
-        // Add the Base64-encoded image to the end of the body.
-        const options = { isInline: true, asyncContext: bodyResult.value };
-        Office.context.mailbox.item.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
-          if (attachResult.status === Office.AsyncResultStatus.Failed) {
-            console.log(`Failed to attach file: ${attachResult.error.message}`);
-            return;
-          }
-
-          let body = attachResult.asyncContext;
-          body += '<img src="cid:sample.png" />';
-
-          Office.context.mailbox.item.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
-            if (setResult.status === Office.AsyncResultStatus.Failed) {
-              console.log(`Failed to set body: ${setResult.error.message}`);
-              return;
-            }
-            
-            console.log("Inline Base64-encoded image added to the end of the body.");
-          });
-        });
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1224,9 +941,7 @@ methods:
     fullName: setAsync(data, callback)
     summary: Replaces the entire body with the specified text.
     remarks: >-
-      \[ [API set: Mailbox
-      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.3\]
 
 
       **[Minimum permission
@@ -1374,9 +1089,7 @@ methods:
       will be inserted at the top of the body content. After insertion, the
       cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -1425,48 +1138,6 @@ methods:
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is
       set to `Office.CoercionType.Html` and the message body is in plain text.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/replace-selected-text.yaml
-
-
-      /* This snippet replaces selected text in a message or appointment's body
-      with specified text.
-
-        If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
-      */
-
-      const text = (document.getElementById("text-field") as
-      HTMLInputElement).value;
-
-
-      // It's recommended to call getTypeAsync and pass its returned value to
-      the options.coercionType parameter of the prependAsync call.
-
-      Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log("Action failed with error: " + asyncResult.error.message);
-          return;
-        }
-
-        const bodyFormat = asyncResult.value;
-        Office.context.mailbox.item.body.setSelectedDataAsync(text, { coercionType: bodyFormat }, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            console.log("Action failed with error: " + asyncResult.error.message);
-            return;
-          }
-
-          console.log(`Replaced selected text with "${text}".`);
-        });
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -1518,9 +1189,7 @@ methods:
       will be inserted at the top of the body content. After insertion, the
       cursor is placed at the end of the inserted content.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission

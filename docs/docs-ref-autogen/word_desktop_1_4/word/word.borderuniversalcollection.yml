@@ -6,9 +6,7 @@ fullName: Word.BorderUniversalCollection
 summary: >-
   Represents the collection of
   [Word.BorderUniversal](xref:word!Word.BorderUniversal:class) objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -51,9 +49,7 @@ methods:
     summary: >-
       Applies the specified page-border formatting to all sections in the
       document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

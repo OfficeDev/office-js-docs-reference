@@ -4,9 +4,7 @@ uid: excel!Excel.SpecialCellValueType:enum
 package: excel!
 fullName: Excel.SpecialCellValueType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,150 +12,120 @@ fields:
   - name: all
     uid: excel!Excel.SpecialCellValueType.all:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors, Boolean, numeric, or string values.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"All"'
   - name: errors
     uid: excel!Excel.SpecialCellValueType.errors:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Errors"'
   - name: errorsLogical
     uid: excel!Excel.SpecialCellValueType.errorsLogical:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors or Boolean values.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"ErrorsLogical"'
   - name: errorsLogicalNumber
     uid: excel!Excel.SpecialCellValueType.errorsLogicalNumber:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors, Boolean, or numeric values.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"ErrorsLogicalNumber"'
   - name: errorsLogicalText
     uid: excel!Excel.SpecialCellValueType.errorsLogicalText:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors, Boolean, or string values.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"ErrorsLogicalText"'
   - name: errorsNumbers
     uid: excel!Excel.SpecialCellValueType.errorsNumbers:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors or numeric values.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"ErrorsNumbers"'
   - name: errorsNumberText
     uid: excel!Excel.SpecialCellValueType.errorsNumberText:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors, numeric, or string values.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"ErrorsNumberText"'
   - name: errorsText
     uid: excel!Excel.SpecialCellValueType.errorsText:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have errors or string values.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"ErrorsText"'
   - name: logical
     uid: excel!Excel.SpecialCellValueType.logical:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have a Boolean value.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Logical"'
   - name: logicalNumbers
     uid: excel!Excel.SpecialCellValueType.logicalNumbers:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have a Boolean or numeric value.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"LogicalNumbers"'
   - name: logicalNumbersText
     uid: excel!Excel.SpecialCellValueType.logicalNumbersText:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have a Boolean, numeric, or string value.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"LogicalNumbersText"'
   - name: logicalText
     uid: excel!Excel.SpecialCellValueType.logicalText:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have a Boolean or string value.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"LogicalText"'
   - name: numbers
     uid: excel!Excel.SpecialCellValueType.numbers:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have a numeric value.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Numbers"'
   - name: numbersText
     uid: excel!Excel.SpecialCellValueType.numbersText:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have a numeric or string value.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"NumbersText"'
   - name: text
     uid: excel!Excel.SpecialCellValueType.text:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that have a string value.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Text"'

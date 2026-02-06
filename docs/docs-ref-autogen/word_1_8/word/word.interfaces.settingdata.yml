@@ -17,9 +17,7 @@ properties:
     package: word!
     fullName: key
     summary: Gets the key of the setting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the value of the setting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

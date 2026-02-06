@@ -4,31 +4,7 @@ uid: excel!Excel.Note:class
 package: excel!
 fullName: Excel.Note
 summary: Represents a note in the workbook or worksheet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-  // This function changes the height and width of the first note.
-
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getItem("Notes");
-    const note = sheet.notes.getItemAt(0);
-    note.height = 200;
-    note.width = 400;
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.18\]'
 
 isPreview: false
 isDeprecated: false
@@ -39,10 +15,7 @@ properties:
     package: excel!
     fullName: authorName
     summary: Gets the author of the note.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,31 +28,7 @@ properties:
     package: excel!
     fullName: content
     summary: Specifies the text of the note.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function changes the content in the first note.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Notes");
-        const note = sheet.notes.getItemAt(0);
-        note.content = "Changing the content of the first note.";
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -109,32 +58,7 @@ properties:
     summary: >-
       Specifies the height of the note. Note: This property is not supported in
       Excel on the web.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function changes the height and width of the first note.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Notes");
-        const note = sheet.notes.getItemAt(0);
-        note.height = 200;
-        note.width = 400;
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -149,34 +73,7 @@ properties:
     summary: >-
       Specifies the visibility of the note. A value of `true` means the note is
       shown. Note: This property is not supported in Excel on the web.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function sets the note on cell A1 to visible.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Notes");
-        const firstNote = sheet.notes.getItem("A1");
-
-        firstNote.load();
-        await context.sync();
-
-        firstNote.visible = true;
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -191,32 +88,7 @@ properties:
     summary: >-
       Specifies the width of the note. Note: This property is not supported in
       Excel on the web.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function changes the height and width of the first note.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Notes");
-        const note = sheet.notes.getItemAt(0);
-        note.height = 200;
-        note.width = 400;
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -230,32 +102,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the note.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function deletes the note from cell A2.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Notes");
-        const note = sheet.notes.getItem("A2");
-        note.delete();
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -269,10 +116,7 @@ methods:
     package: excel!
     fullName: getLocation()
     summary: Gets the cell where this note is located.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false

@@ -17,9 +17,7 @@ properties:
     package: excel!
     fullName: filter
     summary: Retrieves the filter applied to the column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: id
     summary: Returns a unique key that identifies the column within the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     summary: >-
       Returns the index number of the column within the columns collection of
       the table. Zero-indexed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +58,7 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the table column.
-    remarks: >-
-      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +75,7 @@ properties:
       be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

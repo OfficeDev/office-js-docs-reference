@@ -8,42 +8,6 @@ remarks: >-
   Access the File object with the AsyncResult.value property in the callback
   function passed to the Document.getFileAsync method.
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
-
-
-  function getCurrentFile() {
-      const sliceSize = 4096; /*Bytes*/
-
-      // This snippet specifies a small slice size to show how the getFileAsync() method uses slices.
-      Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: sliceSize }, function(result) {
-          if (result.status === Office.AsyncResultStatus.Failed) {
-              return onError(result.error);
-          }
-
-          // result.value is the File object.
-          const file: Office.File = result.value
-          getFileContents(file, onSuccess, onError); /* getFileContents is defined in the Office.File.getSliceAsync example. */
-      });
-
-      function onError(error: Office.Error): void {
-          console.error(error);
-      }
-
-      function onSuccess(byteArray: number[]) {
-          let base64string = base64js.fromByteArray(byteArray);
-          // Do something with the file contents.
-      }
-  }
-
-  ```
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -146,63 +110,6 @@ methods:
       <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/get-file-in-slices-async.yaml
-
-
-      function getFileContents(
-          file: Office.File,
-          onSuccess: (byteArray: number[]) => void,
-          onError: (error: Office.Error) => void
-      ) {
-          let expectedSliceCount = file.sliceCount;
-          let fileSlices: Array<Array<number>> = [];
-
-          console.log("Current file size in bytes: " + file.size);
-          console.log("Number of file slices: " + file.sliceCount);
-
-          getFileContentsHelper();
-
-          /**
-           * A helper function to retrieve all slices of the file recursively.
-           * It fetches one slice at a time and stores it in the `fileSlices` array.
-           * The recursion terminates when all slices have been retrieved.
-           */
-          function getFileContentsHelper() {
-              file.getSliceAsync(fileSlices.length, function(result) {
-                  if (result.status === Office.AsyncResultStatus.Failed) {
-                      file.closeAsync();
-                      return onError(result.error);
-                  }
-
-                  // Got one slice, store it in a temporary array.
-                  fileSlices.push(result.value.data);
-
-                  if (fileSlices.length == expectedSliceCount) {
-                      console.log("All slices have been received.");
-                      file.closeAsync();
-
-                      let array = [];
-                      fileSlices.forEach((slice) => {
-                          array = array.concat(slice);
-                      });
-
-                      onSuccess(array); /* onSuccess is defined in the Office.File example. */
-                  } else {
-                      getFileContentsHelper();
-                  }
-              });
-          }
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false

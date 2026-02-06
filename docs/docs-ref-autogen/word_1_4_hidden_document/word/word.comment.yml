@@ -4,34 +4,7 @@ uid: word!Word.Comment:class
 package: word!
 fullName: Word.Comment
 summary: Represents a comment in the document.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-  // Sets a comment on the selected content.
-
-  await Word.run(async (context) => {
-    const text = (document.getElementById("comment-text") as HTMLInputElement).value;
-    const comment: Word.Comment = context.document.getSelection().insertComment(text);
-
-    // Load object to log in the console.
-    comment.load();
-    await context.sync();
-
-    console.log("Comment inserted:", comment);
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -42,9 +15,7 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -57,9 +28,7 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,44 +41,7 @@ properties:
     package: word!
     fullName: content
     summary: Specifies the comment's content as plain text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Edits the first active comment in the selected content.
-
-      await Word.run(async (context) => {
-        const text = (document.getElementById("edit-comment-text") as HTMLInputElement).value;
-        const comments: Word.CommentCollection = context.document.getSelection().getComments();
-        comments.load("items");
-        await context.sync();
-
-        const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
-        if (!firstActiveComment) {
-          console.warn("No active comment was found in the selection, so couldn't edit.");
-          return;
-        }
-
-        firstActiveComment.content = text;
-
-        // Load object to log in the console.
-        firstActiveComment.load();
-        await context.sync();
-
-        console.log("Comment content changed:", firstActiveComment);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -122,40 +54,7 @@ properties:
     package: word!
     fullName: contentRange
     summary: Specifies the comment's content range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Gets the range of the first comment in the selected content.
-
-      await Word.run(async (context) => {
-        const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
-        comment.load("contentRange");
-        const range: Word.Range = comment.getRange();
-        range.load("text");
-        await context.sync();
-
-        if (comment.isNullObject) {
-          console.warn("No comments in the selection, so no range to get.");
-          return;
-        }
-
-        console.log(`Comment location: ${range.text}`);
-        const contentRange: Word.CommentContentRange = comment.contentRange;
-        console.log("Comment content range:", contentRange);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -183,9 +82,7 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -198,9 +95,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -213,37 +108,7 @@ properties:
     package: word!
     fullName: replies
     summary: Gets the collection of reply objects associated with the comment.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Gets the replies to the first comment in the selected content.
-
-      await Word.run(async (context) => {
-        const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
-        comment.load("replies");
-        await context.sync();
-
-        if (comment.isNullObject) {
-          console.warn("No comments in the selection, so no replies to get.");
-          return;
-        }
-
-        const replies: Word.CommentReplyCollection = comment.replies;
-        console.log("Replies to the first comment:", replies);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -259,48 +124,7 @@ properties:
       Specifies the comment thread's status. Setting to `true` resolves the
       comment thread. Getting a value of `true` means that the comment thread is
       resolved.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Toggles Resolved status of the first comment in the selected content.
-
-      await Word.run(async (context) => {
-        const comment: Word.Comment = context.document
-          .getSelection()
-          .getComments()
-          .getFirstOrNullObject();
-        comment.load("resolved");
-        await context.sync();
-
-        if (comment.isNullObject) {
-          console.warn("No comments in the selection, so nothing to toggle.");
-          return;
-        }
-
-        // Toggle resolved status.
-        // If the comment is active, set as resolved.
-        // If it's resolved, set resolved to false.
-        const resolvedBefore = comment.resolved;
-        console.log(`Comment Resolved status (before): ${resolvedBefore}`);
-        comment.resolved = !resolvedBefore;
-        comment.load("resolved");
-        await context.sync();
-
-        console.log(`Comment Resolved status (after): ${comment.resolved}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -314,36 +138,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the comment and its replies.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Deletes the first comment in the selected content.
-
-      await Word.run(async (context) => {
-        const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
-        comment.delete();
-        await context.sync();
-
-        if (comment.isNullObject) {
-          console.warn("No comments in the selection, so nothing to delete.");
-          return;
-        }
-
-        console.log("Comment deleted.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -357,40 +152,7 @@ methods:
     package: word!
     fullName: getRange()
     summary: Gets the range in the main document where the comment is on.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Gets the range of the first comment in the selected content.
-
-      await Word.run(async (context) => {
-        const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
-        comment.load("contentRange");
-        const range: Word.Range = comment.getRange();
-        range.load("text");
-        await context.sync();
-
-        if (comment.isNullObject) {
-          console.warn("No comments in the selection, so no range to get.");
-          return;
-        }
-
-        console.log(`Comment location: ${range.text}`);
-        const contentRange: Word.CommentContentRange = comment.contentRange;
-        console.log("Comment content range:", contentRange);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -478,38 +240,7 @@ methods:
     package: word!
     fullName: reply(replyText)
     summary: Adds a new reply to the end of the comment thread.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Replies to the first active comment in the selected content.
-
-      await Word.run(async (context) => {
-        const text = (document.getElementById("reply-text") as HTMLInputElement).value;
-        const comments: Word.CommentCollection = context.document.getSelection().getComments();
-        comments.load("items");
-        await context.sync();
-
-        const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
-        if (firstActiveComment) {
-          const reply: Word.CommentReply = firstActiveComment.reply(text);
-          console.log("Reply added.");
-        } else {
-          console.warn("No active comment was found in the selection, so couldn't reply.");
-        }
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

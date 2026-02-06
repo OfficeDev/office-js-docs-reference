@@ -6,9 +6,7 @@ fullName: Excel.FilterPivotHierarchyCollection
 summary: >-
   Represents a collection of FilterPivotHierarchy items associated with the
   PivotTable.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -51,9 +49,7 @@ methods:
       Adds the PivotHierarchy to the current axis. If the hierarchy is present
       elsewhere on the row, column, or filter axis, it will be removed from that
       location.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +67,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of pivot hierarchies in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +81,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a FilterPivotHierarchy by its name or ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +105,7 @@ methods:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -211,9 +201,7 @@ methods:
     package: excel!
     fullName: remove(filterPivotHierarchy)
     summary: Removes the PivotHierarchy from the current axis.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions
 summary: Represents a collection of chart series.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the chart type of a series.
       See `Excel.ChartType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +50,7 @@ properties:
       For EACH ITEM in the collection: Represents the doughnut hole size of a
       chart series. Only valid on doughnut and doughnut exploded charts. Throws
       an `InvalidArgument` error on invalid charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +65,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the series is filtered. Not
       applicable for surface charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +80,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the formatting of a chart
       series, which includes fill and line formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -109,9 +99,7 @@ properties:
       series. Only valid on bar and column charts, as well as specific classes
       of line and pie charts. Throws an invalid argument exception on invalid
       charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +113,7 @@ properties:
     package: excel!
     fullName: hasDataLabels
     summary: 'For EACH ITEM in the collection: Specifies if the series has data labels.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -143,9 +129,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the marker background color of
       a chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -161,9 +145,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the marker foreground color of
       a chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -180,9 +162,7 @@ properties:
       series. The supported size range is 2 to 72. This method returns an
       InvalidArgument error if it's set with a size outside of the supported
       range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -197,9 +177,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the marker style of a chart
       series. See `Excel.ChartMarkerStyle` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -214,9 +192,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the name of a series in a
       chart. The name's length should not be greater than 255 characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -231,9 +207,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the plot order of a chart
       series within the chart group.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -248,9 +222,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a collection of all points in the
       series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -266,9 +238,7 @@ properties:
     package: excel!
     fullName: showShadow
     summary: 'For EACH ITEM in the collection: Specifies if the series has a shadow.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -283,9 +253,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the series is smooth. Only
       applicable to line and scatter charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

@@ -6,9 +6,7 @@ fullName: Excel.NumberFormatInfo
 summary: >-
   Defines the culturally appropriate format of displaying numbers. This is based
   on current system culture settings.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.11\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,58 +34,7 @@ properties:
     summary: >-
       Gets the string used as the decimal separator for numeric values. This is
       based on current system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/culture-info.yaml
-
-
-      // This will convert a number like "14,37" to "14.37"
-
-      // (assuming the system decimal separator is ".").
-        await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Sample");
-
-      const decimalSource = sheet.getRange("B2");
-
-      decimalSource.load("values");
-
-      context.application.cultureInfo.numberFormat.load("numberDecimalSeparator");
-
-      await context.sync();
-
-
-      const systemDecimalSeparator =
-      context.application.cultureInfo.numberFormat.numberDecimalSeparator;
-
-      const oldDecimalString: string = decimalSource.values[0][0];
-
-
-      // This assumes the input column is standardized to use "," as the decimal
-      separator. 
-
-      const newDecimalString = oldDecimalString.replace(",",
-      systemDecimalSeparator);
-
-
-      const resultRange = sheet.getRange("C2");
-
-      resultRange.values = [[newDecimalString]];
-
-      resultRange.format.autofitColumns();
-
-      await context.sync();
-        });
-      ```
+    remarks: '\[Api set: ExcelApi 1.11\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,43 +49,7 @@ properties:
     summary: >-
       Gets the string used to separate groups of digits to the left of the
       decimal for numeric values. This is based on current system settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/culture-info.yaml
-
-
-      await Excel.run(async (context) => {
-        // This will convert a number like "123-456-789" to "123,456,789"
-        // (assuming the system thousands separator is ",").
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const bigNumberSource = sheet.getRange("B3");
-        bigNumberSource.load("values");
-        context.application.cultureInfo.numberFormat.load("numberGroupSeparator");
-        await context.sync();
-
-        const systemThousandsSeparator = context.application.cultureInfo.numberFormat.numberGroupSeparator;
-        const oldBigNumberString: string = bigNumberSource.values[0][0];
-        
-        // This assumes the input column is standardized to use "-" as the number group separator. 
-        const newBigNumberString = oldBigNumberString.replace(/-/g, systemThousandsSeparator);
-
-        const resultRange = sheet.getRange("C3");
-        resultRange.values = [[newBigNumberString]];
-        resultRange.format.autofitColumns();
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.11\]'
 
     isPreview: false
     isDeprecated: false

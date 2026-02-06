@@ -9,26 +9,7 @@ summary: >-
   worksheets using the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!--
   -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Get a Worksheet object by its name and activate it.
-
-  await Excel.run(async (context) => { 
-      const wSheetName = 'Sheet1';
-      const worksheet = context.workbook.worksheets.getItem(wSheetName);
-      worksheet.activate();
-      await context.sync(); 
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -39,9 +20,7 @@ properties:
     package: excel!
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +51,7 @@ properties:
       Returns a value that uniquely identifies the worksheet in a given
       workbook. The value of the identifier remains the same even when the
       worksheet is renamed or moved.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +66,7 @@ properties:
     summary: >-
       The display name of the worksheet. The name must be fewer than 32
       characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -104,26 +79,7 @@ properties:
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Set worksheet position.
-
-      await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
-          worksheet.position = 2;
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,33 +92,7 @@ properties:
     package: excel!
     fullName: protection
     summary: Returns the sheet protection object for a worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Unprotecting a worksheet with unprotect() will remove all 
-
-      // WorksheetProtectionOptions options applied to a worksheet.
-
-      // To remove only a subset of WorksheetProtectionOptions use the 
-
-      // protect() method and set the options you wish to remove to true.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sheet1");
-        sheet.protection.protect({
-          allowInsertRows: false, // Protect row insertion
-          allowDeleteRows: true // Unprotect row deletion
-        });
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -175,9 +105,7 @@ properties:
     package: excel!
     fullName: tables
     summary: Collection of tables that are part of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -190,9 +118,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: The visibility of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.\]'
 
     isPreview: false
     isDeprecated: false
@@ -208,24 +134,7 @@ methods:
     package: excel!
     fullName: activate()
     summary: Activate the worksheet in the Excel UI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
-          worksheet.activate();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -243,24 +152,7 @@ methods:
       visibility is set to "VeryHidden", the delete operation will fail with an
       `InvalidOperation` exception. You should first change its visibility to
       hidden or visible before deleting it.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
-          worksheet.delete();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -277,28 +169,7 @@ methods:
       Gets the `Range` object containing the single cell based on row and column
       numbers. The cell can be outside the bounds of its parent range, so long
       as it stays within the worksheet grid.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const cell = worksheet.getCell(0,0);
-          cell.load('address');
-          await context.sync();
-
-          console.log(cell.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -321,30 +192,7 @@ methods:
     summary: >-
       Gets the `Range` object, representing a single rectangular block of cells,
       specified by the address or name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Use the range address to get the range object.
-
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const range = worksheet.getRange(rangeAddress);
-          range.load('cellCount');
-          await context.sync();
-          
-          console.log(range.cellCount);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -371,27 +219,7 @@ methods:
       a value or formatting assigned to them. If the entire worksheet is blank,
       this function will return the top left cell (i.e. it will *not* throw an
       error).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
-          const usedRange = worksheet.getUsedRange();
-          usedRange.load('address');
-          await context.sync();
-          
-          console.log(usedRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -447,22 +275,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Worksheet:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Get worksheet properties based on sheet name.
-          await Excel.run(async (context) => { 
-              const wSheetName = 'Sheet1';
-              const worksheet = context.workbook.worksheets.getItem(wSheetName);
-              worksheet.load('position')
-              await context.sync();
-              
-              console.log(worksheet.position);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.Worksheet#load:member(3)
     package: excel!
@@ -525,23 +338,7 @@ methods:
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Set the color and name of the current worksheet.
-          await Excel.run(async (context) => {
-            const activeSheet = context.workbook.worksheets.getActiveWorksheet();
-            activeSheet.set({
-              tabColor: "yellow",
-              name: "MySheet"
-            });
-
-            await context.sync();
-          });
-          ```
+        description: ''
   - name: set(properties)
     uid: excel!Excel.Worksheet#set:member(2)
     package: excel!

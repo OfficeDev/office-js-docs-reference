@@ -4,10 +4,7 @@ uid: visio!Visio.Interfaces.CommentCollectionLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.CommentCollectionLoadOptions
 summary: Represents the CommentCollection for a given Shape.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,10 +33,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A string that specifies the name of the
       author of the comment.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,10 +48,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A string that specifies the date when the
       comment was created.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,10 +61,7 @@ properties:
     package: visio!
     fullName: text
     summary: 'For EACH ITEM in the collection: A string that contains the comment text.'
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

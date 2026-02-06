@@ -4,9 +4,7 @@ uid: word!Word.ViewType:enum
 package: word!
 fullName: Word.ViewType
 summary: Specifies the view type in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,80 +12,64 @@ fields:
   - name: conflict
     uid: word!Word.ViewType.conflict:member
     package: word!
-    summary: >-
+    summary: |-
       Conflict.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Conflict"'
   - name: master
     uid: word!Word.ViewType.master:member
     package: word!
-    summary: >-
+    summary: |-
       Master.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Master"'
   - name: normal
     uid: word!Word.ViewType.normal:member
     package: word!
-    summary: >-
+    summary: |-
       Normal.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Normal"'
   - name: outline
     uid: word!Word.ViewType.outline:member
     package: word!
-    summary: >-
+    summary: |-
       Outline.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Outline"'
   - name: print
     uid: word!Word.ViewType.print:member
     package: word!
-    summary: >-
+    summary: |-
       Print.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Print"'
   - name: printPreview
     uid: word!Word.ViewType.printPreview:member
     package: word!
-    summary: >-
+    summary: |-
       Print preview.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"PrintPreview"'
   - name: reading
     uid: word!Word.ViewType.reading:member
     package: word!
-    summary: >-
+    summary: |-
       Reading.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Reading"'
   - name: web
     uid: word!Word.ViewType.web:member
     package: word!
-    summary: >-
+    summary: |-
       Web.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Web"'

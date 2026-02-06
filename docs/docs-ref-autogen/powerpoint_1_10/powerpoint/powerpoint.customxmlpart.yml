@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.CustomXmlPart:class
 package: powerpoint!
 fullName: PowerPoint.CustomXmlPart
 summary: Represents a custom XML part object.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: The ID of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: powerpoint!
     fullName: namespaceUri
     summary: The namespace URI of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +57,7 @@ methods:
     package: powerpoint!
     fullName: delete()
     summary: Deletes the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,10 +71,7 @@ methods:
     package: powerpoint!
     fullName: getXml()
     summary: Gets the XML content of the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -179,10 +164,7 @@ methods:
     package: powerpoint!
     fullName: setXml(xml)
     summary: Sets the XML content for the custom XML part.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

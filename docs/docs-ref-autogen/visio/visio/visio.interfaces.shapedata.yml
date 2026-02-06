@@ -15,10 +15,7 @@ properties:
     package: visio!
     fullName: comments
     summary: Returns the Comments Collection.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -31,10 +28,7 @@ properties:
     package: visio!
     fullName: hyperlinks
     summary: Returns the Hyperlinks collection for a Shape object.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,10 +41,7 @@ properties:
     package: visio!
     fullName: id
     summary: Shape's identifier.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -63,10 +54,7 @@ properties:
     package: visio!
     fullName: name
     summary: Shape's name.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,10 +69,7 @@ properties:
     summary: >-
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,10 +82,7 @@ properties:
     package: visio!
     fullName: shapeDataItems
     summary: Returns the Shape's Data Section.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +95,7 @@ properties:
     package: visio!
     fullName: subShapes
     summary: Gets SubShape Collection.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -129,10 +108,7 @@ properties:
     package: visio!
     fullName: text
     summary: Shape's text.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -145,10 +121,7 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the view of the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

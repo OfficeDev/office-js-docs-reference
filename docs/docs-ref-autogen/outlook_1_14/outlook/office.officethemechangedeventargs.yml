@@ -6,44 +6,7 @@ fullName: Office.OfficeThemeChangedEventArgs
 summary: >-
   Provides the updated Office theme that raised the
   `Office.EventType.OfficeThemeChanged` event.
-remarks: >-
-  \[ [API set: Mailbox
-  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Adds an event handler for the OfficeThemeChanged event.
-
-  Office.onReady(() => {
-      document.addEventListener('DOMContentLoaded', () => {
-          // Get a reference to the mailbox and use it to add an event handler.
-          const mailbox = Office.context.mailbox;
-          mailbox.addHandlerAsync(Office.EventType.OfficeThemeChanged, officeThemeChangedHandler, (result) => {
-              if (result.status === Office.AsyncResultStatus.Failed) {
-                  console.error(`Failed to add event handler: ${asyncResult.error.message}`);
-                  return;
-              }
-
-              console.log("Event handler added successfully.");
-          });
-      });
-  });
-
-
-  // Handles the OfficeThemeChanged event.
-
-  function officeThemeChangedHandler(event) {
-      console.log(`Event: ${event.type}`);
-      const currentTheme = event.officeTheme;
-      // Perform operations based on the current theme.
-  }
-
-  ```
+remarks: '\[Api set: Mailbox 1.14\]'
 
 isPreview: false
 isDeprecated: false
@@ -54,10 +17,7 @@ properties:
     package: outlook!
     fullName: officeTheme
     summary: Gets the updated Office theme.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: '\[Api set: Mailbox 1.14\]'
 
     isPreview: false
     isDeprecated: false
@@ -73,10 +33,7 @@ properties:
       Gets the type of the event. For details, refer to
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: '\[Api set: Mailbox 1.14\]'
 
     isPreview: false
     isDeprecated: false

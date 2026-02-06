@@ -6,9 +6,7 @@ fullName: Word.TableDirection
 summary: >-
   Specifies the direction in which Microsoft Word orders cells in the specified
   table or row.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -16,20 +14,16 @@ fields:
   - name: leftToRight
     uid: word!Word.TableDirection.leftToRight:member
     package: word!
-    summary: >-
+    summary: |-
       The table is arranged with the first column in the leftmost position.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.TableDirection.rightToLeft:member
     package: word!
-    summary: >-
+    summary: |-
       The table is arranged with the first column in the rightmost position.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RightToLeft"'

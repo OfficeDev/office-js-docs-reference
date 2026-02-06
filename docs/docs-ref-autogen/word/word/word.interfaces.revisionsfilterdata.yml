@@ -19,10 +19,7 @@ properties:
     summary: >-
       Specifies a `RevisionsMarkup` value that represents the extent of reviewer
       markup displayed in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,10 +37,7 @@ properties:
       Specifies a `RevisionsView` value that represents globally whether Word
       displays the original version of the document or the final version, which
       might have revisions and formatting changes applied.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

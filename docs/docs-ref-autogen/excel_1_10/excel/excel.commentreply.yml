@@ -4,9 +4,7 @@ uid: excel!Excel.CommentReply:class
 package: excel!
 fullName: Excel.CommentReply
 summary: Represents a comment reply in the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +15,7 @@ properties:
     package: excel!
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +28,7 @@ properties:
     package: excel!
     fullName: authorName
     summary: Gets the name of the comment reply's author.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,35 +41,7 @@ properties:
     package: excel!
     fullName: content
     summary: The comment reply's content. The string is plain text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-replies.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Comments");
-          const comment = sheet.comments.getItemAt(0);
-          const reply = comment.replies.getItemAt(0);
-          reply.load("content");
-          // Sync to load the content of the comment reply.
-          await context.sync();
-
-          // Append "Please!" to the end of the comment reply.
-          reply.content += " Please!";
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,10 +69,7 @@ properties:
     package: excel!
     fullName: creationDate
     summary: Gets the creation time of the comment reply.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,10 +82,7 @@ properties:
     package: excel!
     fullName: id
     summary: Specifies the comment reply identifier.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -138,30 +96,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the comment reply.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-replies.yaml
-
-
-      await Excel.run(async (context) => {
-          // Remove the first comment reply from this worksheet's first comment.
-          const sheet = context.workbook.worksheets.getItem("Comments");
-          const comment = sheet.comments.getItemAt(0);
-          comment.replies.getItemAt(0).delete();
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -175,10 +110,7 @@ methods:
     package: excel!
     fullName: getLocation()
     summary: Gets the cell where this comment reply is located.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -192,10 +124,7 @@ methods:
     package: excel!
     fullName: getParentComment()
     summary: Gets the parent comment of this reply.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

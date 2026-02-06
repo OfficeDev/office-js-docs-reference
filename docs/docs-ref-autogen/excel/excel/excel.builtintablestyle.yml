@@ -4,9 +4,7 @@ uid: excel!Excel.BuiltInTableStyle:enum
 package: excel!
 fullName: Excel.BuiltInTableStyle
 summary: Represents a built-in table style.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
 isPreview: true
 isDeprecated: false
@@ -19,31 +17,23 @@ fields:
       rows, and dark.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark1"'
   - name: dark10
     uid: excel!Excel.BuiltInTableStyle.dark10:member
     package: excel!
-    summary: >-
+    summary: |-
       Yellow with filled header, striped rows, light
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark10"'
   - name: dark11
     uid: excel!Excel.BuiltInTableStyle.dark11:member
     package: excel!
-    summary: >-
+    summary: |-
       Green with filled header, striped rows, light
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark11"'
   - name: dark2
     uid: excel!Excel.BuiltInTableStyle.dark2:member
@@ -53,9 +43,7 @@ fields:
       striped rows, and dark.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark2"'
   - name: dark3
     uid: excel!Excel.BuiltInTableStyle.dark3:member
@@ -65,9 +53,7 @@ fields:
       striped rows, and dark.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark3"'
   - name: dark4
     uid: excel!Excel.BuiltInTableStyle.dark4:member
@@ -77,9 +63,7 @@ fields:
       striped rows, and dark.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark4"'
   - name: dark5
     uid: excel!Excel.BuiltInTableStyle.dark5:member
@@ -89,9 +73,7 @@ fields:
       striped rows, and dark.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark5"'
   - name: dark6
     uid: excel!Excel.BuiltInTableStyle.dark6:member
@@ -101,9 +83,7 @@ fields:
       striped rows, and dark.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark6"'
   - name: dark7
     uid: excel!Excel.BuiltInTableStyle.dark7:member
@@ -113,31 +93,23 @@ fields:
       striped rows, and dark.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark7"'
   - name: dark8
     uid: excel!Excel.BuiltInTableStyle.dark8:member
     package: excel!
-    summary: >-
+    summary: |-
       Black with filled header, striped rows, light
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark8"'
   - name: dark9
     uid: excel!Excel.BuiltInTableStyle.dark9:member
     package: excel!
-    summary: >-
+    summary: |-
       Orange with filled header, striped rows, light
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Dark9"'
   - name: light1
     uid: excel!Excel.BuiltInTableStyle.light1:member
@@ -147,9 +119,7 @@ fields:
       bottom border.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light1"'
   - name: light10
     uid: excel!Excel.BuiltInTableStyle.light10:member
@@ -159,9 +129,7 @@ fields:
       outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light10"'
   - name: light11
     uid: excel!Excel.BuiltInTableStyle.light11:member
@@ -171,9 +139,7 @@ fields:
       outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light11"'
   - name: light12
     uid: excel!Excel.BuiltInTableStyle.light12:member
@@ -183,9 +149,7 @@ fields:
       outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light12"'
   - name: light13
     uid: excel!Excel.BuiltInTableStyle.light13:member
@@ -195,9 +159,7 @@ fields:
       outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light13"'
   - name: light14
     uid: excel!Excel.BuiltInTableStyle.light14:member
@@ -207,64 +169,47 @@ fields:
       outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light14"'
   - name: light15
     uid: excel!Excel.BuiltInTableStyle.light15:member
     package: excel!
-    summary: >-
+    summary: |-
       "Dark 1" (black in the default "Office" theme) with cell borders.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light15"'
   - name: light16
     uid: excel!Excel.BuiltInTableStyle.light16:member
     package: excel!
-    summary: >-
+    summary: |-
       "Accent 1" (blue in the default "Office" theme) with cell borders.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light16"'
   - name: light17
     uid: excel!Excel.BuiltInTableStyle.light17:member
     package: excel!
-    summary: >-
+    summary: |-
       "Accent 2" (orange in the default "Office" theme) with cell borders.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light17"'
   - name: light18
     uid: excel!Excel.BuiltInTableStyle.light18:member
     package: excel!
-    summary: >-
+    summary: |-
       "Accent 3" (gray in the default "Office" theme) with cell borders.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light18"'
   - name: light19
     uid: excel!Excel.BuiltInTableStyle.light19:member
     package: excel!
-    summary: >-
+    summary: |-
       "Accent 4" (yellow in the default "Office" theme) with cell borders.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light19"'
   - name: light2
     uid: excel!Excel.BuiltInTableStyle.light2:member
@@ -274,31 +219,23 @@ fields:
       bottom border.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light2"'
   - name: light20
     uid: excel!Excel.BuiltInTableStyle.light20:member
     package: excel!
-    summary: >-
+    summary: |-
       "Accent 5" (light blue in the default "Office" theme) with cell borders.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light20"'
   - name: light21
     uid: excel!Excel.BuiltInTableStyle.light21:member
     package: excel!
-    summary: >-
+    summary: |-
       "Accent 6" (green in the default "Office" theme) with cell borders.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light21"'
   - name: light3
     uid: excel!Excel.BuiltInTableStyle.light3:member
@@ -308,9 +245,7 @@ fields:
       bottom border.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light3"'
   - name: light4
     uid: excel!Excel.BuiltInTableStyle.light4:member
@@ -320,9 +255,7 @@ fields:
       bottom border.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light4"'
   - name: light5
     uid: excel!Excel.BuiltInTableStyle.light5:member
@@ -332,9 +265,7 @@ fields:
       bottom border.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light5"'
   - name: light6
     uid: excel!Excel.BuiltInTableStyle.light6:member
@@ -344,9 +275,7 @@ fields:
       and bottom border.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light6"'
   - name: light7
     uid: excel!Excel.BuiltInTableStyle.light7:member
@@ -356,9 +285,7 @@ fields:
       bottom border.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light7"'
   - name: light8
     uid: excel!Excel.BuiltInTableStyle.light8:member
@@ -368,9 +295,7 @@ fields:
       border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light8"'
   - name: light9
     uid: excel!Excel.BuiltInTableStyle.light9:member
@@ -380,9 +305,7 @@ fields:
       outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Light9"'
   - name: medium1
     uid: excel!Excel.BuiltInTableStyle.medium1:member
@@ -392,9 +315,7 @@ fields:
       rows, outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium1"'
   - name: medium10
     uid: excel!Excel.BuiltInTableStyle.medium10:member
@@ -404,9 +325,7 @@ fields:
       striped rows.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium10"'
   - name: medium11
     uid: excel!Excel.BuiltInTableStyle.medium11:member
@@ -416,9 +335,7 @@ fields:
       striped rows.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium11"'
   - name: medium12
     uid: excel!Excel.BuiltInTableStyle.medium12:member
@@ -428,9 +345,7 @@ fields:
       striped rows.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium12"'
   - name: medium13
     uid: excel!Excel.BuiltInTableStyle.medium13:member
@@ -440,9 +355,7 @@ fields:
       and striped rows.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium13"'
   - name: medium14
     uid: excel!Excel.BuiltInTableStyle.medium14:member
@@ -452,9 +365,7 @@ fields:
       striped rows.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium14"'
   - name: medium15
     uid: excel!Excel.BuiltInTableStyle.medium15:member
@@ -464,9 +375,7 @@ fields:
       rows, and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium15"'
   - name: medium16
     uid: excel!Excel.BuiltInTableStyle.medium16:member
@@ -476,9 +385,7 @@ fields:
       striped rows, and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium16"'
   - name: medium17
     uid: excel!Excel.BuiltInTableStyle.medium17:member
@@ -488,9 +395,7 @@ fields:
       striped rows, and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium17"'
   - name: medium18
     uid: excel!Excel.BuiltInTableStyle.medium18:member
@@ -500,9 +405,7 @@ fields:
       striped rows, and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium18"'
   - name: medium19
     uid: excel!Excel.BuiltInTableStyle.medium19:member
@@ -512,9 +415,7 @@ fields:
       striped rows, and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium19"'
   - name: medium2
     uid: excel!Excel.BuiltInTableStyle.medium2:member
@@ -524,9 +425,7 @@ fields:
       striped rows, outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium2"'
   - name: medium20
     uid: excel!Excel.BuiltInTableStyle.medium20:member
@@ -536,9 +435,7 @@ fields:
       striped rows, and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium20"'
   - name: medium21
     uid: excel!Excel.BuiltInTableStyle.medium21:member
@@ -548,9 +445,7 @@ fields:
       striped rows, and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium21"'
   - name: medium22
     uid: excel!Excel.BuiltInTableStyle.medium22:member
@@ -560,9 +455,7 @@ fields:
       borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium22"'
   - name: medium23
     uid: excel!Excel.BuiltInTableStyle.medium23:member
@@ -572,9 +465,7 @@ fields:
       cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium23"'
   - name: medium24
     uid: excel!Excel.BuiltInTableStyle.medium24:member
@@ -584,9 +475,7 @@ fields:
       cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium24"'
   - name: medium25
     uid: excel!Excel.BuiltInTableStyle.medium25:member
@@ -596,9 +485,7 @@ fields:
       cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium25"'
   - name: medium26
     uid: excel!Excel.BuiltInTableStyle.medium26:member
@@ -608,9 +495,7 @@ fields:
       cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium26"'
   - name: medium27
     uid: excel!Excel.BuiltInTableStyle.medium27:member
@@ -620,9 +505,7 @@ fields:
       and cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium27"'
   - name: medium28
     uid: excel!Excel.BuiltInTableStyle.medium28:member
@@ -632,9 +515,7 @@ fields:
       cell borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium28"'
   - name: medium3
     uid: excel!Excel.BuiltInTableStyle.medium3:member
@@ -644,9 +525,7 @@ fields:
       striped rows, outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium3"'
   - name: medium4
     uid: excel!Excel.BuiltInTableStyle.medium4:member
@@ -656,9 +535,7 @@ fields:
       striped rows, outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium4"'
   - name: medium5
     uid: excel!Excel.BuiltInTableStyle.medium5:member
@@ -668,9 +545,7 @@ fields:
       striped rows, outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium5"'
   - name: medium6
     uid: excel!Excel.BuiltInTableStyle.medium6:member
@@ -680,9 +555,7 @@ fields:
       striped rows, outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium6"'
   - name: medium7
     uid: excel!Excel.BuiltInTableStyle.medium7:member
@@ -692,9 +565,7 @@ fields:
       striped rows, outside border, and row borders.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium7"'
   - name: medium8
     uid: excel!Excel.BuiltInTableStyle.medium8:member
@@ -704,9 +575,7 @@ fields:
       striped rows.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium8"'
   - name: medium9
     uid: excel!Excel.BuiltInTableStyle.medium9:member
@@ -716,7 +585,5 @@ fields:
       striped rows.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Medium9"'

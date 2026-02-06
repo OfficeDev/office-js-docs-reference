@@ -4,9 +4,7 @@ uid: excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
 summary: Represents a collection of worksheet objects that are part of the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a collection of charts that are
       part of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
       For EACH ITEM in the collection: Returns a value that uniquely identifies
       the worksheet in a given workbook. The value of the identifier remains the
       same even when the worksheet is renamed or moved.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The display name of the worksheet. The
       name must be fewer than 32 characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +81,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The zero-based position of the worksheet
       within the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +96,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the sheet protection object for a
       worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -126,9 +114,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if gridlines are visible to the
       user.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -143,9 +129,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if headings are visible to the
       user.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -161,9 +145,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the standard (default) height of
       all the rows in the worksheet, in points.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -180,9 +162,7 @@ properties:
       all the columns in the worksheet. One unit of column width is equal to the
       width of one character in the Normal style. For proportional fonts, the
       width of the character 0 (zero) is used.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -202,9 +182,7 @@ properties:
       set to a color, in the form \#RRGGBB (e.g., "FFA500"). When setting the
       color, use an empty-string to set an "auto" color, or a real color
       otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -219,9 +197,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Collection of tables that are part of the
       worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -236,9 +212,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: 'For EACH ITEM in the collection: The visibility of the worksheet.'
-    remarks: >-
-      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.\]'
 
     isPreview: false
     isDeprecated: false

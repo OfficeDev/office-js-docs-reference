@@ -4,9 +4,7 @@ uid: onenote!OneNote.Interfaces.PointCollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.PointCollectionLoadOptions
 summary: Represents a collection of Point objects.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,10 +33,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the ID of the Point object.
       Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

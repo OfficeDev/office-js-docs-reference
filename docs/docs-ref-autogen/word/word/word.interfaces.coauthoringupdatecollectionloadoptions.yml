@@ -6,9 +6,7 @@ fullName: Word.Interfaces.CoauthoringUpdateCollectionLoadOptions
 summary: >-
   Contains a collection of
   [Word.CoauthoringUpdate](xref:word!Word.CoauthoringUpdate:class) objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
       For EACH ITEM in the collection: Gets a `Range` object that represents the
       portion of the document that's contained in the `CoauthoringUpdate`
       object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

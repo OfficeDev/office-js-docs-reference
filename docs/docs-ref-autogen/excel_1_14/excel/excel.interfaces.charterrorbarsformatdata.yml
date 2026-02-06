@@ -17,9 +17,7 @@ properties:
     package: excel!
     fullName: line
     summary: Represents the chart line formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

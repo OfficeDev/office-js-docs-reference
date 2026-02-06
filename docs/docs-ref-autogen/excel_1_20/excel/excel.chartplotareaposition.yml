@@ -4,9 +4,7 @@ uid: excel!Excel.ChartPlotAreaPosition:enum
 package: excel!
 fullName: Excel.ChartPlotAreaPosition
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,14 +12,10 @@ fields:
   - name: automatic
     uid: excel!Excel.ChartPlotAreaPosition.automatic:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.8\]'
     value: '"Automatic"'
   - name: custom
     uid: excel!Excel.ChartPlotAreaPosition.custom:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.8\]'
     value: '"Custom"'

@@ -7,9 +7,7 @@ summary: >-
   Represents the list of available sources attached to the document (in the
   current list) or the list of sources available in the application (in the
   master list).
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -20,9 +18,7 @@ properties:
     package: word!
     fullName: bibliographyStyle
     summary: Specifies the name of the active style to use for the bibliography.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +48,7 @@ properties:
     summary: >-
       Returns a `SourceCollection` object that represents all the sources
       contained in the bibliography.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ methods:
     summary: >-
       Generates a unique identification tag for a bibliography source and
       returns a string that represents the tag.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

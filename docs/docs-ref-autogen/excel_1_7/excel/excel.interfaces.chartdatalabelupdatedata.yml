@@ -19,9 +19,7 @@ properties:
     summary: >-
       Value that represents the position of the data label. See
       `Excel.ChartDataLabelPosition` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +38,7 @@ properties:
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data label on a chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +77,7 @@ properties:
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -100,9 +90,7 @@ properties:
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -115,9 +103,7 @@ properties:
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +116,7 @@ properties:
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

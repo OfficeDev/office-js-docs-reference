@@ -8,20 +8,6 @@ remarks: >-
   **Important**: In Outlook, this enum is available starting with Mailbox
   requirement set 1.5.
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  const contextInfo = Office.context.diagnostics;
-
-  const platformType: Office.PlatformType = contextInfo.platform;
-
-  console.log("Platform: " + platformType);
-
-  ```
-
 isPreview: false
 isDeprecated: false
 fields:

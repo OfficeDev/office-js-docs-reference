@@ -4,9 +4,7 @@ uid: onenote!OneNote.InkWordCollection:class
 package: onenote!
 fullName: OneNote.InkWordCollection
 summary: Represents a collection of InkWord objects.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of InkWords in the page.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,10 +57,7 @@ methods:
     package: onenote!
     fullName: getItem(index)
     summary: Gets a InkWord object by ID or by its index in the collection. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,10 +77,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a InkWord on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

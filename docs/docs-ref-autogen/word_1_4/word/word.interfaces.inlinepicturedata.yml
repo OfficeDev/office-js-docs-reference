@@ -19,9 +19,7 @@ properties:
     summary: >-
       Specifies a string that represents the alternative text associated with
       the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     package: word!
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: word!
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +60,7 @@ properties:
     summary: >-
       Specifies a hyperlink on the image. Use a '\#' to separate the address
       part from the optional location part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +75,7 @@ properties:
     summary: >-
       Specifies a value that indicates whether the inline image retains its
       original proportions when you resize it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +88,7 @@ properties:
     package: word!
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

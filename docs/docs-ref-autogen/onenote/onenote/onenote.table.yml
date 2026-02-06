@@ -4,9 +4,7 @@ uid: onenote!OneNote.Table:class
 package: onenote!
 fullName: OneNote.Table
 summary: Represents a table in a OneNote page.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,10 +17,7 @@ properties:
     summary: >-
       Gets or sets whether the borders are visible or not. True if they are
       visible, false if they are hidden.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -35,10 +30,7 @@ properties:
     package: onenote!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +58,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,10 +71,7 @@ properties:
     package: onenote!
     fullName: paragraph
     summary: Gets the Paragraph object that contains the Table object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,10 +84,7 @@ properties:
     package: onenote!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -114,10 +97,7 @@ properties:
     package: onenote!
     fullName: rows
     summary: Gets all of the table rows.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -133,40 +113,7 @@ methods:
     summary: >-
       Adds a column to the end of the table. Values, if specified, are set in
       the new column. Otherwise the column is empty.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          context.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          const paragraphs = outline.paragraphs;
-          
-          // For each table, append a column.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
-              if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  table.appendColumn(["cell0", "cell1"]);
-              }
-          }
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -188,41 +135,7 @@ methods:
     summary: >-
       Adds a row to the end of the table. Values, if specified, are set in the
       new row. Otherwise the row is empty.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          context.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          const paragraphs = outline.paragraphs;
-          
-          // For each table, append a column.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
-              if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  const row = table.appendRow(["cell0", "cell1"]);
-              }
-          }
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -242,10 +155,7 @@ methods:
     package: onenote!
     fullName: clear()
     summary: Clears the contents of the table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -259,41 +169,7 @@ methods:
     package: onenote!
     fullName: getCell(rowIndex, cellIndex)
     summary: Gets the table cell at a specified row and column.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          context.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          const paragraphs = outline.paragraphs;
-          
-          // For each table, get a cell in the second row and third column.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
-              if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  const cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
-              }
-          }
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -316,41 +192,7 @@ methods:
     summary: >-
       Inserts a column at the given index in the table. Values, if specified,
       are set in the new column. Otherwise the column is empty.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          context.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          const paragraphs = outline.paragraphs;
-          
-          // For each table, insert a column at index two.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
-              if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  table.insertColumn(2, ["cell0", "cell1"]);
-              }
-          }
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -375,41 +217,7 @@ methods:
     summary: >-
       Inserts a row at the given index in the table. Values, if specified, are
       set in the new row. Otherwise the row is empty.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          context.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync()
-
-          const paragraphs = outline.paragraphs;
-          
-          // For each table, insert a row at index two.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
-              if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  const row = table.insertRow(2, ["cell0", "cell1"]);
-              }
-          }
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -468,40 +276,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.Table:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-              const app = context.application;
-              const outline = app.getActiveOutline();
-              
-              // Queue a command to load outline.paragraphs and their types.
-              context.load(outline, "paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-
-              const paragraphs = outline.paragraphs;
-              
-              // For each table, log properties.
-              for (let i = 0; i < paragraphs.items.length; i++) {
-                  const paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      const table = paragraph.table;
-                      context.load(table);
-                      await context.sync();
-
-                      console.log("Table Id: " + table.id);
-                      console.log("Row Count: " + table.rowCount);
-                      console.log("Column Count: " + table.columnCount);
-                      await context.sync();
-                  }
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.Table#load:member(3)
     package: onenote!
@@ -592,10 +367,7 @@ methods:
     summary: >-
       Sets the shading color of all cells in the table. The color code to set
       the cells to.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

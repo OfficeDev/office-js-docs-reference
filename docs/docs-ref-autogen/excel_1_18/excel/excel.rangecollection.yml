@@ -4,9 +4,7 @@ uid: excel!Excel.RangeCollection:class
 package: excel!
 fullName: Excel.RangeCollection
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,9 +44,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of ranges in the `RangeCollection`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +60,7 @@ methods:
     summary: >-
       Returns the range object based on its position in the
       `RangeCollection`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

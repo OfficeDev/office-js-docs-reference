@@ -8,9 +8,7 @@ summary: >-
   model, see [Work with charts using the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!--
   -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     package: excel!
     fullName: axes
     summary: Represents chart axes.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -38,9 +34,7 @@ properties:
     summary: >-
       Specifies a chart category label level enumeration constant, referring to
       the level of the source category labels.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +47,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: Specifies the type of the chart. See `Excel.ChartType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -131,9 +123,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: Represents the data labels on the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -146,9 +136,7 @@ properties:
     package: excel!
     fullName: displayBlanksAs
     summary: Specifies the way that blank cells are plotted on a chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -165,9 +153,7 @@ properties:
     package: excel!
     fullName: format
     summary: Encapsulates the format properties for the chart area.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -180,9 +166,7 @@ properties:
     package: excel!
     fullName: height
     summary: Specifies the height, in points, of the chart object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -195,9 +179,7 @@ properties:
     package: excel!
     fullName: id
     summary: The unique ID of chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -212,9 +194,7 @@ properties:
     summary: >-
       The distance, in points, from the left side of the chart to the worksheet
       origin.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -227,29 +207,7 @@ properties:
     package: excel!
     fullName: legend
     summary: Represents the legend for the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Set to show legend of Chart1 and make it on top of the chart.
-
-      await Excel.run(async (context) => { 
-          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          chart.legend.visible = true;
-          chart.legend.position = "Top"; 
-          chart.legend.overlay = false; 
-          await context.sync()
-          
-          console.log("Legend Shown ");
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -262,32 +220,7 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of a chart object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Rename the chart to new name, resize the chart to 200 points in both
-      height and weight.
-
-      // Move Chart1 to 100 points to the top and left.
-
-      await Excel.run(async (context) => { 
-          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          chart.name = "New Name";
-          chart.top = 100;
-          chart.left = 100;
-          chart.height = 200;
-          chart.width = 200;
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -300,9 +233,7 @@ properties:
     package: excel!
     fullName: pivotOptions
     summary: Encapsulates the options for a pivot chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -315,9 +246,7 @@ properties:
     package: excel!
     fullName: plotArea
     summary: Represents the plot area for the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -330,9 +259,7 @@ properties:
     package: excel!
     fullName: plotBy
     summary: Specifies the way columns or rows are used as data series on the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -347,9 +274,7 @@ properties:
     summary: >-
       True if only visible cells are plotted. False if both visible and hidden
       cells are plotted.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -362,9 +287,7 @@ properties:
     package: excel!
     fullName: series
     summary: Represents either a single series or collection of series in the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -379,9 +302,7 @@ properties:
     summary: >-
       Specifies a chart series name level enumeration constant, referring to the
       level of the source series names.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -394,9 +315,7 @@ properties:
     package: excel!
     fullName: showAllFieldButtons
     summary: Specifies whether to display all field buttons on a PivotChart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -413,9 +332,7 @@ properties:
       the maximum value on the value axis. If the value axis becomes smaller
       than the size of the data points, you can use this property to set whether
       to show the data labels. This property applies to 2-D charts only.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -428,9 +345,7 @@ properties:
     package: excel!
     fullName: style
     summary: Specifies the chart style for the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -445,9 +360,7 @@ properties:
     summary: >-
       Represents the title of the specified chart, including the text,
       visibility, position, and formatting of the title.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -462,9 +375,7 @@ properties:
     summary: >-
       Specifies the distance, in points, from the top edge of the object to the
       top of row 1 (on a worksheet) or the top of the chart area (on a chart).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -477,9 +388,7 @@ properties:
     package: excel!
     fullName: width
     summary: Specifies the width, in points, of the chart object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -492,9 +401,7 @@ properties:
     package: excel!
     fullName: worksheet
     summary: The worksheet containing the current chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -508,9 +415,7 @@ methods:
     package: excel!
     fullName: activate()
     summary: Activates the chart in the Excel UI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -524,23 +429,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the chart object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          chart.delete();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -556,10 +445,7 @@ methods:
     summary: >-
       Gets the data table on the chart. If the chart doesn't allow a data table,
       it will throw an exception.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.14\]'
 
     isPreview: false
     isDeprecated: false
@@ -578,36 +464,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
-
-
-      // This function adds a data table to a chart that already exists on the
-      worksheet. 
-
-      await Excel.run(async (context) => {
-        // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
-        const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
-
-        // Get the data table object for the chart and set it to visible.
-        const chartDataTable = chart.getDataTableOrNullObject();
-        chartDataTable.load("visible");
-        chartDataTable.visible = true;
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.14\]'
 
     isPreview: false
     isDeprecated: false
@@ -624,23 +481,7 @@ methods:
       Renders the chart as a Base64-encoded image by scaling the chart to fit
       the specified dimensions. The aspect ratio is preserved as part of the
       resizing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          const image = chart.getImage();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -671,9 +512,7 @@ methods:
       Renders the chart as a Base64-encoded image by scaling the chart to fit
       the specified dimensions. The aspect ratio is preserved as part of the
       resizing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -737,21 +576,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Chart:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Get a chart named "Chart1".
-          await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.load('name');
-              await context.sync();
-
-              console.log(chart.name);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.Chart#load:member(3)
     package: excel!
@@ -840,28 +665,7 @@ methods:
     package: excel!
     fullName: setData(sourceData, seriesBy)
     summary: Resets the source data for the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Set the sourceData to be the range at "A1:B4" and seriesBy to be
-      "Columns".
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sheet1");
-          const chart = sheet.charts.getItem("Chart1");
-          const sourceData = sheet.getRange("A1:B4");
-          chart.setData(sourceData, "Columns");
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -885,9 +689,7 @@ methods:
     package: excel!
     fullName: setData(sourceData, seriesBy)
     summary: Resets the source data for the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -913,29 +715,7 @@ methods:
     package: excel!
     fullName: setPosition(startCell, endCell)
     summary: Positions the chart relative to cells on the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const sheetName = "Charts";
-          const rangeSelection = "A1:B4";
-          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
-          const sourceData = sheetName + "!" + "A1:B4";
-          const chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
-          chart.width = 500;
-          chart.height = 300;
-          chart.setPosition("C2", null);
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -983,53 +763,7 @@ events:
     package: excel!
     fullName: onActivated
     summary: Occurs when the chart is activated.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
-
-
-      await Excel.run(async (context) => {
-
-          const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-
-          // Register the onActivated and onDeactivated event handlers.
-          pieChart.onActivated.add(chartActivated);
-          pieChart.onDeactivated.add(chartDeactivated);
-
-          await context.sync();
-
-          console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });
-
-
-      ...
-
-
-      async function chartActivated(event) {
-          await Excel.run(async (context) => {
-              // Retrieve the worksheet.
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // Retrieve the activated chart by ID and load the name of the chart. 
-              const activatedChart = sheet.charts.getItem(event.chartId);
-              activatedChart.load(["name"]);
-              await context.sync();
-
-              // Print out the activated chart's data.
-              console.log(`A chart was activated. ID: ${event.chartId}. Chart name: ${activatedChart.name}.`);
-          });
-      }
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -1046,45 +780,7 @@ events:
     package: excel!
     fullName: onDeactivated
     summary: Occurs when the chart is deactivated.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
-
-
-      await Excel.run(async (context) => {
-
-          const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-
-          // Register the onActivated and onDeactivated event handlers.
-          pieChart.onActivated.add(chartActivated);
-          pieChart.onDeactivated.add(chartDeactivated);
-
-          await context.sync();
-
-          console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });
-
-
-      ...
-
-
-      async function chartDeactivated(event) {
-          await Excel.run(async (context) => {
-              // Callback function for when the chart is deactivated.
-              console.log("The pie chart is NOT active.");
-          });
-      }
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

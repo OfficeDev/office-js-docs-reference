@@ -6,9 +6,7 @@ fullName: OneNote.Interfaces.ApplicationLoadOptions
 summary: >-
   Represents the top-level object that contains all globally addressable OneNote
   objects such as notebooks, the active notebook, and the active section.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,10 +36,7 @@ properties:
       Gets the collection of notebooks that are open in the OneNote application
       instance. In OneNote Online, only one notebook at a time is open in the
       application instance.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

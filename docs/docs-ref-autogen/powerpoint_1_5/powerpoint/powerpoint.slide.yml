@@ -4,31 +4,7 @@ uid: powerpoint!PowerPoint.Slide:class
 package: powerpoint!
 fullName: PowerPoint.Slide
 summary: Represents a single slide of a presentation.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-
-  // Reselects shapes that were saved previously.
-
-  await PowerPoint.run(async (context) => {
-    const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedSlideSelection[0]);
-    await context.sync();
-    slide1.setSelectedShapes(savedShapeSelection);
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -54,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,10 +43,7 @@ properties:
     package: powerpoint!
     fullName: layout
     summary: Gets the layout of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -86,10 +56,7 @@ properties:
     package: powerpoint!
     fullName: shapes
     summary: Returns a collection of shapes in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,10 +69,7 @@ properties:
     package: powerpoint!
     fullName: slideMaster
     summary: Gets the `SlideMaster` object that represents the slide's default content.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -118,10 +82,7 @@ properties:
     package: powerpoint!
     fullName: tags
     summary: Returns a collection of tags in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -137,36 +98,7 @@ methods:
     summary: >-
       Deletes the slide from the presentation. Does nothing if the slide doesn't
       exist.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
-
-
-      // Deletes the selected slides.
-
-      await PowerPoint.run(async (context) => {
-        context.presentation.load("slides");
-        await context.sync();
-        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
-        const slideCount = slides.getCount();
-        slides.load("items");
-        await context.sync();
-        slides.items.map((slide) => {
-          slide.delete();
-        });
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -260,56 +192,7 @@ methods:
     summary: >-
       Selects the specified shapes. Existing shape selection is replaced with
       the new selection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-
-      // Reselects shapes that were saved previously.
-
-      await PowerPoint.run(async (context) => {
-        const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedSlideSelection[0]);
-        await context.sync();
-        slide1.setSelectedShapes(savedShapeSelection);
-        await context.sync();
-      });
-
-
-      ...
-
-
-      // Selects the first two shapes on slide 1.
-
-      await PowerPoint.run(async (context) => {
-        context.presentation.load("slides");
-        await context.sync();
-        const slide1 = context.presentation.slides.getItemAt(0);
-        slide1.load("shapes/items/type");
-        await context.sync();
-
-        const shapes = slide1.shapes.items.filter((item) => item.type === PowerPoint.ShapeType.geometricShape);
-        const shape1: PowerPoint.Shape = shapes[0];
-        const shape2: PowerPoint.Shape = shapes[1];
-        shape1.load("id");
-        shape2.load("id");
-        await context.sync();
-
-        console.log(`IDs: ${shape1.id}, ${shape2.id}`);
-        slide1.setSelectedShapes([shape1.id, shape2.id]);
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

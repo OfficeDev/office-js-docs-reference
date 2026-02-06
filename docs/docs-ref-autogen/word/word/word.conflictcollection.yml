@@ -4,9 +4,7 @@ uid: word!Word.ConflictCollection:class
 package: word!
 fullName: Word.ConflictCollection
 summary: Represents the coauthoring conflicts in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -48,9 +46,7 @@ methods:
     summary: >-
       Accepts all of the user's changes, removes the conflicts, and merges the
       changes into the server copy of the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +60,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `Conflict` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -160,9 +154,7 @@ methods:
     summary: >-
       Rejects all of the user's changes and retains the server copy of the
       document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

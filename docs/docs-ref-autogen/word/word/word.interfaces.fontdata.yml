@@ -28,9 +28,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text has the
       **All Caps** attribute.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -45,9 +43,7 @@ properties:
     summary: >-
       Specifies whether the font is bold. `true` if the font is formatted as
       bold, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +67,7 @@ properties:
 
 
       - `null`<!-- -->: Returned if some, but not all, of the text is bold.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +82,7 @@ properties:
     summary: >-
       Returns a `BorderUniversalCollection` object that represents all the
       borders for the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,9 +97,7 @@ properties:
     summary: >-
       Specifies the color for the font. You can provide the value in the
       '\#RRGGBB' format or the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,9 +110,7 @@ properties:
     package: word!
     fullName: colorIndex
     summary: Specifies a `ColorIndex` value that represents the color for the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -145,9 +133,7 @@ properties:
     summary: >-
       Specifies the color for the `Font` object in a right-to-left language
       document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -168,9 +154,7 @@ properties:
     package: word!
     fullName: contextualAlternates
     summary: Specifies whether contextual alternates are enabled for the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -185,9 +169,7 @@ properties:
     summary: >-
       Specifies the color to be used for diacritics for the `Font` object. You
       can provide the value in the '\#RRGGBB' format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -202,9 +184,7 @@ properties:
     summary: >-
       Specifies whether Microsoft Word ignores the number of characters per line
       for the corresponding `Font` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -219,9 +199,7 @@ properties:
     summary: >-
       Specifies whether the font has a double strikethrough. `true` if the font
       is formatted as double strikethrough text, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -245,9 +223,7 @@ properties:
 
 
       - `null`<!-- -->: Returned if some, but not all, of the text is embossed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -262,9 +238,7 @@ properties:
     summary: >-
       Specifies an `EmphasisMark` value that represents the emphasis mark for a
       character or designated character string.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -293,9 +267,7 @@ properties:
 
 
       - `null`<!-- -->: Returned if some, but not all, of the text is engraved.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -310,9 +282,7 @@ properties:
     summary: >-
       Returns a `FillFormat` object that contains fill formatting properties for
       the font used by the range of text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -327,9 +297,7 @@ properties:
     summary: >-
       Returns a `GlowFormat` object that represents the glow formatting for the
       font used by the range of text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -344,9 +312,7 @@ properties:
     summary: >-
       Specifies whether the font is tagged as hidden. `true` if the font is
       formatted as hidden text, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -369,9 +335,7 @@ properties:
       "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
       for Windows Desktop, any other color is converted to the closest color
       when applied to the font.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -386,9 +350,7 @@ properties:
     summary: >-
       Specifies whether the font is italicized. `true` if the font is
       italicized, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -413,9 +375,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is
       italicized.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -430,9 +390,7 @@ properties:
     summary: >-
       Specifies the minimum font size for which Microsoft Word will adjust
       kerning automatically.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -445,9 +403,7 @@ properties:
     package: word!
     fullName: ligature
     summary: Specifies the ligature setting for the `Font` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -475,9 +431,7 @@ properties:
     package: word!
     fullName: line
     summary: Returns a `LineFormat` object that specifies the formatting for a line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -490,9 +444,7 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of the font.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -507,9 +459,7 @@ properties:
     summary: >-
       Specifies the font used for Latin text (characters with character codes
       from 0 (zero) through 127).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -522,9 +472,7 @@ properties:
     package: word!
     fullName: nameBidirectional
     summary: Specifies the font name in a right-to-left language document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -537,9 +485,7 @@ properties:
     package: word!
     fullName: nameFarEast
     summary: Specifies the East Asian font name.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -552,9 +498,7 @@ properties:
     package: word!
     fullName: nameOther
     summary: Specifies the font used for characters with codes from 128 through 255.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -567,9 +511,7 @@ properties:
     package: word!
     fullName: numberForm
     summary: Specifies the number form setting for an OpenType font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -584,9 +526,7 @@ properties:
     package: word!
     fullName: numberSpacing
     summary: Specifies the number spacing setting for the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -614,9 +554,7 @@ properties:
 
 
       - `null`<!-- -->: Returned if some, but not all, of the text is outlined.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -629,9 +567,7 @@ properties:
     package: word!
     fullName: position
     summary: Specifies the position of text (in points) relative to the base line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -646,9 +582,7 @@ properties:
     summary: >-
       Returns a `ReflectionFormat` object that represents the reflection
       formatting for a shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -661,9 +595,7 @@ properties:
     package: word!
     fullName: scaling
     summary: Specifies the scaling percentage applied to the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -687,9 +619,7 @@ properties:
 
 
       - `null`<!-- -->: Returned if some, but not all, of the text is shadowed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -702,9 +632,7 @@ properties:
     package: word!
     fullName: size
     summary: Specifies the font size in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -717,9 +645,7 @@ properties:
     package: word!
     fullName: sizeBidirectional
     summary: Specifies the font size in points for right-to-left text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -745,9 +671,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text has the
       **Small Caps** attribute.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -760,9 +684,7 @@ properties:
     package: word!
     fullName: spacing
     summary: Specifies the spacing between characters.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -777,9 +699,7 @@ properties:
     summary: >-
       Specifies whether the font has a strikethrough. `true` if the font is
       formatted as strikethrough text, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -792,9 +712,7 @@ properties:
     package: word!
     fullName: stylisticSet
     summary: Specifies the stylistic set for the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -817,9 +735,7 @@ properties:
     summary: >-
       Specifies whether the font is a subscript. `true` if the font is formatted
       as subscript, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -834,9 +750,7 @@ properties:
     summary: >-
       Specifies whether the font is a superscript. `true` if the font is
       formatted as superscript, otherwise, `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -849,9 +763,7 @@ properties:
     package: word!
     fullName: textColor
     summary: Returns a `ColorFormat` object that represents the color for the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -866,9 +778,7 @@ properties:
     summary: >-
       Returns a `ShadowFormat` object that specifies the shadow formatting for
       the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -883,9 +793,7 @@ properties:
     summary: >-
       Returns a `ThreeDimensionalFormat` object that contains 3-dimensional (3D)
       effect formatting properties for the font.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -900,9 +808,7 @@ properties:
     package: word!
     fullName: underline
     summary: Specifies the font's underline type. `none` if the font isn't underlined.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -928,9 +834,7 @@ properties:
     summary: >-
       Specifies the color of the underline for the `Font` object. You can
       provide the value in the '\#RRGGBB' format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

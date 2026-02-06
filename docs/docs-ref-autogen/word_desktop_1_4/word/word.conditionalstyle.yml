@@ -6,9 +6,7 @@ fullName: Word.ConditionalStyle
 summary: >-
   Represents special formatting applied to specified areas of a table when the
   selected table is formatted with a specified table style.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     summary: >-
       Returns a `BorderUniversalCollection` object that represents all the
       borders for the conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -38,9 +34,7 @@ properties:
     summary: >-
       Specifies the amount of space (in points) to add below the contents of a
       single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
     summary: >-
       Returns a `Font` object that represents the font formatting for the
       conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +79,7 @@ properties:
     summary: >-
       Specifies the amount of space (in points) to add to the left of the
       contents of a single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -104,9 +94,7 @@ properties:
     summary: >-
       Returns a `ParagraphFormat` object that represents the paragraph
       formatting for the conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +109,7 @@ properties:
     summary: >-
       Specifies the amount of space (in points) to add to the right of the
       contents of a single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -138,9 +124,7 @@ properties:
     summary: >-
       Returns a `ShadingUniversal` object that represents the shading of the
       conditional style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -155,9 +139,7 @@ properties:
     summary: >-
       Specifies the amount of space (in points) to add above the contents of a
       single cell or all the cells in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

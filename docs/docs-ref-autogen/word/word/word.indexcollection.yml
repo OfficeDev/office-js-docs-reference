@@ -6,9 +6,7 @@ fullName: Word.IndexCollection
 summary: >-
   A collection of [Word.Index](xref:word!Word.Index:class) objects that
   represents all the indexes in the document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -50,9 +48,7 @@ methods:
     summary: >-
       Returns an `Index` object that represents a new index added to the
       document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +75,7 @@ methods:
     summary: >-
       Gets the `IndexFormat` value that represents the formatting for the
       indexes in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +91,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets an `Index` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -193,9 +185,7 @@ methods:
       Inserts an [XE (Index Entry)
       field](https://support.microsoft.com/office/abaf7c78-6e21-418d-bf8b-f8186d2e4d08)
       after all instances of the text in the range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

@@ -6,9 +6,7 @@ fullName: Excel.TextRange
 summary: >-
   Contains the text that is attached to a shape, in addition to properties and
   methods for manipulating the text.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     summary: >-
       Returns a `ShapeFont` object that represents the font attributes for the
       text range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     package: excel!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +61,7 @@ methods:
     package: excel!
     fullName: getSubstring(start, length)
     summary: Returns a TextRange object for the substring in the given range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

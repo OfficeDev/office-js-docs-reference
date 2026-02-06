@@ -19,9 +19,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the portion of the document that's
       contained in the `Conflict` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

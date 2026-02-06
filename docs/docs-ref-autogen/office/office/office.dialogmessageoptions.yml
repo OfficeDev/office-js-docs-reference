@@ -30,18 +30,3 @@ properties:
       content: 'targetOrigin: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example shows how to send a message to the domain of
-          the parent runtime.
-
-          Office.context.ui.messageParent("Some message", { targetOrigin:
-          "https://resource.contoso.com" });
-
-          ```

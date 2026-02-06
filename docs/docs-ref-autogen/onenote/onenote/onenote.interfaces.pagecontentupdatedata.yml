@@ -19,10 +19,7 @@ properties:
     summary: >-
       Gets the Image in the PageContent object. Throws an exception if
       PageContentType isn't Image.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -35,10 +32,7 @@ properties:
     package: onenote!
     fullName: left
     summary: Gets or sets the left (X-axis) position of the PageContent object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,10 +45,7 @@ properties:
     package: onenote!
     fullName: top
     summary: Gets or sets the top (Y-axis) position of the PageContent object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

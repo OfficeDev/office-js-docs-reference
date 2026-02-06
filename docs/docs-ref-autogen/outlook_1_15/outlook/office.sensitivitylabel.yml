@@ -10,9 +10,7 @@ summary: >-
   labels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox
-  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox 1.13\]
 
 
   **[Minimum permission
@@ -46,9 +44,7 @@ methods:
       Gets the unique identifier (GUID) of the sensitivity label applied to a
       message or appointment being composed.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -103,9 +99,7 @@ methods:
       Gets the unique identifier (GUID) of the sensitivity label applied to a
       message or appointment being composed.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -126,35 +120,6 @@ methods:
       [Manage the sensitivity label of your message or appointment in compose
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
-
-
-      // This snippet gets the current mail item's sensitivity label.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) =>
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-          Office.context.mailbox.item.sensitivityLabel.getAsync((asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log(asyncResult.value);
-            } else {
-              console.log("Action failed with error: " + asyncResult.error.message);
-            }
-          });
-        } else {
-          console.log("Action failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -183,9 +148,7 @@ methods:
       Applies the specified sensitivity label to the message or appointment
       being composed.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -264,9 +227,7 @@ methods:
       Applies the specified sensitivity label to the message or appointment
       being composed.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -301,48 +262,6 @@ methods:
       [Manage the sensitivity label of your message or appointment in compose
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
-
-
-      // This snippet sets the sensitivity label on the current mail item.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) =>
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-          Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              const catalog = asyncResult.value;
-              if (catalog.length > 0) {
-                var id = catalog[0].id;
-                Office.context.mailbox.item.sensitivityLabel.setAsync(id, (asyncResult) => {
-                  if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                    console.log(asyncResult.status);
-                  } else {
-                    console.log("Action failed with error: " + asyncResult.error.message);
-                  }
-                });
-              }
-              else {
-                console.log("Catalog list is empty");
-              }
-            } else {
-              console.log("Action failed with error: " + asyncResult.error.message);
-            }
-          });
-        } else {
-          console.log("Action failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false

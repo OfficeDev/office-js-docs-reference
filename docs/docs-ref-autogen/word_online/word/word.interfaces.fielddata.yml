@@ -15,10 +15,8 @@ properties:
     package: word!
     fullName: code
     summary: Specifies the field's code instruction.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[Api set: WordApi 1.4\]
 
       Note: The ability to set the code was introduced in WordApi 1.5.
 
@@ -36,9 +34,7 @@ properties:
       Specifies data in a field of `addin` type. If the field isn't an `addin`
       type, it's `null` and it will throw a general exception when code attempts
       to set it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     package: word!
     fullName: kind
     summary: Gets the field's kind.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
     summary: >-
       Specifies whether the field is locked. `true` if the field is locked,
       `false` otherwise.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +77,7 @@ properties:
     package: word!
     fullName: result
     summary: Gets the field's result data.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -100,9 +90,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the field's type.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

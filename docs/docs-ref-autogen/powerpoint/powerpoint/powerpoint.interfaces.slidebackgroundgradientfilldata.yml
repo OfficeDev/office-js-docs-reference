@@ -18,10 +18,7 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Specifies the type of gradient fill.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

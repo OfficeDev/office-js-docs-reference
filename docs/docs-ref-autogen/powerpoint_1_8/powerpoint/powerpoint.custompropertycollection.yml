@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.CustomPropertyCollection:class
 package: powerpoint!
 fullName: PowerPoint.CustomPropertyCollection
 summary: A collection of custom properties.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -47,10 +44,7 @@ methods:
     package: powerpoint!
     fullName: add(key, value)
     summary: Creates a new `CustomProperty` or updates the property with the given key.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,10 +73,7 @@ methods:
     package: powerpoint!
     fullName: deleteAll()
     summary: Deletes all custom properties in this collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,10 +87,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of custom properties in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +101,7 @@ methods:
     package: powerpoint!
     fullName: getItem(key)
     summary: Gets a `CustomProperty` by its key.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -144,10 +129,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

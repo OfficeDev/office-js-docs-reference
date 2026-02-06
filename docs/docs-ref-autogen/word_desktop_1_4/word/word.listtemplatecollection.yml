@@ -7,9 +7,7 @@ summary: >-
   Contains a collection of
   [Word.ListTemplate](xref:word!Word.ListTemplate:class) objects in a document,
   list template gallery, or document template.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false

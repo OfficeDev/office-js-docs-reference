@@ -12,9 +12,7 @@ summary: >-
   the table row, but not the data. That is, if the data is sorted or if new rows
   are added, a table row will continue to point at the index for which it was
   created.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -42,9 +40,7 @@ properties:
     summary: >-
       Returns the index number of the row within the rows collection of the
       table. Zero-indexed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +57,7 @@ properties:
       be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -77,24 +71,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the row from the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
-          row.delete();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -108,27 +85,7 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Returns the range object associated with the entire row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
-          const rowRange = row.getRange();
-          rowRange.load('address');
-          await context.sync();
-          
-          console.log(rowRange.address);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -178,21 +135,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.TableRow:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const tableName = 'Table1';
-              const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
-              row.load('index');
-              await context.sync();
-              
-              console.log(row.index);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.TableRow#load:member(3)
     package: excel!

@@ -6,9 +6,7 @@ fullName: Excel.RangeFormat
 summary: >-
   A format object encapsulating the range's font, fill, borders, alignment, and
   other properties.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     package: excel!
     fullName: borders
     summary: Collection of border objects that apply to the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: excel!
     fullName: fill
     summary: Returns the fill object defined on the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +58,7 @@ properties:
     package: excel!
     fullName: font
     summary: Returns the font object defined on the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +73,7 @@ properties:
     summary: >-
       Represents the horizontal alignment for the specified object. See
       `Excel.HorizontalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -104,9 +94,7 @@ properties:
     summary: >-
       Represents the vertical alignment for the specified object. See
       `Excel.VerticalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +113,7 @@ properties:
     summary: >-
       Specifies if Excel wraps the text in the object. A `null` value indicates
       that the entire range doesn't have a uniform wrap setting
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -181,26 +167,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeFormat:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Select all of the range's format properties.
-          await Excel.run(async (context) => { 
-              const sheetName = "Sheet1";
-              const rangeAddress = "F:G";
-              const worksheet = context.workbook.worksheets.getItem(sheetName);
-              const range = worksheet.getRange(rangeAddress);
-              range.load(["format/*", "format/fill", "format/borders", "format/font"]);
-              await context.sync();
-              
-              console.log(range.format.wrapText);
-              console.log(range.format.fill.color);
-              console.log(range.format.font.name);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.RangeFormat#load:member(3)
     package: excel!

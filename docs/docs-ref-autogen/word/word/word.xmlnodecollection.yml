@@ -6,9 +6,7 @@ fullName: Word.XmlNodeCollection
 summary: >-
   Represents the collection of [Word.XmlNode](xref:word!Word.XmlNode:class)
   objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -48,9 +46,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `XmlNode` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -68,9 +64,7 @@ methods:
     package: word!
     fullName: getItemAt(index)
     summary: Returns an individual `XmlNode` object in a collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

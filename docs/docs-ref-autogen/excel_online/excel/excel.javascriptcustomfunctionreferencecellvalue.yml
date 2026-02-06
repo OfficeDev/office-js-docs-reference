@@ -4,9 +4,7 @@ uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
 package: excel!
 fullName: Excel.JavaScriptCustomFunctionReferenceCellValue
 summary: Represents a reference to a JavaScript custom function.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.19\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,10 +17,7 @@ properties:
     summary: >-
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,10 +35,7 @@ properties:
       string value aligns with the en-US locale. When accessed through a
       `valuesAsJsonLocal` property, this string value aligns with the user's
       display locale.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -56,10 +48,7 @@ properties:
     package: excel!
     fullName: functionType
     summary: Represents the type of `FunctionCellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,10 +70,7 @@ properties:
       [Autogenerate JSON metadata for custom functions:
       ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -101,10 +87,7 @@ properties:
       information, see [Manifest reference:
       Namespace](https://learn.microsoft.com/javascript/api/manifest/namespace)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,10 +100,7 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false

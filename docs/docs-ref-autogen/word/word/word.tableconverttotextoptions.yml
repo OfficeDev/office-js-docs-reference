@@ -9,9 +9,7 @@ summary: >-
   [TableRow.convertToText](xref:word!Word.TableRow:class)<!-- -->, and
   [TableRowCollection.convertToText](xref:word!Word.TableRowCollection:class)
   methods.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -25,9 +23,7 @@ properties:
       If provided, specifies whether to convert the nested tables to text. This
       property is ignored if the `separator` property isn't set to
       `paragraph`<!-- -->. The default is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -43,9 +39,7 @@ properties:
       If provided, specifies the character that delimits the converted columns
       (paragraph marks delimit the converted rows). The default is `tab`<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

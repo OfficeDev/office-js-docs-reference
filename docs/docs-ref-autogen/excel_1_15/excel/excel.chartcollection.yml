@@ -4,9 +4,7 @@ uid: excel!Excel.ChartCollection:class
 package: excel!
 fullName: Excel.ChartCollection
 summary: A collection of all the chart objects on a worksheet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of charts in the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,34 +57,7 @@ methods:
     package: excel!
     fullName: add(type, sourceData, seriesBy)
     summary: Creates a new chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-
-      // with sourceData from range "A1:B4" and seriesBy set to "auto".
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sheet1");
-          const rangeSelection = "A1:B4";
-          const range = sheet.getRange(rangeSelection);
-          const chart = sheet.charts.add(
-          Excel.ChartType.columnClustered, 
-          range, 
-          Excel.ChartSeriesBy.auto);
-          await context.sync();
-
-          console.log("New Chart Added");
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,9 +85,7 @@ methods:
     package: excel!
     fullName: add(type, sourceData, seriesBy)
     summary: Creates a new chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -192,9 +159,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of charts in the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -210,27 +175,7 @@ methods:
     summary: >-
       Gets a chart using its name. If there are multiple charts with the same
       name, the first one will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Get the number of charts.
-
-      await Excel.run(async (context) => { 
-          const charts = context.workbook.worksheets.getItem("Sheet1").charts;
-          charts.load('count');
-          await context.sync();
-          
-          console.log("charts: Count= " + charts.count);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -248,25 +193,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a chart based on its position in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-          await context.sync();
-
-          console.log(chart.name);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -290,9 +217,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -352,22 +277,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const charts = context.workbook.worksheets.getItem("Sheet1").charts;
-              charts.load('items');
-              await context.sync();
-              
-              for (let i = 0; i < charts.items.length; i++) {
-                  console.log(charts.items[i].name);
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartCollection#load:member(3)
     package: excel!
@@ -422,53 +332,7 @@ events:
     package: excel!
     fullName: onActivated
     summary: Occurs when a chart is activated.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
-
-
-      await Excel.run(async (context) => {
-
-          const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-
-          // Register the onActivated and onDeactivated event handlers.
-          pieChart.onActivated.add(chartActivated);
-          pieChart.onDeactivated.add(chartDeactivated);
-
-          await context.sync();
-
-          console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });
-
-
-      ...
-
-
-      async function chartActivated(event) {
-          await Excel.run(async (context) => {
-              // Retrieve the worksheet.
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // Retrieve the activated chart by ID and load the name of the chart. 
-              const activatedChart = sheet.charts.getItem(event.chartId);
-              activatedChart.load(["name"]);
-              await context.sync();
-
-              // Print out the activated chart's data.
-              console.log(`A chart was activated. ID: ${event.chartId}. Chart name: ${activatedChart.name}.`);
-          });
-      }
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -485,28 +349,7 @@ events:
     package: excel!
     fullName: onAdded
     summary: Occurs when a new chart is added to the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => {
-          context.workbook.worksheets.getActiveWorksheet()
-              .charts.onAdded.add(function (event) {
-              return Excel.run(async (context) => {
-                  console.log("A chart has been added with ID: " + event.chartId);
-                  await context.sync();
-              });
-          });
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -523,45 +366,7 @@ events:
     package: excel!
     fullName: onDeactivated
     summary: Occurs when a chart is deactivated.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
-
-
-      await Excel.run(async (context) => {
-
-          const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-
-          // Register the onActivated and onDeactivated event handlers.
-          pieChart.onActivated.add(chartActivated);
-          pieChart.onDeactivated.add(chartDeactivated);
-
-          await context.sync();
-
-          console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });
-
-
-      ...
-
-
-      async function chartDeactivated(event) {
-          await Excel.run(async (context) => {
-              // Callback function for when the chart is deactivated.
-              console.log("The pie chart is NOT active.");
-          });
-      }
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -578,28 +383,7 @@ events:
     package: excel!
     fullName: onDeleted
     summary: Occurs when a chart is deleted.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => {
-          context.workbook.worksheets.getActiveWorksheet()
-              .charts.onDeleted.add(function (event) {
-              return Excel.run(async (context) => {
-                  console.log("The chart with this ID was deleted: " + event.chartId);
-                  await context.sync();
-              });
-          });
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

@@ -7,9 +7,7 @@ summary: >-
   Represents a gallery of list templates of the same
   [Word.ListTemplateGalleryType](xref:word!Word.ListTemplateGalleryType:enum)<!--
   -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     summary: >-
       Returns a `ListTemplateCollection` object that represents all the list
       templates for the specified list gallery.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

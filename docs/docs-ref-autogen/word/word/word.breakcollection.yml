@@ -4,9 +4,7 @@ uid: word!Word.BreakCollection:class
 package: word!
 fullName: Word.BreakCollection
 summary: Contains a collection of [Word.Break](xref:word!Word.Break:class) objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false

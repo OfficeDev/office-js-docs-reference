@@ -7,9 +7,7 @@ summary: >-
   Provides methods to determine if Exchange Web Services (EWS) callback tokens
   are supported in an organization.
 remarks: >-
-  \[ [API set: Mailbox
-  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox preview\]
 
 
   **[Minimum permission
@@ -31,40 +29,6 @@ remarks: >-
   FAQ](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!--
   -->.
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-token-status.yaml
-
-
-  Office.context.mailbox.diagnostics.ews.getTokenStatusAsync({ isRest: false },
-  (result) => {
-    if (result.status === Office.AsyncResultStatus.Failed) {
-      console.log(result.error.message);
-      return;
-    }
-    const status = result.value;
-    switch (status) {
-      case Office.MailboxEnums.TokenStatus.Enabled:
-        console.log("EWS callback tokens are enabled.");
-        break;
-      case Office.MailboxEnums.TokenStatus.Disabled:
-        console.log("EWS callback tokens are disabled.");
-        break;
-      case Office.MailboxEnums.TokenStatus.Removed:
-        console.log(
-          "The organization has an Exchange Online environment. Legacy Exchange tokens are no longer supported.",
-        );
-        break;
-    }
-  });
-
-  ```
-
 isPreview: true
 isDeprecated: false
 type: interface
@@ -75,9 +39,7 @@ methods:
     fullName: getTokenStatusAsync(options, callback)
     summary: Gets the status of EWS callback tokens in an organization.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -149,9 +111,7 @@ methods:
     fullName: getTokenStatusAsync(callback)
     summary: Gets the status of EWS callback tokens in an organization.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission

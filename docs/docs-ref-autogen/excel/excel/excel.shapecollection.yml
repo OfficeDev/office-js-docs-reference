@@ -4,9 +4,7 @@ uid: excel!Excel.ShapeCollection:class
 package: excel!
 fullName: Excel.ShapeCollection
 summary: Represents a collection of all the shapes in the worksheet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -48,31 +46,7 @@ methods:
     summary: >-
       Adds a geometric shape to the worksheet. Returns a `Shape` object that
       represents the new shape.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Shapes");
-          const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
-          shape.left = 5;
-          shape.top = 5;
-          shape.height = 175;
-          shape.width = 200;
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,9 +70,7 @@ methods:
     summary: >-
       Adds a geometric shape to the worksheet. Returns a `Shape` object that
       represents the new shape.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -223,34 +195,7 @@ methods:
     summary: >-
       Groups a subset of shapes in this collection's worksheet. Returns a
       `Shape` object that represents the new group of shapes.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-groups.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Shapes");
-          const square = sheet.shapes.getItem("Square");
-          const pentagon = sheet.shapes.getItem("Pentagon");
-          const octagon = sheet.shapes.getItem("Octagon");
-
-          const shapeGroup = sheet.shapes.addGroup([square, pentagon, octagon]);
-          shapeGroup.name = "Group";
-          console.log("Shapes grouped");
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -270,43 +215,7 @@ methods:
     summary: >-
       Creates an image from a Base64-encoded string and adds it to the
       worksheet. Returns the `Shape` object that represents the new image.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
-
-
-      const myFile = document.getElementById("selectedFile") as
-      HTMLInputElement;
-
-      const reader = new FileReader();
-
-
-      reader.onload = (event) => {
-          Excel.run((context) => {
-              const startIndex = reader.result.toString().indexOf("base64,");
-              const myBase64 = reader.result.toString().substr(startIndex + 7);
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const image = sheet.shapes.addImage(myBase64);
-              image.name = "Image";
-              return context.sync();
-          });
-      };
-
-
-      // Read in the image file as a data URL.
-
-      reader.readAsDataURL(myFile.files[0]);
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -328,28 +237,7 @@ methods:
     summary: >-
       Adds a line to worksheet. Returns a `Shape` object that represents the new
       line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
-
-
-      await Excel.run(async (context) => {
-          const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-          const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
-          line.name = "StraightLine";
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -393,9 +281,7 @@ methods:
     summary: >-
       Adds a line to worksheet. Returns a `Shape` object that represents the new
       line.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -439,10 +325,7 @@ methods:
     summary: >-
       Creates a reference for the local image stored in the cell address and
       displays it as a floating shape over cells.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -462,10 +345,7 @@ methods:
     summary: >-
       Creates a scalable vector graphic (SVG) from an XML string and adds it to
       the worksheet. Returns a `Shape` object that represents the new image.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -485,32 +365,7 @@ methods:
     summary: >-
       Adds a text box to the worksheet with the provided text as the content.
       Returns a `Shape` object that represents the new text box.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
-
-
-      await Excel.run(async (context) => {
-          const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-          const textbox = shapes.addTextBox("A box with text");
-          textbox.left = 100;
-          textbox.top = 100;
-          textbox.height = 20;
-          textbox.width = 175;
-          textbox.name = "Textbox";
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -528,9 +383,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of shapes in the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -544,9 +397,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a shape using its name or ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -564,9 +415,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a shape using its position in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -589,10 +438,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.14\]'
 
     isPreview: false
     isDeprecated: false

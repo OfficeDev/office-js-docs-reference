@@ -6,9 +6,7 @@ fullName: Excel.WorksheetSingleClickedEventArgs
 summary: >-
   Provides information about the left-clicked/tapped event and its related
   worksheet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,36 +19,7 @@ properties:
     summary: >-
       Gets the address that represents the cell which was left-clicked/tapped
       for a specific worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-worksheet-single-click.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getActiveWorksheet();
-          sheet.onSingleClicked.add((event) => {
-              return Excel.run((context) => {
-                  console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
-                  return context.sync();
-              });
-          });
-
-          console.log("The worksheet click handler is registered.");
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +35,7 @@ properties:
       The distance, in points, from the left-clicked/tapped point to the left
       (or right for right-to-left languages) gridline edge of the
       left-clicked/tapped cell.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,10 +50,7 @@ properties:
     summary: >-
       The distance, in points, from the left-clicked/tapped point to the top
       gridline edge of the left-clicked/tapped cell.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -100,10 +63,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,10 +76,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the cell was left-clicked/tapped.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

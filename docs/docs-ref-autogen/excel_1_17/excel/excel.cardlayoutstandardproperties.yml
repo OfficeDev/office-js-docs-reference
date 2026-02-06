@@ -4,9 +4,7 @@ uid: excel!Excel.CardLayoutStandardProperties:interface
 package: excel!
 fullName: Excel.CardLayoutStandardProperties
 summary: Properties of a card layout relevant to most card layouts.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.16\]'
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +15,7 @@ properties:
     package: excel!
     fullName: mainImage
     summary: Specifies a property which will be used as the main image of the card.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +28,7 @@ properties:
     package: excel!
     fullName: sections
     summary: Represents the sections of the card.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,10 +43,7 @@ properties:
     summary: >-
       Represents a specification of which property contains the subtitle of the
       card.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -69,10 +58,7 @@ properties:
     summary: >-
       Represents the title of the card or the specification of which property
       contains the title of the card.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false

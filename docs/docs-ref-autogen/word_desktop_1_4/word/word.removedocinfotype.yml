@@ -4,9 +4,7 @@ uid: word!Word.RemoveDocInfoType:enum
 package: word!
 fullName: Word.RemoveDocInfoType
 summary: Specifies the type of document information to remove.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,201 +12,160 @@ fields:
   - name: all
     uid: word!Word.RemoveDocInfoType.all:member
     package: word!
-    summary: >-
+    summary: |-
       All document information types.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"All"'
   - name: atMentions
     uid: word!Word.RemoveDocInfoType.atMentions:member
     package: word!
-    summary: >-
+    summary: |-
       At mentions in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AtMentions"'
   - name: commentReactions
     uid: word!Word.RemoveDocInfoType.commentReactions:member
     package: word!
-    summary: >-
+    summary: |-
       Comment reactions in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CommentReactions"'
   - name: comments
     uid: word!Word.RemoveDocInfoType.comments:member
     package: word!
-    summary: >-
+    summary: |-
       Comments in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comments"'
   - name: contentType
     uid: word!Word.RemoveDocInfoType.contentType:member
     package: word!
-    summary: >-
+    summary: |-
       Content type information.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ContentType"'
   - name: documentIntelligence
     uid: word!Word.RemoveDocInfoType.documentIntelligence:member
     package: word!
-    summary: >-
+    summary: |-
       Document intelligence information.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentIntelligence"'
   - name: documentManagementPolicy
     uid: word!Word.RemoveDocInfoType.documentManagementPolicy:member
     package: word!
-    summary: >-
+    summary: |-
       Document management policy.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentManagementPolicy"'
   - name: documentProperties
     uid: word!Word.RemoveDocInfoType.documentProperties:member
     package: word!
-    summary: >-
+    summary: |-
       Document properties.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentProperties"'
   - name: documentServerProperties
     uid: word!Word.RemoveDocInfoType.documentServerProperties:member
     package: word!
-    summary: >-
+    summary: |-
       Document server properties.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentServerProperties"'
   - name: documentTasks
     uid: word!Word.RemoveDocInfoType.documentTasks:member
     package: word!
-    summary: >-
+    summary: |-
       Document tasks.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentTasks"'
   - name: documentWorkspace
     uid: word!Word.RemoveDocInfoType.documentWorkspace:member
     package: word!
-    summary: >-
+    summary: |-
       Document workspace properties.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentWorkspace"'
   - name: emailHeader
     uid: word!Word.RemoveDocInfoType.emailHeader:member
     package: word!
-    summary: >-
+    summary: |-
       Email header in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EmailHeader"'
   - name: inkAnnotations
     uid: word!Word.RemoveDocInfoType.inkAnnotations:member
     package: word!
-    summary: >-
+    summary: |-
       Ink annotations in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"InkAnnotations"'
   - name: removePersonalInformation
     uid: word!Word.RemoveDocInfoType.removePersonalInformation:member
     package: word!
-    summary: >-
+    summary: |-
       Personal information in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RemovePersonalInformation"'
   - name: revisions
     uid: word!Word.RemoveDocInfoType.revisions:member
     package: word!
-    summary: >-
+    summary: |-
       Revisions in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Revisions"'
   - name: routingSlip
     uid: word!Word.RemoveDocInfoType.routingSlip:member
     package: word!
-    summary: >-
+    summary: |-
       Routing slip in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"RoutingSlip"'
   - name: sendForReview
     uid: word!Word.RemoveDocInfoType.sendForReview:member
     package: word!
-    summary: >-
+    summary: |-
       Send for review information in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SendForReview"'
   - name: taskpaneWebExtensions
     uid: word!Word.RemoveDocInfoType.taskpaneWebExtensions:member
     package: word!
-    summary: >-
+    summary: |-
       Taskpane web extensions.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaskpaneWebExtensions"'
   - name: template
     uid: word!Word.RemoveDocInfoType.template:member
     package: word!
-    summary: >-
+    summary: |-
       Template information.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Template"'
   - name: versions
     uid: word!Word.RemoveDocInfoType.versions:member
     package: word!
-    summary: >-
+    summary: |-
       Versions in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Versions"'

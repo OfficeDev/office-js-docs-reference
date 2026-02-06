@@ -6,51 +6,7 @@ fullName: Word.ContentControlSelectionChangedEventArgs
 summary: >-
   Provides information about the content control that raised the
   `contentControlSelectionChanged` event.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
-
-
-  await Word.run(async (context) => {
-    const contentControls: Word.ContentControlCollection = context.document.contentControls;
-    contentControls.load("items");
-    await context.sync();
-
-    if (contentControls.items.length === 0) {
-      console.log("There aren't any content controls in this document so can't register event handlers.");
-    } else {
-      for (let i = 0; i < contentControls.items.length; i++) {
-        eventContexts[i] = contentControls.items[i].onSelectionChanged.add(contentControlSelectionChanged);
-        contentControls.items[i].track();
-      }
-
-      await context.sync();
-
-      console.log("Added event handlers for when selections are changed in content controls.");
-    }
-  });
-
-
-  ...
-
-
-  async function contentControlSelectionChanged(event:
-  Word.ContentControlSelectionChangedEventArgs) {
-    await Word.run(async (context) => {
-      console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`, event.ids);
-    });
-  }
-
-  ```
+remarks: '\[Api set: WordApi 1.5\]'
 
 isPreview: false
 isDeprecated: false
@@ -61,9 +17,7 @@ properties:
     package: word!
     fullName: eventType
     summary: Specifies the event type. See `Word.EventType` for details.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +42,7 @@ properties:
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,9 +57,7 @@ properties:
     summary: >-
       Specifies the source of the event. It can be local or remote (through
       coauthoring).
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: onenote!OneNote.NotebookCollection:class
 package: onenote!
 fullName: OneNote.NotebookCollection
 summary: Represents a collection of notebooks.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of notebooks in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,38 +59,7 @@ methods:
     summary: >-
       Gets the collection of notebooks with the specified name that are open in
       the application instance.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Get the notebooks that are open in the application instance and have the specified name.
-          const notebooks = context.application.notebooks.getByName("Homework");
-
-          // Queue a command to load the notebooks.
-          // For best performance, request specific properties.
-          notebooks.load("id,name");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          // Iterate through the collection or access items individually by index.
-          // For example: notebooks.items[0]
-          if (notebooks.items.length > 0) {
-              console.log("Notebook name: " + notebooks.items[0].name);
-              console.log("Notebook ID: " + notebooks.items[0].id);
-          }
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +77,7 @@ methods:
     package: onenote!
     fullName: getItem(index)
     summary: Gets a notebook by ID or by its index in the collection. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,10 +97,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a notebook on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -199,35 +157,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.NotebookCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Get the notebooks that are open in the application instance and have the specified name.
-              const notebooks = context.application.notebooks.getByName("Homework");
-
-              // Queue a command to load the notebooks.
-              // For best performance, request specific properties.
-              notebooks.load("id");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-
-              // Iterate through the collection or access items individually by index.
-              // For example: notebooks.items[0]
-              $.each(notebooks.items, function(index, notebook) {
-                  notebook.addSection("Biology");
-                  notebook.addSection("Spanish");
-                  notebook.addSection("Computer Science");
-              });
-              
-              await context.sync();
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.NotebookCollection#load:member(3)
     package: onenote!

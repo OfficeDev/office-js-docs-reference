@@ -4,9 +4,7 @@ uid: onenote!OneNote.PageCollection:class
 package: onenote!
 fullName: OneNote.PageCollection
 summary: Represents a collection of pages.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of pages in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,46 +57,7 @@ methods:
     package: onenote!
     fullName: getByTitle(title)
     summary: Gets the collection of pages with the specified title.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Get all the pages in the current section.
-          const allPages = context.application.getActiveSection().pages;
-
-          // Queue a command to load the pages.
-          // For best performance, request specific properties.
-          allPages.load("id"); 
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          // Get the sections with the specified name.
-          const todoPages = allPages.getByTitle("Todo list");
-
-          // Queue a command to load the section.
-          // For best performance, request specific properties.
-          todoPages.load("id,title"); 
-
-          await context.sync()
-
-          // Iterate through the collection or access items individually by index.
-          if (todoPages.items.length > 0) {
-              console.log("Page title: " + todoPages.items[0].title);
-              console.log("Page ID: " + todoPages.items[0].id);
-          }
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -119,10 +75,7 @@ methods:
     package: onenote!
     fullName: getItem(index)
     summary: Gets a page by ID or by its index in the collection. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -142,10 +95,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a page on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -205,30 +155,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.PageCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-              
-              // Get the pages in the current section.
-              const pages = context.application.getActiveSection().pages;
-              
-              // Queue a command to load the id and title for each page.
-              pages.load('id,title');
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-                      
-              // Display the properties.
-              $.each(pages.items, function(index, page) {
-                  console.log(page.title);
-                  console.log(page.id);
-              });
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.PageCollection#load:member(3)
     package: onenote!

@@ -19,9 +19,7 @@ properties:
     summary: >-
       Gets a `ColorFormat` object that represents the background color for a
       patterned line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     package: word!
     fullName: beginArrowheadLength
     summary: Specifies the length of the arrowhead at the beginning of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     package: word!
     fullName: beginArrowheadStyle
     summary: Specifies the style of the arrowhead at the beginning of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
     package: word!
     fullName: beginArrowheadWidth
     summary: Specifies the width of the arrowhead at the beginning of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +83,7 @@ properties:
     package: word!
     fullName: dashStyle
     summary: Specifies the dash style for the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +103,7 @@ properties:
     package: word!
     fullName: endArrowheadLength
     summary: Specifies the length of the arrowhead at the end of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -132,9 +120,7 @@ properties:
     package: word!
     fullName: endArrowheadStyle
     summary: Specifies the style of the arrowhead at the end of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +137,7 @@ properties:
     package: word!
     fullName: endArrowheadWidth
     summary: Specifies the width of the arrowhead at the end of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -172,9 +156,7 @@ properties:
     summary: >-
       Gets a `ColorFormat` object that represents the foreground color for the
       line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -187,9 +169,7 @@ properties:
     package: word!
     fullName: insetPen
     summary: Specifies if to draw lines inside a shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -202,9 +182,7 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the object, or the formatting applied to it, is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -217,9 +195,7 @@ properties:
     package: word!
     fullName: pattern
     summary: Specifies the pattern applied to the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -263,9 +239,7 @@ properties:
     package: word!
     fullName: style
     summary: Specifies the line format style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -284,9 +258,7 @@ properties:
     summary: >-
       Specifies the degree of transparency of the line as a value between 0.0
       (opaque) and 1.0 (clear).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -299,9 +271,7 @@ properties:
     package: word!
     fullName: weight
     summary: Specifies the thickness of the line in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

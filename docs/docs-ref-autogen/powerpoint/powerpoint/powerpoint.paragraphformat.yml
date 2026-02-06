@@ -7,48 +7,7 @@ summary: >-
   Represents the paragraph formatting properties of a text that is attached to
   the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!--
   -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-
-  // Gets navigational (complex) properties of the selected text range.
-
-  await PowerPoint.run(async (context) => {
-    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-    textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
-    await context.sync();
-
-    console.log("Font properties of selected text range:");
-    console.log(`\tallCaps: ${textRange.font.allCaps}`);
-    console.log(`\tbold: ${textRange.font.bold}`);
-    console.log(`\tcolor: ${textRange.font.color}`);
-    console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
-    console.log(`\titalic: ${textRange.font.italic}`);
-    console.log(`\tname: ${textRange.font.name}`);
-    console.log(`\tsize: ${textRange.font.size}`);
-    console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
-    console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
-    console.log(`\tsubscript: ${textRange.font.subscript}`);
-    console.log(`\tsuperscript: ${textRange.font.superscript}`);
-    console.log(`\tunderline: ${textRange.font.underline}`);
-
-    console.log("Paragraph format properties of selected text range:");
-    console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
-    console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -62,10 +21,7 @@ properties:
       Represents the bullet format of the paragraph. See
       [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,10 +54,7 @@ properties:
       alignment values. See
       [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,10 +73,7 @@ properties:
     package: powerpoint!
     fullName: indentLevel
     summary: Represents the indent level of the paragraph.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

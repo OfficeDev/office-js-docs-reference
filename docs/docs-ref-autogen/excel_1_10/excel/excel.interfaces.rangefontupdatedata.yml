@@ -17,9 +17,7 @@ properties:
     package: excel!
     fullName: bold
     summary: Represents the bold status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     summary: >-
       HTML color code representation of the text color (e.g., \#FF0000
       represents Red).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: excel!
     fullName: italic
     summary: Specifies the italic status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,9 +60,7 @@ properties:
     summary: >-
       Font name (e.g., "Calibri"). The name's length should not be greater than
       31 characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +73,7 @@ properties:
     package: excel!
     fullName: size
     summary: Font size.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +88,7 @@ properties:
     summary: >-
       Specifies the strikethrough status of font. A `null` value indicates that
       the entire range doesn't have a uniform strikethrough setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,9 +105,7 @@ properties:
       the range are subscript. Returns `false` if all the fonts of the range are
       superscript or normal (neither superscript, nor subscript). Returns `null`
       otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +122,7 @@ properties:
       of the range are superscript. Returns `false` if all the fonts of the
       range are subscript or normal (neither superscript, nor subscript).
       Returns `null` otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -155,9 +139,7 @@ properties:
       The value is between -1 (darkest) and 1 (brightest), with 0 for the
       original color. A `null` value indicates that the entire range doesn't
       have a uniform font `tintAndShade` setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -172,9 +154,7 @@ properties:
     summary: >-
       Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for
       details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

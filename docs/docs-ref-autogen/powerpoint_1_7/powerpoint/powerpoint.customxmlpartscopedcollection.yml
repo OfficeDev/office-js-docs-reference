@@ -7,10 +7,7 @@ summary: >-
   A scoped collection of custom XML parts. A scoped collection is the result of
   some operation (such as filtering by namespace). A scoped collection cannot be
   scoped any further.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -50,10 +47,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of custom XML parts in this collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +61,7 @@ methods:
     package: powerpoint!
     fullName: getItem(id)
     summary: Gets a `CustomXmlPart` based on its ID.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -95,10 +86,7 @@ methods:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -119,10 +107,7 @@ methods:
       If the collection contains exactly one item, this method returns it. If
       the collection contains no items or more than one item, then this method
       returns the `GeneralException` error.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -139,10 +124,7 @@ methods:
     summary: >-
       If the collection contains exactly one item, this method returns it.
       Otherwise, this method returns `null`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

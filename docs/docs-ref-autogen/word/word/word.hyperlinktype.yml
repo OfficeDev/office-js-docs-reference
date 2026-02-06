@@ -4,9 +4,7 @@ uid: word!Word.HyperlinkType:enum
 package: word!
 fullName: Word.HyperlinkType
 summary: Specifies the hyperlink type.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,30 +12,24 @@ fields:
   - name: inlineShape
     uid: word!Word.HyperlinkType.inlineShape:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a hyperlink to an inline shape in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"InlineShape"'
   - name: range
     uid: word!Word.HyperlinkType.range:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a hyperlink to a range in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Range"'
   - name: shape
     uid: word!Word.HyperlinkType.shape:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a hyperlink to a shape in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Shape"'

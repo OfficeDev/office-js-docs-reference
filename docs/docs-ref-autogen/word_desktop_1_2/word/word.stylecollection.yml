@@ -4,31 +4,7 @@ uid: word!Word.StyleCollection:class
 package: word!
 fullName: Word.StyleCollection
 summary: Contains a collection of [Word.Style](xref:word!Word.Style:class) objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-
-  // Gets the number of available styles stored with the document.
-
-  await Word.run(async (context) => {
-    const styles: Word.StyleCollection = context.document.getStyles();
-    const count = styles.getCount();
-    await context.sync();
-
-    console.log(`Number of styles: ${count.value}`);
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.5\]'
 
 isPreview: false
 isDeprecated: false
@@ -68,9 +44,7 @@ methods:
     package: word!
     fullName: getByName(name)
     summary: Get the `Style` object by its name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,48 +64,7 @@ methods:
     summary: >-
       If the corresponding style doesn't exist, then this method returns an
       object with its `isNullObject` property set to `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-
-      // Adds a new style.
-
-      await Word.run(async (context) => {
-        const newStyleName = (document.getElementById("new-style-name") as HTMLInputElement).value;
-        if (newStyleName == "") {
-          console.warn("Enter a style name to add.");
-          return;
-        }
-
-        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(newStyleName);
-        style.load();
-        await context.sync();
-
-        if (!style.isNullObject) {
-          console.warn(
-            `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
-          );
-          return;
-        }
-
-        const newStyleType = ((document.getElementById("new-style-type") as HTMLSelectElement).value as unknown) as Word.StyleType;
-        context.document.addStyle(newStyleName, newStyleType);
-        await context.sync();
-
-        console.log(newStyleName + " has been added to the style list.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -149,31 +82,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
-
-
-      // Gets the number of available styles stored with the document.
-
-      await Word.run(async (context) => {
-        const styles: Word.StyleCollection = context.document.getStyles();
-        const count = styles.getCount();
-        await context.sync();
-
-        console.log(`Number of styles: ${count.value}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -187,9 +96,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `Style` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

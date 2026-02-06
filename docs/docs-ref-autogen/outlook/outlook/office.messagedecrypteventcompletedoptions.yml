@@ -10,9 +10,7 @@ summary: >-
   [OnMessageRead](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
   event.
 remarks: >-
-  \[ [API set: Mailbox
-  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox preview\]
 
 
   **[Minimum permission
@@ -23,73 +21,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Message Read
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // This sample handles the OnMessageRead event to decrypt the body and
-  attachments of a message.
-
-  function onMessageReadHandler(event) {
-      // Your code to decrypt the contents of a message would appear here.
-      ...
-
-      // Use the results from your decryption process to display the decrypted contents of the message body and attachments.
-      const decryptedBodyContent = "<p>Please find attached the recent report and its supporting documentation.</p>";
-      const decryptedBody = {
-          coercionType: Office.CoercionType.Html,
-          content: decryptedBodyContent
-      };
-
-      // Decrypted content and properties of a file attachment.
-      const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
-      const pdfFileName = "Fabrikam_Report_202509";
-
-      // Decrypted properties of a cloud attachment.
-      const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
-      const cloudFileName = "weekly_forecast.xlsx";
-
-      // Decrypted content and properties of an inline image.
-      const decryptedImageFile = "iVBORw0KGgoAAAANSUhEUgAA...";
-      const imageFileName = "banner.png";
-      const imageContentId = "image001.png@01DC1DD9.1A4AA300";
-
-      const decryptedAttachments = [
-          {
-              attachmentType: Office.MailboxEnums.AttachmentType.File,
-              content: decryptedPdfFile,
-              isInline: false,
-              name: pdfFileName
-          },
-          {
-              attachmentType: Office.MailboxEnums.AttachmentType.Cloud,
-              isInline: false,
-              name: cloudFileName,
-              path: cloudFilePath
-          },
-          {
-              attachmentType: Office.MailboxEnums.AttachmentType.File,
-              content: decryptedImageFile,
-              contentId: imageContentId,
-              isInline: true,
-              name: imageFileName
-          }
-      ];
-
-      event.completed(
-          {
-              allowEvent: true,
-              emailBody: decryptedBody,
-              attachments: decryptedAttachments,
-              contextData: { messageType: "ReplyFromDecryptedMessage" }
-          }
-      );
-  }
-
-  ```
 
 isPreview: true
 isDeprecated: false
@@ -107,9 +38,7 @@ properties:
       `allowEvent` property is set to `true`<!-- -->, the decrypted contents of
       the message is displayed.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -138,9 +67,7 @@ properties:
       to `true`<!-- -->, this property sets the decrypted attachments of the
       message.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -169,9 +96,7 @@ properties:
       to `true`<!-- -->, this property specifies any JSON data passed to the
       add-in for processing.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission
@@ -214,9 +139,7 @@ properties:
       to `true`<!-- -->, this property sets the decrypted contents of the body
       of the message.
     remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox preview\]
 
 
       **[Minimum permission

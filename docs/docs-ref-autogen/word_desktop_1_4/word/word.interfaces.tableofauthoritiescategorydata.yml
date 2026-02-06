@@ -21,9 +21,7 @@ properties:
       name of the category doesn't change the index in the collection. The value
       for [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class)
       will remain the same.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

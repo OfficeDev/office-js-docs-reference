@@ -20,10 +20,7 @@ properties:
       Returns the fill type of the slide background. See
       [PowerPoint.SlideBackgroundFillType](xref:powerpoint!PowerPoint.SlideBackgroundFillType:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

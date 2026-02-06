@@ -4,9 +4,7 @@ uid: excel!Excel.QueryError:enum
 package: excel!
 fullName: Excel.QueryError
 summary: An enum that specifies the query load error message.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.14\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,66 +12,48 @@ fields:
   - name: failedDownload
     uid: excel!Excel.QueryError.failedDownload:member
     package: excel!
-    summary: >-
+    summary: |-
       Download failed.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"FailedDownload"'
   - name: failedLoadToDataModel
     uid: excel!Excel.QueryError.failedLoadToDataModel:member
     package: excel!
-    summary: >-
+    summary: |-
       Load to the data model failed.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"FailedLoadToDataModel"'
   - name: failedLoadToWorksheet
     uid: excel!Excel.QueryError.failedLoadToWorksheet:member
     package: excel!
-    summary: >-
+    summary: |-
       Load to the worksheet failed.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"FailedLoadToWorksheet"'
   - name: failedToCompleteDownload
     uid: excel!Excel.QueryError.failedToCompleteDownload:member
     package: excel!
-    summary: >-
+    summary: |-
       Download did not complete.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"FailedToCompleteDownload"'
   - name: none
     uid: excel!Excel.QueryError.none:member
     package: excel!
-    summary: >-
+    summary: |-
       No error.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"None"'
   - name: unknown
     uid: excel!Excel.QueryError.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       Unknown error.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"Unknown"'

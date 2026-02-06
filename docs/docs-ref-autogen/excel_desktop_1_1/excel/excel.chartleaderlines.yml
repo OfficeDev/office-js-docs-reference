@@ -4,39 +4,7 @@ uid: excel!Excel.ChartLeaderLines:class
 package: excel!
 fullName: Excel.ChartLeaderLines
 summary: Gets an object that represents the formatting of chart leader lines.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
-
-
-  // The following code changes the format of leader lines. It adjusts color,
-  weight, and line style.
-
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getItem(sheetName);
-    const chart = sheet.charts.getItemAt(0);
-    const series = chart.series.getItemAt(0);
-    const dataLabels = series.dataLabels;
-    const lineFormat = dataLabels.leaderLines.format;
-
-    // Set leader line formatting properties.
-    lineFormat.line.color = "blue";
-    lineFormat.line.weight = 2;
-    lineFormat.line.lineStyle = Excel.ChartLineStyle.dot;
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.19\]'
 
 isPreview: false
 isDeprecated: false
@@ -62,10 +30,7 @@ properties:
     package: excel!
     fullName: format
     summary: Represents the formatting of leader lines of data labels in a series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false

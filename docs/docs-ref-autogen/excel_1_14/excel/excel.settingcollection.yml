@@ -7,9 +7,7 @@ summary: >-
   Represents a collection of key-value pair setting objects that are part of the
   workbook. The scope is limited to per file and add-in (task-pane or content)
   combination.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -49,29 +47,7 @@ methods:
     package: excel!
     fullName: add(key, value)
     summary: Sets or adds the specified setting to the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-
-          await context.sync();
-          console.log("Settings changed handler registered.");
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -94,9 +70,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of settings in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -110,9 +84,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a setting entry via the key.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -135,38 +107,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/create-get-change-delete-settings.yaml
-
-
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings;
-          let needsReview = settings.getItem("NeedsReview");
-          needsReview.delete();
-          needsReview = settings.getItemOrNullObject("NeedsReview");
-
-          await context.sync();
-
-          if (needsReview.isNullObject) {
-              console.log("The setting has been deleted");
-          } else {
-              console.log("The setting was not deleted");
-          }
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -282,29 +223,7 @@ events:
     package: excel!
     fullName: onSettingsChanged
     summary: Occurs when the settings in the document are changed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-
-          await context.sync();
-          console.log("Settings changed handler registered.");
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

@@ -17,9 +17,7 @@ properties:
     package: word!
     fullName: shape
     summary: Gets the `Shape` object associated with the canvas.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false

@@ -7,48 +7,7 @@ summary: >-
   Represents a shape group in the document. To get the corresponding
   [Word.Shape](xref:word!Word.Shape:class) object, use `ShapeGroup.shape`<!--
   -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-  await Word.run(async (context) => {
-    // Groups the shapes (including text boxes and pictures) found in the document body.
-    const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
-      Word.ShapeType.geometricShape,
-      Word.ShapeType.textBox,
-      Word.ShapeType.picture,
-    ]);
-    shapes.load("items");
-    await context.sync();
-
-    const numShapes = shapes.items.length;
-    if (numShapes === 0) {
-      console.log("No shapes found in the document body.");
-      return;
-    }
-
-    console.log(`Number of shapes to group: ${numShapes}`);
-
-    const groupedShape: Word.Shape = shapes.group();
-    groupedShape.load("shapeGroup/shapes");
-    await context.sync();
-
-    const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
-    console.log("Shapes grouped:", shapeGroup.shapes);
-    groupedShape.select();
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -74,9 +33,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets an integer that represents the shape group identifier.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +46,7 @@ properties:
     package: word!
     fullName: shape
     summary: Gets the `Shape` object associated with the group.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,42 +61,7 @@ properties:
     summary: >-
       Gets the collection of `Shape` objects. Currently, only text boxes,
       geometric shapes, and pictures are supported.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Moves the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to move the first shape group found in the document body:", shapeGroup.shapes);
-        firstShapeGroup.moveHorizontally(-10);
-        firstShapeGroup.moveVertically(50);
-
-        console.log("Moved the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -324,41 +244,7 @@ methods:
     package: word!
     fullName: ungroup()
     summary: Ungroups any grouped shapes in the specified shape group.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Ungroups the first set of grouped shapes (including text boxes) found in the document body.
-        const firstShapeGroup: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.group])
-          .getFirstOrNullObject();
-        firstShapeGroup.load("shapeGroup/shapes");
-        await context.sync();
-
-        if (firstShapeGroup.isNullObject) {
-          console.log("No shape groups found in the document body.");
-          return;
-        }
-
-        let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
-        console.log("About to ungroup the first shape group found in the document body:", shapeGroup.shapes);
-        shapeGroup.ungroup();
-
-        console.log("Ungrouped the first shape group.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false

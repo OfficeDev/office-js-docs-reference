@@ -4,9 +4,7 @@ uid: excel!Excel.RangeFill:class
 package: excel!
 fullName: Excel.RangeFill
 summary: Represents the background of a range object.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       HTML color code representing the color of the background, in the form
       \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +48,7 @@ properties:
       The pattern of a range. See `Excel.FillPattern` for details.
       LinearGradient and RectangularGradient are not supported. A `null` value
       indicates that the entire range doesn't have a uniform pattern setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +73,7 @@ properties:
     summary: >-
       The HTML color code representing the color of the range pattern, in the
       form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +90,7 @@ properties:
       fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the
       original color. A `null` value indicates that the range doesn't have
       uniform `patternTintAndShade` settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,9 +107,7 @@ properties:
       The value is between -1 (darkest) and 1 (brightest), with 0 for the
       original color. A `null` value indicates that the range doesn't have
       uniform `tintAndShade` settings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -133,27 +121,7 @@ methods:
     package: excel!
     fullName: clear()
     summary: Resets the range background.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "F:G";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const range = worksheet.getRange(rangeAddress);
-          const rangeFill = range.format.fill;
-          rangeFill.clear();
-          await context.sync(); 
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,23 +171,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeFill:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const sheetName = "Sheet1";
-              const rangeAddress = "F:G";
-              const worksheet = context.workbook.worksheets.getItem(sheetName);
-              const range = worksheet.getRange(rangeAddress);
-              const rangeFill = range.format.fill;
-              rangeFill.load('color');
-              await context.sync();
-              console.log(rangeFill.color);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.RangeFill#load:member(3)
     package: excel!

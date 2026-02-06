@@ -6,9 +6,7 @@ fullName: Word.Interfaces.FrameLoadOptions
 summary: >-
   Represents a frame. The `Frame` object is a member of the
   [Word.FrameCollection](xref:word!Word.FrameCollection:class) object.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     package: word!
     fullName: height
     summary: Specifies the height (in points) of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +48,7 @@ properties:
     summary: >-
       Specifies a `FrameSizeRule` value that represents the rule for determining
       the height of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -69,9 +63,7 @@ properties:
     summary: >-
       Specifies the horizontal distance between the frame and the surrounding
       text, in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -86,9 +78,7 @@ properties:
     summary: >-
       Specifies the horizontal distance between the edge of the frame and the
       item specified by the `relativeHorizontalPosition` property.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -101,9 +91,7 @@ properties:
     package: word!
     fullName: lockAnchor
     summary: Specifies if the frame is locked.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -118,9 +106,7 @@ properties:
     summary: >-
       Returns a `Range` object that represents the portion of the document
       that's contained within the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -133,9 +119,7 @@ properties:
     package: word!
     fullName: relativeHorizontalPosition
     summary: Specifies the relative horizontal position of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -148,9 +132,7 @@ properties:
     package: word!
     fullName: relativeVerticalPosition
     summary: Specifies the relative vertical position of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -165,9 +147,7 @@ properties:
     summary: >-
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -182,9 +162,7 @@ properties:
     package: word!
     fullName: textWrap
     summary: Specifies if document text wraps around the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -199,9 +177,7 @@ properties:
     summary: >-
       Specifies the vertical distance (in points) between the frame and the
       surrounding text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -216,9 +192,7 @@ properties:
     summary: >-
       Specifies the vertical distance between the edge of the frame and the item
       specified by the `relativeVerticalPosition` property.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -231,9 +205,7 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width (in points) of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -246,9 +218,7 @@ properties:
     package: word!
     fullName: widthRule
     summary: Specifies the rule used to determine the width of the frame.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

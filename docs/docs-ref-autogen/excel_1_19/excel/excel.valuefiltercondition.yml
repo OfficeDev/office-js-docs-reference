@@ -8,43 +8,7 @@ summary: >-
   applied. Used to configure the type of PivotFilter that is applied to the
   field. `PivotFilter.exclusive` can be set to `true` to invert many of these
   conditions.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-
-  await Excel.run(async (context) => {
-    // Add a PivotFilter to filter on the values correlated with a row.
-
-    // Get the PivotTable.
-    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-    // Get the "Farm" field.
-    const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
-
-    // Filter to only include rows with more than 500 wholesale crates sold.
-    const filter: Excel.PivotValueFilter = {
-      condition: Excel.ValueFilterCondition.greaterThan,
-      comparator: 500,
-      value: "Sum of Crates Sold Wholesale"
-    };
-
-    // Apply the value filter to the field.
-    field.applyFilter({ valueFilter: filter });
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.12\]'
 
 isPreview: false
 isDeprecated: false
@@ -61,9 +25,7 @@ fields:
       -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Between"'
   - name: bottomN
     uid: excel!Excel.ValueFilterCondition.bottomN:member
@@ -77,9 +39,7 @@ fields:
       `selectionType`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"BottomN"'
   - name: equals
     uid: excel!Excel.ValueFilterCondition.equals:member
@@ -92,65 +52,47 @@ fields:
       Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Equals"'
   - name: greaterThan
     uid: excel!Excel.ValueFilterCondition.greaterThan:member
     package: excel!
-    summary: >-
+    summary: |-
       Greater than comparator criterion.
-
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"GreaterThan"'
   - name: greaterThanOrEqualTo
     uid: excel!Excel.ValueFilterCondition.greaterThanOrEqualTo:member
     package: excel!
-    summary: >-
+    summary: |-
       Greater than or equal to comparator criterion.
-
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"GreaterThanOrEqualTo"'
   - name: lessThan
     uid: excel!Excel.ValueFilterCondition.lessThan:member
     package: excel!
-    summary: >-
+    summary: |-
       Less than comparator criterion.
-
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"LessThan"'
   - name: lessThanOrEqualTo
     uid: excel!Excel.ValueFilterCondition.lessThanOrEqualTo:member
     package: excel!
-    summary: >-
+    summary: |-
       Less than or equal to comparator criterion.
-
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"LessThanOrEqualTo"'
   - name: topN
     uid: excel!Excel.ValueFilterCondition.topN:member
@@ -163,18 +105,13 @@ fields:
       `selectionType`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"TopN"'
   - name: unknown
     uid: excel!Excel.ValueFilterCondition.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       `ValueFilterCondition` is unknown or unsupported.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Unknown"'

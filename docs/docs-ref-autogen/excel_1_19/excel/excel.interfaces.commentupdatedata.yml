@@ -17,10 +17,7 @@ properties:
     package: excel!
     fullName: content
     summary: The comment's content. The string is plain text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -35,10 +32,7 @@ properties:
     summary: >-
       The comment thread status. A value of `true` means that the comment thread
       is resolved.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.11\]'
 
     isPreview: false
     isDeprecated: false

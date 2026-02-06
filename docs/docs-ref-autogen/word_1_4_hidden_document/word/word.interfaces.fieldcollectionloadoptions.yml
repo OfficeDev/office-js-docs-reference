@@ -5,8 +5,7 @@ package: word!
 fullName: Word.Interfaces.FieldCollectionLoadOptions
 summary: Contains a collection of [Word.Field](xref:word!Word.Field:class) objects.
 remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[Api set: WordApi 1.4\]
 
 
   Important: To learn more about which fields can be inserted, see the
@@ -45,10 +44,8 @@ properties:
     package: word!
     fullName: code
     summary: 'For EACH ITEM in the collection: Specifies the field''s code instruction.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[Api set: WordApi 1.4\]
 
       Note: The ability to set the code was introduced in WordApi 1.5.
 
@@ -63,9 +60,7 @@ properties:
     package: word!
     fullName: parentBody
     summary: 'For EACH ITEM in the collection: Gets the parent body of the field.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +77,7 @@ properties:
       For EACH ITEM in the collection: Gets the content control that contains
       the field. Throws an `ItemNotFound` error if there isn't a parent content
       control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +99,7 @@ properties:
       For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -127,9 +118,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the field.
       Throws an `ItemNotFound` error if it isn't contained in a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -145,9 +134,7 @@ properties:
       For EACH ITEM in the collection: Gets the table cell that contains the
       field. Throws an `ItemNotFound` error if it isn't contained in a table
       cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -167,9 +154,7 @@ properties:
       further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -189,9 +174,7 @@ properties:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -204,9 +187,7 @@ properties:
     package: word!
     fullName: result
     summary: 'For EACH ITEM in the collection: Gets the field''s result data.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

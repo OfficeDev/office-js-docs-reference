@@ -4,9 +4,7 @@ uid: word!Word.IndexSortBy:enum
 package: word!
 fullName: Word.IndexSortBy
 summary: Specifies how an index is sorted.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,20 +12,16 @@ fields:
   - name: stroke
     uid: word!Word.IndexSortBy.stroke:member
     package: word!
-    summary: >-
+    summary: |-
       Sort by stroke.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Stroke"'
   - name: syllable
     uid: word!Word.IndexSortBy.syllable:member
     package: word!
-    summary: >-
+    summary: |-
       Sort by syllable.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Syllable"'

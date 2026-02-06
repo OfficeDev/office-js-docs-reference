@@ -7,7 +7,7 @@ summary: >-
   An interface that contains all the functionality provided to manage the state
   of the Office ribbon.
 remarks: >-
-  **Requirement set**: [RibbonAPI
+  **Requirement set**: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 isPreview: false
@@ -22,7 +22,7 @@ methods:
       Registers a custom contextual tab with Office and defines the tab's
       controls.
     remarks: >-
-      **Requirement set**: [RibbonAPI
+      **Requirement set**: [RibbonApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
@@ -32,22 +32,6 @@ methods:
       information and code examples, see [Create custom contextual
       tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Registers a custom contextual tab with Office.
-
-      Office.onReady(async () => {
-          const contextualTabJSON = ` ... `; // Assign the JSON string.
-          const contextualTab = JSON.parse(contextualTabJSON);
-          await Office.ribbon.requestCreateControls(contextualTab);
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -77,7 +61,7 @@ methods:
     fullName: requestUpdate(input)
     summary: Sends a request to Office to update the ribbon.
     remarks: >-
-      **Requirement set**: [RibbonAPI
+      **Requirement set**: [RibbonApi
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
@@ -92,43 +76,6 @@ methods:
       and [Create custom contextual
       tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Office.Tab objects are properties of ribbon updater objects that are
-      passed to the 
-
-      // Office.ribbon.requestUpdate method. The following shows how to set the
-      visibility of 
-
-      // a custom contextual tab.
-
-
-      async function showDataTab() {
-          await Office.ribbon.requestUpdate({
-              tabs: [
-                  {
-                      id: "CtxTab1",
-                      visible: true
-                  }
-              ]});
-      }
-
-
-      // The following does the same thing in TypeScript.
-
-
-      const showDataTab = async () => {
-          const myContextualTab: Office.Tab = { id: "CtxTab1", visible: true };
-          const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
-          await Office.ribbon.requestUpdate(ribbonUpdater);
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false

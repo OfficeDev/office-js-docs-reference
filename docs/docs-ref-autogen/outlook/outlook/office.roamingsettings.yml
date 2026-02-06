@@ -29,8 +29,7 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!--
   -->.
 remarks: >-
-  \[ [API set: Mailbox
-  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[Api set: Mailbox 1.1\]
 
 
   **Important**:
@@ -72,9 +71,7 @@ methods:
     fullName: get(name)
     summary: Retrieves the specified setting.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -85,29 +82,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
-
-
-      const settingName = (document.getElementById("settingName") as
-      HTMLInputElement).value;
-
-      const settingValue = Office.context.roamingSettings.get(settingName);
-
-      (document.getElementById("settingValue") as HTMLInputElement).value =
-      settingValue;
-
-      console.log(`The value of setting "${settingName}" is
-      "${settingValue}".`);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -126,9 +100,7 @@ methods:
     fullName: remove(name)
     summary: Removes the specified setting.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -139,27 +111,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
-
-
-      // Remove the specified setting from the mailbox.
-
-      const settingName = (document.getElementById("settingName") as
-      HTMLInputElement).value;
-
-      Office.context.roamingSettings.remove(settingName);
-
-      console.log(`The "${settingName}" setting has been removed.`);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -186,9 +137,7 @@ methods:
       property bag. When you want to persist the settings so that they're
       available the next time the add-in is used, use the `saveAsync` method.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -199,28 +148,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
-
-
-      // Save settings in the mailbox to make it available in future sessions.
-
-      Office.context.roamingSettings.saveAsync(function(result) {
-        if (result.status !== Office.AsyncResultStatus.Succeeded) {
-          console.error(`Action failed with message ${result.error.message}`);
-        } else {
-          console.log(`Settings saved with status: ${result.status}`);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -261,9 +188,7 @@ methods:
       Any changes made to settings using the `set` method will not be saved to
       the server until the `saveAsync` method is called.
     remarks: >-
-      \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.1\]
 
 
       **[Minimum permission
@@ -274,28 +199,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
-
-
-      const settingName = (document.getElementById("settingName") as
-      HTMLInputElement).value;
-
-      const settingValue = (document.getElementById("settingValue") as
-      HTMLInputElement).value;
-
-      Office.context.roamingSettings.set(settingName, settingValue);
-
-      console.log(`Setting "${settingName}" set to value "${settingValue}".`);
-
-      ```
 
     isPreview: false
     isDeprecated: false

@@ -6,34 +6,7 @@ fullName: Word.GeometricShapeType
 summary: >-
   Specifies the shape type for a
   [ShapeType.geometricShape](xref:word!Word.ShapeType:enum) object.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
-
-
-  await Word.run(async (context) => {
-    // Inserts a heptagon geometric shape at the beginning of the selection.
-    const selection: Word.Range = context.document.getSelection();
-    const shapeOptions: Word.InsertShapeOptions = {
-      height: 120,
-      width: 120,
-    };
-    selection.insertGeometricShape(Word.GeometricShapeType.heptagon, shapeOptions);
-    await context.sync();
-
-    console.log("Inserted a heptagon.");
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -41,1770 +14,1416 @@ fields:
   - name: accentBorderCallout1
     uid: word!Word.GeometricShapeType.accentBorderCallout1:member
     package: word!
-    summary: >-
+    summary: |-
       Accent border callout 1 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentBorderCallout1"'
   - name: accentBorderCallout2
     uid: word!Word.GeometricShapeType.accentBorderCallout2:member
     package: word!
-    summary: >-
+    summary: |-
       Accent border callout 2 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentBorderCallout2"'
   - name: accentBorderCallout3
     uid: word!Word.GeometricShapeType.accentBorderCallout3:member
     package: word!
-    summary: >-
+    summary: |-
       Accent border callout 3 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentBorderCallout3"'
   - name: accentCallout1
     uid: word!Word.GeometricShapeType.accentCallout1:member
     package: word!
-    summary: >-
+    summary: |-
       Accent callout 1 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentCallout1"'
   - name: accentCallout2
     uid: word!Word.GeometricShapeType.accentCallout2:member
     package: word!
-    summary: >-
+    summary: |-
       Accent callout 2 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentCallout2"'
   - name: accentCallout3
     uid: word!Word.GeometricShapeType.accentCallout3:member
     package: word!
-    summary: >-
+    summary: |-
       Accent callout 3 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"AccentCallout3"'
   - name: actionButtonBackPrevious
     uid: word!Word.GeometricShapeType.actionButtonBackPrevious:member
     package: word!
-    summary: >-
+    summary: |-
       Action button back previous geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonBackPrevious"'
   - name: actionButtonBeginning
     uid: word!Word.GeometricShapeType.actionButtonBeginning:member
     package: word!
-    summary: >-
+    summary: |-
       Action button beginning geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonBeginning"'
   - name: actionButtonBlank
     uid: word!Word.GeometricShapeType.actionButtonBlank:member
     package: word!
-    summary: >-
+    summary: |-
       Action button blank geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonBlank"'
   - name: actionButtonDocument
     uid: word!Word.GeometricShapeType.actionButtonDocument:member
     package: word!
-    summary: >-
+    summary: |-
       Action button document geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonDocument"'
   - name: actionButtonEnd
     uid: word!Word.GeometricShapeType.actionButtonEnd:member
     package: word!
-    summary: >-
+    summary: |-
       Action button end geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonEnd"'
   - name: actionButtonForwardNext
     uid: word!Word.GeometricShapeType.actionButtonForwardNext:member
     package: word!
-    summary: >-
+    summary: |-
       Action button forward next geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonForwardNext"'
   - name: actionButtonHelp
     uid: word!Word.GeometricShapeType.actionButtonHelp:member
     package: word!
-    summary: >-
+    summary: |-
       Action button help geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonHelp"'
   - name: actionButtonHome
     uid: word!Word.GeometricShapeType.actionButtonHome:member
     package: word!
-    summary: >-
+    summary: |-
       Action button home geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonHome"'
   - name: actionButtonInformation
     uid: word!Word.GeometricShapeType.actionButtonInformation:member
     package: word!
-    summary: >-
+    summary: |-
       Action button information geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonInformation"'
   - name: actionButtonMovie
     uid: word!Word.GeometricShapeType.actionButtonMovie:member
     package: word!
-    summary: >-
+    summary: |-
       Action button movie geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonMovie"'
   - name: actionButtonReturn
     uid: word!Word.GeometricShapeType.actionButtonReturn:member
     package: word!
-    summary: >-
+    summary: |-
       Action button return geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonReturn"'
   - name: actionButtonSound
     uid: word!Word.GeometricShapeType.actionButtonSound:member
     package: word!
-    summary: >-
+    summary: |-
       Action button sound geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ActionButtonSound"'
   - name: arc
     uid: word!Word.GeometricShapeType.arc:member
     package: word!
-    summary: >-
+    summary: |-
       Arc geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Arc"'
   - name: bentArrow
     uid: word!Word.GeometricShapeType.bentArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Bent arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BentArrow"'
   - name: bentUpArrow
     uid: word!Word.GeometricShapeType.bentUpArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Bent up arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BentUpArrow"'
   - name: bevel
     uid: word!Word.GeometricShapeType.bevel:member
     package: word!
-    summary: >-
+    summary: |-
       Bevel geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Bevel"'
   - name: blockArc
     uid: word!Word.GeometricShapeType.blockArc:member
     package: word!
-    summary: >-
+    summary: |-
       Block arc geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BlockArc"'
   - name: borderCallout1
     uid: word!Word.GeometricShapeType.borderCallout1:member
     package: word!
-    summary: >-
+    summary: |-
       Border callout 1 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BorderCallout1"'
   - name: borderCallout2
     uid: word!Word.GeometricShapeType.borderCallout2:member
     package: word!
-    summary: >-
+    summary: |-
       Border callout 2 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BorderCallout2"'
   - name: borderCallout3
     uid: word!Word.GeometricShapeType.borderCallout3:member
     package: word!
-    summary: >-
+    summary: |-
       Border callout 3 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BorderCallout3"'
   - name: bracePair
     uid: word!Word.GeometricShapeType.bracePair:member
     package: word!
-    summary: >-
+    summary: |-
       Brace pair geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BracePair"'
   - name: bracketPair
     uid: word!Word.GeometricShapeType.bracketPair:member
     package: word!
-    summary: >-
+    summary: |-
       Bracket pair geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BracketPair"'
   - name: callout1
     uid: word!Word.GeometricShapeType.callout1:member
     package: word!
-    summary: >-
+    summary: |-
       Callout 1 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Callout1"'
   - name: callout2
     uid: word!Word.GeometricShapeType.callout2:member
     package: word!
-    summary: >-
+    summary: |-
       Callout 2 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Callout2"'
   - name: callout3
     uid: word!Word.GeometricShapeType.callout3:member
     package: word!
-    summary: >-
+    summary: |-
       Callout 3 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Callout3"'
   - name: can
     uid: word!Word.GeometricShapeType.can:member
     package: word!
-    summary: >-
+    summary: |-
       Can geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Can"'
   - name: chartPlus
     uid: word!Word.GeometricShapeType.chartPlus:member
     package: word!
-    summary: >-
+    summary: |-
       Chart plus geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ChartPlus"'
   - name: chartStar
     uid: word!Word.GeometricShapeType.chartStar:member
     package: word!
-    summary: >-
+    summary: |-
       Chart star geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ChartStar"'
   - name: chartX
     uid: word!Word.GeometricShapeType.chartX:member
     package: word!
-    summary: >-
+    summary: |-
       Chart X geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ChartX"'
   - name: chevron
     uid: word!Word.GeometricShapeType.chevron:member
     package: word!
-    summary: >-
+    summary: |-
       Chevron geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Chevron"'
   - name: chord
     uid: word!Word.GeometricShapeType.chord:member
     package: word!
-    summary: >-
+    summary: |-
       Chord geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Chord"'
   - name: circularArrow
     uid: word!Word.GeometricShapeType.circularArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Circular arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CircularArrow"'
   - name: cloud
     uid: word!Word.GeometricShapeType.cloud:member
     package: word!
-    summary: >-
+    summary: |-
       Cloud geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Cloud"'
   - name: cloudCallout
     uid: word!Word.GeometricShapeType.cloudCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Cloud callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CloudCallout"'
   - name: corner
     uid: word!Word.GeometricShapeType.corner:member
     package: word!
-    summary: >-
+    summary: |-
       Corner geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Corner"'
   - name: cornerTabs
     uid: word!Word.GeometricShapeType.cornerTabs:member
     package: word!
-    summary: >-
+    summary: |-
       Corner tabs geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CornerTabs"'
   - name: cube
     uid: word!Word.GeometricShapeType.cube:member
     package: word!
-    summary: >-
+    summary: |-
       Cube geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Cube"'
   - name: curvedDownArrow
     uid: word!Word.GeometricShapeType.curvedDownArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Curved down arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedDownArrow"'
   - name: curvedLeftArrow
     uid: word!Word.GeometricShapeType.curvedLeftArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Curved left arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedLeftArrow"'
   - name: curvedRightArrow
     uid: word!Word.GeometricShapeType.curvedRightArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Curved right arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedRightArrow"'
   - name: curvedUpArrow
     uid: word!Word.GeometricShapeType.curvedUpArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Curved up arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurvedUpArrow"'
   - name: decagon
     uid: word!Word.GeometricShapeType.decagon:member
     package: word!
-    summary: >-
+    summary: |-
       Decagon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Decagon"'
   - name: diagonalStripe
     uid: word!Word.GeometricShapeType.diagonalStripe:member
     package: word!
-    summary: >-
+    summary: |-
       Diagonal stripe geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DiagonalStripe"'
   - name: diamond
     uid: word!Word.GeometricShapeType.diamond:member
     package: word!
-    summary: >-
+    summary: |-
       Diamond geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Diamond"'
   - name: dodecagon
     uid: word!Word.GeometricShapeType.dodecagon:member
     package: word!
-    summary: >-
+    summary: |-
       Dodecagon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Dodecagon"'
   - name: donut
     uid: word!Word.GeometricShapeType.donut:member
     package: word!
-    summary: >-
+    summary: |-
       Donut geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Donut"'
   - name: doubleWave
     uid: word!Word.GeometricShapeType.doubleWave:member
     package: word!
-    summary: >-
+    summary: |-
       Double wave geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DoubleWave"'
   - name: downArrow
     uid: word!Word.GeometricShapeType.downArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Down arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DownArrow"'
   - name: downArrowCallout
     uid: word!Word.GeometricShapeType.downArrowCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Down arrow callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"DownArrowCallout"'
   - name: ellipse
     uid: word!Word.GeometricShapeType.ellipse:member
     package: word!
-    summary: >-
+    summary: |-
       Ellipse geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Ellipse"'
   - name: ellipseRibbon
     uid: word!Word.GeometricShapeType.ellipseRibbon:member
     package: word!
-    summary: >-
+    summary: |-
       Ellipse ribbon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EllipseRibbon"'
   - name: ellipseRibbon2
     uid: word!Word.GeometricShapeType.ellipseRibbon2:member
     package: word!
-    summary: >-
+    summary: |-
       Ellipse ribbon 2 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EllipseRibbon2"'
   - name: flowChartAlternateProcess
     uid: word!Word.GeometricShapeType.flowChartAlternateProcess:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart alternate process geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartAlternateProcess"'
   - name: flowChartCollate
     uid: word!Word.GeometricShapeType.flowChartCollate:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart collate geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartCollate"'
   - name: flowChartConnector
     uid: word!Word.GeometricShapeType.flowChartConnector:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart connector geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartConnector"'
   - name: flowChartDecision
     uid: word!Word.GeometricShapeType.flowChartDecision:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart decision geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDecision"'
   - name: flowChartDelay
     uid: word!Word.GeometricShapeType.flowChartDelay:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart delay geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDelay"'
   - name: flowChartDisplay
     uid: word!Word.GeometricShapeType.flowChartDisplay:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart display geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDisplay"'
   - name: flowChartDocument
     uid: word!Word.GeometricShapeType.flowChartDocument:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart document geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartDocument"'
   - name: flowChartExtract
     uid: word!Word.GeometricShapeType.flowChartExtract:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart extract geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartExtract"'
   - name: flowChartInputOutput
     uid: word!Word.GeometricShapeType.flowChartInputOutput:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart input-output geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartInputOutput"'
   - name: flowChartInternalStorage
     uid: word!Word.GeometricShapeType.flowChartInternalStorage:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart internal storage geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartInternalStorage"'
   - name: flowChartMagneticDisk
     uid: word!Word.GeometricShapeType.flowChartMagneticDisk:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart magnetic disk geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMagneticDisk"'
   - name: flowChartMagneticDrum
     uid: word!Word.GeometricShapeType.flowChartMagneticDrum:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart magnetic drum geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMagneticDrum"'
   - name: flowChartMagneticTape
     uid: word!Word.GeometricShapeType.flowChartMagneticTape:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart magnetic tape geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMagneticTape"'
   - name: flowChartManualInput
     uid: word!Word.GeometricShapeType.flowChartManualInput:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart manual input geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartManualInput"'
   - name: flowChartManualOperation
     uid: word!Word.GeometricShapeType.flowChartManualOperation:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart manual operation geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartManualOperation"'
   - name: flowChartMerge
     uid: word!Word.GeometricShapeType.flowChartMerge:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart merge geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMerge"'
   - name: flowChartMultidocument
     uid: word!Word.GeometricShapeType.flowChartMultidocument:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart multidocument geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartMultidocument"'
   - name: flowChartOfflineStorage
     uid: word!Word.GeometricShapeType.flowChartOfflineStorage:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart offline storage geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOfflineStorage"'
   - name: flowChartOffpageConnector
     uid: word!Word.GeometricShapeType.flowChartOffpageConnector:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart off-page connector geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOffpageConnector"'
   - name: flowChartOnlineStorage
     uid: word!Word.GeometricShapeType.flowChartOnlineStorage:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart online storage geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOnlineStorage"'
   - name: flowChartOr
     uid: word!Word.GeometricShapeType.flowChartOr:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart OR geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartOr"'
   - name: flowChartPredefinedProcess
     uid: word!Word.GeometricShapeType.flowChartPredefinedProcess:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart predefined process geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPredefinedProcess"'
   - name: flowChartPreparation
     uid: word!Word.GeometricShapeType.flowChartPreparation:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart preparation geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPreparation"'
   - name: flowChartProcess
     uid: word!Word.GeometricShapeType.flowChartProcess:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart process geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartProcess"'
   - name: flowChartPunchedCard
     uid: word!Word.GeometricShapeType.flowChartPunchedCard:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart punched card geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPunchedCard"'
   - name: flowChartPunchedTape
     uid: word!Word.GeometricShapeType.flowChartPunchedTape:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart punched tape geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartPunchedTape"'
   - name: flowChartSort
     uid: word!Word.GeometricShapeType.flowChartSort:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart sort geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartSort"'
   - name: flowChartSummingJunction
     uid: word!Word.GeometricShapeType.flowChartSummingJunction:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart summing junction geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartSummingJunction"'
   - name: flowChartTerminator
     uid: word!Word.GeometricShapeType.flowChartTerminator:member
     package: word!
-    summary: >-
+    summary: |-
       Flow chart terminator geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FlowChartTerminator"'
   - name: foldedCorner
     uid: word!Word.GeometricShapeType.foldedCorner:member
     package: word!
-    summary: >-
+    summary: |-
       Folded corner geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"FoldedCorner"'
   - name: frame
     uid: word!Word.GeometricShapeType.frame:member
     package: word!
-    summary: >-
+    summary: |-
       Frame geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Frame"'
   - name: funnel
     uid: word!Word.GeometricShapeType.funnel:member
     package: word!
-    summary: >-
+    summary: |-
       Funnel geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Funnel"'
   - name: gear6
     uid: word!Word.GeometricShapeType.gear6:member
     package: word!
-    summary: >-
+    summary: |-
       Gear 6 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Gear6"'
   - name: gear9
     uid: word!Word.GeometricShapeType.gear9:member
     package: word!
-    summary: >-
+    summary: |-
       Gear 9 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Gear9"'
   - name: halfFrame
     uid: word!Word.GeometricShapeType.halfFrame:member
     package: word!
-    summary: >-
+    summary: |-
       Half frame geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"HalfFrame"'
   - name: heart
     uid: word!Word.GeometricShapeType.heart:member
     package: word!
-    summary: >-
+    summary: |-
       Heart geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Heart"'
   - name: heptagon
     uid: word!Word.GeometricShapeType.heptagon:member
     package: word!
-    summary: >-
+    summary: |-
       Heptagon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Heptagon"'
   - name: hexagon
     uid: word!Word.GeometricShapeType.hexagon:member
     package: word!
-    summary: >-
+    summary: |-
       Hexagon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Hexagon"'
   - name: homePlate
     uid: word!Word.GeometricShapeType.homePlate:member
     package: word!
-    summary: >-
+    summary: |-
       Home plate geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"HomePlate"'
   - name: horizontalScroll
     uid: word!Word.GeometricShapeType.horizontalScroll:member
     package: word!
-    summary: >-
+    summary: |-
       Horizontal scroll geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"HorizontalScroll"'
   - name: irregularSeal1
     uid: word!Word.GeometricShapeType.irregularSeal1:member
     package: word!
-    summary: >-
+    summary: |-
       Irregular seal 1 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"IrregularSeal1"'
   - name: irregularSeal2
     uid: word!Word.GeometricShapeType.irregularSeal2:member
     package: word!
-    summary: >-
+    summary: |-
       Irregular seal 2 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"IrregularSeal2"'
   - name: leftArrow
     uid: word!Word.GeometricShapeType.leftArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Left arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftArrow"'
   - name: leftArrowCallout
     uid: word!Word.GeometricShapeType.leftArrowCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Left arrow callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftArrowCallout"'
   - name: leftBrace
     uid: word!Word.GeometricShapeType.leftBrace:member
     package: word!
-    summary: >-
+    summary: |-
       Left brace geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftBrace"'
   - name: leftBracket
     uid: word!Word.GeometricShapeType.leftBracket:member
     package: word!
-    summary: >-
+    summary: |-
       Left bracket geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftBracket"'
   - name: leftCircularArrow
     uid: word!Word.GeometricShapeType.leftCircularArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Left circular arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftCircularArrow"'
   - name: leftRightArrow
     uid: word!Word.GeometricShapeType.leftRightArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Left-right arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightArrow"'
   - name: leftRightArrowCallout
     uid: word!Word.GeometricShapeType.leftRightArrowCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Left-right arrow callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightArrowCallout"'
   - name: leftRightCircularArrow
     uid: word!Word.GeometricShapeType.leftRightCircularArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Left-right circular arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightCircularArrow"'
   - name: leftRightRibbon
     uid: word!Word.GeometricShapeType.leftRightRibbon:member
     package: word!
-    summary: >-
+    summary: |-
       Left-right ribbon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightRibbon"'
   - name: leftRightUpArrow
     uid: word!Word.GeometricShapeType.leftRightUpArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Left-right-up arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftRightUpArrow"'
   - name: leftUpArrow
     uid: word!Word.GeometricShapeType.leftUpArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Left-up arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LeftUpArrow"'
   - name: lightningBolt
     uid: word!Word.GeometricShapeType.lightningBolt:member
     package: word!
-    summary: >-
+    summary: |-
       Lightning bolt geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LightningBolt"'
   - name: lineInverse
     uid: word!Word.GeometricShapeType.lineInverse:member
     package: word!
-    summary: >-
+    summary: |-
       Line inverse geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"LineInverse"'
   - name: mathDivide
     uid: word!Word.GeometricShapeType.mathDivide:member
     package: word!
-    summary: >-
+    summary: |-
       Math divide geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathDivide"'
   - name: mathEqual
     uid: word!Word.GeometricShapeType.mathEqual:member
     package: word!
-    summary: >-
+    summary: |-
       Math equal geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathEqual"'
   - name: mathMinus
     uid: word!Word.GeometricShapeType.mathMinus:member
     package: word!
-    summary: >-
+    summary: |-
       Math minus geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathMinus"'
   - name: mathMultiply
     uid: word!Word.GeometricShapeType.mathMultiply:member
     package: word!
-    summary: >-
+    summary: |-
       Math multiply geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathMultiply"'
   - name: mathNotEqual
     uid: word!Word.GeometricShapeType.mathNotEqual:member
     package: word!
-    summary: >-
+    summary: |-
       Math not equal geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathNotEqual"'
   - name: mathPlus
     uid: word!Word.GeometricShapeType.mathPlus:member
     package: word!
-    summary: >-
+    summary: |-
       Math plus geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"MathPlus"'
   - name: moon
     uid: word!Word.GeometricShapeType.moon:member
     package: word!
-    summary: >-
+    summary: |-
       Moon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Moon"'
   - name: nonIsoscelesTrapezoid
     uid: word!Word.GeometricShapeType.nonIsoscelesTrapezoid:member
     package: word!
-    summary: >-
+    summary: |-
       Non-isosceles trapezoid geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"NonIsoscelesTrapezoid"'
   - name: noSmoking
     uid: word!Word.GeometricShapeType.noSmoking:member
     package: word!
-    summary: >-
+    summary: |-
       No smoking geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"NoSmoking"'
   - name: notchedRightArrow
     uid: word!Word.GeometricShapeType.notchedRightArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Notched right arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"NotchedRightArrow"'
   - name: octagon
     uid: word!Word.GeometricShapeType.octagon:member
     package: word!
-    summary: >-
+    summary: |-
       Octagon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Octagon"'
   - name: parallelogram
     uid: word!Word.GeometricShapeType.parallelogram:member
     package: word!
-    summary: >-
+    summary: |-
       Parallelogram geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Parallelogram"'
   - name: pentagon
     uid: word!Word.GeometricShapeType.pentagon:member
     package: word!
-    summary: >-
+    summary: |-
       Pentagon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Pentagon"'
   - name: pie
     uid: word!Word.GeometricShapeType.pie:member
     package: word!
-    summary: >-
+    summary: |-
       Pie geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Pie"'
   - name: pieWedge
     uid: word!Word.GeometricShapeType.pieWedge:member
     package: word!
-    summary: >-
+    summary: |-
       Pie wedge geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"PieWedge"'
   - name: plaque
     uid: word!Word.GeometricShapeType.plaque:member
     package: word!
-    summary: >-
+    summary: |-
       Plaque geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Plaque"'
   - name: plaqueTabs
     uid: word!Word.GeometricShapeType.plaqueTabs:member
     package: word!
-    summary: >-
+    summary: |-
       Plaque tabs geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"PlaqueTabs"'
   - name: plus
     uid: word!Word.GeometricShapeType.plus:member
     package: word!
-    summary: >-
+    summary: |-
       Plus geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Plus"'
   - name: quadArrow
     uid: word!Word.GeometricShapeType.quadArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Quad arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"QuadArrow"'
   - name: quadArrowCallout
     uid: word!Word.GeometricShapeType.quadArrowCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Quad arrow callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"QuadArrowCallout"'
   - name: rectangle
     uid: word!Word.GeometricShapeType.rectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Rectangle"'
   - name: ribbon
     uid: word!Word.GeometricShapeType.ribbon:member
     package: word!
-    summary: >-
+    summary: |-
       Ribbon geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Ribbon"'
   - name: ribbon2
     uid: word!Word.GeometricShapeType.ribbon2:member
     package: word!
-    summary: >-
+    summary: |-
       Ribbon 2 geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Ribbon2"'
   - name: rightArrow
     uid: word!Word.GeometricShapeType.rightArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Right arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightArrow"'
   - name: rightArrowCallout
     uid: word!Word.GeometricShapeType.rightArrowCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Right arrow callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightArrowCallout"'
   - name: rightBrace
     uid: word!Word.GeometricShapeType.rightBrace:member
     package: word!
-    summary: >-
+    summary: |-
       Right brace geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightBrace"'
   - name: rightBracket
     uid: word!Word.GeometricShapeType.rightBracket:member
     package: word!
-    summary: >-
+    summary: |-
       Right bracket geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightBracket"'
   - name: rightTriangle
     uid: word!Word.GeometricShapeType.rightTriangle:member
     package: word!
-    summary: >-
+    summary: |-
       Right triangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RightTriangle"'
   - name: round1Rectangle
     uid: word!Word.GeometricShapeType.round1Rectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Round one rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Round1Rectangle"'
   - name: round2DiagonalRectangle
     uid: word!Word.GeometricShapeType.round2DiagonalRectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Round two diagonal rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Round2DiagonalRectangle"'
   - name: round2SameRectangle
     uid: word!Word.GeometricShapeType.round2SameRectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Round two same rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Round2SameRectangle"'
   - name: roundRectangle
     uid: word!Word.GeometricShapeType.roundRectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Round rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"RoundRectangle"'
   - name: smileyFace
     uid: word!Word.GeometricShapeType.smileyFace:member
     package: word!
-    summary: >-
+    summary: |-
       Smiley face geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SmileyFace"'
   - name: snip1Rectangle
     uid: word!Word.GeometricShapeType.snip1Rectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Snip one rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Snip1Rectangle"'
   - name: snip2DiagonalRectangle
     uid: word!Word.GeometricShapeType.snip2DiagonalRectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Snip two diagonal rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Snip2DiagonalRectangle"'
   - name: snip2SameRectangle
     uid: word!Word.GeometricShapeType.snip2SameRectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Snip two same rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Snip2SameRectangle"'
   - name: snipRoundRectangle
     uid: word!Word.GeometricShapeType.snipRoundRectangle:member
     package: word!
-    summary: >-
+    summary: |-
       Snip round rectangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SnipRoundRectangle"'
   - name: squareTabs
     uid: word!Word.GeometricShapeType.squareTabs:member
     package: word!
-    summary: >-
+    summary: |-
       Square tabs geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SquareTabs"'
   - name: star10
     uid: word!Word.GeometricShapeType.star10:member
     package: word!
-    summary: >-
+    summary: |-
       Star 10-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star10"'
   - name: star12
     uid: word!Word.GeometricShapeType.star12:member
     package: word!
-    summary: >-
+    summary: |-
       Star 12-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star12"'
   - name: star16
     uid: word!Word.GeometricShapeType.star16:member
     package: word!
-    summary: >-
+    summary: |-
       Star 16-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star16"'
   - name: star24
     uid: word!Word.GeometricShapeType.star24:member
     package: word!
-    summary: >-
+    summary: |-
       Star 24-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star24"'
   - name: star32
     uid: word!Word.GeometricShapeType.star32:member
     package: word!
-    summary: >-
+    summary: |-
       Star 32-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star32"'
   - name: star4
     uid: word!Word.GeometricShapeType.star4:member
     package: word!
-    summary: >-
+    summary: |-
       Star 4-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star4"'
   - name: star5
     uid: word!Word.GeometricShapeType.star5:member
     package: word!
-    summary: >-
+    summary: |-
       Star 5-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star5"'
   - name: star6
     uid: word!Word.GeometricShapeType.star6:member
     package: word!
-    summary: >-
+    summary: |-
       Star 6-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star6"'
   - name: star7
     uid: word!Word.GeometricShapeType.star7:member
     package: word!
-    summary: >-
+    summary: |-
       Star 7-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star7"'
   - name: star8
     uid: word!Word.GeometricShapeType.star8:member
     package: word!
-    summary: >-
+    summary: |-
       Star 8-point geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Star8"'
   - name: stripedRightArrow
     uid: word!Word.GeometricShapeType.stripedRightArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Striped right arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"StripedRightArrow"'
   - name: sun
     uid: word!Word.GeometricShapeType.sun:member
     package: word!
-    summary: >-
+    summary: |-
       Sun geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Sun"'
   - name: swooshArrow
     uid: word!Word.GeometricShapeType.swooshArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Swoosh arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"SwooshArrow"'
   - name: teardrop
     uid: word!Word.GeometricShapeType.teardrop:member
     package: word!
-    summary: >-
+    summary: |-
       Teardrop geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Teardrop"'
   - name: trapezoid
     uid: word!Word.GeometricShapeType.trapezoid:member
     package: word!
-    summary: >-
+    summary: |-
       Trapezoid geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Trapezoid"'
   - name: triangle
     uid: word!Word.GeometricShapeType.triangle:member
     package: word!
-    summary: >-
+    summary: |-
       Triangle geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Triangle"'
   - name: upArrow
     uid: word!Word.GeometricShapeType.upArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Up arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpArrow"'
   - name: upArrowCallout
     uid: word!Word.GeometricShapeType.upArrowCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Up arrow callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpArrowCallout"'
   - name: upDownArrow
     uid: word!Word.GeometricShapeType.upDownArrow:member
     package: word!
-    summary: >-
+    summary: |-
       Up-down arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpDownArrow"'
   - name: upDownArrowCallout
     uid: word!Word.GeometricShapeType.upDownArrowCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Up-down arrow callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UpDownArrowCallout"'
   - name: uturnArrow
     uid: word!Word.GeometricShapeType.uturnArrow:member
     package: word!
-    summary: >-
+    summary: |-
       U-turn arrow geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"UturnArrow"'
   - name: verticalScroll
     uid: word!Word.GeometricShapeType.verticalScroll:member
     package: word!
-    summary: >-
+    summary: |-
       Vertical scroll geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"VerticalScroll"'
   - name: wave
     uid: word!Word.GeometricShapeType.wave:member
     package: word!
-    summary: >-
+    summary: |-
       Wave geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Wave"'
   - name: wedgeEllipseCallout
     uid: word!Word.GeometricShapeType.wedgeEllipseCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Wedge ellipse callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"WedgeEllipseCallout"'
   - name: wedgeRectCallout
     uid: word!Word.GeometricShapeType.wedgeRectCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Wedge rectangle callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"WedgeRectCallout"'
   - name: wedgeRRectCallout
     uid: word!Word.GeometricShapeType.wedgeRRectCallout:member
     package: word!
-    summary: >-
+    summary: |-
       Wedge rounded rectangle callout geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"WedgeRRectCallout"'

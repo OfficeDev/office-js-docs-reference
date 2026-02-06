@@ -7,9 +7,7 @@ summary: >-
   Represents an unknown cell control. This represents a control that was added
   in a future version of Excel, and the current version of Excel doesn't know
   how to display this control.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.18\]'
 
 isPreview: false
 isDeprecated: false

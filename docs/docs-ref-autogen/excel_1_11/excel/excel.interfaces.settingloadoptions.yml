@@ -9,9 +9,7 @@ summary: >-
   or lifecycle information needed by the content or task-pane add-in. Note that
   settings are persisted in the document and hence it is not a place to store
   any sensitive or protected information such as user information and password.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     package: excel!
     fullName: key
     summary: The key that represents the ID of the setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     package: excel!
     fullName: value
     summary: Represents the value stored for this setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

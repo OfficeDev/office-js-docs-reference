@@ -4,9 +4,7 @@ uid: excel!Excel.Interfaces.ChartTitleLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartTitleLoadOptions
 summary: Represents a chart title object of a chart.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       Represents the formatting of a chart title, which includes fill and font
       formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +50,7 @@ properties:
     summary: >-
       Returns the height, in points, of the chart title. Value is `null` if the
       chart title is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -69,9 +63,7 @@ properties:
     package: excel!
     fullName: horizontalAlignment
     summary: Specifies the horizontal alignment for chart title.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +79,7 @@ properties:
       Specifies the distance, in points, from the left edge of chart title to
       the left edge of chart area. Value is `null` if the chart title is not
       visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +92,7 @@ properties:
     package: excel!
     fullName: overlay
     summary: Specifies if the chart title will overlay the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -119,9 +107,7 @@ properties:
     summary: >-
       Represents the position of chart title. See `Excel.ChartTitlePosition` for
       details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +122,7 @@ properties:
     summary: >-
       Represents a Boolean value that determines if the chart title has a
       shadow.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +135,7 @@ properties:
     package: excel!
     fullName: text
     summary: Specifies the chart's title text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -169,9 +151,7 @@ properties:
       Specifies the angle to which the text is oriented for the chart title. The
       value should either be an integer from -90 to 90 or the integer 180 for
       vertically-oriented text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -186,9 +166,7 @@ properties:
     summary: >-
       Specifies the distance, in points, from the top edge of chart title to the
       top of chart area. Value is `null` if the chart title is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,9 +181,7 @@ properties:
     summary: >-
       Specifies the vertical alignment of chart title. See
       `Excel.ChartTextVerticalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -218,9 +194,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the chart title is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -235,9 +209,7 @@ properties:
     summary: >-
       Specifies the width, in points, of the chart title. Value is `null` if the
       chart title is not visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

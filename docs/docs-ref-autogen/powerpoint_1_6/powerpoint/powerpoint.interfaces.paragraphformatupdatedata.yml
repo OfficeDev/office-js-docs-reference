@@ -23,10 +23,7 @@ properties:
       alignment values. See
       [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

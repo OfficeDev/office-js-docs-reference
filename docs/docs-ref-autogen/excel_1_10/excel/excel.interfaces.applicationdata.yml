@@ -19,9 +19,7 @@ properties:
     summary: >-
       Returns the Excel calculation engine version used for the last full
       recalculation.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -41,9 +39,7 @@ properties:
       ignores changes in tables; `Manual`<!-- -->, where calculation is done
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1 for get, 1.8 for set\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +58,7 @@ properties:
     summary: >-
       Returns the calculation state of the application. See
       `Excel.CalculationState` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +78,7 @@ properties:
       Returns the iterative calculation settings. In Excel on Windows and Mac,
       the settings will apply to the Excel Application. In Excel on the web and
       other platforms, the settings will apply to the active workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

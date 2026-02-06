@@ -6,9 +6,7 @@ fullName: Word.TabStopCollection
 summary: >-
   Represents a collection of [tab stops](xref:word!Word.TabStop:class) in a Word
   document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -50,9 +48,7 @@ methods:
     summary: >-
       Returns a `TabStop` object that represents a custom tab stop added to the
       paragraph.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +69,7 @@ methods:
     package: word!
     fullName: after(Position)
     summary: Returns the next `TabStop` object to the right of the specified position.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +87,7 @@ methods:
     package: word!
     fullName: before(Position)
     summary: Returns the next `TabStop` object to the left of the specified position.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +105,7 @@ methods:
     package: word!
     fullName: clearAll()
     summary: Clears all the custom tab stops from the paragraph.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

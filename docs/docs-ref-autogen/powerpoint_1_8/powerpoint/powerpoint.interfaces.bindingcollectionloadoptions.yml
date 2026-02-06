@@ -6,10 +6,7 @@ fullName: PowerPoint.Interfaces.BindingCollectionLoadOptions
 summary: >-
   Represents the collection of all the binding objects that are part of the
   presentation.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,10 +33,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: 'For EACH ITEM in the collection: Represents the binding identifier.'
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,10 +48,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the type of the binding. See
       `BindingType` for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

@@ -7,9 +7,7 @@ summary: >-
   Provides configuration options for the
   [XmlNode.selectSingleNode](xref:word!Word.XmlNode:class) and
   [Document.selectSingleNode](xref:word!Word.Document:class) methods.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -22,9 +20,7 @@ properties:
     summary: >-
       If provided, specifies whether to skip text nodes in the search. The
       default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -39,9 +35,7 @@ properties:
     summary: >-
       If provided, specifies the prefix mapping for the XPath expression. The
       default value is "" (empty string).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

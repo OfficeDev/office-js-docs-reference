@@ -4,36 +4,7 @@ uid: excel!Excel.TableColumnCollection:class
 package: excel!
 fullName: Excel.TableColumnCollection
 summary: Represents a collection of all the columns that are part of the table.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
-
-  // Add checkboxes to the table.
-
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-    // Get the second column in the table, without the header.
-    const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
-
-    // Change the boolean values to checkboxes.
-    range.control = {
-      type: Excel.CellControlType.checkbox
-    };
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -59,9 +30,7 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of columns in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,29 +58,9 @@ methods:
     fullName: add(index, values, name)
     summary: Adds a new column to the table.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 requires an index smaller than the total column
+      \[Api set: ExcelApi 1.1 requires an index smaller than the total column
       count; 1.4 allows index to be optional (null or -1) and will append a
-      column at the end; 1.4 allows name parameter at creation
-      time.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tables = context.workbook.tables;
-          const values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
-          const column = tables.getItem("Table1").columns.add(null, values);
-          column.load('name');
-          await context.sync();
-          
-          console.log(column.name);
-      });
-
-      ```
+      column at the end; 1.4 allows name parameter at creation time.\]
 
     isPreview: false
     isDeprecated: false
@@ -144,9 +93,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of columns in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -160,45 +107,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a column object by name or ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
-          tableColumn.load('name');
-          await context.sync();
-          console.log(tableColumn.name);
-      });
-
-      ```
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
-
-
-      // Remove all content from the Analysis column.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
-        // Get the second column in the table, without the header.
-        const range = sheet.tables.getItem("FruitTable").columns.getItem("Analysis").getDataBodyRange();
-
-        // Clear all the data from the second column.
-        range.clearOrResetContents();
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -216,24 +125,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a column based on its position in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const tableColumn = context.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-          tableColumn.load('name');
-          await context.sync();
-          console.log(tableColumn.name);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -256,9 +148,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -318,23 +208,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.TableColumnCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const tableColumns = context.workbook.tables.getItem('Table1').columns;
-              tableColumns.load('items');
-              await context.sync();
-              
-              console.log("tableColumns Count: " + tableColumns.count);
-              for (let i = 0; i < tableColumns.items.length; i++) {
-                  console.log(tableColumns.items[i].name);
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.TableColumnCollection#load:member(3)
     package: excel!

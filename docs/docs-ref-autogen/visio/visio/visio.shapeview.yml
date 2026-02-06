@@ -4,10 +4,7 @@ uid: visio!Visio.ShapeView:class
 package: visio!
 fullName: Visio.ShapeView
 summary: Represents the ShapeView class.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,30 +30,7 @@ properties:
     package: visio!
     fullName: highlight
     summary: Represents the highlight around the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          const shape = activePage.shapes.getItem(0);
-          shape.view.highlight = { color: "#E7E7E7", width: 100 };
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -74,30 +48,7 @@ methods:
       addOverlay(OverlayType, Content, OverlayHorizontalAlignment,
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          const shape = activePage.shapes.getItem(0);
-          const overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -140,10 +91,7 @@ methods:
       addOverlay(OverlayType, Content, OverlayHorizontalAlignment,
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -256,30 +204,7 @@ methods:
     package: visio!
     fullName: removeOverlay(OverlayId)
     summary: Removes particular overlay or all overlays on the Shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Visio.run(session, function (ctx) {
-          const activePage = ctx.document.getActivePage();
-          const shape = activePage.shapes.getItem(0);
-          shape.view.removeOverlay(1);
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -351,10 +276,7 @@ methods:
       The purpose of SetText API is to update the text inside a Visio Shape in
       run time. The updated text retains the existing formatting properties of
       the shape's text.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -372,10 +294,7 @@ methods:
     package: visio!
     fullName: showOverlay(overlayId, show)
     summary: Shows particular overlay on the Shape.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

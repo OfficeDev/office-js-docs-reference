@@ -4,9 +4,7 @@ uid: onenote!OneNote.TableRow:class
 package: onenote!
 fullName: OneNote.TableRow
 summary: Represents a row in a table.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +15,7 @@ properties:
     package: onenote!
     fullName: cellCount
     summary: Gets the number of cells in the row.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +28,7 @@ properties:
     package: onenote!
     fullName: cells
     summary: Gets the cells in the row.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +56,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the row.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,10 +69,7 @@ properties:
     package: onenote!
     fullName: parentTable
     summary: Gets the parent table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,10 +82,7 @@ properties:
     package: onenote!
     fullName: rowIndex
     summary: Gets the index of the row in its parent table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +96,7 @@ methods:
     package: onenote!
     fullName: clear()
     summary: Clears the contents of the row.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,49 +110,7 @@ methods:
     package: onenote!
     fullName: insertRowAsSibling(insertLocation, values)
     summary: Inserts a row before or after the current row.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          context.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          
-          const paragraphs = outline.paragraphs;
-          
-          // For each table, get table rows.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
-              if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  
-                  // Queue a command to load table.rows.
-                  context.load(table, "rows");
-                  
-                  // Run the queued commands.
-                  await context.sync();
-
-                  const rows = table.rows;
-                  rows.items[1].insertRowAsSibling("Before", ["cell0", "cell1"]);
-                  await context.sync();
-              }
-          }
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -197,10 +135,7 @@ methods:
     package: onenote!
     fullName: insertRowAsSibling(insertLocation, values)
     summary: Inserts a row before or after the current row.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -265,47 +200,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.TableRow:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-              const app = context.application;
-              const outline = app.getActiveOutline();
-              
-              // Queue a command to load outline.paragraphs and their types.
-              context.load(outline, "paragraphs, paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-              
-              const paragraphs = outline.paragraphs;
-              
-              // For each table, get table rows.
-              for (let i = 0; i < paragraphs.items.length; i++) {
-                  const paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      const table = paragraph.table;
-                      
-                      // Queue a command to load table.rows.
-                      context.load(table, "rows");
-                      await context.sync();
-
-                      const rows = table.rows;
-                      
-                      // For each table row, log cell count and row index.
-                      for (let i = 0; i < rows.items.length; i++) {
-                          console.log("Row " + i + " Id: " + rows.items[i].id);
-                          console.log("Row " + i + " Cell Count: " + rows.items[i].cellCount);
-                          console.log("Row " + i + " Row Index: " + rows.items[i].rowIndex);
-                      }
-                      await context.sync();
-                  }
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.TableRow#load:member(3)
     package: onenote!
@@ -345,10 +240,7 @@ methods:
     summary: >-
       Sets the shading color of all cells in the row. The color code to set the
       cells to.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

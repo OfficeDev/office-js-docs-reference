@@ -19,9 +19,7 @@ properties:
     summary: >-
       Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

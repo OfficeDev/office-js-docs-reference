@@ -4,9 +4,7 @@ uid: word!Word.ColorIndex:enum
 package: word!
 fullName: Word.ColorIndex
 summary: Represents color index values in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,200 +12,160 @@ fields:
   - name: auto
     uid: word!Word.ColorIndex.auto:member
     package: word!
-    summary: >-
+    summary: |-
       Automatically determines the color.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Auto"'
   - name: black
     uid: word!Word.ColorIndex.black:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color black.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Black"'
   - name: blue
     uid: word!Word.ColorIndex.blue:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color blue.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Blue"'
   - name: brightGreen
     uid: word!Word.ColorIndex.brightGreen:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a bright green color.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BrightGreen"'
   - name: byAuthor
     uid: word!Word.ColorIndex.byAuthor:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a color determined by the author.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ByAuthor"'
   - name: classicBlue
     uid: word!Word.ColorIndex.classicBlue:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a classic blue color.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ClassicBlue"'
   - name: classicRed
     uid: word!Word.ColorIndex.classicRed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a classic red color.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ClassicRed"'
   - name: darkBlue
     uid: word!Word.ColorIndex.darkBlue:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark blue color.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkBlue"'
   - name: darkRed
     uid: word!Word.ColorIndex.darkRed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark red color.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkRed"'
   - name: darkYellow
     uid: word!Word.ColorIndex.darkYellow:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark yellow color.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkYellow"'
   - name: gray25
     uid: word!Word.ColorIndex.gray25:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a gray color with 25% intensity.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Gray25"'
   - name: gray50
     uid: word!Word.ColorIndex.gray50:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a gray color with 50% intensity.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Gray50"'
   - name: green
     uid: word!Word.ColorIndex.green:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color green.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Green"'
   - name: pink
     uid: word!Word.ColorIndex.pink:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color pink.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Pink"'
   - name: red
     uid: word!Word.ColorIndex.red:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color red.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Red"'
   - name: teal
     uid: word!Word.ColorIndex.teal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color teal.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Teal"'
   - name: turquoise
     uid: word!Word.ColorIndex.turquoise:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color turquoise.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Turquoise"'
   - name: violet
     uid: word!Word.ColorIndex.violet:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color violet.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Violet"'
   - name: white
     uid: word!Word.ColorIndex.white:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color white.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"White"'
   - name: yellow
     uid: word!Word.ColorIndex.yellow:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the color yellow.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Yellow"'

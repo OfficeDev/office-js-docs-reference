@@ -4,9 +4,7 @@ uid: onenote!OneNote.SectionGroupCollection:class
 package: onenote!
 fullName: OneNote.SectionGroupCollection
 summary: Represents a collection of section groups.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of section groups in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,43 +57,7 @@ methods:
     package: onenote!
     fullName: getByName(name)
     summary: Gets the collection of section groups with the specified name.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Get the section groups that are direct children of the current notebook.
-          const sectionGroups = context.application.getActiveNotebook().sectionGroups;
-
-          // Queue a command to load the section groups.
-          // For best performance, request specific properties.
-          sectionGroups.load("id"); 
-
-          // Get the section groups with the specified name.
-          const labsSectionGroups = sectionGroups.getByName("Labs");
-
-          // Queue a command to load the section groups with the specified properties.
-          labsSectionGroups.load("id,name"); 
-                  
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          // Iterate through the collection or access items individually by index.
-          if (labsSectionGroups.items.length > 0) {
-              console.log("Section group name: " + labsSectionGroups.items[0].name);
-              console.log("Section group ID: " + labsSectionGroups.items[0].id);
-          }
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,10 +75,7 @@ methods:
     package: onenote!
     fullName: getItem(index)
     summary: Gets a section group by ID or by its index in the collection. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -139,10 +95,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a section group on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,32 +156,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.SectionGroupCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Get the section groups that are direct children of the current notebook.
-              const sectionGroups = context.application.getActiveNotebook().sectionGroups;
-
-              // Queue a command to load the section groups.
-              // For best performance, request specific properties.
-              sectionGroups.load("name"); 
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-                      
-              // Iterate through the collection or access items individually by index.
-              // For example: sectionGroups.items[0]
-              $.each(sectionGroups.items, function(index, sectionGroup) {
-                  console.log("Section group name: " + sectionGroup.name);  
-                  console.log("Section group ID: " + sectionGroup.id);  
-              });
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.SectionGroupCollection#load:member(3)
     package: onenote!

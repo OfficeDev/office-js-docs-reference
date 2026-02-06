@@ -4,9 +4,7 @@ uid: word!Word.WindowPageScrollOptions:interface
 package: word!
 fullName: Word.WindowPageScrollOptions
 summary: The options for scrolling through the specified pane or window page by page.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
       `down` and `up` are both provided, the contents of the window are scrolled
       by the difference of the property values. For example, if `down` is 3 and
       `up` is 6, the contents are scrolled up three pages.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,9 +36,7 @@ properties:
       `down` and `up` are both provided, the contents of the window are scrolled
       by the difference of the property values. For example, if `down` is 3 and
       `up` is 6, the contents are scrolled up three pages.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

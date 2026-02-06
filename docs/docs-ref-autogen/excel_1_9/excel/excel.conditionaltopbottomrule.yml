@@ -4,9 +4,7 @@ uid: excel!Excel.ConditionalTopBottomRule:interface
 package: excel!
 fullName: Excel.ConditionalTopBottomRule
 summary: Represents the rule of the top/bottom conditional format.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.6\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent
       ranks.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +30,7 @@ properties:
     package: excel!
     fullName: type
     summary: Format values based on the top or bottom rank.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

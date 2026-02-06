@@ -4,10 +4,7 @@ uid: visio!Visio.HyperlinkCollection:class
 package: visio!
 fullName: Visio.HyperlinkCollection
 summary: Represents the Hyperlink Collection.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -47,10 +44,7 @@ methods:
     package: visio!
     fullName: getCount()
     summary: Gets the number of hyperlinks.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +58,7 @@ methods:
     package: visio!
     fullName: getItem(Key)
     summary: Gets a Hyperlink using its key (name or Id).
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,33 +96,7 @@ methods:
             uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="visio!Visio.HyperlinkCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shapeName = "Manager Belt";
-              const shape = activePage.shapes.getItem(shapeName);
-              const shapeHyperlinks = shape.hyperlinks;
-              shapeHyperlinks.load(["description", "address", "subAddress"]);
-                  ctx.sync().then(function () {
-                      for (let i = 0; i < shapeHyperlinks.items.length; i++) {
-                          const hyperlink = shapeHyperlinks.items[i];
-                          console.log(
-                              "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
-                              hyperlink.subAddress);
-                      }
-                  });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: visio!Visio.HyperlinkCollection#load:member(2)
     package: visio!

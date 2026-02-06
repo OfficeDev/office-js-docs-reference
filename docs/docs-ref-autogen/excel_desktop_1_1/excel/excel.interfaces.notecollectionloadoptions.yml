@@ -4,9 +4,7 @@ uid: excel!Excel.Interfaces.NoteCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.NoteCollectionLoadOptions
 summary: Represents a collection of note objects that are part of the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.18\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,10 +31,7 @@ properties:
     package: excel!
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the author of the note.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +44,7 @@ properties:
     package: excel!
     fullName: content
     summary: 'For EACH ITEM in the collection: Specifies the text of the note.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +59,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the height of the note. Note:
       This property is not supported in Excel on the web.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -86,10 +75,7 @@ properties:
       For EACH ITEM in the collection: Specifies the visibility of the note. A
       value of `true` means the note is shown. Note: This property is not
       supported in Excel on the web.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -104,10 +90,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the width of the note. Note:
       This property is not supported in Excel on the web.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false

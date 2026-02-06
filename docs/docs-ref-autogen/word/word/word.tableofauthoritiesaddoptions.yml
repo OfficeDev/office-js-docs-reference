@@ -7,9 +7,7 @@ summary: >-
   Specifies the options for adding to a
   [Word.TableOfAuthoritiesCollection](xref:word!Word.TableOfAuthoritiesCollection:class)
   object.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -26,9 +24,7 @@ properties:
       bookmark. Corresponds to the `\b` switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
       through the Word UI, see [Create a table of
       authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
       -->. The default value is `1`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
       the `\e` switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, no separator is used.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +82,7 @@ properties:
       switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. The default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -110,9 +100,7 @@ properties:
       switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. The default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +118,7 @@ properties:
       to the `\l` switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, a comma and a space (", ") are used.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -150,9 +136,7 @@ properties:
       switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, an en dash ("–") is used.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -170,9 +154,7 @@ properties:
       a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -190,9 +172,7 @@ properties:
       Corresponds to the `\d` switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, a hyphen ("-") is used.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -210,9 +190,7 @@ properties:
       the `\p` switch for a [Table of Authorities (TOA)
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. The default value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

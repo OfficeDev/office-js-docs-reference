@@ -4,9 +4,7 @@ uid: onenote!OneNote.Notebook:class
 package: onenote!
 fullName: OneNote.Notebook
 summary: Represents a OneNote notebook. Notebooks contain section groups and sections.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -17,10 +15,7 @@ properties:
     package: onenote!
     fullName: baseUrl
     summary: The url of the site where this notebook is located. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +28,7 @@ properties:
     package: onenote!
     fullName: clientUrl
     summary: The client url of the notebook. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +56,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the notebook. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,10 +71,7 @@ properties:
     summary: >-
       True if the notebook isn't created by the user (i.e., 'Misplaced
       Sections').
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,10 +84,7 @@ properties:
     package: onenote!
     fullName: name
     summary: Gets the name of the notebook.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -114,10 +97,7 @@ properties:
     package: onenote!
     fullName: sectionGroups
     summary: The section groups in the notebook.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,10 +110,7 @@ properties:
     package: onenote!
     fullName: sections
     summary: The sections of the notebook.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -147,34 +124,7 @@ methods:
     package: onenote!
     fullName: addSection(name)
     summary: Adds a new section to the end of the notebook.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Gets the active notebook.
-          const notebook = context.application.getActiveNotebook();
-
-          // Queue a command to add a new section.
-          const section = notebook.addSection("Sample section");
-          
-          // Queue a command to load the new section. This example reads the name property later.
-          section.load("name");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          console.log("New section name is " + section.name);
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -192,34 +142,7 @@ methods:
     package: onenote!
     fullName: addSectionGroup(name)
     summary: Adds a new section group to the end of the notebook.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Gets the active notebook.
-          const notebook = context.application.getActiveNotebook();
-
-          // Queue a command to add a new section group.
-          const sectionGroup = notebook.addSectionGroup("Sample section group");
-
-          // Queue a command to load the new section group.
-          sectionGroup.load();
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          console.log("New section group name is " + sectionGroup.name);
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -237,32 +160,7 @@ methods:
     package: onenote!
     fullName: getRestApiId()
     summary: Gets the REST API ID.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-          // Get the current notebook.
-          const notebook = context.application.getActiveNotebook();
-          const restApiId = notebook.getRestApiId();
-
-          await context.sync();
-          console.log("The REST API ID is " + restApiId.value);
-          // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
-          // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-          // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-          // according to the OneNote Development Blog.
-          // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -316,29 +214,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.Notebook:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-                  
-              // Get the current notebook.
-              const notebook = context.application.getActiveNotebook();
-                      
-              // Queue a command to load the notebook.
-              // For best performance, request specific properties.
-              notebook.load('baseUrl');
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-              console.log("Base url: " + notebook.baseUrl);
-              // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
-              // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-              // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.Notebook#load:member(3)
     package: onenote!

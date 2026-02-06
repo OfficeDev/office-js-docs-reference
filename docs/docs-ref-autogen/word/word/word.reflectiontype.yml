@@ -6,9 +6,7 @@ fullName: Word.ReflectionType
 summary: >-
   Specifies the type of the
   [Word.ReflectionFormat](xref:word!Word.ReflectionFormat:class) object.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -16,110 +14,88 @@ fields:
   - name: mixed
     uid: word!Word.ReflectionType.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a mixed reflection type.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: none
     uid: word!Word.ReflectionType.none:member
     package: word!
-    summary: >-
+    summary: |-
       Represents no reflection.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"None"'
   - name: type1
     uid: word!Word.ReflectionType.type1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 1.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type1"'
   - name: type2
     uid: word!Word.ReflectionType.type2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 2.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type2"'
   - name: type3
     uid: word!Word.ReflectionType.type3:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 3.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type3"'
   - name: type4
     uid: word!Word.ReflectionType.type4:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 4.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type4"'
   - name: type5
     uid: word!Word.ReflectionType.type5:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 5.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type5"'
   - name: type6
     uid: word!Word.ReflectionType.type6:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 6.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type6"'
   - name: type7
     uid: word!Word.ReflectionType.type7:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 7.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type7"'
   - name: type8
     uid: word!Word.ReflectionType.type8:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 8.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type8"'
   - name: type9
     uid: word!Word.ReflectionType.type9:member
     package: word!
-    summary: >-
+    summary: |-
       Represents reflection type 9.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Type9"'

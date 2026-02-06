@@ -4,9 +4,7 @@ uid: excel!Excel.Binding:class
 package: excel!
 fullName: Excel.Binding
 summary: Represents an Office.js binding that is defined in the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: id
     summary: Represents the binding identifier.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: excel!
     fullName: type
     summary: Returns the type of the binding. See `Excel.BindingType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,26 +61,7 @@ methods:
     summary: >-
       Returns the range represented by the binding. Will throw an error if the
       binding is not of the correct type.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const binding = context.workbook.bindings.getItemAt(0);
-          const range = binding.getRange();
-          range.load('cellCount');
-          await context.sync();
-
-          console.log(range.cellCount);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,26 +77,7 @@ methods:
     summary: >-
       Returns the table represented by the binding. Will throw an error if the
       binding is not of the correct type.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const binding = context.workbook.bindings.getItemAt(0);
-          const table = binding.getTable();
-          table.load('name');
-          await context.sync();
-
-          console.log(table.name);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -137,26 +93,7 @@ methods:
     summary: >-
       Returns the text represented by the binding. Will throw an error if the
       binding is not of the correct type.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await Excel.run(async (context) => { 
-          const binding = context.workbook.bindings.getItemAt(0);
-          const text = binding.getText();
-          binding.load('text');
-          await context.sync();
-
-          console.log(text);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -206,20 +143,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Binding:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await Excel.run(async (context) => { 
-              const binding = context.workbook.bindings.getItemAt(0);
-              binding.load('type');
-              await context.sync();
-
-              console.log(binding.type);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.Binding#load:member(3)
     package: excel!

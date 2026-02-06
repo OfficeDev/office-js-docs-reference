@@ -11,9 +11,7 @@ summary: >-
   contain contents such as images, tables, or paragraphs of formatted text.
   Currently, only rich text, plain text, checkbox, dropdown list, and combo box
   content controls are supported.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -43,9 +41,7 @@ properties:
       For EACH ITEM in the collection: Specifies the appearance of the content
       control. The value can be `boundingBox`<!-- -->, `tags`<!-- -->, or
       `hidden`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +58,7 @@ properties:
       For EACH ITEM in the collection: Specifies a value that indicates whether
       the user can delete the content control. Mutually exclusive with
       `removeWhenEdited`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +73,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies a value that indicates whether
       the user can edit the contents of the content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +89,7 @@ properties:
       For EACH ITEM in the collection: Specifies the color of the content
       control. Color is specified in '\#RRGGBB' format or by using the color
       name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -115,9 +105,7 @@ properties:
       For EACH ITEM in the collection: Gets the text format of the content
       control. Use this to get and set font name, size, color, and other
       properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -132,9 +120,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets an integer that represents the
       content control identifier.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -149,9 +135,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the parent body of the content
       control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -168,9 +152,7 @@ properties:
       For EACH ITEM in the collection: Gets the content control that contains
       the content control. Throws an `ItemNotFound` error if there isn't a
       parent content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -192,9 +174,7 @@ properties:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -214,9 +194,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the content
       control. Throws an `ItemNotFound` error if it isn't contained in a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -233,9 +211,7 @@ properties:
       For EACH ITEM in the collection: Gets the table cell that contains the
       content control. Throws an `ItemNotFound` error if it isn't contained in a
       table cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -255,9 +231,7 @@ properties:
       -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -277,9 +251,7 @@ properties:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -296,9 +268,7 @@ properties:
       For EACH ITEM in the collection: Specifies the placeholder text of the
       content control. Dimmed text will be displayed when the content control is
       empty.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -315,9 +285,7 @@ properties:
       For EACH ITEM in the collection: Specifies a value that indicates whether
       the content control is removed after it's edited. Mutually exclusive with
       `cannotDelete`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -334,9 +302,7 @@ properties:
       control. Use this property for custom styles and localized style names. To
       use the built-in styles that are portable between locales, see the
       `styleBuiltIn` property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -354,9 +320,7 @@ properties:
       content control. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the
       `style` property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -379,9 +343,7 @@ properties:
       content controls, `datePicker` for date picker content controls,
       `repeatingSection` for repeating section content controls, `picture` for
       picture content controls, and `group` for group content controls.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -396,9 +358,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies a tag to identify a content
       control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -411,9 +371,7 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the content control.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -428,9 +386,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the title for a content
       control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -447,9 +403,7 @@ properties:
       text, plain text, check box, dropdown list, combo box, building block
       gallery, date picker, repeating section, picture, and group content
       controls are supported currently.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

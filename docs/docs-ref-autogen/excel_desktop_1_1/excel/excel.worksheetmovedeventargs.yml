@@ -13,31 +13,7 @@ summary: >-
   event won't trigger for both position changes. This event only triggers for
   the primary worksheet move, and not any worksheet position changes that occur
   as a result of that primary move.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-
-  async function onWorksheetMoved(event) {
-      await Excel.run(async (context) => {
-          console.log("Handler for worksheet onMoved event has been triggered.");
-          console.log(`    Worksheet ID: ${event.worksheetId}`);
-          console.log(`    Position before move: ${event.positionBefore}`);
-          console.log(`    Position after move: ${event.positionAfter}`);
-          console.log(`    Event source: ${event.source}`);
-      });
-  }
-
-  ```
+remarks: '\[Api set: ExcelApi 1.17\]'
 
 isPreview: false
 isDeprecated: false
@@ -48,10 +24,7 @@ properties:
     package: excel!
     fullName: positionAfter
     summary: Gets the new position of the worksheet, after the move.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +37,7 @@ properties:
     package: excel!
     fullName: positionBefore
     summary: Gets the previous position of the worksheet, prior to the move.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,10 +50,7 @@ properties:
     package: excel!
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -96,10 +63,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false
@@ -112,10 +76,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet that was moved.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.17\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,48 +4,7 @@ uid: word!Word.ListItem:class
 package: word!
 fullName: Word.ListItem
 summary: Represents the paragraph list item format.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
-
-
-  // This example starts a new list with the second paragraph.
-
-  await Word.run(async (context) => {
-    const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
-    paragraphs.load("$none");
-
-    await context.sync();
-
-    // Start new list using the second paragraph.
-    const list: Word.List = paragraphs.items[1].startNewList();
-    list.load("$none");
-
-    await context.sync();
-
-    // To add new items to the list, use Start or End on the insertLocation parameter.
-    list.insertParagraph("New list item at the start of the list", "Start");
-    const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
-
-    // Set up list level for the list item.
-    paragraph.listItem.level = 4;
-
-    // To add paragraphs outside the list, use Before or After.
-    list.insertParagraph("New paragraph goes after (not part of the list)", "After");
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -71,48 +30,7 @@ properties:
     package: word!
     fullName: level
     summary: Specifies the level of the item in the list.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
-
-
-      // This example starts a new list with the second paragraph.
-
-      await Word.run(async (context) => {
-        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
-        paragraphs.load("$none");
-
-        await context.sync();
-
-        // Start new list using the second paragraph.
-        const list: Word.List = paragraphs.items[1].startNewList();
-        list.load("$none");
-
-        await context.sync();
-
-        // To add new items to the list, use Start or End on the insertLocation parameter.
-        list.insertParagraph("New list item at the start of the list", "Start");
-        const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
-
-        // Set up list level for the list item.
-        paragraph.listItem.level = 4;
-
-        // To add paragraphs outside the list, use Before or After.
-        list.insertParagraph("New paragraph goes after (not part of the list)", "After");
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +43,7 @@ properties:
     package: word!
     fullName: listString
     summary: Gets the list item bullet, number, or picture as a string.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -140,9 +56,7 @@ properties:
     package: word!
     fullName: siblingIndex
     summary: Gets the list item order number in relation to its siblings.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -158,9 +72,7 @@ methods:
     summary: >-
       Gets the list item parent, or the closest ancestor if the parent doesn't
       exist. Throws an `ItemNotFound` error if the list item has no ancestor.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -186,9 +98,7 @@ methods:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -208,9 +118,7 @@ methods:
     package: word!
     fullName: getDescendants(directChildrenOnly)
     summary: Gets all descendant list items of the list item.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,44 +4,7 @@ uid: powerpoint!PowerPoint.SlideScopedCollection:class
 package: powerpoint!
 fullName: PowerPoint.SlideScopedCollection
 summary: Represents a collection of slides in the presentation.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
-
-  // Saves which shapes are selected so that they can be reselected later.
-
-  await PowerPoint.run(async (context) => {
-    context.presentation.load("slides");
-    await context.sync();
-    const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
-    const slideCount = slides.getCount();
-    slides.load("items");
-    await context.sync();
-    savedSlideSelection = [];
-    slides.items.map((slide) => {
-      savedSlideSelection.push(slide.id);
-    });
-    const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-    const shapeCount = shapes.getCount();
-    shapes.load("items");
-    await context.sync();
-    shapes.items.map((shape) => {
-      savedShapeSelection.push(shape.id);
-    });
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.5\]'
 
 isPreview: false
 isDeprecated: false
@@ -84,10 +47,7 @@ methods:
     summary: >-
       Exports all slides in this collection to their own presentation file,
       returned as Base64-encoded data.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -101,10 +61,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of slides in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -118,10 +75,7 @@ methods:
     package: powerpoint!
     fullName: getItem(key)
     summary: Gets a slide using its unique ID.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -141,10 +95,7 @@ methods:
     package: powerpoint!
     fullName: getItemAt(index)
     summary: Gets a slide using its zero-based index in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -169,10 +120,7 @@ methods:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

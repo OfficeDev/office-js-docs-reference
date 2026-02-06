@@ -4,59 +4,7 @@ uid: excel!Excel.ChartDataLabel:class
 package: excel!
 fullName: Excel.ChartDataLabel
 summary: Represents the data label of a chart point.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-labels.yaml
-
-
-  // This function styles substrings within data label text using font
-  formatting.
-
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getItem(sheetName);
-    const chart = sheet.charts.getItemAt(0);
-    await context.sync();
-
-    const series = chart.series.getItemAt(0);
-    series.load("points");
-    await context.sync();
-
-    series.points.load("items");
-    await context.sync();
-
-    // Style a substring in the first data label.
-    let searchString = "sports";
-    let dataLabel = series.points.getItemAt(dataLabelInfo[0].index).dataLabel.load("text");
-    await context.sync();
-    let substringStart = dataLabel.text.indexOf(searchString);
-    let subLabel = dataLabel.getSubstring(substringStart, searchString.length);
-    subLabel.font.size = 13;
-    subLabel.font.bold = true;
-
-    // Style a substring in the second data label.
-    searchString = "'Titanic'";
-    dataLabel = series.points.getItemAt(dataLabelInfo[1].index).dataLabel.load("text");
-    await context.sync();
-
-    substringStart = dataLabel.text.indexOf(searchString);
-    subLabel = dataLabel.getSubstring(substringStart, searchString.length);
-    subLabel.font.name = "Calibri";
-    subLabel.font.size = 13;
-    subLabel.font.italic = true;
-    subLabel.font.color = "blue";
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -84,9 +32,7 @@ properties:
     summary: >-
       Value that represents the position of the data label. See
       `Excel.ChartDataLabelPosition` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,9 +51,7 @@ properties:
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data label on a chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,9 +64,7 @@ properties:
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -135,9 +77,7 @@ properties:
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -150,9 +90,7 @@ properties:
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -165,9 +103,7 @@ properties:
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -180,9 +116,7 @@ properties:
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -195,9 +129,7 @@ properties:
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

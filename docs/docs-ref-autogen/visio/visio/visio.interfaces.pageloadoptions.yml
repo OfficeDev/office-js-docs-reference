@@ -4,10 +4,7 @@ uid: visio!Visio.Interfaces.PageLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.PageLoadOptions
 summary: Represents the Page class.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +31,7 @@ properties:
     package: visio!
     fullName: height
     summary: Returns the height of the page. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +44,7 @@ properties:
     package: visio!
     fullName: index
     summary: Index of the Page. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +57,7 @@ properties:
     package: visio!
     fullName: isBackground
     summary: Whether the page is a background page or not. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,10 +70,7 @@ properties:
     package: visio!
     fullName: name
     summary: Page name. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,10 +83,7 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the view of the page.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -114,10 +96,7 @@ properties:
     package: visio!
     fullName: width
     summary: Returns the width of the page. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -7,9 +7,7 @@ summary: >-
   The attribution attributes object represents the set of details that can be
   used to describe where information came from, if the information comes from a
   public source.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.16\]'
 
 isPreview: false
 isDeprecated: false
@@ -22,10 +20,7 @@ properties:
     summary: >-
       Represents a URL to a license or source that describes how this property
       can be used.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -38,10 +33,7 @@ properties:
     package: excel!
     fullName: licenseText
     summary: Represents a name for the license that governs this property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,10 +46,7 @@ properties:
     package: excel!
     fullName: sourceAddress
     summary: Represents a URL to the source of the `CellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,10 +59,7 @@ properties:
     package: excel!
     fullName: sourceText
     summary: Represents a name for the source of the `CellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false

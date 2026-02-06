@@ -7,38 +7,7 @@ summary: >-
   Contains the collection of
   [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects with a
   specific namespace.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
-
-
-  // Original XML: <Reviewers
-  xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
-
-  // Gets the custom XML parts with the specified namespace URI.
-
-  await Word.run(async (context) => {
-    const namespaceUri = "http://schemas.contoso.com/review/1.0";
-    console.log(`Specified namespace URI: ${namespaceUri}`);
-    const scopedCustomXmlParts: Word.CustomXmlPartScopedCollection =
-      context.document.customXmlParts.getByNamespace(namespaceUri);
-    scopedCustomXmlParts.load("items");
-    await context.sync();
-
-    console.log(`Number of custom XML parts found with this namespace: ${!scopedCustomXmlParts.items ? 0 : scopedCustomXmlParts.items.length}`);
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -78,9 +47,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Gets the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -94,9 +61,7 @@ methods:
     package: word!
     fullName: getItem(id)
     summary: Gets a custom XML part based on its ID.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -120,9 +85,7 @@ methods:
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -142,9 +105,7 @@ methods:
     summary: >-
       If the collection contains exactly one item, this method returns it.
       Otherwise, this method produces an error.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -164,9 +125,7 @@ methods:
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

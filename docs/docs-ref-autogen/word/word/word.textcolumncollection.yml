@@ -7,9 +7,7 @@ summary: >-
   A collection of [Word.TextColumn](xref:word!Word.TextColumn:class) objects
   that represent all the columns of text in the document or a section of the
   document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -51,9 +49,7 @@ methods:
     summary: >-
       Returns a `TextColumn` object that represents a new text column added to a
       section or document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -73,9 +69,7 @@ methods:
     package: word!
     fullName: getFlowDirection()
     summary: Gets the direction in which text flows from one text column to the next.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +87,7 @@ methods:
     summary: >-
       Gets whether vertical lines appear between all the columns in the
       `TextColumnCollection` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -111,9 +103,7 @@ methods:
     package: word!
     fullName: getIsEvenlySpaced()
     summary: Gets whether text columns are evenly spaced.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,9 +193,7 @@ methods:
     package: word!
     fullName: setCount(numColumns)
     summary: Arranges text into the specified number of text columns.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -223,9 +211,7 @@ methods:
     package: word!
     fullName: setFlowDirection(value)
     summary: Sets the direction in which text flows from one text column to the next.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -243,9 +229,7 @@ methods:
     package: word!
     fullName: setFlowDirection(value)
     summary: Sets the direction in which text flows from one text column to the next.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -265,9 +249,7 @@ methods:
     summary: >-
       Sets whether vertical lines appear between all the columns in the
       `TextColumnCollection` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -285,9 +267,7 @@ methods:
     package: word!
     fullName: setIsEvenlySpaced(value)
     summary: Sets whether text columns are evenly spaced.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

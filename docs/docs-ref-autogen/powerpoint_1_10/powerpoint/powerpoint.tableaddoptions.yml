@@ -4,35 +4,7 @@ uid: powerpoint!PowerPoint.TableAddOptions:interface
 package: powerpoint!
 fullName: PowerPoint.TableAddOptions
 summary: Represents the available options when adding a table.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-  // Specifies the width and height of a table.
-
-  await PowerPoint.run(async (context) => {
-    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-    // Add a table, specifying the width and height.
-    shapes.addTable(3, 4, {
-      width: 600,
-      height: 400
-    });
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,35 +18,7 @@ properties:
       If provided, specifies properties for each column in the table. The array
       length must be equal to the number of columns in the table. Specify an
       empty object for columns that should use the default formatting.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the column widths and row heights of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying column widths and row heights.
-        shapes.addTable(3, 4, {
-          columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
-          rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -95,35 +39,7 @@ properties:
       Note: If the table height isn't evenly divisible by the number of rows,
       PowerPoint sets it to the nearest possible value. For example, a height of
       400 for 3 rows may result in an actual height of 399.9999.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the width and height of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying the width and height.
-        shapes.addTable(3, 4, {
-          width: 600,
-          height: 400
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -139,10 +55,7 @@ properties:
       Specifies the distance, in points, from the left side of the table to the
       left side of the slide. The table is centered horizontally when this
       parameter isn't provided.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -157,39 +70,7 @@ properties:
     summary: >-
       If specified, represents an rectangular area where multiple cells appear
       as a single cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the merge areas of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying one 2x2 merged area.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "", "HHHH"],
-            ["1", "", "", "1234"]
-          ],
-          mergedAreas: [{ rowIndex: 1, columnIndex: 1, rowCount: 2, columnCount: 2 }]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -207,35 +88,7 @@ properties:
       If provided, specifies properties for each row in the table. The array
       length must be equal to the number of rows in the table. Specify an empty
       object for rows that should use the default formatting.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the column widths and row heights of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying column widths and row heights.
-        shapes.addTable(3, 4, {
-          columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
-          rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -256,58 +109,7 @@ properties:
       object for that cell. Only the top left cell of a merged are can have
       properties specified, which will be applied to the entire merged area. For
       the other cells in the merged area, an empty object should be provided.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the font formatting and fill colors of the cells in a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying font formatting and fill colors.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "GGG", "HHHH"],
-            ["1", "12", "123", "1234"]
-          ],
-          specificCellProperties: [
-            [
-              { fill: { color: "red" }, font: { color: "yellow", name: "Calibri" } },
-              { fill: { color: "#0048ba" }, font: { color: "yellow", name: "Coolvetica" } },
-              { fill: { color: "red" }, font: { color: "yellow", italic: true } },
-              { fill: { color: "red" }, font: { color: "#9966cc", strikethrough: true } }
-            ],
-            [
-              { fill: { color: "#fbceb1" }, font: { color: "yellow", doubleStrikethrough: true } },
-              { fill: { color: "red" }, font: { color: "yellow", subscript: true } },
-              { fill: { color: "#0048ba" }, font: { color: "yellow", superscript: true } },
-              { fill: { color: "red" }, font: { color: "yellow" } }
-            ],
-            [
-              { fill: { color: "red" }, font: { color: "#b0bf1a" } },
-              { fill: { color: "#9966cc" }, font: { color: "yellow" } },
-              { fill: { color: "#b0bf1a" }, font: { color: "yellow" } },
-              { fill: { color: "red" }, font: { color: "#fbceb1" } }
-            ]
-          ]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -320,10 +122,7 @@ properties:
     package: powerpoint!
     fullName: style
     summary: Specifies value that represents the table style.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -391,10 +190,7 @@ properties:
       Specifies the distance, in points, from the top edge of the table to the
       top edge of the slide. A default value is used when this parameter isn't
       provided.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -423,46 +219,7 @@ properties:
 
       To provide a plain appearance for the table, set this property to an empty
       object and don't specify `specificCellProperties`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies a table's borders.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying border styles.
-        shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "GGG", "HHHH"],
-            ["1", "12", "123", "1234"]
-          ],
-          uniformCellProperties: {
-            borders: {
-              left: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
-              right: { color: "blue", dashStyle: PowerPoint.ShapeLineDashStyle.solid, weight: 4 },
-              top: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 },
-              bottom: { color: "red", dashStyle: PowerPoint.ShapeLineDashStyle.longDashDotDot, weight: 2 }
-            }
-          }
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -481,38 +238,7 @@ properties:
       When the table contains areas of merged cells, only the top left cell of
       each merged area can have a non-empty string value. The other cells in the
       merged area must be an empty string.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies a table's values.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying cell values.
-        const shape = shapes.addTable(3, 4, {
-          values: [
-            ["A", "BB", "CCC", "DDDD"],
-            ["E", "FF", "GGG", "HHHH"],
-            ["1", "12", "123", "1234"]
-          ]
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -533,35 +259,7 @@ properties:
       Note: If the table width isn't evenly divisible by the number of columns,
       PowerPoint sets it to the nearest possible value. For example, a width of
       400 for 3 columns may result in an actual width of 399.9999.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the width and height of a table.
-
-      await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
-
-        // Add a table, specifying the width and height.
-        shapes.addTable(3, 4, {
-          width: 600,
-          height: 400
-        });
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

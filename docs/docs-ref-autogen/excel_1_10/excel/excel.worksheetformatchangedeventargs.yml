@@ -4,9 +4,7 @@ uid: excel!Excel.WorksheetFormatChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetFormatChangedEventArgs
 summary: Provides information about the worksheet format change event.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       Gets the range address that represents the changed area of a specific
       worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +30,7 @@ properties:
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +43,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +56,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,12 +69,10 @@ methods:
     uid: excel!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)
     package: excel!
     fullName: getRange(ctx)
-    summary: >-
+    summary: |-
       Gets the range that represents the changed area of a specific worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -107,8 +95,7 @@ methods:
       It might return null object.
 
 
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false

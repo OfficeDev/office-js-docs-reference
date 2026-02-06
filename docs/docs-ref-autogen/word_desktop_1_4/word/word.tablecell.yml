@@ -4,34 +4,7 @@ uid: word!Word.TableCell:class
 package: word!
 fullName: Word.TableCell
 summary: Represents a table cell in a Word document.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-  // Gets content alignment details about the first cell of the first table in
-  the document.
-
-  await Word.run(async (context) => {
-    const firstTable: Word.Table = context.document.body.tables.getFirst();
-    const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
-    const firstCell: Word.TableCell = firstTableRow.cells.getFirst();
-    firstCell.load(["horizontalAlignment", "verticalAlignment"]);
-    await context.sync();
-
-    console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -42,9 +15,7 @@ properties:
     package: word!
     fullName: body
     summary: Gets the `Body` object of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -57,9 +28,7 @@ properties:
     package: word!
     fullName: cellIndex
     summary: Gets the index of the cell in its row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +43,7 @@ properties:
     summary: >-
       Returns the `TableColumn` object that represents the table column that
       contains this cell.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +58,7 @@ properties:
     summary: >-
       Specifies the width of the cell's column in points. This is applicable to
       uniform tables.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -124,34 +89,7 @@ properties:
       Specifies the horizontal alignment of the cell. The value can be
       `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-      // Gets content alignment details about the first cell of the first table
-      in the document.
-
-      await Word.run(async (context) => {
-        const firstTable: Word.Table = context.document.body.tables.getFirst();
-        const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
-        const firstCell: Word.TableCell = firstTableRow.cells.getFirst();
-        firstCell.load(["horizontalAlignment", "verticalAlignment"]);
-        await context.sync();
-
-        console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -168,9 +106,7 @@ properties:
     package: word!
     fullName: parentRow
     summary: Gets the parent row of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -183,9 +119,7 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the parent table of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -198,9 +132,7 @@ properties:
     package: word!
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -215,9 +147,7 @@ properties:
     summary: >-
       Returns the `ShadingUniversal` object that represents the shading of the
       table cell.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -232,9 +162,7 @@ properties:
     summary: >-
       Specifies the shading color of the cell. Color is specified in "\#RRGGBB"
       format or by using the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -247,9 +175,7 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the text of the cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -264,34 +190,7 @@ properties:
     summary: >-
       Specifies the vertical alignment of the cell. The value can be `top`<!--
       -->, `center`<!-- -->, or `bottom`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-      // Gets content alignment details about the first cell of the first table
-      in the document.
-
-      await Word.run(async (context) => {
-        const firstTable: Word.Table = context.document.body.tables.getFirst();
-        const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
-        const firstCell: Word.TableCell = firstTableRow.cells.getFirst();
-        firstCell.load(["horizontalAlignment", "verticalAlignment"]);
-        await context.sync();
-
-        console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -308,9 +207,7 @@ properties:
     package: word!
     fullName: width
     summary: Gets the width of the cell in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -328,9 +225,7 @@ methods:
       field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
       that calculates and displays the sum of the values in table cells above or
       to the left of the cell specified in the expression.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -346,9 +241,7 @@ methods:
     summary: >-
       Deletes the table cell and optionally controls how the remaining cells are
       shifted.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -370,9 +263,7 @@ methods:
     summary: >-
       Deletes the column containing this cell. This is applicable to uniform
       tables.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -386,9 +277,7 @@ methods:
     package: word!
     fullName: deleteRow()
     summary: Deletes the row containing this cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -405,9 +294,7 @@ methods:
       Inserts a [= (Formula)
       field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
       that contains the specified formula into a table cell.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -425,9 +312,7 @@ methods:
     package: word!
     fullName: getBorder(borderLocation)
     summary: Gets the border style for the specified border.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -445,34 +330,7 @@ methods:
     package: word!
     fullName: getBorder(borderLocation)
     summary: Gets the border style for the specified border.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-      // Gets border details about the first of the first table in the document.
-
-      await Word.run(async (context) => {
-        const firstTable: Word.Table = context.document.body.tables.getFirst();
-        const firstCell: Word.TableCell = firstTable.getCell(0, 0);
-        const borderLocation = "Left";
-        const border: Word.TableBorder = firstCell.getBorder(borderLocation);
-        border.load(["type", "color", "width"]);
-        await context.sync();
-
-        console.log(`Details about the ${borderLocation} border of the first table's first cell:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -495,9 +353,7 @@ methods:
     package: word!
     fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -519,36 +375,7 @@ methods:
     package: word!
     fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-      // Gets cell padding details about the first cell of the first table in
-      the document.
-
-      await Word.run(async (context) => {
-        const firstTable: Word.Table = context.document.body.tables.getFirst();
-        const firstCell: Word.TableCell = firstTable.getCell(0, 0);
-        const cellPaddingLocation = "Left";
-        const cellPadding = firstCell.getCellPadding(cellPaddingLocation);
-        await context.sync();
-
-        console.log(
-          `Cell padding details about the ${cellPaddingLocation} border of the first table's first cell: ${cellPadding.value} points`
-        );
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -572,9 +399,7 @@ methods:
     summary: >-
       Gets the next cell. Throws an `ItemNotFound` error if this cell is the
       last one.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -593,9 +418,7 @@ methods:
       For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -612,9 +435,7 @@ methods:
       Adds columns to the left or right of the cell, using the cell's column as
       a template. This is applicable to uniform tables. The string values, if
       specified, are set in the newly inserted rows.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -647,9 +468,7 @@ methods:
     summary: >-
       Inserts rows above or below the cell, using the cell's row as a template.
       The string values, if specified, are set in the newly inserted rows.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -754,9 +573,7 @@ methods:
     package: word!
     fullName: merge(mergeTo)
     summary: Merges this table cell with the specified table cell.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -774,9 +591,7 @@ methods:
     package: word!
     fullName: select()
     summary: Selects the table cell.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -841,9 +656,7 @@ methods:
     package: word!
     fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -868,9 +681,7 @@ methods:
     package: word!
     fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -895,9 +706,7 @@ methods:
     package: word!
     fullName: split(rowCount, columnCount)
     summary: Splits the cell into the specified number of rows and columns.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

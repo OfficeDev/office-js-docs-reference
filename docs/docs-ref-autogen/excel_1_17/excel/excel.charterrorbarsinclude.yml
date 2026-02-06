@@ -4,9 +4,7 @@ uid: excel!Excel.ChartErrorBarsInclude:enum
 package: excel!
 fullName: Excel.ChartErrorBarsInclude
 summary: Represents which parts of the error bar to include.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,21 +12,15 @@ fields:
   - name: both
     uid: excel!Excel.ChartErrorBarsInclude.both:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Both"'
   - name: minusValues
     uid: excel!Excel.ChartErrorBarsInclude.minusValues:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"MinusValues"'
   - name: plusValues
     uid: excel!Excel.ChartErrorBarsInclude.plusValues:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"PlusValues"'

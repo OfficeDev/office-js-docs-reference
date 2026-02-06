@@ -22,9 +22,7 @@ properties:
       worksheet protection properties. When worksheet protection is enabled, an
       `AllowEditRange` object can be used to allow editing of a specific range,
       while maintaining protection on the rest of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     package: excel!
     fullName: canPauseProtection
     summary: Specifies if protection can be paused for this worksheet.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -52,9 +48,7 @@ properties:
     package: excel!
     fullName: isPasswordProtected
     summary: Specifies if the sheet is password protected.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +61,7 @@ properties:
     package: excel!
     fullName: isPaused
     summary: Specifies if worksheet protection is paused.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +74,7 @@ properties:
     package: excel!
     fullName: options
     summary: Specifies the protection options for the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +87,7 @@ properties:
     package: excel!
     fullName: protected
     summary: Specifies if the worksheet is protected.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -115,9 +103,7 @@ properties:
       Specifies the protection options saved in the worksheet. This will return
       the same `WorksheetProtectionOptions` object regardless of the worksheet
       protection state.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
     isPreview: false
     isDeprecated: false

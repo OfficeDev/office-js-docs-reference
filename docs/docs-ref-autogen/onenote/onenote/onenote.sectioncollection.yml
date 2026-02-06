@@ -4,9 +4,7 @@ uid: onenote!OneNote.SectionCollection:class
 package: onenote!
 fullName: OneNote.SectionCollection
 summary: Represents a collection of sections.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of sections in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,43 +57,7 @@ methods:
     package: onenote!
     fullName: getByName(name)
     summary: Gets the collection of sections with the specified name.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Get the sections in the current notebook.
-          const sections = context.application.getActiveNotebook().sections;
-
-          // Queue a command to load the sections.
-          // For best performance, request specific properties.
-          sections.load("id"); 
-          
-          // Get the sections with the specified name.
-          const groceriesSections = sections.getByName("Groceries");
-          
-          // Queue a command to load the sections with the specified name.
-          groceriesSections.load("id,name");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          // Iterate through the collection or access items individually by index.
-          if (groceriesSections.items.length > 0) {
-              console.log("Section name: " + groceriesSections.items[0].name);
-              console.log("Section ID: " + groceriesSections.items[0].id);
-          }
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,10 +75,7 @@ methods:
     package: onenote!
     fullName: getItem(index)
     summary: Gets a section by ID or by its index in the collection. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -139,10 +95,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a section on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -202,35 +155,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.SectionCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Get the sections in the current notebook.
-              const sections = context.application.getActiveNotebook().sections;
-
-              // Queue a command to load the sections.
-              // For best performance, request specific properties.
-              sections.load("name"); 
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-                      
-              // Iterate through the collection or access items individually by index, for example: sections.items[0]
-              $.each(sections.items, function(index, section) {
-                  if (section.name === "Homework") {
-                      section.addPage("Biology");
-                      section.addPage("Spanish");
-                      section.addPage("Computer Science");
-                  }
-              });
-              await context.sync();
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.SectionCollection#load:member(3)
     package: onenote!

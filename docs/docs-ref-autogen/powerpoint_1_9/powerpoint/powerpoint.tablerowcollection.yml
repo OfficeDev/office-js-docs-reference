@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.TableRowCollection:class
 package: powerpoint!
 fullName: PowerPoint.TableRowCollection
 summary: Represents a collection of table rows.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -47,10 +44,7 @@ methods:
     package: powerpoint!
     fullName: add(index, count)
     summary: Adds one or more rows to the table.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,10 +74,7 @@ methods:
     package: powerpoint!
     fullName: deleteRows(rows)
     summary: Deletes the specified rows from the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -101,10 +92,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of rows in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -118,10 +106,7 @@ methods:
     package: powerpoint!
     fullName: getItemAt(index)
     summary: Gets the row using its zero-based index in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

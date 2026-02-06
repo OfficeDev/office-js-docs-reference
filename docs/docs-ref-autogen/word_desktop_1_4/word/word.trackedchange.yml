@@ -4,40 +4,7 @@ uid: word!Word.TrackedChange:class
 package: word!
 fullName: Word.TrackedChange
 summary: Represents a tracked change in a Word document.
-remarks: >-
-  \[ [API set: WordApi
-  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
-
-  // Gets the next (second) tracked change.
-
-  await Word.run(async (context) => {
-    const body: Word.Body = context.document.body;
-    const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
-    await context.sync();
-
-    const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
-    await context.sync();
-
-    const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
-    await context.sync();
-
-    nextTrackedChange.load(["author", "date", "text", "type"]);
-    await context.sync();
-
-    console.log(nextTrackedChange);
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.6\]'
 
 isPreview: false
 isDeprecated: false
@@ -48,9 +15,7 @@ properties:
     package: word!
     fullName: author
     summary: Gets the author of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -78,9 +43,7 @@ properties:
     package: word!
     fullName: date
     summary: Gets the date of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +56,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +69,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the type of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -128,35 +87,7 @@ methods:
     package: word!
     fullName: accept()
     summary: Accepts the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
-
-      // Accepts the first tracked change.
-
-      await Word.run(async (context) => {
-        const body: Word.Body = context.document.body;
-        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
-        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
-        trackedChange.load();
-        await context.sync();
-
-        console.log("First tracked change:", trackedChange);
-        trackedChange.accept();
-        console.log("Accepted the first tracked change.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -172,40 +103,7 @@ methods:
     summary: >-
       Gets the next tracked change. Throws an `ItemNotFound` error if this
       tracked change is the last one.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
-
-      // Gets the next (second) tracked change.
-
-      await Word.run(async (context) => {
-        const body: Word.Body = context.document.body;
-        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
-        await context.sync();
-
-        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
-        await context.sync();
-
-        const nextTrackedChange: Word.TrackedChange = trackedChange.getNext();
-        await context.sync();
-
-        nextTrackedChange.load(["author", "date", "text", "type"]);
-        await context.sync();
-
-        console.log(nextTrackedChange);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -224,9 +122,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -240,36 +136,7 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: Gets the range of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
-
-      // Gets the range of the first tracked change.
-
-      await Word.run(async (context) => {
-        const body: Word.Body = context.document.body;
-        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
-        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
-        await context.sync();
-
-        const range: Word.Range = trackedChange.getRange();
-        range.load();
-        await context.sync();
-
-        console.log("range.text: " + range.text);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -375,35 +242,7 @@ methods:
     package: word!
     fullName: reject()
     summary: Rejects the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
-
-      // Rejects the first tracked change.
-
-      await Word.run(async (context) => {
-        const body: Word.Body = context.document.body;
-        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
-        const trackedChange: Word.TrackedChange = trackedChanges.getFirst();
-        trackedChange.load();
-        await context.sync();
-
-        console.log("First tracked change:", trackedChange);
-        trackedChange.reject();
-        console.log("Rejected the first tracked change.");
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

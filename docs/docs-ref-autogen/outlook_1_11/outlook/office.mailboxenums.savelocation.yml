@@ -17,26 +17,6 @@ remarks: >-
   devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
   -->.
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Checks if the add-in can save data to SharePoint.
-
-  const isSaveToSharePointAllowed =
-  Office.context.mailbox.getIsSaveToLocationAllowed(Office.MailboxEnums.SaveLocation.SharePoint);
-
-  if (isSaveToSharePointAllowed) {
-      console.log("Saving to SharePoint is allowed.");
-      // Do something.
-  } else {
-      console.log("Saving to SharePoint isn't allowed.");
-  }
-
-  ```
-
 isPreview: false
 isDeprecated: false
 fields:

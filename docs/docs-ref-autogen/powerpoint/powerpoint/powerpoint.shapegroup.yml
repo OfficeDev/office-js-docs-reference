@@ -6,47 +6,7 @@ fullName: PowerPoint.ShapeGroup
 summary: >-
   Represents a shape group inside a presentation. To get the corresponding Shape
   object, use `ShapeGroup.shape`<!-- -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
-
-
-  await PowerPoint.run(async (context) => {
-    // Ungroups the first shape group on the current slide.
-
-    // Get the shapes on the current slide.
-    context.presentation.load("slides");
-    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-    slide.load("shapes/items/type,shapes/items/id");
-    await context.sync();
-
-    const shapes: PowerPoint.ShapeCollection = slide.shapes;
-    const shapeGroups = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.group);
-    if (shapeGroups.length === 0) {
-      console.warn("No shape groups on the current slide, so nothing to ungroup.");
-      return;
-    }
-
-    // Ungroup the first grouped shapes.
-    const firstGroupId = shapeGroups[0].id;
-    const shapeGroupToUngroup = shapes.getItem(firstGroupId);
-    shapeGroupToUngroup.group.ungroup();
-    await context.sync();
-
-    console.log(`Ungrouped shapes with group ID: ${firstGroupId}`);
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -74,10 +34,7 @@ properties:
     summary: >-
       Gets the creation ID of the shape group. Returns `null` if the shape group
       has no creation ID.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,10 +47,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape group.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,10 +60,7 @@ properties:
     package: powerpoint!
     fullName: shape
     summary: Returns the `Shape` object associated with the group.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -122,10 +73,7 @@ properties:
     package: powerpoint!
     fullName: shapes
     summary: Returns the collection of `Shape` objects in the group.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -242,47 +190,7 @@ methods:
     package: powerpoint!
     fullName: ungroup()
     summary: Ungroups any grouped shapes in the specified shape group.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
-
-
-      await PowerPoint.run(async (context) => {
-        // Ungroups the first shape group on the current slide.
-
-        // Get the shapes on the current slide.
-        context.presentation.load("slides");
-        const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
-        slide.load("shapes/items/type,shapes/items/id");
-        await context.sync();
-
-        const shapes: PowerPoint.ShapeCollection = slide.shapes;
-        const shapeGroups = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.group);
-        if (shapeGroups.length === 0) {
-          console.warn("No shape groups on the current slide, so nothing to ungroup.");
-          return;
-        }
-
-        // Ungroup the first grouped shapes.
-        const firstGroupId = shapeGroups[0].id;
-        const shapeGroupToUngroup = shapes.getItem(firstGroupId);
-        shapeGroupToUngroup.group.ungroup();
-        await context.sync();
-
-        console.log(`Ungrouped shapes with group ID: ${firstGroupId}`);
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

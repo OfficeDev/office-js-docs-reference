@@ -4,31 +4,7 @@ uid: excel!Excel.NoteCollection:class
 package: excel!
 fullName: Excel.NoteCollection
 summary: Represents a collection of note objects that are part of the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-  // This function adds a note to the selected cell.
-
-  await Excel.run(async (context) => {
-    const selectedRange = context.workbook.getSelectedRange();
-
-    // Note that an InvalidArgument error is thrown if multiple cells are selected.
-    context.workbook.notes.add(selectedRange, "The first note.");
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.18\]'
 
 isPreview: false
 isDeprecated: false
@@ -68,32 +44,7 @@ methods:
     package: excel!
     fullName: add(cellAddress, content)
     summary: Adds a new note with the given content on the given cell.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function adds a note to the selected cell.
-
-      await Excel.run(async (context) => {
-        const selectedRange = context.workbook.getSelectedRange();
-
-        // Note that an InvalidArgument error is thrown if multiple cells are selected.
-        context.workbook.notes.add(selectedRange, "The first note.");
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,10 +68,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of notes in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -134,34 +82,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a note by its cell address.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function sets the note on cell A1 to visible.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Notes");
-        const firstNote = sheet.notes.getItem("A1");
-
-        firstNote.load();
-        await context.sync();
-
-        firstNote.visible = true;
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -181,31 +102,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a note from the collection based on its position.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/excel-note-basics.yaml
-
-
-      // This function changes the content in the first note.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Notes");
-        const note = sheet.notes.getItemAt(0);
-        note.content = "Changing the content of the first note.";
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false
@@ -228,10 +125,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.18\]'
 
     isPreview: false
     isDeprecated: false

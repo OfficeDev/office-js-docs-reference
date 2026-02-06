@@ -8,9 +8,7 @@ summary: >-
   model, read [Work with PivotTables using the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!--
   -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -23,10 +21,7 @@ properties:
     summary: >-
       Specifies if the PivotTable allows the application of multiple
       PivotFilters on a given PivotField in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -41,10 +36,7 @@ properties:
     summary: >-
       Specifies whether the PivotTable auto refreshes when the source data
       changes. Corresponds to "Auto Refresh" setting in the UI.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -57,39 +49,7 @@ properties:
     package: excel!
     fullName: columnHierarchies
     summary: The Column Pivot Hierarchies of the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
-
-
-      await Excel.run(async (context) => {
-          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
-
-          // Check if the PivotTable already has a column.
-          const column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
-          column.load("id");
-          await context.sync();
-
-          if (column.isNullObject) {
-              // Adding the farm column to the column hierarchy automatically removes it from the row hierarchy.
-              pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
-          } else {
-              pivotTable.columnHierarchies.remove(column);
-          }
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,29 +77,7 @@ properties:
     package: excel!
     fullName: dataHierarchies
     summary: The Data Pivot Hierarchies of the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
-
-
-      await Excel.run(async (context) => {
-          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-          pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
-          pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -154,9 +92,7 @@ properties:
     summary: >-
       Specifies if the PivotTable allows values in the data body to be edited by
       the user.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -169,37 +105,7 @@ properties:
     package: excel!
     fullName: filterHierarchies
     summary: The Filter Pivot Hierarchies of the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
-
-
-      async function filter(functionType: Excel.AggregationFunction) {
-          await Excel.run(async (context) => {
-              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              const filters = pivotTable.filterHierarchies;
-              const filter = filters.getItemOrNullObject("Classification");
-              filter.load();
-              await context.sync();
-
-              // Add the Classification hierarchy to the filter, if it's not already there.
-              if (filter.isNullObject) {
-                  filters.add(pivotTable.hierarchies.getItem("Classification"));
-                  await context.sync();
-              }
-          });
-      }
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -212,9 +118,7 @@ properties:
     package: excel!
     fullName: hierarchies
     summary: The Pivot Hierarchies of the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -227,9 +131,7 @@ properties:
     package: excel!
     fullName: id
     summary: ID of the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -244,38 +146,7 @@ properties:
     summary: >-
       The PivotLayout describing the layout and visual structure of the
       PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
-
-
-      await Excel.run(async (context) => {
-          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-          pivotTable.layout.load("layoutType");
-          await context.sync();
-
-          // Cycle between the three layout types.
-          if (pivotTable.layout.layoutType === "Compact") {
-              pivotTable.layout.layoutType = "Outline";
-          } else if (pivotTable.layout.layoutType === "Outline") {
-              pivotTable.layout.layoutType = "Tabular";
-          } else {
-              pivotTable.layout.layoutType = "Compact";
-          }
-          await context.sync();
-          console.log("Pivot layout is now " + pivotTable.layout.layoutType);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -288,9 +159,7 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -305,10 +174,7 @@ properties:
     summary: >-
       Specifies whether the PivotTable refreshes when the workbook opens.
       Corresponds to "Refresh on load" setting in the UI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.13\]'
 
     isPreview: false
     isDeprecated: false
@@ -321,9 +187,7 @@ properties:
     package: excel!
     fullName: rowHierarchies
     summary: The Row Pivot Hierarchies of the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -336,9 +200,7 @@ properties:
     package: excel!
     fullName: useCustomSortLists
     summary: Specifies if the PivotTable uses custom lists when sorting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -351,9 +213,7 @@ properties:
     package: excel!
     fullName: worksheet
     summary: The worksheet containing the current PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -367,27 +227,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
-
-
-      await Excel.run(async (context) => {
-          context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -404,38 +244,7 @@ methods:
       Returns the string representation of the data source for the PivotTable.
       This method currently supports string representations for table and range
       objects. Otherwise, it returns an empty string.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
-
-
-      // This function logs information about the data source of a PivotTable.
-
-      await Excel.run(async (context) => {
-        const worksheet = context.workbook.worksheets.getItem("TotalPivot");
-        const pivotTable = worksheet.pivotTables.getItem("All Farm Sales");
-
-        // Retrieve the type and string representation of the data source of the PivotTable.
-        const pivotTableDataSourceType = pivotTable.getDataSourceType();
-        const pivotTableDataSourceString = pivotTable.getDataSourceString();
-        await context.sync();
-
-        // Log the data source information.
-        console.log("Data source: " + pivotTableDataSourceString.value);
-        console.log("Source type: " + pivotTableDataSourceType.value);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.15\]'
 
     isPreview: false
     isDeprecated: false
@@ -449,38 +258,7 @@ methods:
     package: excel!
     fullName: getDataSourceType()
     summary: Gets the type of the data source for the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
-
-
-      // This function logs information about the data source of a PivotTable.
-
-      await Excel.run(async (context) => {
-        const worksheet = context.workbook.worksheets.getItem("TotalPivot");
-        const pivotTable = worksheet.pivotTables.getItem("All Farm Sales");
-
-        // Retrieve the type and string representation of the data source of the PivotTable.
-        const pivotTableDataSourceType = pivotTable.getDataSourceType();
-        const pivotTableDataSourceString = pivotTable.getDataSourceString();
-        await context.sync();
-
-        // Log the data source information.
-        console.log("Data source: " + pivotTableDataSourceString.value);
-        console.log("Source type: " + pivotTableDataSourceType.value);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.15\]'
 
     isPreview: false
     isDeprecated: false
@@ -574,31 +352,7 @@ methods:
     package: excel!
     fullName: refresh()
     summary: Refreshes the PivotTable.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-refresh.yaml
-
-
-      // This function refreshes the "Farm Sales" PivotTable,
-
-      // which updates the PivotTable with changes made to the source table.
-
-      await Excel.run(async (context) => {
-        const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
-        pivotTable.refresh();
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false

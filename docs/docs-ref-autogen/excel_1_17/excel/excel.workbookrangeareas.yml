@@ -6,9 +6,7 @@ fullName: Excel.WorkbookRangeAreas
 summary: >-
   Represents a collection of one or more rectangular ranges in multiple
   worksheets.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.12\]'
 
 isPreview: false
 isDeprecated: false
@@ -22,10 +20,7 @@ properties:
       Returns an array of addresses in A1-style. Address values contain the
       worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4,
       Sheet1!D1:D4"). Read-only.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,42 +35,7 @@ properties:
     summary: >-
       Returns the `RangeAreasCollection` object. Each `RangeAreas` in the
       collection represent one or more rectangle ranges in one worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
-
-
-      await Excel.run(async (context) => {
-        // Precedents are cells referenced by the formula in a cell.
-        // A "direct precedent" is a cell directly referenced by the selected formula.
-        let range = context.workbook.getActiveCell();
-        let directPrecedents = range.getDirectPrecedents();
-        range.load("address");
-        directPrecedents.areas.load("address");
-        await context.sync();
-
-        console.log(`Direct precedent cells of ${range.address}:`);
-
-        // Use the direct precedents API to loop through precedents of the active cell.
-        for (let i = 0; i < directPrecedents.areas.items.length; i++) {
-          // Highlight and print out the address of each direct precedent cell.
-          directPrecedents.areas.items[i].format.fill.color = "Yellow";
-          console.log(`  ${directPrecedents.areas.items[i].address}`);
-        }
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -103,10 +63,7 @@ properties:
     package: excel!
     fullName: ranges
     summary: Returns ranges that comprise this object in a `RangeCollection` object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -122,10 +79,7 @@ methods:
     summary: >-
       Returns the `RangeAreas` object based on worksheet ID or name in the
       collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -149,10 +103,7 @@ methods:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false

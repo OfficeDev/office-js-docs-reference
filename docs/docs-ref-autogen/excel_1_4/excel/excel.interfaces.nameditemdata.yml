@@ -17,9 +17,7 @@ properties:
     package: excel!
     fullName: comment
     summary: Specifies the comment associated with this name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: name
     summary: The name of the object.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     summary: >-
       Specifies if the name is scoped to the workbook or to a specific
       worksheet. Possible values are: Worksheet, Workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -69,10 +63,8 @@ properties:
       Specifies the type of the value returned by the name's formula. See
       `Excel.NamedItemType` for details.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
-      1.7 for
-      Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7
+      for Array\]
 
     isPreview: false
     isDeprecated: false
@@ -92,9 +84,7 @@ properties:
       Represents the value computed by the name's formula. For a named range, it
       will return the range address. This API returns the \#VALUE! error in the
       Excel UI if it refers to a user-defined function.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +97,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the object is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

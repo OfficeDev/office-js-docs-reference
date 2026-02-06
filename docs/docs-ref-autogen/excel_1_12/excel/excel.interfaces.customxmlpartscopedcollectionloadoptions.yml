@@ -7,9 +7,7 @@ summary: >-
   A scoped collection of custom XML parts. A scoped collection is the result of
   some operation (e.g., filtering by namespace). A scoped collection cannot be
   scoped any further.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.5\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: The custom XML part''s ID.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     package: excel!
     fullName: namespaceUri
     summary: 'For EACH ITEM in the collection: The custom XML part''s namespace URI.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

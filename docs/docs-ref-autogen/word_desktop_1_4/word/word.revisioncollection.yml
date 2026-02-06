@@ -6,10 +6,7 @@ fullName: Word.RevisionCollection
 summary: >-
   A collection of [Word.Revision](xref:word!Word.Revision:class) objects that
   represent the changes marked with revision marks in a range or document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -51,10 +48,7 @@ methods:
     summary: >-
       Accepts all the tracked changes in the document or range, removes all
       revision marks, and incorporates the changes into the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -142,10 +136,7 @@ methods:
     package: word!
     fullName: rejectAll()
     summary: Rejects all the tracked changes in the document or range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

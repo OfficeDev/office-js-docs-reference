@@ -6,9 +6,7 @@ fullName: Word.Interfaces.ShapeTextWrapLoadOptions
 summary: >-
   Represents all the properties for wrapping text around a
   [Word.Shape](xref:word!Word.Shape:class)<!-- -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     summary: >-
       Specifies the distance (in points) between the document text and the
       bottom edge of the text-free area surrounding the specified shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +50,7 @@ properties:
     summary: >-
       Specifies the distance (in points) between the document text and the left
       edge of the text-free area surrounding the specified shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +65,7 @@ properties:
     summary: >-
       Specifies the distance (in points) between the document text and the right
       edge of the text-free area surrounding the specified shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +81,7 @@ properties:
       Specifies whether the document text should wrap on both sides of the
       specified shape, on either the left or right side only, or on the side of
       the shape that's farthest from the page margin.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -106,9 +96,7 @@ properties:
     summary: >-
       Specifies the distance (in points) between the document text and the top
       edge of the text-free area surrounding the specified shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +111,7 @@ properties:
     summary: >-
       Specifies the text wrap type around the shape. See
       `Word.ShapeTextWrapType` for details.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false

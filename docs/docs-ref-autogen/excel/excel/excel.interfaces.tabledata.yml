@@ -15,10 +15,7 @@ properties:
     package: excel!
     fullName: altTextDescription
     summary: Specifies the alternative text for accessibility.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -31,10 +28,7 @@ properties:
     package: excel!
     fullName: altTextTitle
     summary: Specifies a summary for the table, such as one used by screen readers.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -47,9 +41,7 @@ properties:
     package: excel!
     fullName: autoFilter
     summary: Represents the `AutoFilter` object of the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +54,7 @@ properties:
     package: excel!
     fullName: columns
     summary: Represents a collection of all the columns in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -77,10 +67,7 @@ properties:
     package: excel!
     fullName: comment
     summary: Specifies a comment associated with the table.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -93,9 +80,7 @@ properties:
     package: excel!
     fullName: highlightFirstColumn
     summary: Specifies if the first column contains special formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +93,7 @@ properties:
     package: excel!
     fullName: highlightLastColumn
     summary: Specifies if the last column contains special formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -126,9 +109,7 @@ properties:
       Returns a value that uniquely identifies the table in a given workbook.
       The value of the identifier remains the same even when the table is
       renamed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -141,10 +122,7 @@ properties:
     package: excel!
     fullName: isActive
     summary: Retrieves whether the table is currently active.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -157,9 +135,7 @@ properties:
     package: excel!
     fullName: legacyId
     summary: Returns a numeric ID.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -179,9 +155,7 @@ properties:
       [Rename an Excel
       table](https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114)
       article.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -194,9 +168,7 @@ properties:
     package: excel!
     fullName: rows
     summary: Represents a collection of all the rows in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -211,9 +183,7 @@ properties:
     summary: >-
       Specifies if the columns show banded formatting in which odd columns are
       highlighted differently from even ones, to make reading the table easier.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -228,9 +198,7 @@ properties:
     summary: >-
       Specifies if the rows show banded formatting in which odd rows are
       highlighted differently from even ones, to make reading the table easier.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -245,9 +213,7 @@ properties:
     summary: >-
       Specifies if the filter buttons are visible at the top of each column
       header. Setting this is only allowed if the table contains a header row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -262,9 +228,7 @@ properties:
     summary: >-
       Specifies if the header row is visible. This value can be set to show or
       remove the header row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -279,9 +243,7 @@ properties:
     summary: >-
       Specifies if the total row is visible. This value can be set to show or
       remove the total row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -294,9 +256,7 @@ properties:
     package: excel!
     fullName: sort
     summary: Represents the sorting for the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -309,10 +269,7 @@ properties:
     package: excel!
     fullName: source
     summary: Retrieves the data source type from which the table originates.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -334,9 +291,7 @@ properties:
       through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook
       can also be specified.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -349,10 +304,7 @@ properties:
     package: excel!
     fullName: tableStyle
     summary: The style applied to the table.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false

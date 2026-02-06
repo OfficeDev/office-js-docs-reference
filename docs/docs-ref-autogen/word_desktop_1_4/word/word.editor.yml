@@ -9,9 +9,7 @@ summary: >-
   protected Word
   document](https://support.microsoft.com/office/187ed01c-8795-43e1-9fd0-c9fca419dadf)<!--
   -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -39,9 +37,7 @@ properties:
     summary: >-
       Gets the identifier for the `Editor` object when the parent document is
       saved as a webpage.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -54,9 +50,7 @@ properties:
     package: word!
     fullName: name
     summary: Gets the name of the editor.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +65,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the next range that the editor has
       permissions to modify.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +80,7 @@ properties:
     summary: >-
       Gets a `Range` object that represents the portion of the document that's
       contained in the `Editor` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -104,9 +94,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the `Editor` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -196,9 +184,7 @@ methods:
     summary: >-
       Removes all editing permissions in the document for the editor. The editor
       will be deleted next time the document opens.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -214,9 +200,7 @@ methods:
     summary: >-
       Selects all the shapes in the document that were inserted or edited by the
       editor.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

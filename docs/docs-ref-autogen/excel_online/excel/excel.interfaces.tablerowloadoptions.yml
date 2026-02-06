@@ -12,9 +12,7 @@ summary: >-
   the table row, but not the data. That is, if the data is sorted or if new rows
   are added, a table row will continue to point at the index for which it was
   created.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -43,9 +41,7 @@ properties:
     summary: >-
       Returns the index number of the row within the rows collection of the
       table. Zero-indexed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +58,7 @@ properties:
       be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,10 +78,7 @@ properties:
       Data returned from this API always aligns with the en-US locale. To
       retrieve data in the user's display locale, use
       `TableRow.valuesAsJsonLocal`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,10 +98,7 @@ properties:
       values. Data returned from this API always aligns with the user's display
       locale. To retrieve data independent of locale, use
       `TableRow.valuesAsJson`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false

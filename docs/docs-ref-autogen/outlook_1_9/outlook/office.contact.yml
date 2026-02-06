@@ -68,58 +68,6 @@ remarks: >-
   add-ins](https://devblogs.microsoft.com/microsoft365dev/retirement-of-entity-based-contextual-outlook-add-ins)<!--
   -->.
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  const item = Office.context.mailbox.item;
-
-  // Get an array of strings that represent contacts in the current item's body.
-
-  const contacts =
-  item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
-
-  console.log("There are " + contacts.length + " contacts.")
-
-  contacts.forEach(function (contact) {
-      console.log("Person name: " + JSON.stringify(contact.personName));
-      console.log("Business name: " + JSON.stringify(contact.businessName));
-      console.log("Addresses: " + JSON.stringify(contact.addresses));
-      console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
-      console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
-      console.log("Urls: " + JSON.stringify(contact.urls));
-  });
-
-
-  /* Example email that includes contact details of sender, John Smith:
-
-  Hi there,
-
-  I have received the package.
-
-
-  Thanks.
-
-  John Smith
-
-  Account Manager
-
-  Contoso Corporation
-
-  1 Contoso Way, Redmond, WA 98052
-
-  john.smith@contoso.com
-
-  111-111-1111
-
-  https://contoso.com/john.smith
-
-  */
-
-  ```
-
 isPreview: false
 isDeprecated: true
 customDeprecatedMessage: >-

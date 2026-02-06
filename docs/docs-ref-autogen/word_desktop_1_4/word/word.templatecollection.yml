@@ -12,9 +12,7 @@ summary: >-
   or add-in
   program](https://support.microsoft.com/office/2479fe53-f849-4394-88bb-2a6e2a39479d)<!--
   -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -54,9 +52,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +66,7 @@ methods:
     package: word!
     fullName: getItemAt(index)
     summary: Gets a `Template` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +84,7 @@ methods:
     package: word!
     fullName: importBuildingBlocks()
     summary: Imports the building blocks for all templates into Microsoft Word.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

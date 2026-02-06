@@ -4,9 +4,7 @@ uid: excel!Excel.HeaderFooterPicture:class
 package: excel!
 fullName: Excel.HeaderFooterPicture
 summary: Represents a picture in the header or footer of a worksheet.
-remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       Specifies the brightness of the picture. The value for this property must
       be a number from 0.0 (dimmest) to 1.0 (brightest).
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -34,9 +30,7 @@ properties:
     package: excel!
     fullName: colorType
     summary: Specifies the type of color transformation of the picture.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
     summary: >-
       Specifies the contrast of the picture. The value for this property must be
       a number from 0.0 (least contrast) to 1.0 (most contrast).
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +79,7 @@ properties:
     summary: >-
       Specifies the number of points that are cropped off the bottom of the
       picture.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -104,9 +94,7 @@ properties:
     summary: >-
       Specifies the number of points that are cropped off the left side of the
       picture.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +109,7 @@ properties:
     summary: >-
       Specifies the number of points that are cropped off the right side of the
       picture.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -138,9 +124,7 @@ properties:
     summary: >-
       Specifies the number of points that are cropped off the top of the
       picture.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -155,9 +139,7 @@ properties:
     summary: >-
       Specifies the URL (on the intranet or the web) or path (local or network)
       to the location where the source object is saved.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -170,9 +152,7 @@ properties:
     package: excel!
     fullName: height
     summary: Specifies the height of the picture in points.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -188,9 +168,7 @@ properties:
       Specifies a value that indicates whether the picture retains its original
       proportions when resized. `true` if it retains its proportions; otherwise,
       `false`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,9 +181,7 @@ properties:
     package: excel!
     fullName: width
     summary: Specifies the width of the picture in points.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false

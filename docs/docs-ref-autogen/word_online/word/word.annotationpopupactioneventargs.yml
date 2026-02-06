@@ -6,56 +6,7 @@ fullName: Word.AnnotationPopupActionEventArgs
 summary: >-
   Represents action information that's passed back on annotation pop-up action
   event.
-remarks: >-
-  \[ [API set: WordApi
-  1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-
-  // Registers event handlers.
-
-  await Word.run(async (context) => {
-    eventContexts[0] = context.document.onParagraphAdded.add(paragraphChanged);
-    eventContexts[1] = context.document.onParagraphChanged.add(paragraphChanged);
-
-    eventContexts[2] = context.document.onAnnotationClicked.add(onClickedHandler);
-    eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
-    eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
-    eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
-    eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
-
-    await context.sync();
-
-    console.log("Event handlers registered.");
-  });
-
-
-  ...
-
-
-  async function onPopupActionHandler(args: Word.AnnotationPopupActionEventArgs)
-  {
-    await Word.run(async (context) => {
-      let message = `AnnotationPopupAction: ID ${args.id} = `;
-      if (args.action === "Accept") {
-        message += `Accepted: ${args.critiqueSuggestion}`;
-      } else {
-        message += "Rejected";
-      }
-
-      console.log(message);
-    });
-  }
-
-  ```
+remarks: '\[Api set: WordApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -66,9 +17,7 @@ properties:
     package: word!
     fullName: action
     summary: Specifies the chosen action in the pop-up menu.
-    remarks: >-
-      \[ [API set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +32,7 @@ properties:
     summary: >-
       Specifies the accepted suggestion (only populated when accepting a
       critique suggestion).
-    remarks: >-
-      \[ [API set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +45,7 @@ properties:
     package: word!
     fullName: id
     summary: Specifies the annotation ID for which the event was fired.
-    remarks: >-
-      \[ [API set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

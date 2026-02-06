@@ -17,10 +17,7 @@ properties:
     package: onenote!
     fullName: baseUrl
     summary: The URL of the site where this notebook is located. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: onenote!
     fullName: clientUrl
     summary: The client URL of the notebook. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the notebook. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +58,7 @@ properties:
     summary: >-
       '* True if the notebook isn't created by the user (i.e., 'Misplaced
       Sections'). Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,10 +71,7 @@ properties:
     package: onenote!
     fullName: name
     summary: Gets the name of the notebook. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,10 +84,7 @@ properties:
     package: onenote!
     fullName: sectionGroups
     summary: The section groups in the notebook. Read only
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -115,10 +97,7 @@ properties:
     package: onenote!
     fullName: sections
     summary: The sections of the notebook. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

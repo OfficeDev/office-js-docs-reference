@@ -28,10 +28,7 @@ properties:
 
 
       - `null`<!-- -->: Returned if some, but not all, of the text is bold.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,10 +44,7 @@ properties:
       Specifies the HTML color code representation of the text color (e.g.,
       "\#FF0000" represents red). Returns `null` if the `TextRange` contains
       text fragments with different colors.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -75,10 +69,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is
       italicized.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -95,10 +86,7 @@ properties:
       or East Asian language, this is the corresponding font name; otherwise
       it's the Latin font name. Returns `null` if the `TextRange` contains text
       fragments with different font names.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -113,10 +101,7 @@ properties:
     summary: >-
       Specifies the font size in points (e.g., 11). Returns `null` if the
       `TextRange` contains text fragments with different font sizes.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -133,10 +118,7 @@ properties:
       `TextRange` contains text fragments with different underline styles. See
       [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

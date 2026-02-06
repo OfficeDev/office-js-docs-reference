@@ -6,9 +6,7 @@ fullName: Excel.RangeFormat
 summary: >-
   A format object encapsulating the range's font, fill, borders, alignment, and
   other properties.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     summary: >-
       Specifies if text is automatically indented when text alignment is set to
       equal distribution.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +32,7 @@ properties:
     package: excel!
     fullName: borders
     summary: Collection of border objects that apply to the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +47,7 @@ properties:
     summary: >-
       Specifies the width of all columns within the range. If the column widths
       are not uniform, `null` will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,9 +75,7 @@ properties:
     package: excel!
     fullName: fill
     summary: Returns the fill object defined on the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +88,7 @@ properties:
     package: excel!
     fullName: font
     summary: Returns the font object defined on the overall range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -115,9 +103,7 @@ properties:
     summary: >-
       Represents the horizontal alignment for the specified object. See
       `Excel.HorizontalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +122,7 @@ properties:
     package: excel!
     fullName: indentLevel
     summary: An integer from 0 to 250 that indicates the indent level.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +135,7 @@ properties:
     package: excel!
     fullName: protection
     summary: Returns the format protection object for a range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -166,9 +148,7 @@ properties:
     package: excel!
     fullName: readingOrder
     summary: The reading order for the range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -187,9 +167,7 @@ properties:
     summary: >-
       The height of all rows in the range. If the row heights are not uniform,
       `null` will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -204,9 +182,7 @@ properties:
     summary: >-
       Specifies if text automatically shrinks to fit in the available column
       width.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -223,32 +199,7 @@ properties:
       orientation should be an integer either from -90 to 90, or 180 for
       vertically-oriented text. If the orientation within a range are not
       uniform, then `null` will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-text-orientation.yaml
-
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B2:E2");
-
-          // Set textOrientation to either an integer between -90 and 90
-          // or to 180 for vertically-oriented text.
-          range.format.textOrientation = 90;
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -267,9 +218,7 @@ properties:
       range contains more than one row and the rows aren't all the same height.
       Returns `false` otherwise. Note: This property is only intended to be set
       to `true`<!-- -->. Setting it to `false` has no effect.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -288,9 +237,7 @@ properties:
       contains more than one column and the columns aren't all the same height.
       Returns `false` otherwise. Note: This property is only intended to be set
       to `true`<!-- -->. Setting it to `false` has no effect.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -305,9 +252,7 @@ properties:
     summary: >-
       Represents the vertical alignment for the specified object. See
       `Excel.VerticalAlignment` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -326,9 +271,7 @@ properties:
     summary: >-
       Specifies if Excel wraps the text in the object. A `null` value indicates
       that the entire range doesn't have a uniform wrap setting
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -344,10 +287,7 @@ methods:
     summary: >-
       Adjusts the indentation of the range formatting. The indent value ranges
       from 0 to 250 and is measured in characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.11\]'
 
     isPreview: false
     isDeprecated: false
@@ -372,9 +312,7 @@ methods:
     summary: >-
       Changes the width of the columns of the current range to achieve the best
       fit, based on the current data in the columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -390,9 +328,7 @@ methods:
     summary: >-
       Changes the height of the rows of the current range to achieve the best
       fit, based on the current data in the columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -446,26 +382,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeFormat:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Select all of the range's format properties.
-          await Excel.run(async (context) => { 
-              const sheetName = "Sheet1";
-              const rangeAddress = "F:G";
-              const worksheet = context.workbook.worksheets.getItem(sheetName);
-              const range = worksheet.getRange(rangeAddress);
-              range.load(["format/*", "format/fill", "format/borders", "format/font"]);
-              await context.sync();
-              
-              console.log(range.format.wrapText);
-              console.log(range.format.fill.color);
-              console.log(range.format.font.name);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.RangeFormat#load:member(3)
     package: excel!

@@ -4,9 +4,7 @@ uid: excel!Excel.EventSource:enum
 package: excel!
 fullName: Excel.EventSource
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,20 +12,16 @@ fields:
   - name: local
     uid: excel!Excel.EventSource.local:member
     package: excel!
-    summary: >-
+    summary: |-
       Local means the event comes from a local user session.
 
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"Local"'
   - name: remote
     uid: excel!Excel.EventSource.remote:member
     package: excel!
-    summary: >-
+    summary: |-
       Remote means the event comes from a remote user session.
 
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"Remote"'

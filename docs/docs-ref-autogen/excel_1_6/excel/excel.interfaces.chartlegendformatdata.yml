@@ -19,9 +19,7 @@ properties:
     summary: >-
       Represents the font attributes such as font name, font size, and color of
       a chart legend.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

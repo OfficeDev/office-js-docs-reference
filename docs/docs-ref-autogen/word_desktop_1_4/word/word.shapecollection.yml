@@ -7,41 +7,7 @@ summary: >-
   Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects.
   Currently, only the following shapes are supported: text boxes, geometric
   shapes, groups, pictures, and canvases.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-  await Word.run(async (context) => {
-    // Gets text boxes in the main document.
-    const shapes: Word.ShapeCollection = context.document.body.shapes;
-    shapes.load();
-    await context.sync();
-
-    if (shapes.items.length > 0) {
-      console.log(`Number of shapes found in the main document: ${shapes.items.length}`);
-      shapes.items.forEach(function (shape, index) {
-        if (shape.type === Word.ShapeType.textBox) {
-          console.log(`Shape ${index} in the main document has a text box. Properties:`, shape);
-        } else {
-          console.log(`Shape ${index} in the main document doesn't have a text box.`);
-        }
-      });
-    } else {
-      console.log("No shapes found in the main document.");
-    }
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -83,32 +49,7 @@ methods:
     summary: >-
       Gets the shapes that have the specified geometric types. Only applied to
       geometric shapes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets the moon geometric shapes from the document body.
-        const moons: Word.ShapeCollection = context.document.body.shapes.getByGeometricTypes([
-          Word.GeometricShapeType.moon,
-        ]);
-        moons.load();
-        await context.sync();
-
-        console.log("Moons found in the document body:", moons);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +71,7 @@ methods:
     summary: >-
       Gets a shape by its identifier. Throws an `ItemNotFound` error if there
       isn't a shape with the identifier in this collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -156,9 +95,7 @@ methods:
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -176,9 +113,7 @@ methods:
     package: word!
     fullName: getByIds(ids)
     summary: Gets the shapes by the identifiers.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -196,9 +131,7 @@ methods:
     package: word!
     fullName: getByNames(names)
     summary: Gets the shapes that have the specified names.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -216,35 +149,7 @@ methods:
     package: word!
     fullName: getByTypes(types)
     summary: Gets the shapes that have the specified types.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Sets the properties of the first text box.
-        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.textBox])
-          .getFirst();
-        firstShapeWithTextBox.top = 115;
-        firstShapeWithTextBox.left = 0;
-        firstShapeWithTextBox.width = 50;
-        firstShapeWithTextBox.height = 50;
-        await context.sync();
-
-        console.log("The first text box's properties were updated:", firstShapeWithTextBox);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -264,37 +169,7 @@ methods:
     summary: >-
       Gets the first shape in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Inserts a content control into the first paragraph in the first text box.
-        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
-          .getByTypes([Word.ShapeType.textBox])
-          .getFirst();
-        firstShapeWithTextBox.load("type/body");
-        await context.sync();
-
-        const firstParagraphInTextBox: Word.Paragraph = firstShapeWithTextBox.body.paragraphs.getFirst();
-        const newControl: Word.ContentControl = firstParagraphInTextBox.insertContentControl();
-        newControl.load();
-        await context.sync();
-
-        console.log("New content control properties:", newControl);
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -313,34 +188,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
-
-      await Word.run(async (context) => {
-        // Gets text from the first text box in the main document.
-        const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
-        shape.load("body/text");
-        await context.sync();
-
-        console.log(
-          shape.isNullObject
-            ? "No shapes with text boxes found in the main document."
-            : `Text in first text box: ${shape.body.text}`
-        );
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -356,48 +204,7 @@ methods:
     summary: >-
       Groups floating shapes in this collection, inline shapes will be skipped.
       Returns a `Shape` object that represents the new group of shapes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-      await Word.run(async (context) => {
-        // Groups the shapes (including text boxes and pictures) found in the document body.
-        const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
-          Word.ShapeType.geometricShape,
-          Word.ShapeType.textBox,
-          Word.ShapeType.picture,
-        ]);
-        shapes.load("items");
-        await context.sync();
-
-        const numShapes = shapes.items.length;
-        if (numShapes === 0) {
-          console.log("No shapes found in the document body.");
-          return;
-        }
-
-        console.log(`Number of shapes to group: ${numShapes}`);
-
-        const groupedShape: Word.Shape = shapes.group();
-        groupedShape.load("shapeGroup/shapes");
-        await context.sync();
-
-        const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
-        console.log("Shapes grouped:", shapeGroup.shapes);
-        groupedShape.select();
-      });
-
-      ```
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false

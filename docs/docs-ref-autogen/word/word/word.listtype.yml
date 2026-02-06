@@ -4,9 +4,7 @@ uid: word!Word.ListType:enum
 package: word!
 fullName: Word.ListType
 summary: Represents the list type.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,70 +12,56 @@ fields:
   - name: listBullet
     uid: word!Word.ListType.listBullet:member
     package: word!
-    summary: >-
+    summary: |-
       Bulleted list.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ListBullet"'
   - name: listListNumOnly
     uid: word!Word.ListType.listListNumOnly:member
     package: word!
-    summary: >-
+    summary: |-
       ListNum fields that can be used in the body of a paragraph.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ListListNumOnly"'
   - name: listMixedNumbering
     uid: word!Word.ListType.listMixedNumbering:member
     package: word!
-    summary: >-
+    summary: |-
       Mixed numeric list.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ListMixedNumbering"'
   - name: listNoNumbering
     uid: word!Word.ListType.listNoNumbering:member
     package: word!
-    summary: >-
+    summary: |-
       List with no bullets, numbering, or outlining.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ListNoNumbering"'
   - name: listOutlineNumbering
     uid: word!Word.ListType.listOutlineNumbering:member
     package: word!
-    summary: >-
+    summary: |-
       Outlined list.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ListOutlineNumbering"'
   - name: listPictureBullet
     uid: word!Word.ListType.listPictureBullet:member
     package: word!
-    summary: >-
+    summary: |-
       Picture bulleted list.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ListPictureBullet"'
   - name: listSimpleNumbering
     uid: word!Word.ListType.listSimpleNumbering:member
     package: word!
-    summary: >-
+    summary: |-
       Simple numeric list.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ListSimpleNumbering"'

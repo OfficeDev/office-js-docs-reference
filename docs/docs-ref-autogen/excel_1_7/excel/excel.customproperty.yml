@@ -4,9 +4,7 @@ uid: excel!Excel.CustomProperty:class
 package: excel!
 fullName: Excel.CustomProperty
 summary: Represents a custom property.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
       The key of the custom property. The key is limited to 255 characters
       outside of Excel on the web (larger keys are automatically trimmed to 255
       characters on other platforms).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: excel!
     fullName: type
     summary: The type of the value used for the custom property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
       The value of the custom property. The value is limited to 255 characters
       outside of Excel on the web (larger values are automatically trimmed to
       255 characters on other platforms).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +80,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the custom property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

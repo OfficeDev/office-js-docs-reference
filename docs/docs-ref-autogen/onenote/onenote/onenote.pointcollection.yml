@@ -4,9 +4,7 @@ uid: onenote!OneNote.PointCollection:class
 package: onenote!
 fullName: OneNote.PointCollection
 summary: Represents a collection of Point objects.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of Point in the stroke.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,10 +57,7 @@ methods:
     package: onenote!
     fullName: getItem(index)
     summary: Gets a Point object by ID or by its index in the collection. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,10 +77,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a Point on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

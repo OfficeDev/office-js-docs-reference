@@ -7,10 +7,7 @@ summary: >-
   Represents the paragraph formatting properties of a text that is attached to
   the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!--
   -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -41,10 +38,7 @@ properties:
       Represents the bullet format of the paragraph. See
       [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +60,7 @@ properties:
       alignment values. See
       [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

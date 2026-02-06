@@ -4,9 +4,7 @@ uid: excel!Excel.PivotAxis:enum
 package: excel!
 fullName: Excel.PivotAxis
 summary: Represents the axis from which to get the PivotItems.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,50 +12,40 @@ fields:
   - name: column
     uid: excel!Excel.PivotAxis.column:member
     package: excel!
-    summary: >-
+    summary: |-
       The column axis.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Column"'
   - name: data
     uid: excel!Excel.PivotAxis.data:member
     package: excel!
-    summary: >-
+    summary: |-
       The data axis.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Data"'
   - name: filter
     uid: excel!Excel.PivotAxis.filter:member
     package: excel!
-    summary: >-
+    summary: |-
       The filter axis.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Filter"'
   - name: row
     uid: excel!Excel.PivotAxis.row:member
     package: excel!
-    summary: >-
+    summary: |-
       The row axis.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Row"'
   - name: unknown
     uid: excel!Excel.PivotAxis.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       The axis or region is unknown or unsupported.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Unknown"'

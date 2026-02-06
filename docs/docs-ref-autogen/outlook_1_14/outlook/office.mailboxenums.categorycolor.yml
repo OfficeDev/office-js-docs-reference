@@ -5,8 +5,7 @@ package: outlook!
 fullName: Office.MailboxEnums.CategoryColor
 summary: Specifies the category color.
 remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+  \[Api set: Mailbox 1.8\]
 
 
   **[Applicable Outlook
@@ -25,35 +24,6 @@ remarks: >-
   colors. This has now been fixed starting in Version 16.78. If you've recently
   updated your Outlook client, you need to adjust the category colors in your
   add-in to match the updated preset values.
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
-
-
-  const masterCategoriesToAdd = [
-    {
-      displayName: "TestCategory",
-      color: Office.MailboxEnums.CategoryColor.Preset0
-    }
-  ];
-
-
-  Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd,
-  function(asyncResult) {
-    if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-      console.log("Successfully added categories to master list");
-    } else {
-      console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
-    }
-  });
-
-  ```
 
 isPreview: false
 isDeprecated: false

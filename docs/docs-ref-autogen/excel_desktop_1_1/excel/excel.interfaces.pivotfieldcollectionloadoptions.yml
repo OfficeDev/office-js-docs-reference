@@ -6,9 +6,7 @@ fullName: Excel.Interfaces.PivotFieldCollectionLoadOptions
 summary: >-
   Represents a collection of all the PivotFields that are part of a PivotTable's
   hierarchy.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: ID of the PivotField.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: Name of the PivotField.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +61,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Determines whether to show all items of
       the PivotField.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +74,7 @@ properties:
     package: excel!
     fullName: subtotals
     summary: 'For EACH ITEM in the collection: Subtotals of the PivotField.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

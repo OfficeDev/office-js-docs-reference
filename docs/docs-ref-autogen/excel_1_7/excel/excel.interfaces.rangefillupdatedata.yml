@@ -19,9 +19,7 @@ properties:
     summary: >-
       HTML color code representing the color of the background, in the form
       \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

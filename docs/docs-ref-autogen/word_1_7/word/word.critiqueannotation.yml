@@ -4,39 +4,7 @@ uid: word!Word.CritiqueAnnotation:class
 package: word!
 fullName: Word.CritiqueAnnotation
 summary: Represents an annotation wrapper around critique displayed in the document.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-
-  // Gets annotations found in the selected paragraph.
-
-  await Word.run(async (context) => {
-    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
-    const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
-    annotations.load("id,state,critiqueAnnotation");
-
-    await context.sync();
-
-    console.log("Annotations found:");
-
-    for (let i = 0; i < annotations.items.length; i++) {
-      const annotation: Word.Annotation = annotations.items[i];
-
-      console.log(`ID ${annotation.id} - state '${annotation.state}':`, annotation.critiqueAnnotation.critique);
-    }
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -62,39 +30,7 @@ properties:
     package: word!
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-
-      // Gets annotations found in the selected paragraph.
-
-      await Word.run(async (context) => {
-        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
-        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
-        annotations.load("id,state,critiqueAnnotation");
-
-        await context.sync();
-
-        console.log("Annotations found:");
-
-        for (let i = 0; i < annotations.items.length; i++) {
-          const annotation: Word.Annotation = annotations.items[i];
-
-          console.log(`ID ${annotation.id} - state '${annotation.state}':`, annotation.critiqueAnnotation.critique);
-        }
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +43,7 @@ properties:
     package: word!
     fullName: range
     summary: Gets the range of text that is annotated.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,43 +59,7 @@ methods:
     summary: >-
       Accepts the critique. This will change the annotation state to
       `accepted`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-
-      // Accepts the first annotation found in the selected paragraph.
-
-      await Word.run(async (context) => {
-        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
-        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
-        annotations.load("id,state,critiqueAnnotation");
-
-        await context.sync();
-
-        for (let i = 0; i < annotations.items.length; i++) {
-          const annotation: Word.Annotation = annotations.items[i];
-
-          if (annotation.state === Word.AnnotationState.created) {
-            console.log(`Accepting ID ${annotation.id}...`);
-            annotation.critiqueAnnotation.accept();
-
-            await context.sync();
-            break;
-          }
-        }
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -256,43 +154,7 @@ methods:
     summary: >-
       Rejects the critique. This will change the annotation state to
       `rejected`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
-
-      // Rejects the last annotation found in the selected paragraph.
-
-      await Word.run(async (context) => {
-        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
-        const annotations: Word.AnnotationCollection = paragraph.getAnnotations();
-        annotations.load("id,state,critiqueAnnotation");
-
-        await context.sync();
-
-        for (let i = annotations.items.length - 1; i >= 0; i--) {
-          const annotation: Word.Annotation = annotations.items[i];
-
-          if (annotation.state === Word.AnnotationState.created) {
-            console.log(`Rejecting ID ${annotation.id}...`);
-            annotation.critiqueAnnotation.reject();
-
-            await context.sync();
-            break;
-          }
-        }
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

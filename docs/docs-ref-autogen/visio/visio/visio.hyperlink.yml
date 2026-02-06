@@ -4,10 +4,7 @@ uid: visio!Visio.Hyperlink:class
 package: visio!
 fullName: Visio.Hyperlink
 summary: Represents the Hyperlink.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -18,10 +15,7 @@ properties:
     package: visio!
     fullName: address
     summary: Gets the address of the Hyperlink object.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: visio!
     fullName: description
     summary: Gets the description of a hyperlink.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,10 +58,7 @@ properties:
     summary: >-
       Gets the extra URL request information used to resolve the hyperlink's
       URL.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,10 +71,7 @@ properties:
     package: visio!
     fullName: subAddress
     summary: Gets the sub-address of the Hyperlink object.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -114,30 +99,7 @@ methods:
           type: <xref uid="visio!Visio.Interfaces.HyperlinkLoadOptions:interface" />
       return:
         type: <xref uid="visio!Visio.Hyperlink:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
-              const hyperlink = shape.hyperlinks.getItem(0);
-              hyperlink.load();
-              return ctx.sync().then(function() {
-                  console.log(hyperlink.description);
-                  console.log(hyperlink.address);
-                  console.log(hyperlink.subAddress);
-                  console.log(hyperlink.extraInfo);
-               });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: visio!Visio.Hyperlink#load:member(2)
     package: visio!

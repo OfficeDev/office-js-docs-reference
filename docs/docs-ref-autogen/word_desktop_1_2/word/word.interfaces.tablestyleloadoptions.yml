@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.TableStyleLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableStyleLoadOptions
 summary: Represents the `TableStyle` object.
-remarks: >-
-  \[ [API set: WordApi
-  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.6\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ properties:
     package: word!
     fullName: alignment
     summary: Specifies the table's alignment against the page margin.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     summary: >-
       Specifies whether lines in tables formatted with a style break across
       pages.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +61,7 @@ properties:
     summary: >-
       Specifies the amount of space to add between the contents and the bottom
       borders of the cells.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,9 +74,7 @@ properties:
     package: word!
     fullName: cellSpacing
     summary: Specifies the spacing (in points) between the cells in a table style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,9 +89,7 @@ properties:
     summary: >-
       Specifies the amount of space to add between the contents and the left
       borders of the cells.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,9 +104,7 @@ properties:
     summary: >-
       Specifies the amount of space to add between the contents and the right
       borders of the cells.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -133,9 +119,7 @@ properties:
     summary: >-
       Specifies the amount of space to add between the contents and the top
       borders of the cells.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

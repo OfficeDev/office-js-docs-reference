@@ -19,9 +19,7 @@ properties:
     summary: >-
       Gets the text format of the body. Use this to get and set font name, size,
       color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -37,9 +35,7 @@ properties:
       Specifies the style name for the body. Use this property for custom styles
       and localized style names. To use the built-in styles that are portable
       between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

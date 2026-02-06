@@ -4,9 +4,7 @@ uid: word!Word.FrameCollection:class
 package: word!
 fullName: Word.FrameCollection
 summary: Represents the collection of [Word.Frame](xref:word!Word.Frame:class) objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -48,9 +46,7 @@ methods:
     summary: >-
       Returns a `Frame` object that represents a new frame added to a range,
       selection, or document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +64,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the `FrameCollection` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +78,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `Frame` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

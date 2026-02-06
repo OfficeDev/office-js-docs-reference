@@ -4,10 +4,7 @@ uid: visio!Visio.CommentCollection:class
 package: visio!
 fullName: Visio.CommentCollection
 summary: Represents the CommentCollection for a given Shape.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -47,10 +44,7 @@ methods:
     package: visio!
     fullName: getCount()
     summary: Gets the number of Comments.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +58,7 @@ methods:
     package: visio!
     fullName: getItem(key)
     summary: Gets the Comment using its name.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,34 +96,7 @@ methods:
             uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="visio!Visio.CommentCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shapeName = "Position Belt.41";
-              const shape = activePage.shapes.getItem(shapeName);
-              const shapeComments= shape.comments;
-              shapeComments.load(["author", "text"]);
-              return ctx.sync().then(function () {
-                  for (let i = 0; i < shapeComments.items.length; i++)
-                  {
-                      const comment = shapeComments.items[i];
-                      console.log("comment Author: " + comment.author);
-                      console.log("Comment Text: " + comment.text);
-                      console.log("Date " + comment.date);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: visio!Visio.CommentCollection#load:member(2)
     package: visio!

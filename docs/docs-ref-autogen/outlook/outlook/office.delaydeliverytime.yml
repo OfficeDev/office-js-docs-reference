@@ -7,9 +7,7 @@ summary: >-
   The `DelayDeliveryTime` object enables you to manage the delayed delivery date
   and time of a message.
 remarks: >-
-  \[ [API set: Mailbox
-  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox 1.13\]
 
 
   **[Minimum permission
@@ -31,9 +29,7 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets the delivery date and time of a message.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -78,9 +74,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the delivery date and time of a message.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -91,35 +85,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
-
-
-      // This snippet gets the delivery date and time of a message.
-
-      Office.context.mailbox.item.delayDeliveryTime.getAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-          console.log(asyncResult.error.message);
-          return;
-        }
-
-        const deliveryDate = asyncResult.value;
-        if (deliveryDate === 0) {
-          console.log("Your message will be delivered immediately when you select Send.");
-        } else {
-          const date = new Date(deliveryDate);
-          console.log(`Message delivery date and time: ${date.toString()}`);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -148,9 +113,7 @@ methods:
     fullName: setAsync(datetime, options, callback)
     summary: Sets the delivery date and time of a message.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -231,9 +194,7 @@ methods:
     fullName: setAsync(datetime, callback)
     summary: Sets the delivery date and time of a message.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -278,37 +239,6 @@ methods:
 
       - `InvalidFormatError` - The format of the specified data object is not
       valid.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
-
-
-      function setDeliveryDate(minutes) {
-        // This snippet sets the delivery date and time of a message.
-        const currentTime = new Date().getTime();
-        const milliseconds = totalDelay * 60000;
-        const timeDelay = new Date(currentTime + milliseconds);
-        Office.context.mailbox.item.delayDeliveryTime.setAsync(timeDelay, (asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            console.log(asyncResult.error.message);
-            return;
-          }
-
-          if (minutes === 1440) {
-            console.log(`Delayed delivery by an additional one day.`);
-          } else {
-            console.log(`Delayed delivery by an additional ${minutes} minutes.`);
-          }
-        });
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false

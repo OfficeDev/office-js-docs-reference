@@ -4,9 +4,7 @@ uid: excel!Excel.ChartAxisTickMark:enum
 package: excel!
 fullName: Excel.ChartAxisTickMark
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,28 +12,20 @@ fields:
   - name: cross
     uid: excel!Excel.ChartAxisTickMark.cross:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Cross"'
   - name: inside
     uid: excel!Excel.ChartAxisTickMark.inside:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Inside"'
   - name: none
     uid: excel!Excel.ChartAxisTickMark.none:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"None"'
   - name: outside
     uid: excel!Excel.ChartAxisTickMark.outside:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Outside"'

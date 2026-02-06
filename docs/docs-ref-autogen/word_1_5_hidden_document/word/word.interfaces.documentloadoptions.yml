@@ -7,9 +7,7 @@ summary: >-
   The `Document` object is the top level object. A `Document` object contains
   one or more sections, content controls, and the body that contains the
   contents of the document.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     summary: >-
       Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     package: word!
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     package: word!
     fullName: properties
     summary: Gets the properties of the document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +79,7 @@ properties:
     summary: >-
       Indicates whether the changes in the document have been saved. A value of
       `true` indicates that the document hasn't changed since it was saved.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

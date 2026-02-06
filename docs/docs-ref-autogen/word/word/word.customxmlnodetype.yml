@@ -6,9 +6,7 @@ fullName: Word.CustomXmlNodeType
 summary: >-
   Represents the type of a
   [Word.CustomXmlNode](xref:word!Word.CustomXmlNode:class)<!-- -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -16,70 +14,56 @@ fields:
   - name: attribute
     uid: word!Word.CustomXmlNodeType.attribute:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an XML attribute node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"attribute"'
   - name: cData
     uid: word!Word.CustomXmlNodeType.cData:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an XML CDATA section node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"cData"'
   - name: comment
     uid: word!Word.CustomXmlNodeType.comment:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an XML comment node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"comment"'
   - name: document
     uid: word!Word.CustomXmlNodeType.document:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an XML document node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"document"'
   - name: element
     uid: word!Word.CustomXmlNodeType.element:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an XML element node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"element"'
   - name: processingInstruction
     uid: word!Word.CustomXmlNodeType.processingInstruction:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an XML processing instruction node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"processingInstruction"'
   - name: text
     uid: word!Word.CustomXmlNodeType.text:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an XML text node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"text"'

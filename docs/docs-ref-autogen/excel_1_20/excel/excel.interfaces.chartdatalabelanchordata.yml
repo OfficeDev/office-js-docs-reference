@@ -20,10 +20,7 @@ properties:
       Specifies the distance, in points, from the anchor to the left edge of the
       chart data label. Note that when getting the value, it may differ slightly
       from the set value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false
@@ -39,10 +36,7 @@ properties:
       Specifies the distance, in points, from the anchor to the top edge of the
       chart data label. Note that when getting the value, it may differ slightly
       from the set value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false

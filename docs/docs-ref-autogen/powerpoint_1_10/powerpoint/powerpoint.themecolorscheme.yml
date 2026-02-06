@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.ThemeColorScheme:class
 package: powerpoint!
 fullName: PowerPoint.ThemeColorScheme
 summary: Represents a theme color scheme.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,10 +31,7 @@ methods:
     package: powerpoint!
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -57,10 +51,7 @@ methods:
     package: powerpoint!
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -85,10 +76,7 @@ methods:
     package: powerpoint!
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -111,10 +99,7 @@ methods:
     package: powerpoint!
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

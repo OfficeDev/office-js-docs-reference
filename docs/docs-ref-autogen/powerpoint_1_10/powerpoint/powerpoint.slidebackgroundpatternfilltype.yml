@@ -7,10 +7,7 @@ summary: >-
   Specifies the pattern fill type for a
   [PowerPoint.SlideBackgroundPatternFill](xref:powerpoint!PowerPoint.SlideBackgroundPatternFill:class)<!--
   -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.10\]'
 
 isPreview: false
 isDeprecated: false
@@ -18,621 +15,456 @@ fields:
   - name: cross
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.cross:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Cross pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Cross"'
   - name: darkDownwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.darkDownwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dark downward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DarkDownwardDiagonal"'
   - name: darkHorizontal
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.darkHorizontal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dark horizontal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DarkHorizontal"'
   - name: darkUpwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.darkUpwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dark upward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DarkUpwardDiagonal"'
   - name: darkVertical
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.darkVertical:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dark vertical pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DarkVertical"'
   - name: dashedDownwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.dashedDownwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dashed downward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DashedDownwardDiagonal"'
   - name: dashedHorizontal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.dashedHorizontal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dashed horizontal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DashedHorizontal"'
   - name: dashedUpwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.dashedUpwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dashed upward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DashedUpwardDiagonal"'
   - name: dashedVertical
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.dashedVertical:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dashed vertical pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DashedVertical"'
   - name: diagonalBrick
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.diagonalBrick:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Diagonal brick pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DiagonalBrick"'
   - name: diagonalCross
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.diagonalCross:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Diagonal cross pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DiagonalCross"'
   - name: divot
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.divot:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Divot pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Divot"'
   - name: dottedDiamond
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.dottedDiamond:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dotted diamond pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DottedDiamond"'
   - name: dottedGrid
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.dottedGrid:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Dotted grid pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DottedGrid"'
   - name: downwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.downwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Downward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"DownwardDiagonal"'
   - name: horizontal
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.horizontal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Horizontal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Horizontal"'
   - name: horizontalBrick
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.horizontalBrick:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Horizontal brick pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"HorizontalBrick"'
   - name: largeCheckerBoard
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.largeCheckerBoard:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Large checker board pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"LargeCheckerBoard"'
   - name: largeConfetti
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.largeConfetti:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Large confetti pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"LargeConfetti"'
   - name: largeGrid
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.largeGrid:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Large grid pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"LargeGrid"'
   - name: lightDownwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.lightDownwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Light downward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"LightDownwardDiagonal"'
   - name: lightHorizontal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.lightHorizontal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Light horizontal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"LightHorizontal"'
   - name: lightUpwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.lightUpwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Light upward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"LightUpwardDiagonal"'
   - name: lightVertical
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.lightVertical:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Light vertical pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"LightVertical"'
   - name: narrowHorizontal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.narrowHorizontal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Narrow horizontal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"NarrowHorizontal"'
   - name: narrowVertical
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.narrowVertical:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Narrow vertical pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"NarrowVertical"'
   - name: outlinedDiamond
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.outlinedDiamond:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Outlined diamond pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"OutlinedDiamond"'
   - name: percent10
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent10:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       10 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent10"'
   - name: percent20
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent20:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       20 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent20"'
   - name: percent25
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent25:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       25 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent25"'
   - name: percent30
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent30:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       30 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent30"'
   - name: percent40
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent40:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       40 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent40"'
   - name: percent5
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent5:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       5 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent5"'
   - name: percent50
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent50:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       50 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent50"'
   - name: percent60
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent60:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       60 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent60"'
   - name: percent70
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent70:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       70 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent70"'
   - name: percent75
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent75:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       75 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent75"'
   - name: percent80
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent80:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       80 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent80"'
   - name: percent90
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.percent90:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       90 percent pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Percent90"'
   - name: plaid
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.plaid:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Plaid pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Plaid"'
   - name: shingle
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.shingle:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Shingle pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Shingle"'
   - name: smallCheckerBoard
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.smallCheckerBoard:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Small checker board pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"SmallCheckerBoard"'
   - name: smallConfetti
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.smallConfetti:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Small confetti pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"SmallConfetti"'
   - name: smallGrid
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.smallGrid:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Small grid pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"SmallGrid"'
   - name: solidDiamond
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.solidDiamond:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Solid diamond pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"SolidDiamond"'
   - name: sphere
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.sphere:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Sphere pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Sphere"'
   - name: trellis
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.trellis:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Trellis pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Trellis"'
   - name: unsupported
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.unsupported:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Unsupported pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Unsupported"'
   - name: upwardDiagonal
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.upwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Upward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"UpwardDiagonal"'
   - name: vertical
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.vertical:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Vertical pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Vertical"'
   - name: wave
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.wave:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Wave pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Wave"'
   - name: weave
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.weave:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Weave pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Weave"'
   - name: wideDownwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.wideDownwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Wide downward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"WideDownwardDiagonal"'
   - name: wideUpwardDiagonal
     uid: >-
       powerpoint!PowerPoint.SlideBackgroundPatternFillType.wideUpwardDiagonal:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Wide upward diagonal pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"WideUpwardDiagonal"'
   - name: zigZag
     uid: powerpoint!PowerPoint.SlideBackgroundPatternFillType.zigZag:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Zig zag pattern fill.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"ZigZag"'

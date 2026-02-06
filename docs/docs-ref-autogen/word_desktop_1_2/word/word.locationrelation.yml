@@ -4,40 +4,7 @@ uid: word!Word.LocationRelation:enum
 package: word!
 fullName: Word.LocationRelation
 summary: Represents the relationship of the location of this instance to another range.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
-
-
-  // Compares the location of one paragraph in relation to another paragraph.
-
-  await Word.run(async (context) => {
-    const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
-    paragraphs.load("items");
-
-    await context.sync();
-
-    const firstParagraphAsRange: Word.Range = paragraphs.items[0].getRange();
-    const secondParagraphAsRange: Word.Range = paragraphs.items[1].getRange();
-
-    const comparedLocation = firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
-
-    await context.sync();
-
-    const locationValue: Word.LocationRelation = comparedLocation.value;
-    console.log(`Location of the first paragraph in relation to the second paragraph: ${locationValue}`);
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -45,42 +12,34 @@ fields:
   - name: adjacentAfter
     uid: word!Word.LocationRelation.adjacentAfter:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that this instance occurs after, and is adjacent to, the range.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"AdjacentAfter"'
   - name: adjacentBefore
     uid: word!Word.LocationRelation.adjacentBefore:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that this instance occurs before, and is adjacent to, the range.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"AdjacentBefore"'
   - name: after
     uid: word!Word.LocationRelation.after:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that this instance occurs after the range.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"After"'
   - name: before
     uid: word!Word.LocationRelation.before:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that this instance occurs before the range.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Before"'
   - name: contains
     uid: word!Word.LocationRelation.contains:member
@@ -90,8 +49,7 @@ fields:
       start and end character of this instance.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Contains"'
   - name: containsEnd
     uid: word!Word.LocationRelation.containsEnd:member
@@ -102,8 +60,7 @@ fields:
       this instance.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"ContainsEnd"'
   - name: containsStart
     uid: word!Word.LocationRelation.containsStart:member
@@ -114,18 +71,15 @@ fields:
       this instance.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"ContainsStart"'
   - name: equal
     uid: word!Word.LocationRelation.equal:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that this instance and the range represent the same range.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Equal"'
   - name: inside
     uid: word!Word.LocationRelation.inside:member
@@ -135,8 +89,7 @@ fields:
       the same start and end characters as this instance.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Inside"'
   - name: insideEnd
     uid: word!Word.LocationRelation.insideEnd:member
@@ -147,8 +100,7 @@ fields:
       this instance.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"InsideEnd"'
   - name: insideStart
     uid: word!Word.LocationRelation.insideStart:member
@@ -159,8 +111,7 @@ fields:
       this instance.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"InsideStart"'
   - name: overlapsAfter
     uid: word!Word.LocationRelation.overlapsAfter:member
@@ -170,8 +121,7 @@ fields:
       range’s last character.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"OverlapsAfter"'
   - name: overlapsBefore
     uid: word!Word.LocationRelation.overlapsBefore:member
@@ -181,16 +131,13 @@ fields:
       range's first character.
 
 
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"OverlapsBefore"'
   - name: unrelated
     uid: word!Word.LocationRelation.unrelated:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that this instance and the range are in different subdocuments.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Unrelated"'

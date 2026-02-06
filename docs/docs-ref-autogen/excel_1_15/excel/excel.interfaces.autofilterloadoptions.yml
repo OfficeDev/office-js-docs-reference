@@ -6,9 +6,7 @@ fullName: Excel.Interfaces.AutoFilterLoadOptions
 summary: >-
   Represents the `AutoFilter` object. AutoFilter turns the values in Excel
   column into specific filters based on the cell contents.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     package: excel!
     fullName: criteria
     summary: An array that holds all the filter criteria in the autofiltered range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: excel!
     fullName: enabled
     summary: Specifies if the AutoFilter is enabled.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +59,7 @@ properties:
     package: excel!
     fullName: isDataFiltered
     summary: Specifies if the AutoFilter has filter criteria.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

@@ -6,9 +6,7 @@ fullName: Word.CoauthorCollection
 summary: >-
   Contains a collection of [Word.Coauthor](xref:word!Word.Coauthor:class)
   objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false

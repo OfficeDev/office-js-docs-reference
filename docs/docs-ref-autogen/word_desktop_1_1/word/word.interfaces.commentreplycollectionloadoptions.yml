@@ -7,9 +7,7 @@ summary: >-
   Contains a collection of
   [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all
   comment replies in one comment thread.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the email of the comment reply's
       author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the name of the comment reply's
       author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the comment reply's content.
       The string is plain text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -89,9 +81,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the commentReply's content
       range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -108,9 +98,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the creation date of the comment
       reply.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -123,9 +111,7 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the comment reply.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -139,9 +125,7 @@ properties:
     package: word!
     fullName: parentComment
     summary: 'For EACH ITEM in the collection: Gets the parent comment of this reply.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

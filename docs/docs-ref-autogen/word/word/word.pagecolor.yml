@@ -4,9 +4,7 @@ uid: word!Word.PageColor:enum
 package: word!
 fullName: Word.PageColor
 summary: Specifies the page color options in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,30 +12,24 @@ fields:
   - name: inverse
     uid: word!Word.PageColor.inverse:member
     package: word!
-    summary: >-
+    summary: |-
       Inverse.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Inverse"'
   - name: none
     uid: word!Word.PageColor.none:member
     package: word!
-    summary: >-
+    summary: |-
       None.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: sepia
     uid: word!Word.PageColor.sepia:member
     package: word!
-    summary: >-
+    summary: |-
       Sepia.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Sepia"'

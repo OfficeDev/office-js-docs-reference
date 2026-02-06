@@ -6,9 +6,7 @@ fullName: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
 summary: >-
   Represents a collection of DataPivotHierarchy items associated with the
   PivotTable.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.8\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,9 +36,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the PivotFields associated with
       the DataPivotHierarchy.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: ID of the DataPivotHierarchy.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: Name of the DataPivotHierarchy.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -84,9 +76,7 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: 'For EACH ITEM in the collection: Number format of the DataPivotHierarchy.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -100,9 +90,7 @@ properties:
     package: excel!
     fullName: position
     summary: 'For EACH ITEM in the collection: Position of the DataPivotHierarchy.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -118,9 +106,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the data should be shown as
       a specific summary calculation.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +122,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if all items of the
       DataPivotHierarchy are shown.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

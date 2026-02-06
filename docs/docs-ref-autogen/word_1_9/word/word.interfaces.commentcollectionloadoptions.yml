@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.CommentCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CommentCollectionLoadOptions
 summary: Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ properties:
     package: word!
     fullName: authorEmail
     summary: 'For EACH ITEM in the collection: Gets the email of the comment''s author.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -48,9 +44,7 @@ properties:
     package: word!
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the name of the comment''s author.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +59,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the comment's content as plain
       text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +72,7 @@ properties:
     package: word!
     fullName: contentRange
     summary: 'For EACH ITEM in the collection: Specifies the comment''s content range.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +87,7 @@ properties:
     package: word!
     fullName: creationDate
     summary: 'For EACH ITEM in the collection: Gets the creation date of the comment.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -112,9 +100,7 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the comment.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -130,9 +116,7 @@ properties:
       For EACH ITEM in the collection: Specifies the comment thread's status.
       Setting to `true` resolves the comment thread. Getting a value of `true`
       means that the comment thread is resolved.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

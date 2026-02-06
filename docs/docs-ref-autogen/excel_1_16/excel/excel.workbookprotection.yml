@@ -4,9 +4,7 @@ uid: excel!Excel.WorkbookProtection:class
 package: excel!
 fullName: Excel.WorkbookProtection
 summary: Represents the protection of a workbook object.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: protected
     summary: Specifies if the workbook is protected.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -127,36 +123,7 @@ methods:
     package: excel!
     fullName: protect(password)
     summary: Protects the workbook. Fails if the workbook has been protected.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-
-      let password = await passwordHandler();
-
-      passwordHelper(password);
-
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.load("protection/protected");
-
-          await context.sync();
-
-          if (!workbook.protection.protected) {
-              workbook.protection.protect(password);
-          }
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -196,30 +163,7 @@ methods:
     package: excel!
     fullName: unprotect(password)
     summary: Unprotects the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-
-      let password = await passwordHandler();
-
-      passwordHelper(password);
-
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.protection.unprotect(password);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

@@ -19,9 +19,7 @@ properties:
     summary: >-
       Represents the formula in A1-style notation. If a cell has no formula, its
       value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -38,9 +36,7 @@ properties:
       number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
       would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
       value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
     summary: >-
       Represents the formula in R1C1-style notation. If a cell has no formula,
       its value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -70,9 +64,7 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: Represents Excel's number format code for the given cell.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -88,9 +80,7 @@ properties:
       Represents the raw values of the specified range view. The data returned
       could be of type string, number, or a Boolean. Cells that contain an error
       will return the error string.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -110,10 +100,7 @@ properties:
       values. Data returned from this API always aligns with the en-US locale.
       To retrieve data in the user's display locale, use
       `RangeView.valuesAsJsonLocal`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false
@@ -133,10 +120,7 @@ properties:
       string values. Data returned from this API always aligns with the user's
       display locale. To retrieve data independent of locale, use
       `RangeView.valuesAsJson`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.16\]'
 
     isPreview: false
     isDeprecated: false

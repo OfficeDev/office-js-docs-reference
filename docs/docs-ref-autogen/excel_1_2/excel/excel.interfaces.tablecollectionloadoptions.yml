@@ -6,9 +6,7 @@ fullName: Excel.Interfaces.TableCollectionLoadOptions
 summary: >-
   Represents a collection of all the tables that are part of the workbook or
   worksheet, depending on how it was reached.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents a collection of all the
       columns in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +54,7 @@ properties:
       For EACH ITEM in the collection: Returns a value that uniquely identifies
       the table in a given workbook. The value of the identifier remains the
       same even when the table is renamed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +74,7 @@ properties:
       [Rename an Excel
       table](https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114)
       article.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,9 +89,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents a collection of all the rows
       in the table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,9 +107,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the header row is visible.
       This value can be set to show or remove the header row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -134,9 +122,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the total row is visible.
       This value can be set to show or remove the total row.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -149,9 +135,7 @@ properties:
     package: excel!
     fullName: sort
     summary: 'For EACH ITEM in the collection: Represents the sorting for the table.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -169,9 +153,7 @@ properties:
       "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28",
       "TableStyleDark1" through "TableStyleDark11". A custom user-defined style
       present in the workbook can also be specified.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -186,9 +168,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The worksheet containing the current
       table.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false

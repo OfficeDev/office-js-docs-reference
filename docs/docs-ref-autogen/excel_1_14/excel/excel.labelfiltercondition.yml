@@ -8,43 +8,7 @@ summary: >-
   applied. Used to configure the type of PivotFilter that is applied to the
   field. `PivotFilter.criteria.exclusive` can be set to `true` to invert many of
   these conditions.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-
-  await Excel.run(async (context) => {
-    // Add a PivotFilter to filter based on the strings of item labels.
-
-    // Get the PivotTable.
-    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-    // Get the "Type" field.
-    const field = pivotTable.hierarchies.getItem("Type").fields.getItem("Type");
-
-    // Filter out any types that start with "L" ("Lemons" and "Limes" in this case).
-    const filter: Excel.PivotLabelFilter = {
-      condition: Excel.LabelFilterCondition.beginsWith,
-      substring: "L",
-      exclusive: true
-    };
-
-    // Apply the label filter to the field.
-    field.applyFilter({ labelFilter: filter });
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.12\]'
 
 isPreview: false
 isDeprecated: false
@@ -60,9 +24,7 @@ fields:
       {`exclusive`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"BeginsWith"'
   - name: between
     uid: excel!Excel.LabelFilterCondition.between:member
@@ -75,9 +37,7 @@ fields:
       Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Between"'
   - name: contains
     uid: excel!Excel.LabelFilterCondition.contains:member
@@ -90,9 +50,7 @@ fields:
       {`exclusive`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Contains"'
   - name: endsWith
     uid: excel!Excel.LabelFilterCondition.endsWith:member
@@ -105,9 +63,7 @@ fields:
       {`exclusive`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"EndsWith"'
   - name: equals
     uid: excel!Excel.LabelFilterCondition.equals:member
@@ -120,74 +76,53 @@ fields:
       {`exclusive`<!-- -->}<!-- -->.
 
 
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Equals"'
   - name: greaterThan
     uid: excel!Excel.LabelFilterCondition.greaterThan:member
     package: excel!
-    summary: >-
+    summary: |-
       Greater than comparator criterion.
-
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"GreaterThan"'
   - name: greaterThanOrEqualTo
     uid: excel!Excel.LabelFilterCondition.greaterThanOrEqualTo:member
     package: excel!
-    summary: >-
+    summary: |-
       Greater than or equal to comparator criterion.
-
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"GreaterThanOrEqualTo"'
   - name: lessThan
     uid: excel!Excel.LabelFilterCondition.lessThan:member
     package: excel!
-    summary: >-
+    summary: |-
       Less than comparator criterion.
-
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"LessThan"'
   - name: lessThanOrEqualTo
     uid: excel!Excel.LabelFilterCondition.lessThanOrEqualTo:member
     package: excel!
-    summary: >-
+    summary: |-
       Less than or equal to comparator criterion.
-
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"LessThanOrEqualTo"'
   - name: unknown
     uid: excel!Excel.LabelFilterCondition.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       `LabelFilterCondition` is unknown or unsupported.
 
-
-      * \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Unknown"'

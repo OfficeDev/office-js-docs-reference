@@ -6,9 +6,7 @@ fullName: Excel.Interfaces.ShapeFontLoadOptions
 summary: >-
   Represents the font attributes, such as font name, font size, and color, for a
   shape's `TextRange` object.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -37,9 +35,7 @@ properties:
     summary: >-
       Represents the bold status of font. Returns `null` if the `TextRange`
       includes both bold and non-bold text fragments.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
       HTML color code representation of the text color (e.g., "\#FF0000"
       represents red). Returns `null` if the `TextRange` includes text fragments
       with different colors.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
     summary: >-
       Represents the italic status of font. Returns `null` if the `TextRange`
       includes both italic and non-italic text fragments.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +82,7 @@ properties:
       Represents font name (e.g., "Calibri"). If the text is a Complex Script or
       East Asian language, this is the corresponding font name; otherwise it is
       the Latin font name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +97,7 @@ properties:
     summary: >-
       Represents font size in points (e.g., 11). Returns `null` if the
       `TextRange` includes text fragments with different font sizes.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -124,10 +112,7 @@ properties:
     summary: >-
       Specifies the strikethrough status of font. A `null` value indicates that
       the entire range doesn't have a uniform strikethrough setting.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -144,10 +129,7 @@ properties:
       the range are subscript. Returns `false` if all the fonts of the range are
       superscript or normal (neither superscript, nor subscript). Returns `null`
       otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -164,10 +146,7 @@ properties:
       of the range are superscript. Returns `false` if all the fonts of the
       range are subscript or normal (neither superscript, nor subscript).
       Returns `null` otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -184,10 +163,7 @@ properties:
       The value is between -1 (darkest) and 1 (brightest), with 0 for the
       original color. A `null` value indicates that the entire range doesn't
       have a uniform font `tintAndShade` setting.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -203,9 +179,7 @@ properties:
       Type of underline applied to the font. Returns `null` if the `TextRange`
       includes text fragments with different underline styles. See
       `Excel.ShapeFontUnderlineStyle` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

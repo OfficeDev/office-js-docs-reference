@@ -17,10 +17,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the ID of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: title
     summary: Returns the title of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.0\]'
 
     isPreview: false
     isDeprecated: false

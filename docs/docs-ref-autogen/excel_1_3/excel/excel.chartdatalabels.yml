@@ -4,9 +4,7 @@ uid: excel!Excel.ChartDataLabels:class
 package: excel!
 fullName: Excel.ChartDataLabels
 summary: Represents a collection of all the data labels on a chart point.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,9 +32,7 @@ properties:
     summary: >-
       Specifies the format of chart data labels, which includes fill and font
       formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,9 +47,7 @@ properties:
     summary: >-
       Value that represents the position of the data label. See
       `Excel.ChartDataLabelPosition` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +66,7 @@ properties:
     package: excel!
     fullName: separator
     summary: String representing the separator used for the data labels on a chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,9 +79,7 @@ properties:
     package: excel!
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -102,9 +92,7 @@ properties:
     package: excel!
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,9 +105,7 @@ properties:
     package: excel!
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -132,9 +118,7 @@ properties:
     package: excel!
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -147,9 +131,7 @@ properties:
     package: excel!
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -162,9 +144,7 @@ properties:
     package: excel!
     fullName: showValue
     summary: Specifies if the data label value is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -218,28 +198,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartDataLabels:class" />
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Show the series name in data labels and set the position of the
-          data labels to "top".
-
-          await Excel.run(async (context) => {
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
-              chart.dataLabels.showValue = true;
-              chart.dataLabels.position = Excel.ChartDataLabelPosition.top;
-              chart.dataLabels.showSeriesName = true;
-              await context.sync();
-
-              console.log("Data labels shown");
-          });
-
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartDataLabels#load:member(3)
     package: excel!

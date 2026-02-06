@@ -4,9 +4,7 @@ uid: excel!Excel.LinkedDataTypeState:enum
 package: excel!
 fullName: Excel.LinkedDataTypeState
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,35 +12,25 @@ fields:
   - name: brokenLinkedData
     uid: excel!Excel.LinkedDataTypeState.brokenLinkedData:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"BrokenLinkedData"'
   - name: disambiguationNeeded
     uid: excel!Excel.LinkedDataTypeState.disambiguationNeeded:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"DisambiguationNeeded"'
   - name: fetchingData
     uid: excel!Excel.LinkedDataTypeState.fetchingData:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"FetchingData"'
   - name: none
     uid: excel!Excel.LinkedDataTypeState.none:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"None"'
   - name: validLinkedData
     uid: excel!Excel.LinkedDataTypeState.validLinkedData:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"ValidLinkedData"'

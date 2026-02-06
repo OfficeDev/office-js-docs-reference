@@ -19,9 +19,7 @@ properties:
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders,
       alignment, and other properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     summary: >-
       Represents the formula in A1-style notation. If a cell has no formula, its
       value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -55,9 +51,7 @@ properties:
       number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
       would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
       value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -74,9 +68,7 @@ properties:
       information about Excel number formatting, see [Number format
       codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -93,9 +85,7 @@ properties:
       be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

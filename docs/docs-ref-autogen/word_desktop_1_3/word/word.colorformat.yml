@@ -4,9 +4,7 @@ uid: word!Word.ColorFormat:class
 package: word!
 fullName: Word.ColorFormat
 summary: Represents the color formatting of a shape or text in Word.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       Specifies the brightness of a specified shape color. Valid values are from
       `-1` (darkest) to `1` (lightest), `0` represents neutral.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +45,7 @@ properties:
     package: word!
     fullName: objectThemeColor
     summary: Specifies the theme color for a color format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +69,7 @@ properties:
     summary: >-
       Specifies the red-green-blue (RGB) value of the specified color. You can
       provide the value in the '\#RRGGBB' format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -92,9 +84,7 @@ properties:
     summary: >-
       Specifies the lightening or darkening of a specified shape's color. Valid
       values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -107,9 +97,7 @@ properties:
     package: word!
     fullName: type
     summary: Returns the shape color type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

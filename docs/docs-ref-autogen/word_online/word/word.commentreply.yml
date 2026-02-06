@@ -4,38 +4,7 @@ uid: word!Word.CommentReply:class
 package: word!
 fullName: Word.CommentReply
 summary: Represents a comment reply in the document.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-  // Replies to the first active comment in the selected content.
-
-  await Word.run(async (context) => {
-    const text = (document.getElementById("reply-text") as HTMLInputElement).value;
-    const comments: Word.CommentCollection = context.document.getSelection().getComments();
-    comments.load("items");
-    await context.sync();
-
-    const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
-    if (firstActiveComment) {
-      const reply: Word.CommentReply = firstActiveComment.reply(text);
-      console.log("Reply added.");
-    } else {
-      console.warn("No active comment was found in the selection, so couldn't reply.");
-    }
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,9 +15,7 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,9 +28,7 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment reply's author.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -76,9 +41,7 @@ properties:
     package: word!
     fullName: content
     summary: Specifies the comment reply's content. The string is plain text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -91,9 +54,7 @@ properties:
     package: word!
     fullName: contentRange
     summary: Specifies the commentReply's content range.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +82,7 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment reply.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -136,9 +95,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment reply.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -151,9 +108,7 @@ properties:
     package: word!
     fullName: parentComment
     summary: Gets the parent comment of this reply.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -167,9 +122,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the comment reply.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

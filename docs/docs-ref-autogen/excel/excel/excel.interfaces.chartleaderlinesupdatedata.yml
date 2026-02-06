@@ -17,10 +17,7 @@ properties:
     package: excel!
     fullName: format
     summary: Represents the formatting of leader lines of data labels in a series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.19\]'
 
     isPreview: false
     isDeprecated: false

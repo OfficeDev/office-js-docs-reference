@@ -7,10 +7,7 @@ summary: >-
   Represents the bullet formatting properties of a text that is attached to the
   [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)<!--
   -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -42,10 +39,7 @@ properties:
       details. Returns `null` if the
       [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
       includes text fragments with different bullet formatting properties.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -63,10 +57,7 @@ properties:
       details. Returns `null` if the
       [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
       includes text fragments with different bullet formatting properties.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -82,10 +73,7 @@ properties:
       Specifies if the bullets in the paragraph are visible. Returns `null` if
       the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
       includes text fragments with different bullet visibility values.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

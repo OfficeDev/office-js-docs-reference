@@ -4,9 +4,7 @@ uid: excel!Excel.WorksheetChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetChangedEventArgs
 summary: Provides information about the worksheet that raised the changed event.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       Gets the range address that represents the changed area of a specific
       worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +32,7 @@ properties:
     summary: >-
       Gets the change type that represents how the changed event is triggered.
       See `Excel.DataChangeType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,32 +55,7 @@ properties:
       retrieved when the changed event is triggered on a single cell. If the
       changed event is triggered on multiple cells, this property cannot be
       retrieved.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // This function would be used as an event handler for the
-      Worksheet.onChanged event.
-
-      async function onWorksheetChanged(eventArgs) {
-          await Excel.run(async (context) => {
-              const details = eventArgs.details;
-              const address = eventArgs.address;
-
-              // Print the before and after types and values to the console.
-              console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
-                  + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
-              await context.sync();
-          });
-      }
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -99,9 +68,7 @@ properties:
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -114,9 +81,7 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -129,9 +94,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -144,12 +107,10 @@ methods:
     uid: excel!Excel.WorksheetChangedEventArgs#getRange:member(1)
     package: excel!
     fullName: getRange(ctx)
-    summary: >-
+    summary: |-
       Gets the range that represents the changed area of a specific worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.8\]
     remarks: ''
 
     isPreview: false
@@ -172,8 +133,7 @@ methods:
       It might return null object.
 
 
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.8\]
     remarks: ''
 
     isPreview: false

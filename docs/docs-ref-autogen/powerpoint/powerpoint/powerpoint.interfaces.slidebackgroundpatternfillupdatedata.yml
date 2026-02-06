@@ -21,10 +21,7 @@ properties:
     summary: >-
       Specifies the background color in HTML color format (e.g., "\#FFFFFF" or
       "white").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -40,10 +37,7 @@ properties:
     summary: >-
       Specifies the foreground color in HTML color format (e.g., "\#FFA500" or
       "orange").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -57,10 +51,7 @@ properties:
     package: powerpoint!
     fullName: pattern
     summary: Specifies the pattern type.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

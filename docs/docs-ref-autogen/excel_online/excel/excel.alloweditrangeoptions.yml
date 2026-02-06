@@ -6,9 +6,7 @@ fullName: Excel.AllowEditRangeOptions
 summary: >-
   The interface used to construct optional fields of the `AllowEditRange`
   object.
-remarks: >-
-  \[ [API set: ExcelApiOnline
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     package: excel!
     fullName: password
     summary: The password associated with the `AllowEditRange`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: excel!Excel.ChartSeriesCollection:class
 package: excel!
 fullName: Excel.ChartSeriesCollection
 summary: Represents a collection of chart series.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of series in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -61,27 +57,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Retrieves a series based on its position in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Get the name of the first series in the series collection.
-
-      await Excel.run(async (context) => { 
-          const seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-          seriesCollection.load('items');
-          await context.sync();
-          
-          console.log(seriesCollection.items[0].name);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -141,21 +117,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartSeriesCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Get the number of chart series in the collection.
-          await Excel.run(async (context) => { 
-              const seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-              seriesCollection.load('count');
-              await context.sync();
-
-              console.log("series: Count= " + seriesCollection.count);
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartSeriesCollection#load:member(3)
     package: excel!

@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.CustomXmlPrefixMappingLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingLoadOptions
 summary: Represents a `CustomXmlPrefixMapping` object.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,9 +33,7 @@ properties:
     summary: >-
       Gets the unique address identifier for the namespace of the
       `CustomXmlPrefixMapping` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     package: word!
     fullName: prefix
     summary: Gets the prefix for the `CustomXmlPrefixMapping` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

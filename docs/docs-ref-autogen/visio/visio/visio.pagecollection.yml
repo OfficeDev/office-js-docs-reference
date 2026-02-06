@@ -4,10 +4,7 @@ uid: visio!Visio.PageCollection:class
 package: visio!
 fullName: Visio.PageCollection
 summary: Represents a collection of Page objects that are part of the document.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -47,10 +44,7 @@ methods:
     package: visio!
     fullName: getCount()
     summary: Gets the number of pages in the collection.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,30 +58,7 @@ methods:
     package: visio!
     fullName: getItem(key)
     summary: Gets a page using its key (name or Id).
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Visio.run(session, function (ctx) {
-          const pageName = 'Page-1';
-          const page = ctx.document.pages.getItem(pageName);
-          page.activate();
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false

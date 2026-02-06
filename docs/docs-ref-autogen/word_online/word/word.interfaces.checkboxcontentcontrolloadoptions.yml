@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.CheckboxContentControlLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CheckboxContentControlLoadOptions
 summary: Represents the data specific to content controls of type `CheckBox`<!-- -->.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ properties:
     package: word!
     fullName: isChecked
     summary: Specifies the current state of the checkbox.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

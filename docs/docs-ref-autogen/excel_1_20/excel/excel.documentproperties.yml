@@ -4,9 +4,7 @@ uid: excel!Excel.DocumentProperties:class
 package: excel!
 fullName: Excel.DocumentProperties
 summary: Represents workbook properties.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.7\]'
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +15,7 @@ properties:
     package: excel!
     fullName: author
     summary: The author of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -32,9 +28,7 @@ properties:
     package: excel!
     fullName: category
     summary: The category of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +43,7 @@ properties:
     summary: >-
       The Comments field in the metadata of the workbook. These have no
       connection to comments by users made in the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,9 +56,7 @@ properties:
     package: excel!
     fullName: company
     summary: The company of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -94,9 +84,7 @@ properties:
     package: excel!
     fullName: creationDate
     summary: Gets the creation date of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -109,34 +97,7 @@ properties:
     package: excel!
     fullName: custom
     summary: Gets the collection of custom properties of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
-
-
-      await Excel.run(async (context) => {
-        // Load the keys and values of all custom properties.
-        const customDocProperties = context.workbook.properties.custom;
-        customDocProperties.load(["key", "value"]);
-        await context.sync();
-
-        // Log each custom property to the console.
-        // Note that your document may have more properties than those you have set using this snippet.
-        customDocProperties.items.forEach((property) => {
-          console.log(`${property.key}: ${property.value}`);
-        });
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -149,9 +110,7 @@ properties:
     package: excel!
     fullName: keywords
     summary: The keywords of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -164,9 +123,7 @@ properties:
     package: excel!
     fullName: lastAuthor
     summary: Gets the last author of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -179,9 +136,7 @@ properties:
     package: excel!
     fullName: manager
     summary: The manager of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -194,9 +149,7 @@ properties:
     package: excel!
     fullName: revisionNumber
     summary: Gets the revision number of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -209,9 +162,7 @@ properties:
     package: excel!
     fullName: subject
     summary: The subject of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -224,9 +175,7 @@ properties:
     package: excel!
     fullName: title
     summary: The title of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

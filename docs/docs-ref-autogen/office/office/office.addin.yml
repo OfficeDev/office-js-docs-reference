@@ -26,34 +26,6 @@ properties:
       **Requirement set**: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Enable the before document close modal notification dialog. 
-
-      async function enableNotification() {
-          await Office.addin.beforeDocumentCloseNotification.enable(); 
-      }
-
-
-      // Add an event handler to detect when the document close operation is
-      cancelled.
-
-      Office.addin.beforeDocumentCloseNotification.onCloseActionCancelled(async
-      function () {
-          // When the document close attempt is cancelled, write a message to the active range in the worksheet.
-          await Excel.run(async (context) => {
-              const range = context.workbook.getSelectedRange();
-              range.values = [["Detected onCloseActionCancelled event."]];
-              await context.sync();
-          });
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,24 +74,6 @@ methods:
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      Office.onReady(() => {
-          Office.addin.onVisibilityModeChanged((args) => {
-              if (args.visibilityMode === Office.VisibilityMode.taskpane) {
-                  // Do something when the task pane is visible.
-              }
-          });
-
-          // Other startup tasks.
-      });
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,19 +105,6 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Configure your add-in to load and start running when the document is
-      opened.
-
-      Office.addin.setStartupBehavior(Office.StartupBehavior.load);
-
-      ```
 
     isPreview: false
     isDeprecated: false

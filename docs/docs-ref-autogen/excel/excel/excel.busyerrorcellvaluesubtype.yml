@@ -4,9 +4,7 @@ uid: excel!Excel.BusyErrorCellValueSubType:enum
 package: excel!
 fullName: Excel.BusyErrorCellValueSubType
 summary: Represents types of \#BUSY! errors.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.16\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksGeneric"'
   - name: loadingImage
     uid: excel!Excel.BusyErrorCellValueSubType.loadingImage:member
@@ -31,9 +27,7 @@ fields:
       \#BUSY! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"LoadingImage"'
   - name: placeholderInFormula
     uid: excel!Excel.BusyErrorCellValueSubType.placeholderInFormula:member
@@ -43,18 +37,13 @@ fields:
       Displays as error type \#BUSY! in Excel.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"PlaceholderInFormula"'
   - name: unknown
     uid: excel!Excel.BusyErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#BUSY! in Excel.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'

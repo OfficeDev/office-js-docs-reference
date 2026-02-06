@@ -27,15 +27,6 @@ properties:
       content: 'host: Office.HostType;'
       return:
         type: <xref uid="office!Office.HostType:enum" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const contextInfo = Office.context.diagnostics;
-          console.log("Office application: " + contextInfo.host);
-          ```
   - name: platform
     uid: office!Office.ContextInformation#platform:member
     package: office!
@@ -46,18 +37,6 @@ properties:
       running in Outlook on the web or in [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      const contextInfo = Office.context.diagnostics;
-
-      console.log("Platform: " + contextInfo.platform);
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -78,12 +57,3 @@ properties:
       content: 'version: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          const contextInfo = Office.context.diagnostics;
-          console.log("Office version: " + contextInfo.version);
-          ```

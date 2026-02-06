@@ -6,30 +6,7 @@ fullName: PowerPoint.TextRange
 summary: >-
   Contains the text that is attached to a shape, in addition to properties and
   methods for manipulating the text.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-
-  // Sets the color of the selected text range to green.
-
-  await PowerPoint.run(async (context) => {
-    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-    textRange.font.color = "green";
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -57,30 +34,7 @@ properties:
     summary: >-
       Returns a `ShapeFont` object that represents the font attributes for the
       text range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-
-      // Sets the color of the selected text range to green.
-
-      await PowerPoint.run(async (context) => {
-        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-        textRange.font.color = "green";
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -97,10 +51,7 @@ properties:
       Throws an `InvalidArgument` exception when set with a negative value or if
       the value is greater than the length of the available text from the
       starting point.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,48 +67,7 @@ properties:
       Represents the paragraph format of the text range. See
       [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)
       for details.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-
-      // Gets navigational (complex) properties of the selected text range.
-
-      await PowerPoint.run(async (context) => {
-        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
-        textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
-        await context.sync();
-
-        console.log("Font properties of selected text range:");
-        console.log(`\tallCaps: ${textRange.font.allCaps}`);
-        console.log(`\tbold: ${textRange.font.bold}`);
-        console.log(`\tcolor: ${textRange.font.color}`);
-        console.log(`\tdoubleStrikethrough: ${textRange.font.doubleStrikethrough}`);
-        console.log(`\titalic: ${textRange.font.italic}`);
-        console.log(`\tname: ${textRange.font.name}`);
-        console.log(`\tsize: ${textRange.font.size}`);
-        console.log(`\tsmallCaps: ${textRange.font.smallCaps}`);
-        console.log(`\tstrikethrough: ${textRange.font.strikethrough}`);
-        console.log(`\tsubscript: ${textRange.font.subscript}`);
-        console.log(`\tsuperscript: ${textRange.font.superscript}`);
-        console.log(`\tunderline: ${textRange.font.underline}`);
-
-        console.log("Paragraph format properties of selected text range:");
-        console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
-        console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -174,10 +84,7 @@ properties:
       starting position of the range that this `TextRange` represents. Throws an
       `InvalidArgument` exception when set with a negative value or if the value
       is greater than the length of the text.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -190,10 +97,7 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -210,10 +114,7 @@ methods:
       Returns the parent
       [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object
       that holds this `TextRange`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -227,10 +128,7 @@ methods:
     package: powerpoint!
     fullName: getSubstring(start, length)
     summary: Returns a `TextRange` object for the substring in the given range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -335,68 +233,7 @@ methods:
     package: powerpoint!
     fullName: setSelected()
     summary: Selects this `TextRange` in the current view.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
-
-      // Selects the first 10 characters of the selected shape.
-
-      await PowerPoint.run(async (context) => {
-        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
-        const shapeCount = shapes.getCount();
-        await context.sync();
-        if (shapeCount.value !== 1) {
-          console.warn("You must select only one shape with text in it.");
-          return;
-        }
-        const shape: PowerPoint.Shape = shapes.getItemAt(0);
-        const textFrame: PowerPoint.TextFrame = shape.textFrame.load("textRange,hasText");
-        await context.sync();
-        if (textFrame.hasText != true) {
-          console.warn("You must select only one shape with text in it.");
-          return;
-        }
-        const textRange: PowerPoint.TextRange = textFrame.textRange;
-        textRange.load("text");
-        await context.sync();
-        if (textRange.text.length < 10) {
-          console.warn("You must select only one shape with at least 10 characters in it.");
-          return;
-        }
-        const textRange10 = textRange.getSubstring(0, 10);
-        textRange10.setSelected();
-        await context.sync();
-      });
-
-
-      ...
-
-
-      // Sets the range selection to the range that was saved previously.
-
-      await PowerPoint.run(async (context) => {
-        const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
-        const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
-        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(
-          savedTextTextRangeStart,
-          savedTextTextRangeLength,
-        );
-        textRange.setSelected();
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.5\]'
 
     isPreview: false
     isDeprecated: false

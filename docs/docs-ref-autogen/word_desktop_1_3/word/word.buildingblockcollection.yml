@@ -7,9 +7,7 @@ summary: >-
   Represents a collection of
   [Word.BuildingBlock](xref:word!Word.BuildingBlock:class) objects for a
   specific building block type and category in a template.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -36,9 +34,7 @@ methods:
     package: word!
     fullName: add(name, range, description, insertType)
     summary: Creates a new building block and returns a `BuildingBlock` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -67,9 +63,7 @@ methods:
     package: word!
     fullName: add(name, range, description, insertType)
     summary: Creates a new building block and returns a `BuildingBlock` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -98,9 +92,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,9 +108,7 @@ methods:
     summary: >-
       Returns a `BuildingBlock` object that represents the specified item in the
       collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

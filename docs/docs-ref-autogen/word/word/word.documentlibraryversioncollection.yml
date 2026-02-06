@@ -7,9 +7,7 @@ summary: >-
   Represents the collection of
   [Word.DocumentLibraryVersion](xref:word!Word.DocumentLibraryVersion:class)
   objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -49,9 +47,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `DocumentLibraryVersion` object by its index in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +68,7 @@ methods:
       Returns whether the document library in which the active document is saved
       on the server is configured to create a backup copy, or version, each time
       the file is edited on the website.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

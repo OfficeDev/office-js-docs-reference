@@ -6,41 +6,7 @@ fullName: Office.SpamReportingEventArgs
 summary: >-
   Provides information about the `Office.EventType.SpamReporting` event that
   occurs when an unsolicited message is reported.
-remarks: >-
-  \[ [API set: Mailbox
-  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // This example handles a SpamReporting event to process a reported spam or
-  phishing message.
-
-  function onSpamReport(event) {
-      if (event.type === "SpamReporting") {
-          const reportedOptions = event.options;
-          const additionalInfo = event.freeText;
-
-          // Run additional processing operations here.
-
-          // Signal that the event has completed processing.
-          event.completed({
-              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
-              folderName: "Reported Messages",
-              onErrorDeleteItem: true,
-              showPostProcessingDialog: {
-                  title: "Contoso Spam Reporting",
-                  description: "Thank you for reporting this message."
-              }
-          });
-      }
-  }
-
-  ```
+remarks: '\[Api set: Mailbox 1.14\]'
 
 isPreview: false
 isDeprecated: false
@@ -54,9 +20,7 @@ properties:
       The text provided by the user in the preprocessing dialog of a
       spam-reporting add-in.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.14\]
 
 
       To add an optional text box to the preprocessing dialog of your
@@ -84,9 +48,7 @@ properties:
       Returns `true` for each reporting option selected by the user in the
       preprocessing dialog of a spam-reporting add-in.
     remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.14\]
 
 
       The order of the booleans in the array corresponds to the order of the
@@ -114,10 +76,7 @@ properties:
       The type of event that was raised. For details, see
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: '\[Api set: Mailbox 1.14\]'
 
     isPreview: false
     isDeprecated: false

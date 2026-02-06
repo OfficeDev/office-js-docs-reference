@@ -30,29 +30,6 @@ remarks: >-
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Read
 
-
-  #### Examples
-
-
-  ```TypeScript
-
-  const item = Office.context.mailbox.item;
-
-  // Get an array of strings that represent task suggestions in the current
-  item's body.
-
-  const taskSuggestions =
-  item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
-
-  console.log("There are " + taskSuggestions.length + " task suggestions.")
-
-  taskSuggestions.forEach(function (taskSuggestion) {
-      console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
-      console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
-  });
-
-  ```
-
 isPreview: false
 isDeprecated: true
 customDeprecatedMessage: >-

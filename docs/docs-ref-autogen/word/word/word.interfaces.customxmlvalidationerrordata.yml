@@ -19,9 +19,7 @@ properties:
     summary: >-
       Gets an integer representing the validation error in the
       `CustomXmlValidationError` object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -36,9 +34,7 @@ properties:
     summary: >-
       Gets the name of the error in the `CustomXmlValidationError` object. If no
       errors exist, the property returns `"Nothing"`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     summary: >-
       Gets the node associated with this `CustomXmlValidationError` object, if
       any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -68,9 +62,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text in the `CustomXmlValidationError` object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -85,9 +77,7 @@ properties:
     summary: >-
       Gets the type of error generated from the `CustomXmlValidationError`
       object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false

@@ -4,9 +4,7 @@ uid: word!Word.SectionStart:enum
 package: word!
 fullName: Word.SectionStart
 summary: Specifies the type of section break for the specified item.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,50 +12,40 @@ fields:
   - name: continuous
     uid: word!Word.SectionStart.continuous:member
     package: word!
-    summary: >-
+    summary: |-
       Continuous section break.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Continuous"'
   - name: evenPage
     uid: word!Word.SectionStart.evenPage:member
     package: word!
-    summary: >-
+    summary: |-
       Even page section break.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EvenPage"'
   - name: newColumn
     uid: word!Word.SectionStart.newColumn:member
     package: word!
-    summary: >-
+    summary: |-
       New column section break.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NewColumn"'
   - name: newPage
     uid: word!Word.SectionStart.newPage:member
     package: word!
-    summary: >-
+    summary: |-
       New page section break.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NewPage"'
   - name: oddPage
     uid: word!Word.SectionStart.oddPage:member
     package: word!
-    summary: >-
+    summary: |-
       Odd page section break.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"OddPage"'

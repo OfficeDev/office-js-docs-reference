@@ -8,29 +8,7 @@ summary: >-
   returned when calling  with
   [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)
   in PowerPoint.
-remarks: >-
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange,
-  (asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const slideRange: Office.SlideRange = asyncResult.value;
-          console.log(`Selected ${slideRange.slides.length} slide(s)`);
-          slideRange.slides.forEach(slide => {
-              console.log(`Slide ${slide.index}: ${slide.title} (ID: ${slide.id})`);
-          });
-      }
-      else {
-          console.error(asyncResult.error.message);
-      }
-  });
-
-  ```
+remarks: ''
 
 isPreview: false
 isDeprecated: false

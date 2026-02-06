@@ -9,9 +9,7 @@ summary: >-
   in Outlook and retrieve all available sensitivity labels if the catalog is
   enabled.
 remarks: >-
-  \[ [API set: Mailbox
-  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+  \[Api set: Mailbox 1.13\]
 
 
   **[Minimum permission
@@ -43,9 +41,7 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets all the sensitivity labels that are enabled in Outlook.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -105,9 +101,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets all the sensitivity labels that are enabled in Outlook.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -133,37 +127,6 @@ methods:
       [Manage the sensitivity label of your message or appointment in compose
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
-
-
-      // This snippet gets all available sensitivity labels from the catalog.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) =>
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-          Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              const catalog = asyncResult.value;
-              console.log("Sensitivity Labels Catalog:");
-              console.log(JSON.stringify(catalog));
-            } else {
-              console.log("Action failed with error: " + asyncResult.error.message);
-            }
-          });
-        } else {
-          console.log("Action failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false
@@ -192,9 +155,7 @@ methods:
     fullName: getIsEnabledAsync(options, callback)
     summary: Checks whether the catalog of sensitivity labels is enabled in Outlook.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -255,9 +216,7 @@ methods:
     fullName: getIsEnabledAsync(callback)
     summary: Checks whether the catalog of sensitivity labels is enabled in Outlook.
     remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.13\]
 
 
       **[Minimum permission
@@ -285,30 +244,6 @@ methods:
       [Manage the sensitivity label of your message or appointment in compose
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
       -->.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
-
-
-      // This snippet determines if the sensitivity labels catalog is enabled on
-      the current mailbox.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) =>
-      {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          console.log(asyncResult.value);
-        } else {
-          console.log("Action failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
 
     isPreview: false
     isDeprecated: false

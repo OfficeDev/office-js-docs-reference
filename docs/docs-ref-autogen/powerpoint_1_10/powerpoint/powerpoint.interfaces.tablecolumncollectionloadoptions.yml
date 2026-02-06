@@ -4,10 +4,7 @@ uid: powerpoint!PowerPoint.Interfaces.TableColumnCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableColumnCollectionLoadOptions
 summary: Represents a collection of table columns.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
+remarks: '\[Api set: PowerPointApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -38,10 +35,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the index number of the column
       within the column collection of the table. Zero-indexed.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,10 +52,7 @@ properties:
       For EACH ITEM in the collection: Retrieves the width of the column in
       points. If the set column width is less than the minimum width, the column
       width will be increased to the minimum width.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

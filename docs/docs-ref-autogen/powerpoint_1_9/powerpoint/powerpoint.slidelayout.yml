@@ -4,40 +4,7 @@ uid: powerpoint!PowerPoint.SlideLayout:class
 package: powerpoint!
 fullName: PowerPoint.SlideLayout
 summary: Represents the layout of a slide.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
-
-
-  await PowerPoint.run(async function(context) {
-    // Load information about all the slide masters and associated layouts.
-    const slideMasters: PowerPoint.SlideMasterCollection = context.presentation.slideMasters.load("id, name, layouts/items/name, layouts/items/id");
-    await context.sync();
-
-    // Log the name and ID of each slide master.
-    for (let i = 0; i < slideMasters.items.length; i++) {
-      console.log("Master name: " + slideMasters.items[i].name);
-      console.log("Master ID: " + slideMasters.items[i].id);
-
-      // Log the name and ID of each slide layout in the slide master.
-      const layoutsInMaster: PowerPoint.SlideLayoutCollection = slideMasters.items[i].layouts;
-      for (let j = 0; j < layoutsInMaster.items.length; j++) {
-        console.log("    Layout name: " + layoutsInMaster.items[j].name + " Layout ID: " + layoutsInMaster.items[j].id);
-      }
-    }
-  });
-
-  ```
+remarks: '\[Api set: PowerPointApi 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -63,10 +30,7 @@ properties:
     package: powerpoint!
     fullName: customXmlParts
     summary: Returns a collection of custom XML parts in the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -79,40 +43,7 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
-
-
-      await PowerPoint.run(async function(context) {
-        // Load information about all the slide masters and associated layouts.
-        const slideMasters: PowerPoint.SlideMasterCollection = context.presentation.slideMasters.load("id, name, layouts/items/name, layouts/items/id");
-        await context.sync();
-
-        // Log the name and ID of each slide master.
-        for (let i = 0; i < slideMasters.items.length; i++) {
-          console.log("Master name: " + slideMasters.items[i].name);
-          console.log("Master ID: " + slideMasters.items[i].id);
-
-          // Log the name and ID of each slide layout in the slide master.
-          const layoutsInMaster: PowerPoint.SlideLayoutCollection = slideMasters.items[i].layouts;
-          for (let j = 0; j < layoutsInMaster.items.length; j++) {
-            console.log("    Layout name: " + layoutsInMaster.items[j].name + " Layout ID: " + layoutsInMaster.items[j].id);
-          }
-        }
-      });
-
-      ```
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,10 +56,7 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Gets the name of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -141,10 +69,7 @@ properties:
     package: powerpoint!
     fullName: shapes
     summary: Returns a collection of shapes in the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -157,10 +82,7 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Returns the type of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+    remarks: '\[Api set: PowerPointApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

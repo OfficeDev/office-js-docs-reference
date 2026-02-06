@@ -4,9 +4,7 @@ uid: word!Word.Interfaces.CustomXmlPartLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartLoadOptions
 summary: Represents a custom XML part.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,9 +31,7 @@ properties:
     package: word!
     fullName: builtIn
     summary: Gets a value that indicates whether the `CustomXmlPart` is built-in.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,9 +46,7 @@ properties:
     summary: >-
       Gets the root element of a bound region of data in the document. If the
       region is empty, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,9 +59,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -80,9 +72,7 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -95,9 +85,7 @@ properties:
     package: word!
     fullName: xml
     summary: Gets the XML representation of the current `CustomXmlPart` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

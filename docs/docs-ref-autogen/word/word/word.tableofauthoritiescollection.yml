@@ -7,9 +7,7 @@ summary: >-
   Represents a collection of
   [Word.TableOfAuthorities](xref:word!Word.TableOfAuthorities:class) objects in
   a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -49,9 +47,7 @@ methods:
     package: word!
     fullName: add(range, options)
     summary: Adds a table of authorities to the document at the specified range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -156,9 +152,7 @@ methods:
       Inserts a [Table of Authorities Entry (TA)
       field](https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c)
       after all instances of the specified citation text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -186,9 +180,7 @@ methods:
       Inserts a [Table of Authorities Entry (TA)
       field](https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c)
       at the specified range.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -216,9 +208,7 @@ methods:
     package: word!
     fullName: selectNextCitation(shortCitation)
     summary: Finds and selects the next instance of the specified citation text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.4\]'
 
     isPreview: false
     isDeprecated: false

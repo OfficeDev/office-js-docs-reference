@@ -33,9 +33,7 @@ properties:
     summary: >-
       Represents the update mode of the workbook links. The mode is same for all
       of the workbook links present in the workbook.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiOnline 1.1\]'
 
     isPreview: false
     isDeprecated: false

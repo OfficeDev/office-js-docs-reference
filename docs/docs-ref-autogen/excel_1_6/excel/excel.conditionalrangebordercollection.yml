@@ -4,9 +4,7 @@ uid: excel!Excel.ConditionalRangeBorderCollection:class
 package: excel!
 fullName: Excel.ConditionalRangeBorderCollection
 summary: Represents the border objects that make up range border.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.6\]'
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +15,7 @@ properties:
     package: excel!
     fullName: bottom
     summary: Gets the bottom border.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     package: excel!
     fullName: count
     summary: Number of border objects in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +69,7 @@ properties:
     package: excel!
     fullName: left
     summary: Gets the left border.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -90,9 +82,7 @@ properties:
     package: excel!
     fullName: right
     summary: Gets the right border.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -105,9 +95,7 @@ properties:
     package: excel!
     fullName: top
     summary: Gets the top border.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -121,9 +109,7 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a border object using its name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -145,9 +131,7 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a border object using its name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -169,9 +153,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a border object using its index.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

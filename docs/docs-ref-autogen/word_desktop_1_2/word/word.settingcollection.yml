@@ -6,30 +6,7 @@ fullName: Word.SettingCollection
 summary: >-
   Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
   objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
-
-
-  // Deletes all custom settings this add-in had set on this document.
-
-  await Word.run(async (context) => {
-    const settings: Word.SettingCollection = context.document.settings;
-    settings.deleteAll();
-    await context.sync();
-    console.log("All settings deleted.");
-  });
-
-  ```
+remarks: '\[Api set: WordApi 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -63,77 +40,13 @@ properties:
       content: 'readonly items: Word.Setting[];'
       return:
         type: <xref uid="word!Word.Setting:class" />[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
-
-
-          // Gets all custom settings this add-in set on this document.
-
-          await Word.run(async (context) => {
-            const settings: Word.SettingCollection = context.document.settings;
-            settings.load("items");
-            await context.sync();
-
-            if (settings.items.length == 0) {
-              console.log("There are no settings.");
-            } else {
-              console.log("All settings:");
-              for (let i = 0; i < settings.items.length; i++) {
-                console.log(settings.items[i]);
-              }
-            }
-          });
-
-          ```
 methods:
   - name: add(key, value)
     uid: word!Word.SettingCollection#add:member(1)
     package: word!
     fullName: add(key, value)
     summary: Creates a new setting or sets an existing setting.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
-
-
-      // Adds a new custom setting or
-
-      // edits the value of an existing one.
-
-      await Word.run(async (context) => {
-        const key = (document.getElementById("key") as HTMLInputElement).value;
-        if (key == "") {
-          console.error("Key shouldn't be empty.");
-          return;
-        }
-
-        const value = (document.getElementById("value") as HTMLInputElement).value;
-        const settings: Word.SettingCollection = context.document.settings;
-        const setting: Word.Setting = settings.add(key, value);
-        setting.load();
-        await context.sync();
-
-        console.log("Setting added or edited:", setting);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -154,45 +67,7 @@ methods:
     package: word!
     fullName: deleteAll()
     summary: Deletes all settings in this add-in.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Queue commands add a setting.
-          const settings = context.document.settings;
-          settings.add('startMonth', { month: 'March', year: 1998 });
-
-          // Queue a command to get the count of settings.
-          const count = settings.getCount();
-
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log(count.value);
-
-          // Queue a command to delete all settings.
-          settings.deleteAll();
-
-          // Queue a command to get the new count of settings.
-          count = settings.getCount();
-
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log(count.value);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -206,45 +81,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Gets the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Queue commands add a setting.
-          const settings = context.document.settings;
-          settings.add('startMonth', { month: 'March', year: 1998 });
-
-          // Queue a command to get the count of settings.
-          const count = settings.getCount();
-
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log(count.value);
-
-          // Queue a command to delete all settings.
-          settings.deleteAll();
-
-          // Queue a command to get the new count of settings.
-          count = settings.getCount();
-
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log(count.value);
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -260,37 +97,7 @@ methods:
     summary: >-
       Gets a `Setting` object by its key, which is case-sensitive. Throws an
       `ItemNotFound` error if the setting doesn't exist.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Queue commands add a setting.
-          const settings = context.document.settings;
-          settings.add('startMonth', { month: 'March', year: 1998 });
-
-          // Queue a command to retrieve a setting.
-          const startMonth = settings.getItem('startMonth');
-
-          // Queue a command to load the setting.
-          startMonth.load();
-
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-          console.log(JSON.stringify(startMonth.value));
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false
@@ -314,50 +121,7 @@ methods:
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Run a batch operation against the Word object model.
-
-      await Word.run(async (context) => {
-
-          // Queue commands add a setting.
-          const settings = context.document.settings;
-          settings.add('startMonth', { month: 'March', year: 1998 });
-          
-          // Queue commands to retrieve settings.
-          const startMonth = settings.getItemOrNullObject('startMonth');
-          const endMonth = settings.getItemOrNullObject('endMonth');
-
-          // Queue commands to load settings.
-          startMonth.load();
-          endMonth.load();
-
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          await context.sync();
-              if (startMonth.isNullObject) {
-                  console.log("No such setting.");
-              }
-              else {
-                  console.log(JSON.stringify(startMonth.value));
-              }
-              if (endMonth.isNullObject) {
-                  console.log("No such setting.");
-              }
-              else {
-                  console.log(JSON.stringify(endMonth.value));
-              }
-      });
-
-      ```
+    remarks: '\[Api set: WordApi 1.4\]'
 
     isPreview: false
     isDeprecated: false

@@ -8,9 +8,7 @@ summary: >-
   `getRowProperties`<!-- -->, and `getColumnProperties`<!-- -->, or the
   `format.protection` input parameter of `setCellProperties`<!-- -->,
   `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.9\]'
 
 isPreview: false
 isDeprecated: false
@@ -21,9 +19,7 @@ properties:
     package: excel!
     fullName: formulaHidden
     summary: Represents the `format.protection.formulaHidden` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -36,9 +32,7 @@ properties:
     package: excel!
     fullName: locked
     summary: Represents the `format.protection.locked` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false

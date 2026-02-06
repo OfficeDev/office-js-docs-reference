@@ -4,26 +4,7 @@ uid: excel!Excel.CalculationType:enum
 package: excel!
 fullName: Excel.CalculationType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-calculation.yaml
-
-
-  await Excel.run(async (context) => {
-    context.application.calculate(Excel.CalculationType.recalculate);
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -31,12 +12,10 @@ fields:
   - name: full
     uid: excel!Excel.CalculationType.full:member
     package: excel!
-    summary: >-
+    summary: |-
       This will mark all cells as dirty and then recalculate them.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Full"'
   - name: fullRebuild
     uid: excel!Excel.CalculationType.fullRebuild:member
@@ -46,8 +25,7 @@ fields:
       then recalculate them.
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"FullRebuild"'
   - name: recalculate
     uid: excel!Excel.CalculationType.recalculate:member
@@ -57,6 +35,5 @@ fields:
       of volatile or changed data, and cells programmatically marked as dirty.
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Recalculate"'

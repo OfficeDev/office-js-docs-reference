@@ -4,9 +4,7 @@ uid: excel!Excel.PaneCollection:class
 package: excel!
 fullName: Excel.PaneCollection
 summary: Represents a collection of Pane objects.
-remarks: >-
-  \[ [API set: ExcelApiDesktop
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -46,9 +44,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of panes in the collection.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -62,9 +58,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets the pane in the collection by index.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
 
     isPreview: false
     isDeprecated: false

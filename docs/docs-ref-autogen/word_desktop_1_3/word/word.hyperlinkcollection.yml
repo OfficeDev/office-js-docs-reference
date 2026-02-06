@@ -6,9 +6,7 @@ fullName: Word.HyperlinkCollection
 summary: >-
   Contains a collection of [Word.Hyperlink](xref:word!Word.Hyperlink:class)
   objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.3\]'
 
 isPreview: false
 isDeprecated: false
@@ -50,9 +48,7 @@ methods:
     summary: >-
       Returns a `Hyperlink` object that represents a new hyperlink added to a
       range, selection, or document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.3\]'
 
     isPreview: false
     isDeprecated: false

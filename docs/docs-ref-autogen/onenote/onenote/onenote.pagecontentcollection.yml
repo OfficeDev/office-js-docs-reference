@@ -4,9 +4,7 @@ uid: onenote!OneNote.PageContentCollection:class
 package: onenote!
 fullName: OneNote.PageContentCollection
 summary: Represents the contents of a page, as a collection of PageContent objects.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of page contents in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -64,10 +59,7 @@ methods:
     summary: >-
       Gets a PageContent object by ID or by its index in the collection.
       Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -87,32 +79,7 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a page content on its position in the collection.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          const page = context.application.getActivePage();
-          const pageContents = page.contents;
-          const firstPageContent = pageContents.getItemAt(0);
-          firstPageContent.load('type');
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-
-          console.log("The first page content item is of type: " + firstPageContent.type);
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -173,28 +140,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.PageContentCollection:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          await OneNote.run(async (context) => {
-
-              // Get the collection of pageContent items from the page.
-              const pageContents = context.application.getActivePage().contents;
-
-              // Queue a command to load the type of each pageContent.
-              pageContents.load("type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              await context.sync();
-
-              $.each(pageContents.items, function(index, pageContent) {
-                  console.log("PageContent type: " + pageContent.type);
-              });
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: onenote!OneNote.PageContentCollection#load:member(3)
     package: onenote!

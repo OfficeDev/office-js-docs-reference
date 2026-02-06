@@ -226,9 +226,7 @@ functions:
       prepopulated with a Base64-encoded .pptx file.
 
 
-      \[ [API set: PowerPointApi
-      1.1](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      \[Api set: PowerPointApi 1.1\]
     remarks: ''
 
     isPreview: false
@@ -243,34 +241,7 @@ functions:
           type: string
       return:
         type: Promise&lt;void&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const myFile = <HTMLInputElement>document.getElementById("file");
-
-          const reader = new FileReader();
-
-
-          reader.onload = (event) => {
-            // Remove the metadata before the Base64-encoded string.
-            const startIndex = reader.result.toString().indexOf("base64,");
-            const copyBase64 = reader.result.toString().substr(startIndex + 7);
-
-            PowerPoint.createPresentation(copyBase64);
-          };
-
-
-          // Read in the file as a data URL so we can parse the Base64-encoded
-          string.
-
-          reader.readAsDataURL(myFile.files[0]);
-
-          ```
+        description: ''
   - name: PowerPoint.run(batch)
     uid: powerpoint!PowerPoint.run:function(1)
     package: powerpoint!
@@ -301,25 +272,7 @@ functions:
             =&gt; <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
       return:
         type: <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // *.run methods automatically create an
-          OfficeExtension.ClientRequestContext
-
-          // object to work with the Office file.
-
-          await PowerPoint.run(async (context) => {
-            const presentation = context.presentation;
-            // Interact with the PowerPoint presentation...
-          });
-
-          ```
+        description: ''
   - name: PowerPoint.run(object, batch)
     uid: powerpoint!PowerPoint.run:function(2)
     package: powerpoint!

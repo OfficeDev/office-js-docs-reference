@@ -4,29 +4,7 @@ uid: word!Word.SaveConfiguration:enum
 package: word!
 fullName: Word.SaveConfiguration
 summary: Specifies the save options.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
-
-
-  await Word.run(async (context) => {
-    // Closes the document window, prompting to save if this is a new document.
-    const window: Word.Window = context.document.activeWindow;
-    const closeOptions: Word.WindowCloseOptions = { saveChanges: Word.SaveConfiguration.promptToSaveChanges };
-    console.log("About to close the document window...");
-    window.close(closeOptions);
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -34,30 +12,24 @@ fields:
   - name: doNotSaveChanges
     uid: word!Word.SaveConfiguration.doNotSaveChanges:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies not to save changes.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DoNotSaveChanges"'
   - name: promptToSaveChanges
     uid: word!Word.SaveConfiguration.promptToSaveChanges:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies to prompt to save changes.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"PromptToSaveChanges"'
   - name: saveChanges
     uid: word!Word.SaveConfiguration.saveChanges:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies to save changes.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SaveChanges"'

@@ -4,9 +4,7 @@ uid: word!Word.MovementType:enum
 package: word!
 fullName: Word.MovementType
 summary: Specifies the type of movement when navigating through a document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: '\[Api set: WordApiDesktop 1.4\]'
 
 isPreview: false
 isDeprecated: false
@@ -14,20 +12,16 @@ fields:
   - name: extend
     uid: word!Word.MovementType.extend:member
     package: word!
-    summary: >-
+    summary: |-
       Extends the selection.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Extend"'
   - name: move
     uid: word!Word.MovementType.move:member
     package: word!
-    summary: >-
+    summary: |-
       Moves the insertion point or selection.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Move"'

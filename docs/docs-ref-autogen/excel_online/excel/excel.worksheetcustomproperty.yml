@@ -4,9 +4,7 @@ uid: excel!Excel.WorksheetCustomProperty:class
 package: excel!
 fullName: Excel.WorksheetCustomProperty
 summary: Represents a worksheet-level custom property.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.12\]'
 
 isPreview: false
 isDeprecated: false
@@ -35,10 +33,7 @@ properties:
       Gets the key of the custom property. Custom property keys are
       case-insensitive. The key is limited to 255 characters (larger values will
       cause an `InvalidArgument` error to be thrown.)
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -51,10 +46,7 @@ properties:
     package: excel!
     fullName: value
     summary: Specifies the value of the custom property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -68,10 +60,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the custom property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false

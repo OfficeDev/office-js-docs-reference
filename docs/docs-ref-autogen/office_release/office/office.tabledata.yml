@@ -66,24 +66,6 @@ properties:
       - If you overwrite or update an existing table, the existing headers are
       not altered.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example creates a single-column table with a header and
-      three rows.
-
-      function createTableData() {
-          const tableData = new Office.TableData();
-          tableData.headers = [['header1']];
-          tableData.rows = [['row1'], ['row2'], ['row3']];
-          return tableData;
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,24 +97,6 @@ properties:
 
       - If you overwrite or update an existing table, the existing rows are not
       altered.
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following example creates a single-column table with a header and
-      three rows.
-
-      function createTableData() {
-          const tableData = new Office.TableData();
-          tableData.headers = [['header1']];
-          tableData.rows = [['row1'], ['row2'], ['row3']];
-          return tableData;
-      }
-
-      ```
 
     isPreview: false
     isDeprecated: false

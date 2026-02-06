@@ -4,49 +4,7 @@ uid: word!Word.PageCollection:class
 package: word!
 fullName: Word.PageCollection
 summary: Represents the collection of [Word.Page](xref:word!Word.Page:class) objects.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
-
-
-  await Word.run(async (context) => {
-    // Gets pages of the selection.
-    const pages: Word.PageCollection = context.document.getSelection().pages;
-    pages.load();
-    await context.sync();
-
-    // Log info for pages included in selection.
-    console.log(pages);
-    const pagesIndexes = [];
-    const pagesText = [];
-    for (let i = 0; i < pages.items.length; i++) {
-      const page = pages.items[i];
-      page.load("index");
-      pagesIndexes.push(page);
-
-      const range = page.getRange();
-      range.load("text");
-      pagesText.push(range);
-    }
-
-    await context.sync();
-
-    for (let i = 0; i < pagesIndexes.length; i++) {
-      console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
-      console.log("Text of that page in the selection:", pagesText[i].text);
-    }
-  });
-
-  ```
+remarks: '\[Api set: WordApiDesktop 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -88,9 +46,7 @@ methods:
     summary: >-
       Gets the first page in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -109,9 +65,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApiDesktop 1.2\]'
 
     isPreview: false
     isDeprecated: false

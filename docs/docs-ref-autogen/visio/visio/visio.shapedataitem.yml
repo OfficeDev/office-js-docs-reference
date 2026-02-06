@@ -4,10 +4,7 @@ uid: visio!Visio.ShapeDataItem:class
 package: visio!
 fullName: Visio.ShapeDataItem
 summary: Represents the ShapeDataItem.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+remarks: '\[Api set: 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -33,10 +30,7 @@ properties:
     package: visio!
     fullName: format
     summary: A string that specifies the format of the shape data item.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -49,10 +43,7 @@ properties:
     package: visio!
     fullName: formattedValue
     summary: A string that specifies the formatted value of the shape data item.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -65,10 +56,7 @@ properties:
     package: visio!
     fullName: label
     summary: A string that specifies the label of the shape data item.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -81,10 +69,7 @@ properties:
     package: visio!
     fullName: value
     summary: A string that specifies the value of the shape data item.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    remarks: '\[Api set: 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -116,28 +101,7 @@ methods:
             uid="visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface" />
       return:
         type: <xref uid="visio!Visio.ShapeDataItem:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
-              const shapeDataItem = shape.shapeDataItems.getItem(0);
-              shapeDataItem.load(["label", "value"]);
-                  return ctx.sync().then(function() {
-                      console.log(shapeDataItem.label);
-                      console.log(shapeDataItem.value);
-                  });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(propertyNames)
     uid: visio!Visio.ShapeDataItem#load:member(2)
     package: visio!

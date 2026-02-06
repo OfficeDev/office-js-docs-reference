@@ -4,9 +4,7 @@ uid: onenote!OneNote.Outline:class
 package: onenote!
 fullName: OneNote.Outline
 summary: Represents a container for Paragraph objects.
-remarks: >-
-  \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+remarks: '\[Api set: OneNoteApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -32,10 +30,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the Outline object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -50,10 +45,7 @@ properties:
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines
       the position of the Outline on the page.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -66,10 +58,7 @@ properties:
     package: onenote!
     fullName: paragraphs
     summary: Gets the collection of Paragraph objects in the Outline.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -83,44 +72,7 @@ methods:
     package: onenote!
     fullName: appendHtml(html)
     summary: Adds the specified HTML to the bottom of the Outline.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Gets the active page.
-          const activePage = context.application.getActivePage();
-
-          // Get pageContents of the activePage.
-          const pageContents = activePage.contents;
-
-          // Queue a command to load the pageContents to access its data.
-          context.load(pageContents);
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
-          {
-              // First item is an outline.
-              const outline = pageContents.items[0].outline;
-
-              // Queue a command to append a paragraph to the outline.
-              outline.appendHtml("<p>new paragraph</p>");
-
-              // Run the queued commands.
-              await context.sync();
-          }
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -141,10 +93,7 @@ methods:
     package: onenote!
     fullName: appendImage(base64EncodedImage, width, height)
     summary: Adds the specified image to the bottom of the Outline.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -174,10 +123,7 @@ methods:
     package: onenote!
     fullName: appendRichText(paragraphText)
     summary: Adds the specified text to the bottom of the Outline.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -197,43 +143,7 @@ methods:
     summary: >-
       Adds a table with the specified number of rows and columns to the bottom
       of the outline.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      await OneNote.run(async (context) => {
-
-          // Gets the active page.
-          const activePage = context.application.getActivePage();
-
-          // Get pageContents of the activePage.
-          const pageContents = activePage.contents;
-
-          // Queue a command to load the pageContents to access its data.
-          context.load(pageContents);
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          await context.sync();
-          if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline") {
-              // First item is an outline.
-              const outline = pageContents.items[0].outline;
-
-              // Queue a command to append a paragraph to the outline.
-              outline.appendTable(2, 2, [["1", "2"],["3", "4"]]);
-
-              // Run the queued commands.
-              await context.sync();
-          }
-      });
-
-      ```
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -261,10 +171,7 @@ methods:
     package: onenote!
     fullName: isTitle()
     summary: Check if the outline is title outline.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    remarks: '\[Api set: OneNoteApi 1.1\]'
 
     isPreview: false
     isDeprecated: false

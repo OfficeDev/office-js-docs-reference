@@ -4,52 +4,7 @@ uid: excel!Excel.ChartSeries:class
 package: excel!
 fullName: Excel.ChartSeries
 summary: Represents a series in a chart.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
-
-
-  // The following code adds data labels to the chart and positions them to
-  demonstrate leader lines.
-
-  await Excel.run(async (context) => {
-    const sheet = context.workbook.worksheets.getItem(sheetName);
-    const chart = sheet.charts.getItemAt(0);
-    const series = chart.series.getItemAt(0);
-    
-    // Enable data labels for the series. Leader lines are enabled by default.
-    series.hasDataLabels = true;
-    series.points.load("items");
-    await context.sync();
-    
-    // Load the top position for each data label.
-    series.points.items.forEach((point) => point.dataLabel.load("top"));
-    await context.sync();
-
-    // Move some data labels to create distance from their chart points.
-    const point1 = series.points.items[1]; 
-    const point2 = series.points.items[2]; 
-    point1.dataLabel.top -= 50; 
-    point2.dataLabel.top += 50;
-    
-    // Format the data labels.
-    series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
-    series.dataLabels.showCategoryName = true;
-    series.dataLabels.format.border.weight = 1;
-    
-    await context.sync();
-  });
-
-  ```
+remarks: '\[Api set: ExcelApi 1.1\]'
 
 isPreview: false
 isDeprecated: false
@@ -60,9 +15,7 @@ properties:
     package: excel!
     fullName: axisGroup
     summary: Specifies the group for the specified series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -77,9 +30,7 @@ properties:
     package: excel!
     fullName: binOptions
     summary: Encapsulates the bin options for histogram charts and pareto charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -92,9 +43,7 @@ properties:
     package: excel!
     fullName: boxwhiskerOptions
     summary: Encapsulates the options for the box and whisker charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -110,9 +59,7 @@ properties:
       This can be an integer value from 0 (zero) to 300, representing the
       percentage of the default size. This property only applies to bubble
       charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -125,9 +72,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: Represents the chart type of a series. See `Excel.ChartType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -203,9 +148,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: Represents a collection of all data labels in the series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -221,9 +164,7 @@ properties:
       Represents the doughnut hole size of a chart series. Only valid on
       doughnut and doughnut exploded charts. Throws an `InvalidArgument` error
       on invalid charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -239,9 +180,7 @@ properties:
       Specifies the explosion value for a pie-chart or doughnut-chart slice.
       Returns 0 (zero) if there's no explosion (the tip of the slice is in the
       center of the pie).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -254,9 +193,7 @@ properties:
     package: excel!
     fullName: filtered
     summary: Specifies if the series is filtered. Not applicable for surface charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -272,9 +209,7 @@ properties:
       Specifies the angle of the first pie-chart or doughnut-chart slice, in
       degrees (clockwise from vertical). Applies only to pie, 3-D pie, and
       doughnut charts. Can be a value from 0 through 360.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -289,9 +224,7 @@ properties:
     summary: >-
       Represents the formatting of a chart series, which includes fill and line
       formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -307,9 +240,7 @@ properties:
       Represents the gap width of a chart series. Only valid on bar and column
       charts, as well as specific classes of line and pie charts. Throws an
       invalid argument exception on invalid charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -322,9 +253,7 @@ properties:
     package: excel!
     fullName: gradientMaximumColor
     summary: Specifies the color for maximum value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -337,9 +266,7 @@ properties:
     package: excel!
     fullName: gradientMaximumType
     summary: Specifies the type for maximum value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -356,9 +283,7 @@ properties:
     package: excel!
     fullName: gradientMaximumValue
     summary: Specifies the maximum value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -371,9 +296,7 @@ properties:
     package: excel!
     fullName: gradientMidpointColor
     summary: Specifies the color for the midpoint value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -386,9 +309,7 @@ properties:
     package: excel!
     fullName: gradientMidpointType
     summary: Specifies the type for the midpoint value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -405,9 +326,7 @@ properties:
     package: excel!
     fullName: gradientMidpointValue
     summary: Specifies the midpoint value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -420,9 +339,7 @@ properties:
     package: excel!
     fullName: gradientMinimumColor
     summary: Specifies the color for the minimum value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -435,9 +352,7 @@ properties:
     package: excel!
     fullName: gradientMinimumType
     summary: Specifies the type for the minimum value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -454,9 +369,7 @@ properties:
     package: excel!
     fullName: gradientMinimumValue
     summary: Specifies the minimum value of a region map chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -469,9 +382,7 @@ properties:
     package: excel!
     fullName: gradientStyle
     summary: Specifies the series gradient style of a region map chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -488,52 +399,7 @@ properties:
     package: excel!
     fullName: hasDataLabels
     summary: Specifies if the series has data labels.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
-
-
-      // The following code adds data labels to the chart and positions them to
-      demonstrate leader lines.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem(sheetName);
-        const chart = sheet.charts.getItemAt(0);
-        const series = chart.series.getItemAt(0);
-        
-        // Enable data labels for the series. Leader lines are enabled by default.
-        series.hasDataLabels = true;
-        series.points.load("items");
-        await context.sync();
-        
-        // Load the top position for each data label.
-        series.points.items.forEach((point) => point.dataLabel.load("top"));
-        await context.sync();
-
-        // Move some data labels to create distance from their chart points.
-        const point1 = series.points.items[1]; 
-        const point2 = series.points.items[2]; 
-        point1.dataLabel.top -= 50; 
-        point2.dataLabel.top += 50;
-        
-        // Format the data labels.
-        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
-        series.dataLabels.showCategoryName = true;
-        series.dataLabels.format.border.weight = 1;
-        
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -546,9 +412,7 @@ properties:
     package: excel!
     fullName: invertColor
     summary: Specifies the fill color for negative data points in a series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -563,9 +427,7 @@ properties:
     summary: >-
       True if Excel inverts the pattern in the item when it corresponds to a
       negative number.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -578,9 +440,7 @@ properties:
     package: excel!
     fullName: mapOptions
     summary: Encapsulates the options for a region map chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -593,49 +453,7 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: Specifies the marker background color of a chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
-
-
-      await Excel.run(async (context) => {
-          let sheet = context.workbook.worksheets.getItem("Sample");
-          let salesTable = sheet.tables.getItem("SalesTable");
-          let dataRange = sheet.getRange("A1:E7");
-
-          // Create an XY scatter chart.
-          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-          chart.title.text = "Bicycle Parts Quarterly Sales"; 
-        
-          let series = chart.series;
-          let series0 = series.getItemAt(0);
-          let series1 = series.getItemAt(1);
-          let series2 = series.getItemAt(2);
-          let series3 = series.getItemAt(3);
-
-          // Set markers.
-          series0.markerStyle = "Dash";
-          series0.markerForegroundColor = "black";
-          series1.markerStyle = "Star";
-          series1.markerForegroundColor = "black";
-          series2.markerStyle = "X";
-          series2.markerSize = 12;
-          series3.markerStyle = "Triangle";
-          series3.markerBackgroundColor = "purple";
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -648,49 +466,7 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: Specifies the marker foreground color of a chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
-
-
-      await Excel.run(async (context) => {
-          let sheet = context.workbook.worksheets.getItem("Sample");
-          let salesTable = sheet.tables.getItem("SalesTable");
-          let dataRange = sheet.getRange("A1:E7");
-
-          // Create an XY scatter chart.
-          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-          chart.title.text = "Bicycle Parts Quarterly Sales"; 
-        
-          let series = chart.series;
-          let series0 = series.getItemAt(0);
-          let series1 = series.getItemAt(1);
-          let series2 = series.getItemAt(2);
-          let series3 = series.getItemAt(3);
-
-          // Set markers.
-          series0.markerStyle = "Dash";
-          series0.markerForegroundColor = "black";
-          series1.markerStyle = "Star";
-          series1.markerForegroundColor = "black";
-          series2.markerStyle = "X";
-          series2.markerSize = 12;
-          series3.markerStyle = "Triangle";
-          series3.markerBackgroundColor = "purple";
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -706,49 +482,7 @@ properties:
       Specifies the marker size of a chart series. The supported size range is 2
       to 72. This method returns an InvalidArgument error if it's set with a
       size outside of the supported range.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
-
-
-      await Excel.run(async (context) => {
-          let sheet = context.workbook.worksheets.getItem("Sample");
-          let salesTable = sheet.tables.getItem("SalesTable");
-          let dataRange = sheet.getRange("A1:E7");
-
-          // Create an XY scatter chart.
-          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-          chart.title.text = "Bicycle Parts Quarterly Sales"; 
-        
-          let series = chart.series;
-          let series0 = series.getItemAt(0);
-          let series1 = series.getItemAt(1);
-          let series2 = series.getItemAt(2);
-          let series3 = series.getItemAt(3);
-
-          // Set markers.
-          series0.markerStyle = "Dash";
-          series0.markerForegroundColor = "black";
-          series1.markerStyle = "Star";
-          series1.markerForegroundColor = "black";
-          series2.markerStyle = "X";
-          series2.markerSize = 12;
-          series3.markerStyle = "Triangle";
-          series3.markerBackgroundColor = "purple";
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -763,49 +497,7 @@ properties:
     summary: >-
       Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle`
       for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
-
-
-      await Excel.run(async (context) => {
-          let sheet = context.workbook.worksheets.getItem("Sample");
-          let salesTable = sheet.tables.getItem("SalesTable");
-          let dataRange = sheet.getRange("A1:E7");
-
-          // Create an XY scatter chart.
-          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-          chart.title.text = "Bicycle Parts Quarterly Sales"; 
-        
-          let series = chart.series;
-          let series0 = series.getItemAt(0);
-          let series1 = series.getItemAt(1);
-          let series2 = series.getItemAt(2);
-          let series3 = series.getItemAt(3);
-
-          // Set markers.
-          series0.markerStyle = "Dash";
-          series0.markerForegroundColor = "black";
-          series1.markerStyle = "Star";
-          series1.markerForegroundColor = "black";
-          series2.markerStyle = "X";
-          series2.markerSize = 12;
-          series3.markerStyle = "Triangle";
-          series3.markerBackgroundColor = "purple";
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -826,9 +518,7 @@ properties:
     summary: >-
       Specifies the name of a series in a chart. The name's length should not be
       greater than 255 characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -843,9 +533,7 @@ properties:
     summary: >-
       Specifies how bars and columns are positioned. Can be a value between -100
       and 100. Applies only to 2-D bar and 2-D column charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -858,9 +546,7 @@ properties:
     package: excel!
     fullName: parentLabelStrategy
     summary: Specifies the series parent label strategy area for a treemap chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -877,9 +563,7 @@ properties:
     package: excel!
     fullName: plotOrder
     summary: Specifies the plot order of a chart series within the chart group.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -892,52 +576,7 @@ properties:
     package: excel!
     fullName: points
     summary: Returns a collection of all points in the series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
-
-
-      // The following code adds data labels to the chart and positions them to
-      demonstrate leader lines.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem(sheetName);
-        const chart = sheet.charts.getItemAt(0);
-        const series = chart.series.getItemAt(0);
-        
-        // Enable data labels for the series. Leader lines are enabled by default.
-        series.hasDataLabels = true;
-        series.points.load("items");
-        await context.sync();
-        
-        // Load the top position for each data label.
-        series.points.items.forEach((point) => point.dataLabel.load("top"));
-        await context.sync();
-
-        // Move some data labels to create distance from their chart points.
-        const point1 = series.points.items[1]; 
-        const point2 = series.points.items[2]; 
-        point1.dataLabel.top -= 50; 
-        point2.dataLabel.top += 50;
-        
-        // Format the data labels.
-        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
-        series.dataLabels.showCategoryName = true;
-        series.dataLabels.format.border.weight = 1;
-        
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.1\]'
 
     isPreview: false
     isDeprecated: false
@@ -953,9 +592,7 @@ properties:
       Specifies the size of the secondary section of either a pie-of-pie chart
       or a bar-of-pie chart, as a percentage of the size of the primary pie. Can
       be a value from 5 to 200.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -968,9 +605,7 @@ properties:
     package: excel!
     fullName: showConnectorLines
     summary: Specifies whether connector lines are shown in waterfall charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -985,35 +620,7 @@ properties:
     summary: >-
       Specifies whether leader lines are displayed for each data label in the
       series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
-
-
-      // The following code disables leader lines for chart data labels.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem(sheetName);
-        const chart = sheet.charts.getItemAt(0);
-        const series = chart.series.getItemAt(0);
-        const dataLabels = series.dataLabels;
-        
-        // Disable leader lines.
-        dataLabels.showLeaderLines = false;
-        
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -1026,9 +633,7 @@ properties:
     package: excel!
     fullName: showShadow
     summary: Specifies if the series has a shadow.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -1043,9 +648,7 @@ properties:
     summary: >-
       Specifies if the series is smooth. Only applicable to line and scatter
       charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -1060,9 +663,7 @@ properties:
     summary: >-
       Specifies the way the two sections of either a pie-of-pie chart or a
       bar-of-pie chart are split.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -1081,9 +682,7 @@ properties:
     summary: >-
       Specifies the threshold value that separates two sections of either a
       pie-of-pie chart or a bar-of-pie chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -1096,9 +695,7 @@ properties:
     package: excel!
     fullName: trendlines
     summary: The collection of trendlines in the series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -1113,9 +710,7 @@ properties:
     summary: >-
       True if Excel assigns a different color or pattern to each data marker.
       The chart must contain only one series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -1128,9 +723,7 @@ properties:
     package: excel!
     fullName: xErrorBars
     summary: Represents the error bar object of a chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -1143,9 +736,7 @@ properties:
     package: excel!
     fullName: yErrorBars
     summary: Represents the error bar object of a chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -1159,37 +750,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
-
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const seriesCollection = sheet.charts.getItemAt(0).series;
-        seriesCollection.load("count");
-        await context.sync();
-
-        if (seriesCollection.count > 0) {
-          const series = seriesCollection.getItemAt(0);
-
-          // Delete the first series.
-          series.delete();
-        }
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -1205,44 +766,7 @@ methods:
     summary: >-
       Gets the string representation of the data source of the chart series. The
       string representation could be information such as a cell address.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
-
-
-      // This function retrieves the data source information of a chart series
-      in the Sample worksheet.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        // Get the first chart series from the first chart on the worksheet.
-        const seriesCollection = sheet.charts.getItemAt(0).series;
-        const series = seriesCollection.getItemAt(0);
-
-        // Get the series data source string and type values. 
-        const dataSourceString = series.getDimensionDataSourceString("Values");
-        const dataSourceType = series.getDimensionDataSourceType("Values");
-
-        series.load("name");
-        await context.sync();
-        
-        // Log the data source information to the console.
-        console.log(series.name + " data source string: " + dataSourceString.value);
-        console.log(series.name + " data source type: " + dataSourceType.value);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.15\]'
 
     isPreview: false
     isDeprecated: false
@@ -1264,10 +788,7 @@ methods:
     summary: >-
       Gets the string representation of the data source of the chart series. The
       string representation could be information such as a cell address.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.15\]'
 
     isPreview: false
     isDeprecated: false
@@ -1288,44 +809,7 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
-
-
-      // This function retrieves the data source information of a chart series
-      in the Sample worksheet.
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        // Get the first chart series from the first chart on the worksheet.
-        const seriesCollection = sheet.charts.getItemAt(0).series;
-        const series = seriesCollection.getItemAt(0);
-
-        // Get the series data source string and type values. 
-        const dataSourceString = series.getDimensionDataSourceString("Values");
-        const dataSourceType = series.getDimensionDataSourceType("Values");
-
-        series.load("name");
-        await context.sync();
-        
-        // Log the data source information to the console.
-        console.log(series.name + " data source string: " + dataSourceString.value);
-        console.log(series.name + " data source type: " + dataSourceType.value);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.15\]'
 
     isPreview: false
     isDeprecated: false
@@ -1347,10 +831,7 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.15\]'
 
     isPreview: false
     isDeprecated: false
@@ -1376,43 +857,7 @@ methods:
       Gets the values from a single dimension of the chart series. These could
       be either category values or data values, depending on the dimension
       specified and how the data is mapped for the chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
-
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        // The sample chart is of type `Excel.ChartType.bubble`.
-        const bubbleChart = sheet.charts.getItem("Product Chart");
-
-        // Get the first series in the chart.
-        const firstSeries = bubbleChart.series.getItemAt(0);
-
-        // Get the values for the dimensions we're interested in.
-        const bubbleSize = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.bubbleSizes);
-        const xValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.xvalues);
-        const yValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.yvalues);
-        const category = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.categories);
-
-        await context.sync();
-
-        // Log the information.
-        console.log(`Series ${category.value} - X: ${xValues.value}, Y: ${yValues.value}, Bubble: ${bubbleSize.value}`);
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -1437,10 +882,7 @@ methods:
       Gets the values from a single dimension of the chart series. These could
       be either category values or data values, depending on the dimension
       specified and how the data is mapped for the chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.12\]'
 
     isPreview: false
     isDeprecated: false
@@ -1502,21 +944,7 @@ methods:
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartSeries:class" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Rename the 1st series of Chart1 to "New Series Name".
-          await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.series.getItemAt(0).name = "New Series Name";
-              await context.sync();
-
-              console.log("Series1 Renamed");
-          });
-          ```
+        description: ''
   - name: load(propertyNamesAndPaths)
     uid: excel!Excel.ChartSeries#load:member(3)
     package: excel!
@@ -1607,66 +1035,7 @@ methods:
     package: excel!
     fullName: setBubbleSizes(sourceData)
     summary: Sets the bubble sizes for a chart series. Only works for bubble charts.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
-
-
-      await Excel.run(async (context) => {
-        /*
-          The table is expected to look like this:
-          Product, Inventory, Price, Current Market Share
-          Calamansi, 2000, $2.45, 10%
-          ...
-
-          We want each bubble to represent a single row.
-        */
-
-        // Get the worksheet and table data.
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const table = sheet.tables.getItem("Sales");
-        const dataRange = table.getDataBodyRange();
-
-        // Get the table data without the row names.
-        const valueRange = dataRange.getOffsetRange(0, 1).getResizedRange(0, -1);
-
-        // Create the chart.
-        const bubbleChart = sheet.charts.add(Excel.ChartType.bubble, valueRange);
-        bubbleChart.name = "Product Chart";
-
-        // Remove the default series, since we want a unique series for each row.
-        bubbleChart.series.getItemAt(0).delete();
-
-        // Load the data necessary to make a chart series.
-        dataRange.load(["rowCount", "values"]);
-        await context.sync();
-
-        // For each row, create a chart series (a bubble).
-        for (let i = 0; i < dataRange.rowCount; i++) {
-          const newSeries = bubbleChart.series.add(dataRange.values[i][0], i);
-          newSeries.setXAxisValues(dataRange.getCell(i, 1));
-          newSeries.setValues(dataRange.getCell(i, 2));
-          newSeries.setBubbleSizes(dataRange.getCell(i, 3));
-
-          // Show the product name and market share percentage.
-          newSeries.dataLabels.showSeriesName = true;
-          newSeries.dataLabels.showBubbleSize = true;
-          newSeries.dataLabels.showValue = false;
-        }
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -1686,36 +1055,7 @@ methods:
     summary: >-
       Sets the values for a chart series. For scatter charts, it refers to
       y-axis values.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
-
-
-      await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        let seriesCollection = sheet.charts.getItemAt(0);
-        let rangeSelection = sheet.getRange("C2:C7");
-        let xRangeSelection = sheet.getRange("A1:A7");
-
-        // Add a series.
-        let newSeries = seriesCollection.series.add("Qtr2");
-        newSeries.setValues(rangeSelection);
-        newSeries.setXAxisValues(xRangeSelection);
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -1733,9 +1073,7 @@ methods:
     package: excel!
     fullName: setXAxisValues(sourceData)
     summary: Sets the values of the x-axis for a chart series.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false

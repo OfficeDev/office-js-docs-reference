@@ -4,9 +4,7 @@ uid: excel!Excel.FilterCriteria:interface
 package: excel!
 fullName: Excel.FilterCriteria
 summary: Represents the filtering criteria applied to a column.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: '\[Api set: ExcelApi 1.2\]'
 
 isPreview: false
 isDeprecated: false
@@ -19,9 +17,7 @@ properties:
     summary: >-
       The HTML color string used to filter cells. Used with `cellColor` and
       `fontColor` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -41,9 +37,7 @@ properties:
 
       Used as a number in the case of top/bottom items/percents (e.g., "5" for
       the top 5 items if `filterOn` is set to `topItems`<!-- -->).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +52,7 @@ properties:
     summary: >-
       The second criterion used to filter data. Only used as an operator in the
       case of `custom` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -75,9 +67,7 @@ properties:
     summary: >-
       The dynamic criteria from the `Excel.DynamicFilterCriteria` set to apply
       on this column. Used with `dynamic` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -117,39 +107,7 @@ properties:
     summary: >-
       The property used by the filter to determine whether the values should
       stay visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
-
-
-      // This function adds a percentage AutoFilter to the active worksheet 
-
-      // and applies the filter to a column of the used range.
-
-      await Excel.run(async (context) => {
-          // Retrieve the active worksheet and the used range on that worksheet.
-          const sheet = context.workbook.worksheets.getActiveWorksheet();
-          const farmData = sheet.getUsedRange();
-
-          // Add a filter that will only show the rows with the top 50% of values in column 3.
-          sheet.autoFilter.apply(farmData, 3, {
-              criterion1: "50",
-              filterOn: Excel.FilterOn.topPercent
-          });
-
-          await context.sync();
-      });
-
-      ```
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -168,9 +126,7 @@ properties:
     package: excel!
     fullName: icon
     summary: The icon used to filter cells. Used with `icon` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -185,9 +141,7 @@ properties:
     summary: >-
       The operator used to combine criterion 1 and 2 when using `custom`
       filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
@@ -200,9 +154,7 @@ properties:
     package: excel!
     fullName: subField
     summary: The property used by the filter to do a rich filter on rich values.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -215,9 +167,7 @@ properties:
     package: excel!
     fullName: values
     summary: The set of values to be used as part of `values` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false
