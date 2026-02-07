@@ -67,3 +67,95 @@ OfficeRuntime.displayWebDialog:function(1):
         });
       });
     }
+
+OfficeRuntime.Storage#getItem:member(1):
+  - |-
+    // Retrieve a value from the shared runtime storage by its key.
+    async function getItem() {
+        const key = document.getElementById('readKey').value.trim();
+
+        const value = await OfficeRuntime.storage.getItem(key);
+
+        if (value === null) {
+            console.log(`Item not found - Key "${key}" not found in storage.`);
+        } else {
+            console.log(`Item retrieved successfully - Key: "${key}"\nValue: "${value}"`);
+        }
+    }
+OfficeRuntime.Storage#getItems:member(1):
+  - |-
+    // Retrieve a set of default values from the shared runtime storage.
+    async function getDefaultSettings() {
+      const keysToRetrieve = [
+          'username',
+          'email',
+          'theme',
+          'lastLogin',
+          'preferences'
+      ];
+
+      const items = await OfficeRuntime.storage.getItems(keysToRetrieve);
+      for (const [key, value] of Object.entries(items)) {
+          console.log(`"${key}": "${value}"`);
+      }
+    }
+OfficeRuntime.Storage#getKeys:member(1):
+  - |-
+    // Retrieve all keys currently stored in the shared runtime storage.
+    async function getAllKeys() {
+      const keys = await OfficeRuntime.storage.getKeys();
+
+      if (keys.length === 0) {
+        console.log('No items in storage.');
+        showStatus('Storage is empty', 'info');
+      } else {
+        console.log(`Found ${keys.length} key(s):\n\n${keys.toString()}`);
+      }
+    }
+OfficeRuntime.Storage#removeItem:member(1):
+  - |-
+    // Delete an item from the shared runtime storage by its key.
+    async function removeItem() {
+        const key = document.getElementById('deleteKey').value.trim();
+            
+        // Check if key exists first.
+        const value = await OfficeRuntime.storage.getItem(key);
+
+        if (value === null) {
+            console.log(`Key "${key}" not found`);
+        } else {
+          await OfficeRuntime.storage.removeItem(key);
+          console.log(`Item "${key}" removed successfully`);
+        }
+    }
+OfficeRuntime.Storage#removeItems:member(1):
+  - |-
+    // Delete all the items from the shared runtime storage.
+    async function clearAllStorage() {
+      const keys = await OfficeRuntime.storage.getKeys();
+      await OfficeRuntime.storage.removeItems(keys);
+      console.log(`All ${keys.length} items cleared from storage`);
+    }
+OfficeRuntime.Storage#setItem:member(1):
+  - |-
+    // Save a key-value pair in the shared runtime storage.
+    async function storeValue() {
+      const key = document.getElementById('createKey').value.trim();
+      const value = document.getElementById('createValue').value.trim();
+
+      await OfficeRuntime.storage.setItem(key, value);
+    }
+OfficeRuntime.Storage#setItems:member(1):
+  - |-
+    // Save multiple key-value pairs in the shared runtime storage.
+    async function setDefaultSettings() {
+      const demoData = {
+          'username': 'JohnDoe',
+          'email': 'john.doe@example.com',
+          'theme': 'dark',
+          'lastLogin': new Date().toISOString(),
+          'preferences': JSON.stringify({ notifications: true, language: 'en' })
+      };
+
+      await OfficeRuntime.storage.setItems(demoData);
+    }
