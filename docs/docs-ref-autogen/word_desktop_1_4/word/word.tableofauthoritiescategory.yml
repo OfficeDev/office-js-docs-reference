@@ -4,7 +4,9 @@ uid: word!Word.TableOfAuthoritiesCategory:class
 package: word!
 fullName: Word.TableOfAuthoritiesCategory
 summary: Represents a category used in a table of authorities.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +36,9 @@ properties:
       name of the category doesn't change the index in the collection. The value
       for [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class)
       will remain the same.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

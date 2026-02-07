@@ -4,7 +4,9 @@ uid: excel!Excel.PageBreak:class
 package: excel!
 fullName: Excel.PageBreak
 summary: ''
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: excel!
     fullName: columnIndex
     summary: Specifies the column index for the page break.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: excel!
     fullName: rowIndex
     summary: Specifies the row index for the page break.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +63,9 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes a page break object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +79,9 @@ methods:
     package: excel!
     fullName: getCellAfterBreak()
     summary: Gets the first cell after the page break.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

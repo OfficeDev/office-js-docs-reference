@@ -9,7 +9,9 @@ summary: >-
   options to find text in your Word
   add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!--
   -->.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -39,7 +41,9 @@ properties:
       between words. The default is `false`<!-- -->. Corresponds to the \_Ignore
       punctuation characters\_ check box in the **Find and Replace** dialog
       box.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -55,7 +59,9 @@ properties:
       If provided, specifies whether to ignore all whitespace between words. The
       default is `false`<!-- -->. Corresponds to the \_Ignore white-space
       characters\_ check box in the **Find and Replace** dialog box.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +77,9 @@ properties:
       If provided, specifies whether to perform a case sensitive search. The
       default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in
       the **Find and Replace** dialog box.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -87,7 +95,9 @@ properties:
       If provided, specifies whether to match words that begin with the search
       string. The default is `false`<!-- -->. Corresponds to the \_Match
       prefix\_ check box in the **Find and Replace** dialog box.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -103,7 +113,9 @@ properties:
       If provided, specifies whether to match words that end with the search
       string. The default is `false`<!-- -->. Corresponds to the \_Match
       suffix\_ check box in the **Find and Replace** dialog box.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +132,9 @@ properties:
       part of a larger word. The default is `false`<!-- -->. Corresponds to the
       \_Find whole words only\_ check box in the **Find and Replace** dialog
       box.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -136,7 +150,9 @@ properties:
       If provided, specifies whether the search will be performed using special
       search operators. The default is `false`<!-- -->. Corresponds to the \_Use
       wildcards\_ check box in the **Find and Replace** dialog box.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

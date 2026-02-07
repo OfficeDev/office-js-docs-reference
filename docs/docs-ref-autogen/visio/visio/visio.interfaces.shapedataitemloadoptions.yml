@@ -4,7 +4,10 @@ uid: visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeDataItemLoadOptions
 summary: Represents the ShapeDataItem.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +34,10 @@ properties:
     package: visio!
     fullName: format
     summary: A string that specifies the format of the shape data item. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +52,10 @@ properties:
     summary: >-
       A string that specifies the formatted value of the shape data item.
       Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +68,10 @@ properties:
     package: visio!
     fullName: label
     summary: A string that specifies the label of the shape data item. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +84,10 @@ properties:
     package: visio!
     fullName: value
     summary: A string that specifies the value of the shape data item. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

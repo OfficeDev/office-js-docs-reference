@@ -4,7 +4,9 @@ uid: word!Word.ChangeTrackingMode:enum
 package: word!
 fullName: Word.ChangeTrackingMode
 summary: Represents the possible change tracking modes.
-remarks: '\[Api set: WordApi 1.4\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: 'off'
     uid: word!Word.ChangeTrackingMode.off:member
     package: word!
-    summary: |-
+    summary: >-
       ChangeTracking is turned off.
 
-      * \[Api set: WordApi 1.4\]
+
+      * \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Off"'
   - name: trackAll
     uid: word!Word.ChangeTrackingMode.trackAll:member
     package: word!
-    summary: |-
+    summary: >-
       ChangeTracking is turned on for everyone.
 
-      * \[Api set: WordApi 1.4\]
+
+      * \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackAll"'
   - name: trackMineOnly
     uid: word!Word.ChangeTrackingMode.trackMineOnly:member
     package: word!
-    summary: |-
+    summary: >-
       Tracking is turned on for my changes only.
 
-      * \[Api set: WordApi 1.4\]
+
+      * \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackMineOnly"'

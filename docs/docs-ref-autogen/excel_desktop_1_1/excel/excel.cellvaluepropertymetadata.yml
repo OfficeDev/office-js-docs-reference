@@ -4,7 +4,9 @@ uid: excel!Excel.CellValuePropertyMetadata:interface
 package: excel!
 fullName: Excel.CellValuePropertyMetadata
 summary: Metadata about a property in `EntityCellValue.properties`<!-- -->.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,10 @@ properties:
     summary: >-
       Represents attribution information to describe the source and license
       requirements for using this property.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +35,10 @@ properties:
     package: excel!
     fullName: excludeFrom
     summary: Represents which features this property is excluded from.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +53,10 @@ properties:
     package: excel!
     fullName: sublabel
     summary: Represents the sublabel for this property shown in card view.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

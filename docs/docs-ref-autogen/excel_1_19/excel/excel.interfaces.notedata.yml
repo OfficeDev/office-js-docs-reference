@@ -15,7 +15,10 @@ properties:
     package: excel!
     fullName: authorName
     summary: Gets the author of the note.
-    remarks: '\[Api set: ExcelApi 1.18\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +31,10 @@ properties:
     package: excel!
     fullName: content
     summary: Specifies the text of the note.
-    remarks: '\[Api set: ExcelApi 1.18\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,10 @@ properties:
     summary: >-
       Specifies the height of the note. Note: This property is not supported in
       Excel on the web.
-    remarks: '\[Api set: ExcelApi 1.18\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +67,10 @@ properties:
     summary: >-
       Specifies the visibility of the note. A value of `true` means the note is
       shown. Note: This property is not supported in Excel on the web.
-    remarks: '\[Api set: ExcelApi 1.18\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,7 +85,10 @@ properties:
     summary: >-
       Specifies the width of the note. Note: This property is not supported in
       Excel on the web.
-    remarks: '\[Api set: ExcelApi 1.18\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

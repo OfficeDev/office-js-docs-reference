@@ -6,7 +6,9 @@ fullName: Word.SelectionDeleteOptions
 summary: >-
   Represents the options for the
   [Selection.delete](xref:word!Word.Selection:class) method.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +23,9 @@ properties:
       after the selection, collapse the selection and use a positive number. To
       delete units before the selection, collapse the selection and use a
       negative number. The default value is 1.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +40,9 @@ properties:
     summary: >-
       If provided, specifies the unit by which the collapsed selection is to be
       deleted. The default value is `character`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

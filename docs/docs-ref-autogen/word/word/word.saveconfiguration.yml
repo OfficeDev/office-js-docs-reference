@@ -4,7 +4,9 @@ uid: word!Word.SaveConfiguration:enum
 package: word!
 fullName: Word.SaveConfiguration
 summary: Specifies the save options.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: doNotSaveChanges
     uid: word!Word.SaveConfiguration.doNotSaveChanges:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies not to save changes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DoNotSaveChanges"'
   - name: promptToSaveChanges
     uid: word!Word.SaveConfiguration.promptToSaveChanges:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies to prompt to save changes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PromptToSaveChanges"'
   - name: saveChanges
     uid: word!Word.SaveConfiguration.saveChanges:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies to save changes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SaveChanges"'

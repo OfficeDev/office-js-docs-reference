@@ -12,7 +12,10 @@ summary: >-
   dialog, or [integrated
   spam-reporting](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
   dialog when the `Office.EventType.InitializationContextChanged` event occurs.
-remarks: '\[Api set: Mailbox 1.15\]'
+remarks: >-
+  \[ [Api set: Mailbox
+  1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -27,7 +30,10 @@ properties:
       Represents the data to be passed to an add-in's task pane from an
       actionable message, notification message, Smart Alerts dialog, or
       integrated spam-reporting dialog.
-    remarks: '\[Api set: Mailbox 1.15\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,10 @@ properties:
       Represents the type of the event. For details, refer to
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: '\[Api set: Mailbox 1.15\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

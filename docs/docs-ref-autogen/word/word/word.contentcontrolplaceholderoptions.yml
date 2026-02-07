@@ -4,7 +4,9 @@ uid: word!Word.ContentControlPlaceholderOptions:interface
 package: word!
 fullName: Word.ContentControlPlaceholderOptions
 summary: The options that define what placeholder to be used in the content control.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: word!
     fullName: buildingBlock
     summary: If provided, specifies the `BuildingBlock` object to use as placeholder.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +32,9 @@ properties:
     package: word!
     fullName: range
     summary: If provided, specifies the `Range` object to use as placeholder.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -41,7 +47,9 @@ properties:
     package: word!
     fullName: text
     summary: If provided, specifies the text to use as placeholder.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

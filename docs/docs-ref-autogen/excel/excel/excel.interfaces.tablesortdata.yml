@@ -17,7 +17,9 @@ properties:
     package: excel!
     fullName: fields
     summary: Specifies the current conditions used to last sort the table.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: matchCase
     summary: Specifies if the casing impacts the last sort of the table.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +49,9 @@ properties:
     summary: >-
       Represents the Chinese character ordering method last used to sort the
       table.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

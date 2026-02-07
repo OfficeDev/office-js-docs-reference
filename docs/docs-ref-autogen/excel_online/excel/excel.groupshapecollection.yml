@@ -4,7 +4,9 @@ uid: excel!Excel.GroupShapeCollection:class
 package: excel!
 fullName: Excel.GroupShapeCollection
 summary: Represents the shape collection inside a shape group.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +46,9 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of shapes in the shape group.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +62,9 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a shape using its name or ID.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +82,9 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a shape based on its position in the collection.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -99,7 +107,10 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.14\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

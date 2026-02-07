@@ -6,7 +6,9 @@ fullName: Word.TableCollection
 summary: >-
   Contains the collection of the document's
   [Word.Table](xref:word!Word.Table:class) objects.
-remarks: '\[Api set: WordApi 1.3\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -48,7 +50,9 @@ methods:
     summary: >-
       Gets the first table in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +71,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

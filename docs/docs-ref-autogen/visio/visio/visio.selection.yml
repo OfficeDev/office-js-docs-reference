@@ -4,7 +4,10 @@ uid: visio!Visio.Selection:class
 package: visio!
 fullName: Visio.Selection
 summary: Represents the Selection in the page.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +33,10 @@ properties:
     package: visio!
     fullName: shapes
     summary: Gets the Shapes of the Selection.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

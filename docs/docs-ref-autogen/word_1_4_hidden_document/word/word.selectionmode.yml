@@ -6,7 +6,9 @@ fullName: Word.SelectionMode
 summary: >-
   Represents where the cursor (insertion point) is set in the document after a
   selection.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -19,15 +21,18 @@ fields:
       selected range).
 
 
-      * \[Api set: WordApi 1.1\]
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: select
     uid: word!Word.SelectionMode.select:member
     package: word!
-    summary: |-
+    summary: >-
       The entire range is selected.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Select"'
   - name: start
     uid: word!Word.SelectionMode.start:member
@@ -37,5 +42,6 @@ fields:
       the selected range).
 
 
-      * \[Api set: WordApi 1.1\]
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'

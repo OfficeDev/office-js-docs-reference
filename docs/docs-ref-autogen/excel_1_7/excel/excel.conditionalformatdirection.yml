@@ -4,7 +4,9 @@ uid: excel!Excel.ConditionalFormatDirection:enum
 package: excel!
 fullName: Excel.ConditionalFormatDirection
 summary: Represents the direction for a selection.
-remarks: '\[Api set: ExcelApi 1.6\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,10 +14,14 @@ fields:
   - name: bottom
     uid: excel!Excel.ConditionalFormatDirection.bottom:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.6\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Bottom"'
   - name: top
     uid: excel!Excel.ConditionalFormatDirection.top:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.6\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Top"'

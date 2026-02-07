@@ -6,7 +6,10 @@ fullName: PowerPoint.ShapeGroup
 summary: >-
   Represents a shape group inside a presentation. To get the corresponding Shape
   object, use `ShapeGroup.shape`<!-- -->.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +37,10 @@ properties:
     summary: >-
       Gets the creation ID of the shape group. Returns `null` if the shape group
       has no creation ID.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +53,10 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape group.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +69,10 @@ properties:
     package: powerpoint!
     fullName: shape
     summary: Returns the `Shape` object associated with the group.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,7 +85,10 @@ properties:
     package: powerpoint!
     fullName: shapes
     summary: Returns the collection of `Shape` objects in the group.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -190,7 +205,10 @@ methods:
     package: powerpoint!
     fullName: ungroup()
     summary: Ungroups any grouped shapes in the specified shape group.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

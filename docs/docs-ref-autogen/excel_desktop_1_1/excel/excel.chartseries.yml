@@ -4,7 +4,9 @@ uid: excel!Excel.ChartSeries:class
 package: excel!
 fullName: Excel.ChartSeries
 summary: Represents a series in a chart.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: excel!
     fullName: axisGroup
     summary: Specifies the group for the specified series.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +34,9 @@ properties:
     package: excel!
     fullName: binOptions
     summary: Encapsulates the bin options for histogram charts and pareto charts.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,9 @@ properties:
     package: excel!
     fullName: boxwhiskerOptions
     summary: Encapsulates the options for the box and whisker charts.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +67,9 @@ properties:
       This can be an integer value from 0 (zero) to 300, representing the
       percentage of the default size. This property only applies to bubble
       charts.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +82,9 @@ properties:
     package: excel!
     fullName: chartType
     summary: Represents the chart type of a series. See `Excel.ChartType` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -148,7 +160,9 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: Represents a collection of all data labels in the series.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -164,7 +178,9 @@ properties:
       Represents the doughnut hole size of a chart series. Only valid on
       doughnut and doughnut exploded charts. Throws an `InvalidArgument` error
       on invalid charts.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -180,7 +196,9 @@ properties:
       Specifies the explosion value for a pie-chart or doughnut-chart slice.
       Returns 0 (zero) if there's no explosion (the tip of the slice is in the
       center of the pie).
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -193,7 +211,9 @@ properties:
     package: excel!
     fullName: filtered
     summary: Specifies if the series is filtered. Not applicable for surface charts.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -209,7 +229,9 @@ properties:
       Specifies the angle of the first pie-chart or doughnut-chart slice, in
       degrees (clockwise from vertical). Applies only to pie, 3-D pie, and
       doughnut charts. Can be a value from 0 through 360.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -224,7 +246,9 @@ properties:
     summary: >-
       Represents the formatting of a chart series, which includes fill and line
       formatting.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -240,7 +264,9 @@ properties:
       Represents the gap width of a chart series. Only valid on bar and column
       charts, as well as specific classes of line and pie charts. Throws an
       invalid argument exception on invalid charts.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -253,7 +279,9 @@ properties:
     package: excel!
     fullName: gradientMaximumColor
     summary: Specifies the color for maximum value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -266,7 +294,9 @@ properties:
     package: excel!
     fullName: gradientMaximumType
     summary: Specifies the type for maximum value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -283,7 +313,9 @@ properties:
     package: excel!
     fullName: gradientMaximumValue
     summary: Specifies the maximum value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -296,7 +328,9 @@ properties:
     package: excel!
     fullName: gradientMidpointColor
     summary: Specifies the color for the midpoint value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -309,7 +343,9 @@ properties:
     package: excel!
     fullName: gradientMidpointType
     summary: Specifies the type for the midpoint value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -326,7 +362,9 @@ properties:
     package: excel!
     fullName: gradientMidpointValue
     summary: Specifies the midpoint value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -339,7 +377,9 @@ properties:
     package: excel!
     fullName: gradientMinimumColor
     summary: Specifies the color for the minimum value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -352,7 +392,9 @@ properties:
     package: excel!
     fullName: gradientMinimumType
     summary: Specifies the type for the minimum value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -369,7 +411,9 @@ properties:
     package: excel!
     fullName: gradientMinimumValue
     summary: Specifies the minimum value of a region map chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -382,7 +426,9 @@ properties:
     package: excel!
     fullName: gradientStyle
     summary: Specifies the series gradient style of a region map chart.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -399,7 +445,9 @@ properties:
     package: excel!
     fullName: hasDataLabels
     summary: Specifies if the series has data labels.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -412,7 +460,9 @@ properties:
     package: excel!
     fullName: invertColor
     summary: Specifies the fill color for negative data points in a series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -427,7 +477,9 @@ properties:
     summary: >-
       True if Excel inverts the pattern in the item when it corresponds to a
       negative number.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -440,7 +492,9 @@ properties:
     package: excel!
     fullName: mapOptions
     summary: Encapsulates the options for a region map chart.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -453,7 +507,9 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: Specifies the marker background color of a chart series.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -466,7 +522,9 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: Specifies the marker foreground color of a chart series.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -482,7 +540,9 @@ properties:
       Specifies the marker size of a chart series. The supported size range is 2
       to 72. This method returns an InvalidArgument error if it's set with a
       size outside of the supported range.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -497,7 +557,9 @@ properties:
     summary: >-
       Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle`
       for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -518,7 +580,9 @@ properties:
     summary: >-
       Specifies the name of a series in a chart. The name's length should not be
       greater than 255 characters.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -533,7 +597,9 @@ properties:
     summary: >-
       Specifies how bars and columns are positioned. Can be a value between -100
       and 100. Applies only to 2-D bar and 2-D column charts.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -546,7 +612,9 @@ properties:
     package: excel!
     fullName: parentLabelStrategy
     summary: Specifies the series parent label strategy area for a treemap chart.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -563,7 +631,9 @@ properties:
     package: excel!
     fullName: plotOrder
     summary: Specifies the plot order of a chart series within the chart group.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -576,7 +646,9 @@ properties:
     package: excel!
     fullName: points
     summary: Returns a collection of all points in the series.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -592,7 +664,9 @@ properties:
       Specifies the size of the secondary section of either a pie-of-pie chart
       or a bar-of-pie chart, as a percentage of the size of the primary pie. Can
       be a value from 5 to 200.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -605,7 +679,9 @@ properties:
     package: excel!
     fullName: showConnectorLines
     summary: Specifies whether connector lines are shown in waterfall charts.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -620,7 +696,9 @@ properties:
     summary: >-
       Specifies whether leader lines are displayed for each data label in the
       series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -633,7 +711,9 @@ properties:
     package: excel!
     fullName: showShadow
     summary: Specifies if the series has a shadow.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -648,7 +728,9 @@ properties:
     summary: >-
       Specifies if the series is smooth. Only applicable to line and scatter
       charts.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -663,7 +745,9 @@ properties:
     summary: >-
       Specifies the way the two sections of either a pie-of-pie chart or a
       bar-of-pie chart are split.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -682,7 +766,9 @@ properties:
     summary: >-
       Specifies the threshold value that separates two sections of either a
       pie-of-pie chart or a bar-of-pie chart.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -695,7 +781,9 @@ properties:
     package: excel!
     fullName: trendlines
     summary: The collection of trendlines in the series.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -710,7 +798,9 @@ properties:
     summary: >-
       True if Excel assigns a different color or pattern to each data marker.
       The chart must contain only one series.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -723,7 +813,9 @@ properties:
     package: excel!
     fullName: xErrorBars
     summary: Represents the error bar object of a chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -736,7 +828,9 @@ properties:
     package: excel!
     fullName: yErrorBars
     summary: Represents the error bar object of a chart series.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -750,7 +844,9 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the chart series.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -766,7 +862,10 @@ methods:
     summary: >-
       Gets the string representation of the data source of the chart series. The
       string representation could be information such as a cell address.
-    remarks: '\[Api set: ExcelApi 1.15\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -788,7 +887,10 @@ methods:
     summary: >-
       Gets the string representation of the data source of the chart series. The
       string representation could be information such as a cell address.
-    remarks: '\[Api set: ExcelApi 1.15\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -809,7 +911,10 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
-    remarks: '\[Api set: ExcelApi 1.15\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -831,7 +936,10 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
-    remarks: '\[Api set: ExcelApi 1.15\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -857,7 +965,10 @@ methods:
       Gets the values from a single dimension of the chart series. These could
       be either category values or data values, depending on the dimension
       specified and how the data is mapped for the chart series.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -882,7 +993,10 @@ methods:
       Gets the values from a single dimension of the chart series. These could
       be either category values or data values, depending on the dimension
       specified and how the data is mapped for the chart series.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -1035,7 +1149,9 @@ methods:
     package: excel!
     fullName: setBubbleSizes(sourceData)
     summary: Sets the bubble sizes for a chart series. Only works for bubble charts.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1055,7 +1171,9 @@ methods:
     summary: >-
       Sets the values for a chart series. For scatter charts, it refers to
       y-axis values.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1073,7 +1191,9 @@ methods:
     package: excel!
     fullName: setXAxisValues(sourceData)
     summary: Sets the values of the x-axis for a chart series.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

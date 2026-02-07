@@ -19,7 +19,9 @@ properties:
     summary: >-
       Returns a `Bibliography` object that represents the bibliography reference
       sources stored in Microsoft Word.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     summary: >-
       Specifies if Microsoft Word automatically detects the language you are
       using as you type.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +53,9 @@ properties:
     summary: >-
       Gets a `LanguageId` value that represents the language selected for the
       Microsoft Word user interface.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

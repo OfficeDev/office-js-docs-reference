@@ -6,7 +6,10 @@ fullName: PowerPoint.TextRange
 summary: >-
   Contains the text that is attached to a shape, in addition to properties and
   methods for manipulating the text.
-remarks: '\[Api set: PowerPointApi 1.4\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +37,10 @@ properties:
     summary: >-
       Returns a `ShapeFont` object that represents the font attributes for the
       text range.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +57,10 @@ properties:
       Throws an `InvalidArgument` exception when set with a negative value or if
       the value is greater than the length of the available text from the
       starting point.
-    remarks: '\[Api set: PowerPointApi 1.5\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +76,10 @@ properties:
       Represents the paragraph format of the text range. See
       [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)
       for details.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,7 +96,10 @@ properties:
       starting position of the range that this `TextRange` represents. Throws an
       `InvalidArgument` exception when set with a negative value or if the value
       is greater than the length of the text.
-    remarks: '\[Api set: PowerPointApi 1.5\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +112,10 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -114,7 +132,10 @@ methods:
       Returns the parent
       [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object
       that holds this `TextRange`<!-- -->.
-    remarks: '\[Api set: PowerPointApi 1.5\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -128,7 +149,10 @@ methods:
     package: powerpoint!
     fullName: getSubstring(start, length)
     summary: Returns a `TextRange` object for the substring in the given range.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -233,7 +257,10 @@ methods:
     package: powerpoint!
     fullName: setSelected()
     summary: Selects this `TextRange` in the current view.
-    remarks: '\[Api set: PowerPointApi 1.5\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

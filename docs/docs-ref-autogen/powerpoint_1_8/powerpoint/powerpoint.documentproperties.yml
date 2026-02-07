@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.DocumentProperties:class
 package: powerpoint!
 fullName: PowerPoint.DocumentProperties
 summary: Represents presentation properties.
-remarks: '\[Api set: PowerPointApi 1.7\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +18,10 @@ properties:
     package: powerpoint!
     fullName: author
     summary: The author of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +34,10 @@ properties:
     package: powerpoint!
     fullName: category
     summary: The category of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +52,10 @@ properties:
     summary: >-
       The Comments field in the metadata of the presentation. These have no
       connection to comments made in slides.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +68,10 @@ properties:
     package: powerpoint!
     fullName: company
     summary: The company of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,7 +99,10 @@ properties:
     package: powerpoint!
     fullName: creationDate
     summary: The creation date of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +115,10 @@ properties:
     package: powerpoint!
     fullName: customProperties
     summary: The collection of custom properties of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -110,7 +131,10 @@ properties:
     package: powerpoint!
     fullName: keywords
     summary: The keywords of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +147,10 @@ properties:
     package: powerpoint!
     fullName: lastAuthor
     summary: The last author of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -136,7 +163,10 @@ properties:
     package: powerpoint!
     fullName: manager
     summary: The manager of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -149,7 +179,10 @@ properties:
     package: powerpoint!
     fullName: revisionNumber
     summary: The revision number of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -162,7 +195,10 @@ properties:
     package: powerpoint!
     fullName: subject
     summary: The subject of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -175,7 +211,10 @@ properties:
     package: powerpoint!
     fullName: title
     summary: The title of the presentation.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

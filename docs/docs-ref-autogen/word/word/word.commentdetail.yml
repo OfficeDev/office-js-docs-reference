@@ -4,7 +4,9 @@ uid: word!Word.CommentDetail:interface
 package: word!
 fullName: Word.CommentDetail
 summary: A structure for the ID and reply IDs of this comment.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: word!
     fullName: id
     summary: Represents the ID of this comment.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -28,7 +32,9 @@ properties:
     package: word!
     fullName: replyIds
     summary: Represents the IDs of the replies to this comment.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

@@ -47,7 +47,9 @@ properties:
     uid: excel!Excel.RequestContext#runtime:member
     package: excel!
     fullName: runtime
-    summary: '\[Api set: ExcelApi 1.5\]'
+    summary: >-
+      \[ [Api set: ExcelApi
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false

@@ -4,7 +4,9 @@ uid: excel!Excel.WorkbookProtection:class
 package: excel!
 fullName: Excel.WorkbookProtection
 summary: Represents the protection of a workbook object.
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: protected
     summary: Specifies if the workbook is protected.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +127,9 @@ methods:
     package: excel!
     fullName: protect(password)
     summary: Protects the workbook. Fails if the workbook has been protected.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -163,7 +169,9 @@ methods:
     package: excel!
     fullName: unprotect(password)
     summary: Unprotects the workbook.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,9 @@ uid: word!Word.CritiqueAnnotation:class
 package: word!
 fullName: Word.CritiqueAnnotation
 summary: Represents an annotation wrapper around critique displayed in the document.
-remarks: '\[Api set: WordApi 1.7\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: word!
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: word!
     fullName: range
     summary: Gets the range of text that is annotated.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +65,9 @@ methods:
     summary: >-
       Accepts the critique. This will change the annotation state to
       `accepted`<!-- -->.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -154,7 +162,9 @@ methods:
     summary: >-
       Rejects the critique. This will change the annotation state to
       `rejected`<!-- -->.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

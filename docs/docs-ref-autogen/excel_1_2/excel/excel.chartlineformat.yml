@@ -4,7 +4,9 @@ uid: excel!Excel.ChartLineFormat:class
 package: excel!
 fullName: Excel.ChartLineFormat
 summary: Encapsulates the formatting options for line elements.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: excel!
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +48,9 @@ methods:
     package: excel!
     fullName: clear()
     summary: Clears the line format of a chart element.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

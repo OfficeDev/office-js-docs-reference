@@ -6,7 +6,9 @@ fullName: Excel.PivotTableCollection
 summary: >-
   Represents a collection of all the PivotTables that are part of the workbook
   or worksheet.
-remarks: '\[Api set: ExcelApi 1.3\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,9 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a PivotTable by name.
-    remarks: '\[Api set: ExcelApi 1.3\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -138,7 +142,9 @@ methods:
     package: excel!
     fullName: refreshAll()
     summary: Refreshes all the pivot tables in the collection.
-    remarks: '\[Api set: ExcelApi 1.3\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

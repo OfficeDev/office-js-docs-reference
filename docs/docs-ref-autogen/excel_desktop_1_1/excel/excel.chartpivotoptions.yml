@@ -4,7 +4,9 @@ uid: excel!Excel.ChartPivotOptions:class
 package: excel!
 fullName: Excel.ChartPivotOptions
 summary: Encapsulates the options for the pivot chart.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +36,9 @@ properties:
       `showAxisFieldButtons` property corresponds to the "Show Axis Field
       Buttons" command on the "Field Buttons" drop-down list of the "Analyze"
       tab, which is available when a PivotChart is selected.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +51,9 @@ properties:
     package: excel!
     fullName: showLegendFieldButtons
     summary: Specifies whether to display the legend field buttons on a PivotChart.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +68,9 @@ properties:
     summary: >-
       Specifies whether to display the report filter field buttons on a
       PivotChart.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -75,7 +83,9 @@ properties:
     package: excel!
     fullName: showValueFieldButtons
     summary: Specifies whether to display the show value field buttons on a PivotChart.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

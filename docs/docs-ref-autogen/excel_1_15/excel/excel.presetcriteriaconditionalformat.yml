@@ -6,7 +6,9 @@ fullName: Excel.PresetCriteriaConditionalFormat
 summary: >-
   Represents the preset criteria conditional format such as above average, below
   average, unique values, contains blank, nonblank, error, and noerror.
-remarks: '\[Api set: ExcelApi 1.6\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +51,9 @@ properties:
     package: excel!
     fullName: rule
     summary: The rule of the conditional format.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

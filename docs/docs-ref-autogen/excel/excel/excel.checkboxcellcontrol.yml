@@ -6,7 +6,9 @@ fullName: Excel.CheckboxCellControl
 summary: >-
   Represents a checkbox. This is a cell control that allows a user to toggle the
   boolean value in a cell.
-remarks: '\[Api set: ExcelApi 1.18\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false

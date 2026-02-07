@@ -9,7 +9,9 @@ summary: >-
   in Outlook and retrieve all available sensitivity labels if the catalog is
   enabled.
 remarks: >-
-  \[Api set: Mailbox 1.13\]
+  \[ [Api set: Mailbox
+  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission
@@ -41,7 +43,9 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets all the sensitivity labels that are enabled in Outlook.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -101,7 +105,9 @@ methods:
     fullName: getAsync(callback)
     summary: Gets all the sensitivity labels that are enabled in Outlook.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -155,7 +161,9 @@ methods:
     fullName: getIsEnabledAsync(options, callback)
     summary: Checks whether the catalog of sensitivity labels is enabled in Outlook.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -216,7 +224,9 @@ methods:
     fullName: getIsEnabledAsync(callback)
     summary: Checks whether the catalog of sensitivity labels is enabled in Outlook.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

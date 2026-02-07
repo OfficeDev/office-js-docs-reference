@@ -9,7 +9,9 @@ summary: >-
   worksheets using the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!--
   -->.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,9 @@ properties:
     package: excel!
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +54,9 @@ properties:
     summary: >-
       Gets an object that can be used to manipulate frozen panes on the
       worksheet.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +72,9 @@ properties:
       Returns a value that uniquely identifies the worksheet in a given
       workbook. The value of the identifier remains the same even when the
       worksheet is renamed or moved.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +89,9 @@ properties:
     summary: >-
       The display name of the worksheet. The name must be fewer than 32
       characters.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +104,9 @@ properties:
     package: excel!
     fullName: names
     summary: Collection of names scoped to the current worksheet.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -107,7 +119,9 @@ properties:
     package: excel!
     fullName: pivotTables
     summary: Collection of PivotTables that are part of the worksheet.
-    remarks: '\[Api set: ExcelApi 1.3\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +134,9 @@ properties:
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -133,7 +149,9 @@ properties:
     package: excel!
     fullName: protection
     summary: Returns the sheet protection object for a worksheet.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -146,7 +164,9 @@ properties:
     package: excel!
     fullName: showGridlines
     summary: Specifies if gridlines are visible to the user.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -159,7 +179,9 @@ properties:
     package: excel!
     fullName: showHeadings
     summary: Specifies if headings are visible to the user.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -174,7 +196,9 @@ properties:
     summary: >-
       Returns the standard (default) height of all the rows in the worksheet, in
       points.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -191,7 +215,9 @@ properties:
       worksheet. One unit of column width is equal to the width of one character
       in the Normal style. For proportional fonts, the width of the character 0
       (zero) is used.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -210,7 +236,9 @@ properties:
       returned. Otherwise, the property will be set to a color, in the form
       \#RRGGBB (e.g., "FFA500"). When setting the color, use an empty-string to
       set an "auto" color, or a real color otherwise.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -223,7 +251,9 @@ properties:
     package: excel!
     fullName: tables
     summary: Collection of tables that are part of the worksheet.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -236,7 +266,9 @@ properties:
     package: excel!
     fullName: visibility
     summary: The visibility of the worksheet.
-    remarks: '\[Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.\]'
+    remarks: >-
+      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -252,7 +284,9 @@ methods:
     package: excel!
     fullName: activate()
     summary: Activate the worksheet in the Excel UI.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -266,7 +300,9 @@ methods:
     package: excel!
     fullName: calculate(markAllDirty)
     summary: Calculates all cells on a worksheet.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -284,7 +320,9 @@ methods:
     package: excel!
     fullName: copy(positionType, relativeTo)
     summary: Copies a worksheet and places it at the specified position.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -313,7 +351,9 @@ methods:
     package: excel!
     fullName: copy(positionType, relativeTo)
     summary: Copies a worksheet and places it at the specified position.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -346,7 +386,9 @@ methods:
       visibility is set to "VeryHidden", the delete operation will fail with an
       `InvalidOperation` exception. You should first change its visibility to
       hidden or visible before deleting it.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -363,7 +405,9 @@ methods:
       Gets the `Range` object containing the single cell based on row and column
       numbers. The cell can be outside the bounds of its parent range, so long
       as it stays within the worksheet grid.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -386,7 +430,9 @@ methods:
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets
       following this one, this method will throw an error.
-    remarks: '\[Api set: ExcelApi 1.5\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -412,7 +458,9 @@ methods:
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.5\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -434,7 +482,9 @@ methods:
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous
       worksheets, this method will throw an error.
-    remarks: '\[Api set: ExcelApi 1.5\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -460,7 +510,9 @@ methods:
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.5\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -482,7 +534,9 @@ methods:
     summary: >-
       Gets the `Range` object, representing a single rectangular block of cells,
       specified by the address or name.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -507,7 +561,9 @@ methods:
     summary: >-
       Gets the `Range` object beginning at a particular row index and column
       index, and spanning a certain number of rows and columns.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -540,7 +596,9 @@ methods:
       a value or formatting assigned to them. If the entire worksheet is blank,
       this function will return the top left cell (i.e. it will *not* throw an
       error).
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -566,7 +624,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -731,7 +791,9 @@ events:
     package: excel!
     fullName: onActivated
     summary: Occurs when the worksheet is activated.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -748,7 +810,9 @@ events:
     package: excel!
     fullName: onCalculated
     summary: Occurs when the worksheet is calculated.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -765,7 +829,9 @@ events:
     package: excel!
     fullName: onChanged
     summary: Occurs when data changes in a specific worksheet.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -782,7 +848,9 @@ events:
     package: excel!
     fullName: onDeactivated
     summary: Occurs when the worksheet is deactivated.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -799,7 +867,9 @@ events:
     package: excel!
     fullName: onSelectionChanged
     summary: Occurs when the selection changes on a specific worksheet.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

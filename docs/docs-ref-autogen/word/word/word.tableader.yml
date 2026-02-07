@@ -4,7 +4,9 @@ uid: word!Word.TabLeader:enum
 package: word!
 fullName: Word.TabLeader
 summary: Specifies the tab leader style.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,48 +14,60 @@ fields:
   - name: dashes
     uid: word!Word.TabLeader.dashes:member
     package: word!
-    summary: |-
+    summary: >-
       Dashes are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Dashes"'
   - name: dots
     uid: word!Word.TabLeader.dots:member
     package: word!
-    summary: |-
+    summary: >-
       Dots are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Dots"'
   - name: heavy
     uid: word!Word.TabLeader.heavy:member
     package: word!
-    summary: |-
+    summary: >-
       Heavy lines are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Heavy"'
   - name: lines
     uid: word!Word.TabLeader.lines:member
     package: word!
-    summary: |-
+    summary: >-
       Lines are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Lines"'
   - name: middleDot
     uid: word!Word.TabLeader.middleDot:member
     package: word!
-    summary: |-
+    summary: >-
       Middle dots are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MiddleDot"'
   - name: spaces
     uid: word!Word.TabLeader.spaces:member
     package: word!
-    summary: |-
+    summary: >-
       Spaces are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Spaces"'

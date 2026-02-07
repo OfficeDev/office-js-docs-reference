@@ -6,7 +6,9 @@ fullName: Word.CustomXmlAddValidationErrorOptions
 summary: >-
   The options that define the descriptive error text and the state of
   `clearedOnUpdate`<!-- -->.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -20,7 +22,9 @@ properties:
       If provided, specifies whether the error is to be cleared from the
       [Word.CustomXmlValidationErrorCollection](xref:word!Word.CustomXmlValidationErrorCollection:class)
       when the XML is corrected and updated.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -33,7 +37,9 @@ properties:
     package: word!
     fullName: errorText
     summary: If provided, specifies the descriptive error text.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

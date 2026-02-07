@@ -4,7 +4,9 @@ uid: word!Word.Coauthor:class
 package: word!
 fullName: Word.Coauthor
 summary: Represents a coauthor in a Word document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: word!
     fullName: emailAddress
     summary: Gets the email address of the coauthor.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: word!
     fullName: id
     summary: Gets the unique identifier for the `Coauthor` object.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +62,9 @@ properties:
     package: word!
     fullName: isMe
     summary: Gets whether this author represents the current user.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +79,9 @@ properties:
     summary: >-
       Gets a `CoauthoringLockCollection` object that represents the locks in the
       document that are associated with this coauthor.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -84,7 +94,9 @@ properties:
     package: word!
     fullName: name
     summary: Gets the display name of the coauthor.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

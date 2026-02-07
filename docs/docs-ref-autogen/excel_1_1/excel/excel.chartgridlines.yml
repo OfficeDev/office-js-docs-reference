@@ -4,7 +4,9 @@ uid: excel!Excel.ChartGridlines:class
 package: excel!
 fullName: Excel.ChartGridlines
 summary: Represents major or minor gridlines on a chart axis.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: format
     summary: Represents the formatting of chart gridlines.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the axis gridlines are visible.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

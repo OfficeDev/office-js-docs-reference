@@ -4,7 +4,9 @@ uid: word!Word.EventType:enum
 package: word!
 fullName: Word.EventType
 summary: Provides information about the type of a raised event.
-remarks: '\[Api set: WordApi 1.5\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,31 +19,38 @@ fields:
       **Alt+Down**) in the document.
 
 
-      * \[Api set: WordApi 1.7\]
+      * \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationClicked"'
   - name: annotationHovered
     uid: word!Word.EventType.annotationHovered:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that an annotation was hovered over in the document.
 
-      * \[Api set: WordApi 1.7\]
+
+      * \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationHovered"'
   - name: annotationInserted
     uid: word!Word.EventType.annotationInserted:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that one or more annotations were added in the document.
 
-      * \[Api set: WordApi 1.7\]
+
+      * \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationInserted"'
   - name: annotationRemoved
     uid: word!Word.EventType.annotationRemoved:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that one or more annotations were deleted from the document.
 
-      * \[Api set: WordApi 1.7\]
+
+      * \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AnnotationRemoved"'
   - name: contentControlAdded
     uid: word!Word.EventType.contentControlAdded:member
@@ -51,7 +60,8 @@ fields:
       to the document.
 
 
-      * \[Api set: WordApi 1.5\]
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: word!Word.EventType.contentControlDataChanged:member
@@ -61,7 +71,8 @@ fields:
       content control have been changed.
 
 
-      * \[Api set: WordApi 1.5\]
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: word!Word.EventType.contentControlDeleted:member
@@ -71,23 +82,28 @@ fields:
       been deleted.
 
 
-      * \[Api set: WordApi 1.5\]
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDeleted"'
   - name: contentControlEntered
     uid: word!Word.EventType.contentControlEntered:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that a content control has been entered.
 
-      * \[Api set: WordApi 1.5\]
+
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: word!Word.EventType.contentControlExited:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that a content control has been exited.
 
-      * \[Api set: WordApi 1.5\]
+
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: word!Word.EventType.contentControlSelectionChanged:member
@@ -97,29 +113,36 @@ fields:
       the content control has been changed.
 
 
-      * \[Api set: WordApi 1.5\]
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlSelectionChanged"'
   - name: paragraphAdded
     uid: word!Word.EventType.paragraphAdded:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that one or more new paragraphs were added.
 
-      * \[Api set: WordApi 1.6\]
+
+      * \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphAdded"'
   - name: paragraphChanged
     uid: word!Word.EventType.paragraphChanged:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that one or more paragraphs were changed.
 
-      * \[Api set: WordApi 1.6\]
+
+      * \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphChanged"'
   - name: paragraphDeleted
     uid: word!Word.EventType.paragraphDeleted:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that one or more paragraphs were deleted.
 
-      * \[Api set: WordApi 1.6\]
+
+      * \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphDeleted"'

@@ -19,7 +19,9 @@ properties:
     summary: >-
       HTML color code representing the color of the border line, in the form
       \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     summary: >-
       Constant value that indicates the specific side of the border. See
       `Excel.ConditionalRangeBorderIndex` for details.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -53,7 +57,9 @@ properties:
     summary: >-
       One of the constants of line style specifying the line style for the
       border. See `Excel.BorderLineStyle` for details.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

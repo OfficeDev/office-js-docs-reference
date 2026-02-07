@@ -6,7 +6,9 @@ fullName: Word.ParagraphCollection
 summary: >-
   Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class)
   objects.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -48,7 +50,9 @@ methods:
     summary: >-
       Returns a `Paragraph` object that represents a new, blank paragraph added
       to the document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +72,9 @@ methods:
     package: word!
     fullName: closeUp()
     summary: Removes any spacing before the specified paragraphs.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +88,9 @@ methods:
     package: word!
     fullName: decreaseSpacing()
     summary: Decreases the spacing before and after paragraphs in six-point increments.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -98,7 +106,9 @@ methods:
     summary: >-
       Gets the first paragraph in this collection. Throws an `ItemNotFound`
       error if the collection is empty.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -118,7 +128,9 @@ methods:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -134,7 +146,9 @@ methods:
     summary: >-
       Gets the last paragraph in this collection. Throws an `ItemNotFound` error
       if the collection is empty.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -154,7 +168,9 @@ methods:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -168,7 +184,9 @@ methods:
     package: word!
     fullName: increaseSpacing()
     summary: Increases the spacing before and after paragraphs in six-point increments.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -182,7 +200,9 @@ methods:
     package: word!
     fullName: indent()
     summary: Indents the paragraphs by one level.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -198,7 +218,9 @@ methods:
     summary: >-
       Indents the paragraphs in the collection by the specified number of
       characters.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -220,7 +242,9 @@ methods:
     summary: >-
       Indents the first line of the paragraphs in the collection by the
       specified number of characters.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -314,7 +338,9 @@ methods:
     package: word!
     fullName: openOrCloseUp()
     summary: Toggles spacing before paragraphs.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -328,7 +354,9 @@ methods:
     package: word!
     fullName: openUp()
     summary: Sets spacing before the specified paragraphs to 12 points.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -342,7 +370,9 @@ methods:
     package: word!
     fullName: outdent()
     summary: Removes one level of indent for the paragraphs.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -358,7 +388,9 @@ methods:
     summary: >-
       Applies the next heading level style (Heading 1 through Heading 8) to the
       specified paragraphs.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -374,7 +406,9 @@ methods:
     summary: >-
       Demotes the specified paragraphs to body text by applying the Normal
       style.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -390,7 +424,9 @@ methods:
     summary: >-
       Applies the previous heading level style (Heading 1 through Heading 8) to
       the paragraphs in the collection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -404,7 +440,9 @@ methods:
     package: word!
     fullName: space1()
     summary: Sets the specified paragraphs to single spacing.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -418,7 +456,9 @@ methods:
     package: word!
     fullName: space1Pt5()
     summary: Sets the specified paragraphs to 1.5-line spacing.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -432,7 +472,9 @@ methods:
     package: word!
     fullName: space2()
     summary: Sets the specified paragraphs to double spacing.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -446,7 +488,9 @@ methods:
     package: word!
     fullName: tabHangingIndent(count)
     summary: Sets a hanging indent to the specified number of tab stops.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -468,7 +512,9 @@ methods:
     summary: >-
       Sets the left indent for the specified paragraphs to the specified number
       of tab stops.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

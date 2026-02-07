@@ -4,7 +4,9 @@ uid: word!Word.OperationUnit:enum
 package: word!
 fullName: Word.OperationUnit
 summary: Specifies the unit of measurement used in Word operations.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,128 +14,160 @@ fields:
   - name: cell
     uid: word!Word.OperationUnit.cell:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a cell unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Cell"'
   - name: character
     uid: word!Word.OperationUnit.character:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a character unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Character"'
   - name: characterFormat
     uid: word!Word.OperationUnit.characterFormat:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a character format unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CharacterFormat"'
   - name: column
     uid: word!Word.OperationUnit.column:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a column unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Column"'
   - name: item
     uid: word!Word.OperationUnit.item:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies an item unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Item"'
   - name: line
     uid: word!Word.OperationUnit.line:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a line unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Line"'
   - name: paragraph
     uid: word!Word.OperationUnit.paragraph:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a paragraph unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraph"'
   - name: paragraphFormat
     uid: word!Word.OperationUnit.paragraphFormat:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a paragraph format unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphFormat"'
   - name: row
     uid: word!Word.OperationUnit.row:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a row unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Row"'
   - name: screen
     uid: word!Word.OperationUnit.screen:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a screen unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Screen"'
   - name: section
     uid: word!Word.OperationUnit.section:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a section unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Section"'
   - name: sentence
     uid: word!Word.OperationUnit.sentence:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a sentence unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Sentence"'
   - name: story
     uid: word!Word.OperationUnit.story:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a story unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Story"'
   - name: table
     uid: word!Word.OperationUnit.table:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a table unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Table"'
   - name: window
     uid: word!Word.OperationUnit.window:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a window unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Window"'
   - name: word
     uid: word!Word.OperationUnit.word:member
     package: word!
-    summary: |-
+    summary: >-
       Specifies a word unit.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word"'

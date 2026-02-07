@@ -4,7 +4,9 @@ uid: excel!Excel.ChartSeriesCollection:class
 package: excel!
 fullName: Excel.ChartSeriesCollection
 summary: Represents a collection of chart series.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of series in the collection.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +64,9 @@ methods:
       Add a new series to the collection. The new added series is not visible
       until values, x-axis values, or bubble sizes for it are set (depending on
       chart type).
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +87,9 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of series in the collection.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +103,9 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Retrieves a series based on its position in the collection.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

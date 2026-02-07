@@ -4,7 +4,9 @@ uid: excel!Excel.ChartPoint:class
 package: excel!
 fullName: Excel.ChartPoint
 summary: Represents a point of a series in a chart.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: dataLabel
     summary: Returns the data label of a chart point.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: excel!
     fullName: format
     summary: Encapsulates the format properties chart point.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,9 @@ properties:
     summary: >-
       Represents whether a data point has a data label. Not applicable for
       surface charts.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -73,7 +81,9 @@ properties:
     summary: >-
       HTML color code representation of the marker background color of a data
       point (e.g., \#FF0000 represents Red).
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -88,7 +98,9 @@ properties:
     summary: >-
       HTML color code representation of the marker foreground color of a data
       point (e.g., \#FF0000 represents Red).
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -104,7 +116,9 @@ properties:
       Represents marker size of a data point. The supported size range is 2 to
       72. This method returns an InvalidArgument error if it's set with a size
       outside of the supported range.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -119,7 +133,9 @@ properties:
     summary: >-
       Represents marker style of a chart data point. See
       `Excel.ChartMarkerStyle` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -138,7 +154,9 @@ properties:
     package: excel!
     fullName: value
     summary: Returns the value of a chart point.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

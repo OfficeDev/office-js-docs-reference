@@ -4,7 +4,10 @@ uid: visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.ShapeDataItemCollectionLoadOptions
 summary: Represents the ShapeDataItemCollection for a given Shape.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +36,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A string that specifies the format of the
       shape data item. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +55,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A string that specifies the formatted
       value of the shape data item. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +73,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A string that specifies the label of the
       shape data item. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +91,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A string that specifies the value of the
       shape data item.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

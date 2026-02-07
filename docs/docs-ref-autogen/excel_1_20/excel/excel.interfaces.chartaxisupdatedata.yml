@@ -19,7 +19,9 @@ properties:
     summary: >-
       Specifies the alignment for the specified axis tick label. See
       `Excel.ChartTextHorizontalAlignment` for detail.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     package: excel!
     fullName: baseTimeUnit
     summary: Specifies the base unit for the specified category axis.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +53,9 @@ properties:
     package: excel!
     fullName: categoryType
     summary: Specifies the category axis type.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +74,9 @@ properties:
     summary: >-
       Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for
       details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +98,9 @@ properties:
     summary: >-
       Represents the formatting of a chart object, which includes line and font
       formatting.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -105,7 +115,9 @@ properties:
     package: excel!
     fullName: isBetweenCategories
     summary: Specifies if the value axis crosses the category axis between categories.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +132,9 @@ properties:
     summary: >-
       Specifies if the number format is linked to the cells. If `true`<!-- -->,
       the number format will change in the labels when it changes in the cells.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -133,7 +147,9 @@ properties:
     package: excel!
     fullName: logBase
     summary: Specifies the base of the logarithm when using logarithmic scales.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -148,7 +164,9 @@ properties:
     summary: >-
       Returns an object that represents the major gridlines for the specified
       axis.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -165,7 +183,9 @@ properties:
     summary: >-
       Specifies the type of major tick mark for the specified axis. See
       `Excel.ChartAxisTickMark` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -184,7 +204,9 @@ properties:
     summary: >-
       Specifies the major unit scale value for the category axis when the
       `categoryType` property is set to `dateAxis`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -203,7 +225,9 @@ properties:
     summary: >-
       Represents the interval between two major tick marks. Can be set to a
       numeric value or an empty string. The returned value is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -219,7 +243,9 @@ properties:
       Represents the maximum value on the value axis. Can be set to a numeric
       value or an empty string (for automatic axis values). The returned value
       is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -235,7 +261,9 @@ properties:
       Represents the minimum value on the value axis. Can be set to a numeric
       value or an empty string (for automatic axis values). The returned value
       is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -250,7 +278,9 @@ properties:
     summary: >-
       Returns an object that represents the minor gridlines for the specified
       axis.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -267,7 +297,9 @@ properties:
     summary: >-
       Specifies the type of minor tick mark for the specified axis. See
       `Excel.ChartAxisTickMark` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -286,7 +318,9 @@ properties:
     summary: >-
       Specifies the minor unit scale value for the category axis when the
       `categoryType` property is set to `dateAxis`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -306,7 +340,9 @@ properties:
       Represents the interval between two minor tick marks. Can be set to a
       numeric value or an empty string (for automatic axis values). The returned
       value is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -319,7 +355,9 @@ properties:
     package: excel!
     fullName: multiLevel
     summary: Specifies if an axis is multilevel.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -332,7 +370,9 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: Specifies the format code for the axis tick label.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -348,7 +388,9 @@ properties:
       Specifies the distance between the levels of labels, and the distance
       between the first level and the axis line. The value should be an integer
       from 0 to 1000.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -363,7 +405,9 @@ properties:
     summary: >-
       Specifies the specified axis position where the other axis crosses. See
       `Excel.ChartAxisPosition` for details.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -380,7 +424,9 @@ properties:
     package: excel!
     fullName: reversePlotOrder
     summary: Specifies if Excel plots data points from last to first.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -395,7 +441,9 @@ properties:
     summary: >-
       Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for
       details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -410,7 +458,9 @@ properties:
     package: excel!
     fullName: showDisplayUnitLabel
     summary: Specifies if the axis display unit label is visible.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -426,7 +476,9 @@ properties:
       Specifies the angle to which the text is oriented for the chart axis tick
       label. The value should either be an integer from -90 to 90 or the integer
       180 for vertically-oriented text.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -441,7 +493,9 @@ properties:
     summary: >-
       Specifies the position of tick-mark labels on the specified axis. See
       `Excel.ChartAxisTickLabelPosition` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -461,7 +515,9 @@ properties:
       Specifies the number of categories or series between tick-mark labels. Can
       be a value from 1 through 31999 or an empty string for automatic setting.
       The returned value is always a number.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -474,7 +530,9 @@ properties:
     package: excel!
     fullName: tickMarkSpacing
     summary: Specifies the number of categories or series between tick marks.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -487,7 +545,9 @@ properties:
     package: excel!
     fullName: title
     summary: Represents the axis title.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -502,7 +562,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the axis is visible.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

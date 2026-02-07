@@ -4,7 +4,9 @@ uid: onenote!OneNote.Interfaces.TableLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableLoadOptions
 summary: Represents a table in a OneNote page.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,10 @@ properties:
     summary: >-
       Gets or sets whether the borders are visible or not. True if they are
       visible, false if they are hidden.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +51,10 @@ properties:
     package: onenote!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +67,10 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the table. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +83,10 @@ properties:
     package: onenote!
     fullName: paragraph
     summary: Gets the Paragraph object that contains the Table object.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,7 +101,10 @@ properties:
     package: onenote!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -100,7 +117,10 @@ properties:
     package: onenote!
     fullName: rows
     summary: Gets all of the table rows.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

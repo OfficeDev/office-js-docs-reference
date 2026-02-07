@@ -7,7 +7,8 @@
       "Bash(npm info:*)",
       "WebSearch",
       "Bash(./node_modules/.bin/api-documenter:*)",
-      "Bash(./GenerateDocs.sh:*)"
+      "Bash(./GenerateDocs.sh:*)",
+      "Bash(tee:*)"
     ]
   }
 }

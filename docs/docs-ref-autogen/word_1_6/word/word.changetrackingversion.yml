@@ -4,7 +4,9 @@ uid: word!Word.ChangeTrackingVersion:enum
 package: word!
 fullName: Word.ChangeTrackingVersion
 summary: Specify the current version or the original version of the text.
-remarks: '\[Api set: WordApi 1.4\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,10 +14,14 @@ fields:
   - name: current
     uid: word!Word.ChangeTrackingVersion.current:member
     package: word!
-    summary: '* \[Api set: WordApi 1.4\]'
+    summary: >-
+      * \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Current"'
   - name: original
     uid: word!Word.ChangeTrackingVersion.original:member
     package: word!
-    summary: '* \[Api set: WordApi 1.4\]'
+    summary: >-
+      * \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Original"'

@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundFillLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundFillLoadOptions
 summary: Represents the fill formatting of a slide background object.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -36,7 +39,10 @@ properties:
       Returns the fill type of the slide background. See
       [PowerPoint.SlideBackgroundFillType](xref:powerpoint!PowerPoint.SlideBackgroundFillType:enum)
       for details.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

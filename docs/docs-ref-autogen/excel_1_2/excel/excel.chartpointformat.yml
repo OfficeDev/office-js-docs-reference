@@ -4,7 +4,9 @@ uid: excel!Excel.ChartPointFormat:class
 package: excel!
 fullName: Excel.ChartPointFormat
 summary: Represents the formatting object for chart points.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     summary: >-
       Represents the fill format of a chart, which includes background
       formatting information.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -10,7 +10,9 @@ summary: >-
   Confidential](https://support.microsoft.com/office/4a76d05b-6c29-4a0d-9096-71784a6b12c1)<!--
   -->.
 remarks: >-
-  \[Api set: Mailbox 1.14\]
+  \[ [Api set: Mailbox
+  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission
@@ -32,7 +34,9 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets the sensitivity level of an appointment.
     remarks: >-
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -86,7 +90,9 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the sensitivity level of an appointment.
     remarks: >-
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -134,7 +140,9 @@ methods:
     fullName: setAsync(sensitivity, options, callback)
     summary: Sets the sensitivity level of an appointment.
     remarks: >-
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -196,7 +204,9 @@ methods:
     fullName: setAsync(sensitivity, callback)
     summary: Sets the sensitivity level of an appointment.
     remarks: >-
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

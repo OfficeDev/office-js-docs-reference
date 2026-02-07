@@ -5,7 +5,8 @@ package: outlook!
 fullName: Office.EnhancedLocation
 summary: Represents the set of locations on an appointment.
 remarks: >-
-  \[Api set: Mailbox 1.8\]
+  \[ [Api set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -36,7 +37,9 @@ methods:
     fullName: addAsync(locationIdentifiers, options, callback)
     summary: Adds to the set of locations associated with the appointment.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -91,7 +94,9 @@ methods:
     fullName: addAsync(locationIdentifiers, callback)
     summary: Adds to the set of locations associated with the appointment.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -139,7 +144,9 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets the set of locations associated with the appointment.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -197,7 +204,9 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the set of locations associated with the appointment.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -255,7 +264,9 @@ methods:
       will be removed even if only one was specified in
       `locationIdentifiers`<!-- -->.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -309,7 +320,9 @@ methods:
       will be removed even if only one was specified in
       `locationIdentifiers`<!-- -->.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

@@ -6,7 +6,9 @@ fullName: Excel.PivotFieldCollection
 summary: >-
   Represents a collection of all the PivotFields that are part of a PivotTable's
   hierarchy.
-remarks: '\[Api set: ExcelApi 1.8\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,9 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of pivot fields in the collection.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +64,9 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a PivotField by its name or ID.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -83,7 +89,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

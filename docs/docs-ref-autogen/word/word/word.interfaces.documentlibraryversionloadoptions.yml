@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.DocumentLibraryVersionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.DocumentLibraryVersionLoadOptions
 summary: Represents a document library version.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       Gets any optional comments associated with this version of the shared
       document.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       Gets the date and time at which this version of the shared document was
       last saved to the server.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +69,9 @@ properties:
     summary: >-
       Gets the name of the user who last saved this version of the shared
       document to the server.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

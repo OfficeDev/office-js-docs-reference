@@ -4,7 +4,9 @@ uid: word!Word.Shading:class
 package: word!
 fullName: Word.Shading
 summary: Represents the `Shading` object.
-remarks: '\[Api set: WordApi 1.6\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     summary: >-
       Specifies the color for the background of the object. You can provide the
       value in the '\#RRGGBB' format or the color name.
-    remarks: '\[Api set: WordApi 1.6\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +51,9 @@ properties:
     summary: >-
       Specifies the color for the foreground of the object. You can provide the
       value in the '\#RRGGBB' format or the color name.
-    remarks: '\[Api set: WordApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -65,7 +71,9 @@ properties:
       background color in
       Word](https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515)<!--
       -->.
-    remarks: '\[Api set: WordApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

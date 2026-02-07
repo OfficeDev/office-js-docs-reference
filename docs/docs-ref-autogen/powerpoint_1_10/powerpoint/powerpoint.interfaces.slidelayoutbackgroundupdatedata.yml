@@ -20,7 +20,10 @@ properties:
     summary: >-
       Specifies whether the slide layout background fill hides or displays
       background graphic objects from the slide master.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +39,10 @@ properties:
     summary: >-
       Specifies if the slide layout background follows the slide master
       background.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

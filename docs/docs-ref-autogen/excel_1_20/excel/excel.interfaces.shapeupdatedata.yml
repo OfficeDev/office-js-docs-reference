@@ -17,7 +17,9 @@ properties:
     package: excel!
     fullName: altTextDescription
     summary: Specifies the alternative description text for a `Shape` object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: altTextTitle
     summary: Specifies the alternative title text for a `Shape` object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: excel!
     fullName: fill
     summary: Returns the fill formatting of this shape.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +65,9 @@ properties:
       Specifies the geometric shape type of this geometric shape. See
       `Excel.GeometricShapeType` for details. Returns `null` if the shape type
       is not "GeometricShape".
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -176,7 +184,9 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value or zero as an input.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -192,7 +202,9 @@ properties:
       The distance, in points, from the left side of the shape to the left side
       of the worksheet. Throws an `InvalidArgument` exception when set with a
       negative value as an input.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -205,7 +217,9 @@ properties:
     package: excel!
     fullName: lineFormat
     summary: Returns the line formatting of this shape.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -220,7 +234,9 @@ properties:
     package: excel!
     fullName: lockAspectRatio
     summary: Specifies if the aspect ratio of this shape is locked.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -233,7 +249,9 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the shape.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -246,7 +264,10 @@ properties:
     package: excel!
     fullName: placement
     summary: Represents how the object is attached to the cells below it.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -261,7 +282,9 @@ properties:
     package: excel!
     fullName: rotation
     summary: Specifies the rotation, in degrees, of the shape.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -277,7 +300,9 @@ properties:
       The distance, in points, from the top edge of the shape to the top edge of
       the worksheet. Throws an `InvalidArgument` exception when set with a
       negative value as an input.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -290,7 +315,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the shape is visible.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -305,7 +332,9 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value or zero as an input.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

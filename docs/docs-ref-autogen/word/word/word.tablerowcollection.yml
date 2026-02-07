@@ -6,7 +6,9 @@ fullName: Word.TableRowCollection
 summary: >-
   Contains the collection of the document's
   [Word.TableRow](xref:word!Word.TableRow:class) objects.
-remarks: '\[Api set: WordApi 1.3\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,9 @@ methods:
     package: word!
     fullName: convertToText(options)
     summary: Converts rows in a table to text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +70,9 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the table rows.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -80,7 +86,9 @@ methods:
     package: word!
     fullName: distributeHeight()
     summary: Adjusts the height of the rows so that they're equal.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -96,7 +104,9 @@ methods:
     summary: >-
       Gets the first row in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -115,7 +125,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -203,7 +215,9 @@ methods:
     package: word!
     fullName: select()
     summary: Selects the table rows.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -217,7 +231,9 @@ methods:
     package: word!
     fullName: setHeight(rowHeight, heightRule)
     summary: Sets the height of the cells in a table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -238,7 +254,9 @@ methods:
     package: word!
     fullName: setHeight(rowHeight, heightRule)
     summary: Sets the height of the cells in a table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -261,7 +279,9 @@ methods:
     package: word!
     fullName: setLeftIndent(leftIndent, rulerStyle)
     summary: Sets the left indent for the table row.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -284,7 +304,9 @@ methods:
     package: word!
     fullName: setLeftIndent(leftIndent, rulerStyle)
     summary: Sets the left indent for the table row.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

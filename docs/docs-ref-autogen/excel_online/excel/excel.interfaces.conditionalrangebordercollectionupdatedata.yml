@@ -18,7 +18,9 @@ properties:
     package: excel!
     fullName: bottom
     summary: Gets the bottom border.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +53,9 @@ properties:
     package: excel!
     fullName: left
     summary: Gets the left border.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +72,9 @@ properties:
     package: excel!
     fullName: right
     summary: Gets the right border.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -85,7 +91,9 @@ properties:
     package: excel!
     fullName: top
     summary: Gets the top border.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

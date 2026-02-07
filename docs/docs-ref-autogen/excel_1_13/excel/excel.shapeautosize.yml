@@ -4,7 +4,9 @@ uid: excel!Excel.ShapeAutoSize:enum
 package: excel!
 fullName: Excel.ShapeAutoSize
 summary: Determines the type of automatic sizing allowed.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,32 +14,40 @@ fields:
   - name: autoSizeMixed
     uid: excel!Excel.ShapeAutoSize.autoSizeMixed:member
     package: excel!
-    summary: |-
+    summary: >-
       A combination of automatic sizing schemes are used.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeMixed"'
   - name: autoSizeNone
     uid: excel!Excel.ShapeAutoSize.autoSizeNone:member
     package: excel!
-    summary: |-
+    summary: >-
       No autosizing.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeNone"'
   - name: autoSizeShapeToFitText
     uid: excel!Excel.ShapeAutoSize.autoSizeShapeToFitText:member
     package: excel!
-    summary: |-
+    summary: >-
       The shape is adjusted to fit the text.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeShapeToFitText"'
   - name: autoSizeTextToFitShape
     uid: excel!Excel.ShapeAutoSize.autoSizeTextToFitShape:member
     package: excel!
-    summary: |-
+    summary: >-
       The text is adjusted to fit the shape.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeTextToFitShape"'

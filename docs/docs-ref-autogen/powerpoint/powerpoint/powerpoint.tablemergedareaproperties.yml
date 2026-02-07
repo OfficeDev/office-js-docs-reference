@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.TableMergedAreaProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableMergedAreaProperties
 summary: Represents the properties of a merged area of cells in a table.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +20,10 @@ properties:
     summary: >-
       Specifies the number of columns for the merged cells area. Must be 1 or
       greater.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +38,10 @@ properties:
     summary: >-
       Specifies the zero-based index of the column of the top left cell of the
       merged area.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +56,10 @@ properties:
     summary: >-
       Specifies the number of rows for the merged cells area. Must be 1 or
       greater.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +74,10 @@ properties:
     summary: >-
       Specifies the zero-based index of the row of the top left cell of the
       merged area.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,9 @@ uid: excel!Excel.PivotFilterType:enum
 package: excel!
 fullName: Excel.PivotFilterType
 summary: A simple enum that represents a type of filter for a PivotField.
-remarks: '\[Api set: ExcelApi 1.12\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ fields:
       cannot simultaneously have a label filter and a date filter applied.
 
 
-      * \[Api set: ExcelApi 1.12\]
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Date"'
   - name: label
     uid: excel!Excel.PivotFilterType.label:member
@@ -27,23 +31,31 @@ fields:
       simultaneously have a label filter and a date filter applied.
 
 
-      * \[Api set: ExcelApi 1.12\]
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Label"'
   - name: manual
     uid: excel!Excel.PivotFilterType.manual:member
     package: excel!
-    summary: |-
+    summary: >-
       Filters specific manually selected PivotItems from the PivotTable.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Manual"'
   - name: unknown
     uid: excel!Excel.PivotFilterType.unknown:member
     package: excel!
-    summary: |-
+    summary: >-
       `PivotFilterType` is unknown or unsupported.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Unknown"'
   - name: value
     uid: excel!Excel.PivotFilterType.value:member
@@ -53,5 +65,7 @@ fields:
       `DataPivotHierarchy`<!-- -->.
 
 
-      * \[Api set: ExcelApi 1.12\]
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Value"'

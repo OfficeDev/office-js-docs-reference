@@ -35,7 +35,9 @@ properties:
     fullName: body
     summary: Gets an object that provides methods for manipulating the body of an item.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -127,7 +129,9 @@ properties:
       provides methods that are used to get and set the location of the
       appointment.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -161,7 +165,9 @@ properties:
     fullName: notificationMessages
     summary: Gets the notification messages for an item.
     remarks: >-
-      \[Api set: Mailbox 1.3\]
+      \[ [Api set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -238,7 +244,9 @@ properties:
       [Organizer](xref:outlook!Office.Organizer:interface) object that provides
       a method to get the organizer value.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -278,7 +286,9 @@ properties:
       object is a single appointment or a meeting request of a single
       appointment and NOT a part of a series.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -357,7 +367,9 @@ properties:
       items such as single appointments, series items, or meeting requests and
       returns `undefined` for any other items that aren't meeting requests.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -454,8 +466,10 @@ methods:
       The `addFileAttachmentAsync` method uploads the file at the specified URI
       and attaches it to the item in the compose form.
     remarks: >-
-      \[Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
-      Mailbox 1.8 for Outlook on the web and new Outlook on Windows\]
+      \[ [Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
+      Mailbox 1.8 for Outlook on the web and new Outlook on
+      Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -567,8 +581,10 @@ methods:
       The `addFileAttachmentAsync` method uploads the file at the specified URI
       and attaches it to the item in the compose form.
     remarks: >-
-      \[Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
-      Mailbox 1.8 for Outlook on the web and new Outlook on Windows\]
+      \[ [Api set: Mailbox 1.1 for Outlook on Windows (classic) and on Mac,
+      Mailbox 1.8 for Outlook on the web and new Outlook on
+      Windows](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -670,7 +686,9 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -730,7 +748,9 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -798,7 +818,9 @@ methods:
       than the item that you're editing. However, this isn't supported and isn't
       recommended.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -883,7 +905,9 @@ methods:
       than the item that you're editing. However, this isn't supported and isn't
       recommended.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -949,7 +973,9 @@ methods:
       In Outlook on Windows (classic) and on Mac, the `close` method has no
       effect on a reply in the Reading Pane.
     remarks: >-
-      \[Api set: Mailbox 1.3\]
+      \[ [Api set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -995,7 +1021,9 @@ methods:
       selection comes from, call `asyncResult.value.sourceProperty`<!-- -->,
       which will be either `body` or `subject`<!-- -->.
     remarks: >-
-      \[Api set: Mailbox 1.2\]
+      \[ [Api set: Mailbox
+      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1061,7 +1089,9 @@ methods:
       selection comes from, call `asyncResult.value.sourceProperty`<!-- -->,
       which will be either `body` or `subject`<!-- -->.
     remarks: >-
-      \[Api set: Mailbox 1.2\]
+      \[ [Api set: Mailbox
+      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1121,7 +1151,9 @@ methods:
       `asyncResult.value` property. This object can be used to get, set, save,
       and remove custom properties from the mail item.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       To learn more about custom properties, see [Get and set add-in metadata
@@ -1183,7 +1215,9 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1261,7 +1295,9 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1326,7 +1362,9 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1379,7 +1417,9 @@ methods:
       section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1426,7 +1466,9 @@ methods:
       no invitation is sent. For existing appointments, an update is sent to
       added or removed attendees.
     remarks: >-
-      \[Api set: Mailbox 1.3\]
+      \[ [Api set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1522,7 +1564,9 @@ methods:
       no invitation is sent. For existing appointments, an update is sent to
       added or removed attendees.
     remarks: >-
-      \[Api set: Mailbox 1.3\]
+      \[ [Api set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1612,7 +1656,9 @@ methods:
       not in the body or subject field, an error is returned. After insertion,
       the cursor is placed at the end of the inserted content.
     remarks: >-
-      \[Api set: Mailbox 1.2\]
+      \[ [Api set: Mailbox
+      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -1689,7 +1735,9 @@ methods:
       not in the body or subject field, an error is returned. After insertion,
       the cursor is placed at the end of the inserted content.
     remarks: >-
-      \[Api set: Mailbox 1.2\]
+      \[ [Api set: Mailbox
+      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

@@ -6,7 +6,9 @@ fullName: Word.Interfaces.WindowCollectionLoadOptions
 summary: >-
   Represents the collection of [Word.Window](xref:word!Word.Window:class)
   objects.
-remarks: '\[Api set: WordApiDesktop 1.2\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     package: word!
     fullName: activePane
     summary: 'For EACH ITEM in the collection: Gets the active pane in the window.'
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

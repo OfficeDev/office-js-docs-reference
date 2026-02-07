@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.FontLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.FontLoadOptions
 summary: Represents a font.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       Specifies whether the font is bold. `true` if the font is formatted as
       bold, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       Specifies the color for the font. You can provide the value in the
       '\#RRGGBB' format or the color name.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +69,9 @@ properties:
     summary: >-
       Specifies whether the font has a double strikethrough. `true` if the font
       is formatted as double strikethrough text, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +86,9 @@ properties:
     summary: >-
       Specifies whether the font is tagged as hidden. `true` if the font is
       formatted as hidden text, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -101,7 +111,9 @@ properties:
       "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office
       for Windows Desktop, any other color is converted to the closest color
       when applied to the font.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -116,7 +128,9 @@ properties:
     summary: >-
       Specifies whether the font is italicized. `true` if the font is
       italicized, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -129,7 +143,9 @@ properties:
     package: word!
     fullName: name
     summary: Specifies the name of the font.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +158,9 @@ properties:
     package: word!
     fullName: size
     summary: Specifies the font size in points.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -157,7 +175,9 @@ properties:
     summary: >-
       Specifies whether the font has a strikethrough. `true` if the font is
       formatted as strikethrough text, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -172,7 +192,9 @@ properties:
     summary: >-
       Specifies whether the font is a subscript. `true` if the font is formatted
       as subscript, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -187,7 +209,9 @@ properties:
     summary: >-
       Specifies whether the font is a superscript. `true` if the font is
       formatted as superscript, otherwise, `false`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -200,7 +224,9 @@ properties:
     package: word!
     fullName: underline
     summary: Specifies the font's underline type. `none` if the font isn't underlined.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

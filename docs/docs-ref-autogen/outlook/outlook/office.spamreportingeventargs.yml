@@ -6,7 +6,10 @@ fullName: Office.SpamReportingEventArgs
 summary: >-
   Provides information about the `Office.EventType.SpamReporting` event that
   occurs when an unsolicited message is reported.
-remarks: '\[Api set: Mailbox 1.14\]'
+remarks: >-
+  \[ [Api set: Mailbox
+  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +23,9 @@ properties:
       The text provided by the user in the preprocessing dialog of a
       spam-reporting add-in.
     remarks: >-
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       To add an optional text box to the preprocessing dialog of your
@@ -48,7 +53,9 @@ properties:
       Returns `true` for each reporting option selected by the user in the
       preprocessing dialog of a spam-reporting add-in.
     remarks: >-
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       The order of the booleans in the array corresponds to the order of the
@@ -76,7 +83,10 @@ properties:
       The type of event that was raised. For details, see
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: '\[Api set: Mailbox 1.14\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

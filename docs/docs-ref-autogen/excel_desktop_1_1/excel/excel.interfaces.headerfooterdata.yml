@@ -20,7 +20,9 @@ properties:
       The center footer of the worksheet. To apply font formatting or insert a
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -35,7 +37,9 @@ properties:
     summary: >-
       Gets a `HeaderFooterPicture` object that represents the picture for the
       center section of the footer.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -53,7 +57,9 @@ properties:
       The center header of the worksheet. To apply font formatting or insert a
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +74,9 @@ properties:
     summary: >-
       Gets a `HeaderFooterPicture` object that represents the picture for the
       center section of the header.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -86,7 +94,9 @@ properties:
       The left footer of the worksheet. To apply font formatting or insert a
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -101,7 +111,9 @@ properties:
     summary: >-
       Gets a `HeaderFooterPicture` object that represents the picture for the
       left section of the footer.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -119,7 +131,9 @@ properties:
       The left header of the worksheet. To apply font formatting or insert a
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -134,7 +148,9 @@ properties:
     summary: >-
       Gets a `HeaderFooterPicture` object that represents the picture for the
       left section of the header.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -152,7 +168,9 @@ properties:
       The right footer of the worksheet. To apply font formatting or insert a
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -167,7 +185,9 @@ properties:
     summary: >-
       Gets a `HeaderFooterPicture` object that represents the picture for the
       right section of the footer.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -185,7 +205,9 @@ properties:
       The right header of the worksheet. To apply font formatting or insert a
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -200,7 +222,9 @@ properties:
     summary: >-
       Gets a `HeaderFooterPicture` object that represents the picture for the
       right section of the header.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

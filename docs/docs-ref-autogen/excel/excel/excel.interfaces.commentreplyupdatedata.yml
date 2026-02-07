@@ -17,7 +17,10 @@ properties:
     package: excel!
     fullName: content
     summary: The comment reply's content. The string is plain text.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

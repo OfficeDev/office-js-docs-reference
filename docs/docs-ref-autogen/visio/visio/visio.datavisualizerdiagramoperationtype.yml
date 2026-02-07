@@ -4,7 +4,10 @@ uid: visio!Visio.DataVisualizerDiagramOperationType:enum
 package: visio!
 fullName: Visio.DataVisualizerDiagramOperationType
 summary: Type of the Data Visualizer Diagram operation
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -12,48 +15,66 @@ fields:
   - name: create
     uid: visio!Visio.DataVisualizerDiagramOperationType.create:member
     package: visio!
-    summary: |-
+    summary: >-
       Creation operation.
 
-      * \[Api set: 1.1\]
+
+      * \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
     value: '"Create"'
   - name: delete
     uid: visio!Visio.DataVisualizerDiagramOperationType.delete:member
     package: visio!
-    summary: |-
+    summary: >-
       Delete the diagram content.
 
-      * \[Api set: 1.1\]
+
+      * \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
     value: '"Delete"'
   - name: unknown
     uid: visio!Visio.DataVisualizerDiagramOperationType.unknown:member
     package: visio!
-    summary: |-
+    summary: >-
       Unknown operation type.
 
-      * \[Api set: 1.1\]
+
+      * \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
     value: '"Unknown"'
   - name: update
     uid: visio!Visio.DataVisualizerDiagramOperationType.update:member
     package: visio!
-    summary: |-
+    summary: >-
       Update both data and mappings.
 
-      * \[Api set: 1.1\]
+
+      * \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
     value: '"Update"'
   - name: updateData
     uid: visio!Visio.DataVisualizerDiagramOperationType.updateData:member
     package: visio!
-    summary: |-
+    summary: >-
       Update data associated with diagram.
 
-      * \[Api set: 1.1\]
+
+      * \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
     value: '"UpdateData"'
   - name: updateMappings
     uid: visio!Visio.DataVisualizerDiagramOperationType.updateMappings:member
     package: visio!
-    summary: |-
+    summary: >-
       Update Mappings operation.
 
-      * \[Api set: 1.1\]
+
+      * \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
     value: '"UpdateMappings"'

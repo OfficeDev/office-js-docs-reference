@@ -4,7 +4,9 @@ uid: word!Word.Alignment:enum
 package: word!
 fullName: Word.Alignment
 summary: Represents the horizontal alignment of text.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,48 +14,60 @@ fields:
   - name: centered
     uid: word!Word.Alignment.centered:member
     package: word!
-    summary: |-
+    summary: >-
       Alignment to the center.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Centered"'
   - name: justified
     uid: word!Word.Alignment.justified:member
     package: word!
-    summary: |-
+    summary: >-
       Fully justified alignment.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Justified"'
   - name: left
     uid: word!Word.Alignment.left:member
     package: word!
-    summary: |-
+    summary: >-
       Alignment to the left.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
   - name: mixed
     uid: word!Word.Alignment.mixed:member
     package: word!
-    summary: |-
+    summary: >-
       Mixed horizontal alignment.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: right
     uid: word!Word.Alignment.right:member
     package: word!
-    summary: |-
+    summary: >-
       Alignment to the right.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'
   - name: unknown
     uid: word!Word.Alignment.unknown:member
     package: word!
-    summary: |-
+    summary: >-
       Unknown alignment.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Unknown"'

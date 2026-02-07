@@ -4,7 +4,9 @@ uid: excel!Excel.ConditionalFormatRule:class
 package: excel!
 fullName: Excel.ConditionalFormatRule
 summary: Represents a rule, for all traditional rule/format pairings.
-remarks: '\[Api set: ExcelApi 1.6\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     summary: >-
       The formula, if required, on which to evaluate the conditional format
       rule.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +51,9 @@ properties:
     summary: >-
       The formula, if required, on which to evaluate the conditional format rule
       in the user's language.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +68,9 @@ properties:
     summary: >-
       The formula, if required, on which to evaluate the conditional format rule
       in R1C1-style notation.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

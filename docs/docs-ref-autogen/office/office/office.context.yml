@@ -370,7 +370,8 @@ properties:
       in Outlook and retrieve all available sensitivity labels if the catalog is
       enabled.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission
@@ -439,7 +440,8 @@ properties:
       and classic clients)
 
 
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission

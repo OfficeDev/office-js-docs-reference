@@ -22,7 +22,9 @@ properties:
     package: custom-functions-runtime!
     fullName: setResult
     summary: Set the result for the custom function. May be called more than once.
-    remarks: '\[Api set: CustomFunctionsRuntime 1.1\]'
+    remarks: >-
+      \[ [Api set: CustomFunctionsRuntime
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

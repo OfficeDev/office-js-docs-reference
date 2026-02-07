@@ -4,7 +4,9 @@ uid: word!Word.AnnotationSet:interface
 package: word!
 fullName: Word.AnnotationSet
 summary: Annotations set produced by the add-in. Currently supporting only critiques.
-remarks: '\[Api set: WordApi 1.7\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: word!
     fullName: critiques
     summary: Critiques.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

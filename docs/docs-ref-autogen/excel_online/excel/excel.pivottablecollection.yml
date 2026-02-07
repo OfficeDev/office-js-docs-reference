@@ -6,7 +6,9 @@ fullName: Excel.PivotTableCollection
 summary: >-
   Represents a collection of all the PivotTables that are part of the workbook
   or worksheet.
-remarks: '\[Api set: ExcelApi 1.3\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -48,7 +50,9 @@ methods:
     summary: >-
       Add a PivotTable based on the specified source data and insert it at the
       top-left cell of the destination range.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +85,9 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of pivot tables in the collection.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +101,9 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a PivotTable by name.
-    remarks: '\[Api set: ExcelApi 1.3\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -118,7 +126,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -210,7 +220,9 @@ methods:
     package: excel!
     fullName: refreshAll()
     summary: Refreshes all the pivot tables in the collection.
-    remarks: '\[Api set: ExcelApi 1.3\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

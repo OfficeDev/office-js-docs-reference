@@ -4,7 +4,9 @@ uid: excel!Excel.CommentCollection:class
 package: excel!
 fullName: Excel.CommentCollection
 summary: Represents a collection of comment objects that are part of the workbook.
-remarks: '\[Api set: ExcelApi 1.10\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -47,7 +49,10 @@ methods:
       Creates a new comment with the given content on the given cell. An
       `InvalidArgument` error is thrown if the provided range is larger than one
       cell.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -68,15 +73,18 @@ methods:
             The comment's content. This can be either a string or
             `CommentRichContent` object. Strings are used for plain text.
             `CommentRichContent` objects allow for other comment features, such
-            as mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
-            CommentRichContent object\]
+            as mentions. \[ [Api set: ExcelApi 1.10 for string, 1.11 for
+            CommentRichContent
+            object](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: <xref uid="excel!Excel.CommentRichContent:interface" /> | string
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
+            default value is enum `ContentType.Plain`<!-- -->. \[ [Api set:
             ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
-            ContentType.Mention\]
+            ContentType.Mention](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: <xref uid="excel!Excel.ContentType:enum" />
       return:
         type: <xref uid="excel!Excel.Comment:class" />
@@ -89,7 +97,10 @@ methods:
       Creates a new comment with the given content on the given cell. An
       `InvalidArgument` error is thrown if the provided range is larger than one
       cell.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -110,15 +121,18 @@ methods:
             The comment's content. This can be either a string or
             `CommentRichContent` object. Strings are used for plain text.
             `CommentRichContent` objects allow for other comment features, such
-            as mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
-            CommentRichContent object\]
+            as mentions. \[ [Api set: ExcelApi 1.10 for string, 1.11 for
+            CommentRichContent
+            object](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: <xref uid="excel!Excel.CommentRichContent:interface" /> | string
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
+            default value is enum `ContentType.Plain`<!-- -->. \[ [Api set:
             ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
-            ContentType.Mention\]
+            ContentType.Mention](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: '"Plain" | "Mention"'
       return:
         type: <xref uid="excel!Excel.Comment:class" />
@@ -128,7 +142,10 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of comments in the collection.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +159,10 @@ methods:
     package: excel!
     fullName: getItem(commentId)
     summary: Gets a comment from the collection based on its ID.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -160,7 +180,10 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a comment from the collection based on its position.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -180,7 +203,10 @@ methods:
     summary: >-
       Gets the comment from the specified cell. If there is no comment in the
       cell, an error is thrown.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -202,7 +228,10 @@ methods:
     package: excel!
     fullName: getItemByReplyId(replyId)
     summary: Gets the comment to which the given reply is connected.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -318,7 +347,10 @@ events:
     package: excel!
     fullName: onAdded
     summary: Occurs when the comments are added.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -337,7 +369,10 @@ events:
     summary: >-
       Occurs when comments or replies in a comment collection are changed,
       including when replies are deleted.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -354,7 +389,10 @@ events:
     package: excel!
     fullName: onDeleted
     summary: Occurs when comments are deleted in the comment collection.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

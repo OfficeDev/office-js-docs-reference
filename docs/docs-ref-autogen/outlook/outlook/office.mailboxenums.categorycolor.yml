@@ -5,7 +5,8 @@ package: outlook!
 fullName: Office.MailboxEnums.CategoryColor
 summary: Specifies the category color.
 remarks: >-
-  \[Api set: Mailbox 1.8\]
+  \[ [Api set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook

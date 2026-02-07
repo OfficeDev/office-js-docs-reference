@@ -4,7 +4,9 @@ uid: excel!Excel.PictureFormat:enum
 package: excel!
 fullName: Excel.PictureFormat
 summary: The format of the image.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,45 +14,57 @@ fields:
   - name: bmp
     uid: excel!Excel.PictureFormat.bmp:member
     package: excel!
-    summary: |-
+    summary: >-
       Bitmap image.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BMP"'
   - name: gif
     uid: excel!Excel.PictureFormat.gif:member
     package: excel!
-    summary: |-
+    summary: >-
       Graphics Interchange Format.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GIF"'
   - name: jpeg
     uid: excel!Excel.PictureFormat.jpeg:member
     package: excel!
-    summary: |-
+    summary: >-
       Joint Photographic Experts Group.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"JPEG"'
   - name: png
     uid: excel!Excel.PictureFormat.png:member
     package: excel!
-    summary: |-
+    summary: >-
       Portable Network Graphics.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"PNG"'
   - name: svg
     uid: excel!Excel.PictureFormat.svg:member
     package: excel!
-    summary: |-
+    summary: >-
       Scalable Vector Graphic.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"SVG"'
   - name: unknown
     uid: excel!Excel.PictureFormat.unknown:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"UNKNOWN"'

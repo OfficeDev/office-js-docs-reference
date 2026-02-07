@@ -6,7 +6,9 @@ fullName: Word.TrailingCharacter
 summary: >-
   Represents the character inserted after the [list
   item](xref:word!Word.ListItem:class) mark.
-remarks: '\[Api set: WordApiDesktop 1.1\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,24 +16,30 @@ fields:
   - name: trailingNone
     uid: word!Word.TrailingCharacter.trailingNone:member
     package: word!
-    summary: |-
+    summary: >-
       No character is inserted.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingNone"'
   - name: trailingSpace
     uid: word!Word.TrailingCharacter.trailingSpace:member
     package: word!
-    summary: |-
+    summary: >-
       A space is inserted. Default.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingSpace"'
   - name: trailingTab
     uid: word!Word.TrailingCharacter.trailingTab:member
     package: word!
-    summary: |-
+    summary: >-
       A tab is inserted.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingTab"'

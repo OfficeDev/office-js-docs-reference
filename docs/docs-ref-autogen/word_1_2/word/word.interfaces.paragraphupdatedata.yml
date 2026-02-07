@@ -19,7 +19,9 @@ properties:
     summary: >-
       Specifies the alignment for a paragraph. The value can be `left`<!-- -->,
       `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -39,7 +41,9 @@ properties:
       Specifies the value, in points, for a first line or hanging indent. Use a
       positive value to set a first-line indent, and use a negative value to set
       a hanging indent.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +58,9 @@ properties:
     summary: >-
       Gets the text format of the paragraph. Use this to get and set font name,
       size, color, and other properties.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +73,9 @@ properties:
     package: word!
     fullName: leftIndent
     summary: Specifies the left indent value, in points, for the paragraph.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +90,9 @@ properties:
     summary: >-
       Specifies the line spacing, in points, for the specified paragraph. In the
       Word UI, this value is divided by 12.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +105,9 @@ properties:
     package: word!
     fullName: lineUnitAfter
     summary: Specifies the amount of spacing, in grid lines, after the paragraph.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -108,7 +120,9 @@ properties:
     package: word!
     fullName: lineUnitBefore
     summary: Specifies the amount of spacing, in grid lines, before the paragraph.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -121,7 +135,9 @@ properties:
     package: word!
     fullName: outlineLevel
     summary: Specifies the outline level for the paragraph.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -134,7 +150,9 @@ properties:
     package: word!
     fullName: rightIndent
     summary: Specifies the right indent value, in points, for the paragraph.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -147,7 +165,9 @@ properties:
     package: word!
     fullName: spaceAfter
     summary: Specifies the spacing, in points, after the paragraph.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -160,7 +180,9 @@ properties:
     package: word!
     fullName: spaceBefore
     summary: Specifies the spacing, in points, before the paragraph.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -176,7 +198,9 @@ properties:
       Specifies the style name for the paragraph. Use this property for custom
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

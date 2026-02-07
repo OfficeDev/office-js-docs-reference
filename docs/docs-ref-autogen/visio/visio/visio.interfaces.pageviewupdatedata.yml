@@ -19,7 +19,10 @@ properties:
     summary: >-
       Gets and sets the page's zoom level. The value can be between 10 and 400
       and denotes the percentage of zoom.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

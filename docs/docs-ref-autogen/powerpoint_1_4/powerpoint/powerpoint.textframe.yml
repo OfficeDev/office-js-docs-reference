@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.TextFrame:class
 package: powerpoint!
 fullName: PowerPoint.TextFrame
 summary: Represents the text frame of a shape object.
-remarks: '\[Api set: PowerPointApi 1.4\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -18,7 +21,10 @@ properties:
       The automatic sizing settings for the text frame. A text frame can be set
       to automatically fit the text to the text frame, to automatically fit the
       text frame to the text, or not perform any automatic sizing.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +42,10 @@ properties:
     package: powerpoint!
     fullName: bottomMargin
     summary: Represents the bottom margin, in points, of the text frame.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +73,10 @@ properties:
     package: powerpoint!
     fullName: hasText
     summary: Specifies if the text frame contains text.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -77,7 +89,10 @@ properties:
     package: powerpoint!
     fullName: leftMargin
     summary: Represents the left margin, in points, of the text frame.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +105,10 @@ properties:
     package: powerpoint!
     fullName: rightMargin
     summary: Represents the right margin, in points, of the text frame.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -107,7 +125,10 @@ properties:
       properties and methods for manipulating the text. See
       [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) for
       details.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +141,10 @@ properties:
     package: powerpoint!
     fullName: topMargin
     summary: Represents the top margin, in points, of the text frame.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -136,7 +160,10 @@ properties:
       Represents the vertical alignment of the text frame. See
       [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum)
       for details.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -154,7 +181,10 @@ properties:
     package: powerpoint!
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -168,7 +198,10 @@ methods:
     package: powerpoint!
     fullName: deleteText()
     summary: Deletes all the text in the text frame.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

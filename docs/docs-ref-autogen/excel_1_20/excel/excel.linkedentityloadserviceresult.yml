@@ -6,7 +6,9 @@ fullName: Excel.LinkedEntityLoadServiceResult
 summary: >-
   Represents the result of a request to `@linkedEntityLoadService` custom
   function to load `LinkedEntityCellValue` objects.
-remarks: '\[Api set: ExcelApi 1.19\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,10 @@ properties:
       Represents the loaded `LinkedEntityCellValue` objects. The loaded objects
       must be returned in the same order as the `entities` property of
       `LinkedEntityLoadServiceRequest`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.19\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

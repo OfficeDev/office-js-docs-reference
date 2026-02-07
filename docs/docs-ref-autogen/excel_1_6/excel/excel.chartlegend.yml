@@ -4,7 +4,9 @@ uid: excel!Excel.ChartLegend:class
 package: excel!
 fullName: Excel.ChartLegend
 summary: Represents the legend in a chart.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     summary: >-
       Represents the formatting of a chart legend, which includes fill and font
       formatting.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +51,9 @@ properties:
     summary: >-
       Specifies if the chart legend should overlap with the main body of the
       chart.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +68,9 @@ properties:
     summary: >-
       Specifies the position of the legend on the chart. See
       `Excel.ChartLegendPosition` for details.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +87,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the chart legend is visible.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

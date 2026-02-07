@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.PaneCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.PaneCollectionLoadOptions
 summary: Represents the collection of [Word.Pane](xref:word!Word.Pane:class) objects.
-remarks: '\[Api set: WordApiDesktop 1.2\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a `Selection` object that
       represents the current selection in the pane.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

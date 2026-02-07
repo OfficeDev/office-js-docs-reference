@@ -4,7 +4,9 @@ uid: excel!Excel.BasicDataValidation:interface
 package: excel!
 fullName: Excel.BasicDataValidation
 summary: Represents the basic type data validation criteria.
-remarks: '\[Api set: ExcelApi 1.8\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -26,7 +28,9 @@ properties:
       like "=MIN(A1, B1)"). When retrieving the value, it will always be
       returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)",
       etc.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +50,9 @@ properties:
       cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When
       retrieving the value, it will always be returned as a string formula, for
       example: "=10", "=A1", "=SUM(A1:B5)", etc.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +65,9 @@ properties:
     package: excel!
     fullName: operator
     summary: The operator to use for validating the data.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

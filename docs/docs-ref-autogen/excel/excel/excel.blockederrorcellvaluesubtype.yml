@@ -4,7 +4,9 @@ uid: excel!Excel.BlockedErrorCellValueSubType:enum
 package: excel!
 fullName: Excel.BlockedErrorCellValueSubType
 summary: Represents types of \#BLOCKED! errors.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"DataTypePrivacySetting"'
   - name: dataTypeRestrictedDomain
     uid: excel!Excel.BlockedErrorCellValueSubType.dataTypeRestrictedDomain:member
@@ -27,7 +31,9 @@ fields:
       as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"DataTypeRestrictedDomain"'
   - name: dataTypeUnsupportedApp
     uid: excel!Excel.BlockedErrorCellValueSubType.dataTypeUnsupportedApp:member
@@ -37,7 +43,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"DataTypeUnsupportedApp"'
   - name: environmentConnectionExceedQuota
     uid: >-
@@ -49,7 +57,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EnvironmentConnectionExceedQuota"'
   - name: environmentExceedsComputeResourceCountDaily
     uid: >-
@@ -60,7 +70,9 @@ fields:
       as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EnvironmentExceedsComputeResourceCountDaily"'
   - name: environmentExceedsComputeResourceEver
     uid: >-
@@ -72,7 +84,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EnvironmentExceedsComputeResourceEver"'
   - name: environmentExceedsQuota
     uid: excel!Excel.BlockedErrorCellValueSubType.environmentExceedsQuota:member
@@ -83,7 +97,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EnvironmentExceedsQuota"'
   - name: environmentExceedsQuotaDaily
     uid: >-
@@ -95,7 +111,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EnvironmentExceedsQuotaDaily"'
   - name: environmentExceedsQuotaMonthly
     uid: >-
@@ -107,7 +125,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EnvironmentExceedsQuotaMonthly"'
   - name: environmentExceedsTakerQuotaMonthly
     uid: >-
@@ -120,7 +140,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EnvironmentExceedsTakerQuotaMonthly"'
   - name: externalLinksGeneric
     uid: excel!Excel.BlockedErrorCellValueSubType.externalLinksGeneric:member
@@ -130,7 +152,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksGeneric"'
   - name: imageDownloadBlocked
     uid: excel!Excel.BlockedErrorCellValueSubType.imageDownloadBlocked:member
@@ -140,7 +164,9 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ImageDownloadBlocked"'
   - name: imageExceedsSizeLimit
     uid: excel!Excel.BlockedErrorCellValueSubType.imageExceedsSizeLimit:member
@@ -151,7 +177,9 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ImageExceedsSizeLimit"'
   - name: imageExceedsTotalSizeLimit
     uid: excel!Excel.BlockedErrorCellValueSubType.imageExceedsTotalSizeLimit:member
@@ -162,7 +190,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ImageExceedsTotalSizeLimit"'
   - name: imageInvalidUrlNonHttps
     uid: excel!Excel.BlockedErrorCellValueSubType.imageInvalidUrlNonHttps:member
@@ -172,7 +202,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ImageInvalidUrlNonHttps"'
   - name: noLicense
     uid: excel!Excel.BlockedErrorCellValueSubType.noLicense:member
@@ -182,7 +214,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"NoLicense"'
   - name: pythonFunction
     uid: excel!Excel.BlockedErrorCellValueSubType.pythonFunction:member
@@ -192,7 +226,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"PythonFunction"'
   - name: pythonUnsupportedOnThisPlatform
     uid: >-
@@ -203,7 +239,9 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"PythonUnsupportedOnThisPlatform"'
   - name: richDataLinkDisabled
     uid: excel!Excel.BlockedErrorCellValueSubType.richDataLinkDisabled:member
@@ -213,7 +251,9 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"RichDataLinkDisabled"'
   - name: signInError
     uid: excel!Excel.BlockedErrorCellValueSubType.signInError:member
@@ -223,15 +263,20 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"SignInError"'
   - name: unknown
     uid: excel!Excel.BlockedErrorCellValueSubType.unknown:member
     package: excel!
-    summary: |-
+    summary: >-
       An unknown type of error. Displays as error type \#BLOCKED! in Excel.
 
-      * \[Api set: ExcelApi 1.16\]
+
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Unknown"'
   - name: unmetRequirements
     uid: excel!Excel.BlockedErrorCellValueSubType.unmetRequirements:member
@@ -241,7 +286,9 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"UnmetRequirements"'
   - name: unsupportedEnvironment
     uid: excel!Excel.BlockedErrorCellValueSubType.unsupportedEnvironment:member
@@ -251,7 +298,9 @@ fields:
       external code service. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"UnsupportedEnvironment"'
   - name: unsupportedInCalculationMode
     uid: >-
@@ -262,7 +311,9 @@ fields:
       calculation modes. Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"UnsupportedInCalculationMode"'
   - name: wrongAccountType
     uid: excel!Excel.BlockedErrorCellValueSubType.wrongAccountType:member
@@ -272,7 +323,9 @@ fields:
       error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"WrongAccountType"'
   - name: xlmDisabledInTrustCenter
     uid: excel!Excel.BlockedErrorCellValueSubType.xlmDisabledInTrustCenter:member
@@ -282,7 +335,9 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"XlmDisabledInTrustCenter"'
   - name: xlmNotSupportedOnPlatform
     uid: excel!Excel.BlockedErrorCellValueSubType.xlmNotSupportedOnPlatform:member
@@ -292,5 +347,7 @@ fields:
       Displays as error type \#BLOCKED! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"XlmNotSupportedOnPlatform"'

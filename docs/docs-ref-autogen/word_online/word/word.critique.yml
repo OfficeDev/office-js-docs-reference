@@ -6,7 +6,9 @@ fullName: Word.Critique
 summary: >-
   Critique that will be rendered as underline for the specified part of
   paragraph in the document.
-remarks: '\[Api set: WordApi 1.7\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     package: word!
     fullName: colorScheme
     summary: Specifies the color scheme of the critique.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +38,9 @@ properties:
     package: word!
     fullName: length
     summary: Specifies the length of the critique inside paragraph.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +53,9 @@ properties:
     package: word!
     fullName: popupOptions
     summary: Specifies the behavior of the pop-up menu for the critique.
-    remarks: '\[Api set: WordApi 1.8\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +68,9 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the start index of the critique inside paragraph.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

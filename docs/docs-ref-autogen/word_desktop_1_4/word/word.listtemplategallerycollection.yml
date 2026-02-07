@@ -10,7 +10,9 @@ summary: >-
   tab (see [Define new bullets, numbers, and multilevel
   lists](https://support.microsoft.com/office/6c06ef65-27ad-4893-80c9-0b944cb81f5f)
   for how to access in the Word UI).
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -50,7 +52,9 @@ methods:
     package: word!
     fullName: getByType(type)
     summary: Gets a `ListTemplateGallery` object by its type in the collection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +72,9 @@ methods:
     package: word!
     fullName: getByType(type)
     summary: Gets a `ListTemplateGallery` object by its type in the collection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

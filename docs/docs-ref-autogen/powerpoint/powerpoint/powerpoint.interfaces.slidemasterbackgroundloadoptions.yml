@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions
 summary: Represents the background of a slide master.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +36,10 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Returns the fill formatting of the background.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

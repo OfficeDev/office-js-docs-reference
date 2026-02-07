@@ -3,7 +3,9 @@ name: Excel.ThreeArrowsGraySet
 uid: excel!Excel.ThreeArrowsGraySet:interface
 package: excel!
 fullName: Excel.ThreeArrowsGraySet
-summary: '\[Api set: ExcelApi 1.2\]'
+summary: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false

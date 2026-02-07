@@ -4,7 +4,9 @@ uid: excel!Excel.EntityViewLayouts:interface
 package: excel!
 fullName: Excel.EntityViewLayouts
 summary: Represents layout information for various views of the entity.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,10 @@ properties:
     summary: >-
       Represents the layout of this entity in card view. If the `CardLayout`
       object does not have a layout property, it is assumed to be "Entity".
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +37,10 @@ properties:
     summary: >-
       Represents the layout used when there is limited space to represent the
       entity.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

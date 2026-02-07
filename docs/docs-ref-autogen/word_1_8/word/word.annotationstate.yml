@@ -4,7 +4,9 @@ uid: word!Word.AnnotationState:enum
 package: word!
 fullName: Word.AnnotationState
 summary: Represents the state of the annotation.
-remarks: '\[Api set: WordApi 1.7\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: accepted
     uid: word!Word.AnnotationState.accepted:member
     package: word!
-    summary: |-
+    summary: >-
       Accepted.
 
-      * \[Api set: WordApi 1.7\]
+
+      * \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Accepted"'
   - name: created
     uid: word!Word.AnnotationState.created:member
     package: word!
-    summary: |-
+    summary: >-
       Created.
 
-      * \[Api set: WordApi 1.7\]
+
+      * \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Created"'
   - name: rejected
     uid: word!Word.AnnotationState.rejected:member
     package: word!
-    summary: |-
+    summary: >-
       Rejected.
 
-      * \[Api set: WordApi 1.7\]
+
+      * \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Rejected"'

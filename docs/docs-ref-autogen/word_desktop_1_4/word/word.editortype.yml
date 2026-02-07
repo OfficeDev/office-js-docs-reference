@@ -6,7 +6,9 @@ fullName: Word.EditorType
 summary: >-
   Represents the classes of users who can edit authorized portions of a
   protected (read-only) document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +16,12 @@ fields:
   - name: current
     uid: word!Word.EditorType.current:member
     package: word!
-    summary: |-
+    summary: >-
       Represents the current user of the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Current"'
   - name: editors
     uid: word!Word.EditorType.editors:member
@@ -27,15 +31,18 @@ fields:
       Management.
 
 
-      * \[Api set: WordApiDesktop 1.4\]
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Editors"'
   - name: everyone
     uid: word!Word.EditorType.everyone:member
     package: word!
-    summary: |-
+    summary: >-
       Represents all users who open a document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Everyone"'
   - name: owners
     uid: word!Word.EditorType.owners:member
@@ -45,5 +52,6 @@ fields:
       Management.
 
 
-      * \[Api set: WordApiDesktop 1.4\]
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Owners"'

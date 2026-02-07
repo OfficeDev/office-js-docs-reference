@@ -8,7 +8,9 @@ summary: >-
   `getRowProperties`<!-- -->, and `getColumnProperties` or the `format.fill`
   input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!-- -->,
   and `setColumnProperties`<!-- -->.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -19,7 +21,9 @@ properties:
     package: excel!
     fullName: color
     summary: Represents the `format.fill.color` property.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +36,9 @@ properties:
     package: excel!
     fullName: pattern
     summary: Represents the `format.fill.pattern` property.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -55,7 +61,9 @@ properties:
     package: excel!
     fullName: patternColor
     summary: Represents the `format.fill.patternColor` property.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +76,9 @@ properties:
     package: excel!
     fullName: patternTintAndShade
     summary: Represents the `format.fill.patternTintAndShade` property.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +91,9 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: Represents the `format.fill.tintAndShade` property.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

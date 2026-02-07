@@ -7,7 +7,9 @@ summary: >-
   The `DelayDeliveryTime` object enables you to manage the delayed delivery date
   and time of a message.
 remarks: >-
-  \[Api set: Mailbox 1.13\]
+  \[ [Api set: Mailbox
+  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission
@@ -29,7 +31,9 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets the delivery date and time of a message.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -74,7 +78,9 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the delivery date and time of a message.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -113,7 +119,9 @@ methods:
     fullName: setAsync(datetime, options, callback)
     summary: Sets the delivery date and time of a message.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -194,7 +202,9 @@ methods:
     fullName: setAsync(datetime, callback)
     summary: Sets the delivery date and time of a message.
     remarks: >-
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

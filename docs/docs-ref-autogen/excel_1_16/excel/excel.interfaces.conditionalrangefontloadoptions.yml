@@ -6,7 +6,9 @@ fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions
 summary: >-
   This object represents the font attributes (font style, color, etc.) for an
   object.
-remarks: '\[Api set: ExcelApi 1.6\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     package: excel!
     fullName: bold
     summary: Specifies if the font is bold.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       HTML color code representation of the text color (e.g., \#FF0000
       represents Red).
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -61,7 +67,9 @@ properties:
     package: excel!
     fullName: italic
     summary: Specifies if the font is italic.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -75,7 +83,9 @@ properties:
     package: excel!
     fullName: strikethrough
     summary: Specifies the strikethrough status of the font.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +100,9 @@ properties:
     summary: >-
       The type of underline applied to the font. See
       `Excel.ConditionalRangeFontUnderlineStyle` for details.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

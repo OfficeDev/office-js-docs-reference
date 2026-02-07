@@ -4,7 +4,9 @@ uid: excel!Excel.CalcErrorCellValue:interface
 package: excel!
 fullName: Excel.CalcErrorCellValue
 summary: Represents the value of a cell containing a \#CALC! error.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,10 @@ properties:
     summary: >-
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -35,7 +40,10 @@ properties:
       string value aligns with the en-US locale. When accessed through a
       `valuesAsJsonLocal` property, this string value aligns with the user's
       display locale.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +56,10 @@ properties:
     package: excel!
     fullName: errorSubType
     summary: Represents the type of `CalcErrorCellValue`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -80,7 +91,10 @@ properties:
     package: excel!
     fullName: errorType
     summary: Represents the type of `ErrorCellValue`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,7 +107,10 @@ properties:
     package: excel!
     fullName: functionName
     summary: Represents the name of the function causing the error.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,7 +123,10 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

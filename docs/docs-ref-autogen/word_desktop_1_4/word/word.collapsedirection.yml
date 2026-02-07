@@ -4,7 +4,9 @@ uid: word!Word.CollapseDirection:enum
 package: word!
 fullName: Word.CollapseDirection
 summary: Specifies the direction in which to collapse a selection.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,16 +14,20 @@ fields:
   - name: end
     uid: word!Word.CollapseDirection.end:member
     package: word!
-    summary: |-
+    summary: >-
       Collapses the selection to the end position.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: start
     uid: word!Word.CollapseDirection.start:member
     package: word!
-    summary: |-
+    summary: >-
       Collapses the selection to the start position.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'

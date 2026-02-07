@@ -6,7 +6,9 @@ fullName: Excel.InsertWorksheetOptions
 summary: >-
   The options that define which worksheets to insert and where in the workbook
   the new worksheets will be inserted.
-remarks: '\[Api set: ExcelApi 1.13\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -19,7 +21,10 @@ properties:
     summary: >-
       The insert position, in the current workbook, of the new worksheets. See
       `Excel.WorksheetPositionType` for details. The default position is "End".
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -40,7 +45,10 @@ properties:
       `WorksheetPositionType` parameter. The default is `null`<!-- -->. If the
       `relativeTo` parameter is not set, worksheets will be inserted based on
       `positionType`<!-- -->, at the start or end of the current workbook.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -55,7 +63,10 @@ properties:
     summary: >-
       The names of individual worksheets to insert. By default, all the
       worksheets from the source workbook are inserted.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

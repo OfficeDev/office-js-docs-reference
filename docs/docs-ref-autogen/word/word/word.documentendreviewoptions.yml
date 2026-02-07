@@ -6,7 +6,9 @@ fullName: Word.DocumentEndReviewOptions
 summary: >-
   Provides configuration options for the
   [Document.endReview](xref:word!Word.Document:class) method.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -19,7 +21,9 @@ properties:
     summary: >-
       If provided, specifies whether to include the document as an attachment.
       The default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -34,7 +38,9 @@ properties:
     summary: >-
       If provided, specifies the recipients to notify when ending the review.
       The default value is an empty string.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -49,7 +55,9 @@ properties:
     summary: >-
       If provided, specifies whether to show the message before sending. The
       default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -64,7 +72,9 @@ properties:
     summary: >-
       If provided, specifies the subject of the notification email. The default
       value is an empty string.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

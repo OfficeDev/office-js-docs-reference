@@ -4,7 +4,9 @@ uid: excel!Excel.RangeCopyType:enum
 package: excel!
 fullName: Excel.RangeCopyType
 summary: ''
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,25 +14,35 @@ fields:
   - name: all
     uid: excel!Excel.RangeCopyType.all:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"All"'
   - name: formats
     uid: excel!Excel.RangeCopyType.formats:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'
   - name: formulas
     uid: excel!Excel.RangeCopyType.formulas:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formulas"'
   - name: link
     uid: excel!Excel.RangeCopyType.link:member
     package: excel!
-    summary: '* \[Api set: ExcelApiOnline 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Link"'
   - name: values
     uid: excel!Excel.RangeCopyType.values:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Values"'

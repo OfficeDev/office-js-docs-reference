@@ -6,7 +6,9 @@ fullName: Word.Interfaces.RevisionCollectionLoadOptions
 summary: >-
   A collection of [Word.Revision](xref:word!Word.Revision:class) objects that
   represent the changes marked with revision marks in a range or document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -35,7 +37,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the name of the user who made the
       tracked change.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +54,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the date and time when the tracked
       change was made.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +72,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the description of tracked
       formatting changes in the revision.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +89,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets a number that represents the
       position of this item in a collection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +107,9 @@ properties:
       For EACH ITEM in the collection: Gets a `Range` object that represents the
       range of text that was moved from one place to another in the document
       with tracked changes.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -112,7 +124,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets a `Range` object that represents the
       portion of the document that's contained within a revision mark.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -125,7 +139,9 @@ properties:
     package: word!
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the revision type.'
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

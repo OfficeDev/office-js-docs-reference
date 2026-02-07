@@ -17,7 +17,10 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the InkWord object. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +33,10 @@ properties:
     package: onenote!
     fullName: languageId
     summary: The id of the recognized language in this ink word. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +51,10 @@ properties:
     summary: >-
       The words that were recognized in this ink word, in order of likelihood.
       Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

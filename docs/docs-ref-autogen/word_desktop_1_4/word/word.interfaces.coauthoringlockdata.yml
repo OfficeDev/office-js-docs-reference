@@ -17,7 +17,9 @@ properties:
     package: word!
     fullName: owner
     summary: Gets the owner of the lock.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     summary: >-
       Gets a `Range` object that represents the portion of the document that's
       contained in the `CoauthoringLock` object.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +49,9 @@ properties:
     package: word!
     fullName: type
     summary: Gets a `CoauthoringLockType` value that represents the lock type.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,9 @@ uid: excel!Excel.ConnectErrorCellValueSubType:enum
 package: excel!
 fullName: Excel.ConnectErrorCellValueSubType
 summary: Represents types of \#CONNECT! errors.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ fields:
       as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"DataTypeNoConnection"'
   - name: dataTypeServiceError
     uid: excel!Excel.ConnectErrorCellValueSubType.dataTypeServiceError:member
@@ -27,7 +31,9 @@ fields:
       as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"DataTypeServiceError"'
   - name: excelClientMisconfigurationError
     uid: >-
@@ -38,7 +44,9 @@ fields:
       external code service. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExcelClientMisconfigurationError"'
   - name: externalCodeServiceComputeResourceNotAvailable
     uid: >-
@@ -49,7 +57,9 @@ fields:
       available. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalCodeServiceComputeResourceNotAvailable"'
   - name: externalCodeServiceEnvironmentBadState
     uid: >-
@@ -60,7 +70,9 @@ fields:
       an inoperative state. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalCodeServiceEnvironmentBadState"'
   - name: externalCodeServiceEnvironmentNotFound
     uid: >-
@@ -71,7 +83,9 @@ fields:
       execution environment. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalCodeServiceEnvironmentNotFound"'
   - name: externalCodeServiceRuntimeBadState
     uid: >-
@@ -82,7 +96,9 @@ fields:
       inoperative state. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalCodeServiceRuntimeBadState"'
   - name: externalCodeServiceRuntimeNotFound
     uid: >-
@@ -94,7 +110,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalCodeServiceRuntimeNotFound"'
   - name: externalLinks
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinks:member
@@ -104,7 +122,9 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinks"'
   - name: externalLinksAccessFailed
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinksAccessFailed:member
@@ -114,7 +134,9 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksAccessFailed"'
   - name: externalLinksFailedToRefresh
     uid: >-
@@ -125,7 +147,9 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksFailedToRefresh"'
   - name: externalLinksFileTooLarge
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinksFileTooLarge:member
@@ -135,7 +159,9 @@ fields:
       capacity. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksFileTooLarge"'
   - name: externalLinksInvalidRequest
     uid: >-
@@ -146,7 +172,9 @@ fields:
       Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksInvalidRequest"'
   - name: externalLinksNonCloudLocation
     uid: >-
@@ -158,7 +186,9 @@ fields:
       cloud location. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksNonCloudLocation"'
   - name: externalLinksServerError
     uid: excel!Excel.ConnectErrorCellValueSubType.externalLinksServerError:member
@@ -168,7 +198,9 @@ fields:
       Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksServerError"'
   - name: externalLinksThrottledByHost
     uid: >-
@@ -179,7 +211,9 @@ fields:
       error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksThrottledByHost"'
   - name: externalLinksUnAuthenticated
     uid: >-
@@ -190,7 +224,9 @@ fields:
       as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExternalLinksUnAuthenticated"'
   - name: genericServerError
     uid: excel!Excel.ConnectErrorCellValueSubType.genericServerError:member
@@ -200,7 +236,9 @@ fields:
       type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"GenericServerError"'
   - name: imageUnableToRetrieve
     uid: excel!Excel.ConnectErrorCellValueSubType.imageUnableToRetrieve:member
@@ -210,7 +248,9 @@ fields:
       between 300 and 499. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ImageUnableToRetrieve"'
   - name: missingContent
     uid: excel!Excel.ConnectErrorCellValueSubType.missingContent:member
@@ -220,7 +260,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"MissingContent"'
   - name: outdatedLinkedEntity
     uid: excel!Excel.ConnectErrorCellValueSubType.outdatedLinkedEntity:member
@@ -230,7 +272,9 @@ fields:
       \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"OutdatedLinkedEntity"'
   - name: pythonPowerQueryDataUploadHasNotStarted
     uid: >-
@@ -241,7 +285,9 @@ fields:
       external code service. Displays as error type \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      * \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"PythonPowerQueryDataUploadHasNotStarted"'
   - name: requestThrottle
     uid: excel!Excel.ConnectErrorCellValueSubType.requestThrottle:member
@@ -251,7 +297,9 @@ fields:
       in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"RequestThrottle"'
   - name: serviceError
     uid: excel!Excel.ConnectErrorCellValueSubType.serviceError:member
@@ -261,13 +309,18 @@ fields:
       \#CONNECT! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ServiceError"'
   - name: unknown
     uid: excel!Excel.ConnectErrorCellValueSubType.unknown:member
     package: excel!
-    summary: |-
+    summary: >-
       An unknown type of error. Displays as error type \#CONNECT! in Excel.
 
-      * \[Api set: ExcelApi 1.16\]
+
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Unknown"'

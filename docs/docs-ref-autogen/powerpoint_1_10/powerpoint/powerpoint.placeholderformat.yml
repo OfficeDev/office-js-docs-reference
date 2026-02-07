@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.PlaceholderFormat:class
 package: powerpoint!
 fullName: PowerPoint.PlaceholderFormat
 summary: Represents the properties of a `placeholder` shape.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -18,7 +21,10 @@ properties:
       Gets the type of the shape contained within the placeholder. See
       [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
       details. Returns `null` if the placeholder is empty.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,10 @@ properties:
       Returns the type of this placeholder. See
       [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum)
       for details.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

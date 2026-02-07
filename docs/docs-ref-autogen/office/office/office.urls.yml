@@ -5,7 +5,8 @@ package: office!
 fullName: Office.Urls
 summary: Provides the URLs of the runtime environments used by an add-in.
 remarks: >-
-  \[Api set: Mailbox 1.14\]
+  \[ [Api set: Mailbox
+  1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
   **[Minimum permission
@@ -27,7 +28,8 @@ properties:
     fullName: javascriptRuntimeUrl
     summary: Gets the URL of the JavaScript runtime of an add-in.
     remarks: >-
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission

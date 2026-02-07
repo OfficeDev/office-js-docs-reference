@@ -4,7 +4,9 @@ uid: excel!Excel.Interfaces.StyleCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.StyleCollectionLoadOptions
 summary: Represents a collection of all the styles.
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A collection of four border objects that
       represent the style of the four borders.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +55,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style is a built-in
       style.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +70,9 @@ properties:
     package: excel!
     fullName: fill
     summary: 'For EACH ITEM in the collection: The fill of the style.'
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +87,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: A `Font` object that represents the font
       of the style.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +104,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the formula will be hidden
       when the worksheet is protected.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -110,7 +122,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the horizontal alignment for
       the style. See `Excel.HorizontalAlignment` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -126,7 +140,9 @@ properties:
       For EACH ITEM in the collection: Specifies if the style includes the auto
       indent, horizontal alignment, vertical alignment, wrap text, indent level,
       and text orientation properties.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -141,7 +157,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
       color, color index, line style, and weight border properties.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -157,7 +175,9 @@ properties:
       For EACH ITEM in the collection: Specifies if the style includes the
       background, bold, color, color index, font style, italic, name, size,
       strikethrough, subscript, superscript, and underline font properties.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -172,7 +192,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
       number format property.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -188,7 +210,9 @@ properties:
       For EACH ITEM in the collection: Specifies if the style includes the
       color, color index, invert if negative, pattern, pattern color, and
       pattern color index interior properties.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -203,7 +227,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the
       formula hidden and locked protection properties.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -218,7 +244,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: An integer from 0 to 250 that indicates
       the indent level for the style.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -233,7 +261,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the object is locked when
       the worksheet is protected.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -246,7 +276,9 @@ properties:
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: The name of the style.'
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -261,7 +293,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The format code of the number format for
       the style.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -276,7 +310,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The localized format code of the number
       format for the style.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -289,7 +325,9 @@ properties:
     package: excel!
     fullName: readingOrder
     summary: 'For EACH ITEM in the collection: The reading order for the style.'
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -304,7 +342,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if text automatically shrinks
       to fit in the available column width.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -319,7 +359,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the vertical alignment for the
       style. See `Excel.VerticalAlignment` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -334,7 +376,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if Excel wraps the text in the
       object.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

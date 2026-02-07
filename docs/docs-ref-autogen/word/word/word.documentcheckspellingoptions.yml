@@ -6,7 +6,9 @@ fullName: Word.DocumentCheckSpellingOptions
 summary: >-
   Provides configuration options for the
   [Document.checkSpelling](xref:word!Word.Document:class) method.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -19,7 +21,9 @@ properties:
     summary: >-
       If provided, specifies whether to always suggest spelling corrections. The
       default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -34,7 +38,9 @@ properties:
     summary: >-
       If provided, specifies the custom dictionary to use for spell checking.
       The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -49,7 +55,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -64,7 +72,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -79,7 +89,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -94,7 +106,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -109,7 +123,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -124,7 +140,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -139,7 +157,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -154,7 +174,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -169,7 +191,9 @@ properties:
     summary: >-
       If provided, specifies an additional custom dictionary to use for spell
       checking. The default value is "" (empty string).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -184,7 +208,9 @@ properties:
     summary: >-
       If provided, specifies whether to ignore uppercase words during spell
       checking. The default value is `false`<!-- -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

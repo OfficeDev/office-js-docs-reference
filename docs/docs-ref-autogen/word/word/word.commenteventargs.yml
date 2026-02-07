@@ -4,7 +4,9 @@ uid: word!Word.CommentEventArgs:interface
 package: word!
 fullName: Word.CommentEventArgs
 summary: Provides information about the comments that raised the comment event.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: word!
     fullName: changeType
     summary: Represents how the `commentChanged` event is raised.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -35,7 +39,9 @@ properties:
     summary: >-
       Gets the `CommentDetail` array which contains the IDs and reply IDs of the
       involved comments.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -50,7 +56,9 @@ properties:
     summary: >-
       Specifies the source of the event. It can be local or remote (through
       coauthoring).
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -63,7 +71,9 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the event type. See `Word.EventType` for details.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

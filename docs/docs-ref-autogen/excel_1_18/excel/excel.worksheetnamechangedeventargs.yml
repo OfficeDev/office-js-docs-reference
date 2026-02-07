@@ -4,7 +4,9 @@ uid: excel!Excel.WorksheetNameChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetNameChangedEventArgs
 summary: Provides information about the worksheet whose name has changed.
-remarks: '\[Api set: ExcelApi 1.17\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,10 @@ properties:
     package: excel!
     fullName: nameAfter
     summary: Gets the new name of the worksheet, after the name change.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +33,10 @@ properties:
     package: excel!
     fullName: nameBefore
     summary: Gets the previous name of the worksheet, before the name changed.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -41,7 +49,10 @@ properties:
     package: excel!
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +65,10 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +81,10 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet with the new name.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

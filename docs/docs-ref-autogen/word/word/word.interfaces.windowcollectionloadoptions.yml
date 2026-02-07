@@ -6,7 +6,9 @@ fullName: Word.Interfaces.WindowCollectionLoadOptions
 summary: >-
   Represents the collection of [Word.Window](xref:word!Word.Window:class)
   objects.
-remarks: '\[Api set: WordApiDesktop 1.2\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     package: word!
     fullName: activePane
     summary: 'For EACH ITEM in the collection: Gets the active pane in the window.'
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether rulers are displayed
       for the window or pane.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +70,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether comments, footnotes,
       endnotes, and hyperlinks are displayed as tips.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +89,9 @@ properties:
       For EACH ITEM in the collection: Specifies whether thumbnail images of the
       pages in a document are displayed along the left side of the Microsoft
       Word document window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -96,7 +106,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the caption text for the window
       that is displayed in the title bar of the document or application window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -111,7 +123,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the height of the window (in
       points).
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -127,7 +141,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the horizontal scroll position
       as a percentage of the document width.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +158,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the default start-up mode for
       the Japanese Input Method Editor (IME).
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -157,7 +175,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the position of an item in a
       collection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -170,7 +190,9 @@ properties:
     package: word!
     fullName: isActive
     summary: 'For EACH ITEM in the collection: Specifies whether the window is active.'
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -186,7 +208,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether the document map is
       visible.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -202,7 +226,9 @@ properties:
       For EACH ITEM in the collection: Specifies whether the email message
       header is visible in the document window. The default value is `false`<!--
       -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -218,7 +244,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether a horizontal scroll bar
       is displayed for the window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -234,7 +262,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether the vertical scroll bar
       appears on the left side of the document window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -250,7 +280,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether the vertical ruler
       appears on the right side of the document window in print layout view.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -265,7 +297,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether the window is split
       into multiple panes.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -281,7 +315,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether a vertical ruler is
       displayed for the window or pane.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -297,7 +333,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether a vertical scroll bar
       is displayed for the window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -310,7 +348,9 @@ properties:
     package: word!
     fullName: isVisible
     summary: 'For EACH ITEM in the collection: Specifies whether the window is visible.'
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -325,7 +365,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the horizontal position of the
       window, measured in points.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -340,7 +382,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the next document window in the
       collection of open document windows.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -355,7 +399,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the previous document window in the
       collection open document windows.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -371,7 +417,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies how Microsoft Word displays
       source documents after a compare and merge process.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -386,7 +434,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the vertical split percentage
       for the window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -401,7 +451,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the state of the document
       window or task window.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -416,7 +468,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the width of the style area in
       points.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -431,7 +485,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the vertical position of the
       document window, in points.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -444,7 +500,9 @@ properties:
     package: word!
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the window type.'
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -459,7 +517,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the height (in points) of the active
       working area in the document window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -474,7 +534,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the width (in points) of the active
       working area in the document window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -490,7 +552,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the vertical scroll position as
       a percentage of the document length.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -505,7 +569,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the `View` object that represents
       the view for the window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -520,7 +586,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the width of the document
       window, in points.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -535,7 +603,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets an integer that represents the
       position of the window.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.RangeLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RangeLoadOptions
 summary: Represents a contiguous area in a document.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +33,9 @@ properties:
     package: word!
     fullName: bold
     summary: Specifies whether the range is formatted as bold.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +50,9 @@ properties:
     summary: >-
       Specifies whether the range is formatted as bold in a right-to-left
       language document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -61,7 +67,9 @@ properties:
     summary: >-
       Specifies a `CharacterCase` value that represents the case of the text in
       the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +82,9 @@ properties:
     package: word!
     fullName: characterWidth
     summary: Specifies the character width of the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -87,7 +97,9 @@ properties:
     package: word!
     fullName: combineCharacters
     summary: Specifies if the range contains combined characters.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -102,7 +114,9 @@ properties:
     summary: >-
       Specifies if Microsoft Word ignores the number of characters per line for
       the corresponding `Range` object.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -117,7 +131,9 @@ properties:
     summary: >-
       Specifies the emphasis mark for a character or designated character
       string.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -130,7 +146,9 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -145,7 +163,9 @@ properties:
     summary: >-
       Specifies the width (in the current measurement units) in which Microsoft
       Word fits the text in the current selection or range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -160,7 +180,9 @@ properties:
     summary: >-
       Gets the text format of the range. Use this to get and set font name,
       size, color, and other properties.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -173,7 +195,9 @@ properties:
     package: word!
     fullName: grammarChecked
     summary: Specifies if a grammar check has been run on the range or document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -188,7 +212,9 @@ properties:
     summary: >-
       Specifies the proofing status (spelling and grammar checking) of the
       range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -201,7 +227,9 @@ properties:
     package: word!
     fullName: highlightColorIndex
     summary: Specifies the highlight color for the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -214,7 +242,9 @@ properties:
     package: word!
     fullName: horizontalInVertical
     summary: Specifies the formatting for horizontal text set within vertical text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -231,7 +261,9 @@ properties:
       All hyperlinks in the range are deleted when you set a new hyperlink on
       the range. Use a '\#' to separate the address part from the optional
       location part.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -244,7 +276,9 @@ properties:
     package: word!
     fullName: id
     summary: Specifies the ID for the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -257,7 +291,9 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Checks whether the range length is zero.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -272,7 +308,9 @@ properties:
     summary: >-
       Gets if the range is collapsed and is located at the end-of-row mark in a
       table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -285,7 +323,9 @@ properties:
     package: word!
     fullName: isTextVisibleOnScreen
     summary: Gets whether the text in the range is visible on the screen.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -298,7 +338,9 @@ properties:
     package: word!
     fullName: italic
     summary: Specifies if the font or range is formatted as italic.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -313,7 +355,9 @@ properties:
     summary: >-
       Specifies if the font or range is formatted as italic (right-to-left
       languages).
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -328,7 +372,9 @@ properties:
     summary: >-
       Specifies whether the range of Japanese language text is hiragana or
       katakana.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -343,7 +389,9 @@ properties:
     summary: >-
       Specifies whether Microsoft Word has detected the language of the text in
       the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -356,7 +404,9 @@ properties:
     package: word!
     fullName: languageId
     summary: Specifies a `LanguageId` value that represents the language for the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -369,7 +419,9 @@ properties:
     package: word!
     fullName: languageIdFarEast
     summary: Specifies an East Asian language for the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -384,7 +436,9 @@ properties:
     summary: >-
       Specifies a language for the range that isn't classified as an East Asian
       language.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -399,7 +453,9 @@ properties:
     summary: >-
       Returns a `ListFormat` object that represents all the list formatting
       characteristics of the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -412,7 +468,9 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the range.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -427,7 +485,9 @@ properties:
     summary: >-
       Gets the currently supported content control that contains the range.
       Throws an `ItemNotFound` error if there isn't a parent content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -449,7 +509,9 @@ properties:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -468,7 +530,9 @@ properties:
     summary: >-
       Gets the table that contains the range. Throws an `ItemNotFound` error if
       it isn't contained in a table.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -483,7 +547,9 @@ properties:
     summary: >-
       Gets the table cell that contains the range. Throws an `ItemNotFound`
       error if it isn't contained in a table cell.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -502,7 +568,9 @@ properties:
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -521,7 +589,9 @@ properties:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -536,7 +606,9 @@ properties:
     summary: >-
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -553,7 +625,9 @@ properties:
     summary: >-
       Specifies if all nonprinting characters (such as hidden text, tab marks,
       space marks, and paragraph marks) are displayed.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -566,7 +640,9 @@ properties:
     package: word!
     fullName: spellingChecked
     summary: Specifies if spelling has been checked throughout the range or document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -579,7 +655,9 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -592,7 +670,9 @@ properties:
     package: word!
     fullName: storyLength
     summary: Gets the number of characters in the story that contains the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -605,7 +685,9 @@ properties:
     package: word!
     fullName: storyType
     summary: Gets the story type for the range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -621,7 +703,9 @@ properties:
       Specifies the style name for the range. Use this property for custom
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -637,7 +721,9 @@ properties:
       Specifies the built-in style name for the range. Use this property for
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -650,7 +736,9 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the range.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -665,7 +753,9 @@ properties:
     summary: >-
       Specifies whether Microsoft Word sets two lines of text in one and
       specifies the characters that enclose the text, if any.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -678,7 +768,9 @@ properties:
     package: word!
     fullName: underline
     summary: Specifies the type of underline applied to the range.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

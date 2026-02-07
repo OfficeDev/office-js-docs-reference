@@ -5,7 +5,8 @@ package: outlook!
 fullName: Office.MailboxEnums.RecipientType
 summary: Specifies the type of recipient of a message or appointment.
 remarks: >-
-  \[Api set: Mailbox 1.1\]
+  \[ [Api set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook

@@ -8,7 +8,8 @@ summary: >-
   message or appointment. It is returned in the body property of the selected
   item.
 remarks: >-
-  \[Api set: Mailbox 1.1\]
+  \[ [Api set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   To learn how to get or set the body of a mail item, see [Get or set the body
@@ -45,7 +46,9 @@ methods:
     fullName: getTypeAsync(options, callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -96,7 +99,9 @@ methods:
     fullName: getTypeAsync(callback)
     summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -141,7 +146,9 @@ methods:
     fullName: prependAsync(data, options, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -256,7 +263,9 @@ methods:
     fullName: prependAsync(data, callback)
     summary: Adds the specified content to the beginning of the item body.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -369,7 +378,9 @@ methods:
       will be inserted at the top of the body content. After insertion, the
       cursor is placed at the end of the inserted content.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -469,7 +480,9 @@ methods:
       will be inserted at the top of the body content. After insertion, the
       cursor is placed at the end of the inserted content.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

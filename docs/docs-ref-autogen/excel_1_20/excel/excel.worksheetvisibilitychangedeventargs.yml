@@ -4,7 +4,9 @@ uid: excel!Excel.WorksheetVisibilityChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetVisibilityChangedEventArgs
 summary: Provides information about the worksheet whose visibility has changed.
-remarks: '\[Api set: ExcelApi 1.17\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,10 @@ properties:
     package: excel!
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +33,10 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +51,10 @@ properties:
     summary: >-
       Gets the new visibility setting of the worksheet, after the visibility
       change.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +73,10 @@ properties:
     summary: >-
       Gets the previous visibility setting of the worksheet, before the
       visibility change.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +93,10 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet whose visibility has changed.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

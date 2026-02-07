@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.AdjustmentsLoadOptions
 summary: Represents the adjustment values for a shape.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +34,10 @@ properties:
     package: powerpoint!
     fullName: count
     summary: Specifies the number of adjustment points.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

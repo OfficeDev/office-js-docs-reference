@@ -13,7 +13,9 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!--
   -->.
 remarks: >-
-  \[Api set: Mailbox 1.14\]
+  \[ [Api set: Mailbox
+  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Applicable Outlook

@@ -7,7 +7,8 @@ summary: >-
   Provides the messages or file attachments being dragged and dropped into an
   add-in's task pane.
 remarks: >-
-  \[Api set: Mailbox 1.5\]
+  \[ [Api set: Mailbox
+  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   To learn more about the drag-and-drop feature and how to implement it across
@@ -27,7 +28,10 @@ properties:
     summary: >-
       Gets an array of the messages or file attachments being dragged and
       dropped into an add-in's task pane.
-    remarks: '\[Api set: Mailbox 1.5\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

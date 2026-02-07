@@ -4,7 +4,9 @@ uid: excel!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions:interfa
 package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions
 summary: Contains the collection of worksheet-level custom property.
-remarks: '\[Api set: ExcelApi 1.12\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -37,7 +39,10 @@ properties:
       Custom property keys are case-insensitive. The key is limited to 255
       characters (larger values will cause an `InvalidArgument` error to be
       thrown.)
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -53,7 +58,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the value of the custom
       property.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

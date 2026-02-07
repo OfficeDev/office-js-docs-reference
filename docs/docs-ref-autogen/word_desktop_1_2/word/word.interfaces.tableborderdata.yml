@@ -17,7 +17,9 @@ properties:
     package: word!
     fullName: color
     summary: Specifies the table border color.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the type of the table border.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +62,9 @@ properties:
     summary: >-
       Specifies the width, in points, of the table border. Not applicable to
       table border types that have fixed widths.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

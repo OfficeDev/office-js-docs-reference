@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.RangeCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RangeCollectionLoadOptions
 summary: Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the range. Use
       this to get and set font name, size, color, and other properties.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +54,9 @@ properties:
       For EACH ITEM in the collection: Gets the currently supported content
       control that contains the range. Throws an `ItemNotFound` error if there
       isn't a parent content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +75,9 @@ properties:
       Use this property for custom styles and localized style names. To use the
       built-in styles that are portable between locales, see the "styleBuiltIn"
       property.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +90,9 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the range.'
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

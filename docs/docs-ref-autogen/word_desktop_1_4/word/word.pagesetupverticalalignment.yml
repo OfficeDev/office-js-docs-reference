@@ -4,7 +4,9 @@ uid: word!Word.PageSetupVerticalAlignment:enum
 package: word!
 fullName: Word.PageSetupVerticalAlignment
 summary: Specifies the type of vertical alignment to apply.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,32 +14,40 @@ fields:
   - name: bottom
     uid: word!Word.PageSetupVerticalAlignment.bottom:member
     package: word!
-    summary: |-
+    summary: >-
       Align text to the bottom.
 
-      * \[Api set: WordApiDesktop 1.3\]
+
+      * \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
   - name: center
     uid: word!Word.PageSetupVerticalAlignment.center:member
     package: word!
-    summary: |-
+    summary: >-
       Align text to the center.
 
-      * \[Api set: WordApiDesktop 1.3\]
+
+      * \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Center"'
   - name: justify
     uid: word!Word.PageSetupVerticalAlignment.justify:member
     package: word!
-    summary: |-
+    summary: >-
       Justify text vertically.
 
-      * \[Api set: WordApiDesktop 1.3\]
+
+      * \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Justify"'
   - name: top
     uid: word!Word.PageSetupVerticalAlignment.top:member
     package: word!
-    summary: |-
+    summary: >-
       Align text to the top.
 
-      * \[Api set: WordApiDesktop 1.3\]
+
+      * \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'

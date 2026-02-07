@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.ContentControlListItemLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ContentControlListItemLoadOptions
 summary: Represents a list item in a dropdown list or combo box content control.
-remarks: '\[Api set: WordApi 1.9\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       Specifies the display text of a list item for a dropdown list or combo box
       content control.
-    remarks: '\[Api set: WordApi 1.9\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       Specifies the index location of a content control list item in the
       collection of list items.
-    remarks: '\[Api set: WordApi 1.9\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +69,9 @@ properties:
     summary: >-
       Specifies the programmatic value of a list item for a dropdown list or
       combo box content control.
-    remarks: '\[Api set: WordApi 1.9\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -21,7 +21,9 @@ properties:
       when all columns in a range are hidden. Value is `false` when no columns
       in the range are hidden. Value is `null` when some columns in a range are
       hidden and other columns in the same range are not hidden.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +38,9 @@ properties:
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders,
       alignment, and other properties.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +55,9 @@ properties:
     summary: >-
       Represents the formula in A1-style notation. If a cell has no formula, its
       value is returned instead.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +74,9 @@ properties:
       number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
       would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
       value is returned instead.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -83,7 +91,9 @@ properties:
     summary: >-
       Represents the formula in R1C1-style notation. If a cell has no formula,
       its value is returned instead.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -96,7 +106,9 @@ properties:
     package: excel!
     fullName: hyperlink
     summary: Represents the hyperlink for the current range.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -113,7 +125,9 @@ properties:
       information about Excel number formatting, see [Number format
       codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -131,7 +145,9 @@ properties:
       format coercion when getting or setting the `numberFormatLocal` property.
       Any returned text uses the locally-formatted strings based on the language
       specified in the system settings.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -148,7 +164,9 @@ properties:
       when all rows in a range are hidden. Value is `false` when no rows in the
       range are hidden. Value is `null` when some rows in a range are hidden and
       other rows in the same range are not hidden.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -165,7 +183,9 @@ properties:
       inconsistent, `null` will be returned. For custom styles, the style name
       will be returned. For built-in styles, a string representing a value in
       the `BuiltInStyle` enum will be returned.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -182,7 +202,9 @@ properties:
       be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

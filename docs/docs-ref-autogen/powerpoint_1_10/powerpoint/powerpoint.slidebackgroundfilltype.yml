@@ -7,7 +7,10 @@ summary: >-
   Specifies the fill type for a
   [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)<!--
   -->.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -15,40 +18,55 @@ fields:
   - name: gradient
     uid: powerpoint!PowerPoint.SlideBackgroundFillType.gradient:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Specifies that the slide background should have gradient fill.
 
-      * \[Api set: PowerPointApi 1.10\]
+
+      * \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Gradient"'
   - name: pattern
     uid: powerpoint!PowerPoint.SlideBackgroundFillType.pattern:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Specifies that the slide background should have pattern fill.
 
-      * \[Api set: PowerPointApi 1.10\]
+
+      * \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Pattern"'
   - name: pictureOrTexture
     uid: powerpoint!PowerPoint.SlideBackgroundFillType.pictureOrTexture:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Specifies that the slide background should have picture or texture fill.
 
-      * \[Api set: PowerPointApi 1.10\]
+
+      * \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"PictureOrTexture"'
   - name: solid
     uid: powerpoint!PowerPoint.SlideBackgroundFillType.solid:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Specifies that the slide background should have regular solid fill.
 
-      * \[Api set: PowerPointApi 1.10\]
+
+      * \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Solid"'
   - name: unsupported
     uid: powerpoint!PowerPoint.SlideBackgroundFillType.unsupported:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Unsupported slide background fill.
 
-      * \[Api set: PowerPointApi 1.10\]
+
+      * \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Unsupported"'

@@ -4,7 +4,9 @@ uid: word!Word.BuildingBlockEntryCollection:class
 package: word!
 fullName: Word.BuildingBlockEntryCollection
 summary: Represents a collection of building block entries in a Word template.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ methods:
     summary: >-
       Creates a new building block entry in a template and returns a
       `BuildingBlock` object that represents the new building block entry.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +75,9 @@ methods:
     summary: >-
       Creates a new building block entry in a template and returns a
       `BuildingBlock` object that represents the new building block entry.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -127,7 +133,9 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -143,7 +151,9 @@ methods:
     summary: >-
       Returns a `BuildingBlock` object that represents the specified item in the
       collection.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

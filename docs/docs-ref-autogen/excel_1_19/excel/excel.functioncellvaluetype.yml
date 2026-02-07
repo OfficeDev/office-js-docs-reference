@@ -4,7 +4,9 @@ uid: excel!Excel.FunctionCellValueType:enum
 package: excel!
 fullName: Excel.FunctionCellValueType
 summary: Represents the types of the `FunctionCellValue` object.
-remarks: '\[Api set: ExcelApi 1.19\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -19,5 +21,7 @@ fields:
       -->.
 
 
-      * \[Api set: ExcelApi 1.19\]
+      * \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"JavaScriptReference"'

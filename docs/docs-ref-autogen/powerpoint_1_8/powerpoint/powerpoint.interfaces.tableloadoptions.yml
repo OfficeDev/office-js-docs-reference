@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.TableLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableLoadOptions
 summary: Represents a table.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +34,10 @@ properties:
     package: powerpoint!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +50,10 @@ properties:
     package: powerpoint!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +66,10 @@ properties:
     package: powerpoint!
     fullName: values
     summary: Gets all of the values in the table.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

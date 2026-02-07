@@ -4,7 +4,9 @@ uid: excel!Excel.ArrayCellValue:interface
 package: excel!
 fullName: Excel.ArrayCellValue
 summary: Represents a 2D array of cell values.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,10 @@ properties:
     summary: >-
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -35,7 +40,10 @@ properties:
       string value aligns with the en-US locale. When accessed through a
       `valuesAsJsonLocal` property, this string value aligns with the user's
       display locale.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +58,10 @@ properties:
     summary: >-
       Represents the elements of the array. May not directly contain an
       `ArrayCellValue`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -65,7 +76,10 @@ properties:
     summary: >-
       Represents the cell values which are referenced within
       `ArrayCellValue.elements`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +92,10 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

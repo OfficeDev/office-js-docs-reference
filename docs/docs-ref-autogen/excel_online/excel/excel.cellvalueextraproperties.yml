@@ -7,7 +7,9 @@ summary: >-
   These extra properties may appear on a `CellValue` and provide information
   about that `CellValue`<!-- -->, but the extra properties are not part of the
   value in the cell.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -22,7 +24,10 @@ properties:
       false, APIs which would use this `CellValue` to overwrite a cell will
       instead ignore this value without throwing an error. The default value is
       true.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -38,7 +43,10 @@ properties:
       Represents an explanation about why `CellValue.writable` is specified as
       false. Note: This string is only available if `writable` is specified as
       false.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,9 @@ uid: word!Word.PageCollection:class
 package: word!
 fullName: Word.PageCollection
 summary: Represents the collection of [Word.Page](xref:word!Word.Page:class) objects.
-remarks: '\[Api set: WordApiDesktop 1.2\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,9 @@ methods:
     summary: >-
       Gets the first page in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -65,7 +69,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

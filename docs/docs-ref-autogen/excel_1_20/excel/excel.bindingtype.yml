@@ -4,7 +4,9 @@ uid: excel!Excel.BindingType:enum
 package: excel!
 fullName: Excel.BindingType
 summary: ''
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,15 +14,21 @@ fields:
   - name: range
     uid: excel!Excel.BindingType.range:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Range"'
   - name: table
     uid: excel!Excel.BindingType.table:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Table"'
   - name: text
     uid: excel!Excel.BindingType.text:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Text"'

@@ -17,7 +17,10 @@ properties:
     summary: >-
       The Base64-encoded string of the file to be attached. Only use if `type`
       is set to `base64`<!-- -->.
-    remarks: '\[Api set: Mailbox 1.15\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

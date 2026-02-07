@@ -6,7 +6,9 @@ fullName: Office.AttachmentsChangedEventArgs
 summary: >-
   Provides information about the attachment on a mail item that raised the
   `Office.EventType.AttachmentsChanged` event.
-remarks: '\[Api set: Mailbox 1.8\]'
+remarks: >-
+  \[ [Api set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,10 @@ properties:
       Gets the object that represents the attachment that was added or removed
       from a mail item. The object contains the `id`<!-- -->, `name`<!-- -->,
       `size`<!-- -->, and `attachmentType` properties of the attachment.
-    remarks: '\[Api set: Mailbox 1.8\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -37,7 +42,10 @@ properties:
       For details, see
       [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum)<!--
       -->.
-    remarks: '\[Api set: Mailbox 1.8\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -55,7 +63,10 @@ properties:
       Gets the type of event that was raised. For details, see
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: '\[Api set: Mailbox 1.8\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

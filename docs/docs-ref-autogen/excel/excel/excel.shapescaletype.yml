@@ -6,7 +6,9 @@ fullName: Excel.ShapeScaleType
 summary: >-
   Specifies whether the shape is scaled relative to its original or current
   size.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +16,14 @@ fields:
   - name: currentSize
     uid: excel!Excel.ShapeScaleType.currentSize:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CurrentSize"'
   - name: originalSize
     uid: excel!Excel.ShapeScaleType.originalSize:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"OriginalSize"'

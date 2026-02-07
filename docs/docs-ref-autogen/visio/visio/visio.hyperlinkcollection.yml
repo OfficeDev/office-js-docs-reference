@@ -4,7 +4,10 @@ uid: visio!Visio.HyperlinkCollection:class
 package: visio!
 fullName: Visio.HyperlinkCollection
 summary: Represents the Hyperlink Collection.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +47,10 @@ methods:
     package: visio!
     fullName: getCount()
     summary: Gets the number of hyperlinks.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,10 @@ methods:
     package: visio!
     fullName: getItem(Key)
     summary: Gets a Hyperlink using its key (name or Id).
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

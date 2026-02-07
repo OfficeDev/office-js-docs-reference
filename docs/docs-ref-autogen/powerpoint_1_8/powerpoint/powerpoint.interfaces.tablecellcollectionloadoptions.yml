@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellCollectionLoadOptions
 summary: Represents a collection of table cells.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -35,7 +38,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the number of table columns this
       cell spans across. Will be greater than or equal to 1.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +57,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the zero-based column index of the
       cell within the table.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +76,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the number of table rows this cell
       spans across. Will be greater than or equal to 1.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -83,7 +95,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the zero-based row index of the cell
       within the table.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -99,7 +114,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the text content of the table
       cell.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

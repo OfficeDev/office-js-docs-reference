@@ -29,7 +29,8 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!--
   -->.
 remarks: >-
-  \[Api set: Mailbox 1.1\]
+  \[ [Api set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **Important**:
@@ -71,7 +72,9 @@ methods:
     fullName: get(name)
     summary: Retrieves the specified setting.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -100,7 +103,9 @@ methods:
     fullName: remove(name)
     summary: Removes the specified setting.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -137,7 +142,9 @@ methods:
       property bag. When you want to persist the settings so that they're
       available the next time the add-in is used, use the `saveAsync` method.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -188,7 +195,9 @@ methods:
       Any changes made to settings using the `set` method will not be saved to
       the server until the `saveAsync` method is called.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

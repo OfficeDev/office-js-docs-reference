@@ -4,7 +4,9 @@ uid: word!Word.PrintOutRange:enum
 package: word!
 fullName: Word.PrintOutRange
 summary: Specifies the range of content to print from a document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,40 +14,50 @@ fields:
   - name: allDocument
     uid: word!Word.PrintOutRange.allDocument:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing the entire document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AllDocument"'
   - name: currentPage
     uid: word!Word.PrintOutRange.currentPage:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing the current page.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CurrentPage"'
   - name: fromTo
     uid: word!Word.PrintOutRange.fromTo:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing a range from one page to another.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FromTo"'
   - name: rangeOfPages
     uid: word!Word.PrintOutRange.rangeOfPages:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing specific ranges of pages.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RangeOfPages"'
   - name: selection
     uid: word!Word.PrintOutRange.selection:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing the current selection.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Selection"'

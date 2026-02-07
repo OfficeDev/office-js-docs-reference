@@ -4,7 +4,9 @@ uid: excel!Excel.ShapeFillType:enum
 package: excel!
 fullName: Excel.ShapeFillType
 summary: Specifies a shape's fill type.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,48 +14,60 @@ fields:
   - name: gradient
     uid: excel!Excel.ShapeFillType.gradient:member
     package: excel!
-    summary: |-
+    summary: >-
       Gradient fill.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Gradient"'
   - name: mixed
     uid: excel!Excel.ShapeFillType.mixed:member
     package: excel!
-    summary: |-
+    summary: >-
       Mixed fill.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Mixed"'
   - name: noFill
     uid: excel!Excel.ShapeFillType.noFill:member
     package: excel!
-    summary: |-
+    summary: >-
       No fill.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"NoFill"'
   - name: pattern
     uid: excel!Excel.ShapeFillType.pattern:member
     package: excel!
-    summary: |-
+    summary: >-
       Pattern fill.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Pattern"'
   - name: pictureAndTexture
     uid: excel!Excel.ShapeFillType.pictureAndTexture:member
     package: excel!
-    summary: |-
+    summary: >-
       Picture and texture fill.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"PictureAndTexture"'
   - name: solid
     uid: excel!Excel.ShapeFillType.solid:member
     package: excel!
-    summary: |-
+    summary: >-
       Solid fill.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Solid"'

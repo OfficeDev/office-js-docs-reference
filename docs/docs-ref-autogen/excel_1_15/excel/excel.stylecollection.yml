@@ -4,7 +4,9 @@ uid: excel!Excel.StyleCollection:class
 package: excel!
 fullName: Excel.StyleCollection
 summary: Represents a collection of all the styles.
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +46,9 @@ methods:
     package: excel!
     fullName: add(name)
     summary: Adds a new style to the collection.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +66,9 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of styles in the collection.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +82,9 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `Style` by name.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +102,9 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a style based on its position in the collection.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -117,7 +127,10 @@ methods:
       For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.14\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

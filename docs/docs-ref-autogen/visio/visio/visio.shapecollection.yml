@@ -4,7 +4,10 @@ uid: visio!Visio.ShapeCollection:class
 package: visio!
 fullName: Visio.ShapeCollection
 summary: Represents the Shape Collection.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +47,10 @@ methods:
     package: visio!
     fullName: getCount()
     summary: Gets the number of Shapes in the collection.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,10 @@ methods:
     package: visio!
     fullName: getItem(key)
     summary: Gets a Shape using its key (name or Index).
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

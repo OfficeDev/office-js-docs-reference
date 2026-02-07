@@ -9,7 +9,9 @@ summary: >-
   `getColumnProperties`<!-- -->, or the border property input parameter of
   `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, and
   `setColumnProperties`<!-- -->.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,9 @@ properties:
     package: excel!
     fullName: color
     summary: Represents the `color` property of a single border.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -33,7 +37,9 @@ properties:
     package: excel!
     fullName: style
     summary: Represents the `style` property of a single border.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +57,9 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: Represents the `tintAndShade` property of a single border.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +72,9 @@ properties:
     package: excel!
     fullName: weight
     summary: Represents the `weight` property of a single border.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

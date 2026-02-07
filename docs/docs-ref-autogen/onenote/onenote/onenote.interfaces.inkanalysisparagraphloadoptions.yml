@@ -6,7 +6,9 @@ fullName: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
 summary: >-
   Represents ink analysis data for an identified paragraph formed by ink
   strokes.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,10 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the InkAnalysisParagraph object. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +52,10 @@ properties:
     package: onenote!
     fullName: inkAnalysis
     summary: Reference to the parent InkAnalysisPage.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +70,10 @@ properties:
     package: onenote!
     fullName: lines
     summary: Gets the ink analysis lines in this ink analysis paragraph.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

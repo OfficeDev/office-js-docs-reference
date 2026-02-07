@@ -6,7 +6,9 @@ fullName: Word.EventSource
 summary: >-
   An enum that specifies an event's source. It can be local or remote (through
   coauthoring).
-remarks: '\[Api set: WordApi 1.5\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,16 +16,20 @@ fields:
   - name: local
     uid: word!Word.EventSource.local:member
     package: word!
-    summary: |-
+    summary: >-
       Local source.
 
-      * \[Api set: WordApi 1.5\]
+
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
     package: word!
-    summary: |-
+    summary: >-
       Remote source.
 
-      * \[Api set: WordApi 1.5\]
+
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Remote"'

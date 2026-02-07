@@ -4,7 +4,9 @@ uid: word!Word.AnnotationHoveredEventArgs:interface
 package: word!
 fullName: Word.AnnotationHoveredEventArgs
 summary: Holds annotation information that is passed back on annotation hovered event.
-remarks: '\[Api set: WordApi 1.7\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: word!
     fullName: id
     summary: Specifies the annotation ID for which the event was fired.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -3,7 +3,9 @@ name: Excel.FourTrafficLightsSet
 uid: excel!Excel.FourTrafficLightsSet:interface
 package: excel!
 fullName: Excel.FourTrafficLightsSet
-summary: '\[Api set: ExcelApi 1.2\]'
+summary: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false

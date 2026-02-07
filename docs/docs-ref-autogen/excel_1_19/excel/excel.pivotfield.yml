@@ -4,7 +4,9 @@ uid: excel!Excel.PivotField:class
 package: excel!
 fullName: Excel.PivotField
 summary: Represents the Excel PivotField.
-remarks: '\[Api set: ExcelApi 1.8\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: id
     summary: ID of the PivotField.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: excel!
     fullName: items
     summary: Returns the PivotItems associated with the PivotField.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +62,9 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotField.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +77,9 @@ properties:
     package: excel!
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +92,9 @@ properties:
     package: excel!
     fullName: subtotals
     summary: Subtotals of the PivotField.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -99,7 +111,10 @@ methods:
       Sets one or more of the field's current PivotFilters and applies them to
       the field. If the provided filters are invalid or cannot be applied, an
       exception is thrown.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -121,7 +136,10 @@ methods:
     summary: >-
       Clears all criteria from all of the field's filters. This removes any
       active filtering on the field.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -137,7 +155,10 @@ methods:
     summary: >-
       Clears all existing criteria from the field's filter of the given type (if
       one is currently applied).
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -157,7 +178,10 @@ methods:
     summary: >-
       Clears all existing criteria from the field's filter of the given type (if
       one is currently applied).
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -177,7 +201,10 @@ methods:
     package: excel!
     fullName: getFilters()
     summary: Gets all filters currently applied on the field.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -193,7 +220,10 @@ methods:
     package: excel!
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -220,7 +250,10 @@ methods:
     package: excel!
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -379,7 +412,9 @@ methods:
       Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will
       be applied based on it, if not sort will be based on the PivotField
       itself.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -400,7 +435,9 @@ methods:
       Sorts the PivotField by specified values in a given scope. The scope
       defines which specific values will be used to sort when there are multiple
       values from the same DataPivotHierarchy.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -437,7 +474,9 @@ methods:
       Sorts the PivotField by specified values in a given scope. The scope
       defines which specific values will be used to sort when there are multiple
       values from the same DataPivotHierarchy.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

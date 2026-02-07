@@ -10,7 +10,8 @@ summary: >-
   An array of `AttachmentDetailsCompose` objects is returned by the
   `getAttachmentsAsync` method.
 remarks: >-
-  \[Api set: Mailbox 1.8\]
+  \[ [Api set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission

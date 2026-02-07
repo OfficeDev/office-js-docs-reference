@@ -17,7 +17,10 @@ properties:
     package: excel!
     fullName: value
     summary: Specifies the value of the custom property.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

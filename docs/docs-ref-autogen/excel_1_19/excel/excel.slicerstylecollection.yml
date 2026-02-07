@@ -4,7 +4,9 @@ uid: excel!Excel.SlicerStyleCollection:class
 package: excel!
 fullName: Excel.SlicerStyleCollection
 summary: Represents a collection of `SlicerStyle` objects.
-remarks: '\[Api set: ExcelApi 1.10\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +46,10 @@ methods:
     package: excel!
     fullName: add(name, makeUniqueName)
     summary: Creates a blank slicer style with the specified name.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +74,10 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of slicer styles in the collection.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -83,7 +91,10 @@ methods:
     package: excel!
     fullName: getDefault()
     summary: Gets the default `SlicerStyle` for the parent object's scope.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +108,10 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `SlicerStyle` by name.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +134,10 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -212,7 +229,10 @@ methods:
     package: excel!
     fullName: setDefault(newDefaultStyle)
     summary: Sets the default slicer style for use in the parent object's scope.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

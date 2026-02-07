@@ -4,7 +4,9 @@ uid: onenote!OneNote.InkAnalysisWordCollection:class
 package: onenote!
 fullName: OneNote.InkAnalysisWordCollection
 summary: Represents a collection of InkAnalysisWord objects.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,10 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of InkAnalysisWords in the page.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +64,10 @@ methods:
     summary: >-
       Gets a InkAnalysisWord object by ID or by its index in the collection.
       Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +87,10 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a InkAnalysisWord on its position in the collection.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

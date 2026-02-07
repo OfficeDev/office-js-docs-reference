@@ -6,7 +6,9 @@ fullName: Excel.NamedItemCollection
 summary: >-
   A collection of all the `NamedItem` objects that are part of the workbook or
   worksheet, depending on how it was reached.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,9 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `NamedItem` object using its name.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -7,7 +7,9 @@ summary: >-
   Represents the options for the
   [ListTemplateCollection.add](xref:word!Word.ListTemplateCollection:class)
   method.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -18,7 +20,9 @@ properties:
     package: word!
     fullName: name
     summary: If provided, specifies the name of the list template to be added.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -33,7 +37,9 @@ properties:
     summary: >-
       If provided, specifies whether to apply outline numbering to the new list
       template. The default value is `false`<!-- -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

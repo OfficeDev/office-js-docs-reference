@@ -7,7 +7,9 @@ summary: >-
   Specifies the options for adding to a
   [Word.TableOfContentsCollection](xref:word!Word.TableOfContentsCollection:class)
   object.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -22,7 +24,9 @@ properties:
       the table of contents. Use
       [HeadingStyleCollection.add](xref:word!Word.HeadingStyleCollection:class)
       to create new heading styles.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -38,7 +42,9 @@ properties:
       If provided, specifies whether the page numbers in a table of contents
       should be hidden when publishing to the web. The default value is
       `true`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -53,7 +59,9 @@ properties:
     summary: >-
       If provided, specifies whether to include page numbers in a table of
       contents. The default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +80,9 @@ properties:
       `\o` switch for a [Table of Contents (TOC)
       field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
       -->. The default value is `9`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -87,7 +97,9 @@ properties:
     summary: >-
       If provided, specifies whether page numbers in a table of contents are
       aligned with the right margin. The default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -108,7 +120,9 @@ properties:
       -->. For example, "T" indicates a table of contents includes TC fields
       that use the table identifier T. If this argument is omitted, TC fields
       aren't used.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -127,7 +141,9 @@ properties:
       the `\o` switch for a [Table of Contents (TOC)
       field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
       -->. The default value is `1`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +158,9 @@ properties:
     summary: >-
       If provided, specifies whether to use built-in heading styles to create a
       table of contents. The default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -161,7 +179,9 @@ properties:
       [TableOfContentsCollection.markTocEntry](xref:word!Word.TableOfContentsCollection:class)
       method to mark entries to be included in a table of contents. The default
       value is `false`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -177,7 +197,9 @@ properties:
       If provided, specifies whether entries in a table of contents should be
       formatted as hyperlinks when the document is published to the web. The
       default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -192,7 +214,9 @@ properties:
     summary: >-
       If provided, specifies whether to use outline levels to create a table of
       contents. The default value is `false`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

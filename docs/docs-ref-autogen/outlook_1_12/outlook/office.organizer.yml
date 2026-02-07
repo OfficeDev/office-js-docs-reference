@@ -8,7 +8,8 @@ summary: >-
   to create the appointment. This object provides a method to get the organizer
   value of an appointment in an Outlook add-in.
 remarks: >-
-  \[Api set: Mailbox 1.7\]
+  \[ [Api set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -33,7 +34,9 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       object in the `asyncResult.value` property.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -86,7 +89,9 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       object in the `asyncResult.value` property.
     remarks: >-
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

@@ -17,7 +17,9 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

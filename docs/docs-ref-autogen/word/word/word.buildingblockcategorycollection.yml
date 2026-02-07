@@ -7,7 +7,9 @@ summary: >-
   Represents a collection of
   [Word.BuildingBlockCategory](xref:word!Word.BuildingBlockCategory:class)
   objects in a Word document.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +36,9 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +54,9 @@ methods:
     summary: >-
       Returns a `BuildingBlockCategory` object that represents the specified
       item in the collection.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

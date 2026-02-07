@@ -4,7 +4,9 @@ uid: excel!Excel.Application:class
 package: excel!
 fullName: Excel.Application
 summary: Represents the Excel application that manages the workbook.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     summary: >-
       Returns the Excel calculation engine version used for the last full
       recalculation.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -37,7 +41,9 @@ properties:
       ignores changes in tables; `Manual`<!-- -->, where calculation is done
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
-    remarks: '\[Api set: ExcelApi 1.1 for get, 1.8 for set\]'
+    remarks: >-
+      \[ [Api set: ExcelApi 1.1 for get, 1.8 for
+      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +62,9 @@ properties:
     summary: >-
       Returns the calculation state of the application. See
       `Excel.CalculationState` for details.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -91,7 +99,9 @@ properties:
       Returns the iterative calculation settings. In Excel on Windows and Mac,
       the settings will apply to the Excel Application. In Excel on the web and
       other platforms, the settings will apply to the active workbook.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -105,7 +115,9 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -125,7 +137,9 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -281,7 +295,9 @@ methods:
       Suspends calculation until the next `context.sync()` is called. Once set,
       it is the developer's responsibility to re-calc the workbook, to ensure
       that any dependencies are propagated.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -301,7 +317,9 @@ methods:
       *Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly
       (such as in a loop). Repeated calls will cause the Excel window to
       flicker.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

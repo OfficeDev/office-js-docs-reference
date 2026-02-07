@@ -6,7 +6,9 @@ fullName: Word.SelectionInsertFormulaOptions
 summary: >-
   Represents the options for the
   [Selection.insertFormula](xref:word!Word.Selection:class) method.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -47,7 +49,9 @@ properties:
       - If you don't specify the `formula` property and all the cells above and
       to the left of the insertion point are empty, using the `= (Formula)`
       field causes an error.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +66,9 @@ properties:
     summary: >-
       If provided, specifies the format for the result of the `= (Formula)`
       field.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

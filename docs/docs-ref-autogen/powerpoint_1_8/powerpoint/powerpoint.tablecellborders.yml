@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.TableCellBorders:interface
 package: powerpoint!
 fullName: PowerPoint.TableCellBorders
 summary: Represents the borders of a table cell.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +18,10 @@ properties:
     package: powerpoint!
     fullName: bottom
     summary: Represents the bottom border.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +34,10 @@ properties:
     package: powerpoint!
     fullName: diagonalDown
     summary: Represents the diagonal border (top-left to bottom-right).
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -41,7 +50,10 @@ properties:
     package: powerpoint!
     fullName: diagonalUp
     summary: Represents the diagonal border (bottom-left to top-right).
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +66,10 @@ properties:
     package: powerpoint!
     fullName: left
     summary: Represents the left border.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +82,10 @@ properties:
     package: powerpoint!
     fullName: right
     summary: Represents the right border.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -80,7 +98,10 @@ properties:
     package: powerpoint!
     fullName: top
     summary: Represents the top border.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

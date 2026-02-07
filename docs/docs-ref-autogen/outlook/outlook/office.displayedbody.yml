@@ -7,7 +7,9 @@ summary: >-
   Provides a method to temporarily set the content displayed in the body of a
   message in read mode.
 remarks: >-
-  \[Api set: Mailbox preview\]
+  \[ [Api set: Mailbox
+  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission
@@ -32,7 +34,9 @@ methods:
       mode. The set content remains visible until the user switches to a
       different message or closes the window of the current message.
     remarks: >-
-      \[Api set: Mailbox preview\]
+      \[ [Api set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -115,7 +119,9 @@ methods:
       mode. The set content will remain visible until the user switches to a
       different message or closes the window of the current message.
     remarks: >-
-      \[Api set: Mailbox preview\]
+      \[ [Api set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

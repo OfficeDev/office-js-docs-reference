@@ -10,7 +10,9 @@ summary: >-
   Session data is specific to a single mail item. It isn't shared among multiple
   items even if the same add-in is used to set or retrieve data.
 remarks: >-
-  \[Api set: Mailbox 1.11\]
+  \[ [Api set: Mailbox
+  1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission
@@ -36,7 +38,9 @@ methods:
     fullName: clearAsync(options, callback)
     summary: Clears all session data key-value pairs.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -78,7 +82,9 @@ methods:
     fullName: clearAsync(callback)
     summary: Clears all session data key-value pairs.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -114,7 +120,9 @@ methods:
     fullName: getAllAsync(callback)
     summary: Gets all session data key-value pairs.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -150,7 +158,9 @@ methods:
     fullName: getAsync(name, callback)
     summary: Gets the session data value of the specified key.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -189,7 +199,9 @@ methods:
     fullName: removeAsync(name, options, callback)
     summary: Removes a session data key-value pair.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -234,7 +246,9 @@ methods:
     fullName: removeAsync(name, callback)
     summary: Removes a session data key-value pair.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -273,7 +287,9 @@ methods:
     fullName: setAsync(name, value, options, callback)
     summary: Sets a session data key-value pair.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -332,7 +348,9 @@ methods:
     fullName: setAsync(name, value, callback)
     summary: Sets a session data key-value pair.
     remarks: >-
-      \[Api set: Mailbox 1.11\]
+      \[ [Api set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

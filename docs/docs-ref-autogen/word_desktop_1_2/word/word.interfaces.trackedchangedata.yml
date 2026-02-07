@@ -17,7 +17,9 @@ properties:
     package: word!
     fullName: author
     summary: Gets the author of the tracked change.
-    remarks: '\[Api set: WordApi 1.6\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: word!
     fullName: date
     summary: Gets the date of the tracked change.
-    remarks: '\[Api set: WordApi 1.6\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the tracked change.
-    remarks: '\[Api set: WordApi 1.6\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +62,9 @@ properties:
     package: word!
     fullName: type
     summary: Gets the type of the tracked change.
-    remarks: '\[Api set: WordApi 1.6\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

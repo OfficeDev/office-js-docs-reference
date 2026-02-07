@@ -6,7 +6,9 @@ fullName: Excel.PivotFilters
 summary: >-
   An interface representing all PivotFilters currently applied to a given
   PivotField.
-remarks: '\[Api set: ExcelApi 1.12\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -19,7 +21,10 @@ properties:
     summary: >-
       The PivotField's currently applied date filter. This property is `null` if
       no value filter is applied.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +39,10 @@ properties:
     summary: >-
       The PivotField's currently applied label filter. This property is `null`
       if no value filter is applied.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +57,10 @@ properties:
     summary: >-
       The PivotField's currently applied manual filter. This property is `null`
       if no value filter is applied.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +75,10 @@ properties:
     summary: >-
       The PivotField's currently applied value filter. This property is `null`
       if no value filter is applied.
-    remarks: '\[Api set: ExcelApi 1.12\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

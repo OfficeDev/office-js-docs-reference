@@ -8,7 +8,9 @@ summary: >-
   represents the reviewers of one or more documents. The `ReviewerCollection`
   object contains the names of all reviewers who have reviewed documents opened
   or edited on a computer.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -37,7 +39,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the `Reviewer` object is
       visible.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

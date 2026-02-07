@@ -4,7 +4,9 @@ uid: word!Word.CaptionPosition:enum
 package: word!
 fullName: Word.CaptionPosition
 summary: Specifies the position of a caption relative to the object it describes.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,16 +14,20 @@ fields:
   - name: above
     uid: word!Word.CaptionPosition.above:member
     package: word!
-    summary: |-
+    summary: >-
       Places the caption above the selected item.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Above"'
   - name: below
     uid: word!Word.CaptionPosition.below:member
     package: word!
-    summary: |-
+    summary: >-
       Places the caption below the selected item.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Below"'

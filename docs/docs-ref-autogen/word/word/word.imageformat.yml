@@ -4,7 +4,9 @@ uid: word!Word.ImageFormat:enum
 package: word!
 fullName: Word.ImageFormat
 summary: Represents image format type.
-remarks: '\[Api set: WordApiDesktop 1.1\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,112 +14,140 @@ fields:
   - name: bmp
     uid: word!Word.ImageFormat.bmp:member
     package: word!
-    summary: |-
+    summary: >-
       Bitmap image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bmp"'
   - name: emf
     uid: word!Word.ImageFormat.emf:member
     package: word!
-    summary: |-
+    summary: >-
       Enhanced Metafile image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Emf"'
   - name: exif
     uid: word!Word.ImageFormat.exif:member
     package: word!
-    summary: |-
+    summary: >-
       Exif image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Exif"'
   - name: gif
     uid: word!Word.ImageFormat.gif:member
     package: word!
-    summary: |-
+    summary: >-
       GIF image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Gif"'
   - name: icon
     uid: word!Word.ImageFormat.icon:member
     package: word!
-    summary: |-
+    summary: >-
       Icon image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Icon"'
   - name: jpeg
     uid: word!Word.ImageFormat.jpeg:member
     package: word!
-    summary: |-
+    summary: >-
       JPEG image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Jpeg"'
   - name: pdf
     uid: word!Word.ImageFormat.pdf:member
     package: word!
-    summary: |-
+    summary: >-
       PDF image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pdf"'
   - name: pict
     uid: word!Word.ImageFormat.pict:member
     package: word!
-    summary: |-
+    summary: >-
       PICT image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pict"'
   - name: png
     uid: word!Word.ImageFormat.png:member
     package: word!
-    summary: |-
+    summary: >-
       PNG image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Png"'
   - name: svg
     uid: word!Word.ImageFormat.svg:member
     package: word!
-    summary: |-
+    summary: >-
       SVG image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Svg"'
   - name: tiff
     uid: word!Word.ImageFormat.tiff:member
     package: word!
-    summary: |-
+    summary: >-
       TIFF image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tiff"'
   - name: undefined
     uid: word!Word.ImageFormat.undefined:member
     package: word!
-    summary: |-
+    summary: >-
       Undefined image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Undefined"'
   - name: unsupported
     uid: word!Word.ImageFormat.unsupported:member
     package: word!
-    summary: |-
+    summary: >-
       Unsupported image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Unsupported"'
   - name: wmf
     uid: word!Word.ImageFormat.wmf:member
     package: word!
-    summary: |-
+    summary: >-
       Windows Metafile image format.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Wmf"'

@@ -5,7 +5,8 @@ package: outlook!
 fullName: Office.MailboxEnums.AttachmentType
 summary: Specifies the attachment's type.
 remarks: >-
-  \[Api set: Mailbox 1.1\]
+  \[ [Api set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
@@ -27,7 +28,9 @@ fields:
       `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
 
 
-      \[Api set: Mailbox 1.15\]
+      \[ [Api set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
     value: '"base64"'
   - name: Cloud
     uid: outlook!Office.MailboxEnums.AttachmentType.Cloud:member

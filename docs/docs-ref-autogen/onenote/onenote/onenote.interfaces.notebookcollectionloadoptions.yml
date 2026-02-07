@@ -4,7 +4,9 @@ uid: onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.NotebookCollectionLoadOptions
 summary: Represents a collection of notebooks.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The URL of the site where this notebook
       is located. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +53,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The client URL of the notebook.
       Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -61,7 +69,10 @@ properties:
     package: onenote!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the notebook. Read-only.'
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +87,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: True if the notebook isn't created by the
       user (i.e., 'Misplaced Sections'). Read-only.
-    remarks: '\[Api set: OneNoteApi 1.2\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -89,7 +103,10 @@ properties:
     package: onenote!
     fullName: name
     summary: 'For EACH ITEM in the collection: Gets the name of the notebook. Read-only.'
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -105,7 +122,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The section groups in the notebook. Read
       only
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -121,7 +141,10 @@ properties:
     package: onenote!
     fullName: sections
     summary: 'For EACH ITEM in the collection: The sections of the notebook. Read-only.'
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

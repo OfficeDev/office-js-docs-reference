@@ -20,7 +20,9 @@ properties:
       Determines if Excel should recalculate the worksheet when necessary. True
       if Excel recalculates the worksheet when necessary. False if Excel doesn't
       recalculate the sheet.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -35,7 +37,9 @@ properties:
     summary: >-
       The display name of the worksheet. The name must be fewer than 32
       characters.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     package: excel!
     fullName: pageLayout
     summary: Gets the `PageLayout` object of the worksheet.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -61,7 +67,9 @@ properties:
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +82,9 @@ properties:
     package: excel!
     fullName: showGridlines
     summary: Specifies if gridlines are visible to the user.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -87,7 +97,9 @@ properties:
     package: excel!
     fullName: showHeadings
     summary: Specifies if headings are visible to the user.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -104,7 +116,9 @@ properties:
       worksheet. One unit of column width is equal to the width of one character
       in the Normal style. For proportional fonts, the width of the character 0
       (zero) is used.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +137,9 @@ properties:
       returned. Otherwise, the property will be set to a color, in the form
       \#RRGGBB (e.g., "FFA500"). When setting the color, use an empty-string to
       set an "auto" color, or a real color otherwise.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -136,7 +152,9 @@ properties:
     package: excel!
     fullName: visibility
     summary: The visibility of the worksheet.
-    remarks: '\[Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.\]'
+    remarks: >-
+      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

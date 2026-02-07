@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.PageSetupLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PageSetupLoadOptions
 summary: Represents the page setup information for the presentation.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +34,10 @@ properties:
     package: powerpoint!
     fullName: slideHeight
     summary: Specifies the height of the slides in the presentation, in points.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +50,10 @@ properties:
     package: powerpoint!
     fullName: slideWidth
     summary: Specifies the width of the slides in the presentation, in points.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

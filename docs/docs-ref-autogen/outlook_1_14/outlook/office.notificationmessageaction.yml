@@ -5,7 +5,9 @@ package: outlook!
 fullName: Office.NotificationMessageAction
 summary: The definition of the action for a notification message.
 remarks: >-
-  \[Api set: Mailbox 1.10\]
+  \[ [Api set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission

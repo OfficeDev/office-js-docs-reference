@@ -1,0 +1,866 @@
+
+added 55 packages, and audited 56 packages in 7s
+
+9 packages are looking for funding
+  run `npm fund` for details
+
+1 high severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+/c/GitHub/office-js-docs-reference/generate-docs/scripts /c/GitHub/office-js-docs-reference/generate-docs
+
+added 174 packages, and audited 175 packages in 16s
+
+50 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> scripts@1.0.0 build
+> tsc -p tsconfig.json
+
+Bypassing prompt with source choice DT
+
+Starting preprocessor script...
+
+Pulling Office.js TypeScript definition file from: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts
+Pulling Office.js (preview) TypeScript definition file from: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts
+
+Reading from C:\GitHub\office-js-docs-reference\generate-docs\script-inputs\office.d.ts
+
+Fixing issues with d.ts file...
+
+Reading from C:\GitHub\office-js-docs-reference\generate-docs\script-inputs\office_preview.d.ts
+
+Fixing issues with d.ts file...
+
+Creating separate d.ts files...
+create file: office.d.ts (preview)
+create file: office.d.ts
+
+create file: excel.d.ts (preview)
+
+create file: excel.d.ts (release)
+create file: onenote.d.ts
+create file: outlook.d.ts (preview)
+create file: outlook.d.ts (release)
+create file: powerpoint.d.ts (preview)
+create file: powerpoint.d.ts (release)
+create file: visio.d.ts
+create file: word.d.ts (preview)
+
+create file: word.d.ts (release)
+Pulling Custom Functions TypeScript definition file from: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts
+
+Reading from C:\GitHub\office-js-docs-reference\generate-docs\script-inputs\custom-functions-runtime.d.ts
+Fixing issues with d.ts file...
+create file: custom-functions-runtime.d.ts
+Pulling Office Runtime TypeScript definition file from: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts
+
+Reading from C:\GitHub\office-js-docs-reference\generate-docs\script-inputs\office-runtime.d.ts
+Fixing issues with d.ts file...
+create file: office-runtime.d.ts
+
+Preprocessor script complete!
+/c/GitHub/office-js-docs-reference/generate-docs
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_online/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts
+Applying replacement: Address CardLayoutTwoColumnSection reference for when removing ExcelApi 1.19
+Applying replacement: Address EntityCompactLayoutIcons reference for when removing ExcelApi 1.19
+Applying replacement: Remove FormattedNumberCellValue from CellValue union type
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_11/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_10/excel.d.ts
+Applying replacement: Address CommentRichContent reference for when removing ExcelApi 1.11
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_9/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_8/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_7/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_6/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_5/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_4/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts
+Version Remover - Creating api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts
+Version Remover - Creating ./tool-inputs/excel-base.d.ts
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_15 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_14 baseline to match filename
+Applying replacement: Address SpamReportingEventCompletedOptions reference when removing Mailbox 1.14
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_13 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_12 baseline to match filename
+Applying replacement: Address SmartAlertsEventCompletedOptions reference when removing Mailbox 1.12
+Applying replacement: Remove @param options documentation when removing Mailbox 1.12
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_11 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_10 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_9 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_8 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_7 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_6 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_5 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_4 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_3 baseline to match filename
+Version Remover - Creating api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts
+Applying replacement: Fix requirement set references in outlook_1_2 baseline to match filename
+Version Remover - Creating ./tool-inputs/outlook-base.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts
+Version Remover - Creating api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts
+Version Remover - Creating ./tool-inputs/powerpoint-base.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_4/word-desktop1.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_4/word-desktop2.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_4/word-desktop3.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_4/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_online/word-online1.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_online/word-online2.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_online/word-online3.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_online/word-online4.d.ts
+Applying replacement: Remove importedStylesConflictBehavior parameter documentation when removing WordApiDesktop 1.1
+Applying replacement: Remove WordApiDesktop 1.1 note when removing WordApiDesktop 1.1
+Applying replacement: Remove importedStylesConflictBehavior parameter from method signature when removing WordApiDesktop 1.1
+Applying replacement: Remove link to Border object when removing WordApiDesktop 1.1
+Version Remover - Creating api-extractor-inputs-word-release/word_online/word-online5.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_online/word-online6.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_online/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop4.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_9/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_8/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_7/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_6/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_5/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_4/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_3/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_2/word.d.ts
+Version Remover - Creating api-extractor-inputs-word-release/word_1_1/word.d.ts
+Version Remover - Creating ./tool-inputs/word-base.d.ts
+What's New between api-extractor-inputs-excel/excel.d.ts and api-extractor-inputs-excel-release/Excel_online/excel-init.d.ts?
+Using configuration file: configs/excel-preview-config.json
+What's New between api-extractor-inputs-excel-release/Excel_Desktop_1_1/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts?
+Using configuration file: configs/excel-desktop-1_1-config.json
+What's New between api-extractor-inputs-excel-release/Excel_online/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts?
+Using configuration file: configs/excel-online-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_20/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts?
+Using configuration file: configs/excel-1_20-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_19/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts?
+Using configuration file: configs/excel-1_19-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_18/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts?
+Using configuration file: configs/excel-1_18-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_17/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts?
+Using configuration file: configs/excel-1_17-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts?
+Using configuration file: configs/excel-1_16-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts?
+Using configuration file: configs/excel-1_15-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts?
+Using configuration file: configs/excel-1_14-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts?
+Using configuration file: configs/excel-1_13-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_11/excel.d.ts?
+Using configuration file: configs/excel-1_12-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_11/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_10/excel.d.ts?
+Using configuration file: configs/excel-1_11-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_10/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_9/excel.d.ts?
+Using configuration file: configs/excel-1_10-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_9/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_8/excel.d.ts?
+Using configuration file: configs/excel-1_9-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_8/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_7/excel.d.ts?
+Using configuration file: configs/excel-1_8-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_7/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_6/excel.d.ts?
+Using configuration file: configs/excel-1_7-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_6/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_5/excel.d.ts?
+Using configuration file: configs/excel-1_6-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_5/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_4/excel.d.ts?
+Using configuration file: configs/excel-1_5-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_4/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts?
+Using configuration file: configs/excel-1_4-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts?
+Using configuration file: configs/excel-1_3-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts and api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts?
+Using configuration file: configs/excel-1_2-config.json
+What's New between api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts and ./tool-inputs/excel-base.d.ts?
+Using configuration file: configs/excel-1_1-config.json
+What's New between api-extractor-inputs-outlook/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts?
+Using configuration file: configs/outlook-preview-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_15/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts?
+Using configuration file: configs/outlook-1.15-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts?
+Using configuration file: configs/outlook-1.14-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts?
+Using configuration file: configs/outlook-1.13-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts?
+Using configuration file: configs/outlook-1.12-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts?
+Using configuration file: configs/outlook-1.11-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts?
+Using configuration file: configs/outlook-1.10-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts?
+Using configuration file: configs/outlook-1.9-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts?
+Using configuration file: configs/outlook-1.8-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_7/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts?
+Using configuration file: configs/outlook-1.7-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_6/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts?
+Using configuration file: configs/outlook-1.6-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_5/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts?
+Using configuration file: configs/outlook-1.5-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_4/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts?
+Using configuration file: configs/outlook-1.4-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts?
+Using configuration file: configs/outlook-1.3-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts and api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts?
+Using configuration file: configs/outlook-1.2-config.json
+What's New between api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts and ./tool-inputs/outlook-base.d.ts?
+Using configuration file: configs/outlook-1.1-config.json
+What's New between api-extractor-inputs-powerpoint/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_10/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-preview-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_10/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_10-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_9-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_8-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_7-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_6-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_5-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_4-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_3-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts and api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts?
+Using configuration file: configs/powerpoint-1_2-config.json
+What's New between api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts and ./tool-inputs/powerpoint-base.d.ts?
+Using configuration file: configs/powerpoint-1_1-config.json
+What's New between api-extractor-inputs-word/word.d.ts and api-extractor-inputs-word-release/word_online/word-init.d.ts?
+Using configuration file: configs/word-preview-config.json
+What's New between api-extractor-inputs-word-release/word_online/word.d.ts and api-extractor-inputs-word-release/word_1_9/word.d.ts?
+Using configuration file: configs/word-online-config.json
+What's New between api-extractor-inputs-word-release/word_desktop_1_4/word.d.ts and api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts?
+Using configuration file: configs/word-desktop-1_4-config.json
+What's New between api-extractor-inputs-word-release/word_desktop_1_3/word.d.ts and api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts?
+Using configuration file: configs/word-desktop-1_3-config.json
+What's New between api-extractor-inputs-word-release/word_desktop_1_2/word.d.ts and api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts?
+Using configuration file: configs/word-desktop-1_2-config.json
+What's New between api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts and api-extractor-inputs-word-release/word_1_8/word.d.ts?
+Using configuration file: configs/word-desktop-1_1-config.json
+What's New between api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts and api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts?
+Using configuration file: configs/word-1_5_hidden_document-config.json
+What's New between api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts and api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts?
+Using configuration file: configs/word-1_4_hidden_document-config.json
+What's New between api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts and api-extractor-inputs-word-release/word_1_3/word.d.ts?
+Using configuration file: configs/word-1_3_hidden_document-config.json
+What's New between api-extractor-inputs-word-release/word_1_9/word.d.ts and api-extractor-inputs-word-release/word_1_8/word.d.ts?
+Using configuration file: configs/word-1_9-config.json
+What's New between api-extractor-inputs-word-release/word_1_8/word.d.ts and api-extractor-inputs-word-release/word_1_7/word.d.ts?
+Using configuration file: configs/word-1_8-config.json
+What's New between api-extractor-inputs-word-release/word_1_7/word.d.ts and api-extractor-inputs-word-release/word_1_6/word.d.ts?
+Using configuration file: configs/word-1_7-config.json
+What's New between api-extractor-inputs-word-release/word_1_6/word.d.ts and api-extractor-inputs-word-release/word_1_5/word.d.ts?
+Using configuration file: configs/word-1_6-config.json
+What's New between api-extractor-inputs-word-release/word_1_5/word.d.ts and api-extractor-inputs-word-release/word_1_4/word.d.ts?
+Using configuration file: configs/word-1_5-config.json
+What's New between api-extractor-inputs-word-release/word_1_4/word.d.ts and api-extractor-inputs-word-release/word_1_3/word.d.ts?
+Using configuration file: configs/word-1_4-config.json
+What's New between api-extractor-inputs-word-release/word_1_3/word.d.ts and api-extractor-inputs-word-release/word_1_2/word.d.ts?
+Using configuration file: configs/word-1_3-config.json
+What's New between api-extractor-inputs-word-release/word_1_2/word.d.ts and api-extractor-inputs-word-release/word_1_1/word.d.ts?
+Using configuration file: configs/word-1_2-config.json
+What's New between api-extractor-inputs-word-release/word_1_1/word.d.ts and ./tool-inputs/word-base.d.ts?
+Using configuration file: configs/word-1_1-config.json
+Running API Extractor for Office release.
+/c/GitHub/office-js-docs-reference/generate-docs/api-extractor-inputs-office-release /c/GitHub/office-js-docs-reference/generate-docs
+
+[1mapi-extractor 7.56.0 [36m - https://api-extractor.com/[39m
+[22m
+Using configuration from ./api-extractor.json
+Analysis will use the bundled TypeScript version 5.8.2
+
+API Extractor completed successfully
+/c/GitHub/office-js-docs-reference/generate-docs
+Running API Extractor for Custom Functions.
+/c/GitHub/office-js-docs-reference/generate-docs/api-extractor-inputs-custom-functions-runtime /c/GitHub/office-js-docs-reference/generate-docs
+
+[1mapi-extractor 7.56.0 [36m - https://api-extractor.com/[39m
+[22m
+Using configuration from ./api-extractor.json
+Analysis will use the bundled TypeScript version 5.8.2
+
+API Extractor completed successfully
+/c/GitHub/office-js-docs-reference/generate-docs
+Running API Extractor for Office Runtime.
+/c/GitHub/office-js-docs-reference/generate-docs/api-extractor-inputs-office-runtime /c/GitHub/office-js-docs-reference/generate-docs
+
+[1mapi-extractor 7.56.0 [36m - https://api-extractor.com/[39m
+[22m
+Using configuration from ./api-extractor.json
+Analysis will use the bundled TypeScript version 5.8.2
+
+API Extractor completed successfully
+/c/GitHub/office-js-docs-reference/generate-docs
+/c/GitHub/office-js-docs-reference/generate-docs/scripts /c/GitHub/office-js-docs-reference/generate-docs
+
+Cleaning up Office json cross-referencing...
+
+Completed Office json cross-referencing cleanup
+
+Cleaning up outlook json cross-referencing...
+
+Starting outlook...
+
+Completed outlook
+
+Starting outlook_1_15...
+Completed outlook_1_15
+
+Starting outlook_1_14...
+Completed outlook_1_14
+
+Starting outlook_1_13...
+Completed outlook_1_13
+
+Starting outlook_1_12...
+Completed outlook_1_12
+
+Starting outlook_1_11...
+Completed outlook_1_11
+
+Starting outlook_1_10...
+Completed outlook_1_10
+
+Starting outlook_1_9...
+Completed outlook_1_9
+
+Starting outlook_1_8...
+Completed outlook_1_8
+
+Starting outlook_1_7...
+Completed outlook_1_7
+
+Starting outlook_1_6...
+Completed outlook_1_6
+
+Starting outlook_1_5...
+Completed outlook_1_5
+
+Starting outlook_1_4...
+Completed outlook_1_4
+
+Starting outlook_1_3...
+Completed outlook_1_3
+
+Starting outlook_1_2...
+Completed outlook_1_2
+
+Starting outlook_1_1...
+Completed outlook_1_1
+
+Completed outlook json cross-referencing cleanup
+
+Cleaning up excel json cross-referencing...
+
+Starting excel...
+
+Completed excel
+
+Starting excel_online...
+
+Completed excel_online
+
+Starting excel_desktop_1_1...
+
+Completed excel_desktop_1_1
+
+Starting excel_1_20...
+Completed excel_1_20
+
+Starting excel_1_19...
+Completed excel_1_19
+
+Starting excel_1_18...
+Completed excel_1_18
+
+Starting excel_1_17...
+Completed excel_1_17
+
+Starting excel_1_16...
+Completed excel_1_16
+
+Starting excel_1_15...
+Completed excel_1_15
+
+Starting excel_1_14...
+Completed excel_1_14
+
+Starting excel_1_13...
+Completed excel_1_13
+
+Starting excel_1_12...
+Completed excel_1_12
+
+Starting excel_1_11...
+Completed excel_1_11
+
+Starting excel_1_10...
+Completed excel_1_10
+
+Starting excel_1_9...
+Completed excel_1_9
+
+Starting excel_1_8...
+Completed excel_1_8
+
+Starting excel_1_7...
+Completed excel_1_7
+
+Starting excel_1_6...
+Completed excel_1_6
+
+Starting excel_1_5...
+Completed excel_1_5
+
+Starting excel_1_4...
+Completed excel_1_4
+
+Starting excel_1_3...
+Completed excel_1_3
+
+Starting excel_1_2...
+Completed excel_1_2
+
+Starting excel_1_1...
+Completed excel_1_1
+
+Completed excel json cross-referencing cleanup
+
+Cleaning up word json cross-referencing...
+
+Starting word...
+
+Completed word
+
+Starting word_online...
+
+Completed word_online
+
+Starting word_desktop_1_4...
+
+Completed word_desktop_1_4
+
+Starting word_desktop_1_3...
+
+Completed word_desktop_1_3
+
+Starting word_desktop_1_2...
+
+Completed word_desktop_1_2
+
+Starting word_desktop_1_1...
+
+Completed word_desktop_1_1
+
+Starting word_1_5_hidden_document...
+
+Completed word_1_5_hidden_document
+
+Starting word_1_4_hidden_document...
+
+Completed word_1_4_hidden_document
+
+Starting word_1_3_hidden_document...
+
+Completed word_1_3_hidden_document
+
+Starting word_1_9...
+Completed word_1_9
+
+Starting word_1_8...
+Completed word_1_8
+
+Starting word_1_7...
+Completed word_1_7
+
+Starting word_1_6...
+Completed word_1_6
+
+Starting word_1_5...
+Completed word_1_5
+
+Starting word_1_4...
+Completed word_1_4
+
+Starting word_1_3...
+Completed word_1_3
+
+Starting word_1_2...
+Completed word_1_2
+
+Starting word_1_1...
+Completed word_1_1
+
+Completed word json cross-referencing cleanup
+
+Cleaning up powerpoint json cross-referencing...
+
+Starting powerpoint...
+
+Completed powerpoint
+
+Starting powerpoint_1_10...
+Completed powerpoint_1_10
+
+Starting powerpoint_1_9...
+Completed powerpoint_1_9
+
+Starting powerpoint_1_8...
+Completed powerpoint_1_8
+
+Starting powerpoint_1_7...
+Completed powerpoint_1_7
+
+Starting powerpoint_1_6...
+Completed powerpoint_1_6
+
+Starting powerpoint_1_5...
+Completed powerpoint_1_5
+
+Starting powerpoint_1_4...
+Completed powerpoint_1_4
+
+Starting powerpoint_1_3...
+Completed powerpoint_1_3
+
+Starting powerpoint_1_2...
+Completed powerpoint_1_2
+
+Starting powerpoint_1_1...
+Completed powerpoint_1_1
+
+Completed powerpoint json cross-referencing cleanup
+
+Cleaning up onenote json cross-referencing...
+
+Starting onenote...
+
+Completed onenote
+
+Completed onenote json cross-referencing cleanup
+
+Cleaning up visio json cross-referencing...
+
+Starting visio...
+
+Completed visio
+
+Completed visio json cross-referencing cleanup
+
+Removing old snippets input files...
+
+Creating snippets file...
+
+Reading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/snippet-extractor-output/snippets.yaml
+
+Reading from files: C:\GitHub\office-js-docs-reference\docs\code-snippets
+
+Writing snippets to: C:\GitHub\office-js-docs-reference\generate-docs\json\snippets.yaml
+Excel.Range#merge:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Excel.TableCollection#getItem:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Excel.TableColumn#getDataBodyRange:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Excel.TableColumnCollection#getItem:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Office.AppointmentCompose#setSelectedDataAsync:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Office.Body#setAsync:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Office.MessageCompose#setSelectedDataAsync:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Office.Recipients#setAsync:member(2) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Word.ContentControl#delete:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Word.ContentControlType:enum has both local and Script Lab snippets. Combining, but these should be evaluated.
+Word.Document#save:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Word.Paragraph#insertBreak:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Word.Paragraph#insertContentControl:member(1) has both local and Script Lab snippets. Combining, but these should be evaluated.
+Copying snippets file to subfolders
+Moving Custom Functions APIs to correct versions of Excel
+Cleaning up What's New markdown files.
+/c/GitHub/office-js-docs-reference/generate-docs
+/c/GitHub/office-js-docs-reference/generate-docs/scripts /c/GitHub/office-js-docs-reference/generate-docs
+
+Starting postprocessor script...
+Deleting old docs at: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen
+Loading global TOC template
+Copying docs output files to: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen
+
+Updating the structure of the Common TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\office\toc.yml
+
+Updating the structure of the Common TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\office_release\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_1\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_2\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_3\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_4\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_5\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_6\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_7\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_8\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_9\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_10\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_11\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_12\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_13\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_14\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_15\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_16\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_17\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_18\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_19\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_1_20\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\onenote\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_1\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_2\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_3\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_4\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_5\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_6\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_7\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_8\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_9\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_10\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_11\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_12\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_13\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_14\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\outlook_1_15\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_1\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_2\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_3\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_4\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_5\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_6\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_7\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_8\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_9\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\powerpoint_1_10\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\visio\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_1\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_2\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_3\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_4\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_5\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_6\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_7\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_8\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_9\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_online\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_online\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\excel_desktop_1_1\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_desktop_1_4\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_desktop_1_3\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_desktop_1_2\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_desktop_1_1\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_5_hidden_document\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_4_hidden_document\toc.yml
+Updating the structure of the TOC file: C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\word_1_3_hidden_document\toc.yml
+Namespace pass on Outlook docs
+Namespace pass on Office docs
+C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\office\office
+C:\GitHub\office-js-docs-reference\docs\docs-ref-autogen\office_release\office
+Custom Functions API requirement set link pass
+Adjust YAML files - snippets, API set URLs, HREF, and type alias expansion.
+Processing excel for snippets and API set URLs...
+  Loaded 530 snippets for excel
+Processing excel_1_1 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_1
+Processing excel_1_10 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_10
+Processing excel_1_11 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_11
+Processing excel_1_12 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_12
+Processing excel_1_13 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_13
+Processing excel_1_14 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_14
+Processing excel_1_15 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_15
+Processing excel_1_16 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_16
+Processing excel_1_17 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_17
+Processing excel_1_18 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_18
+Processing excel_1_19 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_19
+Processing excel_1_2 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_2
+Processing excel_1_20 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_20
+Processing excel_1_3 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_3
+Processing excel_1_4 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_4
+Processing excel_1_5 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_5
+Processing excel_1_6 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_6
+Processing excel_1_7 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_7
+Processing excel_1_8 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_8
+Processing excel_1_9 for snippets and API set URLs...
+  Loaded 530 snippets for excel_1_9
+Processing excel_desktop_1_1 for snippets and API set URLs...
+  Loaded 530 snippets for excel_desktop_1_1
+Processing excel_online for snippets and API set URLs...
+  Loaded 530 snippets for excel_online
+Processing images for snippets and API set URLs...
+  No snippets file found for images
+Processing office for snippets and API set URLs...
+  Loaded 194 snippets for office
+Processing office-runtime for snippets and API set URLs...
+  Loaded 3 snippets for office-runtime
+Processing office_release for snippets and API set URLs...
+  Loaded 194 snippets for office_release
+Processing onenote for snippets and API set URLs...
+  Loaded 66 snippets for onenote
+Processing outlook for snippets and API set URLs...
+  Loaded 360 snippets for outlook
+Processing outlook_1_1 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_1
+Processing outlook_1_10 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_10
+Processing outlook_1_11 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_11
+Processing outlook_1_12 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_12
+Processing outlook_1_13 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_13
+Processing outlook_1_14 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_14
+Processing outlook_1_15 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_15
+Processing outlook_1_2 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_2
+Processing outlook_1_3 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_3
+Processing outlook_1_4 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_4
+Processing outlook_1_5 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_5
+Processing outlook_1_6 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_6
+Processing outlook_1_7 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_7
+Processing outlook_1_8 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_8
+Processing outlook_1_9 for snippets and API set URLs...
+  Loaded 360 snippets for outlook_1_9
+Processing overview for snippets and API set URLs...
+  No snippets file found for overview
+Processing powerpoint for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint
+Processing powerpoint_1_1 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_1
+Processing powerpoint_1_10 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_10
+Processing powerpoint_1_2 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_2
+Processing powerpoint_1_3 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_3
+Processing powerpoint_1_4 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_4
+Processing powerpoint_1_5 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_5
+Processing powerpoint_1_6 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_6
+Processing powerpoint_1_7 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_7
+Processing powerpoint_1_8 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_8
+Processing powerpoint_1_9 for snippets and API set URLs...
+  Loaded 157 snippets for powerpoint_1_9
+Processing visio for snippets and API set URLs...
+  Loaded 29 snippets for visio
+Processing word for snippets and API set URLs...
+  Loaded 477 snippets for word
+Processing word_1_1 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_1
+Processing word_1_2 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_2
+Processing word_1_3 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_3
+Processing word_1_3_hidden_document for snippets and API set URLs...
+  Loaded 477 snippets for word_1_3_hidden_document
+Processing word_1_4 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_4
+Processing word_1_4_hidden_document for snippets and API set URLs...
+  Loaded 477 snippets for word_1_4_hidden_document
+Processing word_1_5 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_5
+Processing word_1_5_hidden_document for snippets and API set URLs...
+  Loaded 477 snippets for word_1_5_hidden_document
+Processing word_1_6 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_6
+Processing word_1_7 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_7
+Processing word_1_8 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_8
+Processing word_1_9 for snippets and API set URLs...
+  Loaded 477 snippets for word_1_9
+Processing word_desktop_1_1 for snippets and API set URLs...
+  Loaded 477 snippets for word_desktop_1_1
+Processing word_desktop_1_2 for snippets and API set URLs...
+  Loaded 477 snippets for word_desktop_1_2
+Processing word_desktop_1_3 for snippets and API set URLs...
+  Loaded 477 snippets for word_desktop_1_3
+Processing word_desktop_1_4 for snippets and API set URLs...
+  Loaded 477 snippets for word_desktop_1_4
+Processing word_online for snippets and API set URLs...
+  Loaded 477 snippets for word_online
+Moving common TOC to its own folder
+
+Postprocessor script complete
+
+/c/GitHub/office-js-docs-reference/generate-docs
+Starting reference-coverage-tester...
+Coverage information written to C:\GitHub\office-js-docs-reference\generate-docs\API Coverage Report.csv

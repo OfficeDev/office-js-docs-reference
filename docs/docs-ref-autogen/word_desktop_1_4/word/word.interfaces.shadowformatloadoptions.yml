@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.ShadowFormatLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ShadowFormatLoadOptions
 summary: Represents the shadow formatting for a shape or text in Word.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       Specifies the blur level for a shadow format as a value between 0.0 and
       100.0.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       Returns a `ColorFormat` object that represents the foreground color for
       the fill, line, or shadow.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -61,7 +67,9 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies whether the object or the formatting applied to it is visible.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +86,9 @@ properties:
       obscured by the shape, even if the shape has no fill, `false` if the
       shadow has no fill and the outline of the shadow is visible through the
       shape if the shape has no fill.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +104,9 @@ properties:
       Specifies the horizontal offset (in points) of the shadow from the shape.
       A positive value offsets the shadow to the right of the shape; a negative
       value offsets it to the left.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -110,7 +122,9 @@ properties:
       Specifies the vertical offset (in points) of the shadow from the shape. A
       positive value offsets the shadow to the top of the shape; a negative
       value offsets it to the bottom.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +137,9 @@ properties:
     package: word!
     fullName: rotateWithShape
     summary: Specifies whether to rotate the shadow when rotating the shape.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -136,7 +152,9 @@ properties:
     package: word!
     fullName: size
     summary: Specifies the width of the shadow.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -149,7 +167,9 @@ properties:
     package: word!
     fullName: style
     summary: Specifies the type of shadow formatting to apply to a shape.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -164,7 +184,9 @@ properties:
     summary: >-
       Specifies the degree of transparency of the shadow as a value between 0.0
       (opaque) and 1.0 (clear).
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -177,7 +199,9 @@ properties:
     package: word!
     fullName: type
     summary: Specifies the shape shadow type.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

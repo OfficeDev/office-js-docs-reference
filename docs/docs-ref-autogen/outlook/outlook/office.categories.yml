@@ -18,7 +18,8 @@ summary: >-
   -->, you can't use the API to manage categories applied to a message in
   Compose mode.
 remarks: >-
-  \[Api set: Mailbox 1.8\]
+  \[ [Api set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -43,7 +44,9 @@ methods:
       list on that mailbox and so must have a unique name but multiple
       categories can use the same color.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -103,7 +106,9 @@ methods:
       list on that mailbox and so must have a unique name but multiple
       categories can use the same color.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -169,7 +174,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -228,7 +235,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -266,7 +275,9 @@ methods:
     fullName: removeAsync(categories, options, callback)
     summary: Removes categories from an item.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -318,7 +329,9 @@ methods:
     fullName: removeAsync(categories, callback)
     summary: Removes categories from an item.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

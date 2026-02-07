@@ -4,7 +4,9 @@ uid: excel!Excel.TableColumn:class
 package: excel!
 fullName: Excel.TableColumn
 summary: Represents a column in a table.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: filter
     summary: Retrieves the filter applied to the column.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: excel!
     fullName: id
     summary: Returns a unique key that identifies the column within the table.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,9 @@ properties:
     summary: >-
       Returns the index number of the column within the columns collection of
       the table. Zero-indexed.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +79,9 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the table column.
-    remarks: '\[Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.\]'
+    remarks: >-
+      \[ [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -88,7 +98,9 @@ properties:
       be a string, number, or Boolean. Cells that contain an error will return
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -108,7 +120,10 @@ properties:
       string values. Data returned from this API always aligns with the en-US
       locale. To retrieve data in the user's display locale, use
       `TableColumn.valuesAsJsonLocal`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -128,7 +143,10 @@ properties:
       and string values. Data returned from this API always aligns with the
       user's display locale. To retrieve data independent of locale, use
       `TableColumn.valuesAsJson`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +160,9 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the column from the table.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -156,7 +176,9 @@ methods:
     package: excel!
     fullName: getDataBodyRange()
     summary: Gets the range object associated with the data body of the column.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -170,7 +192,9 @@ methods:
     package: excel!
     fullName: getHeaderRowRange()
     summary: Gets the range object associated with the header row of the column.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -184,7 +208,9 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Gets the range object associated with the entire column.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -198,7 +224,9 @@ methods:
     package: excel!
     fullName: getTotalRowRange()
     summary: Gets the range object associated with the totals row of the column.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

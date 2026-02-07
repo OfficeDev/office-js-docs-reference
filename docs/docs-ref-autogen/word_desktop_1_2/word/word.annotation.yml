@@ -4,7 +4,9 @@ uid: word!Word.Annotation:class
 package: word!
 fullName: Word.Annotation
 summary: Represents an annotation attached to a paragraph.
-remarks: '\[Api set: WordApi 1.7\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: word!
     fullName: critiqueAnnotation
     summary: Gets the `CritiqueAnnotation` object.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +49,9 @@ properties:
     summary: >-
       Gets the unique identifier, which is meant to be used for easier tracking
       of `Annotation` objects.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,9 @@ properties:
     package: word!
     fullName: state
     summary: Gets the state of the annotation.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +84,9 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the annotation.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

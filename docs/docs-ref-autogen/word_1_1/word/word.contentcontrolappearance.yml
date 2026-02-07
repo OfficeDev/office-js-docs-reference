@@ -4,7 +4,9 @@ uid: word!Word.ContentControlAppearance:enum
 package: word!
 fullName: Word.ContentControlAppearance
 summary: Represents the content control appearance.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,21 +19,26 @@ fields:
       (with optional title).
 
 
-      * \[Api set: WordApi 1.1\]
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BoundingBox"'
   - name: hidden
     uid: word!Word.ContentControlAppearance.hidden:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a content control that isn't shown.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hidden"'
   - name: tags
     uid: word!Word.ContentControlAppearance.tags:member
     package: word!
-    summary: |-
+    summary: >-
       Represents a content control shown as start and end markers.
 
-      * \[Api set: WordApi 1.1\]
+
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tags"'

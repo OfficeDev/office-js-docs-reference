@@ -4,7 +4,9 @@ uid: excel!Excel.Application:class
 package: excel!
 fullName: Excel.Application
 summary: Represents the Excel application that manages the workbook.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -22,7 +24,9 @@ properties:
       ignores changes in tables; `Manual`<!-- -->, where calculation is done
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
-    remarks: '\[Api set: ExcelApi 1.1 for get, 1.8 for set\]'
+    remarks: >-
+      \[ [Api set: ExcelApi 1.1 for get, 1.8 for
+      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -55,7 +59,9 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -75,7 +81,9 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

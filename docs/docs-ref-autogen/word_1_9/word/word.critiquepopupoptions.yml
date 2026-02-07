@@ -4,7 +4,9 @@ uid: word!Word.CritiquePopupOptions:interface
 package: word!
 fullName: Word.CritiquePopupOptions
 summary: Properties defining the behavior of the pop-up menu for a given critique.
-remarks: '\[Api set: WordApi 1.8\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     summary: >-
       Specifies the manifest resource ID of the string to use for branding. This
       branding text appears next to your add-in icon in the pop-up menu.
-    remarks: '\[Api set: WordApi 1.8\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +34,9 @@ properties:
     package: word!
     fullName: subtitleResourceId
     summary: Specifies the manifest resource ID of the string to use as the subtitle.
-    remarks: '\[Api set: WordApi 1.8\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,9 @@ properties:
     package: word!
     fullName: suggestions
     summary: Specifies the suggestions to display in the critique pop-up menu.
-    remarks: '\[Api set: WordApi 1.8\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +64,9 @@ properties:
     package: word!
     fullName: titleResourceId
     summary: Specifies the manifest resource ID of the string to use as the title.
-    remarks: '\[Api set: WordApi 1.8\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

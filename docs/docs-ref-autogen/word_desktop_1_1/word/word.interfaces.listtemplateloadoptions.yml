@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.ListTemplateLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateLoadOptions
 summary: Represents a list template.
-remarks: '\[Api set: WordApiDesktop 1.1\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +33,9 @@ properties:
     package: word!
     fullName: outlineNumbered
     summary: Specifies whether the list template is outline numbered.
-    remarks: '\[Api set: WordApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

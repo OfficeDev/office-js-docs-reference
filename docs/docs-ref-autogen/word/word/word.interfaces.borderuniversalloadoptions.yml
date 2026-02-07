@@ -6,7 +6,9 @@ fullName: Word.Interfaces.BorderUniversalLoadOptions
 summary: >-
   Represents the `BorderUniversal` object, which manages borders for a range,
   paragraph, table, or frame.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     package: word!
     fullName: artStyle
     summary: Specifies the graphical page-border design for the document.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       Specifies the width (in points) of the graphical page border specified in
       the `artStyle` property.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +69,9 @@ properties:
     summary: >-
       Specifies the color for the `BorderUniversal` object. You can provide the
       value in the '\#RRGGBB' format.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +86,9 @@ properties:
     summary: >-
       Specifies the color for the `BorderUniversal` or
       [Word.Font](xref:word!Word.Font:class) object.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -91,7 +101,9 @@ properties:
     package: word!
     fullName: inside
     summary: Returns `true` if an inside border can be applied to the specified object.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -104,7 +116,9 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies whether the border is visible.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -117,7 +131,9 @@ properties:
     package: word!
     fullName: lineStyle
     summary: Specifies the line style of the border.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -130,7 +146,9 @@ properties:
     package: word!
     fullName: lineWidth
     summary: Specifies the line width of an object's border.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

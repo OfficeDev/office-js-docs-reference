@@ -12,7 +12,9 @@ summary: >-
   the table row, but not the data. That is, if the data is sorted or if new rows
   are added, a table row will continue to point at the index for which it was
   created.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -38,7 +40,9 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of rows in the table.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -75,8 +79,10 @@ methods:
       sorted or if new rows are added, a table row will continue to point at the
       index for which it was created.
     remarks: >-
-      \[Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of
-      multiple rows; 1.15 for adding `alwaysInsert` parameter.\]
+      \[ [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of
+      multiple rows; 1.15 for adding `alwaysInsert`
+      parameter.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -119,7 +125,9 @@ methods:
       location of the table row, but not the data. That is, if the data is
       sorted or if new rows are added, a table row will continue to point at the
       index for which it was created.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -17,7 +17,10 @@ properties:
     package: powerpoint!
     fullName: key
     summary: The string that uniquely identifies the custom property.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +33,10 @@ properties:
     package: powerpoint!
     fullName: type
     summary: The type of the value used for the custom property.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +56,10 @@ properties:
       The value of the custom property. If the value is a string, the maximum
       length 255 characters. Larger strings cause the operation to fail with an
       `InvalidArgument` error.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

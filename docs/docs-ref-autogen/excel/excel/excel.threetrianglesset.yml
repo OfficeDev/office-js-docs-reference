@@ -3,7 +3,9 @@ name: Excel.ThreeTrianglesSet
 uid: excel!Excel.ThreeTrianglesSet:interface
 package: excel!
 fullName: Excel.ThreeTrianglesSet
-summary: '\[Api set: ExcelApi 1.2\]'
+summary: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false

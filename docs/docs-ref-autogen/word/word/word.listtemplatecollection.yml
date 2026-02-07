@@ -7,7 +7,9 @@ summary: >-
   Contains a collection of
   [Word.ListTemplate](xref:word!Word.ListTemplate:class) objects in a document,
   list template gallery, or document template.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -51,7 +53,9 @@ methods:
       the collection represents list templates from a
       [Word.ListTemplateGallery](xref:word!Word.ListTemplateGallery:class)<!--
       -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -69,7 +73,9 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `ListTemplate` object by its index in the collection.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

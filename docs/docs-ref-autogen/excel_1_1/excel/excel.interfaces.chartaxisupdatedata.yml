@@ -19,7 +19,9 @@ properties:
     summary: >-
       Represents the formatting of a chart object, which includes line and font
       formatting.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +38,9 @@ properties:
     summary: >-
       Returns an object that represents the major gridlines for the specified
       axis.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -53,7 +57,9 @@ properties:
     summary: >-
       Represents the interval between two major tick marks. Can be set to a
       numeric value or an empty string. The returned value is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +75,9 @@ properties:
       Represents the maximum value on the value axis. Can be set to a numeric
       value or an empty string (for automatic axis values). The returned value
       is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -85,7 +93,9 @@ properties:
       Represents the minimum value on the value axis. Can be set to a numeric
       value or an empty string (for automatic axis values). The returned value
       is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -100,7 +110,9 @@ properties:
     summary: >-
       Returns an object that represents the minor gridlines for the specified
       axis.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -118,7 +130,9 @@ properties:
       Represents the interval between two minor tick marks. Can be set to a
       numeric value or an empty string (for automatic axis values). The returned
       value is always a number.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -131,7 +145,9 @@ properties:
     package: excel!
     fullName: title
     summary: Represents the axis title.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

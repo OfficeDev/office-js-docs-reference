@@ -6,7 +6,9 @@ fullName: Word.WindowScrollOptions
 summary: >-
   The options that scrolls a window or pane by the specified number of units
   defined by the calling method.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +23,9 @@ properties:
       `down` and `up` are both provided, the contents of the window are scrolled
       by the difference of the property values. For example, if `down` is 3 and
       `up` is 6, the contents are scrolled up three units.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -39,7 +43,9 @@ properties:
       are scrolled by the difference of the property values. For example, if
       `left` is 3 and `right` is 6, the contents are scrolled to the right three
       screens.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +63,9 @@ properties:
       are scrolled by the difference of the property values. For example, if
       `left` is 3 and `right` is 6, the contents are scrolled to the right three
       screens.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +82,9 @@ properties:
       `down` and `up` are both provided, the contents of the window are scrolled
       by the difference of the property values. For example, if `down` is 3 and
       `up` is 6, the contents are scrolled up three units.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

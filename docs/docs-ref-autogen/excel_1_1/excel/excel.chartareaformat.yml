@@ -4,7 +4,9 @@ uid: excel!Excel.ChartAreaFormat:class
 package: excel!
 fullName: Excel.ChartAreaFormat
 summary: Encapsulates the format properties for the overall chart area.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     summary: >-
       Represents the fill format of an object, which includes background
       formatting information.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +51,9 @@ properties:
     summary: >-
       Represents the font attributes (font name, font size, color, etc.) for the
       current object.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

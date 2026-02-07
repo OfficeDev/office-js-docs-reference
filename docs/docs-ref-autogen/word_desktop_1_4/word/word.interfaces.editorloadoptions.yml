@@ -9,7 +9,9 @@ summary: >-
   protected Word
   document](https://support.microsoft.com/office/187ed01c-8795-43e1-9fd0-c9fca419dadf)<!--
   -->.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -38,7 +40,9 @@ properties:
     summary: >-
       Gets the identifier for the `Editor` object when the parent document is
       saved as a webpage.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +55,9 @@ properties:
     package: word!
     fullName: name
     summary: Gets the name of the editor.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +72,9 @@ properties:
     summary: >-
       Gets a `Range` object that represents the next range that the editor has
       permissions to modify.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +89,9 @@ properties:
     summary: >-
       Gets a `Range` object that represents the portion of the document that's
       contained in the `Editor` object.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

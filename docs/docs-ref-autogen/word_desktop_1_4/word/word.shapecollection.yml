@@ -7,7 +7,9 @@ summary: >-
   Contains a collection of [Word.Shape](xref:word!Word.Shape:class) objects.
   Currently, only the following shapes are supported: text boxes, geometric
   shapes, groups, pictures, and canvases.
-remarks: '\[Api set: WordApiDesktop 1.2\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -49,7 +51,9 @@ methods:
     summary: >-
       Gets the shapes that have the specified geometric types. Only applied to
       geometric shapes.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +75,9 @@ methods:
     summary: >-
       Gets a shape by its identifier. Throws an `ItemNotFound` error if there
       isn't a shape with the identifier in this collection.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +101,9 @@ methods:
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -113,7 +121,9 @@ methods:
     package: word!
     fullName: getByIds(ids)
     summary: Gets the shapes by the identifiers.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -131,7 +141,9 @@ methods:
     package: word!
     fullName: getByNames(names)
     summary: Gets the shapes that have the specified names.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -149,7 +161,9 @@ methods:
     package: word!
     fullName: getByTypes(types)
     summary: Gets the shapes that have the specified types.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -169,7 +183,9 @@ methods:
     summary: >-
       Gets the first shape in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -188,7 +204,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -204,7 +222,9 @@ methods:
     summary: >-
       Groups floating shapes in this collection, inline shapes will be skipped.
       Returns a `Shape` object that represents the new group of shapes.
-    remarks: '\[Api set: WordApiDesktop 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

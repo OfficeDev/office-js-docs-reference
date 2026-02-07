@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Binding:class
 package: powerpoint!
 fullName: PowerPoint.Binding
 summary: Represents an Office.js binding that is defined in the presentation.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +33,10 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Represents the binding identifier.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,10 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +66,10 @@ methods:
     package: powerpoint!
     fullName: delete()
     summary: Deletes the binding.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,7 +85,10 @@ methods:
     summary: >-
       Returns the shape represented by the binding. Throws an error if the
       binding isn't of the correct type.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

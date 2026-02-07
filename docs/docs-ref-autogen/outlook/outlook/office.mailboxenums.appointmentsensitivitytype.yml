@@ -7,7 +7,9 @@ summary: >-
   Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface)
   of an appointment.
 remarks: >-
-  \[Api set: Mailbox 1.14\]
+  \[ [Api set: Mailbox
+  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Applicable Outlook

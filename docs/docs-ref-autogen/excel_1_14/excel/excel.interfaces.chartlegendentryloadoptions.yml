@@ -4,7 +4,9 @@ uid: excel!Excel.Interfaces.ChartLegendEntryLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartLegendEntryLoadOptions
 summary: Represents the legend entry in `legendEntryCollection`<!-- -->.
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +33,9 @@ properties:
     package: excel!
     fullName: height
     summary: Specifies the height of the legend entry on the chart legend.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +48,9 @@ properties:
     package: excel!
     fullName: index
     summary: Specifies the index of the legend entry in the chart legend.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +63,9 @@ properties:
     package: excel!
     fullName: left
     summary: Specifies the left value of a chart legend entry.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -70,7 +78,9 @@ properties:
     package: excel!
     fullName: top
     summary: Specifies the top of a chart legend entry.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -83,7 +93,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Represents the visibility of a chart legend entry.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -96,7 +108,9 @@ properties:
     package: excel!
     fullName: width
     summary: Represents the width of the legend entry on the chart Legend.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

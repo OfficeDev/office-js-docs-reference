@@ -4,7 +4,10 @@ uid: visio!Visio.Position:interface
 package: visio!
 fullName: Visio.Position
 summary: Represents the Position of the object in the view.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -18,7 +21,10 @@ properties:
       An integer that specifies the x-coordinate of the object, which is the
       signed value of the distance in pixels from the viewport's center to the
       left boundary of the page.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +40,10 @@ properties:
       An integer that specifies the y-coordinate of the object, which is the
       signed value of the distance in pixels from the viewport's center to the
       top boundary of the page.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

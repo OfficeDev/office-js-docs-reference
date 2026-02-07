@@ -6,7 +6,9 @@ fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions
 summary: >-
   Contains the collection of
   [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
-remarks: '\[Api set: WordApi 1.4\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the custom XML part.'
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +53,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the namespace URI of the custom XML
       part.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -6,7 +6,9 @@ fullName: Word.SelectionMoveOptions
 summary: >-
   Represents the options for the
   [Selection.move](xref:word!Word.Selection:class) method.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -27,7 +29,9 @@ properties:
       before using the `move` method. If the range or selection is in the middle
       of a unit or isn't collapsed, moving it to the beginning or end of the
       unit counts as moving it one full unit.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -42,7 +46,9 @@ properties:
     summary: >-
       If provided, specifies the unit by which to move the ending character
       position. The default value is `character`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

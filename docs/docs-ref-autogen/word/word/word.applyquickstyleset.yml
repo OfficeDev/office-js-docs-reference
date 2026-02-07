@@ -4,7 +4,9 @@ uid: word!Word.ApplyQuickStyleSet:enum
 package: word!
 fullName: Word.ApplyQuickStyleSet
 summary: Specifies which Quick Style set to apply to the document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,13 +19,16 @@ fields:
       opened.
 
 
-      * \[Api set: WordApiDesktop 1.4\]
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SessionStart"'
   - name: template
     uid: word!Word.ApplyQuickStyleSet.template:member
     package: word!
-    summary: |-
+    summary: >-
       Resets the Quick Style to the style set from the template, if any.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Template"'

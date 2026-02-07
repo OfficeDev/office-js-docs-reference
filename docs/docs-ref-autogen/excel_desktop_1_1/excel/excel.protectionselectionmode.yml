@@ -4,7 +4,9 @@ uid: excel!Excel.ProtectionSelectionMode:enum
 package: excel!
 fullName: Excel.ProtectionSelectionMode
 summary: ''
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: none
     uid: excel!Excel.ProtectionSelectionMode.none:member
     package: excel!
-    summary: |-
+    summary: >-
       Selection is not allowed for any cells.
 
-      * \[Api set: ExcelApi 1.7\]
+
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"None"'
   - name: normal
     uid: excel!Excel.ProtectionSelectionMode.normal:member
     package: excel!
-    summary: |-
+    summary: >-
       Selection is allowed for all cells.
 
-      * \[Api set: ExcelApi 1.7\]
+
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Normal"'
   - name: unlocked
     uid: excel!Excel.ProtectionSelectionMode.unlocked:member
     package: excel!
-    summary: |-
+    summary: >-
       Selection is allowed only for cells that are not locked.
 
-      * \[Api set: ExcelApi 1.7\]
+
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unlocked"'

@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.TableColumnLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableColumnLoadOptions
 summary: Represents a table column in a Word document.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +33,9 @@ properties:
     package: word!
     fullName: columnIndex
     summary: Returns the position of this column in a collection.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +50,9 @@ properties:
     summary: >-
       Returns `true` if the column or row is the first one in the table; `false`
       otherwise.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -61,7 +67,9 @@ properties:
     summary: >-
       Returns `true` if the column or row is the last one in the table; `false`
       otherwise.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +82,9 @@ properties:
     package: word!
     fullName: nestingLevel
     summary: Returns the nesting level of the column.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +100,9 @@ properties:
       Specifies the preferred width (in points or as a percentage of the window
       width) for the column. The unit of measurement can be specified by the
       `preferredWidthType` property.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -105,7 +117,9 @@ properties:
     summary: >-
       Specifies the preferred unit of measurement to use for the width of the
       table column.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +134,9 @@ properties:
     summary: >-
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the column.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -135,7 +151,9 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width of the column, in points.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

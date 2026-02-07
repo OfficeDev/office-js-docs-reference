@@ -13,8 +13,10 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
   -->.
 remarks: >-
-  \[Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
-  mailbox support\]
+  \[ [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
+  mailbox
+  support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission

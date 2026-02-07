@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.BindingLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BindingLoadOptions
 summary: Represents an Office.js binding that is defined in the presentation.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +34,10 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Represents the binding identifier.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +50,10 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

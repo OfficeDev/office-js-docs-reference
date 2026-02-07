@@ -6,7 +6,10 @@ fullName: Visio.DocumentLoadCompleteEventArgs
 summary: >-
   Provides information about the success or failure of the DocumentLoadComplete
   event.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +20,10 @@ properties:
     package: visio!
     fullName: success
     summary: Gets the success or failure of the DocumentLoadComplete event.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

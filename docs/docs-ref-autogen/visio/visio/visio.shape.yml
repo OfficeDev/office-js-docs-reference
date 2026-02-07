@@ -4,7 +4,10 @@ uid: visio!Visio.Shape:class
 package: visio!
 fullName: Visio.Shape
 summary: Represents the Shape class.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +18,10 @@ properties:
     package: visio!
     fullName: comments
     summary: Returns the Comments Collection.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,10 @@ properties:
     package: visio!
     fullName: hyperlinks
     summary: Returns the Hyperlinks collection for a Shape object.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +65,10 @@ properties:
     package: visio!
     fullName: id
     summary: Shape's identifier.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +81,10 @@ properties:
     package: visio!
     fullName: name
     summary: Shape's name.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,7 +99,10 @@ properties:
     summary: >-
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +115,10 @@ properties:
     package: visio!
     fullName: shapeDataItems
     summary: Returns the Shape's Data Section.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -110,7 +131,10 @@ properties:
     package: visio!
     fullName: subShapes
     summary: Gets SubShape Collection.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +147,10 @@ properties:
     package: visio!
     fullName: text
     summary: Shape's text.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -136,7 +163,10 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the view of the shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -152,7 +182,10 @@ methods:
     summary: >-
       Returns the AbsoluteBoundingBox object that specifies absolute bounding
       box of the shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -168,7 +201,10 @@ methods:
     package: visio!
     fullName: getBounds()
     summary: Returns the BoundingBox object that specifies bounding box of the shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

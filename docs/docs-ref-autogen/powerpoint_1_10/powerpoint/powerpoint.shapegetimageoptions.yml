@@ -10,7 +10,10 @@ summary: >-
   height is specified, the other will be calculated to preserve aspect ratio.
   The resulting dimensions will automatically be clamped to the maximum
   supported size if too large.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +24,10 @@ properties:
     package: powerpoint!
     fullName: format
     summary: The desired format of the resulting image.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -40,7 +46,10 @@ properties:
       automatically be clamped to the maximum supported size if too large.
       Throws an `InvalidArgument` exception when set with a non-positive
       integer.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +66,10 @@ properties:
       automatically be clamped to the maximum supported size if too large.
       Throws an `InvalidArgument` exception when set with a non-positive
       integer.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

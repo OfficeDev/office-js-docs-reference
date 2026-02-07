@@ -4,7 +4,9 @@ uid: excel!Excel.PivotLayout:class
 package: excel!
 fullName: Excel.PivotLayout
 summary: Represents the visual layout of the PivotTable.
-remarks: '\[Api set: ExcelApi 1.8\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -24,7 +26,10 @@ properties:
       understand the table. A title can be read to a person with a disability
       and is used to determine whether they wish to hear the description of the
       content.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +51,10 @@ properties:
       understand the table. A title can be read to a person with a disability
       and is used to determine whether they wish to hear the description of the
       content.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -61,7 +69,9 @@ properties:
     summary: >-
       Specifies if formatting will be automatically formatted when it's
       refreshed or when fields are moved.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +104,10 @@ properties:
       persists if `fillEmptyCells` is set to `false`<!-- -->, and that setting
       this value does not set that property to `true`<!-- -->. By default, this
       is an empty string.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -107,7 +120,10 @@ properties:
     package: excel!
     fullName: enableFieldList
     summary: Specifies if the field list can be shown in the UI.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -124,7 +140,10 @@ properties:
       the `emptyCellText`<!-- -->. Default is `false`<!-- -->. Note that the
       value of `emptyCellText` persists when this property is set to `false`<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -139,7 +158,9 @@ properties:
     summary: >-
       This property indicates the PivotLayoutType of all fields on the
       PivotTable. If fields have different states, this will be null.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -154,7 +175,10 @@ properties:
     package: excel!
     fullName: pivotStyle
     summary: The style applied to the PivotTable.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -170,7 +194,9 @@ properties:
       Specifies if formatting is preserved when the report is refreshed or
       recalculated by operations such as pivoting, sorting, or changing page
       field items.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -183,7 +209,9 @@ properties:
     package: excel!
     fullName: showColumnGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for columns.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -198,7 +226,10 @@ properties:
     summary: >-
       Specifies whether the PivotTable displays field headers (field captions
       and filter drop-downs).
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -211,7 +242,9 @@ properties:
     package: excel!
     fullName: showRowGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for rows.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -226,7 +259,9 @@ properties:
     summary: >-
       This property indicates the `SubtotalLocationType` of all fields on the
       PivotTable. If fields have different states, this will be `null`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -248,7 +283,10 @@ methods:
       at the global level for the PivotTable and applied to individual
       PivotFields. This function overwrites the setting for all fields in the
       PivotTable to the value of `display` parameter.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -271,7 +309,10 @@ methods:
       intersection of the given row and column that contains the data from the
       given hierarchy. This method is the inverse of calling `getPivotItems` and
       `getDataHierarchy` on a particular cell.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -298,7 +339,9 @@ methods:
     package: excel!
     fullName: getColumnLabelRange()
     summary: Returns the range where the PivotTable's column labels reside.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -312,7 +355,9 @@ methods:
     package: excel!
     fullName: getDataBodyRange()
     summary: Returns the range where the PivotTable's data values reside.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -328,7 +373,9 @@ methods:
     summary: >-
       Gets the DataHierarchy that is used to calculate the value in a specified
       range within the PivotTable.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -348,7 +395,9 @@ methods:
     package: excel!
     fullName: getFilterAxisRange()
     summary: Returns the range of the PivotTable's filter area.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -364,7 +413,9 @@ methods:
     summary: >-
       Gets the PivotItems from an axis that make up the value in a specified
       range within the PivotTable.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -393,7 +444,9 @@ methods:
     summary: >-
       Gets the PivotItems from an axis that make up the value in a specified
       range within the PivotTable.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -420,7 +473,9 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Returns the range the PivotTable exists on, excluding the filter area.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -434,7 +489,9 @@ methods:
     package: excel!
     fullName: getRowLabelRange()
     summary: Returns the range where the PivotTable's row labels reside.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -528,7 +585,10 @@ methods:
     summary: >-
       Sets the "repeat all item labels" setting across all fields in the
       PivotTable.
-    remarks: '\[Api set: ExcelApi 1.13\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -604,7 +664,9 @@ methods:
       Sets the PivotTable to automatically sort using the specified cell to
       automatically select all necessary criteria and context. This behaves
       identically to applying an autosort from the UI.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -630,7 +692,9 @@ methods:
       Sets the PivotTable to automatically sort using the specified cell to
       automatically select all necessary criteria and context. This behaves
       identically to applying an autosort from the UI.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -655,7 +719,10 @@ methods:
     package: excel!
     fullName: setStyle(style)
     summary: Sets the style applied to the PivotTable.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false

@@ -4,7 +4,10 @@ uid: visio!Visio.Interfaces.DocumentViewLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentViewLoadOptions
 summary: Represents the DocumentView class.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +34,10 @@ properties:
     package: visio!
     fullName: disableHyperlinks
     summary: Disable Hyperlinks.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +50,10 @@ properties:
     package: visio!
     fullName: disablePan
     summary: Disable Pan.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +66,10 @@ properties:
     package: visio!
     fullName: disablePanZoomWindow
     summary: Disable PanZoomWindow.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,7 +82,10 @@ properties:
     package: visio!
     fullName: disableZoom
     summary: Disable Zoom.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -83,7 +98,10 @@ properties:
     package: visio!
     fullName: hideDiagramBoundary
     summary: Hide Diagram Boundary.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

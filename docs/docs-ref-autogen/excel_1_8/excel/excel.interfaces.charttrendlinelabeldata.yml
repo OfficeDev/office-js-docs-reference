@@ -19,7 +19,9 @@ properties:
     summary: >-
       Specifies if the trendline label automatically generates appropriate text
       based on context.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     package: excel!
     fullName: format
     summary: The format of the chart trendline label.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +54,9 @@ properties:
     summary: >-
       String value that represents the formula of the chart trendline label
       using A1-style notation.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -65,7 +71,9 @@ properties:
     summary: >-
       Returns the height, in points, of the chart trendline label. Value is
       `null` if the chart trendline label is not visible.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +89,9 @@ properties:
       Represents the horizontal alignment of the chart trendline label. See
       `Excel.ChartTextHorizontalAlignment` for details. This property is valid
       only when `TextOrientation` of a trendline label is -90, 90, or 180.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -101,7 +111,9 @@ properties:
       Represents the distance, in points, from the left edge of the chart
       trendline label to the left edge of the chart area. Value is `null` if the
       chart trendline label is not visible.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -114,7 +126,9 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: String value that represents the format code for the trendline label.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -127,7 +141,9 @@ properties:
     package: excel!
     fullName: text
     summary: String representing the text of the trendline label on a chart.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -143,7 +159,9 @@ properties:
       Represents the angle to which the text is oriented for the chart trendline
       label. The value should either be an integer from -90 to 90 or the integer
       180 for vertically-oriented text.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -159,7 +177,9 @@ properties:
       Represents the distance, in points, from the top edge of the chart
       trendline label to the top of the chart area. Value is `null` if the chart
       trendline label is not visible.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -175,7 +195,9 @@ properties:
       Represents the vertical alignment of the chart trendline label. See
       `Excel.ChartTextVerticalAlignment` for details. This property is valid
       only when `TextOrientation` of a trendline label is 0.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -194,7 +216,9 @@ properties:
     summary: >-
       Returns the width, in points, of the chart trendline label. Value is
       `null` if the chart trendline label is not visible.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

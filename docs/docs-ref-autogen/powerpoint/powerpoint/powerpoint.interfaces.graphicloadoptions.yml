@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.GraphicLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.GraphicLoadOptions
 summary: Represents a graphic object in PowerPoint.
-remarks: '\[Api set: PowerPointApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: true
 isDeprecated: false
@@ -31,7 +34,10 @@ properties:
     package: powerpoint!
     fullName: shape
     summary: Returns the `Shape` object associated with the graphic.
-    remarks: '\[Api set: PowerPointApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false

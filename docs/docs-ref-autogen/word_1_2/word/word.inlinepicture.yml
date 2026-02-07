@@ -4,7 +4,9 @@ uid: word!Word.InlinePicture:class
 package: word!
 fullName: Word.InlinePicture
 summary: Represents an inline picture.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     summary: >-
       Specifies a string that represents the alternative text associated with
       the inline image.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +34,9 @@ properties:
     package: word!
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,9 @@ properties:
     package: word!
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -73,7 +81,9 @@ properties:
     summary: >-
       Specifies a hyperlink on the image. Use a '\#' to separate the address
       part from the optional location part.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -88,7 +98,9 @@ properties:
     summary: >-
       Specifies a value that indicates whether the inline image retains its
       original proportions when you resize it.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -101,7 +113,9 @@ properties:
     package: word!
     fullName: paragraph
     summary: Gets the parent paragraph that contains the inline image.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -116,7 +130,9 @@ properties:
     summary: >-
       Gets the content control that contains the inline image. Throws an
       `ItemNotFound` error if there isn't a parent content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -129,7 +145,9 @@ properties:
     package: word!
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -143,7 +161,9 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the inline picture from the document.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -157,7 +177,9 @@ methods:
     package: word!
     fullName: getBase64ImageSrc()
     summary: Gets the Base64-encoded string representation of the inline image.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -171,7 +193,9 @@ methods:
     package: word!
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -201,7 +225,9 @@ methods:
     package: word!
     fullName: insertContentControl()
     summary: Wraps the inline picture with a rich text content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -216,7 +242,8 @@ methods:
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document at the specified location.
     remarks: >-
-      \[Api set: WordApi 1.2\]
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Insertion isn't supported if the document being inserted contains an
@@ -248,7 +275,9 @@ methods:
     package: word!
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -273,7 +302,9 @@ methods:
     package: word!
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts an inline picture at the specified location.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -304,7 +335,9 @@ methods:
     package: word!
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -329,7 +362,9 @@ methods:
     package: word!
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -355,7 +390,9 @@ methods:
     package: word!
     fullName: insertText(text, insertLocation)
     summary: Inserts text at the specified location.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -458,7 +495,9 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the inline picture. This causes Word to scroll to the selection.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -478,7 +517,9 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the inline picture. This causes Word to scroll to the selection.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

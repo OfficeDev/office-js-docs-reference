@@ -4,7 +4,10 @@ uid: visio!Visio.Document:class
 package: visio!
 fullName: Visio.Document
 summary: Represents the Document class.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +18,10 @@ properties:
     package: visio!
     fullName: application
     summary: Represents a Visio application instance that contains this document.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,10 @@ properties:
     package: visio!
     fullName: pages
     summary: Represents a collection of pages associated with the document.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +65,10 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the DocumentView object.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -70,7 +82,10 @@ methods:
     package: visio!
     fullName: getActivePage()
     summary: Returns the Active Page of the document.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -209,7 +224,10 @@ methods:
     package: visio!
     fullName: setActivePage(PageName)
     summary: Set the Active Page of the document.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -230,7 +248,10 @@ methods:
       Shows or hides a TaskPane. This will be consumed by the DV Excel
       Add-In/Other third-party apps who embed the Visio drawing to show/hide the
       task pane.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -266,7 +287,10 @@ methods:
       Shows or hides a TaskPane. This will be consumed by the DV Excel
       Add-In/Other third-party apps who embed the Visio drawing to show/hide the
       task pane.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -302,7 +326,10 @@ methods:
     package: visio!
     fullName: startDataRefresh()
     summary: Triggers the refresh of the data in the Diagram, for all pages.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -338,7 +365,10 @@ events:
     package: visio!
     fullName: onDataRefreshComplete
     summary: Occurs when the data is refreshed in the diagram.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -357,7 +387,10 @@ events:
     summary: >-
       Occurs when there is an expected or unexpected error occurred in the
       session.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -374,7 +407,10 @@ events:
     package: visio!
     fullName: onDocumentLoadComplete
     summary: Occurs when the Document is loaded, refreshed, or changed.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -391,7 +427,10 @@ events:
     package: visio!
     fullName: onPageLoadComplete
     summary: Occurs when the page is finished loading.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -408,7 +447,10 @@ events:
     package: visio!
     fullName: onSelectionChanged
     summary: Occurs when the current selection of shapes changes.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -427,7 +469,10 @@ events:
     summary: >-
       Occurs when the user moves the mouse pointer into the bounding box of a
       shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -444,7 +489,10 @@ events:
     package: visio!
     fullName: onShapeMouseLeave
     summary: Occurs when the user moves the mouse out of the bounding box of a shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -461,7 +509,10 @@ events:
     package: visio!
     fullName: onTaskPaneStateChanged
     summary: Occurs whenever a task pane state is changed.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

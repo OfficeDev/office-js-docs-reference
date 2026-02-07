@@ -6,7 +6,10 @@ fullName: PowerPoint.HyperlinkAddOptions
 summary: >-
   Represents the available options when adding a
   [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)<!-- -->.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -19,7 +22,10 @@ properties:
     summary: >-
       Specifies the address of the hyperlink, which can be a URL, a file name or
       file path, or an email address with the `mailto` URI scheme.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +38,10 @@ properties:
     package: powerpoint!
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

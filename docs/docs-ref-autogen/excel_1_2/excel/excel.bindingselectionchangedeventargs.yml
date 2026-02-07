@@ -11,7 +11,9 @@ summary: >-
   *Note**: If multiple, discontiguous cells are selected,
   `Binding.onSelectionChanged` only reports row and column information for one
   selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
-remarks: '\[Api set: ExcelApi 1.2\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -25,7 +27,9 @@ properties:
       Gets a temporary `Binding` object that contains the ID of the `Binding`
       object that raised the event. Use that ID with
       `BindingCollection.getItem(id)` to get the binding.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -38,7 +42,9 @@ properties:
     package: excel!
     fullName: columnCount
     summary: Gets the number of columns selected.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +57,9 @@ properties:
     package: excel!
     fullName: rowCount
     summary: Gets the number of rows selected.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +72,9 @@ properties:
     package: excel!
     fullName: startColumn
     summary: Gets the index of the first column of the selection (zero-based).
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -77,7 +87,9 @@ properties:
     package: excel!
     fullName: startRow
     summary: Gets the index of the first row of the selection (zero-based).
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,9 @@ uid: word!Word.PageMovementType:enum
 package: word!
 fullName: Word.PageMovementType
 summary: Specifies the page movement type in a Word document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,16 +14,20 @@ fields:
   - name: sideToSide
     uid: word!Word.PageMovementType.sideToSide:member
     package: word!
-    summary: |-
+    summary: >-
       Side to side.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SideToSide"'
   - name: vertical
     uid: word!Word.PageMovementType.vertical:member
     package: word!
-    summary: |-
+    summary: >-
       Vertical.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Vertical"'

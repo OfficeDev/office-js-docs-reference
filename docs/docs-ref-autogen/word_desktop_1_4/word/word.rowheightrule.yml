@@ -4,7 +4,9 @@ uid: word!Word.RowHeightRule:enum
 package: word!
 fullName: Word.RowHeightRule
 summary: Specifies the rule for determining the height of the specified cells or rows.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: atLeast
     uid: word!Word.RowHeightRule.atLeast:member
     package: word!
-    summary: |-
+    summary: >-
       The row height is set to a minimum value.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AtLeast"'
   - name: auto
     uid: word!Word.RowHeightRule.auto:member
     package: word!
-    summary: |-
+    summary: >-
       The row height is adjusted to accommodate the tallest value in the row.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Auto"'
   - name: exactly
     uid: word!Word.RowHeightRule.exactly:member
     package: word!
-    summary: |-
+    summary: >-
       The row height is set to an exact value.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Exactly"'

@@ -6,7 +6,9 @@ fullName: Word.BookmarkCollection
 summary: >-
   A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that
   represent the bookmarks in the specified selection, range, or document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,9 @@ methods:
     package: word!
     fullName: add(name, range)
     summary: Returns a `Bookmark` object that represents a bookmark added to a range.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -73,7 +77,9 @@ methods:
     package: word!
     fullName: exists(name)
     summary: Determines whether the specified bookmark exists.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +101,9 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `Bookmark` object by its index in the collection.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

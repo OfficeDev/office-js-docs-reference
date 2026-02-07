@@ -4,7 +4,9 @@ uid: excel!Excel.WindowView:enum
 package: excel!
 fullName: Excel.WindowView
 summary: Specifies the view mode of the window.
-remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,8 @@ fields:
       and editing.
 
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"normalView"'
   - name: pageBreakPreview
     uid: excel!Excel.WindowView.pageBreakPreview:member
@@ -27,7 +30,8 @@ fields:
       pages will break when printed.
 
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"pageBreakPreview"'
   - name: pageLayoutView
     uid: excel!Excel.WindowView.pageLayoutView:member
@@ -37,5 +41,6 @@ fields:
       worksheet will look when printed.
 
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"pageLayoutView"'

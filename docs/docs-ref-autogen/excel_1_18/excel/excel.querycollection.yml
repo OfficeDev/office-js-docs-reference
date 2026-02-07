@@ -4,7 +4,9 @@ uid: excel!Excel.QueryCollection:class
 package: excel!
 fullName: Excel.QueryCollection
 summary: Represents the collection of queries in the workbook.
-remarks: '\[Api set: ExcelApi 1.14\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +46,10 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of queries in the workbook.
-    remarks: '\[Api set: ExcelApi 1.14\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +63,10 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a query from the collection based on its name.
-    remarks: '\[Api set: ExcelApi 1.14\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

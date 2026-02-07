@@ -8,7 +8,9 @@ summary: >-
   to data in another workbook, the second workbook is linked to the first
   workbook. In this scenario, the second workbook is called the "linked
   workbook".
-remarks: '\[Api set: ExcelApiOnline 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApiOnline
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -36,7 +38,9 @@ properties:
     summary: >-
       The original URL pointing to the linked workbook. It is unique across all
       linked workbooks in the collection.
-    remarks: '\[Api set: ExcelApiOnline 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +58,9 @@ methods:
       in formulas are replaced with the latest fetched data. The current
       `LinkedWorkbook` object is invalidated and removed from
       `LinkedWorkbookCollection`<!-- -->.
-    remarks: '\[Api set: ExcelApiOnline 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -146,7 +152,9 @@ methods:
     package: excel!
     fullName: refresh()
     summary: Makes a request to refresh the data retrieved from the linked workbook.
-    remarks: '\[Api set: ExcelApiOnline 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

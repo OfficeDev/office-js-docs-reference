@@ -4,7 +4,9 @@ uid: word!Word.TwoLinesInOneType:enum
 package: word!
 fullName: Word.TwoLinesInOneType
 summary: Specifies the two lines in one type.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,48 +14,60 @@ fields:
   - name: angleBrackets
     uid: word!Word.TwoLinesInOneType.angleBrackets:member
     package: word!
-    summary: |-
+    summary: >-
       Two lines in one with angle brackets.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AngleBrackets"'
   - name: curlyBrackets
     uid: word!Word.TwoLinesInOneType.curlyBrackets:member
     package: word!
-    summary: |-
+    summary: >-
       Two lines in one with curly brackets.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CurlyBrackets"'
   - name: noBrackets
     uid: word!Word.TwoLinesInOneType.noBrackets:member
     package: word!
-    summary: |-
+    summary: >-
       Two lines in one without brackets.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NoBrackets"'
   - name: none
     uid: word!Word.TwoLinesInOneType.none:member
     package: word!
-    summary: |-
+    summary: >-
       No two lines in one.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: parentheses
     uid: word!Word.TwoLinesInOneType.parentheses:member
     package: word!
-    summary: |-
+    summary: >-
       Two lines in one with parentheses.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Parentheses"'
   - name: squareBrackets
     uid: word!Word.TwoLinesInOneType.squareBrackets:member
     package: word!
-    summary: |-
+    summary: >-
       Two lines in one with square brackets.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SquareBrackets"'

@@ -3,10 +3,12 @@ name: Excel.SettableCellProperties
 uid: excel!Excel.SettableCellProperties:interface
 package: excel!
 fullName: Excel.SettableCellProperties
-summary: |-
+summary: >-
   Represents the input parameter of setCellProperties.
 
-  \[Api set: ExcelApi 1.9\]
+
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false
@@ -17,10 +19,12 @@ properties:
     uid: excel!Excel.SettableCellProperties#format:member
     package: excel!
     fullName: format
-    summary: |-
+    summary: >-
       Represents the `format` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -33,10 +37,12 @@ properties:
     uid: excel!Excel.SettableCellProperties#hyperlink:member
     package: excel!
     fullName: hyperlink
-    summary: |-
+    summary: >-
       Represents the `hyperlink` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -49,10 +55,12 @@ properties:
     uid: excel!Excel.SettableCellProperties#style:member
     package: excel!
     fullName: style
-    summary: |-
+    summary: >-
       Represents the `style` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false

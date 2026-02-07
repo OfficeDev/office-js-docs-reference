@@ -8,7 +8,8 @@ summary: >-
   "range.getRowProperties" method.
 
 
-  \[Api set: ExcelApi 1.9\]
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false
@@ -19,10 +20,12 @@ properties:
     uid: excel!Excel.RowPropertiesLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: |-
+    summary: >-
       Specifies whether to load on the `format` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -42,10 +45,12 @@ properties:
     uid: excel!Excel.RowPropertiesLoadOptions#rowHidden:member
     package: excel!
     fullName: rowHidden
-    summary: |-
+    summary: >-
       Specifies whether to load on the `rowHidden` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -58,10 +63,12 @@ properties:
     uid: excel!Excel.RowPropertiesLoadOptions#rowIndex:member
     package: excel!
     fullName: rowIndex
-    summary: |-
+    summary: >-
       Specifies whether to load on the `rowIndex` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false

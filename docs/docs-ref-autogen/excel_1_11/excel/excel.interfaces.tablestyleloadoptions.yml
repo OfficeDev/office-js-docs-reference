@@ -6,7 +6,9 @@ fullName: Excel.Interfaces.TableStyleLoadOptions
 summary: >-
   Represents a table style, which defines the style elements by region of the
   table.
-remarks: '\[Api set: ExcelApi 1.10\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,10 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the table style.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +51,10 @@ properties:
     package: excel!
     fullName: readOnly
     summary: Specifies if this `TableStyle` object is read-only.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

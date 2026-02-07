@@ -4,7 +4,9 @@ uid: word!Word.CommentChangeType:enum
 package: word!
 fullName: Word.CommentChangeType
 summary: Represents how the comments in the event were changed.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -12,56 +14,70 @@ fields:
   - name: edited
     uid: word!Word.CommentChangeType.edited:member
     package: word!
-    summary: |-
+    summary: >-
       A comment was edited.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"edited"'
   - name: none
     uid: word!Word.CommentChangeType.none:member
     package: word!
-    summary: |-
+    summary: >-
       No comment changed event is triggered.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"none"'
   - name: reopened
     uid: word!Word.CommentChangeType.reopened:member
     package: word!
-    summary: |-
+    summary: >-
       A comment was reopened.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"reopened"'
   - name: replyAdded
     uid: word!Word.CommentChangeType.replyAdded:member
     package: word!
-    summary: |-
+    summary: >-
       A reply was added.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"replyAdded"'
   - name: replyDeleted
     uid: word!Word.CommentChangeType.replyDeleted:member
     package: word!
-    summary: |-
+    summary: >-
       A reply was deleted.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"replyDeleted"'
   - name: replyEdited
     uid: word!Word.CommentChangeType.replyEdited:member
     package: word!
-    summary: |-
+    summary: >-
       A reply was edited.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"replyEdited"'
   - name: resolved
     uid: word!Word.CommentChangeType.resolved:member
     package: word!
-    summary: |-
+    summary: >-
       A comment was resolved.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"resolved"'

@@ -7,7 +7,8 @@ summary: >-
   The `Time` object is returned as the start or end property of an appointment
   in compose mode.
 remarks: >-
-  \[Api set: Mailbox 1.1\]
+  \[ [Api set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -36,7 +37,9 @@ methods:
       (UTC). You can convert the UTC time to the local client time by using the
       `convertToLocalClientTime` method.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -86,7 +89,9 @@ methods:
       (UTC). You can convert the UTC time to the local client time by using the
       `convertToLocalClientTime` method.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -138,7 +143,9 @@ methods:
       **Important**: In the Windows client, you can't use this method to
       update the start or end of a recurrence.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -206,7 +213,9 @@ methods:
       **Important**: In the Windows client, you can't use this method to
       update the start or end of a recurrence.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

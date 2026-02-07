@@ -4,7 +4,9 @@ uid: excel!Excel.FilterPivotHierarchy:class
 package: excel!
 fullName: Excel.FilterPivotHierarchy
 summary: Represents the Excel FilterPivotHierarchy.
-remarks: '\[Api set: ExcelApi 1.8\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: enableMultipleFilterItems
     summary: Determines whether to allow multiple filter items.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: excel!
     fullName: fields
     summary: Returns the PivotFields associated with the FilterPivotHierarchy.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +62,9 @@ properties:
     package: excel!
     fullName: id
     summary: ID of the FilterPivotHierarchy.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +77,9 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the FilterPivotHierarchy.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +92,9 @@ properties:
     package: excel!
     fullName: position
     summary: Position of the FilterPivotHierarchy.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -229,7 +241,9 @@ methods:
     package: excel!
     fullName: setToDefault()
     summary: Reset the FilterPivotHierarchy back to its default values.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

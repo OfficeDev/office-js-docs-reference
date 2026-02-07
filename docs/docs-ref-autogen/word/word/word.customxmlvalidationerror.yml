@@ -7,7 +7,9 @@ summary: >-
   Represents a single validation error in a
   [Word.CustomXmlValidationErrorCollection](xref:word!Word.CustomXmlValidationErrorCollection:class)
   object.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -35,7 +37,9 @@ properties:
     summary: >-
       Gets an integer representing the validation error in the
       `CustomXmlValidationError` object.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -50,7 +54,9 @@ properties:
     summary: >-
       Gets the name of the error in the `CustomXmlValidationError` object. If no
       errors exist, the property returns `"Nothing"`<!-- -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -65,7 +71,9 @@ properties:
     summary: >-
       Gets the node associated with this `CustomXmlValidationError` object, if
       any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -78,7 +86,9 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text in the `CustomXmlValidationError` object.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -93,7 +103,9 @@ properties:
     summary: >-
       Gets the type of error generated from the `CustomXmlValidationError`
       object.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -111,7 +123,9 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes this `CustomXmlValidationError` object.
-    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false

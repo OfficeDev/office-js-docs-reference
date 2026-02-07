@@ -6,7 +6,9 @@ fullName: Excel.Image
 summary: >-
   Represents an image in the worksheet. To get the corresponding `Shape` object,
   use `Image.shape`<!-- -->.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -19,7 +21,9 @@ properties:
     summary: >-
       Specifies the brightness of the image. The value for this property must be
       a number from 0.0 (dimmest) to 1.0 (brightest).
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +36,9 @@ properties:
     package: excel!
     fullName: colorType
     summary: Specifies the type of color transformation applied to the image.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +72,9 @@ properties:
     summary: >-
       Specifies the contrast of the image. The value for this property must be a
       number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +89,9 @@ properties:
     summary: >-
       Specifies the number of points that are cropped off the bottom of the
       image.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -96,7 +106,9 @@ properties:
     summary: >-
       Specifies the number of points that are cropped off the left side of the
       image.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -111,7 +123,9 @@ properties:
     summary: >-
       Specifies the number of points that are cropped off the right side of the
       image.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -124,7 +138,9 @@ properties:
     package: excel!
     fullName: cropTop
     summary: Specifies the number of points that are cropped off the top of the image.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -137,7 +153,9 @@ properties:
     package: excel!
     fullName: format
     summary: Returns the format of the image.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -154,7 +172,9 @@ properties:
     package: excel!
     fullName: id
     summary: Specifies the shape identifier for the image object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -167,7 +187,9 @@ properties:
     package: excel!
     fullName: shape
     summary: Returns the `Shape` object associated with the image.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -181,7 +203,9 @@ methods:
     package: excel!
     fullName: incrementBrightness(increment)
     summary: Increments the brightness of the image by a specified amount.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -202,7 +226,9 @@ methods:
     package: excel!
     fullName: incrementContrast(increment)
     summary: Increments the contrast of the image by a specified amount.
-    remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

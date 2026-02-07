@@ -4,7 +4,9 @@ uid: excel!Excel.WorksheetProtectionOptions:interface
 package: excel!
 fullName: Excel.WorksheetProtectionOptions
 summary: Represents the options in sheet protection.
-remarks: '\[Api set: ExcelApi 1.2\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     summary: >-
       Represents the worksheet protection option allowing use of the AutoFilter
       feature.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +34,9 @@ properties:
     package: excel!
     fullName: allowDeleteColumns
     summary: Represents the worksheet protection option allowing deleting of columns.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,9 @@ properties:
     package: excel!
     fullName: allowDeleteRows
     summary: Represents the worksheet protection option allowing deleting of rows.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +64,9 @@ properties:
     package: excel!
     fullName: allowFormatCells
     summary: Represents the worksheet protection option allowing formatting of cells.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +79,9 @@ properties:
     package: excel!
     fullName: allowFormatColumns
     summary: Represents the worksheet protection option allowing formatting of columns.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +94,9 @@ properties:
     package: excel!
     fullName: allowFormatRows
     summary: Represents the worksheet protection option allowing formatting of rows.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +109,9 @@ properties:
     package: excel!
     fullName: allowInsertColumns
     summary: Represents the worksheet protection option allowing inserting of columns.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -110,7 +126,9 @@ properties:
     summary: >-
       Represents the worksheet protection option allowing inserting of
       hyperlinks.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +141,9 @@ properties:
     package: excel!
     fullName: allowInsertRows
     summary: Represents the worksheet protection option allowing inserting of rows.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -138,7 +158,9 @@ properties:
     summary: >-
       Represents the worksheet protection option allowing use of the PivotTable
       feature.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -153,7 +175,9 @@ properties:
     summary: >-
       Represents the worksheet protection option allowing use of the sort
       feature.
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

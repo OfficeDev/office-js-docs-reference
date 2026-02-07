@@ -4,7 +4,9 @@ uid: onenote!OneNote.ParagraphInfo:interface
 package: onenote!
 fullName: OneNote.ParagraphInfo
 summary: List information for paragraph.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,10 @@ properties:
     package: onenote!
     fullName: bulletType
     summary: Bullet list type of paragraph.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +33,10 @@ properties:
     package: onenote!
     fullName: indentationLevel
     summary: Level of indentation of the paragraph.
-    remarks: '\[Api set: OneNoteApi 1.8\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -41,7 +49,10 @@ properties:
     package: onenote!
     fullName: index
     summary: Index of paragraph in a list.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +65,10 @@ properties:
     package: onenote!
     fullName: listType
     summary: Type of list in paragraph.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +83,10 @@ properties:
     package: onenote!
     fullName: numberType
     summary: Numbered list type of paragraph.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

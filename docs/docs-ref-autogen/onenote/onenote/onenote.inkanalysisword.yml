@@ -4,7 +4,9 @@ uid: onenote!OneNote.InkAnalysisWord:class
 package: onenote!
 fullName: OneNote.InkAnalysisWord
 summary: Represents ink analysis data for an identified word formed by ink strokes.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,10 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the InkAnalysisWord object.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +48,10 @@ properties:
     package: onenote!
     fullName: languageId
     summary: The ID of the recognized language in this inkAnalysisWord.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +64,10 @@ properties:
     package: onenote!
     fullName: line
     summary: Reference to the parent InkAnalysisLine.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +82,10 @@ properties:
     summary: >-
       Weak references to the ink strokes that were recognized as part of this
       ink analysis word.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -84,7 +98,10 @@ properties:
     package: onenote!
     fullName: wordAlternates
     summary: The words that were recognized in this ink word, in order of likelihood.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

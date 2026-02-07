@@ -6,7 +6,9 @@ fullName: Excel.SlicerCollection
 summary: >-
   Represents a collection of all the slicer objects in the workbook or a
   worksheet.
-remarks: '\[Api set: ExcelApi 1.10\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,10 @@ methods:
     package: excel!
     fullName: add(slicerSource, sourceField, slicerDestination)
     summary: Adds a new slicer to the workbook.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +95,10 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of slicers in the collection.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -104,7 +112,10 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a slicer object using its name or ID.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -122,7 +133,10 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a slicer based on its position in the collection.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -145,7 +159,10 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,12 @@ name: Excel.RowProperties
 uid: excel!Excel.RowProperties:interface
 package: excel!
 fullName: Excel.RowProperties
-summary: |-
+summary: >-
   Represents the returned properties of getRowProperties.
 
-  \[Api set: ExcelApi 1.9\]
+
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false
@@ -17,10 +19,12 @@ properties:
     uid: excel!Excel.RowProperties#address:member
     package: excel!
     fullName: address
-    summary: |-
+    summary: >-
       Represents the `address` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -33,10 +37,12 @@ properties:
     uid: excel!Excel.RowProperties#addressLocal:member
     package: excel!
     fullName: addressLocal
-    summary: |-
+    summary: >-
       Represents the `addressLocal` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -49,10 +55,12 @@ properties:
     uid: excel!Excel.RowProperties#rowIndex:member
     package: excel!
     fullName: rowIndex
-    summary: |-
+    summary: >-
       Represents the `rowIndex` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false

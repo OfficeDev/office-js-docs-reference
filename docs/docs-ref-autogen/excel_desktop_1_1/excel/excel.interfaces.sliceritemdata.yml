@@ -17,7 +17,10 @@ properties:
     package: excel!
     fullName: hasData
     summary: Value is `true` if the slicer item has data.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +37,10 @@ properties:
       not clear the selected state of other slicer items. By default, if the
       slicer item is the only one selected, when it is deselected, all items
       will be selected.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +53,10 @@ properties:
     package: excel!
     fullName: key
     summary: Represents the unique value representing the slicer item.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +69,10 @@ properties:
     package: excel!
     fullName: name
     summary: Represents the title displayed in the Excel UI.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

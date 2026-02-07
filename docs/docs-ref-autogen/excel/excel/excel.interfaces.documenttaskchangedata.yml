@@ -19,7 +19,10 @@ properties:
     summary: >-
       Represents the user assigned to the task for an `assign` change action, or
       the user unassigned from the task for an `unassign` change action.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -32,7 +35,10 @@ properties:
     package: excel!
     fullName: changedBy
     summary: Represents the identity of the user who made the task change.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -47,7 +53,10 @@ properties:
     summary: >-
       Represents the ID of the comment or comment reply to which the task change
       is anchored.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -62,7 +71,10 @@ properties:
     summary: >-
       Represents the creation date and time of the task change record. All dates
       are in UTC.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -79,7 +91,10 @@ properties:
       change action. It is in UTC time zone. It can be set to `null` to remove
       the due date and time. It should be set together with `startDateTime` to
       avoid conflicts.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -92,7 +107,10 @@ properties:
     package: excel!
     fullName: id
     summary: The unique GUID of the task change.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -110,7 +128,10 @@ properties:
       where 100 represents a completed task. Changing this value to 100 also
       completes the associated comment. Changing the completion from 100 to a
       lower value reactivates the associated comment.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -126,7 +147,10 @@ properties:
       Represents the task's priority. It is used for the `setPriority` change
       action. This is a value between 0 and 10, with 5 being the default
       priority if not set, and where 0 represents the highest priority.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -143,7 +167,10 @@ properties:
       `setSchedule` change action. It is in UTC time zone. It can be set to
       `null` to remove the start date and time. It should be set together with
       `dueDateTime` to avoid conflicts.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -156,7 +183,10 @@ properties:
     package: excel!
     fullName: title
     summary: Represents the task's title. It is used for the `setTitle` change action.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -172,7 +202,10 @@ properties:
       Represents the action type of the task change record. Some examples of
       action types are `assign`<!-- -->, `undo`<!-- -->, and `setPriority`<!--
       -->.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -194,7 +227,10 @@ properties:
     summary: >-
       Represents the `DocumentTaskChange.id` property that was undone for the
       `undo` change action.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false

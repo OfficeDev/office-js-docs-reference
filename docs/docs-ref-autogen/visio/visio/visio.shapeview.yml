@@ -4,7 +4,10 @@ uid: visio!Visio.ShapeView:class
 package: visio!
 fullName: Visio.ShapeView
 summary: Represents the ShapeView class.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +33,10 @@ properties:
     package: visio!
     fullName: highlight
     summary: Represents the highlight around the shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +54,10 @@ methods:
       addOverlay(OverlayType, Content, OverlayHorizontalAlignment,
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -91,7 +100,10 @@ methods:
       addOverlay(OverlayType, Content, OverlayHorizontalAlignment,
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -204,7 +216,10 @@ methods:
     package: visio!
     fullName: removeOverlay(OverlayId)
     summary: Removes particular overlay or all overlays on the Shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -276,7 +291,10 @@ methods:
       The purpose of SetText API is to update the text inside a Visio Shape in
       run time. The updated text retains the existing formatting properties of
       the shape's text.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -294,7 +312,10 @@ methods:
     package: visio!
     fullName: showOverlay(overlayId, show)
     summary: Shows particular overlay on the Shape.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

@@ -6,7 +6,9 @@ fullName: Word.FieldKind
 summary: >-
   Represents the kind of [Word.Field](xref:word!Word.Field:class) object.
   Indicates how the field works in relation to updating.
-remarks: '\[Api set: WordApi 1.5\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +16,12 @@ fields:
   - name: cold
     uid: word!Word.FieldKind.cold:member
     package: word!
-    summary: |-
+    summary: >-
       Represents that the field doesn't have a result.
 
-      * \[Api set: WordApi 1.5\]
+
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Cold"'
   - name: hot
     uid: word!Word.FieldKind.hot:member
@@ -28,7 +32,8 @@ fields:
       manually updated.
 
 
-      * \[Api set: WordApi 1.5\]
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hot"'
   - name: none
     uid: word!Word.FieldKind.none:member
@@ -38,7 +43,8 @@ fields:
       characters with nothing inside.
 
 
-      * \[Api set: WordApi 1.5\]
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: warm
     uid: word!Word.FieldKind.warm:member
@@ -48,5 +54,6 @@ fields:
       or the field can be manually updated.
 
 
-      * \[Api set: WordApi 1.5\]
+      * \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Warm"'

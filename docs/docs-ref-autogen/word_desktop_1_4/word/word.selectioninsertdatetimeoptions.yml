@@ -6,7 +6,9 @@ fullName: Word.SelectionInsertDateTimeOptions
 summary: >-
   Represents the options for the
   [Selection.insertDateTime](xref:word!Word.Selection:class) method.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +23,9 @@ properties:
       or time. This property may not be available to you, depending on the
       language support (U.S. English, for example) that you have selected or
       installed.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -41,7 +45,9 @@ properties:
       If provided, specifies the language in which to display the date or time.
       This property may not be available to you, depending on the language
       support (U.S. English, for example) that you have selected or installed.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +66,9 @@ properties:
       See [Date/Time data
       type](https://support.microsoft.com/office/47fbbdc1-52fa-416a-b8d5-ba24d881b698)
       for format symbols.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -77,7 +85,9 @@ properties:
       [TIME
       field](https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90)<!--
       -->. The default value is `true`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +104,9 @@ properties:
       full-width (double-byte) digits. This property may not be available to
       you, depending on the language support (U.S. English, for example) that
       you have selected or installed.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

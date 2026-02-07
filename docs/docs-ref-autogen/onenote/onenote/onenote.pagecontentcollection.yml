@@ -4,7 +4,9 @@ uid: onenote!OneNote.PageContentCollection:class
 package: onenote!
 fullName: OneNote.PageContentCollection
 summary: Represents the contents of a page, as a collection of PageContent objects.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,10 @@ properties:
     package: onenote!
     fullName: count
     summary: Returns the number of page contents in the collection.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +64,10 @@ methods:
     summary: >-
       Gets a PageContent object by ID or by its index in the collection.
       Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +87,10 @@ methods:
     package: onenote!
     fullName: getItemAt(index)
     summary: Gets a page content on its position in the collection.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

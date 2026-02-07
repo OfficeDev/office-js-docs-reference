@@ -7,7 +7,9 @@ summary: >-
   Represents the content contained within a comment or comment reply. Rich
   content incudes the text string and any other objects contained within the
   comment body, such as mentions.
-remarks: '\[Api set: ExcelApi 1.11\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,10 @@ properties:
     summary: >-
       An array containing all the entities (e.g., people) mentioned within the
       comment.
-    remarks: '\[Api set: ExcelApi 1.11\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +41,10 @@ properties:
       Specifies the rich content of the comment (e.g., comment content with
       mentions, the first mentioned entity has an ID attribute of 0, and the
       second mentioned entity has an ID attribute of 1).
-    remarks: '\[Api set: ExcelApi 1.11\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

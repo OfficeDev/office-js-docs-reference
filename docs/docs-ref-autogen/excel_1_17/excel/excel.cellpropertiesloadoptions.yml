@@ -8,7 +8,8 @@ summary: >-
   "range.getCellProperties" method.
 
 
-  \[Api set: ExcelApi 1.9\]
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false
@@ -19,10 +20,12 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#address:member
     package: excel!
     fullName: address
-    summary: |-
+    summary: >-
       Specifies whether to load on the `address` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -35,10 +38,12 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#addressLocal:member
     package: excel!
     fullName: addressLocal
-    summary: |-
+    summary: >-
       Specifies whether to load on the `addressLocal` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -51,10 +56,12 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: |-
+    summary: >-
       Specifies whether to load on the `format` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -67,10 +74,12 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#hidden:member
     package: excel!
     fullName: hidden
-    summary: |-
+    summary: >-
       Specifies whether to load on the `hidden` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -83,10 +92,12 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#hyperlink:member
     package: excel!
     fullName: hyperlink
-    summary: |-
+    summary: >-
       Specifies whether to load on the `hyperlink` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false
@@ -99,10 +110,12 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#style:member
     package: excel!
     fullName: style
-    summary: |-
+    summary: >-
       Specifies whether to load on the `style` property.
 
-      \[Api set: ExcelApi 1.9\]
+
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
 
     isPreview: false

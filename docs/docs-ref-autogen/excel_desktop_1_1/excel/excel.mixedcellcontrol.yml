@@ -7,7 +7,9 @@ summary: >-
   Represents the result of a query that resulted in multiple cell controls. If
   the result has multiple controls, then they can't be represented as a single
   result.
-remarks: '\[Api set: ExcelApi 1.18\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false

@@ -5,7 +5,8 @@ package: word!
 fullName: Word.Interfaces.FieldLoadOptions
 summary: Represents a field.
 remarks: >-
-  \[Api set: WordApi 1.4\]
+  \[ [Api set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   Important: To learn more about which fields can be inserted, see the
@@ -44,8 +45,10 @@ properties:
     package: word!
     fullName: code
     summary: Specifies the field's code instruction.
-    remarks: |-
-      \[Api set: WordApi 1.4\]
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
       Note: The ability to set the code was introduced in WordApi 1.5.
 
@@ -63,7 +66,9 @@ properties:
       Specifies data in a field of `addin` type. If the field isn't an `addin`
       type, it's `null` and it will throw a general exception when code attempts
       to set it.
-    remarks: '\[Api set: WordApi 1.5\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +81,9 @@ properties:
     package: word!
     fullName: kind
     summary: Gets the field's kind.
-    remarks: '\[Api set: WordApi 1.5\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -89,7 +96,9 @@ properties:
     package: word!
     fullName: linkFormat
     summary: Gets a `LinkFormat` object that represents the link options of the field.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -104,7 +113,9 @@ properties:
     summary: >-
       Specifies whether the field is locked. `true` if the field is locked,
       `false` otherwise.
-    remarks: '\[Api set: WordApi 1.5\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -119,7 +130,9 @@ properties:
     summary: >-
       Gets an `OleFormat` object that represents the OLE characteristics (other
       than linking) for the field.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -132,7 +145,9 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the field.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -147,7 +162,9 @@ properties:
     summary: >-
       Gets the content control that contains the field. Throws an `ItemNotFound`
       error if there isn't a parent content control.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -169,7 +186,9 @@ properties:
       see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -188,7 +207,9 @@ properties:
     summary: >-
       Gets the table that contains the field. Throws an `ItemNotFound` error if
       it isn't contained in a table.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -203,7 +224,9 @@ properties:
     summary: >-
       Gets the table cell that contains the field. Throws an `ItemNotFound`
       error if it isn't contained in a table cell.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -222,7 +245,9 @@ properties:
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -241,7 +266,9 @@ properties:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -254,7 +281,9 @@ properties:
     package: word!
     fullName: result
     summary: Gets the field's result data.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -269,7 +298,9 @@ properties:
     summary: >-
       Specifies whether the field codes are displayed for the specified field.
       `true` if the field codes are displayed, `false` otherwise.
-    remarks: '\[Api set: WordApiDesktop 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -282,7 +313,9 @@ properties:
     package: word!
     fullName: type
     summary: Gets the field's type.
-    remarks: '\[Api set: WordApi 1.5\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

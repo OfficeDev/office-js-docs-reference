@@ -4,7 +4,9 @@ uid: excel!Excel.StyleCollection:class
 package: excel!
 fullName: Excel.StyleCollection
 summary: Represents a collection of all the styles.
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +46,9 @@ methods:
     package: excel!
     fullName: add(name)
     summary: Adds a new style to the collection.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +66,9 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `Style` by name.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

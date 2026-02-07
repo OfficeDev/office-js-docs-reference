@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableStyleSettingsLoadOptions
 summary: Represents the available table style settings.
-remarks: '\[Api set: PowerPointApi 1.9\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +37,10 @@ properties:
     summary: >-
       Specifies if the columns show banded formatting in which odd columns are
       highlighted differently from even ones, to make reading the table easier.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +56,10 @@ properties:
     summary: >-
       Specifies if the rows show banded formatting in which odd rows are
       highlighted differently from even ones, to make reading the table easier.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -64,7 +73,10 @@ properties:
     package: powerpoint!
     fullName: isFirstColumnHighlighted
     summary: Specifies if the first column contains special formatting.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +90,10 @@ properties:
     package: powerpoint!
     fullName: isFirstRowHighlighted
     summary: Specifies if the first row contains special formatting.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -92,7 +107,10 @@ properties:
     package: powerpoint!
     fullName: isLastColumnHighlighted
     summary: Specifies if the last column contains special formatting.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,7 +124,10 @@ properties:
     package: powerpoint!
     fullName: isLastRowHighlighted
     summary: Specifies if the last row contains special formatting.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +141,10 @@ properties:
     package: powerpoint!
     fullName: style
     summary: Specifies the table style.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

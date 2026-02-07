@@ -7,7 +7,9 @@ summary: >-
   Specifies whether the document text should wrap on both sides of the specified
   shape, on either the left or right side only, or on the side of the shape
   that's farther from the respective page margin.
-remarks: '\[Api set: WordApiDesktop 1.2\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,40 +17,50 @@ fields:
   - name: both
     uid: word!Word.ShapeTextWrapSide.both:member
     package: word!
-    summary: |-
+    summary: >-
       Both left and right sides of the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Both"'
   - name: largest
     uid: word!Word.ShapeTextWrapSide.largest:member
     package: word!
-    summary: |-
+    summary: >-
       Side of the shape that's farther from the respective page margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Largest"'
   - name: left
     uid: word!Word.ShapeTextWrapSide.left:member
     package: word!
-    summary: |-
+    summary: >-
       Left side of the shape only.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
   - name: none
     uid: word!Word.ShapeTextWrapSide.none:member
     package: word!
-    summary: |-
+    summary: >-
       Has no wrap side property, such as those for inline shapes.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: right
     uid: word!Word.ShapeTextWrapSide.right:member
     package: word!
-    summary: |-
+    summary: >-
       Right side of the shape only.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'

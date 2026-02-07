@@ -8,7 +8,9 @@ summary: >-
   the "auto" option will inspect the source data shape to automatically guess
   whether the data is by rows or columns. In Excel on the web, "auto" will
   simply default to "columns".
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -22,15 +24,20 @@ fields:
       the web, "auto" will simply default to "columns".
 
 
-      * \[Api set: ExcelApi 1.1\]
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Auto"'
   - name: columns
     uid: excel!Excel.ChartSeriesBy.columns:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Columns"'
   - name: rows
     uid: excel!Excel.ChartSeriesBy.rows:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Rows"'

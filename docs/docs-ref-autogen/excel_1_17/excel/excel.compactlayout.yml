@@ -6,10 +6,13 @@ fullName: Excel.CompactLayout
 summary: >-
   Represents the layout used when there is limited space to represent the
   entity.
-remarks: |-
-  \[Api set: ExcelApi 1.16\]
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   Learn more about the types in this type alias through the following links. 
+
 
   [Excel.EntityCompactLayout](/javascript/api/excel/excel.entitycompactlayout)
 

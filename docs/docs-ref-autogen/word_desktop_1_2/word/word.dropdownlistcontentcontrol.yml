@@ -6,7 +6,9 @@ fullName: Word.DropDownListContentControl
 summary: >-
   Represents the data specific to content controls of type `dropDownList`<!--
   -->.
-remarks: '\[Api set: WordApi 1.9\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     package: word!
     fullName: listItems
     summary: Gets the collection of list items in the dropdown list content control.
-    remarks: '\[Api set: WordApi 1.9\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +53,9 @@ methods:
       Adds a new list item to this dropdown list content control and returns a
       [Word.ContentControlListItem](xref:word!Word.ContentControlListItem:class)
       object.
-    remarks: '\[Api set: WordApi 1.9\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +85,9 @@ methods:
     package: word!
     fullName: deleteAllListItems()
     summary: Deletes all list items in this dropdown list content control.
-    remarks: '\[Api set: WordApi 1.9\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

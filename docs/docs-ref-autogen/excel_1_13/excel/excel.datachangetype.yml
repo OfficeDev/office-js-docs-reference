@@ -4,7 +4,9 @@ uid: excel!Excel.DataChangeType:enum
 package: excel!
 fullName: Excel.DataChangeType
 summary: ''
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,8 @@ fields:
       deleting cells.
 
 
-      * \[Api set: ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CellDeleted"'
   - name: cellInserted
     uid: excel!Excel.DataChangeType.cellInserted:member
@@ -27,7 +30,8 @@ fields:
       inserting new cells.
 
 
-      * \[Api set: ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CellInserted"'
   - name: columnDeleted
     uid: excel!Excel.DataChangeType.columnDeleted:member
@@ -37,7 +41,8 @@ fields:
       deleting columns.
 
 
-      * \[Api set: ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ColumnDeleted"'
   - name: columnInserted
     uid: excel!Excel.DataChangeType.columnInserted:member
@@ -47,7 +52,8 @@ fields:
       inserting new columns.
 
 
-      * \[Api set: ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ColumnInserted"'
   - name: rangeEdited
     uid: excel!Excel.DataChangeType.rangeEdited:member
@@ -57,7 +63,8 @@ fields:
       being edited.
 
 
-      * \[Api set: ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RangeEdited"'
   - name: rowDeleted
     uid: excel!Excel.DataChangeType.rowDeleted:member
@@ -67,7 +74,8 @@ fields:
       rows.
 
 
-      * \[Api set: ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RowDeleted"'
   - name: rowInserted
     uid: excel!Excel.DataChangeType.rowInserted:member
@@ -77,7 +85,8 @@ fields:
       inserting new rows.
 
 
-      * \[Api set: ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RowInserted"'
   - name: unknown
     uid: excel!Excel.DataChangeType.unknown:member
@@ -87,6 +96,7 @@ fields:
       types.
 
 
-      * \[Api set: ExcelApi 1.8. The name of this value was 'Others' in
-      ExcelApi 1.7\]
+      * \[ [Api set: ExcelApi 1.8. The name of this value was 'Others' in
+      ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

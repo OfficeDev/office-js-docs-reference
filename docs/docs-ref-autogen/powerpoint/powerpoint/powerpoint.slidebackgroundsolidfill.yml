@@ -7,7 +7,10 @@ summary: >-
   Represents
   [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
   solid fill properties.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +23,10 @@ properties:
     summary: >-
       Specifies the fill color in HTML color format (e.g., "\#FFA500" or
       "orange").
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +56,10 @@ properties:
     summary: >-
       Specifies the transparency percentage of the fill as a value from 0.0
       (opaque) through 1.0 (clear).
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

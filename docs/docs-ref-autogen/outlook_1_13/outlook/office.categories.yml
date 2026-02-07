@@ -18,7 +18,8 @@ summary: >-
   -->, you can't use the API to manage categories applied to a message in
   Compose mode.
 remarks: >-
-  \[Api set: Mailbox 1.8\]
+  \[ [Api set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -49,7 +50,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message or
       appointment item in Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -109,7 +112,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message or
       appointment item in Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -169,7 +174,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -228,7 +235,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -273,7 +282,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -326,7 +337,9 @@ methods:
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

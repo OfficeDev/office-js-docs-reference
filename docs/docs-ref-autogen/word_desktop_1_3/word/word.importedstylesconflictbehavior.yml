@@ -6,7 +6,9 @@ fullName: Word.ImportedStylesConflictBehavior
 summary: >-
   Specifies how to handle any conflicts, that is, when imported styles have the
   same name as existing styles in the current document.
-remarks: '\[Api set: WordApiDesktop 1.1\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,8 @@ fields:
       then the imported version could be added as MyStyle1.
 
 
-      * \[Api set: WordApiDesktop 1.1\]
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CreateNew"'
   - name: ignore
     uid: word!Word.ImportedStylesConflictBehavior.ignore:member
@@ -30,13 +33,16 @@ fields:
       styles in the current document.
 
 
-      * \[Api set: WordApiDesktop 1.1\]
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ignore"'
   - name: overwrite
     uid: word!Word.ImportedStylesConflictBehavior.overwrite:member
     package: word!
-    summary: |-
+    summary: >-
       Overwrite the existing styles in the current document.
 
-      * \[Api set: WordApiDesktop 1.1\]
+
+      * \[ [Api set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Overwrite"'

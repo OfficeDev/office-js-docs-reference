@@ -8,7 +8,9 @@ summary: >-
   primitive named objects (as seen in the type below), range object, or a
   reference to a range. This object can be used to obtain range object
   associated with names.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     package: excel!
     fullName: name
     summary: The name of the object.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -50,8 +54,10 @@ properties:
       Specifies the type of the value returned by the name's formula. See
       `Excel.NamedItemType` for details.
     remarks: >-
-      \[Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7
-      for Array\]
+      \[ [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
+      1.7 for
+      Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +77,9 @@ properties:
       Represents the value computed by the name's formula. For a named range, it
       will return the range address. This API returns the \#VALUE! error in the
       Excel UI if it refers to a user-defined function.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -84,7 +92,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the object is visible.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -100,7 +110,9 @@ methods:
     summary: >-
       Returns the range object that is associated with the name. Throws an error
       if the named item's type is not a range.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

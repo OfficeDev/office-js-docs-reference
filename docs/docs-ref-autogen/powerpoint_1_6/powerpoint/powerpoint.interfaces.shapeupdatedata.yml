@@ -19,7 +19,10 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +37,10 @@ properties:
     summary: >-
       The distance, in points, from the left side of the shape to the left side
       of the slide.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +53,10 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Specifies the name of this shape.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +71,10 @@ properties:
     summary: >-
       The distance, in points, from the top edge of the shape to the top edge of
       the slide.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -77,7 +89,10 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

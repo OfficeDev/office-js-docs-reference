@@ -344,18 +344,18 @@ const API_SET_URL_MAPPINGS: ApiSetUrlMap = {
 
 /**
  * Maps API set references to hyperlinks in YAML content.
- * Replaces patterns like "[API set: ExcelApi 1.1]" with
- * "[API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)"
+ * Replaces patterns like "\[Api set: ExcelApi 1.1\]" with
+ * "\[ [Api set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]"
  */
 function mapApiSetUrls(yamlContent: string, hostName: string): string {
     const url = API_SET_URL_MAPPINGS[hostName] || API_SET_URL_MAPPINGS["office"];
 
-    // Pattern matches: \[ [API set: ExcelApi 1.1] \]
-    // Replace with: \[ [API set: ExcelApi 1.1](/url) \]
-    const apiSetPattern = /\\\[\s*\[API set:\s*([^\]]+)\]\s*\\\]/g;
+    // Pattern matches: \[Api set: ExcelApi 1.1\]
+    // Replace with: \[ [Api set: ExcelApi 1.1](/url) \]
+    const apiSetPattern = /\\\[Api set:\s*([^\]]+)\\\]/g;
 
     return yamlContent.replace(apiSetPattern, (match, apiSetName) => {
-        return `\\[ [API set: ${apiSetName}](${url}) \\]`;
+        return `\\[ [Api set: ${apiSetName}](${url}) \\]`;
     });
 }
 

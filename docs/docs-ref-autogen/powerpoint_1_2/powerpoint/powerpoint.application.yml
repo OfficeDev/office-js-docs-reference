@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Application:class
 package: powerpoint!
 fullName: PowerPoint.Application
 summary: Represents the PowerPoint application that manages the presentation.
-remarks: '\[Api set: PowerPointApi 1.0\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false

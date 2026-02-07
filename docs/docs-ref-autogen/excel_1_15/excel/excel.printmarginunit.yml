@@ -4,7 +4,9 @@ uid: excel!Excel.PrintMarginUnit:enum
 package: excel!
 fullName: Excel.PrintMarginUnit
 summary: ''
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: centimeters
     uid: excel!Excel.PrintMarginUnit.centimeters:member
     package: excel!
-    summary: |-
+    summary: >-
       Assign the page margins in centimeters.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Centimeters"'
   - name: inches
     uid: excel!Excel.PrintMarginUnit.inches:member
     package: excel!
-    summary: |-
+    summary: >-
       Assign the page margins in inches.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Inches"'
   - name: points
     uid: excel!Excel.PrintMarginUnit.points:member
     package: excel!
-    summary: |-
+    summary: >-
       Assign the page margins in points. A point is 1/72 of an inch.
 
-      * \[Api set: ExcelApi 1.9\]
+
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Points"'

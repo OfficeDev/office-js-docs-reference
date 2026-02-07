@@ -6,7 +6,9 @@ fullName: Excel.RangeReference
 summary: >-
   Represents a string reference of the form "SheetName!A1:B5", or a global or
   local named range.
-remarks: '\[Api set: ExcelApi 1.2\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     package: excel!
     fullName: address
     summary: The address of the range, for example "SheetName!A1:B5".
-    remarks: '\[Api set: ExcelApi 1.2\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,9 @@ uid: excel!Excel.ArrowheadLength:enum
 package: excel!
 fullName: Excel.ArrowheadLength
 summary: ''
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,15 +14,21 @@ fields:
   - name: long
     uid: excel!Excel.ArrowheadLength.long:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Long"'
   - name: medium
     uid: excel!Excel.ArrowheadLength.medium:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Medium"'
   - name: short
     uid: excel!Excel.ArrowheadLength.short:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Short"'

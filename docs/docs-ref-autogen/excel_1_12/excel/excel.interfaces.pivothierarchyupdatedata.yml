@@ -17,7 +17,9 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the PivotHierarchy.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

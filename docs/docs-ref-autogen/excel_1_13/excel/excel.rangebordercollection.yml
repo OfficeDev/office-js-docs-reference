@@ -4,7 +4,9 @@ uid: excel!Excel.RangeBorderCollection:class
 package: excel!
 fullName: Excel.RangeBorderCollection
 summary: Represents the border objects that make up the range border.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: count
     summary: Number of border objects in the collection.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +64,9 @@ properties:
       value is between -1 (darkest) and 1 (brightest), with 0 for the original
       color. A `null` value indicates that the entire border collection doesn't
       have a uniform `tintAndShade` setting.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +80,9 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a border object using its name.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +102,9 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a border object using its name.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +130,9 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a border object using its index.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

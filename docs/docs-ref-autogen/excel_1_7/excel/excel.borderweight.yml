@@ -4,7 +4,9 @@ uid: excel!Excel.BorderWeight:enum
 package: excel!
 fullName: Excel.BorderWeight
 summary: ''
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,20 +14,28 @@ fields:
   - name: hairline
     uid: excel!Excel.BorderWeight.hairline:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Hairline"'
   - name: medium
     uid: excel!Excel.BorderWeight.medium:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Medium"'
   - name: thick
     uid: excel!Excel.BorderWeight.thick:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Thick"'
   - name: thin
     uid: excel!Excel.BorderWeight.thin:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Thin"'

@@ -6,7 +6,9 @@ fullName: Word.XmlSetMappingOptions
 summary: >-
   The options that define the prefix mapping and the source of the custom XML
   data.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +23,9 @@ properties:
       expression provided in the `xPath` parameter of the
       `XmlMapping.setMapping` calling method. If omitted, Word uses the set of
       prefix mappings for the specified custom XML part in the current document.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -38,7 +42,9 @@ properties:
       control to. If this property is omitted, the XPath is evaluated against
       all custom XML in the current document, and the mapping is established
       with the first `CustomXmlPart` where the XPath resolves to an XML node.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -6,7 +6,9 @@ fullName: Word.WindowCloseOptions
 summary: >-
   The options that define whether to save changes before closing and whether to
   route the document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +22,9 @@ properties:
       If provided, specifies whether to route the document to the next
       recipient. If the document doesn't have a routing slip attached, this
       property is ignored.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +40,9 @@ properties:
       If provided, specifies the save action for the document. For available
       values, see
       [Word.SaveConfiguration](xref:word!Word.SaveConfiguration:enum)<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

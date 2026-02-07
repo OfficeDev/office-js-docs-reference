@@ -4,7 +4,9 @@ uid: excel!Excel.CommentChangeType:enum
 package: excel!
 fullName: Excel.CommentChangeType
 summary: Represents how the comments in the event were changed.
-remarks: '\[Api set: ExcelApi 1.12\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,48 +14,66 @@ fields:
   - name: commentEdited
     uid: excel!Excel.CommentChangeType.commentEdited:member
     package: excel!
-    summary: |-
+    summary: >-
       Comments were edited.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"CommentEdited"'
   - name: commentReopened
     uid: excel!Excel.CommentChangeType.commentReopened:member
     package: excel!
-    summary: |-
+    summary: >-
       Comments were reopened.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"CommentReopened"'
   - name: commentResolved
     uid: excel!Excel.CommentChangeType.commentResolved:member
     package: excel!
-    summary: |-
+    summary: >-
       Comments were resolved.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"CommentResolved"'
   - name: replyAdded
     uid: excel!Excel.CommentChangeType.replyAdded:member
     package: excel!
-    summary: |-
+    summary: >-
       Replies were added.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ReplyAdded"'
   - name: replyDeleted
     uid: excel!Excel.CommentChangeType.replyDeleted:member
     package: excel!
-    summary: |-
+    summary: >-
       Replies were deleted.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ReplyDeleted"'
   - name: replyEdited
     uid: excel!Excel.CommentChangeType.replyEdited:member
     package: excel!
-    summary: |-
+    summary: >-
       Replies were edited.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ReplyEdited"'

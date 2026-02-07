@@ -43,7 +43,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: AttachmentsChanged
     uid: office!Office.EventType.AttachmentsChanged:member
     package: office!
@@ -62,7 +63,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: BindingDataChanged
     uid: office!Office.EventType.BindingDataChanged:member
     package: office!
@@ -148,7 +150,8 @@ fields:
       platform.").
 
 
-      \[Api set: Mailbox 1.5\]
+      \[ [Api set: Mailbox
+      1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: EnhancedLocationsChanged
     uid: office!Office.EventType.EnhancedLocationsChanged:member
     package: office!
@@ -167,7 +170,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: InfobarClicked
     uid: office!Office.EventType.InfobarClicked:member
     package: office!
@@ -202,7 +206,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.10\]
+      \[ [Api set: Mailbox
+      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: InitializationContextChanged
     uid: office!Office.EventType.InitializationContextChanged:member
     package: office!
@@ -230,7 +235,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.15\]
+      \[ [Api set: Mailbox
+      1.15](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: ItemChanged
     uid: office!Office.EventType.ItemChanged:member
     package: office!
@@ -247,7 +253,8 @@ fields:
       `addHandlerAsync` method of the `Mailbox` object.
 
 
-      \[Api set: Mailbox 1.5\]
+      \[ [Api set: Mailbox
+      1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: NodeDeleted
     uid: office!Office.EventType.NodeDeleted:member
     package: office!
@@ -287,7 +294,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: RecipientsChanged
     uid: office!Office.EventType.RecipientsChanged:member
     package: office!
@@ -307,7 +315,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: RecurrenceChanged
     uid: office!Office.EventType.RecurrenceChanged:member
     package: office!
@@ -327,7 +336,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.7\]
+      \[ [Api set: Mailbox
+      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: ResourceSelectionChanged
     uid: office!Office.EventType.ResourceSelectionChanged:member
     package: office!
@@ -347,7 +357,8 @@ fields:
       `addHandlerAsync` method of the `Mailbox` object.
 
 
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: SensitivityLabelChanged
     uid: office!Office.EventType.SensitivityLabelChanged:member
     package: office!
@@ -367,7 +378,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.13\]
+      \[ [Api set: Mailbox
+      1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: SettingsChanged
     uid: office!Office.EventType.SettingsChanged:member
     package: office!
@@ -384,7 +396,8 @@ fields:
       -->.
 
 
-      \[Api set: Mailbox 1.14\]
+      \[ [Api set: Mailbox
+      1.14](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: TaskSelectionChanged
     uid: office!Office.EventType.TaskSelectionChanged:member
     package: office!

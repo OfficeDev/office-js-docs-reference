@@ -6,7 +6,9 @@ fullName: OneNote.Interfaces.SectionGroupLoadOptions
 summary: >-
   Represents a OneNote section group. Section groups can contain sections and
   other section groups.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,10 @@ properties:
     package: onenote!
     fullName: clientUrl
     summary: The client URL of the section group. Read.only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +51,10 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the section group. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +67,10 @@ properties:
     package: onenote!
     fullName: name
     summary: Gets the name of the section group. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +83,10 @@ properties:
     package: onenote!
     fullName: notebook
     summary: Gets the notebook that contains the section group.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +104,10 @@ properties:
     summary: >-
       Gets the section group that contains the section group. Throws
       ItemNotFound if the section group is a direct child of the notebook.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -108,7 +125,10 @@ properties:
     summary: >-
       Gets the section group that contains the section group. Returns null if
       the section group is a direct child of the notebook.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +143,10 @@ properties:
     package: onenote!
     fullName: sectionGroups
     summary: The collection of section groups in the section group. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -139,7 +162,10 @@ properties:
     package: onenote!
     fullName: sections
     summary: The collection of sections in the section group. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

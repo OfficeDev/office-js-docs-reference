@@ -4,7 +4,9 @@ uid: custom-functions-runtime!CustomFunctions.Error:class
 package: custom-functions-runtime!
 fullName: CustomFunctions.Error
 summary: Use this class to handle errors and write custom error messages.
-remarks: '\[Api set: CustomFunctionsRuntime 1.2\]'
+remarks: >-
+  \[ [Api set: CustomFunctionsRuntime
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -36,7 +38,9 @@ properties:
     package: custom-functions-runtime!
     fullName: code
     summary: The error code returned by your custom function.
-    remarks: '\[Api set: CustomFunctionsRuntime 1.2\]'
+    remarks: >-
+      \[ [Api set: CustomFunctionsRuntime
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +55,9 @@ properties:
     summary: >-
       Your custom error message, such as "This stock price is unavailable".
       Custom messages are only available with certain error codes.
-    remarks: '\[Api set: CustomFunctionsRuntime 1.2\]'
+    remarks: >-
+      \[ [Api set: CustomFunctionsRuntime
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

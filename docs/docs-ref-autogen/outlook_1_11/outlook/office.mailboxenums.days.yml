@@ -5,7 +5,8 @@ package: outlook!
 fullName: Office.MailboxEnums.Days
 summary: Specifies the day of week or type of day.
 remarks: >-
-  \[Api set: Mailbox 1.7\]
+  \[ [Api set: Mailbox
+  1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook

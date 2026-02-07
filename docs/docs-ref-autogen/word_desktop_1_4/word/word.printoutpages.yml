@@ -4,7 +4,9 @@ uid: word!Word.PrintOutPages:enum
 package: word!
 fullName: Word.PrintOutPages
 summary: Specifies which pages to print based on odd or even page numbers.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: all
     uid: word!Word.PrintOutPages.all:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing all pages.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"All"'
   - name: evenOnly
     uid: word!Word.PrintOutPages.evenOnly:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing only even-numbered pages.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EvenOnly"'
   - name: oddOnly
     uid: word!Word.PrintOutPages.oddOnly:member
     package: word!
-    summary: |-
+    summary: >-
       Represents printing only odd-numbered pages.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OddOnly"'

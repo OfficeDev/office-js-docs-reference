@@ -4,7 +4,9 @@ uid: excel!Excel.ShapeCollection:class
 package: excel!
 fullName: Excel.ShapeCollection
 summary: Represents a collection of all the shapes in the worksheet.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -46,7 +48,9 @@ methods:
     summary: >-
       Adds a geometric shape to the worksheet. Returns a `Shape` object that
       represents the new shape.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -70,7 +74,9 @@ methods:
     summary: >-
       Adds a geometric shape to the worksheet. Returns a `Shape` object that
       represents the new shape.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -195,7 +201,9 @@ methods:
     summary: >-
       Groups a subset of shapes in this collection's worksheet. Returns a
       `Shape` object that represents the new group of shapes.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -215,7 +223,9 @@ methods:
     summary: >-
       Creates an image from a Base64-encoded string and adds it to the
       worksheet. Returns the `Shape` object that represents the new image.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -237,7 +247,9 @@ methods:
     summary: >-
       Adds a line to worksheet. Returns a `Shape` object that represents the new
       line.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -281,7 +293,9 @@ methods:
     summary: >-
       Adds a line to worksheet. Returns a `Shape` object that represents the new
       line.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -325,7 +339,10 @@ methods:
     summary: >-
       Creates a reference for the local image stored in the cell address and
       displays it as a floating shape over cells.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -345,7 +362,10 @@ methods:
     summary: >-
       Creates a scalable vector graphic (SVG) from an XML string and adds it to
       the worksheet. Returns a `Shape` object that represents the new image.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -365,7 +385,9 @@ methods:
     summary: >-
       Adds a text box to the worksheet with the provided text as the content.
       Returns a `Shape` object that represents the new text box.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -383,7 +405,9 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of shapes in the worksheet.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -397,7 +421,9 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a shape using its name or ID.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -415,7 +441,9 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a shape using its position in the collection.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -438,7 +466,10 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.14\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

@@ -25,7 +25,9 @@ properties:
 
       If the metadata JSON file is being generated from JSDoc comments, include
       the tag `@requiresAddress`<!-- -->.
-    remarks: '\[Api set: CustomFunctionsRuntime 1.1\]'
+    remarks: >-
+      \[ [Api set: CustomFunctionsRuntime
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -38,7 +40,9 @@ properties:
     package: custom-functions-runtime!
     fullName: functionName
     summary: The name of this function.
-    remarks: '\[Api set: CustomFunctionsRuntime 1.1\]'
+    remarks: >-
+      \[ [Api set: CustomFunctionsRuntime
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +60,9 @@ properties:
       preview. `isInValuePreview` is read-only and can't be set by a custom
       functions add-in. This value is `true` if the function is invoked to
       preview the formula value; otherwise it is `false`<!-- -->.
-    remarks: '\[Api set: CustomFunctionsRuntime 1.5\]'
+    remarks: >-
+      \[ [Api set: CustomFunctionsRuntime
+      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +87,9 @@ properties:
 
       If the metadata JSON file is being generated from JSDoc comments, include
       the tag `@requiresParameterAddresses`<!-- -->.
-    remarks: '\[Api set: CustomFunctionsRuntime 1.3\]'
+    remarks: >-
+      \[ [Api set: CustomFunctionsRuntime
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

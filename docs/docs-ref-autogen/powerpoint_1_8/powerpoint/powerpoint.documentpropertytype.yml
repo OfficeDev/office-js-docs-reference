@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.DocumentPropertyType:enum
 package: powerpoint!
 fullName: PowerPoint.DocumentPropertyType
 summary: Specifies the document property type for custom properties.
-remarks: '\[Api set: PowerPointApi 1.7\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -12,32 +15,44 @@ fields:
   - name: boolean
     uid: powerpoint!PowerPoint.DocumentPropertyType.boolean:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The Boolean document property type.
 
-      * \[Api set: PowerPointApi 1.7\]
+
+      * \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Boolean"'
   - name: date
     uid: powerpoint!PowerPoint.DocumentPropertyType.date:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The Date document property type.
 
-      * \[Api set: PowerPointApi 1.7\]
+
+      * \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Date"'
   - name: number
     uid: powerpoint!PowerPoint.DocumentPropertyType.number:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The Number document property type.
 
-      * \[Api set: PowerPointApi 1.7\]
+
+      * \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Number"'
   - name: string
     uid: powerpoint!PowerPoint.DocumentPropertyType.string:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The String document property type.
 
-      * \[Api set: PowerPointApi 1.7\]
+
+      * \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"String"'

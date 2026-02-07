@@ -14,7 +14,9 @@ summary: >-
   -->. It allows the add-in to signify to the Outlook client that it has
   completed processing an event.
 remarks: >-
-  \[Api set: Mailbox 1.10\]
+  \[ [Api set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission
@@ -58,7 +60,9 @@ methods:
       Indicates that the event-based or spam-reporting add-in has completed
       processing an event.
     remarks: >-
-      \[Api set: Mailbox 1.10\]
+      \[ [Api set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

@@ -7,7 +7,8 @@ summary: >-
   Provides methods to get and set the subject of an appointment or message in an
   Outlook add-in.
 remarks: >-
-  \[Api set: Mailbox 1.1\]
+  \[ [Api set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -34,7 +35,9 @@ methods:
       The `getAsync` method starts an asynchronous call to the Exchange server
       to get the subject of an appointment or message.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -82,7 +85,9 @@ methods:
       The `getAsync` method starts an asynchronous call to the Exchange server
       to get the subject of an appointment or message.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -126,7 +131,9 @@ methods:
       overwrites the current subject, but leaves any prefixes, such as "Fwd:" or
       "Re:" in place.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -206,7 +213,9 @@ methods:
       overwrites the current subject, but leaves any prefixes, such as "Fwd:" or
       "Re:" in place.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

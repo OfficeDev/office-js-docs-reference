@@ -7,7 +7,9 @@ summary: >-
   Represents a single reviewer of a document in which changes have been tracked.
   The `Reviewer` object is a member of the
   [Word.ReviewerCollection](xref:word!Word.ReviewerCollection:class) object.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

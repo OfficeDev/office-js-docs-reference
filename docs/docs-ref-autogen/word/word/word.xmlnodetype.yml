@@ -4,7 +4,9 @@ uid: word!Word.XmlNodeType:enum
 package: word!
 fullName: Word.XmlNodeType
 summary: Specifies the type of an XML node.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,16 +14,20 @@ fields:
   - name: attribute
     uid: word!Word.XmlNodeType.attribute:member
     package: word!
-    summary: |-
+    summary: >-
       Attribute node.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Attribute"'
   - name: element
     uid: word!Word.XmlNodeType.element:member
     package: word!
-    summary: |-
+    summary: >-
       Element node.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Element"'

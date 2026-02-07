@@ -4,7 +4,9 @@ uid: excel!Excel.CalcErrorCellValueSubType:enum
 package: excel!
 fullName: Excel.CalcErrorCellValueSubType
 summary: Represents types of \#CALC! errors.
-remarks: '\[Api set: ExcelApi 1.16\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ fields:
       \#CALC! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ArrayOfArrays"'
   - name: arrayOfRanges
     uid: excel!Excel.CalcErrorCellValueSubType.arrayOfRanges:member
@@ -27,7 +31,9 @@ fields:
       \#CALC! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ArrayOfRanges"'
   - name: dataTableReferencedPendingFormula
     uid: >-
@@ -38,7 +44,9 @@ fields:
       formula is likely asynchronous. Displays as error type \#CALC! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"DataTableReferencedPendingFormula"'
   - name: emptyArray
     uid: excel!Excel.CalcErrorCellValueSubType.emptyArray:member
@@ -48,7 +56,9 @@ fields:
       Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"EmptyArray"'
   - name: lambdaInCell
     uid: excel!Excel.CalcErrorCellValueSubType.lambdaInCell:member
@@ -58,7 +68,9 @@ fields:
       as error type \#CALC! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"LambdaInCell"'
   - name: textOverflow
     uid: excel!Excel.CalcErrorCellValueSubType.textOverflow:member
@@ -71,7 +83,9 @@ fields:
       counts as multiple characters toward the maximum character limit.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"TextOverflow"'
   - name: tooDeeplyNested
     uid: excel!Excel.CalcErrorCellValueSubType.tooDeeplyNested:member
@@ -81,7 +95,9 @@ fields:
       another `CellValue`<!-- -->. Displays as error type \#CALC! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"TooDeeplyNested"'
   - name: tooManyCells
     uid: excel!Excel.CalcErrorCellValueSubType.tooManyCells:member
@@ -91,15 +107,20 @@ fields:
       error type \#CALC! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"TooManyCells"'
   - name: unknown
     uid: excel!Excel.CalcErrorCellValueSubType.unknown:member
     package: excel!
-    summary: |-
+    summary: >-
       An unknown type of error. Displays as error type \#CALC! in Excel.
 
-      * \[Api set: ExcelApi 1.16\]
+
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Unknown"'
   - name: unsupportedLifting
     uid: excel!Excel.CalcErrorCellValueSubType.unsupportedLifting:member
@@ -109,5 +130,7 @@ fields:
       Dynamic UDF) over an array. Displays as error type \#CALC! in Excel.
 
 
-      * \[Api set: ExcelApi 1.16\]
+      * \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"UnsupportedLifting"'

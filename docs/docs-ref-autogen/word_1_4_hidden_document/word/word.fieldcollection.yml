@@ -5,7 +5,8 @@ package: word!
 fullName: Word.FieldCollection
 summary: Contains a collection of [Word.Field](xref:word!Word.Field:class) objects.
 remarks: >-
-  \[Api set: WordApi 1.4\]
+  \[ [Api set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   Important: To learn more about which fields can be inserted, see the
@@ -59,7 +60,9 @@ methods:
     summary: >-
       Gets the first field in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +81,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

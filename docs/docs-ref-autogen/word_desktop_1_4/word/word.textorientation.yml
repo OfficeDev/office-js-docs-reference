@@ -4,7 +4,9 @@ uid: word!Word.TextOrientation:enum
 package: word!
 fullName: Word.TextOrientation
 summary: Specifies the orientation of text in a text frame or shape.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,18 +14,22 @@ fields:
   - name: downward
     uid: word!Word.TextOrientation.downward:member
     package: word!
-    summary: |-
+    summary: >-
       Text is vertical with letters rotated 90 degrees counterclockwise.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Downward"'
   - name: horizontal
     uid: word!Word.TextOrientation.horizontal:member
     package: word!
-    summary: |-
+    summary: >-
       Text is horizontal.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Horizontal"'
   - name: horizontalRotatedFarEast
     uid: word!Word.TextOrientation.horizontalRotatedFarEast:member
@@ -33,29 +39,36 @@ fields:
       languages.
 
 
-      * \[Api set: WordApiDesktop 1.4\]
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"HorizontalRotatedFarEast"'
   - name: upward
     uid: word!Word.TextOrientation.upward:member
     package: word!
-    summary: |-
+    summary: >-
       Text is vertical with letters rotated 90 degrees clockwise.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Upward"'
   - name: vertical
     uid: word!Word.TextOrientation.vertical:member
     package: word!
-    summary: |-
+    summary: >-
       Text is vertical and reads downward from the top, left to right.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Vertical"'
   - name: verticalFarEast
     uid: word!Word.TextOrientation.verticalFarEast:member
     package: word!
-    summary: |-
+    summary: >-
       Text is vertical and reads downward from the top, right to left.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"VerticalFarEast"'

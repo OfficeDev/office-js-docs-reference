@@ -6,7 +6,9 @@ fullName: Excel.Interfaces.NumberFormatInfoLoadOptions
 summary: >-
   Defines the culturally appropriate format of displaying numbers. This is based
   on current system culture settings.
-remarks: '\[Api set: ExcelApi 1.11\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -36,7 +38,10 @@ properties:
     summary: >-
       Gets the string used as the decimal separator for numeric values. This is
       based on current system settings.
-    remarks: '\[Api set: ExcelApi 1.11\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -52,7 +57,10 @@ properties:
     summary: >-
       Gets the string used to separate groups of digits to the left of the
       decimal for numeric values. This is based on current system settings.
-    remarks: '\[Api set: ExcelApi 1.11\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

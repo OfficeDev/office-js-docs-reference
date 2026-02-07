@@ -7,7 +7,8 @@ summary: >-
   Represents the value and metadata of a property. The metadata applies to the
   property (and not the value), but it is combined with the value in this type.
 remarks: >-
-  \[Api set: ExcelApi 1.16\]
+  \[ [Api set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
   Learn more about the types in this type alias through the following links. 

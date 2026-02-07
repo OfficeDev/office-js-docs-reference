@@ -4,7 +4,10 @@ uid: outlook!Office.MailboxEnums.ActionType:enum
 package: outlook!
 fullName: Office.MailboxEnums.ActionType
 summary: Specifies the type of custom action in a notification message.
-remarks: '\[Api set: Mailbox 1.10\]'
+remarks: >-
+  \[ [Api set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false

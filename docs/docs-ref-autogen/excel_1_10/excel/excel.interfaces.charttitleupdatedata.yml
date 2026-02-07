@@ -19,7 +19,9 @@ properties:
     summary: >-
       Represents the formatting of a chart title, which includes fill and font
       formatting.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     package: excel!
     fullName: horizontalAlignment
     summary: Specifies the horizontal alignment for chart title.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +58,9 @@ properties:
       Specifies the distance, in points, from the left edge of chart title to
       the left edge of chart area. Value is `null` if the chart title is not
       visible.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +73,9 @@ properties:
     package: excel!
     fullName: overlay
     summary: Specifies if the chart title will overlay the chart.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +90,9 @@ properties:
     summary: >-
       Represents the position of chart title. See `Excel.ChartTitlePosition` for
       details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -101,7 +111,9 @@ properties:
     summary: >-
       Represents a Boolean value that determines if the chart title has a
       shadow.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -114,7 +126,9 @@ properties:
     package: excel!
     fullName: text
     summary: Specifies the chart's title text.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -130,7 +144,9 @@ properties:
       Specifies the angle to which the text is oriented for the chart title. The
       value should either be an integer from -90 to 90 or the integer 180 for
       vertically-oriented text.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -145,7 +161,9 @@ properties:
     summary: >-
       Specifies the distance, in points, from the top edge of chart title to the
       top of chart area. Value is `null` if the chart title is not visible.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -160,7 +178,9 @@ properties:
     summary: >-
       Specifies the vertical alignment of chart title. See
       `Excel.ChartTextVerticalAlignment` for details.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -177,7 +197,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the chart title is visible.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

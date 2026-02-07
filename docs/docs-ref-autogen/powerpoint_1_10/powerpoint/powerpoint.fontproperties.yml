@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.FontProperties:interface
 package: powerpoint!
 fullName: PowerPoint.FontProperties
 summary: Represents the font attributes, such as font name, size, and color.
-remarks: '\[Api set: PowerPointApi 1.8\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +20,10 @@ properties:
     summary: >-
       Represents whether the font uses all caps, where lowercase letters are
       shown as capital letters.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +36,10 @@ properties:
     package: powerpoint!
     fullName: bold
     summary: Represents the bold status of font.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +54,10 @@ properties:
     summary: >-
       Represents the HTML color in the hexadecimal format (e.g., "\#FF0000"
       represents red) or as a named HTML color value (e.g., "red").
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +70,10 @@ properties:
     package: powerpoint!
     fullName: doubleStrikethrough
     summary: Represents the double-strikethrough status of the font.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +86,10 @@ properties:
     package: powerpoint!
     fullName: italic
     summary: Represents the italic status of font.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,7 +105,10 @@ properties:
       Represents the font name (e.g., "Calibri"). If the text is a Complex
       Script or East Asian language, this is the corresponding font name;
       otherwise it's the Latin font name.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -100,7 +121,10 @@ properties:
     package: powerpoint!
     fullName: size
     summary: Represents the font size in points (e.g., 11).
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -115,7 +139,10 @@ properties:
     summary: >-
       Represents whether the text uses small caps, where lowercase letters are
       shown as small capital letters.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -128,7 +155,10 @@ properties:
     package: powerpoint!
     fullName: strikethrough
     summary: Represents the strikethrough status of the font.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -141,7 +171,10 @@ properties:
     package: powerpoint!
     fullName: subscript
     summary: Represents the subscript status of the font.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -154,7 +187,10 @@ properties:
     package: powerpoint!
     fullName: superscript
     summary: Represents the superscript status of the font.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -170,7 +206,10 @@ properties:
       Type of underline applied to the font. See
       [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum)
       for details.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

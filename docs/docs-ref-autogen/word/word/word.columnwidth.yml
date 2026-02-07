@@ -4,7 +4,9 @@ uid: word!Word.ColumnWidth:enum
 package: word!
 fullName: Word.ColumnWidth
 summary: Specifies the column width options in a Word document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,24 +14,30 @@ fields:
   - name: default
     uid: word!Word.ColumnWidth.default:member
     package: word!
-    summary: |-
+    summary: >-
       Default column width.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Default"'
   - name: narrow
     uid: word!Word.ColumnWidth.narrow:member
     package: word!
-    summary: |-
+    summary: >-
       Narrow column width.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Narrow"'
   - name: wide
     uid: word!Word.ColumnWidth.wide:member
     package: word!
-    summary: |-
+    summary: >-
       Wide column width.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Wide"'

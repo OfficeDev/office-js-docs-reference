@@ -4,7 +4,10 @@ uid: visio!Visio.DocumentErrorEventArgs:interface
 package: visio!
 fullName: Visio.DocumentErrorEventArgs
 summary: Provides information about DocumentError event.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +18,10 @@ properties:
     package: visio!
     fullName: errorCode
     summary: Visio Error code.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -28,7 +34,10 @@ properties:
     package: visio!
     fullName: errorMessage
     summary: Message about error that occurred.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +52,10 @@ properties:
     summary: >-
       Tells if the error is critical or not. If critical the session cannot
       continue.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

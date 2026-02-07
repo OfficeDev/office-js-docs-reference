@@ -7,7 +7,10 @@ summary: >-
   Represents the paragraph formatting properties of a text that is attached to
   the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!--
   -->.
-remarks: '\[Api set: PowerPointApi 1.4\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +24,10 @@ properties:
       Represents the bullet format of the paragraph. See
       [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class)
       for details.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +60,10 @@ properties:
       alignment values. See
       [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
       for details.
-    remarks: '\[Api set: PowerPointApi 1.4\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -73,7 +82,10 @@ properties:
     package: powerpoint!
     fullName: indentLevel
     summary: Represents the indent level of the paragraph.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

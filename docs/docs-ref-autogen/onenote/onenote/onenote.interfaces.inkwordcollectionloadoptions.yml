@@ -4,7 +4,9 @@ uid: onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkWordCollectionLoadOptions
 summary: Represents a collection of InkWord objects.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the ID of the InkWord object.
       Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +53,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The ID of the recognized language in this
       ink word. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +71,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The parent paragraph containing the ink
       word.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +92,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The words that were recognized in this
       ink word, in order of likelihood. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

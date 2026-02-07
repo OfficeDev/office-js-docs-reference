@@ -20,7 +20,10 @@ properties:
     summary: >-
       Specifies the horizontal alignment of the text in the table cell. Returns
       `null` if the cell text contains different alignments.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -41,7 +44,10 @@ properties:
     summary: >-
       Specifies the indent level of the text in the table cell. Returns `null`
       if the cell text contains different indent levels.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +60,10 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +80,10 @@ properties:
       [PowerPoint.TextRun](xref:powerpoint!PowerPoint.TextRun:interface)
       objects. Each `TextRun` object represents a sequence of one or more
       characters that share the same font attributes.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -85,7 +97,10 @@ properties:
     package: powerpoint!
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of the text in the table cell.
-    remarks: '\[Api set: PowerPointApi 1.9\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

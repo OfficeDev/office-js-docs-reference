@@ -4,7 +4,9 @@ uid: excel!Excel.Base64EncodedImage:interface
 package: excel!
 fullName: Excel.Base64EncodedImage
 summary: The Base64-encoded type and data of an image.
-remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -15,7 +17,10 @@ properties:
     package: excel!
     fullName: data
     summary: The Base64-encoded string.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -28,7 +33,10 @@ properties:
     package: excel!
     fullName: type
     summary: The file type of the Base64-encoded image.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false

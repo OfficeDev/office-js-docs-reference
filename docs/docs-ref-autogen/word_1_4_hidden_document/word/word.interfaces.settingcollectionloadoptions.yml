@@ -6,7 +6,9 @@ fullName: Word.Interfaces.SettingCollectionLoadOptions
 summary: >-
   Contains the collection of [Word.Setting](xref:word!Word.Setting:class)
   objects.
-remarks: '\[Api set: WordApi 1.4\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     package: word!
     fullName: key
     summary: 'For EACH ITEM in the collection: Gets the key of the setting.'
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -46,7 +50,9 @@ properties:
     package: word!
     fullName: value
     summary: 'For EACH ITEM in the collection: Specifies the value of the setting.'
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

@@ -6,7 +6,9 @@ fullName: Excel.PictureColorType
 summary: >-
   Specifies the color transformation of a picture in the header or footer of a
   worksheet.
-remarks: '\[Api set: ExcelApiDesktop 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApiDesktop
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,40 +16,50 @@ fields:
   - name: automatic
     uid: excel!Excel.PictureColorType.automatic:member
     package: excel!
-    summary: |-
+    summary: >-
       Default color transformation.
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Automatic"'
   - name: blackAndWhite
     uid: excel!Excel.PictureColorType.blackAndWhite:member
     package: excel!
-    summary: |-
+    summary: >-
       Black-and-white transformation.
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BlackAndWhite"'
   - name: grayScale
     uid: excel!Excel.PictureColorType.grayScale:member
     package: excel!
-    summary: |-
+    summary: >-
       Grayscale transformation.
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GrayScale"'
   - name: mixed
     uid: excel!Excel.PictureColorType.mixed:member
     package: excel!
-    summary: |-
+    summary: >-
       Mixed transformation.
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Mixed"'
   - name: watermark
     uid: excel!Excel.PictureColorType.watermark:member
     package: excel!
-    summary: |-
+    summary: >-
       Watermark transformation.
 
-      * \[Api set: ExcelApiDesktop 1.1\]
+
+      * \[ [Api set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Watermark"'

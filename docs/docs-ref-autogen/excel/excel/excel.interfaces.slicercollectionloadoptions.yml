@@ -6,7 +6,9 @@ fullName: Excel.Interfaces.SlicerCollectionLoadOptions
 summary: >-
   Represents a collection of all the slicer objects in the workbook or a
   worksheet.
-remarks: '\[Api set: ExcelApi 1.10\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,10 @@ properties:
     package: excel!
     fullName: caption
     summary: 'For EACH ITEM in the collection: Represents the caption of the slicer.'
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +54,10 @@ properties:
       For EACH ITEM in the collection: Specifies the height, in points, of the
       slicer. Throws an `InvalidArgument` exception when set with a negative
       value or zero as an input.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -62,7 +70,10 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: Represents the unique ID of the slicer.'
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -77,7 +88,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Value is `true` if all filters currently
       applied on the slicer are cleared.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,7 +107,10 @@ properties:
       For EACH ITEM in the collection: Represents the distance, in points, from
       the left side of the slicer to the left of the worksheet. Throws an
       `InvalidArgument` error when set with a negative value as an input.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -106,7 +123,10 @@ properties:
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: Represents the name of the slicer.'
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -121,7 +141,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the slicer name used in the
       formula.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -134,7 +157,10 @@ properties:
     package: excel!
     fullName: slicerStyle
     summary: 'For EACH ITEM in the collection: The style applied to the slicer.'
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -150,7 +176,10 @@ properties:
       For EACH ITEM in the collection: Specifies the sort order of the items in
       the slicer. Possible values are: "DataSourceOrder", "Ascending",
       "Descending".
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -168,7 +197,10 @@ properties:
       "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2",
       "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style
       present in the workbook can also be specified.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -184,7 +216,10 @@ properties:
       For EACH ITEM in the collection: Represents the distance, in points, from
       the top edge of the slicer to the top of the worksheet. Throws an
       `InvalidArgument` error when set with a negative value as an input.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -200,7 +235,10 @@ properties:
       For EACH ITEM in the collection: Represents the width, in points, of the
       slicer. Throws an `InvalidArgument` error when set with a negative value
       or zero as an input.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -215,7 +253,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the worksheet containing the
       slicer.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

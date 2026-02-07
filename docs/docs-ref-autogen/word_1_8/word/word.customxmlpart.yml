@@ -4,7 +4,9 @@ uid: word!Word.CustomXmlPart:class
 package: word!
 fullName: Word.CustomXmlPart
 summary: Represents a custom XML part.
-remarks: '\[Api set: WordApi 1.4\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the custom XML part.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +47,9 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -57,7 +63,9 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the custom XML part.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -74,7 +82,8 @@ methods:
       Deletes an attribute with the given name from the element identified by
       xpath.
     remarks: >-
-      \[Api set: WordApi 1.4\]
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is
@@ -133,7 +142,8 @@ methods:
     fullName: deleteElement(xpath, namespaceMappings)
     summary: Deletes the element identified by xpath.
     remarks: >-
-      \[Api set: WordApi 1.4\]
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is
@@ -188,7 +198,9 @@ methods:
     package: word!
     fullName: getXml()
     summary: Gets the full XML content of the custom XML part.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -205,7 +217,8 @@ methods:
       Inserts an attribute with the given name and value to the element
       identified by xpath.
     remarks: >-
-      \[Api set: WordApi 1.4\]
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is
@@ -269,7 +282,8 @@ methods:
       Inserts the given XML under the parent element identified by xpath at
       child position index.
     remarks: >-
-      \[Api set: WordApi 1.4\]
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is
@@ -412,7 +426,8 @@ methods:
     fullName: query(xpath, namespaceMappings)
     summary: Queries the XML content of the custom XML part.
     remarks: >-
-      \[Api set: WordApi 1.4\]
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is
@@ -524,7 +539,9 @@ methods:
     package: word!
     fullName: setXml(xml)
     summary: Sets the full XML content of the custom XML part.
-    remarks: '\[Api set: WordApi 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -611,7 +628,8 @@ methods:
       Updates the value of an attribute with the given name of the element
       identified by xpath.
     remarks: >-
-      \[Api set: WordApi 1.4\]
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is
@@ -673,7 +691,8 @@ methods:
     fullName: updateElement(xpath, xml, namespaceMappings)
     summary: Updates the XML of the element identified by xpath.
     remarks: >-
-      \[Api set: WordApi 1.4\]
+      \[ [Api set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is

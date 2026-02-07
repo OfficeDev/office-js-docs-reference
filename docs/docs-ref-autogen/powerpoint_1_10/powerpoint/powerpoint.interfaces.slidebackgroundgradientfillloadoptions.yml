@@ -8,7 +8,10 @@ summary: >-
   Represents
   [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
   gradient fill properties.
-remarks: '\[Api set: PowerPointApi 1.10\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -37,7 +40,10 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Specifies the type of gradient fill.
-    remarks: '\[Api set: PowerPointApi 1.10\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

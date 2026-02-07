@@ -6,7 +6,9 @@ fullName: Excel.ChartMapProjectionType
 summary: >-
   Represents the region projection type of a chart series layout. This only
   applies to region map charts.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,25 +16,35 @@ fields:
   - name: albers
     uid: excel!Excel.ChartMapProjectionType.albers:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Albers"'
   - name: automatic
     uid: excel!Excel.ChartMapProjectionType.automatic:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Automatic"'
   - name: mercator
     uid: excel!Excel.ChartMapProjectionType.mercator:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Mercator"'
   - name: miller
     uid: excel!Excel.ChartMapProjectionType.miller:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Miller"'
   - name: robinson
     uid: excel!Excel.ChartMapProjectionType.robinson:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Robinson"'

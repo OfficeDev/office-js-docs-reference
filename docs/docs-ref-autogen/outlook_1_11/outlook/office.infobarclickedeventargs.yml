@@ -6,7 +6,10 @@ fullName: Office.InfobarClickedEventArgs
 summary: >-
   Provides basic details about the notification message that raised the
   `Office.EventType.InfobarClicked` event.
-remarks: '\[Api set: Mailbox 1.10\]'
+remarks: >-
+  \[ [Api set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +20,10 @@ properties:
     package: outlook!
     fullName: infobarDetails
     summary: Gets additional details about the notification message.
-    remarks: '\[Api set: Mailbox 1.10\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -33,7 +39,10 @@ properties:
       Gets the type of the event. For details, refer to
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
-    remarks: '\[Api set: Mailbox 1.10\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

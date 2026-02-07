@@ -7,7 +7,9 @@ summary: >-
   Represents a collection of
   [Word.ReadabilityStatistic](xref:word!Word.ReadabilityStatistic:class) objects
   for the document or range.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -36,7 +38,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the name of the readability
       statistic.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -52,7 +56,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the value of the grammar
       statistic.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

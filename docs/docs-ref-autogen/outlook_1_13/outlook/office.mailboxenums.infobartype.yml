@@ -7,7 +7,10 @@ summary: >-
   Type of notification allowed by
   [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
   -->.
-remarks: '\[Api set: Mailbox 1.10\]'
+remarks: >-
+  \[ [Api set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -15,32 +18,44 @@ fields:
   - name: Informational
     uid: outlook!Office.MailboxEnums.InfobarType.Informational:member
     package: outlook!
-    summary: |-
+    summary: >-
       Notification displays an informational message.
 
-      * \[Api set: Mailbox 1.10\]
+
+      * \[ [Api set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
     value: '0'
   - name: ProgressIndicator
     uid: outlook!Office.MailboxEnums.InfobarType.ProgressIndicator:member
     package: outlook!
-    summary: |-
+    summary: >-
       Notification displays a progress indicator.
 
-      * \[Api set: Mailbox 1.10\]
+
+      * \[ [Api set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
     value: '1'
   - name: Error
     uid: outlook!Office.MailboxEnums.InfobarType.Error:member
     package: outlook!
-    summary: |-
+    summary: >-
       Notification displays an error message.
 
-      * \[Api set: Mailbox 1.10\]
+
+      * \[ [Api set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
     value: '2'
   - name: Insight
     uid: outlook!Office.MailboxEnums.InfobarType.Insight:member
     package: outlook!
-    summary: |-
+    summary: >-
       Notification displays an informational message with actions.
 
-      * \[Api set: Mailbox 1.10\]
+
+      * \[ [Api set: Mailbox
+      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
     value: '3'

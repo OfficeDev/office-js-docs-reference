@@ -18,7 +18,9 @@ properties:
     package: word!
     fullName: bevelBottomDepth
     summary: Specifies the depth of the bottom bevel.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     package: word!
     fullName: bevelBottomInset
     summary: Specifies the inset size for the bottom bevel.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       Specifies a `BevelType` value that represents the bevel type for the
       bottom bevel.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +73,9 @@ properties:
     package: word!
     fullName: bevelTopDepth
     summary: Specifies the depth of the top bevel.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -80,7 +88,9 @@ properties:
     package: word!
     fullName: bevelTopInset
     summary: Specifies the inset size for the top bevel.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +105,9 @@ properties:
     summary: >-
       Specifies a `BevelType` value that represents the bevel type for the top
       bevel.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -116,7 +128,9 @@ properties:
     summary: >-
       Returns a `ColorFormat` object that represents color of the contour of a
       shape.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -129,7 +143,9 @@ properties:
     package: word!
     fullName: contourWidth
     summary: Specifies the width of the contour of a shape.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +158,9 @@ properties:
     package: word!
     fullName: depth
     summary: Specifies the depth of the shape's extrusion.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -158,7 +176,9 @@ properties:
     summary: >-
       Returns a `ColorFormat` object that represents the color of the shape's
       extrusion.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -176,7 +196,9 @@ properties:
       fill (the front face of the extrusion) and automatically changes when the
       shape's fill changes, or whether the extrusion color is independent of the
       shape's fill.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -193,7 +215,9 @@ properties:
     package: word!
     fullName: fieldOfView
     summary: Specifies the amount of perspective for a shape.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -210,7 +234,9 @@ properties:
       walls of the extrusion narrow toward a vanishing point, `false` if the
       extrusion is a parallel, or orthographic, projection — that is, if the
       walls don't narrow toward a vanishing point.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -225,7 +251,9 @@ properties:
     summary: >-
       Specifies if the specified object, or the formatting applied to it, is
       visible.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -238,7 +266,9 @@ properties:
     package: word!
     fullName: lightAngle
     summary: Specifies the angle of the lighting.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -252,7 +282,9 @@ properties:
     package: word!
     fullName: presetLighting
     summary: Specifies a `LightRigType` value that represents the lighting preset.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -280,7 +312,9 @@ properties:
     package: word!
     fullName: presetLightingDirection
     summary: Specifies the position of the light source relative to the extrusion.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -300,7 +334,9 @@ properties:
     package: word!
     fullName: presetLightingSoftness
     summary: Specifies the intensity of the extrusion lighting.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -318,7 +354,9 @@ properties:
     package: word!
     fullName: presetMaterial
     summary: Specifies the extrusion surface material.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -341,7 +379,9 @@ properties:
     summary: >-
       Specifies whether text on a shape rotates with shape. `true` rotates the
       text.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -354,7 +394,9 @@ properties:
     package: word!
     fullName: rotationX
     summary: Specifies the rotation of the extruded shape around the x-axis in degrees.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -367,7 +409,9 @@ properties:
     package: word!
     fullName: rotationY
     summary: Specifies the rotation of the extruded shape around the y-axis in degrees.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -380,7 +424,9 @@ properties:
     package: word!
     fullName: rotationZ
     summary: Specifies the z-axis rotation of the camera.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -393,7 +439,9 @@ properties:
     package: word!
     fullName: z
     summary: Specifies the position on the z-axis for the shape.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

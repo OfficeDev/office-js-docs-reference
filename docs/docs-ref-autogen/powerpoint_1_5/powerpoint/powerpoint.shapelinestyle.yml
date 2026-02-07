@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.ShapeLineStyle:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeLineStyle
 summary: Specifies the style for a line.
-remarks: '\[Api set: PowerPointApi 1.4\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -12,18 +15,24 @@ fields:
   - name: single
     uid: powerpoint!PowerPoint.ShapeLineStyle.single:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Single line.
 
-      * \[Api set: PowerPointApi 1.4\]
+
+      * \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Single"'
   - name: thickBetweenThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickBetweenThin:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Thick line with a thin line on each side.
 
-      * \[Api set: PowerPointApi 1.4\]
+
+      * \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickThin:member
@@ -34,7 +43,9 @@ fields:
       the thin line.
 
 
-      * \[Api set: PowerPointApi 1.4\]
+      * \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThickThin"'
   - name: thinThick
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThick:member
@@ -45,13 +56,18 @@ fields:
       the thin line.
 
 
-      * \[Api set: PowerPointApi 1.4\]
+      * \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThinThick"'
   - name: thinThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThin:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Two thin lines.
 
-      * \[Api set: PowerPointApi 1.4\]
+
+      * \[ [Api set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThinThin"'

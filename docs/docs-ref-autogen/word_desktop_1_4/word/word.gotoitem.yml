@@ -6,7 +6,9 @@ fullName: Word.GoToItem
 summary: >-
   Specifies the item or location to which to move or extend a
   [selection](xref:word!Word.Selection:class)<!-- -->.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,136 +16,170 @@ fields:
   - name: bookmark
     uid: word!Word.GoToItem.bookmark:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a bookmark.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bookmark"'
   - name: comment
     uid: word!Word.GoToItem.comment:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a comment.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Comment"'
   - name: embeddedObject
     uid: word!Word.GoToItem.embeddedObject:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to an embedded object.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EmbeddedObject"'
   - name: endnote
     uid: word!Word.GoToItem.endnote:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a endnote.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Endnote"'
   - name: equation
     uid: word!Word.GoToItem.equation:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to an equation.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Equation"'
   - name: field
     uid: word!Word.GoToItem.field:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a field.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Field"'
   - name: footnote
     uid: word!Word.GoToItem.footnote:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a footnote.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footnote"'
   - name: grammaticalError
     uid: word!Word.GoToItem.grammaticalError:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a grammatical error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"GrammaticalError"'
   - name: graphic
     uid: word!Word.GoToItem.graphic:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a graphic.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Graphic"'
   - name: heading
     uid: word!Word.GoToItem.heading:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a heading.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Heading"'
   - name: line
     uid: word!Word.GoToItem.line:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a line.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Line"'
   - name: page
     uid: word!Word.GoToItem.page:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a page.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Page"'
   - name: percent
     uid: word!Word.GoToItem.percent:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a percent.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Percent"'
   - name: proofreadingError
     uid: word!Word.GoToItem.proofreadingError:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a proofreading error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ProofreadingError"'
   - name: section
     uid: word!Word.GoToItem.section:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a section.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Section"'
   - name: spellingError
     uid: word!Word.GoToItem.spellingError:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a spelling error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SpellingError"'
   - name: table
     uid: word!Word.GoToItem.table:member
     package: word!
-    summary: |-
+    summary: >-
       Moves to a table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Table"'

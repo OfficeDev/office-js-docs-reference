@@ -7,7 +7,8 @@ summary: >-
   Provides the contents and details of the message or file attachment being
   dragged and dropped into an add-in's task pane.
 remarks: >-
-  \[Api set: Mailbox 1.5\]
+  \[ [Api set: Mailbox
+  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   To learn more about the drag-and-drop feature and how to implement it across
@@ -26,7 +27,9 @@ properties:
     fullName: fileContent
     summary: Gets the contents of the file being dragged and dropped.
     remarks: >-
-      \[Api set: Mailbox 1.5\]
+      \[ [Api set: Mailbox
+      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       For guidance on how to retrieve data from a `Blob`<!-- -->, see the [File
@@ -44,7 +47,10 @@ properties:
     package: outlook!
     fullName: name
     summary: Gets the name of the file being dragged and dropped.
-    remarks: '\[Api set: Mailbox 1.5\]'
+    remarks: >-
+      \[ [Api set: Mailbox
+      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -58,7 +64,9 @@ properties:
     fullName: type
     summary: Gets the type of the file being dragged and dropped.
     remarks: >-
-      \[Api set: Mailbox 1.5\]
+      \[ [Api set: Mailbox
+      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **Important**: When a message is dragged into an add-in's task pane,

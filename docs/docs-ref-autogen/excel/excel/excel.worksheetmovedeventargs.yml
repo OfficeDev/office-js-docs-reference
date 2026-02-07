@@ -13,7 +13,9 @@ summary: >-
   event won't trigger for both position changes. This event only triggers for
   the primary worksheet move, and not any worksheet position changes that occur
   as a result of that primary move.
-remarks: '\[Api set: ExcelApi 1.17\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -24,7 +26,10 @@ properties:
     package: excel!
     fullName: positionAfter
     summary: Gets the new position of the worksheet, after the move.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -37,7 +42,10 @@ properties:
     package: excel!
     fullName: positionBefore
     summary: Gets the previous position of the worksheet, prior to the move.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +58,10 @@ properties:
     package: excel!
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +74,10 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +90,10 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet that was moved.
-    remarks: '\[Api set: ExcelApi 1.17\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

@@ -4,7 +4,10 @@ uid: visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.HyperlinkCollectionLoadOptions
 summary: Represents the Hyperlink Collection.
-remarks: '\[Api set: 1.1\]'
+remarks: >-
+  \[ [Api set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +36,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the address of the Hyperlink object.
       Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +54,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the description of a hyperlink.
       Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -63,7 +72,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the extra URL request information
       used to resolve the hyperlink's URL. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +90,10 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the sub-address of the Hyperlink
       object. Read-only.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

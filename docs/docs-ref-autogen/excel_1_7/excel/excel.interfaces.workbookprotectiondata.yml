@@ -17,7 +17,9 @@ properties:
     package: excel!
     fullName: protected
     summary: Specifies if the workbook is protected.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

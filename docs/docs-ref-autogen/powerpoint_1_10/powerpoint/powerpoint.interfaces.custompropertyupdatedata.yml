@@ -20,7 +20,10 @@ properties:
       The value of the custom property. If the value is a string, the maximum
       length 255 characters. Larger strings cause the operation to fail with an
       `InvalidArgument` error.
-    remarks: '\[Api set: PowerPointApi 1.7\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

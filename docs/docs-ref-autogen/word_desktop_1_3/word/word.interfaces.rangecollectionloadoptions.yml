@@ -4,7 +4,9 @@ uid: word!Word.Interfaces.RangeCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.RangeCollectionLoadOptions
 summary: Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the range. Use
       this to get and set font name, size, color, and other properties.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the proofing status (spelling
       and grammar checking) of the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -65,7 +71,9 @@ properties:
       sets a hyperlink on the range. All hyperlinks in the range are deleted
       when you set a new hyperlink on the range. Use a '\#' to separate the
       address part from the optional location part.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -78,7 +86,9 @@ properties:
     package: word!
     fullName: isEmpty
     summary: 'For EACH ITEM in the collection: Checks whether the range length is zero.'
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -93,7 +103,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies whether Microsoft Word has
       detected the language of the text in the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -108,7 +120,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies a `LanguageId` value that
       represents the language for the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -123,7 +137,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies an East Asian language for the
       range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -138,7 +154,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies a language for the range that
       isn't classified as an East Asian language.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -153,7 +171,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a `ListFormat` object that
       represents all the list formatting characteristics of the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -166,7 +186,9 @@ properties:
     package: word!
     fullName: parentBody
     summary: 'For EACH ITEM in the collection: Gets the parent body of the range.'
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -183,7 +205,9 @@ properties:
       For EACH ITEM in the collection: Gets the currently supported content
       control that contains the range. Throws an `ItemNotFound` error if there
       isn't a parent content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -206,7 +230,9 @@ properties:
       methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -225,7 +251,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the range.
       Throws an `ItemNotFound` error if it isn't contained in a table.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -241,7 +269,9 @@ properties:
       For EACH ITEM in the collection: Gets the table cell that contains the
       range. Throws an `ItemNotFound` error if it isn't contained in a table
       cell.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -261,7 +291,9 @@ properties:
       further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -281,7 +313,9 @@ properties:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -296,7 +330,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a `ShadingUniversal` object that
       refers to the shading formatting for the range.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -315,7 +351,9 @@ properties:
       Use this property for custom styles and localized style names. To use the
       built-in styles that are portable between locales, see the "styleBuiltIn"
       property.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -332,7 +370,9 @@ properties:
       range. Use this property for built-in styles that are portable between
       locales. To use custom styles or localized style names, see the "style"
       property.
-    remarks: '\[Api set: WordApi 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -345,7 +385,9 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the range.'
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

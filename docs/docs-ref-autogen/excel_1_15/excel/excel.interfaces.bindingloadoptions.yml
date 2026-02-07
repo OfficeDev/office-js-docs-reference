@@ -4,7 +4,9 @@ uid: excel!Excel.Interfaces.BindingLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.BindingLoadOptions
 summary: Represents an Office.js binding that is defined in the workbook.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -31,7 +33,9 @@ properties:
     package: excel!
     fullName: id
     summary: Represents the binding identifier.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +48,9 @@ properties:
     package: excel!
     fullName: type
     summary: Returns the type of the binding. See `Excel.BindingType` for details.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

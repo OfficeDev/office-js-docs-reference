@@ -4,7 +4,9 @@ uid: excel!Excel.ShowAsRule:interface
 package: excel!
 fullName: Excel.ShowAsRule
 summary: ''
-remarks: '\[Api set: ExcelApi 1.8\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     summary: >-
       The PivotField to base the `ShowAs` calculation on, if applicable
       according to the `ShowAsCalculation` type, else `null`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +36,9 @@ properties:
     summary: >-
       The item to base the `ShowAs` calculation on, if applicable according to
       the `ShowAsCalculation` type, else `null`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -47,7 +53,9 @@ properties:
     summary: >-
       The `ShowAs` calculation to use for the PivotField. See
       `Excel.ShowAsCalculation` for details.
-    remarks: '\[Api set: ExcelApi 1.8\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

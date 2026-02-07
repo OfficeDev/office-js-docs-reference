@@ -18,7 +18,8 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
   -->.
 remarks: >-
-  \[Api set: Mailbox 1.8\]
+  \[ [Api set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -85,7 +86,9 @@ methods:
       **Note**: This method is intended to return the values of the custom
       headers you set using the `setAsync` method.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -150,7 +153,9 @@ methods:
       **Note**: This method is intended to return the values of the custom
       headers you set using the `setAsync` method.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -206,7 +211,9 @@ methods:
       **Note**: This method is intended to remove the custom headers you set
       using the `setAsync` method.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -276,7 +283,9 @@ methods:
       **Note**: This method is intended to remove the custom headers you set
       using the `setAsync` method.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -344,7 +353,9 @@ methods:
       **Note**: This method is intended to set the values of your custom
       headers.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -433,7 +444,9 @@ methods:
       **Note**: This method is intended to set the values of your custom
       headers.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

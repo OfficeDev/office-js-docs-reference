@@ -6,8 +6,10 @@ fullName: Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs
 summary: >-
   Provides information about the linked entity data domain whose refresh mode
   was changed.
-remarks: |-
-  \[Api set: ExcelApi 1.19\]
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   This interface isn't supported in Excel on the web.
 
@@ -24,8 +26,11 @@ properties:
       changed. This ID is defined by Office Add-ins. This ID is not applicable
       to linked entity data domains defined by service data providers, such as
       Bing or Power BI.
-    remarks: |-
-      \[Api set: ExcelApi 1.19\]
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
 
@@ -41,8 +46,11 @@ properties:
     package: excel!
     fullName: refreshMode
     summary: Gets the new refresh mode of the linked entity data domain.
-    remarks: |-
-      \[Api set: ExcelApi 1.19\]
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
 
@@ -64,8 +72,11 @@ properties:
     summary: >-
       Gets the service ID of the linked entity data domain whose refresh mode
       was changed.
-    remarks: |-
-      \[Api set: ExcelApi 1.19\]
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
 
@@ -81,8 +92,11 @@ properties:
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: |-
-      \[Api set: ExcelApi 1.19\]
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
 
@@ -97,8 +111,11 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: |-
-      \[Api set: ExcelApi 1.19\]
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
 

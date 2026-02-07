@@ -15,7 +15,10 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide.
-    remarks: '\[Api set: PowerPointApi 1.2\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +33,10 @@ properties:
     summary: >-
       Returns the zero-based index of the slide representing its position in the
       presentation.
-    remarks: '\[Api set: PowerPointApi 1.8\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

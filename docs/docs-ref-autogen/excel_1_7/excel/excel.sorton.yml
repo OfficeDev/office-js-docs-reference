@@ -4,7 +4,9 @@ uid: excel!Excel.SortOn:enum
 package: excel!
 fullName: Excel.SortOn
 summary: Represents the part of the cell used as the sorting criteria.
-remarks: '\[Api set: ExcelApi 1.2\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,20 +14,28 @@ fields:
   - name: cellColor
     uid: excel!Excel.SortOn.cellColor:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.2\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CellColor"'
   - name: fontColor
     uid: excel!Excel.SortOn.fontColor:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.2\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FontColor"'
   - name: icon
     uid: excel!Excel.SortOn.icon:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.2\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Icon"'
   - name: value
     uid: excel!Excel.SortOn.value:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.2\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Value"'

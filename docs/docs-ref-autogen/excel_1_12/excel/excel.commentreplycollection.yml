@@ -4,7 +4,9 @@ uid: excel!Excel.CommentReplyCollection:class
 package: excel!
 fullName: Excel.CommentReplyCollection
 summary: Represents a collection of comment reply objects that are part of the comment.
-remarks: '\[Api set: ExcelApi 1.10\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +46,10 @@ methods:
     package: excel!
     fullName: add(content, contentType)
     summary: Creates a comment reply for a comment.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,16 +61,18 @@ methods:
         - id: content
           description: >-
             The comment's content. This can be either a string or a
-            `CommentRichContent` object (e.g., for comments with mentions).
-            \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent
-            object\]
+            `CommentRichContent` object (e.g., for comments with mentions). \[
+            [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent
+            object](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: <xref uid="excel!Excel.CommentRichContent:interface" /> | string
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
+            default value is enum `ContentType.Plain`<!-- -->. \[ [Api set:
             ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
-            ContentType.Mention\]
+            ContentType.Mention](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: <xref uid="excel!Excel.ContentType:enum" />
       return:
         type: <xref uid="excel!Excel.CommentReply:class" />
@@ -75,7 +82,10 @@ methods:
     package: excel!
     fullName: add(content, contentType)
     summary: Creates a comment reply for a comment.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -87,16 +97,18 @@ methods:
         - id: content
           description: >-
             The comment's content. This can be either a string or a
-            `CommentRichContent` object (e.g., for comments with mentions).
-            \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent
-            object\]
+            `CommentRichContent` object (e.g., for comments with mentions). \[
+            [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent
+            object](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: <xref uid="excel!Excel.CommentRichContent:interface" /> | string
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
+            default value is enum `ContentType.Plain`<!-- -->. \[ [Api set:
             ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
-            ContentType.Mention\]
+            ContentType.Mention](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+            \]
           type: '"Plain" | "Mention"'
       return:
         type: <xref uid="excel!Excel.CommentReply:class" />
@@ -106,7 +118,10 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of comment replies in the collection.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +135,10 @@ methods:
     package: excel!
     fullName: getItem(commentReplyId)
     summary: Returns a comment reply identified by its ID.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -138,7 +156,10 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a comment reply based on its position in the collection.
-    remarks: '\[Api set: ExcelApi 1.10\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

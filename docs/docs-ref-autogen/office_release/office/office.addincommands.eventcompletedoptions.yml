@@ -12,7 +12,8 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-log-appointments)
   when it completes processing an event in Outlook.
 remarks: >-
-  \[Api set: Mailbox 1.8\]
+  \[ [Api set: Mailbox
+  1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
   **[Minimum permission
@@ -61,7 +62,8 @@ properties:
       on-send add-in that handles the `ItemSend` event can set `allowEvent` to
       `false` to cancel the sending of a message.
     remarks: >-
-      \[Api set: Mailbox 1.8\]
+      \[ [Api set: Mailbox
+      1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission level

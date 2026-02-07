@@ -23,7 +23,10 @@ properties:
       entity data domain, then the current refresh mode is not changed. If the
       refresh mode is set to "Periodic", the refresh interval is set to the
       `periodicRefreshInterval` of this linked entity data domain.
-    remarks: '\[Api set: ExcelApi 1.19\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

@@ -9,7 +9,9 @@ summary: >-
   content. Individual content controls may contain contents such as images,
   tables, or paragraphs of formatted text. Currently, only rich text, plain
   text, checkbox, dropdown list, and combo box content controls are supported.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -22,7 +24,9 @@ properties:
     summary: >-
       Specifies the appearance of the content control. The value can be
       `boundingBox`<!-- -->, `tags`<!-- -->, or `hidden`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -41,7 +45,9 @@ properties:
     summary: >-
       Specifies a value that indicates whether the user can delete the content
       control. Mutually exclusive with `removeWhenEdited`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +62,9 @@ properties:
     summary: >-
       Specifies a value that indicates whether the user can edit the contents of
       the content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +79,9 @@ properties:
     summary: >-
       Specifies the color of the content control. Color is specified in
       '\#RRGGBB' format or by using the color name.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -84,7 +94,9 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -114,7 +126,9 @@ properties:
     summary: >-
       Gets the text format of the content control. Use this to get and set font
       name, size, color, and other properties.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -127,7 +141,9 @@ properties:
     package: word!
     fullName: id
     summary: Gets an integer that represents the content control identifier.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +158,9 @@ properties:
     summary: >-
       Gets the collection of `InlinePicture` objects in the content control. The
       collection doesn't include floating images.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -156,7 +174,8 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the content control.
     remarks: >-
-      \[Api set: WordApi 1.1\]
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly
@@ -176,7 +195,9 @@ properties:
     summary: >-
       Gets the content control that contains the content control. Throws an
       `ItemNotFound` error if there isn't a parent content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -191,7 +212,9 @@ properties:
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be
       displayed when the content control is empty.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -206,7 +229,9 @@ properties:
     summary: >-
       Specifies a value that indicates whether the content control is removed
       after it's edited. Mutually exclusive with `cannotDelete`<!-- -->.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -222,7 +247,9 @@ properties:
       Specifies the style name for the content control. Use this property for
       custom styles and localized style names. To use the built-in styles that
       are portable between locales, see the `styleBuiltIn` property.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -235,7 +262,9 @@ properties:
     package: word!
     fullName: tag
     summary: Specifies a tag to identify a content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -248,7 +277,9 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -261,7 +292,9 @@ properties:
     package: word!
     fullName: title
     summary: Specifies the title for a content control.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -277,7 +310,9 @@ properties:
       Gets the content control type. Only rich text, plain text, check box,
       dropdown list, combo box, building block gallery, date picker, repeating
       section, picture, and group content controls are supported currently.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -304,7 +339,9 @@ methods:
     summary: >-
       Clears the contents of the content control. The user can perform the undo
       operation on the cleared content.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -320,7 +357,9 @@ methods:
     summary: >-
       Deletes the content control and its content. If `keepContent` is set to
       `true`<!-- -->, the content isn't deleted.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -348,7 +387,9 @@ methods:
       (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or
       consistency across platforms, use `ContentControl.getOoxml()` and convert
       the returned XML to HTML.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -364,7 +405,9 @@ methods:
     summary: >-
       Gets the Office Open XML (OOXML) representation of the `ContentControl`
       object.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -381,7 +424,9 @@ methods:
       Inserts a break at the specified location in the main document. This
       method cannot be used with `richTextTable`<!-- -->, `richTextTableRow`<!--
       -->, and `richTextTableCell` content controls.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -418,7 +463,8 @@ methods:
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document into the content control at the specified location.
     remarks: >-
-      \[Api set: WordApi 1.1\]
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Insertion isn't supported if the document being inserted contains an
@@ -455,7 +501,9 @@ methods:
     package: word!
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML into the content control at the specified location.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -488,7 +536,9 @@ methods:
     summary: >-
       Inserts an inline picture into the content control at the specified
       location.
-    remarks: '\[Api set: WordApi 1.2\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -520,7 +570,9 @@ methods:
     package: word!
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML into the content control at the specified location.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -551,7 +603,9 @@ methods:
     package: word!
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -585,7 +639,9 @@ methods:
     package: word!
     fullName: insertText(text, insertLocation)
     summary: Inserts text into the content control at the specified location.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -697,7 +753,9 @@ methods:
       Performs a search with the specified search options on the scope of the
       `ContentControl` object. The search results are a collection of `Range`
       objects.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -736,7 +794,9 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the content control. This causes Word to scroll to the selection.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -756,7 +816,9 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the content control. This causes Word to scroll to the selection.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

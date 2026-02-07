@@ -7,7 +7,9 @@ summary: >-
   Specifies the status of Exchange Web Services (EWS) callback tokens or REST
   API tokens in an organization.
 remarks: >-
-  \[Api set: Mailbox preview\]
+  \[ [Api set: Mailbox
+  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Applicable Outlook

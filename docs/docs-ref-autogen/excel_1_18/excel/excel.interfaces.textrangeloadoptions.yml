@@ -6,7 +6,9 @@ fullName: Excel.Interfaces.TextRangeLoadOptions
 summary: >-
   Contains the text that is attached to a shape, in addition to properties and
   methods for manipulating the text.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -35,7 +37,9 @@ properties:
     summary: >-
       Returns a `ShapeFont` object that represents the font attributes for the
       text range.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +52,9 @@ properties:
     package: excel!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

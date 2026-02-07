@@ -3,7 +3,9 @@ name: Excel.FiveRatingSet
 uid: excel!Excel.FiveRatingSet:interface
 package: excel!
 fullName: Excel.FiveRatingSet
-summary: '\[Api set: ExcelApi 1.2\]'
+summary: >-
+  \[ [Api set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
 
 isPreview: false

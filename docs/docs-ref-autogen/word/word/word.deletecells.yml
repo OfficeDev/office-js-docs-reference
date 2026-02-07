@@ -6,7 +6,9 @@ fullName: Word.DeleteCells
 summary: >-
   Specifies a range of cells to be deleted from a table in a delete cells action
   or the behavior of the remaining cells after the deletion has occurred.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,18 +16,22 @@ fields:
   - name: entireColumn
     uid: word!Word.DeleteCells.entireColumn:member
     package: word!
-    summary: |-
+    summary: >-
       Delete the entire column of cells from the table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EntireColumn"'
   - name: entireRow
     uid: word!Word.DeleteCells.entireRow:member
     package: word!
-    summary: |-
+    summary: >-
       Delete the entire row of cells from the table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EntireRow"'
   - name: shiftLeft
     uid: word!Word.DeleteCells.shiftLeft:member
@@ -35,7 +41,8 @@ fields:
       cell or range of cells has been deleted.
 
 
-      * \[Api set: WordApiDesktop 1.4\]
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftLeft"'
   - name: shiftUp
     uid: word!Word.DeleteCells.shiftUp:member
@@ -45,5 +52,6 @@ fields:
       cell or range of cells has been deleted.
 
 
-      * \[Api set: WordApiDesktop 1.4\]
+      * \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftUp"'

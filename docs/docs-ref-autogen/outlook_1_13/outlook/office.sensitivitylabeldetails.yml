@@ -5,7 +5,9 @@ package: outlook!
 fullName: Office.SensitivityLabelDetails
 summary: Represents the properties of available sensitivity labels in Outlook.
 remarks: >-
-  \[Api set: Mailbox 1.13\]
+  \[ [Api set: Mailbox
+  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission

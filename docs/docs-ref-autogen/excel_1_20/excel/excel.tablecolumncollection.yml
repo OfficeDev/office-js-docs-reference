@@ -4,7 +4,9 @@ uid: excel!Excel.TableColumnCollection:class
 package: excel!
 fullName: Excel.TableColumnCollection
 summary: Represents a collection of all the columns that are part of the table.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of columns in the table.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -58,9 +62,11 @@ methods:
     fullName: add(index, values, name)
     summary: Adds a new column to the table.
     remarks: >-
-      \[Api set: ExcelApi 1.1 requires an index smaller than the total column
+      \[ [Api set: ExcelApi 1.1 requires an index smaller than the total column
       count; 1.4 allows index to be optional (null or -1) and will append a
-      column at the end; 1.4 allows name parameter at creation time.\]
+      column at the end; 1.4 allows name parameter at creation
+      time.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -95,7 +101,10 @@ methods:
     summary: >-
       Adds a new column to the table. Unlike `add()`<!-- -->, `addAsJson()`
       takes any type of cell value, such as image or entity data types.
-    remarks: '\[Api set: ExcelApi 1.16\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -126,7 +135,9 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of columns in the table.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -140,7 +151,9 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a column object by name or ID.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -158,7 +171,9 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a column based on its position in the collection.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -181,7 +196,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

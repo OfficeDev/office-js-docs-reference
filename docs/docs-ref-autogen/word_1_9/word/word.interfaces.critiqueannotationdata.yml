@@ -17,7 +17,9 @@ properties:
     package: word!
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
-    remarks: '\[Api set: WordApi 1.7\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

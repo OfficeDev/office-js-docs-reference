@@ -6,7 +6,9 @@ fullName: Word.CustomXmlReplaceChildNodeOptions
 summary: >-
   Removes the specified child node and replaces it with a different node in the
   same location.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     package: word!
     fullName: name
     summary: If provided, specifies the base name of the replacement element.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -34,7 +38,9 @@ properties:
       property is required to replace nodes of
       [type](xref:word!Word.CustomXmlNodeType:enum) `element` or `attribute`<!--
       -->; otherwise, it's ignored.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +55,9 @@ properties:
     summary: >-
       If provided, specifies the type of the replacement node. If the property
       isn't specified, it's assumed to be of type `element`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +77,9 @@ properties:
     summary: >-
       If provided, specifies the value of the replacement node for those nodes
       that allow text. If the node doesn't allow text, the property is ignored.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

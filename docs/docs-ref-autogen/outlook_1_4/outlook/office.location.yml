@@ -7,7 +7,8 @@ summary: >-
   Provides methods to get and set the location of a meeting in an Outlook
   add-in.
 remarks: >-
-  \[Api set: Mailbox 1.1\]
+  \[ [Api set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -44,7 +45,9 @@ methods:
       to get the location of an appointment. The location of the appointment is
       provided as a string in the `asyncResult.value` property.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -92,7 +95,9 @@ methods:
       to get the location of an appointment. The location of the appointment is
       provided as a string in the `asyncResult.value` property.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -134,7 +139,9 @@ methods:
       to set the location of an appointment. Setting the location of an
       appointment overwrites the current location.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -200,7 +207,9 @@ methods:
       to set the location of an appointment. Setting the location of an
       appointment overwrites the current location.
     remarks: >-
-      \[Api set: Mailbox 1.1\]
+      \[ [Api set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

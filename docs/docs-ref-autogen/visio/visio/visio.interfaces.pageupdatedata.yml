@@ -17,7 +17,10 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the view of the page.
-    remarks: '\[Api set: 1.1\]'
+    remarks: >-
+      \[ [Api set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
 
     isPreview: false
     isDeprecated: false

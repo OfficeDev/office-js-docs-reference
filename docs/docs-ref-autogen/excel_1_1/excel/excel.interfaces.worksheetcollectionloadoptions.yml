@@ -4,7 +4,9 @@ uid: excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
 summary: Represents a collection of worksheet objects that are part of the workbook.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a collection of charts that are
       part of the worksheet.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +55,9 @@ properties:
       For EACH ITEM in the collection: Returns a value that uniquely identifies
       the worksheet in a given workbook. The value of the identifier remains the
       same even when the worksheet is renamed or moved.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +72,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The display name of the worksheet. The
       name must be fewer than 32 characters.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +89,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The zero-based position of the worksheet
       within the workbook.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -96,7 +106,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Collection of tables that are part of the
       worksheet.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -111,7 +123,9 @@ properties:
     package: excel!
     fullName: visibility
     summary: 'For EACH ITEM in the collection: The visibility of the worksheet.'
-    remarks: '\[Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.\]'
+    remarks: >-
+      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

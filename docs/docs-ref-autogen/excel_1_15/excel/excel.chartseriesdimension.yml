@@ -4,7 +4,9 @@ uid: excel!Excel.ChartSeriesDimension:enum
 package: excel!
 fullName: Excel.ChartSeriesDimension
 summary: Represents the dimensions when getting values from chart series.
-remarks: '\[Api set: ExcelApi 1.12\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,40 +14,55 @@ fields:
   - name: bubbleSizes
     uid: excel!Excel.ChartSeriesDimension.bubbleSizes:member
     package: excel!
-    summary: |-
+    summary: >-
       The chart series axis for the bubble sizes in bubble charts.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"BubbleSizes"'
   - name: categories
     uid: excel!Excel.ChartSeriesDimension.categories:member
     package: excel!
-    summary: |-
+    summary: >-
       The chart series axis for the categories.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Categories"'
   - name: values
     uid: excel!Excel.ChartSeriesDimension.values:member
     package: excel!
-    summary: |-
+    summary: >-
       The chart series axis for the values.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Values"'
   - name: xvalues
     uid: excel!Excel.ChartSeriesDimension.xvalues:member
     package: excel!
-    summary: |-
+    summary: >-
       The chart series axis for the x-axis values in scatter and bubble charts.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"XValues"'
   - name: yvalues
     uid: excel!Excel.ChartSeriesDimension.yvalues:member
     package: excel!
-    summary: |-
+    summary: >-
       The chart series axis for the y-axis values in scatter and bubble charts.
 
-      * \[Api set: ExcelApi 1.12\]
+
+      * \[ [Api set: ExcelApi
+      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"YValues"'

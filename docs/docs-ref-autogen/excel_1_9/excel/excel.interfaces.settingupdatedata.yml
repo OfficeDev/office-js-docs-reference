@@ -17,7 +17,9 @@ properties:
     package: excel!
     fullName: value
     summary: Represents the value stored for this setting.
-    remarks: '\[Api set: ExcelApi 1.4\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

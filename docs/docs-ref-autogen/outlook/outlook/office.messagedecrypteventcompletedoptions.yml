@@ -10,7 +10,9 @@ summary: >-
   [OnMessageRead](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
   event.
 remarks: >-
-  \[Api set: Mailbox preview\]
+  \[ [Api set: Mailbox
+  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
 
   **[Minimum permission
@@ -38,7 +40,9 @@ properties:
       `allowEvent` property is set to `true`<!-- -->, the decrypted contents of
       the message is displayed.
     remarks: >-
-      \[Api set: Mailbox preview\]
+      \[ [Api set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -67,7 +71,9 @@ properties:
       to `true`<!-- -->, this property sets the decrypted attachments of the
       message.
     remarks: >-
-      \[Api set: Mailbox preview\]
+      \[ [Api set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -96,7 +102,9 @@ properties:
       to `true`<!-- -->, this property specifies any JSON data passed to the
       add-in for processing.
     remarks: >-
-      \[Api set: Mailbox preview\]
+      \[ [Api set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission
@@ -139,7 +147,9 @@ properties:
       to `true`<!-- -->, this property sets the decrypted contents of the body
       of the message.
     remarks: >-
-      \[Api set: Mailbox preview\]
+      \[ [Api set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
 
       **[Minimum permission

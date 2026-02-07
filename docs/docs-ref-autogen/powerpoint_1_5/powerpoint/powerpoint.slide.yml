@@ -4,7 +4,10 @@ uid: powerpoint!PowerPoint.Slide:class
 package: powerpoint!
 fullName: PowerPoint.Slide
 summary: Represents a single slide of a presentation.
-remarks: '\[Api set: PowerPointApi 1.2\]'
+remarks: >-
+  \[ [Api set: PowerPointApi
+  1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +33,10 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide.
-    remarks: '\[Api set: PowerPointApi 1.2\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -43,7 +49,10 @@ properties:
     package: powerpoint!
     fullName: layout
     summary: Gets the layout of the slide.
-    remarks: '\[Api set: PowerPointApi 1.3\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +65,10 @@ properties:
     package: powerpoint!
     fullName: shapes
     summary: Returns a collection of shapes in the slide.
-    remarks: '\[Api set: PowerPointApi 1.3\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -69,7 +81,10 @@ properties:
     package: powerpoint!
     fullName: slideMaster
     summary: Gets the `SlideMaster` object that represents the slide's default content.
-    remarks: '\[Api set: PowerPointApi 1.3\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +97,10 @@ properties:
     package: powerpoint!
     fullName: tags
     summary: Returns a collection of tags in the slide.
-    remarks: '\[Api set: PowerPointApi 1.3\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -98,7 +116,10 @@ methods:
     summary: >-
       Deletes the slide from the presentation. Does nothing if the slide doesn't
       exist.
-    remarks: '\[Api set: PowerPointApi 1.2\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -192,7 +213,10 @@ methods:
     summary: >-
       Selects the specified shapes. Existing shape selection is replaced with
       the new selection.
-    remarks: '\[Api set: PowerPointApi 1.5\]'
+    remarks: >-
+      \[ [Api set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

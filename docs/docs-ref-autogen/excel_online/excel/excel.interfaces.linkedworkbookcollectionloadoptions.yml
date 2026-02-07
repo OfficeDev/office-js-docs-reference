@@ -4,7 +4,9 @@ uid: excel!Excel.Interfaces.LinkedWorkbookCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions
 summary: Represents a collection of linked workbook objects.
-remarks: '\[Api set: ExcelApiOnline 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApiOnline
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +35,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The original URL pointing to the linked
       workbook. It is unique across all linked workbooks in the collection.
-    remarks: '\[Api set: ExcelApiOnline 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

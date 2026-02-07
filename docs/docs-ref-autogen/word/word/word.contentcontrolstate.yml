@@ -4,7 +4,9 @@ uid: word!Word.ContentControlState:enum
 package: word!
 fullName: Word.ContentControlState
 summary: Represents the state of the content control.
-remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -12,16 +14,20 @@ fields:
   - name: error
     uid: word!Word.ContentControlState.error:member
     package: word!
-    summary: |-
+    summary: >-
       Error state.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Error"'
   - name: warning
     uid: word!Word.ContentControlState.warning:member
     package: word!
-    summary: |-
+    summary: >-
       Warning state.
 
-      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
+
+      * \[ [Api set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Warning"'

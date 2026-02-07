@@ -4,7 +4,9 @@ uid: excel!Excel.ConditionalCellValueRule:interface
 package: excel!
 fullName: Excel.ConditionalCellValueRule
 summary: Represents a cell value conditional format rule.
-remarks: '\[Api set: ExcelApi 1.6\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,9 @@ properties:
     summary: >-
       The formula, if required, on which to evaluate the conditional format
       rule.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +36,9 @@ properties:
     summary: >-
       The formula, if required, on which to evaluate the conditional format
       rule.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +51,9 @@ properties:
     package: excel!
     fullName: operator
     summary: The operator of the cell value conditional format.
-    remarks: '\[Api set: ExcelApi 1.6\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

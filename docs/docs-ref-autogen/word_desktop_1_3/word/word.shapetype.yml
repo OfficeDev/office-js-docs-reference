@@ -4,7 +4,9 @@ uid: word!Word.ShapeType:enum
 package: word!
 fullName: Word.ShapeType
 summary: Represents the shape type.
-remarks: '\[Api set: WordApiDesktop 1.2\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -12,48 +14,60 @@ fields:
   - name: canvas
     uid: word!Word.ShapeType.canvas:member
     package: word!
-    summary: |-
+    summary: >-
       Canvas shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Canvas"'
   - name: geometricShape
     uid: word!Word.ShapeType.geometricShape:member
     package: word!
-    summary: |-
+    summary: >-
       Geometric shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"GeometricShape"'
   - name: group
     uid: word!Word.ShapeType.group:member
     package: word!
-    summary: |-
+    summary: >-
       Group shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Group"'
   - name: picture
     uid: word!Word.ShapeType.picture:member
     package: word!
-    summary: |-
+    summary: >-
       Picture shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Picture"'
   - name: textBox
     uid: word!Word.ShapeType.textBox:member
     package: word!
-    summary: |-
+    summary: >-
       Text box shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TextBox"'
   - name: unsupported
     uid: word!Word.ShapeType.unsupported:member
     package: word!
-    summary: |-
+    summary: >-
       Unsupported shape type.
 
-      * \[Api set: WordApiDesktop 1.2\]
+
+      * \[ [Api set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Unsupported"'

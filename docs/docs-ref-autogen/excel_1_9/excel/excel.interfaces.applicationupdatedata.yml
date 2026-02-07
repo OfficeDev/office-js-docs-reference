@@ -24,7 +24,9 @@ properties:
       ignores changes in tables; `Manual`<!-- -->, where calculation is done
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
-    remarks: '\[Api set: ExcelApi 1.1 for get, 1.8 for set\]'
+    remarks: >-
+      \[ [Api set: ExcelApi 1.1 for get, 1.8 for
+      set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -44,7 +46,9 @@ properties:
       Returns the iterative calculation settings. In Excel on Windows and Mac,
       the settings will apply to the Excel Application. In Excel on the web and
       other platforms, the settings will apply to the active workbook.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

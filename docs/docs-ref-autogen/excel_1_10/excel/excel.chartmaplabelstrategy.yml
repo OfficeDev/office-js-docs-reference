@@ -6,7 +6,9 @@ fullName: Excel.ChartMapLabelStrategy
 summary: >-
   Represents the region level of a chart series layout. This only applies to
   region map charts.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,15 +16,21 @@ fields:
   - name: bestFit
     uid: excel!Excel.ChartMapLabelStrategy.bestFit:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BestFit"'
   - name: none
     uid: excel!Excel.ChartMapLabelStrategy.none:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"None"'
   - name: showAll
     uid: excel!Excel.ChartMapLabelStrategy.showAll:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ShowAll"'

@@ -11,7 +11,9 @@ summary: >-
   contain contents such as images, tables, or paragraphs of formatted text.
   Currently, only rich text, plain text, checkbox, dropdown list, and combo box
   content controls are supported.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -53,7 +55,9 @@ methods:
     summary: >-
       Gets a content control by its identifier. Throws an `ItemNotFound` error
       if there isn't a content control with the identifier in this collection.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +75,9 @@ methods:
     package: word!
     fullName: getByTag(tag)
     summary: Gets the content controls that have the specified tag.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -89,7 +95,9 @@ methods:
     package: word!
     fullName: getByTitle(title)
     summary: Gets the content controls that have the specified title.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -107,7 +115,9 @@ methods:
     package: word!
     fullName: getItem(id)
     summary: Gets a content control by its ID.
-    remarks: '\[Api set: WordApi 1.1\]'
+    remarks: >-
+      \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

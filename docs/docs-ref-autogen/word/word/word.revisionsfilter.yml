@@ -6,7 +6,9 @@ fullName: Word.RevisionsFilter
 summary: >-
   Represents the current settings related to the display of reviewers' comments
   and revision marks in the document.
-remarks: '\[Api set: WordApiDesktop 1.4\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +36,9 @@ properties:
     summary: >-
       Specifies a `RevisionsMarkup` value that represents the extent of reviewer
       markup displayed in the document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +55,9 @@ properties:
     summary: >-
       Gets the `ReviewerCollection` object that represents the collection of
       reviewers of one or more documents.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +73,9 @@ properties:
       Specifies a `RevisionsView` value that represents globally whether Word
       displays the original version of the document or the final version, which
       might have revisions and formatting changes applied.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -214,7 +222,9 @@ methods:
     summary: >-
       Shows or hides all revisions in the document that contain comments and
       tracked changes.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

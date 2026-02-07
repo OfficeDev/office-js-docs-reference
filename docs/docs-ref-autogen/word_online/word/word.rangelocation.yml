@@ -7,7 +7,9 @@ summary: >-
   Represents the location of a range. You can get range by calling getRange on
   different objects such as [Word.Paragraph](xref:word!Word.Paragraph:class) and
   [Word.ContentControl](xref:word!Word.ContentControl:class)<!-- -->.
-remarks: '\[Api set: WordApi 1.3\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -21,23 +23,28 @@ fields:
       characters.
 
 
-      * \[Api set: WordApi 1.3\]
+      * \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"After"'
   - name: before
     uid: word!Word.RangeLocation.before:member
     package: word!
-    summary: |-
+    summary: >-
       For content control only. It's the point before the opening tag.
 
-      * \[Api set: WordApi 1.3\]
+
+      * \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Before"'
   - name: content
     uid: word!Word.RangeLocation.content:member
     package: word!
-    summary: |-
+    summary: >-
       The range between `start` and `end`<!-- -->.
 
-      * \[Api set: WordApi 1.3\]
+
+      * \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Content"'
   - name: end
     uid: word!Word.RangeLocation.end:member
@@ -48,7 +55,8 @@ fields:
       closing tag.
 
 
-      * \[Api set: WordApi 1.3\]
+      * \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: start
     uid: word!Word.RangeLocation.start:member
@@ -58,7 +66,8 @@ fields:
       after the opening tag.
 
 
-      * \[Api set: WordApi 1.3\]
+      * \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'
   - name: whole
     uid: word!Word.RangeLocation.whole:member
@@ -69,5 +78,6 @@ fields:
       control are also included.
 
 
-      * \[Api set: WordApi 1.3\]
+      * \[ [Api set: WordApi
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Whole"'

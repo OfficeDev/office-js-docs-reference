@@ -4,7 +4,9 @@ uid: excel!Excel.ChartLegendEntry:class
 package: excel!
 fullName: Excel.ChartLegendEntry
 summary: Represents the legend entry in `legendEntryCollection`<!-- -->.
-remarks: '\[Api set: ExcelApi 1.7\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: excel!
     fullName: visible
     summary: Represents the visibility of a chart legend entry.
-    remarks: '\[Api set: ExcelApi 1.7\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

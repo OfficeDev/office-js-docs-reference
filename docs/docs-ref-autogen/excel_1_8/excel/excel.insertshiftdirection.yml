@@ -6,7 +6,9 @@ fullName: Excel.InsertShiftDirection
 summary: >-
   Determines the direction in which existing cells will be shifted to
   accommodate what is being inserted.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -14,10 +16,14 @@ fields:
   - name: down
     uid: excel!Excel.InsertShiftDirection.down:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Down"'
   - name: right
     uid: excel!Excel.InsertShiftDirection.right:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: >-
+      * \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Right"'

@@ -4,7 +4,9 @@ uid: excel!Excel.ChartAxisTitleFormat:class
 package: excel!
 fullName: Excel.ChartAxisTitleFormat
 summary: Represents the chart axis title formatting.
-remarks: '\[Api set: ExcelApi 1.1\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -32,7 +34,9 @@ properties:
     summary: >-
       Specifies the chart axis title's font attributes, such as font name, font
       size, or color, of the chart axis title object.
-    remarks: '\[Api set: ExcelApi 1.1\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

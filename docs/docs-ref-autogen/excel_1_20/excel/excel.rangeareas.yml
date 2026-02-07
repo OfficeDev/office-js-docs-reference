@@ -9,7 +9,9 @@ summary: >-
   multiple ranges simultaneously in Excel
   add-ins](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!--
   -->.
-remarks: '\[Api set: ExcelApi 1.9\]'
+remarks: >-
+  \[ [Api set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -23,7 +25,9 @@ properties:
       Returns the `RangeAreas` reference in A1-style. Address value will contain
       the worksheet name for each rectangular block of cells (e.g.,
       "Sheet1!A1:B4, Sheet1!D1:D4").
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -36,7 +40,9 @@ properties:
     package: excel!
     fullName: addressLocal
     summary: Returns the `RangeAreas` reference in the user locale.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +57,9 @@ properties:
     summary: >-
       Returns the number of rectangular ranges that comprise this `RangeAreas`
       object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +74,9 @@ properties:
     summary: >-
       Returns a collection of rectangular ranges that comprise this `RangeAreas`
       object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +92,9 @@ properties:
       Returns the number of cells in the `RangeAreas` object, summing up the
       cell counts of all of the individual rectangular ranges. Returns -1 if the
       cell count exceeds 2^31-1 (2,147,483,647).
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +109,9 @@ properties:
     summary: >-
       Returns a collection of conditional formats that intersect with any cells
       in this `RangeAreas` object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -127,7 +141,9 @@ properties:
     summary: >-
       Returns a data validation object for all ranges in the `RangeAreas`<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -142,7 +158,9 @@ properties:
     summary: >-
       Returns a `RangeFormat` object, encapsulating the font, fill, borders,
       alignment, and other properties for all ranges in the `RangeAreas` object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -157,7 +175,9 @@ properties:
     summary: >-
       Specifies if all the ranges on this `RangeAreas` object represent entire
       columns (e.g., "A:C, Q:Z").
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -172,7 +192,9 @@ properties:
     summary: >-
       Specifies if all the ranges on this `RangeAreas` object represent entire
       rows (e.g., "1:3, 5:7").
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -189,7 +211,9 @@ properties:
       styles of the cells are inconsistent, `null` will be returned. For custom
       styles, the style name will be returned. For built-in styles, a string
       representing a value in the `BuiltInStyle` enum will be returned.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -202,7 +226,9 @@ properties:
     package: excel!
     fullName: worksheet
     summary: Returns the worksheet for the current `RangeAreas`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -216,7 +242,9 @@ methods:
     package: excel!
     fullName: calculate()
     summary: Calculates all cells in the `RangeAreas`<!-- -->.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -232,7 +260,9 @@ methods:
     summary: >-
       Clears values, format, fill, border, and other properties on each of the
       areas that comprise this `RangeAreas` object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -254,7 +284,9 @@ methods:
     summary: >-
       Clears values, format, fill, border, and other properties on each of the
       areas that comprise this `RangeAreas` object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -284,7 +316,10 @@ methods:
       control formatting are removed. Otherwise, this sets the cells with
       controls to their default value and clears the values of the other cells
       in the ranges.
-    remarks: '\[Api set: ExcelApi 1.18\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -298,7 +333,9 @@ methods:
     package: excel!
     fullName: convertDataTypeToText()
     summary: Converts all cells in the `RangeAreas` with data types into text.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -312,7 +349,9 @@ methods:
     package: excel!
     fullName: convertToLinkedDataType(serviceID, languageCulture)
     summary: Converts all cells in the `RangeAreas` into linked data types.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -340,7 +379,9 @@ methods:
       different size than the source range or `RangeAreas`<!-- -->. The
       destination will be expanded automatically if it is smaller than the
       source.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -383,7 +424,9 @@ methods:
       different size than the source range or `RangeAreas`<!-- -->. The
       destination will be expanded automatically if it is smaller than the
       source.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -426,7 +469,9 @@ methods:
       `RangeAreas` (for example, if the current `RangeAreas` represents cells
       "B4:E11, H2", it returns a `RangeAreas` that represents columns "B:E,
       H:H").
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -443,7 +488,9 @@ methods:
       Returns a `RangeAreas` object that represents the entire rows of the
       `RangeAreas` (for example, if the current `RangeAreas` represents cells
       "B4:E11", it returns a `RangeAreas` that represents rows "4:11").
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -460,7 +507,9 @@ methods:
       Returns the `RangeAreas` object that represents the intersection of the
       given ranges or `RangeAreas`<!-- -->. If no intersection is found, an
       `ItemNotFound` error will be thrown.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -490,7 +539,9 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -518,7 +569,9 @@ methods:
       column offset. The dimension of the returned `RangeAreas` will match the
       original object. If the resulting `RangeAreas` is forced outside the
       bounds of the worksheet grid, an error will be thrown.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -550,7 +603,9 @@ methods:
       Returns a `RangeAreas` object that represents all the cells that match the
       specified type and value. Throws an error if no special cells are found
       that match the criteria.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -581,7 +636,9 @@ methods:
       Returns a `RangeAreas` object that represents all the cells that match the
       specified type and value. Throws an error if no special cells are found
       that match the criteria.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -628,7 +685,9 @@ methods:
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -663,7 +722,9 @@ methods:
       [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -706,7 +767,9 @@ methods:
     summary: >-
       Returns a scoped collection of tables that overlap with any range in this
       `RangeAreas` object.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -730,7 +793,9 @@ methods:
       individual rectangular ranges in the `RangeAreas` object. If there are no
       used cells within the `RangeAreas`<!-- -->, the `ItemNotFound` error will
       be thrown.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -757,7 +822,9 @@ methods:
       information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -853,7 +920,10 @@ methods:
     package: excel!
     fullName: select()
     summary: Selects the specified range areas in the Excel UI.
-    remarks: '\[Api set: ExcelApi 1.18\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -920,7 +990,9 @@ methods:
     summary: >-
       Sets the `RangeAreas` to be recalculated when the next recalculation
       occurs.
-    remarks: '\[Api set: ExcelApi 1.9\]'
+    remarks: >-
+      \[ [Api set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

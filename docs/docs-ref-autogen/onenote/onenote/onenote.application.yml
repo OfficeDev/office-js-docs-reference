@@ -6,7 +6,9 @@ fullName: OneNote.Application
 summary: >-
   Represents the top-level object that contains all globally addressable OneNote
   objects such as notebooks, the active notebook, and the active section.
-remarks: '\[Api set: OneNoteApi 1.1\]'
+remarks: >-
+  \[ [Api set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -35,7 +37,10 @@ properties:
       Gets the collection of notebooks that are open in the OneNote application
       instance. In OneNote Online, only one notebook at a time is open in the
       application instance. Read-only.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +56,10 @@ methods:
     summary: >-
       Gets the active notebook if one exists. If no notebook is active, throws
       ItemNotFound.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +75,10 @@ methods:
     summary: >-
       Gets the active notebook if one exists. If no notebook is active, returns
       null.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -83,7 +94,10 @@ methods:
     summary: >-
       Gets the active outline if one exists, If no outline is active, throws
       ItemNotFound.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +111,10 @@ methods:
     package: onenote!
     fullName: getActiveOutlineOrNull()
     summary: Gets the active outline if one exists, otherwise returns null.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -113,7 +130,10 @@ methods:
     summary: >-
       Gets the active page if one exists. If no page is active, throws
       ItemNotFound.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -127,7 +147,10 @@ methods:
     package: onenote!
     fullName: getActivePageOrNull()
     summary: Gets the active page if one exists. If no page is active, returns null.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -143,7 +166,10 @@ methods:
     summary: >-
       Gets the active Paragraph if one exists, If no Paragraph is active, throws
       ItemNotFound.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -157,7 +183,10 @@ methods:
     package: onenote!
     fullName: getActiveParagraphOrNull()
     summary: Gets the active Paragraph if one exists, otherwise returns null.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -173,7 +202,10 @@ methods:
     summary: >-
       Gets the active section if one exists. If no section is active, throws
       ItemNotFound.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -189,7 +221,10 @@ methods:
     summary: >-
       Gets the active section if one exists. If no section is active, returns
       null.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -217,7 +252,10 @@ methods:
     package: onenote!
     fullName: getSelectedInkStrokes()
     summary: Gets the currently selected ink strokes.
-    remarks: '\[Api set: OneNoteApi 1.9\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -377,7 +415,10 @@ methods:
     package: onenote!
     fullName: navigateToPage(page)
     summary: Opens the specified page in the application instance.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -398,7 +439,10 @@ methods:
       Gets the specified page, and opens it in the application instance.
       Navigation may still not be carried out when no fails. Caller should
       validate the returned page if so desired.
-    remarks: '\[Api set: OneNoteApi 1.1\]'
+    remarks: >-
+      \[ [Api set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

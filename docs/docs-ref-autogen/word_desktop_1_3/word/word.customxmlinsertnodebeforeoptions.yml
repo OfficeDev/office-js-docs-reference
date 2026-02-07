@@ -4,7 +4,9 @@ uid: word!Word.CustomXmlInsertNodeBeforeOptions:interface
 package: word!
 fullName: Word.CustomXmlInsertNodeBeforeOptions
 summary: Inserts a new node just before the context node in the tree.
-remarks: '\[Api set: WordApiDesktop 1.3\]'
+remarks: >-
+  \[ [Api set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,7 +17,9 @@ properties:
     package: word!
     fullName: name
     summary: If provided, specifies the base name of the element to be inserted.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -32,7 +36,9 @@ properties:
       property is required to insert nodes of
       [type](xref:word!Word.CustomXmlNodeType:enum) `element` or `attribute`<!--
       -->; otherwise, it's ignored.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +51,9 @@ properties:
     package: word!
     fullName: nextSibling
     summary: If provided, specifies the context node.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +68,9 @@ properties:
     summary: >-
       If provided, specifies the type of node to append. If the property isn't
       specified, it's assumed to be of type `element`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -80,7 +90,9 @@ properties:
     summary: >-
       If provided, specifies the value of the inserted node for those nodes that
       allow text. If the node doesn't allow text, the property is ignored.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

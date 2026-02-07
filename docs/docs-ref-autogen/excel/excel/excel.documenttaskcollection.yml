@@ -4,7 +4,9 @@ uid: excel!Excel.DocumentTaskCollection:class
 package: excel!
 fullName: Excel.DocumentTaskCollection
 summary: Represents a collection of tasks.
-remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+remarks: >-
+  \[ [Api set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
 isDeprecated: false
@@ -44,7 +46,10 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of tasks in the collection.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -58,7 +63,10 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a task using its ID.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -78,7 +86,10 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a task by its index in the collection.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false
@@ -96,7 +107,10 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: Gets a task using its ID.
-    remarks: '\[Api set: ExcelApi BETA (PREVIEW ONLY)\]'
+    remarks: >-
+      \[ [Api set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
 
     isPreview: true
     isDeprecated: false

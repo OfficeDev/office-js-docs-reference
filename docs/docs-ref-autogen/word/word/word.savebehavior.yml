@@ -4,7 +4,9 @@ uid: word!Word.SaveBehavior:enum
 package: word!
 fullName: Word.SaveBehavior
 summary: Specifies the save behavior for `Document.save`<!-- -->.
-remarks: '\[Api set: WordApi 1.1\]'
+remarks: >-
+  \[ [Api set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,7 +19,8 @@ fields:
       saved. Won't take effect if the document was previously saved.
 
 
-      * \[Api set: WordApi 1.1\]
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Prompt"'
   - name: save
     uid: word!Word.SaveBehavior.save:member
@@ -28,5 +31,6 @@ fields:
       location.
 
 
-      * \[Api set: WordApi 1.1\]
+      * \[ [Api set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Save"'

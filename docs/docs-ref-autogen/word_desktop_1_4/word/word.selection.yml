@@ -5,7 +5,8 @@ package: word!
 fullName: Word.Selection
 summary: Represents a selected range or the insertion point in a Word document.
 remarks: >-
-  \[Api set: WordApiDesktop 1.4\]
+  \[ [Api set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   Note: [Range](xref:word!Word.Range:class) objects share many of the same
@@ -24,7 +25,9 @@ properties:
     summary: >-
       Returns a `BorderUniversalCollection` object that represents all the
       borders for the objects in the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -39,7 +42,9 @@ properties:
     summary: >-
       Returns a `RangeScopedCollection` object that represents each character in
       the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +59,9 @@ properties:
     summary: >-
       Returns a `CommentCollection` object that represents all the comments in
       the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +89,9 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +106,9 @@ properties:
     summary: >-
       Returns a `FieldCollection` object that represents all the fields in the
       selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -110,7 +121,9 @@ properties:
     package: word!
     fullName: fitTextWidth
     summary: Specifies the width in which Word fits the text in the current selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -125,7 +138,9 @@ properties:
     summary: >-
       Returns the `Font` object that represents the character formatting of the
       selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -140,7 +155,9 @@ properties:
     summary: >-
       Specifies a `Range` object that includes the formatted text in the range
       or selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -156,7 +173,9 @@ properties:
       Returns whether the spelling and grammar checker ignores the selected
       text. If the selected text contains a mix of proofed and un-proofed
       content, this API returns `null`<!-- -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -169,7 +188,9 @@ properties:
     package: word!
     fullName: isActive
     summary: Returns whether the selection in the specified window or pane is active.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -182,7 +203,9 @@ properties:
     package: word!
     fullName: isColumnSelectModeActive
     summary: Specifies whether column selection mode is active.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -195,7 +218,9 @@ properties:
     package: word!
     fullName: isEndOfRowMark
     summary: Returns whether the selection is at the end-of-row mark in a table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -208,7 +233,9 @@ properties:
     package: word!
     fullName: isExtendModeActive
     summary: Specifies whether Extend mode is active.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -221,7 +248,9 @@ properties:
     package: word!
     fullName: isInsertionPointAtEndOfLine
     summary: Returns whether the insertion point is at the end of a line.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -234,7 +263,9 @@ properties:
     package: word!
     fullName: isStartActive
     summary: Specifies whether the beginning of the selection is active.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -247,7 +278,9 @@ properties:
     package: word!
     fullName: languageDetected
     summary: Specifies whether Word has detected the language of the selected text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -260,7 +293,9 @@ properties:
     package: word!
     fullName: languageId
     summary: Returns the language for the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -370,7 +405,9 @@ properties:
     package: word!
     fullName: languageIdFarEast
     summary: Returns the East Asian language for the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -482,7 +519,9 @@ properties:
     summary: >-
       Returns the language for the selection that isn't classified as an East
       Asian language.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -592,7 +631,9 @@ properties:
     package: word!
     fullName: orientation
     summary: Specifies the orientation of text in the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -612,7 +653,9 @@ properties:
     summary: >-
       Returns a `ParagraphCollection` object that represents all the paragraphs
       in the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -627,7 +670,9 @@ properties:
     summary: >-
       Returns the `Range` object for the portion of the document contained in
       the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -640,7 +685,9 @@ properties:
     package: word!
     fullName: sections
     summary: Returns the `SectionCollection` object in the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -655,7 +702,9 @@ properties:
     summary: >-
       Returns the `RangeScopedCollection` object for each sentence in the
       selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -670,7 +719,9 @@ properties:
     summary: >-
       Returns the `ShadingUniversal` object for the shading formatting for the
       selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -683,7 +734,9 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -696,7 +749,9 @@ properties:
     package: word!
     fullName: storyLength
     summary: Returns the number of characters in the story that contains the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -709,7 +764,9 @@ properties:
     package: word!
     fullName: storyType
     summary: Returns the story type for the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -736,7 +793,9 @@ properties:
     package: word!
     fullName: tables
     summary: Returns the `TableCollection` object in the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -749,7 +808,9 @@ properties:
     package: word!
     fullName: text
     summary: Specifies the text in the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -764,7 +825,9 @@ properties:
     summary: >-
       Returns the tables at the outermost nesting level in the current
       selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -777,7 +840,9 @@ properties:
     package: word!
     fullName: type
     summary: Returns the selection type.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -798,7 +863,9 @@ properties:
     summary: >-
       Returns the `RangeScopedCollection` object that represents each word in
       the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -812,7 +879,9 @@ methods:
     package: word!
     fullName: calculate()
     summary: Calculates the first mathematical expression within the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -828,7 +897,9 @@ methods:
     summary: >-
       Cancels a mode such as extend or column select. This is equivalent to
       pressing the Esc key.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -842,7 +913,9 @@ methods:
     package: word!
     fullName: clearCharacterStyleFormatting()
     summary: Removes character formatting applied through character styles.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -856,7 +929,9 @@ methods:
     package: word!
     fullName: clearFormatting()
     summary: Removes character and paragraph formatting from the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -870,7 +945,9 @@ methods:
     package: word!
     fullName: clearManualCharacterFormatting()
     summary: Removes manually applied character formatting from the selected text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -884,7 +961,9 @@ methods:
     package: word!
     fullName: clearManualParagraphFormatting()
     summary: Removes manually applied paragraph formatting from the selected text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -898,7 +977,9 @@ methods:
     package: word!
     fullName: clearParagraphFormatting()
     summary: Removes all paragraph formatting from the selected text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -912,7 +993,9 @@ methods:
     package: word!
     fullName: clearParagraphStyle()
     summary: Removes paragraph formatting applied through paragraph styles.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -926,7 +1009,9 @@ methods:
     package: word!
     fullName: collapse(direction)
     summary: Collapses the selection to the starting or ending position.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -944,7 +1029,9 @@ methods:
     package: word!
     fullName: collapse(direction)
     summary: Collapses the selection to the starting or ending position.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -962,7 +1049,9 @@ methods:
     package: word!
     fullName: copyAsPictureToClipboard()
     summary: Copies the selection to the Clipboard as a picture.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -978,7 +1067,9 @@ methods:
     summary: >-
       Copies the character formatting of the first character in the selected
       text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -992,7 +1083,9 @@ methods:
     package: word!
     fullName: copyToClipboard()
     summary: Copies the selection to the Clipboard.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1006,7 +1099,9 @@ methods:
     package: word!
     fullName: createTextBox()
     summary: Adds a default-sized text box around the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1022,7 +1117,9 @@ methods:
     summary: >-
       Removes the selected content from the document and moves it to the
       Clipboard.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1036,7 +1133,9 @@ methods:
     package: word!
     fullName: delete(options)
     summary: Deletes the specified number of characters or words.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1056,7 +1155,9 @@ methods:
     package: word!
     fullName: detectLanguage()
     summary: Analyzes the selected text to determine the language that it's written in.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1070,7 +1171,9 @@ methods:
     package: word!
     fullName: expand(unit)
     summary: Expands the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1088,7 +1191,9 @@ methods:
     package: word!
     fullName: expand(unit)
     summary: Expands the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1113,7 +1218,9 @@ methods:
     package: word!
     fullName: expandToWholeStory()
     summary: Expands the selection to include the entire story.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1129,7 +1236,9 @@ methods:
     summary: >-
       Turns on extend mode, or if extend mode is already on, extends the
       selection to the next larger unit of text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1153,7 +1262,9 @@ methods:
     summary: >-
       Turns on extend mode, or if extend mode is already on, extends the
       selection to the next larger unit of text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1184,7 +1295,9 @@ methods:
     summary: >-
       Returns a `Range` object that represents the next unit relative to the
       selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1206,7 +1319,9 @@ methods:
     summary: >-
       Returns a `Range` object that represents the previous unit relative to the
       selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1229,7 +1344,9 @@ methods:
       Returns a `Range` object that refers to the start position of the next
       item or location specified by the `what` argument and moves the selection
       to the specified item.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1252,7 +1369,9 @@ methods:
       Returns a `Range` object that refers to the start position of the next
       item or location specified by the `what` argument and moves the selection
       to the specified item.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1283,7 +1402,9 @@ methods:
       Returns a `Range` object that refers to the start position of the previous
       item or location specified by the `what` argument and moves the selection
       to the specified item.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1306,7 +1427,9 @@ methods:
       Returns a `Range` object that refers to the start position of the previous
       item or location specified by the `what` argument and moves the selection
       to the specified item.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1334,7 +1457,9 @@ methods:
     package: word!
     fullName: insertAfter(text)
     summary: Inserts the specified text at the end of the range or selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1352,7 +1477,9 @@ methods:
     package: word!
     fullName: insertBefore(text)
     summary: Inserts the specified text before the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1370,7 +1497,9 @@ methods:
     package: word!
     fullName: insertCells(shiftCells)
     summary: Adds cells to an existing table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1391,7 +1520,9 @@ methods:
     package: word!
     fullName: insertCells(shiftCells)
     summary: Adds cells to an existing table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1414,7 +1545,9 @@ methods:
     package: word!
     fullName: insertColumnsLeft()
     summary: Inserts columns to the left of the column that contains the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1428,7 +1561,9 @@ methods:
     package: word!
     fullName: insertColumnsRight()
     summary: Inserts columns to the right of the current selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1445,7 +1580,9 @@ methods:
       Inserts the current date or time, or both, either as text or as a [TIME
       field](https://support.microsoft.com/office/6cb8fcef-310a-4646-ae6b-886d88335c90)<!--
       -->.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1466,7 +1603,9 @@ methods:
       Inserts a [Formula
       field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
       at the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1484,7 +1623,9 @@ methods:
     package: word!
     fullName: insertNewPage()
     summary: Inserts a new page at the position of the insertion point.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1498,7 +1639,9 @@ methods:
     package: word!
     fullName: insertParagraphAfter()
     summary: Inserts a paragraph mark after the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1512,7 +1655,9 @@ methods:
     package: word!
     fullName: insertParagraphBefore()
     summary: Inserts a new paragraph before the selection or range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1528,7 +1673,9 @@ methods:
     summary: >-
       Inserts a special hidden paragraph mark that allows Word to join
       paragraphs formatted using different paragraph styles.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1542,7 +1689,9 @@ methods:
     package: word!
     fullName: insertRowsAbove(numRows)
     summary: Inserts rows above the current selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1560,7 +1709,9 @@ methods:
     package: word!
     fullName: insertRowsBelow(numRows)
     summary: Inserts rows below the current selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1578,7 +1729,9 @@ methods:
     package: word!
     fullName: insertSymbol(characterNumber, options)
     summary: Inserts a symbol in place of the specified selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1601,7 +1754,9 @@ methods:
     package: word!
     fullName: insertText(Text)
     summary: Inserts the specified text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1621,7 +1776,9 @@ methods:
     summary: >-
       Inserts the specified XML into the document at the cursor, replacing any
       selected text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1642,7 +1799,9 @@ methods:
     package: word!
     fullName: isEqual(range)
     summary: Returns whether the selection is equal to the specified range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1662,7 +1821,9 @@ methods:
     package: word!
     fullName: isInRange(range)
     summary: Returns `true` if the selection is contained within the specified range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1682,7 +1843,9 @@ methods:
     package: word!
     fullName: isInStory(range)
     summary: Returns whether the selection is in the same story as the specified range.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1778,7 +1941,9 @@ methods:
     summary: >-
       Collapses the selection to its start or end position and then moves the
       collapsed object by the specified number of units.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1798,7 +1963,9 @@ methods:
     package: word!
     fullName: moveDown(options)
     summary: Moves the selection down.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1818,7 +1985,9 @@ methods:
     package: word!
     fullName: moveEnd(options)
     summary: Moves the ending character position of the range or selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1840,7 +2009,9 @@ methods:
     summary: >-
       Moves the end position of the selection until any of the specified
       characters are found in the document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1867,7 +2038,9 @@ methods:
     summary: >-
       Moves the ending character position of the selection while any of the
       specified characters are found in the document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1893,7 +2066,9 @@ methods:
     package: word!
     fullName: moveLeft(options)
     summary: Moves the selection to the left.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1913,7 +2088,9 @@ methods:
     package: word!
     fullName: moveRight(options)
     summary: Moves the selection to the right.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1933,7 +2110,9 @@ methods:
     package: word!
     fullName: moveStart(options)
     summary: Moves the start position of the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1955,7 +2134,9 @@ methods:
     summary: >-
       Moves the start position of the selection until one of the specified
       characters is found in the document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -1982,7 +2163,9 @@ methods:
     summary: >-
       Moves the start position of the selection while any of the specified
       characters are found in the document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2010,7 +2193,9 @@ methods:
     summary: >-
       Moves the selection until one of the specified characters is found in the
       document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2035,7 +2220,9 @@ methods:
     package: word!
     fullName: moveUp(options)
     summary: Moves the selection up.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2057,7 +2244,9 @@ methods:
     summary: >-
       Moves the selection while any of the specified characters are found in the
       document.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2083,7 +2272,9 @@ methods:
     package: word!
     fullName: nextField()
     summary: Selects the next field.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2097,7 +2288,9 @@ methods:
     package: word!
     fullName: nextSubdocument()
     summary: Moves the selection to the next subdocument.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2111,7 +2304,9 @@ methods:
     package: word!
     fullName: pasteAndFormat(type)
     summary: Pastes the content from clipboard and formats them as specified.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2129,7 +2324,9 @@ methods:
     package: word!
     fullName: pasteAndFormat(type)
     summary: Pastes the content from clipboard and formats them as specified.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2162,7 +2359,9 @@ methods:
     package: word!
     fullName: pasteExcelTable(linkedToExcel, wordFormatting, rtf)
     summary: Pastes and formats a Microsoft Excel table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2188,7 +2387,9 @@ methods:
     package: word!
     fullName: pasteFormat()
     summary: Applies formatting copied with the `copyFormat` method to the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2204,7 +2405,9 @@ methods:
     summary: >-
       Merges pasted cells into an existing table by inserting the pasted rows
       between the selected rows.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2218,7 +2421,9 @@ methods:
     package: word!
     fullName: pasteTableCellsAsNestedTable()
     summary: Pastes a cell or group of cells as a nested table into the selection.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2232,7 +2437,9 @@ methods:
     package: word!
     fullName: previousField()
     summary: Selects and returns the previous field.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2246,7 +2453,9 @@ methods:
     package: word!
     fullName: previousSubdocument()
     summary: Moves the selection to the previous subdocument.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2260,7 +2469,9 @@ methods:
     package: word!
     fullName: replaceParagraph()
     summary: Replaces the selection with a new paragraph.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2274,7 +2485,9 @@ methods:
     package: word!
     fullName: select()
     summary: Selects the current text.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2290,7 +2503,9 @@ methods:
     summary: >-
       Selects the entire cell containing the current selection when the
       selection is in a table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2306,7 +2521,9 @@ methods:
     summary: >-
       Selects the column that contains the insertion point, or selects all
       columns that contain the selection when the selection is in a table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2322,7 +2539,9 @@ methods:
     summary: >-
       Extends the selection forward until text with a different paragraph
       alignment is encountered.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2338,7 +2557,9 @@ methods:
     summary: >-
       Extends the selection forward until text with a different color is
       encountered.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2354,7 +2575,9 @@ methods:
     summary: >-
       Extends the selection forward until text in a different font or font size
       is encountered.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2370,7 +2593,9 @@ methods:
     summary: >-
       Extends the selection forward until text with different left or right
       paragraph indents is encountered.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2386,7 +2611,9 @@ methods:
     summary: >-
       Extends the selection forward until a paragraph with different line
       spacing is encountered.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2402,7 +2629,9 @@ methods:
     summary: >-
       Extends the selection forward until a paragraph with different tab stops
       is encountered.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2418,7 +2647,9 @@ methods:
     summary: >-
       Selects the row that contains the insertion point, or selects all rows
       that contain the selection when the selection is in a table.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2436,7 +2667,9 @@ methods:
       Character position values start at the beginning of the story, with the
       first value being 0. All characters are counted, including nonprinting
       characters. Hidden characters are counted even if they're not displayed.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2460,7 +2693,9 @@ methods:
       Shrinks the selection to the next smaller unit of text. The unit
       progression for this method is as follows: entire document, section,
       paragraph, sentence, word, insertion point.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2476,7 +2711,9 @@ methods:
     summary: >-
       Cancels the selection of all but the most recently selected text when the
       current selection contains multiple, unconnected selections.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2493,7 +2730,9 @@ methods:
       Inserts an empty paragraph above the first row in the selection. If the
       selection isn't in the first row of the table, the table is split into two
       tables. If the selection isn't in a table, an error occurs.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2509,7 +2748,9 @@ methods:
     summary: >-
       Switches the selection between a Unicode character and its corresponding
       hexadecimal value.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2569,7 +2810,9 @@ methods:
     summary: >-
       Deletes the character preceding the selection (if collapsed) or the
       insertion point.
-    remarks: '\[Api set: WordApiDesktop 1.4\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

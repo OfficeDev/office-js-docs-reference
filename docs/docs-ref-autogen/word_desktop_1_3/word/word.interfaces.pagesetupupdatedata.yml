@@ -17,7 +17,9 @@ properties:
     package: word!
     fullName: bookFoldPrinting
     summary: Specifies whether Microsoft Word prints the document as a booklet.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -30,7 +32,9 @@ properties:
     package: word!
     fullName: bookFoldPrintingSheets
     summary: Specifies the number of pages for each booklet.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -45,7 +49,9 @@ properties:
     summary: >-
       Specifies if Microsoft Word reverses the printing order for book fold
       printing of bidirectional or Asian language documents.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +66,9 @@ properties:
     summary: >-
       Specifies the distance (in points) between the bottom edge of the page and
       the bottom boundary of the body text.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -73,7 +81,9 @@ properties:
     package: word!
     fullName: charsLine
     summary: Specifies the number of characters per line in the document grid.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -87,7 +97,9 @@ properties:
     package: word!
     fullName: differentFirstPageHeaderFooter
     summary: Specifies whether the first page has a different header and footer.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -102,7 +114,9 @@ properties:
     summary: >-
       Specifies the distance between the footer and the bottom of the page in
       points.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -117,7 +131,9 @@ properties:
     summary: >-
       Specifies the amount (in points) of extra margin space added to each page
       in a document or section for binding.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -130,7 +146,9 @@ properties:
     package: word!
     fullName: gutterPosition
     summary: Specifies on which side the gutter appears in a document.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -147,7 +165,9 @@ properties:
     summary: >-
       Specifies whether Microsoft Word uses gutters for the current document
       based on a right-to-left language or a left-to-right language.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -162,7 +182,9 @@ properties:
     summary: >-
       Specifies the distance between the header and the top of the page in
       points.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -175,7 +197,9 @@ properties:
     package: word!
     fullName: layoutMode
     summary: Specifies the layout mode for the current document.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -194,7 +218,9 @@ properties:
     summary: >-
       Specifies the distance (in points) between the left edge of the page and
       the left boundary of the body text.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -209,7 +235,9 @@ properties:
     summary: >-
       Specifies a `LineNumbering` object that represents the line numbers for
       the `PageSetup` object.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -222,7 +250,9 @@ properties:
     package: word!
     fullName: linesPage
     summary: Specifies the number of lines per page in the document grid.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -237,7 +267,9 @@ properties:
     summary: >-
       Specifies if the inside and outside margins of facing pages are the same
       width.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -251,7 +283,9 @@ properties:
     package: word!
     fullName: oddAndEvenPagesHeaderFooter
     summary: Specifies whether odd and even pages have different headers and footers.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -264,7 +298,9 @@ properties:
     package: word!
     fullName: orientation
     summary: Specifies the orientation of the page.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -279,7 +315,9 @@ properties:
     package: word!
     fullName: pageHeight
     summary: Specifies the page height in points.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -292,7 +330,9 @@ properties:
     package: word!
     fullName: pageWidth
     summary: Specifies the page width in points.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -305,7 +345,9 @@ properties:
     package: word!
     fullName: paperSize
     summary: Specifies the paper size of the page.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -339,7 +381,9 @@ properties:
     summary: >-
       Specifies the distance (in points) between the right edge of the page and
       the right boundary of the body text.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -352,7 +396,9 @@ properties:
     package: word!
     fullName: sectionDirection
     summary: Specifies the reading order and alignment for the specified sections.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -369,7 +415,9 @@ properties:
     package: word!
     fullName: sectionStart
     summary: Specifies the type of section break for the specified object.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -386,7 +434,9 @@ properties:
     package: word!
     fullName: showGrid
     summary: Specifies whether to show the grid.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -401,7 +451,9 @@ properties:
     summary: >-
       Specifies if endnotes are printed at the end of the next section that
       doesn't suppress endnotes.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -414,7 +466,9 @@ properties:
     package: word!
     fullName: topMargin
     summary: Specifies the top margin of the page in points.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -427,7 +481,9 @@ properties:
     package: word!
     fullName: twoPagesOnOne
     summary: Specifies whether to print two pages per sheet.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -442,7 +498,9 @@ properties:
     summary: >-
       Specifies the vertical alignment of text on each page in a document or
       section.
-    remarks: '\[Api set: WordApiDesktop 1.3\]'
+    remarks: >-
+      \[ [Api set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
