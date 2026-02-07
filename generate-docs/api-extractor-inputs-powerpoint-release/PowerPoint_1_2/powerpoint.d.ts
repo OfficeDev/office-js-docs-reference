@@ -19,9 +19,9 @@ export declare namespace PowerPoint {
          */
         static newObject(context: OfficeExtension.ClientRequestContext): PowerPoint.Application;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-         * Whereas the original `PowerPoint.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): {
             [key: string]: string;
         };
@@ -37,6 +37,7 @@ export declare namespace PowerPoint {
     export class Presentation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         
         
         
@@ -94,11 +95,34 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Presentation;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-         * Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -171,6 +195,8 @@ export declare namespace PowerPoint {
         
         
         
+        
+        
         /**
          * Gets the unique ID of the slide.
          *
@@ -213,11 +239,13 @@ export declare namespace PowerPoint {
             expand?: string;
         }): PowerPoint.Slide;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-         * Whereas the original `PowerPoint.Slide` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.Slide` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): PowerPoint.Interfaces.SlideData;
     }
+    
+    
     
     
     
@@ -285,6 +313,7 @@ export declare namespace PowerPoint {
          */
         targetSlideId?: string;
     }
+    
     /**
      * Represents the collection of slides in the presentation.
      *
@@ -296,6 +325,7 @@ export declare namespace PowerPoint {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: PowerPoint.Slide[];
+        
         
         /**
          * Gets the number of slides in the collection.
@@ -356,9 +386,9 @@ export declare namespace PowerPoint {
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.SlideCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
-         * Whereas the original `PowerPoint.SlideCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `PowerPoint.SlideCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): PowerPoint.Interfaces.SlideCollectionData;
     }
     
@@ -388,12 +418,19 @@ export declare namespace PowerPoint {
         export interface CustomXmlPartCollectionUpdateData {
             items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
+        /** An interface for updating data on the `HyperlinkScopedCollection` object, for use in `hyperlinkScopedCollection.set({ ... })`. */
+        export interface HyperlinkScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
+        }
         /** An interface for updating data on the `BulletFormat` object, for use in `bulletFormat.set({ ... })`. */
         export interface BulletFormatUpdateData {
+            
+            
             
         }
         /** An interface for updating data on the `ParagraphFormat` object, for use in `paragraphFormat.set({ ... })`. */
         export interface ParagraphFormatUpdateData {
+            
             
         }
         /** An interface for updating data on the `ShapeFont` object, for use in `shapeFont.set({ ... })`. */
@@ -497,6 +534,35 @@ export declare namespace PowerPoint {
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
         }
+        /** An interface for updating data on the `SlideBackgroundGradientFill` object, for use in `slideBackgroundGradientFill.set({ ... })`. */
+        export interface SlideBackgroundGradientFillUpdateData {
+            
+        }
+        /** An interface for updating data on the `SlideBackgroundPatternFill` object, for use in `slideBackgroundPatternFill.set({ ... })`. */
+        export interface SlideBackgroundPatternFillUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the `SlideBackgroundPictureOrTextureFill` object, for use in `slideBackgroundPictureOrTextureFill.set({ ... })`. */
+        export interface SlideBackgroundPictureOrTextureFillUpdateData {
+            
+        }
+        /** An interface for updating data on the `SlideBackgroundSolidFill` object, for use in `slideBackgroundSolidFill.set({ ... })`. */
+        export interface SlideBackgroundSolidFillUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the `SlideBackground` object, for use in `slideBackground.set({ ... })`. */
+        export interface SlideBackgroundUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the `SlideLayoutBackground` object, for use in `slideLayoutBackground.set({ ... })`. */
+        export interface SlideLayoutBackgroundUpdateData {
+            
+            
+        }
         /** An interface for updating data on the `SlideLayoutCollection` object, for use in `slideLayoutCollection.set({ ... })`. */
         export interface SlideLayoutCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideLayoutData[];
@@ -529,6 +595,11 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the `BindingCollection` object, for use in `bindingCollection.set({ ... })`. */
         export interface BindingCollectionUpdateData {
@@ -551,6 +622,11 @@ export declare namespace PowerPoint {
             
             
             
+            
+            
+        }
+        /** An interface for updating data on the `PageSetup` object, for use in `pageSetup.set({ ... })`. */
+        export interface PageSetupUpdateData {
             
             
         }
@@ -577,6 +653,10 @@ export declare namespace PowerPoint {
              */
             title?: string;
         }
+        /** An interface describing the data returned by calling `adjustments.toJSON()`. */
+        export interface AdjustmentsData {
+            
+        }
         /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
         export interface CustomXmlPartData {
             
@@ -590,12 +670,19 @@ export declare namespace PowerPoint {
         export interface CustomXmlPartCollectionData {
             items?: PowerPoint.Interfaces.CustomXmlPartData[];
         }
+        /** An interface describing the data returned by calling `hyperlinkScopedCollection.toJSON()`. */
+        export interface HyperlinkScopedCollectionData {
+            items?: PowerPoint.Interfaces.HyperlinkData[];
+        }
         /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
         export interface BulletFormatData {
+            
+            
             
         }
         /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
         export interface ParagraphFormatData {
+            
             
         }
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
@@ -632,6 +719,7 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `hyperlink.toJSON()`. */
         export interface HyperlinkData {
+            
             
             
         }
@@ -722,6 +810,39 @@ export declare namespace PowerPoint {
         export interface ShapeCollectionData {
             items?: PowerPoint.Interfaces.ShapeData[];
         }
+        /** An interface describing the data returned by calling `slideBackgroundGradientFill.toJSON()`. */
+        export interface SlideBackgroundGradientFillData {
+            
+        }
+        /** An interface describing the data returned by calling `slideBackgroundPatternFill.toJSON()`. */
+        export interface SlideBackgroundPatternFillData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `slideBackgroundPictureOrTextureFill.toJSON()`. */
+        export interface SlideBackgroundPictureOrTextureFillData {
+            
+        }
+        /** An interface describing the data returned by calling `slideBackgroundSolidFill.toJSON()`. */
+        export interface SlideBackgroundSolidFillData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `slideBackgroundFill.toJSON()`. */
+        export interface SlideBackgroundFillData {
+            
+        }
+        /** An interface describing the data returned by calling `slideBackground.toJSON()`. */
+        export interface SlideBackgroundData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `slideLayoutBackground.toJSON()`. */
+        export interface SlideLayoutBackgroundData {
+            
+            
+        }
         /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
         export interface SlideLayoutData {
             
@@ -731,6 +852,9 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
         export interface SlideLayoutCollectionData {
             items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
+        /** An interface describing the data returned by calling `slideMasterBackground.toJSON()`. */
+        export interface SlideMasterBackgroundData {
         }
         /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
         export interface SlideMasterData {
@@ -764,6 +888,7 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
         export interface ShapeGroupData {
             
+            
         }
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
@@ -776,6 +901,12 @@ export declare namespace PowerPoint {
         }
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
+            
+            
+            
+            
+            
+            
             
             
             
@@ -819,6 +950,11 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface describing the data returned by calling `pageSetup.toJSON()`. */
+        export interface PageSetupData {
+            
+            
+        }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
             items?: PowerPoint.Interfaces.SlideData[];
@@ -846,6 +982,7 @@ export declare namespace PowerPoint {
             $all?: boolean;
             
             
+            
             /**
              * Returns the title of the presentation.
              *
@@ -854,6 +991,16 @@ export declare namespace PowerPoint {
              */
             title?: boolean;
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -896,6 +1043,7 @@ export declare namespace PowerPoint {
             $all?: boolean;
             
             
+            
             /**
              * Gets the unique ID of the slide.
              *
@@ -905,6 +1053,7 @@ export declare namespace PowerPoint {
             id?: boolean;
             
         }
+        
         
         
         
@@ -925,6 +1074,7 @@ export declare namespace PowerPoint {
               Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             
             
             /**

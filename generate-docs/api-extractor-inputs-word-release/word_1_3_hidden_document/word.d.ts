@@ -1524,7 +1524,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.DocumentData;
     }
     /**
-     * The `DocumentCreated` object is the top level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
+     * The `DocumentCreated` object is the top-level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -6413,7 +6413,7 @@ export declare namespace Word {
     }
     
     /**
-     * The border types.
+     * Represents the border type.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -13134,7 +13134,7 @@ export declare namespace Word {
             
         }
         /**
-         * The `DocumentCreated` object is the top level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
+         * The `DocumentCreated` object is the top-level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
          *
          * @remarks
          * [Api set: WordApi 1.3]

@@ -12,14 +12,14 @@
 ||[importCustomXmlParts](/javascript/api/word/word.insertfileoptions#word-word-insertfileoptions-importcustomxmlparts-member)|If provided, specifies whether the custom XML parts from the source document should be imported.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[getTrackedChanges()](/javascript/api/word/word.paragraph#word-word-paragraph-gettrackedchanges-member(1))|Gets the collection of the `TrackedChange` objects in the paragraph.|
 ||[uniqueLocalId](/javascript/api/word/word.paragraph#word-word-paragraph-uniquelocalid-member)|Gets a string that represents the paragraph identifier in the current session.|
-|[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)|The source of the event.|
-||[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|The event type.|
+|[ParagraphAddedEventArgs](/javascript/api/word/word.paragraphaddedeventargs)|[source](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-source-member)|Specifies the source of the event.|
+||[type](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-type-member)|Specifies the event type.|
 ||[uniqueLocalIds](/javascript/api/word/word.paragraphaddedeventargs#word-word-paragraphaddedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
-|[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)|The source of the event.|
-||[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|The event type.|
+|[ParagraphChangedEventArgs](/javascript/api/word/word.paragraphchangedeventargs)|[source](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-source-member)|Specifies the source of the event.|
+||[type](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-type-member)|Specifies the event type.|
 ||[uniqueLocalIds](/javascript/api/word/word.paragraphchangedeventargs#word-word-paragraphchangedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
-|[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)|The source of the event.|
-||[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|The event type.|
+|[ParagraphDeletedEventArgs](/javascript/api/word/word.paragraphdeletedeventargs)|[source](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-source-member)|Specifies the source of the event.|
+||[type](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-type-member)|Specifies the event type.|
 ||[uniqueLocalIds](/javascript/api/word/word.paragraphdeletedeventargs#word-word-paragraphdeletedeventargs-uniquelocalids-member)|Gets the unique IDs of the involved paragraphs.|
 |[Range](/javascript/api/word/word.range)|[getTrackedChanges()](/javascript/api/word/word.range#word-word-range-gettrackedchanges-member(1))|Gets the collection of the `TrackedChange` objects in the range.|
 |[Shading](/javascript/api/word/word.shading)|[backgroundPatternColor](/javascript/api/word/word.shading#word-word-shading-backgroundpatterncolor-member)|Specifies the color for the background of the object.|

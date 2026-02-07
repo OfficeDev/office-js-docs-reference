@@ -24,8 +24,8 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.8 for shared folder scenarios](../requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8.md)
-- [Mailbox 1.13 for shared mailbox scenarios](../requirement-sets/outlook/requirement-set-1.13/outlook-requirement-set-1.13.md)
+- [Mailbox 1.8 for shared folder scenarios](../requirement-sets/outlook/outlook-requirement-set-1-8.md)
+- [Mailbox 1.13 for shared mailbox scenarios](../requirement-sets/outlook/outlook-requirement-set-1-13.md)
 
 The following is an example of the **\<SupportsSharedFolders\>** element.
 

@@ -9725,6 +9725,7 @@ export declare namespace Excel {
         readonly calculationEngineVersion: number;
         /**
          * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+         * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.1 for get, 1.8 for set]
@@ -10217,13 +10218,12 @@ export declare namespace Excel {
          * Inserts the specified worksheets from a source workbook into the current workbook.
                     
                      The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
-                     
-                     **Note**: This API is currently only supported for Office on Windows, Mac, and the web.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
          * 
          * This API is currently only supported for Office on Windows, Mac, and the web.
+         * In Excel on the web, this API doesn't support inserting charts, comments, PivotTables, or slicers.
          *
          * @param base64File - Required. The Base64-encoded string representing the source workbook file.
          * @param options - Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
@@ -10649,6 +10649,7 @@ export declare namespace Excel {
         
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+         * Content in hidden worksheets is not returned.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -10660,6 +10661,7 @@ export declare namespace Excel {
         findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
         /**
          * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+         * Content in hidden worksheets is not returned.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -12426,6 +12428,7 @@ export declare namespace Excel {
         /**
          * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
                     The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
+                    Note: When a range is moved to a new address using this API, the new range object should be retrieved using the new address.
          *
          * @remarks
          * [Api set: ExcelApi 1.11]
@@ -41107,6 +41110,7 @@ export declare namespace Excel {
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationUpdateData;
             /**
              * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+             * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]
@@ -46174,6 +46178,7 @@ export declare namespace Excel {
             calculationEngineVersion?: number;
             /**
              * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+             * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]
@@ -53012,6 +53017,7 @@ export declare namespace Excel {
             calculationEngineVersion?: boolean;
             /**
              * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
+             * This is a runtime property. The `calculationMode` setting is not persisted in the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]

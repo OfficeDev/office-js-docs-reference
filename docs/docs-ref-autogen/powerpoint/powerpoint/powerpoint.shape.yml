@@ -50,11 +50,11 @@ properties:
       Returns an `Adjustments` object that contains adjustment values for all
       the adjustments in this shape.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly adjustments: PowerPoint.Adjustments;'
@@ -73,11 +73,11 @@ properties:
       with vision or cognitive impairments who may not be able to see or
       understand the shape.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'altTextDescription: string;'
@@ -98,11 +98,11 @@ properties:
       and is used to determine whether they wish to hear the description of the
       content.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'altTextTitle: string;'
@@ -131,11 +131,11 @@ properties:
       Gets the creation ID of the shape. Returns `null` if the shape has no
       creation ID.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly creationId: string | null;'
@@ -337,11 +337,11 @@ properties:
       stylistic borders). People using screen readers will hear these are
       decorative so they know they aren't missing any important information.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isDecorative: boolean;'
@@ -544,11 +544,11 @@ properties:
       positive value indicates clockwise rotation, and a negative value
       indicates counterclockwise rotation.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rotation: number;'
@@ -705,11 +705,11 @@ properties:
     fullName: visible
     summary: Specifies if the shape is visible.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'visible: boolean;'
@@ -899,17 +899,42 @@ methods:
       return:
         type: void
         description: ''
-  - name: getImageAsBase64(options)
-    uid: powerpoint!PowerPoint.Shape#getImageAsBase64:member(1)
+  - name: getGraphicOrNullObject()
+    uid: powerpoint!PowerPoint.Shape#getGraphicOrNullObject:member(1)
     package: powerpoint!
-    fullName: getImageAsBase64(options)
-    summary: Renders an image of the shape.
+    fullName: getGraphicOrNullObject()
+    summary: >-
+      Returns a [PowerPoint.Graphic](xref:powerpoint!PowerPoint.Graphic:class)
+      object if this shape is a
+      [ShapeType.graphic](xref:powerpoint!PowerPoint.ShapeType:enum)<!-- -->. If
+      this shape isn't a `Graphic`<!-- -->, an object with an `isNullObject`
+      property set to `true` is returned. For further information, see
+      [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
     isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getGraphicOrNullObject(): PowerPoint.Graphic;'
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Graphic:class" />
+        description: ''
+  - name: getImageAsBase64(options)
+    uid: powerpoint!PowerPoint.Shape#getImageAsBase64:member(1)
+    package: powerpoint!
+    fullName: getImageAsBase64(options)
+    summary: Renders an image of the shape.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1129,11 +1154,11 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getTextFrameOrNullObject(): PowerPoint.TextFrame;'
@@ -1226,11 +1251,44 @@ methods:
       Sets a hyperlink on this `Shape` with the specified options. This will
       delete any existing hyperlink on this `Shape`<!-- -->.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+      // Updates the hyperlink on the first selected shape on the current slide.
+
+      await PowerPoint.run(async (context) => {
+        const shape: PowerPoint.Shape = context.presentation.getSelectedShapes().getItemAt(0).load("type");
+        const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+          address: "https://www.microsoft.com",
+          screenTip: "Updated screen tip of link on shape",
+        };
+        const hyperlink: PowerPoint.Hyperlink = shape.setHyperlink(hyperlinkAddOptions).load("address,screenTip");
+        try {
+          await context.sync();
+        } catch {
+          console.warn("Confirm that you have at least one slide and you've selected a shape on the active slide.");
+          return;
+        }
+
+        console.log(
+          `Updated link on the selected ${shape.type} shape to "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}").`,
+        );
+      });
+
+      ```
+
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

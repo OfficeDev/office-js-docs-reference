@@ -436,6 +436,34 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
         description: The newly inserted shape.
+  - name: addPicture(base64EncodedImage, options)
+    uid: powerpoint!PowerPoint.ShapeCollection#addPicture:member(1)
+    package: powerpoint!
+    fullName: addPicture(base64EncodedImage, options)
+    summary: >-
+      Adds a picture to the slide. Returns a `Shape` object that represents the
+      new picture.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        addPicture(base64EncodedImage: string, options?:
+        PowerPoint.PictureAddOptions): PowerPoint.Shape;
+      parameters:
+        - id: base64EncodedImage
+          description: The base64-encoded image data.
+          type: string
+        - id: options
+          description: Optional. Additional options such as the position of the picture.
+          type: <xref uid="powerpoint!PowerPoint.PictureAddOptions:interface" />
+      return:
+        type: <xref uid="powerpoint!PowerPoint.Shape:class" />
+        description: The newly inserted shape.
   - name: addTable(rowCount, columnCount, options)
     uid: powerpoint!PowerPoint.ShapeCollection#addTable:member(1)
     package: powerpoint!

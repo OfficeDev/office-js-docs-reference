@@ -49,11 +49,11 @@ properties:
     fullName: background
     summary: Gets the background of the slide layout.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly background: PowerPoint.SlideLayoutBackground;'
@@ -174,11 +174,11 @@ properties:
     fullName: themeColorScheme
     summary: Returns the `ThemeColorScheme` of the slide layout.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly themeColorScheme: PowerPoint.ThemeColorScheme;'
@@ -223,6 +223,26 @@ properties:
           "TwoObjectsAndText" | "TwoObjectsOverText" | "VerticalText" |
           "VerticalTitleAndText" | "VerticalTitleAndTextOverChart"
 methods:
+  - name: delete()
+    uid: powerpoint!PowerPoint.SlideLayout#delete:member(1)
+    package: powerpoint!
+    fullName: delete()
+    summary: >-
+      Deletes the slide layout from the presentation. Does nothing if the slide
+      layout doesn't exist. Throws the `GeneralException` error if the slide
+      layout is in use.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
   - name: load(options)
     uid: powerpoint!PowerPoint.SlideLayout#load:member(1)
     package: powerpoint!

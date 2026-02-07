@@ -4163,17 +4163,15 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The `contentId` property is only supported in Outlook on the web and Outlook on Windows (new and classic (preview)).
+         * - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview).
          * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
          * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
          *
-         * - Starting November 15, 2025, changes to how inline images are represented in the HTML body of Outlook emails in
-         * Outlook on the web and the new Outlook on Windows will begin rolling out to production users.
+         * - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025.
          * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
-         * After the change, the image will be represented by a content ID (`cid`) in the `src` attribute instead.
-         * As a result, you'll need to update your add-in's parsing logic if you parse the attachment ID from the HTML editor or
-         * get the Base64 value of the image from the URL in the `src` attribute. For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         * Now, the image is represented by a content ID (`cid`) in the `src` attribute instead.
+         * If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic.
+         * For more information, see {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
          */
         contentId: string;
         /**
@@ -4231,6 +4229,24 @@ export declare namespace Office {
          * Gets a value that indicates the attachment's type.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
+        /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview).
+         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
+         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
+         *
+         * - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025.
+         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
+         * Now, the image is represented by a content ID (`cid`) in the `src` attribute instead.
+         * If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic.
+         * For more information, see {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         */
+        contentId: string;
         /**
          * Gets the MIME content type of the attachment.
          *
@@ -5470,6 +5486,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
+         * **Important**: Attachments of type `MailboxEnums.AttachmentType.Item` aren't currently supported.
+         *
          * @beta
          */
         attachmentType: MailboxEnums.AttachmentType;
@@ -6062,6 +6080,24 @@ export declare namespace Office {
          */
         pageY: number;
         /**
+         * Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.
+         * The position is relative to the left edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneX: number;
+        /**
+         * Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.
+         * The position is relative to the top edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneY: number;
+        /**
          * Gets the type of drag-and-drop event. The `dragover` event occurs when messages or file attachments are dragged over an add-in's task pane.
          *
          * @remarks
@@ -6107,6 +6143,24 @@ export declare namespace Office {
          * [Api set: Mailbox 1.5]
          */
         pageY: number;
+        /**
+         * Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.
+         * The position is relative to the left edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneX: number;
+        /**
+         * Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.
+         * The position is relative to the top edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneY: number;
         /**
          * Gets the type of drag-and-drop event. The `drop` event occurs when messages or file attachments are dropped into an add-in's task pane.
          *
@@ -8080,8 +8134,10 @@ export declare namespace Office {
          *
          * **Important**: 
          *
-         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
          *
          * - The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
          */
@@ -8096,8 +8152,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
          * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
-         * consider using {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get this
-         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | property from the server}.
+         * consider using one of the following options depending on your Exchange environment.
+         *
+         * - For Exchange Online, use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/microsoft-graph | Microsoft Graph} to get the
+         * {@link https://learn.microsoft.com/graph/api/resources/message | internetMessageId} property.
+         *
+         * - For Exchange Server (on-premises), use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get the
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | InternetMessageId} property from the server.
          */
         internetMessageId: string;
         /**
@@ -8285,8 +8346,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
          *
          * - The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
          */
@@ -12037,6 +12100,10 @@ export declare namespace Office {
          *
          * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
          *
+         * - The `sendAsync` method is available for preview in Outlook on Mac starting in Version 16.105 (Build 25121117).
+         * To test this feature, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
+         *
          * @param options - An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object you want to access in the
          *                  callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
@@ -12071,6 +12138,10 @@ export declare namespace Office {
          * This is because the item may have already been sent and the add-in has completed processing. We recommend processing other operations before calling `sendAsync`.
          *
          * - Any code included after the `sendAsync` call isn't guaranteed to run since the add-in completes processing after the `sendAsync` call.
+         *
+         * - The `sendAsync` method is available for preview in Outlook on Mac starting in Version 16.105 (Build 25121117).
+         * To test this feature, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`. The `asyncResult`
          *                   parameter is an `Office.AsyncResult` object.
@@ -12377,11 +12448,6 @@ export declare namespace Office {
         /**
          * Gets the email address of the sender of a message.
          *
-         * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-         *
-         * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
-         *
          * The `from` property returns an `EmailAddressDetails` object.
          *
          * @remarks
@@ -12389,20 +12455,34 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
+         *
+         * - The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
          */
         from: EmailAddressDetails;
         /**
          * Gets the internet message identifier for an email message.
-         *
-         * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
-         * consider using {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get this
-         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | property from the server}.
          *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
+         * consider using one of the following options depending on your Exchange environment.
+         *
+         * - For Exchange Online, use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/microsoft-graph | Microsoft Graph} to get the
+         * {@link https://learn.microsoft.com/graph/api/resources/message | internetMessageId} property.
+         *
+         * - For Exchange Server (on-premises), use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get the
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | InternetMessageId} property from the server.
          */
         internetMessageId: string;
         /**
@@ -12571,16 +12651,20 @@ export declare namespace Office {
         /**
          * Gets the email address of the sender of an email message.
          *
-         * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-         *
-         * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
-         *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
+         *
+         * - The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
          */
         sender: EmailAddressDetails;
         /**
@@ -14368,7 +14452,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -14386,7 +14470,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. The `value` property of the result is a `Recurrence` object.
@@ -15590,16 +15674,15 @@ export declare namespace Office {
          *
          * The customizable button in the Smart Alerts dialog varies depending on the Outlook client and its version.
          *
-         * - In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel` property customizes the text of the **Take Action** button.
+         * - In Outlook on the web, on Mac (in preview starting in Version 16.105 (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel` property customizes the text of the **Take Action** button.
          * The **Take Action** button only appears on the Smart Alerts dialog if the `commandId` option is configured in the `event.completed` call. The option must be configured
          * if you want to customize the text of the dialog button. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
          * If you previously customized the text of the **Don't Send** button without assigning it a task pane or function command, your custom text won't take effect in the latest Outlook client versions.
          * If you previously assigned a task pane or function command to the **Don't Send** button, no additional action is needed to implement the **Take Action** button in the latest versions.
          * The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog. Although no implementation changes are needed, we recommend notifying users of this updated experience.
          *
-         * - In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
-         * and Outlook on Mac, the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
+         * - In classic Outlook on Windows (prior to Version 2412 (Build 18324.20000) and Outlook on Mac (prior to Version 16.105 (Build 25121117)),
+         * the `cancelLabel` property customizes the text of the **Don't Send** button. The **Don't Send** button cancels the item being sent.
          */
         cancelLabel?: string;
         /**
@@ -15627,13 +15710,13 @@ export declare namespace Office {
          * - **Unified manifest for Microsoft 365**: The "id" property of the task pane or function command in the "controls" array.
          *
          * The button in the Smart Alerts dialog that opens a task pane or runs a function varies depending on the Outlook client and version.
-         * In Outlook on the web, new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the **Take Action** button opens a
+         * In Outlook on the web, on Mac (in preview starting in Version 16.105 (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the **Take Action** button opens a
          * task pane or runs a function. In this implementation, the **Don't Send** button cancels the item being sent. Its text and functionality can't be customized.
          * In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support
          * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows | Mailbox requirement set 1.14}),
          * and Outlook on Mac, the **Don't Send** button opens a task pane or runs a function.
          *
-         * If you customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows,
+         * If you've already customized the text and functionality of the **Don't Send** button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows or prior to Version 16.105 (Build 25121117) of Outlook on Mac,
          * no additional action is needed to implement the **Take Action** button in the latest supported versions. The default or customized **Take Action** button will automatically appear the next time a user receives a Smart Alerts dialog.
          * Although no implementation changes are needed, we recommend notifying users of this updated experience.
          *
@@ -15644,6 +15727,10 @@ export declare namespace Office {
          *
          * When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client.
          * Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
+         *
+         * Programming a button in the Smart Alerts dialog to run a function is available for preview in Outlook on Mac starting in Version 16.105 (Build 25121117).
+         * To test this feature, join the {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          */
         commandId?: string;
         /**
@@ -15832,6 +15919,10 @@ export declare namespace Office {
          * `Office.MailboxEnums.MoveSpamItemTo.NoMove`.
          *
          * - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
+         *
+         * - The `commandId` option is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this option, join the
+         * {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          */
         commandId?: string;
         /**
@@ -15869,6 +15960,10 @@ export declare namespace Office {
          * - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation
          * of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using
          * `JSON.parse()` once you retrieve it.
+         *
+         * - The `contextData` option is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this option, join the
+         * {@link https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756 | Microsoft 365 Insider program}
+         * and select the **Beta Channel** option to access Office beta builds.
          */
         contextData?: any;
         /**

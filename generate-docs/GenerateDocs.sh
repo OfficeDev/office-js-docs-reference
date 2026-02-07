@@ -85,6 +85,7 @@ npx version-remover api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.t
 npx version-remover api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts "Api set: Mailbox 1.2" configs/outlook-1.2-config.json
 npx version-remover api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts "Api set: Mailbox 1.1"
 
+npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_10/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts "Api set: PowerPointApi 1.10" configs/powerpoint-1_10-config.json
 npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts "Api set: PowerPointApi 1.9" configs/powerpoint-1_9-config.json
 npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts "Api set: PowerPointApi 1.8" configs/powerpoint-1_8-config.json
 npx version-remover api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts "Api set: PowerPointApi 1.7" configs/powerpoint-1_7-config.json
@@ -172,7 +173,8 @@ npx whats-new api-extractor-inputs-outlook-release/outlook_1_3/outlook.d.ts api-
 npx whats-new api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ../docs/includes/outlook-1_2 javascript/api/outlook/ configs/outlook-1.2-config.json
 npx whats-new api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts ../docs/includes/outlook-1_1 javascript/api/outlook/ configs/outlook-1.1-config.json
 
-npx whats-new api-extractor-inputs-powerpoint/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts ../docs/includes/powerpoint-preview javascript/api/powerpoint/ configs/powerpoint-preview-config.json
+npx whats-new api-extractor-inputs-powerpoint/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_10/powerpoint.d.ts ../docs/includes/powerpoint-preview javascript/api/powerpoint/ configs/powerpoint-preview-config.json
+npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_10/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts ../docs/includes/powerpoint-1_10 javascript/api/powerpoint/ configs/powerpoint-1_10-config.json
 npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_9/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts ../docs/includes/powerpoint-1_9 javascript/api/powerpoint/ configs/powerpoint-1_9-config.json
 npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_8/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../docs/includes/powerpoint-1_8 javascript/api/powerpoint/ configs/powerpoint-1_8-config.json
 npx whats-new api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts ../docs/includes/powerpoint-1_7 javascript/api/powerpoint/ configs/powerpoint-1_7-config.json
@@ -201,8 +203,6 @@ npx whats-new api-extractor-inputs-word-release/word_1_4/word.d.ts api-extractor
 npx whats-new api-extractor-inputs-word-release/word_1_3/word.d.ts api-extractor-inputs-word-release/word_1_2/word.d.ts ../docs/includes/word-1_3 javascript/api/word/ configs/word-1_3-config.json
 npx whats-new api-extractor-inputs-word-release/word_1_2/word.d.ts api-extractor-inputs-word-release/word_1_1/word.d.ts ../docs/includes/word-1_2 javascript/api/word/ configs/word-1_2-config.json
 npx whats-new api-extractor-inputs-word-release/word_1_1/word.d.ts ./tool-inputs/word-base.d.ts ../docs/includes/word-1_1 javascript/api/word/ configs/word-1_1-config.json
-
-popd
 
 if [ ! -d "json/office" ]; then
     echo Running API Extractor for Office preview.
@@ -463,6 +463,12 @@ if [ ! -d "json/powerpoint" ]; then
     echo Running API Extractor for PowerPoint preview.
     pushd api-extractor-inputs-powerpoint
     ../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/powerpoint_1_10" ]; then
+    echo Running API Extractor for PowerPoint 1.10.
+    pushd api-extractor-inputs-powerpoint-release/PowerPoint_1_10
+    ../../node_modules/.bin/api-extractor run
     popd
 fi
 if [ ! -d "json/powerpoint_1_9" ]; then
@@ -811,6 +817,9 @@ if [ ! -d "yaml/powerpoint_1_8" ]; then
 fi
 if [ ! -d "yaml/powerpoint_1_9" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_9 --output-folder ./yaml/powerpoint_1_9 --office 2>/dev/null
+fi
+if [ ! -d "yaml/powerpoint_1_10" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_10 --output-folder ./yaml/powerpoint_1_10 --office 2>/dev/null
 fi
 if [ ! -d "yaml/visio" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/visio --output-folder ./yaml/visio --office

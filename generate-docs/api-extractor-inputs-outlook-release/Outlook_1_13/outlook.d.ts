@@ -3903,17 +3903,15 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - The `contentId` property is only supported in Outlook on the web and Outlook on Windows (new and classic (preview)).
+         * - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview).
          * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
          * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
          *
-         * - Starting November 15, 2025, changes to how inline images are represented in the HTML body of Outlook emails in
-         * Outlook on the web and the new Outlook on Windows will begin rolling out to production users.
+         * - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025.
          * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
-         * After the change, the image will be represented by a content ID (`cid`) in the `src` attribute instead.
-         * As a result, you'll need to update your add-in's parsing logic if you parse the attachment ID from the HTML editor or
-         * get the Base64 value of the image from the URL in the `src` attribute. For more information, see
-         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         * Now, the image is represented by a content ID (`cid`) in the `src` attribute instead.
+         * If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic.
+         * For more information, see {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
          */
         contentId: string;
         /**
@@ -3972,6 +3970,24 @@ export declare namespace Office {
          * Gets a value that indicates the attachment's type.
          */
         attachmentType: MailboxEnums.AttachmentType | string;
+        /**
+         * Gets the content identifier of an inline attachment.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - The `contentId` property is only supported in Outlook on the web, the new Outlook on Windows, and classic Outlook on Windows (preview).
+         * To preview the `contentId` property in classic Outlook on Windows, your Outlook client must run Version 2510 (Build 19312.20000)
+         * or later and must be on the Beta Channel. For more information, see {@link https://aka.ms/Msft365InsiderProgram | Microsoft 365 Insider Program}.
+         *
+         * - Changes to how inline images are represented in the HTML body of Outlook emails in Outlook on the web and the new Outlook on Windows released on November 15, 2025.
+         * Previously, the attachment ID of the image appeared in the `src` attribute of the applicable `<img>` element.
+         * Now, the image is represented by a content ID (`cid`) in the `src` attribute instead.
+         * If you parse the attachment ID from the HTML editor or get the Base64-encoded value of the image from the URL in the `src` attribute, you must update your add-in's parsing logic.
+         * For more information, see {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-inline-images-in-outlook | Changes to inline image representation in Outlook on the web and new Outlook for Windows}.
+         */
+        contentId: string;
         /**
          * Gets the MIME content type of the attachment.
          *
@@ -5447,6 +5463,24 @@ export declare namespace Office {
          */
         pageY: number;
         /**
+         * Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.
+         * The position is relative to the left edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneX: number;
+        /**
+         * Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.
+         * The position is relative to the top edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneY: number;
+        /**
          * Gets the type of drag-and-drop event. The `dragover` event occurs when messages or file attachments are dragged over an add-in's task pane.
          *
          * @remarks
@@ -5486,11 +5520,30 @@ export declare namespace Office {
         /**
          * Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.
          * The position is relative to the top edge of the Outlook on the web or the new Outlook on Windows client window.
+         *
          * @remarks
          *
          * [Api set: Mailbox 1.5]
          */
         pageY: number;
+        /**
+         * Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels.
+         * The position is relative to the left edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneX: number;
+        /**
+         * Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels.
+         * The position is relative to the top edge of the add-in's task pane.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.5]
+         */
+        taskPaneY: number;
         /**
          * Gets the type of drag-and-drop event. The `drop` event occurs when messages or file attachments are dropped into an add-in's task pane.
          *
@@ -9376,11 +9429,6 @@ export declare namespace Office {
         /**
          * Gets the email address of the sender of a message.
          *
-         * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-         *
-         * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
-         *
          * The `from` property returns an `EmailAddressDetails` object.
          *
          * @remarks
@@ -9388,20 +9436,35 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         *
+         * **Important**: 
+         *
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
+         *
+         * - The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
          */
         from: EmailAddressDetails;
         /**
          * Gets the internet message identifier for an email message.
-         *
-         * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
-         * consider using {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get this
-         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | property from the server}.
          *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: In the **Sent Items** folder, the `internetMessageId` may not be available yet on recently sent items. In that case,
+         * consider using one of the following options depending on your Exchange environment.
+         *
+         * - For Exchange Online, use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/microsoft-graph | Microsoft Graph} to get the
+         * {@link https://learn.microsoft.com/graph/api/resources/message | internetMessageId} property.
+         *
+         * - For Exchange Server (on-premises), use {@link https://learn.microsoft.com/office/dev/add-ins/outlook/web-services | Exchange Web Services} to get the
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid | InternetMessageId} property from the server.
          */
         internetMessageId: string;
         /**
@@ -9570,16 +9633,20 @@ export declare namespace Office {
         /**
          * Gets the email address of the sender of an email message.
          *
-         * The `from` and `sender` properties represent the same person unless the message is sent by a delegate.
-         * In that case, the `from` property represents the delegator, and the `sender` property represents the delegate.
-         *
-         * **Note**: The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
-         *
          * @remarks
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with **Send on behalf** permissions.
+         * In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate.
+         * If the delegate has both **Send on behalf** and **Send as** permissions, the **Send as** permission applies. For information about mailbox delegation, see
+         * {@link https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients | Manage permissions for recipients in Exchange Online}.
+         *
+         * - The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
          */
         sender: EmailAddressDetails;
         /**
@@ -11205,7 +11272,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -11223,7 +11290,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. The `value` property of the result is a `Recurrence` object.

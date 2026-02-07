@@ -13,8 +13,8 @@
 ||[replyIds](/javascript/api/word/word.commentdetail#word-word-commentdetail-replyids-member)|Represents the IDs of the replies to this comment.|
 |[CommentEventArgs](/javascript/api/word/word.commenteventargs)|[changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)|Represents how the `commentChanged` event is raised.|
 ||[commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)|Gets the `CommentDetail` array which contains the IDs and reply IDs of the involved comments.|
-||[source](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-source-member)|The source of the event.|
-||[type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)|The event type.|
+||[source](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-source-member)|Specifies the source of the event.|
+||[type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)|Specifies the event type.|
 |[ConflictCollection](/javascript/api/word/word.conflictcollection)|[getItem(index: number)](/javascript/api/word/word.conflictcollection#word-word-conflictcollection-getitem-member(1))|Gets a `Conflict` object by its index in the collection.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member)|Occurs when a comment or its reply is changed.|

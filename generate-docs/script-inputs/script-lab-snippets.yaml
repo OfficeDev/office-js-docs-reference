@@ -861,6 +861,42 @@ Excel.CellPropertiesLoadOptions#address:member:
         console.log(
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
+Excel.CellValue:type:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
+
+
+    // This function inserts a web image into the currently selected cell.
+
+    await Excel.run(async (context) => {
+      // Retrieve image data from the task pane and then clear the input fields.
+      const imageUrl = (document.getElementById("url") as HTMLInputElement).value;
+      const imageAltText = (document.getElementById("alt-text") as HTMLInputElement).value;
+      clearForm();
+
+      // Load the active cell.
+      const activeCell = context.workbook.getActiveCell();
+      activeCell.load();
+      await context.sync();
+
+      if (!imageUrl) {
+        console.log("Please enter an image URL.");
+        return;
+      }
+
+      // Create a web image object and assign the image details.
+      const webImage: Excel.WebImageCellValue = {
+        type: "WebImage", /* The string equivalent of `Excel.CellValueType.webImage`. */
+        address: imageUrl,
+        altText: imageAltText     
+      };
+
+      // Insert web image into the active cell.
+      activeCell.valuesAsJson = [[webImage]];
+
+      await context.sync();
+    });
 Excel.CellValueConditionalFormat#format:member:
   - >-
     // Link to full sample:
@@ -2751,10 +2787,6 @@ Excel.ConditionalFormatCollection#clearAll:member(1):
         range.conditionalFormats.clearAll();
 
         await context.sync();
-
-        document.querySelectorAll(".conditional-formats").forEach(element => {
-            element.style.display = "none";
-        });
     });
 Excel.ConditionalFormatCollection#getItemAt:member(1):
   - >-
@@ -8791,7 +8823,7 @@ Excel.WorksheetChangedEventArgs#changeDirectionState:member:
                 console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
             }
         });
-    }  
+    }
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
@@ -8834,6 +8866,34 @@ Excel.WorksheetChangedEventArgs#triggerSource:member:
             if (event.changeDirectionState.deleteShiftDirection) {
                 console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
             }
+        });
+    }
+Excel.WorksheetMovedEventArgs:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+
+    async function onWorksheetMoved(event) {
+        await Excel.run(async (context) => {
+            console.log("Handler for worksheet onMoved event has been triggered.");
+            console.log(`    Worksheet ID: ${event.worksheetId}`);
+            console.log(`    Position before move: ${event.positionBefore}`);
+            console.log(`    Position after move: ${event.positionAfter}`);
+            console.log(`    Event source: ${event.source}`);
+        });
+    }
+Excel.WorksheetNameChangedEventArgs:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+
+    async function onNameChanged(event: Excel.WorksheetNameChangedEventArgs) {
+        await Excel.run(async (context) => {
+            console.log(`Handler for worksheet onNameChanged event has been triggered.`);
+            console.log(`    Name before change: ` + event.nameBefore);
+            console.log(`    Name after change: ` + event.nameAfter);
         });
     }  
 Excel.WorksheetCollection#onActivated:member:
@@ -9892,7 +9952,7 @@ Office.AppointmentCompose#recurrence:member:
     seriesTimeObject.setDuration(30);
 
 
-    const pattern: Office.Recurrence = {
+    const pattern = {
       seriesTime: seriesTimeObject,
       recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
       recurrenceProperties: {
@@ -9905,7 +9965,8 @@ Office.AppointmentCompose#recurrence:member:
     };
 
 
-    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
         return;
@@ -10168,13 +10229,13 @@ Office.AppointmentForm:interface:
 
     Office.context.mailbox.displayNewAppointmentFormAsync(
       {
-        requiredAttendees: ["bob@contoso.com"],
-        optionalAttendees: ["sam@contoso.com"],
+        requiredAttendees: ["bob@contoso.com"] as any,
+        optionalAttendees: ["sam@contoso.com"] as any,
         start: start,
         end: end,
         location: "Home",
         subject: "meeting",
-        resources: ["projector@contoso.com"],
+        resources: ["projector@contoso.com"] as any,
         body: "Hello World!"
       },
       function(asyncResult) {
@@ -11685,6 +11746,7 @@ Office.DragAndDropEventArgs:interface:
 
         const eventData = event.dragAndDropEventData;
         console.log(`x-coordinate: ${eventData.pageX}, y-coordinate: ${eventData.pageY}`);
+        console.log(`x-coordinate relative to task pane: ${eventData.taskPaneX}, y-coordinate relative to task pane: ${eventData.taskPaneY}`);
 
         if (eventData.type == "drop") {
           console.log("Items dropped into task pane.");
@@ -11712,6 +11774,7 @@ Office.DragoverEventData:interface:
 
         const eventData = event.dragAndDropEventData;
         console.log(`x-coordinate: ${eventData.pageX}, y-coordinate: ${eventData.pageY}`);
+        console.log(`x-coordinate relative to task pane: ${eventData.taskPaneX}, y-coordinate relative to task pane: ${eventData.taskPaneY}`);
 
         if (eventData.type == "drop") {
           console.log("Items dropped into task pane.");
@@ -11739,6 +11802,7 @@ Office.DropEventData:interface:
 
         const eventData = event.dragAndDropEventData;
         console.log(`x-coordinate: ${eventData.pageX}, y-coordinate: ${eventData.pageY}`);
+        console.log(`x-coordinate relative to task pane: ${eventData.taskPaneX}, y-coordinate relative to task pane: ${eventData.taskPaneY}`);
 
         if (eventData.type == "drop") {
           console.log("Items dropped into task pane.");
@@ -11766,6 +11830,7 @@ Office.DroppedItems:interface:
 
         const eventData = event.dragAndDropEventData;
         console.log(`x-coordinate: ${eventData.pageX}, y-coordinate: ${eventData.pageY}`);
+        console.log(`x-coordinate relative to task pane: ${eventData.taskPaneX}, y-coordinate relative to task pane: ${eventData.taskPaneY}`);
 
         if (eventData.type == "drop") {
           console.log("Items dropped into task pane.");
@@ -11793,6 +11858,7 @@ Office.DroppedItemDetails:interface:
 
         const eventData = event.dragAndDropEventData;
         console.log(`x-coordinate: ${eventData.pageX}, y-coordinate: ${eventData.pageY}`);
+        console.log(`x-coordinate relative to task pane: ${eventData.taskPaneX}, y-coordinate relative to task pane: ${eventData.taskPaneY}`);
 
         if (eventData.type == "drop") {
           console.log("Items dropped into task pane.");
@@ -12229,13 +12295,13 @@ Office.Mailbox#displayNewAppointmentForm:member(1):
 
 
     Office.context.mailbox.displayNewAppointmentForm({
-      requiredAttendees: ["bob@contoso.com"],
-      optionalAttendees: ["sam@contoso.com"],
+      requiredAttendees: ["bob@contoso.com"] as any,
+      optionalAttendees: ["sam@contoso.com"] as any,
       start: start,
       end: end,
       location: "Home",
       subject: "meeting",
-      resources: ["projector@contoso.com"],
+      resources: ["projector@contoso.com"] as any,
       body: "Hello World!"
     });
 Office.Mailbox#displayNewAppointmentFormAsync:member(1):
@@ -12257,13 +12323,13 @@ Office.Mailbox#displayNewAppointmentFormAsync:member(1):
 
     Office.context.mailbox.displayNewAppointmentFormAsync(
       {
-        requiredAttendees: ["bob@contoso.com"],
-        optionalAttendees: ["sam@contoso.com"],
+        requiredAttendees: ["bob@contoso.com"] as any,
+        optionalAttendees: ["sam@contoso.com"] as any,
         start: start,
         end: end,
         location: "Home",
         subject: "meeting",
-        resources: ["projector@contoso.com"],
+        resources: ["projector@contoso.com"] as any,
         body: "Hello World!"
       },
       function(asyncResult) {
@@ -12408,21 +12474,23 @@ Office.Mailbox#loadItemByIdAsync:member(1):
 
     async function getSenderEmailAddress(item) {
       const itemId = item.itemId;
-      await new Promise((resolve) => {
+      await new Promise<void>((resolve) => {
         Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
           if (result.status === Office.AsyncResultStatus.Failed) {
             console.log(result.error.message);
+            resolve();
             return;
           }
 
           const loadedItem = result.value;
-          const sender = loadedItem.from.emailAddress;
+          const sender = (loadedItem.from as any).emailAddress;
           appendToListItem(sender);
 
           // Unload the current message before processing another selected message.
           loadedItem.unloadAsync((asyncResult) => {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
               console.log(asyncResult.error.message);
+              resolve();
               return;
             }
 
@@ -12762,7 +12830,7 @@ Office.MailboxEnums.Days:enum:
     seriesTimeObject.setDuration(30);
 
 
-    const pattern: Office.Recurrence = {
+    const pattern = {
       seriesTime: seriesTimeObject,
       recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
       recurrenceProperties: {
@@ -12775,7 +12843,8 @@ Office.MailboxEnums.Days:enum:
     };
 
 
-    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
         return;
@@ -12879,7 +12948,7 @@ Office.MailboxEnums.Month:enum:
     seriesTimeObject.setDuration(30);
 
 
-    const pattern: Office.Recurrence = {
+    const pattern = {
       seriesTime: seriesTimeObject,
       recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
       recurrenceProperties: {
@@ -12892,7 +12961,8 @@ Office.MailboxEnums.Month:enum:
     };
 
 
-    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
         return;
@@ -13019,7 +13089,7 @@ Office.MailboxEnums.RecurrenceTimeZone:enum:
     seriesTimeObject.setDuration(30);
 
 
-    const pattern: Office.Recurrence = {
+    const pattern = {
       seriesTime: seriesTimeObject,
       recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
       recurrenceProperties: {
@@ -13032,7 +13102,8 @@ Office.MailboxEnums.RecurrenceTimeZone:enum:
     };
 
 
-    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
         return;
@@ -13071,7 +13142,7 @@ Office.MailboxEnums.RecurrenceType:enum:
     seriesTimeObject.setDuration(30);
 
 
-    const pattern: Office.Recurrence = {
+    const pattern = {
       seriesTime: seriesTimeObject,
       recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
       recurrenceProperties: {
@@ -13084,7 +13155,8 @@ Office.MailboxEnums.RecurrenceType:enum:
     };
 
 
-    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
         return;
@@ -13236,7 +13308,7 @@ Office.MailboxEnums.WeekNumber:enum:
     seriesTimeObject.setDuration(30);
 
 
-    const pattern: Office.Recurrence = {
+    const pattern = {
       seriesTime: seriesTimeObject,
       recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
       recurrenceProperties: {
@@ -13249,7 +13321,8 @@ Office.MailboxEnums.WeekNumber:enum:
     };
 
 
-    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
         return;
@@ -15503,7 +15576,7 @@ Office.Recurrence#setAsync:member(1):
     seriesTimeObject.setDuration(30);
 
 
-    const pattern: Office.Recurrence = {
+    const pattern = {
       seriesTime: seriesTimeObject,
       recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
       recurrenceProperties: {
@@ -15516,7 +15589,8 @@ Office.Recurrence#setAsync:member(1):
     };
 
 
-    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+    Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+    (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
         return;
@@ -16725,10 +16799,71 @@ PowerPoint.Hyperlink:class:
       const hyperlinksCount = hyperlinks.getCount();
       await context.sync();
 
-      console.log(`${hyperlinksCount.value} hyperlinks found in first selected slide:`);
+      console.log(
+        `${hyperlinksCount.value} hyperlinks found in first selected slide${hyperlinksCount.value === 0 ? "." : ":"}`,
+      );
       for (let link of hyperlinks.items) {
-        console.log(`Address: "${link.address}" (Screen tip: "${link.screenTip}")`);
+        console.log(`Address: "${link.address}" (screen tip: "${link.screenTip}").`);
       }
+    });
+PowerPoint.Hyperlink#delete:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+    // Deletes the first hyperlink found in the selected text on the current
+    slide.
+
+    await PowerPoint.run(async (context) => {
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange().load("text");
+      let hyperlink: PowerPoint.Hyperlink = textRange.hyperlinks.getItemAt(0).load("address,screenTip");
+      try {
+        await context.sync();
+      } catch {
+        console.warn(
+          "Confirm that you have at least one slide and you've selected a contiguous range of text containing at least one hyperlink on the active slide.",
+        );
+        return;
+      }
+
+      console.log(
+        `About to delete first link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") found in the selected text "${textRange.text}".`,
+      );
+
+      hyperlink.delete();
+
+      console.log(`Deleted first link found in the selected text "${textRange.text}".`);
+    });
+PowerPoint.HyperlinkAddOptions:interface:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+    // Sets a hyperlink on the selected text range.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange().load("text");
+      const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks;
+      const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+        address: "https://bing.com",
+        screenTip: "Screen tip for text",
+      };
+      let hyperlink: PowerPoint.Hyperlink = hyperlinks.add(textRange, hyperlinkAddOptions).load("address,screenTip");
+      try {
+        await context.sync();
+      } catch {
+        console.warn(
+          "Confirm that you have at least one slide and you've selected a contiguous range of text on the active slide.",
+        );
+        return;
+      }
+
+      console.log(
+        `Added link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") to the selected text "${textRange.text}".`,
+      );
     });
 PowerPoint.HyperlinkCollection:class:
   - >-
@@ -16744,9 +16879,11 @@ PowerPoint.HyperlinkCollection:class:
       const hyperlinksCount = hyperlinks.getCount();
       await context.sync();
 
-      console.log(`${hyperlinksCount.value} hyperlinks found in first selected slide:`);
+      console.log(
+        `${hyperlinksCount.value} hyperlinks found in first selected slide${hyperlinksCount.value === 0 ? "." : ":"}`,
+      );
       for (let link of hyperlinks.items) {
-        console.log(`Address: "${link.address}" (Screen tip: "${link.screenTip}")`);
+        console.log(`Address: "${link.address}" (screen tip: "${link.screenTip}").`);
       }
     });
 PowerPoint.InsertSlideFormatting:enum:
@@ -17342,6 +17479,32 @@ PowerPoint.Shape#getTable:member(1):
           console.log("Table RowCount: " + table.rowCount + " and columnCount: " + table.columnCount);
         } else console.log("Selected shape isn't table.");
       } else console.log("No shape selected.");
+    });
+PowerPoint.Shape#setHyperlink:member(1):
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+    // Updates the hyperlink on the first selected shape on the current slide.
+
+    await PowerPoint.run(async (context) => {
+      const shape: PowerPoint.Shape = context.presentation.getSelectedShapes().getItemAt(0).load("type");
+      const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+        address: "https://www.microsoft.com",
+        screenTip: "Updated screen tip of link on shape",
+      };
+      const hyperlink: PowerPoint.Hyperlink = shape.setHyperlink(hyperlinkAddOptions).load("address,screenTip");
+      try {
+        await context.sync();
+      } catch {
+        console.warn("Confirm that you have at least one slide and you've selected a shape on the active slide.");
+        return;
+      }
+
+      console.log(
+        `Updated link on the selected ${shape.type} shape to "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}").`,
+      );
     });
 PowerPoint.Shape#setZOrder:member(1):
   - >-
@@ -18595,6 +18758,34 @@ PowerPoint.Slide#setSelectedShapes:member(1):
       console.log(`IDs: ${shape1.id}, ${shape2.id}`);
       slide1.setSelectedShapes([shape1.id, shape2.id]);
       await context.sync();
+    });
+PowerPoint.Slide#hyperlinks:member:
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+    // Sets a hyperlink on the first selected shape.
+
+    await PowerPoint.run(async (context) => {
+      const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+      const shape: PowerPoint.Shape = context.presentation.getSelectedShapes().getItemAt(0).load("id,type");
+      const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks;
+      const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+        address: "https://bing.com",
+        screenTip: "Screen tip for shape",
+      };
+      let hyperlink: PowerPoint.Hyperlink = hyperlinks.add(shape, hyperlinkAddOptions).load("address,screenTip");
+      try {
+        await context.sync();
+      } catch {
+        console.warn("Confirm that you have at least one slide and you've selected a shape on the active slide.");
+        return;
+      }
+
+      console.log(
+        `Added link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") to the first selected shape (ID: ${shape.id}, type: ${shape.type}).`,
+      );
     });
 PowerPoint.SlideCollection:class:
   - >-
@@ -21530,7 +21721,7 @@ Word.Body#type:member:
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const item: Word.NoteItem = footnotes.items[mark];
       console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
 
@@ -21554,7 +21745,7 @@ Word.BodyType:enum:
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const item: Word.NoteItem = footnotes.items[mark];
       console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
 
@@ -26697,7 +26888,7 @@ Word.NoteItem:class:
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const footnoteBody: Word.Range = footnotes.items[mark].body.getRange();
       footnoteBody.load("text");
       await context.sync();
@@ -26718,7 +26909,7 @@ Word.NoteItem#delete:member(1):
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       footnotes.items[mark].delete();
       await context.sync();
 
@@ -26738,7 +26929,7 @@ Word.NoteItem#getNext:member(1):
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const reference: Word.Range = footnotes.items[mark].getNext().reference;
       reference.select();
       console.log("Selected is the next footnote: " + (mark + 2));
@@ -26757,7 +26948,7 @@ Word.NoteItem#body:member:
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const footnoteBody: Word.Range = footnotes.items[mark].body.getRange();
       footnoteBody.load("text");
       await context.sync();
@@ -26778,7 +26969,7 @@ Word.NoteItem#reference:member:
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const item: Word.NoteItem = footnotes.items[mark];
       const reference: Word.Range = item.reference;
       reference.select();
@@ -26801,7 +26992,7 @@ Word.NoteItem#type:member:
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const item: Word.NoteItem = footnotes.items[mark];
       console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
 
@@ -26853,7 +27044,7 @@ Word.NoteItemType:enum:
       await context.sync();
 
       const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
-      const mark = (referenceNumber as number) - 1;
+      const mark = Number.parseInt(referenceNumber, 10) - 1;
       const item: Word.NoteItem = footnotes.items[mark];
       console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
 
@@ -28851,38 +29042,6 @@ Word.Shape#delete:member(1):
 
       console.log("The first text box in document was deleted.");
     });
-Word.Shape#group:member(1):
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
-
-    await Word.run(async (context) => {
-      // Groups the shapes (including text boxes and pictures) found in the document body.
-      const shapes: Word.ShapeCollection = context.document.body.shapes.getByTypes([
-        Word.ShapeType.geometricShape,
-        Word.ShapeType.textBox,
-        Word.ShapeType.picture,
-      ]);
-      shapes.load("items");
-      await context.sync();
-
-      const numShapes = shapes.items.length;
-      if (numShapes === 0) {
-        console.log("No shapes found in the document body.");
-        return;
-      }
-
-      console.log(`Number of shapes to group: ${numShapes}`);
-
-      const groupedShape: Word.Shape = shapes.group();
-      groupedShape.load("shapeGroup/shapes");
-      await context.sync();
-
-      const shapeGroup: Word.ShapeGroup = groupedShape.shapeGroup;
-      console.log("Shapes grouped:", shapeGroup.shapes);
-      groupedShape.select();
-    });
 Word.Shape#moveHorizontally:member(1):
   - >-
     // Link to full sample:
@@ -30775,11 +30934,11 @@ Word.TableStyle:class:
       console.log(tableStyle);
       (document.getElementById("alignment") as HTMLInputElement).value = tableStyle.alignment;
       (document.getElementById("allow-break-across-page") as HTMLInputElement).value = tableStyle.allowBreakAcrossPage.toString();
-      (document.getElementById("top-cell-margin") as HTMLInputElement).value = tableStyle.topCellMargin;
-      (document.getElementById("bottom-cell-margin") as HTMLInputElement).value = tableStyle.bottomCellMargin;
-      (document.getElementById("left-cell-margin") as HTMLInputElement).value = tableStyle.leftCellMargin;
-      (document.getElementById("right-cell-margin") as HTMLInputElement).value = tableStyle.rightCellMargin;
-      (document.getElementById("cell-spacing") as HTMLInputElement).value = tableStyle.cellSpacing;
+      (document.getElementById("top-cell-margin") as HTMLInputElement).value = `${tableStyle.topCellMargin}`;
+      (document.getElementById("bottom-cell-margin") as HTMLInputElement).value = `${tableStyle.bottomCellMargin}`;
+      (document.getElementById("left-cell-margin") as HTMLInputElement).value = `${tableStyle.leftCellMargin}`;
+      (document.getElementById("right-cell-margin") as HTMLInputElement).value = `${tableStyle.rightCellMargin}`;
+      (document.getElementById("cell-spacing") as HTMLInputElement).value = `${tableStyle.cellSpacing}`;
     });
 Word.TextFrame:class:
   - >-

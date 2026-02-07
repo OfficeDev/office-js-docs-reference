@@ -606,19 +606,8 @@ properties:
     uid: outlook!Office.MessageRead#from:member
     package: outlook!
     fullName: from
-    summary: >-
+    summary: |-
       Gets the email address of the sender of a message.
-
-
-      The `from` and `sender` properties represent the same person unless the
-      message is sent by a delegate. In that case, the `from` property
-      represents the delegator, and the `sender` property represents the
-      delegate.
-
-
-      **Note**: The `recipientType` property of the `EmailAddressDetails`
-      object in the `from` property is undefined.
-
 
       The `from` property returns an `EmailAddressDetails` object.
     remarks: >-
@@ -630,6 +619,25 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - The `from` and `sender` properties represent the same person unless the
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the email address of the mailbox
+      owner or shared mailbox, and the `sender` property returns the address of
+      the delegate. If the delegate has both **Send on behalf** and **Send
+      as** permissions, the **Send as** permission applies. For
+      information about mailbox delegation, see [Manage permissions for
+      recipients in Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
+
+
+      - The `recipientType` property of the `EmailAddressDetails` object in the
+      `from` property is undefined.
 
 
       #### Examples
@@ -658,17 +666,7 @@ properties:
     uid: outlook!Office.MessageRead#internetMessageId:member
     package: outlook!
     fullName: internetMessageId
-    summary: >-
-      Gets the internet message identifier for an email message.
-
-
-      **Important**: In the **Sent Items** folder, the
-      `internetMessageId` may not be available yet on recently sent items. In
-      that case, consider using [Exchange Web
-      Services](https://learn.microsoft.com/office/dev/add-ins/outlook/web-services)
-      to get this [property from the
-      server](https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid)<!--
-      -->.
+    summary: Gets the internet message identifier for an email message.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -678,6 +676,26 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**: In the **Sent Items** folder, the
+      `internetMessageId` may not be available yet on recently sent items. In
+      that case, consider using one of the following options depending on your
+      Exchange environment.
+
+
+      - For Exchange Online, use [Microsoft
+      Graph](https://learn.microsoft.com/office/dev/add-ins/outlook/microsoft-graph)
+      to get the
+      [internetMessageId](https://learn.microsoft.com/graph/api/resources/message)
+      property.
+
+
+      - For Exchange Server (on-premises), use [Exchange Web
+      Services](https://learn.microsoft.com/office/dev/add-ins/outlook/web-services)
+      to get the
+      [InternetMessageId](https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid)
+      property from the server.
 
 
       #### Examples
@@ -1203,18 +1221,7 @@ properties:
     uid: outlook!Office.MessageRead#sender:member
     package: outlook!
     fullName: sender
-    summary: >-
-      Gets the email address of the sender of an email message.
-
-
-      The `from` and `sender` properties represent the same person unless the
-      message is sent by a delegate. In that case, the `from` property
-      represents the delegator, and the `sender` property represents the
-      delegate.
-
-
-      **Note**: The `recipientType` property of the `EmailAddressDetails`
-      object in the `sender` property is undefined.
+    summary: Gets the email address of the sender of an email message.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -1224,6 +1231,25 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**:
+
+
+      - The `from` and `sender` properties represent the same person unless the
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the email address of the mailbox
+      owner or shared mailbox, and the `sender` property returns the address of
+      the delegate. If the delegate has both **Send on behalf** and **Send
+      as** permissions, the **Send as** permission applies. For
+      information about mailbox delegation, see [Manage permissions for
+      recipients in Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
+
+
+      - The `recipientType` property of the `EmailAddressDetails` object in the
+      `sender` property is undefined.
 
 
       #### Examples

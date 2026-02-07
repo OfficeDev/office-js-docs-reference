@@ -37,7 +37,7 @@ remarks: >-
           range.values = [["Detected onCloseActionCancelled event."]];
           await context.sync();
       });
-  });    
+  });
 
   ```
 
@@ -56,6 +56,21 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Disable the dialog that pops up when the user tries to close the
+      document.
+
+      async function disableCloseNotification() {
+          await Office.addin.beforeDocumentCloseNotification.disable(); 
+      }  
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -77,6 +92,21 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Enable the dialog that pops up and asks the user for confirmation when
+      they try to close the document.
+
+      async function enableCloseNotification() {
+          await Office.addin.beforeDocumentCloseNotification.enable(); 
+      }   
+
+      ```
 
     isPreview: false
     isDeprecated: false

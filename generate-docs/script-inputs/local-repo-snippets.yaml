@@ -1,3 +1,49 @@
+CustomFunctions.associate:function(1):
+  - |- 
+    /**
+    * Adds two numbers together.
+    * @customfunction
+    * @param {number} first First number.
+    * @param {number} second Second number.
+    * @returns {number} The sum of the two numbers.
+    */
+    // Define your custom function.
+    function add(first, second) {
+      return first + second;
+    }
+
+    // Associate the "add" function with its ID from the JSON metadata. In this sample, the JSON metadata ID is "ADD".
+    CustomFunctions.associate("ADD", add);
+CustomFunctions.associate:function(2):
+  - |- 
+    /**
+    * Calculates the area of a rectangle.
+    * @customfunction
+    * @param {number} width The width of the rectangle.
+    * @param {number} height The height of the rectangle.
+    * @returns {number} The area of the rectangle.
+    */
+    function calculateArea(width, height) {
+      return width * height;
+    }
+
+    /**
+    * Calculates the perimeter of a rectangle.
+    * @customfunction
+    * @param {number} width The width of the rectangle.
+    * @param {number} height The height of the rectangle.
+    * @returns {number} The perimeter of the rectangle.
+    */
+    function calculatePerimeter(width, height) {
+      return 2 * (width + height);
+    }
+
+    // Associate multiple functions at once using an object that maps JSON metadata IDs to function names.
+    // In this sample, the "calculateArea" and "calculatePerimeter" functions have the JSON metadata IDs "CALCULATEAREA" and "CALCULATEPERIMETER".
+    CustomFunctions.associate({
+      "CALCULATEAREA": calculateArea,
+      "CALCULATEPERIMETER": calculatePerimeter
+    });
 CustomFunctions.Error:class:
   - |- 
     /**
@@ -1748,6 +1794,22 @@ Office.ActiveView:enum:
             showMessage("The current view is " + activeView);
         }
     });
+Office.Addin#beforeDocumentCloseNotification:member:
+  - |-
+    // Enable the before document close modal notification dialog. 
+    async function enableNotification() {
+        await Office.addin.beforeDocumentCloseNotification.enable(); 
+    }
+
+    // Add an event handler to detect when the document close operation is cancelled.
+    Office.addin.beforeDocumentCloseNotification.onCloseActionCancelled(async function () {
+        // When the document close attempt is cancelled, write a message to the active range in the worksheet.
+        await Excel.run(async (context) => {
+            const range = context.workbook.getSelectedRange();
+            range.values = [["Detected onCloseActionCancelled event."]];
+            await context.sync();
+        });
+    });
 Office.Addin#onVisibilityModeChanged:member(1):
   - |-
     Office.onReady(() => {
@@ -2236,7 +2298,19 @@ Office.BeforeDocumentCloseNotification:interface:
             range.values = [["Detected onCloseActionCancelled event."]];
             await context.sync();
         });
-    });    
+    });
+Office.BeforeDocumentCloseNotification#disable:member(1):
+  - |-
+    // Disable the dialog that pops up when the user tries to close the document.
+    async function disableCloseNotification() {
+        await Office.addin.beforeDocumentCloseNotification.disable(); 
+    }  
+Office.BeforeDocumentCloseNotification#enable:member(1):
+  - |-
+    // Enable the dialog that pops up and asks the user for confirmation when they try to close the document.
+    async function enableCloseNotification() {
+        await Office.addin.beforeDocumentCloseNotification.enable(); 
+    }   
 Office.Binding#addHandlerAsync:member(2):
   - |-
     // The following code sample calls the select function of the Office object to access the binding
@@ -2788,7 +2862,7 @@ Office.Context#officeTheme:member:
         // Apply theme colors to a CSS class.
         $("body").css("background-color", bodyBackgroundColor);
 
-        if (Office.context.officeTheme.isDarkTheme()) {
+        if (Office.context.officeTheme.isDarkTheme) {
             $("h1").css("color", controlForegroundColor);
         }
     }
@@ -4065,28 +4139,6 @@ Office.Document#getFilePropertiesAsync:member(2):
     }
 Office.Document#getSelectedDataAsync:member(1):
   - |-
-    // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
-    // user's current selection as text, and then display it in the add-in's page.
-
-    // Displays the user's current selection.
-    function showSelection() {
-        Office.context.document.getSelectedDataAsync(
-            Office.CoercionType.Text,
-            {
-                valueFormat: Office.ValueFormat.Unformatted,
-                filterType: Office.FilterType.All
-            },
-            (result) => {
-                const dataValue = result.value;
-                write('Selected data is: ' + dataValue);
-            }
-        );
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-  - |-
     // To read the value of the current selection, you need to write a callback function that reads the selection.
     // The following example shows how to:
     // 1. Pass an anonymous callback function that reads the value of the current selection
@@ -4117,44 +4169,6 @@ Office.Document#getSelectedDataAsync:member(1):
     // Function that writes to a div with id='message' on the page.
     function write(message){
         document.getElementById('message').innerText += message; 
-    }
-  - |-
-    // The following code example gets the values of the selected cells. It uses the optional
-    // asyncContext parameter to pass some text to the callback function.
-    // The example assumes your add-in has a reference to the jQuery library and that the
-    // following page controls are defined in the content div in the page body:
-    // <input id="get-info" type="button" value="Get info" /><br />
-    // <span id="message"></span>
-
-    // The onReady function must be run each time a new page is loaded.
-    Office.onReady(() => {
-        $(document).ready(() => {
-            // After the DOM is loaded, add-in-specific code can run.
-            $('#get-info').on("click", getSelectedText);
-        });
-    });
-
-    // Gets the text from the selected cells in the document, and displays it in the add-in.
-    function getSelectedText() {
-        Office.context.document.getSelectedDataAsync(
-            Office.CoercionType.Text,
-            { asyncContext: "Some related info" },
-            (result) => {
-                if (result.status === Office.AsyncResultStatus.Failed) {
-                    onError(result.error);
-                }
-                else {
-                    const output = String.format(
-                        'Selected text: {0}<br/>Passed info: {1}',
-                        result.value, result.asyncContext);
-                    $('#message').html(output);
-                }
-            }
-        );
-    }
-
-    function onError(error) {
-        $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
     }
 Office.Document#goToByIdAsync:member(2):
   - |-
@@ -4646,7 +4660,7 @@ Office.OfficeTheme:interface:
         // Apply theme colors to a CSS class.
         $("body").css("background-color", bodyBackgroundColor);
 
-        if (Office.context.officeTheme.isDarkTheme()) {
+        if (Office.context.officeTheme.isDarkTheme) {
             $("h1").css("color", controlForegroundColor);
         }
     }
@@ -6046,6 +6060,20 @@ Office.Slice:interface:
             }
         }
     );
+Office.SlideRange:interface:
+  - |-
+    Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            const slideRange: Office.SlideRange = asyncResult.value;
+            console.log(`Selected ${slideRange.slides.length} slide(s)`);
+            slideRange.slides.forEach(slide => {
+                console.log(`Slide ${slide.index}: ${slide.title} (ID: ${slide.id})`);
+            });
+        }
+        else {
+            console.error(asyncResult.error.message);
+        }
+    });
 Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
@@ -6532,7 +6560,21 @@ OfficeExtension.LoadOption#top:member:
                 }
             })
         });
+OfficeExtension.UpdateOptions:interface:
+  - |-
+    // Update a range in an Excel worksheet using the RangeUpdateData interface.
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B2:E2");
 
+        // Configure the set operation to still run if a readonly property is included.
+        // All settable properties will be updated.
+        const options: OfficeExtension.UpdateOptions = {throwOnReadOnly: false};
+
+        // Set the range with some data from another source (`updateData` is set elsewhere).
+        range.set(updateData, options);
+        await context.sync();
+    });
 OfficeRuntime.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
@@ -6557,6 +6599,50 @@ OfficeRuntime.Auth#getAccessToken:member(1):
               // Handle error
           }
       }
+    }
+OfficeRuntime.displayWebDialog:function(1):
+  - |-
+    /**
+     * Opens an authentication dialog from a custom function.
+     * @customfunction AUTH.LOGIN
+     * @returns A promise that resolves to the authentication result.
+     */
+    async function authLogin(): Promise<string> {
+      const dialogUrl = "https://your-addin-domain.com/auth-dialog.html";
+
+      return new Promise((resolve, reject) => {
+        OfficeRuntime.displayWebDialog(dialogUrl, {
+          height: "50%",
+          width: "40%",
+
+          onMessage: (message: string, dialog?: OfficeRuntime.Dialog) => {
+            // Handle messages sent from the dialog via window.opener.postMessage().
+            const data = JSON.parse(message);
+
+            if (data.type === "auth-success") {
+              // Process the authentication token
+              dialog?.close();
+              resolve(`Signed in as ${data.username}`);
+            } else if (data.type === "auth-error") {
+              dialog?.close();
+              reject(new Error(data.errorMessage));
+            }
+          },
+
+          onClose: () => {
+            // Handle the user closing the dialog.
+            resolve("Dialog closed");
+          },
+
+          onRuntimeError: (error: Error, dialog?: OfficeRuntime.Dialog) => {
+            // Handle runtime errors from the dialog.
+            dialog?.close();
+            reject(error);
+          },
+        }).catch((error) => {
+          reject(new Error(`Failed to open dialog: ${error.message}`));
+        });
+      });
     }
 OneNote.run:function(1):
   - |-
@@ -8636,13 +8722,15 @@ Office.InfobarClickedEventArgs:interface:
 Office.InitializationContextChangedEventArgs:interface:
   - |-
     // This sample adds an event handler for the InitializationContextChanged event.
-    Office.context.mailbox.addHandlerAsync(Office.EventType.InitializationContextChanged, initializationContextChangedHandler, (result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-            console.error(`Failed to add event handler: ${asyncResult.error.message}`);
-            return;
-        }
+    Office.onReady(() => {
+        Office.context.mailbox.item.addHandlerAsync(Office.EventType.InitializationContextChanged, initializationContextChangedHandler, (result) => {
+            if (result.status === Office.AsyncResultStatus.Failed) {
+                console.error(`Failed to add event handler: ${result.error.message}`);
+                return;
+            }
 
-        console.log("Event handler added successfully.");
+            console.log("Event handler added successfully.");
+        });
     });
 
     // Handles the InitializationContextChanged event.
@@ -9222,10 +9310,6 @@ Office.MessageDecryptEventCompletedOptions:interface:
         const decryptedPdfFile = "JVBERi0xLjQKJeLjz9MKNCAwIG9i...";
         const pdfFileName = "Fabrikam_Report_202509";
 
-        // Decrypted content and properties of a mail item.
-        const decryptedEmailFile = "VGhpcyBpcyBhIHRleHQgZmlsZS4=...";
-        const emailFileName = "Fabrikam_Report_202508.eml";
-
         // Decrypted properties of a cloud attachment.
         const cloudFilePath = "https://contosostorage.com/reports/weekly_forecast.xlsx";
         const cloudFileName = "weekly_forecast.xlsx";
@@ -9241,12 +9325,6 @@ Office.MessageDecryptEventCompletedOptions:interface:
                 content: decryptedPdfFile,
                 isInline: false,
                 name: pdfFileName
-            },
-            {
-                attachmentType: Office.MailboxEnums.AttachmentType.Item,
-                content: decryptedEmailFile,
-                isInline: false,
-                name: emailFileName
             },
             {
                 attachmentType: Office.MailboxEnums.AttachmentType.Cloud,

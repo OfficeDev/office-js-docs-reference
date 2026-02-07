@@ -949,7 +949,7 @@ export declare namespace Word {
     
     
     /**
-     * The data specific to content controls of type CheckBox.
+     * Represents the data specific to content controls of type `CheckBox`.
      *
      * @remarks
      * [Api set: WordApi 1.7]
@@ -3402,7 +3402,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.DocumentData;
     }
     /**
-     * The `DocumentCreated` object is the top level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
+     * The `DocumentCreated` object is the top-level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -9344,7 +9344,7 @@ export declare namespace Word {
      */
     export interface ContentControlAddedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9358,7 +9358,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9373,7 +9373,7 @@ export declare namespace Word {
      */
     export interface ContentControlDataChangedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9387,7 +9387,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9402,7 +9402,7 @@ export declare namespace Word {
      */
     export interface ContentControlDeletedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9416,7 +9416,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9431,7 +9431,7 @@ export declare namespace Word {
      */
     export interface ContentControlEnteredEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9445,7 +9445,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9460,7 +9460,7 @@ export declare namespace Word {
      */
     export interface ContentControlExitedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9474,7 +9474,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9490,7 +9490,7 @@ export declare namespace Word {
      */
     export interface ContentControlSelectionChangedEventArgs {
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9504,7 +9504,7 @@ export declare namespace Word {
          */
         ids: number[];
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -9519,14 +9519,14 @@ export declare namespace Word {
      */
     export interface ParagraphAddedEventArgs {
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.6]
          */
         source: Word.EventSource | "Local" | "Remote";
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.6]
@@ -9548,14 +9548,14 @@ export declare namespace Word {
      */
     export interface ParagraphChangedEventArgs {
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.6]
          */
         source: Word.EventSource | "Local" | "Remote";
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.6]
@@ -9577,14 +9577,14 @@ export declare namespace Word {
      */
     export interface ParagraphDeletedEventArgs {
         /**
-         * The source of the event. It can be local or remote (through coauthoring).
+         * Specifies the source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
          * [Api set: WordApi 1.6]
          */
         source: Word.EventSource | "Local" | "Remote";
         /**
-         * The event type. See `Word.EventType` for details.
+         * Specifies the event type. See `Word.EventType` for details.
          *
          * @remarks
          * [Api set: WordApi 1.6]
@@ -10360,7 +10360,7 @@ export declare namespace Word {
     }
     
     /**
-     * The border types.
+     * Represents the border type.
      *
      * @remarks
      * [Api set: WordApi 1.3]
@@ -18098,7 +18098,7 @@ export declare namespace Word {
         
         
         /**
-         * The data specific to content controls of type CheckBox.
+         * Represents the data specific to content controls of type `CheckBox`.
          *
          * @remarks
          * [Api set: WordApi 1.7]
@@ -19093,7 +19093,7 @@ export declare namespace Word {
             
         }
         /**
-         * The `DocumentCreated` object is the top level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
+         * The `DocumentCreated` object is the top-level object created by `Application.createDocument`. A `DocumentCreated` object is a special `Document` object.
          *
          * @remarks
          * [Api set: WordApi 1.3]
