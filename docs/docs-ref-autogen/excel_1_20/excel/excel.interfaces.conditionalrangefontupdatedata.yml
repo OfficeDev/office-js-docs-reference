@@ -18,7 +18,7 @@ properties:
     fullName: bold
     summary: Specifies if the font is bold.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
       HTML color code representation of the text color (e.g., \#FF0000
       represents Red).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: italic
     summary: Specifies if the font is italic.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +65,7 @@ properties:
     fullName: strikethrough
     summary: Specifies the strikethrough status of the font.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
       The type of underline applied to the font. See
       `Excel.ConditionalRangeFontUnderlineStyle` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

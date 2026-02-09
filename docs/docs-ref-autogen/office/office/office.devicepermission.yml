@@ -64,7 +64,7 @@ methods:
       that uses the device capability, as the permission is already set. If a
       user denies access to a device capability, the promise rejects with a
       "User denied the permission request" error message.
-    remarks: >-
+    remarks: >
       **Important**:
 
 
@@ -100,6 +100,44 @@ methods:
       - Access to a user's geolocation isn't supported in Excel, PowerPoint, and
       Word. It's only supported in Outlook on the web and new Outlook on Windows
       using the `requestPermissionsAsync` method.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Request permission from a user to access their camera and microphone.
+
+      if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.microphone
+          ];
+          Office.devicePermission
+              .requestPermissions(deviceCapabilities)
+              .then((isGranted) => {
+                  if (isGranted) {
+                      console.log("Permission granted.");
+                      // Reload your add-in before you run code that uses the device capabilities.
+                      location.reload();
+                  } else {
+                      console.log("Permission has been previously granted and is already set in the iframe.");
+
+                      // Since permission has been previously granted, you don't need to reload your add-in.
+
+                      // Do something with the device capabilities.
+                  }
+              })
+              .catch((error) => {
+                  console.log("Permission denied.");
+                  console.error(error);
+
+                  // Do something when permission is denied.
+              });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -230,7 +268,7 @@ methods:
 
 
       This method accepts a callback function. Use it with Outlook add-ins.
-    remarks: >-
+    remarks: >
       **Important**:
 
 
@@ -267,6 +305,45 @@ methods:
       activation](https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation)<!--
       -->, browser permissions to device capabilities aren't inherited and the
       `requestPermissionsAsync` method isn't supported.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Request permission from a user to access their camera, geolocation, and
+      microphone.
+
+      if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+          const deviceCapabilities = [
+              Office.DevicePermissionType.camera,
+              Office.DevicePermissionType.geolocation,
+              Office.DevicePermissionType.microphone
+          ];
+
+          Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  console.log("Permission denied.");
+
+                  // Do something when permission is denied.
+              } else {
+                  if (asyncResult.value) {
+                      console.log("Permission granted.");
+                      // Reload your add-in before you run code that uses the device capabilities.
+                      location.reload();
+                  } else {
+                      console.log("Permission has been previously granted and is already set in the iframe.");
+                      
+                      // Since permission has been previously granted, you don't need to reload your add-in.
+
+                      // Do something with the device capabilities.
+                  }
+              }
+          });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

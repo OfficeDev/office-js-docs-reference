@@ -7,7 +7,7 @@ summary: >-
   The linked entity ID object represents a set of properties that describes a
   service and culture for locating this service defined value.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
       Represents which language culture was used to create this `CellValue`<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -40,7 +40,7 @@ properties:
       Represents a domain specific to a service used to create the
       `CellValue`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -58,7 +58,7 @@ properties:
       Represents an identifier specific to a service used to create the
       `CellValue`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -74,7 +74,7 @@ properties:
     fullName: serviceId
     summary: Represents which service was used to create the `CellValue`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

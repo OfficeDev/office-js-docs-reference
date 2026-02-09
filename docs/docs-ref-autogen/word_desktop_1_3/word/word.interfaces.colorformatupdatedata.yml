@@ -20,7 +20,7 @@ properties:
       Specifies the brightness of a specified shape color. Valid values are from
       `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: objectThemeColor
     summary: Specifies the theme color for a color format.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -61,7 +61,7 @@ properties:
       Specifies the red-green-blue (RGB) value of the specified color. You can
       provide the value in the '\#RRGGBB' format.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +78,7 @@ properties:
       Specifies the lightening or darkening of a specified shape's color. Valid
       values are from `-1` (darkest) to `1` (lightest), `0` represents neutral.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

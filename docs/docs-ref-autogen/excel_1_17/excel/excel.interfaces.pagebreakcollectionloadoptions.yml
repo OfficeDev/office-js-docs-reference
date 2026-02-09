@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.PageBreakCollectionLoadOptions
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Specifies the column index for the page
       break.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
       For EACH ITEM in the collection: Specifies the row index for the page
       break.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

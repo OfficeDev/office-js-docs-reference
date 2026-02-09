@@ -9,8 +9,8 @@ summary: >-
   after it completes processing a
   [SpamReporting](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
   event.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -23,6 +23,47 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Message Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example handles a SpamReporting event to process a reported
+  spam or phishing message.
+
+  function onSpamReport(event) {
+      // Gets the Base64-encoded EML format of a reported message.
+      Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+              return;
+          }
+
+          // Run additional processing operations here.
+
+          /**
+           * Signals that the spam-reporting event has completed processing.
+           * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+           * and shows a post-processing dialog to the user.
+           * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+           * property determines whether the message will be deleted.
+           */
+          const event = asyncResult.asyncContext;
+          event.completed({
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+              folderName: "Reported Messages",
+              onErrorDeleteItem: true,
+              showPostProcessingDialog: {
+                  title: "Contoso Spam Reporting",
+                  description: "Thank you for reporting this message.",
+              },
+          });
+      });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -38,7 +79,7 @@ properties:
       to signal that a reported message has finished processing, this property
       specifies the Outlook mailbox folder to which the message will be moved.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -83,7 +124,7 @@ properties:
       specifies whether the message is moved to a different folder in the
       mailbox.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -135,7 +176,7 @@ properties:
       method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))<!--
       -->, the reported message remains in its current mailbox folder.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -181,8 +222,8 @@ properties:
 
 
       - `noMove` - Leaves the reported message in its current folder.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -217,6 +258,43 @@ properties:
       `postProcessingAction` property will default to `moveToSpamFolder` and
       move the reported message to the **Junk Email** folder.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example handles a SpamReporting event to process a
+      reported spam or phishing message.
+
+      function onSpamReport(event) {
+          // Gets the Base64-encoded EML format of a reported message.
+          Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+                  return;
+              }
+
+              // Run additional processing operations here.
+
+              /**
+               * Signals that the spam-reporting event has completed processing.
+               * It then moves the reported message to the Junk Email folder of the mailbox and shows a
+               * post-processing dialog to the user.
+               */
+              const event = asyncResult.asyncContext;
+              event.completed({
+                  postProcessingAction: "moveToSpamFolder",
+                  showPostProcessingDialog: {
+                      title: "Contoso Spam Reporting",
+                      description: "Thank you for reporting this message.",
+                  },
+              });
+          });
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +315,7 @@ properties:
       If this property isn't specified, a dialog isn't shown to the user once
       their reported message is processed.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

@@ -18,7 +18,7 @@ properties:
     fullName: title
     summary: Returns the title of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

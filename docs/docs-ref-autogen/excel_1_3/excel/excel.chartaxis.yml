@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartAxis
 summary: Represents a single axis in a chart.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
       Represents the formatting of a chart object, which includes line and font
       formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
       Returns an object that represents the major gridlines for the specified
       axis.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
       Represents the interval between two major tick marks. Can be set to a
       numeric value or an empty string. The returned value is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -87,7 +87,7 @@ properties:
       value or an empty string (for automatic axis values). The returned value
       is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -105,7 +105,7 @@ properties:
       value or an empty string (for automatic axis values). The returned value
       is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -122,7 +122,7 @@ properties:
       Returns an object that represents the minor gridlines for the specified
       axis.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -140,7 +140,7 @@ properties:
       numeric value or an empty string (for automatic axis values). The returned
       value is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -155,7 +155,7 @@ properties:
     fullName: title
     summary: Represents the axis title.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -192,7 +192,22 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Get the maximum of Chart Axis from Chart1.
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          const axis = chart.axes.valueAxis;
+          axis.load('maximum');
+          await context.sync();
+
+          console.log(axis.maximum);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

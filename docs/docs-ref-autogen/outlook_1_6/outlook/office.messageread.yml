@@ -33,7 +33,35 @@ summary: >-
 
 
   - [Message](xref:outlook!Office.Message:interface)
-remarks: ''
+remarks: >
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
+
+
+  const item = Office.context.mailbox.item;
+
+
+  if (item.attachments.length > 0) {
+      for (let i = 0; i < item.attachments.length; i++) {
+          const attachment = item.attachments[i];
+          console.log(`${i+1}. Name: ${attachment.name}`);
+          console.log(`ID: ${attachment.id}`);
+          console.log(`Type: ${attachment.attachmentType}`);
+          console.log(`Inline content: ${attachment.isInline}`);
+          console.log(`Size: ${attachment.size}`);
+      }
+  } else {
+      console.log("This mail item doesn't contain any attachments.");
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -44,7 +72,7 @@ properties:
     package: outlook!
     fullName: attachments
     summary: Gets the item's attachments as an array.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -68,6 +96,34 @@ properties:
       - Attachments added using the **Upload and share** option aren't
       returned.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
+
+
+      const item = Office.context.mailbox.item;
+
+
+      if (item.attachments.length > 0) {
+          for (let i = 0; i < item.attachments.length; i++) {
+              const attachment = item.attachments[i];
+              console.log(`${i+1}. Name: ${attachment.name}`);
+              console.log(`ID: ${attachment.id}`);
+              console.log(`Type: ${attachment.attachmentType}`);
+              console.log(`Inline content: ${attachment.isInline}`);
+              console.log(`Size: ${attachment.size}`);
+          }
+      } else {
+          console.log("This mail item doesn't contain any attachments.");
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,8 +135,8 @@ properties:
     package: outlook!
     fullName: body
     summary: Gets an object that provides methods for manipulating the body of an item.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -93,6 +149,32 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // This example gets the body of the item as plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext: "This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result.
+          });
+
+      // The following is an example of the result parameter passed to the
+      callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -126,7 +208,7 @@ properties:
 
 
       - New Mac UI: No limit
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -135,6 +217,26 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-cc-message-read.yaml
+
+
+      const msgCc = Office.context.mailbox.item.cc;
+
+      console.log("Message copied to:");
+
+      for (let i = 0; i < msgCc.length; i++) {
+        console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -161,7 +263,7 @@ properties:
       You get null for this property for a new item in a compose form. If the
       user sets a subject and saves the item, the `conversationId` property will
       return a value.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -170,6 +272,21 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
+
+
+      console.log(`Conversation ID:
+      ${Office.context.mailbox.item.conversationId}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -182,7 +299,7 @@ properties:
     package: outlook!
     fullName: dateTimeCreated
     summary: Gets the date and time that an item was created.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -191,6 +308,21 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
+
+
+      console.log(`Creation date and time:
+      ${Office.context.mailbox.item.dateTimeCreated}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -203,8 +335,8 @@ properties:
     package: outlook!
     fullName: dateTimeModified
     summary: Gets the date and time that an item was last modified.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -224,6 +356,21 @@ properties:
       [Outlook JavaScript APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
+
+
+      console.log(`Date and time item last modified:
+      ${Office.context.mailbox.item.dateTimeModified}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -248,7 +395,7 @@ properties:
       When you use the `Time.setAsync` method to set the end time, you should
       use the `convertToUtcClientTime` method to convert the local time on the
       client to UTC for the server.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -257,6 +404,26 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
+
+
+      const time = Office.context.mailbox.item.end;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment ends (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -272,7 +439,7 @@ properties:
       Gets the email address of the sender of a message.
 
       The `from` property returns an `EmailAddressDetails` object.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -301,6 +468,23 @@ properties:
       - The `recipientType` property of the `EmailAddressDetails` object in the
       `from` property is undefined.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-from-message-read.yaml
+
+
+      const msgFrom = Office.context.mailbox.item.from;
+
+      console.log("Message received from: " + msgFrom.displayName + " (" +
+      msgFrom.emailAddress + ")");
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -312,7 +496,7 @@ properties:
     package: outlook!
     fullName: internetMessageId
     summary: Gets the internet message identifier for an email message.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -342,6 +526,21 @@ properties:
       [InternetMessageId](https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid)
       property from the server.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-internet-message-id-read.yaml
+
+
+      console.log(`Internet message ID:
+      ${Office.context.mailbox.item.internetMessageId}`);
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -353,7 +552,7 @@ properties:
     package: outlook!
     fullName: itemClass
     summary: Gets the Exchange Web Services item class of the selected message.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -384,6 +583,20 @@ properties:
       You can create custom classes that extend a default item class. For
       example, `IPM.Note.Contoso`<!-- -->.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-class-read.yaml
+
+
+      console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -398,7 +611,7 @@ properties:
       Gets the [Exchange Web Services (EWS) item
       identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
       of the current item.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -425,6 +638,34 @@ properties:
       value, it should be converted using
       `Office.context.mailbox.convertToRestId`<!-- -->.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following code checks for the presence of an item
+
+      // identifier. If the `itemId` property returns `null` or
+
+      // `undefined`, it saves the item to the store and gets the
+
+      // item identifier from the asynchronous result.
+
+      // **Important**: `saveAsync` was introduced with requirement set 1.3
+
+      // so you can't get the `itemId` in Compose mode in earlier sets.
+
+      let itemId = Office.context.mailbox.item.itemId;
+
+      if (itemId === null || itemId == undefined) {
+          Office.context.mailbox.item.saveAsync(function(result) {
+              itemId = result.value;
+          });
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -442,7 +683,7 @@ properties:
       The `itemType` property returns one of the `ItemType` enumeration values,
       indicating whether the item object instance is a message or an
       appointment.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -451,6 +692,29 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+
+      const itemType = Office.context.mailbox.item.itemType;
+
+      switch (itemType) {
+          case Office.MailboxEnums.ItemType.Appointment:
+              console.log(`Current item is an ${itemType}.`);
+              break;
+          case Office.MailboxEnums.ItemType.Message:
+              console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+              break;
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -468,7 +732,7 @@ properties:
 
       The `location` property returns a string that contains the location of the
       appointment.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -477,6 +741,21 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-location-read.yaml
+
+
+      console.log(`Appointment location:
+      ${Office.context.mailbox.item.location}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -497,7 +776,7 @@ properties:
       standard prefixes (such as RE: and FW:) that are added by email programs.
       To get the subject of the item with the prefixes intact, use the `subject`
       property.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -506,6 +785,21 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
+
+
+      console.log(`Normalized subject:
+      ${Office.context.mailbox.item.normalizedSubject}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -518,8 +812,8 @@ properties:
     package: outlook!
     fullName: notificationMessages
     summary: Gets the notification messages for an item.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -539,6 +833,145 @@ properties:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
       -->.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+      // Adds a progress indicator to the mail item.
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
+      const details =
+        {
+          type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
+          message: "Progress indicator with id = " + id
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added progress notification with id = ${id}.`);
+      });
+
+
+      ...
+
+
+      // Adds an informational notification to the mail item.
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
+      const details =
+        {
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
+          message: "Non-persistent informational notification message with id = " + id,
+          icon: "PG.Icon.16",
+          persistent: false
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added informational notification with id = ${id}.`);
+      });
+
+
+      ...
+
+
+      // Adds a persistent information notification to the mail item.
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
+      const details =
+        {
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
+          message: "Persistent informational notification message with id = " + id,
+          icon: "PG.Icon.16",
+          persistent: true
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
+          return;
+        }
+        console.log(`Added persistent informational notification with id = ${id}.`);
+      });
+
+
+      ...
+
+
+      // Gets all the notification messages and their keys for the current mail
+      item.
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+      => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(asyncResult.error.message);
+          return;
+        }
+        console.log(JSON.stringify(asyncResult.value));
+      });
+
+
+      ...
+
+
+      // Replaces a notification message of a given key with another message.
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
+      Office.context.mailbox.item.notificationMessages.replaceAsync(
+        id,
+        {
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
+          message: "Notification message with id = " + id + " has been replaced with an informational message.",
+          icon: "icon2",
+          persistent: false
+        },
+        (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.log(`Failed to replace notification with id = ${id}. ${result.error.message}.`);
+            return;
+          }
+          console.log(`Replaced notification with id = ${id}.`);
+        });
+
+      ...
+
+
+      // Removes a notification message from the current mail item.
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result)
+      => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
+          return;
+        }
+        console.log(`Removed notification with id = ${id}.`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -550,7 +983,7 @@ properties:
     package: outlook!
     fullName: sender
     summary: Gets the email address of the sender of an email message.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -579,6 +1012,23 @@ properties:
       - The `recipientType` property of the `EmailAddressDetails` object in the
       `sender` property is undefined.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-sender-message-read.yaml
+
+
+      const msgSender = Office.context.mailbox.item.sender;
+
+      console.log("Sender: " + msgSender.displayName + " (" +
+      msgSender.emailAddress + ")");
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -597,7 +1047,7 @@ properties:
       Universal Time (UTC) date and time value. You can use the
       `convertToLocalClientTime` method to convert the value to the client's
       local date and time.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -606,6 +1056,26 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
+
+
+      const time = Office.context.mailbox.item.start;
+
+      const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+
+      console.log(`Appointment starts (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -628,7 +1098,7 @@ properties:
       The `subject` property returns a string. Use the `normalizedSubject`
       property to get the subject minus any leading prefixes such as RE: and
       FW:.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -637,6 +1107,20 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-subject-read.yaml
+
+
+      console.log(`Subject: ${Office.context.mailbox.item.subject}`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -670,7 +1154,7 @@ properties:
 
 
       - New Mac UI: No limit
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -679,6 +1163,68 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
+
+
+      const msgTo = Office.context.mailbox.item.to;
+
+      const distributionLists = [];
+
+      const externalRecipients = [];
+
+      const internalRecipients = [];
+
+      const otherRecipients = [];
+
+      for (let i = 0; i < msgTo.length; i++) {
+          switch (msgTo[i].recipientType) {
+          case Office.MailboxEnums.RecipientType.DistributionList:
+              distributionLists.push(msgTo[i]);
+              break;
+          case Office.MailboxEnums.RecipientType.ExternalUser:
+              externalRecipients.push(msgTo[i]);
+              break;
+          case Office.MailboxEnums.RecipientType.User:
+              internalRecipients.push(msgTo[i]);
+              break;
+          case Office.MailboxEnums.RecipientType.Other:
+              otherRecipients.push(msgTo[i]);
+          }
+      }
+
+
+      if (distributionLists.length > 0) {
+          console.log("Distribution Lists:");
+          distributionLists.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+      }
+
+
+      if (externalRecipients.length > 0) {
+          console.log("External Recipients:");
+          externalRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+      }
+
+
+      if (internalRecipients.length > 0) {
+          console.log("Internal Recipients:");
+          internalRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+      }
+
+
+      if (otherRecipients.length > 0) {
+          console.log("Other Recipients:");
+          otherRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -695,8 +1241,8 @@ methods:
       Displays a reply form that includes either the sender and all recipients
       of the selected message or the organizer and all attendees of the selected
       appointment.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -736,6 +1282,65 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
+
+
+      Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with
+      <b>some bold text</b>.");
+
+
+      ...
+
+
+      // Define attachments.
+
+      const base64Attachment = {
+        base64file:
+          "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",
+        inLine: true,
+        name: "script_lab.png",
+        type: Office.MailboxEnums.AttachmentType.Base64
+      };
+
+      const fileAttachment = {
+        inLine: true,
+        name: "dog.jpg",
+        type: Office.MailboxEnums.AttachmentType.File,
+        url: "https://i.imgur.com/9S36xvA.jpg"
+      };
+
+      const itemAttachment = {
+        itemId: Office.context.mailbox.item.itemId,
+        name: "test_email.msg",
+        type: Office.MailboxEnums.AttachmentType.Item
+      };
+
+
+      // Create the reply with attachments.
+
+      Office.context.mailbox.item.displayReplyAllForm({
+        htmlBody:
+          "This is a reply with an inline Base64-encoded attachment, an inline image, and an item attachment.<br><img src='cid:script_lab.png'><br><img src='cid:dog.jpg'>",
+        attachments: [base64Attachment, fileAttachment, itemAttachment],
+        callback: (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error(`Action failed with message ${result.error.message}`);
+            return;
+          }
+
+          console.log("Created a reply-all form with attachments.");
+        }
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -758,8 +1363,8 @@ methods:
     summary: >-
       Displays a reply form that includes only the sender of the selected
       message or the organizer of the selected appointment.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -799,6 +1404,65 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
+
+
+      Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
+      text in italics</i>.");
+
+
+      ...
+
+
+      // Define attachments.
+
+      const base64Attachment = {
+        base64file:
+          "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAIAAABt+uBvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTM0A1t6AAAF3klEQVR4Xt2aMcolRRSFdQUuwSW4AAMzU8ENzAIMDA1NzHUBgqmZkbG4ADGVQRgGZBBElAERRPg9eC+PQ73qc6u66lZ3v48bzH+7uqr6VN/T1f3mjafT8Pr7b37+8G3En99+5akTcAqB/n7+48uP3vvp3TdvgT//+uE7P3woBwv07+s/Xn32jKXhwKF/Xr3wpgdxpEC/ffnp8/ffKkQpAg3QDDr6Ocs5RiCzm0ILEQca02qB7u2mPQ4xpnUCabtBWDWFdbfYmBYJ1HLZN6PBP3794uOiAcdKY0oXKLQbFE71jkBS33FrjClRoNBuXjx7J/QUNNCdZBtTikAtdtO1+JBA34Z5xjRfIG03I/YBTYVMScY0U6DQbsbXGdevF2C6Mc0RKLQbHEUbbz0MZNKPuYnGNCpQaDdY0iQTDR9zU4xpSCB9t+PQ719/7k3T0P49bkw7BQrtZnBajTS+uIwYU7dA4ZzynrhMWF/3sc+YOgQK7WaiNQpCh9bRu36tAmm7wT2MovOmaUAaPY3G6DKmWCBtNzaYN80EJjIuDUejMSmBUC/abnCrL3Di8IEwErhAvUGrCxRa4C+ffLDAicMVmhW42K2VLgUK67zlFXwcqL9GmltseUXlDirOvMXIbqKdHc/vieGTIJoE6rL93djNWwy9OHwqRCyQqM+J6LpeFj4bIhZoTWVdWCCLBbvkY93HwqdCdJg0AheQ/XRf9mivhk+C6BMIscawUdR5m0MRPjzRLZAFZMo2pnBHlhE+NhELJGa5YNO42Jh8VCIWCBnMEu8WRf4WC147sAxYjGLcjPDxiCaBDMxS+MKCF1cUdXbF+UhEh0CGqDjksz9CZ++2fRiiWyCgKw532QJjEhMYCR+A2COQoStuwcYyw5i8a2K/QIZ+Ei/YWM41Ju+UGBUI6Bses4eIqf6Nzkc+43N4j8QEgQxdcZApe2OJdRp/R/G+iGkCGbriFmws9TqF4b0QkwUC4SNmwcYSu419xuTnE/MFMrCSRT9FZG8s9xmTn0xkCQSKfu4Di5y9sew1Jj+NOFIgC1hG9q+y7b+s+QnE8QJZYJ0n/g+rKvoBYuFNibMIZJG9sYQx6Y8n3o44l0AILDKWOtW/xf/g8RbE6QSygGVkbyyrxuTHiJMKZLHgjbcY0bPEqQWySN1YFmN5lriAQBZJxlSM4lniMgIhMjaWxRCeJa4kkAWcdaIxFZ17lrieQBazNpZFt54lriqQBXZ9g8ZUdOhZ4toCIWxj6UP2U/TmWSJRoDU/9V1YIIDdcONr9L64dond2P19T8QjmDSDdUYhTJHpcR7z90Am/bVBx6NtFLcIv+pXAzfgo71qaFAmWx9linjYl9UWIJN4zD3454527ncD+DP7g5nBgyI8S5xCIIMHzbCbKjwowrPESQXyVD48aHXcWCDc7dm/Wxk8qKcymfZN2gJ+mfqDDODhPJUDLmTrAeotiFaBLJI2IwYP5KnZ2IaeByrC2xEVgdCFeCfIqzgexVNT0T9Ab30VqAgEwneCjIrj/j01CVFTFuKrQF0gQ/wCaQHJJ1Yc9+ypYcKawgXqrwJKIEPfmRMrjrv11BhTZh4LZGAdhDFNqTju0FN70TW1ZTdVWgUCoTFh1JGK46481U9YU70fITsEMrQxjVQc9+OpTnRNhXZTpVsgI5zKjorjHjzVjK6pkWXbKZCBm1kYU2/F8bmeakDXVJfdVBkSCGB+wpi6lo5P9FSEvpF77abKqECGNqbGiuNTPLWNrikc2mE3VeYIZOj1DCuOG3uqhq6pEbupMlMgA7PfMiY9e27pqTvEGozbTZX5AgFtTFsVx208ReiammI3VVIEMrQxYbWLS+KjnvofXVMT7aZKokCGKIqi4viQp3pOTyJdIAO3wJYx3SqOk/hT1FSS3VRZJBDQxlQUkaipPLupsk4gQxuTjmy7qbJaIEM4SzXW2E2VYwQyhDHdYqXdVDlSIKCNabHdVDlYIOPemA6xmyqnEMgwYzrQbio8Pf0HxndUxitiwgUAAAAASUVORK5CYII=",
+        inLine: true,
+        name: "script_lab.png",
+        type: Office.MailboxEnums.AttachmentType.Base64
+      };
+
+      const fileAttachment = {
+        inLine: true,
+        name: "dog.jpg",
+        type: Office.MailboxEnums.AttachmentType.File,
+        url: "https://i.imgur.com/9S36xvA.jpg"
+      };
+
+      const itemAttachment = {
+        itemId: Office.context.mailbox.item.itemId,
+        name: "test_email.msg",
+        type: Office.MailboxEnums.AttachmentType.Item
+      };
+
+
+      // Create the reply with attachments.
+
+      Office.context.mailbox.item.displayReplyForm({
+        htmlBody:
+          "This is a reply with an inline Base64-encoded attachment, an inline image, and an item attachment.<br><img src='cid:script_lab.png'><br><img src='cid:dog.jpg'>",
+        attachments: [base64Attachment, fileAttachment, itemAttachment],
+        callback: (result) => {
+          if (result.status === Office.AsyncResultStatus.Failed) {
+            console.error(`Action failed with message ${result.error.message}`);
+            return;
+          }
+
+          console.log("Created a reply with attachments.");
+        }
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -830,7 +1494,7 @@ methods:
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -872,7 +1536,7 @@ methods:
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -931,7 +1595,7 @@ methods:
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -984,8 +1648,8 @@ methods:
     summary: >-
       Returns string values in the selected item that match the regular
       expressions defined in an add-in only manifest file.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1032,6 +1696,22 @@ methods:
       APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
+
+      // This API only works when you click on the highlighted word "ScriptLab".
+
+      console.log(Office.context.mailbox.item.getRegExMatches());
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1054,8 +1734,8 @@ methods:
     summary: >-
       Returns string values in the selected item that match the named regular
       expression defined in an add-in only manifest file.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1102,6 +1782,22 @@ methods:
       APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
+
+      // This API only works when you click on the highlighted word "ScriptLab".
+
+      console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1136,7 +1832,7 @@ methods:
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1169,8 +1865,8 @@ methods:
       Returns string values in a highlighted match that match the regular
       expressions defined in an add-in only manifest file. Highlighted matches
       apply to contextual add-ins.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1218,6 +1914,26 @@ methods:
       doesn't always return the expected results. Instead, use the
       `Body.getAsync` method to retrieve the entire body.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
+
+      const matches = Office.context.mailbox.item.getSelectedRegExMatches();
+
+      if (matches) {
+          console.log(matches);
+      } else {
+          console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1252,8 +1968,8 @@ methods:
       The custom properties are provided as a `CustomProperties` object in the
       `asyncResult.value` property. This object can be used to get, set, save,
       and remove custom properties from the mail item.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1272,6 +1988,28 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
+
+      Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+          return;
+        }
+
+        customProps = result.value;
+        console.log("Loaded the CustomProperties object.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

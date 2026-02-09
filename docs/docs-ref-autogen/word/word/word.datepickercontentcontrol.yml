@@ -5,7 +5,7 @@ package: word!
 fullName: Word.DatePickerContentControl
 summary: Represents the `DatePickerContentControl` object.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: appearance
     summary: Specifies the appearance of the content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       Specifies the red-green-blue (RGB) value of the color of the content
       control. You can provide the value in the '\#RRGGBB' format.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
       Specifies a `CalendarType` value that represents the calendar type for the
       date picker content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -92,7 +92,7 @@ properties:
     fullName: dateDisplayFormat
     summary: Specifies the format in which dates are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
       Specifies a `LanguageId` that represents the language format for the date
       displayed in the date picker content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -224,7 +224,7 @@ properties:
       format for storage and retrieval of dates when the date picker content
       control is bound to the XML data store of the active document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -243,7 +243,7 @@ properties:
     fullName: id
     summary: Gets the identification for the content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -260,7 +260,7 @@ properties:
       Specifies whether to remove the content control from the active document
       when the user edits the contents of the control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -278,7 +278,7 @@ properties:
       surrounds text, paragraphs, table cells, or table rows; or if it is
       inline.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -300,7 +300,7 @@ properties:
       means that the user can't delete it from the active document, `false`
       means it can be deleted.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -318,7 +318,7 @@ properties:
       editable). `true` means the user can't edit the contents, `false` means
       the contents are editable.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -335,7 +335,7 @@ properties:
       Returns a `BuildingBlock` object that represents the placeholder text for
       the content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -352,7 +352,7 @@ properties:
       Gets a `Range` object that represents the contents of the content control
       in the active document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -369,7 +369,7 @@ properties:
       Gets whether the placeholder text for the content control is being
       displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -384,7 +384,7 @@ properties:
     fullName: tag
     summary: Specifies a tag to identify the content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -399,7 +399,7 @@ properties:
     fullName: title
     summary: Specifies the title for the content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -416,7 +416,7 @@ properties:
       Gets an `XmlMapping` object that represents the mapping of the content
       control to XML data in the data store of the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -432,7 +432,7 @@ methods:
     fullName: copy()
     summary: Copies the content control from the active document to the Clipboard.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -450,7 +450,7 @@ methods:
       Removes the content control from the active document and moves the content
       control to the Clipboard.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -466,7 +466,7 @@ methods:
     fullName: delete(deleteContents)
     summary: Deletes this content control and the contents of the content control.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -621,7 +621,7 @@ methods:
       Sets the placeholder text that displays in the content control until a
       user enters their own text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

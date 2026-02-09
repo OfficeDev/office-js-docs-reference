@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterCollectionLoadOptions
 summary: Represents the collection of Slide Masters in the presentation.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -37,7 +37,7 @@ properties:
     fullName: background
     summary: 'For EACH ITEM in the collection: Gets the background of the Slide Master.'
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -57,7 +57,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the unique ID of the Slide Master.'
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -74,7 +74,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Gets the unique name of the Slide Master.'
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

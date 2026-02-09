@@ -8,7 +8,7 @@ summary: >-
   current list) or the list of sources available in the application (in the
   master list).
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
     fullName: bibliographyStyle
     summary: Specifies the name of the active style to use for the bibliography.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

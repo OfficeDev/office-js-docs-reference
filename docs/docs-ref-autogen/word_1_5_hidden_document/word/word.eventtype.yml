@@ -4,9 +4,28 @@ uid: word!Word.EventType:enum
 package: word!
 fullName: Word.EventType
 summary: Provides information about the type of a raised event.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
+
+
+  async function contentControlDeleted(event:
+  Word.ContentControlDeletedEventArgs) {
+    await Word.run(async (context) => {
+      console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`, event.ids);
+    });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -19,8 +38,7 @@ fields:
       to the document.
 
 
-      * \[ [Api set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: word!Word.EventType.contentControlDataChanged:member
@@ -30,8 +48,7 @@ fields:
       content control have been changed.
 
 
-      * \[ [Api set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: word!Word.EventType.contentControlDeleted:member
@@ -41,28 +58,23 @@ fields:
       been deleted.
 
 
-      * \[ [Api set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlDeleted"'
   - name: contentControlEntered
     uid: word!Word.EventType.contentControlEntered:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been entered.
 
-
-      * \[ [Api set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: word!Word.EventType.contentControlExited:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been exited.
 
-
-      * \[ [Api set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: word!Word.EventType.contentControlSelectionChanged:member
@@ -72,6 +84,5 @@ fields:
       the content control has been changed.
 
 
-      * \[ [Api set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlSelectionChanged"'

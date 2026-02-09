@@ -20,7 +20,7 @@ properties:
       Specifies the alignment for the specified axis tick label. See
       `Excel.ChartTextHorizontalAlignment` for detail.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       Specifies the group for the specified axis. See `Excel.ChartAxisGroup` for
       details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
     fullName: baseTimeUnit
     summary: Specifies the base unit for the specified category axis.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
     fullName: categoryType
     summary: Specifies the category axis type.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -94,7 +94,7 @@ properties:
       Specifies the custom axis display unit value. To set this property, please
       use the `SetCustomDisplayUnit(double)` method.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ properties:
       Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for
       details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -135,7 +135,7 @@ properties:
       Represents the formatting of a chart object, which includes line and font
       formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -152,7 +152,7 @@ properties:
       Specifies the height, in points, of the chart axis. Returns `null` if the
       axis is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -167,7 +167,7 @@ properties:
     fullName: isBetweenCategories
     summary: Specifies if the value axis crosses the category axis between categories.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -184,7 +184,7 @@ properties:
       Specifies the distance, in points, from the left edge of the axis to the
       left of chart area. Returns `null` if the axis is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -199,7 +199,7 @@ properties:
     fullName: logBase
     summary: Specifies the base of the logarithm when using logarithmic scales.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -216,7 +216,7 @@ properties:
       Returns an object that represents the major gridlines for the specified
       axis.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -233,7 +233,7 @@ properties:
       Specifies the type of major tick mark for the specified axis. See
       `Excel.ChartAxisTickMark` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -254,7 +254,7 @@ properties:
       Specifies the major unit scale value for the category axis when the
       `categoryType` property is set to `dateAxis`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -275,7 +275,7 @@ properties:
       Represents the interval between two major tick marks. Can be set to a
       numeric value or an empty string. The returned value is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -293,7 +293,7 @@ properties:
       value or an empty string (for automatic axis values). The returned value
       is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -311,7 +311,7 @@ properties:
       value or an empty string (for automatic axis values). The returned value
       is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -328,7 +328,7 @@ properties:
       Returns an object that represents the minor gridlines for the specified
       axis.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -345,7 +345,7 @@ properties:
       Specifies the type of minor tick mark for the specified axis. See
       `Excel.ChartAxisTickMark` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -366,7 +366,7 @@ properties:
       Specifies the minor unit scale value for the category axis when the
       `categoryType` property is set to `dateAxis`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -388,7 +388,7 @@ properties:
       numeric value or an empty string (for automatic axis values). The returned
       value is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -403,7 +403,7 @@ properties:
     fullName: multiLevel
     summary: Specifies if an axis is multilevel.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -418,7 +418,7 @@ properties:
     fullName: numberFormat
     summary: Specifies the format code for the axis tick label.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -436,7 +436,7 @@ properties:
       between the first level and the axis line. The value should be an integer
       from 0 to 1000.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -453,7 +453,7 @@ properties:
       Specifies the specified axis position where the other axis crosses. See
       `Excel.ChartAxisPosition` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -474,7 +474,7 @@ properties:
       Specifies the axis position where the other axis crosses. You should use
       the `SetPositionAt(double)` method to set this property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -489,7 +489,7 @@ properties:
     fullName: reversePlotOrder
     summary: Specifies if Excel plots data points from last to first.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -506,7 +506,7 @@ properties:
       Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for
       details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -523,7 +523,7 @@ properties:
     fullName: showDisplayUnitLabel
     summary: Specifies if the axis display unit label is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -541,7 +541,7 @@ properties:
       label. The value should either be an integer from -90 to 90 or the integer
       180 for vertically-oriented text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -558,7 +558,7 @@ properties:
       Specifies the position of tick-mark labels on the specified axis. See
       `Excel.ChartAxisTickLabelPosition` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -580,7 +580,7 @@ properties:
       be a value from 1 through 31999 or an empty string for automatic setting.
       The returned value is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -595,7 +595,7 @@ properties:
     fullName: tickMarkSpacing
     summary: Specifies the number of categories or series between tick marks.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -610,7 +610,7 @@ properties:
     fullName: title
     summary: Represents the axis title.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -627,7 +627,7 @@ properties:
       Specifies the distance, in points, from the top edge of the axis to the
       top of chart area. Returns `null` if the axis is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -642,7 +642,7 @@ properties:
     fullName: type
     summary: Specifies the axis type. See `Excel.ChartAxisType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -661,7 +661,7 @@ properties:
     fullName: visible
     summary: Specifies if the axis is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -678,7 +678,7 @@ properties:
       Specifies the width, in points, of the chart axis. Returns `null` if the
       axis is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

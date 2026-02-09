@@ -20,7 +20,7 @@ properties:
       Text interpretation for the ink on the page. Returns null if there is no
       ink analysis information. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -38,7 +38,7 @@ properties:
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -54,7 +54,7 @@ properties:
     fullName: title
     summary: Gets or sets the title of the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

@@ -1115,8 +1115,7 @@ functions:
       real file type of the file. If `extensionHardening` is set to deny
       mismatches and the file extension does not match the real file type, this
       API throws the following error: "This operation is not allowed due to the
-      extension hardening policy." \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      extension hardening policy." \[Api set: ExcelApi 1.8\]
     remarks: ''
 
     isPreview: false

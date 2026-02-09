@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ConditionalDataBarRule
 summary: Represents a rule-type for a data bar.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: formula
     summary: The formula, if required, on which to evaluate the data bar rule.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: type
     summary: The type of rule for the data bar.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

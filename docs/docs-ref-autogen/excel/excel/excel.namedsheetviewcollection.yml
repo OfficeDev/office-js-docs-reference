@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.NamedSheetViewCollection
 summary: Represents the collection of sheet views in the worksheet.
 remarks: >-
-  \[ [Api set: ExcelApiOnline
+  \[ [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -47,7 +47,7 @@ methods:
     fullName: add(name)
     summary: Creates a new sheet view with the given name.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -75,7 +75,7 @@ methods:
       can also be accessed with the empty string (""), if the temporary view
       exists.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -91,7 +91,7 @@ methods:
     fullName: exit()
     summary: Exits the currently active sheet view.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ methods:
     fullName: getActive()
     summary: Gets the worksheet's currently active sheet view.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -125,7 +125,7 @@ methods:
       Gets the number of sheet views in this worksheet. Includes the temporary
       sheet view if it exists.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -141,7 +141,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a sheet view using its name.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -166,7 +166,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a sheet view by its index in the collection.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -191,7 +191,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

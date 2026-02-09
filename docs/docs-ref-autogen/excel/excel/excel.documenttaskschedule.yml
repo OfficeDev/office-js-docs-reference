@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.DocumentTaskSchedule
 summary: Represents information about a task's schedule.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -18,7 +18,7 @@ properties:
     fullName: dueDateTime
     summary: Gets the date and time that the task is due. All dates are in UTC.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: startDateTime
     summary: Gets the date and time that the task should start. All dates are in UTC.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

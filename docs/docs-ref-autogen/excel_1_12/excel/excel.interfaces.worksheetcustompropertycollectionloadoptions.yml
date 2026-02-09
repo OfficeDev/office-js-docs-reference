@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions
 summary: Contains the collection of worksheet-level custom property.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -40,7 +40,7 @@ properties:
       characters (larger values will cause an `InvalidArgument` error to be
       thrown.)
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -59,7 +59,7 @@ properties:
       For EACH ITEM in the collection: Specifies the value of the custom
       property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

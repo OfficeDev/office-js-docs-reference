@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorksheetCustomPropertyCollection
 summary: Contains the collection of worksheet-level custom property.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -48,10 +48,36 @@ methods:
     summary: >-
       Adds a new custom property that maps to the provided key. This overwrites
       existing custom properties with that key.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
+
+
+      await Excel.run(async (context) => {
+        // Get the key/value pair from the task pane.
+        const userKey = document.getElementById("key").textContent;
+        const userValue = document.getElementById("value").textContent;
+
+        // Add the custom property.
+        const customWorksheetProperties = context.workbook.worksheets.getActiveWorksheet().customProperties;
+        customWorksheetProperties.add(userKey, userValue);
+
+        await context.sync();
+
+        console.log(`Successfully set custom worksheet property ${userKey}: ${userValue}.`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +102,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of custom properties on this worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -95,7 +121,7 @@ methods:
       Gets a custom property object by its key, which is case-insensitive.
       Throws an error if the custom property does not exist.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -125,7 +151,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

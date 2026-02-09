@@ -21,7 +21,7 @@ properties:
       the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
       includes text fragments with different bullet visibility values.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.InlinePictureLoadOptions
 summary: Represents an inline picture.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Specifies a string that represents the alternative text associated with
       the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -66,7 +66,7 @@ properties:
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -83,7 +83,7 @@ properties:
       Specifies a hyperlink on the image. Use a '\#' to separate the address
       part from the optional location part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -100,7 +100,7 @@ properties:
       Specifies a value that indicates whether the inline image retains its
       original proportions when you resize it.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -115,7 +115,7 @@ properties:
     fullName: paragraph
     summary: Gets the parent paragraph that contains the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -132,7 +132,7 @@ properties:
       Gets the content control that contains the inline image. Throws an
       `ItemNotFound` error if there isn't a parent content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -156,7 +156,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -177,7 +177,7 @@ properties:
       Gets the table that contains the inline image. Throws an `ItemNotFound`
       error if it isn't contained in a table.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -194,7 +194,7 @@ properties:
       Gets the table cell that contains the inline image. Throws an
       `ItemNotFound` error if it isn't contained in a table cell.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -216,7 +216,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -238,7 +238,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -253,7 +253,7 @@ properties:
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

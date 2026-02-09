@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Border
 summary: Represents the properties for a table cell border.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -21,7 +21,7 @@ properties:
       Represents the line color in the hexadecimal format \#RRGGBB (e.g.,
       "FFA500") or as a named HTML color value (e.g., "orange").
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -52,7 +52,7 @@ properties:
     fullName: dashStyle
     summary: Represents the dash style of the line.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -78,7 +78,7 @@ properties:
       Specifies the transparency percentage of the line as a value from 0.0
       (opaque) through 1.0 (clear).
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -94,7 +94,7 @@ properties:
     fullName: weight
     summary: Represents the weight of the line, in points.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

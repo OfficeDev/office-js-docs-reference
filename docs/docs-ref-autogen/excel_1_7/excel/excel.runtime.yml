@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Runtime
 summary: Represents the Excel Runtime class.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false

@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.SectionGroupCollectionLoadOptions
 summary: Represents a collection of section groups.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
       For EACH ITEM in the collection: The client url of the section group. Read
       only
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -55,7 +55,7 @@ properties:
       For EACH ITEM in the collection: Gets the ID of the section group.
       Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -73,7 +73,7 @@ properties:
       For EACH ITEM in the collection: Gets the name of the section group.
       Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -92,7 +92,7 @@ properties:
       For EACH ITEM in the collection: Gets the notebook that contains the
       section group.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -114,7 +114,7 @@ properties:
       section group. Throws ItemNotFound if the section group is a direct child
       of the notebook.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -136,7 +136,7 @@ properties:
       section group. Returns null if the section group is a direct child of the
       notebook.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -157,7 +157,7 @@ properties:
       For EACH ITEM in the collection: The collection of section groups in the
       section group. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -179,7 +179,7 @@ properties:
       For EACH ITEM in the collection: The collection of sections in the section
       group. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

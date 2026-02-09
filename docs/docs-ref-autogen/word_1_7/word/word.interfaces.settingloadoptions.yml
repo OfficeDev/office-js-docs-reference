@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.SettingLoadOptions
 summary: Represents a setting of the add-in.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: key
     summary: Gets the key of the setting.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
     fullName: value
     summary: Specifies the value of the setting.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

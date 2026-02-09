@@ -4,10 +4,44 @@ uid: powerpoint!PowerPoint.TableCell:class
 package: powerpoint!
 fullName: PowerPoint.TableCell
 summary: Represents a table.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Updates a table's values.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table (which is a type of Shape).
+    const shape = shapes.addTable(4, 3);
+    let table = shape.getTable();
+    table.load();
+    await context.sync();
+
+    // Update values in the table.
+    for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+      for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+        const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+        cell.text = generateRandomString();
+      }
+    }
+
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -19,7 +53,7 @@ properties:
     fullName: borders
     summary: Gets the collection of borders for the table cell.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -37,7 +71,7 @@ properties:
       Gets the number of table columns this cell spans across. Will be greater
       than or equal to 1.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -53,7 +87,7 @@ properties:
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -84,7 +118,7 @@ properties:
     fullName: fill
     summary: Gets the fill color of the table cell.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -100,7 +134,7 @@ properties:
     fullName: font
     summary: Gets the font of the table cell.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -118,7 +152,7 @@ properties:
       Specifies the horizontal alignment of the text in the table cell. Returns
       `null` if the cell text contains different alignments.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -142,7 +176,7 @@ properties:
       Specifies the indent level of the text in the table cell. Returns `null`
       if the cell text contains different indent levels.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -158,7 +192,7 @@ properties:
     fullName: margins
     summary: Gets the set of margins in the table cell.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -176,7 +210,7 @@ properties:
       Gets the number of table rows this cell spans across. Will be greater than
       or equal to 1.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -192,7 +226,7 @@ properties:
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -207,10 +241,44 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Updates a table's values.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table (which is a type of Shape).
+        const shape = shapes.addTable(4, 3);
+        let table = shape.getTable();
+        table.load();
+        await context.sync();
+
+        // Update values in the table.
+        for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+          for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+            const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+            cell.text = generateRandomString();
+          }
+        }
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -228,7 +296,7 @@ properties:
       objects. Each `TextRun` object represents a sequence of one or more
       characters that share the same font attributes.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -244,7 +312,7 @@ properties:
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of the text in the table cell.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -349,7 +417,7 @@ methods:
       become a merged area. If the cell is already a merged area and rowCount
       and columnCount are set to 1, the cell will no longer be a merged area.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -377,7 +445,7 @@ methods:
     fullName: split(rowCount, columnCount)
     summary: Splits the cell into the specified number of rows and columns.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

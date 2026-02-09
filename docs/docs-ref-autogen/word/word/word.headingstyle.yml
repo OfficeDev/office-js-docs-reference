@@ -5,7 +5,7 @@ package: word!
 fullName: Word.HeadingStyle
 summary: Represents a heading style used in a table of contents or table of figures.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
       Specifies the level for the heading style in a table of contents or table
       of figures. Must be a value from 1 to 9.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: name
     summary: Specifies the name of style for a heading.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -66,7 +66,7 @@ methods:
     fullName: delete()
     summary: Deletes the heading style.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

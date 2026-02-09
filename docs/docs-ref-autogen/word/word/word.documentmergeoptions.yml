@@ -7,7 +7,7 @@ summary: >-
   Provides configuration options for the
   [Document.merge](xref:word!Word.Document:class) method.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -22,7 +22,7 @@ properties:
       If provided, specifies whether to add the merged document to recent files.
       The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -39,7 +39,7 @@ properties:
       If provided, specifies whether to detect format changes during the merge.
       The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -56,7 +56,7 @@ properties:
       If provided, specifies the target of the merge operation. The default
       value is `current`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -75,7 +75,7 @@ properties:
       If provided, specifies the source of formatting to use in the merge. The
       default value is `current`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

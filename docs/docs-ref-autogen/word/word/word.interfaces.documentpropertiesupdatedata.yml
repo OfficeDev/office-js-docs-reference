@@ -18,7 +18,7 @@ properties:
     fullName: author
     summary: Specifies the author of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: category
     summary: Specifies the category of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
       Specifies the Comments field in the metadata of the document. These have
       no connection to comments by users made in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +65,7 @@ properties:
     fullName: company
     summary: Specifies the company of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -80,7 +80,7 @@ properties:
     fullName: format
     summary: Specifies the format of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -95,7 +95,7 @@ properties:
     fullName: keywords
     summary: Specifies the keywords of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -110,7 +110,7 @@ properties:
     fullName: manager
     summary: Specifies the manager of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -125,7 +125,7 @@ properties:
     fullName: subject
     summary: Specifies the subject of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -140,7 +140,7 @@ properties:
     fullName: title
     summary: Specifies the title of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

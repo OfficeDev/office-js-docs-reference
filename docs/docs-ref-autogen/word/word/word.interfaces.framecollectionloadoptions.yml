@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FrameCollectionLoadOptions
 summary: Represents the collection of [Word.Frame](xref:word!Word.Frame:class) objects.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Specifies the height (in points) of the
       frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
       For EACH ITEM in the collection: Specifies a `FrameSizeRule` value that
       represents the rule for determining the height of the frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
       For EACH ITEM in the collection: Specifies the horizontal distance between
       the frame and the surrounding text, in points.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -89,7 +89,7 @@ properties:
       the edge of the frame and the item specified by the
       `relativeHorizontalPosition` property.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -104,7 +104,7 @@ properties:
     fullName: lockAnchor
     summary: 'For EACH ITEM in the collection: Specifies if the frame is locked.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -121,7 +121,7 @@ properties:
       For EACH ITEM in the collection: Returns a `Range` object that represents
       the portion of the document that's contained within the frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -139,7 +139,7 @@ properties:
       For EACH ITEM in the collection: Specifies the relative horizontal
       position of the frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -157,7 +157,7 @@ properties:
       For EACH ITEM in the collection: Specifies the relative vertical position
       of the frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -174,7 +174,7 @@ properties:
       For EACH ITEM in the collection: Returns a `ShadingUniversal` object that
       refers to the shading formatting for the frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -193,7 +193,7 @@ properties:
       For EACH ITEM in the collection: Specifies if document text wraps around
       the frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -211,7 +211,7 @@ properties:
       For EACH ITEM in the collection: Specifies the vertical distance (in
       points) between the frame and the surrounding text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -229,7 +229,7 @@ properties:
       the edge of the frame and the item specified by the
       `relativeVerticalPosition` property.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -246,7 +246,7 @@ properties:
       For EACH ITEM in the collection: Specifies the width (in points) of the
       frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -263,7 +263,7 @@ properties:
       For EACH ITEM in the collection: Specifies the rule used to determine the
       width of the frame.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

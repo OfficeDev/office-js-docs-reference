@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.ShapeView
 summary: Represents the ShapeView class.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -33,10 +33,30 @@ properties:
     package: visio!
     fullName: highlight
     summary: Represents the highlight around the shape.
-    remarks: >-
-      \[ [Api set:
+    remarks: >
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Visio.run(session, function (ctx) {
+          const activePage = ctx.document.getActivePage();
+          const shape = activePage.shapes.getItem(0);
+          shape.view.highlight = { color: "#E7E7E7", width: 100 };
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -54,10 +74,30 @@ methods:
       addOverlay(OverlayType, Content, OverlayHorizontalAlignment,
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
-    remarks: >-
-      \[ [Api set:
+    remarks: >
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Visio.run(session, function (ctx) {
+          const activePage = ctx.document.getActivePage();
+          const shape = activePage.shapes.getItem(0);
+          const overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -101,7 +141,7 @@ methods:
       OverlayVerticalAlignment, Width, Height)
     summary: Adds an overlay on top of the shape.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -216,10 +256,30 @@ methods:
     package: visio!
     fullName: removeOverlay(OverlayId)
     summary: Removes particular overlay or all overlays on the Shape.
-    remarks: >-
-      \[ [Api set:
+    remarks: >
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Visio.run(session, function (ctx) {
+          const activePage = ctx.document.getActivePage();
+          const shape = activePage.shapes.getItem(0);
+          shape.view.removeOverlay(1);
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -292,7 +352,7 @@ methods:
       run time. The updated text retains the existing formatting properties of
       the shape's text.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -313,7 +373,7 @@ methods:
     fullName: showOverlay(overlayId, show)
     summary: Shows particular overlay on the Shape.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

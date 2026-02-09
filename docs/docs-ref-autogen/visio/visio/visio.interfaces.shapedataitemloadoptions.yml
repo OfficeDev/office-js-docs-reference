@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.Interfaces.ShapeDataItemLoadOptions
 summary: Represents the ShapeDataItem.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: format
     summary: A string that specifies the format of the shape data item. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -53,7 +53,7 @@ properties:
       A string that specifies the formatted value of the shape data item.
       Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -69,7 +69,7 @@ properties:
     fullName: label
     summary: A string that specifies the label of the shape data item. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -85,7 +85,7 @@ properties:
     fullName: value
     summary: A string that specifies the value of the shape data item. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

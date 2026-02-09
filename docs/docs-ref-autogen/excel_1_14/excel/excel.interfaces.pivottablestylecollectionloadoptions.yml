@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
 summary: Represents a collection of PivotTable styles.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Specifies the name of the PivotTable
       style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -55,7 +55,7 @@ properties:
       For EACH ITEM in the collection: Specifies if this `PivotTableStyle`
       object is read-only.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.DataValidationPrompt
 summary: Represents the user prompt properties for the data validation.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: message
     summary: Specifies the message of the prompt.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
       Specifies if a prompt is shown when a user selects a cell with data
       validation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: title
     summary: Specifies the title for the prompt.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -18,7 +18,7 @@ properties:
     fullName: paragraph
     summary: Reference to the parent InkAnalysisParagraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

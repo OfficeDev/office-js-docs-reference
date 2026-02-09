@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartMapOptionsLoadOptions
 summary: Encapsulates the properties for a region map chart.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: labelStrategy
     summary: Specifies the series map labels strategy of a region map chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
     fullName: level
     summary: Specifies the series mapping level of a region map chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -64,7 +64,7 @@ properties:
     fullName: projectionType
     summary: Specifies the series projection type of a region map chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

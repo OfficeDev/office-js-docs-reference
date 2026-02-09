@@ -5,7 +5,7 @@ package: word!
 fullName: Word.TableOfAuthorities
 summary: Represents a table of authorities in a Word document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Specifies the name of the bookmark from which to collect table of
       authorities entries.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -41,7 +41,7 @@ properties:
       authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
       Specifies a separator of up to five characters. This appears between the
       table of authorities entry and its page number.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       Specifies whether the category name for a group of entries appears in the
       table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       Specifies whether the entries in the table of authorities are displayed
       with their formatting in the table.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -124,7 +124,7 @@ properties:
       Specifies whether references to the same authority that are repeated on
       five or more pages are replaced with "Passim".
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -141,7 +141,7 @@ properties:
       Specifies a separator of up to five characters. This appears between
       individual page references in the table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -158,7 +158,7 @@ properties:
       Specifies a separator of up to five characters. This appears between
       ranges of pages in the table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -173,7 +173,7 @@ properties:
     fullName: range
     summary: Gets the portion of a document that is this table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -191,7 +191,7 @@ properties:
       field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be)
       identifier for the table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -208,7 +208,7 @@ properties:
       Specifies a separator of up to five characters. This appears between the
       sequence number and the page number in the table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -225,7 +225,7 @@ properties:
       Specifies the leader character that appears between entries and their
       associated page numbers in the table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -245,7 +245,7 @@ methods:
     fullName: delete()
     summary: Deletes this table of authorities.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

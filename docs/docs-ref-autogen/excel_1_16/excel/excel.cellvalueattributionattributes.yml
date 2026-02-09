@@ -8,7 +8,7 @@ summary: >-
   used to describe where information came from, if the information comes from a
   public source.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       Represents a URL to a license or source that describes how this property
       can be used.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -39,7 +39,7 @@ properties:
     fullName: licenseText
     summary: Represents a name for the license that governs this property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -55,7 +55,7 @@ properties:
     fullName: sourceAddress
     summary: Represents a URL to the source of the `CellValue`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -71,7 +71,7 @@ properties:
     fullName: sourceText
     summary: Represents a name for the source of the `CellValue`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

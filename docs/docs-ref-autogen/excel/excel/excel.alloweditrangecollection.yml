@@ -10,7 +10,7 @@ summary: >-
   allow editing of a specific range, while maintaining protection on the rest of
   the worksheet.
 remarks: >-
-  \[ [Api set: ExcelApiOnline
+  \[ [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -56,7 +56,7 @@ methods:
       protection is enabled and not paused, then this method throws an
       `AccessDenied` error and the add operation fails.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +86,7 @@ methods:
     fullName: getCount()
     summary: Returns the number of `AllowEditRange` objects in the collection.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -102,7 +102,7 @@ methods:
     fullName: getItem(key)
     summary: Gets the `AllowEditRange` object by its title.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -124,7 +124,7 @@ methods:
     fullName: getItemAt(index)
     summary: Returns an `AllowEditRange` object by its index in the collection.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -144,7 +144,7 @@ methods:
     fullName: getItemOrNullObject(key)
     summary: Gets the `AllowEditRange` object by its title.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -252,7 +252,7 @@ methods:
       collection, then this method throws a `BadPassword` error and fails to
       pause protection for any range in the collection.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -4,9 +4,30 @@ uid: word!Word.HeaderFooterType:enum
 package: word!
 fullName: Word.HeaderFooterType
 summary: Represents the type of header or footer.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+
+  await Word.run(async (context) => {
+    context.document.sections
+      .getFirst()
+      .getHeader(Word.HeaderFooterType.primary)
+      .insertParagraph("This is a primary header.", "End");
+
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -14,22 +35,18 @@ fields:
   - name: evenPages
     uid: word!Word.HeaderFooterType.evenPages:member
     package: word!
-    summary: >-
+    summary: |-
       Returns all headers or footers on even-numbered pages of a section.
 
-
-      * \[ [Api set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"EvenPages"'
   - name: firstPage
     uid: word!Word.HeaderFooterType.firstPage:member
     package: word!
-    summary: >-
+    summary: |-
       Returns the header or footer on the first page of a section.
 
-
-      * \[ [Api set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"FirstPage"'
   - name: primary
     uid: word!Word.HeaderFooterType.primary:member
@@ -39,6 +56,5 @@ fields:
       first page or even pages if they are different.
 
 
-      * \[ [Api set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Primary"'

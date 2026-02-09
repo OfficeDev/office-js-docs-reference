@@ -5,7 +5,7 @@ package: word!
 fullName: Word.PresetThreeDimensionalFormat
 summary: Specifies an extrusion (three-dimensional) format.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,210 +14,168 @@ fields:
   - name: format1
     uid: word!Word.PresetThreeDimensionalFormat.format1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 1.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format1"'
   - name: format10
     uid: word!Word.PresetThreeDimensionalFormat.format10:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 10.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format10"'
   - name: format11
     uid: word!Word.PresetThreeDimensionalFormat.format11:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 11.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format11"'
   - name: format12
     uid: word!Word.PresetThreeDimensionalFormat.format12:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 12.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format12"'
   - name: format13
     uid: word!Word.PresetThreeDimensionalFormat.format13:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 13.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format13"'
   - name: format14
     uid: word!Word.PresetThreeDimensionalFormat.format14:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 14.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format14"'
   - name: format15
     uid: word!Word.PresetThreeDimensionalFormat.format15:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 15.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format15"'
   - name: format16
     uid: word!Word.PresetThreeDimensionalFormat.format16:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 16.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format16"'
   - name: format17
     uid: word!Word.PresetThreeDimensionalFormat.format17:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 17.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format17"'
   - name: format18
     uid: word!Word.PresetThreeDimensionalFormat.format18:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 18.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format18"'
   - name: format19
     uid: word!Word.PresetThreeDimensionalFormat.format19:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 19.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format19"'
   - name: format2
     uid: word!Word.PresetThreeDimensionalFormat.format2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 2.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format2"'
   - name: format20
     uid: word!Word.PresetThreeDimensionalFormat.format20:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 20.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format20"'
   - name: format3
     uid: word!Word.PresetThreeDimensionalFormat.format3:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 3.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format3"'
   - name: format4
     uid: word!Word.PresetThreeDimensionalFormat.format4:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 4.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format4"'
   - name: format5
     uid: word!Word.PresetThreeDimensionalFormat.format5:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 5.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format5"'
   - name: format6
     uid: word!Word.PresetThreeDimensionalFormat.format6:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 6.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format6"'
   - name: format7
     uid: word!Word.PresetThreeDimensionalFormat.format7:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 7.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format7"'
   - name: format8
     uid: word!Word.PresetThreeDimensionalFormat.format8:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 8.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format8"'
   - name: format9
     uid: word!Word.PresetThreeDimensionalFormat.format9:member
     package: word!
-    summary: >-
+    summary: |-
       Represents three-dimensional format 9.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Format9"'
   - name: mixed
     uid: word!Word.PresetThreeDimensionalFormat.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a mixed three-dimensional format.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'

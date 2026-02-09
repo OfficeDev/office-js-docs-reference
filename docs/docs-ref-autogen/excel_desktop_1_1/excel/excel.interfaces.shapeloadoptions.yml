@@ -10,7 +10,7 @@ summary: >-
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!--
   -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
     fullName: altTextDescription
     summary: Specifies the alternative description text for a `Shape` object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
     fullName: altTextTitle
     summary: Specifies the alternative title text for a `Shape` object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
     fullName: connectionSiteCount
     summary: Returns the number of connection sites on this shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -88,7 +88,7 @@ properties:
       scenario, you can use this API to get the name that is displayed in the
       UI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -104,7 +104,7 @@ properties:
     fullName: fill
     summary: Returns the fill formatting of this shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -121,7 +121,7 @@ properties:
       Returns the geometric shape associated with the shape. An error will be
       thrown if the shape type is not "GeometricShape".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -141,7 +141,7 @@ properties:
       `Excel.GeometricShapeType` for details. Returns `null` if the shape type
       is not "GeometricShape".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -158,7 +158,7 @@ properties:
       Returns the shape group associated with the shape. An error will be thrown
       if the shape type is not "GroupShape".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -175,7 +175,7 @@ properties:
       Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value or zero as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -190,7 +190,7 @@ properties:
     fullName: id
     summary: Specifies the shape identifier.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -207,7 +207,7 @@ properties:
       Returns the image associated with the shape. An error will be thrown if
       the shape type is not "Image".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -225,7 +225,7 @@ properties:
       of the worksheet. Throws an `InvalidArgument` exception when set with a
       negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -244,7 +244,7 @@ properties:
       shape is part of a top-level group, and a level of 2 means the shape is
       part of a sub-group of the top level.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -261,7 +261,7 @@ properties:
       Returns the line associated with the shape. An error will be thrown if the
       shape type is not "Line".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -276,7 +276,7 @@ properties:
     fullName: lineFormat
     summary: Returns the line formatting of this shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -293,7 +293,7 @@ properties:
     fullName: lockAspectRatio
     summary: Specifies if the aspect ratio of this shape is locked.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -308,7 +308,7 @@ properties:
     fullName: name
     summary: Specifies the name of the shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -323,7 +323,7 @@ properties:
     fullName: parentGroup
     summary: Specifies the parent group of this shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -338,7 +338,7 @@ properties:
     fullName: placement
     summary: Represents how the object is attached to the cells below it.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -354,7 +354,7 @@ properties:
     fullName: rotation
     summary: Specifies the rotation, in degrees, of the shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -369,7 +369,7 @@ properties:
     fullName: textFrame
     summary: Returns the text frame object of this shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -387,7 +387,7 @@ properties:
       the worksheet. Throws an `InvalidArgument` exception when set with a
       negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -402,7 +402,7 @@ properties:
     fullName: type
     summary: Returns the type of this shape. See `Excel.ShapeType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -417,7 +417,7 @@ properties:
     fullName: visible
     summary: Specifies if the shape is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -434,7 +434,7 @@ properties:
       Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value or zero as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -451,7 +451,7 @@ properties:
       Returns the position of the specified shape in the z-order, with 0
       representing the bottom of the order stack.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

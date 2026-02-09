@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.ThemeColor
 summary: Specifies the theme colors used in PowerPoint.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -15,154 +15,112 @@ fields:
   - name: accent1
     uid: powerpoint!PowerPoint.ThemeColor.accent1:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Accent 1 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Accent1"'
   - name: accent2
     uid: powerpoint!PowerPoint.ThemeColor.accent2:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Accent 2 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Accent2"'
   - name: accent3
     uid: powerpoint!PowerPoint.ThemeColor.accent3:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Accent 3 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Accent3"'
   - name: accent4
     uid: powerpoint!PowerPoint.ThemeColor.accent4:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Accent 4 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Accent4"'
   - name: accent5
     uid: powerpoint!PowerPoint.ThemeColor.accent5:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Accent 5 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Accent5"'
   - name: accent6
     uid: powerpoint!PowerPoint.ThemeColor.accent6:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Accent 6 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Accent6"'
   - name: dark1
     uid: powerpoint!PowerPoint.ThemeColor.dark1:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Dark 1 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Dark1"'
   - name: dark2
     uid: powerpoint!PowerPoint.ThemeColor.dark2:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Dark 2 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Dark2"'
   - name: followedHyperlink
     uid: powerpoint!PowerPoint.ThemeColor.followedHyperlink:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the clicked hyperlink theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"FollowedHyperlink"'
   - name: hyperlink
     uid: powerpoint!PowerPoint.ThemeColor.hyperlink:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the hyperlink theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Hyperlink"'
   - name: light1
     uid: powerpoint!PowerPoint.ThemeColor.light1:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Light 1 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Light1"'
   - name: light2
     uid: powerpoint!PowerPoint.ThemeColor.light2:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies the Light 2 theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Light2"'
   - name: mixed
     uid: powerpoint!PowerPoint.ThemeColor.mixed:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies a mixed theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Mixed"'
   - name: none
     uid: powerpoint!PowerPoint.ThemeColor.none:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Specifies no theme color.
 
-
-      * \[ [Api set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"None"'

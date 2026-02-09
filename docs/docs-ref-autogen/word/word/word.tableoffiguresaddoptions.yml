@@ -8,7 +8,7 @@ summary: >-
   [Word.TableOfFiguresCollection](xref:word!Word.TableOfFiguresCollection:class)
   object.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       If provided, specifies the string names of additional styles to use for
       the table of figures.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -43,7 +43,7 @@ properties:
       field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
       -->. The default value is "Figure".
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -61,7 +61,7 @@ properties:
       should be hidden when publishing to the web. The default value is
       `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +78,7 @@ properties:
       If provided, specifies whether to include the caption label and caption
       number in a table of figures. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -95,7 +95,7 @@ properties:
       If provided, specifies whether page numbers are included in a table of
       figures. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -116,7 +116,7 @@ properties:
       field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
       -->. The default value is `9`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -133,7 +133,7 @@ properties:
       If provided, specifies whether to align page numbers with the right margin
       in a table of figures. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -155,7 +155,7 @@ properties:
       -->. For example, "T" indicates a table of figures includes TC fields that
       use the table identifier T.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -177,7 +177,7 @@ properties:
       field](https://support.microsoft.com/office/1f538bc4-60e6-4854-9f64-67754d78d05c)<!--
       -->. The default value is `1`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -194,7 +194,7 @@ properties:
       If provided, specifies whether to use built-in heading styles to create a
       table of figures. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -215,7 +215,7 @@ properties:
       method to mark entries to include in a table of figures. The default value
       is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -233,7 +233,7 @@ properties:
       formatted as hyperlinks when the document is published to the web. The
       default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

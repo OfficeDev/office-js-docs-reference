@@ -7,7 +7,7 @@ summary: >-
   Represents the value of a cell containing an External Code Service Object,
   such as Python code formula.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -22,7 +22,7 @@ properties:
       Represents the value that would be returned by `Range.valueTypes` for a
       cell with this value.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -44,7 +44,7 @@ properties:
       Represents the value that would be returned by `Range.values` for a cell
       with this value.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -60,7 +60,7 @@ properties:
     fullName: language
     summary: Represents the runtime language of this external code service.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -76,7 +76,7 @@ properties:
     fullName: preview
     summary: Represents the preview value shown in the cell.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -94,7 +94,7 @@ properties:
       Represents information about the service that provided the data in this
       `ExternalCodeServiceObjectCellValue`<!-- -->. This field isn't writable.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -110,7 +110,7 @@ properties:
     fullName: Python_str
     summary: Represents the output of the `str()` function when used on this object.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -126,7 +126,7 @@ properties:
     fullName: Python_type
     summary: Represents the full type name of this object.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -142,7 +142,7 @@ properties:
     fullName: Python_typeName
     summary: Represents the short type name of this object.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -158,7 +158,7 @@ properties:
     fullName: type
     summary: Represents the type of this cell value.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

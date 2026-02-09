@@ -4,9 +4,27 @@ uid: excel!Excel.SearchDirection:enum
 package: excel!
 fullName: Excel.SearchDirection
 summary: Specifies the search direction.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
+
+
+  searchDirectionToggle = searchDirectionToggle ===
+  Excel.SearchDirection.forward ? Excel.SearchDirection.backwards :
+  Excel.SearchDirection.forward;
+
+  console.log("Search direction = " + searchDirectionToggle);
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -14,20 +32,16 @@ fields:
   - name: backwards
     uid: excel!Excel.SearchDirection.backwards:member
     package: excel!
-    summary: >-
+    summary: |-
       Search in reverse order.
 
-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Backwards"'
   - name: forward
     uid: excel!Excel.SearchDirection.forward:member
     package: excel!
-    summary: >-
+    summary: |-
       Search in forward order.
 
-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Forward"'

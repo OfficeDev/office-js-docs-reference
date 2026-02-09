@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.OutlineLoadOptions
 summary: Represents a container for Paragraph objects.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: id
     summary: Gets the ID of the Outline object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -52,7 +52,7 @@ properties:
       Gets the PageContent object that contains the Outline. This object defines
       the position of the Outline on the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -70,7 +70,7 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of Paragraph objects in the Outline.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

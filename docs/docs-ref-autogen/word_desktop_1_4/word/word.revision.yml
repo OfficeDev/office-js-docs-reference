@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Revision
 summary: Represents a single tracked change in a document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: author
     summary: Gets the name of the user who made the tracked change.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: date
     summary: Gets the date and time when the tracked change was made.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -63,7 +63,7 @@ properties:
     fullName: formatDescription
     summary: Gets the description of tracked formatting changes in the revision.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +78,7 @@ properties:
     fullName: index
     summary: Gets a number that represents the position of this item in a collection.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -95,7 +95,7 @@ properties:
       Gets a `Range` object that represents the range of text that was moved
       from one place to another in the document with tracked changes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -112,7 +112,7 @@ properties:
       Gets a `Range` object that represents the portion of the document that's
       contained within a revision mark.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -127,7 +127,7 @@ properties:
     fullName: type
     summary: Gets the revision type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -157,7 +157,7 @@ methods:
       Accepts the tracked change, removes the revision mark, and incorporates
       the change into the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -249,7 +249,7 @@ methods:
       Rejects the tracked change. The revision marks are removed, leaving the
       original text intact.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

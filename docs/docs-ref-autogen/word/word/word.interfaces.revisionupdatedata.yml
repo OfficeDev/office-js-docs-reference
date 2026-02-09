@@ -20,7 +20,7 @@ properties:
       Gets a `Range` object that represents the range of text that was moved
       from one place to another in the document with tracked changes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       Gets a `Range` object that represents the portion of the document that's
       contained within a revision mark.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

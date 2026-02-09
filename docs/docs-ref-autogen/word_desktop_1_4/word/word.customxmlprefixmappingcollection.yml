@@ -8,7 +8,7 @@ summary: >-
   [Word.CustomXmlPrefixMapping](xref:word!Word.CustomXmlPrefixMapping:class)
   objects.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -50,7 +50,7 @@ methods:
     fullName: addNamespace(prefix, namespaceUri)
     summary: Adds a custom namespace/prefix mapping to use when querying an item.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -75,7 +75,7 @@ methods:
     fullName: getCount()
     summary: Returns the number of items in the collection.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -169,7 +169,7 @@ methods:
     fullName: lookupNamespace(prefix)
     summary: Gets the namespace corresponding to the specified prefix.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -189,7 +189,7 @@ methods:
     fullName: lookupPrefix(namespaceUri)
     summary: Gets the prefix corresponding to the specified namespace.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

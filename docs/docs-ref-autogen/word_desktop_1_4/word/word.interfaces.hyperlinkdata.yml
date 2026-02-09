@@ -18,7 +18,7 @@ properties:
     fullName: address
     summary: Specifies the address (for example, a file name or URL) of the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: emailSubject
     summary: Specifies the text string for the hyperlink's subject line.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: isExtraInfoRequired
     summary: Returns `true` if extra information is required to resolve the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -63,7 +63,7 @@ properties:
     fullName: name
     summary: Returns the name of the `Hyperlink` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -80,7 +80,7 @@ properties:
       Returns a `Range` object that represents the portion of the document
       that's contained within the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -97,7 +97,7 @@ properties:
       Specifies the text that appears as a ScreenTip when the mouse pointer is
       positioned over the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -112,7 +112,7 @@ properties:
     fullName: subAddress
     summary: Specifies a named location in the destination of the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -127,7 +127,7 @@ properties:
     fullName: target
     summary: Specifies the name of the frame or window in which to load the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -142,7 +142,7 @@ properties:
     fullName: textToDisplay
     summary: Specifies the hyperlink's visible text in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -157,7 +157,7 @@ properties:
     fullName: type
     summary: Returns the hyperlink type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

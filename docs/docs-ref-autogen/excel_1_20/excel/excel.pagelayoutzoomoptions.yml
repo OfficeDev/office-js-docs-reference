@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.PageLayoutZoomOptions
 summary: Represents page zoom properties.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Number of pages to fit horizontally. This value can be `null` if
       percentage scale is used.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       Print page scale value can be between 10 and 400. This value can be `null`
       if fit to page tall or wide is specified.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       Number of pages to fit vertically. This value can be `null` if percentage
       scale is used.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

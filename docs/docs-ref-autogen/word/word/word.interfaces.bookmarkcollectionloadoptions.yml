@@ -7,7 +7,7 @@ summary: >-
   A collection of [Word.Bookmark](xref:word!Word.Bookmark:class) objects that
   represent the bookmarks in the specified selection, range, or document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
       For EACH ITEM in the collection: Specifies the ending character position
       of the bookmark.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -55,7 +55,7 @@ properties:
       For EACH ITEM in the collection: Returns `true` if the bookmark is a table
       column.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -70,7 +70,7 @@ properties:
     fullName: isEmpty
     summary: 'For EACH ITEM in the collection: Returns `true` if the bookmark is empty.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -87,7 +87,7 @@ properties:
       For EACH ITEM in the collection: Returns the name of the `Bookmark`
       object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -104,7 +104,7 @@ properties:
       For EACH ITEM in the collection: Returns a `Range` object that represents
       the portion of the document that's contained in the `Bookmark` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -121,7 +121,7 @@ properties:
       For EACH ITEM in the collection: Specifies the starting character position
       of the bookmark.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -136,7 +136,7 @@ properties:
     fullName: storyType
     summary: 'For EACH ITEM in the collection: Returns the story type for the bookmark.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

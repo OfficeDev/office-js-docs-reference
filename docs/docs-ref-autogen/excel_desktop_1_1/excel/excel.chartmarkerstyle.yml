@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartMarkerStyle
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,91 +14,65 @@ fields:
   - name: automatic
     uid: excel!Excel.ChartMarkerStyle.automatic:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Automatic"'
   - name: circle
     uid: excel!Excel.ChartMarkerStyle.circle:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Circle"'
   - name: dash
     uid: excel!Excel.ChartMarkerStyle.dash:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Dash"'
   - name: diamond
     uid: excel!Excel.ChartMarkerStyle.diamond:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Diamond"'
   - name: dot
     uid: excel!Excel.ChartMarkerStyle.dot:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Dot"'
   - name: invalid
     uid: excel!Excel.ChartMarkerStyle.invalid:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Invalid"'
   - name: none
     uid: excel!Excel.ChartMarkerStyle.none:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"None"'
   - name: picture
     uid: excel!Excel.ChartMarkerStyle.picture:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Picture"'
   - name: plus
     uid: excel!Excel.ChartMarkerStyle.plus:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Plus"'
   - name: square
     uid: excel!Excel.ChartMarkerStyle.square:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Square"'
   - name: star
     uid: excel!Excel.ChartMarkerStyle.star:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Star"'
   - name: triangle
     uid: excel!Excel.ChartMarkerStyle.triangle:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Triangle"'
   - name: x
     uid: excel!Excel.ChartMarkerStyle.x:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"X"'

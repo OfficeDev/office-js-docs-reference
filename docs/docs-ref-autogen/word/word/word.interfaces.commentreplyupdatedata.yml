@@ -18,7 +18,7 @@ properties:
     fullName: content
     summary: Specifies the comment reply's content. The string is plain text.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: contentRange
     summary: Specifies the commentReply's content range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: parentComment
     summary: Gets the parent comment of this reply.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

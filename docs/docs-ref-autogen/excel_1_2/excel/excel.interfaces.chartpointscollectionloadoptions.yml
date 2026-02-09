@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions
 summary: A collection of all the chart points within a series inside a chart.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Encapsulates the format properties chart
       point.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
     fullName: value
     summary: 'For EACH ITEM in the collection: Returns the value of a chart point.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

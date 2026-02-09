@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ShapeTextReadingOrder
 summary: Specifies the reading order for the text frame in a shape.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,14 +14,10 @@ fields:
   - name: leftToRight
     uid: excel!Excel.ShapeTextReadingOrder.leftToRight:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: excel!Excel.ShapeTextReadingOrder.rightToLeft:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"RightToLeft"'

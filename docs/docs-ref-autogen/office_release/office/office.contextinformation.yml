@@ -19,7 +19,15 @@ properties:
     package: office!
     fullName: host
     summary: Gets the Office application in which the add-in is running.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      const contextInfo = Office.context.diagnostics;
+      console.log("Office application: " + contextInfo.host);
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -32,11 +40,23 @@ properties:
     package: office!
     fullName: platform
     summary: Gets the platform on which the add-in is running.
-    remarks: >-
+    remarks: >
       **Important**: In Outlook, `OfficeOnline` is returned if an add-is is
       running in Outlook on the web or in [new Outlook on
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      const contextInfo = Office.context.diagnostics;
+
+      console.log("Platform: " + contextInfo.platform);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +69,15 @@ properties:
     package: office!
     fullName: version
     summary: Gets the version of Office on which the add-in is running.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      const contextInfo = Office.context.diagnostics;
+      console.log("Office version: " + contextInfo.version);
+      ```
 
     isPreview: false
     isDeprecated: false

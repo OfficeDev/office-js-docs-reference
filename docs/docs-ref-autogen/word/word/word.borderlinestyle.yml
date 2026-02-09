@@ -7,7 +7,7 @@ summary: >-
   Specifies the [border](xref:word!Word.BorderUniversal:class) style for an
   object.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -16,250 +16,200 @@ fields:
   - name: dashDot
     uid: word!Word.BorderLineStyle.dashDot:member
     package: word!
-    summary: >-
+    summary: |-
       Dash-dot line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashDot"'
   - name: dashDotDot
     uid: word!Word.BorderLineStyle.dashDotDot:member
     package: word!
-    summary: >-
+    summary: |-
       Dash-dot-dot line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashDotDot"'
   - name: dashDotStroked
     uid: word!Word.BorderLineStyle.dashDotStroked:member
     package: word!
-    summary: >-
+    summary: |-
       Dash-dot stroked line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashDotStroked"'
   - name: dashLargeGap
     uid: word!Word.BorderLineStyle.dashLargeGap:member
     package: word!
-    summary: >-
+    summary: |-
       Dashed line style with large gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashLargeGap"'
   - name: dashSmallGap
     uid: word!Word.BorderLineStyle.dashSmallGap:member
     package: word!
-    summary: >-
+    summary: |-
       Dashed line style with small gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashSmallGap"'
   - name: dot
     uid: word!Word.BorderLineStyle.dot:member
     package: word!
-    summary: >-
+    summary: |-
       Dotted line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Dot"'
   - name: double
     uid: word!Word.BorderLineStyle.double:member
     package: word!
-    summary: >-
+    summary: |-
       Double line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Double"'
   - name: doubleWavy
     uid: word!Word.BorderLineStyle.doubleWavy:member
     package: word!
-    summary: >-
+    summary: |-
       Double wavy line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DoubleWavy"'
   - name: emboss3D
     uid: word!Word.BorderLineStyle.emboss3D:member
     package: word!
-    summary: >-
+    summary: |-
       Embossed 3D line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Emboss3D"'
   - name: engrave3D
     uid: word!Word.BorderLineStyle.engrave3D:member
     package: word!
-    summary: >-
+    summary: |-
       Engraved 3D line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Engrave3D"'
   - name: inset
     uid: word!Word.BorderLineStyle.inset:member
     package: word!
-    summary: >-
+    summary: |-
       Inset line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Inset"'
   - name: none
     uid: word!Word.BorderLineStyle.none:member
     package: word!
-    summary: >-
+    summary: |-
       No line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"None"'
   - name: outset
     uid: word!Word.BorderLineStyle.outset:member
     package: word!
-    summary: >-
+    summary: |-
       Outset line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Outset"'
   - name: single
     uid: word!Word.BorderLineStyle.single:member
     package: word!
-    summary: >-
+    summary: |-
       Single line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Single"'
   - name: singleWavy
     uid: word!Word.BorderLineStyle.singleWavy:member
     package: word!
-    summary: >-
+    summary: |-
       Single wavy line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SingleWavy"'
   - name: thickThinLargeGap
     uid: word!Word.BorderLineStyle.thickThinLargeGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thick-thin line style with large gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThickThinLargeGap"'
   - name: thickThinMedGap
     uid: word!Word.BorderLineStyle.thickThinMedGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thick-thin line style with medium gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThickThinMedGap"'
   - name: thickThinSmallGap
     uid: word!Word.BorderLineStyle.thickThinSmallGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thick-thin line style with small gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThickThinSmallGap"'
   - name: thinThickLargeGap
     uid: word!Word.BorderLineStyle.thinThickLargeGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thin-thick line style with large gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThinThickLargeGap"'
   - name: thinThickMedGap
     uid: word!Word.BorderLineStyle.thinThickMedGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thin-thick line style with medium gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThinThickMedGap"'
   - name: thinThickSmallGap
     uid: word!Word.BorderLineStyle.thinThickSmallGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thin-thick line style with small gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThinThickSmallGap"'
   - name: thinThickThinLargeGap
     uid: word!Word.BorderLineStyle.thinThickThinLargeGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thin-thick-thin line style with large gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThinThickThinLargeGap"'
   - name: thinThickThinMedGap
     uid: word!Word.BorderLineStyle.thinThickThinMedGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thin-thick-thin line style with medium gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThinThickThinMedGap"'
   - name: thinThickThinSmallGap
     uid: word!Word.BorderLineStyle.thinThickThinSmallGap:member
     package: word!
-    summary: >-
+    summary: |-
       Thin-thick-thin line style with small gaps.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThinThickThinSmallGap"'
   - name: triple
     uid: word!Word.BorderLineStyle.triple:member
     package: word!
-    summary: >-
+    summary: |-
       Triple line style.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Triple"'

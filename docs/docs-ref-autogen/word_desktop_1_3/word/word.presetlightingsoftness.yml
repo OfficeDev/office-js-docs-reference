@@ -5,7 +5,7 @@ package: word!
 fullName: Word.PresetLightingSoftness
 summary: Specifies the intensity of light used on a shape.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,40 +14,32 @@ fields:
   - name: bright
     uid: word!Word.PresetLightingSoftness.bright:member
     package: word!
-    summary: >-
+    summary: |-
       Represents bright lighting.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Bright"'
   - name: dim
     uid: word!Word.PresetLightingSoftness.dim:member
     package: word!
-    summary: >-
+    summary: |-
       Represents dim lighting.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Dim"'
   - name: mixed
     uid: word!Word.PresetLightingSoftness.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a mixed lighting softness.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: normal
     uid: word!Word.PresetLightingSoftness.normal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents normal lighting.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Normal"'

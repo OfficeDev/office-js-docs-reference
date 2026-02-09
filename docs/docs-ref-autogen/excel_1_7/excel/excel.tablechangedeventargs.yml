@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.TableChangedEventArgs
 summary: Provides information about the table that raised the changed event.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Gets the address that represents the changed area of a table on a specific
       worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       Gets the change type that represents how the changed event is triggered.
       See `Excel.DataChangeType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -58,7 +58,7 @@ properties:
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -72,9 +72,35 @@ properties:
     package: excel!
     fullName: tableId
     summary: Gets the ID of the table in which the data changed.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
+
+      async function onChange(event) {
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItem(event.tableId);
+              let worksheet = context.workbook.worksheets.getItem(event.worksheetId);
+              worksheet.load("name");
+
+              await context.sync();
+
+              console.log("Handler for table collection onChanged event has been triggered. Data changed address: " + event.address);
+              console.log("Table Id : " + event.tableId);
+              console.log("Worksheet Id : " + worksheet.name);
+          });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -88,7 +114,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -102,9 +128,35 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
+
+      async function onChange(event) {
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItem(event.tableId);
+              let worksheet = context.workbook.worksheets.getItem(event.worksheetId);
+              worksheet.load("name");
+
+              await context.sync();
+
+              console.log("Handler for table collection onChanged event has been triggered. Data changed address: " + event.address);
+              console.log("Table Id : " + event.tableId);
+              console.log("Worksheet Id : " + worksheet.name);
+          });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

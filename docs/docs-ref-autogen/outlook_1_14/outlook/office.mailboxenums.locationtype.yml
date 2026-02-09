@@ -4,14 +4,45 @@ uid: outlook!Office.MailboxEnums.LocationType:enum
 package: outlook!
 fullName: Office.MailboxEnums.LocationType
 summary: Specifies an appointment location's type.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+
+  const locations = [
+    {
+      id: "Contoso",
+      type: Office.MailboxEnums.LocationType.Custom
+    },
+    {
+      id: "room500@test.com",
+      type: Office.MailboxEnums.LocationType.Room
+    }
+  ];
+
+  Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result) => {
+    if (result.status === Office.AsyncResultStatus.Succeeded) {
+      console.log(`Successfully added locations ${JSON.stringify(locations)}`);
+    } else {
+      console.error(`Failed to add locations. Error message: ${result.error.message}`);
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false

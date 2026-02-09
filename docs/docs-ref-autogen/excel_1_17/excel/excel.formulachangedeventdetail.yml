@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.FormulaChangedEventDetail
 summary: Provides information about a changed formula during a formula changed event.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: cellAddress
     summary: The address of the cell that contains the changed formula.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: previousFormula
     summary: Represents the previous formula, before it was changed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

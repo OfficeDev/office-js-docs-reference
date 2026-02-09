@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.NoteLoadOptions
 summary: Represents a note in the workbook or worksheet.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: authorName
     summary: Gets the author of the note.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: content
     summary: Specifies the text of the note.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -66,7 +66,7 @@ properties:
     fullName: height
     summary: Specifies the height of the note.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -84,7 +84,7 @@ properties:
       Specifies the visibility of the note. A value of `true` means the note is
       shown.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -100,7 +100,7 @@ properties:
     fullName: width
     summary: Specifies the width of the note.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

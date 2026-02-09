@@ -8,9 +8,46 @@ summary: >-
   more information about margins, see [Change the margins in your Word
   document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
   -->.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
+
+
+  await Word.run(async (context) => {
+    // Changes the relative size of the first set of grouped shapes (including text boxes) found in the document body.
+    const firstShapeGroup: Word.Shape = context.document.body.shapes
+      .getByTypes([Word.ShapeType.group])
+      .getFirstOrNullObject();
+    firstShapeGroup.load("shapeGroup/shapes");
+    await context.sync();
+
+    if (firstShapeGroup.isNullObject) {
+      console.log("No shape groups found in the document body.");
+      return;
+    }
+
+    let shapeGroup: Word.ShapeGroup = firstShapeGroup.shapeGroup;
+    console.log(
+      "About to change the relative size of the first shape group found in the document body:",
+      shapeGroup.shapes,
+    );
+    firstShapeGroup.relativeHorizontalSize = Word.RelativeSize.insideMargin;
+    firstShapeGroup.relativeVerticalSize = Word.RelativeSize.bottomMargin;
+    firstShapeGroup.heightRelative = 50;
+
+    console.log("Changed the relative size of the first shape group.");
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -18,60 +55,48 @@ fields:
   - name: bottomMargin
     uid: word!Word.RelativeSize.bottomMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to bottom margin.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BottomMargin"'
   - name: insideMargin
     uid: word!Word.RelativeSize.insideMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to inside margin.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"InsideMargin"'
   - name: margin
     uid: word!Word.RelativeSize.margin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to margin.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeSize.outsideMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to outside margin.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeSize.page:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to page.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Page"'
   - name: topMargin
     uid: word!Word.RelativeSize.topMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to top margin.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"TopMargin"'

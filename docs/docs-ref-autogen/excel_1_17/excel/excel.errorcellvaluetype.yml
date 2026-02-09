@@ -4,9 +4,39 @@ uid: excel!Excel.ErrorCellValueType:enum
 package: excel!
 fullName: Excel.ErrorCellValueType
 summary: Represents the types of the `ErrorCellValue` object.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
+
+
+  // This function sets the value of cell A1 to a #BUSY! error using data types.
+
+  await Excel.run(async (context) => {
+    // Retrieve the Sample worksheet and cell A1 on that sheet.
+    const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+    const range = sheet.getRange("A1");
+
+    // Get the error data type and set its type to `busy`.
+    const error: Excel.ErrorCellValue = {
+      type: Excel.CellValueType.error,
+      errorType: Excel.ErrorCellValueType.busy
+    };
+
+    // Set cell A1 as the busy error.
+    range.valuesAsJson = [[error]];
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -14,176 +44,128 @@ fields:
   - name: blocked
     uid: excel!Excel.ErrorCellValueType.blocked:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `BlockedErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Blocked"'
   - name: busy
     uid: excel!Excel.ErrorCellValueType.busy:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `BusyErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Busy"'
   - name: calc
     uid: excel!Excel.ErrorCellValueType.calc:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `CalcErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Calc"'
   - name: connect
     uid: excel!Excel.ErrorCellValueType.connect:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `ConnectErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Connect"'
   - name: div0
     uid: excel!Excel.ErrorCellValueType.div0:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `Div0ErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Div0"'
   - name: external
     uid: excel!Excel.ErrorCellValueType.external:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents an `ExternalErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"External"'
   - name: field
     uid: excel!Excel.ErrorCellValueType.field:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `FieldErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Field"'
   - name: gettingData
     uid: excel!Excel.ErrorCellValueType.gettingData:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `GettingDataErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"GettingData"'
   - name: name
     uid: excel!Excel.ErrorCellValueType.name:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `NameErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Name"'
   - name: notAvailable
     uid: excel!Excel.ErrorCellValueType.notAvailable:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `NotAvailableErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"NotAvailable"'
   - name: 'null'
     uid: excel!Excel.ErrorCellValueType.null:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `NullErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Null"'
   - name: num
     uid: excel!Excel.ErrorCellValueType.num:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `NumErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Num"'
   - name: placeholder
     uid: excel!Excel.ErrorCellValueType.placeholder:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `PlaceholderErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Placeholder"'
   - name: ref
     uid: excel!Excel.ErrorCellValueType.ref:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `RefErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Ref"'
   - name: spill
     uid: excel!Excel.ErrorCellValueType.spill:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `SpillErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Spill"'
   - name: value
     uid: excel!Excel.ErrorCellValueType.value:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `ValueErrorCellValue`<!-- -->.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Value"'

@@ -10,7 +10,7 @@ summary: >-
   ranges](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!--
   -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -24,9 +24,32 @@ properties:
     summary: >-
       Returns the cell value conditional format properties if the current
       conditional format is a `CellValue` type.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -42,7 +65,7 @@ properties:
       Returns the cell value conditional format properties if the current
       conditional format is a `CellValue` type.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -58,9 +81,36 @@ properties:
     summary: >-
       Returns the color scale conditional format properties if the current
       conditional format is a `ColorScale` type.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:M5");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.colorScale);
+          const criteria = {
+              minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+              midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+              maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+          };
+          conditionalFormat.colorScale.criteria = criteria;
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -76,7 +126,7 @@ properties:
       Returns the color scale conditional format properties if the current
       conditional format is a `ColorScale` type.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -107,9 +157,31 @@ properties:
     summary: >-
       Returns the custom conditional format properties if the current
       conditional format is a custom type.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+          conditionalFormat.custom.format.font.color = "green";
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -125,7 +197,7 @@ properties:
       Returns the custom conditional format properties if the current
       conditional format is a custom type.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -141,9 +213,31 @@ properties:
     summary: >-
       Returns the data bar properties if the current conditional format is a
       data bar.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.dataBar);
+          conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -159,7 +253,7 @@ properties:
       Returns the data bar properties if the current conditional format is a
       data bar.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -175,9 +269,60 @@ properties:
     summary: >-
       Returns the icon set conditional format properties if the current
       conditional format is an `IconSet` type.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.iconSet);
+          const iconSetCF = conditionalFormat.iconSet;
+          iconSetCF.style = Excel.IconSet.threeTriangles;
+
+          /*
+              The iconSetCF.criteria array is automatically prepopulated with
+              criterion elements whose properties have been given default settings.
+              You can't write to each property of a criterion directly. Instead,
+              replace the whole criteria object.
+
+              With a "three*" icon set style, such as "threeTriangles", the third
+              element in the criteria array (criteria[2]) defines the "top" icon;
+              e.g., a green triangle. The second (criteria[1]) defines the "middle"
+              icon. The first (criteria[0]) defines the "low" icon, but it
+              can often be left empty as the following object shows, because every
+              cell that does not match the other two criteria always gets the low
+              icon.            
+          */
+          iconSetCF.criteria = [
+              {} as any,
+              {
+                  type: Excel.ConditionalFormatIconRuleType.number,
+                  operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                  formula: "=700"
+              },
+              {
+                  type: Excel.ConditionalFormatIconRuleType.number,
+                  operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                  formula: "=1000",
+              }
+          ];
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -193,7 +338,7 @@ properties:
       Returns the icon set conditional format properties if the current
       conditional format is an `IconSet` type.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -210,7 +355,7 @@ properties:
       The priority of the conditional format in the current
       `ConditionalFormatCollection`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -226,9 +371,32 @@ properties:
     summary: >-
       Returns the preset criteria conditional format. See
       `Excel.PresetCriteriaConditionalFormat` for more details.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:M5");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.presetCriteria);
+          conditionalFormat.preset.format.font.color = "white";
+          conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -244,7 +412,7 @@ properties:
       Returns the preset criteria conditional format. See
       `Excel.PresetCriteriaConditionalFormat` for more details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -267,7 +435,7 @@ properties:
       a new copy of the object at that new priority location if you want to make
       further changes to it.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -285,7 +453,7 @@ properties:
       formats shall take effect on that cell. Value is `null` on data bars, icon
       sets, and color scales as there's no concept of `StopIfTrue` for these.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -302,9 +470,32 @@ properties:
       Returns the specific text conditional format properties if the current
       conditional format is a text type. For example, to format cells matching
       the word "Text".
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B16:D18");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.containsText);
+          conditionalFormat.textComparison.format.font.color = "red";
+          conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -321,7 +512,7 @@ properties:
       conditional format is a text type. For example, to format cells matching
       the word "Text".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -339,7 +530,7 @@ properties:
       conditional format is a `TopBottom` type. For example, to format the top
       10% or bottom 10 items.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -357,7 +548,7 @@ properties:
       conditional format is a `TopBottom` type. For example, to format the top
       10% or bottom 10 items.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -371,9 +562,47 @@ properties:
     package: excel!
     fullName: type
     summary: A type of conditional format. Only one can be set at a time.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const worksheetRange = sheet.getRange();
+          worksheetRange.conditionalFormats.load("type");
+
+          await context.sync();
+
+          let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+          worksheetRange.conditionalFormats.items.forEach(item => {
+              cfRangePairs.push({
+                  cf: item,
+                  range: item.getRange().load("address")
+              });
+          });
+
+          await context.sync();
+
+          if (cfRangePairs.length > 0) {
+              cfRangePairs.forEach(item => {
+                  console.log(item.cf.type);
+              });
+          } else {
+              console.log("No conditional formats applied.");
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -394,7 +623,7 @@ methods:
     fullName: changeRuleToCellValue(properties)
     summary: Change the conditional format rule type to cell value.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -415,7 +644,7 @@ methods:
     fullName: changeRuleToColorScale()
     summary: Change the conditional format rule type to color scale.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -432,7 +661,7 @@ methods:
     fullName: changeRuleToContainsText(properties)
     summary: Change the conditional format rule type to text comparison.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -457,7 +686,7 @@ methods:
     fullName: changeRuleToCustom(formula)
     summary: Change the conditional format rule type to custom.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -478,7 +707,7 @@ methods:
     fullName: changeRuleToDataBar()
     summary: Change the conditional format rule type to data bar.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -495,7 +724,7 @@ methods:
     fullName: changeRuleToIconSet()
     summary: Change the conditional format rule type to icon set.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -512,7 +741,7 @@ methods:
     fullName: changeRuleToPresetCriteria(properties)
     summary: Change the conditional format rule type to preset criteria.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -537,7 +766,7 @@ methods:
     fullName: changeRuleToTopBottom(properties)
     summary: Change the conditional format rule type to top/bottom.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -558,7 +787,7 @@ methods:
     fullName: delete()
     summary: Deletes this conditional format.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -575,9 +804,47 @@ methods:
     summary: >-
       Returns the range the conditional format is applied to. Throws an error if
       the conditional format is applied to multiple ranges.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const worksheetRange = sheet.getRange();
+          worksheetRange.conditionalFormats.load("type");
+
+          await context.sync();
+
+          let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+          worksheetRange.conditionalFormats.items.forEach(item => {
+              cfRangePairs.push({
+                  cf: item,
+                  range: item.getRange().load("address")
+              });
+          });
+
+          await context.sync();
+
+          if (cfRangePairs.length > 0) {
+              cfRangePairs.forEach(item => {
+                  console.log(item.cf.type);
+              });
+          } else {
+              console.log("No conditional formats applied.");
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -598,7 +865,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -616,7 +883,7 @@ methods:
       Returns the `RangeAreas`<!-- -->, comprising one or more rectangular
       ranges, to which the conditional format is applied.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -765,7 +1032,7 @@ methods:
     fullName: setRanges(ranges)
     summary: Set the ranges that the conditional format rule is applied to.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

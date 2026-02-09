@@ -4,9 +4,39 @@ uid: word!Word.InsertFileOptions:interface
 package: word!
 fullName: Word.InsertFileOptions
 summary: Specifies the options to determine what to copy when inserting a file.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+  // Inserts content (applying selected settings) from another document passed
+  in as a Base64-encoded string.
+
+  await Word.run(async (context) => {
+    // Use the Base64-encoded string representation of the selected .docx file.
+    context.document.insertFileFromBase64(externalDocument, "Replace", {
+      importTheme: true,
+      importStyles: true,
+      importParagraphSpacing: true,
+      importPageColor: true,
+      importChangeTrackingMode: true,
+      importCustomProperties: true,
+      importCustomXmlParts: true,
+      importDifferentOddEvenPages: true
+    });
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +50,7 @@ properties:
       If provided, specifies whether the change tracking mode status from the
       source document should be imported.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -38,7 +68,7 @@ properties:
       document should be imported. Overwrites existing properties with the same
       name.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -55,7 +85,7 @@ properties:
       If provided, specifies whether the custom XML parts from the source
       document should be imported.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -72,7 +102,7 @@ properties:
       If provided, specifies whether the page color and other background
       information from the source document should be imported.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -89,7 +119,7 @@ properties:
       If provided, specifies whether the paragraph spacing from the source
       document should be imported.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -106,7 +136,7 @@ properties:
       If provided, specifies whether the styles from the source document should
       be imported.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -123,7 +153,7 @@ properties:
       If provided, specifies whether the theme from the source document should
       be imported.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

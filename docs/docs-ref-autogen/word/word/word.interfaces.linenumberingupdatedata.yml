@@ -18,7 +18,7 @@ properties:
     fullName: countBy
     summary: Specifies the numeric increment for line numbers.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
       Specifies the distance (in points) between the right edge of line numbers
       and the left edge of the document text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
       Specifies if line numbering is active for the specified document, section,
       or sections.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
       Specifies the way line numbering runs; that is, whether it starts over at
       the beginning of a new page or section, or runs continuously.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -88,7 +88,7 @@ properties:
     fullName: startingNumber
     summary: Specifies the starting line number.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

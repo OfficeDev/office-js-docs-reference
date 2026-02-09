@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartCollection
 summary: A collection of all the chart objects on a worksheet.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: count
     summary: Returns the number of charts in the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -61,9 +61,34 @@ methods:
     package: excel!
     fullName: add(type, sourceData, seriesBy)
     summary: Creates a new chart.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
+
+      // with sourceData from range "A1:B4" and seriesBy set to "auto".
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sheet1");
+          const rangeSelection = "A1:B4";
+          const range = sheet.getRange(rangeSelection);
+          const chart = sheet.charts.add(
+          Excel.ChartType.columnClustered, 
+          range, 
+          Excel.ChartSeriesBy.auto);
+          await context.sync();
+
+          console.log("New Chart Added");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -92,7 +117,7 @@ methods:
     fullName: add(type, sourceData, seriesBy)
     summary: Creates a new chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -168,7 +193,7 @@ methods:
     fullName: getCount()
     summary: Returns the number of charts in the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -185,9 +210,27 @@ methods:
     summary: >-
       Gets a chart using its name. If there are multiple charts with the same
       name, the first one will be returned.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Get the number of charts.
+
+      await Excel.run(async (context) => { 
+          const charts = context.workbook.worksheets.getItem("Sheet1").charts;
+          charts.load('count');
+          await context.sync();
+          
+          console.log("charts: Count= " + charts.count);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -205,9 +248,25 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a chart based on its position in the collection.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+          await context.sync();
+
+          console.log(chart.name);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -232,7 +291,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -279,7 +338,22 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const charts = context.workbook.worksheets.getItem("Sheet1").charts;
+          charts.load('items');
+          await context.sync();
+          
+          for (let i = 0; i < charts.items.length; i++) {
+              console.log(charts.items[i].name);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -348,9 +422,7 @@ events:
     package: excel!
     fullName: onActivated
     summary: Occurs when a chart is activated.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -367,9 +439,7 @@ events:
     package: excel!
     fullName: onAdded
     summary: Occurs when a new chart is added to the worksheet.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -386,9 +456,7 @@ events:
     package: excel!
     fullName: onDeactivated
     summary: Occurs when a chart is deactivated.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -405,9 +473,7 @@ events:
     package: excel!
     fullName: onDeleted
     summary: Occurs when a chart is deleted.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false

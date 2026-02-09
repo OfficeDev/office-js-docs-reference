@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartSeriesFormat
 summary: Encapsulates the format properties for the chart series
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
       Represents the fill format of a chart series, which includes background
       formatting information.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: line
     summary: Represents line formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

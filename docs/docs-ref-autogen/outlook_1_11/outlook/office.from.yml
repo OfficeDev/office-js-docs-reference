@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.From
 summary: Provides a method to get the from value of a message in an Outlook add-in.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -44,8 +44,8 @@ methods:
       The from value of the item is provided as an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       in the `asyncResult.value` property.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -75,6 +75,27 @@ methods:
       - A `recipientType` property value isn't returned by the `getAsync`
       method. The email sender is always a user whose email address is on the
       Exchange server.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
+
+
+      Office.context.mailbox.item.from.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          const msgFrom = asyncResult.value;
+          console.log("Message from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -119,7 +140,7 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
       in the `asyncResult.value` property.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

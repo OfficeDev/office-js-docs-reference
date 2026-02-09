@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FieldLoadOptions
 summary: Represents a field.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -46,7 +46,7 @@ properties:
     fullName: code
     summary: Specifies the field's code instruction.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -67,7 +67,7 @@ properties:
       type, it's `null` and it will throw a general exception when code attempts
       to set it.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
     fullName: kind
     summary: Gets the field's kind.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +99,7 @@ properties:
       Specifies whether the field is locked. `true` if the field is locked,
       `false` otherwise.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -114,7 +114,7 @@ properties:
     fullName: parentBody
     summary: Gets the parent body of the field.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -131,7 +131,7 @@ properties:
       Gets the content control that contains the field. Throws an `ItemNotFound`
       error if there isn't a parent content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -155,7 +155,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -176,7 +176,7 @@ properties:
       Gets the table that contains the field. Throws an `ItemNotFound` error if
       it isn't contained in a table.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -193,7 +193,7 @@ properties:
       Gets the table cell that contains the field. Throws an `ItemNotFound`
       error if it isn't contained in a table cell.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -214,7 +214,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -235,7 +235,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -250,7 +250,7 @@ properties:
     fullName: result
     summary: Gets the field's result data.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -265,7 +265,7 @@ properties:
     fullName: type
     summary: Gets the field's type.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

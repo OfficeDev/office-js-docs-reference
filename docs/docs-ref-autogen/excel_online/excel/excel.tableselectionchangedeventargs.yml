@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.TableSelectionChangedEventArgs
 summary: Provides information about the table that raised the selection changed event.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -19,9 +19,27 @@ properties:
     summary: >-
       Gets the range address that represents the selected area of the table on a
       specific worksheet.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
+
+
+      async function onSelectionChange(args) {
+          await Excel.run(async (context) => {
+              console.log("Handler for table onSelectionChanged event has been triggered. The new selection is: " + args.address);
+          });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -37,7 +55,7 @@ properties:
       Specifies if the selection is inside a table. `IsInsideTable` must be set
       to `true` for the address to be useful.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +70,7 @@ properties:
     fullName: tableId
     summary: Gets the ID of the table in which the selection changed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +85,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +100,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the selection changed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkCollectionLoadOptions
 summary: Represents a collection of hyperlinks.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -40,7 +40,7 @@ properties:
       which can be a URL, a file name or file path, or an email address with the
       `mailto` URI scheme.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -59,7 +59,7 @@ properties:
       For EACH ITEM in the collection: Specifies the string displayed when
       hovering over the hyperlink.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -80,7 +80,7 @@ properties:
       [PowerPoint.HyperlinkType](xref:powerpoint!PowerPoint.HyperlinkType:enum)
       for details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -35,7 +35,7 @@ properties:
       color. A `null` value indicates that the entire border collection doesn't
       have a uniform `tintAndShade` setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.RangeFill
 summary: Represents the background of a range object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       HTML color code representing the color of the background, in the form
       \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
       LinearGradient and RectangularGradient are not supported. A `null` value
       indicates that the entire range doesn't have a uniform pattern setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -80,7 +80,7 @@ properties:
       The HTML color code representing the color of the range pattern, in the
       form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +99,7 @@ properties:
       original color. A `null` value indicates that the range doesn't have
       uniform `patternTintAndShade` settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -118,7 +118,7 @@ properties:
       original color. A `null` value indicates that the range doesn't have
       uniform `tintAndShade` settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -133,9 +133,27 @@ methods:
     package: excel!
     fullName: clear()
     summary: Resets the range background.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const sheetName = "Sheet1";
+          const rangeAddress = "F:G";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
+          const rangeFill = range.format.fill;
+          rangeFill.clear();
+          await context.sync(); 
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -171,7 +189,23 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const sheetName = "Sheet1";
+          const rangeAddress = "F:G";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
+          const rangeFill = range.format.fill;
+          rangeFill.load('color');
+          await context.sync();
+          console.log(rangeFill.color);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

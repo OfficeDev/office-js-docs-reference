@@ -21,7 +21,7 @@ properties:
       than the minimum height, the row height will be increased to the minimum
       height.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

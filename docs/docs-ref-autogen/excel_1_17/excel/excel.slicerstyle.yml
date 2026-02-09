@@ -7,7 +7,7 @@ summary: >-
   Represents a slicer style, which defines style elements by region of the
   slicer.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: name
     summary: Specifies the name of the slicer style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -51,7 +51,7 @@ properties:
     fullName: readOnly
     summary: Specifies if this `SlicerStyle` object is read-only.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -68,7 +68,7 @@ methods:
     fullName: delete()
     summary: Deletes the slicer style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -87,7 +87,7 @@ methods:
       Creates a duplicate of this slicer style with copies of all the style
       elements.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

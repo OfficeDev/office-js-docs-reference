@@ -9,7 +9,7 @@ summary: >-
   sheet view) has a unique, worksheet-scoped name that is used to access the
   view.
 remarks: >-
-  \[ [Api set: ExcelApiOnline
+  \[ [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -40,7 +40,7 @@ properties:
       empty string (""). Naming the view by using the name property causes the
       sheet view to be saved.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -58,7 +58,7 @@ methods:
       Activates this sheet view. This is equivalent to using "Switch To" in the
       Excel UI.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ methods:
     fullName: delete()
     summary: Removes the sheet view from the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ methods:
     fullName: duplicate(name)
     summary: Creates a copy of this sheet view.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -130,9 +130,7 @@ functions:
       prepopulated with a Base64-encoded .pptx file.
 
 
-      \[ [Api set: PowerPointApi
-      1.1](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      \[Api set: PowerPointApi 1.1\]
     remarks: ''
 
     isPreview: false

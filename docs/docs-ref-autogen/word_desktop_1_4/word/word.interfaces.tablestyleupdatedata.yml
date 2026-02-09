@@ -18,7 +18,7 @@ properties:
     fullName: alignment
     summary: Specifies the table's alignment against the page margin.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       Specifies whether lines in tables formatted with a style break across
       pages.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       Specifies the amount of space to add between the contents and the bottom
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
     fullName: cellSpacing
     summary: Specifies the spacing (in points) between the cells in a table style.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -88,7 +88,7 @@ properties:
       Specifies the number of columns in the banding when a style specifies odd-
       or even-column banding.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -105,7 +105,7 @@ properties:
       Specifies whether Microsoft Word allows to break the specified table
       across pages.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -122,7 +122,7 @@ properties:
       Specifies the amount of space to add between the contents and the left
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -139,7 +139,7 @@ properties:
       Specifies the left indent value (in points) for the rows in the table
       style.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -156,7 +156,7 @@ properties:
       Specifies the amount of space to add between the contents and the right
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -173,7 +173,7 @@ properties:
       Specifies the number of rows to include in the banding when the style
       specifies odd- or even-row banding.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -190,7 +190,7 @@ properties:
       Specifies the direction in which Microsoft Word orders cells in the table
       style.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -209,7 +209,7 @@ properties:
       Specifies the amount of space to add between the contents and the top
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

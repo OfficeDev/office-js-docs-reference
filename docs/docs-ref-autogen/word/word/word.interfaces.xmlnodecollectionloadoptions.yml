@@ -7,7 +7,7 @@ summary: >-
   Represents the collection of [Word.XmlNode](xref:word!Word.XmlNode:class)
   objects.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
       For EACH ITEM in the collection: Gets the name of the element without any
       prefix.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -55,7 +55,7 @@ properties:
       For EACH ITEM in the collection: Gets the first child node if this is a
       parent node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
       nodes. Always returns `false` for attribute nodes since they cannot have
       children.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       For EACH ITEM in the collection: Gets the last child node if this is a
       parent node. Returns `null` if the node type is `attribute`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
       contains a table row. Returns `null` if the node type is `attribute`<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -126,7 +126,7 @@ properties:
       For EACH ITEM in the collection: Gets the Uniform Resource Identifier
       (URI) of the schema namespace for this XML node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -144,7 +144,7 @@ properties:
       that's at the same level as this XML node. Returns `null` if the node type
       is `attribute`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -161,7 +161,7 @@ properties:
       For EACH ITEM in the collection: Gets the parent document of this XML
       node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -176,7 +176,7 @@ properties:
     fullName: parentNode
     summary: 'For EACH ITEM in the collection: Gets the parent element of this XML node.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -194,7 +194,7 @@ properties:
       element if it contains no text. Only applies to element nodes, not
       attribute nodes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -212,7 +212,7 @@ properties:
       that's at the same level as this XML node. Returns `null` if the node type
       is `attribute`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -230,7 +230,7 @@ properties:
       contained in this XML node. Returns `null` if the node type is
       `attribute`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -248,7 +248,7 @@ properties:
       XML element. Returns an empty string if the node type is `attribute`<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -263,7 +263,7 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the type of node.'
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -281,7 +281,7 @@ properties:
       For EACH ITEM in the collection: Gets the description for a validation
       error on this `XmlNode` object. May not be meaningful for attribute nodes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -299,7 +299,7 @@ properties:
       according to the attached schema. May not be meaningful for attribute
       nodes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -317,7 +317,7 @@ properties:
       element nodes, represents the text content; for attribute nodes,
       represents the attribute value.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

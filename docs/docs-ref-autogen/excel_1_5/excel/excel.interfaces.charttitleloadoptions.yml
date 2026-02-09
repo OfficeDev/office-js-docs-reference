@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartTitleLoadOptions
 summary: Represents a chart title object of a chart.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Represents the formatting of a chart title, which includes fill and font
       formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
     fullName: overlay
     summary: Specifies if the chart title will overlay the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -68,7 +68,7 @@ properties:
     fullName: text
     summary: Specifies the chart's title text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -83,7 +83,7 @@ properties:
     fullName: visible
     summary: Specifies if the chart title is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

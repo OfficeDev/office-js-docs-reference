@@ -18,7 +18,7 @@ properties:
     fullName: description
     summary: Specifies the description for the building block.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: id
     summary: Returns the internal identification number for the building block.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: index
     summary: Returns the position of this building block in a collection.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +65,7 @@ properties:
       Specifies a `DocPartInsertType` value that represents how to insert the
       contents of the building block into the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
     fullName: name
     summary: Specifies the name of the building block.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -97,7 +97,7 @@ properties:
     fullName: value
     summary: Specifies the contents of the building block.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

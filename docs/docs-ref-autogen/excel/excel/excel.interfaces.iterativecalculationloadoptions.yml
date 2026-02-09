@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.IterativeCalculationLoadOptions
 summary: Represents the iterative calculation settings.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: enabled
     summary: True if Excel will use iteration to resolve circular references.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
       Specifies the maximum amount of change between each iteration as Excel
       resolves circular references.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -68,7 +68,7 @@ properties:
       Specifies the maximum number of iterations that Excel can use to resolve a
       circular reference.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

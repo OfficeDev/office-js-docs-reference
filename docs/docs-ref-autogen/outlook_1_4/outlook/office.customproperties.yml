@@ -17,7 +17,7 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!--
   -->.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -58,8 +58,8 @@ methods:
     package: outlook!
     fullName: get(name)
     summary: Returns the value of the specified custom property.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -72,6 +72,26 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
+
+      const propertyName = (document.getElementById("get-property-name") as
+      HTMLInputElement).value;
+
+      const propertyValue = customProps.get(propertyName);
+
+      console.log(`The value of custom property "${propertyName}" is
+      "${propertyValue}".`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +114,7 @@ methods:
 
       To make the removal of the property permanent, you must call the
       `saveAsync` method of the `CustomProperties` object.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -110,6 +130,25 @@ methods:
       information, see [Activate your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
+
+      const propertyName = (document.getElementById("remove-property-name") as
+      HTMLInputElement).value;
+
+      customProps.remove(propertyName);
+
+      console.log(`Custom property "${propertyName}" removed.`);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -141,8 +180,8 @@ methods:
       subsequently the user becomes disconnected. If the add-in calls
       `saveAsync` while in the disconnected state, `saveAsync` would return an
       error. Your callback function should handle this error accordingly.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -160,6 +199,27 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
+
+      customProps.saveAsync((result) => {
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.error(`saveAsync failed with message ${result.error.message}`);
+          return;
+        }
+
+        console.log(`Custom properties saved with status: ${result.status}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -202,7 +262,7 @@ methods:
       `saveAsync` while in the disconnected state, `saveAsync` would return an
       error. Your callback function should handle this error accordingly.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -244,8 +304,8 @@ methods:
       already exist; otherwise, the existing value is replaced with the new
       value. The `value` parameter can be of any type; however, it is always
       passed to the server as a string.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -265,6 +325,29 @@ methods:
       information, see [Activate your Outlook add-in on multiple
       messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
+
+      const propertyName = (document.getElementById("set-property-name") as
+      HTMLInputElement).value;
+
+      const propertyValue = (document.getElementById("property-value") as
+      HTMLInputElement).value;
+
+      customProps.set(propertyName, propertyValue);
+
+      console.log(`Custom property "${propertyName}" set to value
+      "${propertyValue}".`);
+
+      ```
 
     isPreview: false
     isDeprecated: false

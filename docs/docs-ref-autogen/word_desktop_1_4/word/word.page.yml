@@ -6,9 +6,49 @@ fullName: Word.Page
 summary: >-
   Represents a page in the document. `Page` objects manage the page layout and
   content.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+  await Word.run(async (context) => {
+    // Gets pages of the selection.
+    const pages: Word.PageCollection = context.document.getSelection().pages;
+    pages.load();
+    await context.sync();
+
+    // Log info for pages included in selection.
+    console.log(pages);
+    const pagesIndexes = [];
+    const pagesText = [];
+    for (let i = 0; i < pages.items.length; i++) {
+      const page = pages.items[i];
+      page.load("index");
+      pagesIndexes.push(page);
+
+      const range = page.getRange();
+      range.load("text");
+      pagesText.push(range);
+    }
+
+    await context.sync();
+
+    for (let i = 0; i < pagesIndexes.length; i++) {
+      console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
+      console.log("Text of that page in the selection:", pagesText[i].text);
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +60,7 @@ properties:
     fullName: breaks
     summary: Gets a `BreakCollection` object that represents the breaks on the page.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +92,7 @@ properties:
       Gets the height, in points, of the paper defined in the Page Setup dialog
       box.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -68,9 +108,55 @@ properties:
     summary: >-
       Gets the index of the page. The page index is 1-based and independent of
       the user's custom page numbering.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the pages that contain the third paragraph.
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
+        paragraphs.load();
+        await context.sync();
+
+        const paraThree = paragraphs.items[2];
+        const rangeOfParagraph = paraThree.getRange();
+        const pages: Word.PageCollection = rangeOfParagraph.pages;
+        pages.load();
+        await context.sync();
+
+        // Log info for pages in range.
+        console.log(pages);
+        const pagesIndexes = [];
+        const pagesText = [];
+        for (let i = 0; i < pages.items.length; i++) {
+          const page = pages.items[i];
+          page.load("index");
+          pagesIndexes.push(page);
+
+          const range = page.getRange();
+          range.load("text");
+          pagesText.push(range);
+        }
+
+        await context.sync();
+
+        for (let i = 0; i < pagesIndexes.length; i++) {
+          console.log(`Index of page ${i + 1} that contains the third paragraph: ${pagesIndexes[i].index}`);
+          console.log("Text of that page:", pagesText[i].text);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -86,7 +172,7 @@ properties:
       Gets the width, in points, of the paper defined in the Page Setup dialog
       box.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -104,7 +190,7 @@ methods:
       Gets the next page in the pane. Throws an `ItemNotFound` error if this
       page is the last one.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -125,7 +211,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -142,9 +228,49 @@ methods:
     summary: >-
       Gets the whole page, or the starting or ending point of the page, as a
       range.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets pages of the selection.
+        const pages: Word.PageCollection = context.document.getSelection().pages;
+        pages.load();
+        await context.sync();
+
+        // Log info for pages included in selection.
+        console.log(pages);
+        const pagesIndexes = [];
+        const pagesText = [];
+        for (let i = 0; i < pages.items.length; i++) {
+          const page = pages.items[i];
+          page.load("index");
+          pagesIndexes.push(page);
+
+          const range = page.getRange();
+          range.load("text");
+          pagesText.push(range);
+        }
+
+        await context.sync();
+
+        for (let i = 0; i < pagesIndexes.length; i++) {
+          console.log(`Index info for page ${i + 1} in the selection: ${pagesIndexes[i].index}`);
+          console.log("Text of that page in the selection:", pagesText[i].text);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

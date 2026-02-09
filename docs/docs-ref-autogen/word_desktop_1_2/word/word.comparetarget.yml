@@ -4,9 +4,39 @@ uid: word!Word.CompareTarget:enum
 package: word!
 fullName: Word.CompareTarget
 summary: Specifies the target document for displaying document comparison differences.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
+
+
+  // Compares the current document with a specified external document.
+
+  await Word.run(async (context) => {
+    // Absolute path of an online or local document.
+    const filePath = (document.getElementById("filePath") as HTMLInputElement).value;
+    // Options that configure the compare operation.
+    const options: Word.DocumentCompareOptions = {
+      compareTarget: Word.CompareTarget.compareTargetCurrent,
+      detectFormatChanges: false
+      // Other options you choose...
+      };
+    context.document.compare(filePath, options);
+
+    await context.sync();
+
+    console.log("Differences shown in the current document.");
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -14,30 +44,24 @@ fields:
   - name: compareTargetCurrent
     uid: word!Word.CompareTarget.compareTargetCurrent:member
     package: word!
-    summary: >-
+    summary: |-
       Places comparison differences in the current document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"CompareTargetCurrent"'
   - name: compareTargetNew
     uid: word!Word.CompareTarget.compareTargetNew:member
     package: word!
-    summary: >-
+    summary: |-
       Places comparison differences in a new document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"CompareTargetNew"'
   - name: compareTargetSelected
     uid: word!Word.CompareTarget.compareTargetSelected:member
     package: word!
-    summary: >-
+    summary: |-
       Places comparison differences in the target document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"CompareTargetSelected"'

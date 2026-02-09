@@ -4,9 +4,32 @@ uid: word!Word.InlinePicture:class
 package: word!
 fullName: Word.InlinePicture
 summary: Represents an inline picture.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+
+  // Inserts an image anchored to the last paragraph.
+
+  await Word.run(async (context) => {
+    context.document.body.paragraphs
+      .getLast()
+      .insertParagraph("", "After")
+      .insertInlinePictureFromBase64(base64Image, "End");
+
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +43,7 @@ properties:
       Specifies a string that represents the alternative text associated with
       the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +58,7 @@ properties:
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +88,7 @@ properties:
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +105,7 @@ properties:
       Specifies a hyperlink on the image. Use a '\#' to separate the address
       part from the optional location part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +122,7 @@ properties:
       Specifies a value that indicates whether the inline image retains its
       original proportions when you resize it.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -116,7 +139,7 @@ properties:
       Gets the content control that contains the inline image. Throws an
       `ItemNotFound` error if there isn't a parent content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -131,7 +154,7 @@ properties:
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -146,9 +169,36 @@ methods:
     package: word!
     fullName: getBase64ImageSrc()
     summary: Gets the Base64-encoded string representation of the inline image.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+
+      // Gets the first image in the document.
+
+      await Word.run(async (context) => {
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
+        firstPicture.load("width, height, imageFormat");
+
+        await context.sync();
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`, `Image format: ${firstPicture.imageFormat}`);
+        // Get the image encoded as Base64.
+        const base64 = firstPicture.getBase64ImageSrc();
+
+        await context.sync();
+        console.log(base64.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -163,7 +213,7 @@ methods:
     fullName: insertContentControl()
     summary: Wraps the inline picture with a rich text content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

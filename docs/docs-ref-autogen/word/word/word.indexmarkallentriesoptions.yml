@@ -5,7 +5,7 @@ package: word!
 fullName: Word.IndexMarkAllEntriesOptions
 summary: Represents options for marking all index entries in a Word document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       If provided, specifies whether to add bold formatting to page numbers for
       index entries. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       the page that contains the `XE` field appears in the index. The default
       value is "".
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       If provided, specifies the cross-reference that will appear in the index.
       The default value is "".
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ properties:
       text for a cross-reference (if this property is specified,
       `crossReference` is ignored). The default value is "".
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -92,7 +92,7 @@ properties:
       form `MainEntry[:Subentry]`<!-- -->. The default value is "". Either this
       property or `entryAutoText` must be provided.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ properties:
       ignored). The default value is "". Either this property or `entry` must be
       provided.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -128,7 +128,7 @@ properties:
       If provided, specifies whether to add italic formatting to page numbers
       for index entries. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

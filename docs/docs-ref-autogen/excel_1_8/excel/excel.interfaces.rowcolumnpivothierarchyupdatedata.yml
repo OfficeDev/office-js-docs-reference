@@ -18,7 +18,7 @@ properties:
     fullName: name
     summary: Name of the RowColumnPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: position
     summary: Position of the RowColumnPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

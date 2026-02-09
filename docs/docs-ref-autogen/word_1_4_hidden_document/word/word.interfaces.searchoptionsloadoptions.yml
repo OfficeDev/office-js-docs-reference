@@ -10,7 +10,7 @@ summary: >-
   add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!--
   -->.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -43,7 +43,7 @@ properties:
       punctuation characters\_ check box in the **Find and Replace** dialog
       box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -61,7 +61,7 @@ properties:
       default is `false`<!-- -->. Corresponds to the \_Ignore white-space
       characters\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -79,7 +79,7 @@ properties:
       default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in
       the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -97,7 +97,7 @@ properties:
       string. The default is `false`<!-- -->. Corresponds to the \_Match
       prefix\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -115,7 +115,7 @@ properties:
       string. The default is `false`<!-- -->. Corresponds to the \_Match
       suffix\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -134,7 +134,7 @@ properties:
       \_Find whole words only\_ check box in the **Find and Replace** dialog
       box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -152,7 +152,7 @@ properties:
       search operators. The default is `false`<!-- -->. Corresponds to the \_Use
       wildcards\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

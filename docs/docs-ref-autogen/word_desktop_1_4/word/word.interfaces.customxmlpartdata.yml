@@ -18,7 +18,7 @@ properties:
     fullName: builtIn
     summary: Gets a value that indicates whether the `CustomXmlPart` is built-in.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
       Gets the root element of a bound region of data in the document. If the
       region is empty, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: id
     summary: Gets the ID of the custom XML part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +67,7 @@ properties:
       Gets the set of namespace prefix mappings used against the current
       `CustomXmlPart` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -84,7 +84,7 @@ properties:
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -101,7 +101,7 @@ properties:
       Specifies a `CustomXmlSchemaCollection` object representing the set of
       schemas attached to a bound region of data in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -116,7 +116,7 @@ properties:
     fullName: xml
     summary: Gets the XML representation of the current `CustomXmlPart` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

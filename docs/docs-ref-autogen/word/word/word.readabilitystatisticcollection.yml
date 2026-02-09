@@ -8,7 +8,7 @@ summary: >-
   [Word.ReadabilityStatistic](xref:word!Word.ReadabilityStatistic:class) objects
   for the document or range.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -50,7 +50,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets the readability statistic at the specified index.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

@@ -6,9 +6,31 @@ fullName: Word.TableCollection
 summary: >-
   Contains the collection of the document's
   [Word.Table](xref:word!Word.Table:class) objects.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+
+  // Gets alignment details about the first table in the document.
+
+  await Word.run(async (context) => {
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
+    firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
+    await context.sync();
+
+    console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -50,9 +72,31 @@ methods:
     summary: >-
       Gets the first table in this collection. Throws an `ItemNotFound` error if
       this collection is empty.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
+
+      // Gets the content of the first cell in the first table.
+
+      await Word.run(async (context) => {
+        const firstCell: Word.Body = context.document.body.tables.getFirst().getCell(0, 0).body;
+        firstCell.load("text");
+
+        await context.sync();
+        console.log("First cell's text is: " + firstCell.text);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +116,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

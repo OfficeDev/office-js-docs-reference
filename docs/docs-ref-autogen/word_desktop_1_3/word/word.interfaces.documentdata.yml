@@ -18,7 +18,7 @@ properties:
     fullName: activeWindow
     summary: Gets the active window for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: autoHyphenation
     summary: Specifies if automatic hyphenation is turned on for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: autoSaveOn
     summary: Specifies if the edits in the document are automatically saved.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +65,7 @@ properties:
       Returns a `Bibliography` object that represents the bibliography
       references contained within the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
       Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -97,7 +97,7 @@ properties:
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -118,7 +118,7 @@ properties:
       Specifies the maximum number of consecutive lines that can end with
       hyphens.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -136,7 +136,7 @@ properties:
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -151,7 +151,7 @@ properties:
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -169,7 +169,7 @@ properties:
       collection of versions of a shared document that has versioning enabled
       and that's stored in a document library on a server.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -188,7 +188,7 @@ properties:
       Returns a `FrameCollection` object that represents all the frames in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -205,7 +205,7 @@ properties:
       Returns a `HyperlinkCollection` object that represents all the hyperlinks
       in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -220,7 +220,7 @@ properties:
     fullName: hyphenateCaps
     summary: Specifies whether words in all capital letters can be hyphenated.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -237,7 +237,7 @@ properties:
       Specifies whether Microsoft Word has detected the language of the document
       text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -252,7 +252,7 @@ properties:
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -267,7 +267,7 @@ properties:
     fullName: properties
     summary: Gets the properties of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -284,7 +284,7 @@ properties:
       Indicates whether the changes in the document have been saved. A value of
       `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -299,7 +299,7 @@ properties:
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -314,7 +314,7 @@ properties:
     fullName: settings
     summary: Gets the add-in's settings in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -329,7 +329,7 @@ properties:
     fullName: windows
     summary: Gets the collection of `Word.Window` objects for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

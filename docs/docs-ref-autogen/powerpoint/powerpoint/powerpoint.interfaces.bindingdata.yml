@@ -18,7 +18,7 @@ properties:
     fullName: id
     summary: Represents the binding identifier.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

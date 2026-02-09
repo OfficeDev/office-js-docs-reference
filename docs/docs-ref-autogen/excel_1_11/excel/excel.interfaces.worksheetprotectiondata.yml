@@ -18,7 +18,7 @@ properties:
     fullName: options
     summary: Specifies the protection options for the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: protected
     summary: Specifies if the worksheet is protected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

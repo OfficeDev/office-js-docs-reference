@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Filter
 summary: Manages the filtering of a table's column.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: criteria
     summary: The currently applied filter on the given column.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ methods:
     fullName: apply(criteria)
     summary: Apply the given filter criteria on the given column.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ methods:
       Apply a "Bottom Item" filter to the column for the given number of
       elements.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -93,7 +93,7 @@ methods:
       Apply a "Bottom Percent" filter to the column for the given percentage of
       elements.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -113,7 +113,7 @@ methods:
     fullName: applyCellColorFilter(color)
     summary: Apply a "Cell Color" filter to the column for the given color.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -133,7 +133,7 @@ methods:
     fullName: applyCustomFilter(criteria1, criteria2, oper)
     summary: Apply an "Icon" filter to the column for the given criteria strings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -163,7 +163,7 @@ methods:
     fullName: applyCustomFilter(criteria1, criteria2, oper)
     summary: Apply an "Icon" filter to the column for the given criteria strings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -193,7 +193,7 @@ methods:
     fullName: applyDynamicFilter(criteria)
     summary: Apply a "Dynamic" filter to the column.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -213,7 +213,7 @@ methods:
     fullName: applyDynamicFilter(criteria)
     summary: Apply a "Dynamic" filter to the column.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -258,7 +258,7 @@ methods:
     fullName: applyFontColorFilter(color)
     summary: Apply a "Font Color" filter to the column for the given color.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -278,7 +278,7 @@ methods:
     fullName: applyIconFilter(icon)
     summary: Apply an "Icon" filter to the column for the given icon.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -298,7 +298,7 @@ methods:
     fullName: applyTopItemsFilter(count)
     summary: Apply a "Top Item" filter to the column for the given number of elements.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -320,7 +320,7 @@ methods:
       Apply a "Top Percent" filter to the column for the given percentage of
       elements.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -340,7 +340,7 @@ methods:
     fullName: applyValuesFilter(values)
     summary: Apply a "Values" filter to the column for the given values.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -364,7 +364,7 @@ methods:
     fullName: clear()
     summary: Clear the filter on the given column.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

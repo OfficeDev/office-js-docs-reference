@@ -18,7 +18,7 @@ properties:
     fullName: autoFilter
     summary: Represents the `AutoFilter` object of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: comments
     summary: Returns a collection of all the Comments objects on the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -64,7 +64,7 @@ properties:
     fullName: customProperties
     summary: Gets a collection of worksheet-level custom properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -86,7 +86,7 @@ properties:
       if Excel recalculates the worksheet when necessary. False if Excel doesn't
       recalculate the sheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -103,7 +103,7 @@ properties:
       Gets the horizontal page break collection for the worksheet. This
       collection only contains manual page breaks.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -121,7 +121,7 @@ properties:
       workbook. The value of the identifier remains the same even when the
       worksheet is renamed or moved.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -138,7 +138,7 @@ properties:
       The display name of the worksheet. The name must be fewer than 32
       characters.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -153,7 +153,7 @@ properties:
     fullName: names
     summary: Collection of names scoped to the current worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -168,7 +168,7 @@ properties:
     fullName: pageLayout
     summary: Gets the `PageLayout` object of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -183,7 +183,7 @@ properties:
     fullName: pivotTables
     summary: Collection of PivotTables that are part of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -198,7 +198,7 @@ properties:
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -213,7 +213,7 @@ properties:
     fullName: protection
     summary: Returns the sheet protection object for a worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -230,7 +230,7 @@ properties:
     fullName: shapes
     summary: Returns the collection of all the Shape objects on the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -245,7 +245,7 @@ properties:
     fullName: showGridlines
     summary: Specifies if gridlines are visible to the user.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -260,7 +260,7 @@ properties:
     fullName: showHeadings
     summary: Specifies if headings are visible to the user.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -275,7 +275,7 @@ properties:
     fullName: slicers
     summary: Returns a collection of slicers that are part of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -293,7 +293,7 @@ properties:
       Returns the standard (default) height of all the rows in the worksheet, in
       points.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -312,7 +312,7 @@ properties:
       in the Normal style. For proportional fonts, the width of the character 0
       (zero) is used.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -333,7 +333,7 @@ properties:
       \#RRGGBB (e.g., "FFA500"). When setting the color, use an empty-string to
       set an "auto" color, or a real color otherwise.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -352,7 +352,7 @@ properties:
       `worksheet.id` (which returns a globally unique identifier) and
       `worksheet.name` (which returns a value such as "Sheet1").
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -368,7 +368,7 @@ properties:
     fullName: tables
     summary: Collection of tables that are part of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -385,7 +385,7 @@ properties:
       Gets the vertical page break collection for the worksheet. This collection
       only contains manual page breaks.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -400,7 +400,7 @@ properties:
     fullName: visibility
     summary: The visibility of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

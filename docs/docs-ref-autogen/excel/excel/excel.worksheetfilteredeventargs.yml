@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorksheetFilteredEventArgs
 summary: Provides information about the worksheet that raised the filter applied event.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -18,7 +18,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the filter is applied.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

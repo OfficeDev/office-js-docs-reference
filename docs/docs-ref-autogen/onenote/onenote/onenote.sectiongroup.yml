@@ -7,7 +7,7 @@ summary: >-
   Represents a OneNote section group. Section groups can contain sections and
   other section groups.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
     fullName: clientUrl
     summary: The client URL of the section group.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -51,7 +51,7 @@ properties:
     fullName: id
     summary: Gets the ID of the section group.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -67,7 +67,7 @@ properties:
     fullName: name
     summary: Gets the name of the section group.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -83,7 +83,7 @@ properties:
     fullName: notebook
     summary: Gets the notebook that contains the section group.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -101,7 +101,7 @@ properties:
       Gets the section group that contains the section group. Throws
       ItemNotFound if the section group is a direct child of the notebook.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -119,7 +119,7 @@ properties:
       Gets the section group that contains the section group. Returns null if
       the section group is a direct child of the notebook.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -135,7 +135,7 @@ properties:
     fullName: sectionGroups
     summary: The collection of section groups in the section group.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -151,7 +151,7 @@ properties:
     fullName: sections
     summary: The collection of sections in the section group.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -167,10 +167,39 @@ methods:
     package: onenote!
     fullName: addSection(title)
     summary: Adds a new section to the end of the section group.
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await OneNote.run(async (context) => {
+
+          // Get the section groups that are direct children of the current notebook.
+          const sectionGroups = context.application.getActiveNotebook().sectionGroups;
+          
+          // Queue a command to load the section groups.
+          // For best performance, request specific properties.
+          sectionGroups.load("id");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+                  
+          // Add a section to each section group.
+          $.each(sectionGroups.items, function(index, sectionGroup) {
+              sectionGroup.addSection("Agenda");
+          });
+          
+          // Run the queued commands.
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -188,10 +217,45 @@ methods:
     package: onenote!
     fullName: addSectionGroup(name)
     summary: Adds a new section group to the end of this sectionGroup.
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await OneNote.run(async (context) => {
+          let sectionGroup;
+          let nestedSectionGroup;
+
+          // Gets the active notebook.
+          const notebook = context.application.getActiveNotebook();
+
+          // Queue a command to add a new section group.
+          const sectionGroups = notebook.sectionGroups;
+
+          // Queue a command to load the new section group.
+          sectionGroups.load();
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+
+          sectionGroup = sectionGroups.items[0];
+          sectionGroup.load();
+          await context.sync();
+
+          nestedSectionGroup = sectionGroup.addSectionGroup("Sample nested section group");
+          nestedSectionGroup.load();
+          await context.sync();
+          
+          console.log("New nested section group name is " + nestedSectionGroup.name);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -210,7 +274,7 @@ methods:
     fullName: getRestApiId()
     summary: Gets the REST API ID.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -253,7 +317,29 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await OneNote.run(async (context) => {
+              
+          // Get the parent section group that contains the current section.
+          const sectionGroup = context.application.getActiveSection().parentSectionGroup;
+                  
+          // Queue a command to load the section group.
+          // For best performance, request specific properties.
+          sectionGroup.load("id,name");
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+                  
+          // Write the properties.
+          console.log("Section group name: " + sectionGroup.name);
+          console.log("Section group ID: " + sectionGroup.id);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

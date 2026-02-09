@@ -4,8 +4,8 @@ uid: outlook!Office.LocationIdentifier:interface
 package: outlook!
 fullName: Office.LocationIdentifier
 summary: Represents the ID of a location.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -17,6 +17,21 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  const locations = [
+      {
+          "id": "Contoso",
+          "type": Office.MailboxEnums.LocationType.Custom
+      }
+  ];
+
+  ```
 
 isPreview: false
 isDeprecated: false

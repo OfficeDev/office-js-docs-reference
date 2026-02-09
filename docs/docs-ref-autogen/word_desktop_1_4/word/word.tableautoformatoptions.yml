@@ -7,7 +7,7 @@ summary: >-
   Represents the options for the [Table.autoFormat](xref:word!Word.Table:class)
   method.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
       If provided, specifies whether to apply borders of the specified format.
       The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       If provided, specifies whether to apply color of the specified format. The
       default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       If provided, specifies whether to apply first column formatting of the
       specified format. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
       If provided, specifies whether to apply font of the specified format. The
       default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       If provided, specifies whether to apply heading row formatting of the
       specified format. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       If provided, specifies whether to apply last column formatting of the
       specified format. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -124,7 +124,7 @@ properties:
       If provided, specifies whether to apply last row formatting of the
       specified format. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -141,7 +141,7 @@ properties:
       If provided, specifies whether to apply shading of the specified format.
       The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -159,7 +159,7 @@ properties:
       as much as possible without changing the way text wraps in the cells. The
       default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -176,7 +176,7 @@ properties:
       If provided, specifies the format to apply. The default value is
       `simple1`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

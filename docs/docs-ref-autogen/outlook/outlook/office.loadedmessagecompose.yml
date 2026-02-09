@@ -8,8 +8,8 @@ summary: >-
   `LoadedMessageCompose` object is returned when
   `Office.context.mailbox.loadItemByIdAsync` is called on a message in compose
   mode.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -38,6 +38,42 @@ remarks: >-
   `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after processing the
   item. This must be done before calling `loadItemByIdAsync` on another item.
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Gets the sender's email address of each selected message.
+
+  async function getSenderEmailAddress(item) {
+      const itemId = item.itemId;
+      await new Promise((resolve) => {
+          Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.log(result.error.message);
+                  return;
+              }
+
+              const loadedItem = result.value;
+              const sender = loadedItem.from.emailAddress;
+              console.log(sender);
+
+              // Unload the current message before processing another selected message.
+              loadedItem.unloadAsync((asyncResult) => {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      console.log(asyncResult.error.message);
+                      return;
+                  }
+
+                  resolve();
+              });
+          });
+      });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -50,7 +86,7 @@ properties:
       Gets the recipients on the **Bcc** (blind carbon copy) line of a
       message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -87,7 +123,7 @@ properties:
     fullName: body
     summary: Gets the item's body and format.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -117,7 +153,7 @@ properties:
     fullName: categories
     summary: Gets an object that provides methods to manage the item's categories.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -208,7 +244,7 @@ properties:
     fullName: delayDeliveryTime
     summary: Gets the delayed delivery date and time of a message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -238,7 +274,7 @@ properties:
     fullName: from
     summary: Gets the email address of the sender of a message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -266,7 +302,7 @@ properties:
       Gets the message ID of the original message being replied to by the
       current message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -311,7 +347,7 @@ properties:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -368,7 +404,7 @@ properties:
     fullName: notificationMessages
     summary: Gets the notification messages of the item.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -407,7 +443,7 @@ properties:
     fullName: sensitivityLabel
     summary: Gets the sensitivity label of a message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -456,7 +492,7 @@ properties:
       and classic), the `seriesId` returns the Exchange Web Services (EWS) ID of
       the parent (series) item that this item belongs to.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -565,7 +601,7 @@ methods:
       Gets an attachment from a message or appointment and returns it as an
       `AttachmentContent` object.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -652,7 +688,7 @@ methods:
       Gets an attachment from a message or appointment and returns it as an
       `AttachmentContent` object.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -730,7 +766,7 @@ methods:
     fullName: getAttachmentsAsync(options, callback)
     summary: Gets the item's attachments as an array.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -785,7 +821,7 @@ methods:
     fullName: getAttachmentsAsync(callback)
     summary: Gets the item's attachments as an array.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -836,7 +872,7 @@ methods:
       can be new, or a reply or forward. The coercion type can be HTML or plain
       text.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -887,7 +923,7 @@ methods:
       can be new, or a reply or forward. The coercion type can be HTML or plain
       text.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -931,7 +967,7 @@ methods:
       Gets the Base64-encoded position of the current message in a conversation
       thread.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -984,7 +1020,7 @@ methods:
       Gets the Base64-encoded position of the current message in a conversation
       thread.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1034,7 +1070,7 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1085,7 +1121,7 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1125,7 +1161,7 @@ methods:
     fullName: getItemClassAsync(options, callback)
     summary: Gets the Exchange Web Services item class of the selected message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1187,7 +1223,7 @@ methods:
     fullName: getItemClassAsync(callback)
     summary: Gets the Exchange Web Services item class of the selected message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1249,7 +1285,7 @@ methods:
 
       When invoked, this method returns the item ID via the callback function.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1328,7 +1364,7 @@ methods:
       the item is synced to the server. Until the item is synced, the `itemId`
       isn't recognized and using it returns an error.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1381,7 +1417,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
       shared mailbox
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
@@ -1492,7 +1528,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
       shared mailbox
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
@@ -1603,7 +1639,7 @@ methods:
       disabled in Outlook on the web or new Outlook on Windows, the API call
       returns `false`<!-- -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1661,7 +1697,7 @@ methods:
       disabled in Outlook on the web or new Outlook on Windows, the API call
       returns `false`<!-- -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1714,7 +1750,7 @@ methods:
       `asyncResult.value` property. This object can be used to get custom
       properties from the mail item.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1765,7 +1801,7 @@ methods:
     fullName: saveAsync(options, callback)
     summary: Asynchronously saves the current message as a draft.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1860,7 +1896,7 @@ methods:
     fullName: saveAsync(callback)
     summary: Asynchronously saves the current message as a draft.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1951,7 +1987,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item,
       so that another selected mail item can be loaded for processing.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -2011,7 +2047,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item,
       so that another selected mail item can be loaded for processing.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

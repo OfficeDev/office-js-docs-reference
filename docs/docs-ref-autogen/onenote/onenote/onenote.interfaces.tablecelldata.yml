@@ -18,7 +18,7 @@ properties:
     fullName: cellIndex
     summary: Gets the index of the cell in its row. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: id
     summary: Gets the ID of the cell. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of Paragraph objects in the TableCell. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -66,7 +66,7 @@ properties:
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -82,7 +82,7 @@ properties:
     fullName: shadingColor
     summary: Gets and sets the shading color of the cell.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

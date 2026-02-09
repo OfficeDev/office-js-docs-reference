@@ -7,7 +7,7 @@ summary: >-
   Provides information based on current system culture settings. This includes
   the culture names, number formatting, and other culturally dependent settings.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
       Defines the culturally appropriate format of displaying date and time.
       This is based on current system culture settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -59,7 +59,7 @@ properties:
       Gets the culture name in the format languagecode2-country/regioncode2
       (e.g., "zh-cn" or "en-us"). This is based on current system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -77,7 +77,7 @@ properties:
       Defines the culturally appropriate format of displaying numbers. This is
       based on current system culture settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -16,7 +16,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
       Returns the zero-based index of the slide representing its position in the
       presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

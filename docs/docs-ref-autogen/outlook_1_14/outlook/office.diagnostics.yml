@@ -4,8 +4,8 @@ uid: outlook!Office.Diagnostics:interface
 package: outlook!
 fullName: Office.Diagnostics
 summary: Provides diagnostic information to an Outlook add-in.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -23,6 +23,46 @@ remarks: >-
   [Office.context.diagnostics](https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-1.5&preserve-view=true#office-office-context-diagnostics-member)
   property to get similar information.
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
+
+
+  // This function gets a mailbox's diagnostic information, such as Outlook
+  client and version, and logs it to the console.
+
+  const diagnostics = Office.context.mailbox.diagnostics;
+
+  console.log(`Client application: ${diagnostics.hostName}`);
+
+  console.log(`Client version: ${diagnostics.hostVersion}`);
+
+
+  switch (diagnostics.OWAView) {
+    case undefined:
+      console.log("Current view (Outlook on the web only): Not applicable. An Outlook desktop client is in use.");
+      break;
+    case Office.MailboxEnums.OWAView.OneColumnNarrow:
+      console.log("Current view (Outlook on the web only): Viewed from an older generation mobile phone");
+      break;
+    case Office.MailboxEnums.OWAView.OneColumn:
+      console.log("Current view (Outlook on the web only): Viewed from a newer generation mobile phone");
+      break;
+    case Office.MailboxEnums.OWAView.TwoColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a tablet");
+      break;
+    case Office.MailboxEnums.OWAView.ThreeColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
+      break;
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -39,7 +79,7 @@ properties:
       `newOutlookWindows`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!--
       -->, or `OutlookAndroid`<!-- -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -80,7 +120,7 @@ properties:
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->, the property returns the version of the Exchange Server.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -133,7 +173,7 @@ properties:
       example, Outlook on the web uses this view in a full screen window on a
       desktop computer.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

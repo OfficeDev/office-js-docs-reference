@@ -6,9 +6,43 @@ fullName: Office.AppointmentTimeChangedEventArgs
 summary: >-
   Provides the current dates and times of the appointment that raised the
   `Office.EventType.AppointmentTimeChanged` event.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Adds an event handler for the AppointmentTimeChanged event.
+
+  Office.onReady(() => {
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get a reference to the mailbox and use it to add an event handler.
+          const mailbox = Office.context.mailbox;
+          mailbox.addHandlerAsync(Office.EventType.AppointmentTimeChanged, appointmentTimeChangedHandler, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.error(`Failed to add event handler: ${asyncResult.error.message}`);
+                  return;
+              }
+
+              console.log("Event handler added successfully.");
+          });
+      });
+  });
+
+
+  // Handles the AppointmentTimeChanged event.
+
+  function appointmentTimeChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+      console.log(`Start time: ${event.start}`);
+      console.log(`End time: ${event.end}`);
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +54,7 @@ properties:
     fullName: end
     summary: Gets the appointment end date and time.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -36,7 +70,7 @@ properties:
     fullName: start
     summary: Gets the appointment start date and time.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -55,7 +89,7 @@ properties:
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

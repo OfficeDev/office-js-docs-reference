@@ -21,7 +21,7 @@ properties:
       less than the minimum width, the column width will be increased to the
       minimum width.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -9,7 +9,7 @@ summary: >-
   `getCellProperties` or the `textRuns` input parameter of
   `setCellProperties`<!-- -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -24,7 +24,7 @@ properties:
       The font attributes (such as font name, font size, and color) applied to
       this text run.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -40,7 +40,7 @@ properties:
     fullName: text
     summary: The text of this text run.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

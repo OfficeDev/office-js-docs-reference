@@ -8,7 +8,7 @@ summary: >-
   [Word.HeadingStyle](xref:word!Word.HeadingStyle:class) objects in a Word
   document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -50,7 +50,7 @@ methods:
     fullName: add(name, level)
     summary: Adds a new heading style to a document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

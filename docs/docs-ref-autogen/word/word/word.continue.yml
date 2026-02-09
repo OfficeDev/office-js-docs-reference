@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Continue
 summary: Specifies whether the formatting from the previous list can be continued.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,30 +14,24 @@ fields:
   - name: disabled
     uid: word!Word.Continue.disabled:member
     package: word!
-    summary: >-
+    summary: |-
       Formatting cannot continue from the previous list.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Disabled"'
   - name: list
     uid: word!Word.Continue.list:member
     package: word!
-    summary: >-
+    summary: |-
       Formatting can continue from the previous list.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"List"'
   - name: reset
     uid: word!Word.Continue.reset:member
     package: word!
-    summary: >-
+    summary: |-
       Numbering can be restarted.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Reset"'

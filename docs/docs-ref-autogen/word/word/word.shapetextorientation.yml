@@ -4,9 +4,40 @@ uid: word!Word.ShapeTextOrientation:enum
 package: word!
 fullName: Word.ShapeTextOrientation
 summary: Specifies the orientation for the text frame in a shape.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
+
+  await Word.run(async (context) => {
+    // Sets text frame properties of the first text box in the main document.
+    const shape: Word.Shape = context.document.body.shapes.getByTypes([Word.ShapeType.textBox]).getFirstOrNullObject();
+    shape.load("textFrame");
+    await context.sync();
+
+    if (shape.isNullObject) {
+      console.log("No shapes with text boxes found in the main document.");
+      return;
+    }
+
+    const textFrame: Word.TextFrame = shape.textFrame;
+    textFrame.verticalAlignment = Word.ShapeTextVerticalAlignment.bottom;
+    textFrame.orientation = Word.ShapeTextOrientation.vertical270;
+    textFrame.autoSizeSetting = Word.ShapeAutoSize.shapeToFitText;
+
+    console.log("The first text box's text frame properties were updated:", textFrame);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -19,8 +50,7 @@ fields:
       rotated.
 
 
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EastAsianHorizontalRotated"'
   - name: eastAsianVertical
     uid: word!Word.ShapeTextOrientation.eastAsianVertical:member
@@ -30,38 +60,31 @@ fields:
       rotated.
 
 
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EastAsianVertical"'
   - name: horizontal
     uid: word!Word.ShapeTextOrientation.horizontal:member
     package: word!
-    summary: >-
+    summary: |-
       Horizontal text.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Horizontal"'
   - name: mixed
     uid: word!Word.ShapeTextOrientation.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       A combination of automatic orientation is used.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Mixed"'
   - name: none
     uid: word!Word.ShapeTextOrientation.none:member
     package: word!
-    summary: >-
+    summary: |-
       No orientation, such as in a new geometric shape.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"None"'
   - name: vertical
     uid: word!Word.ShapeTextOrientation.vertical:member
@@ -71,8 +94,7 @@ fields:
       degrees rotated clockwise).
 
 
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Vertical"'
   - name: vertical270
     uid: word!Word.ShapeTextOrientation.vertical270:member
@@ -82,6 +104,5 @@ fields:
       degrees rotated clockwise).
 
 
-      * \[ [Api set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Vertical270"'

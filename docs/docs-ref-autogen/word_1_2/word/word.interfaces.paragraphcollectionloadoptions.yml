@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class)
   objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
       The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or
       `justified`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ properties:
       For EACH ITEM in the collection: Gets the text format of the paragraph.
       Use this to get and set font name, size, color, and other properties.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -91,7 +91,7 @@ properties:
       For EACH ITEM in the collection: Specifies the left indent value, in
       points, for the paragraph.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -108,7 +108,7 @@ properties:
       For EACH ITEM in the collection: Specifies the line spacing, in points,
       for the specified paragraph. In the Word UI, this value is divided by 12.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -125,7 +125,7 @@ properties:
       For EACH ITEM in the collection: Specifies the amount of spacing, in grid
       lines, after the paragraph.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -142,7 +142,7 @@ properties:
       For EACH ITEM in the collection: Specifies the amount of spacing, in grid
       lines, before the paragraph.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -159,7 +159,7 @@ properties:
       For EACH ITEM in the collection: Specifies the outline level for the
       paragraph.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -178,7 +178,7 @@ properties:
       the paragraph. Throws an `ItemNotFound` error if there isn't a parent
       content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -197,7 +197,7 @@ properties:
       For EACH ITEM in the collection: Specifies the right indent value, in
       points, for the paragraph.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -214,7 +214,7 @@ properties:
       For EACH ITEM in the collection: Specifies the spacing, in points, after
       the paragraph.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -231,7 +231,7 @@ properties:
       For EACH ITEM in the collection: Specifies the spacing, in points, before
       the paragraph.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -250,7 +250,7 @@ properties:
       To use the built-in styles that are portable between locales, see the
       "styleBuiltIn" property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -265,7 +265,7 @@ properties:
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the paragraph.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

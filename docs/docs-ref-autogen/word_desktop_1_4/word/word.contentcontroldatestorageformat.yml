@@ -8,7 +8,7 @@ summary: >-
   [Word.DatePickerContentControl](xref:word!Word.DatePickerContentControl:class)<!--
   -->.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -17,30 +17,24 @@ fields:
   - name: date
     uid: word!Word.ContentControlDateStorageFormat.date:member
     package: word!
-    summary: >-
+    summary: |-
       Stores the date as a date object.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Date"'
   - name: dateTime
     uid: word!Word.ContentControlDateStorageFormat.dateTime:member
     package: word!
-    summary: >-
+    summary: |-
       Stores the date as a date-time object.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DateTime"'
   - name: text
     uid: word!Word.ContentControlDateStorageFormat.text:member
     package: word!
-    summary: >-
+    summary: |-
       Stores the date as text.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Text"'

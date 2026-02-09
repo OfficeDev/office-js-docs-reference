@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.FloatingInk
 summary: Represents a group of ink strokes.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: id
     summary: Gets the ID of the FloatingInk object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -49,7 +49,7 @@ properties:
     fullName: inkStrokes
     summary: Gets the strokes of the FloatingInk object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -65,7 +65,7 @@ properties:
     fullName: pageContent
     summary: Gets the PageContent parent of the FloatingInk object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -107,7 +107,40 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await OneNote.run(async (context) => {
+
+          // Gets the active page.
+          const page = context.application.getActivePage();
+          const contents = page.contents;
+          
+          // Load page contents and their types.
+          page.load('contents/type');
+          await context.sync();
+              
+          // Load every ink content.
+          $.each(contents.items, function(i, content) {
+              if (content.type == "Ink")
+              {
+                  content.load('ink/id');
+              }                            
+          });
+          await context.sync();
+              
+          // Log ID of every ink content.
+          $.each(contents.items, function(i, content) {
+              if (content.type == "Ink")
+              {
+                  console.log(content.ink.id);
+              }                            
+          });           
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

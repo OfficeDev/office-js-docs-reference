@@ -16,7 +16,7 @@ properties:
     fullName: code
     summary: Specifies the field's code instruction.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -34,7 +34,7 @@ properties:
     fullName: result
     summary: Gets the field's result data.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

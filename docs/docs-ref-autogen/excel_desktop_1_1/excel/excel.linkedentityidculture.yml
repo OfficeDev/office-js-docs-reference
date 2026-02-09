@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.LinkedEntityIdCulture
 summary: Represents the entity ID and culture for a `LinkedEntityCellValue` object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
@@ -23,7 +23,7 @@ properties:
       Represents the language culture used to create the `LinkedEntityCellValue`
       object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -44,7 +44,7 @@ properties:
       Represents the identifier specific to a service used to create the
       `LinkedEntityCellValue` object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

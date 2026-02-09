@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.WindowCollectionLoadOptions
 summary: Represents a collection of Window objects.
 remarks: >-
-  \[ [Api set: ExcelApiDesktop
+  \[ [API set: ExcelApiDesktop
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: activeCell
     summary: 'For EACH ITEM in the collection: Gets the active cell in the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
     fullName: activePane
     summary: 'For EACH ITEM in the collection: Gets the active pane in the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -64,7 +64,7 @@ properties:
     fullName: activeWorksheet
     summary: 'For EACH ITEM in the collection: Gets the active worksheet in the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether AutoFilter date
       grouping is enabled in the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +99,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether resizing is enabled for
       the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -116,7 +116,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether panes are frozen in the
       window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -131,7 +131,7 @@ properties:
     fullName: height
     summary: 'For EACH ITEM in the collection: Specifies the height of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -146,7 +146,7 @@ properties:
     fullName: index
     summary: 'For EACH ITEM in the collection: Gets the index of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -161,7 +161,7 @@ properties:
     fullName: isVisible
     summary: 'For EACH ITEM in the collection: Specifies whether the window is visible.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -178,7 +178,7 @@ properties:
       For EACH ITEM in the collection: Specifies the distance, in points, from
       the left edge of the computer screen to the left edge of the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -193,7 +193,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -210,7 +210,7 @@ properties:
       For EACH ITEM in the collection: Specifies the scroll column of the
       window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -225,7 +225,7 @@ properties:
     fullName: scrollRow
     summary: 'For EACH ITEM in the collection: Specifies the scroll row of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -242,7 +242,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether formulas are shown in
       the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -259,7 +259,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether gridlines are shown in
       the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -276,7 +276,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether headings are shown in
       the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -294,7 +294,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether the horizontal scroll
       bar is shown in the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -311,7 +311,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether outline is shown in the
       window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -329,7 +329,7 @@ properties:
       the window. True means that the window is using right-to-left layout,
       false means that the window is using left-to-right layout.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -346,7 +346,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether the ruler is shown in
       the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -364,7 +364,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether the vertical scroll bar
       is shown in the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -381,7 +381,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether whitespace is shown in
       the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -398,7 +398,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether workbook tabs are shown
       in the window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -415,7 +415,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether zeroes are shown in the
       window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -430,7 +430,7 @@ properties:
     fullName: split
     summary: 'For EACH ITEM in the collection: Specifies the split state of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -445,7 +445,7 @@ properties:
     fullName: splitColumn
     summary: 'For EACH ITEM in the collection: Specifies the split column of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -462,7 +462,7 @@ properties:
       For EACH ITEM in the collection: Specifies the horizontal split of the
       window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -477,7 +477,7 @@ properties:
     fullName: splitRow
     summary: 'For EACH ITEM in the collection: Specifies the split row of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -494,7 +494,7 @@ properties:
       For EACH ITEM in the collection: Specifies the vertical split of the
       window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -509,7 +509,7 @@ properties:
     fullName: tabRatio
     summary: 'For EACH ITEM in the collection: Specifies the tab ratio of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -527,7 +527,7 @@ properties:
       the top edge of the window to the top edge of the usable area (below the
       menus, any toolbars docked at the top, and the formula bar).
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -542,7 +542,7 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: Specifies the type of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -557,7 +557,7 @@ properties:
     fullName: usableHeight
     summary: 'For EACH ITEM in the collection: Gets the usable height of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -572,7 +572,7 @@ properties:
     fullName: usableWidth
     summary: 'For EACH ITEM in the collection: Gets the usable width of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -587,7 +587,7 @@ properties:
     fullName: view
     summary: 'For EACH ITEM in the collection: Specifies the view of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -602,7 +602,7 @@ properties:
     fullName: visibleRange
     summary: 'For EACH ITEM in the collection: Gets the visible range of the window.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -619,7 +619,7 @@ properties:
       For EACH ITEM in the collection: Specifies the display width of the
       window.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -634,7 +634,7 @@ properties:
     fullName: windowNumber
     summary: 'For EACH ITEM in the collection: Gets the window number.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -649,7 +649,7 @@ properties:
     fullName: windowState
     summary: 'For EACH ITEM in the collection: Specifies the window state.'
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -667,7 +667,7 @@ properties:
       represents the display size of the window. It can be set to a percentage
       between 10 and 400.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

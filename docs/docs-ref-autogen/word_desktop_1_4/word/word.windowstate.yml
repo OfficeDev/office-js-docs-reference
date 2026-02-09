@@ -5,7 +5,7 @@ package: word!
 fullName: Word.WindowState
 summary: Represents the state of the window.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,30 +14,24 @@ fields:
   - name: maximize
     uid: word!Word.WindowState.maximize:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the maximized state of the window.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Maximize"'
   - name: minimize
     uid: word!Word.WindowState.minimize:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the minimized state of the window.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Minimize"'
   - name: normal
     uid: word!Word.WindowState.normal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents the normal state of the window.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Normal"'

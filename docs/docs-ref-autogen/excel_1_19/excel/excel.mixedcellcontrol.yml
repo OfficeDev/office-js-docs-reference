@@ -8,7 +8,7 @@ summary: >-
   the result has multiple controls, then they can't be represented as a single
   result.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false

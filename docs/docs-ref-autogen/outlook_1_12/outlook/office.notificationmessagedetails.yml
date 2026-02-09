@@ -6,8 +6,8 @@ fullName: Office.NotificationMessageDetails
 summary: >-
   An array of `NotificationMessageDetails` objects are returned by the
   `NotificationMessages.getAllAsync` method.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -25,6 +25,30 @@ remarks: >-
   you can implement, see [Create notifications for your Outlook
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
   -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+  // Gets all the notification messages and their keys for the current mail
+  item.
+
+  Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) =>
+  {
+    if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+      console.log(asyncResult.error.message);
+      return;
+    }
+    console.log(JSON.stringify(asyncResult.value));
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -45,7 +69,7 @@ properties:
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->, the `actions` property is available in Compose mode only.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

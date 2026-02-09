@@ -8,9 +8,36 @@ summary: >-
   primitive named objects (as seen in the type below), range object, or a
   reference to a range. This object can be used to obtain range object
   associated with names.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
+
+
+  await Excel.run(async (context) => {
+      // Log all the named items in the active worksheet.
+      const namedItems = context.workbook.worksheets.getActiveWorksheet().names.load();
+      await context.sync();
+
+      console.log("This worksheet contains " + namedItems.items.length + " named items.");
+
+      for (let i = 0; i < namedItems.items.length; i++) {
+          const namedItem : Excel.NamedItem = namedItems.items[i];
+          console.log(JSON.stringify(namedItem)) + "\n";
+      }
+
+      await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -22,7 +49,7 @@ properties:
     fullName: comment
     summary: Specifies the comment associated with this name.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +79,7 @@ properties:
     fullName: name
     summary: The name of the object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +96,7 @@ properties:
       Specifies if the name is scoped to the workbook or to a specific
       worksheet. Possible values are: Worksheet, Workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -88,7 +115,7 @@ properties:
       Specifies the type of the value returned by the name's formula. See
       `Excel.NamedItemType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
       1.7 for
       Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
@@ -112,7 +139,7 @@ properties:
       will return the range address. This API returns the \#VALUE! error in the
       Excel UI if it refers to a user-defined function.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -127,7 +154,7 @@ properties:
     fullName: visible
     summary: Specifies if the object is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -144,7 +171,7 @@ properties:
       Returns the worksheet on which the named item is scoped to. Throws an
       error if the item is scoped to the workbook instead.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -165,7 +192,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -180,9 +207,39 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the given name.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const totalName = sheet.names.getItemOrNullObject("TotalAmount");
+          totalName.load();
+          await context.sync();
+
+          if (totalName.value) {
+              totalName.delete();
+
+              // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
+              sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
+          } else {
+              console.log("No named item created for the formula.");
+          }
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -198,9 +255,32 @@ methods:
     summary: >-
       Returns the range object that is associated with the name. Throws an error
       if the named item's type is not a range.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Returns the Range object that is associated with the name.
+
+      // Returns `null` if the name is not of type Range.
+
+      // Note: This API currently supports only the Workbook scoped items.
+
+      await Excel.run(async (context) => { 
+          const names = context.workbook.names;
+          const range = names.getItem('MyRange').getRange();
+          range.load('address');
+          await context.sync();
+
+          console.log(range.address);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -221,7 +301,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -258,7 +338,21 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const names = context.workbook.names;
+          const namedItem = names.getItem('MyRange');
+          namedItem.load('type');
+          await context.sync();
+          
+          console.log(namedItem.type);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

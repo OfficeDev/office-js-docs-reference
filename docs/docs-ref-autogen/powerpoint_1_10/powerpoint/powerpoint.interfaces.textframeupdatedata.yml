@@ -22,7 +22,7 @@ properties:
       to automatically fit the text to the text frame, to automatically fit the
       text frame to the text, or not perform any automatic sizing.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -43,7 +43,7 @@ properties:
     fullName: bottomMargin
     summary: Represents the bottom margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -59,7 +59,7 @@ properties:
     fullName: leftMargin
     summary: Represents the left margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -75,7 +75,7 @@ properties:
     fullName: rightMargin
     summary: Represents the right margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -91,7 +91,7 @@ properties:
     fullName: topMargin
     summary: Represents the top margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -111,7 +111,7 @@ properties:
       [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum)
       for details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -132,7 +132,7 @@ properties:
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -18,7 +18,7 @@ summary: >-
   -->, you can't use the API to manage categories applied to a message in
   Compose mode.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -43,8 +43,8 @@ methods:
       Adds categories to an item. Each category must be in the categories master
       list on that mailbox and so must have a unique name but multiple
       categories can use the same color.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -69,6 +69,44 @@ methods:
 
 
       - `InvalidCategory`<!-- -->: Invalid categories were provided.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+      // Note: In order for you to successfully add a category,
+
+      // it must be in the mailbox categories master list.
+
+
+      Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          const masterCategories = asyncResult.value;
+          if (masterCategories && masterCategories.length > 0) {
+            // Grab the first category from the master list.
+            const categoryToAdd = [masterCategories[0].displayName];
+            Office.context.mailbox.item.categories.addAsync(categoryToAdd, function(asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log(`Successfully assigned category '${categoryToAdd}' to item.`);
+              } else {
+                console.log("categories.addAsync call failed with error: " + asyncResult.error.message);
+              }
+            });
+          } else {
+            console.log("There are no categories in the master list on this mailbox. You can add categories using Office.context.mailbox.masterCategories.addAsync.");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -106,7 +144,7 @@ methods:
       list on that mailbox and so must have a unique name but multiple
       categories can use the same color.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -174,7 +212,7 @@ methods:
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -234,8 +272,8 @@ methods:
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->, you can't use the API to manage categories applied to a message in
       Compose mode.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -248,6 +286,32 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+      Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          const categories = asyncResult.value;
+          if (categories && categories.length > 0) {
+            console.log("Categories assigned to this item:");
+            console.log(JSON.stringify(categories));
+          } else {
+            console.log("There are no categories assigned to this item.");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -274,8 +338,8 @@ methods:
     package: outlook!
     fullName: removeAsync(categories, options, callback)
     summary: Removes categories from an item.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -294,6 +358,39 @@ methods:
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->, you can't use the API to manage categories applied to a message or
       appointment item in Compose mode.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+      Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          const categories = asyncResult.value;
+          if (categories && categories.length > 0) {
+            // Grab the first category assigned to this item.
+            const categoryToRemove = [categories[0].displayName];
+            Office.context.mailbox.item.categories.removeAsync(categoryToRemove, function(asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log(`Successfully unassigned category '${categoryToRemove}' from this item.`);
+              } else {
+                console.log("categories.removeAsync call failed with error: " + asyncResult.error.message);
+              }
+            });
+          } else {
+            console.log("There are no categories assigned to this item.");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -329,7 +426,7 @@ methods:
     fullName: removeAsync(categories, callback)
     summary: Removes categories from an item.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

@@ -7,7 +7,7 @@ summary: >-
   Provides a method to temporarily set the content displayed in the subject of a
   message in read mode.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -34,7 +34,7 @@ methods:
       mode. The set content will remain visible until the user switches to a
       different message or closes the window of the current message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -107,8 +107,8 @@ methods:
       Temporarily sets the content displayed in the subject of a message in read
       mode. The set content will remain visible until the user switches to a
       different message or closes the window of the current message.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -141,6 +141,38 @@ methods:
 
 
       - The `setAsync` method isn't supported on multiple selected messages.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+
+      // This snippet temporarily sets the content displayed in the subject
+      field of a message in read mode.
+
+      // The set content will remain visible until the user switches to a
+      different message in the Reading Pane or closes the window of the current
+      message.
+
+      const subjectText = (document.getElementById("subject-text-field") as
+      HTMLInputElement).value;
+
+      Office.context.mailbox.item.display.subject.setAsync(subjectText,
+      (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Action failed with error: ${asyncResult.error.message}`);
+          return;
+        }
+
+        console.log("Temporarily set the content displayed in the subject field.");
+      });
+
+      ```
 
     isPreview: true
     isDeprecated: false

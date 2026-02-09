@@ -20,7 +20,7 @@ properties:
       Represents the body object of the note item. It's the portion of the text
       within the footnote or endnote.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

@@ -4,9 +4,30 @@ uid: word!Word.CustomProperty:class
 package: word!
 fullName: Word.CustomProperty
 summary: Represents a custom property.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
+
+
+  await Word.run(async (context) => {
+      const properties: Word.CustomPropertyCollection = context.document.properties.customProperties;
+      properties.load("key,type,value");
+
+      await context.sync();
+      for (let i = 0; i < properties.items.length; i++)
+          console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +54,7 @@ properties:
     fullName: key
     summary: Gets the key of the custom property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +71,7 @@ properties:
       Gets the value type of the custom property. Possible values are: String,
       Number, Date, Boolean.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +95,7 @@ properties:
       16-bit chars (possibly creating invalid unicode by breaking up a surrogate
       pair).
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +111,7 @@ methods:
     fullName: delete()
     summary: Deletes the custom property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

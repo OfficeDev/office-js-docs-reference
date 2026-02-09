@@ -7,7 +7,7 @@ summary: >-
   Represents the current settings related to the display of reviewers' comments
   and revision marks in the document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
       Specifies a `RevisionsMarkup` value that represents the extent of reviewer
       markup displayed in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       displays the original version of the document or the final version, which
       might have revisions and formatting changes applied.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

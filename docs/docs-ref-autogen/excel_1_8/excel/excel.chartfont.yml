@@ -6,9 +6,30 @@ fullName: Excel.ChartFont
 summary: >-
   This object represents the font attributes (such as font name, font size, and
   color) for a chart object.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Set the chart title font to Calibri, size 10, bold, and the color red.
+
+  await Excel.run(async (context) => { 
+      const title = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
+      title.format.font.name = "Calibri";
+      title.format.font.size = 12;
+      title.format.font.color = "#FF0000";
+      title.format.font.italic =  false;
+      title.format.font.bold = true;
+      title.format.font.underline = "None";
+      await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +41,7 @@ properties:
     fullName: bold
     summary: Represents the bold status of font.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +58,7 @@ properties:
       HTML color code representation of the text color (e.g., \#FF0000
       represents Red).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +88,7 @@ properties:
     fullName: italic
     summary: Represents the italic status of the font.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +103,7 @@ properties:
     fullName: name
     summary: Font name (e.g., "Calibri")
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -97,7 +118,7 @@ properties:
     fullName: size
     summary: Size of the font (e.g., 11)
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -114,7 +135,7 @@ properties:
       Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for
       details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

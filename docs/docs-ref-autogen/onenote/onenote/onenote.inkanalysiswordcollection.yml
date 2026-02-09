@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.InkAnalysisWordCollection
 summary: Represents a collection of InkAnalysisWord objects.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: count
     summary: Returns the number of InkAnalysisWords in the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -65,7 +65,7 @@ methods:
       Gets a InkAnalysisWord object by ID or by its index in the collection.
       Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -88,7 +88,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a InkAnalysisWord on its position in the collection.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

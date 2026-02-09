@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.SectionLoadOptions
 summary: Represents a OneNote section. Sections can contain pages.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: clientUrl
     summary: The client URL of the section. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: id
     summary: Gets the ID of the section. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -66,7 +66,7 @@ properties:
     fullName: isEncrypted
     summary: True if this section is encrypted with a password. Read only
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -82,7 +82,7 @@ properties:
     fullName: isLocked
     summary: True if this section is locked. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -98,7 +98,7 @@ properties:
     fullName: name
     summary: Gets the name of the section. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -114,7 +114,7 @@ properties:
     fullName: notebook
     summary: Gets the notebook that contains the section.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -132,7 +132,7 @@ properties:
     fullName: pages
     summary: The collection of pages in the section. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -153,7 +153,7 @@ properties:
       Gets the section group that contains the section. Throws ItemNotFound if
       the section is a direct child of the notebook.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -174,7 +174,7 @@ properties:
       Gets the section group that contains the section. Returns null if the
       section is a direct child of the notebook.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -192,7 +192,7 @@ properties:
     fullName: webUrl
     summary: The web URL of the page. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

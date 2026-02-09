@@ -43,7 +43,44 @@ properties:
       binding is of type "matrix", null is returned. Also, the call will fail if
       the table contains merged cells, because the structure of the table must
       be uniform for this property to work correctly.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example adds an event handler for the SelectionChanged
+      event to the binding with an id of myTable.
+
+      // When the user changes the selection, the handler displays the
+      coordinates of the first cell in the selection,
+
+      // and the number of row and columns selected.
+
+      function addSelectionHandler() {
+          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+              result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+          });
+      }
+
+
+      // Display selection start coordinates and row/column count.
+
+      function myHandler(bArgs) {
+          write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+          write("Selection row count: " + bArgs.rowCount);
+          write("Selection col count: " + bArgs.columnCount);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +105,44 @@ properties:
       binding is of type "matrix", null is returned. Also, the call will fail if
       the table contains merged cells, because the structure of the table must
       be uniform for this property to work correctly.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example adds an event handler for the SelectionChanged
+      event to the binding with an id of myTable.
+
+      // When the user changes the selection, the handler displays the
+      coordinates of the first cell in the selection,
+
+      // and the number of row and columns selected.
+
+      function addSelectionHandler() {
+          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+              result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+          });
+      }
+
+
+      // Display selection start coordinates and row/column count.
+
+      function myHandler(bArgs) {
+          write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+          write("Selection row count: " + bArgs.rowCount);
+          write("Selection col count: " + bArgs.columnCount);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +168,44 @@ properties:
       binding is of type "matrix", null is returned. Also, the call will fail if
       the table contains merged cells, because the structure of the table must
       be uniform for this property to work correctly.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example adds an event handler for the SelectionChanged
+      event to the binding with an id of myTable.
+
+      // When the user changes the selection, the handler displays the
+      coordinates of the first cell in the selection,
+
+      // and the number of row and columns selected.
+
+      function addSelectionHandler() {
+          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+              result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+          });
+      }
+
+
+      // Display selection start coordinates and row/column count.
+
+      function myHandler(bArgs) {
+          write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+          write("Selection row count: " + bArgs.rowCount);
+          write("Selection col count: " + bArgs.columnCount);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +231,44 @@ properties:
       binding is of type "matrix", null is returned. Also, the call will fail if
       the table contains merged cells, because the structure of the table must
       be uniform for this property to work correctly.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example adds an event handler for the SelectionChanged
+      event to the binding with an id of myTable.
+
+      // When the user changes the selection, the handler displays the
+      coordinates of the first cell in the selection,
+
+      // and the number of row and columns selected.
+
+      function addSelectionHandler() {
+          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+              result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+          });
+      }
+
+
+      // Display selection start coordinates and row/column count.
+
+      function myHandler(bArgs) {
+          write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+          write("Selection row count: " + bArgs.rowCount);
+          write("Selection col count: " + bArgs.columnCount);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

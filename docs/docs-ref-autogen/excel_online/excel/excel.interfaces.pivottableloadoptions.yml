@@ -9,7 +9,7 @@ summary: >-
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!--
   -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -41,7 +41,7 @@ properties:
       Specifies if the PivotTable allows the application of multiple
       PivotFilters on a given PivotField in the table.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -59,7 +59,7 @@ properties:
       Specifies if the PivotTable allows values in the data body to be edited by
       the user.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ properties:
     fullName: id
     summary: ID of the PivotTable.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -91,7 +91,7 @@ properties:
       The PivotLayout describing the layout and visual structure of the
       PivotTable.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -106,7 +106,7 @@ properties:
     fullName: name
     summary: Name of the PivotTable.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -123,7 +123,7 @@ properties:
       Specifies whether the PivotTable refreshes when the workbook opens.
       Corresponds to "Refresh on load" setting in the UI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -139,7 +139,7 @@ properties:
     fullName: useCustomSortLists
     summary: Specifies if the PivotTable uses custom lists when sorting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -154,7 +154,7 @@ properties:
     fullName: worksheet
     summary: The worksheet containing the current PivotTable.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

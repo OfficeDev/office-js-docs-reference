@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.EntityArrayCardLayout
 summary: Represents a card layout that is best used for an array.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -18,7 +18,7 @@ properties:
     fullName: arrayProperty
     summary: Represents name of the property that contains the array shown in the card.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -37,7 +37,7 @@ properties:
       card may report fewer columns than actually exist to display a smaller
       amount of preview data.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -55,7 +55,7 @@ properties:
       Represents name of the property that contains the array shown in the card.
       Default value is "Array".
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -71,7 +71,7 @@ properties:
     fullName: firstRowIsHeader
     summary: Represents whether the first row of the array is treated as a header.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -87,7 +87,7 @@ properties:
     fullName: layout
     summary: Represents the type of this layout.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -106,7 +106,7 @@ properties:
       card may report fewer rows than actually exist to display a smaller amount
       of preview data.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.CommentCollectionLoadOptions
 summary: Represents a collection of comment objects that are part of the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: authorEmail
     summary: 'For EACH ITEM in the collection: Gets the email of the comment''s author.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the name of the comment''s author.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -68,7 +68,7 @@ properties:
       For EACH ITEM in the collection: The comment's content. The string is
       plain text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -87,7 +87,7 @@ properties:
       Returns `null` if the comment was converted from a note, since the comment
       does not have a creation date.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -103,7 +103,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the comment identifier.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -121,7 +121,7 @@ properties:
       For EACH ITEM in the collection: Gets the entities (e.g., people) that are
       mentioned in comments.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -139,7 +139,7 @@ properties:
       For EACH ITEM in the collection: The comment thread status. A value of
       `true` means that the comment thread is resolved.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -158,7 +158,7 @@ properties:
       mentions in comments). This string is not meant to be displayed to
       end-users. Your add-in should only use this to parse rich comment content.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ListItemLoadOptions
 summary: Represents the paragraph list item format.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: level
     summary: Specifies the level of the item in the list.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
     fullName: listString
     summary: Gets the list item bullet, number, or picture as a string.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -64,7 +64,7 @@ properties:
     fullName: siblingIndex
     summary: Gets the list item order number in relation to its siblings.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

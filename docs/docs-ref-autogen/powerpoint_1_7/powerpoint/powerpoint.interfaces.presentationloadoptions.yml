@@ -10,7 +10,7 @@ summary: >-
   model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
   -->.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -40,7 +40,7 @@ properties:
     fullName: id
     summary: Gets the ID of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -56,7 +56,7 @@ properties:
     fullName: properties
     summary: Gets the properties of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -75,7 +75,7 @@ properties:
     fullName: title
     summary: Returns the title of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

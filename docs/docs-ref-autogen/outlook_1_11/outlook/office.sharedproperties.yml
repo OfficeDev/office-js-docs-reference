@@ -12,8 +12,8 @@ summary: >-
   and shared mailbox scenarios in an Outlook
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
   -->.
-remarks: >-
-  \[ [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
+remarks: >
+  \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared
   mailbox
   support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
@@ -27,6 +27,29 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
+
+  Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
+    if (result.status === Office.AsyncResultStatus.Failed) {
+      console.error("The current folder or mailbox isn't shared.");
+      return;
+    }
+    const sharedProperties = result.value;
+    console.log(`Owner: ${sharedProperties.owner}`);
+    console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
+    console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false

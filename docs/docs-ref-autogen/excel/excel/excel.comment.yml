@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Comment
 summary: Represents a comment in the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment's author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment's author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -49,10 +49,29 @@ properties:
     package: excel!
     fullName: content
     summary: The comment's content. The string is plain text.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-basics.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Comments");
+          const comment = sheet.comments.getItemAt(0);
+          comment.content = "PLEASE add headers here.";
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +85,7 @@ properties:
     fullName: contentType
     summary: Gets the content type of the comment.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -99,7 +118,7 @@ properties:
       Gets the creation time of the comment. Returns `null` if the comment was
       converted from a note, since the comment does not have a creation date.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -115,7 +134,7 @@ properties:
     fullName: id
     summary: Specifies the comment identifier.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -131,7 +150,7 @@ properties:
     fullName: mentions
     summary: Gets the entities (e.g., people) that are mentioned in comments.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -147,7 +166,7 @@ properties:
     fullName: replies
     summary: Represents a collection of reply objects associated with the comment.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -164,10 +183,28 @@ properties:
     summary: >-
       The comment thread status. A value of `true` means that the comment thread
       is resolved.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-resolution.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Comments");
+          sheet.comments.getItemAt(0).resolved = true;
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -184,7 +221,7 @@ properties:
       not meant to be displayed to end-users. Your add-in should only use this
       to parse rich comment content.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -203,7 +240,7 @@ methods:
       Assigns the task attached to the comment to the given user as an assignee.
       If there is no task, one will be created.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -223,10 +260,27 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the comment and all the connected replies.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-basics.yaml
+
+
+      await Excel.run(async (context) => {
+          context.workbook.comments.getItemByCell("Comments!A2").delete();
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -241,7 +295,7 @@ methods:
     fullName: getLocation()
     summary: Gets the cell where this comment is located.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -260,7 +314,7 @@ methods:
       Gets the task associated with this comment. If there is no task for the
       comment thread, an `ItemNotFound` exception is thrown.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -283,7 +337,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -321,7 +375,28 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-basics.yaml
+
+
+      await Excel.run(async (context) => {
+          const comment = context.workbook.comments.getItemByCell("Comments!A2");
+          comment.load(["authorEmail", "authorName", "creationDate"]);
+          await context.sync();
+
+          console.log(`${comment.creationDate.toDateString()}: ${comment.authorName} (${comment.authorEmail})`);
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -448,7 +523,7 @@ methods:
       Updates the comment content with a specially formatted string and a list
       of mentions.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

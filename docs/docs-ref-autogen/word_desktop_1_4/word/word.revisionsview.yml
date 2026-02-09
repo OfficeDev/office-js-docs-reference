@@ -7,7 +7,7 @@ summary: >-
   Specifies whether Word displays the original version of a document or a
   version with revisions and formatting changes applied.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -16,20 +16,16 @@ fields:
   - name: final
     uid: word!Word.RevisionsView.final:member
     package: word!
-    summary: >-
+    summary: |-
       Final view.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Final"'
   - name: original
     uid: word!Word.RevisionsView.original:member
     package: word!
-    summary: >-
+    summary: |-
       Original view.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Original"'

@@ -18,7 +18,7 @@ properties:
     fullName: properties
     summary: Gets the workbook properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

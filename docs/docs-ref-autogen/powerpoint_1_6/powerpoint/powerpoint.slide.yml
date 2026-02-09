@@ -4,10 +4,31 @@ uid: powerpoint!PowerPoint.Slide:class
 package: powerpoint!
 fullName: PowerPoint.Slide
 summary: Represents a single slide of a presentation.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+  // Reselects shapes that were saved previously.
+
+  await PowerPoint.run(async (context) => {
+    const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedSlideSelection[0]);
+    await context.sync();
+    slide1.setSelectedShapes(savedShapeSelection);
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -33,10 +54,45 @@ properties:
     package: powerpoint!
     fullName: hyperlinks
     summary: Returns a collection of hyperlinks in the slide.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+      // Sets a hyperlink on the first selected shape.
+
+      await PowerPoint.run(async (context) => {
+        const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+        const shape: PowerPoint.Shape = context.presentation.getSelectedShapes().getItemAt(0).load("id,type");
+        const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks;
+        const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+          address: "https://bing.com",
+          screenTip: "Screen tip for shape",
+        };
+        let hyperlink: PowerPoint.Hyperlink = hyperlinks.add(shape, hyperlinkAddOptions).load("address,screenTip");
+        try {
+          await context.sync();
+        } catch {
+          console.warn("Confirm that you have at least one slide and you've selected a shape on the active slide.");
+          return;
+        }
+
+        console.log(
+          `Added link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") to the first selected shape (ID: ${shape.id}, type: ${shape.type}).`,
+        );
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -50,7 +106,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -66,7 +122,7 @@ properties:
     fullName: layout
     summary: Gets the layout of the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -82,7 +138,7 @@ properties:
     fullName: shapes
     summary: Returns a collection of shapes in the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -98,7 +154,7 @@ properties:
     fullName: slideMaster
     summary: Gets the `SlideMaster` object that represents the slide's default content.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -114,7 +170,7 @@ properties:
     fullName: tags
     summary: Returns a collection of tags in the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -132,10 +188,36 @@ methods:
     summary: >-
       Deletes the slide from the presentation. Does nothing if the slide doesn't
       exist.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+
+      // Deletes the selected slides.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        slides.load("items");
+        await context.sync();
+        slides.items.map((slide) => {
+          slide.delete();
+        });
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -229,10 +311,56 @@ methods:
     summary: >-
       Selects the specified shapes. Existing shape selection is replaced with
       the new selection.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Reselects shapes that were saved previously.
+
+      await PowerPoint.run(async (context) => {
+        const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedSlideSelection[0]);
+        await context.sync();
+        slide1.setSelectedShapes(savedShapeSelection);
+        await context.sync();
+      });
+
+
+      ...
+
+
+      // Selects the first two shapes on slide 1.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slide1 = context.presentation.slides.getItemAt(0);
+        slide1.load("shapes/items/type");
+        await context.sync();
+
+        const shapes = slide1.shapes.items.filter((item) => item.type === PowerPoint.ShapeType.geometricShape);
+        const shape1: PowerPoint.Shape = shapes[0];
+        const shape2: PowerPoint.Shape = shapes[1];
+        shape1.load("id");
+        shape2.load("id");
+        await context.sync();
+
+        console.log(`IDs: ${shape1.id}, ${shape2.id}`);
+        slide1.setSelectedShapes([shape1.id, shape2.id]);
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,40 @@ uid: word!Word.Range:class
 package: word!
 fullName: Word.Range
 summary: Represents a contiguous area in a document.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Gets the range of the first comment in the selected content.
+
+  await Word.run(async (context) => {
+    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+    comment.load("contentRange");
+    const range: Word.Range = comment.getRange();
+    range.load("text");
+    await context.sync();
+
+    if (comment.isNullObject) {
+      console.warn("No comments in the selection, so no range to get.");
+      return;
+    }
+
+    console.log(`Comment location: ${range.text}`);
+    const contentRange: Word.CommentContentRange = comment.contentRange;
+    console.log("Comment content range:", contentRange);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -18,7 +49,7 @@ properties:
     fullName: bold
     summary: Specifies whether the range is formatted as bold.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +66,7 @@ properties:
       Specifies whether the range is formatted as bold in a right-to-left
       language document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +83,7 @@ properties:
       Returns a `BookmarkCollection` object that represents all the bookmarks in
       the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +100,7 @@ properties:
       Returns a `BorderUniversalCollection` object that represents all the
       borders for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +117,7 @@ properties:
       Specifies a `CharacterCase` value that represents the case of the text in
       the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +138,7 @@ properties:
     fullName: characterWidth
     summary: Specifies the character width of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -122,7 +153,7 @@ properties:
     fullName: combineCharacters
     summary: Specifies if the range contains combined characters.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -139,7 +170,7 @@ properties:
       Returns a `ConflictCollection` object that contains all the
       [Word.Conflict](xref:word!Word.Conflict:class) objects in the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -154,7 +185,7 @@ properties:
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -186,7 +217,7 @@ properties:
       Specifies if Microsoft Word ignores the number of characters per line for
       the corresponding `Range` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -204,7 +235,7 @@ properties:
       authorized to modify the range when the document is in protected
       (read-only) mode.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -221,7 +252,7 @@ properties:
       Specifies the emphasis mark for a character or designated character
       string.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -241,7 +272,7 @@ properties:
     fullName: end
     summary: Specifies the ending character position of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -256,7 +287,7 @@ properties:
     fullName: endnotes
     summary: Gets the collection of endnotes in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -271,7 +302,7 @@ properties:
     fullName: fields
     summary: Gets the collection of `Field` objects in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -288,7 +319,7 @@ properties:
       Specifies the width (in the current measurement units) in which Microsoft
       Word fits the text in the current selection or range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -305,7 +336,7 @@ properties:
       Gets the text format of the range. Use this to get and set font name,
       size, color, and other properties.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -319,9 +350,31 @@ properties:
     package: word!
     fullName: footnotes
     summary: Gets the collection of footnotes in the range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+
+      // Gets the footnotes in the selected document range.
+
+      await Word.run(async (context) => {
+        const footnotes: Word.NoteItemCollection = context.document.getSelection().footnotes;
+        footnotes.load("length");
+        await context.sync();
+
+        console.log("Number of footnotes in the selected range: " + footnotes.items.length);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -337,7 +390,7 @@ properties:
       Gets a `FrameCollection` object that represents all the frames in the
       range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -352,7 +405,7 @@ properties:
     fullName: grammarChecked
     summary: Specifies if a grammar check has been run on the range or document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -369,7 +422,7 @@ properties:
       Specifies the proofing status (spelling and grammar checking) of the
       range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -384,7 +437,7 @@ properties:
     fullName: highlightColorIndex
     summary: Specifies the highlight color for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -408,7 +461,7 @@ properties:
     fullName: horizontalInVertical
     summary: Specifies the formatting for horizontal text set within vertical text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -431,7 +484,7 @@ properties:
       the range. Use a '\#' to separate the address part from the optional
       location part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -448,7 +501,7 @@ properties:
       Returns a `HyperlinkCollection` object that represents all the hyperlinks
       in the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -463,7 +516,7 @@ properties:
     fullName: id
     summary: Specifies the ID for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -478,7 +531,7 @@ properties:
     fullName: inlinePictures
     summary: Gets the collection of `InlinePicture` objects in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -493,7 +546,7 @@ properties:
     fullName: isEmpty
     summary: Checks whether the range length is zero.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -510,7 +563,7 @@ properties:
       Gets if the range is collapsed and is located at the end-of-row mark in a
       table.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -525,7 +578,7 @@ properties:
     fullName: isTextVisibleOnScreen
     summary: Gets whether the text in the range is visible on the screen.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -540,7 +593,7 @@ properties:
     fullName: italic
     summary: Specifies if the font or range is formatted as italic.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -557,7 +610,7 @@ properties:
       Specifies if the font or range is formatted as italic (right-to-left
       languages).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -574,7 +627,7 @@ properties:
       Specifies whether the range of Japanese language text is hiragana or
       katakana.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -591,7 +644,7 @@ properties:
       Specifies whether Microsoft Word has detected the language of the text in
       the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -606,7 +659,7 @@ properties:
     fullName: languageId
     summary: Specifies a `LanguageId` value that represents the language for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -718,7 +771,7 @@ properties:
     fullName: languageIdFarEast
     summary: Specifies an East Asian language for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -832,7 +885,7 @@ properties:
       Specifies a language for the range that isn't classified as an East Asian
       language.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -946,7 +999,7 @@ properties:
       Returns a `ListFormat` object that represents all the list formatting
       characteristics of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -961,7 +1014,7 @@ properties:
     fullName: lists
     summary: Gets the collection of `List` objects in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -976,7 +1029,7 @@ properties:
     fullName: pages
     summary: Gets the collection of pages in the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -991,7 +1044,7 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -1011,7 +1064,7 @@ properties:
     fullName: parentBody
     summary: Gets the parent body of the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1027,9 +1080,60 @@ properties:
     summary: >-
       Gets the currently supported content control that contains the range.
       Throws an `ItemNotFound` error if there isn't a parent content control.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Toggles the isChecked property of the first checkbox content control
+      found in the selection.
+
+      await Word.run(async (context) => {
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.checkBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,checkboxContentControl/isChecked");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.checkBox) {
+            console.warn("No checkbox content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        const isCheckedBefore = selectedContentControl.checkboxContentControl.isChecked;
+        console.log("isChecked state before:", `id: ${selectedContentControl.id} ... isChecked: ${isCheckedBefore}`);
+        selectedContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+        await context.sync();
+
+        console.log(
+          "isChecked state after:",
+          `id: ${selectedContentControl.id} ... isChecked: ${selectedContentControl.checkboxContentControl.isChecked}`
+        );
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1049,7 +1153,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1066,7 +1170,7 @@ properties:
       Gets the table that contains the range. Throws an `ItemNotFound` error if
       it isn't contained in a table.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1083,7 +1187,7 @@ properties:
       Gets the table cell that contains the range. Throws an `ItemNotFound`
       error if it isn't contained in a table cell.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1104,7 +1208,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1125,7 +1229,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1142,7 +1246,7 @@ properties:
       Gets the collection of revisions that represents the tracked changes in
       the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1157,7 +1261,7 @@ properties:
     fullName: sections
     summary: Gets the collection of sections in the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1174,7 +1278,7 @@ properties:
       Returns a `ShadingUniversal` object that refers to the shading formatting
       for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1192,7 +1296,7 @@ properties:
       both inline and floating shapes. Currently, only the following shapes are
       supported: text boxes, geometric shapes, groups, pictures, and canvases.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -1214,7 +1318,7 @@ properties:
       Specifies if all nonprinting characters (such as hidden text, tab marks,
       space marks, and paragraph marks) are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1229,7 +1333,7 @@ properties:
     fullName: spellingChecked
     summary: Specifies if spelling has been checked throughout the range or document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1244,7 +1348,7 @@ properties:
     fullName: start
     summary: Specifies the starting character position of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1259,7 +1363,7 @@ properties:
     fullName: storyLength
     summary: Gets the number of characters in the story that contains the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1274,7 +1378,7 @@ properties:
     fullName: storyType
     summary: Gets the story type for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1306,7 +1410,7 @@ properties:
       styles and localized style names. To use the built-in styles that are
       portable between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1323,9 +1427,29 @@ properties:
       Specifies the built-in style name for the range. Use this property for
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+
+      await Word.run(async (context) => {
+          const header: Word.Range = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
+              "Start" /*this means at the beginning of the body */);
+          header.styleBuiltIn = Word.BuiltInStyleName.heading1;
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1445,7 +1569,7 @@ properties:
       Gets a `TableColumnCollection` object that represents all the table
       columns in the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1460,7 +1584,7 @@ properties:
     fullName: tables
     summary: Gets the collection of `Table` objects in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1475,7 +1599,7 @@ properties:
     fullName: text
     summary: Gets the text of the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1492,7 +1616,7 @@ properties:
       Specifies whether Microsoft Word sets two lines of text in one and
       specifies the characters that enclose the text, if any.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1512,7 +1636,7 @@ properties:
     fullName: underline
     summary: Specifies the type of underline applied to the range.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -1541,9 +1665,34 @@ methods:
     summary: >-
       Clears the contents of the `Range` object. The user can perform the undo
       operation on the cleared content.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to clear the contents of the proxy range object.
+          range.clear();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Cleared the selection (range object)');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1557,9 +1706,41 @@ methods:
     package: word!
     fullName: compareLocationWith(range)
     summary: Compares this range's location with another range's location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
+
+
+      // Compares the location of one paragraph in relation to another
+      paragraph.
+
+      await Word.run(async (context) => {
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
+        paragraphs.load("items");
+
+        await context.sync();
+
+        const firstParagraphAsRange: Word.Range = paragraphs.items[0].getRange();
+        const secondParagraphAsRange: Word.Range = paragraphs.items[1].getRange();
+
+        const comparedLocation = firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
+
+        await context.sync();
+
+        const locationValue: Word.LocationRelation = comparedLocation.value;
+        console.log(`Location of the first paragraph in relation to the second paragraph: ${locationValue}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1581,9 +1762,34 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the range and its content from the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to delete the range object.
+          range.delete();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Deleted the selection (range object)');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1598,7 +1804,7 @@ methods:
     fullName: detectLanguage()
     summary: Analyzes the range text to determine the language that it's written in.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1618,9 +1824,47 @@ methods:
       Returns a new range that extends from this range in either direction to
       cover another range. This range isn't changed. Throws an `ItemNotFound`
       error if the two ranges don't have a union.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+      await Word.run(async (context) => {
+        // Get the complete sentence (as range) associated with the insertion point.
+        const sentences: Word.RangeCollection = context.document
+          .getSelection()
+          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        sentences.load("$none");
+        await context.sync();
+
+        // Expand the range to the end of the paragraph to get all the complete sentences.
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
+          .getRange()
+          .expandTo(
+            context.document
+              .getSelection()
+              .paragraphs.getFirst()
+              .getRange(Word.RangeLocation.end)
+          )
+          .getTextRanges(["."], false /* Don't trim spaces*/);
+        sentencesToTheEndOfParagraph.load("text");
+        await context.sync();
+
+        for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+          console.log(sentencesToTheEndOfParagraph.items[i].text);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1646,7 +1890,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1668,7 +1912,7 @@ methods:
       Gets the names all bookmarks in or overlapping the range. A bookmark is
       hidden if its name starts with the underscore character.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1699,9 +1943,33 @@ methods:
     package: word!
     fullName: getComments()
     summary: Gets comments associated with the range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+      // Gets the comments in the selected content.
+
+      await Word.run(async (context) => {
+        const comments: Word.CommentCollection = context.document.getSelection().getComments();
+
+        // Load objects to log in the console.
+        comments.load();
+        await context.sync();
+
+        console.log("Comments:", comments);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1717,8 +1985,8 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: Gets the currently supported content controls in the range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -1729,6 +1997,51 @@ methods:
       relevant for the specific type. With time, additional types of content
       controls may be supported. Therefore, your add-in should request and
       handle specific types of content controls.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Deletes the first checkbox content control found in the selection.
+
+      await Word.run(async (context) => {
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.checkBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id");
+
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.checkBox) {
+            console.warn("No checkbox content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        console.log(`About to delete checkbox content control with id: ${selectedContentControl.id}`);
+        selectedContentControl.delete(false);
+        await context.sync();
+
+        console.log("Deleted checkbox content control.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1755,9 +2068,34 @@ methods:
       Mac, Word on the web, etc.). If you need exact fidelity, or consistency
       across platforms, use `Range.getOoxml()` and convert the returned XML to
       HTML.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to get the HTML of the current selection.
+          const html = range.getHtml();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('The HTML read from the document was: ' + html.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1771,9 +2109,32 @@ methods:
     package: word!
     fullName: getHyperlinkRanges()
     summary: Gets hyperlink child ranges within the range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Word.run(async (context) => {
+          // Get the entire document body.
+          const bodyRange = context.document.body.getRange(Word.RangeLocation.whole);
+
+          // Get all the ranges that only consist of hyperlinks.
+          const hyperLinks = bodyRange.getHyperlinkRanges();
+          hyperLinks.load("hyperlink");
+          await context.sync();
+
+          // Log each hyperlink.
+          hyperLinks.items.forEach((linkRange) => {
+              console.log(linkRange.hyperlink);
+          });
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1790,7 +2151,7 @@ methods:
       Gets the next text range by using punctuation marks and other ending
       marks. Throws an `ItemNotFound` error if this text range is the last one.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1825,7 +2186,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1853,9 +2214,34 @@ methods:
     package: word!
     fullName: getOoxml()
     summary: Gets the OOXML representation of the `Range` object.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to get the OOXML of the current selection.
+          const ooxml = range.getOoxml();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('The OOXML read from the document was:  ' + ooxml.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1871,9 +2257,31 @@ methods:
     summary: >-
       Clones the `Range` object, or gets the starting or ending point of the
       range as a new range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
+
+
+      // Places a dropdown list content control at the end of the selection.
+
+      await Word.run(async (context) => {
+        let selection = context.document.getSelection();
+        selection.getRange(Word.RangeLocation.end).insertContentControl(Word.ContentControlType.dropDownList);
+        await context.sync();
+
+        console.log("Dropdown list content control inserted at the end of the selection.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1903,9 +2311,33 @@ methods:
     package: word!
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+
+      // Gets the reviewed text.
+
+      await Word.run(async (context) => {
+        const range: Word.Range = context.document.getSelection();
+        const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+        const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
+        await context.sync();
+
+        console.log("Reviewed text (before):", before.value, "Reviewed text (after):", after.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1928,7 +2360,7 @@ methods:
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1953,9 +2385,47 @@ methods:
     summary: >-
       Gets the text child ranges in the range by using punctuation marks and
       other ending marks.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+      await Word.run(async (context) => {
+        // Get the complete sentence (as range) associated with the insertion point.
+        const sentences: Word.RangeCollection = context.document
+          .getSelection()
+          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        sentences.load("$none");
+        await context.sync();
+
+        // Expand the range to the end of the paragraph to get all the complete sentences.
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
+          .getRange()
+          .expandTo(
+            context.document
+              .getSelection()
+              .paragraphs.getFirst()
+              .getRange(Word.RangeLocation.end)
+          )
+          .getTextRanges(["."], false /* Don't trim spaces*/);
+        sentencesToTheEndOfParagraph.load("text");
+        await context.sync();
+
+        for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+          console.log(sentencesToTheEndOfParagraph.items[i].text);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1984,7 +2454,7 @@ methods:
     fullName: getTrackedChanges()
     summary: Gets the collection of the `TrackedChange` objects in the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2003,7 +2473,7 @@ methods:
       highlight the text permanently, set the range's `font.highlightColor`<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2021,7 +2491,7 @@ methods:
       Inserts a bookmark on the range. If a bookmark of the same name exists
       somewhere, it is deleted first.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -2051,9 +2521,34 @@ methods:
     package: word!
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert a page break after the selected text.
+          range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Inserted a page break after the selected text.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2086,7 +2581,7 @@ methods:
       Inserts a floating canvas in front of text with its anchor at the
       beginning of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2107,9 +2602,34 @@ methods:
     package: word!
     fullName: insertComment(commentText)
     summary: Insert a comment on the range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+      // Sets a comment on the selected content.
+
+      await Word.run(async (context) => {
+        const text = (document.getElementById("comment-text") as HTMLInputElement).value;
+        const comment: Word.Comment = context.document.getSelection().insertComment(text);
+
+        // Load object to log in the console.
+        comment.load();
+        await context.sync();
+
+        console.log("Comment inserted:", comment);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2127,8 +2647,8 @@ methods:
     package: word!
     fullName: insertContentControl(contentControlType)
     summary: Wraps the `Range` object with a content control.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -2138,6 +2658,47 @@ methods:
       1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
       `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in
       WordApiDesktop 1.3.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+
+      // Simulates creation of a template. First searches the document for
+      instances of the string "Contractor",
+
+      // then changes the format  of each search result,
+
+      // then wraps each search result within a content control,
+
+      // finally sets a tag and title property on each content control.
+
+      await Word.run(async (context) => {
+          const results: Word.RangeCollection = context.document.body.search("Contractor");
+          results.load("font/bold");
+
+          // Check to make sure these content controls haven't been added yet.
+          const customerContentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("customer");
+          customerContentControls.load("text");
+          await context.sync();
+
+        if (customerContentControls.items.length === 0) {
+          for (let i = 0; i < results.items.length; i++) {
+              results.items[i].font.bold = true;
+              let cc: Word.ContentControl = results.items[i].insertContentControl();
+              cc.tag = "customer";  // This value is used in the next step of this sample.
+              cc.title = "Customer Name " + i;
+          }
+        }
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2185,7 +2746,7 @@ methods:
     fullName: insertEndnote(insertText)
     summary: Inserts an endnote. The endnote reference is placed after the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2206,8 +2767,8 @@ methods:
     package: word!
     fullName: insertField(insertLocation, fieldType, text, removeFormatting)
     summary: Inserts a field at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -2218,6 +2779,35 @@ methods:
       read-only. To learn more, see [Use fields in your Word
       add-in](https://learn.microsoft.com/office/dev/add-ins/word/fields-guidance)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Inserts a Date field before selection.
+
+      await Word.run(async (context) => {
+        const range: Word.Range = context.document.getSelection().getRange();
+
+        const field: Word.Field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+
+        field.load("result,code");
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2260,7 +2850,7 @@ methods:
     fullName: insertField(insertLocation, fieldType, text, removeFormatting)
     summary: Inserts a field at the specified location.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -2346,8 +2936,8 @@ methods:
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -2355,6 +2945,32 @@ methods:
       ActiveX control (likely in a form field). Consider replacing such a form
       field with a content control or other option appropriate for your
       scenario.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert base64 encoded .docx at the beginning of the range.
+          // You'll need to implement getBase64() to make this work.
+          range.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Added base64 encoded text to the beginning of the range.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2382,9 +2998,31 @@ methods:
     package: word!
     fullName: insertFootnote(insertText)
     summary: Inserts a footnote. The footnote reference is placed after the range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+
+      // Sets a footnote on the selected content.
+
+      await Word.run(async (context) => {
+        const text = (document.getElementById("input-footnote") as HTMLInputElement).value;
+        const footnote: Word.NoteItem = context.document.getSelection().insertFootnote(text);
+        await context.sync();
+
+        console.log("Inserted footnote.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2406,9 +3044,35 @@ methods:
     summary: >-
       Inserts a geometric shape in front of text with its anchor at the
       beginning of the range.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-geometric-shapes.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a moon geometric shape at the beginning of the selection.
+        const selection: Word.Range = context.document.getSelection();
+        const shapeOptions: Word.InsertShapeOptions = {
+          height: 120,
+          width: 120,
+          left: 120,
+        };
+        selection.insertGeometricShape(Word.GeometricShapeType.moon, shapeOptions);
+        await context.sync();
+
+        console.log("Inserted a moon.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2436,7 +3100,7 @@ methods:
       Inserts a geometric shape in front of text with its anchor at the
       beginning of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2564,9 +3228,34 @@ methods:
     package: word!
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert HTML in to the beginning of the range.
+          range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('HTML added to the beginning of the range.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2593,9 +3282,50 @@ methods:
     package: word!
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts a picture at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a picture at the start of the first text box.
+        const firstShapeWithTextBox: Word.Shape = context.document.body.shapes
+          .getByTypes([Word.ShapeType.textBox])
+          .getFirst();
+        firstShapeWithTextBox.load("type/body");
+        await context.sync();
+
+        const startRange: Word.Range = firstShapeWithTextBox.body.getRange(Word.RangeLocation.start);
+        const newPic: Word.InlinePicture = startRange.insertInlinePictureFromBase64(
+          getPictureBase64(),
+          Word.InsertLocation.start
+        );
+        newPic.load();
+        await context.sync();
+
+        console.log("New inline picture properties:", newPic);
+      });
+
+
+      ...
+
+
+      // Returns Base64-encoded image data for a sample picture.
+
+      const pictureBase64 =
+        "iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABblBMVEX+7tEYMFlyg5v8zHXVgof///+hrL77qRnIWmBEWXq6MDgAF0/i1b//8dP+79QKJ1MAIFL8yWpugZz/+O/VzLwzTXR+jaP/z3PHzdjNaWvuxrLFT1n8znmMj5fFTFP25OHlsa2wqqJGW3z7pgCbqsH936oAJlWnssRzdoLTd1HTfINbY3a7tar90IxJVG0AH1ecmJH//90gN14AFU/nxInHVFL80YQAD03qv3LUrm7cwJLWjoLenpPRdXTQgoj15sz+57/7szr93KPbiWjUvZj95LnwzLmMX3L8wmz7rib8xnP8vVz91JT8ukvTz8i8vsORkJKvsLIAD1YwPViWnKZVYHbKuqHjwo3ur2/Pa2O+OTvHVETfj1tybm9qdYlsYlnkmmC0DSPirpvAq4bj5uuono7tu5vgpannnX3ksbSKg5bv0tTclJNFSlyZgpPqwsW4go2giWdbWV+3mmuWgpRcbolURmReS2embHkiRHBcZ6c8AAALcElEQVR4nO3di1cTVx4H8AyThmC484ghFzSxEDRhIRBIMEFQA1qoVhAqYBVd3UXcri1dd7fLdv3vdybJZF73zr2TufPyzPccew49hc6H331nZkylkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiQJ6wj2hH1JLKNo9p/sPB3X8rRUau/f2f56kML2k/n5+XFDSjzPQ7l95+swCqkfzDy1hnwvsLT9FRCF1I7Fpwt5Xt6PfRmF1LgNaBAqZdyNOVGwV9AkVMq4HOshR3iCAJqFalONr1HYRQGtQsXYvrONmjKj7xae0QnVuaO0/OiOlv3lfqI/1G4jgShhnzkIfzA/SNgAUoR9d0I9g/9wfjtsAiHocWZ8fIckLA1ad/SFB0jg+AGxhgNi9FvpU7TwGVHIl+QdtR9GfaTBCOdlIlA18vIzPqZC8kCjZT+mQnI31HInpkKqRqpGDhtADFpInCuGaUe9hBghrY+Xo7+xQgnn6Xth9EuIFNIPpDDsy6cISvg1tVGkkB4Y+ZlCjU34lBrIx6GCitAyyOzQ8mA7+nvfXixCigV33xf9tYwWg3B+/ICnAsbrKFwY8nae0figwnsUq3M34aCXZ3KphPa12+2SWjYZ8v0Pa1Jx4ikRSv1ga2Y8MIzH6aElAqFlRn/vQApRuB32FXoNSRiTad0hgkxI5E8piLlOStgX6DnfkBL7GhKFsS8iUfhN2FfoNWRh3ItIFsa9iBTCmBeRQhjz4ZRGGG8ilfB6jInEVVs/MTj5xUWwbSbUQNs2sZ2Kq9EilNup60qj3LUReT4mR2u2mIXyrtbx2nbjI/P+HpgTFoAYAQlU0rYJYXt3aASg+/zw8HBlkKWFuW5UkSbhsnH4RHxIKmtG8Lx2O5PJ1DhxkKqUW+hGk2gUyoJxhniE6Ivq3W0pAXQPVZ8ibHJ6qrl6JImmGppnecwn3XK7kBnEJOS4zlEUiUZh2zzLI4UQrv94GyPkOnMRJBqFyzghHKa0qfvsQk6KYF90bqUb93pZ72fz5Y+3DT6EsFqOtlC+bh1pXjSUtCq3tWTMsQm5VrSF/L6lkW7k1KsWM7jUjq3CXCFyRPOMb9hpLCtfb7TUvlWsYYUrVqG0Gm2hgbjfG2c61erxCRaYqS2J1o4YvQnDuvJeFtSV9zbfm+7hSTGD9ykpVq3ChagL1d1T/09PWLeOLdZYW2kchKbpfZMgrJ2K8RbyPKGEmRMp5kL40mURYyckFzHTjLkQrpPGmhMx3kIe/kRqp0Ux3kKlihlnY+2EE6MuhIYgiPxL25LbTMysSFEWQvjq8evs3Wu9nL15+4MdCdsvM47IWvG42q9j9c+RE4JXr29ms5pQzVtkHX9S94aG2JrquxVRqlZz7yN2Og5SW6rPJLz2BtkdlbTXN797qeS7zXX7YqdWq2VOTk7monTzBgDgPNsHmoTX3qBO2TRmP9hJpA7lRyESzafUe/c1n0V47S/EARa3YL1dh2He/Q26W2ruq9l6kL059FmFZ7giDoW41Zwq5PmwgClw/lf1+hWaEYcQXntFEMrPpzEpqBuv0EabvjCLikX4liA0n6zazpFhWLdIK8KzW0hgNmsW/sm5mcrbzsLQnjQBXWvj1HPmRshjgdpnAaFNGVhg9pYLofFDOIxQDunzVHAfX0QXwhIeOPw8J6TBBnRx3dAy1jgKzUfjGGEUi3hGKZSBA1D/TC6sngjSVEQHIfxQdMqq9p2hPbgHtvAN9YxCCD/mxwzJ54tF5R/617owtOUpuDGDLeMZSQhLRybg2LTaMi/G8nYhXwpvdQpupO3LtsFwc+YkhHBzzAzUel8RIQzzOQYAUnvnWw9mZlTUayvy7q2zM5QQ8ptlsy9/oQkv8nZhyE+3DW/zAfAtopaPrUJlR/jRUr+xsaI+hBYRwohshQX4mCyEGx+KeatvLF/ThYd5uzC8jmiKAO/esscoVMq3auepmkNdOI0QRuSRKaH0LSJd/TrhehnpUzQZXVhDCGFEHijadVyZwPUjjE/l6N+AGEvD2yVaglxkDoRww8FnLGINNZaGN+ebIqCAg506/9HJZ+iJ06gZPyqDKRLYE9qmdxSxOH1xMV1ErdqULEdAiNsmCDLkV4m+HilvqrNJGIHjbzD76dMsKn+D6+QCIsGREgJwf1HPw59/1r/4+4eRfBETgu7lYlrL4rdq4/yk/YtfRgSahaEuagDozuq+AVAjPhyRFyEhAHuzi0bgJ22IWfQGtAoBMv7zurNpo08R/qoJL70BLUJQL6Pi72226kdOZp5F6AloERZazQlbpqqnPgoV36XNZ26lnoAWIcdxUxWrsMk1/LuBUfXZeL0MgJ8Xf2Eo/E20EyvqHUadgj+9EqTuY3zp9GUP+OuDf4w6TdiF8H3/Dg0TsTK4hao+TIGdEewh2qehoX7+fLn4T49A42nivxqDO1AmKjYgJw2TqzJ6EMWpgH2i4vc2ypiE8J4GNBArtjvfuX6bZQF0LKAWj53QKNxoGAwTlUpF+TOBBHLiCgMhuEHhS3tuowbhsemGvuaUOk0gfeptRl3vQEILZVZCTQj/bb0B3CmSZyElkEEJB0J9lKHKsddWCnCTIPsS9oXw95YboOe7/SgrmH7IoIR94T1XFeQ6k96EYJYOmPY62Q+FJVc+ruPxMRtlmqADMmmkPeFv1gdpHJuo5PmZRUpfOs2ihKrwvUR2aRE7np8epu2EbEZSVfh7jt7XWimseQVSt1FGwrF3tBNhVWotMVh1g0vqRvofJsA8uQ9WG51WQ1wp11k8we+ihGwGmjH0ytPYMnPlgrqEYbQxpO+FaY97+0GwS88h8HiS7UkUPZCJcILYRptsT6HcNFIWwisisMX4MWHq5QwbIRnI/HkTFyMpCyHJx2QjaBG6KKH3AwziMMrlmL9UohukcIrYRpmcVpjiaqDxKqyQp3rWw0ywQvIo48djbQEKKRZrnMTa51boZeGdJ48yXMOHd9eMKLyqTDVFlyEDOebDzIjCqymqy3UfyY+XSNEdAxuFFc4fnpIOe59bIdWAP3o8n4l6F141/QSKvjwB7Ur4vZ8+LgI1/K/PQC4XstB3INfw4wVS9EL/gf50RGrhH/4DlWbq8dMJL0K/B5l+/HifBKXwf4EAlTmf9QafWkixamYSH17lRicMpo1yfmzxKYVBAZWxhnkzpRIGVkI/3qlIJQzMp3RE5ntgGmFQA6ka9u9UpBH+ERzQh9e3gm52BpMh3c2NPZ6FPhy2YZ9pzmYfBN5IfRGe4x9Nz84EPJL69B4whyL2iEF2Q39Wpnv4h+97RNt7gOMmVIZTh3aaDW5N2k9zjb1QqSL+/QLZmYeBApVlmy9HGeD8wU1MsotBDjT+vShafb/ADXT2XNygxSKiL8A+Ep1uwMLqgh890SlBC7ncasDErqt7eVmkVQ70L2sBddc11J8EaeRGWtNKTfVvpAnqmT3gfsJfG6ZbKEujGTunC6tz1tQ93g2G/qUtub/CJS0LR3WQKo/WysWqZE/reG5Uo4qZLNh+aXNlcYQS6B/7VhvS0Vqd/nZZchrHIx0aK7q5dxNThoiDX5r3raF0nKqzHKtEyf1JDgD1d1+m7A8Asrqk47VyR29o3n9nbtd1im/CzMMLR1u/SUdAb/ar5aa7By0QV+HuTBVMXtl8GGGzezraxXXMQ3+96bGOru6bAnNf7D608EUBgNXWKGW0nJ8BsOCtY4or1Ise5f+FKCBa2HtqBUwujWK0LqbBXMfThqVFO56CbgUNtAulwa0uYK2wkHM9WtiOecHkqRcj7UEAqH+ZwkVq5fS0ctzRcPxSNhtzC5yUc5NO03pFABQWRFc/w5jWC7oSpgr4TJoDLB0JdCfdBfH7VSbh0UPbSqnj5XvxK2aXP4P485IkSZIkSZIkSZIkSZIkSZIkSZIk8Tv/B3bBREdOWYS3AAAAAElFTkSuQmCC";
+      return pictureBase64;
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2623,9 +3353,41 @@ methods:
     package: word!
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert OOXML in to the beginning of the range.
+          range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('OOXML added to the beginning of the range.');
+      });
+
+
+      // Read "Create better add-ins for Word with Office Open XML" for guidance
+      on working with OOXML.
+
+      //
+      https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2652,9 +3414,34 @@ methods:
     package: word!
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert the paragraph after the range.
+          range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Paragraph added to the end of the range.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2683,7 +3470,7 @@ methods:
       Inserts a floating picture in front of text with its anchor at the
       beginning of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2710,7 +3497,7 @@ methods:
     fullName: insertTable(rowCount, columnCount, insertLocation, values)
     summary: Inserts a table with the specified number of rows and columns.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2745,9 +3532,34 @@ methods:
     package: word!
     fullName: insertText(text, insertLocation)
     summary: Inserts text at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert the paragraph at the end of the range.
+          range.insertText('New text inserted into the range.', Word.InsertLocation.end);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Text added to the end of the range.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2776,9 +3588,37 @@ methods:
     summary: >-
       Inserts a floating text box in front of text with its anchor at the
       beginning of the range.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
+
+
+      await Word.run(async (context) => {
+        // Inserts a text box at the beginning of the selection.
+        const range: Word.Range = context.document.getSelection();
+        const insertShapeOptions: Word.InsertShapeOptions = {
+          top: 0,
+          left: 0,
+          height: 100,
+          width: 100
+        };
+
+        const newTextBox: Word.Shape = range.insertTextBox("placeholder text", insertShapeOptions);
+        await context.sync();
+
+        console.log("Inserted a text box at the beginning of the current selection.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2807,7 +3647,7 @@ methods:
       This range isn't changed. Throws an `ItemNotFound` error if the two ranges
       aren't overlapped or adjacent.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2834,7 +3674,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2928,7 +3768,7 @@ methods:
     fullName: removeHighlight()
     summary: Removes the highlight added by the `highlight` method if any.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2946,7 +3786,7 @@ methods:
       Performs a search with the specified search options on the scope of the
       `Range` object. The search results are a collection of `Range` objects.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2986,9 +3826,37 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert HTML in to the beginning of the range.
+          range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
+
+          // Queue a command to select the HTML that was inserted.
+          range.select();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Selected the range.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3009,7 +3877,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3082,7 +3950,7 @@ methods:
     fullName: split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)
     summary: Splits the range into child ranges by using delimiters.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3190,9 +4058,7 @@ events:
     package: word!
     fullName: onCommentAdded
     summary: Occurs when new comments are added.
-    remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -3209,9 +4075,7 @@ events:
     package: word!
     fullName: onCommentChanged
     summary: Occurs when a comment or its reply is changed.
-    remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -3228,9 +4092,7 @@ events:
     package: word!
     fullName: onCommentDeselected
     summary: Occurs when a comment is deselected.
-    remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false
@@ -3247,9 +4109,7 @@ events:
     package: word!
     fullName: onCommentSelected
     summary: Occurs when a comment is selected.
-    remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi BETA (PREVIEW ONLY)\]'
 
     isPreview: true
     isDeprecated: false

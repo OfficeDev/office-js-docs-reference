@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CustomPropertyCollection
 summary: Contains the collection of custom properties.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -46,9 +46,35 @@ methods:
     package: excel!
     fullName: add(key, value)
     summary: Creates a new or sets an existing custom property.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
+
+
+      await Excel.run(async (context) => {
+        // Get the key/value pair from the task pane.
+        const userKey = document.getElementById("key").textContent;
+        const userValue = document.getElementById("value").textContent;
+
+        // Add the custom property.
+        const customDocProperties = context.workbook.properties.custom;
+        customDocProperties.add(userKey, userValue);
+
+        await context.sync();
+
+        console.log(`Successfully set custom document property ${userKey}: ${userValue}.`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -77,7 +103,7 @@ methods:
     fullName: deleteAll()
     summary: Deletes all custom properties in this collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -93,7 +119,7 @@ methods:
     fullName: getCount()
     summary: Gets the count of custom properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +137,7 @@ methods:
       Gets a custom property object by its key, which is case-insensitive.
       Throws an error if the custom property does not exist.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -137,7 +163,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

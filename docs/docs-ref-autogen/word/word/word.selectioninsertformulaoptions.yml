@@ -7,7 +7,7 @@ summary: >-
   Represents the options for the
   [Selection.insertFormula](xref:word!Word.Selection:class) method.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -50,7 +50,7 @@ properties:
       to the left of the insertion point are empty, using the `= (Formula)`
       field causes an error.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +67,7 @@ properties:
       If provided, specifies the format for the result of the `= (Formula)`
       field.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

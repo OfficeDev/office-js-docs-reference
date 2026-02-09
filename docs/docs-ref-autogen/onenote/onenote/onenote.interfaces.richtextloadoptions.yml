@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.RichTextLoadOptions
 summary: Represents a RichText object in a Paragraph.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: id
     summary: Gets the ID of the RichText object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: languageId
     summary: The language ID of the text. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -66,7 +66,7 @@ properties:
     fullName: paragraph
     summary: Gets the Paragraph object that contains the RichText object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -84,7 +84,7 @@ properties:
     fullName: style
     summary: Gets the text style of the RichText object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -100,7 +100,7 @@ properties:
     fullName: text
     summary: Gets the text content of the RichText object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

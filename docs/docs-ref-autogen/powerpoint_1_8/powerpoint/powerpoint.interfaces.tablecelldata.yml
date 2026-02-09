@@ -20,7 +20,7 @@ properties:
       Gets the number of table columns this cell spans across. Will be greater
       than or equal to 1.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -36,7 +36,7 @@ properties:
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -54,7 +54,7 @@ properties:
       Gets the number of table rows this cell spans across. Will be greater than
       or equal to 1.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -70,7 +70,7 @@ properties:
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -86,7 +86,7 @@ properties:
     fullName: text
     summary: Specifies the text content of the table cell.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

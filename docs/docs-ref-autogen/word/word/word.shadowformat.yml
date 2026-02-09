@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ShadowFormat
 summary: Represents the shadow formatting for a shape or text in Word.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Specifies the blur level for a shadow format as a value between 0.0 and
       100.0.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
       Returns a `ColorFormat` object that represents the foreground color for
       the fill, line, or shadow.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +67,7 @@ properties:
     fullName: isVisible
     summary: Specifies whether the object or the formatting applied to it is visible.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +86,7 @@ properties:
       shadow has no fill and the outline of the shadow is visible through the
       shape if the shape has no fill.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -104,7 +104,7 @@ properties:
       A positive value offsets the shadow to the right of the shape; a negative
       value offsets it to the left.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -122,7 +122,7 @@ properties:
       positive value offsets the shadow to the top of the shape; a negative
       value offsets it to the bottom.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -137,7 +137,7 @@ properties:
     fullName: rotateWithShape
     summary: Specifies whether to rotate the shadow when rotating the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -152,7 +152,7 @@ properties:
     fullName: size
     summary: Specifies the width of the shadow.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -167,7 +167,7 @@ properties:
     fullName: style
     summary: Specifies the type of shadow formatting to apply to a shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -186,7 +186,7 @@ properties:
       Specifies the degree of transparency of the shadow as a value between 0.0
       (opaque) and 1.0 (clear).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -201,7 +201,7 @@ properties:
     fullName: type
     summary: Specifies the shape shadow type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -235,7 +235,7 @@ methods:
       Changes the horizontal offset of the shadow by the number of points.
       Increment The number of points to adjust.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -257,7 +257,7 @@ methods:
       Changes the vertical offset of the shadow by the specified number of
       points. Increment The number of points to adjust.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

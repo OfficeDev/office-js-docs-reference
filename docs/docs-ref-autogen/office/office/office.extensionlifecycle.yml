@@ -6,9 +6,23 @@ fullName: Office.ExtensionLifeCycle
 summary: >-
   Provides options to manage the user interface of an Office Add-in while the
   add-in is running.
-remarks: >-
+remarks: >
   **Requirement set**: [TaskPaneApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Adjust the width of the task pane.
+
+  const width = 500;
+
+  Office.extensionLifeCycle.taskpane.setWidth(width);
+
+  ```
 
 isPreview: false
 isDeprecated: false

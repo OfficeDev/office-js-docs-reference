@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterBackgroundLoadOptions
 summary: Represents the background of a slide master.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -37,7 +37,7 @@ properties:
     fullName: fill
     summary: Returns the fill formatting of the background.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

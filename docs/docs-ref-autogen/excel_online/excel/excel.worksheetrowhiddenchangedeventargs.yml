@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorksheetRowHiddenChangedEventArgs
 summary: Provides information about the worksheet's row hidden change event.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Gets the range address that represents the changed area of a specific
       worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -38,7 +38,7 @@ properties:
       Gets the type of change that represents how the event was triggered. See
       `Excel.RowHiddenChangeType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -56,7 +56,7 @@ properties:
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -72,7 +72,7 @@ properties:
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -88,7 +88,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

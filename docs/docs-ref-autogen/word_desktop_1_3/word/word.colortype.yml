@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ColorType
 summary: Specifies the color type.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,20 +14,16 @@ fields:
   - name: rgb
     uid: word!Word.ColorType.rgb:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an RGB color type.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"rgb"'
   - name: scheme
     uid: word!Word.ColorType.scheme:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a scheme color type.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"scheme"'

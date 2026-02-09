@@ -4,10 +4,41 @@ uid: powerpoint!PowerPoint.TagCollection:class
 package: powerpoint!
 fullName: PowerPoint.TagCollection
 summary: Represents the collection of tags.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
+
+  await PowerPoint.run(async function (context) {
+    let selectedSlideIndex = await getSelectedSlideIndex();
+
+    // Decrement because the getSelectedSlideByIndex method is 1-based,
+    // but the getItemAt method is 0-based.
+    selectedSlideIndex = selectedSlideIndex - 1;
+    const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(selectedSlideIndex);
+    slide.tags.add("CUSTOMER_TYPE", "Premium");
+
+    await context.sync();
+
+    const audienceTag: PowerPoint.Tag = slide.tags.getItem("CUSTOMER_TYPE");
+    audienceTag.load("key, value");
+
+    await context.sync();
+
+    console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -50,10 +81,44 @@ methods:
       Adds a new tag at the end of the collection. If the `key` already exists
       in the collection, the value of the existing tag will be replaced with the
       given `value`<!-- -->.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
+
+      await PowerPoint.run(async function (context) {
+        const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
+        slide.tags.add("OCEAN", "Indian");
+        slide.tags.add("PLANET", "Jupiter");
+        slide.tags.add("CONTINENT", "Antarctica");
+
+        await context.sync();
+
+        slide.tags.load("key, value");
+
+        await context.sync();
+
+        for (let i = 0; i < slide.tags.items.length; i++) {
+          console.log(
+            "Added key " +
+              JSON.stringify(slide.tags.items[i].key) +
+              " with value " +
+              JSON.stringify(slide.tags.items[i].value),
+          );
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -79,10 +144,32 @@ methods:
     summary: >-
       Deletes the tag with the given `key` in this collection. Does nothing if
       the `key` doesn't exist.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
+
+      await PowerPoint.run(async function (context) {
+        let presentationTags: PowerPoint.TagCollection = context.presentation.tags;
+
+        presentationTags.delete("COLOR");
+
+        await context.sync();
+
+        console.log(JSON.stringify(presentationTags));
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -103,7 +190,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of tags in the collection.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -121,10 +208,41 @@ methods:
     summary: >-
       Gets a tag using its unique ID. An error is thrown if the tag doesn't
       exist.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+
+
+      await PowerPoint.run(async function (context) {
+        let selectedSlideIndex = await getSelectedSlideIndex();
+
+        // Decrement because the getSelectedSlideByIndex method is 1-based,
+        // but the getItemAt method is 0-based.
+        selectedSlideIndex = selectedSlideIndex - 1;
+        const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(selectedSlideIndex);
+        slide.tags.add("CUSTOMER_TYPE", "Premium");
+
+        await context.sync();
+
+        const audienceTag: PowerPoint.Tag = slide.tags.getItem("CUSTOMER_TYPE");
+        audienceTag.load("key, value");
+
+        await context.sync();
+
+        console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -147,7 +265,7 @@ methods:
       Gets a tag using its zero-based index in the collection. An error is
       thrown if the index is out of range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -175,7 +293,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

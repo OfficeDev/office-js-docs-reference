@@ -21,7 +21,7 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -75,7 +75,7 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -93,7 +93,7 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ properties:
       variable value, use format codes specified here:
       https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

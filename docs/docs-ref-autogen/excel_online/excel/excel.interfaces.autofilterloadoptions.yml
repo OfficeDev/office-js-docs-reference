@@ -7,7 +7,7 @@ summary: >-
   Represents the `AutoFilter` object. AutoFilter turns the values in Excel
   column into specific filters based on the cell contents.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: criteria
     summary: An array that holds all the filter criteria in the autofiltered range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
     fullName: enabled
     summary: Specifies if the AutoFilter is enabled.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -66,7 +66,7 @@ properties:
     fullName: isDataFiltered
     summary: Specifies if the AutoFilter has filter criteria.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.EventType
 summary: EventType represents the type of the events Host supports.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -15,11 +15,8 @@ fields:
   - name: dataVisualizerDiagramOperationCompleted
     uid: visio!Visio.EventType.dataVisualizerDiagramOperationCompleted:member
     package: visio!
-    summary: >-
+    summary: |-
       DataVisualizer diagram operation complete Event.
 
-
-      * \[ [Api set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"DataVisualizerDiagramOperationCompleted"'

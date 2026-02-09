@@ -7,7 +7,7 @@ summary: >-
   A container for the visible content on a page. A Paragraph can contain any one
   ParagraphType type of content.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: id
     summary: Gets the ID of the Paragraph object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -53,7 +53,7 @@ properties:
       Gets the Image object in the Paragraph. Throws an exception if
       ParagraphType is not Image.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -71,7 +71,7 @@ properties:
       Gets the Ink collection in the Paragraph. Throws an exception if
       ParagraphType is not Ink.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -87,7 +87,7 @@ properties:
     fullName: outline
     summary: Gets the Outline object that contains the Paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -103,7 +103,7 @@ properties:
     fullName: paragraphs
     summary: The collection of paragraphs under this paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -121,7 +121,7 @@ properties:
       Gets the parent paragraph object. Throws if a parent paragraph does not
       exist.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -139,7 +139,7 @@ properties:
       Gets the parent paragraph object. Returns null if a parent paragraph
       doesn't exist.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -157,7 +157,7 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If
       parent isn't a TableCell, throws ItemNotFound.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -175,7 +175,7 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If
       parent isn't a TableCell, returns null.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -193,7 +193,7 @@ properties:
       Gets the RichText object in the Paragraph. Throws an exception if
       ParagraphType is not RichText. Read-only
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -211,7 +211,7 @@ properties:
       Gets the Table object in the Paragraph. Throws an exception if
       ParagraphType isn't Table.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -227,7 +227,7 @@ properties:
     fullName: type
     summary: Gets the type of the Paragraph object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -248,7 +248,7 @@ methods:
     fullName: addNoteTag(type, status)
     summary: Add NoteTag to the paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -274,7 +274,7 @@ methods:
     fullName: addNoteTag(type, status)
     summary: Add NoteTag to the paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -307,10 +307,43 @@ methods:
     package: onenote!
     fullName: delete()
     summary: Deletes the paragraph
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await OneNote.run(async (context) => {
+
+          // Get the collection of pageContent items from the page.
+          const pageContents = context.application.getActivePage().contents;
+
+          // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
+          const pageContent = pageContents.getItemAt(0);
+          
+          const paragraphs = pageContent.outline.paragraphs;
+          
+          const firstParagraph = paragraphs.getItemAt(0);
+          
+          // Queue a command to load the id and type of the first paragraph.
+          firstParagraph.load("id,type");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+                  
+          // Queue a command to delete the first paragraph.
+          firstParagraph.delete();
+          
+          // Run the command to delete it.
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -325,7 +358,7 @@ methods:
     fullName: getParagraphInfo()
     summary: Get list information of paragraph
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -343,10 +376,43 @@ methods:
     package: onenote!
     fullName: insertHtmlAsSibling(insertLocation, html)
     summary: Inserts the specified HTML content
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await OneNote.run(async (context) => {
+
+          // Get the collection of pageContent items from the page.
+          const pageContents = context.application.getActivePage().contents;
+
+          // Get the first PageContent on the page.
+          // Assuming its an outline, get the outline's paragraphs.
+          const pageContent = pageContents.getItemAt(0);
+          const paragraphs = pageContent.outline.paragraphs;
+          const firstParagraph = paragraphs.getItemAt(0);
+
+          // Queue a command to load the id and type of the first paragraph.
+          firstParagraph.load("id,type");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+
+          // Queue commands to insert before and after the first paragraph.
+          firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
+          firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
+          
+          // Run the command to run inserts.
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -374,7 +440,7 @@ methods:
     fullName: insertHtmlAsSibling(insertLocation, html)
     summary: Inserts the specified HTML content
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -403,10 +469,43 @@ methods:
     package: onenote!
     fullName: insertImageAsSibling(insertLocation, base64EncodedImage, width, height)
     summary: Inserts the image at the specified insert location..
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await OneNote.run(async (context) => {
+
+          // Get the collection of pageContent items from the page.
+          const pageContents = context.application.getActivePage().contents;
+
+          // Get the first PageContent on the page.
+          // Assuming its an outline, get the outline's paragraphs.
+          const pageContent = pageContents.getItemAt(0);
+          const paragraphs = pageContent.outline.paragraphs;
+          const firstParagraph = paragraphs.getItemAt(0);
+
+          // Queue a command to load the id and type of the first paragraph.
+          firstParagraph.load("id,type");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+
+          // Queue commands to insert before and after the first paragraph.
+          firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
+          firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
+          
+          // Run the command to insert images.
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -441,7 +540,7 @@ methods:
     fullName: insertImageAsSibling(insertLocation, base64EncodedImage, width, height)
     summary: Inserts the image at the specified insert location.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -477,10 +576,42 @@ methods:
     package: onenote!
     fullName: insertRichTextAsSibling(insertLocation, paragraphText)
     summary: Inserts the paragraph text at the specifiec insert location.
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await OneNote.run(async (context) => {
+
+          // Get the collection of pageContent items from the page.
+          const pageContents = context.application.getActivePage().contents;
+
+          // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
+          const pageContent = pageContents.getItemAt(0);
+          const paragraphs = pageContent.outline.paragraphs;
+          const firstParagraph = paragraphs.getItemAt(0);
+
+          // Queue a command to load the id and type of the first paragraph.
+          firstParagraph.load("id,type");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+
+          // Queue commands to insert before and after the first paragraph.
+          firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
+          firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
+          
+          // Run the command to insert text contents.
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -504,7 +635,7 @@ methods:
     fullName: insertRichTextAsSibling(insertLocation, paragraphText)
     summary: Inserts the paragraph text at the specifiec insert location.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -532,7 +663,7 @@ methods:
       Adds a table with the specified number of rows and columns before or after
       the current paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -568,7 +699,7 @@ methods:
       Adds a table with the specified number of rows and columns before or after
       the current paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -627,7 +758,36 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await OneNote.run(async (context) => {
+
+          // Get the collection of pageContent items from the page.
+          const pageContents = context.application.getActivePage().contents;
+          
+          // Queue a command to load the outline property of each pageContent.
+          pageContents.load("outline");
+              
+          // Get the first PageContent on the page, and then get its Outline.
+          const pageContent = pageContents._GetItem(0);
+          const paragraphs = pageContent.outline.paragraphs;
+                  
+          // Queue a command to load the id and type of each paragraph.
+          paragraphs.load("id,type");
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+          // Write the text.
+          $.each(paragraphs.items, function(index, paragraph) {
+              console.log("Paragraph type: " + paragraph.type);
+              console.log("Paragraph ID: " + paragraph.id);
+          });
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

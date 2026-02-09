@@ -8,7 +8,7 @@ summary: >-
   [Word.Shape](xref:word!Word.Shape:class) object, use `ShapeGroup.shape`<!--
   -->.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
     fullName: id
     summary: Gets an integer that represents the shape group identifier.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
     fullName: shape
     summary: Gets the `Shape` object associated with the group.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

@@ -8,8 +8,7 @@ summary: >-
   "range.getCellProperties" method.
 
 
-  \[ [Api set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[Api set: ExcelApi 1.9\]
 remarks: ''
 
 isPreview: false
@@ -20,13 +19,47 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#address:member
     package: excel!
     fullName: address
-    summary: >-
+    summary: |-
       Specifies whether to load on the `address` property.
 
+      \[Api set: ExcelApi 1.9\]
+    remarks: >
 
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+
+      await Excel.run(async (context) => {
+          const cell = context.workbook.getActiveCell();
+
+          // Define the cell properties to get by setting the matching LoadOptions to true.
+          const propertiesToGet = cell.getCellProperties({
+              address: true,
+              format: {
+                  fill: {
+                      color: true
+                  },
+                  font: {
+                      color: true
+                  }
+              },
+              style: true
+          });
+
+          // Sync to get the data from the workbook.
+          await context.sync();
+          const cellProperties = propertiesToGet.value[0][0];
+          console.log(
+              `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -38,12 +71,10 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#addressLocal:member
     package: excel!
     fullName: addressLocal
-    summary: >-
+    summary: |-
       Specifies whether to load on the `addressLocal` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -56,12 +87,10 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Specifies whether to load on the `format` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -74,12 +103,10 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#hidden:member
     package: excel!
     fullName: hidden
-    summary: >-
+    summary: |-
       Specifies whether to load on the `hidden` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -92,12 +119,10 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#hyperlink:member
     package: excel!
     fullName: hyperlink
-    summary: >-
+    summary: |-
       Specifies whether to load on the `hyperlink` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -110,12 +135,10 @@ properties:
     uid: excel!Excel.CellPropertiesLoadOptions#style:member
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       Specifies whether to load on the `style` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -130,7 +153,7 @@ properties:
     fullName: textRuns
     summary: Specifies whether to load on the `textRuns` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

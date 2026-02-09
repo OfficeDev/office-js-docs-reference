@@ -10,7 +10,7 @@ summary: >-
   settings are persisted in the document and hence it is not a place to store
   any sensitive or protected information such as user information and password.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
     fullName: key
     summary: The key that represents the ID of the setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
     fullName: value
     summary: Represents the value stored for this setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

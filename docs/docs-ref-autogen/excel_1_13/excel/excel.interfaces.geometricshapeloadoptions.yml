@@ -8,7 +8,7 @@ summary: >-
   rectangle, block arrow, equation symbol, flowchart item, star, banner,
   callout, or any other basic shape in Excel.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
     fullName: id
     summary: Returns the shape identifier.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object for the geometric shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Ligature
 summary: Specifies the type of ligature applied to a font.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,160 +14,128 @@ fields:
   - name: all
     uid: word!Word.Ligature.all:member
     package: word!
-    summary: >-
+    summary: |-
       All ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"All"'
   - name: contextual
     uid: word!Word.Ligature.contextual:member
     package: word!
-    summary: >-
+    summary: |-
       Contextual ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Contextual"'
   - name: contextualDiscretional
     uid: word!Word.Ligature.contextualDiscretional:member
     package: word!
-    summary: >-
+    summary: |-
       Contextual and discretional ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ContextualDiscretional"'
   - name: contextualHistorical
     uid: word!Word.Ligature.contextualHistorical:member
     package: word!
-    summary: >-
+    summary: |-
       Contextual and historical ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ContextualHistorical"'
   - name: contextualHistoricalDiscretional
     uid: word!Word.Ligature.contextualHistoricalDiscretional:member
     package: word!
-    summary: >-
+    summary: |-
       Contextual, historical, and discretional ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ContextualHistoricalDiscretional"'
   - name: discretional
     uid: word!Word.Ligature.discretional:member
     package: word!
-    summary: >-
+    summary: |-
       Discretional ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Discretional"'
   - name: historical
     uid: word!Word.Ligature.historical:member
     package: word!
-    summary: >-
+    summary: |-
       Historical ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Historical"'
   - name: historicalDiscretional
     uid: word!Word.Ligature.historicalDiscretional:member
     package: word!
-    summary: >-
+    summary: |-
       Historical and discretional ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HistoricalDiscretional"'
   - name: none
     uid: word!Word.Ligature.none:member
     package: word!
-    summary: >-
+    summary: |-
       No ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"None"'
   - name: standard
     uid: word!Word.Ligature.standard:member
     package: word!
-    summary: >-
+    summary: |-
       Standard ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Standard"'
   - name: standardContextual
     uid: word!Word.Ligature.standardContextual:member
     package: word!
-    summary: >-
+    summary: |-
       Standard and contextual ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardContextual"'
   - name: standardContextualDiscretional
     uid: word!Word.Ligature.standardContextualDiscretional:member
     package: word!
-    summary: >-
+    summary: |-
       Standard, contextual, and discretional ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardContextualDiscretional"'
   - name: standardContextualHistorical
     uid: word!Word.Ligature.standardContextualHistorical:member
     package: word!
-    summary: >-
+    summary: |-
       Standard, contextual, and historical ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardContextualHistorical"'
   - name: standardDiscretional
     uid: word!Word.Ligature.standardDiscretional:member
     package: word!
-    summary: >-
+    summary: |-
       Standard and discretional ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardDiscretional"'
   - name: standardHistorical
     uid: word!Word.Ligature.standardHistorical:member
     package: word!
-    summary: >-
+    summary: |-
       Standard and historical ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardHistorical"'
   - name: standardHistoricalDiscretional
     uid: word!Word.Ligature.standardHistoricalDiscretional:member
     package: word!
-    summary: >-
+    summary: |-
       Standard, historical, and discretional ligatures applied.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StandardHistoricalDiscretional"'

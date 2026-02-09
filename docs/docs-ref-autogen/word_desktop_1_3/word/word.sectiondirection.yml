@@ -7,7 +7,7 @@ summary: >-
   Specifies how Word displays the reading order and alignment for the specified
   sections.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -16,20 +16,16 @@ fields:
   - name: leftToRight
     uid: word!Word.SectionDirection.leftToRight:member
     package: word!
-    summary: >-
+    summary: |-
       Left-to-right reading order.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.SectionDirection.rightToLeft:member
     package: word!
-    summary: >-
+    summary: |-
       Right-to-left reading order.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"RightToLeft"'

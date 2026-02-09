@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
 summary: Represents a collection of worksheet objects that are part of the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Returns a collection of charts that are
       part of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       the worksheet in a given workbook. The value of the identifier remains the
       same even when the worksheet is renamed or moved.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
       For EACH ITEM in the collection: The display name of the worksheet. The
       name must be fewer than 32 characters.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       For EACH ITEM in the collection: The zero-based position of the worksheet
       within the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       For EACH ITEM in the collection: Returns the sheet protection object for a
       worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -128,7 +128,7 @@ properties:
       For EACH ITEM in the collection: Returns the standard (default) height of
       all the rows in the worksheet, in points.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -147,7 +147,7 @@ properties:
       width of one character in the Normal style. For proportional fonts, the
       width of the character 0 (zero) is used.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -169,7 +169,7 @@ properties:
       color, use an empty-string to set an "auto" color, or a real color
       otherwise.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -186,7 +186,7 @@ properties:
       For EACH ITEM in the collection: Collection of tables that are part of the
       worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -203,7 +203,7 @@ properties:
     fullName: visibility
     summary: 'For EACH ITEM in the collection: The visibility of the worksheet.'
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

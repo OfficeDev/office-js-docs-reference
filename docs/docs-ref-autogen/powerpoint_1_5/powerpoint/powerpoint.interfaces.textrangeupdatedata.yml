@@ -22,7 +22,7 @@ properties:
       the value is greater than the length of the available text from the
       starting point.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -42,7 +42,7 @@ properties:
       `InvalidArgument` exception when set with a negative value or if the value
       is greater than the length of the text.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -58,7 +58,7 @@ properties:
     fullName: text
     summary: Represents the plain text content of the text range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

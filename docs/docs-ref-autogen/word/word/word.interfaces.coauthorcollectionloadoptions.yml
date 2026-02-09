@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of [Word.Coauthor](xref:word!Word.Coauthor:class)
   objects.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: emailAddress
     summary: 'For EACH ITEM in the collection: Gets the email address of the coauthor.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
       For EACH ITEM in the collection: Gets the unique identifier for the
       `Coauthor` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -70,7 +70,7 @@ properties:
       For EACH ITEM in the collection: Gets whether this author represents the
       current user.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -85,7 +85,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Gets the display name of the coauthor.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

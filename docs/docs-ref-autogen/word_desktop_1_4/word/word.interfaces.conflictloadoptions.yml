@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ConflictLoadOptions
 summary: Represents a coauthoring conflict in a Word document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Gets a `Range` object that represents the portion of the document that's
       contained in the `Conflict` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
     fullName: type
     summary: Gets the `RevisionType` for the `Conflict` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

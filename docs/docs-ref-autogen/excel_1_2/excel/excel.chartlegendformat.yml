@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartLegendFormat
 summary: Encapsulates the format properties of a chart legend.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
       Represents the fill format of an object, which includes background
       formatting information.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -51,9 +51,39 @@ properties:
     summary: >-
       Represents the font attributes such as font name, font size, and color of
       a chart legend.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-legend.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let chart = sheet.charts.getItemAt(0);
+          chart.legend.visible = true;
+
+          // Format the legend font.
+          let font = chart.legend.format.font;
+          font.bold = true;
+          font.color = "red";
+          font.italic = true;
+          font.size = 15;
+          font.name = "Calibri";
+          font.underline = "Single";
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

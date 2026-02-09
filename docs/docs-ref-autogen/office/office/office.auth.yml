@@ -9,7 +9,24 @@ summary: >-
   application. Indirectly, this also enables the add-in to access the signed-in
   user's Microsoft Graph data without requiring the user to sign in a second
   time.
-remarks: ''
+remarks: |
+
+
+  #### Examples
+
+  ```TypeScript
+  // Get the auth context object and use it to get an
+  // access token.
+  const authContext = Office.context.auth;
+  authContext.getAccessTokenAsync(function(result) {
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+          const token = result.value;
+          console.log(token);
+      } else {
+          console.log("Error obtaining token", result.error);
+      }
+  });
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -29,7 +46,7 @@ methods:
       add-in to an Azure application. Office users sign in with Organizational
       Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended
       for both user account types to access resources in the Microsoft Graph.
-    remarks: >-
+    remarks: >
       **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
 
 
@@ -66,6 +83,24 @@ methods:
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation)<!--
       -->.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      try{
+          const accessToken = await Office.auth.getAccessToken({
+              allowSignInPrompt: true,
+              allowConsentPrompt: true,
+              forMSGraphAccess: true,
+          });
+      } catch (error) {
+          console.log("Error obtaining token", error);
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +129,7 @@ methods:
 
       **Important**: In Outlook, this API isn't supported if the add-in is
       loaded in an Outlook.com or Gmail mailbox.
-    remarks: >-
+    remarks: >
       **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
 
 
@@ -106,6 +141,23 @@ methods:
       to an Azure application. Office users sign in with Organizational Accounts
       and Microsoft Accounts. Microsoft Azure returns tokens intended for both
       user account types to access resources in the Microsoft Graph.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.context.auth.getAccessTokenAsync(function(result) {
+          if (result.status === Office.AsyncResultStatus.Succeeded) {
+              const token = result.value;
+              // ...
+          } else {
+              console.log("Error obtaining token", result.error);
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -190,10 +242,21 @@ methods:
       Gets information about the signed-in user. The add-in can pass this
       information to the Microsoft authentication library (MSAL.js) to get an
       access token for the current session.
-    remarks: |-
+    remarks: |
       **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
 
       **Requirement set**: NestedAppAuth 1.1
+
+      #### Examples
+
+      ```TypeScript
+      try{
+          const authContext = await Office.auth.getAuthContext();
+          console.log(authContext.userPrincipalName);
+      } catch (error) {
+          console.log("Error obtaining token", error);
+      }
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -5,7 +5,7 @@ package: office-runtime!
 fullName: OfficeRuntime.DisplayWebDialogOptions
 summary: Provides display options and actions a dialog box may take.
 remarks: >-
-  \[ [Api set: CustomFunctionsRuntime
+  \[ [API set: CustomFunctionsRuntime
   1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
       popup (false) or within an IFrame (true). This setting is only applicable
       to custom functions running on Excel Online.
     remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
+      \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
     isPreview: false
@@ -40,7 +40,7 @@ properties:
       percentage of the current display. For example, accepts strings such as:
       '50%', '50'.
     remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
+      \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
     isPreview: false
@@ -55,7 +55,7 @@ properties:
     fullName: onClose
     summary: Optional callback that runs when the dialog box is closed.
     remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
+      \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
     isPreview: false
@@ -72,7 +72,7 @@ properties:
       Optional callback that runs when the dialog box sends a message to its
       parent.
     remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
+      \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
     isPreview: false
@@ -89,7 +89,7 @@ properties:
     fullName: onRuntimeError
     summary: Optional callback that runs when the dialog box sends an error.
     remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
+      \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
     isPreview: false
@@ -108,7 +108,7 @@ properties:
       Optional parameter that defines the width of dialog as a percentage of
       window. For example, accepts strings such as: '50%', '50'.
     remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
+      \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
     isPreview: false

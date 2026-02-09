@@ -4,9 +4,39 @@ uid: excel!Excel.ChartLeaderLinesFormat:class
 package: excel!
 fullName: Excel.ChartLeaderLinesFormat
 summary: Encapsulates the format properties for leader lines.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+  // The following code changes the format of leader lines. It adjusts color,
+  weight, and line style.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getItem(sheetName);
+    const chart = sheet.charts.getItemAt(0);
+    const series = chart.series.getItemAt(0);
+    const dataLabels = series.dataLabels;
+    const lineFormat = dataLabels.leaderLines.format;
+
+    // Set leader line formatting properties.
+    lineFormat.line.color = "blue";
+    lineFormat.line.weight = 2;
+    lineFormat.line.lineStyle = Excel.ChartLineStyle.dot;
+
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -33,7 +63,7 @@ properties:
     fullName: line
     summary: Gets an object that represents the line formatting of chart leader lines.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

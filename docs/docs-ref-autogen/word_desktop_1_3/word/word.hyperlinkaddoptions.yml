@@ -7,7 +7,7 @@ summary: >-
   Specifies the options for adding to a
   [Word.HyperlinkCollection](xref:word!Word.HyperlinkCollection:class) object.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
       If provided, specifies the address (e.g., URL or file path) of the
       hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
     fullName: screenTip
     summary: If provided, specifies the text that appears as a tooltip.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
     fullName: subAddress
     summary: If provided, specifies the location within the file or document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
       If provided, specifies the name of the frame or window in which to load
       the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -84,7 +84,7 @@ properties:
     fullName: textToDisplay
     summary: If provided, specifies the visible text of the hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

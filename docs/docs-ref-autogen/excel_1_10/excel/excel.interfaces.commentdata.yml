@@ -18,7 +18,7 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment's author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment's author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: content
     summary: The comment's content. The string is plain text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -68,7 +68,7 @@ properties:
       Gets the creation time of the comment. Returns `null` if the comment was
       converted from a note, since the comment does not have a creation date.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -84,7 +84,7 @@ properties:
     fullName: id
     summary: Specifies the comment identifier.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -100,7 +100,7 @@ properties:
     fullName: replies
     summary: Represents a collection of reply objects associated with the comment.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

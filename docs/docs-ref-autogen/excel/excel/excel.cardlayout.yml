@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CardLayout
 summary: Represents the layout of a card in card view.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 

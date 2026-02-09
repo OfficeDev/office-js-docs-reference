@@ -8,7 +8,7 @@ summary: >-
   [Word.CoauthoringLockCollection](xref:word!Word.CoauthoringLockCollection:class)
   object.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -24,7 +24,7 @@ properties:
       provided, the new lock is placed on the paragraph that contains the
       insertion point.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -41,7 +41,7 @@ properties:
       If provided, specifies the type of lock. If not provided, the lock type is
       set to `reservation`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

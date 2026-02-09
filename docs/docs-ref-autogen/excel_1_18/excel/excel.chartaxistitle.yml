@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartAxisTitle
 summary: Represents the title of a chart axis.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: format
     summary: Specifies the formatting of the chart axis title.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: text
     summary: Specifies the axis title.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -65,10 +65,34 @@ properties:
       Specifies the angle to which the text is oriented for the chart axis
       title. The value should either be an integer from -90 to 90 or the integer
       180 for vertically-oriented text.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => {
+        // Get a chart named "Sales Chart" from the "Sample" worksheet.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        let chart = sheet.charts.getItem("Sales Chart");
+
+        // Set the value axis title to "Profits".
+        chart.axes.valueAxis.title.text = "Profits";
+
+        /* Set the value axis text orientation to 0.
+          For charts with a y-axis, this makes the label on the y-axis horizontal, 
+          instead of the default look of rotated-vertically.
+          */ 
+        chart.axes.valueAxis.title.textOrientation = 0;
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -82,7 +106,7 @@ properties:
     fullName: visible
     summary: Specifies if the axis title is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -123,7 +147,21 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Add "Values" as the title for the value Axis.
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+          chart.axes.valueAxis.title.text = "Values";
+          await context.sync();
+          
+          console.log("Axis Title Added ");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -231,7 +269,7 @@ methods:
       A string value that represents the formula of chart axis title using
       A1-style notation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

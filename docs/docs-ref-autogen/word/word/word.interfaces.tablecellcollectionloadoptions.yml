@@ -7,7 +7,7 @@ summary: >-
   Contains the collection of the document's
   [Word.TableCell](xref:word!Word.TableCell:class) objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: body
     summary: 'For EACH ITEM in the collection: Gets the `Body` object of the cell.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
     fullName: cellIndex
     summary: 'For EACH ITEM in the collection: Gets the index of the cell in its row.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -68,7 +68,7 @@ properties:
       For EACH ITEM in the collection: Returns the `TableColumn` object that
       represents the table column that contains this cell.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -85,7 +85,7 @@ properties:
       For EACH ITEM in the collection: Specifies the width of the cell's column
       in points. This is applicable to uniform tables.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -104,7 +104,7 @@ properties:
       cell. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!--
       -->, or `justified`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -119,7 +119,7 @@ properties:
     fullName: parentRow
     summary: 'For EACH ITEM in the collection: Gets the parent row of the cell.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -134,7 +134,7 @@ properties:
     fullName: parentTable
     summary: 'For EACH ITEM in the collection: Gets the parent table of the cell.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -151,7 +151,7 @@ properties:
       For EACH ITEM in the collection: Gets the index of the cell's row in the
       table.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -168,7 +168,7 @@ properties:
       For EACH ITEM in the collection: Returns the `ShadingUniversal` object
       that represents the shading of the table cell.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -187,7 +187,7 @@ properties:
       For EACH ITEM in the collection: Specifies the shading color of the cell.
       Color is specified in "\#RRGGBB" format or by using the color name.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -202,7 +202,7 @@ properties:
     fullName: value
     summary: 'For EACH ITEM in the collection: Specifies the text of the cell.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -221,7 +221,7 @@ properties:
       cell. The value can be `top`<!-- -->, `center`<!-- -->, or `bottom`<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -236,7 +236,7 @@ properties:
     fullName: width
     summary: 'For EACH ITEM in the collection: Gets the width of the cell in points.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

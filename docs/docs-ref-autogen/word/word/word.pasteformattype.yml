@@ -5,7 +5,7 @@ package: word!
 fullName: Word.PasteFormatType
 summary: Specifies the type of formatting when paste to a document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,180 +14,144 @@ fields:
   - name: chart
     uid: word!Word.PasteFormatType.chart:member
     package: word!
-    summary: >-
+    summary: |-
       Pastes a chart as an editable chart.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Chart"'
   - name: chartLinked
     uid: word!Word.PasteFormatType.chartLinked:member
     package: word!
-    summary: >-
+    summary: |-
       Pastes a chart with a link to the source data.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ChartLinked"'
   - name: chartPicture
     uid: word!Word.PasteFormatType.chartPicture:member
     package: word!
-    summary: >-
+    summary: |-
       Pastes a chart as a picture.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ChartPicture"'
   - name: formatOriginalFormatting
     uid: word!Word.PasteFormatType.formatOriginalFormatting:member
     package: word!
-    summary: >-
+    summary: |-
       Applies the original formatting of the pasted content.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FormatOriginalFormatting"'
   - name: formatPlainText
     uid: word!Word.PasteFormatType.formatPlainText:member
     package: word!
-    summary: >-
+    summary: |-
       Pastes content as plain text.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FormatPlainText"'
   - name: formatSurroundingFormattingWithEmphasis
     uid: word!Word.PasteFormatType.formatSurroundingFormattingWithEmphasis:member
     package: word!
-    summary: >-
+    summary: |-
       Applies surrounding formatting with emphasis.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FormatSurroundingFormattingWithEmphasis"'
   - name: listCombineWithExistingList
     uid: word!Word.PasteFormatType.listCombineWithExistingList:member
     package: word!
-    summary: >-
+    summary: |-
       Combines the pasted list with an existing list.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ListCombineWithExistingList"'
   - name: listContinueNumbering
     uid: word!Word.PasteFormatType.listContinueNumbering:member
     package: word!
-    summary: >-
+    summary: |-
       Continues numbering from the previous list.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ListContinueNumbering"'
   - name: listDontMerge
     uid: word!Word.PasteFormatType.listDontMerge:member
     package: word!
-    summary: >-
+    summary: |-
       Prevents merging the pasted list with an existing list.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ListDontMerge"'
   - name: listRestartNumbering
     uid: word!Word.PasteFormatType.listRestartNumbering:member
     package: word!
-    summary: >-
+    summary: |-
       Restarts numbering for the new list.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ListRestartNumbering"'
   - name: pasteDefault
     uid: word!Word.PasteFormatType.pasteDefault:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the default paste behavior.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"PasteDefault"'
   - name: singleCellTable
     uid: word!Word.PasteFormatType.singleCellTable:member
     package: word!
-    summary: >-
+    summary: |-
       Pastes a table into a single cell.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SingleCellTable"'
   - name: singleCellText
     uid: word!Word.PasteFormatType.singleCellText:member
     package: word!
-    summary: >-
+    summary: |-
       Pastes text into a single cell.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SingleCellText"'
   - name: tableAppendTable
     uid: word!Word.PasteFormatType.tableAppendTable:member
     package: word!
-    summary: >-
+    summary: |-
       Appends the pasted table to the existing table.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TableAppendTable"'
   - name: tableInsertAsRows
     uid: word!Word.PasteFormatType.tableInsertAsRows:member
     package: word!
-    summary: >-
+    summary: |-
       Inserts the pasted table as new rows.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TableInsertAsRows"'
   - name: tableOriginalFormatting
     uid: word!Word.PasteFormatType.tableOriginalFormatting:member
     package: word!
-    summary: >-
+    summary: |-
       Inserts the pasted table with its original formatting.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TableOriginalFormatting"'
   - name: tableOverwriteCells
     uid: word!Word.PasteFormatType.tableOverwriteCells:member
     package: word!
-    summary: >-
+    summary: |-
       Overwrites existing cells with the pasted table.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TableOverwriteCells"'
   - name: useDestinationStylesRecovery
     uid: word!Word.PasteFormatType.useDestinationStylesRecovery:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the destination styles for the pasted content.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"UseDestinationStylesRecovery"'

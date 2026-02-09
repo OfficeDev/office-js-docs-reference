@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
 summary: Encapsulates the format properties for chart error bars.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: line
     summary: Represents the chart line formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

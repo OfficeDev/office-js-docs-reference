@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.AutorunEventCompletedOptions
 summary: Specifies the options for completing an autorun event.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -20,7 +20,7 @@ properties:
       Specifies whether to allow the event to proceed. The default value is
       `false`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -38,7 +38,7 @@ properties:
       Specifies the type of autorun event to be completed if allowed. The
       default value is `unknown`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -60,7 +60,7 @@ properties:
       If provided, specifies an optional error message if the event isn't
       allowed to proceed. The default value is "" (empty string).
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorksheetProtection
 summary: Represents the protection of a worksheet object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       `AllowEditRange` object can be used to allow editing of a specific range,
       while maintaining protection on the rest of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -38,7 +38,7 @@ properties:
     fullName: canPauseProtection
     summary: Specifies if protection can be paused for this worksheet.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -68,7 +68,7 @@ properties:
     fullName: isPasswordProtected
     summary: Specifies if the sheet is password protected.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -83,7 +83,7 @@ properties:
     fullName: isPaused
     summary: Specifies if worksheet protection is paused.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -98,7 +98,7 @@ properties:
     fullName: options
     summary: Specifies the protection options for the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -113,7 +113,7 @@ properties:
     fullName: protected
     summary: Specifies if the worksheet is protected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -131,7 +131,7 @@ properties:
       the same `WorksheetProtectionOptions` object regardless of the worksheet
       protection state.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -151,7 +151,7 @@ methods:
       entered but no password is required to unlock worksheet protection, this
       method will return false.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -260,7 +260,7 @@ methods:
       protection. This method does not change the protection state if worksheet
       protection is not enabled or already paused.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -279,10 +279,37 @@ methods:
     package: excel!
     fullName: protect(options, password)
     summary: Protects a worksheet. Fails if the worksheet has already been protected.
-    remarks: >-
-      \[ [Api set: ExcelApi 1.2 for options; 1.7 for
+    remarks: >
+      \[ [API set: ExcelApi 1.2 for options; 1.7 for
       password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+
+      let password = await passwordHandler();
+
+      passwordHelper(password);
+
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.load("protection/protected");
+
+          await context.sync();
+
+          if (!activeSheet.protection.protected) {
+              activeSheet.protection.protect(null, password);
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -310,7 +337,7 @@ methods:
       work. If worksheet protection is not paused, then this method will not
       change the protection state of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -334,7 +361,7 @@ methods:
       and not paused, this method throws an `AccessDenied` error and fails to
       change the password.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -377,10 +404,31 @@ methods:
     package: excel!
     fullName: unprotect(password)
     summary: Unprotects a worksheet.
-    remarks: >-
-      \[ [Api set: ExcelApi 1.7 for
+    remarks: >
+      \[ [API set: ExcelApi 1.7 for
       password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+
+      let password = await passwordHandler();
+
+      passwordHelper(password);
+
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.protection.unprotect(password);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -404,7 +452,7 @@ methods:
       enabled and not paused, this method throws an `AccessDenied` error and
       fails to change the worksheet protection options.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

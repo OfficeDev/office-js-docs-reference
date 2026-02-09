@@ -20,7 +20,7 @@ properties:
       Gets a `CustomXmlNodeCollection` object representing the attributes of the
       current element in the current node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       Gets the base name of the node without the namespace prefix, if one
       exists.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       Gets a `CustomXmlNodeCollection` object containing all of the child
       elements of the current node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ properties:
       [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
       -->), returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -94,7 +94,7 @@ properties:
       [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
       -->), the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
     fullName: namespaceUri
     summary: Gets the unique address identifier for the namespace of the node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -127,7 +127,7 @@ properties:
       of the current node. If the node is the last sibling at its level, the
       property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -142,7 +142,7 @@ properties:
     fullName: nodeType
     summary: Gets the type of the current node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -162,7 +162,7 @@ properties:
     fullName: nodeValue
     summary: Specifies the value of the current node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -177,7 +177,7 @@ properties:
     fullName: ownerPart
     summary: Gets the object representing the part associated with this node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -194,7 +194,7 @@ properties:
       Gets the parent element node of the current node. If the current node is
       at the root level, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -212,7 +212,7 @@ properties:
       instruction) of the current node. If the current node is the first sibling
       at its level, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -227,7 +227,7 @@ properties:
     fullName: text
     summary: Specifies the text for the current node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -242,7 +242,7 @@ properties:
     fullName: xml
     summary: Gets the XML representation of the current node and its children.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -260,7 +260,7 @@ properties:
       node is no longer in the Document Object Model (DOM), the property returns
       an error message.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

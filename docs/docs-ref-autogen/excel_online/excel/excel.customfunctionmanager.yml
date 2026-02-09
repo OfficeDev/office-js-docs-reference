@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CustomFunctionManager
 summary: Manages settings on custom functions.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -88,7 +88,7 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of the `Excel.CustomFunctionManager` object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -111,7 +111,7 @@ methods:
     fullName: setVisibility(customFunctionVisibilityOptions)
     summary: Show or hide custom functions in Excel AutoComplete.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

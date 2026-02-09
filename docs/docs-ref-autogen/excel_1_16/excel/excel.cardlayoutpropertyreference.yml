@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CardLayoutPropertyReference
 summary: Represents a reference to a property used by the card layout.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: property
     summary: Represents the name of the property referenced by the card layout.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

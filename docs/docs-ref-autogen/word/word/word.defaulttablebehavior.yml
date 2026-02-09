@@ -5,7 +5,7 @@ package: word!
 fullName: Word.DefaultTableBehavior
 summary: Specifies the default behavior when inserting a new table.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -14,20 +14,16 @@ fields:
   - name: disableAutoFit
     uid: word!Word.DefaultTableBehavior.disableAutoFit:member
     package: word!
-    summary: >-
+    summary: |-
       Disables AutoFit.
 
-
-      * \[ [Api set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
     value: '"DisableAutoFit"'
   - name: enableAutoFit
     uid: word!Word.DefaultTableBehavior.enableAutoFit:member
     package: word!
-    summary: >-
+    summary: |-
       Enables AutoFit.
 
-
-      * \[ [Api set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
     value: '"EnableAutoFit"'

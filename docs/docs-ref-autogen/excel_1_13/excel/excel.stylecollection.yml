@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.StyleCollection
 summary: Represents a collection of all the styles.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -46,9 +46,42 @@ methods:
     package: excel!
     fullName: add(name)
     summary: Adds a new style to the collection.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+
+      await Excel.run(async (context) => {
+          let styles = context.workbook.styles;
+
+          // Add a new style to the style collection.
+          // Styles is in the Home tab ribbon.
+          styles.add("Diagonal Orientation Style");
+                
+          let newStyle = styles.getItem("Diagonal Orientation Style");
+          
+          // The "Diagonal Orientation Style" properties.
+          newStyle.textOrientation = 38;
+          newStyle.autoIndent = true;
+          newStyle.includeProtection = true;
+          newStyle.shrinkToFit = true;
+          newStyle.locked = false;
+          
+          await context.sync();
+
+          console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -67,7 +100,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of styles in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,9 +115,42 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `Style` by name.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+
+      await Excel.run(async (context) => {
+          let styles = context.workbook.styles;
+
+          // Add a new style to the style collection.
+          // Styles is in the Home tab ribbon.
+          styles.add("Diagonal Orientation Style");
+                
+          let newStyle = styles.getItem("Diagonal Orientation Style");
+          
+          // The "Diagonal Orientation Style" properties.
+          newStyle.textOrientation = 38;
+          newStyle.autoIndent = true;
+          newStyle.includeProtection = true;
+          newStyle.shrinkToFit = true;
+          newStyle.locked = false;
+          
+          await context.sync();
+
+          console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -103,7 +169,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a style based on its position in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

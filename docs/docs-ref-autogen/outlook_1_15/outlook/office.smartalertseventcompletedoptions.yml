@@ -7,8 +7,8 @@ summary: >-
   Specifies the behavior of a [Smart Alerts
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)
   when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -21,6 +21,47 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example checks whether a location is specified in an
+  appointment before it's sent.
+
+  function onAppointmentSendHandler(event) {
+      Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
+          const event = asyncResult.asyncContext;
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(asyncResult.error.message);
+              // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+              event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+              return;
+          }
+
+          if (asyncResult.value === "") {
+              // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+              event.completed(
+                  {
+                      allowEvent: false,
+                      cancelLabel: "Add a location",
+                      commandId: "msgComposeOpenPaneButton",
+                      contextData: JSON.stringify({ a: "aValue", b: "bValue" }),
+                      errorMessage: "Don't forget to add a meeting location.",
+                      errorMessageMarkdown: "Don't forget to add a meeting location.\n\n**Tip**: For a list of locations, see [Meeting Locations]("https://www.contoso.com/meeting-locations).",
+                      sendModeOverride: Office.MailboxEnums.SendModeOverride.PromptUser
+                  }
+              );
+          } else {
+              // If a location is specified, the appointment is sent.
+              event.completed({ allowEvent: true });
+          }
+      });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -41,7 +82,7 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -77,7 +118,7 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -148,7 +189,7 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function
+      \[ [API set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function
       command
       support)](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
@@ -238,7 +279,7 @@ properties:
       add-in for processing when the applicable button is selected from the
       Smart Alerts dialog.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -312,7 +353,7 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -350,7 +391,7 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -412,7 +453,7 @@ properties:
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#override-the-send-mode-option-at-runtime-optional)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

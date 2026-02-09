@@ -4,9 +4,23 @@ uid: office!Office.TaskPane:interface
 package: office!
 fullName: Office.TaskPane
 summary: Provides methods to manage the task pane of an add-in.
-remarks: >-
+remarks: >
   **Requirement set**: [TaskPaneApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Adjust the width of the task pane.
+
+  const width = 500;
+
+  Office.extensionLifeCycle.taskpane.setWidth(width);
+
+  ```
 
 isPreview: false
 isDeprecated: false

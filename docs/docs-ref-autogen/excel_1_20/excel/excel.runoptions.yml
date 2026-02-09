@@ -46,7 +46,7 @@ properties:
       all `context.sync()` calls in a single `Excel.run` are merged into one
       `undo` group.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

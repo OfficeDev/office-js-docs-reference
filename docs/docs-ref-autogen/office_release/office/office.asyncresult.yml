@@ -11,7 +11,58 @@ summary: >-
   When the function you pass to the `callback` parameter of an "Async" method
   executes, it receives an AsyncResult object that you can access from the
   `callback` function's only parameter.
-remarks: ''
+remarks: >
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following is an example applicable to content and task pane add-ins.
+
+  // The example shows a call to the getSelectedDataAsync method of the Document
+  object.
+
+  Office.context.document.getSelectedDataAsync(
+      Office.CoercionType.Text,
+      {
+          valueFormat: Office.ValueFormat.Unformatted,
+          filterType: Office.FilterType.All
+      },
+      (result) => {
+          if (result.status === Office.AsyncResultStatus.Succeeded) {
+              const dataValue = result.value; // Get selected data.
+              console.log('Selected data is ' + dataValue);
+          } else {
+              const err = result.error;
+              console.log(err.name + ": " + err.message);
+          }
+      }
+  );
+
+  // The anonymous function passed as the callback argument ((result) => {...})
+  has a single 
+
+  // parameter named result that provides access to an AsyncResult object when
+  the function executes.
+
+  // When the call to the getSelectedDataAsync method completes, the callback
+  function executes, 
+
+  // and the following line of code accesses the value property of the
+  AsyncResult object to 
+
+  // return the data selected in the document:
+
+  // const dataValue = result.value;
+
+  // Note that other lines of code in the function use the result parameter of
+  the callback function 
+
+  // to access the status and error properties of the AsyncResult object.
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -28,7 +79,28 @@ properties:
       Number, Boolean, Object, Array, Null, or Undefined) passed to the optional
       `asyncContext` parameter of the invoked method. Returns Undefined, if you
       didn't pass anything to the asyncContext parameter.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      function getDataWithContext() {
+          const format = "Your data: ";
+          Office.context.document.getSelectedDataAsync(
+              Office.CoercionType.Text, 
+              { asyncContext: format }, 
+              showDataWithContext);
+      }
+
+      function showDataWithContext(asyncResult) {
+          write(asyncResult.asyncContext + asyncResult.value);
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -81,7 +153,27 @@ properties:
     summary: >-
       Gets an [Office.Error](xref:office!Office.Error:interface) object that
       provides a description of the error, if any error occurred.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -97,7 +189,27 @@ properties:
       Gets the
       [Office.AsyncResultStatus](xref:office!Office.AsyncResultStatus:enum) of
       the asynchronous operation.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -110,7 +222,7 @@ properties:
     package: office!
     fullName: value
     summary: Gets the payload or content of this asynchronous operation, if any.
-    remarks: >-
+    remarks: >
       You access the AsyncResult object in the function passed as the argument
       to the callback parameter of an "Async" method, such as the
       `getSelectedDataAsync` and `setSelectedDataAsync` methods of the
@@ -121,6 +233,31 @@ properties:
       method varies depending on the purpose and context of that method. To
       determine what is returned by the value property for an "Async" method,
       refer to the "Callback value" section of the method's topic.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

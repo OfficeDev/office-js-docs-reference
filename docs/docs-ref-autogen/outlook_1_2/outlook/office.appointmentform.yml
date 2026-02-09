@@ -6,7 +6,7 @@ fullName: Office.AppointmentForm
 summary: >-
   The `AppointmentForm` object is used to access the currently selected
   appointment.
-remarks: >-
+remarks: >
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
   -->**: **restricted**
@@ -15,6 +15,45 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
+
+
+  const start = new Date();
+
+  const end = new Date();
+
+  end.setHours(start.getHours() + 1);
+
+
+  // The async version is only available starting with requirement set 1.9,
+
+  // and provides a callback when the new appointment form has been created.
+
+  Office.context.mailbox.displayNewAppointmentFormAsync(
+    {
+      requiredAttendees: ["bob@contoso.com"] as any,
+      optionalAttendees: ["sam@contoso.com"] as any,
+      start: start,
+      end: end,
+      location: "Home",
+      subject: "meeting",
+      resources: ["projector@contoso.com"] as any,
+      body: "Hello World!"
+    },
+    function(asyncResult) {
+      console.log(JSON.stringify(asyncResult));
+    }
+  );
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -26,7 +65,7 @@ properties:
     fullName: body
     summary: Gets an object that provides methods for manipulating the body of an item.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

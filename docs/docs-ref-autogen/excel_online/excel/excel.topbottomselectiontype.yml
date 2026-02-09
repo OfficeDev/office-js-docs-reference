@@ -7,7 +7,7 @@ summary: >-
   A simple enum for top/bottom filters to select whether to filter by the top N
   or bottom N percent, number, or sum of values.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -16,33 +16,24 @@ fields:
   - name: items
     uid: excel!Excel.TopBottomSelectionType.items:member
     package: excel!
-    summary: >-
+    summary: |-
       Filter the top/bottom N number of items as measured by the chosen value.
 
-
-      * \[ [Api set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Items"'
   - name: percent
     uid: excel!Excel.TopBottomSelectionType.percent:member
     package: excel!
-    summary: >-
+    summary: |-
       Filter the top/bottom N percent of items as measured by the chosen value.
 
-
-      * \[ [Api set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Percent"'
   - name: sum
     uid: excel!Excel.TopBottomSelectionType.sum:member
     package: excel!
-    summary: >-
+    summary: |-
       Filter the top/bottom N sum as measured by the chosen value.
 
-
-      * \[ [Api set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.12\]
     value: '"Sum"'

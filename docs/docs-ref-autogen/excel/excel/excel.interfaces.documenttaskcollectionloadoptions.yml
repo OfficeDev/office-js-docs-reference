@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.DocumentTaskCollectionLoadOptions
 summary: Represents a collection of tasks.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Returns a collection of assignees of the
       task.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -54,7 +54,7 @@ properties:
       For EACH ITEM in the collection: Gets the comment associated with the
       task.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -73,7 +73,7 @@ properties:
       For EACH ITEM in the collection: Gets the most recent user to have
       completed the task.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -92,7 +92,7 @@ properties:
       For EACH ITEM in the collection: Gets the date and time that the task was
       completed. All dates are in UTC.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -108,7 +108,7 @@ properties:
     fullName: createdBy
     summary: 'For EACH ITEM in the collection: Gets the user who created the task.'
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -127,7 +127,7 @@ properties:
       For EACH ITEM in the collection: Gets the date and time that the task was
       created. All dates are in UTC.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -143,7 +143,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the task.'
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -163,7 +163,7 @@ properties:
       the task. This is a value between 0 and 100, where 100 represents a
       completed task.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -181,7 +181,7 @@ properties:
       For EACH ITEM in the collection: Specifies the priority of the task. This
       is a value between 0 and 10, where 0 represents the highest priority.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -200,7 +200,7 @@ properties:
       For EACH ITEM in the collection: Specifies the date and time the task
       should start and is due.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -216,7 +216,7 @@ properties:
     fullName: title
     summary: 'For EACH ITEM in the collection: Specifies title of the task.'
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

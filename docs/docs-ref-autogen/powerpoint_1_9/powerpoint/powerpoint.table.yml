@@ -4,10 +4,44 @@ uid: powerpoint!PowerPoint.Table:class
 package: powerpoint!
 fullName: PowerPoint.Table
 summary: Represents a table.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Updates a table's values.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table (which is a type of Shape).
+    const shape = shapes.addTable(4, 3);
+    let table = shape.getTable();
+    table.load();
+    await context.sync();
+
+    // Update values in the table.
+    for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+      for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+        const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+        cell.text = generateRandomString();
+      }
+    }
+
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -19,7 +53,7 @@ properties:
     fullName: columnCount
     summary: Gets the number of columns in the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -35,7 +69,7 @@ properties:
     fullName: columns
     summary: Gets the collection of columns in the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -66,7 +100,7 @@ properties:
     fullName: rowCount
     summary: Gets the number of rows in the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -82,7 +116,7 @@ properties:
     fullName: rows
     summary: Gets the collection of rows in the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -98,7 +132,7 @@ properties:
     fullName: styleSettings
     summary: Gets the table style settings.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -114,7 +148,7 @@ properties:
     fullName: values
     summary: Gets all of the values in the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -131,7 +165,7 @@ methods:
     fullName: clear(options)
     summary: Clears table values and formatting.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -151,10 +185,44 @@ methods:
     package: powerpoint!
     fullName: getCellOrNullObject(rowIndex, columnIndex)
     summary: Gets the cell at the specified `rowIndex` and `columnIndex`<!-- -->.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Updates a table's values.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table (which is a type of Shape).
+        const shape = shapes.addTable(4, 3);
+        let table = shape.getTable();
+        table.load();
+        await context.sync();
+
+        // Update values in the table.
+        for (let rowIndex = 0; rowIndex < table.rowCount; rowIndex++) {
+          for (let columnIndex = 0; columnIndex < table.columnCount; columnIndex++) {
+            const cell = table.getCellOrNullObject(rowIndex, columnIndex);
+            cell.text = generateRandomString();
+          }
+        }
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -184,7 +252,7 @@ methods:
     fullName: getMergedAreas()
     summary: Gets a collection of cells that represent the merged areas of the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -203,7 +271,7 @@ methods:
     fullName: getShape()
     summary: Gets the shape object for the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -301,7 +369,7 @@ methods:
       columnIndex. The merged area spans across a specified number of rows and
       columns.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

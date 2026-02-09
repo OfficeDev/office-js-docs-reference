@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of DataPivotHierarchy items associated with the
   PivotTable.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -49,7 +49,7 @@ methods:
     fullName: add(pivotHierarchy)
     summary: Adds the PivotHierarchy to the current axis.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of pivot hierarchies in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -85,7 +85,7 @@ methods:
     fullName: getItem(name)
     summary: Gets a DataPivotHierarchy by its name or ID.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -208,7 +208,7 @@ methods:
     fullName: remove(DataPivotHierarchy)
     summary: Removes the PivotHierarchy from the current axis.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

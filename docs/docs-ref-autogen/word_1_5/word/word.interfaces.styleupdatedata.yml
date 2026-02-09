@@ -20,7 +20,7 @@ properties:
       Specifies the name of an existing style to use as the base formatting of
       another style.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -40,7 +40,7 @@ properties:
       Gets a `Font` object that represents the character formatting of the
       style.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       Specifies the name of the style to be applied automatically to a new
       paragraph that is inserted after a paragraph formatted with the style.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -78,7 +78,7 @@ properties:
       Gets a `ParagraphFormat` object that represents the paragraph settings for
       the style.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -95,7 +95,7 @@ properties:
     fullName: priority
     summary: Specifies the priority.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -110,7 +110,7 @@ properties:
     fullName: quickStyle
     summary: Specifies whether the style corresponds to an available quick style.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -128,7 +128,7 @@ properties:
       Styles gallery and in the Styles task pane in Microsoft Word after it's
       used in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -145,7 +145,7 @@ properties:
       Specifies whether the style is visible as a recommended style in the
       Styles gallery and in the Styles task pane.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

@@ -20,7 +20,7 @@ properties:
       Represents the length of the arrowhead at the beginning of the specified
       line.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -41,7 +41,7 @@ properties:
       Represents the style of the arrowhead at the beginning of the specified
       line.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -62,7 +62,7 @@ properties:
       Represents the width of the arrowhead at the beginning of the specified
       line.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -81,7 +81,7 @@ properties:
     fullName: connectorType
     summary: Represents the connector type for the line.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -98,7 +98,7 @@ properties:
     fullName: endArrowheadLength
     summary: Represents the length of the arrowhead at the end of the specified line.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -117,7 +117,7 @@ properties:
     fullName: endArrowheadStyle
     summary: Represents the style of the arrowhead at the end of the specified line.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -136,7 +136,7 @@ properties:
     fullName: endArrowheadWidth
     summary: Represents the width of the arrowhead at the end of the specified line.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

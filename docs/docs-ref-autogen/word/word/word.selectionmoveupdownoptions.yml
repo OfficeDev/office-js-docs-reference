@@ -7,7 +7,7 @@ summary: >-
   Represents the options for the [Selection.moveUp and
   Selection.moveDown](xref:word!Word.Selection:class) methods.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
       If provided, specifies the number of units the selection is to be moved.
       The default value is 1.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -42,7 +42,7 @@ properties:
       direction. If set to `extend`<!-- -->, the selection is extended in the
       appropriate direction. The default value is `move`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -59,7 +59,7 @@ properties:
       If provided, specifies the unit by which to move the selection. The
       default value is `line`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

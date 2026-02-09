@@ -7,7 +7,7 @@ summary: >-
   Represents a canvas in the document. To get the corresponding
   [Word.Shape](xref:word!Word.Shape:class) object, use `Canvas.shape`<!-- -->.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: id
     summary: Gets an integer that represents the canvas identifier.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
     fullName: shape
     summary: Gets the `Shape` object associated with the canvas.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.PageRenderCompleteEventArgs
 summary: Provides information about the page that raised the PageRenderComplete event.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -19,7 +19,7 @@ properties:
     fullName: pageName
     summary: Gets the name of the page that raised the PageLoad event.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: success
     summary: Gets the success/failure of the PageRender event.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

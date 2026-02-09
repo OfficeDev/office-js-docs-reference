@@ -7,7 +7,7 @@ summary: >-
   Contains the collection of
   [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the custom XML part.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       For EACH ITEM in the collection: Gets the namespace URI of the custom XML
       part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

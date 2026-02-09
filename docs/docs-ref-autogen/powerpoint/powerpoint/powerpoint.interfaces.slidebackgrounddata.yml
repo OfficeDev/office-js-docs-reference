@@ -21,7 +21,7 @@ properties:
       Specifies whether the slide layout background fill hides or displays
       background graphic objects from the slide master.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -38,7 +38,7 @@ properties:
     fullName: isMasterBackgroundFollowed
     summary: Specifies if the slide background follows the slide master background.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -10,7 +10,7 @@ summary: >-
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
   -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
     fullName: application
     summary: Represents the Excel application instance that contains this workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -38,7 +38,7 @@ properties:
     fullName: bindings
     summary: Represents a collection of bindings that are part of the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -70,7 +70,7 @@ properties:
       Represents a collection of worksheet functions that can be used for
       computation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -87,7 +87,7 @@ properties:
       Represents a collection of workbook-scoped named items (named ranges and
       constants).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -102,7 +102,7 @@ properties:
     fullName: tables
     summary: Represents a collection of tables associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -117,7 +117,7 @@ properties:
     fullName: worksheets
     summary: Represents a collection of worksheets associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -134,9 +134,24 @@ methods:
     summary: >-
       Gets the currently selected single range from the workbook. If there are
       multiple ranges selected, this method will throw an error.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const selectedRange = context.workbook.getSelectedRange();
+          selectedRange.load('address');
+          await context.sync();
+          console.log(selectedRange.address);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -297,9 +312,7 @@ events:
     package: excel!
     fullName: onSelectionChanged
     summary: Occurs when the selection in the document is changed.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.2\]'
 
     isPreview: false
     isDeprecated: false

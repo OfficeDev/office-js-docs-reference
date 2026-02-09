@@ -4,9 +4,41 @@ uid: word!Word.Setting:class
 package: word!
 fullName: Word.Setting
 summary: Represents a setting of the add-in.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+  // Adds a new custom setting or
+
+  // edits the value of an existing one.
+
+  await Word.run(async (context) => {
+    const key = (document.getElementById("key") as HTMLInputElement).value;
+    if (key == "") {
+      console.error("Key shouldn't be empty.");
+      return;
+    }
+
+    const value = (document.getElementById("value") as HTMLInputElement).value;
+    const settings: Word.SettingCollection = context.document.settings;
+    const setting: Word.Setting = settings.add(key, value);
+    setting.load();
+    await context.sync();
+
+    console.log("Setting added or edited:", setting);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -32,9 +64,41 @@ properties:
     package: word!
     fullName: key
     summary: Gets the key of the setting.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+      // Adds a new custom setting or
+
+      // edits the value of an existing one.
+
+      await Word.run(async (context) => {
+        const key = (document.getElementById("key") as HTMLInputElement).value;
+        if (key == "") {
+          console.error("Key shouldn't be empty.");
+          return;
+        }
+
+        const value = (document.getElementById("value") as HTMLInputElement).value;
+        const settings: Word.SettingCollection = context.document.settings;
+        const setting: Word.Setting = settings.add(key, value);
+        setting.load();
+        await context.sync();
+
+        console.log("Setting added or edited:", setting);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -47,9 +111,41 @@ properties:
     package: word!
     fullName: value
     summary: Specifies the value of the setting.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+      // Adds a new custom setting or
+
+      // edits the value of an existing one.
+
+      await Word.run(async (context) => {
+        const key = (document.getElementById("key") as HTMLInputElement).value;
+        if (key == "") {
+          console.error("Key shouldn't be empty.");
+          return;
+        }
+
+        const value = (document.getElementById("value") as HTMLInputElement).value;
+        const settings: Word.SettingCollection = context.document.settings;
+        const setting: Word.Setting = settings.add(key, value);
+        setting.load();
+        await context.sync();
+
+        console.log("Setting added or edited:", setting);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -63,9 +159,45 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the setting.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+
+          // Queue commands add a setting.
+          const settings = context.document.settings;
+          const startMonth = settings.add('startMonth', { month: 'March', year: 1998 });
+
+          // Queue a command to get the count of settings.
+          const count = settings.getCount();
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log(count.value);
+
+          // Queue a command to delete the setting.
+          startMonth.delete();
+
+          // Queue a command to get the new count of settings.
+          count = settings.getCount();
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log(count.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

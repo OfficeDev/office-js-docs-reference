@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.NamedItemType
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7
+  \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7
   for Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
   \]
 
@@ -15,42 +15,30 @@ fields:
   - name: boolean
     uid: excel!Excel.NamedItemType.boolean:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Boolean"'
   - name: double
     uid: excel!Excel.NamedItemType.double:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Double"'
   - name: error
     uid: excel!Excel.NamedItemType.error:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Error"'
   - name: integer
     uid: excel!Excel.NamedItemType.integer:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Integer"'
   - name: range
     uid: excel!Excel.NamedItemType.range:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Range"'
   - name: string
     uid: excel!Excel.NamedItemType.string:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"String"'

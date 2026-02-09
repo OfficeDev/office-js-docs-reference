@@ -7,8 +7,8 @@ summary: >-
   Provides the change status of the sensitivity label applied to a message or
   appointment in compose mode. This information is provided when the
   `Office.EventType.SensitivityLabelChanged` event is raised.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -21,6 +21,22 @@ remarks: >-
   [Manage the sensitivity label of your message or appointment in compose
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
   -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Handles a change to an item's sensitivity label.
+
+  function onSensitivityLabelChangedHandler(event) {
+      console.log(`Event: ${event.type}`);
+
+      // Perform operations based on the event.
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -35,7 +51,7 @@ properties:
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

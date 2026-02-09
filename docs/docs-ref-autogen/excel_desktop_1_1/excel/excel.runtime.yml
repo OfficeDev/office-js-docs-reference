@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Runtime
 summary: Represents the Excel Runtime class.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -32,9 +32,37 @@ properties:
     package: excel!
     fullName: enableEvents
     summary: Toggle JavaScript events in the current task pane or content add-in.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
+
+
+      await Excel.run(async (context) => {
+          context.runtime.load("enableEvents");
+          await context.sync();
+
+          // check if events are enabled and toggle accordingly
+          const eventBoolean = !context.runtime.enableEvents
+          context.runtime.enableEvents = eventBoolean;
+          if (eventBoolean) {
+              console.log("Events are currently on.");
+          } else {
+              console.log("Events are currently off.");
+          }
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

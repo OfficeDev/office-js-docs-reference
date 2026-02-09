@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.Interfaces.DocumentViewLoadOptions
 summary: Represents the DocumentView class.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: disableHyperlinks
     summary: Disable Hyperlinks.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -51,7 +51,7 @@ properties:
     fullName: disablePan
     summary: Disable Pan.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -67,7 +67,7 @@ properties:
     fullName: disablePanZoomWindow
     summary: Disable PanZoomWindow.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -83,7 +83,7 @@ properties:
     fullName: disableZoom
     summary: Disable Zoom.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -99,7 +99,7 @@ properties:
     fullName: hideDiagramBoundary
     summary: Hide Diagram Boundary.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

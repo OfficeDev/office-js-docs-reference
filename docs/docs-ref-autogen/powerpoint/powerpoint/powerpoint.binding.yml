@@ -4,10 +4,32 @@ uid: powerpoint!PowerPoint.Binding:class
 package: powerpoint!
 fullName: PowerPoint.Binding
 summary: Represents an Office.js binding that is defined in the presentation.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+  async function getShapeForBindingId(bindingId: string):
+  Promise<PowerPoint.Shape | undefined> {
+    // Gets shape associated with binding ID.
+    return PowerPoint.run(async (context) => {
+      const binding = context.presentation.bindings.getItem(bindingId);
+      const shape = binding.getShape();
+      return shape;
+    });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -34,7 +56,7 @@ properties:
     fullName: id
     summary: Represents the binding identifier.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -50,7 +72,7 @@ properties:
     fullName: type
     summary: Returns the type of the binding. See `BindingType` for details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -67,7 +89,7 @@ methods:
     fullName: delete()
     summary: Deletes the binding.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -85,10 +107,32 @@ methods:
     summary: >-
       Returns the shape represented by the binding. Throws an error if the
       binding isn't of the correct type.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      async function getShapeForBindingId(bindingId: string):
+      Promise<PowerPoint.Shape | undefined> {
+        // Gets shape associated with binding ID.
+        return PowerPoint.run(async (context) => {
+          const binding = context.presentation.bindings.getItem(bindingId);
+          const shape = binding.getShape();
+          return shape;
+        });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

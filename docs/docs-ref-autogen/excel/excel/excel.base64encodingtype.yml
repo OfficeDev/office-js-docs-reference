@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Base64EncodingType
 summary: The file type represented by the Base64 encoding.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -14,77 +14,56 @@ fields:
   - name: BMP
     uid: excel!Excel.Base64EncodingType.BMP:member
     package: excel!
-    summary: >-
+    summary: |-
       The BMP file type.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"BMP"'
   - name: GIF
     uid: excel!Excel.Base64EncodingType.GIF:member
     package: excel!
-    summary: >-
+    summary: |-
       The GIF file type.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"GIF"'
   - name: ICO
     uid: excel!Excel.Base64EncodingType.ICO:member
     package: excel!
-    summary: >-
+    summary: |-
       The ICO file type.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ICO"'
   - name: JPG
     uid: excel!Excel.Base64EncodingType.JPG:member
     package: excel!
-    summary: >-
+    summary: |-
       The JPG (or JPEG) file type.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"JPG"'
   - name: PNG
     uid: excel!Excel.Base64EncodingType.PNG:member
     package: excel!
-    summary: >-
+    summary: |-
       The PNG file type.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"PNG"'
   - name: TIF
     uid: excel!Excel.Base64EncodingType.TIF:member
     package: excel!
-    summary: >-
+    summary: |-
       The TIFF file type.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"TIF"'
   - name: WEBP
     uid: excel!Excel.Base64EncodingType.WEBP:member
     package: excel!
-    summary: >-
+    summary: |-
       The WEBP file type.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"WEBP"'

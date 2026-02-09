@@ -7,7 +7,7 @@ summary: >-
   Represents the top-level object that contains all globally addressable OneNote
   objects such as notebooks, the active notebook, and the active section.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
       instance. In OneNote Online, only one notebook at a time is open in the
       application instance.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.DataBarConditionalFormat
 summary: Represents an Excel conditional data bar type.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -21,7 +21,7 @@ properties:
       \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value
       is "" (an empty string) if no axis is present or set.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: axisFormat
     summary: Representation of how the axis is determined for an Excel data bar.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,9 +54,31 @@ properties:
     package: excel!
     fullName: barDirection
     summary: Specifies the direction that the data bar graphic should be based on.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.dataBar);
+          conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -93,7 +115,7 @@ properties:
       set as a JSON object (use `x.lowerBoundRule = {...}` instead of
       `x.lowerBoundRule.formula = ...`<!-- -->).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -108,7 +130,7 @@ properties:
     fullName: negativeFormat
     summary: Representation of all values to the left of the axis in an Excel data bar.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -125,7 +147,7 @@ properties:
       Representation of all values to the right of the axis in an Excel data
       bar.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -142,7 +164,7 @@ properties:
       If `true`<!-- -->, hides the values from the cells where the data bar is
       applied.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -161,7 +183,7 @@ properties:
       set as a JSON object (use `x.upperBoundRule = {...}` instead of
       `x.upperBoundRule.formula = ...`<!-- -->).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

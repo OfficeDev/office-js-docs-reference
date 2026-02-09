@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ValueErrorCellValueSubType
 summary: Represents types of \#VALUE! errors.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,9 +20,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"CoerceStringToBoolInvalid"'
   - name: coerceStringToInvalidType
     uid: excel!Excel.ValueErrorCellValueSubType.coerceStringToInvalidType:member
@@ -32,9 +30,7 @@ fields:
       or number. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"CoerceStringToInvalidType"'
   - name: coerceStringToNumberInvalid
     uid: excel!Excel.ValueErrorCellValueSubType.coerceStringToNumberInvalid:member
@@ -45,9 +41,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"CoerceStringToNumberInvalid"'
   - name: cRegexAlphaAssertionUnknown
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexAlphaAssertionUnknown:member
@@ -57,9 +51,7 @@ fields:
       recognized. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexAlphaAssertionUnknown"'
   - name: cRegexBackslashCSyntax
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexBackslashCSyntax:member
@@ -70,9 +62,7 @@ fields:
       character. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBackslashCSyntax"'
   - name: cRegexBackslashGSyntax
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexBackslashGSyntax:member
@@ -83,9 +73,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBackslashGSyntax"'
   - name: cRegexBackslashKInLookaround
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexBackslashKInLookaround:member
@@ -95,9 +83,7 @@ fields:
       `lookarounds=`<!-- -->. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBackslashKInLookaround"'
   - name: cRegexBackslashNInClass
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexBackslashNInClass:member
@@ -107,9 +93,7 @@ fields:
       class. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBackslashNInClass"'
   - name: cRegexBackslashOMissingBrace
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexBackslashOMissingBrace:member
@@ -119,9 +103,7 @@ fields:
       \\<!-- -->o. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBackslashOMissingBrace"'
   - name: cRegexBackslashUCodePointTooBig
     uid: >-
@@ -133,9 +115,7 @@ fields:
       in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBackslashUCodePointTooBig"'
   - name: cRegexBadRelativeReference
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexBadRelativeReference:member
@@ -145,9 +125,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBadRelativeReference"'
   - name: cRegexBadSubpatternReference
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexBadSubpatternReference:member
@@ -157,9 +135,7 @@ fields:
       subpattern. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexBadSubpatternReference"'
   - name: cRegexCalloutBadStringDelimiter
     uid: >-
@@ -170,9 +146,7 @@ fields:
       follows (?C. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexCalloutBadStringDelimiter"'
   - name: cRegexCalloutNoStringDelimiter
     uid: >-
@@ -183,9 +157,7 @@ fields:
       callout with string argument. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexCalloutNoStringDelimiter"'
   - name: cRegexCalloutNumberTooBig
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexCalloutNumberTooBig:member
@@ -195,9 +167,7 @@ fields:
       255. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexCalloutNumberTooBig"'
   - name: cRegexCalloutStringTooLong
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexCalloutStringTooLong:member
@@ -207,9 +177,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexCalloutStringTooLong"'
   - name: cRegexClassInvalidRange
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexClassInvalidRange:member
@@ -219,9 +187,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexClassInvalidRange"'
   - name: cRegexCodePointTooBig
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexCodePointTooBig:member
@@ -232,9 +198,7 @@ fields:
       large. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexCodePointTooBig"'
   - name: cRegexConditionAtomicAssertionExpected
     uid: >-
@@ -245,9 +209,7 @@ fields:
       (?( or (?(?C). Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexConditionAtomicAssertionExpected"'
   - name: cRegexDefineTooManyBranches
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexDefineTooManyBranches:member
@@ -257,9 +219,7 @@ fields:
       than one branch. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexDefineTooManyBranches"'
   - name: cRegexDuplicateSubpatternName
     uid: >-
@@ -270,9 +230,7 @@ fields:
       same name. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexDuplicateSubpatternName"'
   - name: cRegexEndBackslash
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexEndBackslash:member
@@ -282,9 +240,7 @@ fields:
       error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexEndBackslash"'
   - name: cRegexEndBackslashC
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexEndBackslashC:member
@@ -294,9 +250,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexEndBackslashC"'
   - name: cRegexErrorGeneric
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexErrorGeneric:member
@@ -306,9 +260,7 @@ fields:
       occurred. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexErrorGeneric"'
   - name: cRegexEscapeInvalidInClass
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexEscapeInvalidInClass:member
@@ -318,9 +270,7 @@ fields:
       character class. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexEscapeInvalidInClass"'
   - name: cRegexEscapeInvalidInVerb
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexEscapeInvalidInVerb:member
@@ -330,9 +280,7 @@ fields:
       (*VERB) name. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexEscapeInvalidInVerb"'
   - name: cRegexInvalidAfterParensQuery
     uid: >-
@@ -343,9 +291,7 @@ fields:
       or (?-. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexInvalidAfterParensQuery"'
   - name: cRegexInvalidHexadecimal
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexInvalidHexadecimal:member
@@ -357,9 +303,7 @@ fields:
       Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexInvalidHexadecimal"'
   - name: cRegexInvalidHyphenInOptions
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexInvalidHyphenInOptions:member
@@ -369,9 +313,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexInvalidHyphenInOptions"'
   - name: cRegexInvalidOctal
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexInvalidOctal:member
@@ -382,9 +324,7 @@ fields:
       is a missing closing brace. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexInvalidOctal"'
   - name: cRegexInvalidSubpatternName
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexInvalidSubpatternName:member
@@ -394,9 +334,7 @@ fields:
       non-digit. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexInvalidSubpatternName"'
   - name: cRegexLookbehindNotFixedLength
     uid: >-
@@ -407,9 +345,7 @@ fields:
       isn't limited. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexLookbehindNotFixedLength"'
   - name: cRegexLookbehindTooComplicated
     uid: >-
@@ -420,9 +356,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexLookbehindTooComplicated"'
   - name: cRegexLookbehindTooLong
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexLookbehindTooLong:member
@@ -432,9 +366,7 @@ fields:
       long. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexLookbehindTooLong"'
   - name: cRegexMalformedUnicodeProperty
     uid: >-
@@ -445,9 +377,7 @@ fields:
       -->p sequence. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMalformedUnicodeProperty"'
   - name: cRegexMarkMissingArgument
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexMarkMissingArgument:member
@@ -457,9 +387,7 @@ fields:
       argument. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMarkMissingArgument"'
   - name: cRegexMissingCalloutClosing
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexMissingCalloutClosing:member
@@ -469,9 +397,7 @@ fields:
       expected. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMissingCalloutClosing"'
   - name: cRegexMissingClosingParenthesis
     uid: >-
@@ -482,9 +408,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMissingClosingParenthesis"'
   - name: cRegexMissingCommentClosing
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexMissingCommentClosing:member
@@ -494,9 +418,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMissingCommentClosing"'
   - name: cRegexMissingConditionClosing
     uid: >-
@@ -507,9 +429,7 @@ fields:
       condition. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMissingConditionClosing"'
   - name: cRegexMissingNameTerminator
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexMissingNameTerminator:member
@@ -519,9 +439,7 @@ fields:
       (missing terminator?). Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMissingNameTerminator"'
   - name: cRegexMissingOctalOrHexDigits
     uid: >-
@@ -534,9 +452,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMissingOctalOrHexDigits"'
   - name: cRegexMissingSquareBracket
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexMissingSquareBracket:member
@@ -546,9 +462,7 @@ fields:
       character class. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexMissingSquareBracket"'
   - name: cRegexParensQueryRMissingClosing
     uid: >-
@@ -560,9 +474,7 @@ fields:
       in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexParensQueryRMissingClosing"'
   - name: cRegexParenthesesNestTooDeep
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexParenthesesNestTooDeep:member
@@ -572,9 +484,7 @@ fields:
       nested. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexParenthesesNestTooDeep"'
   - name: cRegexPatternStringTooLong
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexPatternStringTooLong:member
@@ -584,9 +494,7 @@ fields:
       limit set by the application. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexPatternStringTooLong"'
   - name: cRegexPatternTooComplicated
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexPatternTooComplicated:member
@@ -596,9 +504,7 @@ fields:
       complicated. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexPatternTooComplicated"'
   - name: cRegexPatternTooLarge
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexPatternTooLarge:member
@@ -608,9 +514,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexPatternTooLarge"'
   - name: cRegexPosixClassNotInClass
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexPosixClassNotInClass:member
@@ -620,9 +524,7 @@ fields:
       only within a class. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexPosixClassNotInClass"'
   - name: cRegexPosixNoSupportCollating
     uid: >-
@@ -633,9 +535,7 @@ fields:
       supported. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexPosixNoSupportCollating"'
   - name: cRegexQuantifierInvalid
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexQuantifierInvalid:member
@@ -645,9 +545,7 @@ fields:
       repeatable item. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexQuantifierInvalid"'
   - name: cRegexQuantifierOutOfOrder
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexQuantifierOutOfOrder:member
@@ -657,9 +555,7 @@ fields:
       quantifier. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexQuantifierOutOfOrder"'
   - name: cRegexQuantifierTooBig
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexQuantifierTooBig:member
@@ -669,9 +565,7 @@ fields:
       {<!-- -->}<!-- -->. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexQuantifierTooBig"'
   - name: cRegexQueryBarjxNestTooDeep
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexQueryBarjxNestTooDeep:member
@@ -682,9 +576,7 @@ fields:
       Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexQueryBarjxNestTooDeep"'
   - name: cRegexSubpatternNameExpected
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNameExpected:member
@@ -694,9 +586,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexSubpatternNameExpected"'
   - name: cRegexSubpatternNamesMismatch
     uid: >-
@@ -708,9 +598,7 @@ fields:
       Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexSubpatternNamesMismatch"'
   - name: cRegexSubpatternNameTooLong
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNameTooLong:member
@@ -720,9 +608,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexSubpatternNameTooLong"'
   - name: cRegexSubpatternNumberTooBig
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexSubpatternNumberTooBig:member
@@ -732,9 +618,7 @@ fields:
       limit of 65,535. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexSubpatternNumberTooBig"'
   - name: cRegexTooManyCaptures
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexTooManyCaptures:member
@@ -744,9 +628,7 @@ fields:
       (maximum 65535). Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexTooManyCaptures"'
   - name: cRegexTooManyConditionBranches
     uid: >-
@@ -757,9 +639,7 @@ fields:
       more than two branches. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexTooManyConditionBranches"'
   - name: cRegexTooManyNamedSubpatterns
     uid: >-
@@ -770,9 +650,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexTooManyNamedSubpatterns"'
   - name: cRegexUnicodeDisallowedCodePoint
     uid: >-
@@ -784,9 +662,7 @@ fields:
       error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnicodeDisallowedCodePoint"'
   - name: cRegexUnicodePropertiesUnavailable
     uid: >-
@@ -798,9 +674,7 @@ fields:
       error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnicodePropertiesUnavailable"'
   - name: cRegexUnknownEscape
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexUnknownEscape:member
@@ -810,9 +684,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnknownEscape"'
   - name: cRegexUnknownPosixClass
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexUnknownPosixClass:member
@@ -822,9 +694,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnknownPosixClass"'
   - name: cRegexUnknownUnicodeProperty
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexUnknownUnicodeProperty:member
@@ -834,9 +704,7 @@ fields:
       -->P or \\<!-- -->p. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnknownUnicodeProperty"'
   - name: cRegexUnmatchedClosingParenthesis
     uid: >-
@@ -847,9 +715,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnmatchedClosingParenthesis"'
   - name: cRegexUnrecognizedAfterQueryP
     uid: >-
@@ -860,9 +726,7 @@ fields:
       (?P. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnrecognizedAfterQueryP"'
   - name: cRegexUnsupportedEscapeSequence
     uid: >-
@@ -875,9 +739,7 @@ fields:
       in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexUnsupportedEscapeSequence"'
   - name: cRegexVerbNameTooLong
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexVerbNameTooLong:member
@@ -888,9 +750,7 @@ fields:
       Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexVerbNameTooLong"'
   - name: cRegexVerbUnknown
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexVerbUnknown:member
@@ -900,9 +760,7 @@ fields:
       is malformed. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexVerbUnknown"'
   - name: cRegexVersionConditionSyntax
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexVersionConditionSyntax:member
@@ -913,9 +771,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexVersionConditionSyntax"'
   - name: cRegexZeroRelativeReference
     uid: excel!Excel.ValueErrorCellValueSubType.cRegexZeroRelativeReference:member
@@ -925,20 +781,15 @@ fields:
       allowed. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CRegexZeroRelativeReference"'
   - name: eRegexErrorGeneric
     uid: excel!Excel.ValueErrorCellValueSubType.eRegexErrorGeneric:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown regex error occurred. Displays as error type \#VALUE! in Excel.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ERegexErrorGeneric"'
   - name: eRegexNoCaptureGroups
     uid: excel!Excel.ValueErrorCellValueSubType.eRegexNoCaptureGroups:member
@@ -948,9 +799,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ERegexNoCaptureGroups"'
   - name: hlookupResultNotFound
     uid: excel!Excel.ValueErrorCellValueSubType.hlookupResultNotFound:member
@@ -960,9 +809,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"HlookupResultNotFound"'
   - name: hlookupRowIndexLessThanOne
     uid: excel!Excel.ValueErrorCellValueSubType.hlookupRowIndexLessThanOne:member
@@ -972,9 +819,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"HlookupRowIndexLessThanOne"'
   - name: imageFormulaInvalidAltText
     uid: excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidAltText:member
@@ -984,9 +829,7 @@ fields:
       function. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaInvalidAltText"'
   - name: imageFormulaInvalidHeight
     uid: excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidHeight:member
@@ -996,9 +839,7 @@ fields:
       `IMAGE`<!-- -->. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaInvalidHeight"'
   - name: imageFormulaInvalidImageFormat
     uid: >-
@@ -1009,9 +850,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaInvalidImageFormat"'
   - name: imageFormulaInvalidSizing
     uid: excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidSizing:member
@@ -1021,9 +860,7 @@ fields:
       error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaInvalidSizing"'
   - name: imageFormulaInvalidSource
     uid: excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidSource:member
@@ -1033,9 +870,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaInvalidSource"'
   - name: imageFormulaInvalidWidth
     uid: excel!Excel.ValueErrorCellValueSubType.imageFormulaInvalidWidth:member
@@ -1045,9 +880,7 @@ fields:
       `IMAGE`<!-- -->. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaInvalidWidth"'
   - name: imageFormulaNotEnoughArgs
     uid: excel!Excel.ValueErrorCellValueSubType.imageFormulaNotEnoughArgs:member
@@ -1057,9 +890,7 @@ fields:
       as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaNotEnoughArgs"'
   - name: imageFormulaTooManyArgs
     uid: excel!Excel.ValueErrorCellValueSubType.imageFormulaTooManyArgs:member
@@ -1069,9 +900,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ImageFormulaTooManyArgs"'
   - name: invalidCellValueTypeCoercion
     uid: excel!Excel.ValueErrorCellValueSubType.invalidCellValueTypeCoercion:member
@@ -1081,9 +910,7 @@ fields:
       function. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"InvalidCellValueTypeCoercion"'
   - name: invalidImageUrl
     uid: excel!Excel.ValueErrorCellValueSubType.invalidImageUrl:member
@@ -1093,9 +920,7 @@ fields:
       error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"InvalidImageUrl"'
   - name: lambdaWrongParamCount
     uid: excel!Excel.ValueErrorCellValueSubType.lambdaWrongParamCount:member
@@ -1105,9 +930,7 @@ fields:
       value. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"LambdaWrongParamCount"'
   - name: mRegexBadReplacement
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexBadReplacement:member
@@ -1117,9 +940,7 @@ fields:
       type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexBadReplacement"'
   - name: mRegexBadReplacementEscape
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexBadReplacementEscape:member
@@ -1129,9 +950,7 @@ fields:
       replacement string. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexBadReplacementEscape"'
   - name: mRegexBadSubstitution
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexBadSubstitution:member
@@ -1141,9 +960,7 @@ fields:
       replacement string. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexBadSubstitution"'
   - name: mRegexDepthLimit
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexDepthLimit:member
@@ -1153,9 +970,7 @@ fields:
       type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexDepthLimit"'
   - name: mRegexErrorGeneric
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexErrorGeneric:member
@@ -1165,9 +980,7 @@ fields:
       error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexErrorGeneric"'
   - name: mRegexMatchLimit
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexMatchLimit:member
@@ -1177,9 +990,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexMatchLimit"'
   - name: mRegexNoSubstring
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexNoSubstring:member
@@ -1189,9 +1000,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexNoSubstring"'
   - name: mRegexRecursiveLoop
     uid: excel!Excel.ValueErrorCellValueSubType.mRegexRecursiveLoop:member
@@ -1201,9 +1010,7 @@ fields:
       in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexRecursiveLoop"'
   - name: mRegexReplacementMissingBrace
     uid: >-
@@ -1214,9 +1021,7 @@ fields:
       string. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"MRegexReplacementMissingBrace"'
   - name: stockHistoryEndBeforeStart
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryEndBeforeStart:member
@@ -1227,9 +1032,7 @@ fields:
       Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryEndBeforeStart"'
   - name: stockHistoryInvalidDate
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryInvalidDate:member
@@ -1239,9 +1042,7 @@ fields:
       error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryInvalidDate"'
   - name: stockHistoryInvalidEnum
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryInvalidEnum:member
@@ -1251,9 +1052,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryInvalidEnum"'
   - name: stockHistoryNonTradingDays
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryNonTradingDays:member
@@ -1264,9 +1063,7 @@ fields:
       Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryNonTradingDays"'
   - name: stockHistoryNotAStock
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryNotAStock:member
@@ -1276,9 +1073,7 @@ fields:
       STOCKHISTORY. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryNotAStock"'
   - name: stockHistoryNotFound
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryNotFound:member
@@ -1288,9 +1083,7 @@ fields:
       stock. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryNotFound"'
   - name: stockHistoryOnlyDateRequested
     uid: >-
@@ -1301,9 +1094,7 @@ fields:
       no other fields. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryOnlyDateRequested"'
   - name: stockHistoryStartInFuture
     uid: excel!Excel.ValueErrorCellValueSubType.stockHistoryStartInFuture:member
@@ -1313,9 +1104,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"StockHistoryStartInFuture"'
   - name: subArrayStartColumnMissingEndColumnNot
     uid: >-
@@ -1326,9 +1115,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"SubArrayStartColumnMissingEndColumnNot"'
   - name: subArrayStartRowMissingEndRowNot
     uid: >-
@@ -1339,9 +1126,7 @@ fields:
       \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"SubArrayStartRowMissingEndRowNot"'
   - name: translateStringTooLong
     uid: excel!Excel.ValueErrorCellValueSubType.translateStringTooLong:member
@@ -1351,9 +1136,7 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"TranslateStringTooLong"'
   - name: translateUnsupportedSrcLanguage
     uid: >-
@@ -1364,9 +1147,7 @@ fields:
       isn't supported. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"TranslateUnsupportedSrcLanguage"'
   - name: translateUnsupportedTargetLanguage
     uid: >-
@@ -1377,20 +1158,15 @@ fields:
       isn't supported. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"TranslateUnsupportedTargetLanguage"'
   - name: unknown
     uid: excel!Excel.ValueErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#VALUE! in Excel.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'
   - name: vlookupColumnIndexLessThanOne
     uid: >-
@@ -1401,9 +1177,7 @@ fields:
       1. Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"VlookupColumnIndexLessThanOne"'
   - name: vlookupResultNotFound
     uid: excel!Excel.ValueErrorCellValueSubType.vlookupResultNotFound:member
@@ -1413,7 +1187,5 @@ fields:
       Displays as error type \#VALUE! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"VlookupResultNotFound"'

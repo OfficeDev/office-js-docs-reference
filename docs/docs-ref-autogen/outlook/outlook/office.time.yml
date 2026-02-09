@@ -7,7 +7,7 @@ summary: >-
   The `Time` object is returned as the start or end property of an appointment
   in compose mode.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -37,7 +37,7 @@ methods:
       (UTC). You can convert the UTC time to the local client time by using the
       `convertToLocalClientTime` method.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -88,8 +88,8 @@ methods:
       `asyncResult.value` property. The value is in Coordinated Universal Time
       (UTC). You can convert the UTC time to the local client time by using the
       `convertToLocalClientTime` method.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -102,6 +102,29 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
+
+      Office.context.mailbox.item.start.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+
+        const time = result.value;
+        const localTime = Office.context.mailbox.convertToLocalClientTime(time);
+        console.log(`Appointment starts (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -142,8 +165,8 @@ methods:
 
       **Important**: In the Windows client, you can't use this method to
       update the start or end of a recurrence.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -163,6 +186,51 @@ methods:
 
       - `InvalidEndTime`<!-- -->: The appointment end time is before the
       appointment start time.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
+
+      const start = new Date(); // Represents current date and time.
+
+      start.setDate(start.getDate() + 2); // Add 2 days to current date.
+
+      Office.context.mailbox.item.start.setAsync(start, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set start date and time to ${start}`);
+      });
+
+
+      ...
+
+
+      Office.context.mailbox.item.start.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Get start date failed with message ${result.error.message}`);
+          return;
+        }
+
+        const end = result.value; // Set end to current start date and time.
+        end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
+        Office.context.mailbox.item.end.setAsync(end, (result) => {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+            console.error(`Set end date failed with message ${result.error.message}`);
+            return;
+          }
+          console.log(`Successfully set end date and time to ${end}`);
+        });
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -213,7 +281,7 @@ methods:
       **Important**: In the Windows client, you can't use this method to
       update the start or end of a recurrence.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

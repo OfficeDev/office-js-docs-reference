@@ -20,7 +20,7 @@ properties:
       A collection of four border objects that represent the style of the four
       borders.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -38,7 +38,7 @@ properties:
     fullName: fill
     summary: The fill of the style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
     fullName: font
     summary: A `Font` object that represents the font of the style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -68,7 +68,7 @@ properties:
     fullName: formulaHidden
     summary: Specifies if the formula will be hidden when the worksheet is protected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -85,7 +85,7 @@ properties:
       Represents the horizontal alignment for the style. See
       `Excel.HorizontalAlignment` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
       vertical alignment, wrap text, indent level, and text orientation
       properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -126,7 +126,7 @@ properties:
       Specifies if the style includes the color, color index, line style, and
       weight border properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -144,7 +144,7 @@ properties:
       font style, italic, name, size, strikethrough, subscript, superscript, and
       underline font properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -159,7 +159,7 @@ properties:
     fullName: includeNumber
     summary: Specifies if the style includes the number format property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -177,7 +177,7 @@ properties:
       negative, pattern, pattern color, and pattern color index interior
       properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -194,7 +194,7 @@ properties:
       Specifies if the style includes the formula hidden and locked protection
       properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -209,7 +209,7 @@ properties:
     fullName: indentLevel
     summary: An integer from 0 to 250 that indicates the indent level for the style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -224,7 +224,7 @@ properties:
     fullName: locked
     summary: Specifies if the object is locked when the worksheet is protected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -239,7 +239,7 @@ properties:
     fullName: numberFormat
     summary: The format code of the number format for the style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -254,7 +254,7 @@ properties:
     fullName: numberFormatLocal
     summary: The localized format code of the number format for the style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -269,7 +269,7 @@ properties:
     fullName: readingOrder
     summary: The reading order for the style.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -290,7 +290,7 @@ properties:
       Specifies if text automatically shrinks to fit in the available column
       width.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -307,7 +307,7 @@ properties:
       Specifies the vertical alignment for the style. See
       `Excel.VerticalAlignment` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -326,7 +326,7 @@ properties:
     fullName: wrapText
     summary: Specifies if Excel wraps the text in the object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -16,7 +16,7 @@ properties:
     fullName: allShapes
     summary: All shapes in the Page, including subshapes.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -32,7 +32,7 @@ properties:
     fullName: comments
     summary: Returns the Comments Collection.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -48,7 +48,7 @@ properties:
     fullName: height
     summary: Returns the height of the page.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -64,7 +64,7 @@ properties:
     fullName: index
     summary: Index of the Page.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -80,7 +80,7 @@ properties:
     fullName: isBackground
     summary: Whether the page is a background page or not.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -96,7 +96,7 @@ properties:
     fullName: name
     summary: Page name.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -112,7 +112,7 @@ properties:
     fullName: shapes
     summary: All top-level shapes in the Page.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -128,7 +128,7 @@ properties:
     fullName: view
     summary: Returns the view of the page.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -144,7 +144,7 @@ properties:
     fullName: width
     summary: Returns the width of the page.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

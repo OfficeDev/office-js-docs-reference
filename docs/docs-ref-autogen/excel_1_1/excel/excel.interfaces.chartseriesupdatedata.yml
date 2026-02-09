@@ -20,7 +20,7 @@ properties:
       Represents the formatting of a chart series, which includes fill and line
       formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       Specifies the name of a series in a chart. The name's length should not be
       greater than 255 characters.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

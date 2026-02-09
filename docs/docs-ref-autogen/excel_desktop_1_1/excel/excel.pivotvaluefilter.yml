@@ -8,7 +8,7 @@ summary: >-
   `condition` defines what criteria need to be set in order for the filter to
   operate.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -25,7 +25,7 @@ properties:
       is "50" and condition is "greaterThan", all item values that are not
       greater than 50 will be removed by the filter.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -43,7 +43,7 @@ properties:
       Specifies the condition for the filter, which defines the necessary
       filtering criteria.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -67,7 +67,7 @@ properties:
       If `true`<!-- -->, filter *excludes* items that meet criteria. The
       default is `false` (filter to include items that meet criteria).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -83,7 +83,7 @@ properties:
     fullName: lowerBound
     summary: The lower-bound of the range for the `between` filter condition.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -101,7 +101,7 @@ properties:
       Specifies if the filter is for the top/bottom N items, top/bottom N
       percent, or top/bottom N sum.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -123,7 +123,7 @@ properties:
       The "N" threshold number of items, percent, or sum to be filtered for a
       top/bottom filter condition.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -139,7 +139,7 @@ properties:
     fullName: upperBound
     summary: The upper-bound of the range for the `between` filter condition.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -155,7 +155,7 @@ properties:
     fullName: value
     summary: Name of the chosen "value" in the field by which to filter.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

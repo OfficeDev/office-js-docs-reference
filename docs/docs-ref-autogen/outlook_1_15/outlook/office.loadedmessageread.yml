@@ -8,8 +8,8 @@ summary: >-
   `LoadedMessageRead` object is returned when
   `Office.context.mailbox.loadItemByIdAsync` is called on a message in read
   mode.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -37,6 +37,42 @@ remarks: >-
   - Only one mail item can be loaded at a time. When you implement
   `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after processing the
   item. This must be done before calling `loadItemByIdAsync` on another item.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Gets the sender's email address of each selected message.
+
+  async function getSenderEmailAddress(item) {
+      const itemId = item.itemId;
+      await new Promise((resolve) => {
+          Office.context.mailbox.loadItemByIdAsync(itemId, (result) => {
+              if (result.status === Office.AsyncResultStatus.Failed) {
+                  console.log(result.error.message);
+                  return;
+              }
+
+              const loadedItem = result.value;
+              const sender = loadedItem.from.emailAddress;
+              console.log(sender);
+
+              // Unload the current message before processing another selected message.
+              loadedItem.unloadAsync((asyncResult) => {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      console.log(asyncResult.error.message);
+                      return;
+                  }
+
+                  resolve();
+              });
+          });
+      });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -76,7 +112,7 @@ properties:
     fullName: body
     summary: Gets the item's body and its format.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -106,7 +142,7 @@ properties:
     fullName: categories
     summary: Gets an object that provides methods to manage the item's categories.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -218,7 +254,7 @@ properties:
     fullName: dateTimeModified
     summary: Gets the date and time that an item was last modified.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -536,7 +572,7 @@ properties:
     fullName: notificationMessages
     summary: Gets the notification messages of the item.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -585,7 +621,7 @@ properties:
       of single appointments. `undefined` is returned for messages that aren't
       meeting requests.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -674,7 +710,7 @@ properties:
       and classic), the `seriesId` returns the Exchange Web Services (EWS) ID of
       the parent (series) item that this item belongs to.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -818,7 +854,7 @@ methods:
       of the selected message or the organizer and all attendees of the selected
       appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -892,7 +928,7 @@ methods:
       of the selected message or the organizer and all attendees of the selected
       appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -958,7 +994,7 @@ methods:
       Displays a reply form that includes only the sender of the selected
       message or the organizer of the selected appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1031,7 +1067,7 @@ methods:
       Displays a reply form that includes only the sender of the selected
       message or the organizer of the selected appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1102,7 +1138,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1159,7 +1195,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1203,7 +1239,7 @@ methods:
     fullName: getAsFileAsync(options, callback)
     summary: Gets the current message in EML format encoded in Base64.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1250,7 +1286,7 @@ methods:
     fullName: getAsFileAsync(callback)
     summary: Gets the current message in EML format encoded in Base64.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1306,7 +1342,7 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1384,7 +1420,7 @@ methods:
       composing an inline form then subsequently pops out the form to continue
       in a separate window.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1444,7 +1480,7 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1494,7 +1530,7 @@ methods:
       message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1536,7 +1572,7 @@ methods:
       Returns string values in the selected item that match the regular
       expressions defined in an XML manifest file.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1600,7 +1636,7 @@ methods:
       Returns string values in the selected item that match the named regular
       expression defined in an XML manifest file.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1666,7 +1702,7 @@ methods:
       expressions defined in an XML manifest file. Highlighted matches apply to
       contextual add-ins.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1736,7 +1772,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
       shared mailbox
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
@@ -1791,7 +1827,7 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
       -->.
     remarks: >-
-      \[ [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
       shared mailbox
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
@@ -1847,7 +1883,7 @@ methods:
       `asyncResult.value` property. This object can be used to get custom
       properties from the mail item.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1904,7 +1940,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item,
       so that another selected mail item can be loaded for processing.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -1964,7 +2000,7 @@ methods:
       When multiple mail items are selected, closes the currently loaded item,
       so that another selected mail item can be loaded for processing.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

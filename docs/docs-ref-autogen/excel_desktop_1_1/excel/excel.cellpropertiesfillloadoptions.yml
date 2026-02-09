@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CellPropertiesFillLoadOptions
 summary: Specifies which properties to load on the `format.fill` object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -17,9 +17,45 @@ properties:
     package: excel!
     fullName: color
     summary: Specifies whether to load the `color` property.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+
+      await Excel.run(async (context) => {
+          const cell = context.workbook.getActiveCell();
+
+          // Define the cell properties to get by setting the matching LoadOptions to true.
+          const propertiesToGet = cell.getCellProperties({
+              address: true,
+              format: {
+                  fill: {
+                      color: true
+                  },
+                  font: {
+                      color: true
+                  }
+              },
+              style: true
+          });
+
+          // Sync to get the data from the workbook.
+          await context.sync();
+          const cellProperties = propertiesToGet.value[0][0];
+          console.log(
+              `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -33,7 +69,7 @@ properties:
     fullName: pattern
     summary: Specifies whether to load the `pattern` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +84,7 @@ properties:
     fullName: patternColor
     summary: Specifies whether to load the `patternColor` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -63,7 +99,7 @@ properties:
     fullName: patternTintAndShade
     summary: Specifies whether to load the `patternTintAndShade` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +114,7 @@ properties:
     fullName: tintAndShade
     summary: Specifies whether to load the `tintAndShade` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

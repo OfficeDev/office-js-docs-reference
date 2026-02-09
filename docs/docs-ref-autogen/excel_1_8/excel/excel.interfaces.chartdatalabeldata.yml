@@ -20,7 +20,7 @@ properties:
       Specifies if the data label automatically generates appropriate text based
       on context.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: format
     summary: Represents the format of chart data label.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       String value that represents the formula of chart data label using
       A1-style notation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
       Returns the height, in points, of the chart data label. Value is `null` if
       the chart data label is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -89,7 +89,7 @@ properties:
       `Excel.ChartTextHorizontalAlignment` for details. This property is valid
       only when `TextOrientation` of data label is -90, 90, or 180.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ properties:
       to the left edge of chart area. Value is `null` if the chart data label is
       not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -126,7 +126,7 @@ properties:
     fullName: numberFormat
     summary: Specifies the format code for data label.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -143,7 +143,7 @@ properties:
       Value that represents the position of the data label. See
       `Excel.ChartDataLabelPosition` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -164,7 +164,7 @@ properties:
     fullName: separator
     summary: String representing the separator used for the data label on a chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -179,7 +179,7 @@ properties:
     fullName: showBubbleSize
     summary: Specifies if the data label bubble size is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -194,7 +194,7 @@ properties:
     fullName: showCategoryName
     summary: Specifies if the data label category name is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -209,7 +209,7 @@ properties:
     fullName: showLegendKey
     summary: Specifies if the data label legend key is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -224,7 +224,7 @@ properties:
     fullName: showPercentage
     summary: Specifies if the data label percentage is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -239,7 +239,7 @@ properties:
     fullName: showSeriesName
     summary: Specifies if the data label series name is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -254,7 +254,7 @@ properties:
     fullName: showValue
     summary: Specifies if the data label value is visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -269,7 +269,7 @@ properties:
     fullName: text
     summary: String representing the text of the data label on a chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -287,7 +287,7 @@ properties:
       label. The value should either be an integer from -90 to 90 or the integer
       180 for vertically-oriented text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -305,7 +305,7 @@ properties:
       to the top of chart area. Value is `null` if the chart data label is not
       visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -323,7 +323,7 @@ properties:
       `Excel.ChartTextVerticalAlignment` for details. This property is valid
       only when `TextOrientation` of data label is 0.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -344,7 +344,7 @@ properties:
       Returns the width, in points, of the chart data label. Value is `null` if
       the chart data label is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

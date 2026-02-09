@@ -7,7 +7,7 @@ summary: >-
   Provides configuration options for the
   [Document.replyWithChanges](xref:word!Word.Document:class) method.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -22,7 +22,7 @@ properties:
       If provided, specifies whether to include the document as an attachment.
       The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -39,7 +39,7 @@ properties:
       If provided, specifies the recipients of the reply. The default value is
       "" (empty string).
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -56,7 +56,7 @@ properties:
       If provided, specifies whether to show the message before sending. The
       default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -73,7 +73,7 @@ properties:
       If provided, specifies the subject of the reply email. The default value
       is "" (empty string).
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

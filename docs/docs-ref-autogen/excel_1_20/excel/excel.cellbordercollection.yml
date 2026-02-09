@@ -9,7 +9,7 @@ summary: >-
   `format.borders` input parameter of `setCellProperties`<!-- -->,
   `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
     fullName: bottom
     summary: Represents the `format.borders.bottom` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
     fullName: diagonalDown
     summary: Represents the `format.borders.diagonalDown` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
     fullName: diagonalUp
     summary: Represents the `format.borders.diagonalUp` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +67,7 @@ properties:
     fullName: horizontal
     summary: Represents the `format.borders.horizontal` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
     fullName: left
     summary: Represents the `format.borders.left` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -97,7 +97,7 @@ properties:
     fullName: right
     summary: Represents the `format.borders.right` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -112,7 +112,7 @@ properties:
     fullName: top
     summary: Represents the `format.borders.top` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -127,7 +127,7 @@ properties:
     fullName: vertical
     summary: Represents the `format.borders.vertical` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

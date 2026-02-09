@@ -6,10 +6,47 @@ fullName: PowerPoint.HyperlinkAddOptions
 summary: >-
   Represents the available options when adding a
   [PowerPoint.Hyperlink](xref:powerpoint!PowerPoint.Hyperlink:class)<!-- -->.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+  // Sets a hyperlink on the selected text range.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange().load("text");
+    const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks;
+    const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+      address: "https://bing.com",
+      screenTip: "Screen tip for text",
+    };
+    let hyperlink: PowerPoint.Hyperlink = hyperlinks.add(textRange, hyperlinkAddOptions).load("address,screenTip");
+    try {
+      await context.sync();
+    } catch {
+      console.warn(
+        "Confirm that you have at least one slide and you've selected a contiguous range of text on the active slide.",
+      );
+      return;
+    }
+
+    console.log(
+      `Added link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") to the selected text "${textRange.text}".`,
+    );
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -23,7 +60,7 @@ properties:
       Specifies the address of the hyperlink, which can be a URL, a file name or
       file path, or an email address with the `mailto` URI scheme.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -39,7 +76,7 @@ properties:
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

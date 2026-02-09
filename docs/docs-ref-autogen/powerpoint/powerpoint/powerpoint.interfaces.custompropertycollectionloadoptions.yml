@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomPropertyCollectionLoadOptions
 summary: A collection of custom properties.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -39,7 +39,7 @@ properties:
       For EACH ITEM in the collection: The string that uniquely identifies the
       custom property.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -58,7 +58,7 @@ properties:
       For EACH ITEM in the collection: The type of the value used for the custom
       property.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -78,7 +78,7 @@ properties:
       value is a string, the maximum length 255 characters. Larger strings cause
       the operation to fail with an `InvalidArgument` error.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

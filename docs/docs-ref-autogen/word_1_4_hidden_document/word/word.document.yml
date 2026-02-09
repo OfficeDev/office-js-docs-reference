@@ -7,9 +7,37 @@ summary: >-
   The `Document` object is the top level object. A `Document` object contains
   one or more sections, content controls, and the body that contains the
   contents of the document.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+
+  // Gets the current change tracking mode.
+
+  await Word.run(async (context) => {
+    const document: Word.Document = context.document;
+    document.load("changeTrackingMode");
+    await context.sync();
+
+    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+      console.log("Only my changes are being tracked.");
+    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+      console.log("Everyone's changes are being tracked.");
+    } else {
+      console.log("No changes are being tracked.");
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -23,7 +51,7 @@ properties:
       Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,9 +65,37 @@ properties:
     package: word!
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+
+      // Gets the current change tracking mode.
+
+      await Word.run(async (context) => {
+        const document: Word.Document = context.document;
+        document.load("changeTrackingMode");
+        await context.sync();
+
+        if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+          console.log("Only my changes are being tracked.");
+        } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+          console.log("Everyone's changes are being tracked.");
+        } else {
+          console.log("No changes are being tracked.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -60,7 +116,7 @@ properties:
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +146,7 @@ properties:
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -104,9 +160,29 @@ properties:
     package: word!
     fullName: properties
     summary: Gets the properties of the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
+
+
+      await Word.run(async (context) => {
+          const builtInProperties: Word.DocumentProperties = context.document.properties;
+          builtInProperties.load("*"); // Let's get all!
+
+          await context.sync();
+          console.log(JSON.stringify(builtInProperties, null, 4));
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -122,7 +198,7 @@ properties:
       Indicates whether the changes in the document have been saved. A value of
       `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -137,7 +213,7 @@ properties:
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -151,9 +227,38 @@ properties:
     package: word!
     fullName: settings
     summary: Gets the add-in's settings in the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+      // Gets all custom settings this add-in set on this document.
+
+      await Word.run(async (context) => {
+        const settings: Word.SettingCollection = context.document.settings;
+        settings.load("items");
+        await context.sync();
+
+        if (settings.items.length == 0) {
+          console.log("There are no settings.");
+        } else {
+          console.log("All settings:");
+          for (let i = 0; i < settings.items.length; i++) {
+            console.log(settings.items[i]);
+          }
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -168,7 +273,7 @@ methods:
     fullName: deleteBookmark(name)
     summary: Deletes a bookmark, if it exists, from the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -190,7 +295,7 @@ methods:
       Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark
       doesn't exist.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -215,7 +320,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -236,9 +341,39 @@ methods:
     summary: >-
       Gets the current selection of the document. Multiple selections aren't
       supported.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+          
+          const textSample = 'This is an example of the insert text method. This is a method ' + 
+              'which allows users to insert text into a selection. It can insert text into a ' +
+              'relative location or it can overwrite the current selection. Since the ' +
+              'getSelection method returns a range object, look up the range object documentation ' +
+              'for everything you can do with a selection.';
+          
+          // Create a range proxy object for the current selection.
+          const range = context.document.getSelection();
+          
+          // Queue a command to insert text at the end of the selection.
+          range.insertText(textSample, Word.InsertLocation.end);
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Inserted the text at the end of the selection.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -254,7 +389,35 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the document.
+          const thisDocument = context.document;
+          
+          // Queue a command to load content control properties.
+          thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          if (thisDocument.contentControls.items.length !== 0) {
+              for (let i = 0; i < thisDocument.contentControls.items.length; i++) {
+                  console.log(thisDocument.contentControls.items[i].id);
+                  console.log(thisDocument.contentControls.items[i].text);
+                  console.log(thisDocument.contentControls.items[i].tag);
+              }
+          } else {
+              console.log('No content controls in this document.');
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -326,13 +489,66 @@ methods:
     package: word!
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in
       WordApi 1.5.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the document.
+          const thisDocument = context.document;
+
+          // Queue a command to load the document save state (on the saved property).
+          thisDocument.load('saved');    
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+              
+          if (thisDocument.saved === false) {
+              // Queue a command to save this document.
+              thisDocument.save();
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Saved the document');
+          } else {
+              console.log('The document has not changed since the last save.');
+          }
+      });
+
+      ```
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
+
+
+      // Saves the document with default behavior
+
+      // for current state of the document.
+
+      await Word.run(async (context) => {
+        context.document.save();
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -358,7 +574,7 @@ methods:
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 

@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.SlideSelectionChangedEventArgs
 summary: Provides information about the slide selection changed event.
 remarks: >-
-  \[ [Api set: PowerPointApi BETA (PREVIEW
+  \[ [API set: PowerPointApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -19,7 +19,7 @@ properties:
     fullName: slideIds
     summary: Gets the array of IDs of the currently selected slides.
     remarks: >-
-      \[ [Api set: PowerPointApi BETA (PREVIEW
+      \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ConditionalRangeFontUnderlineStyle
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,21 +14,15 @@ fields:
   - name: double
     uid: excel!Excel.ConditionalRangeFontUnderlineStyle.double:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"Double"'
   - name: none
     uid: excel!Excel.ConditionalRangeFontUnderlineStyle.none:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"None"'
   - name: single
     uid: excel!Excel.ConditionalRangeFontUnderlineStyle.single:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"Single"'

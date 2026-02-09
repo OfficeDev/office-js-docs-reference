@@ -7,7 +7,7 @@ summary: >-
   A container for the visible content on a page. A Paragraph can contain any one
   ParagraphType type of content.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: id
     summary: Gets the ID of the Paragraph object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -54,7 +54,7 @@ properties:
       Gets the Image object in the Paragraph. Throws an exception if
       ParagraphType isn't Image.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -72,7 +72,7 @@ properties:
       Gets the Ink collection in the Paragraph. Throws an exception if
       ParagraphType isn't Ink.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -91,7 +91,7 @@ properties:
     fullName: outline
     summary: Gets the Outline object that contains the Paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -107,7 +107,7 @@ properties:
     fullName: paragraphs
     summary: The collection of paragraphs under this paragraph. Read -nly.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -128,7 +128,7 @@ properties:
       Gets the parent paragraph object. Throws if a parent paragraph doesn't
       exist.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -149,7 +149,7 @@ properties:
       Gets the parent paragraph object. Returns null if a parent paragraph
       doesn't exist.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -169,7 +169,7 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If
       parent isn't a TableCell, throws ItemNotFound.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -190,7 +190,7 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If
       parent is not a TableCell, returns null.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -210,7 +210,7 @@ properties:
       Gets the RichText object in the Paragraph. Throws an exception if
       ParagraphType isn't RichText.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -230,7 +230,7 @@ properties:
       Gets the Table object in the Paragraph. Throws an exception if
       ParagraphType isn't Table.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -246,7 +246,7 @@ properties:
     fullName: type
     summary: Gets the type of the Paragraph object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

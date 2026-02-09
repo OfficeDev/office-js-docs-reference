@@ -23,7 +23,7 @@ properties:
       Buttons" command on the "Field Buttons" drop-down list of the "Analyze"
       tab, which is available when a PivotChart is selected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
     fullName: showLegendFieldButtons
     summary: Specifies whether to display the legend field buttons on a PivotChart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       Specifies whether to display the report filter field buttons on a
       PivotChart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
     fullName: showValueFieldButtons
     summary: Specifies whether to display the show value field buttons on a PivotChart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

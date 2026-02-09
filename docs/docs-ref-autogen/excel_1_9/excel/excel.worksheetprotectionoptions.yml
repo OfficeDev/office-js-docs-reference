@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorksheetProtectionOptions
 summary: Represents the options in sheet protection.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Represents the worksheet protection option allowing use of the AutoFilter
       feature.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: allowDeleteColumns
     summary: Represents the worksheet protection option allowing deleting of columns.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: allowDeleteRows
     summary: Represents the worksheet protection option allowing deleting of rows.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +65,7 @@ properties:
     fullName: allowEditObjects
     summary: Represents the worksheet protection option allowing editing of objects.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -80,7 +80,7 @@ properties:
     fullName: allowEditScenarios
     summary: Represents the worksheet protection option allowing editing of scenarios.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -95,7 +95,7 @@ properties:
     fullName: allowFormatCells
     summary: Represents the worksheet protection option allowing formatting of cells.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -110,7 +110,7 @@ properties:
     fullName: allowFormatColumns
     summary: Represents the worksheet protection option allowing formatting of columns.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -125,7 +125,7 @@ properties:
     fullName: allowFormatRows
     summary: Represents the worksheet protection option allowing formatting of rows.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -140,7 +140,7 @@ properties:
     fullName: allowInsertColumns
     summary: Represents the worksheet protection option allowing inserting of columns.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -157,7 +157,7 @@ properties:
       Represents the worksheet protection option allowing inserting of
       hyperlinks.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -172,7 +172,7 @@ properties:
     fullName: allowInsertRows
     summary: Represents the worksheet protection option allowing inserting of rows.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -189,7 +189,7 @@ properties:
       Represents the worksheet protection option allowing use of the PivotTable
       feature.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -206,7 +206,7 @@ properties:
       Represents the worksheet protection option allowing use of the sort
       feature.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -221,7 +221,7 @@ properties:
     fullName: selectionMode
     summary: Represents the worksheet protection option of selection mode.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

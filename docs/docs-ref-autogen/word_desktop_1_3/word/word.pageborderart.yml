@@ -5,7 +5,7 @@ package: word!
 fullName: Word.PageBorderArt
 summary: Specifies the graphical page border setting of a page.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,1640 +14,1312 @@ fields:
   - name: apples
     uid: word!Word.PageBorderArt.apples:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with apple design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Apples"'
   - name: archedScallops
     uid: word!Word.PageBorderArt.archedScallops:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with arched scallops design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ArchedScallops"'
   - name: babyPacifier
     uid: word!Word.PageBorderArt.babyPacifier:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with baby pacifier design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BabyPacifier"'
   - name: babyRattle
     uid: word!Word.PageBorderArt.babyRattle:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with baby rattle design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BabyRattle"'
   - name: balloons3Colors
     uid: word!Word.PageBorderArt.balloons3Colors:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with three-color balloons design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Balloons3Colors"'
   - name: balloonsHotAir
     uid: word!Word.PageBorderArt.balloonsHotAir:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with hot air balloons design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BalloonsHotAir"'
   - name: basicBlackDashes
     uid: word!Word.PageBorderArt.basicBlackDashes:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic black dashes design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicBlackDashes"'
   - name: basicBlackDots
     uid: word!Word.PageBorderArt.basicBlackDots:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic black dots design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicBlackDots"'
   - name: basicBlackSquares
     uid: word!Word.PageBorderArt.basicBlackSquares:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic black squares design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicBlackSquares"'
   - name: basicThinLines
     uid: word!Word.PageBorderArt.basicThinLines:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic thin lines design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicThinLines"'
   - name: basicWhiteDashes
     uid: word!Word.PageBorderArt.basicWhiteDashes:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic white dashes design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicWhiteDashes"'
   - name: basicWhiteDots
     uid: word!Word.PageBorderArt.basicWhiteDots:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic white dots design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicWhiteDots"'
   - name: basicWhiteSquares
     uid: word!Word.PageBorderArt.basicWhiteSquares:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic white squares design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicWhiteSquares"'
   - name: basicWideInline
     uid: word!Word.PageBorderArt.basicWideInline:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic wide inline design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicWideInline"'
   - name: basicWideMidline
     uid: word!Word.PageBorderArt.basicWideMidline:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic wide midline design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicWideMidline"'
   - name: basicWideOutline
     uid: word!Word.PageBorderArt.basicWideOutline:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with basic wide outline design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BasicWideOutline"'
   - name: bats
     uid: word!Word.PageBorderArt.bats:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with bats design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Bats"'
   - name: birds
     uid: word!Word.PageBorderArt.birds:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with birds design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Birds"'
   - name: birdsFlight
     uid: word!Word.PageBorderArt.birdsFlight:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with birds in flight design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"BirdsFlight"'
   - name: cabins
     uid: word!Word.PageBorderArt.cabins:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with cabins design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Cabins"'
   - name: cakeSlice
     uid: word!Word.PageBorderArt.cakeSlice:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with cake slice design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CakeSlice"'
   - name: candyCorn
     uid: word!Word.PageBorderArt.candyCorn:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with candy corn design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CandyCorn"'
   - name: celticKnotwork
     uid: word!Word.PageBorderArt.celticKnotwork:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with Celtic knotwork design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CelticKnotwork"'
   - name: certificateBanner
     uid: word!Word.PageBorderArt.certificateBanner:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with certificate banner design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CertificateBanner"'
   - name: chainLink
     uid: word!Word.PageBorderArt.chainLink:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with chain link design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ChainLink"'
   - name: champagneBottle
     uid: word!Word.PageBorderArt.champagneBottle:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with champagne bottle design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ChampagneBottle"'
   - name: checkedBarBlack
     uid: word!Word.PageBorderArt.checkedBarBlack:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with black checked bar design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CheckedBarBlack"'
   - name: checkedBarColor
     uid: word!Word.PageBorderArt.checkedBarColor:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with colored checked bar design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CheckedBarColor"'
   - name: checkered
     uid: word!Word.PageBorderArt.checkered:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with checkered design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Checkered"'
   - name: christmasTree
     uid: word!Word.PageBorderArt.christmasTree:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with Christmas tree design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ChristmasTree"'
   - name: circlesLines
     uid: word!Word.PageBorderArt.circlesLines:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with circles and lines design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CirclesLines"'
   - name: circlesRectangles
     uid: word!Word.PageBorderArt.circlesRectangles:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with circles and rectangles design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CirclesRectangles"'
   - name: classicalWave
     uid: word!Word.PageBorderArt.classicalWave:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with classical wave design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ClassicalWave"'
   - name: clocks
     uid: word!Word.PageBorderArt.clocks:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with clocks design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Clocks"'
   - name: compass
     uid: word!Word.PageBorderArt.compass:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with compass design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Compass"'
   - name: confetti
     uid: word!Word.PageBorderArt.confetti:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with confetti design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Confetti"'
   - name: confettiGrays
     uid: word!Word.PageBorderArt.confettiGrays:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with gray confetti design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ConfettiGrays"'
   - name: confettiOutline
     uid: word!Word.PageBorderArt.confettiOutline:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with outline confetti design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ConfettiOutline"'
   - name: confettiStreamers
     uid: word!Word.PageBorderArt.confettiStreamers:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with confetti streamers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ConfettiStreamers"'
   - name: confettiWhite
     uid: word!Word.PageBorderArt.confettiWhite:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with white confetti design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ConfettiWhite"'
   - name: cornerTriangles
     uid: word!Word.PageBorderArt.cornerTriangles:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with corner triangles design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CornerTriangles"'
   - name: couponCutoutDashes
     uid: word!Word.PageBorderArt.couponCutoutDashes:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with coupon cutout dashes design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CouponCutoutDashes"'
   - name: couponCutoutDots
     uid: word!Word.PageBorderArt.couponCutoutDots:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with coupon cutout dots design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CouponCutoutDots"'
   - name: crazyMaze
     uid: word!Word.PageBorderArt.crazyMaze:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with crazy maze design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CrazyMaze"'
   - name: creaturesButterfly
     uid: word!Word.PageBorderArt.creaturesButterfly:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with butterfly creatures design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CreaturesButterfly"'
   - name: creaturesFish
     uid: word!Word.PageBorderArt.creaturesFish:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with fish creatures design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CreaturesFish"'
   - name: creaturesInsects
     uid: word!Word.PageBorderArt.creaturesInsects:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with insects creatures design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CreaturesInsects"'
   - name: creaturesLadyBug
     uid: word!Word.PageBorderArt.creaturesLadyBug:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with ladybug creatures design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CreaturesLadyBug"'
   - name: crossStitch
     uid: word!Word.PageBorderArt.crossStitch:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with cross stitch design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"CrossStitch"'
   - name: cup
     uid: word!Word.PageBorderArt.cup:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with cup design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Cup"'
   - name: decoArch
     uid: word!Word.PageBorderArt.decoArch:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with deco arch design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DecoArch"'
   - name: decoArchColor
     uid: word!Word.PageBorderArt.decoArchColor:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with colored deco arch design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DecoArchColor"'
   - name: decoBlocks
     uid: word!Word.PageBorderArt.decoBlocks:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with deco blocks design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DecoBlocks"'
   - name: diamondsGray
     uid: word!Word.PageBorderArt.diamondsGray:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with gray diamonds design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DiamondsGray"'
   - name: doubleD
     uid: word!Word.PageBorderArt.doubleD:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with double D design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DoubleD"'
   - name: doubleDiamonds
     uid: word!Word.PageBorderArt.doubleDiamonds:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with double diamonds design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DoubleDiamonds"'
   - name: earth1
     uid: word!Word.PageBorderArt.earth1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with Earth design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Earth1"'
   - name: earth2
     uid: word!Word.PageBorderArt.earth2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with Earth design (variant 2).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Earth2"'
   - name: eclipsingSquares1
     uid: word!Word.PageBorderArt.eclipsingSquares1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with eclipsing squares design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EclipsingSquares1"'
   - name: eclipsingSquares2
     uid: word!Word.PageBorderArt.eclipsingSquares2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with eclipsing squares design (variant 2).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EclipsingSquares2"'
   - name: eggsBlack
     uid: word!Word.PageBorderArt.eggsBlack:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with black eggs design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"EggsBlack"'
   - name: fans
     uid: word!Word.PageBorderArt.fans:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with fans design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Fans"'
   - name: film
     uid: word!Word.PageBorderArt.film:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with film design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Film"'
   - name: firecrackers
     uid: word!Word.PageBorderArt.firecrackers:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with firecrackers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Firecrackers"'
   - name: flowersBlockPrint
     uid: word!Word.PageBorderArt.flowersBlockPrint:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with block print flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersBlockPrint"'
   - name: flowersDaisies
     uid: word!Word.PageBorderArt.flowersDaisies:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with daisies flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersDaisies"'
   - name: flowersModern1
     uid: word!Word.PageBorderArt.flowersModern1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with modern 1 flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersModern1"'
   - name: flowersModern2
     uid: word!Word.PageBorderArt.flowersModern2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with modern 2 flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersModern2"'
   - name: flowersPansy
     uid: word!Word.PageBorderArt.flowersPansy:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with pansy flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersPansy"'
   - name: flowersRedRose
     uid: word!Word.PageBorderArt.flowersRedRose:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with red rose flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersRedRose"'
   - name: flowersRoses
     uid: word!Word.PageBorderArt.flowersRoses:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with roses flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersRoses"'
   - name: flowersTeacup
     uid: word!Word.PageBorderArt.flowersTeacup:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with teacup and flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersTeacup"'
   - name: flowersTiny
     uid: word!Word.PageBorderArt.flowersTiny:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with tiny flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"FlowersTiny"'
   - name: gems
     uid: word!Word.PageBorderArt.gems:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with gems design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Gems"'
   - name: gingerbreadMan
     uid: word!Word.PageBorderArt.gingerbreadMan:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with gingerbread man design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"GingerbreadMan"'
   - name: gradient
     uid: word!Word.PageBorderArt.gradient:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with gradient design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Gradient"'
   - name: handmade1
     uid: word!Word.PageBorderArt.handmade1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with handmade design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Handmade1"'
   - name: handmade2
     uid: word!Word.PageBorderArt.handmade2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with handmade design (variant 2).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Handmade2"'
   - name: heartBalloon
     uid: word!Word.PageBorderArt.heartBalloon:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with heart balloon design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HeartBalloon"'
   - name: heartGray
     uid: word!Word.PageBorderArt.heartGray:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with gray heart design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HeartGray"'
   - name: hearts
     uid: word!Word.PageBorderArt.hearts:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with hearts design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hearts"'
   - name: heebieJeebies
     uid: word!Word.PageBorderArt.heebieJeebies:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with heebie jeebies design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HeebieJeebies"'
   - name: holly
     uid: word!Word.PageBorderArt.holly:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with holly design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Holly"'
   - name: houseFunky
     uid: word!Word.PageBorderArt.houseFunky:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with funky house design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HouseFunky"'
   - name: hypnotic
     uid: word!Word.PageBorderArt.hypnotic:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with hypnotic design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hypnotic"'
   - name: iceCreamCones
     uid: word!Word.PageBorderArt.iceCreamCones:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with ice cream cone design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"IceCreamCones"'
   - name: lightBulb
     uid: word!Word.PageBorderArt.lightBulb:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with light bulb design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LightBulb"'
   - name: lightning1
     uid: word!Word.PageBorderArt.lightning1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with lightning design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Lightning1"'
   - name: lightning2
     uid: word!Word.PageBorderArt.lightning2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with lightning design (variant 2).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Lightning2"'
   - name: mapleLeaf
     uid: word!Word.PageBorderArt.mapleLeaf:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with maple leaf design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MapleLeaf"'
   - name: mapleMuffins
     uid: word!Word.PageBorderArt.mapleMuffins:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with maple muffin design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MapleMuffins"'
   - name: mapPins
     uid: word!Word.PageBorderArt.mapPins:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with map pins design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MapPins"'
   - name: marquee
     uid: word!Word.PageBorderArt.marquee:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with marquee design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Marquee"'
   - name: marqueeToothed
     uid: word!Word.PageBorderArt.marqueeToothed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with marquee toothed design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MarqueeToothed"'
   - name: moons
     uid: word!Word.PageBorderArt.moons:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with moons design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Moons"'
   - name: mosaic
     uid: word!Word.PageBorderArt.mosaic:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with mosaic design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mosaic"'
   - name: musicNotes
     uid: word!Word.PageBorderArt.musicNotes:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with music notes design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MusicNotes"'
   - name: northwest
     uid: word!Word.PageBorderArt.northwest:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with northwest design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Northwest"'
   - name: ovals
     uid: word!Word.PageBorderArt.ovals:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with ovals design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Ovals"'
   - name: packages
     uid: word!Word.PageBorderArt.packages:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with packages design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Packages"'
   - name: palmsBlack
     uid: word!Word.PageBorderArt.palmsBlack:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with black palms design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PalmsBlack"'
   - name: palmsColor
     uid: word!Word.PageBorderArt.palmsColor:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with palm trees in color.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PalmsColor"'
   - name: paperClips
     uid: word!Word.PageBorderArt.paperClips:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with paper clips design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PaperClips"'
   - name: papyrus
     uid: word!Word.PageBorderArt.papyrus:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with papyrus design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Papyrus"'
   - name: partyFavor
     uid: word!Word.PageBorderArt.partyFavor:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with party favor design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PartyFavor"'
   - name: partyGlass
     uid: word!Word.PageBorderArt.partyGlass:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with party glass design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PartyGlass"'
   - name: pencils
     uid: word!Word.PageBorderArt.pencils:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with pencils design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Pencils"'
   - name: people
     uid: word!Word.PageBorderArt.people:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with people design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"People"'
   - name: peopleHats
     uid: word!Word.PageBorderArt.peopleHats:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with people wearing hats design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PeopleHats"'
   - name: peopleWaving
     uid: word!Word.PageBorderArt.peopleWaving:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with people waving design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PeopleWaving"'
   - name: poinsettias
     uid: word!Word.PageBorderArt.poinsettias:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with poinsettias flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Poinsettias"'
   - name: postageStamp
     uid: word!Word.PageBorderArt.postageStamp:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with postage stamp design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PostageStamp"'
   - name: pumpkin1
     uid: word!Word.PageBorderArt.pumpkin1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with pumpkin design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Pumpkin1"'
   - name: pushPinNote1
     uid: word!Word.PageBorderArt.pushPinNote1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with push pin note design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PushPinNote1"'
   - name: pushPinNote2
     uid: word!Word.PageBorderArt.pushPinNote2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with push pin note design (variant 2).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PushPinNote2"'
   - name: pyramids
     uid: word!Word.PageBorderArt.pyramids:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with pyramids design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Pyramids"'
   - name: pyramidsAbove
     uid: word!Word.PageBorderArt.pyramidsAbove:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with pyramids above design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PyramidsAbove"'
   - name: quadrants
     uid: word!Word.PageBorderArt.quadrants:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with quadrants design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Quadrants"'
   - name: rings
     uid: word!Word.PageBorderArt.rings:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with rings design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Rings"'
   - name: safari
     uid: word!Word.PageBorderArt.safari:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with safari design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Safari"'
   - name: sawtooth
     uid: word!Word.PageBorderArt.sawtooth:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with sawtooth design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sawtooth"'
   - name: sawtoothGray
     uid: word!Word.PageBorderArt.sawtoothGray:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with gray sawtooth design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SawtoothGray"'
   - name: scaredCat
     uid: word!Word.PageBorderArt.scaredCat:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with scared cat design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ScaredCat"'
   - name: seattle
     uid: word!Word.PageBorderArt.seattle:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with Seattle design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Seattle"'
   - name: shadowedSquares
     uid: word!Word.PageBorderArt.shadowedSquares:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with shadowed squares design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ShadowedSquares"'
   - name: sharksTeeth
     uid: word!Word.PageBorderArt.sharksTeeth:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with sharks teeth design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SharksTeeth"'
   - name: shorebirdTracks
     uid: word!Word.PageBorderArt.shorebirdTracks:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with shorebird tracks design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ShorebirdTracks"'
   - name: skyrocket
     uid: word!Word.PageBorderArt.skyrocket:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with skyrocket design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Skyrocket"'
   - name: snowflakeFancy
     uid: word!Word.PageBorderArt.snowflakeFancy:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with fancy snowflake design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SnowflakeFancy"'
   - name: snowflakes
     uid: word!Word.PageBorderArt.snowflakes:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with snowflakes design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Snowflakes"'
   - name: sombrero
     uid: word!Word.PageBorderArt.sombrero:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with sombrero design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sombrero"'
   - name: southwest
     uid: word!Word.PageBorderArt.southwest:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with southwest design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Southwest"'
   - name: stars
     uid: word!Word.PageBorderArt.stars:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with stars design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Stars"'
   - name: stars3D
     uid: word!Word.PageBorderArt.stars3D:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with 3D stars design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Stars3D"'
   - name: starsBlack
     uid: word!Word.PageBorderArt.starsBlack:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with black stars design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StarsBlack"'
   - name: starsShadowed
     uid: word!Word.PageBorderArt.starsShadowed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with shadowed stars design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StarsShadowed"'
   - name: starsTop
     uid: word!Word.PageBorderArt.starsTop:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with top stars design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"StarsTop"'
   - name: sun
     uid: word!Word.PageBorderArt.sun:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with sun design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sun"'
   - name: swirligig
     uid: word!Word.PageBorderArt.swirligig:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with swirligig design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Swirligig"'
   - name: tornPaper
     uid: word!Word.PageBorderArt.tornPaper:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with torn paper design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TornPaper"'
   - name: tornPaperBlack
     uid: word!Word.PageBorderArt.tornPaperBlack:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with black torn paper design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TornPaperBlack"'
   - name: trees
     uid: word!Word.PageBorderArt.trees:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with trees design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Trees"'
   - name: triangleParty
     uid: word!Word.PageBorderArt.triangleParty:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with triangle party design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TriangleParty"'
   - name: triangles
     uid: word!Word.PageBorderArt.triangles:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with triangles design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Triangles"'
   - name: tribal1
     uid: word!Word.PageBorderArt.tribal1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with tribal design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tribal1"'
   - name: tribal2
     uid: word!Word.PageBorderArt.tribal2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with tribal design (variant 2).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tribal2"'
   - name: tribal3
     uid: word!Word.PageBorderArt.tribal3:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with tribal design (variant 3).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tribal3"'
   - name: tribal4
     uid: word!Word.PageBorderArt.tribal4:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with tribal design (variant 4).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tribal4"'
   - name: tribal5
     uid: word!Word.PageBorderArt.tribal5:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with tribal design (variant 5).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tribal5"'
   - name: tribal6
     uid: word!Word.PageBorderArt.tribal6:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with tribal design (variant 6).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Tribal6"'
   - name: twistedLines1
     uid: word!Word.PageBorderArt.twistedLines1:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with twisted lines design (variant 1).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TwistedLines1"'
   - name: twistedLines2
     uid: word!Word.PageBorderArt.twistedLines2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with twisted lines design (variant 2).
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TwistedLines2"'
   - name: vine
     uid: word!Word.PageBorderArt.vine:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with vine design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Vine"'
   - name: waveline
     uid: word!Word.PageBorderArt.waveline:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with waveline design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Waveline"'
   - name: weavingAngles
     uid: word!Word.PageBorderArt.weavingAngles:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with weaving angles design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WeavingAngles"'
   - name: weavingBraid
     uid: word!Word.PageBorderArt.weavingBraid:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with weaving braid design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WeavingBraid"'
   - name: weavingRibbon
     uid: word!Word.PageBorderArt.weavingRibbon:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with weaving ribbon design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WeavingRibbon"'
   - name: weavingStrips
     uid: word!Word.PageBorderArt.weavingStrips:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with weaving strips design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WeavingStrips"'
   - name: whiteFlowers
     uid: word!Word.PageBorderArt.whiteFlowers:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with white flowers design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WhiteFlowers"'
   - name: woodwork
     uid: word!Word.PageBorderArt.woodwork:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with woodwork design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Woodwork"'
   - name: xillusions
     uid: word!Word.PageBorderArt.xillusions:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with X illusions design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"XIllusions"'
   - name: zanyTriangles
     uid: word!Word.PageBorderArt.zanyTriangles:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with zany triangles design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ZanyTriangles"'
   - name: zigZag
     uid: word!Word.PageBorderArt.zigZag:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with zigzag design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ZigZag"'
   - name: zigZagStitch
     uid: word!Word.PageBorderArt.zigZagStitch:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a border with zigzag stitch design.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ZigZagStitch"'

@@ -18,7 +18,7 @@ properties:
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -36,7 +36,7 @@ properties:
       workbook. The value of the identifier remains the same even when the
       worksheet is renamed or moved.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
       The display name of the worksheet. The name must be fewer than 32
       characters.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -68,7 +68,7 @@ properties:
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -83,7 +83,7 @@ properties:
     fullName: protection
     summary: Returns the sheet protection object for a worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -100,7 +100,7 @@ properties:
     fullName: tables
     summary: Collection of tables that are part of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -115,7 +115,7 @@ properties:
     fullName: visibility
     summary: The visibility of the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

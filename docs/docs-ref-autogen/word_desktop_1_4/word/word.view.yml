@@ -7,7 +7,7 @@ summary: >-
   Contains the view attributes (such as show all, field shading, and table
   gridlines) for a window or pane.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
     fullName: areAllNonprintingCharactersDisplayed
     summary: Specifies whether all nonprinting characters are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       Gets whether background colors and images are shown when the document is
       displayed in print layout view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       Gets whether square brackets are displayed at the beginning and end of
       each bookmark.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
     fullName: areCommentsDisplayed
     summary: Specifies whether Microsoft Word displays the comments in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +86,7 @@ properties:
       Specifies whether Microsoft Word displays connecting lines from the text
       to the revision and comment balloons.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -103,7 +103,7 @@ properties:
       Gets whether crop marks are shown in the corners of pages to indicate
       where margins are located.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -120,7 +120,7 @@ properties:
       Gets whether objects created with the drawing tools are displayed in print
       layout view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -137,7 +137,7 @@ properties:
       Specifies whether shading is applied to the ranges in the document that
       users have permission to modify.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -152,7 +152,7 @@ properties:
     fullName: areFieldCodesDisplayed
     summary: Specifies whether field codes are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -169,7 +169,7 @@ properties:
       Specifies whether Microsoft Word displays formatting changes made to the
       document with Track Changes enabled.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -184,7 +184,7 @@ properties:
     fullName: areInkAnnotationsDisplayed
     summary: Specifies whether handwritten ink annotations are shown or hidden.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -201,7 +201,7 @@ properties:
       Specifies whether Microsoft Word displays insertions and deletions made to
       the document with Track Changes enabled.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -218,7 +218,7 @@ properties:
       Gets whether lines wrap at the right edge of the document window rather
       than at the right margin or the right column boundary.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -235,7 +235,7 @@ properties:
       Gets whether object anchors are displayed next to items that can be
       positioned in print layout view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -250,7 +250,7 @@ properties:
     fullName: areOptionalBreaksDisplayed
     summary: Gets whether Microsoft Word displays optional line breaks.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -265,7 +265,7 @@ properties:
     fullName: areOptionalHyphensDisplayed
     summary: Gets whether optional hyphens are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -280,7 +280,7 @@ properties:
     fullName: areOtherAuthorsVisible
     summary: Gets whether other authors' presence should be visible in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -297,7 +297,7 @@ properties:
       Gets whether the top and bottom margins and the gray area between pages in
       the document are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -312,7 +312,7 @@ properties:
     fullName: areParagraphsMarksDisplayed
     summary: Gets whether paragraph marks are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -327,7 +327,7 @@ properties:
     fullName: arePicturePlaceholdersDisplayed
     summary: Gets whether blank boxes are displayed as placeholders for pictures.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -344,7 +344,7 @@ properties:
       Specifies whether Microsoft Word displays revisions and comments made to
       the document with Track Changes enabled.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -359,7 +359,7 @@ properties:
     fullName: areSpacesIndicated
     summary: Gets whether space characters are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -374,7 +374,7 @@ properties:
     fullName: areTableGridlinesDisplayed
     summary: Specifies whether table gridlines are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -389,7 +389,7 @@ properties:
     fullName: areTabsDisplayed
     summary: Gets whether tab characters are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -406,7 +406,7 @@ properties:
       Gets whether dotted lines are displayed around page margins, text columns,
       objects, and frames in print layout view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -421,7 +421,7 @@ properties:
     fullName: columnWidth
     summary: Specifies the column width in Reading mode.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -453,7 +453,7 @@ properties:
     fullName: fieldShading
     summary: Gets on-screen shading for fields.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -474,7 +474,7 @@ properties:
       Specifies whether all the text in a window is displayed in the same
       sans-serif font with minimal formatting to speed up display.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -491,7 +491,7 @@ properties:
       Specifies whether only the first line of body text is shown in outline
       view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -506,7 +506,7 @@ properties:
     fullName: isFormatDisplayed
     summary: Specifies whether character formatting is visible in outline view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -521,7 +521,7 @@ properties:
     fullName: isFullScreen
     summary: Specifies whether the window is in full-screen view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -536,7 +536,7 @@ properties:
     fullName: isHiddenTextDisplayed
     summary: Gets whether text formatted as hidden text is displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -553,7 +553,7 @@ properties:
       Gets whether highlight formatting is displayed and printed with the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -568,7 +568,7 @@ properties:
     fullName: isInConflictMode
     summary: Specifies whether the document is in conflict mode view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -583,7 +583,7 @@ properties:
     fullName: isInPanning
     summary: Specifies whether Microsoft Word is in Panning mode.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -598,7 +598,7 @@ properties:
     fullName: isInReadingLayout
     summary: Specifies whether the document is being viewed in reading layout view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -615,7 +615,7 @@ properties:
       Specifies whether mail merge data is displayed instead of mail merge
       fields.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -632,7 +632,7 @@ properties:
       Specifies whether the text in the document is visible when the header and
       footer areas are displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -649,7 +649,7 @@ properties:
       Specifies whether the pointer is displayed as a magnifying glass in print
       preview.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -666,7 +666,7 @@ properties:
       Specifies whether pages displayed in reading layout view are displayed
       using the same layout as printed pages.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -681,7 +681,7 @@ properties:
     fullName: isXmlMarkupVisible
     summary: Specifies whether XML tags are visible in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -696,7 +696,7 @@ properties:
     fullName: markupMode
     summary: Specifies the display mode for tracked changes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -713,7 +713,7 @@ properties:
     fullName: pageColor
     summary: Specifies the page color in Reading mode.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -728,7 +728,7 @@ properties:
     fullName: pageMovementType
     summary: Specifies the page movement type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -747,7 +747,7 @@ properties:
       Specifies whether margins are visible or hidden when the document is
       viewed in Full Screen Reading view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -768,7 +768,7 @@ properties:
       Gets whether Word displays revision balloons in the left or right margin
       in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -787,7 +787,7 @@ properties:
     fullName: revisionsBalloonWidth
     summary: Specifies the width of the revision balloons.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -802,7 +802,7 @@ properties:
     fullName: revisionsBalloonWidthType
     summary: Specifies how Microsoft Word measures the width of revision balloons.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -821,7 +821,7 @@ properties:
     fullName: revisionsFilter
     summary: Gets the instance of a `RevisionsFilter` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -836,7 +836,7 @@ properties:
     fullName: seekView
     summary: Specifies the document element displayed in print layout view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -859,7 +859,7 @@ properties:
     fullName: splitSpecial
     summary: Specifies the active window pane.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -890,7 +890,7 @@ properties:
     fullName: type
     summary: Specifies the view type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -910,7 +910,7 @@ methods:
     fullName: collapseAllHeadings()
     summary: Collapses all the headings in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -928,7 +928,7 @@ methods:
       Collapses the text under the selection or the specified range by one
       heading level.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -948,7 +948,7 @@ methods:
     fullName: expandAllHeadings()
     summary: Expands all the headings in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -964,7 +964,7 @@ methods:
     fullName: expandOutline(range)
     summary: Expands the text under the selection by one heading level.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1060,7 +1060,7 @@ methods:
       Moves to the next header or footer, depending on whether a header or
       footer is displayed in the view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1078,7 +1078,7 @@ methods:
       Moves to the previous header or footer, depending on whether a header or
       footer is displayed in the view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1147,7 +1147,7 @@ methods:
       Switches between showing all text (headings and body text) and showing
       only headings.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1165,7 +1165,7 @@ methods:
       Shows all headings up to the specified heading level and hides subordinate
       headings and body text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

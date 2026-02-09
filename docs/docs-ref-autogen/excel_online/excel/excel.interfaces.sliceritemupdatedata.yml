@@ -22,7 +22,7 @@ properties:
       slicer item is the only one selected, when it is deselected, all items
       will be selected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

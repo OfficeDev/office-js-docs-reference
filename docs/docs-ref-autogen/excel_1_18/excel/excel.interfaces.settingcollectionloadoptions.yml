@@ -8,7 +8,7 @@ summary: >-
   workbook. The scope is limited to per file and add-in (task-pane or content)
   combination.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
       For EACH ITEM in the collection: The key that represents the ID of the
       setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       For EACH ITEM in the collection: Represents the value stored for this
       setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

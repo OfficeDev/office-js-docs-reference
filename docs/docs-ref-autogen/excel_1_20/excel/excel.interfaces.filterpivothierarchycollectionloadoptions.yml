@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of FilterPivotHierarchy items associated with the
   PivotTable.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -40,7 +40,7 @@ properties:
       For EACH ITEM in the collection: Determines whether to allow multiple
       filter items.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -55,7 +55,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: ID of the FilterPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Name of the FilterPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -87,7 +87,7 @@ properties:
     fullName: position
     summary: 'For EACH ITEM in the collection: Position of the FilterPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

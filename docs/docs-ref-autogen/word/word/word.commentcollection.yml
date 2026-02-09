@@ -4,9 +4,38 @@ uid: word!Word.CommentCollection:class
 package: word!
 fullName: Word.CommentCollection
 summary: Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Replies to the first active comment in the selected content.
+
+  await Word.run(async (context) => {
+    const text = (document.getElementById("reply-text") as HTMLInputElement).value;
+    const comments: Word.CommentCollection = context.document.getSelection().getComments();
+    comments.load("items");
+    await context.sync();
+
+    const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
+    if (firstActiveComment) {
+      const reply: Word.CommentReply = firstActiveComment.reply(text);
+      console.log("Reply added.");
+    } else {
+      console.warn("No active comment was found in the selection, so couldn't reply.");
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -32,7 +61,36 @@ properties:
     package: word!
     fullName: items
     summary: Gets the loaded child items in this collection.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+      // Replies to the first active comment in the selected content.
+
+      await Word.run(async (context) => {
+        const text = (document.getElementById("reply-text") as HTMLInputElement).value;
+        const comments: Word.CommentCollection = context.document.getSelection().getComments();
+        comments.load("items");
+        await context.sync();
+
+        const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
+        if (firstActiveComment) {
+          const reply: Word.CommentReply = firstActiveComment.reply(text);
+          console.log("Reply added.");
+        } else {
+          console.warn("No active comment was found in the selection, so couldn't reply.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -49,7 +107,7 @@ methods:
       Gets the first comment in the collection. Throws an `ItemNotFound` error
       if this collection is empty.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -69,9 +127,40 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+      // Gets the range of the first comment in the selected content.
+
+      await Word.run(async (context) => {
+        const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+        comment.load("contentRange");
+        const range: Word.Range = comment.getRange();
+        range.load("text");
+        await context.sync();
+
+        if (comment.isNullObject) {
+          console.warn("No comments in the selection, so no range to get.");
+          return;
+        }
+
+        console.log(`Comment location: ${range.text}`);
+        const contentRange: Word.CommentContentRange = comment.contentRange;
+        console.log("Comment content range:", contentRange);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

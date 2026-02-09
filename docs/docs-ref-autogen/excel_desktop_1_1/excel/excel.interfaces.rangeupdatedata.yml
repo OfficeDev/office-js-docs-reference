@@ -22,7 +22,7 @@ properties:
       in the range are hidden. Value is `null` when some columns in a range are
       hidden and other columns in the same range are not hidden.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       Accesses the cell control applied to this range. If the range has multiple
       cell controls, this returns `EmptyCellControl`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -55,7 +55,7 @@ properties:
     fullName: dataValidation
     summary: Returns a data validation object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ properties:
       Returns a format object, encapsulating the range's font, fill, borders,
       alignment, and other properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -91,7 +91,7 @@ properties:
       Specifies the array formula of a range. If the specified range doesn't
       contain an array formula, this property returns `null`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -108,7 +108,7 @@ properties:
       Represents the formula in A1-style notation. If a cell has no formula, its
       value is returned instead.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -127,7 +127,7 @@ properties:
       would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
       value is returned instead.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -144,7 +144,7 @@ properties:
       Represents the formula in R1C1-style notation. If a cell has no formula,
       its value is returned instead.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -159,7 +159,7 @@ properties:
     fullName: hyperlink
     summary: Represents the hyperlink for the current range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -178,7 +178,7 @@ properties:
       codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -198,7 +198,7 @@ properties:
       Any returned text uses the locally-formatted strings based on the language
       specified in the system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -217,7 +217,7 @@ properties:
       range are hidden. Value is `null` when some rows in a range are hidden and
       other rows in the same range are not hidden.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -236,7 +236,7 @@ properties:
       will be returned. For built-in styles, a string representing a value in
       the `BuiltInStyle` enum will be returned.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -255,7 +255,7 @@ properties:
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -276,7 +276,7 @@ properties:
       returned from this API always aligns with the en-US locale. To retrieve
       data in the user's display locale, use `Range.valuesAsJsonLocal`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -298,7 +298,7 @@ properties:
       Data returned from this API always aligns with the user's display locale.
       To retrieve data independent of locale, use `Range.valuesAsJson`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

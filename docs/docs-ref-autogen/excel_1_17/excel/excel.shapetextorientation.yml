@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ShapeTextOrientation
 summary: Specifies the orientation for the text frame in a shape.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,49 +14,35 @@ fields:
   - name: eastAsianVertical
     uid: excel!Excel.ShapeTextOrientation.eastAsianVertical:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"EastAsianVertical"'
   - name: horizontal
     uid: excel!Excel.ShapeTextOrientation.horizontal:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Horizontal"'
   - name: mongolianVertical
     uid: excel!Excel.ShapeTextOrientation.mongolianVertical:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"MongolianVertical"'
   - name: vertical
     uid: excel!Excel.ShapeTextOrientation.vertical:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Vertical"'
   - name: vertical270
     uid: excel!Excel.ShapeTextOrientation.vertical270:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Vertical270"'
   - name: wordArtVertical
     uid: excel!Excel.ShapeTextOrientation.wordArtVertical:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"WordArtVertical"'
   - name: wordArtVerticalRTL
     uid: excel!Excel.ShapeTextOrientation.wordArtVerticalRTL:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"WordArtVerticalRTL"'

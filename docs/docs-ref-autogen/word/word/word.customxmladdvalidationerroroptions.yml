@@ -7,7 +7,7 @@ summary: >-
   The options that define the descriptive error text and the state of
   `clearedOnUpdate`<!-- -->.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -23,7 +23,7 @@ properties:
       [Word.CustomXmlValidationErrorCollection](xref:word!Word.CustomXmlValidationErrorCollection:class)
       when the XML is corrected and updated.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -38,7 +38,7 @@ properties:
     fullName: errorText
     summary: If provided, specifies the descriptive error text.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

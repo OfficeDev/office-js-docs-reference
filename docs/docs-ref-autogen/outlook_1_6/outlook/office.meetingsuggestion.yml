@@ -24,7 +24,7 @@ summary: >-
   Outlook
   add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
   -->.
-remarks: >-
+remarks: >
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
   -->**: **read item**
@@ -33,6 +33,34 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  const item = Office.context.mailbox.item;
+
+  // Get an array of strings that represent meeting suggestions in the current
+  item's body.
+
+  const meetingSuggestions =
+  item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+
+  console.log("There are " + meetingSuggestions.length + " meeting
+  suggestions.")
+
+  meetingSuggestions.forEach(function (meetingSuggestion) {
+      console.log("Subject: " + JSON.stringify(meetingSuggestion.subject));
+      console.log("Attendees: " + JSON.stringify(meetingSuggestion.attendees));
+      console.log("Location: " + JSON.stringify(meetingSuggestion.location));
+      console.log("Start: " + JSON.stringify(meetingSuggestion.start));
+      console.log("End: " + JSON.stringify(meetingSuggestion.end));
+      console.log("Meeting: " + JSON.stringify(meetingSuggestion.meetingString));
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: true

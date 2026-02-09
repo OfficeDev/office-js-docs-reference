@@ -7,7 +7,7 @@ summary: >-
   Represents the options for the [Selection.moveEnd and
   Selection.moveStart](xref:word!Word.Selection:class) methods.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -26,7 +26,7 @@ properties:
       encounters the other position, the selection is collapsed and both the
       start and end positions move together. The default value is 1.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -44,7 +44,7 @@ properties:
       position (per the calling method) is to be moved. The default value is
       `character`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

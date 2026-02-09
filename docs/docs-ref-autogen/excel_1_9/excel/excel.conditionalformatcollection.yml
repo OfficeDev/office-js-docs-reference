@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of all the conditional formats that are overlap the
   range.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -48,9 +48,36 @@ methods:
     package: excel!
     fullName: add(type)
     summary: Adds a new conditional format to the collection at the first/top priority.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:M5");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.colorScale);
+          const criteria = {
+              minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+              midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+              maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+          };
+          conditionalFormat.colorScale.criteria = criteria;
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +98,7 @@ methods:
     fullName: add(type)
     summary: Adds a new conditional format to the collection at the first/top priority.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -97,9 +124,29 @@ methods:
     package: excel!
     fullName: clearAll()
     summary: Clears all conditional formats active on the current specified range.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange();
+          range.conditionalFormats.clearAll();
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -113,9 +160,29 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of conditional formats in the workbook.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => {
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:C3";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
+          conditionalFormat.iconSetOrNullObject.style = Excel.IconSet.fourTrafficLights;
+          const cfCount = range.conditionalFormats.getCount(); 
+
+          await context.sync()
+          console.log("Count: " + cfCount.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -129,9 +196,28 @@ methods:
     package: excel!
     fullName: getItem(id)
     summary: Returns a conditional format for the given ID.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => {
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:C3";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const conditionalFormats = range.conditionalFormats;
+          const conditionalFormat = conditionalFormats.getItemAt(3);
+          await context.sync()
+
+          console.log("Conditional Format at Item 3 Loaded");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -149,9 +235,47 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Returns a conditional format at the given index.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const worksheetRange = sheet.getRange();
+          worksheetRange.conditionalFormats.load("type");
+
+          await context.sync();
+
+          let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+          worksheetRange.conditionalFormats.items.forEach(item => {
+              cfRangePairs.push({
+                  cf: item,
+                  range: item.getRange().load("address")
+              });
+          });
+
+          await context.sync();
+
+          if (cfRangePairs.length > 0) {
+              cfRangePairs.forEach(item => {
+                  console.log(item.cf.type);
+              });
+          } else {
+              console.log("No conditional formats applied.");
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

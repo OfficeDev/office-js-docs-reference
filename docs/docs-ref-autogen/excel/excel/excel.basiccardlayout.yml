@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.BasicCardLayout
 summary: Represents a card layout used for the Boolean, double, and string basic types.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: layout
     summary: Represents the type of this layout.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

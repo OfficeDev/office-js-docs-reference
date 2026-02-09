@@ -6,7 +6,7 @@ fullName: Office.MailboxEnums.BodyMode
 summary: >-
   Specifies the portion of a message's body displayed for replies to a
   conversation thread with more than one message.
-remarks: >-
+remarks: >
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Message Compose
@@ -38,6 +38,30 @@ remarks: >-
   For more information, see [Change how the message list is displayed in
   Outlook](https://support.microsoft.com/office/57fe0cd8-e90b-4b1b-91e4-a0ba658c0042)<!--
   -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Get the body of the message based on the user's setting for message
+  organization.
+
+  Office.context.mailbox.item.body.getAsync(
+    Office.CoercionType.Html,
+    { bodyMode: Office.MailboxEnums.BodyMode.HostConfig },
+    (bodyResult) => {
+      if (bodyResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(`Failed to get body: ${bodyResult.error.message}`);
+        return;
+      }
+
+      const body = bodyResult.value;
+    }
+  );
+
+  ```
 
 isPreview: false
 isDeprecated: false

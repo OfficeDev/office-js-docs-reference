@@ -29,7 +29,29 @@ properties:
       property applies to only an attendee of an appointment, as represented by
       the `optionalAttendees` or `requiredAttendees` property. This property
       returns undefined in other scenarios.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following sample provides the responses from required attendees.
+
+      // Note that this sample needs the add-in to be in Appointment Read
+      (Attendee) mode.
+
+      const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+
+      console.log("There are " + requiredAttendees.length + " required
+      attendees.")
+
+      requiredAttendees.forEach(function (requiredAttendee) {
+          console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -42,7 +64,15 @@ properties:
     package: outlook!
     fullName: displayName
     summary: Gets the display name associated with an email address.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      const organizerName = Office.context.mailbox.item.organizer.displayName;
+      console.log("Organizer: " + organizerName);
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -55,7 +85,20 @@ properties:
     package: outlook!
     fullName: emailAddress
     summary: Gets the SMTP email address.
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      const organizerAddress =
+      Office.context.mailbox.item.organizer.emailAddress;
+
+      console.log("Organizer's email address: " + organizerAddress);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +111,7 @@ properties:
     package: outlook!
     fullName: recipientType
     summary: Gets the email address type of a recipient.
-    remarks: >-
+    remarks: >
       **Important**:
 
 
@@ -87,6 +130,23 @@ properties:
       account. To get the correct recipient types after switching accounts, you
       must first remove the existing recipients, then add them back to the mail
       item.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+
+      console.log("There are " + requiredAttendees.length + " required
+      attendees.")
+
+      requiredAttendees.forEach(function (requiredAttendee) {
+          console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

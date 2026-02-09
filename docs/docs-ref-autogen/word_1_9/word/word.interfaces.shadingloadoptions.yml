@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ShadingLoadOptions
 summary: Represents the `Shading` object.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Specifies the color for the background of the object. You can provide the
       value in the '\#RRGGBB' format or the color name.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

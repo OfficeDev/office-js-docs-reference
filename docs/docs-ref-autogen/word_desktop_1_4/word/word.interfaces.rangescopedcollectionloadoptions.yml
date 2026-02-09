@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of [Word.Range](xref:word!Word.Range:class) objects
   that represents each character, word, or sentence.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether the range is formatted
       as bold.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether the range is formatted
       as bold in a right-to-left language document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
       For EACH ITEM in the collection: Specifies a `CharacterCase` value that
       represents the case of the text in the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -91,7 +91,7 @@ properties:
       For EACH ITEM in the collection: Specifies the character width of the
       range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
       For EACH ITEM in the collection: Specifies if the range contains combined
       characters.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -127,7 +127,7 @@ properties:
       For EACH ITEM in the collection: Specifies if Microsoft Word ignores the
       number of characters per line for the corresponding `Range` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -144,7 +144,7 @@ properties:
       For EACH ITEM in the collection: Specifies the emphasis mark for a
       character or designated character string.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -161,7 +161,7 @@ properties:
       For EACH ITEM in the collection: Specifies the ending character position
       of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -179,7 +179,7 @@ properties:
       measurement units) in which Microsoft Word fits the text in the current
       selection or range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -196,7 +196,7 @@ properties:
       For EACH ITEM in the collection: Gets the text format of the range. Use
       this to get and set font name, size, color, and other properties.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -214,7 +214,7 @@ properties:
       For EACH ITEM in the collection: Specifies if a grammar check has been run
       on the range or document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -231,7 +231,7 @@ properties:
       For EACH ITEM in the collection: Specifies the proofing status (spelling
       and grammar checking) of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -249,7 +249,7 @@ properties:
       For EACH ITEM in the collection: Specifies the highlight color for the
       range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -267,7 +267,7 @@ properties:
       For EACH ITEM in the collection: Specifies the formatting for horizontal
       text set within vertical text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -286,7 +286,7 @@ properties:
       when you set a new hyperlink on the range. Use a '\#' to separate the
       address part from the optional location part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -301,7 +301,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the ID for the range.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -316,7 +316,7 @@ properties:
     fullName: isEmpty
     summary: 'For EACH ITEM in the collection: Checks whether the range length is zero.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -334,7 +334,7 @@ properties:
       For EACH ITEM in the collection: Gets if the range is collapsed and is
       located at the end-of-row mark in a table.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -352,7 +352,7 @@ properties:
       For EACH ITEM in the collection: Gets whether the text in the range is
       visible on the screen.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -369,7 +369,7 @@ properties:
       For EACH ITEM in the collection: Specifies if the font or range is
       formatted as italic.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -387,7 +387,7 @@ properties:
       For EACH ITEM in the collection: Specifies if the font or range is
       formatted as italic (right-to-left languages).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -404,7 +404,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether the range of Japanese
       language text is hiragana or katakana.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -422,7 +422,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether Microsoft Word has
       detected the language of the text in the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -439,7 +439,7 @@ properties:
       For EACH ITEM in the collection: Specifies a `LanguageId` value that
       represents the language for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -457,7 +457,7 @@ properties:
       For EACH ITEM in the collection: Specifies an East Asian language for the
       range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -475,7 +475,7 @@ properties:
       For EACH ITEM in the collection: Specifies a language for the range that
       isn't classified as an East Asian language.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -492,7 +492,7 @@ properties:
       For EACH ITEM in the collection: Returns a `ListFormat` object that
       represents all the list formatting characteristics of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -507,7 +507,7 @@ properties:
     fullName: parentBody
     summary: 'For EACH ITEM in the collection: Gets the parent body of the range.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -526,7 +526,7 @@ properties:
       control that contains the range. Throws an `ItemNotFound` error if there
       isn't a parent content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -551,7 +551,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -572,7 +572,7 @@ properties:
       For EACH ITEM in the collection: Gets the table that contains the range.
       Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -591,7 +591,7 @@ properties:
       range. Throws an `ItemNotFound` error if it isn't contained in a table
       cell.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -613,7 +613,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -635,7 +635,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -652,7 +652,7 @@ properties:
       For EACH ITEM in the collection: Returns a `ShadingUniversal` object that
       refers to the shading formatting for the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -672,7 +672,7 @@ properties:
       (such as hidden text, tab marks, space marks, and paragraph marks) are
       displayed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -690,7 +690,7 @@ properties:
       For EACH ITEM in the collection: Specifies if spelling has been checked
       throughout the range or document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -707,7 +707,7 @@ properties:
       For EACH ITEM in the collection: Specifies the starting character position
       of the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -724,7 +724,7 @@ properties:
       For EACH ITEM in the collection: Gets the number of characters in the
       story that contains the range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -739,7 +739,7 @@ properties:
     fullName: storyType
     summary: 'For EACH ITEM in the collection: Gets the story type for the range.'
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -758,7 +758,7 @@ properties:
       built-in styles that are portable between locales, see the "styleBuiltIn"
       property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -777,7 +777,7 @@ properties:
       locales. To use custom styles or localized style names, see the "style"
       property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -792,7 +792,7 @@ properties:
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the range.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -810,7 +810,7 @@ properties:
       lines of text in one and specifies the characters that enclose the text,
       if any.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

@@ -7,7 +7,7 @@ summary: >-
   Represents an image in the worksheet. To get the corresponding `Shape` object,
   use `Image.shape`<!-- -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,9 +34,31 @@ properties:
     package: excel!
     fullName: format
     summary: Returns the format of the image.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const image = sheet.shapes.getItem("Image").image;
+          image.load("format");
+          await context.sync();
+
+          console.log("The image's format is: " + image.format);
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +76,7 @@ properties:
     fullName: id
     summary: Specifies the shape identifier for the image object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +91,7 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object associated with the image.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

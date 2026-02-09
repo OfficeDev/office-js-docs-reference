@@ -18,7 +18,7 @@ properties:
     fullName: applicationName
     summary: Gets the application name of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: author
     summary: Specifies the author of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: category
     summary: Specifies the category of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +65,7 @@ properties:
       Specifies the Comments field in the metadata of the document. These have
       no connection to comments by users made in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -80,7 +80,7 @@ properties:
     fullName: company
     summary: Specifies the company of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -95,7 +95,7 @@ properties:
     fullName: creationDate
     summary: Gets the creation date of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -110,7 +110,7 @@ properties:
     fullName: customProperties
     summary: Gets the collection of custom properties of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -125,7 +125,7 @@ properties:
     fullName: format
     summary: Specifies the format of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -140,7 +140,7 @@ properties:
     fullName: keywords
     summary: Specifies the keywords of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -155,7 +155,7 @@ properties:
     fullName: lastAuthor
     summary: Gets the last author of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -170,7 +170,7 @@ properties:
     fullName: lastPrintDate
     summary: Gets the last print date of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -185,7 +185,7 @@ properties:
     fullName: lastSaveTime
     summary: Gets the last save time of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -200,7 +200,7 @@ properties:
     fullName: manager
     summary: Specifies the manager of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -215,7 +215,7 @@ properties:
     fullName: revisionNumber
     summary: Gets the revision number of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -240,7 +240,7 @@ properties:
       = Both \#4 and \#8; 13 = All of \#1, \#4, and \#8; 14 = All of \#2, \#4,
       and \#8; 15 = All of \#1, \#2, \#4, and \#8.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -255,7 +255,7 @@ properties:
     fullName: subject
     summary: Specifies the subject of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -270,7 +270,7 @@ properties:
     fullName: template
     summary: Gets the template of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -285,7 +285,7 @@ properties:
     fullName: title
     summary: Specifies the title of the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

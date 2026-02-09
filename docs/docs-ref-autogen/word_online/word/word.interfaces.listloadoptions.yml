@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class)
   objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: id
     summary: Gets the list's ID.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       the level exists, which means there's at least one list item at that
       level.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
       Gets all 9 level types in the list. Each type can be `bullet`<!-- -->,
       `number`<!-- -->, or `picture`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

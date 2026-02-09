@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of
   [Word.CoauthoringUpdate](xref:word!Word.CoauthoringUpdate:class) objects.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false

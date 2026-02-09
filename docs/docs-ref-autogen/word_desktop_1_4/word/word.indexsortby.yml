@@ -5,7 +5,7 @@ package: word!
 fullName: Word.IndexSortBy
 summary: Specifies how an index is sorted.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,20 +14,16 @@ fields:
   - name: stroke
     uid: word!Word.IndexSortBy.stroke:member
     package: word!
-    summary: >-
+    summary: |-
       Sort by stroke.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Stroke"'
   - name: syllable
     uid: word!Word.IndexSortBy.syllable:member
     package: word!
-    summary: >-
+    summary: |-
       Sort by syllable.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Syllable"'

@@ -8,7 +8,7 @@ summary: >-
   `condition` defines what criteria need to be set in order for the filter to
   operate.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       A list of selected items to manually filter. These must be existing and
       valid items from the chosen field.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

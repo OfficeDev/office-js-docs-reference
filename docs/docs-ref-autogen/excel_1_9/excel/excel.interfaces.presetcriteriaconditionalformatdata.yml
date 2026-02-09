@@ -20,7 +20,7 @@ properties:
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
     fullName: rule
     summary: The rule of the conditional format.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

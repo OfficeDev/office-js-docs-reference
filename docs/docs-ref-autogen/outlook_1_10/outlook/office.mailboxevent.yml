@@ -14,7 +14,7 @@ summary: >-
   -->. It allows the add-in to signify to the Outlook client that it has
   completed processing an event.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -59,8 +59,8 @@ methods:
     summary: >-
       Indicates that the event-based or spam-reporting add-in has completed
       processing an event.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -84,6 +84,38 @@ methods:
 
       - Support to assign a `SmartAlertsEventCompletedOptions` object to the
       `options` parameter was introduced in Mailbox 1.12.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example sets the subject when a new message is composed.
+
+      function onNewMessageComposeHandler(event) {
+          const subject = "Set by an event-based add-in!";
+          Office.context.mailbox.item.subject.setAsync(
+              subject,
+              {
+                  asyncContext: event,
+              },
+              (asyncResult) => {
+                  const event = asyncResult.asyncContext;
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      console.error("Failed to set subject: " + asyncResult.error.message);
+                      event.completed();
+                      return;
+                  }
+
+                  // Signal to the Outlook client that the event has been processed.
+                  console.log("Successfully set the subject.");
+                  event.completed();
+              }
+          );
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

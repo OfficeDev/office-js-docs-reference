@@ -7,7 +7,7 @@ summary: >-
   Represents an Image. An Image can be a direct child of a PageContent object or
   a Paragraph object.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: description
     summary: Gets or sets the description of the Image.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -51,7 +51,7 @@ properties:
     fullName: height
     summary: Gets or sets the height of the Image layout.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -67,7 +67,7 @@ properties:
     fullName: hyperlink
     summary: Gets or sets the hyperlink of the Image.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -83,7 +83,7 @@ properties:
     fullName: id
     summary: Gets the ID of the Image object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -100,10 +100,47 @@ properties:
     summary: >-
       Gets the data obtained by OCR (Optical Character Recognition) of this
       Image, such as OCR text and language.
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      let image = null;
+
+
+      await OneNote.run(async (context) => {
+          // Get the current outline.
+          const outline = context.application.getActiveOutline();
+
+          // Queue a command to load paragraphs and their types.
+          outline.load("paragraphs")
+          await context.sync();
+
+          for (let i=0; i < outline.paragraphs.items.length; i++) {
+              const paragraph = outline.paragraphs.items[i];
+              if (paragraph.type == "Image")
+              {
+                  image = paragraph.image;
+              }
+          }
+          if (image != null) {
+              image.load("ocrData");
+          }
+
+          await context.sync();
+                  
+          // Log ocrText and ocrLanguageId.
+          console.log(image.ocrData.ocrText);
+          console.log(image.ocrData.ocrLanguageId);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +157,7 @@ properties:
       is not a direct child of a PageContent. This object defines the position
       of the Image on the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -138,7 +175,7 @@ properties:
       Gets the Paragraph object that contains the Image. Throws if the Image
       isn't a direct child of a Paragraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -154,7 +191,7 @@ properties:
     fullName: width
     summary: Gets or sets the width of the Image layout.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -172,10 +209,46 @@ methods:
     summary: >-
       Gets the base64-encoded binary representation of the Image. Example:
       data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      let image = null;
+
+      let imageString;
+
+
+      await OneNote.run(async (context) => {
+          // Get the current outline.
+          const outline = context.application.getActiveOutline();
+          
+          // Queue a command to load paragraphs and their types.
+          outline.load("paragraphs/type")
+          await context.sync();
+          for (let i=0; i < outline.paragraphs.items.length; i++) {
+              const paragraph = outline.paragraphs.items[i];
+              if (paragraph.type == "Image")
+              {
+                  image = paragraph.image;
+              }
+          }
+
+          if (image != null) {
+              imageString = image.getBase64Image();
+              await context.sync();
+          }
+
+          console.log(imageString);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -211,7 +284,42 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await OneNote.run(async (context) => {
+          // Get the current outline.
+          const outline = context.application.getActiveOutline();
+          let image = null;
+          
+          // Queue a command to load paragraphs and their types.
+          outline.load("paragraphs/type")
+          await context.sync();
+
+          for (let i=0; i < outline.paragraphs.items.length; i++) {
+              const paragraph = outline.paragraphs.items[i];
+              if (paragraph.type == "Image")
+              {
+                  image = paragraph.image;
+              }
+          }
+
+          if (image != null) {
+              // Load all properties and relationships.
+              image.load(["id", "width", "height", "description", "hyperlink"]);
+              await context.sync();
+          }
+
+          if (image != null) {                   
+              console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
+              console.log("description: " + image.description);                   
+              console.log("hyperlink: " + image.hyperlink);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

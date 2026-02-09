@@ -21,7 +21,7 @@ properties:
       chart data label. Note that when getting the value, it may differ slightly
       from the set value.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -40,7 +40,7 @@ properties:
       chart data label. Note that when getting the value, it may differ slightly
       from the set value.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

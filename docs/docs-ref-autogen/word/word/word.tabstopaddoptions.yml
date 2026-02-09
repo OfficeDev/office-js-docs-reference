@@ -7,7 +7,7 @@ summary: >-
   Specifies the options for adding to a
   [Word.TabStopCollection](xref:word!Word.TabStopCollection:class) object.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
       If provided, specifies the alignment of the tab stop. The default value is
       `left`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -43,7 +43,7 @@ properties:
       If provided, specifies the leader character for the tab stop. The default
       value is `spaces`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

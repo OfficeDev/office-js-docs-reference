@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.ShapeDataItemCollection
 summary: Represents the ShapeDataItemCollection for a given Shape.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -48,7 +48,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of Shape Data Items.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -65,7 +65,7 @@ methods:
     fullName: getItem(key)
     summary: Gets the ShapeDataItem using its name.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -87,7 +87,30 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      Visio.run(session, function (ctx) {
+          const activePage = ctx.document.getActivePage();
+          const shape = activePage.shapes.getItem(0);
+          const shapeDataItems = shape.shapeDataItems;
+          shapeDataItems.load(["label", "value"]);
+          return ctx.sync().then(function() {
+              for (let i = 0; i < shapeDataItems.items.length; i++) {
+                  console.log(shapeDataItems.items[i].label);
+                  console.log(shapeDataItems.items[i].value);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -16,7 +16,7 @@ properties:
     fullName: classNotebookPageSource
     summary: Gets the ClassNotebookPageSource to the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -32,7 +32,7 @@ properties:
     fullName: clientUrl
     summary: The client url of the page. Read only
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -48,7 +48,7 @@ properties:
     fullName: contents
     summary: The collection of PageContent objects on the page. Read only
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -64,7 +64,7 @@ properties:
     fullName: id
     summary: Gets the ID of the page. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -82,7 +82,7 @@ properties:
       Text interpretation for the ink on the page. Returns null if there is no
       ink analysis information. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -98,7 +98,7 @@ properties:
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -114,7 +114,7 @@ properties:
     fullName: title
     summary: Gets or sets the title of the page.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -130,7 +130,7 @@ properties:
     fullName: webUrl
     summary: The web URL of the page. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

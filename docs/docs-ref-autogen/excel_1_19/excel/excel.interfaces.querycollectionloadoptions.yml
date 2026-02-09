@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.QueryCollectionLoadOptions
 summary: Represents the collection of queries in the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Gets the query error message from when
       the query was last refreshed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -52,7 +52,7 @@ properties:
     fullName: loadedTo
     summary: 'For EACH ITEM in the collection: Gets the query loaded to object type.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -70,7 +70,7 @@ properties:
       For EACH ITEM in the collection: Specifies if the query loaded to the data
       model.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -88,7 +88,7 @@ properties:
       For EACH ITEM in the collection: Gets the name of the query. Query names
       cannot contain periods or quotation marks.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -106,7 +106,7 @@ properties:
       For EACH ITEM in the collection: Gets the date and time when the query was
       last refreshed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -125,7 +125,7 @@ properties:
       when the query was last refreshed. If last refresh has errors the value
       will be -1.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

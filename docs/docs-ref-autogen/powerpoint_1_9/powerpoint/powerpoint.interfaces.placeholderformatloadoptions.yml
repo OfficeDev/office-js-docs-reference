@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.PlaceholderFormatLoadOptions
 summary: Represents the properties of a `placeholder` shape.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -39,7 +39,7 @@ properties:
       [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
       details. Returns `null` if the placeholder is empty.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -58,7 +58,7 @@ properties:
       [PowerPoint.PlaceholderType](xref:powerpoint!PowerPoint.PlaceholderType:enum)
       for details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

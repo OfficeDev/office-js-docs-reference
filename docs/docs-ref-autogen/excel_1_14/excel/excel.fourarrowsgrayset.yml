@@ -3,9 +3,7 @@ name: Excel.FourArrowsGraySet
 uid: excel!Excel.FourArrowsGraySet:interface
 package: excel!
 fullName: Excel.FourArrowsGraySet
-summary: >-
-  \[ [Api set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: '\[Api set: ExcelApi 1.2\]'
 remarks: ''
 
 isPreview: false

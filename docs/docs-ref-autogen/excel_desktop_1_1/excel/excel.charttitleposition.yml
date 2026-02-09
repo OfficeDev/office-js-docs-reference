@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartTitlePosition
 summary: Represents the position of the chart title.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,35 +14,25 @@ fields:
   - name: automatic
     uid: excel!Excel.ChartTitlePosition.automatic:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Automatic"'
   - name: bottom
     uid: excel!Excel.ChartTitlePosition.bottom:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Bottom"'
   - name: left
     uid: excel!Excel.ChartTitlePosition.left:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Left"'
   - name: right
     uid: excel!Excel.ChartTitlePosition.right:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Right"'
   - name: top
     uid: excel!Excel.ChartTitlePosition.top:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Top"'

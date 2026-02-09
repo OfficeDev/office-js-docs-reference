@@ -5,7 +5,7 @@ package: word!
 fullName: Word.NumberForm
 summary: Specifies the number form setting for an OpenType font.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,30 +14,24 @@ fields:
   - name: default
     uid: word!Word.NumberForm.default:member
     package: word!
-    summary: >-
+    summary: |-
       Default number form setting.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Default"'
   - name: lining
     uid: word!Word.NumberForm.lining:member
     package: word!
-    summary: >-
+    summary: |-
       Lining number form setting.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Lining"'
   - name: oldStyle
     uid: word!Word.NumberForm.oldStyle:member
     package: word!
-    summary: >-
+    summary: |-
       Old-style number form setting.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"OldStyle"'

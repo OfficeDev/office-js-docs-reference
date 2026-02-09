@@ -4,9 +4,49 @@ uid: word!Word.BorderCollection:class
 package: word!
 fullName: Word.BorderCollection
 summary: Represents the collection of border styles.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Updates border properties (e.g., type, width, color) of the specified
+  style.
+
+  await Word.run(async (context) => {
+    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+    if (styleName == "") {
+      console.warn("Enter a style name to update border properties.");
+      return;
+    }
+
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else {
+      const borders: Word.BorderCollection = style.borders;
+      borders.load("items");
+      await context.sync();
+
+      borders.outsideBorderType = Word.BorderType.dashed;
+      borders.outsideBorderWidth = Word.BorderWidth.pt025;
+      borders.outsideBorderColor = "green";
+      console.log("Updated outside borders.");
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -35,7 +75,7 @@ properties:
       Specifies the 24-bit color of the inside borders. Color is specified in
       '\#RRGGBB' format or by using the color name.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +90,7 @@ properties:
     fullName: insideBorderType
     summary: Specifies the border type of the inside borders.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +118,7 @@ properties:
     fullName: insideBorderWidth
     summary: Specifies the width of the inside borders.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -113,9 +153,49 @@ properties:
     summary: >-
       Specifies the 24-bit color of the outside borders. Color is specified in
       '\#RRGGBB' format or by using the color name.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Updates border properties (e.g., type, width, color) of the specified
+      style.
+
+      await Word.run(async (context) => {
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+        if (styleName == "") {
+          console.warn("Enter a style name to update border properties.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const borders: Word.BorderCollection = style.borders;
+          borders.load("items");
+          await context.sync();
+
+          borders.outsideBorderType = Word.BorderType.dashed;
+          borders.outsideBorderWidth = Word.BorderWidth.pt025;
+          borders.outsideBorderColor = "green";
+          console.log("Updated outside borders.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -128,9 +208,49 @@ properties:
     package: word!
     fullName: outsideBorderType
     summary: Specifies the border type of the outside borders.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Updates border properties (e.g., type, width, color) of the specified
+      style.
+
+      await Word.run(async (context) => {
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+        if (styleName == "") {
+          console.warn("Enter a style name to update border properties.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const borders: Word.BorderCollection = style.borders;
+          borders.load("items");
+          await context.sync();
+
+          borders.outsideBorderType = Word.BorderType.dashed;
+          borders.outsideBorderWidth = Word.BorderWidth.pt025;
+          borders.outsideBorderColor = "green";
+          console.log("Updated outside borders.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -156,9 +276,49 @@ properties:
     package: word!
     fullName: outsideBorderWidth
     summary: Specifies the width of the outside borders.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Updates border properties (e.g., type, width, color) of the specified
+      style.
+
+      await Word.run(async (context) => {
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+        if (styleName == "") {
+          console.warn("Enter a style name to update border properties.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const borders: Word.BorderCollection = style.borders;
+          borders.load("items");
+          await context.sync();
+
+          borders.outsideBorderType = Word.BorderType.dashed;
+          borders.outsideBorderWidth = Word.BorderWidth.pt025;
+          borders.outsideBorderColor = "green";
+          console.log("Updated outside borders.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -179,7 +339,7 @@ methods:
     fullName: getByLocation(borderLocation)
     summary: Gets the border that has the specified location.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -213,7 +373,7 @@ methods:
       Gets the first border in this collection. Throws an `ItemNotFound` error
       if this collection is empty.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -235,7 +395,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -251,7 +411,7 @@ methods:
     fullName: getItem(index)
     summary: Gets a `Border` object by its index in the collection.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

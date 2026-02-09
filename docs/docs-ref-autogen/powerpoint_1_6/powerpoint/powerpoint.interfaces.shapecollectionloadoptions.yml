@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeCollectionLoadOptions
 summary: Represents the collection of shapes.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -37,7 +37,7 @@ properties:
       For EACH ITEM in the collection: Returns the fill formatting of this
       shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -59,7 +59,7 @@ properties:
       shape. Throws an `InvalidArgument` exception when set with a negative
       value.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -75,7 +75,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the unique ID of the shape.'
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -93,7 +93,7 @@ properties:
       For EACH ITEM in the collection: The distance, in points, from the left
       side of the shape to the left side of the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -112,7 +112,7 @@ properties:
       For EACH ITEM in the collection: Returns the line formatting of this
       shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -131,7 +131,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of this shape.'
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -152,7 +152,7 @@ properties:
       of this `Shape`<!-- -->. Throws an `InvalidArgument` exception if the
       shape doesn't support a `TextFrame`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -173,7 +173,7 @@ properties:
       For EACH ITEM in the collection: The distance, in points, from the top
       edge of the shape to the top edge of the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -192,7 +192,7 @@ properties:
       [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
       details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -211,7 +211,7 @@ properties:
       shape. Throws an `InvalidArgument` exception when set with a negative
       value.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

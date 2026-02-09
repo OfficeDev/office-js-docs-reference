@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.FieldCollectionLoadOptions
 summary: Contains a collection of [Word.Field](xref:word!Word.Field:class) objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -46,7 +46,7 @@ properties:
     fullName: code
     summary: 'For EACH ITEM in the collection: Specifies the field''s code instruction.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -67,7 +67,7 @@ properties:
       type. If the field isn't an `addin` type, it's `null` and it will throw a
       general exception when code attempts to set it.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
     fullName: kind
     summary: 'For EACH ITEM in the collection: Gets the field''s kind.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +99,7 @@ properties:
       For EACH ITEM in the collection: Specifies whether the field is locked.
       `true` if the field is locked, `false` otherwise.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -114,7 +114,7 @@ properties:
     fullName: parentBody
     summary: 'For EACH ITEM in the collection: Gets the parent body of the field.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -133,7 +133,7 @@ properties:
       the field. Throws an `ItemNotFound` error if there isn't a parent content
       control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -157,7 +157,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -178,7 +178,7 @@ properties:
       For EACH ITEM in the collection: Gets the table that contains the field.
       Throws an `ItemNotFound` error if it isn't contained in a table.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -196,7 +196,7 @@ properties:
       field. Throws an `ItemNotFound` error if it isn't contained in a table
       cell.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -218,7 +218,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -240,7 +240,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -255,7 +255,7 @@ properties:
     fullName: result
     summary: 'For EACH ITEM in the collection: Gets the field''s result data.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -273,7 +273,7 @@ properties:
       displayed for the specified field. `true` if the field codes are
       displayed, `false` otherwise.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -288,7 +288,7 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the field''s type.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

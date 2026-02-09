@@ -16,7 +16,7 @@ properties:
     fullName: allowOverlap
     summary: Specifies whether a given shape can overlap other shapes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
       Specifies a string that represents the alternative text associated with
       the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
       Gets the `Body` object of the shape. Only applies to text boxes and
       geometric shapes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +86,7 @@ properties:
     fullName: fill
     summary: Returns the fill formatting of the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -103,7 +103,7 @@ properties:
       Specifies the geometric shape type of the shape. It will be null if isn't
       a geometric shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -220,7 +220,7 @@ properties:
     fullName: height
     summary: Specifies the height, in points, of the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -238,7 +238,7 @@ properties:
       (that is, the `relativeVerticalSize` property). For an inline or child
       shape, it can't be set.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -253,7 +253,7 @@ properties:
     fullName: id
     summary: Gets an integer that represents the shape identifier.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -268,7 +268,7 @@ properties:
     fullName: isChild
     summary: Check whether this shape is a child of a group shape or a canvas shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -287,7 +287,7 @@ properties:
       property). For an inline shape, it will return 0 and can't be set. For a
       child shape in a canvas or group, it's relative to the top left corner.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -306,7 +306,7 @@ properties:
       `relativeHorizontalalPosition` property). For an inline or child shape, it
       will return 0 and can't be set.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -321,7 +321,7 @@ properties:
     fullName: lockAspectRatio
     summary: Specifies if the aspect ratio of this shape is locked.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -336,7 +336,7 @@ properties:
     fullName: name
     summary: Specifies the name of the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -353,7 +353,7 @@ properties:
       Gets the top-level parent canvas shape of this child shape. It will be
       null if it isn't a child shape of a canvas.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -370,7 +370,7 @@ properties:
       Gets the top-level parent group shape of this child shape. It will be null
       if it isn't a child shape of a group.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -389,7 +389,7 @@ properties:
       [Word.RelativeHorizontalPosition](xref:word!Word.RelativeHorizontalPosition:enum)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -412,7 +412,7 @@ properties:
       Specifies the relative horizontal size of the shape. Use with the
       `widthRelative` property. For an inline or child shape, it can't be set.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -435,7 +435,7 @@ properties:
       [Word.RelativeVerticalPosition](xref:word!Word.RelativeVerticalPosition:enum)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -458,7 +458,7 @@ properties:
       Specifies the relative vertical size of the shape. Use with the
       `heightRelative` property. For an inline or child shape, it can't be set.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -479,7 +479,7 @@ properties:
       Specifies the rotation, in degrees, of the shape. Not applicable to Canvas
       shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -500,7 +500,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -515,7 +515,7 @@ properties:
     fullName: textFrame
     summary: Gets the `TextFrame` object of the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -530,7 +530,7 @@ properties:
     fullName: textWrap
     summary: Returns the text wrap formatting of the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -549,7 +549,7 @@ properties:
       property). For an inline shape, it will return 0 and can't be set. For a
       child shape in a canvas or group, it's relative to the top left corner.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -568,7 +568,7 @@ properties:
       `relativeVerticalPosition` property). For an inline or child shape, it
       will return 0 and can't be set.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -585,7 +585,7 @@ properties:
       Gets the shape type. Currently, only the following shapes are supported:
       text boxes, geometric shapes, groups, pictures, and canvases.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -604,7 +604,7 @@ properties:
     fullName: visible
     summary: Specifies if the shape is visible. Not applicable to inline shapes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -619,7 +619,7 @@ properties:
     fullName: width
     summary: Specifies the width, in points, of the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -637,7 +637,7 @@ properties:
       (that is, the `relativeHorizontalSize` property). For an inline or child
       shape, it can't be set.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

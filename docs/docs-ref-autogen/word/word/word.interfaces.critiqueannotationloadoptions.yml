@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CritiqueAnnotationLoadOptions
 summary: Represents an annotation wrapper around critique displayed in the document.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
     fullName: range
     summary: Gets the range of text that is annotated.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

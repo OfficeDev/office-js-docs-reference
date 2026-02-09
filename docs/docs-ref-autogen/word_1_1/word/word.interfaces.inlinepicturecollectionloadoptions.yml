@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of
   [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
       For EACH ITEM in the collection: Specifies a string that represents the
       alternative text associated with the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       For EACH ITEM in the collection: Specifies a string that contains the
       title for the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ properties:
       For EACH ITEM in the collection: Specifies a number that describes the
       height of the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -91,7 +91,7 @@ properties:
       For EACH ITEM in the collection: Specifies a hyperlink on the image. Use a
       '\#' to separate the address part from the optional location part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
       For EACH ITEM in the collection: Specifies a value that indicates whether
       the inline image retains its original proportions when you resize it.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -128,7 +128,7 @@ properties:
       the inline image. Throws an `ItemNotFound` error if there isn't a parent
       content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -147,7 +147,7 @@ properties:
       For EACH ITEM in the collection: Specifies a number that describes the
       width of the inline image.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

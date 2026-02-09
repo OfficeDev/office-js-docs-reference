@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.LocalImage
 summary: Provides information about the local image.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -36,7 +36,7 @@ methods:
       Gets the Base64-encoded image data stored in the shared image cache with
       the cache unique identifier (UID).
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

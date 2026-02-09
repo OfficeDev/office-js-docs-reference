@@ -7,7 +7,7 @@ summary: >-
   This object represents the font attributes (font name, font size, color, etc.)
   for an object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
     fullName: bold
     summary: Represents the bold status of the font.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       HTML color code representation of the text color (e.g., \#FF0000
       represents Red).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +67,7 @@ properties:
     fullName: italic
     summary: Specifies the italic status of the font.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -83,9 +83,25 @@ properties:
     summary: >-
       Font name (e.g., "Calibri"). The name's length should not be greater than
       31 characters.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Change the font of the selected range to "Impact".
+
+      await Excel.run(async (context) => {
+        const selection = context.workbook.getSelectedRange();
+        selection.format.font.name = "Impact";
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -99,7 +115,7 @@ properties:
     fullName: size
     summary: Font size.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -116,7 +132,7 @@ properties:
       Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for
       details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -157,7 +173,23 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const sheetName = "Sheet1";
+          const rangeAddress = "F:G";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
+          const rangeFont = range.format.font;
+          rangeFont.load('name');
+          await context.sync();
+          console.log(rangeFont.name);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

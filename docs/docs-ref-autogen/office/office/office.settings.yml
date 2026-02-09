@@ -114,13 +114,38 @@ methods:
       that is opened in Excel on the web, and more than one user is editing the
       spreadsheet (coauthoring). Therefore, effectively the settingsChanged
       event is supported only in Excel on the web in coauthoring scenarios.
-    remarks: >-
+    remarks: >
       **Requirement set**: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       You can add multiple event handlers for the specified eventType as long as
       the name of each event handler function is unique.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function addSelectionChangedEventHandler() {
+          Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+      }
+
+
+      function MyHandler(eventArgs) {
+          write('Event raised: ' + eventArgs.type);
+          doSomethingWithSettings(eventArgs.settings);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -168,9 +193,27 @@ methods:
     package: office!
     fullName: get(name)
     summary: Retrieves the specified setting.
-    remarks: >-
+    remarks: >
       **Requirement set**:
       [Settings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function displayMySetting() {
+          write('Current value for mySetting: ' + Office.context.document.settings.get('mySetting'));
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -190,7 +233,7 @@ methods:
     summary: >-
       Reads all settings persisted in the document and refreshes the content or
       task pane add-in's copy of those settings held in memory.
-    remarks: >-
+    remarks: >
       **Requirement set**: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
@@ -221,6 +264,26 @@ methods:
       <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function refreshSettings() {
+          Office.context.document.settings.refreshAsync(function (asyncResult) {
+              write('Settings refreshed with status: ' + asyncResult.status);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -256,13 +319,25 @@ methods:
       the specified setting in the document, at some point after calling the
       Settings.remove method and before the add-in is closed, you must call the
       Settings.saveAsync method.
-    remarks: >-
+    remarks: >
       **Requirement set**:
       [Settings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
 
       null is a valid value for a setting. Therefore, assigning null to the
       setting will not remove it from the settings property bag.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function removeMySetting() {
+          Office.context.document.settings.remove('mySetting');
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -344,7 +419,7 @@ methods:
     package: office!
     fullName: removeHandlerAsync(eventType, callback)
     summary: Removes an event handler for the settingsChanged event.
-    remarks: >-
+    remarks: >
       **Requirement set**: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
@@ -374,6 +449,31 @@ methods:
       <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function removeSettingsChangedEventHandler() {
+          Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+      }
+
+
+      function MyHandler(eventArgs) {
+          write('Event raised: ' + eventArgs.type);
+          doSomethingWithSettings(eventArgs.settings);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -460,7 +560,7 @@ methods:
     package: office!
     fullName: saveAsync(callback)
     summary: Persists the in-memory copy of the settings property bag in the document.
-    remarks: >-
+    remarks: >
       **Requirement set**:
       [Settings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
@@ -490,6 +590,26 @@ methods:
       <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function persistSettings() {
+          Office.context.document.settings.saveAsync(function (asyncResult) {
+              write('Settings saved with status: ' + asyncResult.status);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -522,7 +642,7 @@ methods:
       document is opened, at some point after calling the Settings.set method
       and before the add-in is closed, you must call the Settings.saveAsync
       method to persist settings in the document.
-    remarks: >-
+    remarks: >
       **Requirement set**:
       [Settings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
@@ -532,6 +652,18 @@ methods:
       in-memory copy of the settings property bag. After you call the
       Settings.saveAsync method, the value is stored in the document as the
       serialized JSON representation of its data type.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function setMySetting() {
+          Office.context.document.settings.set('mySetting', 'mySetting value');
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

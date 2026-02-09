@@ -9,7 +9,7 @@ summary: >-
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!--
   -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
     fullName: axes
     summary: Represents chart axes.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
     fullName: dataLabels
     summary: Represents the data labels on the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +67,7 @@ properties:
     fullName: format
     summary: Encapsulates the format properties for the chart area.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +82,7 @@ properties:
     fullName: height
     summary: Specifies the height, in points, of the chart object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +99,7 @@ properties:
       The distance, in points, from the left side of the chart to the worksheet
       origin.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -113,9 +113,29 @@ properties:
     package: excel!
     fullName: legend
     summary: Represents the legend for the chart.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Set to show legend of Chart1 and make it on top of the chart.
+
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.legend.visible = true;
+          chart.legend.position = "Top"; 
+          chart.legend.overlay = false; 
+          await context.sync()
+          
+          console.log("Legend Shown ");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -128,9 +148,32 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of a chart object.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Rename the chart to new name, resize the chart to 200 points in both
+      height and weight.
+
+      // Move Chart1 to 100 points to the top and left.
+
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.name = "New Name";
+          chart.top = 100;
+          chart.left = 100;
+          chart.height = 200;
+          chart.width = 200;
+          await context.sync(); 
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -144,7 +187,7 @@ properties:
     fullName: series
     summary: Represents either a single series or collection of series in the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -161,7 +204,7 @@ properties:
       Represents the title of the specified chart, including the text,
       visibility, position, and formatting of the title.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -178,7 +221,7 @@ properties:
       Specifies the distance, in points, from the top edge of the object to the
       top of row 1 (on a worksheet) or the top of the chart area (on a chart).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -193,7 +236,7 @@ properties:
     fullName: width
     summary: Specifies the width, in points, of the chart object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -208,9 +251,23 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the chart object.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.delete();
+          await context.sync(); 
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -246,7 +303,21 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Get a chart named "Chart1".
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.load('name');
+          await context.sync();
+
+          console.log(chart.name);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -349,9 +420,28 @@ methods:
     package: excel!
     fullName: setData(sourceData, seriesBy)
     summary: Resets the source data for the chart.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Set the sourceData to be the range at "A1:B4" and seriesBy to be
+      "Columns".
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sheet1");
+          const chart = sheet.charts.getItem("Chart1");
+          const sourceData = sheet.getRange("A1:B4");
+          chart.setData(sourceData, "Columns");
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -376,7 +466,7 @@ methods:
     fullName: setData(sourceData, seriesBy)
     summary: Resets the source data for the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -403,9 +493,29 @@ methods:
     package: excel!
     fullName: setPosition(startCell, endCell)
     summary: Positions the chart relative to cells on the worksheet.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const sheetName = "Charts";
+          const rangeSelection = "A1:B4";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+          const sourceData = sheetName + "!" + "A1:B4";
+          const chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+          chart.width = 500;
+          chart.height = 300;
+          chart.setPosition("C2", null);
+          await context.sync(); 
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

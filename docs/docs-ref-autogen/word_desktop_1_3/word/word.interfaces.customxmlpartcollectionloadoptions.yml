@@ -7,7 +7,7 @@ summary: >-
   Contains the collection of
   [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
       For EACH ITEM in the collection: Gets a value that indicates whether the
       `CustomXmlPart` is built-in.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       of data in the document. If the region is empty, the property returns
       `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -72,7 +72,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the custom XML part.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       For EACH ITEM in the collection: Gets the namespace URI of the custom XML
       part.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       For EACH ITEM in the collection: Gets the XML representation of the
       current `CustomXmlPart` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

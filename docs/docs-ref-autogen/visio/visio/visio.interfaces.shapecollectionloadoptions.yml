@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.Interfaces.ShapeCollectionLoadOptions
 summary: Represents the Shape Collection.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Shape''s identifier. Read-only.'
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -51,7 +51,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Shape''s name. Read-only.'
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -69,7 +69,7 @@ properties:
       For EACH ITEM in the collection: Returns true, if shape is selected. User
       can set true to select the shape explicitly.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -85,7 +85,7 @@ properties:
     fullName: text
     summary: 'For EACH ITEM in the collection: Shape''s text. Read-only.'
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -101,7 +101,7 @@ properties:
     fullName: view
     summary: 'For EACH ITEM in the collection: Returns the view of the shape.'
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

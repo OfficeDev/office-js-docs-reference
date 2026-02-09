@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorksheetCollection
 summary: Represents a collection of worksheet objects that are part of the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -49,9 +49,26 @@ methods:
       Adds a new worksheet to the workbook. The worksheet will be added at the
       end of existing worksheets. If you wish to activate the newly added
       worksheet, call `.activate()` on it.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const wSheetName = 'Sample Name';
+          const worksheet = context.workbook.worksheets.add(wSheetName);
+          worksheet.load('name');
+          await context.sync();
+          
+          console.log(worksheet.name);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +89,24 @@ methods:
     package: excel!
     fullName: getActiveWorksheet()
     summary: Gets the currently active worksheet in the workbook.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => {  
+          const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
+          activeWorksheet.load('name');
+          await context.sync();
+          console.log(activeWorksheet.name);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -89,7 +121,7 @@ methods:
     fullName: getCount(visibleOnly)
     summary: Gets the number of worksheets in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +143,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a worksheet object using its name or ID.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -137,7 +169,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -184,7 +216,22 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const worksheets = context.workbook.worksheets;
+          worksheets.load('items');
+          await context.sync();
+          
+          for (let i = 0; i < worksheets.items.length; i++) {
+              console.log(worksheets.items[i].name);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

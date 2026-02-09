@@ -5,7 +5,7 @@ package: word!
 fullName: Word.CharacterWidth
 summary: Specifies the character width of the text in the specified range.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,20 +14,16 @@ fields:
   - name: full
     uid: word!Word.CharacterWidth.full:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies full-width characters.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Full"'
   - name: half
     uid: word!Word.CharacterWidth.half:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies half-width characters.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Half"'

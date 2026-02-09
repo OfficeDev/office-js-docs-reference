@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CoauthoringUpdateLoadOptions
 summary: Represents a coauthoring update in a Word document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Gets a `Range` object that represents the portion of the document that's
       contained in the `CoauthoringUpdate` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

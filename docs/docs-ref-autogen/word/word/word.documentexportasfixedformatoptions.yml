@@ -7,7 +7,7 @@ summary: >-
   Provides configuration options for the
   [Document.exportAsFixedFormat](xref:word!Word.Document:class) method.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -22,7 +22,7 @@ properties:
       If provided, specifies whether to bitmap missing fonts. The default value
       is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -39,7 +39,7 @@ properties:
       If provided, specifies the bookmark creation mode. The default value is
       `none`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -60,7 +60,7 @@ properties:
       If provided, specifies whether to include document structure tags. The
       default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -78,7 +78,7 @@ properties:
       If provided, specifies the extension class pointer. The default value is
       `null`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -95,7 +95,7 @@ properties:
       If provided, specifies the starting page number. The default value is
       `1`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -112,7 +112,7 @@ properties:
       If provided, specifies whether to include document properties. The default
       value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -129,7 +129,7 @@ properties:
       If provided, specifies the item to export. The default value is
       `documentContent`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -149,7 +149,7 @@ properties:
       If provided, specifies whether to keep Information Rights Management (IRM)
       settings. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -166,7 +166,7 @@ properties:
       If provided, specifies whether to open the file after export. The default
       value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -183,7 +183,7 @@ properties:
       If provided, specifies the optimization target for the export. The default
       value is `print`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -200,7 +200,7 @@ properties:
       If provided, specifies the range to export. The default value is
       `allDocument`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -221,7 +221,7 @@ properties:
       If provided, specifies the ending page number. The default value is the
       last page of the document.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -239,7 +239,7 @@ properties:
       compliance](https://www.iso.org/standard/38920.html)<!-- -->. The default
       value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

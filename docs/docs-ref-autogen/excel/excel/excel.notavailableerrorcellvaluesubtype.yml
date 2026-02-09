@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.NotAvailableErrorCellValueSubType
 summary: Represents types of \#N/A errors.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -14,13 +14,10 @@ fields:
   - name: eRegexMatchNoCapture
     uid: excel!Excel.NotAvailableErrorCellValueSubType.eRegexMatchNoCapture:member
     package: excel!
-    summary: >-
+    summary: |-
       No capture groups were matched. Displays as error type \#N/A in Excel.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ERegexMatchNoCapture"'
   - name: eRegexMatchNoResult
     uid: excel!Excel.NotAvailableErrorCellValueSubType.eRegexMatchNoResult:member
@@ -30,9 +27,7 @@ fields:
       type \#N/A in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ERegexMatchNoResult"'
   - name: eRegexReplaceOccurrenceNoResult
     uid: >-
@@ -43,9 +38,7 @@ fields:
       type \#N/A in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"ERegexReplaceOccurrenceNoResult"'
   - name: hlookupValueNotFound
     uid: excel!Excel.NotAvailableErrorCellValueSubType.hlookupValueNotFound:member
@@ -55,9 +48,7 @@ fields:
       range. Displays as error type \#N/A in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"HlookupValueNotFound"'
   - name: pythonObjectUnknown
     uid: excel!Excel.NotAvailableErrorCellValueSubType.pythonObjectUnknown:member
@@ -67,9 +58,7 @@ fields:
       Displays as error type \#N/A in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"PythonObjectUnknown"'
   - name: stockHistoryInvalidProperty
     uid: >-
@@ -80,9 +69,7 @@ fields:
       Displays as error type \#N/A in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"StockHistoryInvalidProperty"'
   - name: stockHistoryNoData
     uid: excel!Excel.NotAvailableErrorCellValueSubType.stockHistoryNoData:member
@@ -92,20 +79,15 @@ fields:
       Displays as error type \#N/A in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"StockHistoryNoData"'
   - name: unknown
     uid: excel!Excel.NotAvailableErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#N/A in Excel.
 
-
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Unknown"'
   - name: vlookupValueNotFound
     uid: excel!Excel.NotAvailableErrorCellValueSubType.vlookupValueNotFound:member
@@ -115,7 +97,5 @@ fields:
       range. Displays as error type \#N/A in Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"VlookupValueNotFound"'

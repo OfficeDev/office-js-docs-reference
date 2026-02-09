@@ -12,8 +12,8 @@ summary: >-
   integrated spam-reporting
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!--
   -->.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -32,6 +32,47 @@ remarks: >-
   For a list of supported string values, see
   [Office.SpamReportingEventCompletedOptions.postProcessingAction](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventcompletedoptions#outlook-office-spamreportingeventcompletedoptions-postprocessingaction-member)<!--
   -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example handles a SpamReporting event to process a reported
+  spam or phishing message.
+
+  function onSpamReport(event) {
+      // Get the Base64-encoded EML format of a reported message.
+      Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+              return;
+          }
+
+          // Run additional processing operations here.
+
+          /**
+           * Signal that the spam-reporting event has completed processing.
+           * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+           * and shows a post-processing dialog to the user.
+           * If an error occurs while the message is being processed, the `onErrorDeleteItem`
+           * property determines whether the message will be deleted.
+           */
+          const event = asyncResult.asyncContext;
+          event.completed({
+              moveItemTo: Office.MailboxEnums.MoveSpamItemTo.CustomFolder,
+              folderName: "Reported Messages",
+              onErrorDeleteItem: true,
+              showPostProcessingDialog: {
+                  title: "Contoso Spam Reporting",
+                  description: "Thank you for reporting this message.",
+              },
+          });
+      });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.RefErrorCellValueSubType
 summary: Represents types of \#REF! errors.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -19,9 +19,7 @@ fields:
       Excel.
 
 
-      * \[ [Api set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"CorruptCellRef"'
   - name: externalLinksCalculatedRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksCalculatedRef:member
@@ -31,9 +29,7 @@ fields:
       Displays as error type \#REF! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksCalculatedRef"'
   - name: externalLinksStructuredRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member
@@ -43,18 +39,13 @@ fields:
       Displays as error type \#REF! in Excel.
 
 
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksStructuredRef"'
   - name: unknown
     uid: excel!Excel.RefErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#REF! in Excel.
 
-
-      * \[ [Api set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'

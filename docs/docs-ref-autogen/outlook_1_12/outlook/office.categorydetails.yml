@@ -4,8 +4,8 @@ uid: outlook!Office.CategoryDetails:interface
 package: outlook!
 fullName: Office.CategoryDetails
 summary: Represents a category's details like name and associated color.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -17,6 +17,21 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  const categories = [
+      {
+          "displayName": "Urgent!",
+          "color": Office.MailboxEnums.CategoryColor.Preset0
+      }
+  ];
+
+  ```
 
 isPreview: false
 isDeprecated: false

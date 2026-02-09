@@ -9,10 +9,38 @@ summary: >-
   object model, see [PowerPoint JavaScript object
   model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
   -->.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+
+  await PowerPoint.run(async function(context) {
+      // Get the ID of the first selected slide.
+      const presentation: PowerPoint.Presentation = context.presentation;
+      const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
+      selected.load("id");
+      await context.sync();
+
+      // Insert the other presentation after the selected slide.
+      const insertOptions: PowerPoint.InsertSlideOptions = {
+          formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+          targetSlideId: selected.id
+      };
+      presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
+      await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -41,7 +69,7 @@ properties:
       Returns the collection of `SlideMaster` objects that are in the
       presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -57,7 +85,7 @@ properties:
     fullName: slides
     summary: Returns an ordered collection of slides in the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -73,7 +101,7 @@ properties:
     fullName: tags
     summary: Returns a collection of tags attached to the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -89,7 +117,7 @@ properties:
     fullName: title
     summary: Returns the title of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -107,10 +135,38 @@ methods:
     summary: >-
       Inserts the specified slides from a presentation into the current
       presentation.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+
+      await PowerPoint.run(async function(context) {
+          // Get the ID of the first selected slide.
+          const presentation: PowerPoint.Presentation = context.presentation;
+          const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
+          selected.load("id");
+          await context.sync();
+
+          // Insert the other presentation after the selected slide.
+          const insertOptions: PowerPoint.InsertSlideOptions = {
+              formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+              targetSlideId: selected.id
+          };
+          presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

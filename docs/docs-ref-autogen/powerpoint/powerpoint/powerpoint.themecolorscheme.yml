@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.ThemeColorScheme
 summary: Represents a theme color scheme.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -35,7 +35,7 @@ methods:
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -58,7 +58,7 @@ methods:
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -86,7 +86,7 @@ methods:
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -112,7 +112,7 @@ methods:
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

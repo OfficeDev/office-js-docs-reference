@@ -20,7 +20,7 @@ properties:
       Specifies the East Asian language to use when breaking lines of text in
       the document or template.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
     fullName: farEastLineBreakLevel
     summary: Specifies the line break control level for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -60,7 +60,7 @@ properties:
       Specifies whether the spelling and grammar checker ignores documents based
       on this template.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -75,7 +75,7 @@ properties:
     fullName: justificationMode
     summary: Specifies the character spacing adjustment for the template.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -96,7 +96,7 @@ properties:
       Specifies if Microsoft Word kerns half-width Latin characters and
       punctuation marks in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -113,7 +113,7 @@ properties:
       Specifies a `LanguageId` value that represents the language in the
       template.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -225,7 +225,7 @@ properties:
     fullName: languageIdFarEast
     summary: Specifies an East Asian language for the language in the template.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -339,7 +339,7 @@ properties:
       Specifies the kinsoku characters after which Microsoft Word will not break
       a line.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -356,7 +356,7 @@ properties:
       Specifies the kinsoku characters before which Microsoft Word will not
       break a line.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -374,7 +374,7 @@ properties:
       `false` if Microsoft Word displays a prompt to save changes when the
       document is closed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

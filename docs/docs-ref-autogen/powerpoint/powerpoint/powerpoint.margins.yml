@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Margins
 summary: Represents the margins of a table cell.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -19,7 +19,7 @@ properties:
     fullName: bottom
     summary: Specifies the bottom margin in points.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: left
     summary: Specifies the left margin in points.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -66,7 +66,7 @@ properties:
     fullName: right
     summary: Specifies the right margin in points.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -82,7 +82,7 @@ properties:
     fullName: top
     summary: Specifies the top margin in points.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

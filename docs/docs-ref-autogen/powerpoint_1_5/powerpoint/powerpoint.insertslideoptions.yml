@@ -4,10 +4,38 @@ uid: powerpoint!PowerPoint.InsertSlideOptions:interface
 package: powerpoint!
 fullName: PowerPoint.InsertSlideOptions
 summary: Represents the available options when inserting slides.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+
+  await PowerPoint.run(async function(context) {
+      // Get the ID of the first selected slide.
+      const presentation: PowerPoint.Presentation = context.presentation;
+      const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
+      selected.load("id");
+      await context.sync();
+
+      // Insert the other presentation after the selected slide.
+      const insertOptions: PowerPoint.InsertSlideOptions = {
+          formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+          targetSlideId: selected.id
+      };
+      presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
+      await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +49,7 @@ properties:
       Specifies which formatting to use during slide insertion. The default
       option is to use "KeepSourceFormatting".
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -49,7 +77,7 @@ properties:
       inserted when `sourceSlideIds` isn't provided (this is the default
       behavior).
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -71,7 +99,7 @@ properties:
       pointing to a non-existing slide, the operation throws a `SlideNotFound`
       exception and no slides will be inserted.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

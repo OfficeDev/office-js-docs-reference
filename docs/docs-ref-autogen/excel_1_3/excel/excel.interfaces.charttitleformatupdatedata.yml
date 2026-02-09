@@ -20,7 +20,7 @@ properties:
       Represents the font attributes (such as font name, font size, and color)
       for an object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

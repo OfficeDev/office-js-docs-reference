@@ -13,7 +13,7 @@ summary: >-
   are added, a table row will continue to point at the index for which it was
   created.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -44,7 +44,7 @@ properties:
       For EACH ITEM in the collection: Returns the index number of the row
       within the rows collection of the table. Zero-indexed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -64,7 +64,7 @@ properties:
       value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel
       interprets this value as a formula.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +86,7 @@ properties:
       API always aligns with the en-US locale. To retrieve data in the user's
       display locale, use `TableRow.valuesAsJsonLocal`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -110,7 +110,7 @@ properties:
       this API always aligns with the user's display locale. To retrieve data
       independent of locale, use `TableRow.valuesAsJson`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

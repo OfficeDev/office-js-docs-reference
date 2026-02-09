@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.Point
 summary: Represents a single point of ink stroke
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: id
     summary: Gets the ID of the Point object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

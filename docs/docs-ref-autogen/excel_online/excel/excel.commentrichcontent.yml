@@ -8,7 +8,7 @@ summary: >-
   content incudes the text string and any other objects contained within the
   comment body, such as mentions.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -22,10 +22,42 @@ properties:
     summary: >-
       An array containing all the entities (e.g., people) mentioned within the
       comment.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comments-and-notes/comment-mentions.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Comments");
+          const mention = {
+              email: "kakri@contoso.com",
+              id: 0,
+              name: "Kate Kristensen"
+          };
+
+          // This will tag the mention's name using the '@' syntax.
+          // They will be notified via email.
+          const commentBody = {
+              mentions: [mention],
+              richContent: '<at id="0">' + mention.name + "</at> -  Can you take a look?"
+          };
+
+          // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+          sheet.comments.add("A1", commentBody, Excel.ContentType.mention);
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -42,7 +74,7 @@ properties:
       mentions, the first mentioned entity has an ID attribute of 0, and the
       second mentioned entity has an ID attribute of 1).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

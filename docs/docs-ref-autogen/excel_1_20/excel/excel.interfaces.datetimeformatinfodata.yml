@@ -20,7 +20,7 @@ properties:
       Gets the string used as the date separator. This is based on current
       system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -38,7 +38,7 @@ properties:
       Gets the format string for a long date value. This is based on current
       system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -56,7 +56,7 @@ properties:
       Gets the format string for a long time value. This is based on current
       system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -74,7 +74,7 @@ properties:
       Gets the format string for a short date value. This is based on current
       system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -92,7 +92,7 @@ properties:
       Gets the string used as the time separator. This is based on current
       system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

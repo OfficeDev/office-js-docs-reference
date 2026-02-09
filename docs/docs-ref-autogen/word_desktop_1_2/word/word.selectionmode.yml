@@ -6,9 +6,28 @@ fullName: Word.SelectionMode
 summary: >-
   Represents where the cursor (insertion point) is set in the document after a
   selection.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+
+  await Word.run(async (context) => {
+    // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+    context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
+
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -21,18 +40,15 @@ fields:
       selected range).
 
 
-      * \[ [Api set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"End"'
   - name: select
     uid: word!Word.SelectionMode.select:member
     package: word!
-    summary: >-
+    summary: |-
       The entire range is selected.
 
-
-      * \[ [Api set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Select"'
   - name: start
     uid: word!Word.SelectionMode.start:member
@@ -42,6 +58,5 @@ fields:
       the selected range).
 
 
-      * \[ [Api set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Start"'

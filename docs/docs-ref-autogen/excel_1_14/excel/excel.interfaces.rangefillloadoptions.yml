@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.RangeFillLoadOptions
 summary: Represents the background of a range object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       HTML color code representing the color of the background, in the form
       \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       LinearGradient and RectangularGradient are not supported. A `null` value
       indicates that the entire range doesn't have a uniform pattern setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
       The HTML color code representing the color of the range pattern, in the
       form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       original color. A `null` value indicates that the range doesn't have
       uniform `patternTintAndShade` settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
       original color. A `null` value indicates that the range doesn't have
       uniform `tintAndShade` settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -7,7 +7,7 @@ summary: >-
   Provides configuration options for the
   [Document.followHyperlink](xref:word!Word.Document:class) method.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -22,7 +22,7 @@ properties:
       If provided, specifies whether to add the link to the browsing history.
       The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -39,7 +39,7 @@ properties:
       If provided, specifies the hyperlink address to follow. The default value
       is an empty string.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -56,7 +56,7 @@ properties:
       If provided, specifies additional information to pass with the request.
       The default value is an empty string.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -73,7 +73,7 @@ properties:
       If provided, specifies header information for the HTTP request. The
       default value is an empty string.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -90,7 +90,7 @@ properties:
       If provided, specifies the HTTP method to use for the request. The default
       value is "GET".
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -107,7 +107,7 @@ properties:
       If provided, specifies whether to open the link in a new window. The
       default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -124,7 +124,7 @@ properties:
       If provided, specifies the sub-address within the document. The default
       value is an empty string.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.WindowType
 summary: Specifies the type of the window.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,20 +14,16 @@ fields:
   - name: document
     uid: word!Word.WindowType.document:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies a document window.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Document"'
   - name: template
     uid: word!Word.WindowType.template:member
     package: word!
-    summary: >-
+    summary: |-
       Specifies a template window.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Template"'

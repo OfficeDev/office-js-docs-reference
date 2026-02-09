@@ -7,7 +7,7 @@ summary: >-
   Represents a shape group inside a presentation. To get the corresponding Shape
   object, use `ShapeGroup.shape`<!-- -->.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -37,7 +37,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape group.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -53,7 +53,7 @@ properties:
     fullName: shape
     summary: Returns the `Shape` object associated with the group.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

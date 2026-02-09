@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorksheetCollection
 summary: Represents a collection of worksheet objects that are part of the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -49,9 +49,26 @@ methods:
       Adds a new worksheet to the workbook. The worksheet will be added at the
       end of existing worksheets. If you wish to activate the newly added
       worksheet, call `.activate()` on it.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const wSheetName = 'Sample Name';
+          const worksheet = context.workbook.worksheets.add(wSheetName);
+          worksheet.load('name');
+          await context.sync();
+          
+          console.log(worksheet.name);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -72,9 +89,24 @@ methods:
     package: excel!
     fullName: getActiveWorksheet()
     summary: Gets the currently active worksheet in the workbook.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => {  
+          const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
+          activeWorksheet.load('name');
+          await context.sync();
+          console.log(activeWorksheet.name);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -89,7 +121,7 @@ methods:
     fullName: getCount(visibleOnly)
     summary: Gets the number of worksheets in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -110,9 +142,46 @@ methods:
     package: excel!
     fullName: getFirst(visibleOnly)
     summary: Gets the first worksheet in the collection.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheets = context.workbook.worksheets;
+
+          // We don't want to include the default worksheet that was created
+          // when the workbook was created, so our "firstSheet" will be the one
+          // after the literal first. Note chaining of navigation methods.
+          const firstSheet = sheets.getFirst().getNext();
+          const lastSheet = sheets.getLast();
+          const firstTaxRateRange = firstSheet.getRange("B2");
+          const lastTaxRateRange = lastSheet.getRange("B2");
+
+          firstSheet.load("name");
+          lastSheet.load("name");
+          firstTaxRateRange.load("text");
+          lastTaxRateRange.load("text");
+
+          await context.sync();
+
+          let firstYear = firstSheet.name.substr(5, 4);
+          let lastYear = lastSheet.name.substr(5, 4);
+          console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -133,7 +202,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a worksheet object using its name or ID.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -159,7 +228,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -178,9 +247,46 @@ methods:
     package: excel!
     fullName: getLast(visibleOnly)
     summary: Gets the last worksheet in the collection.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheets = context.workbook.worksheets;
+
+          // We don't want to include the default worksheet that was created
+          // when the workbook was created, so our "firstSheet" will be the one
+          // after the literal first. Note chaining of navigation methods.
+          const firstSheet = sheets.getFirst().getNext();
+          const lastSheet = sheets.getLast();
+          const firstTaxRateRange = firstSheet.getRange("B2");
+          const lastTaxRateRange = lastSheet.getRange("B2");
+
+          firstSheet.load("name");
+          lastSheet.load("name");
+          firstTaxRateRange.load("text");
+          lastTaxRateRange.load("text");
+
+          await context.sync();
+
+          let firstYear = firstSheet.name.substr(5, 4);
+          let lastYear = lastSheet.name.substr(5, 4);
+          console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -228,7 +334,22 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const worksheets = context.workbook.worksheets;
+          worksheets.load('items');
+          await context.sync();
+          
+          for (let i = 0; i < worksheets.items.length; i++) {
+              console.log(worksheets.items[i].name);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -300,9 +421,7 @@ events:
     package: excel!
     fullName: onActivated
     summary: Occurs when any worksheet in the workbook is activated.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -319,9 +438,7 @@ events:
     package: excel!
     fullName: onAdded
     summary: Occurs when a new worksheet is added to the workbook.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -338,9 +455,7 @@ events:
     package: excel!
     fullName: onCalculated
     summary: Occurs when any worksheet in the workbook is calculated.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -357,9 +472,7 @@ events:
     package: excel!
     fullName: onChanged
     summary: Occurs when any worksheet in the workbook is changed.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -378,10 +491,7 @@ events:
     summary: >-
       Occurs when one or more columns have been sorted. This happens as the
       result of a left-to-right sort operation.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -398,9 +508,7 @@ events:
     package: excel!
     fullName: onDeactivated
     summary: Occurs when any worksheet in the workbook is deactivated.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -417,9 +525,7 @@ events:
     package: excel!
     fullName: onDeleted
     summary: Occurs when a worksheet is deleted from the workbook.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -436,9 +542,7 @@ events:
     package: excel!
     fullName: onFormatChanged
     summary: Occurs when any worksheet in the workbook has a format changed.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -457,10 +561,7 @@ events:
     summary: >-
       Occurs when one or more rows have been sorted. This happens as the result
       of a top-to-bottom sort operation.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false
@@ -477,9 +578,7 @@ events:
     package: excel!
     fullName: onSelectionChanged
     summary: Occurs when the selection changes on any worksheet.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: ExcelApi 1.9\]'
 
     isPreview: false
     isDeprecated: false
@@ -501,10 +600,7 @@ events:
       cases: - The user drags the mouse for multi-selection. - The user selects
       a cell in the mode when cell arguments are selected for formula
       references.
-    remarks: >-
-      \[ [Api set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    remarks: '\[Api set: ExcelApi 1.10\]'
 
     isPreview: false
     isDeprecated: false

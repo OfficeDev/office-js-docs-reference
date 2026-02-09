@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ListDataValidation
 summary: Represents the List data validation criteria.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Specifies whether to display the list in a cell drop-down. The default is
       `true`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -38,7 +38,7 @@ properties:
       passed in as a `Range` object, or a string that contains a comma-separated
       number, Boolean, or date.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

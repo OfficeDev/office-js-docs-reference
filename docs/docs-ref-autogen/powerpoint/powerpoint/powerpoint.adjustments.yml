@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Adjustments
 summary: Represents the adjustment values for a shape.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: count
     summary: Specifies the number of adjustment points.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -53,7 +53,7 @@ methods:
       Gets the adjustment value at the specified zero-based index. Throws an
       `InvalidArgument` exception when the index is out of range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -155,7 +155,7 @@ methods:
       Sets the adjustment value at the specified zero-based index. Throws an
       `InvalidArgument` exception when the index is out of range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

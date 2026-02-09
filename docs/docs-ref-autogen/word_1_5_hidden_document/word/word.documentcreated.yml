@@ -7,9 +7,45 @@ summary: >-
   The `DocumentCreated` object is the top-level object created by
   `Application.createDocument`<!-- -->. A `DocumentCreated` object is a special
   `Document` object.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+  // Updates the text of the current document with the text from another
+  document passed in as a Base64-encoded string.
+
+  await Word.run(async (context) => {
+    // Use the Base64-encoded string representation of the selected .docx file.
+    const externalDoc: Word.DocumentCreated = context.application.createDocument(externalDocument);
+    await context.sync();
+
+    if (!Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.3")) {
+      console.warn("The WordApiHiddenDocument 1.3 requirement set isn't supported on this client so can't proceed. Try this action on a platform that supports this requirement set.");
+      return;
+    }
+
+    const externalDocBody: Word.Body = externalDoc.body;
+    externalDocBody.load("text");
+    await context.sync();
+
+    // Insert the external document's text at the beginning of the current document's body.
+    const externalDocBodyText = externalDocBody.text;
+    const currentDocBody: Word.Body = context.document.body;
+    currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -23,7 +59,7 @@ properties:
       Gets the `Body` object of the document. The body is the text that excludes
       headers, footers, footnotes, textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -41,7 +77,7 @@ properties:
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +107,7 @@ properties:
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +122,7 @@ properties:
     fullName: properties
     summary: Gets the properties of the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -103,7 +139,7 @@ properties:
       Indicates whether the changes in the document have been saved. A value of
       `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -118,7 +154,7 @@ properties:
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -133,7 +169,7 @@ properties:
     fullName: settings
     summary: Gets the add-in's settings in the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -149,7 +185,7 @@ methods:
     fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -172,7 +208,7 @@ methods:
     fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -197,7 +233,7 @@ methods:
     fullName: deleteBookmark(name)
     summary: Deletes a bookmark, if it exists, from the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -219,7 +255,7 @@ methods:
       Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark
       doesn't exist.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -244,7 +280,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -268,7 +304,7 @@ methods:
     fullName: getContentControls(options)
     summary: Gets the currently supported content controls in the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -301,7 +337,7 @@ methods:
       Gets a `StyleCollection` object that represents the whole style set of the
       document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -320,7 +356,7 @@ methods:
       additional properties. Headers, footers, watermarks, and other section
       properties are copied by default.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -441,9 +477,27 @@ methods:
     package: word!
     fullName: open()
     summary: Opens the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Create and open a new document in a new tab or window.
+
+      await Word.run(async (context) => {
+          const externalDoc = context.application.createDocument();
+          await context.sync();
+
+          externalDoc.open();
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -458,7 +512,7 @@ methods:
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -487,7 +541,7 @@ methods:
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
     remarks: >-
-      \[ [Api set: WordApiHiddenDocument
+      \[ [API set: WordApiHiddenDocument
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 

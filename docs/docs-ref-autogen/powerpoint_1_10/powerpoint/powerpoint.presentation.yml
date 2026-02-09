@@ -9,10 +9,38 @@ summary: >-
   object model, see [PowerPoint JavaScript object
   model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
   -->.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+
+  await PowerPoint.run(async function(context) {
+      // Get the ID of the first selected slide.
+      const presentation: PowerPoint.Presentation = context.presentation;
+      const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
+      selected.load("id");
+      await context.sync();
+
+      // Insert the other presentation after the selected slide.
+      const insertOptions: PowerPoint.InsertSlideOptions = {
+          formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+          targetSlideId: selected.id
+      };
+      presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
+      await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -25,10 +53,51 @@ properties:
     summary: >-
       Returns a collection of bindings that are associated with the
       presentation.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      // Loads bindings.
+
+      await PowerPoint.run(async (context) => {
+        const bindings = context.presentation.bindings;
+        bindings.load("items");
+        await context.sync();
+
+        const bindingCount = bindings.items.length;
+        if (bindingCount === 0) {
+          console.log(`There are no bindings.`);
+        } else if (bindingCount === 1) {
+          console.log("There's 1 binding.");
+        } else {
+          console.log(`There are ${bindingCount} bindings.`);
+        }
+
+        bindings.items.forEach((binding) => {
+          getShapeForBindingId(binding.id).then((shape) => {
+            if (shape) {
+              console.log(`Binding ID: ${binding.id} refers to shape ID ${shape.id}`);
+            } else {
+              console.log(`Binding ID: ${binding.id} doesn't refers to shape.`);
+            }
+          });
+        });
+
+        populateBindingsDropdown(bindings.items);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -59,7 +128,7 @@ properties:
       Returns a collection of custom XML parts that are associated with the
       presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -75,7 +144,7 @@ properties:
     fullName: id
     summary: Gets the ID of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -93,7 +162,7 @@ properties:
       Returns the page setup information whose properties control slide setup
       attributes for the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -109,7 +178,7 @@ properties:
     fullName: properties
     summary: Gets the properties of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -127,7 +196,7 @@ properties:
       Returns the collection of `SlideMaster` objects that are in the
       presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -143,7 +212,7 @@ properties:
     fullName: slides
     summary: Returns an ordered collection of slides in the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -159,7 +228,7 @@ properties:
     fullName: tags
     summary: Returns a collection of tags attached to the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -175,7 +244,7 @@ properties:
     fullName: title
     summary: Returns the title of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -193,10 +262,97 @@ methods:
     summary: >-
       Returns the selected shapes in the current slide of the presentation. If
       no shapes are selected, an empty collection is returned.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+
+      ...
+
+
+      // Gets the shapes you selected on the slide and displays their IDs on the
+      task pane.
+
+      await PowerPoint.run(async (context) => {
+        let finalTable = "";
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        await context.sync();
+        finalTable += "<br>getSelectedShapes.getCount returned:<b>" + shapeCount.value + "</b><br>";
+        finalTable +=
+          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        shapes.load("items");
+        await context.sync();
+        shapes.items.map((shape, index) => {
+          finalTable += "<tr><td>" + index + "</td><td>" + shape.id + "</td></tr>";
+        });
+        finalTable += "</table>";
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = "";
+        outputSpan.innerHTML += finalTable;
+      });
+
+
+      ...
+
+
+      // Saves which shapes are selected so that they can be reselected later.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        slides.load("items");
+        await context.sync();
+        savedSlideSelection = [];
+        slides.items.map((slide) => {
+          savedSlideSelection.push(slide.id);
+        });
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        shapes.items.map((shape) => {
+          savedShapeSelection.push(shape.id);
+        });
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -213,10 +369,88 @@ methods:
       Returns the selected slides in the current view of the presentation. The
       first item in the collection is the active slide that is visible in the
       editing area. If no slides are selected, an empty collection is returned.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+
+      // Gets the selected slides and displays their IDs on the task pane.
+
+      await PowerPoint.run(async (context) => {
+        let finalTable = "";
+        context.presentation.load("slides");
+        await context.sync();
+        const allSlidesList = {};
+        const allSlidesCount = context.presentation.slides.getCount();
+        context.presentation.slides.load("items");
+        await context.sync();
+        let allSlideItems: PowerPoint.Slide[] = context.presentation.slides.items;
+        allSlideItems.map((slide, index) => {
+          allSlidesList[slide.id] = `Slide ${index + 1}`;
+        });
+
+        const checkbox = document.getElementById("id-check-usenative") as HTMLInputElement;
+        if (checkbox && checkbox.checked) {
+          context.presentation.load("tags");
+        }
+
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        slides.load("items");
+        await context.sync();
+        finalTable += "<br>getSelectedSlides.getCount returned:<b>" + slideCount.value + "</b><br>";
+        finalTable +=
+          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        slides.items.map((slide, index) => {
+          finalTable += "<tr><td>" + index + " - " + allSlidesList[slide.id] + "</td><td>" + slide.id + "</td></tr>";
+        });
+        finalTable += "</table>";
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = ""
+        outputSpan.innerHTML += finalTable;
+      });
+
+
+      ...
+
+
+      // Saves which slides are currently selected so they can be reselected
+      later.
+
+      await PowerPoint.run(async (context) => {
+        let finalTable = "";
+        context.presentation.load("slides");
+        await context.sync();
+        const slides: PowerPoint.SlideScopedCollection = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        await context.sync();
+        finalTable += "<br>getSelectedSlides.getCount returned:<b>" + slideCount.value + "</b><br>";
+        finalTable +=
+          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        savedSlideSelection = [];
+        slides.load("items");
+        await context.sync();
+        slides.items.map((slide, index) => {
+          finalTable += "<tr><td>" + index + "</td><td>" + slide.id + "</td></tr>";
+          savedSlideSelection.push(slide.id);
+        });
+        finalTable += "</table>";
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = ""
+        outputSpan.innerHTML += finalTable;
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -234,10 +468,76 @@ methods:
       [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the
       current view of the presentation. Throws an exception if no text is
       selected.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+      // Gets the selected text range and prints data about the range on the
+      task pane.
+
+      await PowerPoint.run(async (context) => {
+        const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
+        try {
+          await context.sync();
+        } catch (error) {
+          console.warn("You must select only one range of text for this action to work.");
+          return;
+        }
+        textRange.load("text");
+        textRange.load("start");
+        textRange.load("length");
+        await context.sync();
+        let txtHtml = textRange.text;
+        txtHtml = txtHtml.replace(/\n/g, "<br>");
+        txtHtml = txtHtml.replace(/\r/g, "<br>");
+        txtHtml = txtHtml.replace(/\v/g, "<br>");
+        let txtExplained = textRange.text;
+        txtExplained = txtExplained.replace(/\n/g, "<font color=red>NL</font>");
+        txtExplained = txtExplained.replace(/\r/g, "<font color=red>CR</font>");
+        txtExplained = txtExplained.replace(/\v/g, "<font color=red>VV</font>");
+        let finalTable = "";
+        finalTable +=
+          "<table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        finalTable += "<tr><td>Raw</td><td>" + textRange.text + "</td></tr>";
+        finalTable += "<tr><td>Html</td><td>" + txtHtml + "</td></tr>";
+        finalTable += "<tr><td>Exp</td><td>" + txtExplained + "</td></tr>";
+        finalTable += "<tr><td>Start</td><td>" + textRange.start + "</td></tr>";
+        finalTable += "<tr><td>Length</td><td>" + textRange.length + "</td></tr>";
+        finalTable += "</table>";
+        const outputSpan = document.getElementById("outputSpan");
+        outputSpan.innerHTML = "";
+        outputSpan.innerHTML += finalTable;
+      });
+
+
+      ...
+
+
+      // Sets the range selection to the range that was saved previously.
+
+      await PowerPoint.run(async (context) => {
+        const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
+        const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
+        const textRange: PowerPoint.TextRange = shape1.textFrame.textRange.getSubstring(
+          savedTextTextRangeStart,
+          savedTextTextRangeLength,
+        );
+        textRange.setSelected();
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -260,7 +560,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -278,10 +578,38 @@ methods:
     summary: >-
       Inserts the specified slides from a presentation into the current
       presentation.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+
+      await PowerPoint.run(async function(context) {
+          // Get the ID of the first selected slide.
+          const presentation: PowerPoint.Presentation = context.presentation;
+          const selected: PowerPoint.Slide = presentation.getSelectedSlides().getItemAt(0);
+          selected.load("id");
+          await context.sync();
+
+          // Insert the other presentation after the selected slide.
+          const insertOptions: PowerPoint.InsertSlideOptions = {
+              formatting: PowerPoint.InsertSlideFormatting.useDestinationTheme,
+              targetSlideId: selected.id
+          };
+          presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -387,10 +715,55 @@ methods:
     summary: >-
       Selects the slides in the current view of the presentation. Existing slide
       selection is replaced with the new selection.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+
+      // Sets selection to the slides that were saved.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.setSelectedSlides(savedSlideSelection);
+        await context.sync();
+      });
+
+
+      ...
+
+
+      // Selects slides 2, 4, and 5.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slide2: PowerPoint.Slide = context.presentation.slides.getItemAt(1);
+        const slide4: PowerPoint.Slide = context.presentation.slides.getItemAt(3);
+        const slide5: PowerPoint.Slide = context.presentation.slides.getItemAt(4);
+        slide2.load("id");
+        slide4.load("id");
+        slide5.load("id");
+        try {
+          await context.sync();
+        } catch (error) {
+          console.warn("This action requires at least 5 slides in the presentation.");
+          return;
+        }
+        await context.sync();
+        context.presentation.setSelectedSlides([slide2.id, slide4.id, slide5.id]);
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

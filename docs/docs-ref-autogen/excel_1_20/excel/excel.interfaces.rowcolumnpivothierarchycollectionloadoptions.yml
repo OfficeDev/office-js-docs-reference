@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of RowColumnPivotHierarchy items associated with the
   PivotTable.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: ID of the RowColumnPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Name of the RowColumnPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -70,7 +70,7 @@ properties:
     fullName: position
     summary: 'For EACH ITEM in the collection: Position of the RowColumnPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

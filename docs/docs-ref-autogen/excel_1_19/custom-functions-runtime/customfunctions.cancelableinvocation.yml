@@ -26,9 +26,7 @@ events:
     package: custom-functions-runtime!
     fullName: onCanceled
     summary: Event handler called when the custom function is canceled.
-    remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: '\[Api set: CustomFunctionsRuntime 1.1\]'
 
     isPreview: false
     isDeprecated: false

@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.RichText
 summary: Represents a RichText object in a Paragraph.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: id
     summary: Gets the ID of the RichText object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -49,7 +49,7 @@ properties:
     fullName: languageId
     summary: The language id of the text.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -65,7 +65,7 @@ properties:
     fullName: paragraph
     summary: Gets the Paragraph object that contains the RichText object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -81,7 +81,7 @@ properties:
     fullName: style
     summary: Gets the text style of the RichText object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -97,7 +97,7 @@ properties:
     fullName: text
     summary: Gets the text content of the RichText object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -114,7 +114,7 @@ methods:
     fullName: getHtml()
     summary: Gets the HTML of the rich text.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -156,7 +156,61 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await OneNote.run(async (context) => {
+
+          // Get the collection of pageContent items from the page.
+          const pageContents = context.application.getActivePage().contents;
+
+          // Get the first PageContent on the page, and then get its outline's paragraphs.
+          const outlinePageContents = pageContents.getItem(0);
+          let paragraphs = outlinePageContents.outline.paragraphs;
+          const richTextParagraphs = paragraphs.items;
+          // Queue a command to load the id and type of each page content in the outline.
+          pageContents.load("id,type");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+
+          // Load all page contents of type Outline.
+          $.each(pageContents.items, function(index, pageContent) {
+              if(pageContent.type == 'Outline')
+              {
+                  pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
+                  outlinePageContents.push(pageContent);
+              }
+          });
+          await context.sync();
+
+          // Load all rich text paragraphs across outlines.
+          $.each(outlinePageContents, function(index, outlinePageContent) {
+              const outline = outlinePageContent.outline;
+              paragraphs = paragraphs.concat(outline.paragraphs.items);
+          });
+          $.each(paragraphs, function(index, paragraph) {
+              if(paragraph.type == 'RichText')
+              {
+                  richTextParagraphs.push(paragraph);
+                  paragraph.load("id,richText/text");
+              }
+          });
+          await context.sync();
+
+          // Display all rich text paragraphs to the console.
+          $.each(richTextParagraphs, function(index, richTextParagraph) {
+              const richText = richTextParagraph.richText;
+              console.log(
+                  "Paragraph found with richtext content : " + 
+                  richText.text + " and richtext id : " + richText.id);
+          });
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

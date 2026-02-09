@@ -21,7 +21,7 @@ properties:
       The criteria of the color scale. Midpoint is optional when using a two
       point color scale.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

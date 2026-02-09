@@ -7,7 +7,7 @@ summary: >-
   A collection of all the `NamedItem` objects that are part of the workbook or
   worksheet, depending on how it was reached.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -48,9 +48,31 @@ methods:
     package: excel!
     fullName: add(name, reference, comment)
     summary: Adds a new name to the collection of the given scope.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const headerRange = sheet.getRange("A1:D1");
+
+          sheet.names.add("ExpensesHeader", headerRange);
+          const namedItems = sheet.names.load("name, type");
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -79,7 +101,7 @@ methods:
       Adds a new name to the collection of the given scope using the user's
       locale for the formula.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +129,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of named items in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -122,9 +144,26 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a `NamedItem` object using its name.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const sheetName = 'Sheet1';
+          const nameditem = context.workbook.names.getItem(sheetName);
+          nameditem.load('type');
+          await context.sync();
+          
+          console.log(nameditem.type);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -148,7 +187,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -195,7 +234,22 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const nameditems = context.workbook.names;
+          nameditems.load('items');
+          await context.sync();
+
+          for (let i = 0; i < nameditems.items.length; i++) {
+              console.log(nameditems.items[i].name);
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

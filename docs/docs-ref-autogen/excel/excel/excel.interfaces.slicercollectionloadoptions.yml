@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of all the slicer objects in the workbook or a
   worksheet.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: caption
     summary: 'For EACH ITEM in the collection: Represents the caption of the slicer.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -55,7 +55,7 @@ properties:
       slicer. Throws an `InvalidArgument` exception when set with a negative
       value or zero as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -71,7 +71,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Represents the unique ID of the slicer.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -89,7 +89,7 @@ properties:
       For EACH ITEM in the collection: Value is `true` if all filters currently
       applied on the slicer are cleared.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -108,7 +108,7 @@ properties:
       the left side of the slicer to the left of the worksheet. Throws an
       `InvalidArgument` error when set with a negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -124,7 +124,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Represents the name of the slicer.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -142,7 +142,7 @@ properties:
       For EACH ITEM in the collection: Specifies the slicer name used in the
       formula.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -158,7 +158,7 @@ properties:
     fullName: slicerStyle
     summary: 'For EACH ITEM in the collection: The style applied to the slicer.'
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -177,7 +177,7 @@ properties:
       the slicer. Possible values are: "DataSourceOrder", "Ascending",
       "Descending".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -198,7 +198,7 @@ properties:
       "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style
       present in the workbook can also be specified.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -217,7 +217,7 @@ properties:
       the top edge of the slicer to the top of the worksheet. Throws an
       `InvalidArgument` error when set with a negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -236,7 +236,7 @@ properties:
       slicer. Throws an `InvalidArgument` error when set with a negative value
       or zero as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -254,7 +254,7 @@ properties:
       For EACH ITEM in the collection: Represents the worksheet containing the
       slicer.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

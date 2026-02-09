@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartAxisTickLabelPosition
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,28 +14,20 @@ fields:
   - name: high
     uid: excel!Excel.ChartAxisTickLabelPosition.high:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"High"'
   - name: low
     uid: excel!Excel.ChartAxisTickLabelPosition.low:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Low"'
   - name: nextToAxis
     uid: excel!Excel.ChartAxisTickLabelPosition.nextToAxis:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"NextToAxis"'
   - name: none
     uid: excel!Excel.ChartAxisTickLabelPosition.none:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"None"'

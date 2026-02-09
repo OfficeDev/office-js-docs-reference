@@ -13,9 +13,31 @@ summary: >-
   event won't trigger for both position changes. This event only triggers for
   the primary worksheet move, and not any worksheet position changes that occur
   as a result of that primary move.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+
+  async function onWorksheetMoved(event) {
+      await Excel.run(async (context) => {
+          console.log("Handler for worksheet onMoved event has been triggered.");
+          console.log(`    Worksheet ID: ${event.worksheetId}`);
+          console.log(`    Position before move: ${event.positionBefore}`);
+          console.log(`    Position after move: ${event.positionAfter}`);
+          console.log(`    Event source: ${event.source}`);
+      });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -27,7 +49,7 @@ properties:
     fullName: positionAfter
     summary: Gets the new position of the worksheet, after the move.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -43,7 +65,7 @@ properties:
     fullName: positionBefore
     summary: Gets the previous position of the worksheet, prior to the move.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -59,7 +81,7 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -75,7 +97,7 @@ properties:
     fullName: type
     summary: Gets the type of the event.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -91,7 +113,7 @@ properties:
     fullName: worksheetId
     summary: Gets the ID of the worksheet that was moved.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CellValueConditionalFormat
 summary: Represents a cell value conditional format.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,9 +34,32 @@ properties:
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill,
       borders, and other properties.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -49,9 +72,32 @@ properties:
     package: excel!
     fullName: rule
     summary: Specifies the rule object on this conditional format.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

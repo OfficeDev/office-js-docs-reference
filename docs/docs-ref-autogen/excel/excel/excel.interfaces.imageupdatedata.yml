@@ -20,7 +20,7 @@ properties:
       Specifies the brightness of the image. The value for this property must be
       a number from 0.0 (dimmest) to 1.0 (brightest).
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: colorType
     summary: Specifies the type of color transformation applied to the image.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +56,7 @@ properties:
       Specifies the contrast of the image. The value for this property must be a
       number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
       Specifies the number of points that are cropped off the bottom of the
       image.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       Specifies the number of points that are cropped off the left side of the
       image.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       Specifies the number of points that are cropped off the right side of the
       image.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -122,7 +122,7 @@ properties:
     fullName: cropTop
     summary: Specifies the number of points that are cropped off the top of the image.
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

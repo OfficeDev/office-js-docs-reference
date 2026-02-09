@@ -8,7 +8,7 @@ summary: >-
   to provide specified branding information for a `CellValue` type that supports
   provider attributes.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -24,7 +24,7 @@ properties:
       no logo is specified. If a logo is specified, this will be used as tooltip
       text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -42,7 +42,7 @@ properties:
       Represents a URL used to download an image that will be used as a logo in
       card view.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -60,7 +60,7 @@ properties:
       Represents a URL that is the navigation target if the user clicks on the
       logo element in card view.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

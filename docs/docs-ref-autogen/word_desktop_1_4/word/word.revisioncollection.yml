@@ -7,7 +7,7 @@ summary: >-
   A collection of [Word.Revision](xref:word!Word.Revision:class) objects that
   represent the changes marked with revision marks in a range or document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -51,7 +51,7 @@ methods:
       Accepts all the tracked changes in the document or range, removes all
       revision marks, and incorporates the changes into the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -141,7 +141,7 @@ methods:
     fullName: rejectAll()
     summary: Rejects all the tracked changes in the document or range.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

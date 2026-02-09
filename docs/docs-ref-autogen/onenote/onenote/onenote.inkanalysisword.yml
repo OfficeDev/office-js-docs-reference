@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.InkAnalysisWord
 summary: Represents ink analysis data for an identified word formed by ink strokes.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: id
     summary: Gets the ID of the InkAnalysisWord object.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -49,7 +49,7 @@ properties:
     fullName: languageId
     summary: The ID of the recognized language in this inkAnalysisWord.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -65,7 +65,7 @@ properties:
     fullName: line
     summary: Reference to the parent InkAnalysisLine.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -83,7 +83,7 @@ properties:
       Weak references to the ink strokes that were recognized as part of this
       ink analysis word.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -99,7 +99,7 @@ properties:
     fullName: wordAlternates
     summary: The words that were recognized in this ink word, in order of likelihood.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

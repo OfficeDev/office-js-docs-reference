@@ -7,7 +7,7 @@ summary: >-
   The interface used to construct optional fields of the `AllowEditRange`
   object.
 remarks: >-
-  \[ [Api set: ExcelApiOnline
+  \[ [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
     fullName: password
     summary: The password associated with the `AllowEditRange`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

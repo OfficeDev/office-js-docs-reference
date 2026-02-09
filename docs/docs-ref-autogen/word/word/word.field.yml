@@ -4,8 +4,8 @@ uid: word!Word.Field:class
 package: word!
 fullName: Word.Field
 summary: Represents a field.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -20,6 +20,33 @@ remarks: >-
   Word](https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb)<!--
   -->.
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+  // Gets the first field in the document.
+
+  await Word.run(async (context) => {
+    const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+    field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+    await context.sync();
+
+    if (field.isNullObject) {
+      console.log("This document has no fields.");
+    } else {
+      console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -29,12 +56,39 @@ properties:
     package: word!
     fullName: code
     summary: Specifies the field's code instruction.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Note: The ability to set the code was introduced in WordApi 1.5.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets the first field in the document.
+
+      await Word.run(async (context) => {
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -66,7 +120,7 @@ properties:
       type, it's `null` and it will throw a general exception when code attempts
       to set it.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -80,9 +134,36 @@ properties:
     package: word!
     fullName: kind
     summary: Gets the field's kind.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets the first field in the document.
+
+      await Word.run(async (context) => {
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -98,7 +179,7 @@ properties:
     fullName: linkFormat
     summary: Gets a `LinkFormat` object that represents the link options of the field.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -114,9 +195,40 @@ properties:
     summary: >-
       Specifies whether the field is locked. `true` if the field is locked,
       `false` otherwise.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets the first field in the selection and toggles between setting it to
+      locked or unlocked.
+
+      await Word.run(async (context) => {
+        let field = context.document.getSelection().fields.getFirstOrNullObject();
+        field.load(["code", "result", "type", "locked"]);
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("The selection has no fields.");
+        } else {
+          console.log(`The first field in the selection is currently ${field.locked ? "locked" : "unlocked"}.`);
+          field.locked = !field.locked;
+          await context.sync();
+
+          console.log(`The first field in the selection is now ${field.locked ? "locked" : "unlocked"}.`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -132,7 +244,7 @@ properties:
       Gets an `OleFormat` object that represents the OLE characteristics (other
       than linking) for the field.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -146,9 +258,37 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the field.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets the parent body of the first field in the document.
+
+      await Word.run(async (context) => {
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+        field.load("parentBody/text");
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          const parentBody: Word.Body = field.parentBody;
+          console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -164,7 +304,7 @@ properties:
       Gets the content control that contains the field. Throws an `ItemNotFound`
       error if there isn't a parent content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -185,7 +325,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -202,7 +342,7 @@ properties:
       Gets the table that contains the field. Throws an `ItemNotFound` error if
       it isn't contained in a table.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -219,7 +359,7 @@ properties:
       Gets the table cell that contains the field. Throws an `ItemNotFound`
       error if it isn't contained in a table cell.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -240,7 +380,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -261,7 +401,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -275,9 +415,36 @@ properties:
     package: word!
     fullName: result
     summary: Gets the field's result data.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets the first field in the document.
+
+      await Word.run(async (context) => {
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -293,7 +460,7 @@ properties:
       Specifies whether the field codes are displayed for the specified field.
       `true` if the field codes are displayed, `false` otherwise.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -307,9 +474,36 @@ properties:
     package: word!
     fullName: type
     summary: Gets the field's type.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets the first field in the document.
+
+      await Word.run(async (context) => {
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          console.log("Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result), "Type of first field: " + field.type, "Is the first field locked? " + field.locked, "Kind of the first field: " + field.kind);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -358,7 +552,7 @@ methods:
     fullName: copyToClipboard()
     summary: Copies the field to the Clipboard.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -374,7 +568,7 @@ methods:
     fullName: cut()
     summary: Removes the field from the document and places it on the Clipboard.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -389,9 +583,39 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the field.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Deletes the first field in the document.
+
+      await Word.run(async (context) => {
+        const field: Word.Field = context.document.body.fields.getFirstOrNullObject();
+        field.load();
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          field.delete();
+          await context.sync();
+
+          console.log("The first field in the document was deleted.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -406,7 +630,7 @@ methods:
     fullName: doClick()
     summary: Clicks the field.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -424,7 +648,7 @@ methods:
       Gets the next field. Throws an `ItemNotFound` error if this field is the
       last one.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -445,7 +669,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -534,9 +758,45 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the field.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets and updates the first field in the selection.
+
+      await Word.run(async (context) => {
+        let field = context.document.getSelection().fields.getFirstOrNullObject();
+        field.load(["code", "result", "type", "locked"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("No field in selection.");
+        } else {
+          console.log("Before updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
+
+          field.updateResult();
+          field.select();
+          await context.sync();
+
+          field.load(["code", "result"]);
+          await context.sync();
+
+          console.log("After updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -557,7 +817,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the field.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -674,7 +934,7 @@ methods:
     fullName: unlink()
     summary: Replaces the field with its most recent result.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -710,9 +970,45 @@ methods:
     package: word!
     fullName: updateResult()
     summary: Updates the field.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets and updates the first field in the selection.
+
+      await Word.run(async (context) => {
+        let field = context.document.getSelection().fields.getFirstOrNullObject();
+        field.load(["code", "result", "type", "locked"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("No field in selection.");
+        } else {
+          console.log("Before updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
+
+          field.updateResult();
+          field.select();
+          await context.sync();
+
+          field.load(["code", "result"]);
+          await context.sync();
+
+          console.log("After updating:", "Code of first field: " + field.code, "Result of first field: " + JSON.stringify(field.result));
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -730,7 +1026,7 @@ methods:
       field](https://support.microsoft.com/office/1c34d6d6-0de3-4b5c-916a-2ff950fb629e)
       back to the source document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

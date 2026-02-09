@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ReplaceCriteria
 summary: Represents the replace criteria to be used.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -22,7 +22,7 @@ properties:
       substring within the content of the cell (e.g., `cat` partially matches
       `caterpillar` and `scatter`<!-- -->). Default is `false` (partial).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +39,7 @@ properties:
       Specifies if the match is case-sensitive. Default is `false`
       (case-insensitive).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

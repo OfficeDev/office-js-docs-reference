@@ -18,7 +18,7 @@ properties:
     fullName: hasData
     summary: Value is `true` if the slicer item has data.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -38,7 +38,7 @@ properties:
       slicer item is the only one selected, when it is deselected, all items
       will be selected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -54,7 +54,7 @@ properties:
     fullName: key
     summary: Represents the unique value representing the slicer item.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -70,7 +70,7 @@ properties:
     fullName: name
     summary: Represents the title displayed in the Excel UI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ReferencedValue
 summary: Represents the value in a cell.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 

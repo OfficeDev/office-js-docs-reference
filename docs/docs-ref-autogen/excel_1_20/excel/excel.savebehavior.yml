@@ -4,9 +4,25 @@ uid: excel!Excel.SaveBehavior:enum
 package: excel!
 fullName: Excel.SaveBehavior
 summary: Specifies the save behavior for `Workbook.save`<!-- -->.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
+
+
+  await Excel.run(async (context) => {
+      context.workbook.save(Excel.SaveBehavior.prompt);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -19,8 +35,7 @@ fields:
       saved, Ignored if the workbook was previously saved.
 
 
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Prompt"'
   - name: save
     uid: excel!Excel.SaveBehavior.save:member
@@ -30,6 +45,5 @@ fields:
       will save it with default name in the default location.
 
 
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Save"'

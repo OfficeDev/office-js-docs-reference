@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
 summary: Represents a collection of comment reply objects that are part of the comment.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
       For EACH ITEM in the collection: Gets the email of the comment reply's
       author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -55,7 +55,7 @@ properties:
       For EACH ITEM in the collection: Gets the name of the comment reply's
       author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -73,7 +73,7 @@ properties:
       For EACH ITEM in the collection: The comment reply's content. The string
       is plain text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -92,7 +92,7 @@ properties:
       For EACH ITEM in the collection: Gets the creation time of the comment
       reply.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -108,7 +108,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the comment reply identifier.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

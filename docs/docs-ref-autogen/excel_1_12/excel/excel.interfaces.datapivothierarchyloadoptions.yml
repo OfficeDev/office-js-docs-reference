@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.DataPivotHierarchyLoadOptions
 summary: Represents the Excel DataPivotHierarchy.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: field
     summary: Returns the PivotFields associated with the DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
     fullName: id
     summary: ID of the DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -64,7 +64,7 @@ properties:
     fullName: name
     summary: Name of the DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -79,7 +79,7 @@ properties:
     fullName: numberFormat
     summary: Number format of the DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -94,7 +94,7 @@ properties:
     fullName: position
     summary: Position of the DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
     fullName: showAs
     summary: Specifies if the data should be shown as a specific summary calculation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -124,7 +124,7 @@ properties:
     fullName: summarizeBy
     summary: Specifies if all items of the DataPivotHierarchy are shown.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

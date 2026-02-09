@@ -20,7 +20,7 @@ properties:
       Returns a `CustomXmlNode` object that represents the custom XML node in
       the data store that the content control in the document maps to.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       Returns a `CustomXmlPart` object that represents the custom XML part to
       which the content control in the document maps.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

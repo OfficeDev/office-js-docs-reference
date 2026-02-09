@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartTrendlineFormat
 summary: Represents the format properties for the chart trendline.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -32,9 +32,36 @@ properties:
     package: excel!
     fullName: line
     summary: Represents chart line formatting.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series; 
+          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+
+          // Set format of the trendline to a solid, red line.
+          let line = trendline.format.line;
+          line.color = '#FF0000';
+
+          await context.sync();
+
+          console.log("The trendline color has been set to:" + line.color);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -19,7 +19,27 @@ properties:
     package: office!
     fullName: context
     summary: The request context associated with the object
-    remarks: ''
+    remarks: >
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // *.run methods automatically create an
+      OfficeExtension.ClientRequestContext
+
+      // object to work with the Office file.
+
+      await Excel.run(async (context: Excel.RequestContext) => {
+        // `context` is the Excel-specific extension of OfficeExtension.ClientRequestContext.
+        
+        const workbook = context.workbook;
+        // Interact with the Excel workbook...
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -35,7 +55,28 @@ properties:
       Returns a boolean value for whether the corresponding object is a null
       object. You must call `context.sync()` before reading the isNullObject
       property.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // This Word snippet sets the hyperlink URL of a selected image. 
+      await Word.run(async (context) => {
+          const selection = context.document.getSelection();
+          const firstImage = selection.inlinePictures.getFirstOrNullObject();
+          await context.sync();
+
+          // Check if an image was selected before changing its property.
+          if (!firstImage.isNullObject) {
+              firstImage.hyperlink = "https://www.microsoft.com";
+          } else {
+              console.log("No image selected");
+          }
+
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

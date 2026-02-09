@@ -6,9 +6,40 @@ fullName: Word.ParagraphDeletedEventArgs
 summary: >-
   Provides information about the paragraphs that raised the `paragraphDeleted`
   event.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/ondeleted-event.yaml
+
+
+  // Registers the onParagraphDeleted event handler on the document.
+
+  await Word.run(async (context) => {
+    eventContext = context.document.onParagraphDeleted.add(paragraphDeleted);
+    await context.sync();
+
+    console.log("Added event handlers for when paragraphs are deleted.");
+  });
+
+
+  ...
+
+
+  async function paragraphDeleted(event: Word.ParagraphDeletedEventArgs) {
+    await Word.run(async (context) => {
+      console.log(`${event.type} event detected. IDs of paragraphs that were deleted:`, event.uniqueLocalIds);
+    });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -22,7 +53,7 @@ properties:
       Specifies the source of the event. It can be local or remote (through
       coauthoring).
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +68,7 @@ properties:
     fullName: type
     summary: Specifies the event type. See `Word.EventType` for details.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +102,7 @@ properties:
       8-4-4-4-12 GUID format without curly braces and differ across sessions and
       coauthors.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

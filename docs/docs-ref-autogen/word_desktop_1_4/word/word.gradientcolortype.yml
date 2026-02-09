@@ -5,7 +5,7 @@ package: word!
 fullName: Word.GradientColorType
 summary: Specifies the type of gradient used in a shape's fill.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -19,46 +19,37 @@ fields:
       gradient types are selected.
 
 
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: multiColor
     uid: word!Word.GradientColorType.multiColor:member
     package: word!
-    summary: >-
+    summary: |-
       Gradient that includes more than two colors, often customized.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MultiColor"'
   - name: oneColor
     uid: word!Word.GradientColorType.oneColor:member
     package: word!
-    summary: >-
+    summary: |-
       Gradient with a single color and varying transparency or brightness.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"OneColor"'
   - name: presetColors
     uid: word!Word.GradientColorType.presetColors:member
     package: word!
-    summary: >-
+    summary: |-
       Gradient that uses a predefined set of colors.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"PresetColors"'
   - name: twoColors
     uid: word!Word.GradientColorType.twoColors:member
     package: word!
-    summary: >-
+    summary: |-
       Gradient that blends two distinct colors.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TwoColors"'

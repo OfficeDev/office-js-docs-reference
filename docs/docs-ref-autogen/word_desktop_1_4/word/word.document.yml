@@ -7,9 +7,37 @@ summary: >-
   The `Document` object is the top level object. A `Document` object contains
   one or more sections, content controls, and the body that contains the
   contents of the document.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+
+  // Gets the current change tracking mode.
+
+  await Word.run(async (context) => {
+    const document: Word.Document = context.document;
+    document.load("changeTrackingMode");
+    await context.sync();
+
+    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+      console.log("Only my changes are being tracked.");
+    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+      console.log("Everyone's changes are being tracked.");
+    } else {
+      console.log("No changes are being tracked.");
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +49,7 @@ properties:
     fullName: activeTheme
     summary: Gets the name of the active theme and formatting options.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -36,7 +64,7 @@ properties:
     fullName: activeThemeDisplayName
     summary: Gets the display name of the active theme.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,9 +78,66 @@ properties:
     package: word!
     fullName: activeWindow
     summary: Gets the active window for the document.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the first paragraph of each page.
+        console.log("Getting first paragraph of each page...");
+
+        // Get the active window.
+        const activeWindow: Word.Window = context.document.activeWindow;
+        activeWindow.load();
+
+        // Get the active pane.
+        const activePane: Word.Pane = activeWindow.activePane;
+        activePane.load();
+
+        // Get all pages.
+        const pages: Word.PageCollection = activePane.pages;
+        pages.load();
+
+        await context.sync();
+
+        // Get page index and paragraphs of each page.
+        const pagesIndexes = [];
+        const pagesNumberOfParagraphs = [];
+        const pagesFirstParagraphText = [];
+        for (let i = 0; i < pages.items.length; i++) {
+          const page = pages.items[i];
+          page.load("index");
+          pagesIndexes.push(page);
+
+          const paragraphs = page.getRange().paragraphs;
+          paragraphs.load("items/length");
+          pagesNumberOfParagraphs.push(paragraphs);
+
+          const firstParagraph = paragraphs.getFirst();
+          firstParagraph.load("text");
+          pagesFirstParagraphText.push(firstParagraph);
+        }
+
+        await context.sync();
+
+        for (let i = 0; i < pagesIndexes.length; i++) {
+          console.log(`Page index: ${pagesIndexes[i].index}`);
+          console.log(`Number of paragraphs: ${pagesNumberOfParagraphs[i].items.length}`);
+          console.log("First paragraph's text:", pagesFirstParagraphText[i].text);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -68,7 +153,7 @@ properties:
       Gets whether Word encrypts file properties for password-protected
       documents.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -85,7 +170,7 @@ properties:
       Specifies whether grammatical errors are marked by a wavy green line in
       the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -102,7 +187,7 @@ properties:
       Specifies whether to use the default math settings when creating new
       equations.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -119,7 +204,7 @@ properties:
       Specifies whether to disable features introduced after a specified
       version.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -136,7 +221,7 @@ properties:
       Specifies whether Microsoft Word underlines spelling errors in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -153,7 +238,7 @@ properties:
       Specifies whether the styles in this document are updated to match the
       styles in the attached template each time the document is opened.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -170,7 +255,7 @@ properties:
       Specifies whether Microsoft Word embeds TrueType fonts in the document
       when it's saved.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -187,7 +272,7 @@ properties:
       Specifies a `Template` object that represents the template attached to the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -202,7 +287,7 @@ properties:
     fullName: autoHyphenation
     summary: Specifies if automatic hyphenation is turned on for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -217,7 +302,7 @@ properties:
     fullName: autoSaveOn
     summary: Specifies if the edits in the document are automatically saved.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -234,7 +319,7 @@ properties:
       Gets a `Shape` object that represents the background image for the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -251,7 +336,7 @@ properties:
       Returns a `Bibliography` object that represents the bibliography
       references contained within the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -268,7 +353,7 @@ properties:
       Gets the `Body` object of the main document. The body is the text that
       excludes headers, footers, footnotes, textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -285,7 +370,7 @@ properties:
       Returns a `BookmarkCollection` object that represents all the bookmarks in
       the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -302,7 +387,7 @@ properties:
       Gets a `DocumentProperties` object that represents all the built-in
       document properties for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -316,9 +401,37 @@ properties:
     package: word!
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+
+      // Gets the current change tracking mode.
+
+      await Word.run(async (context) => {
+        const document: Word.Document = context.document;
+        document.load("changeTrackingMode");
+        await context.sync();
+
+        if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+          console.log("Only my changes are being tracked.");
+        } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+          console.log("Everyone's changes are being tracked.");
+        } else {
+          console.log("No changes are being tracked.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -338,7 +451,7 @@ properties:
       Gets the `RangeScopedCollection` object that represents all the characters
       in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -353,7 +466,7 @@ properties:
     fullName: coauthoring
     summary: Gets a `Coauthoring` object for managing coauthoring in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -368,7 +481,7 @@ properties:
     fullName: codeName
     summary: Gets the code name for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -385,7 +498,7 @@ properties:
       Gets a `CommentCollection` object that represents all the comments in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -400,7 +513,7 @@ properties:
     fullName: compatibilityMode
     summary: Gets the compatibility mode that Word uses when opening the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -421,7 +534,7 @@ properties:
       Specifies the maximum number of consecutive lines that can end with
       hyphens.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -436,7 +549,7 @@ properties:
     fullName: content
     summary: Gets a `Range` object that represents the main document story.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -454,7 +567,7 @@ properties:
       includes content controls in the body of the document, headers, footers,
       textboxes, etc.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -484,7 +597,7 @@ properties:
     fullName: currentRsid
     summary: Gets a random number that Word assigns to changes in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -501,7 +614,7 @@ properties:
       Gets a `DocumentProperties` collection that represents all the custom
       document properties for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -516,7 +629,7 @@ properties:
     fullName: customXmlParts
     summary: Gets the custom XML parts in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -533,7 +646,7 @@ properties:
       Specifies the interval (in points) between the default tab stops in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -548,7 +661,7 @@ properties:
     fullName: defaultTargetFrame
     summary: Specifies the browser frame for displaying a webpage via hyperlink.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -566,7 +679,7 @@ properties:
       collection of versions of a shared document that has versioning enabled
       and that's stored in a document library on a server.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -581,7 +694,7 @@ properties:
     fullName: doNotEmbedSystemFonts
     summary: Specifies whether Word should not embed common system fonts.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -598,7 +711,7 @@ properties:
       Specifies the name of the algorithm encryption provider that Microsoft
       Word uses when encrypting documents.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -613,7 +726,7 @@ properties:
     fullName: farEastLineBreakLanguage
     summary: Specifies the East Asian language used for line breaking.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -632,7 +745,7 @@ properties:
     fullName: farEastLineBreakLevel
     summary: Specifies the line break control level.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -653,7 +766,7 @@ properties:
       Gets a `FieldCollection` object that represents all the fields in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -670,7 +783,7 @@ properties:
       Specifies whether Word shows the next heading level when the previous is
       used.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -685,7 +798,7 @@ properties:
     fullName: formattingIsUserStyleNameShown
     summary: Specifies whether to show user-defined styles.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -702,7 +815,7 @@ properties:
       Returns a `FrameCollection` object that represents all the frames in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -717,7 +830,7 @@ properties:
     fullName: fullName
     summary: Gets the name of a document, including the path.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -734,7 +847,7 @@ properties:
       Gets a `RangeCollection` object that represents the sentences that failed
       the grammar check in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -752,7 +865,7 @@ properties:
       Word uses when you draw, move, and resize AutoShapes or East Asian
       characters in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -770,7 +883,7 @@ properties:
       Word uses when you draw, move, and resize AutoShapes or East Asian
       characters in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -787,7 +900,7 @@ properties:
       Specifies whether the character grid starts from the upper-left corner of
       the page.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -802,7 +915,7 @@ properties:
     fullName: gridOriginHorizontal
     summary: Specifies the horizontal origin point for the invisible grid.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -817,7 +930,7 @@ properties:
     fullName: gridOriginVertical
     summary: Specifies the vertical origin point for the invisible grid.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -834,7 +947,7 @@ properties:
       Specifies the interval for horizontal character gridlines in print layout
       view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -851,7 +964,7 @@ properties:
       Specifies the interval for vertical character gridlines in print layout
       view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -866,7 +979,7 @@ properties:
     fullName: hasPassword
     summary: Gets whether a password is required to open the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -883,7 +996,7 @@ properties:
       Gets whether the document has an attached Microsoft Visual Basic for
       Applications project.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -900,7 +1013,7 @@ properties:
       Returns a `HyperlinkCollection` object that represents all the hyperlinks
       in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -915,7 +1028,7 @@ properties:
     fullName: hyphenateCaps
     summary: Specifies whether words in all capital letters can be hyphenated.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -930,7 +1043,7 @@ properties:
     fullName: hyphenationZone
     summary: Specifies the width of the hyphenation zone, in points.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -947,7 +1060,7 @@ properties:
       Returns an `IndexCollection` object that represents all the indexes in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -964,7 +1077,7 @@ properties:
       Specifies whether automatic formatting options override formatting
       restrictions.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -981,7 +1094,7 @@ properties:
       Specifies whether charts in the active document use cell-reference
       data-point tracking.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -998,7 +1111,7 @@ properties:
       Specifies whether the compatibility option specified by the `type`
       property is enabled.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1013,7 +1126,7 @@ properties:
     fullName: isFinal
     summary: Specifies whether the document is final.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1030,7 +1143,7 @@ properties:
       Specifies whether Microsoft Word saves a subset of the embedded TrueType
       fonts with the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1047,7 +1160,7 @@ properties:
       Specifies whether Microsoft Word prints onto a preprinted form only the
       data entered in the corresponding online form.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1064,7 +1177,7 @@ properties:
       Specifies whether Microsoft Word saves the data entered in a form as a
       tab-delimited record for use in a database.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1079,7 +1192,7 @@ properties:
     fullName: isGrammarChecked
     summary: Specifies whether a grammar check has been run on the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1097,7 +1210,7 @@ properties:
       `Application.DocumentBeforeSave` event was the result of an automatic save
       by the document or a manual save by the user.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1112,7 +1225,7 @@ properties:
     fullName: isInFormsDesign
     summary: Gets whether the document is in form design mode.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1129,7 +1242,7 @@ properties:
       Specifies whether Word kerns half-width Latin characters and punctuation
       marks.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1144,7 +1257,7 @@ properties:
     fullName: isLinguisticDataEmbedded
     summary: Specifies whether to embed speech and handwriting data.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1159,7 +1272,7 @@ properties:
     fullName: isMasterDocument
     summary: Gets whether this document is a master document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1174,7 +1287,7 @@ properties:
     fullName: isOptimizedForWord97
     summary: Specifies whether Word optimizes the document for Word 97.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1193,7 +1306,7 @@ properties:
       instructions (such as PostScript commands) in the document are to be
       printed on top of text and graphics when a PostScript printer is used.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1208,7 +1321,7 @@ properties:
     fullName: isQuickStyleSetLocked
     summary: Specifies whether users can change the Quick Style set.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1225,7 +1338,7 @@ properties:
       Gets whether changes to the document cannot be saved to the original
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1242,7 +1355,7 @@ properties:
       Specifies whether Microsoft Word displays a message box whenever a user
       opens the document, suggesting that it be opened as read-only.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1259,7 +1372,7 @@ properties:
       Specifies whether AutoShapes or East Asian characters are automatically
       aligned with an invisible grid.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1276,7 +1389,7 @@ properties:
       Specifies whether AutoShapes or East Asian characters align with invisible
       gridlines through other shapes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1291,7 +1404,7 @@ properties:
     fullName: isSpellingChecked
     summary: Specifies whether spelling has been checked throughout the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1308,7 +1421,7 @@ properties:
       Specifies whether formatting restrictions are enforced in a protected
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1323,7 +1436,7 @@ properties:
     fullName: isSubdocument
     summary: Gets whether this document is a subdocument of a master document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1338,7 +1451,7 @@ properties:
     fullName: isThemeLocked
     summary: Specifies whether users can change the document theme.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1353,7 +1466,7 @@ properties:
     fullName: isUserControl
     summary: Specifies whether the document was created or opened by the user.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1368,7 +1481,7 @@ properties:
     fullName: isVbaSigned
     summary: Gets whether the VBA project is digitally signed.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1383,7 +1496,7 @@ properties:
     fullName: isWriteReserved
     summary: Gets whether the document is protected with a write password.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1398,7 +1511,7 @@ properties:
     fullName: justificationMode
     summary: Specifies the character spacing adjustment.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1419,7 +1532,7 @@ properties:
       Specifies the format type that Microsoft Word uses when automatically
       formatting the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1438,7 +1551,7 @@ properties:
       Specifies whether Microsoft Word has detected the language of the document
       text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1455,7 +1568,7 @@ properties:
       Gets a `ParagraphCollection` object that represents all the numbered
       paragraphs in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1472,7 +1585,7 @@ properties:
       Gets a `ListCollection` object that contains all the formatted lists in
       the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1489,7 +1602,7 @@ properties:
       Returns a `ListTemplateCollection` object that represents all the list
       templates in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1504,7 +1617,7 @@ properties:
     fullName: noLineBreakAfter
     summary: Specifies the kinsoku characters after which Word will not break a line.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1519,7 +1632,7 @@ properties:
     fullName: noLineBreakBefore
     summary: Specifies the kinsoku characters before which Word will not break a line.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1534,7 +1647,7 @@ properties:
     fullName: openEncoding
     summary: Gets the encoding used to open the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1639,7 +1752,7 @@ properties:
     fullName: originalDocumentTitle
     summary: Gets the title of the original document after legal-blackline comparison.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1654,7 +1767,7 @@ properties:
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1671,7 +1784,7 @@ properties:
       Gets a `ParagraphCollection` object that represents all the paragraphs in
       the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1686,7 +1799,7 @@ properties:
     fullName: password
     summary: Sets a password that must be supplied to open the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1701,7 +1814,7 @@ properties:
     fullName: passwordEncryptionAlgorithm
     summary: Gets the algorithm used for password encryption.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1716,7 +1829,7 @@ properties:
     fullName: passwordEncryptionKeyLength
     summary: Gets the key length used for password encryption.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1731,7 +1844,7 @@ properties:
     fullName: passwordEncryptionProvider
     summary: Gets the name of the password encryption provider.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1748,7 +1861,7 @@ properties:
       Gets the disk or the web path to the document (excludes the document
       name).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1763,7 +1876,7 @@ properties:
     fullName: printRevisions
     summary: Specifies whether revision marks are printed with the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1777,9 +1890,29 @@ properties:
     package: word!
     fullName: properties
     summary: Gets the properties of the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
+
+
+      await Word.run(async (context) => {
+          const builtInProperties: Word.DocumentProperties = context.document.properties;
+          builtInProperties.load("*"); // Let's get all!
+
+          await context.sync();
+          console.log(JSON.stringify(builtInProperties, null, 4));
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1793,7 +1926,7 @@ properties:
     fullName: protectionType
     summary: Gets the protection type for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1816,7 +1949,7 @@ properties:
       Gets a `ReadabilityStatisticCollection` object that represents the
       readability statistics for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1831,7 +1964,7 @@ properties:
     fullName: readingLayoutSizeX
     summary: Specifies the width of pages in reading layout view when frozen.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1846,7 +1979,7 @@ properties:
     fullName: readingLayoutSizeY
     summary: Specifies the height of pages in reading layout view when frozen.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1863,7 +1996,7 @@ properties:
       Specifies whether pages in reading layout view are frozen for handwritten
       markup.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1878,7 +2011,7 @@ properties:
     fullName: removePersonalInformationOnSave
     summary: Specifies whether Word removes user information upon saving.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1893,7 +2026,7 @@ properties:
     fullName: revisedDocumentTitle
     summary: Gets the title of the revised document after legal-blackline comparison.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1910,7 +2043,7 @@ properties:
       Gets the collection of revisions that represents the tracked changes in
       the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1927,7 +2060,7 @@ properties:
       Indicates whether the changes in the document have been saved. A value of
       `true` indicates that the document hasn't changed since it was saved.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -1942,7 +2075,7 @@ properties:
     fullName: saveEncoding
     summary: Specifies the encoding used when saving the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2046,7 +2179,7 @@ properties:
     fullName: saveFormat
     summary: Gets the file format of the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2077,7 +2210,7 @@ properties:
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2094,7 +2227,7 @@ properties:
       Returns a `Selection` object that represents the current selection in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2111,7 +2244,7 @@ properties:
       Gets the `RangeScopedCollection` object that represents all the sentences
       in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2125,9 +2258,38 @@ properties:
     package: word!
     fullName: settings
     summary: Gets the add-in's settings in the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+      // Gets all custom settings this add-in set on this document.
+
+      await Word.run(async (context) => {
+        const settings: Word.SettingCollection = context.document.settings;
+        settings.load("items");
+        await context.sync();
+
+        if (settings.items.length == 0) {
+          console.log("There are no settings.");
+        } else {
+          console.log("All settings:");
+          for (let i = 0; i < settings.items.length; i++) {
+            console.log(settings.items[i]);
+          }
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2143,7 +2305,7 @@ properties:
       Gets a `RangeCollection` object that represents the words identified as
       spelling errors in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2160,7 +2322,7 @@ properties:
       Gets a `RangeCollection` object that represents all the stories in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2175,7 +2337,7 @@ properties:
     fullName: styles
     summary: Gets a `StyleCollection` for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2192,7 +2354,7 @@ properties:
       Returns a `TableOfAuthoritiesCategoryCollection` object that represents
       the available table of authorities categories in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2211,7 +2373,7 @@ properties:
       Gets a `TableCollection` object that represents all the tables in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2228,7 +2390,7 @@ properties:
       Returns a `TableOfAuthoritiesCollection` object that represents all the
       tables of authorities in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2245,7 +2407,7 @@ properties:
       Returns a `TableOfContentsCollection` object that represents all the
       tables of contents in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2262,7 +2424,7 @@ properties:
       Returns a `TableOfFiguresCollection` object that represents all the tables
       of figures in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2277,7 +2439,7 @@ properties:
     fullName: textEncoding
     summary: Specifies the encoding for saving as encoded text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2381,7 +2543,7 @@ properties:
     fullName: textLineEnding
     summary: Specifies how Word marks line and paragraph breaks in text files.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2402,7 +2564,7 @@ properties:
       Specifies whether to remove or store date and time metadata for tracked
       changes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2417,7 +2579,7 @@ properties:
     fullName: trackFormatting
     summary: Specifies whether to track formatting changes when change tracking is on.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2432,7 +2594,7 @@ properties:
     fullName: trackMoves
     summary: Specifies whether to mark moved text when Track Changes is on.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2447,7 +2609,7 @@ properties:
     fullName: trackRevisions
     summary: Specifies whether changes are tracked in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2462,7 +2624,7 @@ properties:
     fullName: type
     summary: Gets the document type (template or document).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2479,7 +2641,7 @@ properties:
     fullName: webSettings
     summary: Gets the `WebSettings` object for webpage-related attributes.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2493,9 +2655,31 @@ properties:
     package: word!
     fullName: windows
     summary: Gets the collection of `Word.Window` objects for the document.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/get-pages.yaml
+
+
+      await Word.run(async (context) => {
+        // Gets the document windows.
+        const windows: Word.WindowCollection = context.document.windows;
+        windows.load("windows/items/length");
+
+        await context.sync();
+
+        console.log(`Number of windows for this document: ${windows.items.length}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2511,7 +2695,7 @@ properties:
       Gets the `RangeScopedCollection` object that represents each word in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2526,7 +2710,7 @@ properties:
     fullName: writePassword
     summary: Sets a password for saving changes to the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2543,7 +2727,7 @@ properties:
       Specifies whether error messages are generated from built-in Word messages
       or MSXML (Microsoft XML).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2560,7 +2744,7 @@ properties:
       Specifies whether to save a document through an Extensible Stylesheet
       Language Transformation (XSLT).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2577,7 +2761,7 @@ properties:
       Specifies the path and file name for the XSLT to apply when saving a
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2593,7 +2777,7 @@ methods:
     fullName: acceptAllRevisions()
     summary: Accepts all tracked changes in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2609,7 +2793,7 @@ methods:
     fullName: acceptAllRevisionsShown()
     summary: Accepts all revisions in the document that are displayed on the screen.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2625,7 +2809,7 @@ methods:
     fullName: activate()
     summary: Activates the document so that it becomes the active document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2640,9 +2824,48 @@ methods:
     package: word!
     fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Adds a new style.
+
+      await Word.run(async (context) => {
+        const newStyleName = (document.getElementById("new-style-name") as HTMLInputElement).value;
+        if (newStyleName == "") {
+          console.warn("Enter a style name to add.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+        style.load();
+        await context.sync();
+
+        if (!style.isNullObject) {
+          console.warn(
+            `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
+          );
+          return;
+        }
+
+        const newStyleType = ((document.getElementById("new-style-type") as HTMLSelectElement).value as unknown) as Word.StyleType;
+        context.document.addStyle(newStyleName, newStyleType);
+        await context.sync();
+
+        console.log(newStyleName + " has been added to the style list.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2664,7 +2887,7 @@ methods:
     fullName: addStyle(name, type)
     summary: Adds a style into the document by name and type.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2691,7 +2914,7 @@ methods:
       Creates a shortcut to the document or hyperlink and adds it to the
       **Favorites** folder.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2707,7 +2930,7 @@ methods:
     fullName: applyQuickStyleSet(style)
     summary: Applies the specified Quick Style set to the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2727,7 +2950,7 @@ methods:
     fullName: applyQuickStyleSet(style)
     summary: Applies the specified Quick Style set to the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2747,7 +2970,7 @@ methods:
     fullName: applyTheme(name)
     summary: Applies the specified theme to this document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2767,7 +2990,7 @@ methods:
     fullName: autoFormat()
     summary: Automatically formats the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2783,7 +3006,7 @@ methods:
     fullName: canCheckin()
     summary: Returns `true` if Microsoft Word can check in the document to a server.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2803,7 +3026,7 @@ methods:
       Searches all text in a Japanese language document and displays instances
       where character usage is inconsistent for the same words.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2819,7 +3042,7 @@ methods:
     fullName: checkGrammar()
     summary: Begins a spelling and grammar check for the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2837,9 +3060,29 @@ methods:
       Closes the current document.
 
       Note: This API isn't supported in Word on the web.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
+
+
+      // Closes the document with default behavior
+
+      // for current state of the document.
+
+      await Word.run(async (context) => {
+        context.document.close();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2863,7 +3106,7 @@ methods:
 
       Note: This API isn't supported in Word on the web.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2885,7 +3128,7 @@ methods:
     fullName: closePrintPreview()
     summary: Switches the document from print preview to the previous view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2902,9 +3145,39 @@ methods:
     summary: >-
       Displays revision marks that indicate where the specified document differs
       from another document.
-    remarks: >-
-      \[ [Api set: WordApiDesktop
+    remarks: >
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
+
+
+      // Compares the current document with a specified external document.
+
+      await Word.run(async (context) => {
+        // Absolute path of an online or local document.
+        const filePath = (document.getElementById("filePath") as HTMLInputElement).value;
+        // Options that configure the compare operation.
+        const options: Word.DocumentCompareOptions = {
+          compareTarget: Word.CompareTarget.compareTargetCurrent,
+          detectFormatChanges: false
+          // Other options you choose...
+          };
+        context.document.compare(filePath, options);
+
+        await context.sync();
+
+        console.log("Differences shown in the current document.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -2934,7 +3207,7 @@ methods:
       Displays revision marks that indicate where the specified document differs
       from another document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2964,7 +3237,7 @@ methods:
     fullName: convert()
     summary: Converts the file to the newest format and enables all features.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2980,7 +3253,7 @@ methods:
     fullName: convertAutoHyphens()
     summary: Converts automatic hyphens to manual hyphens.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -2999,7 +3272,7 @@ methods:
       fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)
       in the document to text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3022,7 +3295,7 @@ methods:
       fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)
       in the document to text.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3046,7 +3319,7 @@ methods:
       Reconverts a Vietnamese document to Unicode using a code page other than
       the default.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3066,7 +3339,7 @@ methods:
     fullName: copyStylesFromTemplate(StyleTemplate)
     summary: Copies styles from the specified template to the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3086,7 +3359,7 @@ methods:
     fullName: deleteAllComments()
     summary: Deletes all comments from the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3102,7 +3375,7 @@ methods:
     fullName: deleteAllCommentsShown()
     summary: Deletes all revisions in the document that are displayed on the screen.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3118,7 +3391,7 @@ methods:
     fullName: deleteAllInkAnnotations()
     summary: Deletes all handwritten ink annotations in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3134,7 +3407,7 @@ methods:
     fullName: deleteBookmark(name)
     summary: Deletes a bookmark, if it exists, from the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3154,7 +3427,7 @@ methods:
     fullName: detectLanguage()
     summary: Analyzes the document text to determine the language.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3172,7 +3445,7 @@ methods:
       Decreases the font size of text just enough so that the document page
       count drops by one.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3188,7 +3461,7 @@ methods:
     fullName: freezeLayout()
     summary: Fixes the layout of the document in Web view.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3206,7 +3479,7 @@ methods:
       Gets the annotation by ID. Throws an `ItemNotFound` error if annotation
       isn't found.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3228,7 +3501,7 @@ methods:
       Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark
       doesn't exist.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3253,7 +3526,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3272,8 +3545,8 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: Gets the currently supported content controls in the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -3284,6 +3557,67 @@ methods:
       relevant for the specific type. With time, additional types of content
       controls may be supported. Therefore, your add-in should request and
       handle specific types of content controls.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Toggles the isChecked property on all checkbox content controls.
+
+      await Word.run(async (context) => {
+        let contentControls = context.document.getContentControls({
+          types: [Word.ContentControlType.checkBox]
+        });
+        contentControls.load("items");
+
+        await context.sync();
+
+        const length = contentControls.items.length;
+        console.log(`Number of checkbox content controls: ${length}`);
+
+        if (length <= 0) {
+          return;
+        }
+
+        const checkboxContentControls = [];
+        for (let i = 0; i < length; i++) {
+          let contentControl = contentControls.items[i];
+          contentControl.load("id,checkboxContentControl/isChecked");
+          checkboxContentControls.push(contentControl);
+        }
+
+        await context.sync();
+
+        console.log("isChecked state before:");
+        const updatedCheckboxContentControls = [];
+        for (let i = 0; i < checkboxContentControls.length; i++) {
+          const currentCheckboxContentControl = checkboxContentControls[i];
+          const isCheckedBefore = currentCheckboxContentControl.checkboxContentControl.isChecked;
+          console.log(`id: ${currentCheckboxContentControl.id} ... isChecked: ${isCheckedBefore}`);
+
+          currentCheckboxContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
+          currentCheckboxContentControl.load("id,checkboxContentControl/isChecked");
+          updatedCheckboxContentControls.push(currentCheckboxContentControl);
+        }
+
+        await context.sync();
+
+        console.log("isChecked state after:");
+        for (let i = 0; i < updatedCheckboxContentControls.length; i++) {
+          const currentCheckboxContentControl = updatedCheckboxContentControls[i];
+          console.log(
+            `id: ${currentCheckboxContentControl.id} ... isChecked: ${currentCheckboxContentControl.checkboxContentControl.isChecked}`
+          );
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3306,7 +3640,7 @@ methods:
       Returns an array of items that can be cross-referenced based on the
       specified cross-reference type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3332,7 +3666,7 @@ methods:
       Returns an array of items that can be cross-referenced based on the
       specified cross-reference type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3357,7 +3691,7 @@ methods:
     fullName: getEndnoteBody()
     summary: Gets the document's endnotes in a single body.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3373,7 +3707,7 @@ methods:
     fullName: getFootnoteBody()
     summary: Gets the document's footnotes in a single body.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3390,9 +3724,30 @@ methods:
     summary: >-
       Gets the paragraph by its unique local ID. Throws an `ItemNotFound` error
       if the collection is empty.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/onadded-event.yaml
+
+
+      await Word.run(async (context) => {
+        const paragraphId = (document.getElementById("paragraph-id") as HTMLInputElement).value;
+        const paragraph: Word.Paragraph = context.document.getParagraphByUniqueLocalId(paragraphId);
+        paragraph.load();
+        await paragraph.context.sync();
+
+        console.log(paragraph);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3414,9 +3769,39 @@ methods:
     summary: >-
       Gets the current selection of the document. Multiple selections aren't
       supported.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+          
+          const textSample = 'This is an example of the insert text method. This is a method ' + 
+              'which allows users to insert text into a selection. It can insert text into a ' +
+              'relative location or it can overwrite the current selection. Since the ' +
+              'getSelection method returns a range object, look up the range object documentation ' +
+              'for everything you can do with a selection.';
+          
+          // Create a range proxy object for the current selection.
+          const range = context.document.getSelection();
+          
+          // Queue a command to insert text at the end of the selection.
+          range.insertText(textSample, Word.InsertLocation.end);
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Inserted the text at the end of the selection.');
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3432,9 +3817,31 @@ methods:
     summary: >-
       Gets a `StyleCollection` object that represents the whole style set of the
       document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Gets the number of available styles stored with the document.
+
+      await Word.run(async (context) => {
+        const styles: Word.StyleCollection = context.document.getStyles();
+        const count = styles.getCount();
+        await context.sync();
+
+        console.log(`Number of styles: ${count.value}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3448,13 +3855,39 @@ methods:
     package: word!
     fullName: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     summary: Import styles from a JSON-formatted string.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Note: The `importedStylesConflictBehavior` parameter was introduced in
       WordApiDesktop 1.1.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-custom-style.yaml
+
+
+      // Imports styles from JSON.
+
+      await Word.run(async (context) => {
+        const str =
+          '{"styles":[{"baseStyle":"Default Paragraph Font","builtIn":false,"inUse":true,"linked":false,"nameLocal":"NewCharStyle","priority":2,"quickStyle":true,"type":"Character","unhideWhenUsed":false,"visibility":false,"paragraphFormat":null,"font":{"name":"DengXian Light","size":16.0,"bold":true,"italic":false,"color":"#F1A983","underline":"None","subscript":false,"superscript":true,"strikeThrough":true,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#FF0000"}},{"baseStyle":"Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewParaStyle","nameLocal":"NewParaStyle","priority":1,"quickStyle":true,"type":"Paragraph","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Centered","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":72.0,"lineSpacing":18.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":72.0,"spaceAfter":30.0,"spaceBefore":30.0,"widowControl":true},"font":{"name":"DengXian","size":14.0,"bold":true,"italic":true,"color":"#8DD873","underline":"Single","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":true,"highlightColor":null,"hidden":false},"shading":{"backgroundPatternColor":"#00FF00"}},{"baseStyle":"Table Normal","builtIn":false,"inUse":true,"linked":false,"nextParagraphStyle":"NewTableStyle","nameLocal":"NewTableStyle","priority":100,"type":"Table","unhideWhenUsed":false,"visibility":false,"paragraphFormat":{"alignment":"Left","firstLineIndent":0.0,"keepTogether":false,"keepWithNext":false,"leftIndent":0.0,"lineSpacing":12.0,"lineUnitAfter":0.0,"lineUnitBefore":0.0,"mirrorIndents":false,"outlineLevel":"OutlineLevelBodyText","rightIndent":0.0,"spaceAfter":0.0,"spaceBefore":0.0,"widowControl":true},"font":{"name":"DengXian","size":20.0,"bold":false,"italic":true,"color":"#D86DCB","underline":"None","subscript":false,"superscript":false,"strikeThrough":false,"doubleStrikeThrough":false,"highlightColor":null,"hidden":false},"tableStyle":{"allowBreakAcrossPage":true,"alignment":"Left","bottomCellMargin":0.0,"leftCellMargin":0.08,"rightCellMargin":0.08,"topCellMargin":0.0,"cellSpacing":0.0},"shading":{"backgroundPatternColor":"#60CAF3"}}]}';
+        const styles = context.document.importStylesFromJson(str);
+
+        // If you'd like to set how conflicting styles are handled, use the importedStylesConflictBehavior parameter that was introduced in the Desktop 1.1 requirement set. "Ignore" is the default.
+        ////const styles = context.document.importStylesFromJson(str, Word.ImportedStylesConflictBehavior.Ignore);
+
+        await context.sync();
+        console.log("Styles imported from JSON:", styles);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3484,7 +3917,7 @@ methods:
     fullName: importStylesFromJson(stylesJson, importedStylesConflictBehavior)
     summary: Import styles from a JSON-formatted string.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -3521,8 +3954,8 @@ methods:
       Inserts a document into the target document at a specific location with
       additional properties. Headers, footers, watermarks, and other section
       properties are copied by default.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -3530,6 +3963,36 @@ methods:
       ActiveX control (likely in a form field). Consider replacing such a form
       field with a content control or other option appropriate for your
       scenario.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
+
+
+      // Inserts content (applying selected settings) from another document
+      passed in as a Base64-encoded string.
+
+      await Word.run(async (context) => {
+        // Use the Base64-encoded string representation of the selected .docx file.
+        context.document.insertFileFromBase64(externalDocument, "Replace", {
+          importTheme: true,
+          importStyles: true,
+          importParagraphSpacing: true,
+          importPageColor: true,
+          importChangeTrackingMode: true,
+          importCustomProperties: true,
+          importCustomXmlParts: true,
+          importDifferentOddEvenPages: true
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3567,7 +4030,35 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the document.
+          const thisDocument = context.document;
+          
+          // Queue a command to load content control properties.
+          thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          if (thisDocument.contentControls.items.length !== 0) {
+              for (let i = 0; i < thisDocument.contentControls.items.length; i++) {
+                  console.log(thisDocument.contentControls.items[i].id);
+                  console.log(thisDocument.contentControls.items[i].text);
+                  console.log(thisDocument.contentControls.items[i].tag);
+              }
+          } else {
+              console.log('No content controls in this document.');
+          }
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -3640,7 +4131,7 @@ methods:
     fullName: lockServerFile()
     summary: Locks the file on the server preventing anyone else from editing it.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3656,7 +4147,7 @@ methods:
     fullName: makeCompatibilityDefault()
     summary: Sets the compatibility options.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3672,7 +4163,7 @@ methods:
     fullName: manualHyphenation()
     summary: Initiates manual hyphenation of a document, one line at a time.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3688,7 +4179,7 @@ methods:
     fullName: post()
     summary: Posts the document to a public folder in Microsoft Exchange.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3704,7 +4195,7 @@ methods:
     fullName: presentIt()
     summary: Opens PowerPoint with the Word document loaded.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3720,7 +4211,7 @@ methods:
     fullName: printPreview()
     summary: Switches the view to print preview.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3736,7 +4227,7 @@ methods:
     fullName: redo(times)
     summary: Redoes the last action that was undone (reverses the `undo` method).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3760,7 +4251,7 @@ methods:
     fullName: rejectAllRevisions()
     summary: Rejects all tracked changes in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3776,7 +4267,7 @@ methods:
     fullName: rejectAllRevisionsShown()
     summary: Rejects all revisions in the document that are displayed on the screen.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3794,7 +4285,7 @@ methods:
       Reloads a cached document by resolving the hyperlink to the document and
       downloading it.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3812,7 +4303,7 @@ methods:
       Reloads the document based on an HTML document, using the document
       encoding.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3834,7 +4325,7 @@ methods:
       Reloads the document based on an HTML document, using the document
       encoding.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3946,7 +4437,7 @@ methods:
       Removes sensitive information, properties, comments, and other metadata
       from the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -3970,7 +4461,7 @@ methods:
       Removes sensitive information, properties, comments, and other metadata
       from the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4006,7 +4497,7 @@ methods:
       Purges the document of locked styles when formatting restrictions have
       been applied in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4022,7 +4513,7 @@ methods:
     fullName: removeNumbers(numberType)
     summary: Removes numbers or bullets from the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4042,7 +4533,7 @@ methods:
     fullName: removeNumbers(numberType)
     summary: Removes numbers or bullets from the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4064,7 +4555,7 @@ methods:
     fullName: removeTheme()
     summary: Removes the active theme from the current document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4080,7 +4571,7 @@ methods:
     fullName: repaginate()
     summary: Repaginates the entire document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4098,7 +4589,7 @@ methods:
       Clears all form fields in the document, preparing the form to be filled in
       again.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4114,7 +4605,7 @@ methods:
     fullName: returnToLastReadPosition()
     summary: Returns the document to the last saved reading position.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4132,7 +4623,7 @@ methods:
       Runs an auto macro that's stored in the document. If the specified auto
       macro doesn't exist, nothing happens.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4154,7 +4645,7 @@ methods:
       Runs an auto macro that's stored in the document. If the specified auto
       macro doesn't exist, nothing happens.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4175,13 +4666,66 @@ methods:
     package: word!
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Note: The `saveBehavior` and `fileName` parameters were introduced in
       WordApi 1.5.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the document.
+          const thisDocument = context.document;
+
+          // Queue a command to load the document save state (on the saved property).
+          thisDocument.load('saved');    
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+              
+          if (thisDocument.saved === false) {
+              // Queue a command to save this document.
+              thisDocument.save();
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Saved the document');
+          } else {
+              console.log('The document has not changed since the last save.');
+          }
+      });
+
+      ```
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
+
+
+      // Saves the document with default behavior
+
+      // for current state of the document.
+
+      await Word.run(async (context) => {
+        context.document.save();
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -4207,7 +4751,7 @@ methods:
     fullName: save(saveBehavior, fileName)
     summary: Saves the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -4238,7 +4782,7 @@ methods:
     fullName: saveAsQuickStyleSet(fileName)
     summary: Saves the group of quick styles currently in use.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4260,7 +4804,7 @@ methods:
       Performs a search with the specified search options on the scope of the
       whole document. The search results are a collection of `Range` objects.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4301,7 +4845,7 @@ methods:
     fullName: select()
     summary: Selects the contents of the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4317,7 +4861,7 @@ methods:
     fullName: selectContentControlsByTag(tag)
     summary: Returns all content controls with the specified tag.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4339,7 +4883,7 @@ methods:
       Returns a `ContentControlCollection` object that represents all the
       content controls in the document with the specified title.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4363,7 +4907,7 @@ methods:
       Returns a `ContentControlCollection` object that represents all content
       controls in the document that are linked to the specific custom XML node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4388,7 +4932,7 @@ methods:
       match the XPath parameter in the order in which they appear in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4415,7 +4959,7 @@ methods:
       Returns an `XmlNode` object that represents the first node that matches
       the XPath parameter in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4442,7 +4986,7 @@ methods:
       Returns a `ContentControlCollection` object that represents all content
       controls in the document that are not linked to an XML node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4464,7 +5008,7 @@ methods:
     fullName: sendFax(address, subject)
     summary: Sends the document as a fax, without any user interaction.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4489,7 +5033,7 @@ methods:
       Opens a message window for sending the document through Microsoft
       Exchange.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4556,7 +5100,7 @@ methods:
     fullName: setDefaultTableStyle(style, setInTemplate)
     summary: Specifies the table style to use for newly created tables in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4587,7 +5131,7 @@ methods:
       Sets the options Microsoft Word uses for encrypting documents with
       passwords.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4619,7 +5163,7 @@ methods:
     fullName: toggleFormsDesign()
     summary: Switches form design mode on or off.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4681,7 +5225,7 @@ methods:
       Applies the specified Extensible Stylesheet Language Transformation (XSLT)
       file to this document and replaces the document with the results.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4706,7 +5250,7 @@ methods:
       Undoes the last action or a sequence of actions, which are displayed in
       the Undo list.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4730,7 +5274,7 @@ methods:
     fullName: undoClear()
     summary: Clears the list of actions that can be undone in the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4746,7 +5290,7 @@ methods:
     fullName: unprotect(password)
     summary: Removes protection from the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4789,7 +5333,7 @@ methods:
       Copies all styles from the attached template into the document,
       overwriting any existing styles in the document that have the same name.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4807,7 +5351,7 @@ methods:
       Displays the code window for the selected Microsoft ActiveX control in the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4825,7 +5369,7 @@ methods:
       Displays the property window for the selected Microsoft ActiveX control in
       the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4843,7 +5387,7 @@ methods:
       Displays a preview of the current document as it would look if saved as a
       webpage.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -4861,9 +5405,7 @@ events:
     summary: >-
       Occurs when the user clicks an annotation (or selects it using
       **Alt+Down**).
-    remarks: >-
-      \[ [Api set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -4880,9 +5422,7 @@ events:
     package: word!
     fullName: onAnnotationHovered
     summary: Occurs when the user hovers the cursor over an annotation.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -4899,9 +5439,7 @@ events:
     package: word!
     fullName: onAnnotationInserted
     summary: Occurs when the user adds one or more annotations.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -4918,9 +5456,7 @@ events:
     package: word!
     fullName: onAnnotationPopupAction
     summary: Occurs when the user performs an action in an annotation pop-up menu.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.8\]'
 
     isPreview: false
     isDeprecated: false
@@ -4937,9 +5473,7 @@ events:
     package: word!
     fullName: onAnnotationRemoved
     summary: Occurs when the user deletes one or more annotations.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.7\]'
 
     isPreview: false
     isDeprecated: false
@@ -4958,9 +5492,7 @@ events:
     summary: >-
       Occurs when a content control is added. Run context.sync() in the handler
       to get the new content control's properties.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.5\]'
 
     isPreview: false
     isDeprecated: false
@@ -4977,9 +5509,7 @@ events:
     package: word!
     fullName: onParagraphAdded
     summary: Occurs when the user adds new paragraphs.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -4996,9 +5526,7 @@ events:
     package: word!
     fullName: onParagraphChanged
     summary: Occurs when the user changes paragraphs.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false
@@ -5015,9 +5543,7 @@ events:
     package: word!
     fullName: onParagraphDeleted
     summary: Occurs when the user deletes paragraphs.
-    remarks: >-
-      \[ [Api set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: '\[Api set: WordApi 1.6\]'
 
     isPreview: false
     isDeprecated: false

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ShapeCollectionLoadOptions
 summary: Represents a collection of all the shapes in the worksheet.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
       For EACH ITEM in the collection: Specifies the alternative description
       text for a `Shape` object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       For EACH ITEM in the collection: Specifies the alternative title text for
       a `Shape` object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -72,7 +72,7 @@ properties:
       For EACH ITEM in the collection: Returns the number of connection sites on
       this shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -89,7 +89,7 @@ properties:
       For EACH ITEM in the collection: Returns the fill formatting of this
       shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       with the shape. An error will be thrown if the shape type is not
       "GeometricShape".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -128,7 +128,7 @@ properties:
       this geometric shape. See `Excel.GeometricShapeType` for details. Returns
       `null` if the shape type is not "GeometricShape".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -145,7 +145,7 @@ properties:
       For EACH ITEM in the collection: Returns the shape group associated with
       the shape. An error will be thrown if the shape type is not "GroupShape".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -163,7 +163,7 @@ properties:
       shape. Throws an `InvalidArgument` exception when set with a negative
       value or zero as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -178,7 +178,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the shape identifier.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -195,7 +195,7 @@ properties:
       For EACH ITEM in the collection: Returns the image associated with the
       shape. An error will be thrown if the shape type is not "Image".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -213,7 +213,7 @@ properties:
       side of the shape to the left side of the worksheet. Throws an
       `InvalidArgument` exception when set with a negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -232,7 +232,7 @@ properties:
       groups, a level of 1 means the shape is part of a top-level group, and a
       level of 2 means the shape is part of a sub-group of the top level.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -249,7 +249,7 @@ properties:
       For EACH ITEM in the collection: Returns the line associated with the
       shape. An error will be thrown if the shape type is not "Line".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -266,7 +266,7 @@ properties:
       For EACH ITEM in the collection: Returns the line formatting of this
       shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -285,7 +285,7 @@ properties:
       For EACH ITEM in the collection: Specifies if the aspect ratio of this
       shape is locked.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -300,7 +300,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of the shape.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -315,7 +315,7 @@ properties:
     fullName: parentGroup
     summary: 'For EACH ITEM in the collection: Specifies the parent group of this shape.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -332,7 +332,7 @@ properties:
       For EACH ITEM in the collection: Specifies the rotation, in degrees, of
       the shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -349,7 +349,7 @@ properties:
       For EACH ITEM in the collection: Returns the text frame object of this
       shape.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -367,7 +367,7 @@ properties:
       edge of the shape to the top edge of the worksheet. Throws an
       `InvalidArgument` exception when set with a negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -384,7 +384,7 @@ properties:
       For EACH ITEM in the collection: Returns the type of this shape. See
       `Excel.ShapeType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -399,7 +399,7 @@ properties:
     fullName: visible
     summary: 'For EACH ITEM in the collection: Specifies if the shape is visible.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -417,7 +417,7 @@ properties:
       shape. Throws an `InvalidArgument` exception when set with a negative
       value or zero as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -434,7 +434,7 @@ properties:
       For EACH ITEM in the collection: Returns the position of the specified
       shape in the z-order, with 0 representing the bottom of the order stack.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

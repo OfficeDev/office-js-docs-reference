@@ -5,7 +5,7 @@ package: word!
 fullName: Word.StatisticType
 summary: Document statistic types.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,70 +14,56 @@ fields:
   - name: characters
     uid: word!Word.StatisticType.characters:member
     package: word!
-    summary: >-
+    summary: |-
       Characters in the document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Characters"'
   - name: charactersWithSpaces
     uid: word!Word.StatisticType.charactersWithSpaces:member
     package: word!
-    summary: >-
+    summary: |-
       Characters including spaces.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CharactersWithSpaces"'
   - name: farEastCharacters
     uid: word!Word.StatisticType.farEastCharacters:member
     package: word!
-    summary: >-
+    summary: |-
       Far East (DBCS) characters.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FarEastCharacters"'
   - name: lines
     uid: word!Word.StatisticType.lines:member
     package: word!
-    summary: >-
+    summary: |-
       Lines in the document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Lines"'
   - name: pages
     uid: word!Word.StatisticType.pages:member
     package: word!
-    summary: >-
+    summary: |-
       Pages in the document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Pages"'
   - name: paragraphs
     uid: word!Word.StatisticType.paragraphs:member
     package: word!
-    summary: >-
+    summary: |-
       Paragraphs in the document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Paragraphs"'
   - name: words
     uid: word!Word.StatisticType.words:member
     package: word!
-    summary: >-
+    summary: |-
       Words in the document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Words"'

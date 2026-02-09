@@ -5,7 +5,7 @@ package: word!
 fullName: Word.LayoutMode
 summary: Specifies how text is laid out in the layout mode for the current document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,40 +14,32 @@ fields:
   - name: default
     uid: word!Word.LayoutMode.default:member
     package: word!
-    summary: >-
+    summary: |-
       Default layout mode.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Default"'
   - name: genko
     uid: word!Word.LayoutMode.genko:member
     package: word!
-    summary: >-
+    summary: |-
       Genko layout mode.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Genko"'
   - name: grid
     uid: word!Word.LayoutMode.grid:member
     package: word!
-    summary: >-
+    summary: |-
       Grid layout mode.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Grid"'
   - name: lineGrid
     uid: word!Word.LayoutMode.lineGrid:member
     package: word!
-    summary: >-
+    summary: |-
       Line grid layout mode.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LineGrid"'

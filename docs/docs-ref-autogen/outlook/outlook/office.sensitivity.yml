@@ -10,7 +10,7 @@ summary: >-
   Confidential](https://support.microsoft.com/office/4a76d05b-6c29-4a0d-9096-71784a6b12c1)<!--
   -->.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -34,7 +34,7 @@ methods:
     fullName: getAsync(options, callback)
     summary: Gets the sensitivity level of an appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -89,8 +89,8 @@ methods:
     package: outlook!
     fullName: getAsync(callback)
     summary: Gets the sensitivity level of an appointment.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -111,6 +111,26 @@ methods:
       levels. If you call `getAsync` on an appointment that has a Confidential
       or Personal sensitivity level from these clients, the Normal sensitivity
       level is returned in the `asyncResult.value` property.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
+
+
+      Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Sensitivity: " + asyncResult.value);
+        } else {
+          console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -139,8 +159,8 @@ methods:
     package: outlook!
     fullName: setAsync(sensitivity, options, callback)
     summary: Sets the sensitivity level of an appointment.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -166,6 +186,29 @@ methods:
 
       - `Unsupported API parameter`<!-- -->: Setting the sensitivity level of an
       appointment isn't supported.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
+
+
+      Office.context.mailbox.item.sensitivity.setAsync(
+        Office.MailboxEnums.AppointmentSensitivityType.Private,
+        function callback(asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+          } else {
+            console.log("Successfully set appointment sensitivity.");
+          }
+        }
+      );
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -204,7 +247,7 @@ methods:
     fullName: setAsync(sensitivity, callback)
     summary: Sets the sensitivity level of an appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

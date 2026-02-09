@@ -5,7 +5,7 @@ package: word!
 fullName: Word.CustomXmlInsertSubtreeBeforeOptions
 summary: Inserts a new node just before the context node in the tree.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: nextSibling
     summary: If provided, specifies the context node.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

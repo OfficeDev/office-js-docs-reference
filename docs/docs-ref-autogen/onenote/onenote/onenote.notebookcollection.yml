@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.NotebookCollection
 summary: Represents a collection of notebooks.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: count
     summary: Returns the number of notebooks in the collection.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -64,10 +64,38 @@ methods:
     summary: >-
       Gets the collection of notebooks with the specified name that are open in
       the application instance.
-    remarks: >-
-      \[ [Api set: OneNoteApi
+    remarks: >
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await OneNote.run(async (context) => {
+
+          // Get the notebooks that are open in the application instance and have the specified name.
+          const notebooks = context.application.notebooks.getByName("Homework");
+
+          // Queue a command to load the notebooks.
+          // For best performance, request specific properties.
+          notebooks.load("id,name");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+
+          // Iterate through the collection or access items individually by index.
+          // For example: notebooks.items[0]
+          if (notebooks.items.length > 0) {
+              console.log("Notebook name: " + notebooks.items[0].name);
+              console.log("Notebook ID: " + notebooks.items[0].id);
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -86,7 +114,7 @@ methods:
     fullName: getItem(index)
     summary: Gets a notebook by ID or by its index in the collection. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -109,7 +137,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a notebook on its position in the collection.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -157,7 +185,35 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await OneNote.run(async (context) => {
+
+          // Get the notebooks that are open in the application instance and have the specified name.
+          const notebooks = context.application.notebooks.getByName("Homework");
+
+          // Queue a command to load the notebooks.
+          // For best performance, request specific properties.
+          notebooks.load("id");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          await context.sync();
+
+          // Iterate through the collection or access items individually by index.
+          // For example: notebooks.items[0]
+          $.each(notebooks.items, function(index, notebook) {
+              notebook.addSection("Biology");
+              notebook.addSection("Spanish");
+              notebook.addSection("Computer Science");
+          });
+          
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -4,9 +4,44 @@ uid: word!Word.ParagraphFormat:class
 package: word!
 fullName: Word.ParagraphFormat
 summary: Represents a style of paragraph in a document.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Sets certain aspects of the specified style's paragraph format e.g., the
+  left indent size and the alignment.
+
+  await Word.run(async (context) => {
+    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+    if (styleName == "") {
+      console.warn("Enter a style name to update its paragraph format.");
+      return;
+    }
+
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else {
+      style.paragraphFormat.leftIndent = 30;
+      style.paragraphFormat.alignment = Word.Alignment.centered;
+      console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -17,9 +52,44 @@ properties:
     package: word!
     fullName: alignment
     summary: Specifies the alignment for the specified paragraphs.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Sets certain aspects of the specified style's paragraph format e.g.,
+      the left indent size and the alignment.
+
+      await Word.run(async (context) => {
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+        if (styleName == "") {
+          console.warn("Enter a style name to update its paragraph format.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          style.paragraphFormat.leftIndent = 30;
+          style.paragraphFormat.alignment = Word.Alignment.centered;
+          console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -55,7 +125,7 @@ properties:
       positive value to set a first-line indent, and use a negative value to set
       a hanging indent.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -72,7 +142,7 @@ properties:
       Specifies whether all lines in the specified paragraphs remain on the same
       page when Microsoft Word repaginates the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -89,7 +159,7 @@ properties:
       Specifies whether the specified paragraph remains on the same page as the
       paragraph that follows it when Microsoft Word repaginates the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -103,9 +173,44 @@ properties:
     package: word!
     fullName: leftIndent
     summary: Specifies the left indent.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+      // Sets certain aspects of the specified style's paragraph format e.g.,
+      the left indent size and the alignment.
+
+      await Word.run(async (context) => {
+        const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+        if (styleName == "") {
+          console.warn("Enter a style name to update its paragraph format.");
+          return;
+        }
+
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          style.paragraphFormat.leftIndent = 30;
+          style.paragraphFormat.alignment = Word.Alignment.centered;
+          console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -119,7 +224,7 @@ properties:
     fullName: lineSpacing
     summary: Specifies the line spacing (in points) for the specified paragraphs.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -136,7 +241,7 @@ properties:
       Specifies the amount of spacing (in gridlines) after the specified
       paragraphs.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -153,7 +258,7 @@ properties:
       Specifies the amount of spacing (in gridlines) before the specified
       paragraphs.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -168,7 +273,7 @@ properties:
     fullName: mirrorIndents
     summary: Specifies whether left and right indents are the same width.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -183,7 +288,7 @@ properties:
     fullName: outlineLevel
     summary: Specifies the outline level for the specified paragraphs.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -206,7 +311,7 @@ properties:
     fullName: rightIndent
     summary: Specifies the right indent (in points) for the specified paragraphs.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -223,7 +328,7 @@ properties:
       Specifies the amount of spacing (in points) after the specified paragraph
       or text column.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -238,7 +343,7 @@ properties:
     fullName: spaceBefore
     summary: Specifies the spacing (in points) before the specified paragraphs.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -256,7 +361,7 @@ properties:
       remain on the same page as the rest of the paragraph when Microsoft Word
       repaginates the document.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

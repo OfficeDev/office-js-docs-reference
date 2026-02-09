@@ -256,30 +256,106 @@ function injectSnippetIntoRemarks(
 }
 
 /**
- * Injects code snippets into YAML remarks field.
- * Matches the current Office API Documenter output format exactly.
+ * Maps API set references to hyperlinks in a remarks string.
+ * Handles both the parsed YAML format and preserves existing content.
  */
-function injectSnippetsIntoYaml(
+function mapApiSetUrlsInRemarks(remarks: string | undefined, url: string): string {
+    if (!remarks) return "";
+
+    // Pattern matches: \[Api set: ExcelApi 1.1\] or \[API set: ExcelApi 1.1\]
+    // Replace with: \[ [API set: ExcelApi 1.1](/url) \]
+    const apiSetPattern = /\\\[(Api|API) set:\s*([^\]]+)\\\]/g;
+
+    return remarks.replace(apiSetPattern, (match, apiWord, apiSetName) => {
+        return `\\[ [API set: ${apiSetName}](${url}) \\]`;
+    });
+}
+
+/**
+ * Gets snippet for a given UID, trying multiple key formats.
+ * Snippet files use UIDs without package prefix (e.g., "Excel.Range:class"),
+ * while YAML uses full UIDs (e.g., "excel!Excel.Range:class").
+ */
+function getSnippetForUid(uid: string, snippets: SnippetMap): string[] | undefined {
+    // Try exact match first
+    if (snippets[uid]) {
+        return snippets[uid];
+    }
+
+    // Try without package prefix (strip everything before "!")
+    const withoutPackage = uid.includes("!") ? uid.substring(uid.indexOf("!") + 1) : uid;
+    if (snippets[withoutPackage]) {
+        return snippets[withoutPackage];
+    }
+
+    // For methods/properties with overloads, try adding "(1)" suffix
+    if (!uid.includes("(")) {
+        const withOverload = `${withoutPackage}(1)`;
+        if (snippets[withOverload]) {
+            return snippets[withOverload];
+        }
+    }
+
+    return undefined;
+}
+
+/**
+ * Injects code snippets into YAML remarks field and maps API set URLs.
+ * Combines both operations to avoid double-processing the YAML.
+ */
+function injectSnippetsAndMapUrlsIntoYaml(
     yamlFilePath: string,
-    snippets: SnippetMap
+    snippets: SnippetMap,
+    hostName: string
 ): boolean {
     try {
         const yamlContent = fsx.readFileSync(yamlFilePath, "utf8");
         const schemaComment = yamlContent.substring(0, yamlContent.indexOf("\n") + 1);
         const apiYaml: ApiYaml = jsyaml.load(yamlContent) as ApiYaml;
+        const url = API_SET_URL_MAPPINGS[hostName] || API_SET_URL_MAPPINGS["office"];
 
         let modified = false;
+
+        // Process class-level remarks
+        if (apiYaml.uid) {
+            const classSnippets = getSnippetForUid(apiYaml.uid, snippets);
+            if (classSnippets) {
+                apiYaml.remarks = injectSnippetIntoRemarks(
+                    apiYaml.remarks || "",
+                    classSnippets
+                );
+                modified = true;
+            }
+        }
+
+        if (apiYaml.remarks) {
+            const updatedRemarks = mapApiSetUrlsInRemarks(apiYaml.remarks, url);
+            if (updatedRemarks !== apiYaml.remarks) {
+                apiYaml.remarks = updatedRemarks;
+                modified = true;
+            }
+        }
 
         // Process methods
         if (apiYaml.methods) {
             apiYaml.methods.forEach((method: ApiMethodYaml) => {
-                const snippetKey = method.uid;
-                if (snippets[snippetKey]) {
+                // Inject snippets first
+                const methodSnippets = getSnippetForUid(method.uid, snippets);
+                if (methodSnippets) {
                     method.remarks = injectSnippetIntoRemarks(
                         method.remarks || "",
-                        snippets[snippetKey]
+                        methodSnippets
                     );
                     modified = true;
+                }
+
+                // Then map API set URLs
+                if (method.remarks) {
+                    const updatedRemarks = mapApiSetUrlsInRemarks(method.remarks, url);
+                    if (updatedRemarks !== method.remarks) {
+                        method.remarks = updatedRemarks;
+                        modified = true;
+                    }
                 }
             });
         }
@@ -287,13 +363,23 @@ function injectSnippetsIntoYaml(
         // Process properties
         if (apiYaml.properties) {
             apiYaml.properties.forEach((property: ApiPropertyYaml) => {
-                const snippetKey = property.uid;
-                if (snippets[snippetKey]) {
+                // Inject snippets first
+                const propertySnippets = getSnippetForUid(property.uid, snippets);
+                if (propertySnippets) {
                     property.remarks = injectSnippetIntoRemarks(
                         property.remarks || "",
-                        snippets[snippetKey]
+                        propertySnippets
                     );
                     modified = true;
+                }
+
+                // Then map API set URLs
+                if (property.remarks) {
+                    const updatedRemarks = mapApiSetUrlsInRemarks(property.remarks, url);
+                    if (updatedRemarks !== property.remarks) {
+                        property.remarks = updatedRemarks;
+                        modified = true;
+                    }
                 }
             });
         }
@@ -301,13 +387,23 @@ function injectSnippetsIntoYaml(
         // Process fields (for enums)
         if (apiYaml.fields) {
             apiYaml.fields.forEach((field: ApiFieldYaml) => {
-                const snippetKey = field.uid;
-                if (snippets[snippetKey]) {
+                // Inject snippets first
+                const fieldSnippets = getSnippetForUid(field.uid, snippets);
+                if (fieldSnippets) {
                     field.remarks = injectSnippetIntoRemarks(
                         field.remarks || "",
-                        snippets[snippetKey]
+                        fieldSnippets
                     );
                     modified = true;
+                }
+
+                // Then map API set URLs
+                if (field.remarks) {
+                    const updatedRemarks = mapApiSetUrlsInRemarks(field.remarks, url);
+                    if (updatedRemarks !== field.remarks) {
+                        field.remarks = updatedRemarks;
+                        modified = true;
+                    }
                 }
             });
         }
@@ -342,25 +438,10 @@ const API_SET_URL_MAPPINGS: ApiSetUrlMap = {
     "custom-functions-runtime": "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets"
 };
 
-/**
- * Maps API set references to hyperlinks in YAML content.
- * Replaces patterns like "\[Api set: ExcelApi 1.1\]" with
- * "\[ [Api set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]"
- */
-function mapApiSetUrls(yamlContent: string, hostName: string): string {
-    const url = API_SET_URL_MAPPINGS[hostName] || API_SET_URL_MAPPINGS["office"];
-
-    // Pattern matches: \[Api set: ExcelApi 1.1\]
-    // Replace with: \[ [Api set: ExcelApi 1.1](/url) \]
-    const apiSetPattern = /\\\[Api set:\s*([^\]]+)\\\]/g;
-
-    return yamlContent.replace(apiSetPattern, (match, apiSetName) => {
-        return `\\[ [Api set: ${apiSetName}](${url}) \\]`;
-    });
-}
 
 /**
  * Process all YAML files in a host directory and inject snippets + map URLs.
+ * Both operations are combined to avoid double-processing and data loss.
  */
 function processYamlFilesWithSnippets(hostVersionFolder: string): void {
     const hostFolderName = path.basename(hostVersionFolder);
@@ -390,31 +471,18 @@ function processYamlFilesWithSnippets(hostVersionFolder: string): void {
 
     findYamlFiles(hostVersionFolder);
 
-    let snippetsInjected = 0;
+    let filesProcessed = 0;
 
-    // Step 1: Inject snippets
+    // Process all YAML files: inject snippets AND map API set URLs in one pass
     yamlFiles.forEach(yamlFilePath => {
-        if (injectSnippetsIntoYaml(yamlFilePath, snippets)) {
-            snippetsInjected++;
+        if (injectSnippetsAndMapUrlsIntoYaml(yamlFilePath, snippets, hostName)) {
+            filesProcessed++;
         }
     });
 
-    if (snippetsInjected > 0) {
-        console.log(`  Injected snippets into ${snippetsInjected} files`);
+    if (filesProcessed > 0) {
+        console.log(`  Processed ${filesProcessed} files with snippets and API set URLs`);
     }
-
-    // Step 2: Map API set URLs for all YAML files
-    yamlFiles.forEach(yamlFilePath => {
-        try {
-            let yamlContent = fsx.readFileSync(yamlFilePath, "utf8");
-            const updatedContent = mapApiSetUrls(yamlContent, hostName);
-            if (updatedContent !== yamlContent) {
-                fsx.writeFileSync(yamlFilePath, updatedContent);
-            }
-        } catch (error) {
-            console.error(`  Error mapping API set URLs in ${yamlFilePath}:`, error);
-        }
-    });
 }
 
 // Utility functions

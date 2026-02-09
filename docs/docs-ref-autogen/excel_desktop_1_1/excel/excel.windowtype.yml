@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WindowType
 summary: Specifies the type of window being displayed.
 remarks: >-
-  \[ [Api set: ExcelApiDesktop
+  \[ [API set: ExcelApiDesktop
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,40 +14,32 @@ fields:
   - name: chartAsWindow
     uid: excel!Excel.WindowType.chartAsWindow:member
     package: excel!
-    summary: >-
+    summary: |-
       The window displays a chart in its own separate window.
 
-
-      * \[ [Api set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"chartAsWindow"'
   - name: chartInPlace
     uid: excel!Excel.WindowType.chartInPlace:member
     package: excel!
-    summary: >-
+    summary: |-
       The window displays a chart embedded within a worksheet.
 
-
-      * \[ [Api set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"chartInPlace"'
   - name: clipboard
     uid: excel!Excel.WindowType.clipboard:member
     package: excel!
-    summary: >-
+    summary: |-
       The window displays the Office clipboard contents.
 
-
-      * \[ [Api set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"clipboard"'
   - name: workbook
     uid: excel!Excel.WindowType.workbook:member
     package: excel!
-    summary: >-
+    summary: |-
       The window displays a standard Excel workbook.
 
-
-      * \[ [Api set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"workbook"'

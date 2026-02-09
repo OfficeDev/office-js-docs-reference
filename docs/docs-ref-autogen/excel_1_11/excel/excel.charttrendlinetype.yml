@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartTrendlineType
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,42 +14,30 @@ fields:
   - name: exponential
     uid: excel!Excel.ChartTrendlineType.exponential:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Exponential"'
   - name: linear
     uid: excel!Excel.ChartTrendlineType.linear:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Linear"'
   - name: logarithmic
     uid: excel!Excel.ChartTrendlineType.logarithmic:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Logarithmic"'
   - name: movingAverage
     uid: excel!Excel.ChartTrendlineType.movingAverage:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"MovingAverage"'
   - name: polynomial
     uid: excel!Excel.ChartTrendlineType.polynomial:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Polynomial"'
   - name: power
     uid: excel!Excel.ChartTrendlineType.power:member
     package: excel!
-    summary: >-
-      * \[ [Api set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.7\]'
     value: '"Power"'

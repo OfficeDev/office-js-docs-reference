@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.Interfaces.ShapeLoadOptions
 summary: Represents the Shape class.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: id
     summary: Shape's identifier. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -51,7 +51,7 @@ properties:
     fullName: name
     summary: Shape's name. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -69,7 +69,7 @@ properties:
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -85,7 +85,7 @@ properties:
     fullName: text
     summary: Shape's text. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -101,7 +101,7 @@ properties:
     fullName: view
     summary: Returns the view of the shape.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

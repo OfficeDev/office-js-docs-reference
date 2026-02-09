@@ -18,7 +18,7 @@ properties:
     fullName: count
     summary: Specifies the number of adjustment points.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

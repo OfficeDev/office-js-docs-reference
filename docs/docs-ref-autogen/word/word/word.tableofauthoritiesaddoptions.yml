@@ -8,7 +8,7 @@ summary: >-
   [Word.TableOfAuthoritiesCollection](xref:word!Word.TableOfAuthoritiesCollection:class)
   object.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -27,7 +27,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
       authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
       -->. The default value is `1`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +71,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, no separator is used.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -91,7 +91,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -131,7 +131,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, a comma and a space (", ") are used.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -151,7 +151,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, an en dash ("–") is used.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -171,7 +171,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -191,7 +191,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. If omitted, a hyphen ("-") is used.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -211,7 +211,7 @@ properties:
       field](https://support.microsoft.com/office/c754a963-90c1-4d32-b2db-1ed90b9dd958)<!--
       -->. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

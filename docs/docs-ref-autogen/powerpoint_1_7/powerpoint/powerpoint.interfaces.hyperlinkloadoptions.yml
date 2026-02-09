@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkLoadOptions
 summary: Represents a single hyperlink.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -37,7 +37,7 @@ properties:
       Specifies the address of the hyperlink, which can be a URL, a file name or
       file path, or an email address with the `mailto` URI scheme.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -53,7 +53,7 @@ properties:
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

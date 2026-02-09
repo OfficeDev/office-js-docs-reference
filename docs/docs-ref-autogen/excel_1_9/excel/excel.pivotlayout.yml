@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.PivotLayout
 summary: Represents the visual layout of the PivotTable.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Specifies if formatting will be automatically formatted when it's
       refreshed or when fields are moved.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -51,9 +51,40 @@ properties:
     summary: >-
       This property indicates the PivotLayoutType of all fields on the
       PivotTable. If fields have different states, this will be null.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+
+      await Excel.run(async (context) => {
+        // Change the PivotLayout.type to a new type.
+        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+        pivotTable.layout.load("layoutType");
+        await context.sync();
+
+        // Cycle between the three layout types.
+        if (pivotTable.layout.layoutType === "Compact") {
+          pivotTable.layout.layoutType = "Outline";
+        } else if (pivotTable.layout.layoutType === "Outline") {
+          pivotTable.layout.layoutType = "Tabular";
+        } else {
+          pivotTable.layout.layoutType = "Compact";
+        }
+
+        await context.sync();
+        console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -71,9 +102,36 @@ properties:
       Specifies if formatting is preserved when the report is refreshed or
       recalculated by operations such as pivoting, sorting, or changing page
       field items.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+
+      await Excel.run(async (context) => {
+        // Set whether the PivotTable keeps the established format after it is refreshed and recalculated.
+        const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+        const pivotLayout = pivotTable.layout;
+
+        pivotLayout.load("preserveFormatting");
+        await context.sync();
+
+        let preserveFormattingToSet = !pivotLayout.preserveFormatting;
+        console.log(`Preserve the formatting PivotTable after a refresh? - ${preserveFormattingToSet}`);
+
+        pivotLayout.preserveFormatting = preserveFormattingToSet;
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -86,9 +144,40 @@ properties:
     package: excel!
     fullName: showColumnGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for columns.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+
+      await Excel.run(async (context) => {
+        // Turn the grand totals on and off for the rows and columns.
+        const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+        const pivotLayout = pivotTable.layout;
+
+        pivotLayout.load(["showRowGrandTotals", "showColumnGrandTotals"]);
+        await context.sync();
+
+        let showColumnTotals = !pivotLayout.showColumnGrandTotals;
+        let showRowTotals = !pivotLayout.showRowGrandTotals;
+        console.log(`Show column grand totals? - ${showColumnTotals}`);
+        console.log(`Show row grand totals? - ${showRowTotals}`);
+
+        pivotLayout.showColumnGrandTotals = showColumnTotals;
+        pivotLayout.showRowGrandTotals = showRowTotals;
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -101,9 +190,40 @@ properties:
     package: excel!
     fullName: showRowGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for rows.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+
+      await Excel.run(async (context) => {
+        // Turn the grand totals on and off for the rows and columns.
+        const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+        const pivotLayout = pivotTable.layout;
+
+        pivotLayout.load(["showRowGrandTotals", "showColumnGrandTotals"]);
+        await context.sync();
+
+        let showColumnTotals = !pivotLayout.showColumnGrandTotals;
+        let showRowTotals = !pivotLayout.showRowGrandTotals;
+        console.log(`Show column grand totals? - ${showColumnTotals}`);
+        console.log(`Show row grand totals? - ${showRowTotals}`);
+
+        pivotLayout.showColumnGrandTotals = showColumnTotals;
+        pivotLayout.showRowGrandTotals = showRowTotals;
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -119,7 +239,7 @@ properties:
       This property indicates the `SubtotalLocationType` of all fields on the
       PivotTable. If fields have different states, this will be `null`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -139,7 +259,7 @@ methods:
     fullName: getColumnLabelRange()
     summary: Returns the range where the PivotTable's column labels reside.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -154,9 +274,38 @@ methods:
     package: excel!
     fullName: getDataBodyRange()
     summary: Returns the range where the PivotTable's data values reside.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+
+      await Excel.run(async (context) => {
+          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+          // The layout controls the ranges used by the PivotTable.
+          const range = pivotTable.layout.getDataBodyRange();
+
+          // Get all the data hierarchy totals.
+          const grandTotalRange = range.getLastRow();
+          grandTotalRange.load("address");
+          await context.sync();
+          
+          // Use the wholesale and farm sale totals to make a final sum.
+          const masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+          masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -173,7 +322,7 @@ methods:
       Gets the DataHierarchy that is used to calculate the value in a specified
       range within the PivotTable.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -195,7 +344,7 @@ methods:
     fullName: getFilterAxisRange()
     summary: Returns the range of the PivotTable's filter area.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -213,7 +362,7 @@ methods:
       Gets the PivotItems from an axis that make up the value in a specified
       range within the PivotTable.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -244,7 +393,7 @@ methods:
       Gets the PivotItems from an axis that make up the value in a specified
       range within the PivotTable.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -273,7 +422,7 @@ methods:
     fullName: getRange()
     summary: Returns the range the PivotTable exists on, excluding the filter area.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -289,7 +438,7 @@ methods:
     fullName: getRowLabelRange()
     summary: Returns the range where the PivotTable's row labels reside.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -439,7 +588,7 @@ methods:
       automatically select all necessary criteria and context. This behaves
       identically to applying an autosort from the UI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -467,7 +616,7 @@ methods:
       automatically select all necessary criteria and context. This behaves
       identically to applying an autosort from the UI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

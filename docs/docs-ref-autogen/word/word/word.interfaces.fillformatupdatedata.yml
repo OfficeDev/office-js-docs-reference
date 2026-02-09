@@ -20,7 +20,7 @@ properties:
       Returns a `ColorFormat` object that represents the background color for
       the fill.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       Returns a `ColorFormat` object that represents the foreground color for
       the fill.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       Specifies the angle of the gradient fill. The valid range of values is
       from 0 to 359.9.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
     fullName: isVisible
     summary: Specifies if the object, or the formatting applied to it, is visible.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -84,7 +84,7 @@ properties:
     fullName: rotateWithObject
     summary: Specifies whether the fill rotates with the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -101,7 +101,7 @@ properties:
       Specifies the alignment (the origin of the coordinate grid) for the tiling
       of the texture fill.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -122,7 +122,7 @@ properties:
     fullName: textureHorizontalScale
     summary: Specifies the horizontal scaling factor for the texture fill.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -137,7 +137,7 @@ properties:
     fullName: textureOffsetX
     summary: Specifies the horizontal offset of the texture from the origin in points.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -152,7 +152,7 @@ properties:
     fullName: textureOffsetY
     summary: Specifies the vertical offset of the texture.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -167,7 +167,7 @@ properties:
     fullName: textureTile
     summary: Specifies whether the texture is tiled.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -184,7 +184,7 @@ properties:
       Specifies the vertical scaling factor for the texture fill as a value
       between 0.0 and 1.0.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -201,7 +201,7 @@ properties:
       Specifies the degree of transparency of the fill for a shape as a value
       between 0.0 (opaque) and 1.0 (clear).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

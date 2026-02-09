@@ -18,7 +18,7 @@ properties:
     fullName: text
     summary: Represents the plain text content of the text range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

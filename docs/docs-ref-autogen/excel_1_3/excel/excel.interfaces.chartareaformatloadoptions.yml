@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartAreaFormatLoadOptions
 summary: Encapsulates the format properties for the overall chart area.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Represents the font attributes (font name, font size, color, etc.) for the
       current object.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

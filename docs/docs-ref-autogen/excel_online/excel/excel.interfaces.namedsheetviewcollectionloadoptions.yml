@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.NamedSheetViewCollectionLoadOptions
 summary: Represents the collection of sheet views in the worksheet.
 remarks: >-
-  \[ [Api set: ExcelApiOnline
+  \[ [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
       temporary sheet view name is the empty string (""). Naming the view by
       using the name property causes the sheet view to be saved.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

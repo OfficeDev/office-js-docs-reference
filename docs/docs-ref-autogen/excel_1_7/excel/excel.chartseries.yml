@@ -4,9 +4,52 @@ uid: excel!Excel.ChartSeries:class
 package: excel!
 fullName: Excel.ChartSeries
 summary: Represents a series in a chart.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+  // The following code adds data labels to the chart and positions them to
+  demonstrate leader lines.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getItem(sheetName);
+    const chart = sheet.charts.getItemAt(0);
+    const series = chart.series.getItemAt(0);
+    
+    // Enable data labels for the series. Leader lines are enabled by default.
+    series.hasDataLabels = true;
+    series.points.load("items");
+    await context.sync();
+    
+    // Load the top position for each data label.
+    series.points.items.forEach((point) => point.dataLabel.load("top"));
+    await context.sync();
+
+    // Move some data labels to create distance from their chart points.
+    const point1 = series.points.items[1]; 
+    const point2 = series.points.items[2]; 
+    point1.dataLabel.top -= 50; 
+    point2.dataLabel.top += 50;
+    
+    // Format the data labels.
+    series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+    series.dataLabels.showCategoryName = true;
+    series.dataLabels.format.border.weight = 1;
+    
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -18,7 +61,7 @@ properties:
     fullName: chartType
     summary: Represents the chart type of a series. See `Excel.ChartType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +142,7 @@ properties:
       doughnut and doughnut exploded charts. Throws an `InvalidArgument` error
       on invalid charts.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -114,7 +157,7 @@ properties:
     fullName: filtered
     summary: Specifies if the series is filtered. Not applicable for surface charts.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -131,7 +174,7 @@ properties:
       Represents the formatting of a chart series, which includes fill and line
       formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -149,7 +192,7 @@ properties:
       charts, as well as specific classes of line and pie charts. Throws an
       invalid argument exception on invalid charts.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -163,9 +206,52 @@ properties:
     package: excel!
     fullName: hasDataLabels
     summary: Specifies if the series has data labels.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+      // The following code adds data labels to the chart and positions them to
+      demonstrate leader lines.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem(sheetName);
+        const chart = sheet.charts.getItemAt(0);
+        const series = chart.series.getItemAt(0);
+        
+        // Enable data labels for the series. Leader lines are enabled by default.
+        series.hasDataLabels = true;
+        series.points.load("items");
+        await context.sync();
+        
+        // Load the top position for each data label.
+        series.points.items.forEach((point) => point.dataLabel.load("top"));
+        await context.sync();
+
+        // Move some data labels to create distance from their chart points.
+        const point1 = series.points.items[1]; 
+        const point2 = series.points.items[2]; 
+        point1.dataLabel.top -= 50; 
+        point2.dataLabel.top += 50;
+        
+        // Format the data labels.
+        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+        series.dataLabels.showCategoryName = true;
+        series.dataLabels.format.border.weight = 1;
+        
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -178,9 +264,49 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: Specifies the marker background color of a chart series.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -193,9 +319,49 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: Specifies the marker foreground color of a chart series.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -211,9 +377,49 @@ properties:
       Specifies the marker size of a chart series. The supported size range is 2
       to 72. This method returns an InvalidArgument error if it's set with a
       size outside of the supported range.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -228,9 +434,49 @@ properties:
     summary: >-
       Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle`
       for details.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -252,7 +498,7 @@ properties:
       Specifies the name of a series in a chart. The name's length should not be
       greater than 255 characters.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -267,7 +513,7 @@ properties:
     fullName: plotOrder
     summary: Specifies the plot order of a chart series within the chart group.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -281,9 +527,52 @@ properties:
     package: excel!
     fullName: points
     summary: Returns a collection of all points in the series.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+      // The following code adds data labels to the chart and positions them to
+      demonstrate leader lines.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem(sheetName);
+        const chart = sheet.charts.getItemAt(0);
+        const series = chart.series.getItemAt(0);
+        
+        // Enable data labels for the series. Leader lines are enabled by default.
+        series.hasDataLabels = true;
+        series.points.load("items");
+        await context.sync();
+        
+        // Load the top position for each data label.
+        series.points.items.forEach((point) => point.dataLabel.load("top"));
+        await context.sync();
+
+        // Move some data labels to create distance from their chart points.
+        const point1 = series.points.items[1]; 
+        const point2 = series.points.items[2]; 
+        point1.dataLabel.top -= 50; 
+        point2.dataLabel.top += 50;
+        
+        // Format the data labels.
+        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+        series.dataLabels.showCategoryName = true;
+        series.dataLabels.format.border.weight = 1;
+        
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -297,7 +586,7 @@ properties:
     fullName: showShadow
     summary: Specifies if the series has a shadow.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -314,7 +603,7 @@ properties:
       Specifies if the series is smooth. Only applicable to line and scatter
       charts.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -329,7 +618,7 @@ properties:
     fullName: trendlines
     summary: The collection of trendlines in the series.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -344,9 +633,37 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the chart series.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
+
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const seriesCollection = sheet.charts.getItemAt(0).series;
+        seriesCollection.load("count");
+        await context.sync();
+
+        if (seriesCollection.count > 0) {
+          const series = seriesCollection.getItemAt(0);
+
+          // Delete the first series.
+          series.delete();
+        }
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -386,7 +703,21 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Rename the 1st series of Chart1 to "New Series Name".
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.series.getItemAt(0).name = "New Series Name";
+          await context.sync();
+
+          console.log("Series1 Renamed");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -491,9 +822,66 @@ methods:
     package: excel!
     fullName: setBubbleSizes(sourceData)
     summary: Sets the bubble sizes for a chart series. Only works for bubble charts.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
+
+
+      await Excel.run(async (context) => {
+        /*
+          The table is expected to look like this:
+          Product, Inventory, Price, Current Market Share
+          Calamansi, 2000, $2.45, 10%
+          ...
+
+          We want each bubble to represent a single row.
+        */
+
+        // Get the worksheet and table data.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const table = sheet.tables.getItem("Sales");
+        const dataRange = table.getDataBodyRange();
+
+        // Get the table data without the row names.
+        const valueRange = dataRange.getOffsetRange(0, 1).getResizedRange(0, -1);
+
+        // Create the chart.
+        const bubbleChart = sheet.charts.add(Excel.ChartType.bubble, valueRange);
+        bubbleChart.name = "Product Chart";
+
+        // Remove the default series, since we want a unique series for each row.
+        bubbleChart.series.getItemAt(0).delete();
+
+        // Load the data necessary to make a chart series.
+        dataRange.load(["rowCount", "values"]);
+        await context.sync();
+
+        // For each row, create a chart series (a bubble).
+        for (let i = 0; i < dataRange.rowCount; i++) {
+          const newSeries = bubbleChart.series.add(dataRange.values[i][0], i);
+          newSeries.setXAxisValues(dataRange.getCell(i, 1));
+          newSeries.setValues(dataRange.getCell(i, 2));
+          newSeries.setBubbleSizes(dataRange.getCell(i, 3));
+
+          // Show the product name and market share percentage.
+          newSeries.dataLabels.showSeriesName = true;
+          newSeries.dataLabels.showBubbleSize = true;
+          newSeries.dataLabels.showValue = false;
+        }
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -513,9 +901,36 @@ methods:
     summary: >-
       Sets the values for a chart series. For scatter charts, it refers to
       y-axis values.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
+
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        let seriesCollection = sheet.charts.getItemAt(0);
+        let rangeSelection = sheet.getRange("C2:C7");
+        let xRangeSelection = sheet.getRange("A1:A7");
+
+        // Add a series.
+        let newSeries = seriesCollection.series.add("Qtr2");
+        newSeries.setValues(rangeSelection);
+        newSeries.setXAxisValues(xRangeSelection);
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -534,7 +949,7 @@ methods:
     fullName: setXAxisValues(sourceData)
     summary: Sets the values of the x-axis for a chart series.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

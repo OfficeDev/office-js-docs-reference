@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.Interfaces.ShapeViewLoadOptions
 summary: Represents the ShapeView class.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: highlight
     summary: Represents the highlight around the shape.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

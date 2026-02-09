@@ -7,7 +7,7 @@ summary: >-
   Represents the font attributes, such as font name, font size, and color, for a
   shape's TextRange object.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -48,7 +48,7 @@ properties:
 
       - `null`<!-- -->: Returned if some, but not all, of the text is bold.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -67,7 +67,7 @@ properties:
       "\#FF0000" represents red). Returns `null` if the `TextRange` contains
       text fragments with different colors.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -95,7 +95,7 @@ properties:
       - `null`<!-- -->: Returned if some, but not all, of the text is
       italicized.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -115,7 +115,7 @@ properties:
       it's the Latin font name. Returns `null` if the `TextRange` contains text
       fragments with different font names.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -133,7 +133,7 @@ properties:
       Specifies the font size in points (e.g., 11). Returns `null` if the
       `TextRange` contains text fragments with different font sizes.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -153,7 +153,7 @@ properties:
       [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum)
       for details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

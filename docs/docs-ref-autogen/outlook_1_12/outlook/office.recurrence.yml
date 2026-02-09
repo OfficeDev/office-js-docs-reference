@@ -10,7 +10,7 @@ summary: >-
   `recurrenceType`<!-- -->, `recurrenceProperties`<!-- -->, and
   `recurrenceTimeZone` (optional).
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -49,7 +49,7 @@ properties:
     fullName: recurrenceProperties
     summary: Gets or sets the properties of the recurring appointment series.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -75,7 +75,7 @@ properties:
     fullName: recurrenceTimeZone
     summary: Gets or sets the properties of the recurring appointment series.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -101,7 +101,7 @@ properties:
     fullName: recurrenceType
     summary: Gets or sets the type of the recurring appointment series.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -134,7 +134,7 @@ properties:
       UTC time.** Instead, it is set in the time zone specified by the
       `recurrenceTimeZone` value or defaulted to the item's time zone.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -165,8 +165,8 @@ methods:
 
       This method returns the entire `Recurrence` object for the appointment
       series.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -179,6 +179,31 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+      Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          const recurrence = asyncResult.value;
+          if (recurrence === null) {
+            console.log("This is a single appointment.");
+          } else {
+            console.log(`Recurrence pattern: ${JSON.stringify(recurrence)}`);
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -217,7 +242,7 @@ methods:
       This method returns the entire `Recurrence` object for the appointment
       series.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -256,8 +281,8 @@ methods:
     package: outlook!
     fullName: setAsync(recurrencePattern, options, callback)
     summary: Sets the recurrence pattern of an appointment series.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -290,6 +315,67 @@ methods:
 
       - `InvalidEndTime`<!-- -->: The appointment end time is before its start
       time.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+      // Important: Can only set the recurrence pattern of an appointment
+      series.
+
+
+      const currentDate = new Date();
+
+      let seriesTimeObject: Office.SeriesTime;
+
+      // Set series start date to tomorrow.
+
+      seriesTimeObject.setStartDate(currentDate.getFullYear(),
+      currentDate.getMonth(), currentDate.getDay() + 1);
+
+      // Set series end date to one year from now.
+
+      seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+      currentDate.getMonth() + 1, currentDate.getDay());
+
+      // Set start time to 1:30 PM.
+
+      seriesTimeObject.setStartTime(13, 30);
+
+      // Set duration to 30 minutes.
+
+      seriesTimeObject.setDuration(30);
+
+
+      const pattern = {
+        seriesTime: seriesTimeObject,
+        recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+        recurrenceProperties: {
+          interval: 1,
+          dayOfWeek: Office.MailboxEnums.Days.Tue,
+          weekNumber: Office.MailboxEnums.WeekNumber.Second,
+          month: Office.MailboxEnums.Month.Sep
+        },
+        recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+      };
+
+
+      Office.context.mailbox.item.recurrence.setAsync(pattern as any,
+      (asyncResult) => {
+        if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+          return;
+        }
+        console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -325,7 +411,7 @@ methods:
     fullName: setAsync(recurrencePattern, callback)
     summary: Sets the recurrence pattern of an appointment series.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

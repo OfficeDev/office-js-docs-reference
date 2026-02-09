@@ -5,7 +5,7 @@ package: word!
 fullName: Word.AutoMacro
 summary: Indicates the auto macros that can run automatically in Word.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,22 +14,18 @@ fields:
   - name: close
     uid: word!Word.AutoMacro.close:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that the macro runs automatically when the document is closed.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Close"'
   - name: exit
     uid: word!Word.AutoMacro.exit:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that the macro runs automatically when the document is saved.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Exit"'
   - name: new
     uid: word!Word.AutoMacro.new:member
@@ -39,28 +35,23 @@ fields:
       created.
 
 
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"New"'
   - name: open
     uid: word!Word.AutoMacro.open:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that the macro runs automatically when the document is opened.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Open"'
   - name: startWord
     uid: word!Word.AutoMacro.startWord:member
     package: word!
-    summary: >-
+    summary: |-
       Indicates that the macro runs automatically when Word starts.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"StartWord"'
   - name: sync
     uid: word!Word.AutoMacro.sync:member
@@ -70,6 +61,5 @@ fields:
       synchronized.
 
 
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Sync"'

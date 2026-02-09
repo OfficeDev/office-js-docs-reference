@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of [Word.Range](xref:word!Word.Range:class) objects
   that represents each character, word, or sentence.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -49,7 +49,7 @@ methods:
     fullName: getItem(index)
     summary: Gets a `Range` object by its index in the collection.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

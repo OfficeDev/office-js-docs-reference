@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.EnhancedLocation
 summary: Represents the set of locations on an appointment.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -36,8 +36,8 @@ methods:
     package: outlook!
     fullName: addAsync(locationIdentifiers, options, callback)
     summary: Adds to the set of locations associated with the appointment.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -57,6 +57,38 @@ methods:
 
       - `InvalidFormatError`<!-- -->: The format of the specified data object is
       not valid.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+
+      const locations = [
+        {
+          id: "Contoso",
+          type: Office.MailboxEnums.LocationType.Custom
+        },
+        {
+          id: "room500@test.com",
+          type: Office.MailboxEnums.LocationType.Room
+        }
+      ];
+
+      Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result)
+      => {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log(`Successfully added locations ${JSON.stringify(locations)}`);
+        } else {
+          console.error(`Failed to add locations. Error message: ${result.error.message}`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -94,7 +126,7 @@ methods:
     fullName: addAsync(locationIdentifiers, callback)
     summary: Adds to the set of locations associated with the appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -143,8 +175,8 @@ methods:
     package: outlook!
     fullName: getAsync(options, callback)
     summary: Gets the set of locations associated with the appointment.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -170,6 +202,36 @@ methods:
       - If a location was added using
       `Office.context.mailbox.item.location.setAsync`<!-- -->, its location type
       is `Office.MailboxEnums.LocationType.Custom`<!-- -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+
+      Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Failed to get locations. Error message: ${result.error.message}`);
+          return;
+        }
+        const places = result.value;
+        if (places && places.length > 0) {
+          result.value.forEach(function(place) {
+            console.log(`Location: ${place.displayName} (type: ${place.locationIdentifier.type})`);
+            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+              console.log("Email address: " + place.emailAddress);
+            }
+          });
+        } else {
+          console.log("There are no locations.");
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -204,7 +266,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the set of locations associated with the appointment.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -263,8 +325,8 @@ methods:
       If there are multiple locations with the same name, all matching locations
       will be removed even if only one was specified in
       `locationIdentifiers`<!-- -->.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -277,6 +339,38 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+
+      const locations = [
+        {
+          id: "Contoso",
+          type: Office.MailboxEnums.LocationType.Custom
+        },
+        {
+          id: "room500@test.com",
+          type: Office.MailboxEnums.LocationType.Room
+        }
+      ];
+
+      Office.context.mailbox.item.enhancedLocation.removeAsync(locations,
+      (result) => {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log(`Successfully removed locations ${JSON.stringify(locations)}`);
+        } else {
+          console.error(`Failed to remove locations. Error message: ${result.error.message}`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -320,7 +414,7 @@ methods:
       will be removed even if only one was specified in
       `locationIdentifiers`<!-- -->.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

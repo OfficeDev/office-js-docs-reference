@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.GroupShapeCollection
 summary: Represents the shape collection inside a shape group.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -47,7 +47,7 @@ methods:
     fullName: getCount()
     summary: Returns the number of shapes in the shape group.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -63,7 +63,7 @@ methods:
     fullName: getItem(key)
     summary: Gets a shape using its name or ID.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -83,7 +83,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a shape based on its position in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

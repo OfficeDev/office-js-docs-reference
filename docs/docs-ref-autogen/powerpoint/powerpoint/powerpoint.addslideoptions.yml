@@ -4,10 +4,39 @@ uid: powerpoint!PowerPoint.AddSlideOptions:interface
 package: powerpoint!
 fullName: PowerPoint.AddSlideOptions
 summary: Represents the available options when adding a new slide.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
+
+
+  const chosenMaster = (document.getElementById("master-id") as
+  HTMLInputElement).value;
+
+  const chosenLayout = (document.getElementById("layout-id") as
+  HTMLInputElement).value;
+
+
+  await PowerPoint.run(async function(context) {
+    // Create a new slide using an existing master slide and layout.
+    const newSlideOptions: PowerPoint.AddSlideOptions = {
+      slideMasterId: chosenMaster, /* An ID from `Presentation.slideMasters`. */
+      layoutId: chosenLayout /* An ID from `SlideMaster.layouts`. */
+    };
+    context.presentation.slides.add(newSlideOptions);
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -22,7 +51,7 @@ properties:
       not specified or if the specified index is out of bounds, the new slide
       will be added at the end of the presentation.
     remarks: >-
-      \[ [Api set: PowerPointApi BETA (PREVIEW
+      \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -45,7 +74,7 @@ properties:
       specified in the `slideMasterId` description). Otherwise, an error will be
       thrown.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -65,7 +94,7 @@ properties:
       be used. If there is no previous slide, then the presentation's first
       Slide Master will be used.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: word!
 fullName: Word.TableFieldSeparator
 summary: Specifies the character used to separate fields in a table.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,40 +14,32 @@ fields:
   - name: comma
     uid: word!Word.TableFieldSeparator.comma:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the comma.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comma"'
   - name: defaultListSeparator
     uid: word!Word.TableFieldSeparator.defaultListSeparator:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the default list separator.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DefaultListSeparator"'
   - name: paragraph
     uid: word!Word.TableFieldSeparator.paragraph:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the paragraph marker.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Paragraph"'
   - name: tab
     uid: word!Word.TableFieldSeparator.tab:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the tab.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Tab"'

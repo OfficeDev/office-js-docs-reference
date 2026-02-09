@@ -18,7 +18,7 @@ properties:
     fullName: bold
     summary: Specifies a value that indicates whether the comment text is bold.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -36,7 +36,7 @@ properties:
       All hyperlinks in the range are deleted when you set a new hyperlink on
       the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +51,7 @@ properties:
     fullName: isEmpty
     summary: Checks whether the range length is zero.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -66,7 +66,7 @@ properties:
     fullName: italic
     summary: Specifies a value that indicates whether the comment text is italicized.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -83,7 +83,7 @@ properties:
       Specifies a value that indicates whether the comment text has a
       strikethrough.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -98,7 +98,7 @@ properties:
     fullName: text
     summary: Gets the text of the comment range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -115,7 +115,7 @@ properties:
       Specifies a value that indicates the comment text's underline type. `none`
       if the comment text isn't underlined.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

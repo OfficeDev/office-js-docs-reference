@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
 summary: A collection of custom XML parts.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: The custom XML part''s ID.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: namespaceUri
     summary: 'For EACH ITEM in the collection: The custom XML part''s namespace URI.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

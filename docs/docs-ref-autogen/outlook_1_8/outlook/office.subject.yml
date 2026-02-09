@@ -7,7 +7,7 @@ summary: >-
   Provides methods to get and set the subject of an appointment or message in an
   Outlook add-in.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -35,7 +35,7 @@ methods:
       The `getAsync` method starts an asynchronous call to the Exchange server
       to get the subject of an appointment or message.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -84,8 +84,8 @@ methods:
 
       The `getAsync` method starts an asynchronous call to the Exchange server
       to get the subject of an appointment or message.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -98,6 +98,21 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.context.mailbox.item.subject.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          const subject = asyncResult.value;
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -130,8 +145,8 @@ methods:
       to set the subject of an appointment or message. Setting the subject
       overwrites the current subject, but leaves any prefixes, such as "Fwd:" or
       "Re:" in place.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -169,6 +184,21 @@ methods:
 
       - `DataExceedsMaximumSize`<!-- -->: The subject parameter is longer than
       255 characters.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.context.mailbox.item.subject.setAsync("New subject!", function
+      (asyncResult) {
+          if (asyncResult.status === "failed") {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -213,7 +243,7 @@ methods:
       overwrites the current subject, but leaves any prefixes, such as "Fwd:" or
       "Re:" in place.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

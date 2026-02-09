@@ -8,7 +8,7 @@ summary: >-
   [Word.CustomXmlSchema](xref:word!Word.CustomXmlSchema:class) objects attached
   to a data stream.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
       For EACH ITEM in the collection: Gets the location of the schema on a
       computer.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       For EACH ITEM in the collection: Gets the unique address identifier for
       the namespace of the `CustomXmlSchema` object.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

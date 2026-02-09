@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.Interfaces.PageLoadOptions
 summary: Represents the Page class.
 remarks: >-
-  \[ [Api set:
+  \[ [API set:
   1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
   \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: height
     summary: Returns the height of the page. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -51,7 +51,7 @@ properties:
     fullName: index
     summary: Index of the Page. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -67,7 +67,7 @@ properties:
     fullName: isBackground
     summary: Whether the page is a background page or not. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -83,7 +83,7 @@ properties:
     fullName: name
     summary: Page name. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -99,7 +99,7 @@ properties:
     fullName: view
     summary: Returns the view of the page.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -115,7 +115,7 @@ properties:
     fullName: width
     summary: Returns the width of the page. Read-only.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

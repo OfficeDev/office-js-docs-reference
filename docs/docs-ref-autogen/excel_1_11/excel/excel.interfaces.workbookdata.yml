@@ -18,7 +18,7 @@ properties:
     fullName: autoSave
     summary: Specifies if the workbook is in AutoSave mode.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: bindings
     summary: Represents a collection of bindings that are part of the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: calculationEngineVersion
     summary: Returns a number about the version of Excel Calculation Engine.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -66,7 +66,7 @@ properties:
       which they are attached. False if the charts track the index of the data
       points.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -81,7 +81,7 @@ properties:
     fullName: comments
     summary: Represents a collection of comments associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -97,7 +97,7 @@ properties:
     fullName: customXmlParts
     summary: Represents the collection of custom XML parts contained by this workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -115,7 +115,7 @@ properties:
       can set this property to `true` if you want to close a modified workbook
       without either saving it or being prompted to save it.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -130,7 +130,7 @@ properties:
     fullName: name
     summary: Gets the workbook name.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -147,7 +147,7 @@ properties:
       Represents a collection of workbook-scoped named items (named ranges and
       constants).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -162,7 +162,7 @@ properties:
     fullName: pivotTables
     summary: Represents a collection of PivotTables associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -177,7 +177,7 @@ properties:
     fullName: pivotTableStyles
     summary: Represents a collection of PivotTableStyles associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -193,7 +193,7 @@ properties:
     fullName: previouslySaved
     summary: Specifies if the workbook has ever been saved locally or online.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -208,7 +208,7 @@ properties:
     fullName: properties
     summary: Gets the workbook properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -223,7 +223,7 @@ properties:
     fullName: protection
     summary: Returns the protection object for a workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -238,7 +238,7 @@ properties:
     fullName: readOnly
     summary: Returns `true` if the workbook is open in read-only mode.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -253,7 +253,7 @@ properties:
     fullName: settings
     summary: Represents a collection of settings associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -268,7 +268,7 @@ properties:
     fullName: slicers
     summary: Represents a collection of slicers associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -284,7 +284,7 @@ properties:
     fullName: slicerStyles
     summary: Represents a collection of SlicerStyles associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -300,7 +300,7 @@ properties:
     fullName: styles
     summary: Represents a collection of styles associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -315,7 +315,7 @@ properties:
     fullName: tables
     summary: Represents a collection of tables associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -330,7 +330,7 @@ properties:
     fullName: tableStyles
     summary: Represents a collection of TableStyles associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -346,7 +346,7 @@ properties:
     fullName: timelineStyles
     summary: Represents a collection of TimelineStyles associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -365,7 +365,7 @@ properties:
       precision of the numbers as they're displayed. Data will permanently lose
       accuracy when switching this property from `false` to `true`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -380,7 +380,7 @@ properties:
     fullName: worksheets
     summary: Represents a collection of worksheets associated with the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

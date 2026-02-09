@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartLeaderLinesLoadOptions
 summary: Gets an object that represents the formatting of chart leader lines.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: format
     summary: Represents the formatting of leader lines of data labels in a series.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

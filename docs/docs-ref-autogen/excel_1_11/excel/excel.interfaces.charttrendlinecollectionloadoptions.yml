@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartTrendlineCollectionLoadOptions
 summary: Represents a collection of chart trendlines.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
       For EACH ITEM in the collection: Represents the number of periods that the
       trendline extends backward.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       For EACH ITEM in the collection: Represents the formatting of a chart
       trendline.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -75,7 +75,7 @@ properties:
       For EACH ITEM in the collection: Represents the number of periods that the
       trendline extends forward.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -94,7 +94,7 @@ properties:
       trendline. Can be set to a numeric value or an empty string (for automatic
       values). The returned value is always a number.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ properties:
       For EACH ITEM in the collection: Represents the label of a chart
       trendline.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -133,7 +133,7 @@ properties:
       trendline. Only applicable to trendlines with the type `MovingAverage`<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -151,7 +151,7 @@ properties:
       be set to a string value, a `null` value represents automatic values. The
       returned value is always a string
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -170,7 +170,7 @@ properties:
       trendline. Only applicable to trendlines with the type `Polynomial`<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -188,7 +188,7 @@ properties:
       For EACH ITEM in the collection: True if the equation for the trendline is
       displayed on the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -206,7 +206,7 @@ properties:
       For EACH ITEM in the collection: True if the r-squared value for the
       trendline is displayed on the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -221,7 +221,7 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: Represents the type of a chart trendline.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

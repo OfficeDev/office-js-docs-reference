@@ -4,9 +4,49 @@ uid: word!Word.Border:class
 package: word!
 fullName: Word.Border
 summary: Represents the `Border` object for text, a paragraph, or a table.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+
+  // Updates border properties (e.g., type, width, color) of the specified
+  style.
+
+  await Word.run(async (context) => {
+    const styleName = (document.getElementById("style-name") as HTMLInputElement).value;
+    if (styleName == "") {
+      console.warn("Enter a style name to update border properties.");
+      return;
+    }
+
+    const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
+    style.load();
+    await context.sync();
+
+    if (style.isNullObject) {
+      console.warn(`There's no existing style with the name '${styleName}'.`);
+    } else {
+      const borders: Word.BorderCollection = style.borders;
+      borders.load("items");
+      await context.sync();
+
+      borders.outsideBorderType = Word.BorderType.dashed;
+      borders.outsideBorderWidth = Word.BorderWidth.pt025;
+      borders.outsideBorderColor = "green";
+      console.log("Updated outside borders.");
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +60,7 @@ properties:
       Specifies the color for the border. Color is specified in ‘\#RRGGBB’
       format or by using the color name.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +90,7 @@ properties:
     fullName: location
     summary: Gets the location of the border.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -71,7 +111,7 @@ properties:
     fullName: type
     summary: Specifies the border type for the border.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +139,7 @@ properties:
     fullName: visible
     summary: Specifies whether the border is visible.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -114,7 +154,7 @@ properties:
     fullName: width
     summary: Specifies the width for the border.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

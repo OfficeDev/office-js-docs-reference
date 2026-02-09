@@ -4,10 +4,40 @@ uid: powerpoint!PowerPoint.ShapeLineStyle:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeLineStyle
 summary: Specifies the style for a line.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+  // Changes the dash style of every line in the slide.
+
+  await PowerPoint.run(async (context) => {
+    // Get the type of shape for every shape in the collection.
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+    shapes.load("type");
+    await context.sync();
+
+    // Change the dash style for shapes of the type `line`.
+    shapes.items.forEach((shape) => {
+      if (shape.type === PowerPoint.ShapeType.line) {
+        shape.lineFormat.style = PowerPoint.ShapeLineStyle.thickThin;
+        shape.lineFormat.dashStyle = PowerPoint.ShapeLineDashStyle.dashDot;
+      }
+    });
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -15,24 +45,18 @@ fields:
   - name: single
     uid: powerpoint!PowerPoint.ShapeLineStyle.single:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Single line.
 
-
-      * \[ [Api set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"Single"'
   - name: thickBetweenThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickBetweenThin:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Thick line with a thin line on each side.
 
-
-      * \[ [Api set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickThin:member
@@ -43,9 +67,7 @@ fields:
       the thin line.
 
 
-      * \[ [Api set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"ThickThin"'
   - name: thinThick
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThick:member
@@ -56,18 +78,13 @@ fields:
       the thin line.
 
 
-      * \[ [Api set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"ThinThick"'
   - name: thinThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThin:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Two thin lines.
 
-
-      * \[ [Api set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"ThinThin"'

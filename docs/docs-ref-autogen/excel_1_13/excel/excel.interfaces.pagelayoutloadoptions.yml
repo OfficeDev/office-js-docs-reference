@@ -8,7 +8,7 @@ summary: >-
   printer-specific implementation. These settings include margins, orientation,
   page numbering, title rows, and print area.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
     fullName: blackAndWhite
     summary: The worksheet's black and white print option.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +52,7 @@ properties:
     fullName: bottomMargin
     summary: The worksheet's bottom page margin to use for printing in points.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
       The worksheet's center horizontally flag. This flag determines whether the
       worksheet will be centered horizontally when it's printed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -86,7 +86,7 @@ properties:
       The worksheet's center vertically flag. This flag determines whether the
       worksheet will be centered vertically when it's printed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -103,7 +103,7 @@ properties:
       The worksheet's draft mode option. If `true`<!-- -->, the sheet will be
       printed without graphics.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -120,7 +120,7 @@ properties:
       The worksheet's first page number to print. A `null` value represents
       "auto" page numbering.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -135,7 +135,7 @@ properties:
     fullName: footerMargin
     summary: The worksheet's footer margin, in points, for use when printing.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -150,7 +150,7 @@ properties:
     fullName: headerMargin
     summary: The worksheet's header margin, in points, for use when printing.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -165,7 +165,7 @@ properties:
     fullName: headersFooters
     summary: Header and footer configuration for the worksheet.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -182,7 +182,7 @@ properties:
     fullName: leftMargin
     summary: The worksheet's left margin, in points, for use when printing.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -197,7 +197,7 @@ properties:
     fullName: orientation
     summary: The worksheet's orientation of the page.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -212,7 +212,7 @@ properties:
     fullName: paperSize
     summary: The worksheet's paper size of the page.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -227,7 +227,7 @@ properties:
     fullName: printComments
     summary: Specifies if the worksheet's comments should be displayed when printing.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -242,7 +242,7 @@ properties:
     fullName: printErrors
     summary: The worksheet's print errors option.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -257,7 +257,7 @@ properties:
     fullName: printGridlines
     summary: Specifies if the worksheet's gridlines will be printed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -272,7 +272,7 @@ properties:
     fullName: printHeadings
     summary: Specifies if the worksheet's headings will be printed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -289,7 +289,7 @@ properties:
       The worksheet's page print order option. This specifies the order to use
       for processing the page number printed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -304,7 +304,7 @@ properties:
     fullName: rightMargin
     summary: The worksheet's right margin, in points, for use when printing.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -319,7 +319,7 @@ properties:
     fullName: topMargin
     summary: The worksheet's top margin, in points, for use when printing.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -337,7 +337,7 @@ properties:
       must be set as a JSON object (use `x.zoom = {...}` instead of
       `x.zoom.scale = ...`<!-- -->).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

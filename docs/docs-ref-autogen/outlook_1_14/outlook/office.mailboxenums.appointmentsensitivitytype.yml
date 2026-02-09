@@ -6,8 +6,8 @@ fullName: Office.MailboxEnums.AppointmentSensitivityType
 summary: >-
   Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface)
   of an appointment.
-remarks: >-
-  \[ [Api set: Mailbox
+remarks: >
+  \[ [API set: Mailbox
   1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
   \]
 
@@ -15,6 +15,29 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
+
+
+  Office.context.mailbox.item.sensitivity.setAsync(
+    Office.MailboxEnums.AppointmentSensitivityType.Private,
+    function callback(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+      } else {
+        console.log("Successfully set appointment sensitivity.");
+      }
+    }
+  );
+
+  ```
 
 isPreview: false
 isDeprecated: false

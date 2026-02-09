@@ -4,7 +4,7 @@ uid: outlook!Office.MailboxEnums.OpenLocation:enum
 package: outlook!
 fullName: Office.MailboxEnums.OpenLocation
 summary: Specifies the location from which an add-in wants to access data.
-remarks: >-
+remarks: >
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
   -->**: Compose, Read
@@ -16,6 +16,26 @@ remarks: >-
   on mobile
   devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
   -->.
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Checks if the add-in can access data from the device's photo library.
+
+  const isOpenFromPhotoLibraryAllowed =
+  Office.context.mailbox.getIsOpenFromLocationAllowed(Office.MailboxEnums.OpenLocation.PhotoLibrary);
+
+  if (isOpenFromPhotoLibraryAllowed) {
+      console.log("Access to the photo library is allowed.");
+      // Do something.
+  } else {
+      console.log("Access to the photo library isn't allowed.");
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false

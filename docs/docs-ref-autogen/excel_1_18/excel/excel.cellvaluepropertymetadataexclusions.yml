@@ -7,7 +7,7 @@ summary: >-
   Represents the exclusion of a property in `EntityCellValue.properties` from
   features of Excel.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       auto complete. False and undefined represent the default behavior of
       including the property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -42,7 +42,7 @@ properties:
       compare cell values during recalc. False and undefined represent the
       default behavior of including the property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -61,7 +61,7 @@ properties:
       card view. False and undefined represent the default behavior of including
       the property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -80,7 +80,7 @@ properties:
       can be accessed via the FIELDVALUE function. False and undefined represent
       the default behavior of including the property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

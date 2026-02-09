@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.WorkbookLinksRefreshMode
 summary: Represents the refresh mode of the workbook links.
 remarks: >-
-  \[ [Api set: ExcelApiOnline
+  \[ [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -19,16 +19,13 @@ fields:
       application.
 
 
-      * \[ [Api set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiOnline 1.1\]
     value: '"Automatic"'
   - name: manual
     uid: excel!Excel.WorkbookLinksRefreshMode.manual:member
     package: excel!
-    summary: >-
+    summary: |-
       The workbook links are updated manually.
 
-
-      * \[ [Api set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiOnline 1.1\]
     value: '"Manual"'

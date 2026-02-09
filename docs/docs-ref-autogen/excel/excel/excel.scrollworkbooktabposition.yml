@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ScrollWorkbookTabPosition
 summary: Enum representing the scroll position for workbook tab navigation.
 remarks: >-
-  \[ [Api set: ExcelApiDesktop
+  \[ [API set: ExcelApiDesktop
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -14,20 +14,16 @@ fields:
   - name: first
     uid: excel!Excel.ScrollWorkbookTabPosition.first:member
     package: excel!
-    summary: >-
+    summary: |-
       Scrolls the tab menu to show the first worksheet tab.
 
-
-      * \[ [Api set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"First"'
   - name: last
     uid: excel!Excel.ScrollWorkbookTabPosition.last:member
     package: excel!
-    summary: >-
+    summary: |-
       Scrolls the tab menu to show the last worksheet tab.
 
-
-      * \[ [Api set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"Last"'

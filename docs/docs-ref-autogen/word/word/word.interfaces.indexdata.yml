@@ -18,7 +18,7 @@ properties:
       Gets a value that represents how Microsoft Word classifies the first
       character of entries in the index. See `IndexFilter` for available values.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -42,7 +42,7 @@ properties:
       field](https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -63,7 +63,7 @@ properties:
       Gets a `LanguageId` value that represents the sorting language to use for
       the index.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -175,7 +175,7 @@ properties:
     fullName: numberOfColumns
     summary: Gets the number of columns for each page of the index.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -192,7 +192,7 @@ properties:
       Returns a `Range` object that represents the portion of the document that
       is contained within the index.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -207,7 +207,7 @@ properties:
     fullName: rightAlignPageNumbers
     summary: Specifies if page numbers are aligned with the right margin in the index.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -225,7 +225,7 @@ properties:
       example, words that begin with "À" are under one heading and words that
       begin with "A" are under another).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -240,7 +240,7 @@ properties:
     fullName: sortBy
     summary: Specifies the sorting criteria for the index.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -257,7 +257,7 @@ properties:
       Specifies the leader character between entries in the index and their
       associated page numbers.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -276,7 +276,7 @@ properties:
     fullName: type
     summary: Gets the index type.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

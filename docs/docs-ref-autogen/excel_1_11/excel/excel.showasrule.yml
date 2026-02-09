@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ShowAsRule
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       The PivotField to base the `ShowAs` calculation on, if applicable
       according to the `ShowAsCalculation` type, else `null`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -36,9 +36,46 @@ properties:
     summary: >-
       The item to base the `ShowAs` calculation on, if applicable according to
       the `ShowAsCalculation` type, else `null`<!-- -->.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
+
+
+      await Excel.run(async (context) => {
+          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+          const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");
+          const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
+
+          farmDataHierarchy.load("showAs");
+          wholesaleDataHierarchy.load("showAs");
+          await context.sync();
+
+          // Show the difference between crate sales of the "A Farms" and the other farms.
+          // This difference is both aggregated and shown for individual fruit types (where applicable).
+          let farmShowAs = farmDataHierarchy.showAs;
+          farmShowAs.calculation = Excel.ShowAsCalculation.differenceFrom;
+          farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm");
+          farmShowAs.baseItem = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm").items.getItem("A Farms");
+          farmDataHierarchy.showAs = farmShowAs;
+
+          let wholesaleShowAs = wholesaleDataHierarchy.showAs;
+          wholesaleShowAs.calculation = Excel.ShowAsCalculation.differenceFrom;
+          wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm");
+          wholesaleShowAs.baseItem = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm").items.getItem("A Farms");
+          wholesaleDataHierarchy.showAs = wholesaleShowAs;
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +91,7 @@ properties:
       The `ShowAs` calculation to use for the PivotField. See
       `Excel.ShowAsCalculation` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

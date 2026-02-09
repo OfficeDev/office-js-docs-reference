@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.TableColumnCollection
 summary: Represents a collection of table columns.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -48,7 +48,7 @@ methods:
     fullName: add(index, count)
     summary: Adds one or more columns to the table.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -81,7 +81,7 @@ methods:
     fullName: deleteColumns(columns)
     summary: Deletes the specified columns from the collection.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -104,7 +104,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of columns in the collection.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -121,7 +121,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets the column using its zero-based index in the collection.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.PrintOrder
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -19,8 +19,7 @@ fields:
       right.
 
 
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"DownThenOver"'
   - name: overThenDown
     uid: excel!Excel.PrintOrder.overThenDown:member
@@ -30,6 +29,5 @@ fields:
       rows.
 
 
-      * \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"OverThenDown"'

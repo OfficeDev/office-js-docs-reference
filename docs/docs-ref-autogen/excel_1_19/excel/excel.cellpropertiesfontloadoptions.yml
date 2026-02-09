@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CellPropertiesFontLoadOptions
 summary: Specifies which properties to load on the `format.font` object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: bold
     summary: Specifies whether to load the `bold` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -32,9 +32,45 @@ properties:
     package: excel!
     fullName: color
     summary: Specifies whether to load the `color` property.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+
+      await Excel.run(async (context) => {
+          const cell = context.workbook.getActiveCell();
+
+          // Define the cell properties to get by setting the matching LoadOptions to true.
+          const propertiesToGet = cell.getCellProperties({
+              address: true,
+              format: {
+                  fill: {
+                      color: true
+                  },
+                  font: {
+                      color: true
+                  }
+              },
+              style: true
+          });
+
+          // Sync to get the data from the workbook.
+          await context.sync();
+          const cellProperties = propertiesToGet.value[0][0];
+          console.log(
+              `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -48,7 +84,7 @@ properties:
     fullName: italic
     summary: Specifies whether to load the `italic` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -63,7 +99,7 @@ properties:
     fullName: name
     summary: Specifies whether to load the `name` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +114,7 @@ properties:
     fullName: size
     summary: Specifies whether to load the `size` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -93,7 +129,7 @@ properties:
     fullName: strikethrough
     summary: Specifies whether to load the `strikethrough` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -108,7 +144,7 @@ properties:
     fullName: subscript
     summary: Specifies whether to load the `subscript` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -123,7 +159,7 @@ properties:
     fullName: superscript
     summary: Specifies whether to load the `superscript` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -138,7 +174,7 @@ properties:
     fullName: tintAndShade
     summary: Specifies whether to load the `tintAndShade` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -153,7 +189,7 @@ properties:
     fullName: underline
     summary: Specifies whether to load the `underline` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

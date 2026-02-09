@@ -31,7 +31,7 @@ methods:
     package: office!
     fullName: addFromNamedItemAsync(itemName, bindingType, options, callback)
     summary: Creates a binding against a named object in the document.
-    remarks: >-
+    remarks: >
       **Requirement sets**:
 
 
@@ -78,6 +78,86 @@ methods:
       with the same Title property value (name), and you try to bind to one
       these content controls with this method (by specifying its name as the
       itemName parameter), the operation will fail.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example adds a binding to the myRange named item in Excel
+      as a "matrix" binding,
+
+      // and assigns the binding's id as myMatrix.
+
+      function bindNamedItem() {
+          Office.context.document.bindings.addFromNamedItemAsync(
+              "myRange", "matrix", {id:'myMatrix'}, function (result) {
+              if (result.status == 'succeeded'){
+                  write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
+                  }
+              else
+                  write('Error: ' + result.error.message);
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+
+      // The following example adds a binding to the Table1 named item in Excel
+      as a "table" binding,
+
+      // and assigns the binding's id as myTable.
+
+      function bindNamedItem() {
+          Office.context.document.bindings.addFromNamedItemAsync(
+              "Table1", "table", {id:'myTable'}, function (result) {
+              if (result.status == 'succeeded'){
+                  write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
+                  }
+              else
+                  write('Error: ' + result.error.message);
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+
+      // The following example creates a text binding in Word to a rich text
+      content control named "FirstName",
+
+      // assigns the id "firstName", and then displays that information.
+
+      function bindContentControl() {
+          Office.context.document.bindings.addFromNamedItemAsync('FirstName', 
+              Office.BindingType.Text, {id:'firstName'},
+              function (result) {
+                  if (result.status === Office.AsyncResultStatus.Succeeded) {
+                      write('Control bound. Binding.id: '
+                          + result.value.id + ' Binding.type: ' + result.value.type);
+                  } else {
+                      write('Error:', result.error.message);
+                  }
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -199,7 +279,7 @@ methods:
     summary: >-
       Create a binding by prompting the user to make a selection on the
       document.
-    remarks: >-
+    remarks: >
       **Requirement set**: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
@@ -207,6 +287,29 @@ methods:
       Adds a binding object of the specified type to the Bindings collection,
       which will be identified with the supplied ID. The method fails if the
       specified selection cannot be bound.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function addBindingFromPrompt() {
+          Office.context.document.bindings.addFromPromptAsync(
+              Office.BindingType.Text, 
+              { id: 'MyBinding', promptText: 'Select text to bind to.' },
+              function (asyncResult) {
+                  write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -287,7 +390,7 @@ methods:
     package: office!
     fullName: addFromSelectionAsync(bindingType, options, callback)
     summary: Create a binding based on the user's current selection.
-    remarks: >-
+    remarks: >
       **Requirement sets**:
 
 
@@ -314,6 +417,28 @@ methods:
       the bindingType, call the Bindings.releaseByIdAsync method first to
       release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function addBindingFromSelection() {
+          Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' }, 
+              function (asyncResult) {
+              write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+              }
+          );
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -456,7 +581,7 @@ methods:
     package: office!
     fullName: getAllAsync(callback)
     summary: Gets all bindings that were previously created.
-    remarks: >-
+    remarks: >
       **Requirement sets**:
 
 
@@ -470,6 +595,30 @@ methods:
 
       -
       [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function displayAllBindingNames() {
+          Office.context.document.bindings.getAllAsync(function (asyncResult) {
+              let bindingString = '';
+              for (let i in asyncResult.value) {
+                  bindingString += asyncResult.value[i].id + '\n';
+              }
+              write('Existing bindings: ' + bindingString);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -545,7 +694,7 @@ methods:
     package: office!
     fullName: getByIdAsync(id, callback)
     summary: Retrieves a binding based on its Name
-    remarks: >-
+    remarks: >
       **Requirement sets**:
 
 
@@ -562,6 +711,26 @@ methods:
 
 
       Fails if the specified ID does not exist.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function displayBindingType() {
+          Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
+              write('Retrieved binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -643,7 +812,7 @@ methods:
     package: office!
     fullName: releaseByIdAsync(id, callback)
     summary: Removes the binding from the document
-    remarks: >-
+    remarks: >
       **Requirement sets**:
 
 
@@ -660,6 +829,25 @@ methods:
 
 
       Fails if the specified ID does not exist.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      Office.context.document.bindings.releaseByIdAsync("MyBinding", function
+      (asyncResult) { 
+          write("Released MyBinding!"); 
+      }); 
+
+      // Function that writes to a div with id='message' on the page. 
+
+      function write(message){ 
+          document.getElementById('message').innerText += message;  
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -7,7 +7,7 @@ summary: >-
   Provides methods to get and set the location of a meeting in an Outlook
   add-in.
 remarks: >-
-  \[ [Api set: Mailbox
+  \[ [API set: Mailbox
   1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
@@ -44,8 +44,8 @@ methods:
       The `getAsync` method starts an asynchronous call to the Exchange server
       to get the location of an appointment. The location of the appointment is
       provided as a string in the `asyncResult.value` property.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -58,6 +58,25 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      const userContext = { value : 1 };
+
+      Office.context.mailbox.item.location.getAsync( { context: userContext},
+      callback);
+
+
+      function callback(asyncResult) {
+          const context = asyncResult.context;
+          const location = asyncResult.value;
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -94,8 +113,8 @@ methods:
       The `getAsync` method starts an asynchronous call to the Exchange server
       to get the location of an appointment. The location of the appointment is
       provided as a string in the `asyncResult.value` property.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -108,6 +127,26 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
+
+      Office.context.mailbox.item.location.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Appointment location: ${result.value}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -138,8 +177,8 @@ methods:
       The `setAsync` method starts an asynchronous call to the Exchange server
       to set the location of an appointment. Setting the location of an
       appointment overwrites the current location.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -164,6 +203,28 @@ methods:
 
       - DataExceedsMaximumSize: The location parameter is longer than 255
       characters.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
+
+      const location = "my office";
+
+      Office.context.mailbox.item.location.setAsync(location, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set location to ${location}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -207,7 +268,7 @@ methods:
       to set the location of an appointment. Setting the location of an
       appointment overwrites the current location.
     remarks: >-
-      \[ [Api set: Mailbox
+      \[ [API set: Mailbox
       1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 

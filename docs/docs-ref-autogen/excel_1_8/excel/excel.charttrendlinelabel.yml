@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartTrendlineLabel
 summary: This object represents the attributes for a chart trendline label object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       Specifies if the trendline label automatically generates appropriate text
       based on context.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: format
     summary: The format of the chart trendline label.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +67,7 @@ properties:
       String value that represents the formula of the chart trendline label
       using A1-style notation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -84,7 +84,7 @@ properties:
       Returns the height, in points, of the chart trendline label. Value is
       `null` if the chart trendline label is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -102,7 +102,7 @@ properties:
       `Excel.ChartTextHorizontalAlignment` for details. This property is valid
       only when `TextOrientation` of a trendline label is -90, 90, or 180.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -124,7 +124,7 @@ properties:
       trendline label to the left edge of the chart area. Value is `null` if the
       chart trendline label is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -139,7 +139,7 @@ properties:
     fullName: numberFormat
     summary: String value that represents the format code for the trendline label.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -154,7 +154,7 @@ properties:
     fullName: text
     summary: String representing the text of the trendline label on a chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -172,7 +172,7 @@ properties:
       label. The value should either be an integer from -90 to 90 or the integer
       180 for vertically-oriented text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -190,7 +190,7 @@ properties:
       trendline label to the top of the chart area. Value is `null` if the chart
       trendline label is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -208,7 +208,7 @@ properties:
       `Excel.ChartTextVerticalAlignment` for details. This property is valid
       only when `TextOrientation` of a trendline label is 0.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -229,7 +229,7 @@ properties:
       Returns the width, in points, of the chart trendline label. Value is
       `null` if the chart trendline label is not visible.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

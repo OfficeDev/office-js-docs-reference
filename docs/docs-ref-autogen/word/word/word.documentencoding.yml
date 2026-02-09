@@ -5,7 +5,7 @@ package: word!
 fullName: Word.DocumentEncoding
 summary: Specifies the document encoding types.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,1184 +14,948 @@ fields:
   - name: arabic
     uid: word!Word.DocumentEncoding.arabic:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Arabic"'
   - name: arabicAsmo
     uid: word!Word.DocumentEncoding.arabicAsmo:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic ASMO encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ArabicAsmo"'
   - name: arabicAutoDetect
     uid: word!Word.DocumentEncoding.arabicAutoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ArabicAutoDetect"'
   - name: arabicTransparentAsmo
     uid: word!Word.DocumentEncoding.arabicTransparentAsmo:member
     package: word!
-    summary: >-
+    summary: |-
       Arabic Transparent ASMO encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ArabicTransparentAsmo"'
   - name: autoDetect
     uid: word!Word.DocumentEncoding.autoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AutoDetect"'
   - name: baltic
     uid: word!Word.DocumentEncoding.baltic:member
     package: word!
-    summary: >-
+    summary: |-
       Baltic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Baltic"'
   - name: centralEuropean
     uid: word!Word.DocumentEncoding.centralEuropean:member
     package: word!
-    summary: >-
+    summary: |-
       Central European encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CentralEuropean"'
   - name: cyrillic
     uid: word!Word.DocumentEncoding.cyrillic:member
     package: word!
-    summary: >-
+    summary: |-
       Cyrillic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Cyrillic"'
   - name: cyrillicAutoDetect
     uid: word!Word.DocumentEncoding.cyrillicAutoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Cyrillic auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CyrillicAutoDetect"'
   - name: ebcdicArabic
     uid: word!Word.DocumentEncoding.ebcdicArabic:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Arabic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicArabic"'
   - name: ebcdicDenmarkNorway
     uid: word!Word.DocumentEncoding.ebcdicDenmarkNorway:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Denmark-Norway encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicDenmarkNorway"'
   - name: ebcdicFinlandSweden
     uid: word!Word.DocumentEncoding.ebcdicFinlandSweden:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Finland-Sweden encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicFinlandSweden"'
   - name: ebcdicFrance
     uid: word!Word.DocumentEncoding.ebcdicFrance:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC France encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicFrance"'
   - name: ebcdicGermany
     uid: word!Word.DocumentEncoding.ebcdicGermany:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Germany encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicGermany"'
   - name: ebcdicGreek
     uid: word!Word.DocumentEncoding.ebcdicGreek:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Greek encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicGreek"'
   - name: ebcdicGreekModern
     uid: word!Word.DocumentEncoding.ebcdicGreekModern:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Greek Modern encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicGreekModern"'
   - name: ebcdicHebrew
     uid: word!Word.DocumentEncoding.ebcdicHebrew:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Hebrew encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicHebrew"'
   - name: ebcdicIcelandic
     uid: word!Word.DocumentEncoding.ebcdicIcelandic:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Icelandic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicIcelandic"'
   - name: ebcdicInternational
     uid: word!Word.DocumentEncoding.ebcdicInternational:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC International encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicInternational"'
   - name: ebcdicItaly
     uid: word!Word.DocumentEncoding.ebcdicItaly:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Italy encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicItaly"'
   - name: ebcdicJapaneseKatakanaExtended
     uid: word!Word.DocumentEncoding.ebcdicJapaneseKatakanaExtended:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Japanese Katakana Extended encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicJapaneseKatakanaExtended"'
   - name: ebcdicJapaneseKatakanaExtendedAndJapanese
     uid: >-
       word!Word.DocumentEncoding.ebcdicJapaneseKatakanaExtendedAndJapanese:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Japanese Katakana Extended and Japanese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicJapaneseKatakanaExtendedAndJapanese"'
   - name: ebcdicJapaneseLatinExtendedAndJapanese
     uid: word!Word.DocumentEncoding.ebcdicJapaneseLatinExtendedAndJapanese:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Japanese Latin Extended and Japanese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicJapaneseLatinExtendedAndJapanese"'
   - name: ebcdicKoreanExtended
     uid: word!Word.DocumentEncoding.ebcdicKoreanExtended:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Korean Extended encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicKoreanExtended"'
   - name: ebcdicKoreanExtendedAndKorean
     uid: word!Word.DocumentEncoding.ebcdicKoreanExtendedAndKorean:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Korean Extended and Korean encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicKoreanExtendedAndKorean"'
   - name: ebcdicLatinAmericaSpain
     uid: word!Word.DocumentEncoding.ebcdicLatinAmericaSpain:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Latin America-Spain encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicLatinAmericaSpain"'
   - name: ebcdicMultilingualRoeceLatin2
     uid: word!Word.DocumentEncoding.ebcdicMultilingualRoeceLatin2:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Multilingual ROECE Latin2 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicMultilingualRoeceLatin2"'
   - name: ebcdicRussian
     uid: word!Word.DocumentEncoding.ebcdicRussian:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Russian encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicRussian"'
   - name: ebcdicSerbianBulgarian
     uid: word!Word.DocumentEncoding.ebcdicSerbianBulgarian:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Serbian-Bulgarian encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicSerbianBulgarian"'
   - name: ebcdicSimplifiedChineseExtendedAndSimplifiedChinese
     uid: >-
       word!Word.DocumentEncoding.ebcdicSimplifiedChineseExtendedAndSimplifiedChinese:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Simplified Chinese Extended and Simplified Chinese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicSimplifiedChineseExtendedAndSimplifiedChinese"'
   - name: ebcdicThai
     uid: word!Word.DocumentEncoding.ebcdicThai:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Thai encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicThai"'
   - name: ebcdicTurkish
     uid: word!Word.DocumentEncoding.ebcdicTurkish:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Turkish encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicTurkish"'
   - name: ebcdicTurkishLatin5
     uid: word!Word.DocumentEncoding.ebcdicTurkishLatin5:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC Turkish Latin5 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicTurkishLatin5"'
   - name: ebcdicUnitedKingdom
     uid: word!Word.DocumentEncoding.ebcdicUnitedKingdom:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC United Kingdom encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicUnitedKingdom"'
   - name: ebcdicUsCanada
     uid: word!Word.DocumentEncoding.ebcdicUsCanada:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC US-Canada encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicUsCanada"'
   - name: ebcdicUsCanadaAndJapanese
     uid: word!Word.DocumentEncoding.ebcdicUsCanadaAndJapanese:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC US-Canada and Japanese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicUsCanadaAndJapanese"'
   - name: ebcdicUsCanadaAndTraditionalChinese
     uid: word!Word.DocumentEncoding.ebcdicUsCanadaAndTraditionalChinese:member
     package: word!
-    summary: >-
+    summary: |-
       EBCDIC US-Canada and Traditional Chinese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EbcdicUsCanadaAndTraditionalChinese"'
   - name: eucChineseSimplifiedChinese
     uid: word!Word.DocumentEncoding.eucChineseSimplifiedChinese:member
     package: word!
-    summary: >-
+    summary: |-
       EUC Chinese Simplified Chinese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EucChineseSimplifiedChinese"'
   - name: eucJapanese
     uid: word!Word.DocumentEncoding.eucJapanese:member
     package: word!
-    summary: >-
+    summary: |-
       EUC Japanese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EucJapanese"'
   - name: eucKorean
     uid: word!Word.DocumentEncoding.eucKorean:member
     package: word!
-    summary: >-
+    summary: |-
       EUC Korean encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EucKorean"'
   - name: eucTaiwaneseTraditionalChinese
     uid: word!Word.DocumentEncoding.eucTaiwaneseTraditionalChinese:member
     package: word!
-    summary: >-
+    summary: |-
       EUC Taiwanese Traditional Chinese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"EucTaiwaneseTraditionalChinese"'
   - name: europa3
     uid: word!Word.DocumentEncoding.europa3:member
     package: word!
-    summary: >-
+    summary: |-
       Europa3 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Europa3"'
   - name: extAlphaLowercase
     uid: word!Word.DocumentEncoding.extAlphaLowercase:member
     package: word!
-    summary: >-
+    summary: |-
       Ext Alpha Lowercase encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ExtAlphaLowercase"'
   - name: greek
     uid: word!Word.DocumentEncoding.greek:member
     package: word!
-    summary: >-
+    summary: |-
       Greek encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Greek"'
   - name: greekAutoDetect
     uid: word!Word.DocumentEncoding.greekAutoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Greek auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"GreekAutoDetect"'
   - name: hebrew
     uid: word!Word.DocumentEncoding.hebrew:member
     package: word!
-    summary: >-
+    summary: |-
       Hebrew encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Hebrew"'
   - name: hzGbSimplifiedChinese
     uid: word!Word.DocumentEncoding.hzGbSimplifiedChinese:member
     package: word!
-    summary: >-
+    summary: |-
       HZ GB Simplified Chinese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"HzGbSimplifiedChinese"'
   - name: ia5German
     uid: word!Word.DocumentEncoding.ia5German:member
     package: word!
-    summary: >-
+    summary: |-
       IA5 German encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ia5German"'
   - name: ia5Irv
     uid: word!Word.DocumentEncoding.ia5Irv:member
     package: word!
-    summary: >-
+    summary: |-
       IA5 IRV encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ia5Irv"'
   - name: ia5Norwegian
     uid: word!Word.DocumentEncoding.ia5Norwegian:member
     package: word!
-    summary: >-
+    summary: |-
       IA5 Norwegian encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ia5Norwegian"'
   - name: ia5Swedish
     uid: word!Word.DocumentEncoding.ia5Swedish:member
     package: word!
-    summary: >-
+    summary: |-
       IA5 Swedish encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ia5Swedish"'
   - name: isciiAssamese
     uid: word!Word.DocumentEncoding.isciiAssamese:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Assamese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiAssamese"'
   - name: isciiBengali
     uid: word!Word.DocumentEncoding.isciiBengali:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Bengali encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiBengali"'
   - name: isciiDevanagari
     uid: word!Word.DocumentEncoding.isciiDevanagari:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Devanagari encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiDevanagari"'
   - name: isciiGujarati
     uid: word!Word.DocumentEncoding.isciiGujarati:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Gujarati encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiGujarati"'
   - name: isciiKannada
     uid: word!Word.DocumentEncoding.isciiKannada:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Kannada encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiKannada"'
   - name: isciiMalayalam
     uid: word!Word.DocumentEncoding.isciiMalayalam:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Malayalam encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiMalayalam"'
   - name: isciiOriya
     uid: word!Word.DocumentEncoding.isciiOriya:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Oriya encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiOriya"'
   - name: isciiPunjabi
     uid: word!Word.DocumentEncoding.isciiPunjabi:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Punjabi encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiPunjabi"'
   - name: isciiTamil
     uid: word!Word.DocumentEncoding.isciiTamil:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Tamil encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiTamil"'
   - name: isciiTelugu
     uid: word!Word.DocumentEncoding.isciiTelugu:member
     package: word!
-    summary: >-
+    summary: |-
       ISCII Telugu encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"IsciiTelugu"'
   - name: iso2022CnSimplifiedChinese
     uid: word!Word.DocumentEncoding.iso2022CnSimplifiedChinese:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 2022-CN Simplified Chinese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso2022CnSimplifiedChinese"'
   - name: iso2022CnTraditionalChinese
     uid: word!Word.DocumentEncoding.iso2022CnTraditionalChinese:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 2022-CN Traditional Chinese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso2022CnTraditionalChinese"'
   - name: iso2022JpJisX02011989
     uid: word!Word.DocumentEncoding.iso2022JpJisX02011989:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 2022-JP JIS X 0201-1989 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso2022JpJisX02011989"'
   - name: iso2022JpJisX02021984
     uid: word!Word.DocumentEncoding.iso2022JpJisX02021984:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 2022-JP JIS X 0202-1984 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso2022JpJisX02021984"'
   - name: iso2022JpNoHalfwidthKatakana
     uid: word!Word.DocumentEncoding.iso2022JpNoHalfwidthKatakana:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 2022-JP no halfwidth katakana encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso2022JpNoHalfwidthKatakana"'
   - name: iso2022Kr
     uid: word!Word.DocumentEncoding.iso2022Kr:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 2022-KR encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso2022Kr"'
   - name: iso6937NonSpacingAccent
     uid: word!Word.DocumentEncoding.iso6937NonSpacingAccent:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 6937 Non-Spacing Accent encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso6937NonSpacingAccent"'
   - name: iso885915Latin9
     uid: word!Word.DocumentEncoding.iso885915Latin9:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-15 Latin9 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso885915Latin9"'
   - name: iso88591Latin1
     uid: word!Word.DocumentEncoding.iso88591Latin1:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-1 Latin1 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88591Latin1"'
   - name: iso88592CentralEurope
     uid: word!Word.DocumentEncoding.iso88592CentralEurope:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-2 Central Europe encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88592CentralEurope"'
   - name: iso88593Latin3
     uid: word!Word.DocumentEncoding.iso88593Latin3:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-3 Latin3 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88593Latin3"'
   - name: iso88594Baltic
     uid: word!Word.DocumentEncoding.iso88594Baltic:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-4 Baltic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88594Baltic"'
   - name: iso88595Cyrillic
     uid: word!Word.DocumentEncoding.iso88595Cyrillic:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-5 Cyrillic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88595Cyrillic"'
   - name: iso88596Arabic
     uid: word!Word.DocumentEncoding.iso88596Arabic:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-6 Arabic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88596Arabic"'
   - name: iso88597Greek
     uid: word!Word.DocumentEncoding.iso88597Greek:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-7 Greek encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88597Greek"'
   - name: iso88598Hebrew
     uid: word!Word.DocumentEncoding.iso88598Hebrew:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-8 Hebrew encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88598Hebrew"'
   - name: iso88598HebrewLogical
     uid: word!Word.DocumentEncoding.iso88598HebrewLogical:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-8 Hebrew logical encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88598HebrewLogical"'
   - name: iso88599Turkish
     uid: word!Word.DocumentEncoding.iso88599Turkish:member
     package: word!
-    summary: >-
+    summary: |-
       ISO 8859-9 Turkish encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Iso88599Turkish"'
   - name: japaneseAutoDetect
     uid: word!Word.DocumentEncoding.japaneseAutoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Japanese auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"JapaneseAutoDetect"'
   - name: japaneseShiftJis
     uid: word!Word.DocumentEncoding.japaneseShiftJis:member
     package: word!
-    summary: >-
+    summary: |-
       Japanese Shift Japanese Industrial Standards (Shift JIS) encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"JapaneseShiftJis"'
   - name: koi8R
     uid: word!Word.DocumentEncoding.koi8R:member
     package: word!
-    summary: >-
+    summary: |-
       KOI8-R encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Koi8R"'
   - name: koi8U
     uid: word!Word.DocumentEncoding.koi8U:member
     package: word!
-    summary: >-
+    summary: |-
       KOI8-U encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Koi8U"'
   - name: korean
     uid: word!Word.DocumentEncoding.korean:member
     package: word!
-    summary: >-
+    summary: |-
       Korean encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Korean"'
   - name: koreanAutoDetect
     uid: word!Word.DocumentEncoding.koreanAutoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Korean auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"KoreanAutoDetect"'
   - name: koreanJohab
     uid: word!Word.DocumentEncoding.koreanJohab:member
     package: word!
-    summary: >-
+    summary: |-
       Korean Johab encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"KoreanJohab"'
   - name: macArabic
     uid: word!Word.DocumentEncoding.macArabic:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Arabic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacArabic"'
   - name: macCroatia
     uid: word!Word.DocumentEncoding.macCroatia:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Croatia encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacCroatia"'
   - name: macCyrillic
     uid: word!Word.DocumentEncoding.macCyrillic:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Cyrillic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacCyrillic"'
   - name: macGreek1
     uid: word!Word.DocumentEncoding.macGreek1:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Greek1 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacGreek1"'
   - name: macHebrew
     uid: word!Word.DocumentEncoding.macHebrew:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Hebrew encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacHebrew"'
   - name: macIcelandic
     uid: word!Word.DocumentEncoding.macIcelandic:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Icelandic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacIcelandic"'
   - name: macJapanese
     uid: word!Word.DocumentEncoding.macJapanese:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Japanese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacJapanese"'
   - name: macKorean
     uid: word!Word.DocumentEncoding.macKorean:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Korean encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacKorean"'
   - name: macLatin2
     uid: word!Word.DocumentEncoding.macLatin2:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Latin2 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacLatin2"'
   - name: macRoman
     uid: word!Word.DocumentEncoding.macRoman:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Roman encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacRoman"'
   - name: macRomania
     uid: word!Word.DocumentEncoding.macRomania:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Romania encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacRomania"'
   - name: macSimplifiedChineseGb2312
     uid: word!Word.DocumentEncoding.macSimplifiedChineseGb2312:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Simplified Chinese GB2312 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacSimplifiedChineseGb2312"'
   - name: macTraditionalChineseBig5
     uid: word!Word.DocumentEncoding.macTraditionalChineseBig5:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Traditional Chinese Big5 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacTraditionalChineseBig5"'
   - name: macTurkish
     uid: word!Word.DocumentEncoding.macTurkish:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Turkish encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacTurkish"'
   - name: macUkraine
     uid: word!Word.DocumentEncoding.macUkraine:member
     package: word!
-    summary: >-
+    summary: |-
       Mac Ukraine encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"MacUkraine"'
   - name: oemArabic
     uid: word!Word.DocumentEncoding.oemArabic:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Arabic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemArabic"'
   - name: oemBaltic
     uid: word!Word.DocumentEncoding.oemBaltic:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Baltic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemBaltic"'
   - name: oemCanadianFrench
     uid: word!Word.DocumentEncoding.oemCanadianFrench:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Canadian French encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemCanadianFrench"'
   - name: oemCyrillic
     uid: word!Word.DocumentEncoding.oemCyrillic:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Cyrillic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemCyrillic"'
   - name: oemCyrillicIi
     uid: word!Word.DocumentEncoding.oemCyrillicIi:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Cyrillic II encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemCyrillicIi"'
   - name: oemGreek437G
     uid: word!Word.DocumentEncoding.oemGreek437G:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Greek 437G encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemGreek437G"'
   - name: oemHebrew
     uid: word!Word.DocumentEncoding.oemHebrew:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Hebrew encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemHebrew"'
   - name: oemIcelandic
     uid: word!Word.DocumentEncoding.oemIcelandic:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Icelandic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemIcelandic"'
   - name: oemModernGreek
     uid: word!Word.DocumentEncoding.oemModernGreek:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Modern Greek encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemModernGreek"'
   - name: oemMultilingualLatinI
     uid: word!Word.DocumentEncoding.oemMultilingualLatinI:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Multilingual Latin I encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemMultilingualLatinI"'
   - name: oemMultilingualLatinIi
     uid: word!Word.DocumentEncoding.oemMultilingualLatinIi:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Multilingual Latin II encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemMultilingualLatinIi"'
   - name: oemNordic
     uid: word!Word.DocumentEncoding.oemNordic:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Nordic encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemNordic"'
   - name: oemPortuguese
     uid: word!Word.DocumentEncoding.oemPortuguese:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Portuguese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemPortuguese"'
   - name: oemTurkish
     uid: word!Word.DocumentEncoding.oemTurkish:member
     package: word!
-    summary: >-
+    summary: |-
       OEM Turkish encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemTurkish"'
   - name: oemUnitedStates
     uid: word!Word.DocumentEncoding.oemUnitedStates:member
     package: word!
-    summary: >-
+    summary: |-
       OEM United States encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"OemUnitedStates"'
   - name: simplifiedChineseAutoDetect
     uid: word!Word.DocumentEncoding.simplifiedChineseAutoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Simplified Chinese auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SimplifiedChineseAutoDetect"'
   - name: simplifiedChineseGb18030
     uid: word!Word.DocumentEncoding.simplifiedChineseGb18030:member
     package: word!
-    summary: >-
+    summary: |-
       Simplified Chinese GB18030 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SimplifiedChineseGb18030"'
   - name: simplifiedChineseGbk
     uid: word!Word.DocumentEncoding.simplifiedChineseGbk:member
@@ -1201,186 +965,149 @@ fields:
       Standard Extended" in Chinese) encoding.
 
 
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SimplifiedChineseGbk"'
   - name: t61
     uid: word!Word.DocumentEncoding.t61:member
     package: word!
-    summary: >-
+    summary: |-
       T61 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"T61"'
   - name: taiwanCns
     uid: word!Word.DocumentEncoding.taiwanCns:member
     package: word!
-    summary: >-
+    summary: |-
       Taiwan CNS encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaiwanCns"'
   - name: taiwanEten
     uid: word!Word.DocumentEncoding.taiwanEten:member
     package: word!
-    summary: >-
+    summary: |-
       Taiwan Eten encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaiwanEten"'
   - name: taiwanIbm5550
     uid: word!Word.DocumentEncoding.taiwanIbm5550:member
     package: word!
-    summary: >-
+    summary: |-
       Taiwan IBM5550 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaiwanIbm5550"'
   - name: taiwanTca
     uid: word!Word.DocumentEncoding.taiwanTca:member
     package: word!
-    summary: >-
+    summary: |-
       Taiwan TCA encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaiwanTca"'
   - name: taiwanTeleText
     uid: word!Word.DocumentEncoding.taiwanTeleText:member
     package: word!
-    summary: >-
+    summary: |-
       Taiwan TeleText encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaiwanTeleText"'
   - name: taiwanWang
     uid: word!Word.DocumentEncoding.taiwanWang:member
     package: word!
-    summary: >-
+    summary: |-
       Taiwan Wang encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TaiwanWang"'
   - name: thai
     uid: word!Word.DocumentEncoding.thai:member
     package: word!
-    summary: >-
+    summary: |-
       Thai encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Thai"'
   - name: traditionalChineseAutoDetect
     uid: word!Word.DocumentEncoding.traditionalChineseAutoDetect:member
     package: word!
-    summary: >-
+    summary: |-
       Traditional Chinese auto detect encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TraditionalChineseAutoDetect"'
   - name: traditionalChineseBig5
     uid: word!Word.DocumentEncoding.traditionalChineseBig5:member
     package: word!
-    summary: >-
+    summary: |-
       Traditional Chinese Big5 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"TraditionalChineseBig5"'
   - name: turkish
     uid: word!Word.DocumentEncoding.turkish:member
     package: word!
-    summary: >-
+    summary: |-
       Turkish encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Turkish"'
   - name: unicodeBigEndian
     uid: word!Word.DocumentEncoding.unicodeBigEndian:member
     package: word!
-    summary: >-
+    summary: |-
       Unicode Big Endian encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"UnicodeBigEndian"'
   - name: unicodeLittleEndian
     uid: word!Word.DocumentEncoding.unicodeLittleEndian:member
     package: word!
-    summary: >-
+    summary: |-
       Unicode Little Endian encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"UnicodeLittleEndian"'
   - name: usaAscii
     uid: word!Word.DocumentEncoding.usaAscii:member
     package: word!
-    summary: >-
+    summary: |-
       US ASCII encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"UsaAscii"'
   - name: utf7
     uid: word!Word.DocumentEncoding.utf7:member
     package: word!
-    summary: >-
+    summary: |-
       UTF-7 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Utf7"'
   - name: utf8
     uid: word!Word.DocumentEncoding.utf8:member
     package: word!
-    summary: >-
+    summary: |-
       UTF-8 encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Utf8"'
   - name: vietnamese
     uid: word!Word.DocumentEncoding.vietnamese:member
     package: word!
-    summary: >-
+    summary: |-
       Vietnamese encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Vietnamese"'
   - name: western
     uid: word!Word.DocumentEncoding.western:member
     package: word!
-    summary: >-
+    summary: |-
       Western encoding.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Western"'

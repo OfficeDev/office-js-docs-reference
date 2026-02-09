@@ -4,10 +4,38 @@ uid: powerpoint!PowerPoint.HyperlinkCollection:class
 package: powerpoint!
 fullName: PowerPoint.HyperlinkCollection
 summary: Represents a collection of hyperlinks.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+  // Gets the hyperlinks found in the first selected slide.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks.load("address,screenTip");
+    const hyperlinksCount = hyperlinks.getCount();
+    await context.sync();
+
+    console.log(
+      `${hyperlinksCount.value} hyperlinks found in first selected slide${hyperlinksCount.value === 0 ? "." : ":"}`,
+    );
+    for (let link of hyperlinks.items) {
+      console.log(`Address: "${link.address}" (screen tip: "${link.screenTip}").`);
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -52,7 +80,7 @@ methods:
       hyperlink may appear anywhere in the collection and is not guaranteed to
       be added at the end.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -87,7 +115,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of hyperlinks in the collection.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -106,7 +134,7 @@ methods:
       Gets a hyperlink using its zero-based index in the collection. Throws an
       `InvalidArgument` exception if the index is out of range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

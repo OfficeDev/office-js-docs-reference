@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Application
 summary: Represents the Excel application that manages the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -25,7 +25,7 @@ properties:
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for get, 1.8 for
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -59,9 +59,25 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
+
+
+      await Excel.run(async (context) => {
+        context.application.calculate(Excel.CalculationType.full);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -81,9 +97,22 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => {
+          context.workbook.application.calculate('Full');
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -131,7 +160,20 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => {
+          const application = context.workbook.application;
+          application.load('calculationMode');
+          await context.sync();
+
+          console.log(application.calculationMode);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

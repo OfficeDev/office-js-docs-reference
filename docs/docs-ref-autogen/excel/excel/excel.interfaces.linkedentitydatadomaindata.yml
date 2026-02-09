@@ -20,7 +20,7 @@ properties:
       Gets the name of the data provider for the linked entity data domain. This
       name can change based on the information provided by the data provider.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -42,7 +42,7 @@ properties:
       This ID is not applicable to linked entity data domains defined by service
       data providers, such as Bing or Power BI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -65,7 +65,7 @@ properties:
       domain were last refreshed. Returns `undefined` if `LinkedEntityCellValue`
       objects have not been refreshed since the workbook was opened.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -91,7 +91,7 @@ properties:
       -->. This ID is not applicable to linked entity data domains defined by
       service data providers, such as Bing or Power BI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -112,7 +112,7 @@ properties:
       Gets the name of the linked entity data domain. This name can change based
       on the information provided by the data provider.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -135,7 +135,7 @@ properties:
       of this linked entity data domain are refreshed automatically. The refresh
       interval only applies if the `refreshMode` is set to "Periodic".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -160,7 +160,7 @@ properties:
       refresh mode is set to "Periodic", the refresh interval is set to the
       `periodicRefreshInterval` of this linked entity data domain.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -187,7 +187,7 @@ properties:
       defined by service data providers, such as Bing or Power BI, or defined by
       Office Add-ins. This ID never changes across user sessions.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -210,7 +210,7 @@ properties:
       This array can change based on the information provided by the data
       provider.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

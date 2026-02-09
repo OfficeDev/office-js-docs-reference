@@ -21,7 +21,7 @@ properties:
       instance. In OneNote Online, only one notebook at a time is open in the
       application instance. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

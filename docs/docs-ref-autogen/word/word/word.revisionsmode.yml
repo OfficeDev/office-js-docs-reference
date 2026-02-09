@@ -5,7 +5,7 @@ package: word!
 fullName: Word.RevisionsMode
 summary: Specifies the display mode for tracked changes in a Word document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,30 +14,24 @@ fields:
   - name: balloon
     uid: word!Word.RevisionsMode.balloon:member
     package: word!
-    summary: >-
+    summary: |-
       Balloon.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Balloon"'
   - name: inline
     uid: word!Word.RevisionsMode.inline:member
     package: word!
-    summary: >-
+    summary: |-
       Inline.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Inline"'
   - name: mixed
     uid: word!Word.RevisionsMode.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Mixed.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Mixed"'

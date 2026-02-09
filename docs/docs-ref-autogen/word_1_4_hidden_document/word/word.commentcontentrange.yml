@@ -4,9 +4,40 @@ uid: word!Word.CommentContentRange:class
 package: word!
 fullName: Word.CommentContentRange
 summary: Represents a content range within a comment.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Gets the range of the first comment in the selected content.
+
+  await Word.run(async (context) => {
+    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+    comment.load("contentRange");
+    const range: Word.Range = comment.getRange();
+    range.load("text");
+    await context.sync();
+
+    if (comment.isNullObject) {
+      console.warn("No comments in the selection, so no range to get.");
+      return;
+    }
+
+    console.log(`Comment location: ${range.text}`);
+    const contentRange: Word.CommentContentRange = comment.contentRange;
+    console.log("Comment content range:", contentRange);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -18,7 +49,7 @@ properties:
     fullName: bold
     summary: Specifies whether the comment text is bold.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -51,7 +82,7 @@ properties:
       All hyperlinks in the range are deleted when you set a new hyperlink on
       the range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -66,7 +97,7 @@ properties:
     fullName: isEmpty
     summary: Checks whether the range length is zero.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -81,7 +112,7 @@ properties:
     fullName: italic
     summary: Specifies whether the comment text is italicized.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -96,7 +127,7 @@ properties:
     fullName: strikeThrough
     summary: Specifies whether the comment text has a strikethrough.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +142,7 @@ properties:
     fullName: text
     summary: Gets the text of the comment range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -128,7 +159,7 @@ properties:
       Specifies the comment text's underline type. `none` if the comment text
       isn't underlined.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -158,7 +189,7 @@ methods:
       comment, the content range tracked across context turns to empty if any
       revision to the comment is posted through the UI.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

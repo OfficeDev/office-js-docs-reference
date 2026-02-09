@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.ReflectionFormatLoadOptions
 summary: Represents the reflection formatting for a shape in Word.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Specifies the degree of blur effect applied to the `ReflectionFormat`
       object as a value between 0.0 and 100.0.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
       Specifies the amount of separation, in points, of the reflected image from
       the shape.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -70,7 +70,7 @@ properties:
       Specifies the size of the reflection as a percentage of the reflected
       shape from 0 to 100.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -87,7 +87,7 @@ properties:
       Specifies the degree of transparency for the reflection effect as a value
       between 0.0 (opaque) and 1.0 (clear).
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -104,7 +104,7 @@ properties:
       Specifies a `ReflectionType` value that represents the type and direction
       of the lighting for a shape reflection.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

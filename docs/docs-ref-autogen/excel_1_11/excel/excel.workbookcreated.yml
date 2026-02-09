@@ -8,7 +8,7 @@ summary: >-
   `Application.CreateWorkbook`<!-- -->. A `WorkbookCreated` object is a special
   Workbook object.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false

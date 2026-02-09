@@ -25,8 +25,8 @@ properties:
     package: outlook!
     fullName: accountType
     summary: Gets the account type of the user associated with the mailbox.
-    remarks: >-
-      \[ [Api set: Mailbox
+    remarks: >
+      \[ [API set: Mailbox
       1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
@@ -68,6 +68,16 @@ properties:
       if it's hosted on Exchange Online, the account type value is
       **office365**.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      console.log(Office.context.mailbox.userProfile.accountType);
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,7 +89,7 @@ properties:
     package: outlook!
     fullName: displayName
     summary: Gets the user's display name.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -88,6 +98,18 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Example: Allie Bellew
+
+      console.log(Office.context.mailbox.userProfile.displayName);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -100,7 +122,7 @@ properties:
     package: outlook!
     fullName: emailAddress
     summary: Gets the user's SMTP email address.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -109,6 +131,18 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Example: allieb@contoso.com
+
+      console.log(Office.context.mailbox.userProfile.emailAddress);
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -129,7 +163,7 @@ properties:
       Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
       -->), the default time zone in the calendar preferences is returned
       instead.
-    remarks: >-
+    remarks: >
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -138,6 +172,18 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Example: Pacific Standard Time
+
+      console.log(Office.context.mailbox.userProfile.timeZone);
+
+      ```
 
     isPreview: false
     isDeprecated: false

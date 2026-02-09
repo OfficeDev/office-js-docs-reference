@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Slicer
 summary: Represents a `Slicer` object in the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: caption
     summary: Represents the caption of the slicer.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -52,7 +52,7 @@ properties:
       `InvalidArgument` exception when set with a negative value or zero as an
       input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -68,7 +68,7 @@ properties:
     fullName: id
     summary: Represents the unique ID of the slicer.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -86,7 +86,7 @@ properties:
       Value is `true` if all filters currently applied on the slicer are
       cleared.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -105,7 +105,7 @@ properties:
       the left of the worksheet. Throws an `InvalidArgument` error when set with
       a negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -121,7 +121,7 @@ properties:
     fullName: name
     summary: Represents the name of the slicer.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -137,7 +137,7 @@ properties:
     fullName: slicerItems
     summary: Represents the collection of slicer items that are part of the slicer.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -155,7 +155,7 @@ properties:
       Specifies the sort order of the items in the slicer. Possible values are:
       "DataSourceOrder", "Ascending", "Descending".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -178,10 +178,28 @@ properties:
       "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
       through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+
+      await Excel.run(async (context) => {
+          const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+          slicer.style = "SlicerStyleLight6";
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -198,7 +216,7 @@ properties:
       top of the worksheet. Throws an `InvalidArgument` error when set with a
       negative value as an input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -217,7 +235,7 @@ properties:
       `InvalidArgument` error when set with a negative value or zero as an
       input.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -233,7 +251,7 @@ properties:
     fullName: worksheet
     summary: Represents the worksheet containing the slicer.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -249,10 +267,28 @@ methods:
     package: excel!
     fullName: clearFilters()
     summary: Clears all the filters currently applied on the slicer.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+
+      await Excel.run(async (context) => {
+          const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+          slicer.clearFilters();
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -266,10 +302,28 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the slicer.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          sheet.slicers.getItemAt(0).delete();
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -284,7 +338,7 @@ methods:
     fullName: getSelectedItems()
     summary: Returns an array of selected items' keys.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -378,10 +432,28 @@ methods:
     summary: >-
       Selects slicer items based on their keys. The previous selections are
       cleared. All items will be selected by default if the array is empty.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+
+      await Excel.run(async (context) => {
+          const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+          slicer.selectItems(["Lemon", "Lime", "Orange"]);
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

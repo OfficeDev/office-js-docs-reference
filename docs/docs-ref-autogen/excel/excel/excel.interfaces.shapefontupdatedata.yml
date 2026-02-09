@@ -20,7 +20,7 @@ properties:
       Represents the bold status of font. Returns `null` if the `TextRange`
       includes both bold and non-bold text fragments.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -38,7 +38,7 @@ properties:
       represents red). Returns `null` if the `TextRange` includes text fragments
       with different colors.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -55,7 +55,7 @@ properties:
       Represents the italic status of font. Returns `null` if the `TextRange`
       includes both italic and non-italic text fragments.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -73,7 +73,7 @@ properties:
       East Asian language, this is the corresponding font name; otherwise it is
       the Latin font name.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
       Represents font size in points (e.g., 11). Returns `null` if the
       `TextRange` includes text fragments with different font sizes.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       Specifies the strikethrough status of font. A `null` value indicates that
       the entire range doesn't have a uniform strikethrough setting.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -127,7 +127,7 @@ properties:
       superscript or normal (neither superscript, nor subscript). Returns `null`
       otherwise.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -147,7 +147,7 @@ properties:
       range are subscript or normal (neither superscript, nor subscript).
       Returns `null` otherwise.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -167,7 +167,7 @@ properties:
       original color. A `null` value indicates that the entire range doesn't
       have a uniform font `tintAndShade` setting.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -186,7 +186,7 @@ properties:
       includes text fragments with different underline styles. See
       `Excel.ShapeFontUnderlineStyle` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

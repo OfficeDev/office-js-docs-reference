@@ -4,9 +4,52 @@ uid: word!Word.TableStyle:class
 package: word!
 fullName: Word.TableStyle
 summary: Represents the `TableStyle` object.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-custom-style.yaml
+
+
+  // Gets the table style properties and displays them in the form.
+
+  const styleName = (document.getElementById("style-name") as
+  HTMLInputElement).value;
+
+  if (styleName == "") {
+    console.warn("Please input a table style name.");
+    return;
+  }
+
+
+  await Word.run(async (context) => {
+    const tableStyle: Word.TableStyle = context.document.getStyles().getByName(styleName).tableStyle;
+    tableStyle.load();
+    await context.sync();
+
+    if (tableStyle.isNullObject) {
+      console.warn(`There's no existing table style with the name '${styleName}'.`);
+      return;
+    }
+
+    console.log(tableStyle);
+    (document.getElementById("alignment") as HTMLInputElement).value = tableStyle.alignment;
+    (document.getElementById("allow-break-across-page") as HTMLInputElement).value = tableStyle.allowBreakAcrossPage.toString();
+    (document.getElementById("top-cell-margin") as HTMLInputElement).value = `${tableStyle.topCellMargin}`;
+    (document.getElementById("bottom-cell-margin") as HTMLInputElement).value = `${tableStyle.bottomCellMargin}`;
+    (document.getElementById("left-cell-margin") as HTMLInputElement).value = `${tableStyle.leftCellMargin}`;
+    (document.getElementById("right-cell-margin") as HTMLInputElement).value = `${tableStyle.rightCellMargin}`;
+    (document.getElementById("cell-spacing") as HTMLInputElement).value = `${tableStyle.cellSpacing}`;
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +63,7 @@ properties:
       Specifies the amount of space to add between the contents and the bottom
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -35,7 +78,7 @@ properties:
     fullName: cellSpacing
     summary: Specifies the spacing (in points) between the cells in a table style.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +110,7 @@ properties:
       Specifies the amount of space to add between the contents and the left
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -84,7 +127,7 @@ properties:
       Specifies the amount of space to add between the contents and the right
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -101,7 +144,7 @@ properties:
       Specifies the amount of space to add between the contents and the top
       borders of the cells.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

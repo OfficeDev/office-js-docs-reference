@@ -18,7 +18,7 @@ properties:
     fullName: criteria
     summary: The currently applied filter on the given column.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

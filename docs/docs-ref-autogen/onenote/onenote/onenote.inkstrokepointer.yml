@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.InkStrokePointer
 summary: Weak reference to an ink stroke object and its content parent.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: contentId
     summary: Represents the ID of the page content object corresponding to this stroke.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: inkStrokeId
     summary: Represents the ID of the ink stroke.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

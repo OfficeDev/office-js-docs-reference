@@ -7,9 +7,47 @@ summary: >-
   Represents the location of a range. You can get range by calling getRange on
   different objects such as [Word.Paragraph](xref:word!Word.Paragraph:class) and
   [Word.ContentControl](xref:word!Word.ContentControl:class)<!-- -->.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+  await Word.run(async (context) => {
+    // Get the complete sentence (as range) associated with the insertion point.
+    const sentences: Word.RangeCollection = context.document
+      .getSelection()
+      .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+    sentences.load("$none");
+    await context.sync();
+
+    // Expand the range to the end of the paragraph to get all the complete sentences.
+    const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
+      .getRange()
+      .expandTo(
+        context.document
+          .getSelection()
+          .paragraphs.getFirst()
+          .getRange(Word.RangeLocation.end)
+      )
+      .getTextRanges(["."], false /* Don't trim spaces*/);
+    sentencesToTheEndOfParagraph.load("text");
+    await context.sync();
+
+    for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+      console.log(sentencesToTheEndOfParagraph.items[i].text);
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -23,28 +61,23 @@ fields:
       characters.
 
 
-      * \[ [Api set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"After"'
   - name: before
     uid: word!Word.RangeLocation.before:member
     package: word!
-    summary: >-
+    summary: |-
       For content control only. It's the point before the opening tag.
 
-
-      * \[ [Api set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Before"'
   - name: content
     uid: word!Word.RangeLocation.content:member
     package: word!
-    summary: >-
+    summary: |-
       The range between `start` and `end`<!-- -->.
 
-
-      * \[ [Api set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Content"'
   - name: end
     uid: word!Word.RangeLocation.end:member
@@ -55,8 +88,7 @@ fields:
       closing tag.
 
 
-      * \[ [Api set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"End"'
   - name: start
     uid: word!Word.RangeLocation.start:member
@@ -66,8 +98,7 @@ fields:
       after the opening tag.
 
 
-      * \[ [Api set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Start"'
   - name: whole
     uid: word!Word.RangeLocation.whole:member
@@ -78,6 +109,5 @@ fields:
       control are also included.
 
 
-      * \[ [Api set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Whole"'

@@ -4,7 +4,7 @@ uid: office!Office.CoercionType:enum
 package: office!
 fullName: Office.CoercionType
 summary: Specifies how to coerce data returned or set by the invoked method.
-remarks: >-
+remarks: >
   Application and platform support for each `CoercionType` is specified in the
   following requirement set descriptions.
 
@@ -46,6 +46,28 @@ remarks: >-
   - [ImageCoercion
   1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
   (when using `Office.CoercionType.XmlSvg`<!-- -->)
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // This function displays the currently selected text in the console.
+
+  // It uses the Common APIs.
+
+  function run() {
+      Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error(asyncResult.error.message);
+          } else {
+              console.log(`The selected data is "${asyncResult.value}".`);
+          }
+      });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false

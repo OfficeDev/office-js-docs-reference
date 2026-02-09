@@ -7,7 +7,7 @@ summary: >-
   A collection of all the `NamedItem` objects that are part of the workbook or
   worksheet, depending on how it was reached.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: The name of the object.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
       For EACH ITEM in the collection: Specifies the type of the value returned
       by the name's formula. See `Excel.NamedItemType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error;
       1.7 for
       Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
@@ -74,7 +74,7 @@ properties:
       API returns the \#VALUE! error in the Excel UI if it refers to a
       user-defined function.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -89,7 +89,7 @@ properties:
     fullName: visible
     summary: 'For EACH ITEM in the collection: Specifies if the object is visible.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

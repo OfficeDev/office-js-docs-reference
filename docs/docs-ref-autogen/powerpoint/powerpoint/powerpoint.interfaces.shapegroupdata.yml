@@ -20,7 +20,7 @@ properties:
       Gets the creation ID of the shape group. Returns `null` if the shape group
       has no creation ID.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -36,7 +36,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape group.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

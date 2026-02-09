@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ConflictCollection
 summary: Represents the coauthoring conflicts in a Word document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -49,7 +49,7 @@ methods:
       Accepts all of the user's changes, removes the conflicts, and merges the
       changes into the server copy of the document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -141,7 +141,7 @@ methods:
       Rejects all of the user's changes and retains the server copy of the
       document.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

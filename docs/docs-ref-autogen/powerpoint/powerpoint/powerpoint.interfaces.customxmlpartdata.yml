@@ -18,7 +18,7 @@ properties:
     fullName: id
     summary: The ID of the custom XML part.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: namespaceUri
     summary: The namespace URI of the custom XML part.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

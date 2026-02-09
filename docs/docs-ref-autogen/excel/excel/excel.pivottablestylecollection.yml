@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.PivotTableStyleCollection
 summary: Represents a collection of PivotTable styles.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -47,7 +47,7 @@ methods:
     fullName: add(name, makeUniqueName)
     summary: Creates a blank `PivotTableStyle` with the specified name.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -75,7 +75,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of PivotTable styles in the collection.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -92,7 +92,7 @@ methods:
     fullName: getDefault()
     summary: Gets the default PivotTable style for the parent object's scope.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -111,7 +111,7 @@ methods:
     fullName: getItem(name)
     summary: Gets a `PivotTableStyle` by name.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -137,7 +137,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -235,7 +235,7 @@ methods:
     fullName: setDefault(newDefaultStyle)
     summary: Sets the default PivotTable style for use in the parent object's scope.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

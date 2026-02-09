@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
 summary: Represents a collection of InkAnalysisLine objects.
 remarks: >-
-  \[ [Api set: OneNoteApi
+  \[ [API set: OneNoteApi
   1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
       For EACH ITEM in the collection: Gets the ID of the InkAnalysisLine
       object. Read-only.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -56,7 +56,7 @@ properties:
       For EACH ITEM in the collection: Reference to the parent
       InkAnalysisParagraph.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 
@@ -78,7 +78,7 @@ properties:
       For EACH ITEM in the collection: Gets the ink analysis words in this ink
       analysis line.
     remarks: >-
-      \[ [Api set: OneNoteApi
+      \[ [API set: OneNoteApi
       1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
       \]
 

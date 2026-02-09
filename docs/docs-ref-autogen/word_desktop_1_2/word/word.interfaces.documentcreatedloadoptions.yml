@@ -8,7 +8,7 @@ summary: >-
   `Application.createDocument`<!-- -->. A `DocumentCreated` object is a special
   `Document` object.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false

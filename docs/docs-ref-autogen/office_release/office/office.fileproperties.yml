@@ -4,7 +4,41 @@ uid: office!Office.FileProperties:interface
 package: office!
 fullName: Office.FileProperties
 summary: ''
-remarks: ''
+remarks: >
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // To read the URL of the current file, you need to write a callback function
+  that returns the URL.
+
+  // The following example shows how to:
+
+  // 1. Pass an anonymous callback function that returns the value of the file's
+  URL
+
+  //    to the callback parameter of the getFilePropertiesAsync method.
+
+  // 2. Display the value on the add-in's page.
+
+  function getFileUrl() {
+      // Get the URL of the current file.
+      Office.context.document.getFilePropertiesAsync(function (asyncResult) {
+          const fileProperties: Office.FileProperties = asyncResult.value;
+          const fileUrl = fileProperties.url;
+          if (fileUrl == "") {
+              showMessage("The file hasn't been saved yet. Save the file and try again");
+          }
+          else {
+              showMessage(fileUrl);
+          }
+      });
+  }
+
+  ```
 
 isPreview: false
 isDeprecated: false

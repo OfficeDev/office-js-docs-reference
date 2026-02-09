@@ -7,7 +7,7 @@ summary: >-
   Represents the East Asian language to use when breaking lines of text in the
   specified document or template.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -16,40 +16,32 @@ fields:
   - name: japanese
     uid: word!Word.FarEastLineBreakLanguageId.japanese:member
     package: word!
-    summary: >-
+    summary: |-
       Represents Japanese language.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Japanese"'
   - name: korean
     uid: word!Word.FarEastLineBreakLanguageId.korean:member
     package: word!
-    summary: >-
+    summary: |-
       Represents Korean language.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Korean"'
   - name: simplifiedChinese
     uid: word!Word.FarEastLineBreakLanguageId.simplifiedChinese:member
     package: word!
-    summary: >-
+    summary: |-
       Represents Simplified Chinese language.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SimplifiedChinese"'
   - name: traditionalChinese
     uid: word!Word.FarEastLineBreakLanguageId.traditionalChinese:member
     package: word!
-    summary: >-
+    summary: |-
       Represents Traditional Chinese language.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TraditionalChinese"'

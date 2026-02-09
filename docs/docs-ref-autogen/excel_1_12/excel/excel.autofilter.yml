@@ -7,7 +7,7 @@ summary: >-
   Represents the `AutoFilter` object. AutoFilter turns the values in Excel
   column into specific filters based on the cell contents.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -35,7 +35,7 @@ properties:
     fullName: criteria
     summary: An array that holds all the filter criteria in the autofiltered range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -50,7 +50,7 @@ properties:
     fullName: enabled
     summary: Specifies if the AutoFilter is enabled.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -65,7 +65,7 @@ properties:
     fullName: isDataFiltered
     summary: Specifies if the AutoFilter has filter criteria.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -82,9 +82,39 @@ methods:
     summary: >-
       Applies the AutoFilter to a range. This filters the column if column index
       and filter criteria are specified.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+
+      // This function adds a percentage AutoFilter to the active worksheet 
+
+      // and applies the filter to a column of the used range.
+
+      await Excel.run(async (context) => {
+          // Retrieve the active worksheet and the used range on that worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          const farmData = sheet.getUsedRange();
+
+          // Add a filter that will only show the rows with the top 50% of values in column 3.
+          sheet.autoFilter.apply(farmData, 3, {
+              criterion1: "50",
+              filterOn: Excel.FilterOn.topPercent
+          });
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -111,7 +141,7 @@ methods:
     fullName: clearCriteria()
     summary: Clears the filter criteria and sort state of the AutoFilter.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -129,7 +159,7 @@ methods:
       Returns the `Range` object that represents the range to which the
       AutoFilter applies.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -152,7 +182,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -245,9 +275,33 @@ methods:
     package: excel!
     fullName: reapply()
     summary: Applies the specified AutoFilter object currently on the range.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+
+      // This function refreshes the AutoFilter to ensure that changes are
+      captured.
+
+      await Excel.run(async (context) => {
+          // Retrieve the active worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Reapply the filter to capture changes.
+          sheet.autoFilter.reapply();
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -261,9 +315,32 @@ methods:
     package: excel!
     fullName: remove()
     summary: Removes the AutoFilter for the range.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+
+      // This function removes all AutoFilters from the active worksheet.
+
+      await Excel.run(async (context) => {
+          // Retrieve the active worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Remove all filters.
+          sheet.autoFilter.remove();
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

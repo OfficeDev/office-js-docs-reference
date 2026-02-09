@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.PivotField
 summary: Represents the Excel PivotField.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -33,7 +33,7 @@ properties:
     fullName: id
     summary: ID of the PivotField.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +48,7 @@ properties:
     fullName: items
     summary: Returns the PivotItems associated with the PivotField.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -63,7 +63,7 @@ properties:
     fullName: name
     summary: Name of the PivotField.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +78,7 @@ properties:
     fullName: showAllItems
     summary: Determines whether to show all items of the PivotField.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -93,7 +93,7 @@ properties:
     fullName: subtotals
     summary: Subtotals of the PivotField.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -112,7 +112,7 @@ methods:
       the field. If the provided filters are invalid or cannot be applied, an
       exception is thrown.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -136,10 +136,37 @@ methods:
     summary: >-
       Clears all criteria from all of the field's filters. This removes any
       active filtering on the field.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+
+      await Excel.run(async (context) => {
+        // Clear all the PivotFilters.
+
+        // Get the PivotTable.
+        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+        pivotTable.hierarchies.load("name");
+        await context.sync();
+
+        // Clear the filters on each PivotField.
+        pivotTable.hierarchies.items.forEach((hierarchy) => {
+          hierarchy.fields.getItem(hierarchy.name).clearAllFilters();
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -156,7 +183,7 @@ methods:
       Clears all existing criteria from the field's filter of the given type (if
       one is currently applied).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -179,7 +206,7 @@ methods:
       Clears all existing criteria from the field's filter of the given type (if
       one is currently applied).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -202,7 +229,7 @@ methods:
     fullName: getFilters()
     summary: Gets all filters currently applied on the field.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -221,7 +248,7 @@ methods:
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -251,7 +278,7 @@ methods:
     fullName: isFiltered(filterType)
     summary: Checks if there are any applied filters on the field.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -413,7 +440,7 @@ methods:
       be applied based on it, if not sort will be based on the PivotField
       itself.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -436,7 +463,7 @@ methods:
       defines which specific values will be used to sort when there are multiple
       values from the same DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -475,7 +502,7 @@ methods:
       defines which specific values will be used to sort when there are multiple
       values from the same DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -4,10 +4,53 @@ uid: powerpoint!PowerPoint.BindingType:enum
 package: powerpoint!
 fullName: PowerPoint.BindingType
 summary: Represents the possible binding types.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+  // Inserts an image with binding.
+
+  await PowerPoint.run(async (context) => {
+    const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
+    const slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const myShape = slide.shapes.addGeometricShape(PowerPoint.GeometricShapeType.rectangle, {
+      top: 100,
+      left: 30,
+      width: 200,
+      height: 200
+    });
+
+    myShape.fill.setImage(flowerImage);
+    context.presentation.bindings.add(myShape, PowerPoint.BindingType.shape, bindingId);
+    await context.sync();
+
+    const bindingsDropdown = document.getElementById("bindings-dropdown") as HTMLSelectElement;
+
+    const option = new Option(`Binding ${bindingId}`, bindingId);
+
+    // When a binding ID already exists, the binding is updated to refer to the new shape
+    // so select the existing item rather than add a new one.
+    const foundIndex = findDropdownItem(bindingsDropdown, option.text);
+    if (foundIndex < 0) {
+      bindingsDropdown.add(option);
+      bindingsDropdown.selectedIndex = bindingsDropdown.options.length - 1;
+    } else {
+      bindingsDropdown.selectedIndex = foundIndex;
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -15,11 +58,8 @@ fields:
   - name: shape
     uid: powerpoint!PowerPoint.BindingType.shape:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Represents a shape binding.
 
-
-      * \[ [Api set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.8\]
     value: '"Shape"'

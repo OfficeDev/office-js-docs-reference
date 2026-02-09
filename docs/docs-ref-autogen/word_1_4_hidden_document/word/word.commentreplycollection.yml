@@ -7,9 +7,37 @@ summary: >-
   Contains a collection of
   [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all
   comment replies in one comment thread.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Gets the replies to the first comment in the selected content.
+
+  await Word.run(async (context) => {
+    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+    comment.load("replies");
+    await context.sync();
+
+    if (comment.isNullObject) {
+      console.warn("No comments in the selection, so no replies to get.");
+      return;
+    }
+
+    const replies: Word.CommentReplyCollection = comment.replies;
+    console.log("Replies to the first comment:", replies);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -52,7 +80,7 @@ methods:
       Gets the first comment reply in the collection. Throws an `ItemNotFound`
       error if this collection is empty.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +102,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

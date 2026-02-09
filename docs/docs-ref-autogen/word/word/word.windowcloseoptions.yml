@@ -6,9 +6,29 @@ fullName: Word.WindowCloseOptions
 summary: >-
   The options that define whether to save changes before closing and whether to
   route the document.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
+
+
+  await Word.run(async (context) => {
+    // Closes the document window, prompting to save if this is a new document.
+    const window: Word.Window = context.document.activeWindow;
+    const closeOptions: Word.WindowCloseOptions = { saveChanges: Word.SaveConfiguration.promptToSaveChanges };
+    console.log("About to close the document window...");
+    window.close(closeOptions);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -23,7 +43,7 @@ properties:
       recipient. If the document doesn't have a routing slip attached, this
       property is ignored.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -41,7 +61,7 @@ properties:
       values, see
       [Word.SaveConfiguration](xref:word!Word.SaveConfiguration:enum)<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

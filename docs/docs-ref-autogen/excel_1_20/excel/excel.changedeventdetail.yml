@@ -7,7 +7,7 @@ summary: >-
   Provides information about the details of a `WorksheetChangedEvent` or
   `TableChangedEvent`<!-- -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       string, number, or Boolean. Cells that contain an error will return the
       error string.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -41,7 +41,7 @@ properties:
       -->, `valueAsJsonAfter` can represent all cell values, such as formatted
       number, web image, and entity data types.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -60,7 +60,7 @@ properties:
       -->, `valueAsJsonBefore` can represent all cell values, such as formatted
       number, web image, and entity data types.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -79,7 +79,7 @@ properties:
       string, number, or Boolean. Cells that contain an error will return the
       error string.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -94,7 +94,7 @@ properties:
     fullName: valueTypeAfter
     summary: Represents the type of value after the change.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -113,7 +113,7 @@ properties:
     fullName: valueTypeBefore
     summary: Represents the type of value before the change.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

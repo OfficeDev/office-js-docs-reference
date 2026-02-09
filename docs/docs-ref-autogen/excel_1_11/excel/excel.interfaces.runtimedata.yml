@@ -18,7 +18,7 @@ properties:
     fullName: enableEvents
     summary: Toggle JavaScript events in the current task pane or content add-in.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

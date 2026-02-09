@@ -7,7 +7,7 @@ summary: >-
   Provides configuration options for the
   [Document.countNumberedItems](xref:word!Word.Document:class) method.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -22,7 +22,7 @@ properties:
       If provided, specifies the level of numbering to count. If omitted, all
       levels are counted.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -39,7 +39,7 @@ properties:
       If provided, specifies the type of numbered items to count. The default
       value is `allNumbers`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

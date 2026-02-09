@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.CommentCollectionLoadOptions
 summary: Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.
 remarks: >-
-  \[ [Api set: WordApi
+  \[ [API set: WordApi
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: authorEmail
     summary: 'For EACH ITEM in the collection: Gets the email of the comment''s author.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the name of the comment''s author.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -66,7 +66,7 @@ properties:
       For EACH ITEM in the collection: Specifies the comment's content as plain
       text.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -81,7 +81,7 @@ properties:
     fullName: contentRange
     summary: 'For EACH ITEM in the collection: Specifies the comment''s content range.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -98,7 +98,7 @@ properties:
     fullName: creationDate
     summary: 'For EACH ITEM in the collection: Gets the creation date of the comment.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -113,7 +113,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the comment.'
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -131,7 +131,7 @@ properties:
       Setting to `true` resolves the comment thread. Getting a value of `true`
       means that the comment thread is resolved.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

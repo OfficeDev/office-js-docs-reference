@@ -4,10 +4,38 @@ uid: powerpoint!PowerPoint.Hyperlink:class
 package: powerpoint!
 fullName: PowerPoint.Hyperlink
 summary: Represents a single hyperlink.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+  // Gets the hyperlinks found in the first selected slide.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const hyperlinks: PowerPoint.HyperlinkCollection = slide.hyperlinks.load("address,screenTip");
+    const hyperlinksCount = hyperlinks.getCount();
+    await context.sync();
+
+    console.log(
+      `${hyperlinksCount.value} hyperlinks found in first selected slide${hyperlinksCount.value === 0 ? "." : ":"}`,
+    );
+    for (let link of hyperlinks.items) {
+      console.log(`Address: "${link.address}" (screen tip: "${link.screenTip}").`);
+    }
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +49,7 @@ properties:
       Specifies the address of the hyperlink, which can be a URL, a file name or
       file path, or an email address with the `mailto` URI scheme.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -52,7 +80,7 @@ properties:
     fullName: screenTip
     summary: Specifies the string displayed when hovering over the hyperlink.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

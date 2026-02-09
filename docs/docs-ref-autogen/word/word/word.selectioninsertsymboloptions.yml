@@ -7,7 +7,7 @@ summary: >-
   Represents the options for the
   [Selection.insertSymbol](xref:word!Word.Selection:class) method.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       for setting the correct font bias for East Asian characters. The default
       value is `default`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -40,7 +40,7 @@ properties:
     fullName: font
     summary: If provided, specifies the name of the font that contains the symbol.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -60,7 +60,7 @@ properties:
       ANSI character specified by the `characterNumber` property. The default
       value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

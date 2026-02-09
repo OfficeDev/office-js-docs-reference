@@ -21,7 +21,7 @@ properties:
       case-insensitive. The key is limited to 255 characters (larger values will
       cause an `InvalidArgument` error to be thrown.)
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -37,7 +37,7 @@ properties:
     fullName: value
     summary: Specifies the value of the custom property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

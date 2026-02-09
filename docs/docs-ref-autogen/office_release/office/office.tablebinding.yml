@@ -25,7 +25,22 @@ properties:
     package: office!
     fullName: columnCount
     summary: Gets the number of columns in the TableBinding, as an integer value.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      function showBindingColumnCount() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Column: " + asyncResult.value.columnCount);
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -38,7 +53,22 @@ properties:
     package: office!
     fullName: hasHeaders
     summary: True, if the table has headers; otherwise false.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      function showBindingHasHeaders() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Binding has headers: " + asyncResult.value.hasHeaders);
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -51,7 +81,7 @@ properties:
     package: office!
     fullName: rowCount
     summary: Gets the number of rows in the TableBinding, as an integer value.
-    remarks: >-
+    remarks: >
       When you insert an empty table by selecting a single row in Excel on
       desktop and Excel on the web (using Table on the Insert tab), both Office
       applications create a single row of headers followed by a single blank
@@ -74,6 +104,26 @@ properties:
       You can work around this difference in your script by checking if rowCount
       == 1, and if so, then checking if the row contains all empty strings.
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function showBindingRowCount() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Rows: " + asyncResult.value.rowCount);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +136,7 @@ methods:
     package: office!
     fullName: addColumnsAsync(tableData, options, callback)
     summary: Adds the specified data to the table as additional columns.
-    remarks: >-
+    remarks: >
       To add one or more columns specifying the values of the data and headers,
       pass a TableData object as the data parameter. To add one or more columns
       specifying only the data, pass an array of arrays ("matrix") as the data
@@ -116,6 +166,55 @@ methods:
       Additional remark for Excel on the web: The total number of cells in the
       TableData object passed to the data parameter can't exceed 20,000 in a
       single call to this method.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example adds a single column with three rows to a bound
+      table with the id "myTable"
+
+      // by passing a TableData object as the data argument of the
+      addColumnsAsync method. To succeed,
+
+      // the table being updated must have three rows.
+
+
+      // Add a column to a binding of type table by passing a TableData object.
+
+      function addColumns() {
+          const myTable = new Office.TableData();
+          myTable.headers = [["Cities"]];
+          myTable.rows = [["Berlin"], ["Roma"], ["Tokyo"]];
+
+          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+              result.value.addColumnsAsync(myTable);
+          });
+      }
+
+
+      // The following example adds a single column with three rows to a bound
+      table with the id myTable
+
+      // by passing an array of arrays ("matrix") as the data argument of the
+      addColumnsAsync method.
+
+      // To succeed, the table being updated must have three rows.
+
+
+      // Add a column to a binding of type table by passing an array of arrays.
+
+      function addColumns() {
+          const myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
+
+          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+              result.value.addColumnsAsync(myTable);
+          });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -212,7 +311,7 @@ methods:
     package: office!
     fullName: addRowsAsync(rows, options, callback)
     summary: Adds the specified data to the table as additional rows.
-    remarks: >-
+    remarks: >
       The success or failure of an addRowsAsync operation is atomic. That is,
       the entire add columns operation must succeed, or it will be completely
       rolled back (and the AsyncResult.status property returned to the callback
@@ -236,6 +335,21 @@ methods:
       Additional remark for Excel on the web: The total number of cells in the
       TableData object passed to the data parameter can't exceed 20,000 in a
       single call to this method.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function addRowsToTable() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              const binding = asyncResult.value;
+              binding.addRowsAsync([["6", "k"], ["7", "j"]]);
+          });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -326,10 +440,23 @@ methods:
     package: office!
     fullName: clearFormatsAsync(options, callback)
     summary: Clears formatting on the bound table.
-    remarks: >-
+    remarks: >
       See [Format tables in add-ins for
       Excel](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)
       for more information.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to clear the formatting of the bound
+      table with an ID of "myBinding":
+
+      Office.select("bindings#myBinding").clearFormatsAsync();
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -389,9 +516,24 @@ methods:
     summary: >-
       Deletes all non-header rows and their values in the table, shifting
       appropriately for the Office application.
-    remarks: >-
+    remarks: >
       In Excel, if the table has no header row, this method will delete the
       table itself.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      function deleteAllRowsFromTable() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              const binding = asyncResult.value;
+              binding.deleteAllDataValuesAsync();
+          });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -599,7 +741,7 @@ methods:
     package: office!
     fullName: setFormatsAsync(cellFormat, options, callback)
     summary: Sets formatting on specified items and data in the table.
-    remarks: >-
+    remarks: >
       **Specifying the cellFormat parameter**
 
 
@@ -711,6 +853,59 @@ methods:
       For more details and examples, see [How to format tables in add-ins for
       Excel](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!--
       -->.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Specifying a single target
+
+      // The following example shows a cellFormat value that sets the font color
+      of the header row to red.
+
+      Office.select("bindings#myBinding").setFormatsAsync(
+          [{cells: Office.Table.Headers, format: {fontColor: "red"}}], 
+          function (asyncResult){});
+
+      // Specifying multiple targets
+
+      // The setFormatsAsync method can support formatting multiple targets
+      within the bound table in a 
+
+      // single function call. To do that, you pass a list of objects in the
+      cellFormat array 
+
+      // for each target that you want to format.
+
+      // For example, the following line of code will set the font color of the
+      first row yellow, 
+
+      // and the fourth cell in the third row to have a white border and bold
+      text.
+
+      Office.select("bindings#myBinding").setFormatsAsync(
+          [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+              {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+          function (asyncResult){});
+
+      // Additional remarks for Excel Online
+
+      // The number of formatting groups passed to the cellFormat parameter
+      can't exceed 100. 
+
+      // A single formatting group consists of a set of formatting applied to a
+      specified range of cells. 
+
+      // For example, the following call passes two formatting groups to
+      cellFormat.
+
+      Office.select("bindings#myBinding").setFormatsAsync(
+          [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+              {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+          function (asyncResult){});
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -888,7 +1083,7 @@ methods:
     package: office!
     fullName: setTableOptionsAsync(tableOptions, options, callback)
     summary: Updates table formatting options on the bound table.
-    remarks: >-
+    remarks: >
       **Requirement set**: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
@@ -908,6 +1103,30 @@ methods:
       <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
       type that's returned in the AsyncResult object without being altered.</td>
       </tr> </table>
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to:
+
+      // 1. Create an object literal that specifies the table formatting options
+      to update on the bound table.
+
+      // 2. Call setTableOptions on a previously bound table (with an id of
+      myBinding) passing the object
+
+      //    with formatting setting as the tableOptions parameter.
+
+      function updateTableFormatting(){
+          const tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
+
+          Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false

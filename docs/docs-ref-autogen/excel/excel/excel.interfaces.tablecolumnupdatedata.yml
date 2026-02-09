@@ -18,7 +18,7 @@ properties:
     fullName: name
     summary: Specifies the name of the table column.
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting
+      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
       it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +37,7 @@ properties:
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -59,7 +59,7 @@ properties:
       locale. To retrieve data in the user's display locale, use
       `TableColumn.valuesAsJsonLocal`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -82,7 +82,7 @@ properties:
       user's display locale. To retrieve data independent of locale, use
       `TableColumn.valuesAsJson`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

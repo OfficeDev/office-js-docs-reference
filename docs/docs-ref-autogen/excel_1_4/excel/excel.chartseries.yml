@@ -4,9 +4,52 @@ uid: excel!Excel.ChartSeries:class
 package: excel!
 fullName: Excel.ChartSeries
 summary: Represents a series in a chart.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+  // The following code adds data labels to the chart and positions them to
+  demonstrate leader lines.
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getItem(sheetName);
+    const chart = sheet.charts.getItemAt(0);
+    const series = chart.series.getItemAt(0);
+    
+    // Enable data labels for the series. Leader lines are enabled by default.
+    series.hasDataLabels = true;
+    series.points.load("items");
+    await context.sync();
+    
+    // Load the top position for each data label.
+    series.points.items.forEach((point) => point.dataLabel.load("top"));
+    await context.sync();
+
+    // Move some data labels to create distance from their chart points.
+    const point1 = series.points.items[1]; 
+    const point2 = series.points.items[2]; 
+    point1.dataLabel.top -= 50; 
+    point2.dataLabel.top += 50;
+    
+    // Format the data labels.
+    series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+    series.dataLabels.showCategoryName = true;
+    series.dataLabels.format.border.weight = 1;
+    
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -35,7 +78,7 @@ properties:
       Represents the formatting of a chart series, which includes fill and line
       formatting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -52,7 +95,7 @@ properties:
       Specifies the name of a series in a chart. The name's length should not be
       greater than 255 characters.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -66,9 +109,52 @@ properties:
     package: excel!
     fullName: points
     summary: Returns a collection of all points in the series.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-leader-lines.yaml
+
+
+      // The following code adds data labels to the chart and positions them to
+      demonstrate leader lines.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem(sheetName);
+        const chart = sheet.charts.getItemAt(0);
+        const series = chart.series.getItemAt(0);
+        
+        // Enable data labels for the series. Leader lines are enabled by default.
+        series.hasDataLabels = true;
+        series.points.load("items");
+        await context.sync();
+        
+        // Load the top position for each data label.
+        series.points.items.forEach((point) => point.dataLabel.load("top"));
+        await context.sync();
+
+        // Move some data labels to create distance from their chart points.
+        const point1 = series.points.items[1]; 
+        const point2 = series.points.items[2]; 
+        point1.dataLabel.top -= 50; 
+        point2.dataLabel.top += 50;
+        
+        // Format the data labels.
+        series.dataLabels.geometricShapeType = Excel.GeometricShapeType.rectangle;
+        series.dataLabels.showCategoryName = true;
+        series.dataLabels.format.border.weight = 1;
+        
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -108,7 +194,21 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Rename the 1st series of Chart1 to "New Series Name".
+      await Excel.run(async (context) => { 
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.series.getItemAt(0).name = "New Series Name";
+          await context.sync();
+
+          console.log("Series1 Renamed");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

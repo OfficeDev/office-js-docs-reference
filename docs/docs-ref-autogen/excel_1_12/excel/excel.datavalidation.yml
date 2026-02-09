@@ -9,7 +9,7 @@ summary: >-
   ranges](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!--
   -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,9 +36,49 @@ properties:
     package: excel!
     fullName: errorAlert
     summary: Error alert when user enters invalid data.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Decision");
+          const commentsRange = 
+              sheet.tables.getItem("NameOptionsTable").columns.getItem("Comments").getDataBodyRange();
+
+          // When you are developing, it is a good practice to
+          // clear the dataValidation object with each run of your code.
+          commentsRange.dataValidation.clear();   
+
+          // If the value of A2 is contained in the value of C2, then 
+          // SEARCH(A2,C2) returns the number where it begins. Otherwise,
+          // it does not return a number.
+          let redundantStringRule = {
+              custom: {
+                  formula: "=NOT(ISNUMBER(SEARCH(A2,C2)))"
+              }
+          };
+          commentsRange.dataValidation.rule = redundantStringRule;
+          commentsRange.dataValidation.errorAlert = {
+              message: "It is redundant to include the baby name in the comment.",
+              showAlert: true,
+              style: "Information",
+              title: "Baby Name in Comment"
+          };
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +94,7 @@ properties:
       Specifies if data validation will be performed on blank cells. Default is
       `true`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -68,9 +108,53 @@ properties:
     package: excel!
     fullName: prompt
     summary: Prompt when users select a cell.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Decision");
+          const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
+
+          // When you are developing, it is a good practice to
+          // clear the dataValidation object with each run of your code.
+          rankingRange.dataValidation.clear();
+
+          let greaterThanZeroRule = {
+              wholeNumber: {
+                  formula1: 0,
+                  operator: Excel.DataValidationOperator.greaterThan
+              }
+          };
+          rankingRange.dataValidation.rule = greaterThanZeroRule;
+
+          rankingRange.dataValidation.prompt = {
+              message: "Please enter a positive number.",
+              showPrompt: true,
+              title: "Positive numbers only."
+          };
+
+          rankingRange.dataValidation.errorAlert = {
+              message: "Sorry, only positive numbers are allowed",
+              showAlert: true,
+              style: "Stop",
+              title: "Negative Number Entered"
+          };
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -85,9 +169,43 @@ properties:
     summary: >-
       Data validation rule that contains different type of data validation
       criteria.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Decision");
+          const nameRange = 
+              sheet.tables.getItem("NameOptionsTable").columns.getItem("Baby Name").getDataBodyRange();
+
+          // When you are developing, it is a good practice to
+          // clear the dataValidation object with each run of your code.
+          nameRange.dataValidation.clear();
+
+          const nameSourceRange = context.workbook.worksheets.getItem("Names").getRange("A1:A3");
+
+          let approvedListRule = {
+              list: {
+                  inCellDropDown: true,
+                  source: nameSourceRange
+              }
+          };
+          nameRange.dataValidation.rule = approvedListRule;
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -101,7 +219,7 @@ properties:
     fullName: type
     summary: Type of the data validation, see `Excel.DataValidationType` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -126,7 +244,7 @@ properties:
       values are invalid. Returns `null` if there are both valid and invalid
       cell values within the range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -142,7 +260,7 @@ methods:
     fullName: clear()
     summary: Clears the data validation from the current range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -161,7 +279,7 @@ methods:
       with invalid cell values. If all cell values are valid, this function will
       throw an `ItemNotFound` error.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -180,7 +298,7 @@ methods:
       with invalid cell values. If all cell values are valid, this function will
       return `null`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

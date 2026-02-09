@@ -4,9 +4,32 @@ uid: word!Word.Section:class
 package: word!
 fullName: Word.Section
 summary: Represents a section in a Word document.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+
+  // Inserts a section break on the next page.
+
+  await Word.run(async (context) => {
+    const body: Word.Body = context.document.body;
+    body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+
+    await context.sync();
+
+    console.log("Inserted section break on next page.");
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +43,7 @@ properties:
       Gets the `Body` object of the section. This doesn't include the header,
       footer, and other section metadata.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -37,7 +60,7 @@ properties:
       Returns a `BorderUniversalCollection` object that represents all the
       borders in the section.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -67,7 +90,7 @@ properties:
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the section.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -82,7 +105,7 @@ properties:
     fullName: protectedForForms
     summary: Specifies if the section is protected for forms.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -97,9 +120,47 @@ methods:
     package: word!
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+          
+          // Create a proxy sectionsCollection object.
+          const mySections = context.document.sections;
+          
+          // Queue a command to load the sections.
+          mySections.load('body/style');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+              
+          // Create a proxy object the primary footer of the first section.
+          // Note that the footer is a body object.
+          const myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
+          
+          // Queue a command to insert text at the end of the footer.
+          myFooter.insertText("This is a footer.", Word.InsertLocation.end);
+          
+          // Queue a command to wrap the header in a content control.
+          myFooter.insertContentControl();
+                                  
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log("Added a footer to the first section.");   
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -119,9 +180,30 @@ methods:
     package: word!
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+
+      await Word.run(async (context) => {
+        context.document.sections
+          .getFirst()
+          .getFooter("Primary")
+          .insertParagraph("This is a primary footer.", "End");
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -141,9 +223,30 @@ methods:
     package: word!
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+
+      await Word.run(async (context) => {
+        context.document.sections
+          .getFirst()
+          .getHeader(Word.HeaderFooterType.primary)
+          .insertParagraph("This is a primary header.", "End");
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -163,9 +266,47 @@ methods:
     package: word!
     fullName: getHeader(type)
     summary: Gets one of the section's headers.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+          
+          // Create a proxy sectionsCollection object.
+          const mySections = context.document.sections;
+          
+          // Queue a command to load the sections.
+          mySections.load('body/style');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          
+          // Create a proxy object the primary header of the first section.
+          // Note that the header is a body object.
+          const myHeader = mySections.items[0].getHeader("Primary");
+          
+          // Queue a command to insert text at the end of the header.
+          myHeader.insertText("This is a header.", Word.InsertLocation.end);
+          
+          // Queue a command to wrap the header in a content control.
+          myHeader.insertContentControl();
+                                  
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log("Added a header to the first section.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -188,7 +329,7 @@ methods:
       Gets the next section. Throws an `ItemNotFound` error if this section is
       the last one.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -209,7 +350,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

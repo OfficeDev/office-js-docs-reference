@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.SlicerItemCollectionLoadOptions
 summary: Represents a collection of all the slicer item objects in the slicer.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       For EACH ITEM in the collection: Value is `true` if the slicer item has
       data.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -56,7 +56,7 @@ properties:
       slicer items. By default, if the slicer item is the only one selected,
       when it is deselected, all items will be selected.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -74,7 +74,7 @@ properties:
       For EACH ITEM in the collection: Represents the unique value representing
       the slicer item.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -92,7 +92,7 @@ properties:
       For EACH ITEM in the collection: Represents the title displayed in the
       Excel UI.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

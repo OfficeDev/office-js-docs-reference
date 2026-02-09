@@ -20,7 +20,7 @@ properties:
       The original URL pointing to the linked workbook. It is unique across all
       linked workbooks in the collection.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

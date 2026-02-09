@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.RangeCollectionLoadOptions
 summary: ''
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -37,7 +37,7 @@ properties:
       A1-style. Address value contains the sheet reference (e.g.,
       "Sheet1!A1:B4").
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       For EACH ITEM in the collection: Represents the range reference for the
       specified range in the language of the user.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -72,7 +72,7 @@ properties:
       range. This API will return -1 if the cell count exceeds 2^31-1
       (2,147,483,647).
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -89,7 +89,7 @@ properties:
       For EACH ITEM in the collection: Specifies the total number of columns in
       the range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -109,7 +109,7 @@ properties:
       when some columns in a range are hidden and other columns in the same
       range are not hidden.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -126,7 +126,7 @@ properties:
       For EACH ITEM in the collection: Specifies the column number of the first
       cell in the range. Zero-indexed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -141,7 +141,7 @@ properties:
     fullName: dataValidation
     summary: 'For EACH ITEM in the collection: Returns a data validation object.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -160,7 +160,7 @@ properties:
       For EACH ITEM in the collection: Returns a format object, encapsulating
       the range's font, fill, borders, alignment, and other properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -177,7 +177,7 @@ properties:
       For EACH ITEM in the collection: Represents the formula in A1-style
       notation. If a cell has no formula, its value is returned instead.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -196,7 +196,7 @@ properties:
       example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1;
       1,5)" in German. If a cell has no formula, its value is returned instead.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -213,7 +213,7 @@ properties:
       For EACH ITEM in the collection: Represents the formula in R1C1-style
       notation. If a cell has no formula, its value is returned instead.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -233,7 +233,7 @@ properties:
       when some cells in a range are hidden and other cells in the same range
       are not hidden.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -250,7 +250,7 @@ properties:
       For EACH ITEM in the collection: Represents the hyperlink for the current
       range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -267,7 +267,7 @@ properties:
       For EACH ITEM in the collection: Represents if the current range is an
       entire column.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -284,7 +284,7 @@ properties:
       For EACH ITEM in the collection: Represents if the current range is an
       entire row.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -302,7 +302,7 @@ properties:
       For EACH ITEM in the collection: Represents the data type state of each
       cell.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -322,7 +322,7 @@ properties:
       codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -342,7 +342,7 @@ properties:
       `numberFormatLocal` property. Any returned text uses the locally-formatted
       strings based on the language specified in the system settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -359,7 +359,7 @@ properties:
       For EACH ITEM in the collection: Returns the total number of rows in the
       range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -379,7 +379,7 @@ properties:
       when some rows in a range are hidden and other rows in the same range are
       not hidden.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -396,7 +396,7 @@ properties:
       For EACH ITEM in the collection: Returns the row number of the first cell
       in the range. Zero-indexed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -416,7 +416,7 @@ properties:
       styles, a string representing a value in the `BuiltInStyle` enum will be
       returned.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -435,7 +435,7 @@ properties:
       substitution that happens in the Excel UI will not affect the text value
       returned by the API.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -455,7 +455,7 @@ properties:
       value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel
       interprets this value as a formula.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -470,7 +470,7 @@ properties:
     fullName: valueTypes
     summary: 'For EACH ITEM in the collection: Specifies the type of data in each cell.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -487,7 +487,7 @@ properties:
       For EACH ITEM in the collection: The worksheet containing the current
       range.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

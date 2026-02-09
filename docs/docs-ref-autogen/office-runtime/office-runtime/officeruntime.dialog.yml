@@ -5,7 +5,7 @@ package: office-runtime!
 fullName: OfficeRuntime.Dialog
 summary: Object representing the dialog box.
 remarks: >-
-  \[ [Api set: CustomFunctionsRuntime
+  \[ [API set: CustomFunctionsRuntime
   1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ methods:
     fullName: close()
     summary: Method to close a dialog box. Returns a Promise.
     remarks: >-
-      \[ [Api set: CustomFunctionsRuntime
+      \[ [API set: CustomFunctionsRuntime
       1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
     isPreview: false

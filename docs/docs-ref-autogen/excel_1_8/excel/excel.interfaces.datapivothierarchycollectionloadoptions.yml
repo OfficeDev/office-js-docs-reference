@@ -7,7 +7,7 @@ summary: >-
   Represents a collection of DataPivotHierarchy items associated with the
   PivotTable.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -39,7 +39,7 @@ properties:
       For EACH ITEM in the collection: Returns the PivotFields associated with
       the DataPivotHierarchy.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: ID of the DataPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -69,7 +69,7 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Name of the DataPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -85,7 +85,7 @@ properties:
     fullName: numberFormat
     summary: 'For EACH ITEM in the collection: Number format of the DataPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -101,7 +101,7 @@ properties:
     fullName: position
     summary: 'For EACH ITEM in the collection: Position of the DataPivotHierarchy.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -119,7 +119,7 @@ properties:
       For EACH ITEM in the collection: Specifies if the data should be shown as
       a specific summary calculation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -137,7 +137,7 @@ properties:
       For EACH ITEM in the collection: Specifies if all items of the
       DataPivotHierarchy are shown.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

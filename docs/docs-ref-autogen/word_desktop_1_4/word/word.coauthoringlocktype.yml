@@ -7,7 +7,7 @@ summary: >-
   Represents the types of [coauthoring
   locks](xref:word!Word.CoauthoringLock:class)<!-- -->.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -16,40 +16,32 @@ fields:
   - name: changed
     uid: word!Word.CoauthoringLockType.changed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that the lock has changed.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Changed"'
   - name: ephemeral
     uid: word!Word.CoauthoringLockType.ephemeral:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that the lock is ephemeral.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ephemeral"'
   - name: none
     uid: word!Word.CoauthoringLockType.none:member
     package: word!
-    summary: >-
+    summary: |-
       Reserved for future use.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: reservation
     uid: word!Word.CoauthoringLockType.reservation:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that the lock is a reservation.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Reservation"'

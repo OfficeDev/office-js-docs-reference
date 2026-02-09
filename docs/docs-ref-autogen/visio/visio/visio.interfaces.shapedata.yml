@@ -16,7 +16,7 @@ properties:
     fullName: comments
     summary: Returns the Comments Collection.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -32,7 +32,7 @@ properties:
     fullName: hyperlinks
     summary: Returns the Hyperlinks collection for a Shape object.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -48,7 +48,7 @@ properties:
     fullName: id
     summary: Shape's identifier.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -64,7 +64,7 @@ properties:
     fullName: name
     summary: Shape's name.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -82,7 +82,7 @@ properties:
       Returns true, if shape is selected. User can set true to select the shape
       explicitly.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -98,7 +98,7 @@ properties:
     fullName: shapeDataItems
     summary: Returns the Shape's Data Section.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -114,7 +114,7 @@ properties:
     fullName: subShapes
     summary: Gets SubShape Collection.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -130,7 +130,7 @@ properties:
     fullName: text
     summary: Shape's text.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -146,7 +146,7 @@ properties:
     fullName: view
     summary: Returns the view of the shape.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

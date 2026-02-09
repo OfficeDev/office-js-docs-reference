@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CustomDataValidation
 summary: Represents the custom data validation criteria.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -20,7 +20,7 @@ properties:
       A custom data validation formula. This creates special input rules, such
       as preventing duplicates, or limiting the total in a range of cells.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

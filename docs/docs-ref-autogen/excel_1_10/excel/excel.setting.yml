@@ -10,7 +10,7 @@ summary: >-
   settings are persisted in the document and hence it is not a place to store
   any sensitive or protected information such as user information and password.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -38,7 +38,7 @@ properties:
     fullName: key
     summary: The key that represents the ID of the setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -53,7 +53,7 @@ properties:
     fullName: value
     summary: Represents the value stored for this setting.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -68,9 +68,38 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the setting.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/create-get-change-delete-settings.yaml
+
+
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings;
+          let needsReview = settings.getItem("NeedsReview");
+          needsReview.delete();
+          needsReview = settings.getItemOrNullObject("NeedsReview");
+
+          await context.sync();
+
+          if (needsReview.isNullObject) {
+              console.log("The setting has been deleted");
+          } else {
+              console.log("The setting was not deleted");
+          }
+
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.DocumentTaskChangeLoadOptions
 summary: Represents a recorded change to the task.
 remarks: >-
-  \[ [Api set: ExcelApi BETA (PREVIEW
+  \[ [API set: ExcelApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: true
@@ -36,7 +36,7 @@ properties:
       Represents the user assigned to the task for an `assign` change action, or
       the user unassigned from the task for an `unassign` change action.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -52,7 +52,7 @@ properties:
     fullName: changedBy
     summary: Represents the identity of the user who made the task change.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -70,7 +70,7 @@ properties:
       Represents the ID of the comment or comment reply to which the task change
       is anchored.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -89,7 +89,7 @@ properties:
       Represents the creation date and time of the task change record. All dates
       are in UTC.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -109,7 +109,7 @@ properties:
       the due date and time. It should be set together with `startDateTime` to
       avoid conflicts.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -125,7 +125,7 @@ properties:
     fullName: id
     summary: The unique GUID of the task change.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -147,7 +147,7 @@ properties:
       completes the associated comment. Changing the completion from 100 to a
       lower value reactivates the associated comment.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -166,7 +166,7 @@ properties:
       action. This is a value between 0 and 10, with 5 being the default
       priority if not set, and where 0 represents the highest priority.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -186,7 +186,7 @@ properties:
       `null` to remove the start date and time. It should be set together with
       `dueDateTime` to avoid conflicts.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -202,7 +202,7 @@ properties:
     fullName: title
     summary: Represents the task's title. It is used for the `setTitle` change action.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -221,7 +221,7 @@ properties:
       action types are `assign`<!-- -->, `undo`<!-- -->, and `setPriority`<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -239,7 +239,7 @@ properties:
       Represents the `DocumentTaskChange.id` property that was undone for the
       `undo` change action.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

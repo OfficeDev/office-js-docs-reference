@@ -7,7 +7,7 @@ summary: >-
   Represents the options for the
   [Selection.move](xref:word!Word.Selection:class) method.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -30,7 +30,7 @@ properties:
       of a unit or isn't collapsed, moving it to the beginning or end of the
       unit counts as moving it one full unit.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -47,7 +47,7 @@ properties:
       If provided, specifies the unit by which to move the ending character
       position. The default value is `character`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

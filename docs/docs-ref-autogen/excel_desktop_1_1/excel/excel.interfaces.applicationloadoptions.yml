@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ApplicationLoadOptions
 summary: Represents the Excel application that manages the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Returns a `window` object that represents the active window (the window on
       top).
     remarks: >-
-      \[ [Api set: ExcelApiDesktop
+      \[ [API set: ExcelApiDesktop
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -54,7 +54,7 @@ properties:
       Returns the Excel calculation engine version used for the last full
       recalculation.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -76,7 +76,7 @@ properties:
       when the user requests it. This is a runtime property. The
       `calculationMode` setting is not persisted in the workbook.
     remarks: >-
-      \[ [Api set: ExcelApi 1.1 for get, 1.8 for
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -93,7 +93,7 @@ properties:
       Returns the calculation state of the application. See
       `Excel.CalculationState` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -111,7 +111,7 @@ properties:
       includes the culture names, number formatting, and other culturally
       dependent settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -129,7 +129,7 @@ properties:
       Gets the string used as the decimal separator for numeric values. This is
       based on the local Excel settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -148,7 +148,7 @@ properties:
       the settings will apply to the Excel Application. In Excel on the web and
       other platforms, the settings will apply to the active workbook.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -168,7 +168,7 @@ properties:
       Gets the string used to separate groups of digits to the left of the
       decimal for numeric values. This is based on the local Excel settings.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -186,7 +186,7 @@ properties:
       Specifies if the system separators of Excel are enabled. System separators
       include the decimal separator and thousands separator.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

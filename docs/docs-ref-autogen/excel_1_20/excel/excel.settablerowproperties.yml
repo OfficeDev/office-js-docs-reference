@@ -3,12 +3,10 @@ name: Excel.SettableRowProperties
 uid: excel!Excel.SettableRowProperties:interface
 package: excel!
 fullName: Excel.SettableRowProperties
-summary: >-
+summary: |-
   Represents the input parameter of setRowProperties.
 
-
-  \[ [Api set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[Api set: ExcelApi 1.9\]
 remarks: ''
 
 isPreview: false
@@ -19,12 +17,10 @@ properties:
     uid: excel!Excel.SettableRowProperties#format:member
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Represents the `format` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -43,12 +39,10 @@ properties:
     uid: excel!Excel.SettableRowProperties#rowHidden:member
     package: excel!
     fullName: rowHidden
-    summary: >-
+    summary: |-
       Represents the `rowHidden` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false

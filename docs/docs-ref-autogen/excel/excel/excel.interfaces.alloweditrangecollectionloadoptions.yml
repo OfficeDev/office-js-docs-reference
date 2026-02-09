@@ -10,7 +10,7 @@ summary: >-
   allow editing of a specific range, while maintaining protection on the rest of
   the worksheet.
 remarks: >-
-  \[ [Api set: ExcelApiOnline
+  \[ [API set: ExcelApiOnline
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -43,7 +43,7 @@ properties:
       work properly. If worksheet protection is enabled and not paused, this
       method throws an `AccessDenied` error and fails to set the range.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -61,7 +61,7 @@ properties:
       For EACH ITEM in the collection: Specifies if the object is password
       protected.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -83,7 +83,7 @@ properties:
       string is `null` or empty (""), then this method throws an
       `InvalidArgument` error and fails to set the title.
     remarks: >-
-      \[ [Api set: ExcelApiOnline
+      \[ [API set: ExcelApiOnline
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.DateTimeDataValidation
 summary: Represents the date data validation criteria.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -27,7 +27,7 @@ properties:
       the value, it will always be returned as a string formula, for example:
       "=10", "=A1", "=SUM(A1:B5)", etc.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -49,7 +49,7 @@ properties:
       When retrieving the value, it will always be returned as a string formula,
       for example: "=10", "=A1", "=SUM(A1:B5)", etc.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -64,7 +64,7 @@ properties:
     fullName: operator
     summary: The operator to use for validating the data.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

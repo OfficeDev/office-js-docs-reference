@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ChartLineFormat
 summary: Encapsulates the formatting options for line elements.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -48,9 +48,27 @@ methods:
     package: excel!
     fullName: clear()
     summary: Clears the line format of a chart element.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Clear the format of the major gridlines on Chart1. 
+
+      await Excel.run(async (context) => { 
+          const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+          gridlines.format.line.clear();
+          await context.sync();
+          
+          console.log("Chart Major Gridlines Format Cleared");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +108,21 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Set chart major gridlines on value axis to be red.
+      await Excel.run(async (context) => {
+          const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+          gridlines.format.line.color = "#FF0000";
+          await context.sync()
+          
+          console.log("Chart Gridlines Color Updated");
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

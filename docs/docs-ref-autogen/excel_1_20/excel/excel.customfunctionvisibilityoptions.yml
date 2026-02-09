@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.CustomFunctionVisibilityOptions
 summary: Represents which custom functions to show or hide in Excel AutoComplete.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: hide
     summary: A list of custom functions to hide from Excel AutoComplete.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: show
     summary: A list of custom functions to show in Excel AutoComplete.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.20](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

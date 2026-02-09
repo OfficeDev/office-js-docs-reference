@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.CommentReplyLoadOptions
 summary: Represents a comment reply in the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment reply's author.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -66,7 +66,7 @@ properties:
     fullName: content
     summary: The comment reply's content. The string is plain text.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -82,7 +82,7 @@ properties:
     fullName: creationDate
     summary: Gets the creation time of the comment reply.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -98,7 +98,7 @@ properties:
     fullName: id
     summary: Specifies the comment reply identifier.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

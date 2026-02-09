@@ -8,7 +8,7 @@ summary: >-
   [Word.CustomXmlValidationErrorCollection](xref:word!Word.CustomXmlValidationErrorCollection:class)
   object.
 remarks: >-
-  \[ [Api set: WordApi BETA (PREVIEW
+  \[ [API set: WordApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: true
@@ -38,7 +38,7 @@ properties:
       Gets an integer representing the validation error in the
       `CustomXmlValidationError` object.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -55,7 +55,7 @@ properties:
       Gets the name of the error in the `CustomXmlValidationError` object. If no
       errors exist, the property returns `"Nothing"`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -72,7 +72,7 @@ properties:
       Gets the node associated with this `CustomXmlValidationError` object, if
       any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -87,7 +87,7 @@ properties:
     fullName: text
     summary: Gets the text in the `CustomXmlValidationError` object.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -104,7 +104,7 @@ properties:
       Gets the type of error generated from the `CustomXmlValidationError`
       object.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
@@ -124,7 +124,7 @@ methods:
     fullName: delete()
     summary: Deletes this `CustomXmlValidationError` object.
     remarks: >-
-      \[ [Api set: WordApi BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true

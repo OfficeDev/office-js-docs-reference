@@ -4,9 +4,39 @@ uid: word!Word.DocumentCompareOptions:interface
 package: word!
 fullName: Word.DocumentCompareOptions
 summary: Specifies the options to be included in a compare document operation.
-remarks: >-
-  \[ [Api set: WordApiDesktop
+remarks: >
+  \[ [API set: WordApiDesktop
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
+
+
+  // Compares the current document with a specified external document.
+
+  await Word.run(async (context) => {
+    // Absolute path of an online or local document.
+    const filePath = (document.getElementById("filePath") as HTMLInputElement).value;
+    // Options that configure the compare operation.
+    const options: Word.DocumentCompareOptions = {
+      compareTarget: Word.CompareTarget.compareTargetCurrent,
+      detectFormatChanges: false
+      // Other options you choose...
+      };
+    context.document.compare(filePath, options);
+
+    await context.sync();
+
+    console.log("Differences shown in the current document.");
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -20,7 +50,7 @@ properties:
       If provided, specifies whether to add the document to the list of recently
       used files on the **File** menu. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -39,7 +69,7 @@ properties:
       author name of the revised document or the string `Comparison` if no
       author information is present.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -56,7 +86,7 @@ properties:
       If provided, specifies the target document for the comparison. Default
       value is `compareTargetCurrent`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -77,7 +107,7 @@ properties:
       If provided, specifies whether the comparison should include detection of
       format changes. The default value is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -94,7 +124,7 @@ properties:
       If provided, specifies whether to compare the documents without notifying
       a user of problems. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -112,7 +142,7 @@ properties:
       from tracked changes in the returned `Document` object. The default value
       is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -130,7 +160,7 @@ properties:
       comments, revisions, and the properties dialog box in the returned
       `Document` object. The default value is `false`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

@@ -7,7 +7,7 @@ summary: >-
   Represents the direction that existing or remaining cells in a worksheet will
   shift when cells are inserted into or deleted from a worksheet.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -25,7 +25,7 @@ properties:
       enums can't have a value at the same time. If one has a value, then the
       other will return `undefined`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -46,7 +46,7 @@ properties:
       enums can't have a value at the same time. If one has a value, then the
       other will return `undefined`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

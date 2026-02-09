@@ -21,7 +21,7 @@ properties:
       which they are attached. False if the charts track the index of the data
       points.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -40,7 +40,7 @@ properties:
       that depends on an external code service to complete. The valid range is 1
       to 86400, inclusive.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -59,7 +59,7 @@ properties:
       can set this property to `true` if you want to close a modified workbook
       without either saving it or being prompted to save it.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -74,7 +74,7 @@ properties:
     fullName: properties
     summary: Gets the workbook properties.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -93,7 +93,7 @@ properties:
       Specifies whether the PivotTable's field list pane is shown at the
       workbook level.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -109,7 +109,7 @@ properties:
     fullName: use1904DateSystem
     summary: True if the workbook uses the 1904 date system.
     remarks: >-
-      \[ [Api set: ExcelApi BETA (PREVIEW
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -128,7 +128,7 @@ properties:
       precision of the numbers as they're displayed. Data will permanently lose
       accuracy when switching this property from `false` to `true`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

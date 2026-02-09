@@ -5,7 +5,7 @@ package: word!
 fullName: Word.DocumentKind
 summary: Specifies the kind or purpose of a document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,30 +14,24 @@ fields:
   - name: email
     uid: word!Word.DocumentKind.email:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an email document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Email"'
   - name: letter
     uid: word!Word.DocumentKind.letter:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a letter document.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Letter"'
   - name: notSpecified
     uid: word!Word.DocumentKind.notSpecified:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a document with no specified kind.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"NotSpecified"'

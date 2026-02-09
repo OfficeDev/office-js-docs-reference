@@ -4,10 +4,39 @@ uid: powerpoint!PowerPoint.Shape:class
 package: powerpoint!
 fullName: PowerPoint.Shape
 summary: Represents a single shape in the slide.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+  // Changes the transparency of every geometric shape in the slide.
+
+  await PowerPoint.run(async (context) => {
+    // Get the type of shape for every shape in the collection.
+    const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+    shapes.load("type");
+    await context.sync();
+
+    // Change the shape transparency to be halfway transparent.
+    shapes.items.forEach((shape) => {
+      if (shape.type === PowerPoint.ShapeType.geometricShape) {
+        shape.fill.transparency = 0.5;
+      }
+    });
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -21,7 +50,7 @@ properties:
       Returns an `Adjustments` object that contains adjustment values for all
       the adjustments in this shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -44,7 +73,7 @@ properties:
       with vision or cognitive impairments who may not be able to see or
       understand the shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -69,7 +98,7 @@ properties:
       and is used to determine whether they wish to hear the description of the
       content.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -102,7 +131,7 @@ properties:
       Gets the creation ID of the shape. Returns `null` if the shape has no
       creation ID.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -118,7 +147,7 @@ properties:
     fullName: customXmlParts
     summary: Returns a collection of custom XML parts in the shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -133,10 +162,37 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Returns the fill formatting of this shape.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Changes the selected shapes fill color to red.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items/fill/type");
+        await context.sync();
+        shapes.items.map((shape) => {
+          const shapeFillType = shape.fill.type as PowerPoint.ShapeFillType;
+          console.log(`Shape ID ${shape.id} original fill type: ${shapeFillType}`);
+          shape.fill.setSolidColor("red");
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -152,10 +208,47 @@ properties:
       Returns the `ShapeGroup` associated with the shape. If the shape type
       isn't `group`<!-- -->, then this method returns the `GeneralException`
       error.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/group-ungroup-shapes.yaml
+
+
+      await PowerPoint.run(async (context) => {
+        // Ungroups the first shape group on the current slide.
+
+        // Get the shapes on the current slide.
+        context.presentation.load("slides");
+        const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+        slide.load("shapes/items/type,shapes/items/id");
+        await context.sync();
+
+        const shapes: PowerPoint.ShapeCollection = slide.shapes;
+        const shapeGroups = shapes.items.filter((item) => item.type === PowerPoint.ShapeType.group);
+        if (shapeGroups.length === 0) {
+          console.warn("No shape groups on the current slide, so nothing to ungroup.");
+          return;
+        }
+
+        // Ungroup the first grouped shapes.
+        const firstGroupId = shapeGroups[0].id;
+        const shapeGroupToUngroup = shapes.getItem(firstGroupId);
+        shapeGroupToUngroup.group.ungroup();
+        await context.sync();
+
+        console.log(`Ungrouped shapes with group ID: ${firstGroupId}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -170,10 +263,45 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -187,7 +315,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -209,7 +337,7 @@ properties:
       stylistic borders). People using screen readers will hear these are
       decorative so they know they aren't missing any important information.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -226,10 +354,45 @@ properties:
     summary: >-
       The distance, in points, from the left side of the shape to the left side
       of the slide.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -250,7 +413,7 @@ properties:
 
       - A level greater than 1 indicates the shape is a nested group.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -266,7 +429,7 @@ properties:
     fullName: lineFormat
     summary: Returns the line formatting of this shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -282,7 +445,7 @@ properties:
     fullName: name
     summary: Specifies the name of this shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -300,7 +463,7 @@ properties:
       Returns the parent group of this shape. If the shape isn't part of a
       group, then this method returns the `GeneralException` error.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -318,10 +481,53 @@ properties:
       Returns the properties that apply specifically to this placeholder. If the
       shape type isn't `placeholder`<!-- -->, then this method returns the
       `GeneralException` error.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+      // Gets the placeholder shapes in the slide.
+
+      await PowerPoint.run(async (context) => {
+        // Get properties for every shape in the collection.
+        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+        shapes.load("type,name");
+        await context.sync();
+
+        const placeholderShapes = [];
+        console.log(`Number of shapes found: ${shapes.items.length}`);
+        shapes.items.forEach((shape) => {
+          if (shape.type === PowerPoint.ShapeType.placeholder) {
+            // Load placeholderFormat property.
+            // PowerPoint throws an exception if you try to load this property on a shape that isn't a placeholder type.
+            shape.load("placeholderFormat");
+            placeholderShapes.push(shape);
+          }
+        });
+        await context.sync();
+
+        console.log(`Number of placeholder shapes found: ${placeholderShapes.length}`);
+        for (let i = 0; i < placeholderShapes.length; i++) {
+          let currentPlaceholder: PowerPoint.PlaceholderFormat = placeholderShapes[i].placeholderFormat;
+          let placeholderType = currentPlaceholder.type as PowerPoint.PlaceholderType;
+          let placeholderContainedType = currentPlaceholder.containedType as PowerPoint.ShapeType;
+          console.log(`Shape "${placeholderShapes[i].name}" placeholder properties:`);
+          console.log(`\ttype: ${placeholderType}`);
+          console.log(`\tcontainedType: ${placeholderContainedType}`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -338,7 +544,7 @@ properties:
       positive value indicates clockwise rotation, and a negative value
       indicates counterclockwise rotation.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -354,7 +560,7 @@ properties:
     fullName: tags
     summary: Returns a collection of tags in the shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -374,7 +580,7 @@ properties:
       of this `Shape`<!-- -->. Throws an `InvalidArgument` exception if the
       shape doesn't support a `TextFrame`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -391,10 +597,45 @@ properties:
     summary: >-
       The distance, in points, from the top edge of the shape to the top edge of
       the slide.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -410,10 +651,39 @@ properties:
       Returns the type of this shape. See
       [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for
       details.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+
+      // Changes the transparency of every geometric shape in the slide.
+
+      await PowerPoint.run(async (context) => {
+        // Get the type of shape for every shape in the collection.
+        const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
+        shapes.load("type");
+        await context.sync();
+
+        // Change the shape transparency to be halfway transparent.
+        shapes.items.forEach((shape) => {
+          if (shape.type === PowerPoint.ShapeType.geometricShape) {
+            shape.fill.transparency = 0.5;
+          }
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -435,7 +705,7 @@ properties:
     fullName: visible
     summary: Specifies if the shape is visible.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -452,10 +722,45 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -472,10 +777,71 @@ properties:
       of the order stack. Every shape on a slide has a unique z-order, but each
       slide also has a unique z-order stack, so two shapes on separate slides
       could have the same z-order number.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
+        // Changes the z-order position of the selected shapes.
+        return PowerPoint.run(async (context) => {
+          const selectedShapes = context.presentation.getSelectedShapes();
+          selectedShapes.load();
+          await context.sync();
+
+          if (selectedShapes.items.length === 0) {
+            console.log("No shapes are selected.");
+          } else {
+            let direction = 1; // Start with bottom-most (lowest number).
+
+            // Start with top-most when sending to back or bringing forward.
+
+            switch (operation) {
+              case PowerPoint.ShapeZOrder.bringForward:
+
+              case PowerPoint.ShapeZOrder.sendToBack:
+                direction = -1; // Reverse direction.
+
+                break;
+            }
+
+            // Change the z-order position for each of the selected shapes,
+
+            // starting with the bottom-most when bringing to front or sending backward,
+
+            // or top-most when sending to back or bringing forward,
+
+            // so the selected shapes retain their relative z-order positions after they're changed.
+
+            selectedShapes.items
+              .sort((a, b) => (a.zOrderPosition - b.zOrderPosition) * direction)
+              .forEach((shape) => {
+                try {
+                  const originalZOrderPosition = shape.zOrderPosition;
+                  shape.setZOrder(operation);
+
+                  console.log(`Changed z-order of shape ${shape.id}.`);
+                } catch (err) {
+                  console.log(`Unable to change z-order of shape ${shape.id}. ${err.message}`);
+                }
+              });
+
+            await context.sync();
+          }
+        });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -491,10 +857,40 @@ methods:
     summary: >-
       Deletes the shape from the shape collection. Does nothing if the shape
       doesn't exist.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
+
+
+      // This function gets the collection of shapes on the first slide,
+
+      // and then iterates through them, deleting each one.
+
+      await PowerPoint.run(async (context) => {
+        const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
+        const shapes: PowerPoint.ShapeCollection = slide.shapes;
+
+        // Load all the shapes in the collection without loading their properties.
+        shapes.load("items/$none");
+
+        await context.sync();
+
+        shapes.items.forEach((shape) => shape.delete());
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -517,7 +913,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: PowerPointApi BETA (PREVIEW
+      \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -534,7 +930,7 @@ methods:
     fullName: getImageAsBase64(options)
     summary: Renders an image of the shape.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -561,7 +957,7 @@ methods:
       holds this `Shape`<!-- -->. Throws an exception if this shape doesn't
       belong to a `Slide`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -582,7 +978,7 @@ methods:
       object that holds this `Shape`<!-- -->. Throws an exception if this shape
       doesn't belong to a `SlideLayout`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -607,7 +1003,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -628,7 +1024,7 @@ methods:
       object that holds this `Shape`<!-- -->. Throws an exception if this shape
       doesn't belong to a `SlideMaster`<!-- -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -653,7 +1049,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -677,7 +1073,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -693,10 +1089,50 @@ methods:
     package: powerpoint!
     fullName: getTable()
     summary: Returns the `Table` object if this shape is a table.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Gets the table from a shape.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+
+        if (shapeCount.value > 0) {
+          const shape = shapes.getItemAt(0);
+          shape.load("type");
+          await context.sync();
+
+          // The shape type can indicate whether the shape is a table.
+          const isTable = shape.type === PowerPoint.ShapeType.table;
+
+          if (isTable) {
+            // Get the Table object for the Shape which is a table.
+            const table = shape.getTable();
+            table.load();
+            await context.sync();
+
+            // Get the Table row and column count.
+            console.log("Table RowCount: " + table.rowCount + " and columnCount: " + table.columnCount);
+          } else console.log("Selected shape isn't table.");
+        } else console.log("No shape selected.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -718,7 +1154,7 @@ methods:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -814,10 +1250,43 @@ methods:
     summary: >-
       Sets a hyperlink on this `Shape` with the specified options. This will
       delete any existing hyperlink on this `Shape`<!-- -->.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
+
+
+      // Updates the hyperlink on the first selected shape on the current slide.
+
+      await PowerPoint.run(async (context) => {
+        const shape: PowerPoint.Shape = context.presentation.getSelectedShapes().getItemAt(0).load("type");
+        const hyperlinkAddOptions: PowerPoint.HyperlinkAddOptions = {
+          address: "https://www.microsoft.com",
+          screenTip: "Updated screen tip of link on shape",
+        };
+        const hyperlink: PowerPoint.Hyperlink = shape.setHyperlink(hyperlinkAddOptions).load("address,screenTip");
+        try {
+          await context.sync();
+        } catch {
+          console.warn("Confirm that you have at least one slide and you've selected a shape on the active slide.");
+          return;
+        }
+
+        console.log(
+          `Updated link on the selected ${shape.type} shape to "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}").`,
+        );
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -842,10 +1311,71 @@ methods:
     summary: >-
       Moves the specified shape up or down the collection's z-order, which
       shifts it in front of or behind other shapes.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+
+      async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
+        // Changes the z-order position of the selected shapes.
+        return PowerPoint.run(async (context) => {
+          const selectedShapes = context.presentation.getSelectedShapes();
+          selectedShapes.load();
+          await context.sync();
+
+          if (selectedShapes.items.length === 0) {
+            console.log("No shapes are selected.");
+          } else {
+            let direction = 1; // Start with bottom-most (lowest number).
+
+            // Start with top-most when sending to back or bringing forward.
+
+            switch (operation) {
+              case PowerPoint.ShapeZOrder.bringForward:
+
+              case PowerPoint.ShapeZOrder.sendToBack:
+                direction = -1; // Reverse direction.
+
+                break;
+            }
+
+            // Change the z-order position for each of the selected shapes,
+
+            // starting with the bottom-most when bringing to front or sending backward,
+
+            // or top-most when sending to back or bringing forward,
+
+            // so the selected shapes retain their relative z-order positions after they're changed.
+
+            selectedShapes.items
+              .sort((a, b) => (a.zOrderPosition - b.zOrderPosition) * direction)
+              .forEach((shape) => {
+                try {
+                  const originalZOrderPosition = shape.zOrderPosition;
+                  shape.setZOrder(operation);
+
+                  console.log(`Changed z-order of shape ${shape.id}.`);
+                } catch (err) {
+                  console.log(`Unable to change z-order of shape ${shape.id}. ${err.message}`);
+                }
+              });
+
+            await context.sync();
+          }
+        });
+      }
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -868,7 +1398,7 @@ methods:
       Moves the specified shape up or down the collection's z-order, which
       shifts it in front of or behind other shapes.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

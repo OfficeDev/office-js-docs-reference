@@ -3,12 +3,10 @@ name: Excel.SettableCellProperties
 uid: excel!Excel.SettableCellProperties:interface
 package: excel!
 fullName: Excel.SettableCellProperties
-summary: >-
+summary: |-
   Represents the input parameter of setCellProperties.
 
-
-  \[ [Api set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[Api set: ExcelApi 1.9\]
 remarks: ''
 
 isPreview: false
@@ -19,12 +17,10 @@ properties:
     uid: excel!Excel.SettableCellProperties#format:member
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Represents the `format` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -37,12 +33,10 @@ properties:
     uid: excel!Excel.SettableCellProperties#hyperlink:member
     package: excel!
     fullName: hyperlink
-    summary: >-
+    summary: |-
       Represents the `hyperlink` property.
 
-
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[Api set: ExcelApi 1.9\]
     remarks: ''
 
     isPreview: false
@@ -55,13 +49,95 @@ properties:
     uid: excel!Excel.SettableCellProperties#style:member
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       Represents the `style` property.
 
+      \[Api set: ExcelApi 1.9\]
+    remarks: >
 
-      \[ [Api set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Creating the SettableCellProperties objects to use for the range.
+          // In your add-in, these should be created once, outside the function.
+          const topHeaderProps: Excel.SettableCellProperties = {
+              // The style property takes a string matching the name of an Excel style.
+              // Built-in style names are listed in the `BuiltInStyle` enum.
+              // Note that a style will overwrite any formatting,
+              // so do not use the format property with the style property.
+              style: "Heading1"
+          };
+
+          const headerProps: Excel.SettableCellProperties = {
+              // Any subproperties of format that are not set will not be changed when these cell properties are set.
+              format: {
+                  fill: {
+                      color: "Blue"
+                  },
+                  font: {
+                      color: "White",
+                      bold: true
+                  }
+              }
+          };
+
+          const nonApplicableProps: Excel.SettableCellProperties = {
+              format: {
+                  fill: {
+                      pattern: Excel.FillPattern.gray25
+                  },
+                  font: {
+                      color: "Gray",
+                      italic: true
+                  }
+              }
+          };
+
+          const matchupScoreProps: Excel.SettableCellProperties = {
+              format: {
+                  borders: {
+                      bottom: {
+                          style: Excel.BorderLineStyle.continuous
+                      },
+                      left: {
+                          style: Excel.BorderLineStyle.continuous
+                      },
+                      right: {
+                          style: Excel.BorderLineStyle.continuous
+                      },
+                      top: {
+                          style: Excel.BorderLineStyle.continuous
+                      }
+                  }
+              }
+          };
+
+          const range = sheet.getRange("A1:E5");
+
+          // You can use empty JSON objects to avoid changing a cell's properties.
+          range.setCellProperties([
+              [topHeaderProps, {}, {}, {}, {}],
+              [{}, {}, headerProps, headerProps, headerProps],
+              [{}, headerProps, nonApplicableProps, matchupScoreProps, matchupScoreProps],
+              [{}, headerProps, matchupScoreProps, nonApplicableProps, matchupScoreProps],
+              [{}, headerProps, matchupScoreProps, matchupScoreProps, nonApplicableProps]
+          ]);
+
+          sheet.getUsedRange().format.autofitColumns();
+          await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -75,7 +151,7 @@ properties:
     fullName: textRuns
     summary: Represents the `textRuns` property.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

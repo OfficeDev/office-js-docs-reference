@@ -18,7 +18,7 @@ properties:
     fullName: line
     summary: Gets an object that represents the line formatting of chart leader lines.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

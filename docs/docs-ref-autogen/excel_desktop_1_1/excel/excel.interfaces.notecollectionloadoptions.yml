@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.NoteCollectionLoadOptions
 summary: Represents a collection of note objects that are part of the workbook.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -34,7 +34,7 @@ properties:
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the author of the note.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -50,7 +50,7 @@ properties:
     fullName: content
     summary: 'For EACH ITEM in the collection: Specifies the text of the note.'
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -68,7 +68,7 @@ properties:
       For EACH ITEM in the collection: Specifies the height of the note. Note:
       This property is not supported in Excel on the web.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -87,7 +87,7 @@ properties:
       value of `true` means the note is shown. Note: This property is not
       supported in Excel on the web.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -105,7 +105,7 @@ properties:
       For EACH ITEM in the collection: Specifies the width of the note. Note:
       This property is not supported in Excel on the web.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

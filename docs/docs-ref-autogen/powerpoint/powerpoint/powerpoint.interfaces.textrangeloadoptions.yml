@@ -7,7 +7,7 @@ summary: >-
   Contains the text that is attached to a shape, in addition to properties and
   methods for manipulating the text.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -39,7 +39,7 @@ properties:
       Returns a `ShapeFont` object that represents the font attributes for the
       text range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -62,7 +62,7 @@ properties:
       the value is greater than the length of the available text from the
       starting point.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -82,7 +82,7 @@ properties:
       [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)
       for details.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -105,7 +105,7 @@ properties:
       `InvalidArgument` exception when set with a negative value or if the value
       is greater than the length of the text.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
@@ -121,7 +121,7 @@ properties:
     fullName: text
     summary: Represents the plain text content of the text range.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

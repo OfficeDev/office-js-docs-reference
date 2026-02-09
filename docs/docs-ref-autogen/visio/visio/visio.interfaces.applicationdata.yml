@@ -18,7 +18,7 @@ properties:
     fullName: showBorders
     summary: Shows or hides the iframe application borders.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 
@@ -34,7 +34,7 @@ properties:
     fullName: showToolbars
     summary: Shows or hides the standard toolbars.
     remarks: >-
-      \[ [Api set:
+      \[ [API set:
       1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
       \]
 

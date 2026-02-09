@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ChartDataTableLoadOptions
 summary: Represents the data table object of a chart.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -36,7 +36,7 @@ properties:
       Represents the format of a chart data table, which includes fill, font,
       and border format.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -56,7 +56,7 @@ properties:
     fullName: showHorizontalBorder
     summary: Specifies whether to display the horizontal border of the data table.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -72,7 +72,7 @@ properties:
     fullName: showLegendKey
     summary: Specifies whether to show the legend key of the data table.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -88,7 +88,7 @@ properties:
     fullName: showOutlineBorder
     summary: Specifies whether to display the outline border of the data table.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -104,7 +104,7 @@ properties:
     fullName: showVerticalBorder
     summary: Specifies whether to display the vertical border of the data table.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -120,7 +120,7 @@ properties:
     fullName: visible
     summary: Specifies whether to show the data table of the chart.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

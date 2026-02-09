@@ -13,7 +13,7 @@ summary: >-
   are added, a table row will continue to point at the index for which it was
   created.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -43,7 +43,7 @@ properties:
       Returns the index number of the row within the rows collection of the
       table. Zero-indexed.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -62,7 +62,7 @@ properties:
       the error string. If the returned value starts with a plus ("+"), minus
       ("-"), or equal sign ("="), Excel interprets this value as a formula.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -84,7 +84,7 @@ properties:
       retrieve data in the user's display locale, use
       `TableRow.valuesAsJsonLocal`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -107,7 +107,7 @@ properties:
       locale. To retrieve data independent of locale, use
       `TableRow.valuesAsJson`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -123,9 +123,24 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the row from the table.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const tableName = 'Table1';
+          const row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
+          row.delete();
+          await context.sync(); 
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -139,9 +154,27 @@ methods:
     package: excel!
     fullName: getRange()
     summary: Returns the range object associated with the entire row.
-    remarks: >-
-      \[ [Api set: ExcelApi
+    remarks: >
+      \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      await Excel.run(async (context) => { 
+          const tableName = 'Table1';
+          const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
+          const rowRange = row.getRange();
+          rowRange.load('address');
+          await context.sync();
+          
+          console.log(rowRange.address);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -177,7 +210,21 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      await Excel.run(async (context) => { 
+          const tableName = 'Table1';
+          const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
+          row.load('index');
+          await context.sync();
+          
+          console.log(row.index);
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

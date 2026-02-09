@@ -4,9 +4,29 @@ uid: word!Word.Body:class
 package: word!
 fullName: Word.Body
 summary: Represents the body of a document or a section.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Get the body object and read its font size.
+
+  await Word.run(async (context) => {
+      // Create a proxy object for the document body.
+      const body = context.document.body;
+      body.load("font/size");
+
+      await context.sync();
+
+      console.log("Font size: " + body.font.size);
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -18,7 +38,7 @@ properties:
     fullName: contentControls
     summary: Gets the collection of rich text content control objects in the body.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -48,7 +68,7 @@ properties:
     fullName: endnotes
     summary: Gets the collection of endnotes in the body.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -62,9 +82,40 @@ properties:
     package: word!
     fullName: fields
     summary: Gets the collection of `Field` objects in the body.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets all fields in the document body.
+
+      await Word.run(async (context) => {
+        const fields: Word.FieldCollection = context.document.body.fields.load("items");
+
+        await context.sync();
+
+        if (fields.items.length === 0) {
+          console.log("No fields in this document.");
+        } else {
+          fields.load(["code", "result"]);
+          await context.sync();
+
+          for (let i = 0; i < fields.items.length; i++) {
+            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`, `Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
+          }
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -79,9 +130,50 @@ properties:
     summary: >-
       Gets the text format of the body. Use this to get and set font name, size,
       color, and other properties.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Gets the style and the font size, font name, and font color properties
+      on the body object.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to load font and style information for the document body.
+        body.load("font/size, font/name, font/color, style");
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        // Show font-related property values on the body object.
+        const results =
+          "Font size: " +
+          body.font.size +
+          "; Font name: " +
+          body.font.name +
+          "; Font color: " +
+          body.font.color +
+          "; Body style: " +
+          body.style;
+
+        console.log(results);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -94,9 +186,31 @@ properties:
     package: word!
     fullName: footnotes
     summary: Gets the collection of footnotes in the body.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+
+      // Gets the footnotes in the document body.
+
+      await Word.run(async (context) => {
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
+        footnotes.load("length");
+        await context.sync();
+
+        console.log("Number of footnotes in the document body: " + footnotes.items.length);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -111,9 +225,36 @@ properties:
     summary: >-
       Gets the collection of `InlinePicture` objects in the body. The collection
       doesn't include floating images.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+
+      // Gets the first image in the document.
+
+      await Word.run(async (context) => {
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
+        firstPicture.load("width, height, imageFormat");
+
+        await context.sync();
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`, `Image format: ${firstPicture.imageFormat}`);
+        // Get the image encoded as Base64.
+        const base64 = firstPicture.getBase64ImageSrc();
+
+        await context.sync();
+        console.log(base64.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -126,9 +267,53 @@ properties:
     package: word!
     fullName: lists
     summary: Gets the collection of `List` objects in the body.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
+
+
+      // Gets information about the first list in the document.
+
+      await Word.run(async (context) => {
+        const lists: Word.ListCollection = context.document.body.lists;
+        lists.load("items");
+
+        await context.sync();
+
+        if (lists.items.length === 0) {
+          console.warn("There are no lists in this document.");
+          return;
+        }
+        
+        // Get the first list.
+        const list: Word.List = lists.getFirst();
+        list.load("levelTypes,levelExistences");
+
+        await context.sync();
+
+        const levelTypes  = list.levelTypes;
+        console.log("Level types of the first list:");
+        for (let i = 0; i < levelTypes.length; i++) {
+          console.log(`- Level ${i + 1} (index ${i}): ${levelTypes[i]}`);
+        }
+
+        const levelExistences = list.levelExistences;
+        console.log("Level existences of the first list:");
+        for (let i = 0; i < levelExistences.length; i++) {
+          console.log(`- Level ${i + 1} (index ${i}): ${levelExistences[i]}`);
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -141,13 +326,74 @@ properties:
     package: word!
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the body.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       Important: Paragraphs in tables aren't returned for requirement sets 1.1
       and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
+
+
+      // Counts how many times each term appears in the document.
+
+      await Word.run(async (context) => {
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
+        paragraphs.load("text");
+        await context.sync();
+
+        // Split up the document text using existing spaces as the delimiter.
+        let text = [];
+        paragraphs.items.forEach((item) => {
+          let paragraph = item.text.trim();
+          if (paragraph) {
+            paragraph.split(" ").forEach((term) => {
+              let currentTerm = term.trim();
+              if (currentTerm) {
+                text.push(currentTerm);
+              }
+            });
+          }
+        });
+
+        // Determine the list of unique terms.
+        let makeTextDistinct = new Set(text);
+        let distinctText = Array.from(makeTextDistinct);
+        let allSearchResults = [];
+
+        for (let i = 0; i < distinctText.length; i++) {
+          let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+          results.load("text");
+
+          // Map each search term with its results.
+          let correlatedResults = {
+            searchTerm: distinctText[i],
+            hits: results
+          };
+
+          allSearchResults.push(correlatedResults);
+        }
+
+        await context.sync();
+
+        // Display the count for each search term.
+        allSearchResults.forEach((result) => {
+          let length = result.hits.items.length;
+
+          console.log("Search term: " + result.searchTerm + " => Count: " + length);
+        });
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -164,7 +410,7 @@ properties:
       body could be a header. Throws an `ItemNotFound` error if there isn't a
       parent body.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -185,7 +431,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -202,7 +448,7 @@ properties:
       Gets the content control that contains the body. Throws an `ItemNotFound`
       error if there isn't a parent content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -223,7 +469,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -240,7 +486,7 @@ properties:
       Gets the parent section of the body. Throws an `ItemNotFound` error if
       there isn't a parent section.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -260,7 +506,7 @@ properties:
       properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -278,7 +524,7 @@ properties:
       and localized style names. To use the built-in styles that are portable
       between locales, see the "styleBuiltIn" property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -296,7 +542,7 @@ properties:
       built-in styles that are portable between locales. To use custom styles or
       localized style names, see the "style" property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -414,9 +660,31 @@ properties:
     package: word!
     fullName: tables
     summary: Gets the collection of `Table` objects in the body.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
+
+      // Gets the content of the first cell in the first table.
+
+      await Word.run(async (context) => {
+        const firstCell: Word.Body = context.document.body.tables.getFirst().getCell(0, 0).body;
+        firstCell.load("text");
+
+        await context.sync();
+        console.log("First cell's text is: " + firstCell.text);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -429,9 +697,38 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the body. Use the `insertText` method to insert text.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Gets the text content of the body.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to load the text in document body.
+        body.load("text");
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Body contents (text): " + body.text);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -448,9 +745,40 @@ properties:
       `section`<!-- -->, `header`<!-- -->, `footer`<!-- -->, or `tableCell`<!--
       -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and
       `noteItem` are supported in WordApi 1.5 and later.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+
+      // Gets the referenced note's item type and body type, which are both
+      "Footnote".
+
+      await Word.run(async (context) => {
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
+        footnotes.load("items");
+        await context.sync();
+
+        const referenceNumber = (document.getElementById("input-reference") as HTMLInputElement).value;
+        const mark = Number.parseInt(referenceNumber, 10) - 1;
+        const item: Word.NoteItem = footnotes.items[mark];
+        console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
+
+        item.body.load("type");
+        await context.sync();
+
+        console.log(`Body type of note: ${item.body.type}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -471,9 +799,41 @@ methods:
     summary: >-
       Clears the contents of the `Body` object. The user can perform the undo
       operation on the cleared content.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Clears out the content from the document body.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to clear the contents of the body.
+        body.clear();
+
+        console.log("Cleared the body contents.");
+      });
+
+
+      // The Silly stories add-in sample shows how the clear method can be used
+      to clear the contents of a document.
+
+      // https://aka.ms/sillystorywordaddin
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -487,9 +847,33 @@ methods:
     package: word!
     fullName: getComments()
     summary: Gets comments associated with the body.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+      // Gets the comments in the document body.
+
+      await Word.run(async (context) => {
+        const comments: Word.CommentCollection = context.document.body.getComments();
+
+        // Load objects to log in the console.
+        comments.load();
+        await context.sync();
+
+        console.log("All comments:", comments);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -504,7 +888,7 @@ methods:
     fullName: getContentControls(options)
     summary: Gets the currently supported content controls in the body.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -541,9 +925,38 @@ methods:
       Mac, Word on the web, etc.). If you need exact fidelity, or consistency
       across platforms, use `Body.getOoxml()` and convert the returned XML to
       HTML.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Gets the HTML that represents the content of the body.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to get the HTML contents of the body.
+        const bodyHTML = body.getHtml();
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Body contents (HTML): " + bodyHTML.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -557,9 +970,38 @@ methods:
     package: word!
     fullName: getOoxml()
     summary: Gets the OOXML (Office Open XML) representation of the `Body` object.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Gets the OOXML that represents the content of the body.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to get the OOXML contents of the body.
+        const bodyOOXML = body.getOoxml();
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Body contents (OOXML): " + bodyOOXML.value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -576,7 +1018,7 @@ methods:
       Gets the whole body, or the starting or ending point of the body, as a
       range.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -608,7 +1050,7 @@ methods:
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -632,7 +1074,7 @@ methods:
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -655,9 +1097,32 @@ methods:
     package: word!
     fullName: getTrackedChanges()
     summary: Gets the collection of the `TrackedChange` objects in the body.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
+
+
+      // Gets all tracked changes.
+
+      await Word.run(async (context) => {
+        const body: Word.Body = context.document.body;
+        const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
+        trackedChanges.load();
+        await context.sync();
+
+        console.log(trackedChanges);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -671,9 +1136,38 @@ methods:
     package: word!
     fullName: insertBreak(breakType, insertLocation)
     summary: Inserts a break at the specified location in the main document.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Inserts a page break at the beginning of the document.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to insert a page break at the start of the document body.
+        body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Added a page break at the start of the document body.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -703,8 +1197,8 @@ methods:
     package: word!
     fullName: insertContentControl(contentControlType)
     summary: Wraps the `Body` object with a content control.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -714,6 +1208,35 @@ methods:
       1.9. Support for `buildingBlockGallery`<!-- -->, `datePicker`<!-- -->,
       `group`<!-- -->, `picture`<!-- -->, and `repeatingSection` was added in
       WordApiDesktop 1.3.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Creates a content control using the document body.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to wrap the body in a content control.
+        body.insertContentControl();
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Wrapped the body in a content control.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -760,8 +1283,8 @@ methods:
     package: word!
     fullName: insertFileFromBase64(base64File, insertLocation)
     summary: Inserts a document into the body at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -769,6 +1292,36 @@ methods:
       ActiveX control (likely in a form field). Consider replacing such a form
       field with a content control or other option appropriate for your
       scenario.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Inserts the body from the external document at the beginning of this
+      document.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to insert the Base64-encoded string representation of the body of the selected .docx file at the beginning of the current document.
+        body.insertFileFromBase64(externalDocument, Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Added Base64-encoded text to the beginning of the document body.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -798,9 +1351,38 @@ methods:
     package: word!
     fullName: insertHtml(html, insertLocation)
     summary: Inserts HTML at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Inserts the HTML at the beginning of this document.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to insert HTML at the beginning of the document.
+        body.insertHtml("<strong>This is text inserted with body.insertHtml()</strong>", Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("HTML added to the beginning of the document body.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -830,9 +1412,42 @@ methods:
     package: word!
     fullName: insertInlinePictureFromBase64(base64EncodedImage, insertLocation)
     summary: Inserts a picture into the body at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Inserts an image inline at the beginning of this document.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Base64-encoded image to insert inline.
+        const base64EncodedImg =
+          "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
+
+        // Queue a command to insert a Base64-encoded image at the beginning of the current document.
+        body.insertInlinePictureFromBase64(base64EncodedImg, Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Added a Base64-encoded image to the beginning of the document body.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -858,9 +1473,54 @@ methods:
     package: word!
     fullName: insertOoxml(ooxml, insertLocation)
     summary: Inserts OOXML at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Inserts OOXML at the beginning of this document.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to insert OOXML at the beginning of the body.
+        body.insertOoxml(
+          "<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>",
+          Word.InsertLocation.start
+        );
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Added OOXML to the beginning of the document body.");
+      });
+
+
+      // Read "Understand when and how to use Office Open XML in your Word
+      add-in" for guidance on working with OOXML.
+
+      //
+      https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
+
+      // The Word-Add-in-DocumentAssembly sample shows how you can use this API
+      to assemble a document.
+
+      // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -890,9 +1550,38 @@ methods:
     package: word!
     fullName: insertParagraph(paragraphText, insertLocation)
     summary: Inserts a paragraph at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+
+
+      await Word.run(async (context) => {
+        // Second sentence, let's insert it as a paragraph after the previously inserted one.
+        const secondSentence: Word.Paragraph = context.document.body.insertParagraph(
+          "This is the first text with a custom style.",
+          "End"
+        );
+        secondSentence.font.set({
+          bold: false,
+          italic: true,
+          name: "Berlin Sans FB",
+          color: "blue",
+          size: 30
+        });
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -918,9 +1607,34 @@ methods:
     package: word!
     fullName: insertTable(rowCount, columnCount, insertLocation, values)
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
+
+      await Word.run(async (context) => {
+        // Use a two-dimensional array to hold the initial table values.
+        const data = [
+          ["Tokyo", "Beijing", "Seattle"],
+          ["Apple", "Orange", "Pineapple"]
+        ];
+        const table: Word.Table = context.document.body.insertTable(2, 3, "Start", data);
+        table.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
+        table.styleFirstColumn = false;
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -954,9 +1668,38 @@ methods:
     package: word!
     fullName: insertText(text, insertLocation)
     summary: Inserts text into the body at the specified location.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Inserts text at the beginning of this document.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to insert text at the beginning of the current document.
+        body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log("Text added to the beginning of the document body.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1062,9 +1805,59 @@ methods:
     summary: >-
       Performs a search with the specified search options on the scope of the
       `Body` object. The search results are a collection of `Range` objects.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
+
+
+      // Does a basic text search and highlights matches in the document.
+
+      await Word.run(async (context) => {
+        const results : Word.RangeCollection = context.document.body.search("extend");
+        results.load("length");
+
+        await context.sync();
+
+        // Let's traverse the search results and highlight matches.
+        for (let i = 0; i < results.items.length; i++) {
+          results.items[i].font.highlightColor = "yellow";
+        }
+
+        await context.sync();
+      });
+
+
+      ...
+
+
+      // Does a wildcard search and highlights matches in the document.
+
+      await Word.run(async (context) => {
+        // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.
+        const results : Word.RangeCollection = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+        results.load("length");
+
+        await context.sync();
+
+        // Let's traverse the search results and highlight matches.
+        for (let i = 0; i < results.items.length; i++) {
+          results.items[i].font.highlightColor = "red";
+          results.items[i].font.color = "white";
+        }
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1103,9 +1896,36 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the body and navigates the Word UI to it.
-    remarks: >-
-      \[ [Api set: WordApi
+    remarks: >
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-body.yaml
+
+
+      // Selects the entire body.
+
+      // Run a batch operation against the Word object model.
+
+      await Word.run(async (context) => {
+        // Create a proxy object for the document body.
+        const body: Word.Body = context.document.body;
+
+        // Queue a command to select the document body.
+        // The Word UI will move to the selected document body.
+        body.select();
+
+        console.log("Selected the document body.");
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -1126,7 +1946,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects the body and navigates the Word UI to it.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

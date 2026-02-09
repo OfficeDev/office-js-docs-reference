@@ -9,9 +9,47 @@ summary: >-
   options to find text in your Word
   add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!--
   -->.
-remarks: >-
-  \[ [Api set: WordApi
+remarks: >
+  \[ [API set: WordApi
   1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Search using a wildcard
+
+  // Run a batch operation against the Word object model.
+
+  await Word.run(async (context) => {
+      
+      // Queue a command to search the document with a wildcard
+      // for any string of characters that starts with 'to' and ends with 'n'.
+      const searchResults = context.document.body.search('to*n', {matchWildcards: true});
+
+      // Queue a command to load the search results and get the font property values.
+      searchResults.load('font');
+      
+      // Synchronize the document state by executing the queued commands, 
+      // and return a promise to indicate task completion.
+      await context.sync();
+      console.log('Found count: ' + searchResults.items.length);
+
+      // Queue a set of commands to change the font for each found item.
+      for (let i = 0; i < searchResults.items.length; i++) {
+          searchResults.items[i].font.color = 'purple';
+          searchResults.items[i].font.highlightColor = 'pink';
+          searchResults.items[i].font.bold = true;
+      }
+      
+      // Synchronize the document state by executing the queued commands, 
+      // and return a promise to indicate task completion.
+      await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -42,7 +80,7 @@ properties:
       punctuation characters\_ check box in the **Find and Replace** dialog
       box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -60,7 +98,7 @@ properties:
       default is `false`<!-- -->. Corresponds to the \_Ignore white-space
       characters\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -78,7 +116,7 @@ properties:
       default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in
       the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -96,7 +134,7 @@ properties:
       string. The default is `false`<!-- -->. Corresponds to the \_Match
       prefix\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -114,7 +152,7 @@ properties:
       string. The default is `false`<!-- -->. Corresponds to the \_Match
       suffix\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -133,7 +171,7 @@ properties:
       \_Find whole words only\_ check box in the **Find and Replace** dialog
       box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -151,7 +189,7 @@ properties:
       search operators. The default is `false`<!-- -->. Corresponds to the \_Use
       wildcards\_ check box in the **Find and Replace** dialog box.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -168,7 +206,126 @@ methods:
     summary: >-
       Queues up a command to load the specified properties of the object. You
       must call `context.sync()` before reading the properties.
-    remarks: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```TypeScript
+      // Ignore punctuation search
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Queue a command to search the document and ignore punctuation.
+          const searchResults = context.document.body.search('video you', {ignorePunct: true});
+
+          // Queue a command to load the search results and get the font property values.
+          searchResults.load('font');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Found count: ' + searchResults.items.length);
+
+          // Queue a set of commands to change the font for each found item.
+          for (let i = 0; i < searchResults.items.length; i++) {
+              searchResults.items[i].font.color = 'purple';
+              searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+              searchResults.items[i].font.bold = true;
+          }
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+      });
+      ```
+
+      ```TypeScript
+      // Search based on a prefix
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Queue a command to search the document based on a prefix.
+          const searchResults = context.document.body.search('vid', {matchPrefix: true});
+
+          // Queue a command to load the search results and get the font property values.
+          searchResults.load('font');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+
+          // Queue a set of commands to change the font for each found item.
+          for (let i = 0; i < searchResults.items.length; i++) {
+              searchResults.items[i].font.color = 'purple';
+              searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+              searchResults.items[i].font.bold = true;
+          }
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+      });
+      ```
+
+      ```TypeScript
+      // Search based on a suffix
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+
+          // Queue a command to search the document for any string of characters after 'ly'.
+          const searchResults = context.document.body.search('ly', {matchSuffix: true});
+
+          // Queue a command to load the search results and get the font property values.
+          searchResults.load('font');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Found count: ' + searchResults.items.length);
+
+          // Queue a set of commands to change the font for each found item.
+          for (let i = 0; i < searchResults.items.length; i++) {
+              searchResults.items[i].font.color = 'orange';
+              searchResults.items[i].font.highlightColor = 'black';
+              searchResults.items[i].font.bold = true;
+          }
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+      });
+      ```
+
+      ```TypeScript
+      // Search using a wildcard
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Queue a command to search the document with a wildcard
+          // for any string of characters that starts with 'to' and ends with 'n'.
+          const searchResults = context.document.body.search('to*n', {matchWildcards: true});
+
+          // Queue a command to load the search results and get the font property values.
+          searchResults.load('font');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Found count: ' + searchResults.items.length);
+
+          // Queue a set of commands to change the font for each found item.
+          for (let i = 0; i < searchResults.items.length; i++) {
+              searchResults.items[i].font.color = 'purple';
+              searchResults.items[i].font.highlightColor = 'pink';
+              searchResults.items[i].font.bold = true;
+          }
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+      });
+      ```
 
     isPreview: false
     isDeprecated: false

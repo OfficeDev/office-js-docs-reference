@@ -5,7 +5,7 @@ package: word!
 fullName: Word.PrintOutItem
 summary: Specifies the type of item to print from a document.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -14,90 +14,72 @@ fields:
   - name: autoTextEntries
     uid: word!Word.PrintOutItem.autoTextEntries:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the AutoText entries.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AutoTextEntries"'
   - name: comments
     uid: word!Word.PrintOutItem.comments:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the comments.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comments"'
   - name: documentContent
     uid: word!Word.PrintOutItem.documentContent:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the document content.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentContent"'
   - name: documentWithMarkup
     uid: word!Word.PrintOutItem.documentWithMarkup:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the document with markup.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentWithMarkup"'
   - name: envelope
     uid: word!Word.PrintOutItem.envelope:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the envelope.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Envelope"'
   - name: keyAssignments
     uid: word!Word.PrintOutItem.keyAssignments:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the key assignments.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"KeyAssignments"'
   - name: markup
     uid: word!Word.PrintOutItem.markup:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the markup.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Markup"'
   - name: properties
     uid: word!Word.PrintOutItem.properties:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the document properties.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Properties"'
   - name: styles
     uid: word!Word.PrintOutItem.styles:member
     package: word!
-    summary: >-
+    summary: |-
       Represents printing the styles.
 
-
-      * \[ [Api set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Styles"'

@@ -4,10 +4,35 @@ uid: powerpoint!PowerPoint.TableRowProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableRowProperties
 summary: Provides the table row properties.
-remarks: >-
-  \[ [Api set: PowerPointApi
+remarks: >
+  \[ [API set: PowerPointApi
   1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+  // Specifies the column widths and row heights of a table.
+
+  await PowerPoint.run(async (context) => {
+    const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+    // Add a table, specifying column widths and row heights.
+    shapes.addTable(3, 4, {
+      columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+      rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+    });
+    await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -25,10 +50,35 @@ properties:
       height will be calculated by evenly dividing the remaining height of the
       table amongst those rows. If the table doesn't have a defined height, a
       default row height will be used.
-    remarks: >-
-      \[ [Api set: PowerPointApi
+    remarks: >
+      \[ [API set: PowerPointApi
       1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+
+      // Specifies the column widths and row heights of a table.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
+
+        // Add a table, specifying column widths and row heights.
+        shapes.addTable(3, 4, {
+          columns: [{ columnWidth: 100 }, { columnWidth: 200 }, { columnWidth: 100 }, { columnWidth: 200 }],
+          rows: [{ rowHeight: 60 }, { rowHeight: 120 }, { rowHeight: 180 }]
+        });
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

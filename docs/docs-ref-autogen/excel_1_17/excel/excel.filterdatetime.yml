@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.FilterDatetime
 summary: Represents how to filter a date when filtering on values.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -18,7 +18,7 @@ properties:
     fullName: date
     summary: The date in ISO8601 format used to filter data.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -36,7 +36,7 @@ properties:
       date is 2005-04-02 and the specificity is set to "month", the filter
       operation will keep all rows with a date in the month of April 2005.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

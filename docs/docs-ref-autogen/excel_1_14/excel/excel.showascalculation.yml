@@ -4,9 +4,43 @@ uid: excel!Excel.ShowAsCalculation:enum
 package: excel!
 fullName: Excel.ShowAsCalculation
 summary: The ShowAs calculation function for the DataPivotField.
-remarks: >-
-  \[ [Api set: ExcelApi
+remarks: >
+  \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
+
+
+  await Excel.run(async (context) => {
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+      const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
+      const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
+
+      farmDataHierarchy.load("showAs");
+      wholesaleDataHierarchy.load("showAs");
+      await context.sync();
+
+      // Show the crates of each fruit type sold at the farm as a percentage of the column's total.
+      let farmShowAs = farmDataHierarchy.showAs;
+      farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+      farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+      farmDataHierarchy.showAs = farmShowAs;
+
+      let wholesaleShowAs = wholesaleDataHierarchy.showAs;
+      wholesaleShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+      wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+      wholesaleDataHierarchy.showAs = wholesaleShowAs;
+      await context.sync();
+  });
+
+  ```
 
 isPreview: false
 isDeprecated: false
@@ -14,12 +48,10 @@ fields:
   - name: differenceFrom
     uid: excel!Excel.ShowAsCalculation.differenceFrom:member
     package: excel!
-    summary: >-
+    summary: |-
       Difference from the specified Base field and Base item.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"DifferenceFrom"'
   - name: index
     uid: excel!Excel.ShowAsCalculation.index:member
@@ -29,146 +61,117 @@ fields:
       Totals)) / ((Grand Row Total) x (Grand Column Total))
 
 
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"Index"'
   - name: none
     uid: excel!Excel.ShowAsCalculation.none:member
     package: excel!
-    summary: >-
+    summary: |-
       No calculation is applied.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"None"'
   - name: percentDifferenceFrom
     uid: excel!Excel.ShowAsCalculation.percentDifferenceFrom:member
     package: excel!
-    summary: >-
+    summary: |-
       Difference from the specified Base field and Base item.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentDifferenceFrom"'
   - name: percentOf
     uid: excel!Excel.ShowAsCalculation.percentOf:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent of the specified Base field and Base item.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentOf"'
   - name: percentOfColumnTotal
     uid: excel!Excel.ShowAsCalculation.percentOfColumnTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent of the column total.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentOfColumnTotal"'
   - name: percentOfGrandTotal
     uid: excel!Excel.ShowAsCalculation.percentOfGrandTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent of the grand total.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentOfGrandTotal"'
   - name: percentOfParentColumnTotal
     uid: excel!Excel.ShowAsCalculation.percentOfParentColumnTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent of the column total for the specified Base field.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentOfParentColumnTotal"'
   - name: percentOfParentRowTotal
     uid: excel!Excel.ShowAsCalculation.percentOfParentRowTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent of the row total for the specified Base field.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentOfParentRowTotal"'
   - name: percentOfParentTotal
     uid: excel!Excel.ShowAsCalculation.percentOfParentTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent of the grand total for the specified Base field.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentOfParentTotal"'
   - name: percentOfRowTotal
     uid: excel!Excel.ShowAsCalculation.percentOfRowTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent of the row total.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentOfRowTotal"'
   - name: percentRunningTotal
     uid: excel!Excel.ShowAsCalculation.percentRunningTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Percent running total of the specified Base field.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"PercentRunningTotal"'
   - name: rankAscending
     uid: excel!Excel.ShowAsCalculation.rankAscending:member
     package: excel!
-    summary: >-
+    summary: |-
       Ascending rank of the specified Base field.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"RankAscending"'
   - name: rankDecending
     uid: excel!Excel.ShowAsCalculation.rankDecending:member
     package: excel!
-    summary: >-
+    summary: |-
       Descending rank of the specified Base field.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"RankDecending"'
   - name: runningTotal
     uid: excel!Excel.ShowAsCalculation.runningTotal:member
     package: excel!
-    summary: >-
+    summary: |-
       Running total of the specified Base field.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"RunningTotal"'
   - name: unknown
     uid: excel!Excel.ShowAsCalculation.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       Calculation is unknown or unsupported.
 
-
-      * \[ [Api set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"Unknown"'

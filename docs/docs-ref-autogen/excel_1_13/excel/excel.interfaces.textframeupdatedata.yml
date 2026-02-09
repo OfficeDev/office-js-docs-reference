@@ -21,7 +21,7 @@ properties:
       to automatically fit the text to the text frame, to automatically fit the
       text frame to the text, or not perform any automatic sizing.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -40,7 +40,7 @@ properties:
     fullName: bottomMargin
     summary: Represents the bottom margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -57,7 +57,7 @@ properties:
       Represents the horizontal alignment of the text frame. See
       `Excel.ShapeTextHorizontalAlignment` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -80,7 +80,7 @@ properties:
       Represents the horizontal overflow behavior of the text frame. See
       `Excel.ShapeTextHorizontalOverflow` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -99,7 +99,7 @@ properties:
     fullName: leftMargin
     summary: Represents the left margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -116,7 +116,7 @@ properties:
       Represents the angle to which the text is oriented for the text frame. See
       `Excel.ShapeTextOrientation` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -139,7 +139,7 @@ properties:
       Represents the reading order of the text frame, either left-to-right or
       right-to-left. See `Excel.ShapeTextReadingOrder` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -158,7 +158,7 @@ properties:
     fullName: rightMargin
     summary: Represents the right margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -173,7 +173,7 @@ properties:
     fullName: topMargin
     summary: Represents the top margin, in points, of the text frame.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -190,7 +190,7 @@ properties:
       Represents the vertical alignment of the text frame. See
       `Excel.ShapeTextVerticalAlignment` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false
@@ -211,7 +211,7 @@ properties:
       Represents the vertical overflow behavior of the text frame. See
       `Excel.ShapeTextVerticalOverflow` for details.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
     isPreview: false

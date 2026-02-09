@@ -7,7 +7,7 @@ summary: >-
   Represents options that are used to create the `LinkedEntityDataDomain` object
   being added to the `LinkedEntityDataDomainCollection`<!-- -->.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
@@ -23,7 +23,7 @@ properties:
     fullName: dataProvider
     summary: Specifies the name of the data provider for the linked entity data domain.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -44,7 +44,7 @@ properties:
       Specifies the ID of the linked entity data domain. This ID must be unique
       across all linked entity data domains defined by this Office Add-in.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -69,7 +69,7 @@ properties:
       ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!--
       -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -91,7 +91,7 @@ properties:
       unique across all linked entity data domains defined by this Office
       Add-in.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -117,7 +117,7 @@ properties:
       only applies if the `refreshMode` of the linked entity data domain is set
       to "Periodic".
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 
@@ -146,7 +146,7 @@ properties:
       `periodicRefreshInterval` property must also be set for the linked entity
       data domain.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -5,7 +5,7 @@ package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLoadOptions
 summary: Represents a single slide of a presentation.
 remarks: >-
-  \[ [Api set: PowerPointApi
+  \[ [API set: PowerPointApi
   1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
@@ -35,7 +35,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the slide.
     remarks: >-
-      \[ [Api set: PowerPointApi
+      \[ [API set: PowerPointApi
       1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 

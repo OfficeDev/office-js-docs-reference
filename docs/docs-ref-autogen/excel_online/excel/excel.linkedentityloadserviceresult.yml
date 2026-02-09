@@ -7,7 +7,7 @@ summary: >-
   Represents the result of a request to `@linkedEntityLoadService` custom
   function to load `LinkedEntityCellValue` objects.
 remarks: >-
-  \[ [Api set: ExcelApi
+  \[ [API set: ExcelApi
   1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 isPreview: false
@@ -23,7 +23,7 @@ properties:
       must be returned in the same order as the `entities` property of
       `LinkedEntityLoadServiceRequest`<!-- -->.
     remarks: >-
-      \[ [Api set: ExcelApi
+      \[ [API set: ExcelApi
       1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
 

@@ -10,7 +10,7 @@ summary: >-
   [TableRowCollection.convertToText](xref:word!Word.TableRowCollection:class)
   methods.
 remarks: >-
-  \[ [Api set: WordApiDesktop
+  \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
@@ -26,7 +26,7 @@ properties:
       property is ignored if the `separator` property isn't set to
       `paragraph`<!-- -->. The default is `true`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -44,7 +44,7 @@ properties:
       (paragraph marks delimit the converted rows). The default is `tab`<!--
       -->.
     remarks: >-
-      \[ [Api set: WordApiDesktop
+      \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false

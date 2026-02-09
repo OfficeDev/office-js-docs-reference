@@ -20,7 +20,7 @@ properties:
       Specifies the appearance of the content control. The value can be
       `boundingBox`<!-- -->, `tags`<!-- -->, or `hidden`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -41,7 +41,7 @@ properties:
       Specifies a value that indicates whether the user can delete the content
       control. Mutually exclusive with `removeWhenEdited`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -58,7 +58,7 @@ properties:
       Specifies a value that indicates whether the user can edit the contents of
       the content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -75,7 +75,7 @@ properties:
       Specifies the color of the content control. Color is specified in
       '\#RRGGBB' format or by using the color name.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -90,7 +90,7 @@ properties:
     fullName: contentControls
     summary: Gets the collection of `ContentControl` objects in the content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -107,7 +107,7 @@ properties:
       Gets the text format of the content control. Use this to get and set font
       name, size, color, and other properties.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -122,7 +122,7 @@ properties:
     fullName: id
     summary: Gets an integer that represents the content control identifier.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -139,7 +139,7 @@ properties:
       Gets the collection of `InlinePicture` objects in the content control. The
       collection doesn't include floating images.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -154,7 +154,7 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
@@ -176,7 +176,7 @@ properties:
       Specifies the placeholder text of the content control. Dimmed text will be
       displayed when the content control is empty.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -193,7 +193,7 @@ properties:
       Specifies a value that indicates whether the content control is removed
       after it's edited. Mutually exclusive with `cannotDelete`<!-- -->.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -211,7 +211,7 @@ properties:
       custom styles and localized style names. To use the built-in styles that
       are portable between locales, see the `styleBuiltIn` property.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -226,7 +226,7 @@ properties:
     fullName: tag
     summary: Specifies a tag to identify a content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -241,7 +241,7 @@ properties:
     fullName: text
     summary: Gets the text of the content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -256,7 +256,7 @@ properties:
     fullName: title
     summary: Specifies the title for a content control.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
@@ -274,7 +274,7 @@ properties:
       dropdown list, combo box, building block gallery, date picker, repeating
       section, picture, and group content controls are supported currently.
     remarks: >-
-      \[ [Api set: WordApi
+      \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
