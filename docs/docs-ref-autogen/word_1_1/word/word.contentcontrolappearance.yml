@@ -66,26 +66,21 @@ fields:
       (with optional title).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"BoundingBox"'
   - name: hidden
     uid: word!Word.ContentControlAppearance.hidden:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a content control that isn't shown.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Hidden"'
   - name: tags
     uid: word!Word.ContentControlAppearance.tags:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a content control shown as start and end markers.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Tags"'

@@ -57,7 +57,44 @@ properties:
     package: word!
     fullName: items
     summary: Gets the loaded child items in this collection.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
+
+
+      // This example starts a new list with the second paragraph.
+
+      await Word.run(async (context) => {
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
+        paragraphs.load("$none");
+
+        await context.sync();
+
+        // Start new list using the second paragraph.
+        const list: Word.List = paragraphs.items[1].startNewList();
+        list.load("$none");
+
+        await context.sync();
+
+        // To add new items to the list, use Start or End on the insertLocation parameter.
+        list.insertParagraph("New list item at the start of the list", "Start");
+        const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
+
+        // Set up list level for the list item.
+        paragraph.listItem.level = 4;
+
+        // To add paragraphs outside the list, use Before or After.
+        list.insertParagraph("New paragraph goes after (not part of the list)", "After");
+
+        await context.sync();
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -65,46 +102,6 @@ properties:
       content: 'readonly items: Word.Paragraph[];'
       return:
         type: <xref uid="word!Word.Paragraph:class" />[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
-
-
-          // This example starts a new list with the second paragraph.
-
-          await Word.run(async (context) => {
-            const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
-            paragraphs.load("$none");
-
-            await context.sync();
-
-            // Start new list using the second paragraph.
-            const list: Word.List = paragraphs.items[1].startNewList();
-            list.load("$none");
-
-            await context.sync();
-
-            // To add new items to the list, use Start or End on the insertLocation parameter.
-            list.insertParagraph("New list item at the start of the list", "Start");
-            const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
-
-            // Set up list level for the list item.
-            paragraph.listItem.level = 4;
-
-            // To add paragraphs outside the list, use Before or After.
-            list.insertParagraph("New paragraph goes after (not part of the list)", "After");
-
-            await context.sync();
-          });
-
-          ```
 methods:
   - name: getFirst()
     uid: word!Word.ParagraphCollection#getFirst:member(1)
@@ -265,8 +262,6 @@ methods:
       return:
         type: <xref uid="word!Word.ParagraphCollection:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

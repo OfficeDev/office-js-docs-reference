@@ -1,0 +1,75 @@
+### YamlMime:TSType
+name: PowerPoint.SlideGetImageOptions
+uid: powerpoint!PowerPoint.SlideGetImageOptions:interface
+package: powerpoint!
+fullName: PowerPoint.SlideGetImageOptions
+summary: Represents the available options when getting an image of a slide.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
+
+
+  // Exports current slide.
+
+  await PowerPoint.run(async (context) => {
+    const slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const slideBase64DataResult = slide.exportAsBase64();
+    const imageBase64DataResult = slide.getImageAsBase64({ height: 300 });
+    await context.sync();
+
+    localStorage.setItem("exportedSlide", slideBase64DataResult.value);
+    localStorage.setItem("exportedSlideImage", imageBase64DataResult.value);
+
+    updateSlideImage(imageBase64DataResult.value);
+
+    console.log("Slide was exported.");
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: height
+    uid: powerpoint!PowerPoint.SlideGetImageOptions#height:member
+    package: powerpoint!
+    fullName: height
+    summary: The desired height of the resulting image in pixels.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: width
+    uid: powerpoint!PowerPoint.SlideGetImageOptions#width:member
+    package: powerpoint!
+    fullName: width
+    summary: The desired width of the resulting image in pixels.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

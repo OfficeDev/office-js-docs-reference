@@ -357,8 +357,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.BindingCollection:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

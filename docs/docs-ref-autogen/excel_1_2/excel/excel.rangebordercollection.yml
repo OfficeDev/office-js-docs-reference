@@ -214,8 +214,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.RangeBorderCollection:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

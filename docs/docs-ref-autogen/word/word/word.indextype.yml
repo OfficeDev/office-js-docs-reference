@@ -14,20 +14,16 @@ fields:
   - name: indent
     uid: word!Word.IndexType.indent:member
     package: word!
-    summary: >-
+    summary: |-
       Creates an indented index.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Indent"'
   - name: runin
     uid: word!Word.IndexType.runin:member
     package: word!
-    summary: >-
+    summary: |-
       Creates a run-in index.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Runin"'

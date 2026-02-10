@@ -19,8 +19,7 @@ properties:
     summary: Gets the name of the user who made the tracked change.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -35,8 +34,7 @@ properties:
     summary: Gets the date and time when the tracked change was made.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,8 +49,7 @@ properties:
     summary: Gets the description of tracked formatting changes in the revision.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +64,7 @@ properties:
     summary: Gets a number that represents the position of this item in a collection.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -85,8 +81,7 @@ properties:
       from one place to another in the document with tracked changes.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -103,8 +98,7 @@ properties:
       contained within a revision mark.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -119,8 +113,7 @@ properties:
     summary: Gets the revision type.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

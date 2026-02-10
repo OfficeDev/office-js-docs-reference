@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: Word.Interfaces.ConditionalStyleData
+uid: word!Word.Interfaces.ConditionalStyleData:interface
+package: word!
+fullName: Word.Interfaces.ConditionalStyleData
+summary: >-
+  An interface describing the data returned by calling
+  `conditionalStyle.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bottomPadding
+    uid: word!Word.Interfaces.ConditionalStyleData#bottomPadding:member
+    package: word!
+    fullName: bottomPadding
+    summary: >-
+      Specifies the amount of space (in points) to add below the contents of a
+      single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomPadding?: number;'
+      return:
+        type: number
+  - name: leftPadding
+    uid: word!Word.Interfaces.ConditionalStyleData#leftPadding:member
+    package: word!
+    fullName: leftPadding
+    summary: >-
+      Specifies the amount of space (in points) to add to the left of the
+      contents of a single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftPadding?: number;'
+      return:
+        type: number
+  - name: rightPadding
+    uid: word!Word.Interfaces.ConditionalStyleData#rightPadding:member
+    package: word!
+    fullName: rightPadding
+    summary: >-
+      Specifies the amount of space (in points) to add to the right of the
+      contents of a single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightPadding?: number;'
+      return:
+        type: number
+  - name: topPadding
+    uid: word!Word.Interfaces.ConditionalStyleData#topPadding:member
+    package: word!
+    fullName: topPadding
+    summary: >-
+      Specifies the amount of space (in points) to add above the contents of a
+      single cell or all the cells in a table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topPadding?: number;'
+      return:
+        type: number

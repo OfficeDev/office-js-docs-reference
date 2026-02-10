@@ -8,7 +8,7 @@ summary: >-
   methods for registering event handlers and closing the dialog.
 remarks: >-
   **Requirement set**:
-  [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+  [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
   #### Examples
@@ -98,8 +98,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -164,8 +162,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -223,7 +219,7 @@ methods:
       **Requirement sets**:
 
 
-      - [DialogAPI
+      - [DialogApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 

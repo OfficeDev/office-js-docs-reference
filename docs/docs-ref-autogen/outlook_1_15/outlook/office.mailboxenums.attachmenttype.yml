@@ -83,9 +83,7 @@ fields:
       `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
 
 
-      \[ [API set: Mailbox
-      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[Api set: Mailbox 1.15\]
     value: '"base64"'
   - name: Cloud
     uid: outlook!Office.MailboxEnums.AttachmentType.Cloud:member

@@ -14,50 +14,40 @@ fields:
   - name: current
     uid: word!Word.CompatibilityMode.current:member
     package: word!
-    summary: >-
+    summary: |-
       Current Word version compatibility mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Current"'
   - name: word2003
     uid: word!Word.CompatibilityMode.word2003:member
     package: word!
-    summary: >-
+    summary: |-
       Word 2003 compatibility mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Word2003"'
   - name: word2007
     uid: word!Word.CompatibilityMode.word2007:member
     package: word!
-    summary: >-
+    summary: |-
       Word 2007 compatibility mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Word2007"'
   - name: word2010
     uid: word!Word.CompatibilityMode.word2010:member
     package: word!
-    summary: >-
+    summary: |-
       Word 2010 compatibility mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Word2010"'
   - name: word2013
     uid: word!Word.CompatibilityMode.word2013:member
     package: word!
-    summary: >-
+    summary: |-
       Word 2013 compatibility mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Word2013"'

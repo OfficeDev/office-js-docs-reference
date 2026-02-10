@@ -1,0 +1,132 @@
+### YamlMime:TSType
+name: Word.Interfaces.TabStopCollectionLoadOptions
+uid: word!Word.Interfaces.TabStopCollectionLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.TabStopCollectionLoadOptions
+summary: >-
+  Represents a collection of [tab stops](xref:word!Word.TabStop:class) in a Word
+  document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.TabStopCollectionLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: alignment
+    uid: word!Word.Interfaces.TabStopCollectionLoadOptions#alignment:member
+    package: word!
+    fullName: alignment
+    summary: >-
+      For EACH ITEM in the collection: Gets a `TabAlignment` value that
+      represents the alignment for the tab stop.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: boolean;'
+      return:
+        type: boolean
+  - name: customTab
+    uid: word!Word.Interfaces.TabStopCollectionLoadOptions#customTab:member
+    package: word!
+    fullName: customTab
+    summary: >-
+      For EACH ITEM in the collection: Gets whether this tab stop is a custom
+      tab stop.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customTab?: boolean;'
+      return:
+        type: boolean
+  - name: leader
+    uid: word!Word.Interfaces.TabStopCollectionLoadOptions#leader:member
+    package: word!
+    fullName: leader
+    summary: >-
+      For EACH ITEM in the collection: Gets a `TabLeader` value that represents
+      the leader for this `TabStop` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leader?: boolean;'
+      return:
+        type: boolean
+  - name: next
+    uid: word!Word.Interfaces.TabStopCollectionLoadOptions#next:member
+    package: word!
+    fullName: next
+    summary: 'For EACH ITEM in the collection: Gets the next tab stop in the collection.'
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'next?: Word.Interfaces.TabStopLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TabStopLoadOptions:interface" />
+  - name: position
+    uid: word!Word.Interfaces.TabStopCollectionLoadOptions#position:member
+    package: word!
+    fullName: position
+    summary: >-
+      For EACH ITEM in the collection: Gets the position of the tab stop
+      relative to the left margin.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type: boolean
+  - name: previous
+    uid: word!Word.Interfaces.TabStopCollectionLoadOptions#previous:member
+    package: word!
+    fullName: previous
+    summary: >-
+      For EACH ITEM in the collection: Gets the previous tab stop in the
+      collection.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previous?: Word.Interfaces.TabStopLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TabStopLoadOptions:interface" />

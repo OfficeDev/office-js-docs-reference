@@ -14,13 +14,10 @@ fields:
   - name: onDocumentSave
     uid: excel!Excel.AutorunEventType.onDocumentSave:member
     package: excel!
-    summary: >-
+    summary: |-
       The autorun event type is triggered when the document is saved.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"OnDocumentSave"'
   - name: onDocumentSaveAs
     uid: excel!Excel.AutorunEventType.onDocumentSaveAs:member
@@ -30,18 +27,13 @@ fields:
       file.
 
 
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"OnDocumentSaveAs"'
   - name: unknown
     uid: excel!Excel.AutorunEventType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       The autorun event type is unknown.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
     value: '"Unknown"'

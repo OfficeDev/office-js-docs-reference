@@ -14,20 +14,16 @@ fields:
   - name: ascending
     uid: word!Word.SortOrder.ascending:member
     package: word!
-    summary: >-
+    summary: |-
       Sorts in ascending order.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ascending"'
   - name: descending
     uid: word!Word.SortOrder.descending:member
     package: word!
-    summary: >-
+    summary: |-
       Sorts in descending order.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Descending"'

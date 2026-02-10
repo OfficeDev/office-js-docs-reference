@@ -795,8 +795,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartAxis:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

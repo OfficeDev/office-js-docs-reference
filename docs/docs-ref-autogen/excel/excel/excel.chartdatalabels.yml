@@ -508,8 +508,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartDataLabels:class" />
         description: >-
-
-
           #### Examples
 
 

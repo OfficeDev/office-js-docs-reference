@@ -6,8 +6,7 @@ fullName: Word.RevisionsMarkup
 summary: Specifies the extent of markup visible in the document.
 remarks: >-
   \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,33 +14,24 @@ fields:
   - name: all
     uid: word!Word.RevisionsMarkup.all:member
     package: word!
-    summary: >-
+    summary: |-
       All markup.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"All"'
   - name: none
     uid: word!Word.RevisionsMarkup.none:member
     package: word!
-    summary: >-
+    summary: |-
       No markup.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: simple
     uid: word!Word.RevisionsMarkup.simple:member
     package: word!
-    summary: >-
+    summary: |-
       Simple markup.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Simple"'

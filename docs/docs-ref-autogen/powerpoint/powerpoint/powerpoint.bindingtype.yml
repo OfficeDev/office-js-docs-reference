@@ -58,11 +58,8 @@ fields:
   - name: shape
     uid: powerpoint!PowerPoint.BindingType.shape:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       Represents a shape binding.
 
-
-      * \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.8\]
     value: '"Shape"'

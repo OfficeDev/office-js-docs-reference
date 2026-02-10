@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListTemplateUpdateData
+uid: word!Word.Interfaces.ListTemplateUpdateData:interface
+package: word!
+fullName: Word.Interfaces.ListTemplateUpdateData
+summary: >-
+  An interface for updating data on the `ListTemplate` object, for use in
+  `listTemplate.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: word!Word.Interfaces.ListTemplateUpdateData#name:member
+    package: word!
+    fullName: name
+    summary: Specifies the name of the list template.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: outlineNumbered
+    uid: word!Word.Interfaces.ListTemplateUpdateData#outlineNumbered:member
+    package: word!
+    fullName: outlineNumbered
+    summary: Specifies whether the list template is outline numbered.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outlineNumbered?: boolean;'
+      return:
+        type: boolean

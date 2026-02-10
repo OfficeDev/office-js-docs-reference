@@ -12,8 +12,6 @@ summary: >-
   executes, it receives an AsyncResult object that you can access from the
   `callback` function's only parameter.
 remarks: >-
-
-
   #### Examples
 
 
@@ -79,7 +77,26 @@ properties:
       Number, Boolean, Object, Array, Null, or Undefined) passed to the optional
       `asyncContext` parameter of the invoked method. Returns Undefined, if you
       didn't pass anything to the asyncContext parameter.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function getDataWithContext() {
+          const format = "Your data: ";
+          Office.context.document.getSelectedDataAsync(
+              Office.CoercionType.Text, 
+              { asyncContext: format }, 
+              showDataWithContext);
+      }
+
+      function showDataWithContext(asyncResult) {
+          write(asyncResult.asyncContext + asyncResult.value);
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -87,28 +104,6 @@ properties:
       content: 'asyncContext: any;'
       return:
         type: any
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function getDataWithContext() {
-              const format = "Your data: ";
-              Office.context.document.getSelectedDataAsync(
-                  Office.CoercionType.Text, 
-                  { asyncContext: format }, 
-                  showDataWithContext);
-          }
-
-          function showDataWithContext(asyncResult) {
-              write(asyncResult.asyncContext + asyncResult.value);
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: diagnostics
     uid: office!Office.AsyncResult#diagnostics:member
     package: office!
@@ -154,7 +149,25 @@ properties:
     summary: >-
       Gets an [Office.Error](xref:office!Office.Error:interface) object that
       provides a description of the error, if any error occurred.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -162,27 +175,6 @@ properties:
       content: 'error: Office.Error;'
       return:
         type: <xref uid="office!Office.Error:interface" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function getData() {
-              Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
-                      write(asyncResult.error.message);
-                  }
-                  else {
-                      write(asyncResult.value);
-                  }
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: status
     uid: office!Office.AsyncResult#status:member
     package: office!
@@ -191,7 +183,25 @@ properties:
       Gets the
       [Office.AsyncResultStatus](xref:office!Office.AsyncResultStatus:enum) of
       the asynchronous operation.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -199,27 +209,6 @@ properties:
       content: 'status: AsyncResultStatus;'
       return:
         type: <xref uid="office!Office.AsyncResultStatus:enum" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function getData() {
-              Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
-                      write(asyncResult.error.message);
-                  }
-                  else {
-                      write(asyncResult.value);
-                  }
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: value
     uid: office!Office.AsyncResult#value:member
     package: office!

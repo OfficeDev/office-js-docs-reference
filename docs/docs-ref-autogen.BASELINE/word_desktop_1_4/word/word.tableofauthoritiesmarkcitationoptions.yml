@@ -1,0 +1,75 @@
+### YamlMime:TSType
+name: Word.TableOfAuthoritiesMarkCitationOptions
+uid: word!Word.TableOfAuthoritiesMarkCitationOptions:interface
+package: word!
+fullName: Word.TableOfAuthoritiesMarkCitationOptions
+summary: >-
+  Specifies the options for inserting a [Table of Authorities Entry (TA)
+  field](https://support.microsoft.com/office/2a90ad2b-4169-475d-8a09-e62521d4159c)<!--
+  -->.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: category
+    uid: word!Word.TableOfAuthoritiesMarkCitationOptions#category:member
+    package: word!
+    fullName: category
+    summary: >-
+      If provided, specifies the category number to be associated with the
+      entry. Values 1 through 16 correspond to the items listed in the Category
+      dropdown list of the Mark Citation dialog. The value `1` corresponds to
+      the first category listed, `2` corresponds to the second category, and so
+      on. To learn how to access this through the Word UI, see [Create a table
+      of
+      authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'category?: number;'
+      return:
+        type: number
+  - name: longCitation
+    uid: word!Word.TableOfAuthoritiesMarkCitationOptions#longCitation:member
+    package: word!
+    fullName: longCitation
+    summary: >-
+      If provided, specifies the long citation for the entry as it will appear
+      in a table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longCitation?: string;'
+      return:
+        type: string
+  - name: longCitationAutoText
+    uid: >-
+      word!Word.TableOfAuthoritiesMarkCitationOptions#longCitationAutoText:member
+    package: word!
+    fullName: longCitationAutoText
+    summary: >-
+      If provided, specifies the name of the AutoText entry that contains the
+      text of the long citation as it will appear in a table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longCitationAutoText?: string;'
+      return:
+        type: string

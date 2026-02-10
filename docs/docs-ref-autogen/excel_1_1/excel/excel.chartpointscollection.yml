@@ -191,8 +191,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartPointsCollection:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

@@ -1,0 +1,165 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeFontLoadOptions
+uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.ShapeFontLoadOptions
+summary: >-
+  Represents the font attributes, such as font name, font size, and color, for a
+  shape's TextRange object.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: bold
+    uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions#bold:member
+    package: powerpoint!
+    fullName: bold
+    summary: >-
+      Specifies whether the text in the `TextRange` is set to bold. The possible
+      values are as follows:
+
+
+      - `true`<!-- -->: All the text is bold.
+
+
+      - `false`<!-- -->: None of the text is bold.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is bold.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions#color:member
+    package: powerpoint!
+    fullName: color
+    summary: >-
+      Specifies the HTML color code representation of the text color (e.g.,
+      "\#FF0000" represents red). Returns `null` if the `TextRange` contains
+      text fragments with different colors.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: italic
+    uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions#italic:member
+    package: powerpoint!
+    fullName: italic
+    summary: >-
+      Specifies whether the text in the `TextRange` is set to italic. The
+      possible values are as follows:
+
+
+      - `true`<!-- -->: All the text is italicized.
+
+
+      - `false`<!-- -->: None of the text is italicized.
+
+
+      - `null`<!-- -->: Returned if some, but not all, of the text is
+      italicized.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions#name:member
+    package: powerpoint!
+    fullName: name
+    summary: >-
+      Specifies the font name (e.g., "Calibri"). If the text is a Complex Script
+      or East Asian language, this is the corresponding font name; otherwise
+      it's the Latin font name. Returns `null` if the `TextRange` contains text
+      fragments with different font names.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: size
+    uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions#size:member
+    package: powerpoint!
+    fullName: size
+    summary: >-
+      Specifies the font size in points (e.g., 11). Returns `null` if the
+      `TextRange` contains text fragments with different font sizes.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type: boolean
+  - name: underline
+    uid: powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions#underline:member
+    package: powerpoint!
+    fullName: underline
+    summary: >-
+      Specifies the type of underline applied to the font. Returns `null` if the
+      `TextRange` contains text fragments with different underline styles. See
+      [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type: boolean

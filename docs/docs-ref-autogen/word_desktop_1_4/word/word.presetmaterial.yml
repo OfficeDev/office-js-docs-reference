@@ -14,160 +14,128 @@ fields:
   - name: clear
     uid: word!Word.PresetMaterial.clear:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a clear material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Clear"'
   - name: darkEdge
     uid: word!Word.PresetMaterial.darkEdge:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark edge material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkEdge"'
   - name: flat
     uid: word!Word.PresetMaterial.flat:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a flat material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Flat"'
   - name: matte
     uid: word!Word.PresetMaterial.matte:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a matte material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Matte"'
   - name: matte2
     uid: word!Word.PresetMaterial.matte2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a second matte material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Matte2"'
   - name: metal
     uid: word!Word.PresetMaterial.metal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a metal material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Metal"'
   - name: metal2
     uid: word!Word.PresetMaterial.metal2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a second metal material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Metal2"'
   - name: mixed
     uid: word!Word.PresetMaterial.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a mixed material type.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: plastic
     uid: word!Word.PresetMaterial.plastic:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a plastic material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Plastic"'
   - name: plastic2
     uid: word!Word.PresetMaterial.plastic2:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a second plastic material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Plastic2"'
   - name: powder
     uid: word!Word.PresetMaterial.powder:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a powder material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Powder"'
   - name: softEdge
     uid: word!Word.PresetMaterial.softEdge:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a soft edge material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SoftEdge"'
   - name: softMetal
     uid: word!Word.PresetMaterial.softMetal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a soft metal material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SoftMetal"'
   - name: translucentPowder
     uid: word!Word.PresetMaterial.translucentPowder:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a translucent powder material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"TranslucentPowder"'
   - name: warmMatte
     uid: word!Word.PresetMaterial.warmMatte:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a warm matte material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WarmMatte"'
   - name: wireFrame
     uid: word!Word.PresetMaterial.wireFrame:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a wireframe material.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WireFrame"'

@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: OfficeExtension.UpdateOptions
+uid: office!OfficeExtension.UpdateOptions:interface
+package: office!
+fullName: OfficeExtension.UpdateOptions
+summary: >-
+  Provides an option for suppressing an error when the object that is used to
+  set multiple properties tries to set read-only properties.
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  // Update a range in an Excel worksheet using the RangeUpdateData interface.
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("B2:E2");
+
+      // Configure the set operation to still run if a readonly property is included.
+      // All settable properties will be updated.
+      const options: OfficeExtension.UpdateOptions = {throwOnReadOnly: false};
+
+      // Set the range with some data from another source (`updateData` is set elsewhere).
+      range.set(updateData, options);
+      await context.sync();
+  });
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: throwOnReadOnly
+    uid: office!OfficeExtension.UpdateOptions#throwOnReadOnly:member
+    package: office!
+    fullName: throwOnReadOnly
+    summary: >-
+      Throw an error if the passed-in property list includes read-only
+      properties (default = true).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'throwOnReadOnly?: boolean'
+      return:
+        type: boolean

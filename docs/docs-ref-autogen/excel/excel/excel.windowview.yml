@@ -19,8 +19,7 @@ fields:
       and editing.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"normalView"'
   - name: pageBreakPreview
     uid: excel!Excel.WindowView.pageBreakPreview:member
@@ -30,8 +29,7 @@ fields:
       pages will break when printed.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"pageBreakPreview"'
   - name: pageLayoutView
     uid: excel!Excel.WindowView.pageLayoutView:member
@@ -41,6 +39,5 @@ fields:
       worksheet will look when printed.
 
 
-      * \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiDesktop 1.1\]
     value: '"pageLayoutView"'

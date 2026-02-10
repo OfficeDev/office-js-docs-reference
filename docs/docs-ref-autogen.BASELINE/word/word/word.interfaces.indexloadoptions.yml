@@ -1,0 +1,200 @@
+### YamlMime:TSType
+name: Word.Interfaces.IndexLoadOptions
+uid: word!Word.Interfaces.IndexLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.IndexLoadOptions
+summary: >-
+  Represents a single index. The `Index` object is a member of the
+  [Word.IndexCollection](xref:word!Word.IndexCollection:class)<!-- -->. The
+  `IndexCollection` includes all the indexes in the document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.IndexLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: filter
+    uid: word!Word.Interfaces.IndexLoadOptions#filter:member
+    package: word!
+    fullName: filter
+    summary: >-
+      Gets a value that represents how Microsoft Word classifies the first
+      character of entries in the index. See `IndexFilter` for available values.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'filter?: boolean;'
+      return:
+        type: boolean
+  - name: headingSeparator
+    uid: word!Word.Interfaces.IndexLoadOptions#headingSeparator:member
+    package: word!
+    fullName: headingSeparator
+    summary: >-
+      Gets the text between alphabetical groups (entries that start with the
+      same letter) in the index. Corresponds to the **<!-- -->\\<!-- -->h**
+      switch for an [INDEX
+      field](https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headingSeparator?: boolean;'
+      return:
+        type: boolean
+  - name: indexLanguage
+    uid: word!Word.Interfaces.IndexLoadOptions#indexLanguage:member
+    package: word!
+    fullName: indexLanguage
+    summary: >-
+      Gets a `LanguageId` value that represents the sorting language to use for
+      the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'indexLanguage?: boolean;'
+      return:
+        type: boolean
+  - name: numberOfColumns
+    uid: word!Word.Interfaces.IndexLoadOptions#numberOfColumns:member
+    package: word!
+    fullName: numberOfColumns
+    summary: Gets the number of columns for each page of the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberOfColumns?: boolean;'
+      return:
+        type: boolean
+  - name: range
+    uid: word!Word.Interfaces.IndexLoadOptions#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document that
+      is contained within the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: rightAlignPageNumbers
+    uid: word!Word.Interfaces.IndexLoadOptions#rightAlignPageNumbers:member
+    package: word!
+    fullName: rightAlignPageNumbers
+    summary: Specifies if page numbers are aligned with the right margin in the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightAlignPageNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: separateAccentedLetterHeadings
+    uid: >-
+      word!Word.Interfaces.IndexLoadOptions#separateAccentedLetterHeadings:member
+    package: word!
+    fullName: separateAccentedLetterHeadings
+    summary: >-
+      Gets if the index contains separate headings for accented letters (for
+      example, words that begin with "À" are under one heading and words that
+      begin with "A" are under another).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'separateAccentedLetterHeadings?: boolean;'
+      return:
+        type: boolean
+  - name: sortBy
+    uid: word!Word.Interfaces.IndexLoadOptions#sortBy:member
+    package: word!
+    fullName: sortBy
+    summary: Specifies the sorting criteria for the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortBy?: boolean;'
+      return:
+        type: boolean
+  - name: tabLeader
+    uid: word!Word.Interfaces.IndexLoadOptions#tabLeader:member
+    package: word!
+    fullName: tabLeader
+    summary: >-
+      Specifies the leader character between entries in the index and their
+      associated page numbers.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabLeader?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: word!Word.Interfaces.IndexLoadOptions#type:member
+    package: word!
+    fullName: type
+    summary: Gets the index type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

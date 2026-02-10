@@ -1,0 +1,256 @@
+### YamlMime:TSEnum
+name: Word.RevisionType
+uid: word!Word.RevisionType:enum
+package: word!
+fullName: Word.RevisionType
+summary: Specifies the revision type.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: cellDeletion
+    uid: word!Word.RevisionType.cellDeletion:member
+    package: word!
+    summary: >-
+      Cell deletion revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"CellDeletion"'
+  - name: cellInsertion
+    uid: word!Word.RevisionType.cellInsertion:member
+    package: word!
+    summary: >-
+      Cell insertion revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"CellInsertion"'
+  - name: cellMerge
+    uid: word!Word.RevisionType.cellMerge:member
+    package: word!
+    summary: >-
+      Cell merge revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"CellMerge"'
+  - name: cellSplit
+    uid: word!Word.RevisionType.cellSplit:member
+    package: word!
+    summary: >-
+      Cell split revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"CellSplit"'
+  - name: conflict
+    uid: word!Word.RevisionType.conflict:member
+    package: word!
+    summary: >-
+      Conflict revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Conflict"'
+  - name: conflictDelete
+    uid: word!Word.RevisionType.conflictDelete:member
+    package: word!
+    summary: >-
+      Conflict delete revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"ConflictDelete"'
+  - name: conflictInsert
+    uid: word!Word.RevisionType.conflictInsert:member
+    package: word!
+    summary: >-
+      Conflict insert revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"ConflictInsert"'
+  - name: delete
+    uid: word!Word.RevisionType.delete:member
+    package: word!
+    summary: >-
+      Delete revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Delete"'
+  - name: displayField
+    uid: word!Word.RevisionType.displayField:member
+    package: word!
+    summary: >-
+      Display field revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"DisplayField"'
+  - name: insert
+    uid: word!Word.RevisionType.insert:member
+    package: word!
+    summary: >-
+      Insert revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Insert"'
+  - name: movedFrom
+    uid: word!Word.RevisionType.movedFrom:member
+    package: word!
+    summary: >-
+      Moved from revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"MovedFrom"'
+  - name: movedTo
+    uid: word!Word.RevisionType.movedTo:member
+    package: word!
+    summary: >-
+      Moved to revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"MovedTo"'
+  - name: none
+    uid: word!Word.RevisionType.none:member
+    package: word!
+    summary: >-
+      No revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"None"'
+  - name: paragraphNumber
+    uid: word!Word.RevisionType.paragraphNumber:member
+    package: word!
+    summary: >-
+      Paragraph number revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"ParagraphNumber"'
+  - name: paragraphProperty
+    uid: word!Word.RevisionType.paragraphProperty:member
+    package: word!
+    summary: >-
+      Paragraph property revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"ParagraphProperty"'
+  - name: property
+    uid: word!Word.RevisionType.property:member
+    package: word!
+    summary: >-
+      Property revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Property"'
+  - name: reconcile
+    uid: word!Word.RevisionType.reconcile:member
+    package: word!
+    summary: >-
+      Reconcile revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Reconcile"'
+  - name: replace
+    uid: word!Word.RevisionType.replace:member
+    package: word!
+    summary: >-
+      Replace revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Replace"'
+  - name: sectionProperty
+    uid: word!Word.RevisionType.sectionProperty:member
+    package: word!
+    summary: >-
+      Section property revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"SectionProperty"'
+  - name: style
+    uid: word!Word.RevisionType.style:member
+    package: word!
+    summary: >-
+      Style revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Style"'
+  - name: styleDefinition
+    uid: word!Word.RevisionType.styleDefinition:member
+    package: word!
+    summary: >-
+      Style definition revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"StyleDefinition"'
+  - name: tableProperty
+    uid: word!Word.RevisionType.tableProperty:member
+    package: word!
+    summary: >-
+      Table property revision.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"TableProperty"'

@@ -40,22 +40,16 @@ fields:
   - name: byColumns
     uid: excel!Excel.GroupOption.byColumns:member
     package: excel!
-    summary: >-
+    summary: |-
       Group by columns.
 
-
-      * \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.10\]
     value: '"ByColumns"'
   - name: byRows
     uid: excel!Excel.GroupOption.byRows:member
     package: excel!
-    summary: >-
+    summary: |-
       Group by rows.
 
-
-      * \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.10\]
     value: '"ByRows"'

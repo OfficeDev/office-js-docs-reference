@@ -6,7 +6,7 @@ fullName: OneNote.Interfaces.InkWordLoadOptions
 summary: A container for the ink in a word in a paragraph.
 remarks: >-
   \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -35,8 +35,7 @@ properties:
     summary: Gets the ID of the InkWord object. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -51,8 +50,7 @@ properties:
     summary: The ID of the recognized language in this ink word. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -67,8 +65,7 @@ properties:
     summary: The parent paragraph containing the ink word.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -87,8 +84,7 @@ properties:
       Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

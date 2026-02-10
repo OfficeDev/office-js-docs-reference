@@ -44,132 +44,96 @@ fields:
   - name: array
     uid: excel!Excel.CellValueType.array:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents an `ArrayCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Array"'
   - name: boolean
     uid: excel!Excel.CellValueType.boolean:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `BooleanCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Boolean"'
   - name: double
     uid: excel!Excel.CellValueType.double:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `DoubleCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Double"'
   - name: empty
     uid: excel!Excel.CellValueType.empty:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents an `EmptyCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Empty"'
   - name: entity
     uid: excel!Excel.CellValueType.entity:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents an `EntityCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Entity"'
   - name: error
     uid: excel!Excel.CellValueType.error:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents an `ErrorCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Error"'
   - name: formattedNumber
     uid: excel!Excel.CellValueType.formattedNumber:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `FormattedNumberCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"FormattedNumber"'
   - name: linkedEntity
     uid: excel!Excel.CellValueType.linkedEntity:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `LinkedEntityCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"LinkedEntity"'
   - name: notAvailable
     uid: excel!Excel.CellValueType.notAvailable:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `ValueTypeNotAvailableCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"NotAvailable"'
   - name: reference
     uid: excel!Excel.CellValueType.reference:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `ReferenceCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Reference"'
   - name: string
     uid: excel!Excel.CellValueType.string:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `StringCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"String"'
   - name: webImage
     uid: excel!Excel.CellValueType.webImage:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `WebImageCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"WebImage"'

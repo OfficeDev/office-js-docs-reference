@@ -45,100 +45,80 @@ fields:
   - name: endnote
     uid: word!Word.BodyType.endnote:member
     package: word!
-    summary: >-
+    summary: |-
       Endnote body.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"Endnote"'
   - name: footer
     uid: word!Word.BodyType.footer:member
     package: word!
-    summary: >-
+    summary: |-
       Footer body.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Footer"'
   - name: footnote
     uid: word!Word.BodyType.footnote:member
     package: word!
-    summary: >-
+    summary: |-
       Footnote body.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"Footnote"'
   - name: header
     uid: word!Word.BodyType.header:member
     package: word!
-    summary: >-
+    summary: |-
       Header body.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Header"'
   - name: mainDoc
     uid: word!Word.BodyType.mainDoc:member
     package: word!
-    summary: >-
+    summary: |-
       Main document body.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"MainDoc"'
   - name: noteItem
     uid: word!Word.BodyType.noteItem:member
     package: word!
-    summary: >-
+    summary: |-
       Note body e.g., endnote, footnote.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"NoteItem"'
   - name: section
     uid: word!Word.BodyType.section:member
     package: word!
-    summary: >-
+    summary: |-
       Section body.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Section"'
   - name: shape
     uid: word!Word.BodyType.shape:member
     package: word!
-    summary: >-
+    summary: |-
       Shape body.
 
-
-      * \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
     value: '"Shape"'
   - name: tableCell
     uid: word!Word.BodyType.tableCell:member
     package: word!
-    summary: >-
+    summary: |-
       Table cell body.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"TableCell"'
   - name: unknown
     uid: word!Word.BodyType.unknown:member
     package: word!
-    summary: >-
+    summary: |-
       Unknown body type.
 
-
-      * \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.3\]
     value: '"Unknown"'

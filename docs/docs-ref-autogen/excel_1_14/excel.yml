@@ -991,8 +991,7 @@ functions:
       real file type of the file. If `extensionHardening` is set to deny
       mismatches and the file extension does not match the real file type, this
       API throws the following error: "This operation is not allowed due to the
-      extension hardening policy." \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      extension hardening policy." \[Api set: ExcelApi 1.8\]
     remarks: ''
 
     isPreview: false
@@ -1005,37 +1004,7 @@ functions:
           type: string
       return:
         type: Promise&lt;void&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const myFile = <HTMLInputElement>document.getElementById("file");
-
-          const reader = new FileReader();
-
-
-          reader.onload = (event) => {
-              Excel.run((context) => {
-              // Remove the metadata before the base64-encoded string.
-              const startIndex = reader.result.toString().indexOf("base64,");
-              const mybase64 = reader.result.toString().substr(startIndex + 7);
-
-              Excel.createWorkbook(mybase64);
-              return context.sync();
-              });
-          };
-
-
-          // Read in the file as a data URL so we can parse the base64-encoded
-          string.
-
-          reader.readAsDataURL(myFile.files[0]);
-
-          ```
+        description: ''
   - name: Excel.getDataCommonPostprocess(response, callArgs)
     uid: excel!Excel.getDataCommonPostprocess:function(1)
     package: excel!
@@ -1105,25 +1074,7 @@ functions:
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // *.run methods automatically create an
-          OfficeExtension.ClientRequestContext
-
-          // object to work with the Office file.
-
-          await Excel.run(async (context: Excel.RequestContext) => {
-            const workbook = context.workbook;
-            // Interact with the Excel workbook...
-          });
-
-          ```
+        description: ''
   - name: Excel.run(object, batch)
     uid: excel!Excel.run:function(2)
     package: excel!

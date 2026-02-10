@@ -41,49 +41,35 @@ fields:
   - name: formula
     uid: excel!Excel.ConditionalFormatColorCriterionType.formula:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"Formula"'
   - name: highestValue
     uid: excel!Excel.ConditionalFormatColorCriterionType.highestValue:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"HighestValue"'
   - name: invalid
     uid: excel!Excel.ConditionalFormatColorCriterionType.invalid:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"Invalid"'
   - name: lowestValue
     uid: excel!Excel.ConditionalFormatColorCriterionType.lowestValue:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"LowestValue"'
   - name: number
     uid: excel!Excel.ConditionalFormatColorCriterionType.number:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"Number"'
   - name: percent
     uid: excel!Excel.ConditionalFormatColorCriterionType.percent:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"Percent"'
   - name: percentile
     uid: excel!Excel.ConditionalFormatColorCriterionType.percentile:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"Percentile"'

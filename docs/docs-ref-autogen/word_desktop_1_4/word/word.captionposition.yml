@@ -14,20 +14,16 @@ fields:
   - name: above
     uid: word!Word.CaptionPosition.above:member
     package: word!
-    summary: >-
+    summary: |-
       Places the caption above the selected item.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Above"'
   - name: below
     uid: word!Word.CaptionPosition.below:member
     package: word!
-    summary: >-
+    summary: |-
       Places the caption below the selected item.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Below"'

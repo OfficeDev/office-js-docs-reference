@@ -14,40 +14,32 @@ fields:
   - name: cell
     uid: word!Word.XmlNodeLevel.cell:member
     package: word!
-    summary: >-
+    summary: |-
       Cell node level.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Cell"'
   - name: inline
     uid: word!Word.XmlNodeLevel.inline:member
     package: word!
-    summary: >-
+    summary: |-
       Inline node level.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.XmlNodeLevel.paragraph:member
     package: word!
-    summary: >-
+    summary: |-
       Paragraph node level.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Paragraph"'
   - name: row
     uid: word!Word.XmlNodeLevel.row:member
     package: word!
-    summary: >-
+    summary: |-
       Row node level.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Row"'

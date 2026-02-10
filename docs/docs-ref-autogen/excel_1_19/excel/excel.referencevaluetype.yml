@@ -14,66 +14,48 @@ fields:
   - name: array
     uid: excel!Excel.ReferenceValueType.array:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents an `ArrayCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Array"'
   - name: boolean
     uid: excel!Excel.ReferenceValueType.boolean:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `BooleanCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"Boolean"'
   - name: double
     uid: excel!Excel.ReferenceValueType.double:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `DoubleCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"Double"'
   - name: entity
     uid: excel!Excel.ReferenceValueType.entity:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents an `EntityCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Entity"'
   - name: root
     uid: excel!Excel.ReferenceValueType.root:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `RootReferenceCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Root"'
   - name: string
     uid: excel!Excel.ReferenceValueType.string:member
     package: excel!
-    summary: >-
+    summary: |-
       Represents a `StringCellValue`<!-- -->.
 
-
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"String"'

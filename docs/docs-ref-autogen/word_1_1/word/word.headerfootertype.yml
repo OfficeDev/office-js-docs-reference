@@ -35,22 +35,18 @@ fields:
   - name: evenPages
     uid: word!Word.HeaderFooterType.evenPages:member
     package: word!
-    summary: >-
+    summary: |-
       Returns all headers or footers on even-numbered pages of a section.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"EvenPages"'
   - name: firstPage
     uid: word!Word.HeaderFooterType.firstPage:member
     package: word!
-    summary: >-
+    summary: |-
       Returns the header or footer on the first page of a section.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"FirstPage"'
   - name: primary
     uid: word!Word.HeaderFooterType.primary:member
@@ -60,6 +56,5 @@ fields:
       first page or even pages if they are different.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Primary"'

@@ -14,60 +14,48 @@ fields:
   - name: angleBrackets
     uid: word!Word.TwoLinesInOneType.angleBrackets:member
     package: word!
-    summary: >-
+    summary: |-
       Two lines in one with angle brackets.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AngleBrackets"'
   - name: curlyBrackets
     uid: word!Word.TwoLinesInOneType.curlyBrackets:member
     package: word!
-    summary: >-
+    summary: |-
       Two lines in one with curly brackets.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"CurlyBrackets"'
   - name: noBrackets
     uid: word!Word.TwoLinesInOneType.noBrackets:member
     package: word!
-    summary: >-
+    summary: |-
       Two lines in one without brackets.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"NoBrackets"'
   - name: none
     uid: word!Word.TwoLinesInOneType.none:member
     package: word!
-    summary: >-
+    summary: |-
       No two lines in one.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: parentheses
     uid: word!Word.TwoLinesInOneType.parentheses:member
     package: word!
-    summary: >-
+    summary: |-
       Two lines in one with parentheses.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Parentheses"'
   - name: squareBrackets
     uid: word!Word.TwoLinesInOneType.squareBrackets:member
     package: word!
-    summary: >-
+    summary: |-
       Two lines in one with square brackets.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SquareBrackets"'

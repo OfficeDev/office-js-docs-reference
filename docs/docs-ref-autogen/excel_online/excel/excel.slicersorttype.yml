@@ -14,33 +14,24 @@ fields:
   - name: ascending
     uid: excel!Excel.SlicerSortType.ascending:member
     package: excel!
-    summary: >-
+    summary: |-
       Sort slicer items in ascending order by item captions.
 
-
-      * \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.10\]
     value: '"Ascending"'
   - name: dataSourceOrder
     uid: excel!Excel.SlicerSortType.dataSourceOrder:member
     package: excel!
-    summary: >-
+    summary: |-
       Sort slicer items in the order provided by the data source.
 
-
-      * \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.10\]
     value: '"DataSourceOrder"'
   - name: descending
     uid: excel!Excel.SlicerSortType.descending:member
     package: excel!
-    summary: >-
+    summary: |-
       Sort slicer items in descending order by item captions.
 
-
-      * \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.10\]
     value: '"Descending"'

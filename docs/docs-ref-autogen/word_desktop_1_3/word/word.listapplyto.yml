@@ -14,12 +14,10 @@ fields:
   - name: selection
     uid: word!Word.ListApplyTo.selection:member
     package: word!
-    summary: >-
+    summary: |-
       Applies the list template to the selection.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Selection"'
   - name: thisPointForward
     uid: word!Word.ListApplyTo.thisPointForward:member
@@ -29,16 +27,13 @@ fields:
       the list.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ThisPointForward"'
   - name: wholeList
     uid: word!Word.ListApplyTo.wholeList:member
     package: word!
-    summary: >-
+    summary: |-
       Applies the list template to the entire list.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WholeList"'

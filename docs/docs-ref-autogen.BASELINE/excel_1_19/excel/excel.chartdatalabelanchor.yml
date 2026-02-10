@@ -1,0 +1,226 @@
+### YamlMime:TSType
+name: Excel.ChartDataLabelAnchor
+uid: excel!Excel.ChartDataLabelAnchor:class
+package: excel!
+fullName: Excel.ChartDataLabelAnchor
+summary: Represents the chart data label anchor.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: excel!Excel.ChartDataLabelAnchor#context:member
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="excel!Excel.RequestContext:class" />
+  - name: left
+    uid: excel!Excel.ChartDataLabelAnchor#left:member
+    package: excel!
+    fullName: left
+    summary: >-
+      Specifies the distance, in points, from the anchor to the left edge of the
+      chart data label. Note that when getting the value, it may differ slightly
+      from the set value.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left: number;'
+      return:
+        type: number
+  - name: top
+    uid: excel!Excel.ChartDataLabelAnchor#top:member
+    package: excel!
+    fullName: top
+    summary: >-
+      Specifies the distance, in points, from the anchor to the top edge of the
+      chart data label. Note that when getting the value, it may differ slightly
+      from the set value.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top: number;'
+      return:
+        type: number
+methods:
+  - name: load(options)
+    uid: excel!Excel.ChartDataLabelAnchor#load:member(1)
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.ChartDataLabelAnchorLoadOptions):
+        Excel.ChartDataLabelAnchor;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataLabelAnchorLoadOptions:interface"
+            />
+      return:
+        type: <xref uid="excel!Excel.ChartDataLabelAnchor:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: excel!Excel.ChartDataLabelAnchor#load:member(2)
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartDataLabelAnchor;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="excel!Excel.ChartDataLabelAnchor:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: excel!Excel.ChartDataLabelAnchor#load:member(3)
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartDataLabelAnchor;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="excel!Excel.ChartDataLabelAnchor:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: excel!Excel.ChartDataLabelAnchor#set:member(1)
+    package: excel!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.ChartDataLabelAnchorUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataLabelAnchorUpdateData:interface"
+            />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: excel!Excel.ChartDataLabelAnchor#set:member(2)
+    package: excel!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.ChartDataLabelAnchor): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="excel!Excel.ChartDataLabelAnchor:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: excel!Excel.ChartDataLabelAnchor#toJSON:member(1)
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Excel.ChartDataLabelAnchor` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.ChartDataLabelAnchorData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartDataLabelAnchorData;'
+      return:
+        type: >-
+          <xref uid="excel!Excel.Interfaces.ChartDataLabelAnchorData:interface"
+          />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

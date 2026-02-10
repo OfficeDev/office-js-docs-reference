@@ -1,0 +1,73 @@
+### YamlMime:TSEnum
+name: Word.TabAlignment
+uid: word!Word.TabAlignment:enum
+package: word!
+fullName: Word.TabAlignment
+summary: Represents the alignment of a tab stop.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bar
+    uid: word!Word.TabAlignment.bar:member
+    package: word!
+    summary: >-
+      Represents that the tab stop is aligned to the bar.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Bar"'
+  - name: center
+    uid: word!Word.TabAlignment.center:member
+    package: word!
+    summary: >-
+      Represents that the tab stop is aligned to the center.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Center"'
+  - name: decimal
+    uid: word!Word.TabAlignment.decimal:member
+    package: word!
+    summary: >-
+      Represents that the tab stop is aligned to the decimal point.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Decimal"'
+  - name: left
+    uid: word!Word.TabAlignment.left:member
+    package: word!
+    summary: >-
+      Represents that the tab stop is aligned to the left.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Left"'
+  - name: list
+    uid: word!Word.TabAlignment.list:member
+    package: word!
+    summary: >-
+      Represents that the tab stop is aligned to the list.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"List"'
+  - name: right
+    uid: word!Word.TabAlignment.right:member
+    package: word!
+    summary: >-
+      Represents that the tab stop is aligned to the right.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Right"'

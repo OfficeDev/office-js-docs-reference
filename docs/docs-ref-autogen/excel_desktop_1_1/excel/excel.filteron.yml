@@ -40,70 +40,50 @@ fields:
   - name: bottomItems
     uid: excel!Excel.FilterOn.bottomItems:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"BottomItems"'
   - name: bottomPercent
     uid: excel!Excel.FilterOn.bottomPercent:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"BottomPercent"'
   - name: cellColor
     uid: excel!Excel.FilterOn.cellColor:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"CellColor"'
   - name: custom
     uid: excel!Excel.FilterOn.custom:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Custom"'
   - name: dynamic
     uid: excel!Excel.FilterOn.dynamic:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Dynamic"'
   - name: fontColor
     uid: excel!Excel.FilterOn.fontColor:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"FontColor"'
   - name: icon
     uid: excel!Excel.FilterOn.icon:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Icon"'
   - name: topItems
     uid: excel!Excel.FilterOn.topItems:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"TopItems"'
   - name: topPercent
     uid: excel!Excel.FilterOn.topPercent:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"TopPercent"'
   - name: values
     uid: excel!Excel.FilterOn.values:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.2\]'
     value: '"Values"'

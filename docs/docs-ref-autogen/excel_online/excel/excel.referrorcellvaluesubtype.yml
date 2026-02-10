@@ -19,9 +19,7 @@ fields:
       Displays as error type \#REF! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksCalculatedRef"'
   - name: externalLinksStructuredRef
     uid: excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member
@@ -31,18 +29,13 @@ fields:
       Displays as error type \#REF! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksStructuredRef"'
   - name: unknown
     uid: excel!Excel.RefErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#REF! in Excel.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'

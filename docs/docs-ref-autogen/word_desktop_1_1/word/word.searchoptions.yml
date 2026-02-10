@@ -223,8 +223,6 @@ methods:
       return:
         type: <xref uid="word!Word.SearchOptions:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

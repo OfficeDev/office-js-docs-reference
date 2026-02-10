@@ -14,11 +14,8 @@ fields:
   - name: entity
     uid: excel!Excel.EntityCardLayoutType.entity:member
     package: excel!
-    summary: >-
+    summary: |-
       Entity layout of the entity card.
 
-
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"Entity"'

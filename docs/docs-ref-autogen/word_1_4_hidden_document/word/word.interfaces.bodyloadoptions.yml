@@ -225,7 +225,7 @@ properties:
       Gets the type of the body. The type can be `mainDoc`<!-- -->,
       `section`<!-- -->, `header`<!-- -->, `footer`<!-- -->, or `tableCell`<!--
       -->. Additional types `footnote`<!-- -->, `endnote`<!-- -->, and
-      `noteItem` are supported in WordAPI 1.5 and later.
+      `noteItem` are supported in WordApi 1.5 and later.
     remarks: >-
       \[ [API set: WordApi
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

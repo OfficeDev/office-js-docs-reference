@@ -55,60 +55,48 @@ fields:
   - name: bottomMargin
     uid: word!Word.RelativeSize.bottomMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to bottom margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"BottomMargin"'
   - name: insideMargin
     uid: word!Word.RelativeSize.insideMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to inside margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"InsideMargin"'
   - name: margin
     uid: word!Word.RelativeSize.margin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeSize.outsideMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to outside margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeSize.page:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to page.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Page"'
   - name: topMargin
     uid: word!Word.RelativeSize.topMargin:member
     package: word!
-    summary: >-
+    summary: |-
       Relative to top margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"TopMargin"'

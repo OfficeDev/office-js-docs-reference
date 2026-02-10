@@ -417,8 +417,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.NamedItem:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

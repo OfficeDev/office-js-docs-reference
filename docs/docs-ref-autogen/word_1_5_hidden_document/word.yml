@@ -498,25 +498,7 @@ functions:
             Promise&lt;T&gt;
       return:
         type: Promise&lt;T&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // *.run methods automatically create an
-          OfficeExtension.ClientRequestContext
-
-          // object to work with the Office file.
-
-          await Word.run(async (context) => {
-              const document = context.document;
-              // Interact with the Word document...
-          });
-
-          ```
+        description: ''
   - name: Word.run(object, batch)
     uid: word!Word.run:function(2)
     package: word!

@@ -15,24 +15,15 @@ fields:
   - name: center
     uid: visio!Visio.OverlayHorizontalAlignment.center:member
     package: visio!
-    summary: >-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: '* \[Api set: 1.1\]'
     value: '"Center"'
   - name: left
     uid: visio!Visio.OverlayHorizontalAlignment.left:member
     package: visio!
-    summary: >-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: '* \[Api set: 1.1\]'
     value: '"Left"'
   - name: right
     uid: visio!Visio.OverlayHorizontalAlignment.right:member
     package: visio!
-    summary: >-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: '* \[Api set: 1.1\]'
     value: '"Right"'

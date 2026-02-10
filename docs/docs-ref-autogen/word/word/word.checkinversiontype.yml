@@ -14,30 +14,24 @@ fields:
   - name: major
     uid: word!Word.CheckInVersionType.major:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a major version check-in.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Major"'
   - name: minor
     uid: word!Word.CheckInVersionType.minor:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a minor version check-in.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Minor"'
   - name: overwrite
     uid: word!Word.CheckInVersionType.overwrite:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an overwrite version check-in.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Overwrite"'

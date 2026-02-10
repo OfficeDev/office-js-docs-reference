@@ -14,170 +14,136 @@ fields:
   - name: accent1
     uid: word!Word.ThemeColorIndex.accent1:member
     package: word!
-    summary: >-
+    summary: |-
       The first accent color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Accent1"'
   - name: accent2
     uid: word!Word.ThemeColorIndex.accent2:member
     package: word!
-    summary: >-
+    summary: |-
       The second accent color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Accent2"'
   - name: accent3
     uid: word!Word.ThemeColorIndex.accent3:member
     package: word!
-    summary: >-
+    summary: |-
       The third accent color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Accent3"'
   - name: accent4
     uid: word!Word.ThemeColorIndex.accent4:member
     package: word!
-    summary: >-
+    summary: |-
       The fourth accent color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Accent4"'
   - name: accent5
     uid: word!Word.ThemeColorIndex.accent5:member
     package: word!
-    summary: >-
+    summary: |-
       The fifth accent color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Accent5"'
   - name: accent6
     uid: word!Word.ThemeColorIndex.accent6:member
     package: word!
-    summary: >-
+    summary: |-
       The sixth accent color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Accent6"'
   - name: background1
     uid: word!Word.ThemeColorIndex.background1:member
     package: word!
-    summary: >-
+    summary: |-
       The first background color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Background1"'
   - name: background2
     uid: word!Word.ThemeColorIndex.background2:member
     package: word!
-    summary: >-
+    summary: |-
       The second background color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Background2"'
   - name: hyperlink
     uid: word!Word.ThemeColorIndex.hyperlink:member
     package: word!
-    summary: >-
+    summary: |-
       The color used for hyperlinks.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Hyperlink"'
   - name: hyperlinkFollowed
     uid: word!Word.ThemeColorIndex.hyperlinkFollowed:member
     package: word!
-    summary: >-
+    summary: |-
       The color used for followed hyperlinks.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HyperlinkFollowed"'
   - name: mainDark1
     uid: word!Word.ThemeColorIndex.mainDark1:member
     package: word!
-    summary: >-
+    summary: |-
       The first dark color in the main theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MainDark1"'
   - name: mainDark2
     uid: word!Word.ThemeColorIndex.mainDark2:member
     package: word!
-    summary: >-
+    summary: |-
       The second dark color in the main theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MainDark2"'
   - name: mainLight1
     uid: word!Word.ThemeColorIndex.mainLight1:member
     package: word!
-    summary: >-
+    summary: |-
       The first light color in the main theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MainLight1"'
   - name: mainLight2
     uid: word!Word.ThemeColorIndex.mainLight2:member
     package: word!
-    summary: >-
+    summary: |-
       The second light color in the main theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"MainLight2"'
   - name: notThemeColor
     uid: word!Word.ThemeColorIndex.notThemeColor:member
     package: word!
-    summary: >-
+    summary: |-
       Not a theme color. Used when the color is not part of the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NotThemeColor"'
   - name: text1
     uid: word!Word.ThemeColorIndex.text1:member
     package: word!
-    summary: >-
+    summary: |-
       The first text color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Text1"'
   - name: text2
     uid: word!Word.ThemeColorIndex.text2:member
     package: word!
-    summary: >-
+    summary: |-
       The second text color in the theme.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Text2"'

@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Office.EmailUser
+uid: outlook!Office.EmailUser:interface
+package: outlook!
+fullName: Office.EmailUser
+summary: Represents an email account on an Exchange Server.
+remarks: >-
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Add recipients to the To field of an email.
+
+  const recipients: Office.EmailUser[] = [
+      {
+          "displayName": "Allie Bellew",
+          "emailAddress": "allieb@contoso.com"
+      },
+      {
+          "displayName": "Alex Darrow",
+          "emailAddress": "alexd@contoso.com"
+      }
+  ];
+
+
+  Office.context.mailbox.item.to.addAsync(recipients, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(result.error.message);
+          return;
+      }
+
+      console.log("Recipients added to the To field.");
+  });
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: outlook!Office.EmailUser#displayName:member
+    package: outlook!
+    fullName: displayName
+    summary: Gets the display name associated with an email address.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type: string
+  - name: emailAddress
+    uid: outlook!Office.EmailUser#emailAddress:member
+    package: outlook!
+    fullName: emailAddress
+    summary: Gets the SMTP email address.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type: string

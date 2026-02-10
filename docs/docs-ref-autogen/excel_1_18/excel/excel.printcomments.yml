@@ -14,30 +14,24 @@ fields:
   - name: endSheet
     uid: excel!Excel.PrintComments.endSheet:member
     package: excel!
-    summary: >-
+    summary: |-
       Comments will be printed as end notes at the end of the worksheet.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"EndSheet"'
   - name: inPlace
     uid: excel!Excel.PrintComments.inPlace:member
     package: excel!
-    summary: >-
+    summary: |-
       Comments will be printed where they were inserted in the worksheet.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"InPlace"'
   - name: noComments
     uid: excel!Excel.PrintComments.noComments:member
     package: excel!
-    summary: >-
+    summary: |-
       Comments will not be printed.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"NoComments"'

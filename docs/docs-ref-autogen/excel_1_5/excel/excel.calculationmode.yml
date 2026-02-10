@@ -39,8 +39,7 @@ fields:
       results every time the relevant data is changed.
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Automatic"'
   - name: automaticExceptTables
     uid: excel!Excel.CalculationMode.automaticExceptTables:member
@@ -50,16 +49,13 @@ fields:
       unless the formula is in a data table.
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"AutomaticExceptTables"'
   - name: manual
     uid: excel!Excel.CalculationMode.manual:member
     package: excel!
-    summary: >-
+    summary: |-
       Calculations only occur when the user or add-in requests them.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Manual"'

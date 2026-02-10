@@ -14,20 +14,16 @@ fields:
   - name: documentContent
     uid: word!Word.ExportItem.documentContent:member
     package: word!
-    summary: >-
+    summary: |-
       Exports document content only.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentContent"'
   - name: documentWithMarkup
     uid: word!Word.ExportItem.documentWithMarkup:member
     package: word!
-    summary: >-
+    summary: |-
       Exports document with markup (annotations).
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DocumentWithMarkup"'

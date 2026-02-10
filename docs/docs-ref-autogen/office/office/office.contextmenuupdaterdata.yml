@@ -11,7 +11,7 @@ summary: >-
   commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)<!--
   -->.
 remarks: >-
-  **Requirement set**: [ContextMenuAPI
+  **Requirement set**: [ContextMenuApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
 
 isPreview: false
@@ -25,7 +25,24 @@ properties:
     summary: >-
       Collection of context menu controls whose state is set using
       `Office.contextMenu.requestUpdate`<!-- -->.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      // Change the availability of custom buttons on the context menu.
+      await Office.contextMenu.requestUpdate({
+          controls: [
+              {
+                  id: Addin.CtxMenu.Button1,
+                  enabled: true
+              },
+              {
+                  id: Addin.CtxMenu.Button2,
+                  enabled: false
+              },
+          ]
+      });
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -33,23 +50,3 @@ properties:
       content: 'controls: ContextMenuControl[];'
       return:
         type: <xref uid="office!Office.ContextMenuControl:interface" />[]
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          // Change the availability of custom buttons on the context menu.
-          await Office.contextMenu.requestUpdate({
-              controls: [
-                  {
-                      id: Addin.CtxMenu.Button1,
-                      enabled: true
-                  },
-                  {
-                      id: Addin.CtxMenu.Button2,
-                      enabled: false
-                  },
-              ]
-          });
-          ```

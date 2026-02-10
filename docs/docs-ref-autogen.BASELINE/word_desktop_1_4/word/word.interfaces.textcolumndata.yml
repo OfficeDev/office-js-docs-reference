@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Word.Interfaces.TextColumnData
+uid: word!Word.Interfaces.TextColumnData:interface
+package: word!
+fullName: Word.Interfaces.TextColumnData
+summary: >-
+  An interface describing the data returned by calling `textColumn.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: spaceAfter
+    uid: word!Word.Interfaces.TextColumnData#spaceAfter:member
+    package: word!
+    fullName: spaceAfter
+    summary: >-
+      Specifies the amount of spacing (in points) after the specified paragraph
+      or text column.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spaceAfter?: number;'
+      return:
+        type: number
+  - name: width
+    uid: word!Word.Interfaces.TextColumnData#width:member
+    package: word!
+    fullName: width
+    summary: Specifies the width, in points, of the specified text columns.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

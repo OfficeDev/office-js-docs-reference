@@ -71,20 +71,15 @@ fields:
       the web, "auto" will simply default to "columns".
 
 
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Auto"'
   - name: columns
     uid: excel!Excel.ChartSeriesBy.columns:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Columns"'
   - name: rows
     uid: excel!Excel.ChartSeriesBy.rows:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.1\]'
     value: '"Rows"'

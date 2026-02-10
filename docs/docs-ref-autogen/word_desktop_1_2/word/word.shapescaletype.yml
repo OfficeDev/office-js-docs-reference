@@ -47,20 +47,16 @@ fields:
   - name: currentSize
     uid: word!Word.ShapeScaleType.currentSize:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from current size of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"CurrentSize"'
   - name: originalSize
     uid: word!Word.ShapeScaleType.originalSize:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from original size of the shape. It only works for pictures.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"OriginalSize"'

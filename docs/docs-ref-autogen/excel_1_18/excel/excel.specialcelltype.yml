@@ -14,62 +14,50 @@ fields:
   - name: blanks
     uid: excel!Excel.SpecialCellType.blanks:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells with no content.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Blanks"'
   - name: conditionalFormats
     uid: excel!Excel.SpecialCellType.conditionalFormats:member
     package: excel!
-    summary: >-
+    summary: |-
       All cells with conditional formats.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"ConditionalFormats"'
   - name: constants
     uid: excel!Excel.SpecialCellType.constants:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells containing constants.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Constants"'
   - name: dataValidations
     uid: excel!Excel.SpecialCellType.dataValidations:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells with validation criteria.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"DataValidations"'
   - name: formulas
     uid: excel!Excel.SpecialCellType.formulas:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells containing formulas.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Formulas"'
   - name: sameConditionalFormat
     uid: excel!Excel.SpecialCellType.sameConditionalFormat:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells with the same conditional format as the first cell in the range.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"SameConditionalFormat"'
   - name: sameDataValidation
     uid: excel!Excel.SpecialCellType.sameDataValidation:member
@@ -79,16 +67,13 @@ fields:
       range.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"SameDataValidation"'
   - name: visible
     uid: excel!Excel.SpecialCellType.visible:member
     package: excel!
-    summary: >-
+    summary: |-
       Cells that are visible.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Visible"'

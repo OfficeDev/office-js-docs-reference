@@ -14,40 +14,32 @@ fields:
   - name: default
     uid: word!Word.LayoutMode.default:member
     package: word!
-    summary: >-
+    summary: |-
       Default layout mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Default"'
   - name: genko
     uid: word!Word.LayoutMode.genko:member
     package: word!
-    summary: >-
+    summary: |-
       Genko layout mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Genko"'
   - name: grid
     uid: word!Word.LayoutMode.grid:member
     package: word!
-    summary: >-
+    summary: |-
       Grid layout mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Grid"'
   - name: lineGrid
     uid: word!Word.LayoutMode.lineGrid:member
     package: word!
-    summary: >-
+    summary: |-
       Line grid layout mode.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LineGrid"'

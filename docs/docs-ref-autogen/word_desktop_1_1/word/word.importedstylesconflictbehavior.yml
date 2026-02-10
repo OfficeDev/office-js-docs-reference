@@ -48,8 +48,7 @@ fields:
       then the imported version could be added as MyStyle1.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"CreateNew"'
   - name: ignore
     uid: word!Word.ImportedStylesConflictBehavior.ignore:member
@@ -59,16 +58,13 @@ fields:
       styles in the current document.
 
 
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"Ignore"'
   - name: overwrite
     uid: word!Word.ImportedStylesConflictBehavior.overwrite:member
     package: word!
-    summary: >-
+    summary: |-
       Overwrite the existing styles in the current document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"Overwrite"'

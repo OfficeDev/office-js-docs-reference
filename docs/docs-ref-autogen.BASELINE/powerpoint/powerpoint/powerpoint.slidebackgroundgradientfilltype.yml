@@ -1,0 +1,84 @@
+### YamlMime:TSEnum
+name: PowerPoint.SlideBackgroundGradientFillType
+uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum
+package: powerpoint!
+fullName: PowerPoint.SlideBackgroundGradientFillType
+summary: >-
+  Specifies the gradient fill type for a
+  [PowerPoint.SlideBackgroundGradientFill](xref:powerpoint!PowerPoint.SlideBackgroundGradientFill:class)<!--
+  -->.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: linear
+    uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.linear:member
+    package: powerpoint!
+    summary: >-
+      Linear gradient fill.
+
+
+      * \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Linear"'
+  - name: path
+    uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.path:member
+    package: powerpoint!
+    summary: >-
+      Path gradient fill.
+
+
+      * \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Path"'
+  - name: radial
+    uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.radial:member
+    package: powerpoint!
+    summary: >-
+      Radial gradient fill.
+
+
+      * \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Radial"'
+  - name: rectangular
+    uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.rectangular:member
+    package: powerpoint!
+    summary: >-
+      Rectangular gradient fill.
+
+
+      * \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Rectangular"'
+  - name: shadeFromTitle
+    uid: >-
+      powerpoint!PowerPoint.SlideBackgroundGradientFillType.shadeFromTitle:member
+    package: powerpoint!
+    summary: >-
+      Shade from title gradient fill.
+
+
+      * \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"ShadeFromTitle"'
+  - name: unsupported
+    uid: powerpoint!PowerPoint.SlideBackgroundGradientFillType.unsupported:member
+    package: powerpoint!
+    summary: >-
+      Unsupported gradient fill.
+
+
+      * \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+    value: '"Unsupported"'

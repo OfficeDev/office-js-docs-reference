@@ -50,30 +50,24 @@ fields:
   - name: all
     uid: excel!Excel.ClearApplyTo.all:member
     package: excel!
-    summary: >-
+    summary: |-
       Clears everything in the range.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"All"'
   - name: contents
     uid: excel!Excel.ClearApplyTo.contents:member
     package: excel!
-    summary: >-
+    summary: |-
       Clears the contents of the range, leaving formatting intact.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Contents"'
   - name: formats
     uid: excel!Excel.ClearApplyTo.formats:member
     package: excel!
-    summary: >-
+    summary: |-
       Clears all formatting for the range, leaving values intact.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Formats"'

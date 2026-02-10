@@ -283,8 +283,6 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeCollection:class" />
         description: >-
-
-
           #### Examples
 
 

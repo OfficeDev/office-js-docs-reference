@@ -40,8 +40,7 @@ fields:
       saved. Won't take effect if the document was previously saved.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Prompt"'
   - name: save
     uid: word!Word.SaveBehavior.save:member
@@ -52,6 +51,5 @@ fields:
       location.
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Save"'

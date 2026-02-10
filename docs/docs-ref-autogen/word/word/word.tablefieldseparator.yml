@@ -14,40 +14,32 @@ fields:
   - name: comma
     uid: word!Word.TableFieldSeparator.comma:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the comma.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Comma"'
   - name: defaultListSeparator
     uid: word!Word.TableFieldSeparator.defaultListSeparator:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the default list separator.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"DefaultListSeparator"'
   - name: paragraph
     uid: word!Word.TableFieldSeparator.paragraph:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the paragraph marker.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Paragraph"'
   - name: tab
     uid: word!Word.TableFieldSeparator.tab:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the tab.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Tab"'

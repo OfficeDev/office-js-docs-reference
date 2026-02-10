@@ -105,180 +105,144 @@ fields:
   - name: buildingBlockGallery
     uid: word!Word.ContentControlType.buildingBlockGallery:member
     package: word!
-    summary: >-
+    summary: |-
       Building block gallery content control (type and subtype).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"BuildingBlockGallery"'
   - name: checkBox
     uid: word!Word.ContentControlType.checkBox:member
     package: word!
-    summary: >-
+    summary: |-
       Check box content control (type and subtype).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"CheckBox"'
   - name: comboBox
     uid: word!Word.ContentControlType.comboBox:member
     package: word!
-    summary: >-
+    summary: |-
       Combo box content control (type and subtype).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"ComboBox"'
   - name: datePicker
     uid: word!Word.ContentControlType.datePicker:member
     package: word!
-    summary: >-
+    summary: |-
       Date picker content control (type and subtype).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"DatePicker"'
   - name: dropDownList
     uid: word!Word.ContentControlType.dropDownList:member
     package: word!
-    summary: >-
+    summary: |-
       Dropdown list content control (type and subtype).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"DropDownList"'
   - name: group
     uid: word!Word.ContentControlType.group:member
     package: word!
-    summary: >-
+    summary: |-
       Group content control type.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Group"'
   - name: picture
     uid: word!Word.ContentControlType.picture:member
     package: word!
-    summary: >-
+    summary: |-
       Picture content control (type and subtype).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Picture"'
   - name: plainText
     uid: word!Word.ContentControlType.plainText:member
     package: word!
-    summary: >-
+    summary: |-
       Plain text content control type.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"PlainText"'
   - name: plainTextInline
     uid: word!Word.ContentControlType.plainTextInline:member
     package: word!
-    summary: >-
+    summary: |-
       Plain text content control subtype containing inline elements.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"PlainTextInline"'
   - name: plainTextParagraph
     uid: word!Word.ContentControlType.plainTextParagraph:member
     package: word!
-    summary: >-
+    summary: |-
       Plain text content control subtype containing paragraphs.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"PlainTextParagraph"'
   - name: repeatingSection
     uid: word!Word.ContentControlType.repeatingSection:member
     package: word!
-    summary: >-
+    summary: |-
       Repeating section content control (type and subtype).
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"RepeatingSection"'
   - name: richText
     uid: word!Word.ContentControlType.richText:member
     package: word!
-    summary: >-
+    summary: |-
       Rich text content control type.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"RichText"'
   - name: richTextInline
     uid: word!Word.ContentControlType.richTextInline:member
     package: word!
-    summary: >-
+    summary: |-
       Rich text content control subtype containing inline elements.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextInline"'
   - name: richTextParagraphs
     uid: word!Word.ContentControlType.richTextParagraphs:member
     package: word!
-    summary: >-
+    summary: |-
       Rich text content control subtype containing paragraphs.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextParagraphs"'
   - name: richTextTable
     uid: word!Word.ContentControlType.richTextTable:member
     package: word!
-    summary: >-
+    summary: |-
       Rich text content control subtype containing a whole table.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextTable"'
   - name: richTextTableCell
     uid: word!Word.ContentControlType.richTextTableCell:member
     package: word!
-    summary: >-
+    summary: |-
       Rich text content control subtype containing a whole cell.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextTableCell"'
   - name: richTextTableRow
     uid: word!Word.ContentControlType.richTextTableRow:member
     package: word!
-    summary: >-
+    summary: |-
       Rich text content control subtype containing a whole row.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"RichTextTableRow"'
   - name: unknown
     uid: word!Word.ContentControlType.unknown:member
     package: word!
-    summary: >-
+    summary: |-
       Unknown content control type.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Unknown"'

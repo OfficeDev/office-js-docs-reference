@@ -19,16 +19,13 @@ fields:
       application.
 
 
-      * \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiOnline 1.1\]
     value: '"Automatic"'
   - name: manual
     uid: excel!Excel.WorkbookLinksRefreshMode.manual:member
     package: excel!
-    summary: >-
+    summary: |-
       The workbook links are updated manually.
 
-
-      * \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApiOnline 1.1\]
     value: '"Manual"'

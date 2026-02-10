@@ -1,0 +1,358 @@
+### YamlMime:TSType
+name: Word.LinkFormat
+uid: word!Word.LinkFormat:class
+package: word!
+fullName: Word.LinkFormat
+summary: Represents the linking characteristics for an OLE object or picture.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.LinkFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: isAutoUpdated
+    uid: word!Word.LinkFormat#isAutoUpdated:member
+    package: word!
+    fullName: isAutoUpdated
+    summary: >-
+      Specifies if the link is updated automatically when the container file is
+      opened or when the source file is changed.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isAutoUpdated: boolean;'
+      return:
+        type: boolean
+  - name: isLocked
+    uid: word!Word.LinkFormat#isLocked:member
+    package: word!
+    fullName: isLocked
+    summary: >-
+      Specifies if a `Field`<!-- -->, `InlineShape`<!-- -->, or `Shape` object
+      is locked to prevent automatic updating.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLocked: boolean;'
+      return:
+        type: boolean
+  - name: isPictureSavedWithDocument
+    uid: word!Word.LinkFormat#isPictureSavedWithDocument:member
+    package: word!
+    fullName: isPictureSavedWithDocument
+    summary: Specifies if the linked picture is saved with the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isPictureSavedWithDocument: boolean;'
+      return:
+        type: boolean
+  - name: sourceFullName
+    uid: word!Word.LinkFormat#sourceFullName:member
+    package: word!
+    fullName: sourceFullName
+    summary: >-
+      Specifies the path and name of the source file for the linked OLE object,
+      picture, or field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceFullName: string;'
+      return:
+        type: string
+  - name: sourceName
+    uid: word!Word.LinkFormat#sourceName:member
+    package: word!
+    fullName: sourceName
+    summary: >-
+      Gets the name of the source file for the linked OLE object, picture, or
+      field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly sourceName: string;'
+      return:
+        type: string
+  - name: sourcePath
+    uid: word!Word.LinkFormat#sourcePath:member
+    package: word!
+    fullName: sourcePath
+    summary: >-
+      Gets the path of the source file for the linked OLE object, picture, or
+      field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly sourcePath: string;'
+      return:
+        type: string
+  - name: type
+    uid: word!Word.LinkFormat#type:member
+    package: word!
+    fullName: type
+    summary: Gets the link type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly type: Word.LinkType | "Ole" | "Picture" | "Text" | "Reference"
+        | "Include" | "Import" | "Dde" | "DdeAuto" | "Chart";
+      return:
+        type: >-
+          <xref uid="word!Word.LinkType:enum" /> | "Ole" | "Picture" | "Text" |
+          "Reference" | "Include" | "Import" | "Dde" | "DdeAuto" | "Chart"
+methods:
+  - name: breakLink()
+    uid: word!Word.LinkFormat#breakLink:member(1)
+    package: word!
+    fullName: breakLink()
+    summary: >-
+      Breaks the link between the source file and the OLE object, picture, or
+      linked field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'breakLink(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.LinkFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.LinkFormatLoadOptions): Word.LinkFormat;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.LinkFormatLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.LinkFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.LinkFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.LinkFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.LinkFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.LinkFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.LinkFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.LinkFormat:class" />
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.LinkFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.LinkFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.LinkFormatUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.LinkFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.LinkFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.LinkFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.LinkFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.LinkFormat` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.LinkFormatData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.LinkFormatData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.LinkFormatData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.LinkFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.LinkFormat;'
+      return:
+        type: <xref uid="word!Word.LinkFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.LinkFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.LinkFormat;'
+      return:
+        type: <xref uid="word!Word.LinkFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

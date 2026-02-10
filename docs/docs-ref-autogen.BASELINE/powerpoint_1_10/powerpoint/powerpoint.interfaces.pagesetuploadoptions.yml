@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.PageSetupLoadOptions
+uid: powerpoint!PowerPoint.Interfaces.PageSetupLoadOptions:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.PageSetupLoadOptions
+summary: Represents the page setup information for the presentation.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: powerpoint!PowerPoint.Interfaces.PageSetupLoadOptions#$all:member
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: slideHeight
+    uid: powerpoint!PowerPoint.Interfaces.PageSetupLoadOptions#slideHeight:member
+    package: powerpoint!
+    fullName: slideHeight
+    summary: Specifies the height of the slides in the presentation, in points.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'slideHeight?: boolean;'
+      return:
+        type: boolean
+  - name: slideWidth
+    uid: powerpoint!PowerPoint.Interfaces.PageSetupLoadOptions#slideWidth:member
+    package: powerpoint!
+    fullName: slideWidth
+    summary: Specifies the width of the slides in the presentation, in points.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'slideWidth?: boolean;'
+      return:
+        type: boolean

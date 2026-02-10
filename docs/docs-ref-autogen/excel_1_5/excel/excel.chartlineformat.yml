@@ -123,8 +123,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartLineFormat:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

@@ -79,50 +79,40 @@ fields:
   - name: berry
     uid: word!Word.CritiqueColorScheme.berry:member
     package: word!
-    summary: >-
+    summary: |-
       Berry color.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Berry"'
   - name: blue
     uid: word!Word.CritiqueColorScheme.blue:member
     package: word!
-    summary: >-
+    summary: |-
       Blue color.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Blue"'
   - name: green
     uid: word!Word.CritiqueColorScheme.green:member
     package: word!
-    summary: >-
+    summary: |-
       Green color.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Green"'
   - name: lavender
     uid: word!Word.CritiqueColorScheme.lavender:member
     package: word!
-    summary: >-
+    summary: |-
       Lavender color.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Lavender"'
   - name: red
     uid: word!Word.CritiqueColorScheme.red:member
     package: word!
-    summary: >-
+    summary: |-
       Red color.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Red"'

@@ -84,7 +84,18 @@ properties:
       [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      const item = Office.context.mailbox.item;
+
+      const addresses =
+      item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
+
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -96,20 +107,6 @@ properties:
       content: 'addresses: string[];'
       return:
         type: string[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const item = Office.context.mailbox.item;
-
-          const addresses =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
-
-          ```
   - name: contacts
     uid: outlook!Office.Entities#contacts:member
     package: outlook!
@@ -125,7 +122,18 @@ properties:
       [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      const item = Office.context.mailbox.item;
+
+      const contacts =
+      item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -137,20 +145,6 @@ properties:
       content: 'contacts: Contact[];'
       return:
         type: <xref uid="outlook!Office.Contact:interface" />[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const item = Office.context.mailbox.item;
-
-          const contacts =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
-
-          ```
   - name: emailAddresses
     uid: outlook!Office.Entities#emailAddresses:member
     package: outlook!
@@ -166,7 +160,18 @@ properties:
       [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      const item = Office.context.mailbox.item;
+
+      const emailAddresses =
+      item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
+
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -178,20 +183,6 @@ properties:
       content: 'emailAddresses: string[];'
       return:
         type: string[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const item = Office.context.mailbox.item;
-
-          const emailAddresses =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
-
-          ```
   - name: meetingSuggestions
     uid: outlook!Office.Entities#meetingSuggestions:member
     package: outlook!
@@ -207,7 +198,18 @@ properties:
       [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      const item = Office.context.mailbox.item;
+
+      const meetingSuggestions =
+      item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -219,20 +221,6 @@ properties:
       content: 'meetingSuggestions: MeetingSuggestion[];'
       return:
         type: <xref uid="outlook!Office.MeetingSuggestion:interface" />[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const item = Office.context.mailbox.item;
-
-          const meetingSuggestions =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
-
-          ```
   - name: phoneNumbers
     uid: outlook!Office.Entities#phoneNumbers:member
     package: outlook!
@@ -248,7 +236,18 @@ properties:
       [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      const item = Office.context.mailbox.item;
+
+      const phoneNumbers =
+      item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -260,20 +259,6 @@ properties:
       content: 'phoneNumbers: PhoneNumber[];'
       return:
         type: <xref uid="outlook!Office.PhoneNumber:interface" />[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const item = Office.context.mailbox.item;
-
-          const phoneNumbers =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
-
-          ```
   - name: taskSuggestions
     uid: outlook!Office.Entities#taskSuggestions:member
     package: outlook!
@@ -289,7 +274,18 @@ properties:
       [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      const item = Office.context.mailbox.item;
+
+      const taskSuggestions =
+      item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -301,20 +297,6 @@ properties:
       content: 'taskSuggestions: string[];'
       return:
         type: string[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const item = Office.context.mailbox.item;
-
-          const taskSuggestions =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
-
-          ```
   - name: urls
     uid: outlook!Office.Entities#urls:member
     package: outlook!
@@ -330,7 +312,13 @@ properties:
       [Contextual Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
       -->.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      const item = Office.context.mailbox.item;
+      const urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
+      ```
 
     isPreview: false
     isDeprecated: true
@@ -342,17 +330,3 @@ properties:
       content: 'urls: string[];'
       return:
         type: string[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          const item = Office.context.mailbox.item;
-
-          const urls =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
-
-          ```

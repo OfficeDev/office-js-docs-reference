@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.DocumentType
+uid: word!Word.DocumentType:enum
+package: word!
+fullName: Word.DocumentType
+summary: Specifies the type of document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: document
+    uid: word!Word.DocumentType.document:member
+    package: word!
+    summary: >-
+      Represents a standard document.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Document"'
+  - name: frameset
+    uid: word!Word.DocumentType.frameset:member
+    package: word!
+    summary: >-
+      Represents a frameset document.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Frameset"'
+  - name: template
+    uid: word!Word.DocumentType.template:member
+    package: word!
+    summary: >-
+      Represents a document template.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Template"'

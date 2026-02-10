@@ -14,20 +14,16 @@ fields:
   - name: bidirectional
     uid: word!Word.DateLanguage.bidirectional:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the bidirectional date/time format.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Bidirectional"'
   - name: latin
     uid: word!Word.DateLanguage.latin:member
     package: word!
-    summary: >-
+    summary: |-
       Uses the latin date/time format.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Latin"'

@@ -14,20 +14,16 @@ fields:
   - name: sideToSide
     uid: word!Word.PageMovementType.sideToSide:member
     package: word!
-    summary: >-
+    summary: |-
       Side to side.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"SideToSide"'
   - name: vertical
     uid: word!Word.PageMovementType.vertical:member
     package: word!
-    summary: >-
+    summary: |-
       Vertical.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Vertical"'

@@ -14,30 +14,24 @@ fields:
   - name: current
     uid: word!Word.UseFormattingFrom.current:member
     package: word!
-    summary: >-
+    summary: |-
       Represents using formatting from the current document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Current"'
   - name: prompt
     uid: word!Word.UseFormattingFrom.prompt:member
     package: word!
-    summary: >-
+    summary: |-
       Represents prompting the user for formatting preferences.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Prompt"'
   - name: selected
     uid: word!Word.UseFormattingFrom.selected:member
     package: word!
-    summary: >-
+    summary: |-
       Represents using formatting from the selected document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Selected"'

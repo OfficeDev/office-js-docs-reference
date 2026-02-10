@@ -14,30 +14,24 @@ fields:
   - name: innerShadow
     uid: word!Word.ShadowStyle.innerShadow:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an inner shadow style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"InnerShadow"'
   - name: mixed
     uid: word!Word.ShadowStyle.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a mixed shadow style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: outerShadow
     uid: word!Word.ShadowStyle.outerShadow:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an outer shadow style.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"OuterShadow"'

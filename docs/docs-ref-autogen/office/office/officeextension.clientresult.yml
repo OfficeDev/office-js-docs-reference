@@ -8,8 +8,6 @@ summary: >-
   value property is retrieved from the document after `context.sync()` is
   invoked.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

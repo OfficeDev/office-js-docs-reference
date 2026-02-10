@@ -45,40 +45,32 @@ fields:
   - name: mixed
     uid: word!Word.ShapeAutoSize.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       A combination of automatic sizing schemes are used.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Mixed"'
   - name: none
     uid: word!Word.ShapeAutoSize.none:member
     package: word!
-    summary: >-
+    summary: |-
       No autosizing.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"None"'
   - name: shapeToFitText
     uid: word!Word.ShapeAutoSize.shapeToFitText:member
     package: word!
-    summary: >-
+    summary: |-
       The shape is adjusted to fit the text.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ShapeToFitText"'
   - name: textToFitShape
     uid: word!Word.ShapeAutoSize.textToFitShape:member
     package: word!
-    summary: >-
+    summary: |-
       The text is adjusted to fit the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"TextToFitShape"'

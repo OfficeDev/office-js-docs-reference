@@ -50,8 +50,7 @@ fields:
       rotated.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EastAsianHorizontalRotated"'
   - name: eastAsianVertical
     uid: word!Word.ShapeTextOrientation.eastAsianVertical:member
@@ -61,38 +60,31 @@ fields:
       rotated.
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"EastAsianVertical"'
   - name: horizontal
     uid: word!Word.ShapeTextOrientation.horizontal:member
     package: word!
-    summary: >-
+    summary: |-
       Horizontal text.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Horizontal"'
   - name: mixed
     uid: word!Word.ShapeTextOrientation.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       A combination of automatic orientation is used.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Mixed"'
   - name: none
     uid: word!Word.ShapeTextOrientation.none:member
     package: word!
-    summary: >-
+    summary: |-
       No orientation, such as in a new geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"None"'
   - name: vertical
     uid: word!Word.ShapeTextOrientation.vertical:member
@@ -102,8 +94,7 @@ fields:
       degrees rotated clockwise).
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Vertical"'
   - name: vertical270
     uid: word!Word.ShapeTextOrientation.vertical270:member
@@ -113,6 +104,5 @@ fields:
       degrees rotated clockwise).
 
 
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Vertical270"'

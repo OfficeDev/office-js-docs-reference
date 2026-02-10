@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.WindowUpdateData
+uid: word!Word.Interfaces.WindowUpdateData:interface
+package: word!
+fullName: Word.Interfaces.WindowUpdateData
+summary: >-
+  An interface for updating data on the `Window` object, for use in
+  `window.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

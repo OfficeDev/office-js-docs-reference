@@ -1,0 +1,146 @@
+### YamlMime:TSType
+name: Office.Slice
+uid: office!Office.Slice:interface
+package: office!
+fullName: Office.Slice
+summary: >-
+  Represents a slice of a document file. The Slice object is accessed with the
+  `File.getSliceAsync` method.
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // This example demonstrates how to read file slices using the Office.Slice
+  interface.
+
+  // Each slice represents a portion of the document file and includes the
+  data, 
+
+  // index, and size properties.
+
+  Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize:
+  65536 }, 
+      function (result) {
+          if (result.status === Office.AsyncResultStatus.Succeeded) {
+              const file = result.value;
+              const sliceCount = file.sliceCount;
+              let slicesReceived = 0;
+              let fileData = [];
+
+              console.log(`File sliced into ${sliceCount} parts.`);
+
+              // Get the first slice.
+              getSliceAsync(file, 0, sliceCount);
+
+              /**
+               * Recursively retrieves slices from the file.
+               * @param file - The Office.File object to retrieve slices from.
+               * @param sliceIndex - The zero-based index of the slice to retrieve.
+               * @param totalSlices - The total number of slices in the file.
+               */
+              function getSliceAsync(file, sliceIndex, totalSlices) {
+                  file.getSliceAsync(sliceIndex, function (sliceResult) {
+                      if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
+                          const slice: Office.Slice = sliceResult.value;
+                          
+                          // Access the properties of the Slice.
+                          console.log(`Processing slice ${slice.index + 1} of ${totalSlices}`);
+                          console.log(`Slice size: ${slice.size} bytes`);
+                          
+                          // Store the slice data.
+                          fileData[slice.index] = slice.data;
+                          slicesReceived++;
+
+                          // Check if we've received all slices.
+                          if (slicesReceived === totalSlices) {
+                              file.closeAsync();
+                              console.log("All slices received. File data complete.");
+                              
+                              // Process the complete file data.
+                              processFileData(fileData);
+                          } else {
+                              // Get the next slice.
+                              getSliceAsync(file, sliceIndex + 1, totalSlices);
+                          }
+                      } else {
+                          file.closeAsync();
+                          console.error(`Error getting slice: ${sliceResult.error.message}`);
+                      }
+                  });
+              }
+
+              /**
+               * Processes the complete file data by combining all slices.
+               * @param data - An array of slice data arrays to combine.
+               */
+              function processFileData(data) {
+                  // Combine all slice data into a complete file.
+                  let combinedData = [];
+                  for (let i = 0; i < data.length; i++) {
+                      combinedData.push(...data[i]);
+                  }
+                  
+                  console.log(`File processing complete. Total bytes: ${combinedData.length}`);
+                  // At this point, combinedData contains the complete file content.
+                  // You can now save it, send it to a server, or process it further.
+              }
+          } else {
+              console.error(`Error getting file: ${result.error.message}`);
+          }
+      }
+  );
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: office!Office.Slice#data:member
+    package: office!
+    fullName: data
+    summary: >-
+      Gets the raw data of the file slice in `Office.FileType.Text` or
+      `Office.FileType.Compressed` format as specified by the `fileType`
+      parameter of the call to the `Document.getFileAsync` method.
+    remarks: >-
+      Files in the "compressed" format will return a byte array that can be
+      transformed to a Base64-encoded string if required.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data: any;'
+      return:
+        type: any
+  - name: index
+    uid: office!Office.Slice#index:member
+    package: office!
+    fullName: index
+    summary: Gets the zero-based index of the file slice.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index: number;'
+      return:
+        type: number
+  - name: size
+    uid: office!Office.Slice#size:member
+    package: office!
+    fullName: size
+    summary: Gets the size of the slice in bytes.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size: number;'
+      return:
+        type: number

@@ -14,24 +14,15 @@ fields:
   - name: bullet
     uid: onenote!OneNote.ListType.bullet:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"Bullet"'
   - name: none
     uid: onenote!OneNote.ListType.none:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"None"'
   - name: number
     uid: onenote!OneNote.ListType.number:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"Number"'

@@ -14,20 +14,16 @@ fields:
   - name: landscape
     uid: word!Word.PageOrientation.landscape:member
     package: word!
-    summary: >-
+    summary: |-
       Landscape orientation.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Landscape"'
   - name: portrait
     uid: word!Word.PageOrientation.portrait:member
     package: word!
-    summary: >-
+    summary: |-
       Portrait orientation.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Portrait"'

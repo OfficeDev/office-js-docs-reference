@@ -14,30 +14,24 @@ fields:
   - name: document
     uid: word!Word.DocumentType.document:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a standard document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Document"'
   - name: frameset
     uid: word!Word.DocumentType.frameset:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a frameset document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Frameset"'
   - name: template
     uid: word!Word.DocumentType.template:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a document template.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Template"'

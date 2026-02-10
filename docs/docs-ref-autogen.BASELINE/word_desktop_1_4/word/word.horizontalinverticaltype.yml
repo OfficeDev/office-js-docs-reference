@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.HorizontalInVerticalType
+uid: word!Word.HorizontalInVerticalType:enum
+package: word!
+fullName: Word.HorizontalInVerticalType
+summary: Specifies the format for horizontal text set within vertical text.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: fitInLine
+    uid: word!Word.HorizontalInVerticalType.fitInLine:member
+    package: word!
+    summary: >-
+      The horizontal text is sized to fit in the line of vertical text.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FitInLine"'
+  - name: none
+    uid: word!Word.HorizontalInVerticalType.none:member
+    package: word!
+    summary: >-
+      No formatting is applied to the horizontal text.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: resizeLine
+    uid: word!Word.HorizontalInVerticalType.resizeLine:member
+    package: word!
+    summary: >-
+      The line of vertical text is sized to accommodate the horizontal text.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ResizeLine"'

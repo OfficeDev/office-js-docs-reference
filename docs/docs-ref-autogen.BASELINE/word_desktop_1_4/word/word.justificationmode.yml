@@ -1,0 +1,44 @@
+### YamlMime:TSEnum
+name: Word.JustificationMode
+uid: word!Word.JustificationMode:enum
+package: word!
+fullName: Word.JustificationMode
+summary: Specifies the character spacing adjustment for a document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: compress
+    uid: word!Word.JustificationMode.compress:member
+    package: word!
+    summary: >-
+      Compresses the character spacing.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Compress"'
+  - name: compressKana
+    uid: word!Word.JustificationMode.compressKana:member
+    package: word!
+    summary: >-
+      Compresses the character spacing using rules of the kana syllabaries,
+      Hiragana and Katakana.
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"CompressKana"'
+  - name: expand
+    uid: word!Word.JustificationMode.expand:member
+    package: word!
+    summary: >-
+      Expands the character spacing
+
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Expand"'

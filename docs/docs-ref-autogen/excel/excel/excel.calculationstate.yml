@@ -14,22 +14,18 @@ fields:
   - name: calculating
     uid: excel!Excel.CalculationState.calculating:member
     package: excel!
-    summary: >-
+    summary: |-
       Calculations in progress.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Calculating"'
   - name: done
     uid: excel!Excel.CalculationState.done:member
     package: excel!
-    summary: >-
+    summary: |-
       Calculations complete.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Done"'
   - name: pending
     uid: excel!Excel.CalculationState.pending:member
@@ -39,6 +35,5 @@ fields:
       not yet been performed.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Pending"'

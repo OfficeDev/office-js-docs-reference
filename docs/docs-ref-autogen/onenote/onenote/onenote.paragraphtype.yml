@@ -14,40 +14,25 @@ fields:
   - name: image
     uid: onenote!OneNote.ParagraphType.image:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"Image"'
   - name: ink
     uid: onenote!OneNote.ParagraphType.ink:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"Ink"'
   - name: other
     uid: onenote!OneNote.ParagraphType.other:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"Other"'
   - name: richText
     uid: onenote!OneNote.ParagraphType.richText:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"RichText"'
   - name: table
     uid: onenote!OneNote.ParagraphType.table:member
     package: onenote!
-    summary: >-
-      * \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+    summary: '* \[Api set: OneNoteApi 1.1\]'
     value: '"Table"'

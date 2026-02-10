@@ -49,28 +49,20 @@ fields:
   - name: added
     uid: word!Word.ChangeTrackingState.added:member
     package: word!
-    summary: >-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: '* \[Api set: WordApi 1.5\]'
     value: '"Added"'
   - name: deleted
     uid: word!Word.ChangeTrackingState.deleted:member
     package: word!
-    summary: >-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: '* \[Api set: WordApi 1.5\]'
     value: '"Deleted"'
   - name: normal
     uid: word!Word.ChangeTrackingState.normal:member
     package: word!
-    summary: >-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: '* \[Api set: WordApi 1.5\]'
     value: '"Normal"'
   - name: unknown
     uid: word!Word.ChangeTrackingState.unknown:member
     package: word!
-    summary: >-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: '* \[Api set: WordApi 1.5\]'
     value: '"Unknown"'

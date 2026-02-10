@@ -55,7 +55,26 @@ properties:
     package: word!
     fullName: items
     summary: Gets the loaded child items in this collection.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
+
+
+      await Word.run(async (context) => {
+          const properties: Word.CustomPropertyCollection = context.document.properties.customProperties;
+          properties.load("key,type,value");
+
+          await context.sync();
+          for (let i = 0; i < properties.items.length; i++)
+              console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -63,28 +82,6 @@ properties:
       content: 'readonly items: Word.CustomProperty[];'
       return:
         type: <xref uid="word!Word.CustomProperty:class" />[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
-
-
-          await Word.run(async (context) => {
-              const properties: Word.CustomPropertyCollection = context.document.properties.customProperties;
-              properties.load("key,type,value");
-
-              await context.sync();
-              for (let i = 0; i < properties.items.length; i++)
-                  console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
-          });
-
-          ```
 methods:
   - name: add(key, value)
     uid: word!Word.CustomPropertyCollection#add:member(1)

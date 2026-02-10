@@ -55,8 +55,7 @@ properties:
       ParagraphType isn't Ink. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

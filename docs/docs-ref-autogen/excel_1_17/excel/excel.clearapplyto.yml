@@ -50,42 +50,34 @@ fields:
   - name: all
     uid: excel!Excel.ClearApplyTo.all:member
     package: excel!
-    summary: >-
+    summary: |-
       Clears everything in the range.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"All"'
   - name: contents
     uid: excel!Excel.ClearApplyTo.contents:member
     package: excel!
-    summary: >-
+    summary: |-
       Clears the contents of the range, leaving formatting intact.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Contents"'
   - name: formats
     uid: excel!Excel.ClearApplyTo.formats:member
     package: excel!
-    summary: >-
+    summary: |-
       Clears all formatting for the range, leaving values intact.
 
-
-      * \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.1\]
     value: '"Formats"'
   - name: hyperlinks
     uid: excel!Excel.ClearApplyTo.hyperlinks:member
     package: excel!
-    summary: >-
+    summary: |-
       Clears all hyperlinks, but leaves all content and formatting intact.
 
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"Hyperlinks"'
   - name: removeHyperlinks
     uid: excel!Excel.ClearApplyTo.removeHyperlinks:member
@@ -95,6 +87,5 @@ fields:
       conditional formats, and data validation intact.
 
 
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"RemoveHyperlinks"'

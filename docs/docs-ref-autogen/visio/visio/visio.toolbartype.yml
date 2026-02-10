@@ -15,33 +15,24 @@ fields:
   - name: commandBar
     uid: visio!Visio.ToolBarType.commandBar:member
     package: visio!
-    summary: >-
+    summary: |-
       The command toolbar type.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"CommandBar"'
   - name: pageNavigationBar
     uid: visio!Visio.ToolBarType.pageNavigationBar:member
     package: visio!
-    summary: >-
+    summary: |-
       The page navigation toolbar type.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"PageNavigationBar"'
   - name: statusBar
     uid: visio!Visio.ToolBarType.statusBar:member
     package: visio!
-    summary: >-
+    summary: |-
       The status toolbar type.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"StatusBar"'

@@ -7,8 +7,6 @@ summary: >-
   A ReplyFormData object that contains body or attachment data and a callback
   function. Used when displaying a reply form.
 remarks: >-
-
-
   #### Examples
 
 

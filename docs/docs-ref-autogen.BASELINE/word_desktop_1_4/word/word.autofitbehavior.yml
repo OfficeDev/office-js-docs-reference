@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.AutoFitBehavior
+uid: word!Word.AutoFitBehavior:enum
+package: word!
+fullName: Word.AutoFitBehavior
+summary: Specifies how a table is resized to fit its contents or the window.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: content
+    uid: word!Word.AutoFitBehavior.content:member
+    package: word!
+    summary: >-
+      Automatically resizes the table columns to fit the contents.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Content"'
+  - name: fixedSize
+    uid: word!Word.AutoFitBehavior.fixedSize:member
+    package: word!
+    summary: >-
+      Disables automatic resizing. The table retains its current size.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FixedSize"'
+  - name: window
+    uid: word!Word.AutoFitBehavior.window:member
+    package: word!
+    summary: >-
+      Automatically resizes the table to fit the window width.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Window"'

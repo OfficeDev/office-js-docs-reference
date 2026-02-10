@@ -14,44 +14,32 @@ fields:
   - name: connectionOnly
     uid: excel!Excel.LoadToType.connectionOnly:member
     package: excel!
-    summary: >-
+    summary: |-
       Load to connection only.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"ConnectionOnly"'
   - name: pivotChart
     uid: excel!Excel.LoadToType.pivotChart:member
     package: excel!
-    summary: >-
+    summary: |-
       Load to PivotChart.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"PivotChart"'
   - name: pivotTable
     uid: excel!Excel.LoadToType.pivotTable:member
     package: excel!
-    summary: >-
+    summary: |-
       Load to PivotTable.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"PivotTable"'
   - name: table
     uid: excel!Excel.LoadToType.table:member
     package: excel!
-    summary: >-
+    summary: |-
       Load to a table.
 
-
-      * \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.14\]
     value: '"Table"'

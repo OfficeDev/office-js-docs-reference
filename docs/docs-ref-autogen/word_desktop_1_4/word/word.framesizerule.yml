@@ -21,8 +21,7 @@ fields:
       specified by the `height` property or `width` property.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"AtLeast"'
   - name: auto
     uid: word!Word.FrameSizeRule.auto:member
@@ -32,8 +31,7 @@ fields:
       the frame.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Auto"'
   - name: exact
     uid: word!Word.FrameSizeRule.exact:member
@@ -43,6 +41,5 @@ fields:
       property or `width` property.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Exact"'

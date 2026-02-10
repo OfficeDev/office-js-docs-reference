@@ -1,0 +1,74 @@
+### YamlMime:TSType
+name: Office.DocumentSelectionChangedEventArgs
+uid: office!Office.DocumentSelectionChangedEventArgs:interface
+package: office!
+fullName: Office.DocumentSelectionChangedEventArgs
+summary: >-
+  Provides information about the document that raised the SelectionChanged
+  event.
+remarks: >-
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // The following example adds an event handler for the SelectionChanged event
+  of a document.
+
+  function addSelectionChangedEventHandler() {
+      Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
+  }
+
+
+  // The SelectionChanged event handler.
+
+  function MyHandler(eventArgs: Office.DocumentSelectionChangedEventArgs) {
+      write('Event raised: ' + eventArgs.type);
+      doSomethingWithDocument(eventArgs.document);
+  }
+
+
+  // Function that writes to a div with id='message' on the page.
+
+  function write(message){
+      document.getElementById('message').innerText += message; 
+  }
+
+  ```
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: document
+    uid: office!Office.DocumentSelectionChangedEventArgs#document:member
+    package: office!
+    fullName: document
+    summary: >-
+      Gets an [Office.Document](xref:office!Office.Document:interface) object
+      that represents the document that raised the SelectionChanged event.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'document: Document;'
+      return:
+        type: <xref uid="office!Office.Document:interface" />
+  - name: type
+    uid: office!Office.DocumentSelectionChangedEventArgs#type:member
+    package: office!
+    fullName: type
+    summary: >-
+      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration
+      value that identifies the kind of event that was raised.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: EventType;'
+      return:
+        type: <xref uid="office!Office.EventType:enum" />

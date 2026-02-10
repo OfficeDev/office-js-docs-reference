@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.HtmlDivisionUpdateData
+uid: word!Word.Interfaces.HtmlDivisionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.HtmlDivisionUpdateData
+summary: >-
+  An interface for updating data on the `HtmlDivision` object, for use in
+  `htmlDivision.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

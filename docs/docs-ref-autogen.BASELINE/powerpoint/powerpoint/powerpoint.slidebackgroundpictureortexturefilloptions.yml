@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: PowerPoint.SlideBackgroundPictureOrTextureFillOptions
+uid: powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions:interface
+package: powerpoint!
+fullName: PowerPoint.SlideBackgroundPictureOrTextureFillOptions
+summary: >-
+  Represents
+  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
+  picture or texture fill options.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: imageBase64
+    uid: >-
+      powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions#imageBase64:member
+    package: powerpoint!
+    fullName: imageBase64
+    summary: If provided, specifies the Base64-encoded image data for the fill.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageBase64?: string;'
+      return:
+        type: string
+  - name: transparency
+    uid: >-
+      powerpoint!PowerPoint.SlideBackgroundPictureOrTextureFillOptions#transparency:member
+    package: powerpoint!
+    fullName: transparency
+    summary: >-
+      If provided, specifies the transparency percentage of the fill as a value
+      from 0.0 (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type: number

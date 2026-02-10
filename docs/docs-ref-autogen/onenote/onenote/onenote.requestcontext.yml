@@ -5,8 +5,6 @@ package: onenote!
 fullName: OneNote.RequestContext
 summary: ''
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

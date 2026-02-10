@@ -44,30 +44,24 @@ fields:
   - name: compareTargetCurrent
     uid: word!Word.CompareTarget.compareTargetCurrent:member
     package: word!
-    summary: >-
+    summary: |-
       Places comparison differences in the current document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"CompareTargetCurrent"'
   - name: compareTargetNew
     uid: word!Word.CompareTarget.compareTargetNew:member
     package: word!
-    summary: >-
+    summary: |-
       Places comparison differences in a new document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"CompareTargetNew"'
   - name: compareTargetSelected
     uid: word!Word.CompareTarget.compareTargetSelected:member
     package: word!
-    summary: >-
+    summary: |-
       Places comparison differences in the target document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.1\]
     value: '"CompareTargetSelected"'

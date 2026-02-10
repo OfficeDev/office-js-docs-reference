@@ -14,50 +14,40 @@ fields:
   - name: bookmark
     uid: word!Word.ReferenceType.bookmark:member
     package: word!
-    summary: >-
+    summary: |-
       Refers to a bookmark in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Bookmark"'
   - name: endnote
     uid: word!Word.ReferenceType.endnote:member
     package: word!
-    summary: >-
+    summary: |-
       Refers to an endnote in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Endnote"'
   - name: footnote
     uid: word!Word.ReferenceType.footnote:member
     package: word!
-    summary: >-
+    summary: |-
       Refers to a footnote in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Footnote"'
   - name: heading
     uid: word!Word.ReferenceType.heading:member
     package: word!
-    summary: >-
+    summary: |-
       Refers to a heading in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Heading"'
   - name: numberedItem
     uid: word!Word.ReferenceType.numberedItem:member
     package: word!
-    summary: >-
+    summary: |-
       Refers to a numbered item in the document.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"NumberedItem"'

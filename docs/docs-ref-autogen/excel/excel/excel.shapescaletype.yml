@@ -36,14 +36,10 @@ fields:
   - name: currentSize
     uid: excel!Excel.ShapeScaleType.currentSize:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"CurrentSize"'
   - name: originalSize
     uid: excel!Excel.ShapeScaleType.originalSize:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"OriginalSize"'

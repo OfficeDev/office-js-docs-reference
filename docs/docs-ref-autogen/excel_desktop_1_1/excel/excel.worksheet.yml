@@ -1467,8 +1467,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.Worksheet:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript
@@ -1575,8 +1573,6 @@ methods:
       return:
         type: void
         description: |-
-
-
           #### Examples
 
           ```TypeScript

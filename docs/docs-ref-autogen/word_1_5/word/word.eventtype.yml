@@ -38,8 +38,7 @@ fields:
       to the document.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: word!Word.EventType.contentControlDataChanged:member
@@ -49,8 +48,7 @@ fields:
       content control have been changed.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: word!Word.EventType.contentControlDeleted:member
@@ -60,28 +58,23 @@ fields:
       been deleted.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlDeleted"'
   - name: contentControlEntered
     uid: word!Word.EventType.contentControlEntered:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been entered.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: word!Word.EventType.contentControlExited:member
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been exited.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: word!Word.EventType.contentControlSelectionChanged:member
@@ -91,6 +84,5 @@ fields:
       the content control has been changed.
 
 
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"ContentControlSelectionChanged"'

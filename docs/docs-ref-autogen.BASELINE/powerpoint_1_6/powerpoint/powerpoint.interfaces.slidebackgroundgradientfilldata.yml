@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideBackgroundGradientFillData
+uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.SlideBackgroundGradientFillData
+summary: >-
+  An interface describing the data returned by calling
+  `slideBackgroundGradientFill.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

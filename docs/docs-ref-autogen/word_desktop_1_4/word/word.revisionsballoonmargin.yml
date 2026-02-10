@@ -6,8 +6,7 @@ fullName: Word.RevisionsBalloonMargin
 summary: Specifies the margin for revision balloons in a Word document.
 remarks: >-
   \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -15,22 +14,16 @@ fields:
   - name: left
     uid: word!Word.RevisionsBalloonMargin.left:member
     package: word!
-    summary: >-
+    summary: |-
       Left margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Left"'
   - name: right
     uid: word!Word.RevisionsBalloonMargin.right:member
     package: word!
-    summary: >-
+    summary: |-
       Right margin.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Right"'

@@ -16,14 +16,10 @@ fields:
   - name: threePhaseColor
     uid: excel!Excel.ChartGradientStyle.threePhaseColor:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"ThreePhaseColor"'
   - name: twoPhaseColor
     uid: excel!Excel.ChartGradientStyle.twoPhaseColor:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"TwoPhaseColor"'

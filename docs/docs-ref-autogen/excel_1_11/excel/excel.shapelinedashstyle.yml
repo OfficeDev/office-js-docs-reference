@@ -14,84 +14,60 @@ fields:
   - name: dash
     uid: excel!Excel.ShapeLineDashStyle.dash:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Dash"'
   - name: dashDot
     uid: excel!Excel.ShapeLineDashStyle.dashDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"DashDot"'
   - name: dashDotDot
     uid: excel!Excel.ShapeLineDashStyle.dashDotDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"DashDotDot"'
   - name: longDash
     uid: excel!Excel.ShapeLineDashStyle.longDash:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"LongDash"'
   - name: longDashDot
     uid: excel!Excel.ShapeLineDashStyle.longDashDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"LongDashDot"'
   - name: longDashDotDot
     uid: excel!Excel.ShapeLineDashStyle.longDashDotDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"LongDashDotDot"'
   - name: roundDot
     uid: excel!Excel.ShapeLineDashStyle.roundDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"RoundDot"'
   - name: solid
     uid: excel!Excel.ShapeLineDashStyle.solid:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Solid"'
   - name: squareDot
     uid: excel!Excel.ShapeLineDashStyle.squareDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"SquareDot"'
   - name: systemDash
     uid: excel!Excel.ShapeLineDashStyle.systemDash:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"SystemDash"'
   - name: systemDashDot
     uid: excel!Excel.ShapeLineDashStyle.systemDashDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"SystemDashDot"'
   - name: systemDot
     uid: excel!Excel.ShapeLineDashStyle.systemDot:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"SystemDot"'

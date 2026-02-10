@@ -49,30 +49,24 @@ fields:
   - name: scaleFromBottomRight
     uid: word!Word.ShapeScaleFrom.scaleFromBottomRight:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from the bottom right corner of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ScaleFromBottomRight"'
   - name: scaleFromMiddle
     uid: word!Word.ShapeScaleFrom.scaleFromMiddle:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from the center of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ScaleFromMiddle"'
   - name: scaleFromTopLeft
     uid: word!Word.ShapeScaleFrom.scaleFromTopLeft:member
     package: word!
-    summary: >-
+    summary: |-
       Scale from the top left corner of the shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"ScaleFromTopLeft"'

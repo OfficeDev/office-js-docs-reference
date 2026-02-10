@@ -162,8 +162,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartAxisTitle:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

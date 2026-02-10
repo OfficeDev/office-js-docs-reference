@@ -46,20 +46,16 @@ fields:
   - name: error
     uid: word!Word.ContentControlState.error:member
     package: word!
-    summary: >-
+    summary: |-
       Error state.
 
-
-      * \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
     value: '"Error"'
   - name: warning
     uid: word!Word.ContentControlState.warning:member
     package: word!
-    summary: >-
+    summary: |-
       Warning state.
 
-
-      * \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi BETA (PREVIEW ONLY)\]
     value: '"Warning"'

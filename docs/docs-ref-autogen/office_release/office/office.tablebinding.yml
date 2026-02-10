@@ -25,7 +25,20 @@ properties:
     package: office!
     fullName: columnCount
     summary: Gets the number of columns in the TableBinding, as an integer value.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function showBindingColumnCount() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Column: " + asyncResult.value.columnCount);
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -33,28 +46,25 @@ properties:
       content: 'columnCount: number;'
       return:
         type: number
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showBindingColumnCount() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Column: " + asyncResult.value.columnCount);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: hasHeaders
     uid: office!Office.TableBinding#hasHeaders:member
     package: office!
     fullName: hasHeaders
     summary: True, if the table has headers; otherwise false.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function showBindingHasHeaders() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Binding has headers: " + asyncResult.value.hasHeaders);
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -62,22 +72,6 @@ properties:
       content: 'hasHeaders: boolean;'
       return:
         type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showBindingHasHeaders() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Binding has headers: " + asyncResult.value.hasHeaders);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: rowCount
     uid: office!Office.TableBinding#rowCount:member
     package: office!

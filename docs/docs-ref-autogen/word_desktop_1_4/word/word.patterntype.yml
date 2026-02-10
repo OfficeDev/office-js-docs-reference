@@ -14,550 +14,440 @@ fields:
   - name: cross
     uid: word!Word.PatternType.cross:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a cross fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Cross"'
   - name: darkDownwardDiagonal
     uid: word!Word.PatternType.darkDownwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark downward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkDownwardDiagonal"'
   - name: darkHorizontal
     uid: word!Word.PatternType.darkHorizontal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark horizontal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkHorizontal"'
   - name: darkUpwardDiagonal
     uid: word!Word.PatternType.darkUpwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark upward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkUpwardDiagonal"'
   - name: darkVertical
     uid: word!Word.PatternType.darkVertical:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dark vertical fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DarkVertical"'
   - name: dashedDownwardDiagonal
     uid: word!Word.PatternType.dashedDownwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dashed downward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashedDownwardDiagonal"'
   - name: dashedHorizontal
     uid: word!Word.PatternType.dashedHorizontal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dashed horizontal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashedHorizontal"'
   - name: dashedUpwardDiagonal
     uid: word!Word.PatternType.dashedUpwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dashed upward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashedUpwardDiagonal"'
   - name: dashedVertical
     uid: word!Word.PatternType.dashedVertical:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dashed vertical fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DashedVertical"'
   - name: diagonalBrick
     uid: word!Word.PatternType.diagonalBrick:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a diagonal brick fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DiagonalBrick"'
   - name: diagonalCross
     uid: word!Word.PatternType.diagonalCross:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a diagonal cross fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DiagonalCross"'
   - name: divot
     uid: word!Word.PatternType.divot:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a divot fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Divot"'
   - name: dottedDiamond
     uid: word!Word.PatternType.dottedDiamond:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dotted diamond fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DottedDiamond"'
   - name: dottedGrid
     uid: word!Word.PatternType.dottedGrid:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a dotted grid fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DottedGrid"'
   - name: downwardDiagonal
     uid: word!Word.PatternType.downwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a downward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"DownwardDiagonal"'
   - name: horizontal
     uid: word!Word.PatternType.horizontal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a horizontal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Horizontal"'
   - name: horizontalBrick
     uid: word!Word.PatternType.horizontalBrick:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a horizontal brick fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"HorizontalBrick"'
   - name: largeCheckerBoard
     uid: word!Word.PatternType.largeCheckerBoard:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a large checkerboard fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LargeCheckerBoard"'
   - name: largeConfetti
     uid: word!Word.PatternType.largeConfetti:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a large confetti fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LargeConfetti"'
   - name: largeGrid
     uid: word!Word.PatternType.largeGrid:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a large grid fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LargeGrid"'
   - name: lightDownwardDiagonal
     uid: word!Word.PatternType.lightDownwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a light downward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LightDownwardDiagonal"'
   - name: lightHorizontal
     uid: word!Word.PatternType.lightHorizontal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a light horizontal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LightHorizontal"'
   - name: lightUpwardDiagonal
     uid: word!Word.PatternType.lightUpwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a light upward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LightUpwardDiagonal"'
   - name: lightVertical
     uid: word!Word.PatternType.lightVertical:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a light vertical fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"LightVertical"'
   - name: mixed
     uid: word!Word.PatternType.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a mixed pattern type.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: narrowHorizontal
     uid: word!Word.PatternType.narrowHorizontal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a narrow horizontal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NarrowHorizontal"'
   - name: narrowVertical
     uid: word!Word.PatternType.narrowVertical:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a narrow vertical fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"NarrowVertical"'
   - name: outlinedDiamond
     uid: word!Word.PatternType.outlinedDiamond:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an outlined diamond fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"OutlinedDiamond"'
   - name: percent10
     uid: word!Word.PatternType.percent10:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 10 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent10"'
   - name: percent20
     uid: word!Word.PatternType.percent20:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 20 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent20"'
   - name: percent25
     uid: word!Word.PatternType.percent25:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 25 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent25"'
   - name: percent30
     uid: word!Word.PatternType.percent30:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 30 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent30"'
   - name: percent40
     uid: word!Word.PatternType.percent40:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 40 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent40"'
   - name: percent5
     uid: word!Word.PatternType.percent5:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 5 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent5"'
   - name: percent50
     uid: word!Word.PatternType.percent50:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 50 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent50"'
   - name: percent60
     uid: word!Word.PatternType.percent60:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 60 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent60"'
   - name: percent70
     uid: word!Word.PatternType.percent70:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 70 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent70"'
   - name: percent75
     uid: word!Word.PatternType.percent75:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 75 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent75"'
   - name: percent80
     uid: word!Word.PatternType.percent80:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an 80 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent80"'
   - name: percent90
     uid: word!Word.PatternType.percent90:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a 90 percent fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Percent90"'
   - name: plaid
     uid: word!Word.PatternType.plaid:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a plaid fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Plaid"'
   - name: shingle
     uid: word!Word.PatternType.shingle:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a shingle fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Shingle"'
   - name: smallCheckerBoard
     uid: word!Word.PatternType.smallCheckerBoard:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a small checkerboard fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SmallCheckerBoard"'
   - name: smallConfetti
     uid: word!Word.PatternType.smallConfetti:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a small confetti fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SmallConfetti"'
   - name: smallGrid
     uid: word!Word.PatternType.smallGrid:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a small grid fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SmallGrid"'
   - name: solidDiamond
     uid: word!Word.PatternType.solidDiamond:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a solid diamond fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"SolidDiamond"'
   - name: sphere
     uid: word!Word.PatternType.sphere:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a sphere fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Sphere"'
   - name: trellis
     uid: word!Word.PatternType.trellis:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a trellis fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Trellis"'
   - name: upwardDiagonal
     uid: word!Word.PatternType.upwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents an upward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"UpwardDiagonal"'
   - name: vertical
     uid: word!Word.PatternType.vertical:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a vertical fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Vertical"'
   - name: wave
     uid: word!Word.PatternType.wave:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a wave fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Wave"'
   - name: weave
     uid: word!Word.PatternType.weave:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a weave fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Weave"'
   - name: wideDownwardDiagonal
     uid: word!Word.PatternType.wideDownwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a wide downward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WideDownwardDiagonal"'
   - name: wideUpwardDiagonal
     uid: word!Word.PatternType.wideUpwardDiagonal:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a wide upward diagonal fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"WideUpwardDiagonal"'
   - name: zigZag
     uid: word!Word.PatternType.zigZag:member
     package: word!
-    summary: >-
+    summary: |-
       Represents a zigzag fill pattern.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"ZigZag"'

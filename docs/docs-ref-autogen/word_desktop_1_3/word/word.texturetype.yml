@@ -19,26 +19,21 @@ fields:
       are selected.
 
 
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Mixed"'
   - name: preset
     uid: word!Word.TextureType.preset:member
     package: word!
-    summary: >-
+    summary: |-
       A predefined texture selected from the built-in texture gallery.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Preset"'
   - name: userDefined
     uid: word!Word.TextureType.userDefined:member
     package: word!
-    summary: >-
+    summary: |-
       A custom texture defined by the user, typically from an image file.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"UserDefined"'

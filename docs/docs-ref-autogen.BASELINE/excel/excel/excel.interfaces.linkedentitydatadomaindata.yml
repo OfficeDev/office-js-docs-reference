@@ -1,0 +1,225 @@
+### YamlMime:TSType
+name: Excel.Interfaces.LinkedEntityDataDomainData
+uid: excel!Excel.Interfaces.LinkedEntityDataDomainData:interface
+package: excel!
+fullName: Excel.Interfaces.LinkedEntityDataDomainData
+summary: >-
+  An interface describing the data returned by calling
+  `linkedEntityDataDomain.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dataProvider
+    uid: excel!Excel.Interfaces.LinkedEntityDataDomainData#dataProvider:member
+    package: excel!
+    fullName: dataProvider
+    summary: >-
+      Gets the name of the data provider for the linked entity data domain. This
+      name can change based on the information provided by the data provider.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataProvider?: string;'
+      return:
+        type: string
+  - name: id
+    uid: excel!Excel.Interfaces.LinkedEntityDataDomainData#id:member
+    package: excel!
+    fullName: id
+    summary: >-
+      Gets the ID of the linked entity data domain defined by Office Add-ins.
+      This ID is not applicable to linked entity data domains defined by service
+      data providers, such as Bing or Power BI.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: lastRefreshed
+    uid: excel!Excel.Interfaces.LinkedEntityDataDomainData#lastRefreshed:member
+    package: excel!
+    fullName: lastRefreshed
+    summary: >-
+      Gets the date and time (in the local time zone) since the workbook was
+      opened and the `LinkedEntityCellValue` objects of this linked entity data
+      domain were last refreshed. Returns `undefined` if `LinkedEntityCellValue`
+      objects have not been refreshed since the workbook was opened.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastRefreshed?: Date;'
+      return:
+        type: Date
+  - name: loadFunctionId
+    uid: excel!Excel.Interfaces.LinkedEntityDataDomainData#loadFunctionId:member
+    package: excel!
+    fullName: loadFunctionId
+    summary: >-
+      Gets the ID of the custom function that is called on demand to resolve or
+      refresh the `LinkedEntityCellValue` objects of the linked entity data
+      domain defined by Office Add-ins. For further information, see
+      [Autogenerate JSON metadata for custom functions:
+      ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!--
+      -->. This ID is not applicable to linked entity data domains defined by
+      service data providers, such as Bing or Power BI.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadFunctionId?: string;'
+      return:
+        type: string
+  - name: name
+    uid: excel!Excel.Interfaces.LinkedEntityDataDomainData#name:member
+    package: excel!
+    fullName: name
+    summary: >-
+      Gets the name of the linked entity data domain. This name can change based
+      on the information provided by the data provider.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: periodicRefreshInterval
+    uid: >-
+      excel!Excel.Interfaces.LinkedEntityDataDomainData#periodicRefreshInterval:member
+    package: excel!
+    fullName: periodicRefreshInterval
+    summary: >-
+      Gets the frequency, in seconds, at which `LinkedEntityCellValue` objects
+      of this linked entity data domain are refreshed automatically. The refresh
+      interval only applies if the `refreshMode` is set to "Periodic".
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'periodicRefreshInterval?: number;'
+      return:
+        type: number
+  - name: refreshMode
+    uid: excel!Excel.Interfaces.LinkedEntityDataDomainData#refreshMode:member
+    package: excel!
+    fullName: refreshMode
+    summary: >-
+      Specifies the refresh mode that defines how and when the
+      `LinkedEntityCellValue` objects of this linked entity data domain are
+      refreshed. If the refresh mode being set is not supported by this linked
+      entity data domain, then the current refresh mode is not changed. If the
+      refresh mode is set to "Periodic", the refresh interval is set to the
+      `periodicRefreshInterval` of this linked entity data domain.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        refreshMode?: Excel.LinkedEntityDataDomainRefreshMode | "Unknown" |
+        "Manual" | "OnLoad" | "Periodic";
+      return:
+        type: >-
+          <xref uid="excel!Excel.LinkedEntityDataDomainRefreshMode:enum" /> |
+          "Unknown" | "Manual" | "OnLoad" | "Periodic"
+  - name: serviceId
+    uid: excel!Excel.Interfaces.LinkedEntityDataDomainData#serviceId:member
+    package: excel!
+    fullName: serviceId
+    summary: >-
+      Gets the service ID of the linked entity data domain. This ID is a
+      permanently reserved value for all linked entity data domains which are
+      defined by service data providers, such as Bing or Power BI, or defined by
+      Office Add-ins. This ID never changes across user sessions.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceId?: number;'
+      return:
+        type: number
+  - name: supportedRefreshModes
+    uid: >-
+      excel!Excel.Interfaces.LinkedEntityDataDomainData#supportedRefreshModes:member
+    package: excel!
+    fullName: supportedRefreshModes
+    summary: >-
+      Gets all the refresh modes supported by the linked entity data domain.
+      This array can change based on the information provided by the data
+      provider.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+
+      This property isn't supported in Excel on the web.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'supportedRefreshModes?: Excel.LinkedEntityDataDomainRefreshMode[];'
+      return:
+        type: <xref uid="excel!Excel.LinkedEntityDataDomainRefreshMode:enum" />[]

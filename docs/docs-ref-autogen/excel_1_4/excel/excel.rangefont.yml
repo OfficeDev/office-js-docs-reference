@@ -188,8 +188,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.RangeFont:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

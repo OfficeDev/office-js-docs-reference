@@ -14,30 +14,24 @@ fields:
   - name: atLeast
     uid: word!Word.RowHeightRule.atLeast:member
     package: word!
-    summary: >-
+    summary: |-
       The row height is set to a minimum value.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"AtLeast"'
   - name: auto
     uid: word!Word.RowHeightRule.auto:member
     package: word!
-    summary: >-
+    summary: |-
       The row height is adjusted to accommodate the tallest value in the row.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Auto"'
   - name: exactly
     uid: word!Word.RowHeightRule.exactly:member
     package: word!
-    summary: >-
+    summary: |-
       The row height is set to an exact value.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Exactly"'

@@ -1,0 +1,247 @@
+### YamlMime:TSType
+name: Word.Interfaces.BorderUniversalData
+uid: word!Word.Interfaces.BorderUniversalData:interface
+package: word!
+fullName: Word.Interfaces.BorderUniversalData
+summary: >-
+  An interface describing the data returned by calling
+  `borderUniversal.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: artStyle
+    uid: word!Word.Interfaces.BorderUniversalData#artStyle:member
+    package: word!
+    fullName: artStyle
+    summary: Specifies the graphical page-border design for the document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        artStyle?: Word.PageBorderArt | "Apples" | "MapleMuffins" | "CakeSlice"
+        | "CandyCorn" | "IceCreamCones" | "ChampagneBottle" | "PartyGlass" |
+        "ChristmasTree" | "Trees" | "PalmsColor" | "Balloons3Colors" |
+        "BalloonsHotAir" | "PartyFavor" | "ConfettiStreamers" | "Hearts" |
+        "HeartBalloon" | "Stars3D" | "StarsShadowed" | "Stars" | "Sun" |
+        "Earth2" | "Earth1" | "PeopleHats" | "Sombrero" | "Pencils" | "Packages"
+        | "Clocks" | "Firecrackers" | "Rings" | "MapPins" | "Confetti" |
+        "CreaturesButterfly" | "CreaturesLadyBug" | "CreaturesFish" |
+        "BirdsFlight" | "ScaredCat" | "Bats" | "FlowersRoses" | "FlowersRedRose"
+        | "Poinsettias" | "Holly" | "FlowersTiny" | "FlowersPansy" |
+        "FlowersModern2" | "FlowersModern1" | "WhiteFlowers" | "Vine" |
+        "FlowersDaisies" | "FlowersBlockPrint" | "DecoArchColor" | "Fans" |
+        "Film" | "Lightning1" | "Compass" | "DoubleD" | "ClassicalWave" |
+        "ShadowedSquares" | "TwistedLines1" | "Waveline" | "Quadrants" |
+        "CheckedBarColor" | "Swirligig" | "PushPinNote1" | "PushPinNote2" |
+        "Pumpkin1" | "EggsBlack" | "Cup" | "HeartGray" | "GingerbreadMan" |
+        "BabyPacifier" | "BabyRattle" | "Cabins" | "HouseFunky" | "StarsBlack" |
+        "Snowflakes" | "SnowflakeFancy" | "Skyrocket" | "Seattle" | "MusicNotes"
+        | "PalmsBlack" | "MapleLeaf" | "PaperClips" | "ShorebirdTracks" |
+        "People" | "PeopleWaving" | "EclipsingSquares2" | "Hypnotic" |
+        "DiamondsGray" | "DecoArch" | "DecoBlocks" | "CirclesLines" | "Papyrus"
+        | "Woodwork" | "WeavingBraid" | "WeavingRibbon" | "WeavingAngles" |
+        "ArchedScallops" | "Safari" | "CelticKnotwork" | "CrazyMaze" |
+        "EclipsingSquares1" | "Birds" | "FlowersTeacup" | "Northwest" |
+        "Southwest" | "Tribal6" | "Tribal4" | "Tribal3" | "Tribal2" | "Tribal5"
+        | "XIllusions" | "ZanyTriangles" | "Pyramids" | "PyramidsAbove" |
+        "ConfettiGrays" | "ConfettiOutline" | "ConfettiWhite" | "Mosaic" |
+        "Lightning2" | "HeebieJeebies" | "LightBulb" | "Gradient" |
+        "TriangleParty" | "TwistedLines2" | "Moons" | "Ovals" | "DoubleDiamonds"
+        | "ChainLink" | "Triangles" | "Tribal1" | "MarqueeToothed" |
+        "SharksTeeth" | "Sawtooth" | "SawtoothGray" | "PostageStamp" |
+        "WeavingStrips" | "ZigZag" | "CrossStitch" | "Gems" |
+        "CirclesRectangles" | "CornerTriangles" | "CreaturesInsects" |
+        "ZigZagStitch" | "Checkered" | "CheckedBarBlack" | "Marquee" |
+        "BasicWhiteDots" | "BasicWideMidline" | "BasicWideOutline" |
+        "BasicWideInline" | "BasicThinLines" | "BasicWhiteDashes" |
+        "BasicWhiteSquares" | "BasicBlackSquares" | "BasicBlackDashes" |
+        "BasicBlackDots" | "StarsTop" | "CertificateBanner" | "Handmade1" |
+        "Handmade2" | "TornPaper" | "TornPaperBlack" | "CouponCutoutDashes" |
+        "CouponCutoutDots";
+      return:
+        type: >-
+          <xref uid="word!Word.PageBorderArt:enum" /> | "Apples" |
+          "MapleMuffins" | "CakeSlice" | "CandyCorn" | "IceCreamCones" |
+          "ChampagneBottle" | "PartyGlass" | "ChristmasTree" | "Trees" |
+          "PalmsColor" | "Balloons3Colors" | "BalloonsHotAir" | "PartyFavor" |
+          "ConfettiStreamers" | "Hearts" | "HeartBalloon" | "Stars3D" |
+          "StarsShadowed" | "Stars" | "Sun" | "Earth2" | "Earth1" | "PeopleHats"
+          | "Sombrero" | "Pencils" | "Packages" | "Clocks" | "Firecrackers" |
+          "Rings" | "MapPins" | "Confetti" | "CreaturesButterfly" |
+          "CreaturesLadyBug" | "CreaturesFish" | "BirdsFlight" | "ScaredCat" |
+          "Bats" | "FlowersRoses" | "FlowersRedRose" | "Poinsettias" | "Holly" |
+          "FlowersTiny" | "FlowersPansy" | "FlowersModern2" | "FlowersModern1" |
+          "WhiteFlowers" | "Vine" | "FlowersDaisies" | "FlowersBlockPrint" |
+          "DecoArchColor" | "Fans" | "Film" | "Lightning1" | "Compass" |
+          "DoubleD" | "ClassicalWave" | "ShadowedSquares" | "TwistedLines1" |
+          "Waveline" | "Quadrants" | "CheckedBarColor" | "Swirligig" |
+          "PushPinNote1" | "PushPinNote2" | "Pumpkin1" | "EggsBlack" | "Cup" |
+          "HeartGray" | "GingerbreadMan" | "BabyPacifier" | "BabyRattle" |
+          "Cabins" | "HouseFunky" | "StarsBlack" | "Snowflakes" |
+          "SnowflakeFancy" | "Skyrocket" | "Seattle" | "MusicNotes" |
+          "PalmsBlack" | "MapleLeaf" | "PaperClips" | "ShorebirdTracks" |
+          "People" | "PeopleWaving" | "EclipsingSquares2" | "Hypnotic" |
+          "DiamondsGray" | "DecoArch" | "DecoBlocks" | "CirclesLines" |
+          "Papyrus" | "Woodwork" | "WeavingBraid" | "WeavingRibbon" |
+          "WeavingAngles" | "ArchedScallops" | "Safari" | "CelticKnotwork" |
+          "CrazyMaze" | "EclipsingSquares1" | "Birds" | "FlowersTeacup" |
+          "Northwest" | "Southwest" | "Tribal6" | "Tribal4" | "Tribal3" |
+          "Tribal2" | "Tribal5" | "XIllusions" | "ZanyTriangles" | "Pyramids" |
+          "PyramidsAbove" | "ConfettiGrays" | "ConfettiOutline" |
+          "ConfettiWhite" | "Mosaic" | "Lightning2" | "HeebieJeebies" |
+          "LightBulb" | "Gradient" | "TriangleParty" | "TwistedLines2" | "Moons"
+          | "Ovals" | "DoubleDiamonds" | "ChainLink" | "Triangles" | "Tribal1" |
+          "MarqueeToothed" | "SharksTeeth" | "Sawtooth" | "SawtoothGray" |
+          "PostageStamp" | "WeavingStrips" | "ZigZag" | "CrossStitch" | "Gems" |
+          "CirclesRectangles" | "CornerTriangles" | "CreaturesInsects" |
+          "ZigZagStitch" | "Checkered" | "CheckedBarBlack" | "Marquee" |
+          "BasicWhiteDots" | "BasicWideMidline" | "BasicWideOutline" |
+          "BasicWideInline" | "BasicThinLines" | "BasicWhiteDashes" |
+          "BasicWhiteSquares" | "BasicBlackSquares" | "BasicBlackDashes" |
+          "BasicBlackDots" | "StarsTop" | "CertificateBanner" | "Handmade1" |
+          "Handmade2" | "TornPaper" | "TornPaperBlack" | "CouponCutoutDashes" |
+          "CouponCutoutDots"
+  - name: artWidth
+    uid: word!Word.Interfaces.BorderUniversalData#artWidth:member
+    package: word!
+    fullName: artWidth
+    summary: >-
+      Specifies the width (in points) of the graphical page border specified in
+      the `artStyle` property.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'artWidth?: number;'
+      return:
+        type: number
+  - name: color
+    uid: word!Word.Interfaces.BorderUniversalData#color:member
+    package: word!
+    fullName: color
+    summary: >-
+      Specifies the color for the `BorderUniversal` object. You can provide the
+      value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: colorIndex
+    uid: word!Word.Interfaces.BorderUniversalData#colorIndex:member
+    package: word!
+    fullName: colorIndex
+    summary: >-
+      Specifies the color for the `BorderUniversal` or
+      [Word.Font](xref:word!Word.Font:class) object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        colorIndex?: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" |
+        "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" |
+        "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
+        "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
+      return:
+        type: >-
+          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
+          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+  - name: inside
+    uid: word!Word.Interfaces.BorderUniversalData#inside:member
+    package: word!
+    fullName: inside
+    summary: Returns `true` if an inside border can be applied to the specified object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inside?: boolean;'
+      return:
+        type: boolean
+  - name: isVisible
+    uid: word!Word.Interfaces.BorderUniversalData#isVisible:member
+    package: word!
+    fullName: isVisible
+    summary: Specifies whether the border is visible.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
+      return:
+        type: boolean
+  - name: lineStyle
+    uid: word!Word.Interfaces.BorderUniversalData#lineStyle:member
+    package: word!
+    fullName: lineStyle
+    summary: Specifies the line style of the border.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        lineStyle?: Word.BorderLineStyle | "None" | "Single" | "Dot" |
+        "DashSmallGap" | "DashLargeGap" | "DashDot" | "DashDotDot" | "Double" |
+        "Triple" | "ThinThickSmallGap" | "ThickThinSmallGap" |
+        "ThinThickThinSmallGap" | "ThinThickMedGap" | "ThickThinMedGap" |
+        "ThinThickThinMedGap" | "ThinThickLargeGap" | "ThickThinLargeGap" |
+        "ThinThickThinLargeGap" | "SingleWavy" | "DoubleWavy" | "DashDotStroked"
+        | "Emboss3D" | "Engrave3D" | "Outset" | "Inset";
+      return:
+        type: >-
+          <xref uid="word!Word.BorderLineStyle:enum" /> | "None" | "Single" |
+          "Dot" | "DashSmallGap" | "DashLargeGap" | "DashDot" | "DashDotDot" |
+          "Double" | "Triple" | "ThinThickSmallGap" | "ThickThinSmallGap" |
+          "ThinThickThinSmallGap" | "ThinThickMedGap" | "ThickThinMedGap" |
+          "ThinThickThinMedGap" | "ThinThickLargeGap" | "ThickThinLargeGap" |
+          "ThinThickThinLargeGap" | "SingleWavy" | "DoubleWavy" |
+          "DashDotStroked" | "Emboss3D" | "Engrave3D" | "Outset" | "Inset"
+  - name: lineWidth
+    uid: word!Word.Interfaces.BorderUniversalData#lineWidth:member
+    package: word!
+    fullName: lineWidth
+    summary: Specifies the line width of an object's border.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        lineWidth?: Word.LineWidth | "Pt025" | "Pt050" | "Pt075" | "Pt100" |
+        "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600";
+      return:
+        type: >-
+          <xref uid="word!Word.LineWidth:enum" /> | "Pt025" | "Pt050" | "Pt075"
+          | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600"

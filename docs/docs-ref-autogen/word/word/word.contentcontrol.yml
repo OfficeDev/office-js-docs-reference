@@ -2011,8 +2011,6 @@ methods:
       return:
         type: <xref uid="word!Word.ContentControl:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript
@@ -2326,8 +2324,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 

@@ -14,28 +14,20 @@ fields:
   - name: edgeBottom
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeBottom:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"EdgeBottom"'
   - name: edgeLeft
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeLeft:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"EdgeLeft"'
   - name: edgeRight
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeRight:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"EdgeRight"'
   - name: edgeTop
     uid: excel!Excel.ConditionalRangeBorderIndex.edgeTop:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.6\]'
     value: '"EdgeTop"'

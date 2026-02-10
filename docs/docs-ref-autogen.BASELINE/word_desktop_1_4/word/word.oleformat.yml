@@ -1,0 +1,480 @@
+### YamlMime:TSType
+name: Word.OleFormat
+uid: word!Word.OleFormat:class
+package: word!
+fullName: Word.OleFormat
+summary: >-
+  Represents the OLE characteristics (other than linking) for an OLE object,
+  ActiveX control, or field.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: classType
+    uid: word!Word.OleFormat#classType:member
+    package: word!
+    fullName: classType
+    summary: Specifies the class type for the specified OLE object, picture, or field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'classType: string;'
+      return:
+        type: string
+  - name: context
+    uid: word!Word.OleFormat#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: iconIndex
+    uid: word!Word.OleFormat#iconIndex:member
+    package: word!
+    fullName: iconIndex
+    summary: >-
+      Specifies the icon that is used when the `displayAsIcon` property is
+      `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconIndex: number;'
+      return:
+        type: number
+  - name: iconLabel
+    uid: word!Word.OleFormat#iconLabel:member
+    package: word!
+    fullName: iconLabel
+    summary: Specifies the text displayed below the icon for the OLE object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconLabel: string;'
+      return:
+        type: string
+  - name: iconName
+    uid: word!Word.OleFormat#iconName:member
+    package: word!
+    fullName: iconName
+    summary: Specifies the program file in which the icon for the OLE object is stored.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconName: string;'
+      return:
+        type: string
+  - name: iconPath
+    uid: word!Word.OleFormat#iconPath:member
+    package: word!
+    fullName: iconPath
+    summary: Gets the path of the file in which the icon for the OLE object is stored.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly iconPath: string;'
+      return:
+        type: string
+  - name: isDisplayedAsIcon
+    uid: word!Word.OleFormat#isDisplayedAsIcon:member
+    package: word!
+    fullName: isDisplayedAsIcon
+    summary: Gets whether the specified object is displayed as an icon.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isDisplayedAsIcon: boolean;'
+      return:
+        type: boolean
+  - name: isFormattingPreservedOnUpdate
+    uid: word!Word.OleFormat#isFormattingPreservedOnUpdate:member
+    package: word!
+    fullName: isFormattingPreservedOnUpdate
+    summary: >-
+      Specifies whether formatting done in Microsoft Word to the linked OLE
+      object is preserved.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isFormattingPreservedOnUpdate: boolean;'
+      return:
+        type: boolean
+  - name: label
+    uid: word!Word.OleFormat#label:member
+    package: word!
+    fullName: label
+    summary: >-
+      Gets a string that's used to identify the portion of the source file
+      that's being linked.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly label: string;'
+      return:
+        type: string
+  - name: progId
+    uid: word!Word.OleFormat#progId:member
+    package: word!
+    fullName: progId
+    summary: >-
+      Gets the programmatic identifier (`ProgId`<!-- -->) for the specified OLE
+      object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly progId: string;'
+      return:
+        type: string
+methods:
+  - name: activate()
+    uid: word!Word.OleFormat#activate:member(1)
+    package: word!
+    fullName: activate()
+    summary: Activates the `OleFormat` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: activateAs(classType)
+    uid: word!Word.OleFormat#activateAs:member(1)
+    package: word!
+    fullName: activateAs(classType)
+    summary: >-
+      Sets the Windows registry value that determines the default application
+      used to activate the specified OLE object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activateAs(classType: string): void;'
+      parameters:
+        - id: classType
+          description: The class type to activate as.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: doVerb(verbIndex)
+    uid: word!Word.OleFormat#doVerb:member(1)
+    package: word!
+    fullName: doVerb(verbIndex)
+    summary: Requests that the OLE object perform one of its available verbs.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'doVerb(verbIndex: Word.OleVerb): void;'
+      parameters:
+        - id: verbIndex
+          description: Optional. The index of the verb to perform.
+          type: <xref uid="word!Word.OleVerb:enum" />
+      return:
+        type: void
+        description: ''
+  - name: doVerb(verbIndex)
+    uid: word!Word.OleFormat#doVerb:member(2)
+    package: word!
+    fullName: doVerb(verbIndex)
+    summary: Requests that the OLE object perform one of its available verbs.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        doVerb(verbIndex: "Primary" | "Show" | "Open" | "Hide" | "UiActivate" |
+        "InPlaceActivate" | "DiscardUndoState"): void;
+      parameters:
+        - id: verbIndex
+          description: Optional. The index of the verb to perform.
+          type: >-
+            "Primary" | "Show" | "Open" | "Hide" | "UiActivate" |
+            "InPlaceActivate" | "DiscardUndoState"
+      return:
+        type: void
+        description: ''
+  - name: edit()
+    uid: word!Word.OleFormat#edit:member(1)
+    package: word!
+    fullName: edit()
+    summary: Opens the OLE object for editing in the application it was created in.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'edit(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.OleFormat#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.OleFormatLoadOptions): Word.OleFormat;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: <xref uid="word!Word.Interfaces.OleFormatLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.OleFormat:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.OleFormat#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.OleFormat;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.OleFormat:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.OleFormat#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.OleFormat;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.OleFormat:class" />
+        description: ''
+  - name: open()
+    uid: word!Word.OleFormat#open:member(1)
+    package: word!
+    fullName: open()
+    summary: Opens the `OleFormat` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'open(): void;'
+      return:
+        type: void
+        description: ''
+  - name: set(properties, options)
+    uid: word!Word.OleFormat#set:member(1)
+    package: word!
+    fullName: set(properties, options)
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        set(properties: Interfaces.OleFormatUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: <xref uid="word!Word.Interfaces.OleFormatUpdateData:interface" />
+        - id: options
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
+          type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: word!Word.OleFormat#set:member(2)
+    package: word!
+    fullName: set(properties)
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.OleFormat): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: <xref uid="word!Word.OleFormat:class" />
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.OleFormat#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.OleFormat` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Word.Interfaces.OleFormatData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.OleFormatData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.OleFormatData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.OleFormat#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.OleFormat;'
+      return:
+        type: <xref uid="word!Word.OleFormat:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.OleFormat#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.OleFormat;'
+      return:
+        type: <xref uid="word!Word.OleFormat:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

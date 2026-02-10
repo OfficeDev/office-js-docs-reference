@@ -1,0 +1,93 @@
+### YamlMime:TSEnum
+name: Word.ViewType
+uid: word!Word.ViewType:enum
+package: word!
+fullName: Word.ViewType
+summary: Specifies the view type in a Word document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: conflict
+    uid: word!Word.ViewType.conflict:member
+    package: word!
+    summary: >-
+      Conflict.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Conflict"'
+  - name: master
+    uid: word!Word.ViewType.master:member
+    package: word!
+    summary: >-
+      Master.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Master"'
+  - name: normal
+    uid: word!Word.ViewType.normal:member
+    package: word!
+    summary: >-
+      Normal.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Normal"'
+  - name: outline
+    uid: word!Word.ViewType.outline:member
+    package: word!
+    summary: >-
+      Outline.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Outline"'
+  - name: print
+    uid: word!Word.ViewType.print:member
+    package: word!
+    summary: >-
+      Print.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Print"'
+  - name: printPreview
+    uid: word!Word.ViewType.printPreview:member
+    package: word!
+    summary: >-
+      Print preview.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PrintPreview"'
+  - name: reading
+    uid: word!Word.ViewType.reading:member
+    package: word!
+    summary: >-
+      Reading.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Reading"'
+  - name: web
+    uid: word!Word.ViewType.web:member
+    package: word!
+    summary: >-
+      Web.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Web"'

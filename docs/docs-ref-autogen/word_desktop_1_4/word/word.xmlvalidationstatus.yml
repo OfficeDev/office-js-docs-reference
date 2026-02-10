@@ -14,20 +14,16 @@ fields:
   - name: custom
     uid: word!Word.XmlValidationStatus.custom:member
     package: word!
-    summary: >-
+    summary: |-
       The node has a custom (user-defined) validation error.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Custom"'
   - name: ok
     uid: word!Word.XmlValidationStatus.ok:member
     package: word!
-    summary: >-
+    summary: |-
       The node is valid.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Ok"'

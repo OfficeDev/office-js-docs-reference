@@ -14,30 +14,24 @@ fields:
   - name: fitInLine
     uid: word!Word.HorizontalInVerticalType.fitInLine:member
     package: word!
-    summary: >-
+    summary: |-
       The horizontal text is sized to fit in the line of vertical text.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"FitInLine"'
   - name: none
     uid: word!Word.HorizontalInVerticalType.none:member
     package: word!
-    summary: >-
+    summary: |-
       No formatting is applied to the horizontal text.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"None"'
   - name: resizeLine
     uid: word!Word.HorizontalInVerticalType.resizeLine:member
     package: word!
-    summary: >-
+    summary: |-
       The line of vertical text is sized to accommodate the horizontal text.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ResizeLine"'

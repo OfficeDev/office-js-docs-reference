@@ -267,8 +267,6 @@ methods:
       return:
         type: <xref uid="word!Word.ContentControlCollection:class" />
         description: >-
-
-
           #### Examples
 
 

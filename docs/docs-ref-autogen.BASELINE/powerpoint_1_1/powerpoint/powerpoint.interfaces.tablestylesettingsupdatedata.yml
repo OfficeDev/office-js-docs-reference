@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TableStyleSettingsUpdateData
+uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData:interface
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TableStyleSettingsUpdateData
+summary: >-
+  An interface for updating data on the `TableStyleSettings` object, for use in
+  `tableStyleSettings.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

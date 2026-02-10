@@ -49,70 +49,56 @@ fields:
   - name: gradient
     uid: word!Word.ShapeFillType.gradient:member
     package: word!
-    summary: >-
+    summary: |-
       Gradient fill.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Gradient"'
   - name: mixed
     uid: word!Word.ShapeFillType.mixed:member
     package: word!
-    summary: >-
+    summary: |-
       Mixed fill.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Mixed"'
   - name: noFill
     uid: word!Word.ShapeFillType.noFill:member
     package: word!
-    summary: >-
+    summary: |-
       No fill.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"NoFill"'
   - name: pattern
     uid: word!Word.ShapeFillType.pattern:member
     package: word!
-    summary: >-
+    summary: |-
       Pattern fill.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Pattern"'
   - name: picture
     uid: word!Word.ShapeFillType.picture:member
     package: word!
-    summary: >-
+    summary: |-
       Picture fill.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Picture"'
   - name: solid
     uid: word!Word.ShapeFillType.solid:member
     package: word!
-    summary: >-
+    summary: |-
       Solid fill.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Solid"'
   - name: texture
     uid: word!Word.ShapeFillType.texture:member
     package: word!
-    summary: >-
+    summary: |-
       Texture fill.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Texture"'

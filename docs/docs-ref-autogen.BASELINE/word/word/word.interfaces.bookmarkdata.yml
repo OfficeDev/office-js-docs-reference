@@ -1,0 +1,135 @@
+### YamlMime:TSType
+name: Word.Interfaces.BookmarkData
+uid: word!Word.Interfaces.BookmarkData:interface
+package: word!
+fullName: Word.Interfaces.BookmarkData
+summary: >-
+  An interface describing the data returned by calling `bookmark.toJSON()`<!--
+  -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: end
+    uid: word!Word.Interfaces.BookmarkData#end:member
+    package: word!
+    fullName: end
+    summary: Specifies the ending character position of the bookmark.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'end?: number;'
+      return:
+        type: number
+  - name: isColumn
+    uid: word!Word.Interfaces.BookmarkData#isColumn:member
+    package: word!
+    fullName: isColumn
+    summary: Returns `true` if the bookmark is a table column.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isColumn?: boolean;'
+      return:
+        type: boolean
+  - name: isEmpty
+    uid: word!Word.Interfaces.BookmarkData#isEmpty:member
+    package: word!
+    fullName: isEmpty
+    summary: Returns `true` if the bookmark is empty.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isEmpty?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: word!Word.Interfaces.BookmarkData#name:member
+    package: word!
+    fullName: name
+    summary: Returns the name of the `Bookmark` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: range
+    uid: word!Word.Interfaces.BookmarkData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document
+      that's contained in the `Bookmark` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />
+  - name: start
+    uid: word!Word.Interfaces.BookmarkData#start:member
+    package: word!
+    fullName: start
+    summary: Specifies the starting character position of the bookmark.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'start?: number;'
+      return:
+        type: number
+  - name: storyType
+    uid: word!Word.Interfaces.BookmarkData#storyType:member
+    package: word!
+    fullName: storyType
+    summary: Returns the story type for the bookmark.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        storyType?: Word.StoryType | "MainText" | "Footnotes" | "Endnotes" |
+        "Comments" | "TextFrame" | "EvenPagesHeader" | "PrimaryHeader" |
+        "EvenPagesFooter" | "PrimaryFooter" | "FirstPageHeader" |
+        "FirstPageFooter" | "FootnoteSeparator" |
+        "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
+        "EndnoteSeparator" | "EndnoteContinuationSeparator" |
+        "EndnoteContinuationNotice";
+      return:
+        type: >-
+          <xref uid="word!Word.StoryType:enum" /> | "MainText" | "Footnotes" |
+          "Endnotes" | "Comments" | "TextFrame" | "EvenPagesHeader" |
+          "PrimaryHeader" | "EvenPagesFooter" | "PrimaryFooter" |
+          "FirstPageHeader" | "FirstPageFooter" | "FootnoteSeparator" |
+          "FootnoteContinuationSeparator" | "FootnoteContinuationNotice" |
+          "EndnoteSeparator" | "EndnoteContinuationSeparator" |
+          "EndnoteContinuationNotice"

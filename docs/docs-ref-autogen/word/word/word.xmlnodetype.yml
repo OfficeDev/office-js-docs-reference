@@ -14,20 +14,16 @@ fields:
   - name: attribute
     uid: word!Word.XmlNodeType.attribute:member
     package: word!
-    summary: >-
+    summary: |-
       Attribute node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Attribute"'
   - name: element
     uid: word!Word.XmlNodeType.element:member
     package: word!
-    summary: >-
+    summary: |-
       Element node.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Element"'

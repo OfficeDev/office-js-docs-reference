@@ -128,8 +128,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.NamedItemCollection:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

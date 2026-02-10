@@ -200,8 +200,6 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.NotebookCollection:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

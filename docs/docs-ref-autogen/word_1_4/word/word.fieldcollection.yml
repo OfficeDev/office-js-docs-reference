@@ -75,7 +75,36 @@ properties:
     package: word!
     fullName: items
     summary: Gets the loaded child items in this collection.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+
+      // Gets all fields in the document body.
+
+      await Word.run(async (context) => {
+        const fields: Word.FieldCollection = context.document.body.fields.load("items");
+
+        await context.sync();
+
+        if (fields.items.length === 0) {
+          console.log("No fields in this document.");
+        } else {
+          fields.load(["code", "result"]);
+          await context.sync();
+
+          for (let i = 0; i < fields.items.length; i++) {
+            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`, `Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
+          }
+        }
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -83,38 +112,6 @@ properties:
       content: 'readonly items: Word.Field[];'
       return:
         type: <xref uid="word!Word.Field:class" />[]
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
-
-
-          // Gets all fields in the document body.
-
-          await Word.run(async (context) => {
-            const fields: Word.FieldCollection = context.document.body.fields.load("items");
-
-            await context.sync();
-
-            if (fields.items.length === 0) {
-              console.log("No fields in this document.");
-            } else {
-              fields.load(["code", "result"]);
-              await context.sync();
-
-              for (let i = 0; i < fields.items.length; i++) {
-                console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`, `Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
-              }
-            }
-          });
-
-          ```
 methods:
   - name: getFirst()
     uid: word!Word.FieldCollection#getFirst:member(1)

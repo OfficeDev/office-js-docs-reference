@@ -63,11 +63,8 @@ fields:
   - name: Dismiss
     uid: outlook!Office.MailboxEnums.InfobarActionType.Dismiss:member
     package: outlook!
-    summary: >-
+    summary: |-
       Dismiss action was selected.
 
-
-      * \[ [API set: Mailbox
-      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      * \[Api set: Mailbox 1.10\]
     value: '1'

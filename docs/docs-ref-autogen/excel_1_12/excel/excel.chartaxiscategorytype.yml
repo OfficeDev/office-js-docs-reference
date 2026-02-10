@@ -14,30 +14,24 @@ fields:
   - name: automatic
     uid: excel!Excel.ChartAxisCategoryType.automatic:member
     package: excel!
-    summary: >-
+    summary: |-
       Excel controls the axis type.
 
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"Automatic"'
   - name: dateAxis
     uid: excel!Excel.ChartAxisCategoryType.dateAxis:member
     package: excel!
-    summary: >-
+    summary: |-
       Axis groups data on a time scale.
 
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"DateAxis"'
   - name: textAxis
     uid: excel!Excel.ChartAxisCategoryType.textAxis:member
     package: excel!
-    summary: >-
+    summary: |-
       Axis groups data by an arbitrary set of categories.
 
-
-      * \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.7\]
     value: '"TextAxis"'

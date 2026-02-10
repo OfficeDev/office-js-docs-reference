@@ -1,0 +1,38 @@
+### YamlMime:TSEnum
+name: Word.RevisionsView
+uid: word!Word.RevisionsView:enum
+package: word!
+fullName: Word.RevisionsView
+summary: >-
+  Specifies whether Word displays the original version of a document or a
+  version with revisions and formatting changes applied.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: final
+    uid: word!Word.RevisionsView.final:member
+    package: word!
+    summary: >-
+      Final view.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Final"'
+  - name: original
+    uid: word!Word.RevisionsView.original:member
+    package: word!
+    summary: >-
+      Original view.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Original"'

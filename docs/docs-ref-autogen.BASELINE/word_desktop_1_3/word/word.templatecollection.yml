@@ -1,0 +1,245 @@
+### YamlMime:TSType
+name: Word.TemplateCollection
+uid: word!Word.TemplateCollection:class
+package: word!
+fullName: Word.TemplateCollection
+summary: >-
+  Contains a collection of [Word.Template](xref:word!Word.Template:class)
+  objects that represent all the templates that are currently available. This
+  collection includes open templates, templates attached to open documents, and
+  global templates loaded in the **Templates and Add-ins** dialog box. To
+  learn how to access this dialog in the Word UI, see [Load or unload a template
+  or add-in
+  program](https://support.microsoft.com/office/2479fe53-f849-4394-88bb-2a6e2a39479d)<!--
+  -->.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.TemplateCollection#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: items
+    uid: word!Word.TemplateCollection#items:member
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.Template[];'
+      return:
+        type: <xref uid="word!Word.Template:class" />[]
+methods:
+  - name: getCount()
+    uid: word!Word.TemplateCollection#getCount:member(1)
+    package: word!
+    fullName: getCount()
+    summary: Returns the number of items in the collection.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
+        description: ''
+  - name: getItemAt(index)
+    uid: word!Word.TemplateCollection#getItemAt:member(1)
+    package: word!
+    fullName: getItemAt(index)
+    summary: Gets a `Template` object by its index in the collection.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Word.Template;'
+      parameters:
+        - id: index
+          description: The index of the item to retrieve.
+          type: number
+      return:
+        type: <xref uid="word!Word.Template:class" />
+        description: ''
+  - name: importBuildingBlocks()
+    uid: word!Word.TemplateCollection#importBuildingBlocks:member(1)
+    package: word!
+    fullName: importBuildingBlocks()
+    summary: Imports the building blocks for all templates into Microsoft Word.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importBuildingBlocks(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.TemplateCollection#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.TemplateCollectionLoadOptions &
+        Word.Interfaces.CollectionLoadOptions): Word.TemplateCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.TemplateCollectionLoadOptions:interface"
+            /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.TemplateCollection:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.TemplateCollection#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.TemplateCollection;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.TemplateCollection:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.TemplateCollection#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Word.TemplateCollection;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: <xref uid="office!OfficeExtension.LoadOption:interface" />
+      return:
+        type: <xref uid="word!Word.TemplateCollection:class" />
+        description: ''
+  - name: toJSON()
+    uid: word!Word.TemplateCollection#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.TemplateCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Word.Interfaces.TemplateCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's
+      items.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.TemplateCollectionData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.TemplateCollectionData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.TemplateCollection#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.TemplateCollection;'
+      return:
+        type: <xref uid="word!Word.TemplateCollection:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.TemplateCollection#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TemplateCollection;'
+      return:
+        type: <xref uid="word!Word.TemplateCollection:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

@@ -8,8 +8,7 @@ summary: >-
   version with revisions and formatting changes applied.
 remarks: >-
   \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -17,22 +16,16 @@ fields:
   - name: final
     uid: word!Word.RevisionsView.final:member
     package: word!
-    summary: >-
+    summary: |-
       Final view.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Final"'
   - name: original
     uid: word!Word.RevisionsView.original:member
     package: word!
-    summary: >-
+    summary: |-
       Original view.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Original"'

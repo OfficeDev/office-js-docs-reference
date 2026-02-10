@@ -47,32 +47,20 @@ fields:
   - name: down
     uid: excel!Excel.KeyboardDirection.down:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* \[Api set: ExcelApi 1.13\]'
     value: '"Down"'
   - name: left
     uid: excel!Excel.KeyboardDirection.left:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* \[Api set: ExcelApi 1.13\]'
     value: '"Left"'
   - name: right
     uid: excel!Excel.KeyboardDirection.right:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* \[Api set: ExcelApi 1.13\]'
     value: '"Right"'
   - name: up
     uid: excel!Excel.KeyboardDirection.up:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+    summary: '* \[Api set: ExcelApi 1.13\]'
     value: '"Up"'

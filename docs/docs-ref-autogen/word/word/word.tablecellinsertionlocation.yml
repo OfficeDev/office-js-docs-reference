@@ -19,36 +19,29 @@ fields:
       selection.
 
 
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ShiftColumnRight"'
   - name: shiftDown
     uid: word!Word.TableCellInsertionLocation.shiftDown:member
     package: word!
-    summary: >-
+    summary: |-
       Inserts new cells above the selected cells.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ShiftDown"'
   - name: shiftRight
     uid: word!Word.TableCellInsertionLocation.shiftRight:member
     package: word!
-    summary: >-
+    summary: |-
       Inserts new cells to the left of the selected cells.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ShiftRight"'
   - name: shiftRowDown
     uid: word!Word.TableCellInsertionLocation.shiftRowDown:member
     package: word!
-    summary: >-
+    summary: |-
       Inserts an entire row above the row that contains the selection.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"ShiftRowDown"'

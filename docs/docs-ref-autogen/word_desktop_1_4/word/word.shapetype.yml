@@ -46,60 +46,48 @@ fields:
   - name: canvas
     uid: word!Word.ShapeType.canvas:member
     package: word!
-    summary: >-
+    summary: |-
       Canvas shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Canvas"'
   - name: geometricShape
     uid: word!Word.ShapeType.geometricShape:member
     package: word!
-    summary: >-
+    summary: |-
       Geometric shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"GeometricShape"'
   - name: group
     uid: word!Word.ShapeType.group:member
     package: word!
-    summary: >-
+    summary: |-
       Group shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Group"'
   - name: picture
     uid: word!Word.ShapeType.picture:member
     package: word!
-    summary: >-
+    summary: |-
       Picture shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Picture"'
   - name: textBox
     uid: word!Word.ShapeType.textBox:member
     package: word!
-    summary: >-
+    summary: |-
       Text box shape.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"TextBox"'
   - name: unsupported
     uid: word!Word.ShapeType.unsupported:member
     package: word!
-    summary: >-
+    summary: |-
       Unsupported shape type.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Unsupported"'

@@ -122,8 +122,6 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.FloatingInk:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

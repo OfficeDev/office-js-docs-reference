@@ -1,0 +1,226 @@
+### YamlMime:TSEnum
+name: Word.SpecialPane
+uid: word!Word.SpecialPane:enum
+package: word!
+fullName: Word.SpecialPane
+summary: Specifies the special pane options in a Word document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: comments
+    uid: word!Word.SpecialPane.comments:member
+    package: word!
+    summary: >-
+      Comments.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Comments"'
+  - name: currentPageFooter
+    uid: word!Word.SpecialPane.currentPageFooter:member
+    package: word!
+    summary: >-
+      Current page footer.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"CurrentPageFooter"'
+  - name: currentPageHeader
+    uid: word!Word.SpecialPane.currentPageHeader:member
+    package: word!
+    summary: >-
+      Current page header.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"CurrentPageHeader"'
+  - name: endnoteContinuationNotice
+    uid: word!Word.SpecialPane.endnoteContinuationNotice:member
+    package: word!
+    summary: >-
+      Endnote continuation notice.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EndnoteContinuationNotice"'
+  - name: endnoteContinuationSeparator
+    uid: word!Word.SpecialPane.endnoteContinuationSeparator:member
+    package: word!
+    summary: >-
+      Endnote continuation separator.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EndnoteContinuationSeparator"'
+  - name: endnotes
+    uid: word!Word.SpecialPane.endnotes:member
+    package: word!
+    summary: >-
+      Endnotes.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Endnotes"'
+  - name: endnoteSeparator
+    uid: word!Word.SpecialPane.endnoteSeparator:member
+    package: word!
+    summary: >-
+      Endnote separator.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EndnoteSeparator"'
+  - name: evenPagesFooter
+    uid: word!Word.SpecialPane.evenPagesFooter:member
+    package: word!
+    summary: >-
+      Even pages footer.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EvenPagesFooter"'
+  - name: evenPagesHeader
+    uid: word!Word.SpecialPane.evenPagesHeader:member
+    package: word!
+    summary: >-
+      Even pages header.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"EvenPagesHeader"'
+  - name: firstPageFooter
+    uid: word!Word.SpecialPane.firstPageFooter:member
+    package: word!
+    summary: >-
+      First page footer.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FirstPageFooter"'
+  - name: firstPageHeader
+    uid: word!Word.SpecialPane.firstPageHeader:member
+    package: word!
+    summary: >-
+      First page header.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FirstPageHeader"'
+  - name: footnoteContinuationNotice
+    uid: word!Word.SpecialPane.footnoteContinuationNotice:member
+    package: word!
+    summary: >-
+      Footnote continuation notice.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FootnoteContinuationNotice"'
+  - name: footnoteContinuationSeparator
+    uid: word!Word.SpecialPane.footnoteContinuationSeparator:member
+    package: word!
+    summary: >-
+      Footnote continuation separator.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FootnoteContinuationSeparator"'
+  - name: footnotes
+    uid: word!Word.SpecialPane.footnotes:member
+    package: word!
+    summary: >-
+      Footnotes.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Footnotes"'
+  - name: footnoteSeparator
+    uid: word!Word.SpecialPane.footnoteSeparator:member
+    package: word!
+    summary: >-
+      Footnote separator.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"FootnoteSeparator"'
+  - name: none
+    uid: word!Word.SpecialPane.none:member
+    package: word!
+    summary: >-
+      None.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"None"'
+  - name: primaryFooter
+    uid: word!Word.SpecialPane.primaryFooter:member
+    package: word!
+    summary: >-
+      Primary footer.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PrimaryFooter"'
+  - name: primaryHeader
+    uid: word!Word.SpecialPane.primaryHeader:member
+    package: word!
+    summary: >-
+      Primary header.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"PrimaryHeader"'
+  - name: revisions
+    uid: word!Word.SpecialPane.revisions:member
+    package: word!
+    summary: >-
+      Revisions.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"Revisions"'
+  - name: revisionsHoriz
+    uid: word!Word.SpecialPane.revisionsHoriz:member
+    package: word!
+    summary: >-
+      Revisions horizontal.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"RevisionsHoriz"'
+  - name: revisionsVert
+    uid: word!Word.SpecialPane.revisionsVert:member
+    package: word!
+    summary: >-
+      Revisions vertical.
+
+
+      * \[ [API set: WordApiDesktop
+      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+    value: '"RevisionsVert"'

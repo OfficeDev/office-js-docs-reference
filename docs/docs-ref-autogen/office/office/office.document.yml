@@ -66,7 +66,21 @@ properties:
     package: office!
     fullName: customXmlParts
     summary: Gets an object that represents the custom XML parts in the document.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function getCustomXmlParts(){
+          Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
+              write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -74,29 +88,78 @@ properties:
       content: 'customXmlParts: CustomXmlParts;'
       return:
         type: <xref uid="office!Office.CustomXmlParts:interface" />
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function getCustomXmlParts(){
-              Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
-                  write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
-              });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: mode
     uid: office!Office.Document#mode:member
     package: office!
     fullName: mode
     summary: Gets the mode the document is in.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      function displayDocumentMode() {
+          write(Office.context.document.mode);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+
+      ```TypeScript
+
+      // The following example initializes the add-in and then gets properties
+      of the
+
+      // Document object that are available in the context of a Project
+      document.
+
+      // A Project document is the opened, active project. To access members of
+      the
+
+      // ProjectDocument object, use the Office.context.document object as shown
+      in
+
+      // the code examples for ProjectDocument methods and events.
+
+      // The example assumes your add-in has a reference to the jQuery library
+      and
+
+      // that the following page control is defined in the content div in the
+      page body:
+
+      // <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // Get information about the document.
+                  showDocumentProperties();
+              });
+          };
+
+          // Get the document mode and the URL of the active project.
+          function showDocumentProperties() {
+              const output = String.format(
+                  'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                  Office.context.document.mode,
+                  Office.context.document.url);
+              $('#message').html(output);
+          }
+      })();
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -104,75 +167,6 @@ properties:
       content: 'mode: DocumentMode;'
       return:
         type: <xref uid="office!Office.DocumentMode:enum" />
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          function displayDocumentMode() {
-              write(Office.context.document.mode);
-          }
-
-
-          // Function that writes to a div with id='message' on the page.
-
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-
-          ```
-
-          ```TypeScript
-
-          // The following example initializes the add-in and then gets
-          properties of the
-
-          // Document object that are available in the context of a Project
-          document.
-
-          // A Project document is the opened, active project. To access members
-          of the
-
-          // ProjectDocument object, use the Office.context.document object as
-          shown in
-
-          // the code examples for ProjectDocument methods and events.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and
-
-          // that the following page control is defined in the content div in
-          the page body:
-
-          // <span id="message"></span>
-
-
-          (function () {
-              "use strict";
-
-              // The initialize function must be run each time a new page is loaded.
-              Office.initialize = function (reason) {
-                  $(document).ready(function () {
-
-                      // Get information about the document.
-                      showDocumentProperties();
-                  });
-              };
-
-              // Get the document mode and the URL of the active project.
-              function showDocumentProperties() {
-                  const output = String.format(
-                      'The document mode is {0}.<br/>The URL of the active project is {1}.',
-                      Office.context.document.mode,
-                      Office.context.document.url);
-                  $('#message').html(output);
-              }
-          })();
-
-          ```
   - name: settings
     uid: office!Office.Document#settings:member
     package: office!
@@ -195,7 +189,19 @@ properties:
     summary: >-
       Gets the URL of the document that the Office application currently has
       open. Returns null if the URL is unavailable.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function displayDocumentUrl() {
+          write(Office.context.document.url);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -203,21 +209,6 @@ properties:
       content: 'url: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function displayDocumentUrl() {
-              write(Office.context.document.url);
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
 methods:
   - name: addHandlerAsync(eventType, handler, options, callback)
     uid: office!Office.Document#addHandlerAsync:member(1)
@@ -1157,8 +1148,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -1320,8 +1309,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -1481,8 +1468,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -1643,8 +1628,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -1812,8 +1795,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -2742,8 +2723,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -2908,8 +2887,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -3060,8 +3037,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -3197,8 +3172,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -3361,8 +3334,6 @@ methods:
       return:
         type: void
         description: |-
-
-
           #### Examples
 
           ```TypeScript
@@ -3519,8 +3490,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -4208,8 +4177,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 
@@ -5008,8 +4975,6 @@ methods:
       return:
         type: void
         description: >-
-
-
           #### Examples
 
 

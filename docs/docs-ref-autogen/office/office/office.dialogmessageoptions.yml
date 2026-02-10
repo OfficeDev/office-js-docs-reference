@@ -22,7 +22,19 @@ properties:
       Specifies the intended recipient domain for a message sent, in either
       direction, between a dialog and its parent. For example,
       `https://resources.contoso.com`<!-- -->.
-    remarks: ''
+    remarks: >-
+      #### Examples
+
+
+      ```TypeScript
+
+      // The following example shows how to send a message to the domain of the
+      parent runtime.
+
+      Office.context.ui.messageParent("Some message", { targetOrigin:
+      "https://resource.contoso.com" });
+
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -30,18 +42,3 @@ properties:
       content: 'targetOrigin: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```TypeScript
-
-          // The following example shows how to send a message to the domain of
-          the parent runtime.
-
-          Office.context.ui.messageParent("Some message", { targetOrigin:
-          "https://resource.contoso.com" });
-
-          ```

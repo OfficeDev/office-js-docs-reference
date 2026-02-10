@@ -19,9 +19,7 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"DataTypePrivacySetting"'
   - name: dataTypeRestrictedDomain
     uid: excel!Excel.BlockedErrorCellValueSubType.dataTypeRestrictedDomain:member
@@ -31,9 +29,7 @@ fields:
       as error type \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"DataTypeRestrictedDomain"'
   - name: dataTypeUnsupportedApp
     uid: excel!Excel.BlockedErrorCellValueSubType.dataTypeUnsupportedApp:member
@@ -43,9 +39,7 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"DataTypeUnsupportedApp"'
   - name: externalLinksGeneric
     uid: excel!Excel.BlockedErrorCellValueSubType.externalLinksGeneric:member
@@ -55,9 +49,7 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"ExternalLinksGeneric"'
   - name: noLicense
     uid: excel!Excel.BlockedErrorCellValueSubType.noLicense:member
@@ -67,9 +59,7 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"NoLicense"'
   - name: richDataLinkDisabled
     uid: excel!Excel.BlockedErrorCellValueSubType.richDataLinkDisabled:member
@@ -79,9 +69,7 @@ fields:
       \#BLOCKED! in Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"RichDataLinkDisabled"'
   - name: signInError
     uid: excel!Excel.BlockedErrorCellValueSubType.signInError:member
@@ -91,18 +79,13 @@ fields:
       Excel.
 
 
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"SignInError"'
   - name: unknown
     uid: excel!Excel.BlockedErrorCellValueSubType.unknown:member
     package: excel!
-    summary: >-
+    summary: |-
       An unknown type of error. Displays as error type \#BLOCKED! in Excel.
 
-
-      * \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.16\]
     value: '"Unknown"'

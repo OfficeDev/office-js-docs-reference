@@ -15,11 +15,8 @@ fields:
   - name: dataVisualizerDiagramOperationCompleted
     uid: visio!Visio.EventType.dataVisualizerDiagramOperationCompleted:member
     package: visio!
-    summary: >-
+    summary: |-
       DataVisualizer diagram operation complete Event.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"DataVisualizerDiagramOperationCompleted"'

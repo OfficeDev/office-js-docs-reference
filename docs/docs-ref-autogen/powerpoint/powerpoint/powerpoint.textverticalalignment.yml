@@ -68,9 +68,7 @@ fields:
       -->.
 
 
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"Bottom"'
   - name: bottomCentered
     uid: powerpoint!PowerPoint.TextVerticalAlignment.bottomCentered:member
@@ -81,9 +79,7 @@ fields:
       within the `Shape`<!-- -->.
 
 
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"BottomCentered"'
   - name: middle
     uid: powerpoint!PowerPoint.TextVerticalAlignment.middle:member
@@ -93,9 +89,7 @@ fields:
       -->.
 
 
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"Middle"'
   - name: middleCentered
     uid: powerpoint!PowerPoint.TextVerticalAlignment.middleCentered:member
@@ -106,9 +100,7 @@ fields:
       within the `Shape`<!-- -->.
 
 
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"MiddleCentered"'
   - name: top
     uid: powerpoint!PowerPoint.TextVerticalAlignment.top:member
@@ -118,9 +110,7 @@ fields:
       -->.
 
 
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"Top"'
   - name: topCentered
     uid: powerpoint!PowerPoint.TextVerticalAlignment.topCentered:member
@@ -131,7 +121,5 @@ fields:
       within the `Shape`<!-- -->.
 
 
-      * \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.4\]
     value: '"TopCentered"'

@@ -1,0 +1,287 @@
+### YamlMime:TSType
+name: Word.Interfaces.IndexData
+uid: word!Word.Interfaces.IndexData:interface
+package: word!
+fullName: Word.Interfaces.IndexData
+summary: An interface describing the data returned by calling `index.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: filter
+    uid: word!Word.Interfaces.IndexData#filter:member
+    package: word!
+    fullName: filter
+    summary: >-
+      Gets a value that represents how Microsoft Word classifies the first
+      character of entries in the index. See `IndexFilter` for available values.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        filter?: Word.IndexFilter | "None" | "Aiueo" | "Akasatana" | "Chosung" |
+        "Low" | "Medium" | "Full";
+      return:
+        type: >-
+          <xref uid="word!Word.IndexFilter:enum" /> | "None" | "Aiueo" |
+          "Akasatana" | "Chosung" | "Low" | "Medium" | "Full"
+  - name: headingSeparator
+    uid: word!Word.Interfaces.IndexData#headingSeparator:member
+    package: word!
+    fullName: headingSeparator
+    summary: >-
+      Gets the text between alphabetical groups (entries that start with the
+      same letter) in the index. Corresponds to the **<!-- -->\\<!-- -->h**
+      switch for an [INDEX
+      field](https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        headingSeparator?: Word.HeadingSeparator | "None" | "BlankLine" |
+        "Letter" | "LetterLow" | "LetterFull";
+      return:
+        type: >-
+          <xref uid="word!Word.HeadingSeparator:enum" /> | "None" | "BlankLine"
+          | "Letter" | "LetterLow" | "LetterFull"
+  - name: indexLanguage
+    uid: word!Word.Interfaces.IndexData#indexLanguage:member
+    package: word!
+    fullName: indexLanguage
+    summary: >-
+      Gets a `LanguageId` value that represents the sorting language to use for
+      the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        indexLanguage?: Word.LanguageId | "Afrikaans" | "Albanian" | "Amharic" |
+        "Arabic" | "ArabicAlgeria" | "ArabicBahrain" | "ArabicEgypt" |
+        "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" | "ArabicLebanon" |
+        "ArabicLibya" | "ArabicMorocco" | "ArabicOman" | "ArabicQatar" |
+        "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" | "ArabicYemen" |
+        "Armenian" | "Assamese" | "AzeriCyrillic" | "AzeriLatin" | "Basque" |
+        "BelgianDutch" | "BelgianFrench" | "Bengali" | "Bulgarian" | "Burmese" |
+        "Belarusian" | "Catalan" | "Cherokee" | "ChineseHongKongSAR" |
+        "ChineseMacaoSAR" | "ChineseSingapore" | "Croatian" | "Czech" | "Danish"
+        | "Divehi" | "Dutch" | "Edo" | "EnglishAUS" | "EnglishBelize" |
+        "EnglishCanadian" | "EnglishCaribbean" | "EnglishIndonesia" |
+        "EnglishIreland" | "EnglishJamaica" | "EnglishNewZealand" |
+        "EnglishPhilippines" | "EnglishSouthAfrica" | "EnglishTrinidadTobago" |
+        "EnglishUK" | "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese"
+        | "Filipino" | "Finnish" | "French" | "FrenchCameroon" |
+        "FrenchCanadian" | "FrenchCongoDRC" | "FrenchCotedIvoire" |
+        "FrenchHaiti" | "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" |
+        "FrenchMorocco" | "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies"
+        | "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+        | "Galician" | "Georgian" | "German" | "GermanAustria" |
+        "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+        "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+        "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" | "Italian"
+        | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh" | "Khmer" |
+        "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" | "LanguageNone" | "Lao" |
+        "Latin" | "Latvian" | "Lithuanian" | "MacedonianFYROM" | "Malayalam" |
+        "MalayBruneiDarussalam" | "Malaysian" | "Maltese" | "Manipuri" |
+        "Marathi" | "MexicanSpanish" | "Mongolian" | "Nepali" | "NoProofing" |
+        "NorwegianBokmol" | "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" |
+        "Persian" | "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+        "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+        "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+        "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+        "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+        "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+        "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+        "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+        "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+        "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" | "SpanishPeru"
+        | "SpanishPuertoRico" | "SpanishUruguay" | "SpanishVenezuela" | "Sutu" |
+        "Swahili" | "Swedish" | "SwedishFinland" | "SwissFrench" | "SwissGerman"
+        | "SwissItalian" | "Syriac" | "Tajik" | "Tamazight" | "TamazightLatin" |
+        "Tamil" | "Tatar" | "Telugu" | "Thai" | "Tibetan" | "TigrignaEritrea" |
+        "TigrignaEthiopic" | "TraditionalChinese" | "Tsonga" | "Tswana" |
+        "Turkish" | "Turkmen" | "Ukrainian" | "Urdu" | "UzbekCyrillic" |
+        "UzbekLatin" | "Venda" | "Vietnamese" | "Welsh" | "Xhosa" | "Yi" |
+        "Yiddish" | "Yoruba" | "Zulu";
+      return:
+        type: >-
+          <xref uid="word!Word.LanguageId:enum" /> | "Afrikaans" | "Albanian" |
+          "Amharic" | "Arabic" | "ArabicAlgeria" | "ArabicBahrain" |
+          "ArabicEgypt" | "ArabicIraq" | "ArabicJordan" | "ArabicKuwait" |
+          "ArabicLebanon" | "ArabicLibya" | "ArabicMorocco" | "ArabicOman" |
+          "ArabicQatar" | "ArabicSyria" | "ArabicTunisia" | "ArabicUAE" |
+          "ArabicYemen" | "Armenian" | "Assamese" | "AzeriCyrillic" |
+          "AzeriLatin" | "Basque" | "BelgianDutch" | "BelgianFrench" | "Bengali"
+          | "Bulgarian" | "Burmese" | "Belarusian" | "Catalan" | "Cherokee" |
+          "ChineseHongKongSAR" | "ChineseMacaoSAR" | "ChineseSingapore" |
+          "Croatian" | "Czech" | "Danish" | "Divehi" | "Dutch" | "Edo" |
+          "EnglishAUS" | "EnglishBelize" | "EnglishCanadian" |
+          "EnglishCaribbean" | "EnglishIndonesia" | "EnglishIreland" |
+          "EnglishJamaica" | "EnglishNewZealand" | "EnglishPhilippines" |
+          "EnglishSouthAfrica" | "EnglishTrinidadTobago" | "EnglishUK" |
+          "EnglishUS" | "EnglishZimbabwe" | "Estonian" | "Faeroese" | "Filipino"
+          | "Finnish" | "French" | "FrenchCameroon" | "FrenchCanadian" |
+          "FrenchCongoDRC" | "FrenchCotedIvoire" | "FrenchHaiti" |
+          "FrenchLuxembourg" | "FrenchMali" | "FrenchMonaco" | "FrenchMorocco" |
+          "FrenchReunion" | "FrenchSenegal" | "FrenchWestIndies" |
+          "FrisianNetherlands" | "Fulfulde" | "GaelicIreland" | "GaelicScotland"
+          | "Galician" | "Georgian" | "German" | "GermanAustria" |
+          "GermanLiechtenstein" | "GermanLuxembourg" | "Greek" | "Guarani" |
+          "Gujarati" | "Hausa" | "Hawaiian" | "Hebrew" | "Hindi" | "Hungarian" |
+          "Ibibio" | "Icelandic" | "Igbo" | "Indonesian" | "Inuktitut" |
+          "Italian" | "Japanese" | "Kannada" | "Kanuri" | "Kashmiri" | "Kazakh"
+          | "Khmer" | "Kirghiz" | "Konkani" | "Korean" | "Kyrgyz" |
+          "LanguageNone" | "Lao" | "Latin" | "Latvian" | "Lithuanian" |
+          "MacedonianFYROM" | "Malayalam" | "MalayBruneiDarussalam" |
+          "Malaysian" | "Maltese" | "Manipuri" | "Marathi" | "MexicanSpanish" |
+          "Mongolian" | "Nepali" | "NoProofing" | "NorwegianBokmol" |
+          "NorwegianNynorsk" | "Oriya" | "Oromo" | "Pashto" | "Persian" |
+          "Polish" | "Portuguese" | "PortugueseBrazil" | "Punjabi" |
+          "RhaetoRomanic" | "Romanian" | "RomanianMoldova" | "Russian" |
+          "RussianMoldova" | "SamiLappish" | "Sanskrit" | "SerbianCyrillic" |
+          "SerbianLatin" | "Sesotho" | "SimplifiedChinese" | "Sindhi" |
+          "SindhiPakistan" | "Sinhalese" | "Slovak" | "Slovenian" | "Somali" |
+          "Sorbian" | "Spanish" | "SpanishArgentina" | "SpanishBolivia" |
+          "SpanishChile" | "SpanishColombia" | "SpanishCostaRica" |
+          "SpanishDominicanRepublic" | "SpanishEcuador" | "SpanishElSalvador" |
+          "SpanishGuatemala" | "SpanishHonduras" | "SpanishModernSort" |
+          "SpanishNicaragua" | "SpanishPanama" | "SpanishParaguay" |
+          "SpanishPeru" | "SpanishPuertoRico" | "SpanishUruguay" |
+          "SpanishVenezuela" | "Sutu" | "Swahili" | "Swedish" | "SwedishFinland"
+          | "SwissFrench" | "SwissGerman" | "SwissItalian" | "Syriac" | "Tajik"
+          | "Tamazight" | "TamazightLatin" | "Tamil" | "Tatar" | "Telugu" |
+          "Thai" | "Tibetan" | "TigrignaEritrea" | "TigrignaEthiopic" |
+          "TraditionalChinese" | "Tsonga" | "Tswana" | "Turkish" | "Turkmen" |
+          "Ukrainian" | "Urdu" | "UzbekCyrillic" | "UzbekLatin" | "Venda" |
+          "Vietnamese" | "Welsh" | "Xhosa" | "Yi" | "Yiddish" | "Yoruba" |
+          "Zulu"
+  - name: numberOfColumns
+    uid: word!Word.Interfaces.IndexData#numberOfColumns:member
+    package: word!
+    fullName: numberOfColumns
+    summary: Gets the number of columns for each page of the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberOfColumns?: number;'
+      return:
+        type: number
+  - name: range
+    uid: word!Word.Interfaces.IndexData#range:member
+    package: word!
+    fullName: range
+    summary: >-
+      Returns a `Range` object that represents the portion of the document that
+      is contained within the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'range?: Word.Interfaces.RangeData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.RangeData:interface" />
+  - name: rightAlignPageNumbers
+    uid: word!Word.Interfaces.IndexData#rightAlignPageNumbers:member
+    package: word!
+    fullName: rightAlignPageNumbers
+    summary: Specifies if page numbers are aligned with the right margin in the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightAlignPageNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: separateAccentedLetterHeadings
+    uid: word!Word.Interfaces.IndexData#separateAccentedLetterHeadings:member
+    package: word!
+    fullName: separateAccentedLetterHeadings
+    summary: >-
+      Gets if the index contains separate headings for accented letters (for
+      example, words that begin with "À" are under one heading and words that
+      begin with "A" are under another).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'separateAccentedLetterHeadings?: boolean;'
+      return:
+        type: boolean
+  - name: sortBy
+    uid: word!Word.Interfaces.IndexData#sortBy:member
+    package: word!
+    fullName: sortBy
+    summary: Specifies the sorting criteria for the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortBy?: Word.IndexSortBy | "Stroke" | "Syllable";'
+      return:
+        type: <xref uid="word!Word.IndexSortBy:enum" /> | "Stroke" | "Syllable"
+  - name: tabLeader
+    uid: word!Word.Interfaces.IndexData#tabLeader:member
+    package: word!
+    fullName: tabLeader
+    summary: >-
+      Specifies the leader character between entries in the index and their
+      associated page numbers.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        tabLeader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
+        "Heavy" | "MiddleDot";
+      return:
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"
+  - name: type
+    uid: word!Word.Interfaces.IndexData#type:member
+    package: word!
+    fullName: type
+    summary: Gets the index type.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: Word.IndexType | "Indent" | "Runin";'
+      return:
+        type: <xref uid="word!Word.IndexType:enum" /> | "Indent" | "Runin"

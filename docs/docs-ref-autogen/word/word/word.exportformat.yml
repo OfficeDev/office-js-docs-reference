@@ -14,20 +14,16 @@ fields:
   - name: pdf
     uid: word!Word.ExportFormat.pdf:member
     package: word!
-    summary: >-
+    summary: |-
       PDF export format.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Pdf"'
   - name: xps
     uid: word!Word.ExportFormat.xps:member
     package: word!
-    summary: >-
+    summary: |-
       XPS export format.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Xps"'

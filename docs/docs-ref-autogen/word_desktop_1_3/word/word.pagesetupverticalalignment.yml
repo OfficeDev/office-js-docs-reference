@@ -14,40 +14,32 @@ fields:
   - name: bottom
     uid: word!Word.PageSetupVerticalAlignment.bottom:member
     package: word!
-    summary: >-
+    summary: |-
       Align text to the bottom.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Bottom"'
   - name: center
     uid: word!Word.PageSetupVerticalAlignment.center:member
     package: word!
-    summary: >-
+    summary: |-
       Align text to the center.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Center"'
   - name: justify
     uid: word!Word.PageSetupVerticalAlignment.justify:member
     package: word!
-    summary: >-
+    summary: |-
       Justify text vertically.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Justify"'
   - name: top
     uid: word!Word.PageSetupVerticalAlignment.top:member
     package: word!
-    summary: >-
+    summary: |-
       Align text to the top.
 
-
-      * \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.3\]
     value: '"Top"'

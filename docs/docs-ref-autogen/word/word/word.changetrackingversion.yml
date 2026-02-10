@@ -38,14 +38,10 @@ fields:
   - name: current
     uid: word!Word.ChangeTrackingVersion.current:member
     package: word!
-    summary: >-
-      * \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: '* \[Api set: WordApi 1.4\]'
     value: '"Current"'
   - name: original
     uid: word!Word.ChangeTrackingVersion.original:member
     package: word!
-    summary: >-
-      * \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: '* \[Api set: WordApi 1.4\]'
     value: '"Original"'

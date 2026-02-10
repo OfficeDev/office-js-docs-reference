@@ -19,8 +19,7 @@ fields:
       column.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"Compact"'
   - name: outline
     uid: excel!Excel.PivotLayoutType.outline:member
@@ -30,8 +29,7 @@ fields:
       are always on the bottom.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"Outline"'
   - name: tabular
     uid: excel!Excel.PivotLayoutType.tabular:member
@@ -41,6 +39,5 @@ fields:
       items.
 
 
-      * \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.8\]
     value: '"Tabular"'

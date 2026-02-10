@@ -48,30 +48,24 @@ fields:
   - name: accepted
     uid: word!Word.AnnotationState.accepted:member
     package: word!
-    summary: >-
+    summary: |-
       Accepted.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Accepted"'
   - name: created
     uid: word!Word.AnnotationState.created:member
     package: word!
-    summary: >-
+    summary: |-
       Created.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Created"'
   - name: rejected
     uid: word!Word.AnnotationState.rejected:member
     package: word!
-    summary: >-
+    summary: |-
       Rejected.
 
-
-      * \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.7\]
     value: '"Rejected"'

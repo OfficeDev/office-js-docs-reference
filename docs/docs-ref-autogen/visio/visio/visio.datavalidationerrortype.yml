@@ -15,13 +15,10 @@ fields:
   - name: columnNotMapped
     uid: visio!Visio.DataValidationErrorType.columnNotMapped:member
     package: visio!
-    summary: >-
+    summary: |-
       Data does not have one of the mapped column.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"ColumnNotMapped"'
   - name: connectorColumnAndConnectorLabelMappedElsewhere
     uid: >-
@@ -32,85 +29,62 @@ fields:
       setting.
 
 
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"ConnectorColumnAndConnectorLabelMappedElsewhere"'
   - name: connectorColumnError
     uid: visio!Visio.DataValidationErrorType.connectorColumnError:member
     package: visio!
-    summary: >-
+    summary: |-
       Connector column has error.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"ConnectorColumnError"'
   - name: connectorColumnMappedElsewhere
     uid: visio!Visio.DataValidationErrorType.connectorColumnMappedElsewhere:member
     package: visio!
-    summary: >-
+    summary: |-
       Connector column is already mapped to another setting.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"ConnectorColumnMappedElsewhere"'
   - name: connectorLabelColumnMappedElsewhere
     uid: >-
       visio!Visio.DataValidationErrorType.connectorLabelColumnMappedElsewhere:member
     package: visio!
-    summary: >-
+    summary: |-
       Connector label column already mapped to other setting.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"ConnectorLabelColumnMappedElsewhere"'
   - name: delimiterError
     uid: visio!Visio.DataValidationErrorType.delimiterError:member
     package: visio!
-    summary: >-
+    summary: |-
       Delimiter can not have more then one character.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"DelimiterError"'
   - name: none
     uid: visio!Visio.DataValidationErrorType.none:member
     package: visio!
-    summary: >-
+    summary: |-
       No error.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"None"'
   - name: swimlaneColumnError
     uid: visio!Visio.DataValidationErrorType.swimlaneColumnError:member
     package: visio!
-    summary: >-
+    summary: |-
       Swim-lane column is empty.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"SwimlaneColumnError"'
   - name: uniqueIdColumnError
     uid: visio!Visio.DataValidationErrorType.uniqueIdColumnError:member
     package: visio!
-    summary: >-
+    summary: |-
       UniqueId column has error.
 
-
-      * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      * \[Api set: 1.1\]
     value: '"UniqueIdColumnError"'

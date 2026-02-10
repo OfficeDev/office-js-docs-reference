@@ -144,8 +144,6 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartLegend:class" />
         description: |-
-
-
           #### Examples
 
           ```TypeScript

@@ -1,0 +1,245 @@
+### YamlMime:TSType
+name: Word.CustomXmlSchema
+uid: word!Word.CustomXmlSchema:class
+package: word!
+fullName: Word.CustomXmlSchema
+summary: >-
+  Represents a schema in a
+  [Word.CustomXmlSchemaCollection](xref:word!Word.CustomXmlSchemaCollection:class)
+  object.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: word!Word.CustomXmlSchema#context:member
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: <xref uid="word!Word.RequestContext:class" />
+  - name: location
+    uid: word!Word.CustomXmlSchema#location:member
+    package: word!
+    fullName: location
+    summary: Gets the location of the schema on a computer.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly location: string;'
+      return:
+        type: string
+  - name: namespaceUri
+    uid: word!Word.CustomXmlSchema#namespaceUri:member
+    package: word!
+    fullName: namespaceUri
+    summary: >-
+      Gets the unique address identifier for the namespace of the
+      `CustomXmlSchema` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly namespaceUri: string;'
+      return:
+        type: string
+methods:
+  - name: delete()
+    uid: word!Word.CustomXmlSchema#delete:member(1)
+    package: word!
+    fullName: delete()
+    summary: >-
+      Deletes this schema from the
+      [Word.CustomXmlSchemaCollection](xref:word!Word.CustomXmlSchemaCollection:class)
+      object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: word!Word.CustomXmlSchema#load:member(1)
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.CustomXmlSchemaLoadOptions):
+        Word.CustomXmlSchema;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.CustomXmlSchemaLoadOptions:interface" />
+      return:
+        type: <xref uid="word!Word.CustomXmlSchema:class" />
+        description: ''
+  - name: load(propertyNames)
+    uid: word!Word.CustomXmlSchema#load:member(2)
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.CustomXmlSchema;'
+      parameters:
+        - id: propertyNames
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
+          type: string | string[]
+      return:
+        type: <xref uid="word!Word.CustomXmlSchema:class" />
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: word!Word.CustomXmlSchema#load:member(3)
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.CustomXmlSchema;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: <xref uid="word!Word.CustomXmlSchema:class" />
+        description: ''
+  - name: reload()
+    uid: word!Word.CustomXmlSchema#reload:member(1)
+    package: word!
+    fullName: reload()
+    summary: Reloads the schema from a file.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reload(): void;'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: word!Word.CustomXmlSchema#toJSON:member(1)
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.CustomXmlSchema`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.CustomXmlSchemaData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.CustomXmlSchemaData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlSchemaData:interface" />
+        description: ''
+  - name: track()
+    uid: word!Word.CustomXmlSchema#track:member(1)
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.CustomXmlSchema;'
+      return:
+        type: <xref uid="word!Word.CustomXmlSchema:class" />
+        description: ''
+  - name: untrack()
+    uid: word!Word.CustomXmlSchema#untrack:member(1)
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.CustomXmlSchema;'
+      return:
+        type: <xref uid="word!Word.CustomXmlSchema:class" />
+        description: ''
+extends: <xref uid="office!OfficeExtension.ClientObject:class" />

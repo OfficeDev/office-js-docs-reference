@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: Word.TableCellCollectionSplitOptions
+uid: word!Word.TableCellCollectionSplitOptions:interface
+package: word!
+fullName: Word.TableCellCollectionSplitOptions
+summary: >-
+  Represents the options for the
+  [TableCellCollection.split](xref:word!Word.TableCellCollection:class) method.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: mergeBeforeSplit
+    uid: word!Word.TableCellCollectionSplitOptions#mergeBeforeSplit:member
+    package: word!
+    fullName: mergeBeforeSplit
+    summary: >-
+      If provided, specifies whether to merge the cells with one another before
+      splitting them. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mergeBeforeSplit?: boolean;'
+      return:
+        type: boolean
+  - name: numColumns
+    uid: word!Word.TableCellCollectionSplitOptions#numColumns:member
+    package: word!
+    fullName: numColumns
+    summary: >-
+      If provided, specifies the number of columns that the group of cells is to
+      be split into. The default value is 1.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numColumns?: number;'
+      return:
+        type: number
+  - name: numRows
+    uid: word!Word.TableCellCollectionSplitOptions#numRows:member
+    package: word!
+    fullName: numRows
+    summary: >-
+      If provided, specifies the number of rows that the group of cells is to be
+      split into. The default value is 1.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numRows?: number;'
+      return:
+        type: number

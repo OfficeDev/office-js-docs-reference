@@ -133,8 +133,7 @@ properties:
     summary: Determines whether lines break automatically to fit text inside the shape.
     remarks: >-
       \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

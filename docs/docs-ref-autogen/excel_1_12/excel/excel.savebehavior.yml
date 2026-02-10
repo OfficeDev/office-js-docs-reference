@@ -35,8 +35,7 @@ fields:
       saved, Ignored if the workbook was previously saved.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Prompt"'
   - name: save
     uid: excel!Excel.SaveBehavior.save:member
@@ -46,6 +45,5 @@ fields:
       will save it with default name in the default location.
 
 
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Save"'

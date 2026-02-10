@@ -16,40 +16,32 @@ fields:
   - name: first
     uid: word!Word.GoToDirection.first:member
     package: word!
-    summary: >-
+    summary: |-
       Moves to the first item.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"First"'
   - name: last
     uid: word!Word.GoToDirection.last:member
     package: word!
-    summary: >-
+    summary: |-
       Moves to the last item.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Last"'
   - name: next
     uid: word!Word.GoToDirection.next:member
     package: word!
-    summary: >-
+    summary: |-
       Moves to the next item.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Next"'
   - name: previous
     uid: word!Word.GoToDirection.previous:member
     package: word!
-    summary: >-
+    summary: |-
       Moves to the previous item.
 
-
-      * \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.4\]
     value: '"Previous"'

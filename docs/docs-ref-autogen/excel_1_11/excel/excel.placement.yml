@@ -14,30 +14,24 @@ fields:
   - name: absolute
     uid: excel!Excel.Placement.absolute:member
     package: excel!
-    summary: >-
+    summary: |-
       The object is free floating.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"Absolute"'
   - name: oneCell
     uid: excel!Excel.Placement.oneCell:member
     package: excel!
-    summary: >-
+    summary: |-
       The object is moved with the cells.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"OneCell"'
   - name: twoCell
     uid: excel!Excel.Placement.twoCell:member
     package: excel!
-    summary: >-
+    summary: |-
       The object is moved and sized with the cells.
 
-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[Api set: ExcelApi 1.9\]
     value: '"TwoCell"'

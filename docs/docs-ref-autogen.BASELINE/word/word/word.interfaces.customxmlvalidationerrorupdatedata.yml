@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlValidationErrorUpdateData
+uid: word!Word.Interfaces.CustomXmlValidationErrorUpdateData:interface
+package: word!
+fullName: Word.Interfaces.CustomXmlValidationErrorUpdateData
+summary: >-
+  An interface for updating data on the `CustomXmlValidationError` object, for
+  use in `customXmlValidationError.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: node
+    uid: word!Word.Interfaces.CustomXmlValidationErrorUpdateData#node:member
+    package: word!
+    fullName: node
+    summary: >-
+      Gets the node associated with this `CustomXmlValidationError` object, if
+      any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'node?: Word.Interfaces.CustomXmlNodeUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.CustomXmlNodeUpdateData:interface" />

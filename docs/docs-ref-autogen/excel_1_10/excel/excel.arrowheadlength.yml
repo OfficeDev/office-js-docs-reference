@@ -40,21 +40,15 @@ fields:
   - name: long
     uid: excel!Excel.ArrowheadLength.long:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Long"'
   - name: medium
     uid: excel!Excel.ArrowheadLength.medium:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Medium"'
   - name: short
     uid: excel!Excel.ArrowheadLength.short:member
     package: excel!
-    summary: >-
-      * \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '* \[Api set: ExcelApi 1.9\]'
     value: '"Short"'

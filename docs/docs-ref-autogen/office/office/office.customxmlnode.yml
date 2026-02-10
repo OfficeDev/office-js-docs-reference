@@ -17,7 +17,27 @@ properties:
     summary: >-
       Gets the base name of the node without the namespace prefix, if one
       exists.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function showXmlNodeBaseNames() {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              const xmlPart = result.value;
+              xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
+                      write(node.baseName);
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -25,35 +45,32 @@ properties:
       content: 'baseName: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXmlNodeBaseNames() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (let i = 0; i < nodeResults.value.length; i++) {
-                          const node = nodeResults.value[i];
-                          write(node.baseName);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: namespaceUri
     uid: office!Office.CustomXmlNode#namespaceUri:member
     package: office!
     fullName: namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function showXmlNamespaceUri() {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              const xmlPart = result.value;
+              xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
+                      write(node.namespaceUri);
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -61,35 +78,32 @@ properties:
       content: 'namespaceUri: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXmlNamespaceUri() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (let i = 0; i < nodeResults.value.length; i++) {
-                          const node = nodeResults.value[i];
-                          write(node.namespaceUri);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - name: nodeType
     uid: office!Office.CustomXmlNode#nodeType:member
     package: office!
     fullName: nodeType
     summary: Gets the type of the CustomXMLNode.
-    remarks: ''
+    remarks: |-
+      #### Examples
+
+      ```TypeScript
+      function showXmlNodeType() {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              const xmlPart = result.value;
+              xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
+                      write(node.nodeType);
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 
     isPreview: false
     isDeprecated: false
@@ -97,29 +111,6 @@ properties:
       content: 'nodeType: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```TypeScript
-          function showXmlNodeType() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  const xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (let i = 0; i < nodeResults.value.length; i++) {
-                          const node = nodeResults.value[i];
-                          write(node.nodeType);
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
 methods:
   - name: getNodesAsync(xPath, options, callback)
     uid: office!Office.CustomXmlNode#getNodesAsync:member(1)

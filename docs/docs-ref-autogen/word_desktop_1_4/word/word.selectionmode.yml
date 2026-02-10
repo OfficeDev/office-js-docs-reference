@@ -40,18 +40,15 @@ fields:
       selected range).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"End"'
   - name: select
     uid: word!Word.SelectionMode.select:member
     package: word!
-    summary: >-
+    summary: |-
       The entire range is selected.
 
-
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Select"'
   - name: start
     uid: word!Word.SelectionMode.start:member
@@ -61,6 +58,5 @@ fields:
       the selected range).
 
 
-      * \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.1\]
     value: '"Start"'

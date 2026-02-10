@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: Word.Interfaces.CanvasUpdateData
+uid: word!Word.Interfaces.CanvasUpdateData:interface
+package: word!
+fullName: Word.Interfaces.CanvasUpdateData
+summary: >-
+  An interface for updating data on the `Canvas` object, for use in
+  `canvas.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface

@@ -21,7 +21,5 @@ fields:
       -->.
 
 
-      * \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[Api set: ExcelApi 1.19\]
     value: '"JavaScriptReference"'

@@ -56,20 +56,16 @@ fields:
   - name: local
     uid: word!Word.EventSource.local:member
     package: word!
-    summary: >-
+    summary: |-
       Local source.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
     package: word!
-    summary: >-
+    summary: |-
       Remote source.
 
-
-      * \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApi 1.5\]
     value: '"Remote"'

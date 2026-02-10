@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLeaderLinesLoadOptions
+uid: excel!Excel.Interfaces.ChartLeaderLinesLoadOptions:interface
+package: excel!
+fullName: Excel.Interfaces.ChartLeaderLinesLoadOptions
+summary: Gets an object that represents the formatting of chart leader lines.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: excel!Excel.Interfaces.ChartLeaderLinesLoadOptions#$all:member
+    package: excel!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: excel!Excel.Interfaces.ChartLeaderLinesLoadOptions#format:member
+    package: excel!
+    fullName: format
+    summary: Represents the formatting of leader lines of data labels in a series.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartLeaderLinesFormatLoadOptions;'
+      return:
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLeaderLinesFormatLoadOptions:interface"
+          />

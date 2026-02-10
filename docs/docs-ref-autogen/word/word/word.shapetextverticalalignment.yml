@@ -45,30 +45,24 @@ fields:
   - name: bottom
     uid: word!Word.ShapeTextVerticalAlignment.bottom:member
     package: word!
-    summary: >-
+    summary: |-
       Anchor the text at the bottom of the bounding rectangle.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Bottom"'
   - name: middle
     uid: word!Word.ShapeTextVerticalAlignment.middle:member
     package: word!
-    summary: >-
+    summary: |-
       Anchor the text at the middle of the bounding rectangle.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Middle"'
   - name: top
     uid: word!Word.ShapeTextVerticalAlignment.top:member
     package: word!
-    summary: >-
+    summary: |-
       Anchor the text at the top of the bounding rectangle.
 
-
-      * \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[Api set: WordApiDesktop 1.2\]
     value: '"Top"'

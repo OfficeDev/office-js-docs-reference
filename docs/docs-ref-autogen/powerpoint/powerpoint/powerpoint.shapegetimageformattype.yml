@@ -15,11 +15,8 @@ fields:
   - name: png
     uid: powerpoint!PowerPoint.ShapeGetImageFormatType.png:member
     package: powerpoint!
-    summary: >-
+    summary: |-
       The picture is in PNG format.
 
-
-      * \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
+      * \[Api set: PowerPointApi 1.10\]
     value: '"Png"'
