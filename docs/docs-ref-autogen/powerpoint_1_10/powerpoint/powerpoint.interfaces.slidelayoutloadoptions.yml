@@ -4,11 +4,8 @@ uid: powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutLoadOptions
 summary: Represents the layout of a slide.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,12 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,30 +28,21 @@ properties:
     package: powerpoint!
     fullName: background
     summary: Gets the background of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'background?: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface"
-          />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface" />
   - name: id
     uid: powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions#id:member
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,11 +54,8 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Gets the name of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,11 +67,8 @@ properties:
     package: powerpoint!
     fullName: type
     summary: Returns the type of the slide layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

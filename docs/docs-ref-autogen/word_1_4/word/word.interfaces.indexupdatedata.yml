@@ -3,11 +3,9 @@ name: Word.Interfaces.IndexUpdateData
 uid: word!Word.Interfaces.IndexUpdateData:interface
 package: word!
 fullName: Word.Interfaces.IndexUpdateData
-summary: >-
-  An interface for updating data on the `Index` object, for use in `index.set({
-  ... })`<!-- -->.
+summary: An interface for updating data on the `Index` object, for use in `index.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

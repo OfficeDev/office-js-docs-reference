@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.BordersData
 uid: powerpoint!PowerPoint.Interfaces.BordersData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BordersData
-summary: >-
-  An interface describing the data returned by calling `borders.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `borders.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

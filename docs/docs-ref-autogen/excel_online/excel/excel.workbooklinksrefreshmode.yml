@@ -4,22 +4,18 @@ uid: excel!Excel.WorkbookLinksRefreshMode:enum
 package: excel!
 fullName: Excel.WorkbookLinksRefreshMode
 summary: Represents the refresh mode of the workbook links.
-remarks: >-
-  \[ [API set: ExcelApiOnline
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: automatic
     uid: excel!Excel.WorkbookLinksRefreshMode.automatic:member
     package: excel!
-    summary: >-
-      The workbook links are updated at a set interval determined by the Excel
-      application.
+    summary: |-
+      The workbook links are updated at a set interval determined by the Excel application.
 
-
-      * \[Api set: ExcelApiOnline 1.1\]
+      \* \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Automatic"'
   - name: manual
     uid: excel!Excel.WorkbookLinksRefreshMode.manual:member
@@ -27,5 +23,5 @@ fields:
     summary: |-
       The workbook links are updated manually.
 
-      * \[Api set: ExcelApiOnline 1.1\]
+      \* \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Manual"'

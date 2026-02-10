@@ -3,11 +3,9 @@ name: OneNote.Interfaces.InkAnalysisWordCollectionData
 uid: onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `inkAnalysisWordCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `inkAnalysisWordCollection.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,12 +16,10 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface"
-          />[]
+        type: <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface" />[]

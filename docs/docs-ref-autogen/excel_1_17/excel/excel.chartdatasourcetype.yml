@@ -4,10 +4,8 @@ uid: excel!Excel.ChartDataSourceType:enum
 package: excel!
 fullName: Excel.ChartDataSourceType
 summary: Specifies the data source type of the chart series.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       The data source type of the chart series is an external range.
 
-      * \[Api set: ExcelApi 1.15\]
+      \* \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ExternalRange"'
   - name: list
     uid: excel!Excel.ChartDataSourceType.list:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       The data source type of the chart series is a list.
 
-      * \[Api set: ExcelApi 1.15\]
+      \* \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"List"'
   - name: localRange
     uid: excel!Excel.ChartDataSourceType.localRange:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       The data source type of the chart series is a local range.
 
-      * \[Api set: ExcelApi 1.15\]
+      \* \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LocalRange"'
   - name: unknown
     uid: excel!Excel.ChartDataSourceType.unknown:member
@@ -41,5 +39,5 @@ fields:
     summary: |-
       The data source type of the chart series is unknown or unsupported.
 
-      * \[Api set: ExcelApi 1.15\]
+      \* \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

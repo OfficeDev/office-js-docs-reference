@@ -3,11 +3,9 @@ name: Word.Interfaces.RevisionsFilterUpdateData
 uid: word!Word.Interfaces.RevisionsFilterUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RevisionsFilterUpdateData
-summary: >-
-  An interface for updating data on the `RevisionsFilter` object, for use in
-  `revisionsFilter.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `RevisionsFilter` object, for use in `revisionsFilter.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

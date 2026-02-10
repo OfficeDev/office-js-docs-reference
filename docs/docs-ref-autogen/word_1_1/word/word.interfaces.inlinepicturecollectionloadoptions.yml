@@ -3,13 +3,9 @@ name: Word.Interfaces.InlinePictureCollectionLoadOptions
 uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
-summary: >-
-  Contains a collection of
-  [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,17 +24,12 @@ properties:
       return:
         type: boolean
   - name: altTextDescription
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member
+    uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member
     package: word!
     fullName: altTextDescription
-    summary: >-
-      For EACH ITEM in the collection: Specifies a string that represents the
-      alternative text associated with the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies a string that represents the alternative text associated with the inline image.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,17 +37,12 @@ properties:
       return:
         type: boolean
   - name: altTextTitle
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member
+    uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member
     package: word!
     fullName: altTextTitle
-    summary: >-
-      For EACH ITEM in the collection: Specifies a string that contains the
-      title for the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies a string that contains the title for the inline image.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member
     package: word!
     fullName: height
-    summary: >-
-      For EACH ITEM in the collection: Specifies a number that describes the
-      height of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies a number that describes the height of the inline image.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,13 +66,9 @@ properties:
     uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      For EACH ITEM in the collection: Specifies a hyperlink on the image. Use a
-      '\#' to separate the address part from the optional location part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,17 +76,12 @@ properties:
       return:
         type: boolean
   - name: lockAspectRatio
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member
+    uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member
     package: word!
     fullName: lockAspectRatio
-    summary: >-
-      For EACH ITEM in the collection: Specifies a value that indicates whether
-      the inline image retains its original proportions when you resize it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,37 +89,25 @@ properties:
       return:
         type: boolean
   - name: parentContentControl
-    uid: >-
-      word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member
+    uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the inline image. Throws an `ItemNotFound` error if there isn't a parent
-      content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn''t a parent content control.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: width
     uid: word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member
     package: word!
     fullName: width
-    summary: >-
-      For EACH ITEM in the collection: Specifies a number that describes the
-      width of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies a number that describes the width of the inline image.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

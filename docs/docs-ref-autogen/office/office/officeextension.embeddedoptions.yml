@@ -4,13 +4,12 @@ uid: office!OfficeExtension.EmbeddedOptions:interface
 package: office!
 fullName: OfficeExtension.EmbeddedOptions
 summary: >-
-  Specifies options for a session of a Visio diagram embedded in a SharePoint
-  page. Called by constructor of `EmbeddedSession`<!-- -->. For more
-  information, see [Visio JavaScript API
+  Specifies options for a session of a Visio diagram embedded in a SharePoint page. Called by constructor of
+  `EmbeddedSession`<!-- -->. For more information, see [Visio JavaScript API
   overview](https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)<!--
   -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +20,7 @@ properties:
     fullName: container
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +33,7 @@ properties:
     fullName: height
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +46,7 @@ properties:
     fullName: id
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +59,7 @@ properties:
     fullName: sessionKey
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +72,7 @@ properties:
     fullName: timeoutInMilliseconds
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +85,7 @@ properties:
     fullName: width
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

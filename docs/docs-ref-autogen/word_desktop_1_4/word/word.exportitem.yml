@@ -4,10 +4,8 @@ uid: word!Word.ExportItem:enum
 package: word!
 fullName: Word.ExportItem
 summary: Specifies the export item type for a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Exports document content only.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DocumentContent"'
   - name: documentWithMarkup
     uid: word!Word.ExportItem.documentWithMarkup:member
@@ -25,5 +23,5 @@ fields:
     summary: |-
       Exports document with markup (annotations).
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DocumentWithMarkup"'

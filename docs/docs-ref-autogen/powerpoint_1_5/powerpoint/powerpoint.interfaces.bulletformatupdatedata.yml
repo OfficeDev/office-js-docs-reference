@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.BulletFormatUpdateData
 uid: powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BulletFormatUpdateData
-summary: >-
-  An interface for updating data on the `BulletFormat` object, for use in
-  `bulletFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `BulletFormat` object, for use in `bulletFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,15 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData#visible:member
     package: powerpoint!
     fullName: visible
-    summary: >-
-      Specifies if the bullets in the paragraph are visible. Returns `null` if
-      the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
-      includes text fragments with different bullet visibility values.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies if the bullets in the paragraph are visible. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet visibility values.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

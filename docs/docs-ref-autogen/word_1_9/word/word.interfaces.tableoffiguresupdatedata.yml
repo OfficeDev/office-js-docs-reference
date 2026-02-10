@@ -3,11 +3,9 @@ name: Word.Interfaces.TableOfFiguresUpdateData
 uid: word!Word.Interfaces.TableOfFiguresUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfFiguresUpdateData
-summary: >-
-  An interface for updating data on the `TableOfFigures` object, for use in
-  `tableOfFigures.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableOfFigures` object, for use in `tableOfFigures.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

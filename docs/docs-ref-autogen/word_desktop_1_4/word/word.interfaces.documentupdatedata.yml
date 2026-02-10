@@ -3,11 +3,9 @@ name: Word.Interfaces.DocumentUpdateData
 uid: word!Word.Interfaces.DocumentUpdateData:interface
 package: word!
 fullName: Word.Interfaces.DocumentUpdateData
-summary: >-
-  An interface for updating data on the `Document` object, for use in
-  `document.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Document` object, for use in `document.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: word!
     fullName: activeWindow
     summary: Gets the active window for the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#areGrammaticalErrorsShown:member
     package: word!
     fullName: areGrammaticalErrorsShown
-    summary: >-
-      Specifies whether grammatical errors are marked by a wavy green line in
-      the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether grammatical errors are marked by a wavy green line in the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#areMathDefaultsUsed:member
     package: word!
     fullName: areMathDefaultsUsed
-    summary: >-
-      Specifies whether to use the default math settings when creating new
-      equations.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether to use the default math settings when creating new equations.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#areNewerFeaturesDisabled:member
     package: word!
     fullName: areNewerFeaturesDisabled
-    summary: >-
-      Specifies whether to disable features introduced after a specified
-      version.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether to disable features introduced after a specified version.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,13 +66,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#areSpellingErrorsShown:member
     package: word!
     fullName: areSpellingErrorsShown
-    summary: >-
-      Specifies whether Microsoft Word underlines spelling errors in the
-      document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word underlines spelling errors in the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#areStylesUpdatedOnOpen:member
     package: word!
     fullName: areStylesUpdatedOnOpen
-    summary: >-
-      Specifies whether the styles in this document are updated to match the
-      styles in the attached template each time the document is opened.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the styles in this document are updated to match the styles in the attached template each time the document is opened.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,13 +92,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#areTrueTypeFontsEmbedded:member
     package: word!
     fullName: areTrueTypeFontsEmbedded
-    summary: >-
-      Specifies whether Microsoft Word embeds TrueType fonts in the document
-      when it's saved.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word embeds TrueType fonts in the document when it's saved.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,10 +106,8 @@ properties:
     package: word!
     fullName: autoHyphenation
     summary: Specifies if automatic hyphenation is turned on for the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,10 +119,8 @@ properties:
     package: word!
     fullName: autoSaveOn
     summary: Specifies if the edits in the document are automatically saved.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,13 +131,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#bibliography:member
     package: word!
     fullName: bibliography
-    summary: >-
-      Returns a `Bibliography` object that represents the bibliography
-      references contained within the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `Bibliography` object that represents the bibliography references contained within the document.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,13 +144,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#body:member
     package: word!
     fullName: body
-    summary: >-
-      Gets the `Body` object of the main document. The body is the text that
-      excludes headers, footers, footnotes, textboxes, etc.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,31 +158,21 @@ properties:
     package: word!
     fullName: changeTrackingMode
     summary: Specifies the ChangeTracking mode.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" |
-        "TrackMineOnly";
+      content: 'changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
       return:
-        type: >-
-          <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll"
-          | "TrackMineOnly"
+        type: <xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"
   - name: consecutiveHyphensLimit
     uid: word!Word.Interfaces.DocumentUpdateData#consecutiveHyphensLimit:member
     package: word!
     fullName: consecutiveHyphensLimit
-    summary: >-
-      Specifies the maximum number of consecutive lines that can end with
-      hyphens.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the maximum number of consecutive lines that can end with hyphens.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -233,13 +183,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#defaultTabStop:member
     package: word!
     fullName: defaultTabStop
-    summary: >-
-      Specifies the interval (in points) between the default tab stops in the
-      document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the interval (in points) between the default tab stops in the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,10 +197,8 @@ properties:
     package: word!
     fullName: defaultTargetFrame
     summary: Specifies the browser frame for displaying a webpage via hyperlink.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -266,10 +210,8 @@ properties:
     package: word!
     fullName: doNotEmbedSystemFonts
     summary: Specifies whether Word should not embed common system fonts.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -280,13 +222,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#encryptionProvider:member
     package: word!
     fullName: encryptionProvider
-    summary: >-
-      Specifies the name of the algorithm encryption provider that Microsoft
-      Word uses when encrypting documents.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the name of the algorithm encryption provider that Microsoft Word uses when encrypting documents.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -298,50 +236,34 @@ properties:
     package: word!
     fullName: farEastLineBreakLanguage
     summary: Specifies the East Asian language used for line breaking.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        farEastLineBreakLanguage?: Word.FarEastLineBreakLanguageId |
-        "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";
+      content: 'farEastLineBreakLanguage?: Word.FarEastLineBreakLanguageId | "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese";'
       return:
-        type: >-
-          <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> |
-          "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese"
+        type: <xref uid="word!Word.FarEastLineBreakLanguageId:enum" /> | "TraditionalChinese" | "Japanese" | "Korean" | "SimplifiedChinese"
   - name: farEastLineBreakLevel
     uid: word!Word.Interfaces.DocumentUpdateData#farEastLineBreakLevel:member
     package: word!
     fullName: farEastLineBreakLevel
     summary: Specifies the line break control level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        farEastLineBreakLevel?: Word.FarEastLineBreakLevel | "Normal" | "Strict"
-        | "Custom";
+      content: 'farEastLineBreakLevel?: Word.FarEastLineBreakLevel | "Normal" | "Strict" | "Custom";'
       return:
-        type: >-
-          <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" |
-          "Strict" | "Custom"
+        type: <xref uid="word!Word.FarEastLineBreakLevel:enum" /> | "Normal" | "Strict" | "Custom"
   - name: formattingIsNextLevelShown
     uid: word!Word.Interfaces.DocumentUpdateData#formattingIsNextLevelShown:member
     package: word!
     fullName: formattingIsNextLevelShown
-    summary: >-
-      Specifies whether Word shows the next heading level when the previous is
-      used.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Word shows the next heading level when the previous is used.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -349,15 +271,12 @@ properties:
       return:
         type: boolean
   - name: formattingIsUserStyleNameShown
-    uid: >-
-      word!Word.Interfaces.DocumentUpdateData#formattingIsUserStyleNameShown:member
+    uid: word!Word.Interfaces.DocumentUpdateData#formattingIsUserStyleNameShown:member
     package: word!
     fullName: formattingIsUserStyleNameShown
     summary: Specifies whether to show user-defined styles.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -368,14 +287,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#gridDistanceHorizontal:member
     package: word!
     fullName: gridDistanceHorizontal
-    summary: >-
-      Specifies the horizontal space between invisible gridlines that Microsoft
-      Word uses when you draw, move, and resize AutoShapes or East Asian
-      characters in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the horizontal space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -386,14 +300,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#gridDistanceVertical:member
     package: word!
     fullName: gridDistanceVertical
-    summary: >-
-      Specifies the vertical space between invisible gridlines that Microsoft
-      Word uses when you draw, move, and resize AutoShapes or East Asian
-      characters in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the vertical space between invisible gridlines that Microsoft Word uses when you draw, move, and resize AutoShapes or East Asian characters in the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -404,13 +313,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#gridIsOriginFromMargin:member
     package: word!
     fullName: gridIsOriginFromMargin
-    summary: >-
-      Specifies whether the character grid starts from the upper-left corner of
-      the page.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the character grid starts from the upper-left corner of the page.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -422,10 +327,8 @@ properties:
     package: word!
     fullName: gridOriginHorizontal
     summary: Specifies the horizontal origin point for the invisible grid.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -437,10 +340,8 @@ properties:
     package: word!
     fullName: gridOriginVertical
     summary: Specifies the vertical origin point for the invisible grid.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -448,17 +349,12 @@ properties:
       return:
         type: number
   - name: gridSpaceBetweenHorizontalLines
-    uid: >-
-      word!Word.Interfaces.DocumentUpdateData#gridSpaceBetweenHorizontalLines:member
+    uid: word!Word.Interfaces.DocumentUpdateData#gridSpaceBetweenHorizontalLines:member
     package: word!
     fullName: gridSpaceBetweenHorizontalLines
-    summary: >-
-      Specifies the interval for horizontal character gridlines in print layout
-      view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the interval for horizontal character gridlines in print layout view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -466,17 +362,12 @@ properties:
       return:
         type: number
   - name: gridSpaceBetweenVerticalLines
-    uid: >-
-      word!Word.Interfaces.DocumentUpdateData#gridSpaceBetweenVerticalLines:member
+    uid: word!Word.Interfaces.DocumentUpdateData#gridSpaceBetweenVerticalLines:member
     package: word!
     fullName: gridSpaceBetweenVerticalLines
-    summary: >-
-      Specifies the interval for vertical character gridlines in print layout
-      view.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the interval for vertical character gridlines in print layout view.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -488,10 +379,8 @@ properties:
     package: word!
     fullName: hyphenateCaps
     summary: Specifies whether words in all capital letters can be hyphenated.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -503,10 +392,8 @@ properties:
     package: word!
     fullName: hyphenationZone
     summary: Specifies the width of the hyphenation zone, in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -517,13 +404,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isAutoFormatOverrideOn:member
     package: word!
     fullName: isAutoFormatOverrideOn
-    summary: >-
-      Specifies whether automatic formatting options override formatting
-      restrictions.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether automatic formatting options override formatting restrictions.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -534,13 +417,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isChartDataPointTracked:member
     package: word!
     fullName: isChartDataPointTracked
-    summary: >-
-      Specifies whether charts in the active document use cell-reference
-      data-point tracking.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether charts in the active document use cell-reference data-point tracking.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -551,13 +430,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isCompatible:member
     package: word!
     fullName: isCompatible
-    summary: >-
-      Specifies whether the compatibility option specified by the `type`
-      property is enabled.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether the compatibility option specified by the `type` property is enabled.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -569,10 +444,8 @@ properties:
     package: word!
     fullName: isFinal
     summary: Specifies whether the document is final.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -583,13 +456,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isFontsSubsetSaved:member
     package: word!
     fullName: isFontsSubsetSaved
-    summary: >-
-      Specifies whether Microsoft Word saves a subset of the embedded TrueType
-      fonts with the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word saves a subset of the embedded TrueType fonts with the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -600,13 +469,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isFormsDataPrinted:member
     package: word!
     fullName: isFormsDataPrinted
-    summary: >-
-      Specifies whether Microsoft Word prints onto a preprinted form only the
-      data entered in the corresponding online form.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word prints onto a preprinted form only the data entered in the corresponding online form.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -617,13 +482,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isFormsDataSaved:member
     package: word!
     fullName: isFormsDataSaved
-    summary: >-
-      Specifies whether Microsoft Word saves the data entered in a form as a
-      tab-delimited record for use in a database.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word saves the data entered in a form as a tab-delimited record for use in a database.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -635,10 +496,8 @@ properties:
     package: word!
     fullName: isGrammarChecked
     summary: Specifies whether a grammar check has been run on the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -649,13 +508,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isKerningByAlgorithm:member
     package: word!
     fullName: isKerningByAlgorithm
-    summary: >-
-      Specifies whether Word kerns half-width Latin characters and punctuation
-      marks.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Word kerns half-width Latin characters and punctuation marks.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -667,10 +522,8 @@ properties:
     package: word!
     fullName: isLinguisticDataEmbedded
     summary: Specifies whether to embed speech and handwriting data.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -682,10 +535,8 @@ properties:
     package: word!
     fullName: isOptimizedForWord97
     summary: Specifies whether Word optimizes the document for Word 97.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -696,15 +547,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isPostScriptPrintedOverText:member
     package: word!
     fullName: isPostScriptPrintedOverText
-    summary: >-
-      Specifies whether [PRINT
-      field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f)
-      instructions (such as PostScript commands) in the document are to be
-      printed on top of text and graphics when a PostScript printer is used.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether [PRINT field](https://support.microsoft.com/office/0250c02b-060f-4986-88a4-36cec2a9665f) instructions (such as PostScript commands) in the document are to be printed on top of text and graphics when a PostScript printer is used.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -716,10 +561,8 @@ properties:
     package: word!
     fullName: isQuickStyleSetLocked
     summary: Specifies whether users can change the Quick Style set.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -730,13 +573,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isReadOnlyRecommended:member
     package: word!
     fullName: isReadOnlyRecommended
-    summary: >-
-      Specifies whether Microsoft Word displays a message box whenever a user
-      opens the document, suggesting that it be opened as read-only.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word displays a message box whenever a user opens the document, suggesting that it be opened as read-only.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -747,13 +586,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isSnappedToGrid:member
     package: word!
     fullName: isSnappedToGrid
-    summary: >-
-      Specifies whether AutoShapes or East Asian characters are automatically
-      aligned with an invisible grid.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether AutoShapes or East Asian characters are automatically aligned with an invisible grid.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -764,13 +599,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isSnappedToShapes:member
     package: word!
     fullName: isSnappedToShapes
-    summary: >-
-      Specifies whether AutoShapes or East Asian characters align with invisible
-      gridlines through other shapes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether AutoShapes or East Asian characters align with invisible gridlines through other shapes.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -782,10 +613,8 @@ properties:
     package: word!
     fullName: isSpellingChecked
     summary: Specifies whether spelling has been checked throughout the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -796,13 +625,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#isStyleEnforced:member
     package: word!
     fullName: isStyleEnforced
-    summary: >-
-      Specifies whether formatting restrictions are enforced in a protected
-      document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether formatting restrictions are enforced in a protected document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -814,10 +639,8 @@ properties:
     package: word!
     fullName: isThemeLocked
     summary: Specifies whether users can change the document theme.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -829,10 +652,8 @@ properties:
     package: word!
     fullName: isUserControl
     summary: Specifies whether the document was created or opened by the user.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -844,50 +665,34 @@ properties:
     package: word!
     fullName: justificationMode
     summary: Specifies the character spacing adjustment.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        justificationMode?: Word.JustificationMode | "Expand" | "Compress" |
-        "CompressKana";
+      content: 'justificationMode?: Word.JustificationMode | "Expand" | "Compress" | "CompressKana";'
       return:
-        type: >-
-          <xref uid="word!Word.JustificationMode:enum" /> | "Expand" |
-          "Compress" | "CompressKana"
+        type: <xref uid="word!Word.JustificationMode:enum" /> | "Expand" | "Compress" | "CompressKana"
   - name: kind
     uid: word!Word.Interfaces.DocumentUpdateData#kind:member
     package: word!
     fullName: kind
-    summary: >-
-      Specifies the format type that Microsoft Word uses when automatically
-      formatting the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the format type that Microsoft Word uses when automatically formatting the document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'kind?: Word.DocumentKind | "NotSpecified" | "Letter" | "Email";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentKind:enum" /> | "NotSpecified" | "Letter"
-          | "Email"
+        type: <xref uid="word!Word.DocumentKind:enum" /> | "NotSpecified" | "Letter" | "Email"
   - name: languageDetected
     uid: word!Word.Interfaces.DocumentUpdateData#languageDetected:member
     package: word!
     fullName: languageDetected
-    summary: >-
-      Specifies whether Microsoft Word has detected the language of the document
-      text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether Microsoft Word has detected the language of the document text.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -899,10 +704,8 @@ properties:
     package: word!
     fullName: noLineBreakAfter
     summary: Specifies the kinsoku characters after which Word will not break a line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -914,10 +717,8 @@ properties:
     package: word!
     fullName: noLineBreakBefore
     summary: Specifies the kinsoku characters before which Word will not break a line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -929,10 +730,8 @@ properties:
     package: word!
     fullName: pageSetup
     summary: Returns a `PageSetup` object that's associated with the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -944,10 +743,8 @@ properties:
     package: word!
     fullName: password
     summary: Sets a password that must be supplied to open the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -959,10 +756,8 @@ properties:
     package: word!
     fullName: printRevisions
     summary: Specifies whether revision marks are printed with the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -974,27 +769,21 @@ properties:
     package: word!
     fullName: properties
     summary: Gets the properties of the document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />
+        type: <xref uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />
   - name: readingLayoutSizeX
     uid: word!Word.Interfaces.DocumentUpdateData#readingLayoutSizeX:member
     package: word!
     fullName: readingLayoutSizeX
     summary: Specifies the width of pages in reading layout view when frozen.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1006,10 +795,8 @@ properties:
     package: word!
     fullName: readingLayoutSizeY
     summary: Specifies the height of pages in reading layout view when frozen.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1020,13 +807,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#readingModeIsLayoutFrozen:member
     package: word!
     fullName: readingModeIsLayoutFrozen
-    summary: >-
-      Specifies whether pages in reading layout view are frozen for handwritten
-      markup.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether pages in reading layout view are frozen for handwritten markup.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1034,15 +817,12 @@ properties:
       return:
         type: boolean
   - name: removePersonalInformationOnSave
-    uid: >-
-      word!Word.Interfaces.DocumentUpdateData#removePersonalInformationOnSave:member
+    uid: word!Word.Interfaces.DocumentUpdateData#removePersonalInformationOnSave:member
     package: word!
     fullName: removePersonalInformationOnSave
     summary: Specifies whether Word removes user information upon saving.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1054,240 +834,47 @@ properties:
     package: word!
     fullName: saveEncoding
     summary: Specifies the encoding used when saving the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        saveEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
-        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
-        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
-        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
-        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
-        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
-        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
-        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
-        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
-        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
-        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
-        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
-        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
-        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
-        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
-        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" |
-        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
-        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      content: 'saveEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
-          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
-          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
-          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-          "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
-          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
-          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
-          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-          "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
-          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
-          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+        type: <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: textEncoding
     uid: word!Word.Interfaces.DocumentUpdateData#textEncoding:member
     package: word!
     fullName: textEncoding
     summary: Specifies the encoding for saving as encoded text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        textEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
-        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
-        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
-        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
-        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
-        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
-        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
-        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
-        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
-        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
-        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
-        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
-        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
-        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
-        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
-        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
-        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
-        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
-        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
-        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
-        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
-        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
-        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
-        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
-        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
-        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-        "EbcdicUsCanadaAndTraditionalChinese" |
-        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
-        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
-        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
+      content: 'textEncoding?: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
-          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
-          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
-          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
-          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
-          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
-          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
-          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
-          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
-          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
-          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
-          "Iso885915Latin9" | "Iso88598HebrewLogical" |
-          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
-          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
-          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
-          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
-          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
-          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
-          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
-          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
-          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
-          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
-          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
-          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
-          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
-          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
-          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
-          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
-          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
-          "EbcdicUsCanadaAndTraditionalChinese" |
-          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
-          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
-          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
-          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
-          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
-          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
-          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
-          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
-          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
-          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
-          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
-          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
-          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
-          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
-          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+        type: <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: textLineEnding
     uid: word!Word.Interfaces.DocumentUpdateData#textLineEnding:member
     package: word!
     fullName: textLineEnding
     summary: Specifies how Word marks line and paragraph breaks in text files.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        textLineEnding?: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" |
-        "Lfcr" | "Lsps";
+      content: 'textLineEnding?: Word.LineEndingType | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps";'
       return:
-        type: >-
-          <xref uid="word!Word.LineEndingType:enum" /> | "Crlf" | "CrOnly" |
-          "LfOnly" | "Lfcr" | "Lsps"
+        type: <xref uid="word!Word.LineEndingType:enum" /> | "Crlf" | "CrOnly" | "LfOnly" | "Lfcr" | "Lsps"
   - name: trackedChangesAreDateAndTimeRemoved
-    uid: >-
-      word!Word.Interfaces.DocumentUpdateData#trackedChangesAreDateAndTimeRemoved:member
+    uid: word!Word.Interfaces.DocumentUpdateData#trackedChangesAreDateAndTimeRemoved:member
     package: word!
     fullName: trackedChangesAreDateAndTimeRemoved
-    summary: >-
-      Specifies whether to remove or store date and time metadata for tracked
-      changes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether to remove or store date and time metadata for tracked changes.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1299,10 +886,8 @@ properties:
     package: word!
     fullName: trackFormatting
     summary: Specifies whether to track formatting changes when change tracking is on.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1314,10 +899,8 @@ properties:
     package: word!
     fullName: trackMoves
     summary: Specifies whether to mark moved text when Track Changes is on.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1329,10 +912,8 @@ properties:
     package: word!
     fullName: trackRevisions
     summary: Specifies whether changes are tracked in the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1344,10 +925,8 @@ properties:
     package: word!
     fullName: writePassword
     summary: Sets a password for saving changes to the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1358,13 +937,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#xmlAreAdvancedErrorsShown:member
     package: word!
     fullName: xmlAreAdvancedErrorsShown
-    summary: >-
-      Specifies whether error messages are generated from built-in Word messages
-      or MSXML (Microsoft XML).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether error messages are generated from built-in Word messages or MSXML (Microsoft XML).
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1375,13 +950,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#xmlIsXsltUsedWhenSaving:member
     package: word!
     fullName: xmlIsXsltUsedWhenSaving
-    summary: >-
-      Specifies whether to save a document through an Extensible Stylesheet
-      Language Transformation (XSLT).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether to save a document through an Extensible Stylesheet Language Transformation (XSLT).
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1392,13 +963,9 @@ properties:
     uid: word!Word.Interfaces.DocumentUpdateData#xmlSaveThroughXslt:member
     package: word!
     fullName: xmlSaveThroughXslt
-    summary: >-
-      Specifies the path and file name for the XSLT to apply when saving a
-      document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the path and file name for the XSLT to apply when saving a document.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

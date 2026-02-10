@@ -4,22 +4,15 @@ uid: word!Word.CompareTarget:enum
 package: word!
 fullName: Word.CompareTarget
 summary: Specifies the target document for displaying document comparison differences.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
 
   // Compares the current document with a specified external document.
-
   await Word.run(async (context) => {
     // Absolute path of an online or local document.
     const filePath = (document.getElementById("filePath") as HTMLInputElement).value;
@@ -35,9 +28,8 @@ remarks: >-
 
     console.log("Differences shown in the current document.");
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -47,7 +39,7 @@ fields:
     summary: |-
       Places comparison differences in the current document.
 
-      * \[Api set: WordApiDesktop 1.1\]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetCurrent"'
   - name: compareTargetNew
     uid: word!Word.CompareTarget.compareTargetNew:member
@@ -55,7 +47,7 @@ fields:
     summary: |-
       Places comparison differences in a new document.
 
-      * \[Api set: WordApiDesktop 1.1\]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetNew"'
   - name: compareTargetSelected
     uid: word!Word.CompareTarget.compareTargetSelected:member
@@ -63,5 +55,5 @@ fields:
     summary: |-
       Places comparison differences in the target document.
 
-      * \[Api set: WordApiDesktop 1.1\]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompareTargetSelected"'

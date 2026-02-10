@@ -3,29 +3,16 @@ name: Office.DragoverEventData
 uid: outlook!Office.DragoverEventData:interface
 package: outlook!
 fullName: Office.DragoverEventData
-summary: >-
-  Represents the `DragAndDropEventArgs.dragAndDropEventData` object when
-  messages or file attachments are dragged over an add-in's task pane.
-remarks: >-
-  \[ [API set: Mailbox
-  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Represents the `DragAndDropEventArgs.dragAndDropEventData` object when messages or file attachments are dragged over an add-in's task pane.
+remarks: |-
+  \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-  To learn more about the drag-and-drop feature and how to implement it across
-  various Outlook clients, see [Drag and drop messages and attachments into the
-  task pane of an Outlook
-  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!--
-  -->.
-
+  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and drop messages and attachments into the task pane of an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
 
   function dragAndDropEventHandler(event) {
       Office.context.mailbox.addHandlerAsync(Office.EventType.DragAndDropEvent, (event) => {
@@ -49,9 +36,8 @@ remarks: >-
       }
     });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -60,15 +46,9 @@ properties:
     uid: outlook!Office.DragoverEventData#pageX:member
     package: outlook!
     fullName: pageX
-    summary: >-
-      Gets the x-coordinate of the mouse pointer that represents the horizontal
-      position in pixels. The position is relative to the left edge of the
-      Outlook on the web or the new Outlook on Windows client window.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    summary: Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is relative to the left edge of the Outlook on the web or the new Outlook on Windows client window.
+    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,15 +59,9 @@ properties:
     uid: outlook!Office.DragoverEventData#pageY:member
     package: outlook!
     fullName: pageY
-    summary: >-
-      Gets the y-coordinate of the mouse pointer that represents the vertical
-      position in pixels. The position is relative to the top edge of the
-      Outlook on the web or the new Outlook on Windows client window.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    summary: Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is relative to the top edge of the Outlook on the web or the new Outlook on Windows client window.
+    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,15 +72,9 @@ properties:
     uid: outlook!Office.DragoverEventData#taskPaneX:member
     package: outlook!
     fullName: taskPaneX
-    summary: >-
-      Gets the x-coordinate of the mouse pointer that represents the horizontal
-      position in pixels. The position is relative to the left edge of the
-      add-in's task pane.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    summary: Gets the x-coordinate of the mouse pointer that represents the horizontal position in pixels. The position is relative to the left edge of the add-in's task pane.
+    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,15 +85,9 @@ properties:
     uid: outlook!Office.DragoverEventData#taskPaneY:member
     package: outlook!
     fullName: taskPaneY
-    summary: >-
-      Gets the y-coordinate of the mouse pointer that represents the vertical
-      position in pixels. The position is relative to the top edge of the
-      add-in's task pane.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    summary: Gets the y-coordinate of the mouse pointer that represents the vertical position in pixels. The position is relative to the top edge of the add-in's task pane.
+    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,14 +98,9 @@ properties:
     uid: outlook!Office.DragoverEventData#type:member
     package: outlook!
     fullName: type
-    summary: >-
-      Gets the type of drag-and-drop event. The `dragover` event occurs when
-      messages or file attachments are dragged over an add-in's task pane.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    summary: Gets the type of drag-and-drop event. The `dragover` event occurs when messages or file attachments are dragged over an add-in's task pane.
+    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

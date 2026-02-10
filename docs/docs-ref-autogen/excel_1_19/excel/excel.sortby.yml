@@ -4,10 +4,8 @@ uid: excel!Excel.SortBy:enum
 package: excel!
 fullName: Excel.SortBy
 summary: Represents the sort direction.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Ascending sort. Smallest to largest or A to Z.
 
-      * \[Api set: ExcelApi 1.8\]
+      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Ascending"'
   - name: descending
     uid: excel!Excel.SortBy.descending:member
@@ -25,5 +23,5 @@ fields:
     summary: |-
       Descending sort. Largest to smallest or Z to A.
 
-      * \[Api set: ExcelApi 1.8\]
+      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Descending"'

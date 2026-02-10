@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.BodyData
 summary: An interface describing the data returned by calling `body.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,10 +15,8 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of rich text content control objects in the body.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.BodyData#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the body. Use this to get and set font name, size,
-      color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the text format of the body. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.BodyData#inlinePictures:member
     package: word!
     fullName: inlinePictures
-    summary: >-
-      Gets the collection of `InlinePicture` objects in the body. The collection
-      doesn't include floating images.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the collection of `InlinePicture` objects in the body. The collection doesn't include floating images.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,14 +54,11 @@ properties:
     package: word!
     fullName: paragraphs
     summary: Gets the collection of `Paragraph` objects in the body.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      Important: Paragraphs in tables aren't returned for requirement sets 1.1
-      and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
-
+      Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,14 +69,9 @@ properties:
     uid: word!Word.Interfaces.BodyData#style:member
     package: word!
     fullName: style
-    summary: >-
-      Specifies the style name for the body. Use this property for custom styles
-      and localized style names. To use the built-in styles that are portable
-      between locales, see the "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,10 +83,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the body. Use the insertText method to insert text.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

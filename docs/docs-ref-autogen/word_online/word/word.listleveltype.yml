@@ -4,22 +4,15 @@ uid: word!Word.ListLevelType:enum
 package: word!
 fullName: Word.ListLevelType
 summary: Represents the type of list level.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
   // Gets information about the first list in the document.
-
   await Word.run(async (context) => {
     const lists: Word.ListCollection = context.document.body.lists;
     lists.load("items");
@@ -49,9 +42,8 @@ remarks: >-
       console.log(`- Level ${i + 1} (index ${i}): ${levelExistences[i]}`);
     }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -61,7 +53,7 @@ fields:
     summary: |-
       Represents the bullet type.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bullet"'
   - name: number
     uid: word!Word.ListLevelType.number:member
@@ -69,7 +61,7 @@ fields:
     summary: |-
       Represents the numbering type.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Number"'
   - name: picture
     uid: word!Word.ListLevelType.picture:member
@@ -77,5 +69,5 @@ fields:
     summary: |-
       Represents the picture type.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Picture"'

@@ -4,10 +4,8 @@ uid: word!Word.BuildingBlockType:enum
 package: word!
 fullName: Word.BuildingBlockType
 summary: Specifies the type of building block.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents AutoText building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AutoText"'
   - name: bibliography
     uid: word!Word.BuildingBlockType.bibliography:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents Bibliography building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bibliography"'
   - name: coverPage
     uid: word!Word.BuildingBlockType.coverPage:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Represents Cover Page building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CoverPage"'
   - name: custom1
     uid: word!Word.BuildingBlockType.custom1:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Represents Custom building block type 1.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Custom1"'
   - name: custom2
     uid: word!Word.BuildingBlockType.custom2:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Represents Custom building block type 2.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Custom2"'
   - name: custom3
     uid: word!Word.BuildingBlockType.custom3:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Represents Custom building block type 3.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Custom3"'
   - name: custom4
     uid: word!Word.BuildingBlockType.custom4:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       Represents Custom building block type 4.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Custom4"'
   - name: custom5
     uid: word!Word.BuildingBlockType.custom5:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Represents Custom building block type 5.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Custom5"'
   - name: customAutoText
     uid: word!Word.BuildingBlockType.customAutoText:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       Represents Custom AutoText building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomAutoText"'
   - name: customBibliography
     uid: word!Word.BuildingBlockType.customBibliography:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Represents Custom Bibliography building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomBibliography"'
   - name: customCoverPage
     uid: word!Word.BuildingBlockType.customCoverPage:member
@@ -97,7 +95,7 @@ fields:
     summary: |-
       Represents Custom Cover Page building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomCoverPage"'
   - name: customEquations
     uid: word!Word.BuildingBlockType.customEquations:member
@@ -105,7 +103,7 @@ fields:
     summary: |-
       Represents Custom Equations building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomEquations"'
   - name: customFooters
     uid: word!Word.BuildingBlockType.customFooters:member
@@ -113,7 +111,7 @@ fields:
     summary: |-
       Represents Custom Footers building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomFooters"'
   - name: customHeaders
     uid: word!Word.BuildingBlockType.customHeaders:member
@@ -121,7 +119,7 @@ fields:
     summary: |-
       Represents Custom Headers building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomHeaders"'
   - name: customPageNumber
     uid: word!Word.BuildingBlockType.customPageNumber:member
@@ -129,7 +127,7 @@ fields:
     summary: |-
       Represents Custom Page Number building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomPageNumber"'
   - name: customPageNumberBottom
     uid: word!Word.BuildingBlockType.customPageNumberBottom:member
@@ -137,7 +135,7 @@ fields:
     summary: |-
       Represents Custom Page Number Bottom building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomPageNumberBottom"'
   - name: customPageNumberPage
     uid: word!Word.BuildingBlockType.customPageNumberPage:member
@@ -145,7 +143,7 @@ fields:
     summary: |-
       Represents Custom Page Number Page building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomPageNumberPage"'
   - name: customPageNumberTop
     uid: word!Word.BuildingBlockType.customPageNumberTop:member
@@ -153,7 +151,7 @@ fields:
     summary: |-
       Represents Custom Page Number Top building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomPageNumberTop"'
   - name: customQuickParts
     uid: word!Word.BuildingBlockType.customQuickParts:member
@@ -161,7 +159,7 @@ fields:
     summary: |-
       Represents Custom Quick Parts building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomQuickParts"'
   - name: customTableOfContents
     uid: word!Word.BuildingBlockType.customTableOfContents:member
@@ -169,7 +167,7 @@ fields:
     summary: |-
       Represents Custom Table of Contents building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomTableOfContents"'
   - name: customTables
     uid: word!Word.BuildingBlockType.customTables:member
@@ -177,7 +175,7 @@ fields:
     summary: |-
       Represents Custom Tables building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomTables"'
   - name: customTextBox
     uid: word!Word.BuildingBlockType.customTextBox:member
@@ -185,7 +183,7 @@ fields:
     summary: |-
       Represents Custom Text Box building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomTextBox"'
   - name: customWatermarks
     uid: word!Word.BuildingBlockType.customWatermarks:member
@@ -193,7 +191,7 @@ fields:
     summary: |-
       Represents Custom Watermarks building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CustomWatermarks"'
   - name: equations
     uid: word!Word.BuildingBlockType.equations:member
@@ -201,7 +199,7 @@ fields:
     summary: |-
       Represents Equations building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Equations"'
   - name: footers
     uid: word!Word.BuildingBlockType.footers:member
@@ -209,7 +207,7 @@ fields:
     summary: |-
       Represents Footers building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footers"'
   - name: headers
     uid: word!Word.BuildingBlockType.headers:member
@@ -217,7 +215,7 @@ fields:
     summary: |-
       Represents Headers building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Headers"'
   - name: pageNumber
     uid: word!Word.BuildingBlockType.pageNumber:member
@@ -225,7 +223,7 @@ fields:
     summary: |-
       Represents Page Number building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PageNumber"'
   - name: pageNumberBottom
     uid: word!Word.BuildingBlockType.pageNumberBottom:member
@@ -233,7 +231,7 @@ fields:
     summary: |-
       Represents Page Number Bottom building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PageNumberBottom"'
   - name: pageNumberPage
     uid: word!Word.BuildingBlockType.pageNumberPage:member
@@ -241,7 +239,7 @@ fields:
     summary: |-
       Represents Page Number Page building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PageNumberPage"'
   - name: pageNumberTop
     uid: word!Word.BuildingBlockType.pageNumberTop:member
@@ -249,7 +247,7 @@ fields:
     summary: |-
       Represents Page Number Top building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PageNumberTop"'
   - name: quickParts
     uid: word!Word.BuildingBlockType.quickParts:member
@@ -257,7 +255,7 @@ fields:
     summary: |-
       Represents Quick Parts building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"QuickParts"'
   - name: tableOfContents
     uid: word!Word.BuildingBlockType.tableOfContents:member
@@ -265,7 +263,7 @@ fields:
     summary: |-
       Represents Table of Contents building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TableOfContents"'
   - name: tables
     uid: word!Word.BuildingBlockType.tables:member
@@ -273,7 +271,7 @@ fields:
     summary: |-
       Represents Tables building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tables"'
   - name: textBox
     uid: word!Word.BuildingBlockType.textBox:member
@@ -281,7 +279,7 @@ fields:
     summary: |-
       Represents Text Box building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TextBox"'
   - name: watermarks
     uid: word!Word.BuildingBlockType.watermarks:member
@@ -289,5 +287,5 @@ fields:
     summary: |-
       Represents Watermarks building block type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Watermarks"'

@@ -3,24 +3,14 @@ name: Word.RelativeHorizontalPosition
 uid: word!Word.RelativeHorizontalPosition:enum
 package: word!
 fullName: Word.RelativeHorizontalPosition
-summary: >-
-  Represents what the horizontal position of a shape is relative to. For more
-  information about margins, see [Change the margins in your Word
-  document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
-  -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents what the horizontal position of a shape is relative to. For more information about margins, see [Change the margins in your Word document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!-- -->.
+remarks: |-
+  \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
 
   await Word.run(async (context) => {
     // Changes the position of the first set of grouped shapes (including text boxes) found in the document body.
@@ -42,9 +32,8 @@ remarks: >-
 
     console.log("Changed the position of the first shape group.");
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -54,7 +43,7 @@ fields:
     summary: |-
       Relative to character.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Character"'
   - name: column
     uid: word!Word.RelativeHorizontalPosition.column:member
@@ -62,7 +51,7 @@ fields:
     summary: |-
       Relative to column.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Column"'
   - name: insideMargin
     uid: word!Word.RelativeHorizontalPosition.insideMargin:member
@@ -70,7 +59,7 @@ fields:
     summary: |-
       Relative to inside margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideMargin"'
   - name: leftMargin
     uid: word!Word.RelativeHorizontalPosition.leftMargin:member
@@ -78,7 +67,7 @@ fields:
     summary: |-
       Relative to left margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LeftMargin"'
   - name: margin
     uid: word!Word.RelativeHorizontalPosition.margin:member
@@ -86,7 +75,7 @@ fields:
     summary: |-
       Relative to margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Margin"'
   - name: outsideMargin
     uid: word!Word.RelativeHorizontalPosition.outsideMargin:member
@@ -94,7 +83,7 @@ fields:
     summary: |-
       Relative to outside margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutsideMargin"'
   - name: page
     uid: word!Word.RelativeHorizontalPosition.page:member
@@ -102,7 +91,7 @@ fields:
     summary: |-
       Relative to page.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Page"'
   - name: rightMargin
     uid: word!Word.RelativeHorizontalPosition.rightMargin:member
@@ -110,5 +99,5 @@ fields:
     summary: |-
       Relative to right margin.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RightMargin"'

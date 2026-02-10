@@ -3,11 +3,9 @@ name: Word.Interfaces.CanvasData
 uid: word!Word.Interfaces.CanvasData:interface
 package: word!
 fullName: Word.Interfaces.CanvasData
-summary: >-
-  An interface describing the data returned by calling `canvas.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `canvas.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

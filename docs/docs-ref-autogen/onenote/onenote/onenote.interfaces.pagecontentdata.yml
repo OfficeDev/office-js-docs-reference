@@ -3,11 +3,9 @@ name: OneNote.Interfaces.PageContentData
 uid: onenote!OneNote.Interfaces.PageContentData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PageContentData
-summary: >-
-  An interface describing the data returned by calling
-  `pageContent.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `pageContent.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the PageContent object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,14 +27,9 @@ properties:
     uid: onenote!OneNote.Interfaces.PageContentData#image:member
     package: onenote!
     fullName: image
-    summary: >-
-      Gets the Image in the PageContent object. Throws an exception if
-      PageContentType isn't Image.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    summary: Gets the Image in the PageContent object. Throws an exception if PageContentType isn't Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,14 +40,9 @@ properties:
     uid: onenote!OneNote.Interfaces.PageContentData#ink:member
     package: onenote!
     fullName: ink
-    summary: >-
-      Gets the ink in the PageContent object. Throws an exception if
-      PageContentType isn't Ink.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    summary: Gets the ink in the PageContent object. Throws an exception if PageContentType isn't Ink.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,11 +54,8 @@ properties:
     package: onenote!
     fullName: left
     summary: Gets or sets the left (X-axis) position of the PageContent object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,14 +66,9 @@ properties:
     uid: onenote!OneNote.Interfaces.PageContentData#outline:member
     package: onenote!
     fullName: outline
-    summary: >-
-      Gets the Outline in the PageContent object. Throws an exception if
-      PageContentType isn't Outline.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    summary: Gets the Outline in the PageContent object. Throws an exception if PageContentType isn't Outline.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,11 +80,8 @@ properties:
     package: onenote!
     fullName: top
     summary: Gets or sets the top (Y-axis) position of the PageContent object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,16 +93,11 @@ properties:
     package: onenote!
     fullName: type
     summary: Gets the type of the PageContent object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.PageContentType:enum" /> | "Outline" |
-          "Image" | "Ink" | "Other"
+        type: <xref uid="onenote!OneNote.PageContentType:enum" /> | "Outline" | "Image" | "Ink" | "Other"

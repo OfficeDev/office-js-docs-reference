@@ -4,10 +4,8 @@ uid: word!Word.CalendarTypeBidirectional:enum
 package: word!
 fullName: Word.CalendarTypeBidirectional
 summary: Specifies the type of bidirectional calendar to use.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Uses the Bidirectional calendar.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bidirectional"'
   - name: gregorian
     uid: word!Word.CalendarTypeBidirectional.gregorian:member
@@ -25,5 +23,5 @@ fields:
     summary: |-
       Uses the Gregorian calendar.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Gregorian"'

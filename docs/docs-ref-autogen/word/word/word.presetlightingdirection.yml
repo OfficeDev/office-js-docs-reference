@@ -3,13 +3,9 @@ name: Word.PresetLightingDirection
 uid: word!Word.PresetLightingDirection:enum
 package: word!
 fullName: Word.PresetLightingDirection
-summary: >-
-  Specifies the location of lighting on an extruded (three-dimensional) shape
-  relative to the shape.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies the location of lighting on an extruded (three-dimensional) shape relative to the shape.
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +15,7 @@ fields:
     summary: |-
       Represents lighting from the bottom.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
   - name: bottomLeft
     uid: word!Word.PresetLightingDirection.bottomLeft:member
@@ -27,7 +23,7 @@ fields:
     summary: |-
       Represents lighting from the bottom-left.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BottomLeft"'
   - name: bottomRight
     uid: word!Word.PresetLightingDirection.bottomRight:member
@@ -35,7 +31,7 @@ fields:
     summary: |-
       Represents lighting from the bottom-right.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BottomRight"'
   - name: left
     uid: word!Word.PresetLightingDirection.left:member
@@ -43,7 +39,7 @@ fields:
     summary: |-
       Represents lighting from the left.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
   - name: mixed
     uid: word!Word.PresetLightingDirection.mixed:member
@@ -51,7 +47,7 @@ fields:
     summary: |-
       Represents a mixed lighting direction.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: none
     uid: word!Word.PresetLightingDirection.none:member
@@ -59,7 +55,7 @@ fields:
     summary: |-
       Represents no lighting.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: right
     uid: word!Word.PresetLightingDirection.right:member
@@ -67,7 +63,7 @@ fields:
     summary: |-
       Represents lighting from the right.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'
   - name: top
     uid: word!Word.PresetLightingDirection.top:member
@@ -75,7 +71,7 @@ fields:
     summary: |-
       Represents lighting from the top.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'
   - name: topLeft
     uid: word!Word.PresetLightingDirection.topLeft:member
@@ -83,7 +79,7 @@ fields:
     summary: |-
       Represents lighting from the top-left.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TopLeft"'
   - name: topRight
     uid: word!Word.PresetLightingDirection.topRight:member
@@ -91,5 +87,5 @@ fields:
     summary: |-
       Represents lighting from the top-right.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TopRight"'

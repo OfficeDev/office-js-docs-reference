@@ -3,11 +3,9 @@ name: Word.Interfaces.XmlNodeUpdateData
 uid: word!Word.Interfaces.XmlNodeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.XmlNodeUpdateData
-summary: >-
-  An interface for updating data on the `XmlNode` object, for use in
-  `xmlNode.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `XmlNode` object, for use in `xmlNode.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.XmlNodeUpdateData#placeholderText:member
     package: word!
     fullName: placeholderText
-    summary: >-
-      Specifies the text displayed for this element if it contains no text. Only
-      applies to element nodes, not attribute nodes.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the text displayed for this element if it contains no text. Only applies to element nodes, not attribute nodes.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.XmlNodeUpdateData#text:member
     package: word!
     fullName: text
-    summary: >-
-      Specifies the text contained within the XML element. Returns an empty
-      string if the node type is `attribute`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the text contained within the XML element. Returns an empty string if the node type is `attribute`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,22 +3,14 @@ name: Word.ContentControlExitedEventArgs
 uid: word!Word.ContentControlExitedEventArgs:interface
 package: word!
 fullName: Word.ContentControlExitedEventArgs
-summary: >-
-  Provides information about the content control that raised the
-  `contentControlExited` event.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Provides information about the content control that raised the `contentControlExited` event.
+remarks: |-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
 
   await Word.run(async (context) => {
     const contentControls: Word.ContentControlCollection = context.document.contentControls;
@@ -40,19 +32,15 @@ remarks: >-
     }
   });
 
-
   ...
 
-
-  async function contentControlExited(event: Word.ContentControlExitedEventArgs)
-  {
+  async function contentControlExited(event: Word.ContentControlExitedEventArgs) {
     await Word.run(async (context) => {
       console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
     });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -62,37 +50,21 @@ properties:
     package: word!
     fullName: eventType
     summary: Specifies the event type. See `Word.EventType` for details.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        eventType: Word.EventType | "ContentControlDeleted" |
-        "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-        "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited"
-        | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" |
-        "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" |
-        "AnnotationRemoved" | "AnnotationPopupAction";
+      content: 'eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";'
       return:
-        type: >-
-          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" |
-          "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-          "ContentControlAdded" | "ContentControlEntered" |
-          "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" |
-          "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" |
-          "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
+        type: <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction"
   - name: ids
     uid: word!Word.ContentControlExitedEventArgs#ids:member
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,13 +75,9 @@ properties:
     uid: word!Word.ContentControlExitedEventArgs#source:member
     package: word!
     fullName: source
-    summary: >-
-      Specifies the source of the event. It can be local or remote (through
-      coauthoring).
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the source of the event. It can be local or remote (through coauthoring).
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

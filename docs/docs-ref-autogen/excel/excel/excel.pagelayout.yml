@@ -3,14 +3,9 @@ name: Excel.PageLayout
 uid: excel!Excel.PageLayout:class
 package: excel!
 fullName: Excel.PageLayout
-summary: >-
-  Represents layout and print settings that are not dependent on any
-  printer-specific implementation. These settings include margins, orientation,
-  page numbering, title rows, and print area.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents layout and print settings that are not dependent on any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,13 +14,9 @@ properties:
     uid: excel!Excel.PageLayout#alignMarginsHeaderFooter:member
     package: excel!
     fullName: alignMarginsHeaderFooter
-    summary: >-
-      Specifies whether Excel aligns the header and the footer with the margins
-      set in the page setup options.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies whether Excel aligns the header and the footer with the margins set in the page setup options.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,10 +28,8 @@ properties:
     package: excel!
     fullName: blackAndWhite
     summary: The worksheet's black and white print option.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,10 +41,8 @@ properties:
     package: excel!
     fullName: bottomMargin
     summary: The worksheet's bottom page margin to use for printing in points.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,22 +53,14 @@ properties:
     uid: excel!Excel.PageLayout#centerHorizontally:member
     package: excel!
     fullName: centerHorizontally
-    summary: >-
-      The worksheet's center horizontally flag. This flag determines whether the
-      worksheet will be centered horizontally when it's printed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
@@ -89,9 +68,8 @@ properties:
           farmSheet.pageLayout.centerVertically = true;
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,22 +80,14 @@ properties:
     uid: excel!Excel.PageLayout#centerVertically:member
     package: excel!
     fullName: centerVertically
-    summary: >-
-      The worksheet's center vertically flag. This flag determines whether the
-      worksheet will be centered vertically when it's printed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
@@ -125,9 +95,8 @@ properties:
           farmSheet.pageLayout.centerVertically = true;
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,11 +107,9 @@ properties:
     uid: excel!Excel.PageLayout#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,13 +120,9 @@ properties:
     uid: excel!Excel.PageLayout#draftMode:member
     package: excel!
     fullName: draftMode
-    summary: >-
-      The worksheet's draft mode option. If `true`<!-- -->, the sheet will be
-      printed without graphics.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The worksheet's draft mode option. If `true`<!-- -->, the sheet will be printed without graphics.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,13 +133,9 @@ properties:
     uid: excel!Excel.PageLayout#firstPageNumber:member
     package: excel!
     fullName: firstPageNumber
-    summary: >-
-      The worksheet's first page number to print. A `null` value represents
-      "auto" page numbering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The worksheet's first page number to print. A `null` value represents "auto" page numbering.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,10 +147,8 @@ properties:
     package: excel!
     fullName: footerMargin
     summary: The worksheet's footer margin, in points, for use when printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,10 +160,8 @@ properties:
     package: excel!
     fullName: headerMargin
     summary: The worksheet's header margin, in points, for use when printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,10 +173,8 @@ properties:
     package: excel!
     fullName: headersFooters
     summary: Header and footer configuration for the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -233,10 +186,8 @@ properties:
     package: excel!
     fullName: leftMargin
     summary: The worksheet's left margin, in points, for use when printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -248,117 +199,73 @@ properties:
     package: excel!
     fullName: orientation
     summary: The worksheet's orientation of the page.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
           farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'orientation: Excel.PageOrientation | "Portrait" | "Landscape";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PageOrientation:enum" /> | "Portrait" |
-          "Landscape"
+        type: <xref uid="excel!Excel.PageOrientation:enum" /> | "Portrait" | "Landscape"
   - name: paperSize
     uid: excel!Excel.PageLayout#paperSize:member
     package: excel!
     fullName: paperSize
     summary: The worksheet's paper size of the page.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        paperSize: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" |
-        "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small"
-        | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17"
-        | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" |
-        "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
-        "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" |
-        "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" |
-        "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" |
-        "FanfoldStdGerman" | "FanfoldLegalGerman";
+      content: 'paperSize: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PaperType:enum" /> | "Letter" | "LetterSmall" |
-          "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
-          "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" |
-          "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" |
-          "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" |
-          "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" |
-          "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
-          "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" |
-          "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
-          "FanfoldLegalGerman"
+        type: <xref uid="excel!Excel.PaperType:enum" /> | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"
   - name: printComments
     uid: excel!Excel.PageLayout#printComments:member
     package: excel!
     fullName: printComments
     summary: Specifies if the worksheet's comments should be displayed when printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        printComments: Excel.PrintComments | "NoComments" | "EndSheet" |
-        "InPlace";
+      content: 'printComments: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PrintComments:enum" /> | "NoComments" |
-          "EndSheet" | "InPlace"
+        type: <xref uid="excel!Excel.PrintComments:enum" /> | "NoComments" | "EndSheet" | "InPlace"
   - name: printErrors
     uid: excel!Excel.PageLayout#printErrors:member
     package: excel!
     fullName: printErrors
     summary: The worksheet's print errors option.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        printErrors: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" |
-        "NotAvailable";
+      content: 'printErrors: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PrintErrorType:enum" /> | "AsDisplayed" |
-          "Blank" | "Dash" | "NotAvailable"
+        type: <xref uid="excel!Excel.PrintErrorType:enum" /> | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
   - name: printGridlines
     uid: excel!Excel.PageLayout#printGridlines:member
     package: excel!
     fullName: printGridlines
     summary: Specifies if the worksheet's gridlines will be printed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,10 +277,8 @@ properties:
     package: excel!
     fullName: printHeadings
     summary: Specifies if the worksheet's headings will be printed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -384,35 +289,22 @@ properties:
     uid: excel!Excel.PageLayout#printOrder:member
     package: excel!
     fullName: printOrder
-    summary: >-
-      The worksheet's page print order option. This specifies the order to use
-      for processing the page number printed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The worksheet's page print order option. This specifies the order to use for processing the page number printed.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PrintOrder:enum" /> | "DownThenOver" |
-          "OverThenDown"
+        type: <xref uid="excel!Excel.PrintOrder:enum" /> | "DownThenOver" | "OverThenDown"
   - name: printQuality
     uid: excel!Excel.PageLayout#printQuality:member
     package: excel!
     fullName: printQuality
-    summary: >-
-      Specifies a two-element array that contains both horizontal and vertical
-      print quality values. The first element is the horizontal print quality,
-      and the second element is the vertical print quality. Some printers may
-      not support vertical print quality and the supported values may vary by
-      printer.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies a two-element array that contains both horizontal and vertical print quality values. The first element is the horizontal print quality, and the second element is the vertical print quality. Some printers may not support vertical print quality and the supported values may vary by printer.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -424,10 +316,8 @@ properties:
     package: excel!
     fullName: rightMargin
     summary: The worksheet's right margin, in points, for use when printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -439,10 +329,8 @@ properties:
     package: excel!
     fullName: topMargin
     summary: The worksheet's top margin, in points, for use when printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -453,32 +341,22 @@ properties:
     uid: excel!Excel.PageLayout#zoom:member
     package: excel!
     fullName: zoom
-    summary: >-
-      The worksheet's print zoom options. The `PageLayoutZoomOptions` object
-      must be set as a JSON object (use `x.zoom = {...}` instead of
-      `x.zoom.scale = ...`<!-- -->).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`<!-- -->).
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
           farmSheet.pageLayout.zoom = { scale: 200 };
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -490,14 +368,9 @@ methods:
     uid: excel!Excel.PageLayout#getPrintArea:member(1)
     package: excel!
     fullName: getPrintArea()
-    summary: >-
-      Gets the `RangeAreas` object, comprising one or more rectangular ranges,
-      that represents the print area for the worksheet. If there is no print
-      area, an `ItemNotFound` error will be thrown.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, an `ItemNotFound` error will be thrown.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -509,18 +382,9 @@ methods:
     uid: excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)
     package: excel!
     fullName: getPrintAreaOrNullObject()
-    summary: >-
-      Gets the `RangeAreas` object, comprising one or more rectangular ranges,
-      that represents the print area for the worksheet. If there is no print
-      area, then this method returns an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -533,10 +397,8 @@ methods:
     package: excel!
     fullName: getPrintTitleColumns()
     summary: Gets the range object representing the title columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -548,16 +410,9 @@ methods:
     uid: excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)
     package: excel!
     fullName: getPrintTitleColumnsOrNullObject()
-    summary: >-
-      Gets the range object representing the title columns. If not set, then
-      this method returns an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the range object representing the title columns. If not set, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -570,10 +425,8 @@ methods:
     package: excel!
     fullName: getPrintTitleRows()
     summary: Gets the range object representing the title rows.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -585,16 +438,9 @@ methods:
     uid: excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)
     package: excel!
     fullName: getPrintTitleRowsOrNullObject()
-    summary: >-
-      Gets the range object representing the title rows. If not set, then this
-      method returns an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the range object representing the title rows. If not set, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -606,23 +452,17 @@ methods:
     uid: excel!Excel.PageLayout#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.PageLayoutLoadOptions):
-        Excel.PageLayout;
+      content: 'load(options?: Excel.Interfaces.PageLayoutLoadOptions): Excel.PageLayout;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.PageLayoutLoadOptions:interface"
-            />
+          type: <xref uid="excel!Excel.Interfaces.PageLayoutLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.PageLayout:class" />
         description: ''
@@ -630,20 +470,16 @@ methods:
     uid: excel!Excel.PageLayout#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PageLayout;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.PageLayout:class" />
@@ -652,11 +488,9 @@ methods:
     uid: excel!Excel.PageLayout#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -667,11 +501,7 @@ methods:
                 }): Excel.PageLayout;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -684,29 +514,19 @@ methods:
     uid: excel!Excel.PageLayout#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.PageLayoutUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.PageLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="excel!Excel.Interfaces.PageLayoutUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -715,11 +535,9 @@ methods:
     uid: excel!Excel.PageLayout#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -736,28 +554,21 @@ methods:
     package: excel!
     fullName: setPrintArea(printArea)
     summary: Sets the worksheet's print area.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
           farmSheet.pageLayout.setPrintArea("A1:D41");
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -765,9 +576,7 @@ methods:
       parameters:
         - id: printArea
           description: The range or ranges of the content to print.
-          type: >-
-            <xref uid="excel!Excel.Range:class" /> | <xref
-            uid="excel!Excel.RangeAreas:class" /> | string
+          type: <xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string
       return:
         type: void
         description: ''
@@ -776,16 +585,12 @@ methods:
     package: excel!
     fullName: setPrintMargins(unit, marginOptions)
     summary: Sets the worksheet's page margins with units.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setPrintMargins(unit: Excel.PrintMarginUnit, marginOptions:
-        Excel.PageLayoutMarginOptions): void;
+      content: 'setPrintMargins(unit: Excel.PrintMarginUnit, marginOptions: Excel.PageLayoutMarginOptions): void;'
       parameters:
         - id: unit
           description: Measurement unit for the margins provided.
@@ -801,16 +606,12 @@ methods:
     package: excel!
     fullName: setPrintMargins(unit, marginOptions)
     summary: Sets the worksheet's page margins with units.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setPrintMargins(unit: "Points" | "Inches" | "Centimeters",
-        marginOptions: Excel.PageLayoutMarginOptions): void;
+      content: 'setPrintMargins(unit: "Points" | "Inches" | "Centimeters", marginOptions: Excel.PageLayoutMarginOptions): void;'
       parameters:
         - id: unit
           description: Measurement unit for the margins provided.
@@ -825,22 +626,16 @@ methods:
     uid: excel!Excel.PageLayout#setPrintTitleColumns:member(1)
     package: excel!
     fullName: setPrintTitleColumns(printTitleColumns)
-    summary: >-
-      Sets the columns that contain the cells to be repeated at the left of each
-      page of the worksheet for printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Sets the columns that contain the cells to be repeated at the left of each page of the worksheet for printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
       parameters:
         - id: printTitleColumns
-          description: >-
-            The columns to be repeated to the left of each page. The range must
-            span the entire column to be valid.
+          description: The columns to be repeated to the left of each page. The range must span the entire column to be valid.
           type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: void
@@ -849,40 +644,29 @@ methods:
     uid: excel!Excel.PageLayout#setPrintTitleRows:member(1)
     package: excel!
     fullName: setPrintTitleRows(printTitleRows)
-    summary: >-
-      Sets the rows that contain the cells to be repeated at the top of each
-      page of the worksheet for printing.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Sets the rows that contain the cells to be repeated at the top of each page of the worksheet for printing.
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
       await Excel.run(async (context) => {
           const farmSheet = context.workbook.worksheets.getItem("Print");
           farmSheet.pageLayout.setPrintTitleRows("$1:$1");
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
       parameters:
         - id: printTitleRows
-          description: >-
-            The rows to be repeated at the top of each page. The range must span
-            the entire row to be valid.
+          description: The rows to be repeated at the top of each page. The range must span the entire row to be valid.
           type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: void
@@ -891,16 +675,9 @@ methods:
     uid: excel!Excel.PageLayout#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.PageLayout`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.PageLayoutData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.PageLayout` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PageLayoutData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

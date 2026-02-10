@@ -3,16 +3,12 @@ name: Excel.LinkedEntityDataDomainAddedEventArgs
 uid: excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface
 package: excel!
 fullName: Excel.LinkedEntityDataDomainAddedEventArgs
-summary: >-
-  Provides information about the identity of the linked entity data domain that
-  was just added to the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Provides information about the identity of the linked entity data domain that was just added to the workbook.
+remarks: |-
+  \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   This interface isn't supported in Excel on the web.
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,19 +17,12 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainAddedEventArgs#id:member
     package: excel!
     fullName: id
-    summary: >-
-      Gets the ID of the linked entity data domain that was just added to the
-      workbook. This ID is defined by Office Add-ins. This ID is not applicable
-      to linked entity data domains defined by service data providers, such as
-      Bing or Power BI.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the ID of the linked entity data domain that was just added to the workbook. This ID is defined by Office Add-ins. This ID is not applicable to linked entity data domains defined by service data providers, such as Bing or Power BI.
+    remarks: |-
+      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,17 +33,12 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainAddedEventArgs#serviceId:member
     package: excel!
     fullName: serviceId
-    summary: >-
-      Gets the service ID of the linked entity data domain that was just added
-      to the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the service ID of the linked entity data domain that was just added to the workbook.
+    remarks: |-
+      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,14 +50,11 @@ properties:
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,14 +66,11 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       This property isn't supported in Excel on the web.
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

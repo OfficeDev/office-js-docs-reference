@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.TableRowUpdateData
 uid: powerpoint!PowerPoint.Interfaces.TableRowUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableRowUpdateData
-summary: >-
-  An interface for updating data on the `TableRow` object, for use in
-  `tableRow.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,15 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableRowUpdateData#height:member
     package: powerpoint!
     fullName: height
-    summary: >-
-      Specifies the height of the row in points. If the set row height is less
-      than the minimum height, the row height will be increased to the minimum
-      height.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

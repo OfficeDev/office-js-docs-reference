@@ -3,25 +3,16 @@ name: Word.EventSource
 uid: word!Word.EventSource:enum
 package: word!
 fullName: Word.EventSource
-summary: >-
-  An enum that specifies an event's source. It can be local or remote (through
-  coauthoring).
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: An enum that specifies an event's source. It can be local or remote (through coauthoring).
+remarks: |-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
 
   // Registers event handlers.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     body.track();
@@ -37,9 +28,7 @@ remarks: >-
     console.log("Event handlers registered.");
   });
 
-
   ...
-
 
   async function onEventHandler(event: Word.CommentEventArgs) {
     // Handler for all events except onCommentChanged.
@@ -47,9 +36,8 @@ remarks: >-
       console.log(`${event.type} event detected. Event source: ${event.source}. Comment info:`, event.commentDetails);
     });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -59,7 +47,7 @@ fields:
     summary: |-
       Local source.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Local"'
   - name: remote
     uid: word!Word.EventSource.remote:member
@@ -67,5 +55,5 @@ fields:
     summary: |-
       Remote source.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Remote"'

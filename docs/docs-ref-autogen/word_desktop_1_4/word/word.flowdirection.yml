@@ -4,10 +4,8 @@ uid: word!Word.FlowDirection:enum
 package: word!
 fullName: Word.FlowDirection
 summary: Specifies the direction in which text flows from one text column to the next.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Text flows from left to right.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.FlowDirection.rightToLeft:member
@@ -25,5 +23,5 @@ fields:
     summary: |-
       Text flows from right to left.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RightToLeft"'

@@ -3,13 +3,9 @@ name: Word.DocumentPrintOutOptions
 uid: word!Word.DocumentPrintOutOptions:interface
 package: word!
 fullName: Word.DocumentPrintOutOptions
-summary: >-
-  Provides configuration options for the
-  [Document.printOut](xref:word!Word.Document:class) method.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Provides configuration options for the [Document.printOut](xref:word!Word.Document:class) method.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,14 +14,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#activePrinterMacGX:member
     package: word!
     fullName: activePrinterMacGX
-    summary: >-
-      If provided, specifies the printer name. The default value is an empty
-      string. This argument is available only in Microsoft Office Macintosh
-      Edition.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the printer name. The default value is an empty string. This argument is available only in Microsoft Office Macintosh Edition.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -36,13 +27,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#append:member
     package: word!
     fullName: append
-    summary: >-
-      If provided, specifies whether to append to an existing file. The default
-      value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to append to an existing file. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -53,13 +40,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#background:member
     package: word!
     fullName: background
-    summary: >-
-      If provided, specifies whether to print in the background. The default
-      value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to print in the background. The default value is `true`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -70,13 +53,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#collate:member
     package: word!
     fullName: collate
-    summary: >-
-      If provided, specifies whether to collate pages. The default value is
-      `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to collate pages. The default value is `true`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -87,13 +66,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#copies:member
     package: word!
     fullName: copies
-    summary: >-
-      If provided, specifies the number of copies to print. The default value is
-      `1`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the number of copies to print. The default value is `1`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -104,13 +79,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#from:member
     package: word!
     fullName: from
-    summary: >-
-      If provided, specifies the starting page number. The default value is
-      `1`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the starting page number. The default value is `1`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -121,36 +92,22 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#item:member
     package: word!
     fullName: item
-    summary: >-
-      If provided, specifies the item to print. The default value is
-      `documentContent`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the item to print. The default value is `documentContent`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        item?: Word.PrintOutItem | "DocumentContent" | "Properties" | "Comments"
-        | "Markup" | "Styles" | "AutoTextEntries" | "KeyAssignments" |
-        "Envelope" | "DocumentWithMarkup";
+      content: 'item?: Word.PrintOutItem | "DocumentContent" | "Properties" | "Comments" | "Markup" | "Styles" | "AutoTextEntries" | "KeyAssignments" | "Envelope" | "DocumentWithMarkup";'
       return:
-        type: >-
-          <xref uid="word!Word.PrintOutItem:enum" /> | "DocumentContent" |
-          "Properties" | "Comments" | "Markup" | "Styles" | "AutoTextEntries" |
-          "KeyAssignments" | "Envelope" | "DocumentWithMarkup"
+        type: <xref uid="word!Word.PrintOutItem:enum" /> | "DocumentContent" | "Properties" | "Comments" | "Markup" | "Styles" | "AutoTextEntries" | "KeyAssignments" | "Envelope" | "DocumentWithMarkup"
   - name: manualDuplexPrint
     uid: word!Word.DocumentPrintOutOptions#manualDuplexPrint:member
     package: word!
     fullName: manualDuplexPrint
-    summary: >-
-      If provided, specifies whether to manually duplex print. The default value
-      is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to manually duplex print. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -161,13 +118,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#outputFileName:member
     package: word!
     fullName: outputFileName
-    summary: >-
-      If provided, specifies the name of the output file. The default value is
-      an empty string.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the name of the output file. The default value is an empty string.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -178,13 +131,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#pages:member
     package: word!
     fullName: pages
-    summary: >-
-      If provided, specifies specific pages to print. The default value is an
-      empty string.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies specific pages to print. The default value is an empty string.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -195,32 +144,22 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#pageType:member
     package: word!
     fullName: pageType
-    summary: >-
-      If provided, specifies the page order. The default value is `allPages`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the page order. The default value is `allPages`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'pageType?: Word.PrintOutPages | "All" | "OddOnly" | "EvenOnly";'
       return:
-        type: >-
-          <xref uid="word!Word.PrintOutPages:enum" /> | "All" | "OddOnly" |
-          "EvenOnly"
+        type: <xref uid="word!Word.PrintOutPages:enum" /> | "All" | "OddOnly" | "EvenOnly"
   - name: printToFile
     uid: word!Word.DocumentPrintOutOptions#printToFile:member
     package: word!
     fullName: printToFile
-    summary: >-
-      If provided, specifies whether to print to file. The default value is
-      `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to print to file. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -231,13 +170,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#printZoomColumn:member
     package: word!
     fullName: printZoomColumn
-    summary: >-
-      If provided, specifies the zoom column setting. The default value is
-      `1`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the zoom column setting. The default value is `1`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -248,14 +183,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#printZoomPaperHeight:member
     package: word!
     fullName: printZoomPaperHeight
-    summary: >-
-      If provided, specifies the paper height for printing in twips (20 twips =
-      1 point; 72 points = 1 inch). The default value is `0` (use original
-      height).
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the paper height for printing in twips (20 twips = 1 point; 72 points = 1 inch). The default value is `0` (use original height).
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -266,13 +196,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#printZoomPaperWidth:member
     package: word!
     fullName: printZoomPaperWidth
-    summary: >-
-      If provided, specifies the paper width for printing in twips (20 twips = 1
-      point; 72 points = 1 inch). The default value is `0` (use original width).
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the paper width for printing in twips (20 twips = 1 point; 72 points = 1 inch). The default value is `0` (use original width).
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -283,13 +209,9 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#printZoomRow:member
     package: word!
     fullName: printZoomRow
-    summary: >-
-      If provided, specifies the zoom row setting. The default value is `1`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the zoom row setting. The default value is `1`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -300,34 +222,22 @@ properties:
     uid: word!Word.DocumentPrintOutOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      If provided, specifies the range to print. The default value is
-      `allDocument`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the range to print. The default value is `allDocument`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        range?: Word.PrintOutRange | "AllDocument" | "Selection" | "CurrentPage"
-        | "FromTo" | "RangeOfPages";
+      content: 'range?: Word.PrintOutRange | "AllDocument" | "Selection" | "CurrentPage" | "FromTo" | "RangeOfPages";'
       return:
-        type: >-
-          <xref uid="word!Word.PrintOutRange:enum" /> | "AllDocument" |
-          "Selection" | "CurrentPage" | "FromTo" | "RangeOfPages"
+        type: <xref uid="word!Word.PrintOutRange:enum" /> | "AllDocument" | "Selection" | "CurrentPage" | "FromTo" | "RangeOfPages"
   - name: to
     uid: word!Word.DocumentPrintOutOptions#to:member
     package: word!
     fullName: to
-    summary: >-
-      If provided, specifies the ending page number. The default value is the
-      last page of the document.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the ending page number. The default value is the last page of the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -4,10 +4,8 @@ uid: word!Word.NumberType:enum
 package: word!
 fullName: Word.NumberType
 summary: Specifies the type of numbers in a list.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,26 +15,21 @@ fields:
     summary: |-
       Default value for all other cases.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AllNumbers"'
   - name: listNum
     uid: word!Word.NumberType.listNum:member
     package: word!
-    summary: >-
-      Default value for [ListNum
-      fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)<!--
-      -->.
+    summary: |-
+      Default value for [ListNum fields](https://support.microsoft.com/office/557541b1-abb2-4959-a9f2-401639c8ff82)<!-- -->.
 
-
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ListNum"'
   - name: paragraph
     uid: word!Word.NumberType.paragraph:member
     package: word!
-    summary: >-
-      Preset numbers you can add to paragraphs by selecting a template in the
-      **Bullets and Numbering** dialog box.
+    summary: |-
+      Preset numbers you can add to paragraphs by selecting a template in the \*\*Bullets and Numbering\*\* dialog box.
 
-
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraph"'

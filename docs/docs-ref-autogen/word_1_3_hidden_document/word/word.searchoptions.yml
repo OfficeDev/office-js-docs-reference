@@ -3,26 +3,15 @@ name: Word.SearchOptions
 uid: word!Word.SearchOptions:class
 package: word!
 fullName: Word.SearchOptions
-summary: >-
-  Specifies the options to be included in a search operation. To learn more
-  about how to use search options in the Word JavaScript APIs, read [Use search
-  options to find text in your Word
-  add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!--
-  -->.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies the options to be included in a search operation. To learn more about how to use search options in the Word JavaScript APIs, read [Use search options to find text in your Word add-in](https://learn.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
   // Search using a wildcard
-
   // Run a batch operation against the Word object model.
-
   await Word.run(async (context) => {
       
       // Queue a command to search the document with a wildcard
@@ -48,9 +37,8 @@ remarks: >-
       // and return a promise to indicate task completion.
       await context.sync();
   }); 
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -59,11 +47,9 @@ properties:
     uid: word!Word.SearchOptions#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,15 +60,9 @@ properties:
     uid: word!Word.SearchOptions#ignorePunct:member
     package: word!
     fullName: ignorePunct
-    summary: >-
-      If provided, specifies whether to ignore all punctuation characters
-      between words. The default is `false`<!-- -->. Corresponds to the \_Ignore
-      punctuation characters\_ check box in the **Find and Replace** dialog
-      box.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to ignore all punctuation characters between words. The default is `false`<!-- -->. Corresponds to the \_Ignore punctuation characters\_ check box in the \*\*Find and Replace\*\* dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,14 +73,9 @@ properties:
     uid: word!Word.SearchOptions#ignoreSpace:member
     package: word!
     fullName: ignoreSpace
-    summary: >-
-      If provided, specifies whether to ignore all whitespace between words. The
-      default is `false`<!-- -->. Corresponds to the \_Ignore white-space
-      characters\_ check box in the **Find and Replace** dialog box.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to ignore all whitespace between words. The default is `false`<!-- -->. Corresponds to the \_Ignore white-space characters\_ check box in the \*\*Find and Replace\*\* dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,14 +86,9 @@ properties:
     uid: word!Word.SearchOptions#matchCase:member
     package: word!
     fullName: matchCase
-    summary: >-
-      If provided, specifies whether to perform a case sensitive search. The
-      default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in
-      the **Find and Replace** dialog box.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to perform a case sensitive search. The default is `false`<!-- -->. Corresponds to the \_Match case\_ check box in the \*\*Find and Replace\*\* dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,14 +99,9 @@ properties:
     uid: word!Word.SearchOptions#matchPrefix:member
     package: word!
     fullName: matchPrefix
-    summary: >-
-      If provided, specifies whether to match words that begin with the search
-      string. The default is `false`<!-- -->. Corresponds to the \_Match
-      prefix\_ check box in the **Find and Replace** dialog box.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to match words that begin with the search string. The default is `false`<!-- -->. Corresponds to the \_Match prefix\_ check box in the \*\*Find and Replace\*\* dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,14 +112,9 @@ properties:
     uid: word!Word.SearchOptions#matchSuffix:member
     package: word!
     fullName: matchSuffix
-    summary: >-
-      If provided, specifies whether to match words that end with the search
-      string. The default is `false`<!-- -->. Corresponds to the \_Match
-      suffix\_ check box in the **Find and Replace** dialog box.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to match words that end with the search string. The default is `false`<!-- -->. Corresponds to the \_Match suffix\_ check box in the \*\*Find and Replace\*\* dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,15 +125,9 @@ properties:
     uid: word!Word.SearchOptions#matchWholeWord:member
     package: word!
     fullName: matchWholeWord
-    summary: >-
-      If provided, specifies whether to find only entire words, not text that's
-      part of a larger word. The default is `false`<!-- -->. Corresponds to the
-      \_Find whole words only\_ check box in the **Find and Replace** dialog
-      box.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to find only entire words, not text that's part of a larger word. The default is `false`<!-- -->. Corresponds to the \_Find whole words only\_ check box in the \*\*Find and Replace\*\* dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,14 +138,9 @@ properties:
     uid: word!Word.SearchOptions#matchWildcards:member
     package: word!
     fullName: matchWildcards
-    summary: >-
-      If provided, specifies whether the search will be performed using special
-      search operators. The default is `false`<!-- -->. Corresponds to the \_Use
-      wildcards\_ check box in the **Find and Replace** dialog box.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether the search will be performed using special search operators. The default is `false`<!-- -->. Corresponds to the \_Use wildcards\_ check box in the \*\*Find and Replace\*\* dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,23 +152,17 @@ methods:
     uid: word!Word.SearchOptions#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.SearchOptionsLoadOptions):
-        Word.SearchOptions;
+      content: 'load(options?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="word!Word.Interfaces.SearchOptionsLoadOptions:interface"
-            />
+          type: <xref uid="word!Word.Interfaces.SearchOptionsLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.SearchOptions:class" />
         description: |-
@@ -341,20 +284,16 @@ methods:
     uid: word!Word.SearchOptions#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.SearchOptions;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.SearchOptions:class" />
@@ -363,11 +302,9 @@ methods:
     uid: word!Word.SearchOptions#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -378,11 +315,7 @@ methods:
                 }): Word.SearchOptions;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -397,13 +330,11 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of the `Word.SearchOptions` object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        static newObject(context: OfficeExtension.ClientRequestContext):
-        Word.SearchOptions;
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;'
       parameters:
         - id: context
           description: ''
@@ -415,31 +346,19 @@ methods:
     uid: word!Word.SearchOptions#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.SearchOptionsUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.SearchOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="word!Word.Interfaces.SearchOptionsUpdateData:interface"
-            />
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+          type: <xref uid="word!Word.Interfaces.SearchOptionsUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -448,11 +367,9 @@ methods:
     uid: word!Word.SearchOptions#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -468,17 +385,9 @@ methods:
     uid: word!Word.SearchOptions#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.SearchOptions`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.SearchOptionsData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.SearchOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

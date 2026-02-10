@@ -4,10 +4,8 @@ uid: word!Word.HeadingSeparator:enum
 package: word!
 fullName: Word.HeadingSeparator
 summary: Specifies the type of separator to use for headings.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       A blank line is used as a separator for headings.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BlankLine"'
   - name: letter
     uid: word!Word.HeadingSeparator.letter:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       A single letter is used as a separator for headings.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Letter"'
   - name: letterFull
     uid: word!Word.HeadingSeparator.letterFull:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       A full-width letter is used as a separator for headings.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LetterFull"'
   - name: letterLow
     uid: word!Word.HeadingSeparator.letterLow:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       A lowercase letter is used as a separator for headings.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LetterLow"'
   - name: none
     uid: word!Word.HeadingSeparator.none:member
@@ -49,5 +47,5 @@ fields:
     summary: |-
       No separator is used for headings.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'

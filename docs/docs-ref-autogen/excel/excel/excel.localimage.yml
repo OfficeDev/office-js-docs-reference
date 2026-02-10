@@ -4,10 +4,8 @@ uid: excel!Excel.LocalImage:class
 package: excel!
 fullName: Excel.LocalImage
 summary: Provides information about the local image.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -16,11 +14,9 @@ properties:
     uid: excel!Excel.LocalImage#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -32,26 +28,16 @@ methods:
     uid: excel!Excel.LocalImage#getBase64EncodedImageData:member(1)
     package: excel!
     fullName: getBase64EncodedImageData(cacheUid)
-    summary: >-
-      Gets the Base64-encoded image data stored in the shared image cache with
-      the cache unique identifier (UID).
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the Base64-encoded image data stored in the shared image cache with the cache unique identifier (UID).
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        getBase64EncodedImageData(cacheUid: string):
-        OfficeExtension.ClientResult<string>;
+      content: 'getBase64EncodedImageData(cacheUid: string): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: cacheUid
-          description: >-
-            Represents the unique identifier (UID) of the image as it appears in
-            the cache. The cache UID can be obtained from JSON representation of
-            the values in the cell.
+          description: Represents the unique identifier (UID) of the image as it appears in the cache. The cache UID can be obtained from JSON representation of the values in the cell.
           type: string
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
@@ -60,16 +46,9 @@ methods:
     uid: excel!Excel.LocalImage#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.LocalImage`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.LocalImageData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.LocalImage` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LocalImageData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

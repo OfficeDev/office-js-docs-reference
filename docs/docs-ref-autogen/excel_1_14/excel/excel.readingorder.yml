@@ -4,19 +4,13 @@ uid: excel!Excel.ReadingOrder:enum
 package: excel!
 fullName: Excel.ReadingOrder
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
   await Excel.run(async (context) => {
       let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
@@ -33,23 +27,18 @@ remarks: >-
       console.log("Shrink to fit: " + style.shrinkToFit);
       console.log("Style locked: " + style.locked);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: context
     uid: excel!Excel.ReadingOrder.context:member
     package: excel!
-    summary: >-
-      Reading order is determined by the language of the first character
-      entered. If a right-to-left language character is entered first, reading
-      order is right to left. If a left-to-right language character is entered
-      first, reading order is left to right.
+    summary: |-
+      Reading order is determined by the language of the first character entered. If a right-to-left language character is entered first, reading order is right to left. If a left-to-right language character is entered first, reading order is left to right.
 
-
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Context"'
   - name: leftToRight
     uid: excel!Excel.ReadingOrder.leftToRight:member
@@ -57,7 +46,7 @@ fields:
     summary: |-
       Left to right reading order
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: excel!Excel.ReadingOrder.rightToLeft:member
@@ -65,5 +54,5 @@ fields:
     summary: |-
       Right to left reading order
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RightToLeft"'

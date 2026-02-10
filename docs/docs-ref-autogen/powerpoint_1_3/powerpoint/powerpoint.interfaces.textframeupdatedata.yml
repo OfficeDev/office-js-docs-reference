@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.TextFrameUpdateData
 uid: powerpoint!PowerPoint.Interfaces.TextFrameUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TextFrameUpdateData
-summary: >-
-  An interface for updating data on the `TextFrame` object, for use in
-  `textFrame.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TextFrame` object, for use in `textFrame.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

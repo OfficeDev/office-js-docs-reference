@@ -4,10 +4,8 @@ uid: word!Word.PaperSize:enum
 package: word!
 fullName: Word.PaperSize
 summary: Specifies a paper size.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       A3 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"A3"'
   - name: a4
     uid: word!Word.PaperSize.a4:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       A4 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"A4"'
   - name: a4Small
     uid: word!Word.PaperSize.a4Small:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Small A4 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"A4Small"'
   - name: a5
     uid: word!Word.PaperSize.a5:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       A5 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"A5"'
   - name: b4
     uid: word!Word.PaperSize.b4:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       B4 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"B4"'
   - name: b5
     uid: word!Word.PaperSize.b5:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       B5 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"B5"'
   - name: csheet
     uid: word!Word.PaperSize.csheet:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       C-sheet paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CSheet"'
   - name: custom
     uid: word!Word.PaperSize.custom:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Custom paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Custom"'
   - name: dsheet
     uid: word!Word.PaperSize.dsheet:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       D-sheet paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DSheet"'
   - name: envelope10
     uid: word!Word.PaperSize.envelope10:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Envelope size 10.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Envelope10"'
   - name: envelope11
     uid: word!Word.PaperSize.envelope11:member
@@ -97,7 +95,7 @@ fields:
     summary: |-
       Envelope size 11.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Envelope11"'
   - name: envelope12
     uid: word!Word.PaperSize.envelope12:member
@@ -105,7 +103,7 @@ fields:
     summary: |-
       Envelope size 12.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Envelope12"'
   - name: envelope14
     uid: word!Word.PaperSize.envelope14:member
@@ -113,7 +111,7 @@ fields:
     summary: |-
       Envelope size 14.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Envelope14"'
   - name: envelope9
     uid: word!Word.PaperSize.envelope9:member
@@ -121,7 +119,7 @@ fields:
     summary: |-
       Envelope size 9.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Envelope9"'
   - name: envelopeB4
     uid: word!Word.PaperSize.envelopeB4:member
@@ -129,7 +127,7 @@ fields:
     summary: |-
       Envelope B4 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeB4"'
   - name: envelopeB5
     uid: word!Word.PaperSize.envelopeB5:member
@@ -137,7 +135,7 @@ fields:
     summary: |-
       Envelope B5 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeB5"'
   - name: envelopeB6
     uid: word!Word.PaperSize.envelopeB6:member
@@ -145,7 +143,7 @@ fields:
     summary: |-
       Envelope B6 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeB6"'
   - name: envelopeC3
     uid: word!Word.PaperSize.envelopeC3:member
@@ -153,7 +151,7 @@ fields:
     summary: |-
       Envelope C3 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeC3"'
   - name: envelopeC4
     uid: word!Word.PaperSize.envelopeC4:member
@@ -161,7 +159,7 @@ fields:
     summary: |-
       Envelope C4 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeC4"'
   - name: envelopeC5
     uid: word!Word.PaperSize.envelopeC5:member
@@ -169,7 +167,7 @@ fields:
     summary: |-
       Envelope C5 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeC5"'
   - name: envelopeC6
     uid: word!Word.PaperSize.envelopeC6:member
@@ -177,7 +175,7 @@ fields:
     summary: |-
       Envelope C6 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeC6"'
   - name: envelopeC65
     uid: word!Word.PaperSize.envelopeC65:member
@@ -185,7 +183,7 @@ fields:
     summary: |-
       Envelope C65 size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeC65"'
   - name: envelopeDL
     uid: word!Word.PaperSize.envelopeDL:member
@@ -193,7 +191,7 @@ fields:
     summary: |-
       Envelope DL size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeDL"'
   - name: envelopeItaly
     uid: word!Word.PaperSize.envelopeItaly:member
@@ -201,7 +199,7 @@ fields:
     summary: |-
       Envelope Italy size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeItaly"'
   - name: envelopeMonarch
     uid: word!Word.PaperSize.envelopeMonarch:member
@@ -209,7 +207,7 @@ fields:
     summary: |-
       Envelope Monarch size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopeMonarch"'
   - name: envelopePersonal
     uid: word!Word.PaperSize.envelopePersonal:member
@@ -217,7 +215,7 @@ fields:
     summary: |-
       Envelope Personal size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnvelopePersonal"'
   - name: esheet
     uid: word!Word.PaperSize.esheet:member
@@ -225,7 +223,7 @@ fields:
     summary: |-
       E-sheet paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ESheet"'
   - name: executive
     uid: word!Word.PaperSize.executive:member
@@ -233,7 +231,7 @@ fields:
     summary: |-
       Executive paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Executive"'
   - name: fanfoldLegalGerman
     uid: word!Word.PaperSize.fanfoldLegalGerman:member
@@ -241,7 +239,7 @@ fields:
     summary: |-
       Fanfold legal German paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FanfoldLegalGerman"'
   - name: fanfoldStdGerman
     uid: word!Word.PaperSize.fanfoldStdGerman:member
@@ -249,7 +247,7 @@ fields:
     summary: |-
       Fanfold standard German paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FanfoldStdGerman"'
   - name: fanfoldUS
     uid: word!Word.PaperSize.fanfoldUS:member
@@ -257,7 +255,7 @@ fields:
     summary: |-
       Fanfold US paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FanfoldUS"'
   - name: folio
     uid: word!Word.PaperSize.folio:member
@@ -265,7 +263,7 @@ fields:
     summary: |-
       Folio paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Folio"'
   - name: ledger
     uid: word!Word.PaperSize.ledger:member
@@ -273,7 +271,7 @@ fields:
     summary: |-
       Ledger paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ledger"'
   - name: legal
     uid: word!Word.PaperSize.legal:member
@@ -281,7 +279,7 @@ fields:
     summary: |-
       Legal paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Legal"'
   - name: letter
     uid: word!Word.PaperSize.letter:member
@@ -289,7 +287,7 @@ fields:
     summary: |-
       Letter paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Letter"'
   - name: letterSmall
     uid: word!Word.PaperSize.letterSmall:member
@@ -297,7 +295,7 @@ fields:
     summary: |-
       Small letter paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LetterSmall"'
   - name: note
     uid: word!Word.PaperSize.note:member
@@ -305,7 +303,7 @@ fields:
     summary: |-
       Note paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Note"'
   - name: quarto
     uid: word!Word.PaperSize.quarto:member
@@ -313,7 +311,7 @@ fields:
     summary: |-
       Quarto paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Quarto"'
   - name: size10x14
     uid: word!Word.PaperSize.size10x14:member
@@ -321,7 +319,7 @@ fields:
     summary: |-
       10x14 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Size10x14"'
   - name: size11x17
     uid: word!Word.PaperSize.size11x17:member
@@ -329,7 +327,7 @@ fields:
     summary: |-
       11x17 paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Size11x17"'
   - name: statement
     uid: word!Word.PaperSize.statement:member
@@ -337,7 +335,7 @@ fields:
     summary: |-
       Statement paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Statement"'
   - name: tabloid
     uid: word!Word.PaperSize.tabloid:member
@@ -345,5 +343,5 @@ fields:
     summary: |-
       Tabloid paper size.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tabloid"'

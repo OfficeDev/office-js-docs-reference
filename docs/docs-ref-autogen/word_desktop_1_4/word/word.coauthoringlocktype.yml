@@ -3,13 +3,9 @@ name: Word.CoauthoringLockType
 uid: word!Word.CoauthoringLockType:enum
 package: word!
 fullName: Word.CoauthoringLockType
-summary: >-
-  Represents the types of [coauthoring
-  locks](xref:word!Word.CoauthoringLock:class)<!-- -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the types of [coauthoring locks](xref:word!Word.CoauthoringLock:class)<!-- -->.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +15,7 @@ fields:
     summary: |-
       Represents that the lock has changed.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Changed"'
   - name: ephemeral
     uid: word!Word.CoauthoringLockType.ephemeral:member
@@ -27,7 +23,7 @@ fields:
     summary: |-
       Represents that the lock is ephemeral.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ephemeral"'
   - name: none
     uid: word!Word.CoauthoringLockType.none:member
@@ -35,7 +31,7 @@ fields:
     summary: |-
       Reserved for future use.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: reservation
     uid: word!Word.CoauthoringLockType.reservation:member
@@ -43,5 +39,5 @@ fields:
     summary: |-
       Represents that the lock is a reservation.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Reservation"'

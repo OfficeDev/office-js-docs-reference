@@ -4,19 +4,13 @@ uid: word!Word.ShapeScaleType:enum
 package: word!
 fullName: Word.ShapeScaleType
 summary: Specifies the scale size type of a shape.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/group-ungroup.yaml
 
   await Word.run(async (context) => {
     // Scales the first set of grouped shapes (including text boxes) found in the document body.
@@ -38,9 +32,8 @@ remarks: >-
 
     console.log("Scaled the first shape group.");
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -50,7 +43,7 @@ fields:
     summary: |-
       Scale from current size of the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CurrentSize"'
   - name: originalSize
     uid: word!Word.ShapeScaleType.originalSize:member
@@ -58,5 +51,5 @@ fields:
     summary: |-
       Scale from original size of the shape. It only works for pictures.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OriginalSize"'

@@ -4,29 +4,18 @@ uid: powerpoint!PowerPoint.ShapeAutoSize:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeAutoSize
 summary: Determines the type of automatic sizing allowed.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
   // This function gets the collection of shapes on the first slide,
-
   // and adds a brace pair, {}, to the collection, while specifying its
-
   // location and size. Then it names the shape, sets its text and font
-
   // color, and centers it inside the braces.
-
   await PowerPoint.run(async (context) => {
     const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
@@ -44,9 +33,8 @@ remarks: >-
 
     return context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -56,7 +44,7 @@ fields:
     summary: |-
       A combination of automatic sizing schemes are used.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AutoSizeMixed"'
   - name: autoSizeNone
     uid: powerpoint!PowerPoint.ShapeAutoSize.autoSizeNone:member
@@ -64,7 +52,7 @@ fields:
     summary: |-
       No autosizing.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AutoSizeNone"'
   - name: autoSizeShapeToFitText
     uid: powerpoint!PowerPoint.ShapeAutoSize.autoSizeShapeToFitText:member
@@ -72,7 +60,7 @@ fields:
     summary: |-
       The shape is adjusted to fit the text.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AutoSizeShapeToFitText"'
   - name: autoSizeTextToFitShape
     uid: powerpoint!PowerPoint.ShapeAutoSize.autoSizeTextToFitShape:member
@@ -80,5 +68,5 @@ fields:
     summary: |-
       The text is adjusted to fit the shape.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AutoSizeTextToFitShape"'

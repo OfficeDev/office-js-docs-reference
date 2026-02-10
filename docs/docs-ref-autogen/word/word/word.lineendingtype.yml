@@ -4,10 +4,8 @@ uid: word!Word.LineEndingType:enum
 package: word!
 fullName: Word.LineEndingType
 summary: Represents how Word marks line and paragraph breaks in text files.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents carriage return and line feed (Windows standard).
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Crlf"'
   - name: crOnly
     uid: word!Word.LineEndingType.crOnly:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents carriage return only (Mac classic standard).
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CrOnly"'
   - name: lfcr
     uid: word!Word.LineEndingType.lfcr:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Represents line feed and carriage return.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Lfcr"'
   - name: lfOnly
     uid: word!Word.LineEndingType.lfOnly:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Represents line feed only (Unix/Linux standard).
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LfOnly"'
   - name: lsps
     uid: word!Word.LineEndingType.lsps:member
@@ -49,5 +47,5 @@ fields:
     summary: |-
       Represents line separator and paragraph separator.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Lsps"'

@@ -4,10 +4,8 @@ uid: word!Word.CalendarType:enum
 package: word!
 fullName: Word.CalendarType
 summary: Calendar types.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Arabic calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Arabic"'
   - name: hebrew
     uid: word!Word.CalendarType.hebrew:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Hebrew calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hebrew"'
   - name: japan
     uid: word!Word.CalendarType.japan:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Japanese calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Japan"'
   - name: korean
     uid: word!Word.CalendarType.korean:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Korean calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Korean"'
   - name: sakaEra
     uid: word!Word.CalendarType.sakaEra:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Saka Era calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SakaEra"'
   - name: taiwan
     uid: word!Word.CalendarType.taiwan:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Taiwan calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Taiwan"'
   - name: thai
     uid: word!Word.CalendarType.thai:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       Thai calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Thai"'
   - name: translitEnglish
     uid: word!Word.CalendarType.translitEnglish:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Transliterated English calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TranslitEnglish"'
   - name: translitFrench
     uid: word!Word.CalendarType.translitFrench:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       Transliterated French calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TranslitFrench"'
   - name: umalqura
     uid: word!Word.CalendarType.umalqura:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Umm al-Qura calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Umalqura"'
   - name: western
     uid: word!Word.CalendarType.western:member
@@ -97,5 +95,5 @@ fields:
     summary: |-
       Western calendar type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Western"'

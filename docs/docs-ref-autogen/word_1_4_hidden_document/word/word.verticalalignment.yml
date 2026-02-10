@@ -4,23 +4,15 @@ uid: word!Word.VerticalAlignment:enum
 package: word!
 fullName: Word.VerticalAlignment
 summary: Represents the vertical alignment of text.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-  // Gets content alignment details about the first row of the first table in
-  the document.
-
+  // Gets content alignment details about the first row of the first table in the document.
   await Word.run(async (context) => {
     const firstTable: Word.Table = context.document.body.tables.getFirst();
     const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
@@ -29,9 +21,8 @@ remarks: >-
 
     console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -41,7 +32,7 @@ fields:
     summary: |-
       Bottom vertical alignment.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
   - name: center
     uid: word!Word.VerticalAlignment.center:member
@@ -49,7 +40,7 @@ fields:
     summary: |-
       Center vertical alignment.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Center"'
   - name: mixed
     uid: word!Word.VerticalAlignment.mixed:member
@@ -57,7 +48,7 @@ fields:
     summary: |-
       Mixed vertical alignment.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: top
     uid: word!Word.VerticalAlignment.top:member
@@ -65,5 +56,5 @@ fields:
     summary: |-
       Top vertical alignment.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'

@@ -3,11 +3,9 @@ name: Word.Interfaces.NoteItemUpdateData
 uid: word!Word.Interfaces.NoteItemUpdateData:interface
 package: word!
 fullName: Word.Interfaces.NoteItemUpdateData
-summary: >-
-  An interface for updating data on the `NoteItem` object, for use in
-  `noteItem.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `NoteItem` object, for use in `noteItem.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.NoteItemUpdateData#body:member
     package: word!
     fullName: body
-    summary: >-
-      Represents the body object of the note item. It's the portion of the text
-      within the footnote or endnote.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +28,8 @@ properties:
     package: word!
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

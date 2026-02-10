@@ -3,30 +3,18 @@ name: Office.MailboxEnums.SourceProperty
 uid: outlook!Office.MailboxEnums.SourceProperty:enum
 package: outlook!
 fullName: Office.MailboxEnums.SourceProperty
-summary: >-
-  Specifies the source of the selected data in an item (see
-  `Office.mailbox.item.getSelectedDataAsync` for details).
-remarks: >-
-  \[ [API set: Mailbox
-  1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
+remarks: |-
+  \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
-
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
-
-
-  Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
-  function(asyncResult) {
+  Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
     if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
       const text = asyncResult.value.data;
       const prop = asyncResult.value.sourceProperty;
@@ -35,9 +23,8 @@ remarks: >-
       console.error(asyncResult.error);
     }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

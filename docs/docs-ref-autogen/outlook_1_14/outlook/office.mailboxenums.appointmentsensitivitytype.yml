@@ -3,28 +3,16 @@ name: Office.MailboxEnums.AppointmentSensitivityType
 uid: outlook!Office.MailboxEnums.AppointmentSensitivityType:enum
 package: outlook!
 fullName: Office.MailboxEnums.AppointmentSensitivityType
-summary: >-
-  Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface)
-  of an appointment.
-remarks: >-
-  \[ [API set: Mailbox
-  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+summary: Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface) of an appointment.
+remarks: |-
+  \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-sensitivity-level.yaml
 
   Office.context.mailbox.item.sensitivity.setAsync(
     Office.MailboxEnums.AppointmentSensitivityType.Private,
@@ -36,9 +24,8 @@ remarks: >-
       }
     }
   );
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -50,12 +37,10 @@ fields:
   - name: Personal
     uid: outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member
     package: outlook!
-    summary: >-
+    summary: |-
       Treat the item as personal.
 
-
-      **Important**: The Personal sensitivity level is only supported in
-      Outlook on Windows.
+      \*\*Important\*\*: The Personal sensitivity level is only supported in Outlook on Windows.
     value: '"personal"'
   - name: Private
     uid: outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member
@@ -65,10 +50,8 @@ fields:
   - name: Confidential
     uid: outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member
     package: outlook!
-    summary: >-
+    summary: |-
       Treat the item as confidential.
 
-
-      **Important**: The Confidential sensitivity level is only supported in
-      Outlook on Windows.
+      \*\*Important\*\*: The Confidential sensitivity level is only supported in Outlook on Windows.
     value: '"confidential"'

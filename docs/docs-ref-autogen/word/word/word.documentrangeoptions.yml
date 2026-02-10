@@ -3,13 +3,9 @@ name: Word.DocumentRangeOptions
 uid: word!Word.DocumentRangeOptions:interface
 package: word!
 fullName: Word.DocumentRangeOptions
-summary: >-
-  Provides configuration options for the
-  [Document.getRange](xref:word!Word.Document:class) method.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Provides configuration options for the [Document.getRange](xref:word!Word.Document:class) method.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,13 +14,9 @@ properties:
     uid: word!Word.DocumentRangeOptions#end:member
     package: word!
     fullName: end
-    summary: >-
-      If provided, specifies the ending character position. The default value is
-      the end of the document.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the ending character position. The default value is the end of the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,13 +27,9 @@ properties:
     uid: word!Word.DocumentRangeOptions#start:member
     package: word!
     fullName: start
-    summary: >-
-      If provided, specifies the starting character position. The default value
-      is `0`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the starting character position. The default value is `0`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -4,22 +4,18 @@ uid: visio!Visio.MessageType:enum
 package: visio!
 fullName: Visio.MessageType
 summary: MessageType represents the type of message when event is fired from Host.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: dataVisualizerDiagramOperationCompletedEvent
-    uid: >-
-      visio!Visio.MessageType.dataVisualizerDiagramOperationCompletedEvent:member
+    uid: visio!Visio.MessageType.dataVisualizerDiagramOperationCompletedEvent:member
     package: visio!
     summary: |-
       DataVisualizer diagram operation complete Event Message.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '1'
   - name: none
     uid: visio!Visio.MessageType.none:member
@@ -27,5 +23,5 @@ fields:
     summary: |-
       No message.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '0'

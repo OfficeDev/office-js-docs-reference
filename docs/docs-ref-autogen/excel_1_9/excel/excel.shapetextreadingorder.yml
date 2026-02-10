@@ -4,20 +4,18 @@ uid: excel!Excel.ShapeTextReadingOrder:enum
 package: excel!
 fullName: Excel.ShapeTextReadingOrder
 summary: Specifies the reading order for the text frame in a shape.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: leftToRight
     uid: excel!Excel.ShapeTextReadingOrder.leftToRight:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: excel!Excel.ShapeTextReadingOrder.rightToLeft:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"RightToLeft"'

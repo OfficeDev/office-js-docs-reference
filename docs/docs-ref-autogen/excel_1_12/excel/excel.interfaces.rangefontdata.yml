@@ -3,11 +3,9 @@ name: Excel.Interfaces.RangeFontData
 uid: excel!Excel.Interfaces.RangeFontData:interface
 package: excel!
 fullName: Excel.Interfaces.RangeFontData
-summary: >-
-  An interface describing the data returned by calling `rangeFont.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `rangeFont.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: excel!
     fullName: bold
     summary: Represents the bold status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,13 +27,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontData#color:member
     package: excel!
     fullName: color
-    summary: >-
-      HTML color code representation of the text color (e.g., \#FF0000
-      represents Red).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: HTML color code representation of the text color (e.g., \#FF0000 represents Red).
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,10 +41,8 @@ properties:
     package: excel!
     fullName: italic
     summary: Specifies the italic status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,13 +53,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontData#name:member
     package: excel!
     fullName: name
-    summary: >-
-      Font name (e.g., "Calibri"). The name's length should not be greater than
-      31 characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,10 +67,8 @@ properties:
     package: excel!
     fullName: size
     summary: Font size.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,13 +79,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontData#strikethrough:member
     package: excel!
     fullName: strikethrough
-    summary: >-
-      Specifies the strikethrough status of font. A `null` value indicates that
-      the entire range doesn't have a uniform strikethrough setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,15 +92,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontData#subscript:member
     package: excel!
     fullName: subscript
-    summary: >-
-      Specifies the subscript status of font. Returns `true` if all the fonts of
-      the range are subscript. Returns `false` if all the fonts of the range are
-      superscript or normal (neither superscript, nor subscript). Returns `null`
-      otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the subscript status of font. Returns `true` if all the fonts of the range are subscript. Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript). Returns `null` otherwise.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,15 +105,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontData#superscript:member
     package: excel!
     fullName: superscript
-    summary: >-
-      Specifies the superscript status of font. Returns `true` if all the fonts
-      of the range are superscript. Returns `false` if all the fonts of the
-      range are subscript or normal (neither superscript, nor subscript).
-      Returns `null` otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the superscript status of font. Returns `true` if all the fonts of the range are superscript. Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript). Returns `null` otherwise.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,15 +118,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontData#tintAndShade:member
     package: excel!
     fullName: tintAndShade
-    summary: >-
-      Specifies a double that lightens or darkens a color for the range font.
-      The value is between -1 (darkest) and 1 (brightest), with 0 for the
-      original color. A `null` value indicates that the entire range doesn't
-      have a uniform font `tintAndShade` setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,20 +131,12 @@ properties:
     uid: excel!Excel.Interfaces.RangeFontData#underline:member
     package: excel!
     fullName: underline
-    summary: >-
-      Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for
-      details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" |
-        "SingleAccountant" | "DoubleAccountant";
+      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" |
-          "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+        type: <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.TextRangeData
 uid: powerpoint!PowerPoint.Interfaces.TextRangeData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TextRangeData
-summary: >-
-  An interface describing the data returned by calling `textRange.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `textRange.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,16 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TextRangeData#length:member
     package: powerpoint!
     fullName: length
-    summary: >-
-      Gets or sets the length of the range that this `TextRange` represents.
-      Throws an `InvalidArgument` exception when set with a negative value or if
-      the value is greater than the length of the available text from the
-      starting point.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Gets or sets the length of the range that this `TextRange` represents. Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,16 +27,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TextRangeData#start:member
     package: powerpoint!
     fullName: start
-    summary: >-
-      Gets or sets zero-based index, relative to the parent text frame, for the
-      starting position of the range that this `TextRange` represents. Throws an
-      `InvalidArgument` exception when set with a negative value or if the value
-      is greater than the length of the text.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Gets or sets zero-based index, relative to the parent text frame, for the starting position of the range that this `TextRange` represents. Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,11 +41,8 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Represents the plain text content of the text range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

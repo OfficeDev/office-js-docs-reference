@@ -3,11 +3,9 @@ name: Visio.Interfaces.HyperlinkData
 uid: visio!Visio.Interfaces.HyperlinkData:interface
 package: visio!
 fullName: Visio.Interfaces.HyperlinkData
-summary: >-
-  An interface describing the data returned by calling `hyperlink.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `hyperlink.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: visio!
     fullName: address
     summary: Gets the address of the Hyperlink object. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +28,8 @@ properties:
     package: visio!
     fullName: description
     summary: Gets the description of a hyperlink. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,14 +40,9 @@ properties:
     uid: visio!Visio.Interfaces.HyperlinkData#extraInfo:member
     package: visio!
     fullName: extraInfo
-    summary: >-
-      Gets the extra URL request information used to resolve the hyperlink's
-      URL. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    summary: Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,11 +54,8 @@ properties:
     package: visio!
     fullName: subAddress
     summary: Gets the sub-address of the Hyperlink object. Read-only.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

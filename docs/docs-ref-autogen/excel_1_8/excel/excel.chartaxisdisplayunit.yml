@@ -4,10 +4,8 @@ uid: excel!Excel.ChartAxisDisplayUnit:enum
 package: excel!
 fullName: Excel.ChartAxisDisplayUnit
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       This will set the axis in units of billions.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Billions"'
   - name: custom
     uid: excel!Excel.ChartAxisDisplayUnit.custom:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       This will set the axis in units of custom value.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Custom"'
   - name: hundredMillions
     uid: excel!Excel.ChartAxisDisplayUnit.hundredMillions:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       This will set the axis in units of hundreds of millions.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"HundredMillions"'
   - name: hundreds
     uid: excel!Excel.ChartAxisDisplayUnit.hundreds:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       This will set the axis in units of hundreds.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Hundreds"'
   - name: hundredThousands
     uid: excel!Excel.ChartAxisDisplayUnit.hundredThousands:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       This will set the axis in units of hundreds of thousands.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"HundredThousands"'
   - name: millions
     uid: excel!Excel.ChartAxisDisplayUnit.millions:member
@@ -57,17 +55,15 @@ fields:
     summary: |-
       This will set the axis in units of millions.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Millions"'
   - name: none
     uid: excel!Excel.ChartAxisDisplayUnit.none:member
     package: excel!
-    summary: >-
-      Default option. This will reset display unit to the axis, and set unit
-      label invisible.
+    summary: |-
+      Default option. This will reset display unit to the axis, and set unit label invisible.
 
-
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"None"'
   - name: tenMillions
     uid: excel!Excel.ChartAxisDisplayUnit.tenMillions:member
@@ -75,7 +71,7 @@ fields:
     summary: |-
       This will set the axis in units of tens of millions.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TenMillions"'
   - name: tenThousands
     uid: excel!Excel.ChartAxisDisplayUnit.tenThousands:member
@@ -83,7 +79,7 @@ fields:
     summary: |-
       This will set the axis in units of tens of thousands.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TenThousands"'
   - name: thousands
     uid: excel!Excel.ChartAxisDisplayUnit.thousands:member
@@ -91,7 +87,7 @@ fields:
     summary: |-
       This will set the axis in units of thousands.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Thousands"'
   - name: trillions
     uid: excel!Excel.ChartAxisDisplayUnit.trillions:member
@@ -99,5 +95,5 @@ fields:
     summary: |-
       This will set the axis in units of trillions.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Trillions"'

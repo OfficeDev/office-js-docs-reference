@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.ShapeUpdateData
 uid: powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeUpdateData
-summary: >-
-  An interface for updating data on the `Shape` object, for use in `shape.set({
-  ... })`<!-- -->.
+summary: An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,14 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeUpdateData#height:member
     package: powerpoint!
     fullName: height
-    summary: >-
-      Specifies the height, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,14 +27,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeUpdateData#left:member
     package: powerpoint!
     fullName: left
-    summary: >-
-      The distance, in points, from the left side of the shape to the left side
-      of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: The distance, in points, from the left side of the shape to the left side of the slide.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,11 +41,8 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Specifies the name of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,14 +53,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeUpdateData#top:member
     package: powerpoint!
     fullName: top
-    summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of
-      the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: The distance, in points, from the top edge of the shape to the top edge of the slide.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,14 +66,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeUpdateData#width:member
     package: powerpoint!
     fullName: width
-    summary: >-
-      Specifies the width, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

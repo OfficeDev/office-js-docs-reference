@@ -3,14 +3,9 @@ name: Word.Interfaces.CustomXmlNodeCollectionLoadOptions
 uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlNodeCollectionLoadOptions
-summary: >-
-  Contains a collection of
-  [Word.CustomXmlNode](xref:word!Word.CustomXmlNode:class) objects representing
-  the XML nodes in a document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Contains a collection of [Word.CustomXmlNode](xref:word!Word.CustomXmlNode:class) objects representing the XML nodes in a document.
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#baseName:member
     package: word!
     fullName: baseName
-    summary: >-
-      For EACH ITEM in the collection: Gets the base name of the node without
-      the namespace prefix, if one exists.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the base name of the node without the namespace prefix, if one exists.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,16 +40,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#firstChild:member
     package: word!
     fullName: firstChild
-    summary: >-
-      For EACH ITEM in the collection: Gets a `CustomXmlNode` object
-      corresponding to the first child element of the current node. If the node
-      has no child elements (or if it isn't of type
-      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
-      -->), returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets a `CustomXmlNode` object corresponding to the first child element of the current node. If the node has no child elements (or if it isn''t of type [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!-- -->), returns `Nothing`<!-- -->.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,16 +53,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#lastChild:member
     package: word!
     fullName: lastChild
-    summary: >-
-      For EACH ITEM in the collection: Gets a `CustomXmlNode` object
-      corresponding to the last child element of the current node. If the node
-      has no child elements (or if it isn't of type
-      [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!--
-      -->), the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets a `CustomXmlNode` object corresponding to the last child element of the current node. If the node has no child elements (or if it isn''t of type [CustomXmlNodeType.element](xref:word!Word.CustomXmlNodeType:enum)<!-- -->), the property returns `Nothing`<!-- -->.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,17 +63,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions:interface" />
   - name: namespaceUri
-    uid: >-
-      word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#namespaceUri:member
+    uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#namespaceUri:member
     package: word!
     fullName: namespaceUri
-    summary: >-
-      For EACH ITEM in the collection: Gets the unique address identifier for
-      the namespace of the node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the unique address identifier for the namespace of the node.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,14 +79,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#nextSibling:member
     package: word!
     fullName: nextSibling
-    summary: >-
-      For EACH ITEM in the collection: Gets the next sibling node (element,
-      comment, or processing instruction) of the current node. If the node is
-      the last sibling at its level, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns `Nothing`<!-- -->.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,10 +93,8 @@ properties:
     package: word!
     fullName: nodeType
     summary: 'For EACH ITEM in the collection: Gets the type of the current node.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,10 +106,8 @@ properties:
     package: word!
     fullName: nodeValue
     summary: 'For EACH ITEM in the collection: Specifies the value of the current node.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,13 +118,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#ownerPart:member
     package: word!
     fullName: ownerPart
-    summary: >-
-      For EACH ITEM in the collection: Gets the object representing the part
-      associated with this node.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the object representing the part associated with this node.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,14 +131,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#parentNode:member
     package: word!
     fullName: parentNode
-    summary: >-
-      For EACH ITEM in the collection: Gets the parent element node of the
-      current node. If the current node is at the root level, the property
-      returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the parent element node of the current node. If the current node is at the root level, the property returns `Nothing`<!-- -->.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,19 +141,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.CustomXmlNodeLoadOptions:interface" />
   - name: previousSibling
-    uid: >-
-      word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#previousSibling:member
+    uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#previousSibling:member
     package: word!
     fullName: previousSibling
-    summary: >-
-      For EACH ITEM in the collection: Gets the previous sibling node (element,
-      comment, or processing instruction) of the current node. If the current
-      node is the first sibling at its level, the property returns `Nothing`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns `Nothing`<!-- -->.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,10 +158,8 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Specifies the text for the current node.'
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,13 +170,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#xml:member
     package: word!
     fullName: xml
-    summary: >-
-      For EACH ITEM in the collection: Gets the XML representation of the
-      current node and its children.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the XML representation of the current node and its children.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,14 +183,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlNodeCollectionLoadOptions#xpath:member
     package: word!
     fullName: xpath
-    summary: >-
-      For EACH ITEM in the collection: Gets a string with the canonicalized
-      XPath for the current node. If the node is no longer in the Document
-      Object Model (DOM), the property returns an error message.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets a string with the canonicalized XPath for the current node. If the node is no longer in the Document Object Model (DOM), the property returns an error message.'
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

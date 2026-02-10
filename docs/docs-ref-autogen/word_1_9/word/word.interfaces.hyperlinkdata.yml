@@ -3,11 +3,9 @@ name: Word.Interfaces.HyperlinkData
 uid: word!Word.Interfaces.HyperlinkData:interface
 package: word!
 fullName: Word.Interfaces.HyperlinkData
-summary: >-
-  An interface describing the data returned by calling `hyperlink.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `hyperlink.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

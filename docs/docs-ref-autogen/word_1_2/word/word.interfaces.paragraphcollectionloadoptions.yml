@@ -3,13 +3,9 @@ name: Word.Interfaces.ParagraphCollectionLoadOptions
 uid: word!Word.Interfaces.ParagraphCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ParagraphCollectionLoadOptions
-summary: >-
-  Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class)
-  objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,14 +27,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: >-
-      For EACH ITEM in the collection: Specifies the alignment for a paragraph.
-      The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or
-      `justified`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the alignment for a paragraph. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,14 +40,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member
     package: word!
     fullName: firstLineIndent
-    summary: >-
-      For EACH ITEM in the collection: Specifies the value, in points, for a
-      first line or hanging indent. Use a positive value to set a first-line
-      indent, and use a negative value to set a hanging indent.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      For EACH ITEM in the collection: Gets the text format of the paragraph.
-      Use this to get and set font name, size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,13 +66,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member
     package: word!
     fullName: leftIndent
-    summary: >-
-      For EACH ITEM in the collection: Specifies the left indent value, in
-      points, for the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the left indent value, in points, for the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member
     package: word!
     fullName: lineSpacing
-    summary: >-
-      For EACH ITEM in the collection: Specifies the line spacing, in points,
-      for the specified paragraph. In the Word UI, this value is divided by 12.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,13 +92,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member
     package: word!
     fullName: lineUnitAfter
-    summary: >-
-      For EACH ITEM in the collection: Specifies the amount of spacing, in grid
-      lines, after the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, after the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,13 +105,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member
     package: word!
     fullName: lineUnitBefore
-    summary: >-
-      For EACH ITEM in the collection: Specifies the amount of spacing, in grid
-      lines, before the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, before the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,13 +118,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member
     package: word!
     fullName: outlineLevel
-    summary: >-
-      For EACH ITEM in the collection: Specifies the outline level for the
-      paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the outline level for the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,37 +128,25 @@ properties:
       return:
         type: boolean
   - name: parentContentControl
-    uid: >-
-      word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member
+    uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the paragraph. Throws an `ItemNotFound` error if there isn't a parent
-      content control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn''t a parent content control.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: rightIndent
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member
     package: word!
     fullName: rightIndent
-    summary: >-
-      For EACH ITEM in the collection: Specifies the right indent value, in
-      points, for the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the right indent value, in points, for the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,13 +157,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member
     package: word!
     fullName: spaceAfter
-    summary: >-
-      For EACH ITEM in the collection: Specifies the spacing, in points, after
-      the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the spacing, in points, after the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,13 +170,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member
     package: word!
     fullName: spaceBefore
-    summary: >-
-      For EACH ITEM in the collection: Specifies the spacing, in points, before
-      the paragraph.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the spacing, in points, before the paragraph.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,15 +183,9 @@ properties:
     uid: word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member
     package: word!
     fullName: style
-    summary: >-
-      For EACH ITEM in the collection: Specifies the style name for the
-      paragraph. Use this property for custom styles and localized style names.
-      To use the built-in styles that are portable between locales, see the
-      "styleBuiltIn" property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -264,10 +197,8 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the paragraph.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

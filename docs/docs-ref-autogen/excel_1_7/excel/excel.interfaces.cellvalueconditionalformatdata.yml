@@ -3,11 +3,9 @@ name: Excel.Interfaces.CellValueConditionalFormatData
 uid: excel!Excel.Interfaces.CellValueConditionalFormatData:interface
 package: excel!
 fullName: Excel.Interfaces.CellValueConditionalFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `cellValueConditionalFormat.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,30 +14,22 @@ properties:
     uid: excel!Excel.Interfaces.CellValueConditionalFormatData#format:member
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill,
-      borders, and other properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeFormatData:interface" />
+        type: <xref uid="excel!Excel.Interfaces.ConditionalRangeFormatData:interface" />
   - name: rule
     uid: excel!Excel.Interfaces.CellValueConditionalFormatData#rule:member
     package: excel!
     fullName: rule
     summary: Specifies the rule object on this conditional format.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

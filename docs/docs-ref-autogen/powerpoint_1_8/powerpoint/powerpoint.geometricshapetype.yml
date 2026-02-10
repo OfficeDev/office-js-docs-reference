@@ -4,27 +4,17 @@ uid: powerpoint!PowerPoint.GeometricShapeType:enum
 package: powerpoint!
 fullName: PowerPoint.GeometricShapeType
 summary: Specifies the shape type for a `GeometricShape` object.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
   // This function gets the collection of shapes on the first slide,
-
   // and adds a hexagon shape to the collection, while specifying its
-
   // location and size. Then it names the shape.
-
   await PowerPoint.run(async (context) => {
     const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     const shapeOptions: PowerPoint.ShapeAddOptions = {
@@ -38,9 +28,8 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -50,7 +39,7 @@ fields:
     summary: |-
       Callout: Line with Border and Accent Bar
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AccentBorderCallout1"'
   - name: accentBorderCallout2
     uid: powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout2:member
@@ -58,7 +47,7 @@ fields:
     summary: |-
       Callout: Bent Line with Border and Accent Bar
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AccentBorderCallout2"'
   - name: accentBorderCallout3
     uid: powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout3:member
@@ -66,7 +55,7 @@ fields:
     summary: |-
       Callout: Double Bent Line with Border and Accent Bar
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AccentBorderCallout3"'
   - name: accentCallout1
     uid: powerpoint!PowerPoint.GeometricShapeType.accentCallout1:member
@@ -74,7 +63,7 @@ fields:
     summary: |-
       Callout: Line with Accent Bar
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AccentCallout1"'
   - name: accentCallout2
     uid: powerpoint!PowerPoint.GeometricShapeType.accentCallout2:member
@@ -82,7 +71,7 @@ fields:
     summary: |-
       Callout: Bent Line with Accent Bar
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AccentCallout2"'
   - name: accentCallout3
     uid: powerpoint!PowerPoint.GeometricShapeType.accentCallout3:member
@@ -90,7 +79,7 @@ fields:
     summary: |-
       Callout: Double Bent Line with Accent Bar
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"AccentCallout3"'
   - name: actionButtonBackPrevious
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonBackPrevious:member
@@ -98,7 +87,7 @@ fields:
     summary: |-
       Action Button: Go Back or Previous
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonBackPrevious"'
   - name: actionButtonBeginning
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonBeginning:member
@@ -106,7 +95,7 @@ fields:
     summary: |-
       Action Button: Go to Beginning
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonBeginning"'
   - name: actionButtonBlank
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonBlank:member
@@ -114,7 +103,7 @@ fields:
     summary: |-
       Action Button: Blank
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonBlank"'
   - name: actionButtonDocument
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonDocument:member
@@ -122,7 +111,7 @@ fields:
     summary: |-
       Action Button: Document
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonDocument"'
   - name: actionButtonEnd
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonEnd:member
@@ -130,7 +119,7 @@ fields:
     summary: |-
       Action Button: Go to End
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonEnd"'
   - name: actionButtonForwardNext
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonForwardNext:member
@@ -138,7 +127,7 @@ fields:
     summary: |-
       Action Button: Go Forward or Next
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonForwardNext"'
   - name: actionButtonHelp
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonHelp:member
@@ -146,7 +135,7 @@ fields:
     summary: |-
       Action Button: Help
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonHelp"'
   - name: actionButtonHome
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonHome:member
@@ -154,7 +143,7 @@ fields:
     summary: |-
       Action Button: Go Home
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonHome"'
   - name: actionButtonInformation
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonInformation:member
@@ -162,7 +151,7 @@ fields:
     summary: |-
       Action Button: Get Information
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonInformation"'
   - name: actionButtonMovie
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonMovie:member
@@ -170,7 +159,7 @@ fields:
     summary: |-
       Action Button: Video
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonMovie"'
   - name: actionButtonReturn
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonReturn:member
@@ -178,7 +167,7 @@ fields:
     summary: |-
       Action Button: Return
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonReturn"'
   - name: actionButtonSound
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonSound:member
@@ -186,7 +175,7 @@ fields:
     summary: |-
       Action Button: Sound
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ActionButtonSound"'
   - name: arc
     uid: powerpoint!PowerPoint.GeometricShapeType.arc:member
@@ -194,7 +183,7 @@ fields:
     summary: |-
       Arc
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Arc"'
   - name: bentArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.bentArrow:member
@@ -202,7 +191,7 @@ fields:
     summary: |-
       Arrow: Bent
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BentArrow"'
   - name: bentUpArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.bentUpArrow:member
@@ -210,7 +199,7 @@ fields:
     summary: |-
       Arrow: Bent-Up
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BentUpArrow"'
   - name: bevel
     uid: powerpoint!PowerPoint.GeometricShapeType.bevel:member
@@ -218,7 +207,7 @@ fields:
     summary: |-
       Rectangle: Beveled
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Bevel"'
   - name: blockArc
     uid: powerpoint!PowerPoint.GeometricShapeType.blockArc:member
@@ -226,7 +215,7 @@ fields:
     summary: |-
       Block Arc
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BlockArc"'
   - name: borderCallout1
     uid: powerpoint!PowerPoint.GeometricShapeType.borderCallout1:member
@@ -234,7 +223,7 @@ fields:
     summary: |-
       Callout: Line
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BorderCallout1"'
   - name: borderCallout2
     uid: powerpoint!PowerPoint.GeometricShapeType.borderCallout2:member
@@ -242,7 +231,7 @@ fields:
     summary: |-
       Callout: Bent Line
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BorderCallout2"'
   - name: borderCallout3
     uid: powerpoint!PowerPoint.GeometricShapeType.borderCallout3:member
@@ -250,7 +239,7 @@ fields:
     summary: |-
       Callout: Double Bent Line
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BorderCallout3"'
   - name: bracePair
     uid: powerpoint!PowerPoint.GeometricShapeType.bracePair:member
@@ -258,7 +247,7 @@ fields:
     summary: |-
       Double Brace
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BracePair"'
   - name: bracketPair
     uid: powerpoint!PowerPoint.GeometricShapeType.bracketPair:member
@@ -266,7 +255,7 @@ fields:
     summary: |-
       Double Bracket
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"BracketPair"'
   - name: callout1
     uid: powerpoint!PowerPoint.GeometricShapeType.callout1:member
@@ -274,7 +263,7 @@ fields:
     summary: |-
       Callout: Line with No Border
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Callout1"'
   - name: callout2
     uid: powerpoint!PowerPoint.GeometricShapeType.callout2:member
@@ -282,7 +271,7 @@ fields:
     summary: |-
       Callout: Bent Line with No Border
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Callout2"'
   - name: callout3
     uid: powerpoint!PowerPoint.GeometricShapeType.callout3:member
@@ -290,7 +279,7 @@ fields:
     summary: |-
       Callout: Double Bent Line with No Border
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Callout3"'
   - name: can
     uid: powerpoint!PowerPoint.GeometricShapeType.can:member
@@ -298,7 +287,7 @@ fields:
     summary: |-
       Cylinder
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Can"'
   - name: chartPlus
     uid: powerpoint!PowerPoint.GeometricShapeType.chartPlus:member
@@ -306,17 +295,15 @@ fields:
     summary: |-
       A Rectangle Divided Vertically and Horizontally into Four Quarters.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ChartPlus"'
   - name: chartStar
     uid: powerpoint!PowerPoint.GeometricShapeType.chartStar:member
     package: powerpoint!
-    summary: >-
-      A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal
-      Lines.
+    summary: |-
+      A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal Lines.
 
-
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ChartStar"'
   - name: chartX
     uid: powerpoint!PowerPoint.GeometricShapeType.chartX:member
@@ -324,7 +311,7 @@ fields:
     summary: |-
       A Rectangle Divided into Four Parts Along Diagonal Lines.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ChartX"'
   - name: chevron
     uid: powerpoint!PowerPoint.GeometricShapeType.chevron:member
@@ -332,7 +319,7 @@ fields:
     summary: |-
       Arrow: Chevron
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Chevron"'
   - name: chord
     uid: powerpoint!PowerPoint.GeometricShapeType.chord:member
@@ -340,7 +327,7 @@ fields:
     summary: |-
       Chord
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Chord"'
   - name: circularArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.circularArrow:member
@@ -348,7 +335,7 @@ fields:
     summary: |-
       Arrow: Circular
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"CircularArrow"'
   - name: cloud
     uid: powerpoint!PowerPoint.GeometricShapeType.cloud:member
@@ -356,7 +343,7 @@ fields:
     summary: |-
       Cloud
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Cloud"'
   - name: cloudCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.cloudCallout:member
@@ -364,7 +351,7 @@ fields:
     summary: |-
       Thought Bubble: Cloud
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"CloudCallout"'
   - name: corner
     uid: powerpoint!PowerPoint.GeometricShapeType.corner:member
@@ -372,7 +359,7 @@ fields:
     summary: |-
       L-Shape
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Corner"'
   - name: cornerTabs
     uid: powerpoint!PowerPoint.GeometricShapeType.cornerTabs:member
@@ -380,7 +367,7 @@ fields:
     summary: |-
       Four Right Triangles that Define a Rectangular Shape
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"CornerTabs"'
   - name: cube
     uid: powerpoint!PowerPoint.GeometricShapeType.cube:member
@@ -388,7 +375,7 @@ fields:
     summary: |-
       Cube
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Cube"'
   - name: curvedDownArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedDownArrow:member
@@ -396,7 +383,7 @@ fields:
     summary: |-
       Arrow: Curved Down
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"CurvedDownArrow"'
   - name: curvedLeftArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedLeftArrow:member
@@ -404,7 +391,7 @@ fields:
     summary: |-
       Arrow: Curved Left
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"CurvedLeftArrow"'
   - name: curvedRightArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedRightArrow:member
@@ -412,7 +399,7 @@ fields:
     summary: |-
       Arrow: Curved Right
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"CurvedRightArrow"'
   - name: curvedUpArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedUpArrow:member
@@ -420,7 +407,7 @@ fields:
     summary: |-
       Arrow: Curved Up
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"CurvedUpArrow"'
   - name: decagon
     uid: powerpoint!PowerPoint.GeometricShapeType.decagon:member
@@ -428,7 +415,7 @@ fields:
     summary: |-
       Decagon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Decagon"'
   - name: diagonalStripe
     uid: powerpoint!PowerPoint.GeometricShapeType.diagonalStripe:member
@@ -436,7 +423,7 @@ fields:
     summary: |-
       Diagonal Stripe
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DiagonalStripe"'
   - name: diamond
     uid: powerpoint!PowerPoint.GeometricShapeType.diamond:member
@@ -444,7 +431,7 @@ fields:
     summary: |-
       Diamond
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Diamond"'
   - name: dodecagon
     uid: powerpoint!PowerPoint.GeometricShapeType.dodecagon:member
@@ -452,7 +439,7 @@ fields:
     summary: |-
       Dodecagon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Dodecagon"'
   - name: donut
     uid: powerpoint!PowerPoint.GeometricShapeType.donut:member
@@ -460,7 +447,7 @@ fields:
     summary: |-
       Circle: Hollow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Donut"'
   - name: doubleWave
     uid: powerpoint!PowerPoint.GeometricShapeType.doubleWave:member
@@ -468,7 +455,7 @@ fields:
     summary: |-
       Double Wave
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DoubleWave"'
   - name: downArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.downArrow:member
@@ -476,7 +463,7 @@ fields:
     summary: |-
       Arrow: Down
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DownArrow"'
   - name: downArrowCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.downArrowCallout:member
@@ -484,7 +471,7 @@ fields:
     summary: |-
       Callout: Down Arrow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DownArrowCallout"'
   - name: ellipse
     uid: powerpoint!PowerPoint.GeometricShapeType.ellipse:member
@@ -492,7 +479,7 @@ fields:
     summary: |-
       Oval
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Ellipse"'
   - name: ellipseRibbon
     uid: powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon:member
@@ -500,7 +487,7 @@ fields:
     summary: |-
       Ribbon: Curved and Tilted Down
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"EllipseRibbon"'
   - name: ellipseRibbon2
     uid: powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon2:member
@@ -508,7 +495,7 @@ fields:
     summary: |-
       Ribbon: Curved and Tilted Up
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"EllipseRibbon2"'
   - name: flowChartAlternateProcess
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartAlternateProcess:member
@@ -516,7 +503,7 @@ fields:
     summary: |-
       Flowchart: Alternate Process
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartAlternateProcess"'
   - name: flowChartCollate
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartCollate:member
@@ -524,7 +511,7 @@ fields:
     summary: |-
       Flowchart: Collate
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartCollate"'
   - name: flowChartConnector
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartConnector:member
@@ -532,7 +519,7 @@ fields:
     summary: |-
       Flowchart: Connector
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartConnector"'
   - name: flowChartDecision
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDecision:member
@@ -540,7 +527,7 @@ fields:
     summary: |-
       Flowchart: Decision
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartDecision"'
   - name: flowChartDelay
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDelay:member
@@ -548,7 +535,7 @@ fields:
     summary: |-
       Flowchart: Delay
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartDelay"'
   - name: flowChartDisplay
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDisplay:member
@@ -556,7 +543,7 @@ fields:
     summary: |-
       Flowchart: Display
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartDisplay"'
   - name: flowChartDocument
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDocument:member
@@ -564,7 +551,7 @@ fields:
     summary: |-
       Flowchart: Document
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartDocument"'
   - name: flowChartExtract
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartExtract:member
@@ -572,7 +559,7 @@ fields:
     summary: |-
       Flowchart: Extract
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartExtract"'
   - name: flowChartInputOutput
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartInputOutput:member
@@ -580,7 +567,7 @@ fields:
     summary: |-
       Flowchart: Data
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartInputOutput"'
   - name: flowChartInternalStorage
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartInternalStorage:member
@@ -588,7 +575,7 @@ fields:
     summary: |-
       Flowchart: Internal Storage
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartInternalStorage"'
   - name: flowChartMagneticDisk
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDisk:member
@@ -596,7 +583,7 @@ fields:
     summary: |-
       Flowchart: Magnetic Disk
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartMagneticDisk"'
   - name: flowChartMagneticDrum
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDrum:member
@@ -604,7 +591,7 @@ fields:
     summary: |-
       Flowchart: Direct Access Storage
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartMagneticDrum"'
   - name: flowChartMagneticTape
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticTape:member
@@ -612,7 +599,7 @@ fields:
     summary: |-
       Flowchart: Sequential Access Storage
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartMagneticTape"'
   - name: flowChartManualInput
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartManualInput:member
@@ -620,7 +607,7 @@ fields:
     summary: |-
       Flowchart: Manual Input
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartManualInput"'
   - name: flowChartManualOperation
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartManualOperation:member
@@ -628,7 +615,7 @@ fields:
     summary: |-
       Flowchart: Manual Operation
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartManualOperation"'
   - name: flowChartMerge
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMerge:member
@@ -636,7 +623,7 @@ fields:
     summary: |-
       Flowchart: Merge
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartMerge"'
   - name: flowChartMultidocument
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMultidocument:member
@@ -644,7 +631,7 @@ fields:
     summary: |-
       Flowchart: Multidocument
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartMultidocument"'
   - name: flowChartOfflineStorage
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOfflineStorage:member
@@ -652,7 +639,7 @@ fields:
     summary: |-
       FlowChart: Offline Storage
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartOfflineStorage"'
   - name: flowChartOffpageConnector
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOffpageConnector:member
@@ -660,7 +647,7 @@ fields:
     summary: |-
       Flowchart: Off-page Connector
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartOffpageConnector"'
   - name: flowChartOnlineStorage
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOnlineStorage:member
@@ -668,7 +655,7 @@ fields:
     summary: |-
       Flowchart: Stored Data
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartOnlineStorage"'
   - name: flowChartOr
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOr:member
@@ -676,7 +663,7 @@ fields:
     summary: |-
       Flowchart: Or
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartOr"'
   - name: flowChartPredefinedProcess
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPredefinedProcess:member
@@ -684,7 +671,7 @@ fields:
     summary: |-
       Flowchart: Predefined Process
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartPredefinedProcess"'
   - name: flowChartPreparation
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPreparation:member
@@ -692,7 +679,7 @@ fields:
     summary: |-
       Flowchart: Preparation
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartPreparation"'
   - name: flowChartProcess
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartProcess:member
@@ -700,7 +687,7 @@ fields:
     summary: |-
       Flowchart: Process
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartProcess"'
   - name: flowChartPunchedCard
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedCard:member
@@ -708,7 +695,7 @@ fields:
     summary: |-
       Flowchart: Card
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartPunchedCard"'
   - name: flowChartPunchedTape
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedTape:member
@@ -716,7 +703,7 @@ fields:
     summary: |-
       Flowchart: Punched Tape
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartPunchedTape"'
   - name: flowChartSort
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartSort:member
@@ -724,7 +711,7 @@ fields:
     summary: |-
       Flowchart: Sort
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartSort"'
   - name: flowChartSummingJunction
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartSummingJunction:member
@@ -732,7 +719,7 @@ fields:
     summary: |-
       Flowchart: Summing Junction
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartSummingJunction"'
   - name: flowChartTerminator
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartTerminator:member
@@ -740,7 +727,7 @@ fields:
     summary: |-
       Flowchart: Terminator
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FlowChartTerminator"'
   - name: foldedCorner
     uid: powerpoint!PowerPoint.GeometricShapeType.foldedCorner:member
@@ -748,7 +735,7 @@ fields:
     summary: |-
       Rectangle: Folded Corner
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"FoldedCorner"'
   - name: frame
     uid: powerpoint!PowerPoint.GeometricShapeType.frame:member
@@ -756,7 +743,7 @@ fields:
     summary: |-
       Frame
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Frame"'
   - name: funnel
     uid: powerpoint!PowerPoint.GeometricShapeType.funnel:member
@@ -764,7 +751,7 @@ fields:
     summary: |-
       Funnel
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Funnel"'
   - name: gear6
     uid: powerpoint!PowerPoint.GeometricShapeType.gear6:member
@@ -772,7 +759,7 @@ fields:
     summary: |-
       Gear: A Gear with Six Teeth
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Gear6"'
   - name: gear9
     uid: powerpoint!PowerPoint.GeometricShapeType.gear9:member
@@ -780,7 +767,7 @@ fields:
     summary: |-
       Gear: A Gear with Nine Teeth
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Gear9"'
   - name: halfFrame
     uid: powerpoint!PowerPoint.GeometricShapeType.halfFrame:member
@@ -788,7 +775,7 @@ fields:
     summary: |-
       Half Frame
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"HalfFrame"'
   - name: heart
     uid: powerpoint!PowerPoint.GeometricShapeType.heart:member
@@ -796,7 +783,7 @@ fields:
     summary: |-
       Heart
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Heart"'
   - name: heptagon
     uid: powerpoint!PowerPoint.GeometricShapeType.heptagon:member
@@ -804,7 +791,7 @@ fields:
     summary: |-
       Heptagon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Heptagon"'
   - name: hexagon
     uid: powerpoint!PowerPoint.GeometricShapeType.hexagon:member
@@ -812,7 +799,7 @@ fields:
     summary: |-
       Hexagon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Hexagon"'
   - name: homePlate
     uid: powerpoint!PowerPoint.GeometricShapeType.homePlate:member
@@ -820,7 +807,7 @@ fields:
     summary: |-
       Arrow: Pentagon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"HomePlate"'
   - name: horizontalScroll
     uid: powerpoint!PowerPoint.GeometricShapeType.horizontalScroll:member
@@ -828,7 +815,7 @@ fields:
     summary: |-
       Scroll: Horizontal
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"HorizontalScroll"'
   - name: irregularSeal1
     uid: powerpoint!PowerPoint.GeometricShapeType.irregularSeal1:member
@@ -836,7 +823,7 @@ fields:
     summary: |-
       Explosion: 8 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"IrregularSeal1"'
   - name: irregularSeal2
     uid: powerpoint!PowerPoint.GeometricShapeType.irregularSeal2:member
@@ -844,7 +831,7 @@ fields:
     summary: |-
       Explosion: 14 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"IrregularSeal2"'
   - name: leftArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.leftArrow:member
@@ -852,7 +839,7 @@ fields:
     summary: |-
       Arrow: Left
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftArrow"'
   - name: leftArrowCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.leftArrowCallout:member
@@ -860,7 +847,7 @@ fields:
     summary: |-
       Callout: Left Arrow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftArrowCallout"'
   - name: leftBrace
     uid: powerpoint!PowerPoint.GeometricShapeType.leftBrace:member
@@ -868,7 +855,7 @@ fields:
     summary: |-
       Left Brace
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftBrace"'
   - name: leftBracket
     uid: powerpoint!PowerPoint.GeometricShapeType.leftBracket:member
@@ -876,7 +863,7 @@ fields:
     summary: |-
       Left Bracket
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftBracket"'
   - name: leftCircularArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.leftCircularArrow:member
@@ -884,7 +871,7 @@ fields:
     summary: |-
       Arrow: Circular with Opposite Arrow Direction
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftCircularArrow"'
   - name: leftRightArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightArrow:member
@@ -892,7 +879,7 @@ fields:
     summary: |-
       Arrow: Left-Right
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftRightArrow"'
   - name: leftRightArrowCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightArrowCallout:member
@@ -900,7 +887,7 @@ fields:
     summary: |-
       Callout: Left-Right Arrow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftRightArrowCallout"'
   - name: leftRightCircularArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightCircularArrow:member
@@ -908,7 +895,7 @@ fields:
     summary: |-
       Arrow: Circular with Two Arrows in Both Directions
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftRightCircularArrow"'
   - name: leftRightRibbon
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightRibbon:member
@@ -916,7 +903,7 @@ fields:
     summary: |-
       Ribbon: Straight with Both Left and Right Arrows
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftRightRibbon"'
   - name: leftRightUpArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightUpArrow:member
@@ -924,7 +911,7 @@ fields:
     summary: |-
       Arrow: Left-Right-Up
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftRightUpArrow"'
   - name: leftUpArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.leftUpArrow:member
@@ -932,7 +919,7 @@ fields:
     summary: |-
       Arrow: Left-Up
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LeftUpArrow"'
   - name: lightningBolt
     uid: powerpoint!PowerPoint.GeometricShapeType.lightningBolt:member
@@ -940,7 +927,7 @@ fields:
     summary: |-
       Lightning Bolt
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LightningBolt"'
   - name: lineInverse
     uid: powerpoint!PowerPoint.GeometricShapeType.lineInverse:member
@@ -948,7 +935,7 @@ fields:
     summary: |-
       Straight Line from Top-Right Corner to Bottom-Left Corner of the Shape
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LineInverse"'
   - name: mathDivide
     uid: powerpoint!PowerPoint.GeometricShapeType.mathDivide:member
@@ -956,7 +943,7 @@ fields:
     summary: |-
       Division Sign
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"MathDivide"'
   - name: mathEqual
     uid: powerpoint!PowerPoint.GeometricShapeType.mathEqual:member
@@ -964,7 +951,7 @@ fields:
     summary: |-
       Equals
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"MathEqual"'
   - name: mathMinus
     uid: powerpoint!PowerPoint.GeometricShapeType.mathMinus:member
@@ -972,7 +959,7 @@ fields:
     summary: |-
       Minus Sign
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"MathMinus"'
   - name: mathMultiply
     uid: powerpoint!PowerPoint.GeometricShapeType.mathMultiply:member
@@ -980,7 +967,7 @@ fields:
     summary: |-
       Multiplication Sign
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"MathMultiply"'
   - name: mathNotEqual
     uid: powerpoint!PowerPoint.GeometricShapeType.mathNotEqual:member
@@ -988,7 +975,7 @@ fields:
     summary: |-
       Not Equal
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"MathNotEqual"'
   - name: mathPlus
     uid: powerpoint!PowerPoint.GeometricShapeType.mathPlus:member
@@ -996,7 +983,7 @@ fields:
     summary: |-
       Plus Sign
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"MathPlus"'
   - name: moon
     uid: powerpoint!PowerPoint.GeometricShapeType.moon:member
@@ -1004,7 +991,7 @@ fields:
     summary: |-
       Moon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Moon"'
   - name: nonIsoscelesTrapezoid
     uid: powerpoint!PowerPoint.GeometricShapeType.nonIsoscelesTrapezoid:member
@@ -1012,7 +999,7 @@ fields:
     summary: |-
       Trapezoid which may have Non-Equal Sides
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"NonIsoscelesTrapezoid"'
   - name: noSmoking
     uid: powerpoint!PowerPoint.GeometricShapeType.noSmoking:member
@@ -1020,7 +1007,7 @@ fields:
     summary: |-
       "Not Allowed" Symbol
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"NoSmoking"'
   - name: notchedRightArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.notchedRightArrow:member
@@ -1028,7 +1015,7 @@ fields:
     summary: |-
       Arrow: Notched Right
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"NotchedRightArrow"'
   - name: octagon
     uid: powerpoint!PowerPoint.GeometricShapeType.octagon:member
@@ -1036,7 +1023,7 @@ fields:
     summary: |-
       Octagon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Octagon"'
   - name: parallelogram
     uid: powerpoint!PowerPoint.GeometricShapeType.parallelogram:member
@@ -1044,7 +1031,7 @@ fields:
     summary: |-
       Parallelogram
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Parallelogram"'
   - name: pentagon
     uid: powerpoint!PowerPoint.GeometricShapeType.pentagon:member
@@ -1052,7 +1039,7 @@ fields:
     summary: |-
       Pentagon
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Pentagon"'
   - name: pie
     uid: powerpoint!PowerPoint.GeometricShapeType.pie:member
@@ -1060,7 +1047,7 @@ fields:
     summary: |-
       Partial Circle with Adjustable Spanning Area
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Pie"'
   - name: pieWedge
     uid: powerpoint!PowerPoint.GeometricShapeType.pieWedge:member
@@ -1068,7 +1055,7 @@ fields:
     summary: |-
       Partial Circle
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"PieWedge"'
   - name: plaque
     uid: powerpoint!PowerPoint.GeometricShapeType.plaque:member
@@ -1076,7 +1063,7 @@ fields:
     summary: |-
       Plaque
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Plaque"'
   - name: plaqueTabs
     uid: powerpoint!PowerPoint.GeometricShapeType.plaqueTabs:member
@@ -1084,7 +1071,7 @@ fields:
     summary: |-
       Four Quarter Circles that Define a Rectangular Shape.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"PlaqueTabs"'
   - name: plus
     uid: powerpoint!PowerPoint.GeometricShapeType.plus:member
@@ -1092,7 +1079,7 @@ fields:
     summary: |-
       Cross
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Plus"'
   - name: quadArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.quadArrow:member
@@ -1100,7 +1087,7 @@ fields:
     summary: |-
       Arrow: Quad
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"QuadArrow"'
   - name: quadArrowCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.quadArrowCallout:member
@@ -1108,7 +1095,7 @@ fields:
     summary: |-
       Callout: Quad Arrow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"QuadArrowCallout"'
   - name: rectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.rectangle:member
@@ -1116,7 +1103,7 @@ fields:
     summary: |-
       Rectangle
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Rectangle"'
   - name: ribbon
     uid: powerpoint!PowerPoint.GeometricShapeType.ribbon:member
@@ -1124,7 +1111,7 @@ fields:
     summary: |-
       Ribbon: Tilted Down
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Ribbon"'
   - name: ribbon2
     uid: powerpoint!PowerPoint.GeometricShapeType.ribbon2:member
@@ -1132,7 +1119,7 @@ fields:
     summary: |-
       Ribbon: Tilted Up
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Ribbon2"'
   - name: rightArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.rightArrow:member
@@ -1140,7 +1127,7 @@ fields:
     summary: |-
       Arrow: Right
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"RightArrow"'
   - name: rightArrowCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.rightArrowCallout:member
@@ -1148,7 +1135,7 @@ fields:
     summary: |-
       Callout: Right Arrow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"RightArrowCallout"'
   - name: rightBrace
     uid: powerpoint!PowerPoint.GeometricShapeType.rightBrace:member
@@ -1156,7 +1143,7 @@ fields:
     summary: |-
       Right Brace
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"RightBrace"'
   - name: rightBracket
     uid: powerpoint!PowerPoint.GeometricShapeType.rightBracket:member
@@ -1164,7 +1151,7 @@ fields:
     summary: |-
       Right Bracket
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"RightBracket"'
   - name: rightTriangle
     uid: powerpoint!PowerPoint.GeometricShapeType.rightTriangle:member
@@ -1172,7 +1159,7 @@ fields:
     summary: |-
       Right Triangle
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"RightTriangle"'
   - name: round1Rectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.round1Rectangle:member
@@ -1180,7 +1167,7 @@ fields:
     summary: |-
       Rectangle: Single Corner Rounded
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Round1Rectangle"'
   - name: round2DiagonalRectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.round2DiagonalRectangle:member
@@ -1188,7 +1175,7 @@ fields:
     summary: |-
       Rectangle: Diagonal Corners Rounded
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Round2DiagonalRectangle"'
   - name: round2SameRectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.round2SameRectangle:member
@@ -1196,7 +1183,7 @@ fields:
     summary: |-
       Rectangle: Top Corners Rounded
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Round2SameRectangle"'
   - name: roundRectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.roundRectangle:member
@@ -1204,7 +1191,7 @@ fields:
     summary: |-
       Rectangle: Rounded Corners
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"RoundRectangle"'
   - name: smileyFace
     uid: powerpoint!PowerPoint.GeometricShapeType.smileyFace:member
@@ -1212,7 +1199,7 @@ fields:
     summary: |-
       Smiley Face
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SmileyFace"'
   - name: snip1Rectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.snip1Rectangle:member
@@ -1220,7 +1207,7 @@ fields:
     summary: |-
       Rectangle: Single Corner Snipped
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Snip1Rectangle"'
   - name: snip2DiagonalRectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.snip2DiagonalRectangle:member
@@ -1228,7 +1215,7 @@ fields:
     summary: |-
       Rectangle: Diagonal Corners Snipped
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Snip2DiagonalRectangle"'
   - name: snip2SameRectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.snip2SameRectangle:member
@@ -1236,7 +1223,7 @@ fields:
     summary: |-
       Rectangle: Top Corners Snipped
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Snip2SameRectangle"'
   - name: snipRoundRectangle
     uid: powerpoint!PowerPoint.GeometricShapeType.snipRoundRectangle:member
@@ -1244,7 +1231,7 @@ fields:
     summary: |-
       Rectangle: Top Corners One Rounded and One Snipped
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SnipRoundRectangle"'
   - name: squareTabs
     uid: powerpoint!PowerPoint.GeometricShapeType.squareTabs:member
@@ -1252,7 +1239,7 @@ fields:
     summary: |-
       Four Small Squares that Define a Rectangular Shape.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SquareTabs"'
   - name: star10
     uid: powerpoint!PowerPoint.GeometricShapeType.star10:member
@@ -1260,7 +1247,7 @@ fields:
     summary: |-
       Star: 10 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star10"'
   - name: star12
     uid: powerpoint!PowerPoint.GeometricShapeType.star12:member
@@ -1268,7 +1255,7 @@ fields:
     summary: |-
       Star: 12 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star12"'
   - name: star16
     uid: powerpoint!PowerPoint.GeometricShapeType.star16:member
@@ -1276,7 +1263,7 @@ fields:
     summary: |-
       Star: 16 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star16"'
   - name: star24
     uid: powerpoint!PowerPoint.GeometricShapeType.star24:member
@@ -1284,7 +1271,7 @@ fields:
     summary: |-
       Star: 24 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star24"'
   - name: star32
     uid: powerpoint!PowerPoint.GeometricShapeType.star32:member
@@ -1292,7 +1279,7 @@ fields:
     summary: |-
       Star: 32 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star32"'
   - name: star4
     uid: powerpoint!PowerPoint.GeometricShapeType.star4:member
@@ -1300,7 +1287,7 @@ fields:
     summary: |-
       Star: 4 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star4"'
   - name: star5
     uid: powerpoint!PowerPoint.GeometricShapeType.star5:member
@@ -1308,7 +1295,7 @@ fields:
     summary: |-
       Star: 5 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star5"'
   - name: star6
     uid: powerpoint!PowerPoint.GeometricShapeType.star6:member
@@ -1316,7 +1303,7 @@ fields:
     summary: |-
       Star: 6 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star6"'
   - name: star7
     uid: powerpoint!PowerPoint.GeometricShapeType.star7:member
@@ -1324,7 +1311,7 @@ fields:
     summary: |-
       Star: 7 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star7"'
   - name: star8
     uid: powerpoint!PowerPoint.GeometricShapeType.star8:member
@@ -1332,7 +1319,7 @@ fields:
     summary: |-
       Star: 8 Points
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Star8"'
   - name: stripedRightArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.stripedRightArrow:member
@@ -1340,7 +1327,7 @@ fields:
     summary: |-
       Arrow: Striped Right
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"StripedRightArrow"'
   - name: sun
     uid: powerpoint!PowerPoint.GeometricShapeType.sun:member
@@ -1348,7 +1335,7 @@ fields:
     summary: |-
       Sun
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Sun"'
   - name: swooshArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.swooshArrow:member
@@ -1356,7 +1343,7 @@ fields:
     summary: |-
       Arrow: Curved Right Arrow with Varying Width
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SwooshArrow"'
   - name: teardrop
     uid: powerpoint!PowerPoint.GeometricShapeType.teardrop:member
@@ -1364,7 +1351,7 @@ fields:
     summary: |-
       Teardrop
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Teardrop"'
   - name: trapezoid
     uid: powerpoint!PowerPoint.GeometricShapeType.trapezoid:member
@@ -1372,7 +1359,7 @@ fields:
     summary: |-
       Trapezoid
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Trapezoid"'
   - name: triangle
     uid: powerpoint!PowerPoint.GeometricShapeType.triangle:member
@@ -1380,7 +1367,7 @@ fields:
     summary: |-
       Isosceles Triangle
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Triangle"'
   - name: upArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.upArrow:member
@@ -1388,7 +1375,7 @@ fields:
     summary: |-
       Arrow: Up
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"UpArrow"'
   - name: upArrowCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.upArrowCallout:member
@@ -1396,7 +1383,7 @@ fields:
     summary: |-
       Callout: Up Arrow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"UpArrowCallout"'
   - name: upDownArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.upDownArrow:member
@@ -1404,7 +1391,7 @@ fields:
     summary: |-
       Arrow: Up-Down
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"UpDownArrow"'
   - name: upDownArrowCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.upDownArrowCallout:member
@@ -1412,7 +1399,7 @@ fields:
     summary: |-
       Callout: Up-Down Arrow
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"UpDownArrowCallout"'
   - name: uturnArrow
     uid: powerpoint!PowerPoint.GeometricShapeType.uturnArrow:member
@@ -1420,7 +1407,7 @@ fields:
     summary: |-
       Arrow: U-Turn
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"UturnArrow"'
   - name: verticalScroll
     uid: powerpoint!PowerPoint.GeometricShapeType.verticalScroll:member
@@ -1428,7 +1415,7 @@ fields:
     summary: |-
       Scroll: Vertical
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"VerticalScroll"'
   - name: wave
     uid: powerpoint!PowerPoint.GeometricShapeType.wave:member
@@ -1436,7 +1423,7 @@ fields:
     summary: |-
       Wave
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Wave"'
   - name: wedgeEllipseCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.wedgeEllipseCallout:member
@@ -1444,7 +1431,7 @@ fields:
     summary: |-
       Speech Bubble: Oval
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"WedgeEllipseCallout"'
   - name: wedgeRectCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.wedgeRectCallout:member
@@ -1452,7 +1439,7 @@ fields:
     summary: |-
       Speech Bubble: Rectangle
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"WedgeRectCallout"'
   - name: wedgeRRectCallout
     uid: powerpoint!PowerPoint.GeometricShapeType.wedgeRRectCallout:member
@@ -1460,5 +1447,5 @@ fields:
     summary: |-
       Speech Bubble: Rectangle with Corners Rounded
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"WedgeRRectCallout"'

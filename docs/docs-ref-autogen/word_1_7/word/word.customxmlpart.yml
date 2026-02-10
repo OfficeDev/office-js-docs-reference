@@ -4,22 +4,15 @@ uid: word!Word.CustomXmlPart:class
 package: word!
 fullName: Word.CustomXmlPart
 summary: Represents a custom XML part.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
   // Adds a custom XML part.
-
   await Word.run(async (context) => {
     const originalXml =
       "<Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
@@ -38,9 +31,8 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -49,11 +41,9 @@ properties:
     uid: word!Word.CustomXmlPart#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,22 +55,15 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
       // Adds a custom XML part.
-
       await Word.run(async (context) => {
         const originalXml =
           "<Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
@@ -99,9 +82,8 @@ properties:
 
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,26 +95,17 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
-
-
-      // Original XML: <Reviewers
-      xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Gets the namespace URI from a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
@@ -150,9 +123,8 @@ properties:
           console.warn("Didn't find custom XML part.");
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,26 +137,17 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
-
-
-      // Original XML:
-      <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Deletes a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -214,16 +177,11 @@ methods:
         }
       });
 
-
       ...
 
-
-      // Original XML: <Reviewers
-      xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Deletes a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
@@ -255,9 +213,8 @@ methods:
           console.warn("Didn't find custom XML part to delete.");
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -269,35 +226,21 @@ methods:
     uid: word!Word.CustomXmlPart#deleteAttribute:member(1)
     package: word!
     fullName: deleteAttribute(xpath, namespaceMappings, name)
-    summary: >-
-      Deletes an attribute with the given name from the element identified by
-      xpath.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Deletes an attribute with the given name from the element identified by xpath.
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      If any element in the tree has an xmlns attribute (whose value is
-      typically, but not always, a URI), an alias for that attribute value must
-      prefix the element name in the xpath parameter. For example, suppose the
-      tree is the following:
-
+      If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose the tree is the following:
 
       ```xml
-
       <Day>
         <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
           <Week>something</Week>
         </Month>
       </Day>
-
       ```
-
-      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!--
-      -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!--
-      -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
-      -->GregorianCalendar" in the namespaceMappings parameter.
-
+      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!-- -->GregorianCalendar" in the namespaceMappings parameter.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -310,13 +253,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: >-
-            An object whose property values are namespace names and whose
-            property names are aliases for the corresponding namespaces. For
-            example, `{greg:
-            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
-            property names (such as "greg") can be any string that doesn't used
-            reserved XPath characters, such as the forward slash "/".
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -332,32 +269,20 @@ methods:
     package: word!
     fullName: deleteElement(xpath, namespaceMappings)
     summary: Deletes the element identified by xpath.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      If any element in the tree has an xmlns attribute (whose value is
-      typically, but not always, a URI), an alias for that attribute value must
-      prefix the element name in the xpath parameter. For example, suppose the
-      tree is the following:
-
+      If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose the tree is the following:
 
       ```xml
-
       <Day>
         <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
           <Week>something</Week>
         </Month>
       </Day>
-
       ```
-
-      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!--
-      -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!--
-      -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
-      -->GregorianCalendar" in the namespaceMappings parameter.
-
+      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!-- -->GregorianCalendar" in the namespaceMappings parameter.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,13 +295,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: >-
-            An object whose property values are namespace names and whose
-            property names are aliases for the corresponding namespaces. For
-            example, `{greg:
-            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
-            property names (such as "greg") can be any string that doesn't used
-            reserved XPath characters, such as the forward slash "/".
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -389,25 +308,16 @@ methods:
     package: word!
     fullName: getXml()
     summary: Gets the full XML content of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
       // Adds a custom XML part.
-
-      // If you want to populate the CustomXml.namespaceUri property, you must
-      include the xmlns attribute.
-
+      // If you want to populate the CustomXml.namespaceUri property, you must include the xmlns attribute.
       await Word.run(async (context) => {
         const originalXml =
           "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
@@ -427,12 +337,9 @@ methods:
         await context.sync();
       });
 
-
       ...
 
-
       // Adds a custom XML part.
-
       await Word.run(async (context) => {
         const originalXml =
           "<Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
@@ -451,9 +358,8 @@ methods:
 
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -465,51 +371,29 @@ methods:
     uid: word!Word.CustomXmlPart#insertAttribute:member(1)
     package: word!
     fullName: insertAttribute(xpath, namespaceMappings, name, value)
-    summary: >-
-      Inserts an attribute with the given name and value to the element
-      identified by xpath.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Inserts an attribute with the given name and value to the element identified by xpath.
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      If any element in the tree has an xmlns attribute (whose value is
-      typically, but not always, a URI), an alias for that attribute value must
-      prefix the element name in the xpath parameter. For example, suppose the
-      tree is the following:
-
+      If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose the tree is the following:
 
       ```xml
-
       <Day>
         <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
           <Week>something</Week>
         </Month>
       </Day>
-
       ```
-
-      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!--
-      -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!--
-      -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
-      -->GregorianCalendar" in the namespaceMappings parameter.
-
+      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!-- -->GregorianCalendar" in the namespaceMappings parameter.
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
-
-
-      // Original XML: <Reviewers
-      xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Inserts an attribute into a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
@@ -535,16 +419,11 @@ methods:
         }
       });
 
-
       ...
 
-
-      // Original XML:
-      <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Inserts an attribute into a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -564,9 +443,8 @@ methods:
           console.warn("Didn't find custom XML part to insert attribute into.");
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -579,13 +457,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: >-
-            An object whose property values are namespace names and whose
-            property names are aliases for the corresponding namespaces. For
-            example, `{greg:
-            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
-            property names (such as "greg") can be any string that doesn't used
-            reserved XPath characters, such as the forward slash "/".
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -603,51 +475,29 @@ methods:
     uid: word!Word.CustomXmlPart#insertElement:member(1)
     package: word!
     fullName: insertElement(xpath, xml, namespaceMappings, index)
-    summary: >-
-      Inserts the given XML under the parent element identified by xpath at
-      child position index.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Inserts the given XML under the parent element identified by xpath at child position index.
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      If any element in the tree has an xmlns attribute (whose value is
-      typically, but not always, a URI), an alias for that attribute value must
-      prefix the element name in the xpath parameter. For example, suppose the
-      tree is the following:
-
+      If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose the tree is the following:
 
       ```xml
-
       <Day>
         <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
           <Week>something</Week>
         </Month>
       </Day>
-
       ```
-
-      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!--
-      -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!--
-      -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
-      -->GregorianCalendar" in the namespaceMappings parameter.
-
+      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!-- -->GregorianCalendar" in the namespaceMappings parameter.
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
-
-
-      // Original XML: <Reviewers
-      xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Inserts an element into a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
@@ -673,16 +523,11 @@ methods:
         }
       });
 
-
       ...
 
-
-      // Original XML:
-      <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Inserts an element into a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -707,9 +552,8 @@ methods:
           console.warn("Didn't find custom XML part to insert element into.");
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -725,22 +569,13 @@ methods:
           description: XML content to be inserted.
           type: string
         - id: namespaceMappings
-          description: >-
-            An object whose property values are namespace names and whose
-            property names are aliases for the corresponding namespaces. For
-            example, `{greg:
-            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
-            property names (such as "greg") can be any string that doesn't used
-            reserved XPath characters, such as the forward slash "/".
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
                     }
         - id: index
-          description: >-
-            Optional. Zero-based position at which the new XML to be inserted.
-            If omitted, the XML will be appended as the last child of this
-            parent.
+          description: Optional. Zero-based position at which the new XML to be inserted. If omitted, the XML will be appended as the last child of this parent.
           type: number
       return:
         type: void
@@ -749,23 +584,17 @@ methods:
     uid: word!Word.CustomXmlPart#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.CustomXmlPartLoadOptions):
-        Word.CustomXmlPart;
+      content: 'load(options?: Word.Interfaces.CustomXmlPartLoadOptions): Word.CustomXmlPart;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="word!Word.Interfaces.CustomXmlPartLoadOptions:interface"
-            />
+          type: <xref uid="word!Word.Interfaces.CustomXmlPartLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.CustomXmlPart:class" />
         description: ''
@@ -773,20 +602,16 @@ methods:
     uid: word!Word.CustomXmlPart#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.CustomXmlPart;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.CustomXmlPart:class" />
@@ -795,11 +620,9 @@ methods:
     uid: word!Word.CustomXmlPart#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -810,11 +633,7 @@ methods:
                 }): Word.CustomXmlPart;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -828,48 +647,28 @@ methods:
     package: word!
     fullName: query(xpath, namespaceMappings)
     summary: Queries the XML content of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      If any element in the tree has an xmlns attribute (whose value is
-      typically, but not always, a URI), an alias for that attribute value must
-      prefix the element name in the xpath parameter. For example, suppose the
-      tree is the following:
-
+      If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose the tree is the following:
 
       ```xml
-
       <Day>
         <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
           <Week>something</Week>
         </Month>
       </Day>
-
       ```
-
-      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!--
-      -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!--
-      -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
-      -->GregorianCalendar" in the namespaceMappings parameter.
-
+      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!-- -->GregorianCalendar" in the namespaceMappings parameter.
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
-
-
-      // Original XML: <Reviewers
-      xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Queries a custom XML part for elements matching the search terms.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
@@ -894,16 +693,11 @@ methods:
         }
       });
 
-
       ...
 
-
-      // Original XML:
-      <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Queries a custom XML part for elements matching the search terms.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -927,9 +721,8 @@ methods:
           console.warn("Didn't find custom XML part to query.");
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -942,53 +735,31 @@ methods:
           description: An XPath query.
           type: string
         - id: namespaceMappings
-          description: >-
-            An object whose property values are namespace names and whose
-            property names are aliases for the corresponding namespaces. For
-            example, `{greg:
-            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
-            property names (such as "greg") can be any string that doesn't used
-            reserved XPath characters, such as the forward slash "/".
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
                     }
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
-        description: >-
-          An array where each item represents an entry matched by the XPath
-          query.
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
+        description: An array where each item represents an entry matched by the XPath query.
   - name: set(properties, options)
     uid: word!Word.CustomXmlPart#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.CustomXmlPartUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.CustomXmlPartUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="word!Word.Interfaces.CustomXmlPartUpdateData:interface"
-            />
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+          type: <xref uid="word!Word.Interfaces.CustomXmlPartUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -997,11 +768,9 @@ methods:
     uid: word!Word.CustomXmlPart#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1018,26 +787,17 @@ methods:
     package: word!
     fullName: setXml(xml)
     summary: Sets the full XML content of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
-
-
-      // Original XML: <Reviewers
-      xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
-
+      // Original XML: <Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>
 
       // Replaces a custom XML part.
-
       await Word.run(async (context) => {
         const settings: Word.SettingCollection = context.document.settings;
         const xmlPartIDSetting: Word.Setting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
@@ -1064,9 +824,8 @@ methods:
           console.warn("Didn't find custom XML part to replace.");
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1082,17 +841,9 @@ methods:
     uid: word!Word.CustomXmlPart#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.CustomXmlPart`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.CustomXmlPartData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.CustomXmlPart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1104,18 +855,9 @@ methods:
     uid: word!Word.CustomXmlPart#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1127,16 +869,9 @@ methods:
     uid: word!Word.CustomXmlPart#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1148,35 +883,21 @@ methods:
     uid: word!Word.CustomXmlPart#updateAttribute:member(1)
     package: word!
     fullName: updateAttribute(xpath, namespaceMappings, name, value)
-    summary: >-
-      Updates the value of an attribute with the given name of the element
-      identified by xpath.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: Updates the value of an attribute with the given name of the element identified by xpath.
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      If any element in the tree has an xmlns attribute (whose value is
-      typically, but not always, a URI), an alias for that attribute value must
-      prefix the element name in the xpath parameter. For example, suppose the
-      tree is the following:
-
+      If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose the tree is the following:
 
       ```xml
-
       <Day>
         <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
           <Week>something</Week>
         </Month>
       </Day>
-
       ```
-
-      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!--
-      -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!--
-      -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
-      -->GregorianCalendar" in the namespaceMappings parameter.
-
+      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!-- -->GregorianCalendar" in the namespaceMappings parameter.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1189,13 +910,7 @@ methods:
           description: Absolute path to the single element in XPath notation.
           type: string
         - id: namespaceMappings
-          description: >-
-            An object whose property values are namespace names and whose
-            property names are aliases for the corresponding namespaces. For
-            example, `{greg:
-            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
-            property names (such as "greg") can be any string that doesn't used
-            reserved XPath characters, such as the forward slash "/".
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;
@@ -1214,32 +929,20 @@ methods:
     package: word!
     fullName: updateElement(xpath, xml, namespaceMappings)
     summary: Updates the XML of the element identified by xpath.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-      If any element in the tree has an xmlns attribute (whose value is
-      typically, but not always, a URI), an alias for that attribute value must
-      prefix the element name in the xpath parameter. For example, suppose the
-      tree is the following:
-
+      If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose the tree is the following:
 
       ```xml
-
       <Day>
         <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
           <Week>something</Week>
         </Month>
       </Day>
-
       ```
-
-      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!--
-      -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!--
-      -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
-      -->GregorianCalendar" in the namespaceMappings parameter.
-
+      The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!-- -->GregorianCalendar" in the namespaceMappings parameter.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1255,13 +958,7 @@ methods:
           description: New XML content to be stored.
           type: string
         - id: namespaceMappings
-          description: >-
-            An object whose property values are namespace names and whose
-            property names are aliases for the corresponding namespaces. For
-            example, `{greg:
-            "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The
-            property names (such as "greg") can be any string that doesn't used
-            reserved XPath characters, such as the forward slash "/".
+          description: 'An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->. The property names (such as "greg") can be any string that doesn''t used reserved XPath characters, such as the forward slash "/".'
           type: |-
             {
                         [key: string]: string;

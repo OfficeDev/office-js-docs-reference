@@ -4,22 +4,15 @@ uid: word!Word.BorderLocation:enum
 package: word!
 fullName: Word.BorderLocation
 summary: Represents the location of a border.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
   // Gets border details about the first table in the document.
-
   await Word.run(async (context) => {
     const firstTable: Word.Table = context.document.body.tables.getFirst();
     const borderLocation = Word.BorderLocation.top;
@@ -29,9 +22,8 @@ remarks: >-
 
     console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -41,7 +33,7 @@ fields:
     summary: |-
       All borders.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"All"'
   - name: bottom
     uid: word!Word.BorderLocation.bottom:member
@@ -49,7 +41,7 @@ fields:
     summary: |-
       Bottom border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bottom"'
   - name: inside
     uid: word!Word.BorderLocation.inside:member
@@ -57,7 +49,7 @@ fields:
     summary: |-
       Inside border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inside"'
   - name: insideHorizontal
     uid: word!Word.BorderLocation.insideHorizontal:member
@@ -65,7 +57,7 @@ fields:
     summary: |-
       Inside horizontal border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideHorizontal"'
   - name: insideVertical
     uid: word!Word.BorderLocation.insideVertical:member
@@ -73,7 +65,7 @@ fields:
     summary: |-
       Inside vertical border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideVertical"'
   - name: left
     uid: word!Word.BorderLocation.left:member
@@ -81,7 +73,7 @@ fields:
     summary: |-
       Left border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Left"'
   - name: outside
     uid: word!Word.BorderLocation.outside:member
@@ -89,7 +81,7 @@ fields:
     summary: |-
       Outside border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Outside"'
   - name: right
     uid: word!Word.BorderLocation.right:member
@@ -97,7 +89,7 @@ fields:
     summary: |-
       Right border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Right"'
   - name: top
     uid: word!Word.BorderLocation.top:member
@@ -105,5 +97,5 @@ fields:
     summary: |-
       Top border.
 
-      * \[Api set: WordApi 1.3\]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Top"'

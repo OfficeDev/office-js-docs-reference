@@ -5,7 +5,7 @@ package: office!
 fullName: Office.NodeDeletedEventArgs
 summary: Provides information about the deleted node that raised the nodeDeleted event.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,11 +14,9 @@ properties:
     uid: office!Office.NodeDeletedEventArgs#isUndoRedo:member
     package: office!
     fullName: isUndoRedo
-    summary: >-
-      Gets whether the node was deleted as part of an Undo/Redo action by the
-      user.
+    summary: Gets whether the node was deleted as part of an Undo/Redo action by the user.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,7 @@ properties:
       Gets the former next sibling of the node that was just deleted from the
       [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface) object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,16 +43,15 @@ properties:
     package: office!
     fullName: oldNode
     summary: >-
-      Gets the node which was just deleted from the
-      [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface) object.
+      Gets the node which was just deleted from the [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface)
+      object.
 
 
-      Note that this node may have children, if a subtree is being removed from
-      the document. Also, this node will be a "disconnected" node in that you
-      can query down from the node, but you cannot query up the tree - the node
-      appears to exist alone.
+      Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a
+      "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears
+      to exist alone.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

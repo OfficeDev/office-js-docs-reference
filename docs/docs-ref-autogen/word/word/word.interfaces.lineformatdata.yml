@@ -3,11 +3,9 @@ name: Word.Interfaces.LineFormatData
 uid: word!Word.Interfaces.LineFormatData:interface
 package: word!
 fullName: Word.Interfaces.LineFormatData
-summary: >-
-  An interface describing the data returned by calling `lineFormat.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `lineFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.LineFormatData#backgroundColor:member
     package: word!
     fullName: backgroundColor
-    summary: >-
-      Gets a `ColorFormat` object that represents the background color for a
-      patterned line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `ColorFormat` object that represents the background color for a patterned line.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,148 +28,99 @@ properties:
     package: word!
     fullName: beginArrowheadLength
     summary: Specifies the length of the arrowhead at the beginning of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        beginArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" |
-        "Medium" | "Long";
+      content: 'beginArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";'
       return:
-        type: >-
-          <xref uid="word!Word.ArrowheadLength:enum" /> | "Mixed" | "Short" |
-          "Medium" | "Long"
+        type: <xref uid="word!Word.ArrowheadLength:enum" /> | "Mixed" | "Short" | "Medium" | "Long"
   - name: beginArrowheadStyle
     uid: word!Word.Interfaces.LineFormatData#beginArrowheadStyle:member
     package: word!
     fullName: beginArrowheadStyle
     summary: Specifies the style of the arrowhead at the beginning of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        beginArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" |
-        "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";
+      content: 'beginArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";'
       return:
-        type: >-
-          <xref uid="word!Word.ArrowheadStyle:enum" /> | "Mixed" | "None" |
-          "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval"
+        type: <xref uid="word!Word.ArrowheadStyle:enum" /> | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval"
   - name: beginArrowheadWidth
     uid: word!Word.Interfaces.LineFormatData#beginArrowheadWidth:member
     package: word!
     fullName: beginArrowheadWidth
     summary: Specifies the width of the arrowhead at the beginning of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        beginArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" |
-        "Medium" | "Wide";
+      content: 'beginArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";'
       return:
-        type: >-
-          <xref uid="word!Word.ArrowheadWidth:enum" /> | "Mixed" | "Narrow" |
-          "Medium" | "Wide"
+        type: <xref uid="word!Word.ArrowheadWidth:enum" /> | "Mixed" | "Narrow" | "Medium" | "Wide"
   - name: dashStyle
     uid: word!Word.Interfaces.LineFormatData#dashStyle:member
     package: word!
     fullName: dashStyle
     summary: Specifies the dash style for the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        dashStyle?: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" |
-        "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" |
-        "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";
+      content: 'dashStyle?: Word.LineDashStyle | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot";'
       return:
-        type: >-
-          <xref uid="word!Word.LineDashStyle:enum" /> | "Mixed" | "Solid" |
-          "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" |
-          "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" |
-          "SysDashDot"
+        type: <xref uid="word!Word.LineDashStyle:enum" /> | "Mixed" | "Solid" | "SquareDot" | "RoundDot" | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "LongDashDotDot" | "SysDash" | "SysDot" | "SysDashDot"
   - name: endArrowheadLength
     uid: word!Word.Interfaces.LineFormatData#endArrowheadLength:member
     package: word!
     fullName: endArrowheadLength
     summary: Specifies the length of the arrowhead at the end of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        endArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium"
-        | "Long";
+      content: 'endArrowheadLength?: Word.ArrowheadLength | "Mixed" | "Short" | "Medium" | "Long";'
       return:
-        type: >-
-          <xref uid="word!Word.ArrowheadLength:enum" /> | "Mixed" | "Short" |
-          "Medium" | "Long"
+        type: <xref uid="word!Word.ArrowheadLength:enum" /> | "Mixed" | "Short" | "Medium" | "Long"
   - name: endArrowheadStyle
     uid: word!Word.Interfaces.LineFormatData#endArrowheadStyle:member
     package: word!
     fullName: endArrowheadStyle
     summary: Specifies the style of the arrowhead at the end of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        endArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle"
-        | "Open" | "Stealth" | "Diamond" | "Oval";
+      content: 'endArrowheadStyle?: Word.ArrowheadStyle | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval";'
       return:
-        type: >-
-          <xref uid="word!Word.ArrowheadStyle:enum" /> | "Mixed" | "None" |
-          "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval"
+        type: <xref uid="word!Word.ArrowheadStyle:enum" /> | "Mixed" | "None" | "Triangle" | "Open" | "Stealth" | "Diamond" | "Oval"
   - name: endArrowheadWidth
     uid: word!Word.Interfaces.LineFormatData#endArrowheadWidth:member
     package: word!
     fullName: endArrowheadWidth
     summary: Specifies the width of the arrowhead at the end of the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        endArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium"
-        | "Wide";
+      content: 'endArrowheadWidth?: Word.ArrowheadWidth | "Mixed" | "Narrow" | "Medium" | "Wide";'
       return:
-        type: >-
-          <xref uid="word!Word.ArrowheadWidth:enum" /> | "Mixed" | "Narrow" |
-          "Medium" | "Wide"
+        type: <xref uid="word!Word.ArrowheadWidth:enum" /> | "Mixed" | "Narrow" | "Medium" | "Wide"
   - name: foregroundColor
     uid: word!Word.Interfaces.LineFormatData#foregroundColor:member
     package: word!
     fullName: foregroundColor
-    summary: >-
-      Gets a `ColorFormat` object that represents the foreground color for the
-      line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `ColorFormat` object that represents the foreground color for the line.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,10 +132,8 @@ properties:
     package: word!
     fullName: insetPen
     summary: Specifies if to draw lines inside a shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,10 +145,8 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the object, or the formatting applied to it, is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,77 +158,34 @@ properties:
     package: word!
     fullName: pattern
     summary: Specifies the pattern applied to the line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" |
-        "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" |
-        "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" |
-        "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" |
-        "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" |
-        "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" |
-        "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" |
-        "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" |
-        "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" |
-        "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" |
-        "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" |
-        "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" |
-        "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" |
-        "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" |
-        "UpwardDiagonal" | "DiagonalCross";
+      content: 'pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";'
       return:
-        type: >-
-          <xref uid="word!Word.PatternType:enum" /> | "Mixed" | "Percent5" |
-          "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" |
-          "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" |
-          "Percent90" | "DarkHorizontal" | "DarkVertical" |
-          "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" |
-          "Trellis" | "LightHorizontal" | "LightVertical" |
-          "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" |
-          "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" |
-          "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" |
-          "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" |
-          "LargeConfetti" | "LargeGrid" | "HorizontalBrick" |
-          "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" |
-          "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" |
-          "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" |
-          "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" |
-          "DiagonalCross"
+        type: <xref uid="word!Word.PatternType:enum" /> | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"
   - name: style
     uid: word!Word.Interfaces.LineFormatData#style:member
     package: word!
     fullName: style
     summary: Specifies the line format style.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        style?: Word.LineFormatStyle | "Mixed" | "Single" | "ThinThin" |
-        "ThinThick" | "ThickThin" | "ThickBetweenThin";
+      content: 'style?: Word.LineFormatStyle | "Mixed" | "Single" | "ThinThin" | "ThinThick" | "ThickThin" | "ThickBetweenThin";'
       return:
-        type: >-
-          <xref uid="word!Word.LineFormatStyle:enum" /> | "Mixed" | "Single" |
-          "ThinThin" | "ThinThick" | "ThickThin" | "ThickBetweenThin"
+        type: <xref uid="word!Word.LineFormatStyle:enum" /> | "Mixed" | "Single" | "ThinThin" | "ThinThick" | "ThickThin" | "ThickBetweenThin"
   - name: transparency
     uid: word!Word.Interfaces.LineFormatData#transparency:member
     package: word!
     fullName: transparency
-    summary: >-
-      Specifies the degree of transparency of the line as a value between 0.0
-      (opaque) and 1.0 (clear).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the degree of transparency of the line as a value between 0.0 (opaque) and 1.0 (clear).
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,10 +197,8 @@ properties:
     package: word!
     fullName: weight
     summary: Specifies the thickness of the line in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

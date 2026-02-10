@@ -4,10 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableStyleSettingsUpdateData
 summary: >-
-  An interface for updating data on the `TableStyleSettings` object, for use in
-  `tableStyleSettings.set({ ... })`<!-- -->.
+  An interface for updating data on the `TableStyleSettings` object, for use in `tableStyleSettings.set({ ... })`<!--
+  -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

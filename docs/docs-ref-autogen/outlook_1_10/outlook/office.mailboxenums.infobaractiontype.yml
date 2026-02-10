@@ -3,34 +3,18 @@ name: Office.MailboxEnums.InfobarActionType
 uid: outlook!Office.MailboxEnums.InfobarActionType:enum
 package: outlook!
 fullName: Office.MailboxEnums.InfobarActionType
-summary: >-
-  Action types supported by
-  [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
-  -->.
-remarks: >-
-  \[ [API set: Mailbox
-  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
-
+summary: Action types supported by [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+remarks: |-
+  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
   /*
-
-  * This snippet activates when a notification message is dismissed from an
-  Outlook message or appointment.
-
-  * The event handler logs the custom action and notification type to the
-  console.
-
+  * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+  * The event handler logs the custom action and notification type to the console.
   */
-
-  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
-  eventHandler, callback);
-
+  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
 
   function eventHandler(event) {
       const infobarDetails = event.infobarDetails;
@@ -54,9 +38,8 @@ remarks: >-
               break;
       }
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -66,5 +49,5 @@ fields:
     summary: |-
       Dismiss action was selected.
 
-      * \[Api set: Mailbox 1.10\]
+      \* \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '1'

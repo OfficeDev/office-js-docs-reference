@@ -4,10 +4,8 @@ uid: word!Word.BuildingBlockEntryCollection:class
 package: word!
 fullName: Word.BuildingBlockEntryCollection
 summary: Represents a collection of building block entries in a Word template.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +14,9 @@ properties:
     uid: word!Word.BuildingBlockEntryCollection#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,20 +28,13 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#add:member(1)
     package: word!
     fullName: add(name, type, category, range, description, insertType)
-    summary: >-
-      Creates a new building block entry in a template and returns a
-      `BuildingBlock` object that represents the new building block entry.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Creates a new building block entry in a template and returns a `BuildingBlock` object that represents the new building block entry.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        add(name: string, type: Word.BuildingBlockType, category: string, range:
-        Word.Range, description: string, insertType: Word.DocPartInsertType):
-        Word.BuildingBlock;
+      content: 'add(name: string, type: Word.BuildingBlockType, category: string, range: Word.Range, description: string, insertType: Word.DocPartInsertType): Word.BuildingBlock;'
       parameters:
         - id: name
           description: The name of the building block.
@@ -72,47 +61,20 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#add:member(2)
     package: word!
     fullName: add(name, type, category, range, description, insertType)
-    summary: >-
-      Creates a new building block entry in a template and returns a
-      `BuildingBlock` object that represents the new building block entry.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Creates a new building block entry in a template and returns a `BuildingBlock` object that represents the new building block entry.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        add(name: string, type: "QuickParts" | "CoverPage" | "Equations" |
-        "Footers" | "Headers" | "PageNumber" | "Tables" | "Watermarks" |
-        "AutoText" | "TextBox" | "PageNumberTop" | "PageNumberBottom" |
-        "PageNumberPage" | "TableOfContents" | "CustomQuickParts" |
-        "CustomCoverPage" | "CustomEquations" | "CustomFooters" |
-        "CustomHeaders" | "CustomPageNumber" | "CustomTables" |
-        "CustomWatermarks" | "CustomAutoText" | "CustomTextBox" |
-        "CustomPageNumberTop" | "CustomPageNumberBottom" |
-        "CustomPageNumberPage" | "CustomTableOfContents" | "Custom1" | "Custom2"
-        | "Custom3" | "Custom4" | "Custom5" | "Bibliography" |
-        "CustomBibliography", category: string, range: Word.Range, description:
-        string, insertType: "Content" | "Paragraph" | "Page"):
-        Word.BuildingBlock;
+      content: 'add(name: string, type: "QuickParts" | "CoverPage" | "Equations" | "Footers" | "Headers" | "PageNumber" | "Tables" | "Watermarks" | "AutoText" | "TextBox" | "PageNumberTop" | "PageNumberBottom" | "PageNumberPage" | "TableOfContents" | "CustomQuickParts" | "CustomCoverPage" | "CustomEquations" | "CustomFooters" | "CustomHeaders" | "CustomPageNumber" | "CustomTables" | "CustomWatermarks" | "CustomAutoText" | "CustomTextBox" | "CustomPageNumberTop" | "CustomPageNumberBottom" | "CustomPageNumberPage" | "CustomTableOfContents" | "Custom1" | "Custom2" | "Custom3" | "Custom4" | "Custom5" | "Bibliography" | "CustomBibliography", category: string, range: Word.Range, description: string, insertType: "Content" | "Paragraph" | "Page"): Word.BuildingBlock;'
       parameters:
         - id: name
           description: The name of the building block.
           type: string
         - id: type
           description: The type of the building block.
-          type: >-
-            "QuickParts" | "CoverPage" | "Equations" | "Footers" | "Headers" |
-            "PageNumber" | "Tables" | "Watermarks" | "AutoText" | "TextBox" |
-            "PageNumberTop" | "PageNumberBottom" | "PageNumberPage" |
-            "TableOfContents" | "CustomQuickParts" | "CustomCoverPage" |
-            "CustomEquations" | "CustomFooters" | "CustomHeaders" |
-            "CustomPageNumber" | "CustomTables" | "CustomWatermarks" |
-            "CustomAutoText" | "CustomTextBox" | "CustomPageNumberTop" |
-            "CustomPageNumberBottom" | "CustomPageNumberPage" |
-            "CustomTableOfContents" | "Custom1" | "Custom2" | "Custom3" |
-            "Custom4" | "Custom5" | "Bibliography" | "CustomBibliography"
+          type: '"QuickParts" | "CoverPage" | "Equations" | "Footers" | "Headers" | "PageNumber" | "Tables" | "Watermarks" | "AutoText" | "TextBox" | "PageNumberTop" | "PageNumberBottom" | "PageNumberPage" | "TableOfContents" | "CustomQuickParts" | "CustomCoverPage" | "CustomEquations" | "CustomFooters" | "CustomHeaders" | "CustomPageNumber" | "CustomTables" | "CustomWatermarks" | "CustomAutoText" | "CustomTextBox" | "CustomPageNumberTop" | "CustomPageNumberBottom" | "CustomPageNumberPage" | "CustomTableOfContents" | "Custom1" | "Custom2" | "Custom3" | "Custom4" | "Custom5" | "Bibliography" | "CustomBibliography"'
         - id: category
           description: The category of the building block.
           type: string
@@ -133,10 +95,8 @@ methods:
     package: word!
     fullName: getCount()
     summary: Returns the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,13 +108,9 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#getItemAt:member(1)
     package: word!
     fullName: getItemAt(index)
-    summary: >-
-      Returns a `BuildingBlock` object that represents the specified item in the
-      collection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `BuildingBlock` object that represents the specified item in the collection.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,22 +126,16 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#load:member(1)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNames?: string | string[]):
-        Word.BuildingBlockEntryCollection;
+      content: 'load(propertyNames?: string | string[]): Word.BuildingBlockEntryCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.BuildingBlockEntryCollection:class" />
@@ -194,11 +144,9 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#load:member(2)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,11 +157,7 @@ methods:
                 }): Word.BuildingBlockEntryCollection;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -226,17 +170,9 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Word.BuildingBlockEntryCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Word.Interfaces.BuildingBlockEntryCollectionData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.BuildingBlockEntryCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BuildingBlockEntryCollectionData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,18 +190,9 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,16 +204,9 @@ methods:
     uid: word!Word.BuildingBlockEntryCollection#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

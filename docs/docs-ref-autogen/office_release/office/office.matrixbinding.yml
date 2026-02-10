@@ -4,10 +4,8 @@ uid: office!Office.MatrixBinding:interface
 package: office!
 fullName: Office.MatrixBinding
 summary: Represents a binding in two dimensions of rows and columns.
-remarks: >-
-  The MatrixBinding object inherits the `id` property, type property,
-  getDataAsync method, and setDataAsync method from the Binding object.
-
+remarks: The MatrixBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from the Binding object.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,9 +14,7 @@ properties:
     uid: office!Office.MatrixBinding#columnCount:member
     package: office!
     fullName: columnCount
-    summary: >-
-      Gets the number of columns in the matrix data structure, as an integer
-      value.
+    summary: Gets the number of columns in the matrix data structure, as an integer value.
     remarks: |-
       #### Examples
 
@@ -33,7 +29,7 @@ properties:
           document.getElementById('message').innerText += message; 
       }
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,7 +55,7 @@ properties:
           document.getElementById('message').innerText += message; 
       }
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

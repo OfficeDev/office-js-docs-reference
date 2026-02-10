@@ -4,10 +4,8 @@ uid: word!Word.TargetBrowser:enum
 package: word!
 fullName: Word.TargetBrowser
 summary: Specifies the target web browser for HTML export and web page optimization.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Microsoft Internet Explorer 4.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ie4"'
   - name: ie5
     uid: word!Word.TargetBrowser.ie5:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Microsoft Internet Explorer 5.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ie5"'
   - name: ie6
     uid: word!Word.TargetBrowser.ie6:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Microsoft Internet Explorer 6.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ie6"'
   - name: v3
     uid: word!Word.TargetBrowser.v3:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Browser version 3.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"V3"'
   - name: v4
     uid: word!Word.TargetBrowser.v4:member
@@ -49,5 +47,5 @@ fields:
     summary: |-
       Browser version 4.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"V4"'

@@ -4,22 +4,15 @@ uid: excel!Excel.CellValueType:enum
 package: excel!
 fullName: Excel.CellValueType
 summary: Represents the types of the `CellValue` object.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
 
   // This function sets the value of cell A1 to a #BUSY! error using data types.
-
   await Excel.run(async (context) => {
     // Retrieve the Sample worksheet and cell A1 on that sheet.
     const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
@@ -35,9 +28,8 @@ remarks: >-
     range.valuesAsJson = [[error]];
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -47,7 +39,7 @@ fields:
     summary: |-
       Represents an `ArrayCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Array"'
   - name: boolean
     uid: excel!Excel.CellValueType.boolean:member
@@ -55,7 +47,7 @@ fields:
     summary: |-
       Represents a `BooleanCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Boolean"'
   - name: double
     uid: excel!Excel.CellValueType.double:member
@@ -63,7 +55,7 @@ fields:
     summary: |-
       Represents a `DoubleCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Double"'
   - name: empty
     uid: excel!Excel.CellValueType.empty:member
@@ -71,7 +63,7 @@ fields:
     summary: |-
       Represents an `EmptyCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Empty"'
   - name: entity
     uid: excel!Excel.CellValueType.entity:member
@@ -79,7 +71,7 @@ fields:
     summary: |-
       Represents an `EntityCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Entity"'
   - name: error
     uid: excel!Excel.CellValueType.error:member
@@ -87,7 +79,7 @@ fields:
     summary: |-
       Represents an `ErrorCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Error"'
   - name: formattedNumber
     uid: excel!Excel.CellValueType.formattedNumber:member
@@ -95,7 +87,7 @@ fields:
     summary: |-
       Represents a `FormattedNumberCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FormattedNumber"'
   - name: linkedEntity
     uid: excel!Excel.CellValueType.linkedEntity:member
@@ -103,7 +95,7 @@ fields:
     summary: |-
       Represents a `LinkedEntityCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinkedEntity"'
   - name: notAvailable
     uid: excel!Excel.CellValueType.notAvailable:member
@@ -111,7 +103,7 @@ fields:
     summary: |-
       Represents a `ValueTypeNotAvailableCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"NotAvailable"'
   - name: reference
     uid: excel!Excel.CellValueType.reference:member
@@ -119,7 +111,7 @@ fields:
     summary: |-
       Represents a `ReferenceCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Reference"'
   - name: string
     uid: excel!Excel.CellValueType.string:member
@@ -127,7 +119,7 @@ fields:
     summary: |-
       Represents a `StringCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"String"'
   - name: webImage
     uid: excel!Excel.CellValueType.webImage:member
@@ -135,5 +127,5 @@ fields:
     summary: |-
       Represents a `WebImageCellValue`<!-- -->.
 
-      * \[Api set: ExcelApi 1.16\]
+      \* \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"WebImage"'

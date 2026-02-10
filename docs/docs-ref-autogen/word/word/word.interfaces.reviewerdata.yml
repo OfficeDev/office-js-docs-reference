@@ -3,11 +3,9 @@ name: Word.Interfaces.ReviewerData
 uid: word!Word.Interfaces.ReviewerData:interface
 package: word!
 fullName: Word.Interfaces.ReviewerData
-summary: >-
-  An interface describing the data returned by calling `reviewer.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `reviewer.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

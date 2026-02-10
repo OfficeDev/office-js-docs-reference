@@ -3,41 +3,20 @@ name: Office.MailboxEnums.TokenStatus
 uid: outlook!Office.MailboxEnums.TokenStatus:enum
 package: outlook!
 fullName: Office.MailboxEnums.TokenStatus
-summary: >-
-  Specifies the status of Exchange Web Services (EWS) callback tokens or REST
-  API tokens in an organization.
-remarks: >-
-  \[ [API set: Mailbox
-  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+summary: Specifies the status of Exchange Web Services (EWS) callback tokens or REST API tokens in an organization.
+remarks: |-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-
-
-  **Important**: Legacy Exchange Online user identity tokens and callback
-  tokens are no longer supported and are turned off across all Microsoft 365
-  tenants. If an Outlook add-in requires delegated user access or user identity,
-  we recommend using MSAL (Microsoft Authentication Library) and nested app
-  authentication (NAA). Exchange user identity tokens are still supported for
-  Exchange on-premises. For more information, see [Nested app authentication
-  FAQ](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!--
-  -->.
-
+  \*\*Important\*\*: Legacy Exchange Online user identity tokens and callback tokens are no longer supported and are turned off across all Microsoft 365 tenants. If an Outlook add-in requires delegated user access or user identity, we recommend using MSAL (Microsoft Authentication Library) and nested app authentication (NAA). Exchange user identity tokens are still supported for Exchange on-premises. For more information, see [Nested app authentication FAQ](https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens)<!-- -->.
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-token-status.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-token-status.yaml
-
-
-  Office.context.mailbox.diagnostics.ews.getTokenStatusAsync({ isRest: false },
-  (result) => {
+  Office.context.mailbox.diagnostics.ews.getTokenStatusAsync({ isRest: false }, (result) => {
     if (result.status === Office.AsyncResultStatus.Failed) {
       console.log(result.error.message);
       return;
@@ -57,9 +36,8 @@ remarks: >-
         break;
     }
   });
-
   ```
-
+example: []
 isPreview: true
 isDeprecated: false
 fields:
@@ -76,7 +54,5 @@ fields:
   - name: Removed
     uid: outlook!Office.MailboxEnums.TokenStatus.Removed:member
     package: outlook!
-    summary: >-
-      The mailbox is hosted in an Exchange Online environment where EWS tokens
-      are turned off and are no longer supported.
+    summary: The mailbox is hosted in an Exchange Online environment where EWS tokens are turned off and are no longer supported.
     value: '2'

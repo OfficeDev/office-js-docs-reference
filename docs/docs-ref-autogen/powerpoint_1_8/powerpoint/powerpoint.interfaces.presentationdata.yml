@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.PresentationData
 uid: powerpoint!PowerPoint.Interfaces.PresentationData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PresentationData
-summary: >-
-  An interface describing the data returned by calling
-  `presentation.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `presentation.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the ID of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +28,8 @@ properties:
     package: powerpoint!
     fullName: title
     summary: Returns the title of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

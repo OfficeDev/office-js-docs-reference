@@ -3,11 +3,9 @@ name: Word.Interfaces.TableOfFiguresData
 uid: word!Word.Interfaces.TableOfFiguresData:interface
 package: word!
 fullName: Word.Interfaces.TableOfFiguresData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfFigures.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableOfFigures.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

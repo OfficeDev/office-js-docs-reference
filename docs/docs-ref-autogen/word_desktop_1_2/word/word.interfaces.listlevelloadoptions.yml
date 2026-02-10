@@ -4,10 +4,8 @@ uid: word!Word.Interfaces.ListLevelLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ListLevelLoadOptions
 summary: Represents a list level.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: >-
-      Specifies the horizontal alignment of the list level. The value can be
-      `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the horizontal alignment of the list level. The value can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets a `Font` object that represents the character formatting of the
-      `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets a `Font` object that represents the character formatting of the `ListLevel` object.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,10 +54,8 @@ properties:
     package: word!
     fullName: linkedStyle
     summary: Specifies the name of the style that's linked to the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,10 +67,8 @@ properties:
     package: word!
     fullName: numberFormat
     summary: Specifies the number format for the list level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#numberPosition:member
     package: word!
     fullName: numberPosition
-    summary: >-
-      Specifies the position (in points) of the number or bullet for the
-      `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the position (in points) of the number or bullet for the `ListLevel` object.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,10 +93,8 @@ properties:
     package: word!
     fullName: numberStyle
     summary: Specifies the number style for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,13 +105,9 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#resetOnHigher:member
     package: word!
     fullName: resetOnHigher
-    summary: >-
-      Specifies the list level that must appear before it restarts numbering at
-      1.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the list level that must appear before it restarts numbering at 1.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,10 +119,8 @@ properties:
     package: word!
     fullName: startAt
     summary: Specifies the starting number for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,10 +132,8 @@ properties:
     package: word!
     fullName: tabPosition
     summary: Specifies the tab position for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,13 +144,9 @@ properties:
     uid: word!Word.Interfaces.ListLevelLoadOptions#textPosition:member
     package: word!
     fullName: textPosition
-    summary: >-
-      Specifies the position (in points) for the second line of wrapping text
-      for the `ListLevel` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the position (in points) for the second line of wrapping text for the `ListLevel` object.
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,10 +158,8 @@ properties:
     package: word!
     fullName: trailingCharacter
     summary: Specifies the character inserted after the number for the list level.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,25 +3,16 @@ name: Word.TrailingCharacter
 uid: word!Word.TrailingCharacter:enum
 package: word!
 fullName: Word.TrailingCharacter
-summary: >-
-  Represents the character inserted after the [list
-  item](xref:word!Word.ListItem:class) mark.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the character inserted after the [list item](xref:word!Word.ListItem:class) mark.
+remarks: |-
+  \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-styles.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/manage-list-styles.yaml
 
   // Gets the properties of the specified style.
-
   await Word.run(async (context) => {
     const styleName = (document.getElementById("style-name-to-use") as HTMLInputElement).value;
     if (styleName == "") {
@@ -50,9 +41,8 @@ remarks: >-
       console.log(`List levels of the '${styleName}' style:`, listLevels);
     }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -62,7 +52,7 @@ fields:
     summary: |-
       No character is inserted.
 
-      * \[Api set: WordApiDesktop 1.1\]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingNone"'
   - name: trailingSpace
     uid: word!Word.TrailingCharacter.trailingSpace:member
@@ -70,7 +60,7 @@ fields:
     summary: |-
       A space is inserted. Default.
 
-      * \[Api set: WordApiDesktop 1.1\]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingSpace"'
   - name: trailingTab
     uid: word!Word.TrailingCharacter.trailingTab:member
@@ -78,5 +68,5 @@ fields:
     summary: |-
       A tab is inserted.
 
-      * \[Api set: WordApiDesktop 1.1\]
+      \* \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrailingTab"'

@@ -3,15 +3,9 @@ name: Excel.CellPropertiesFont
 uid: excel!Excel.CellPropertiesFont:interface
 package: excel!
 fullName: Excel.CellPropertiesFont
-summary: >-
-  Represents the `format.font` properties of `getCellProperties`<!-- -->,
-  `getRowProperties`<!-- -->, and `getColumnProperties`<!-- -->, or the
-  `format.font` input parameter of `setCellProperties`<!-- -->,
-  `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents the `format.font` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and `getColumnProperties`<!-- -->, or the `format.font` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,10 +15,8 @@ properties:
     package: excel!
     fullName: bold
     summary: Represents the `format.font.bold` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,19 +28,13 @@ properties:
     package: excel!
     fullName: color
     summary: Represents the `format.font.color` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -121,9 +107,8 @@ properties:
           sheet.getUsedRange().format.autofitColumns();
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,10 +120,8 @@ properties:
     package: excel!
     fullName: italic
     summary: Represents the `format.font.italic` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,10 +133,8 @@ properties:
     package: excel!
     fullName: name
     summary: Represents the `format.font.name` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,10 +146,8 @@ properties:
     package: excel!
     fullName: size
     summary: Represents the `format.font.size` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,10 +159,8 @@ properties:
     package: excel!
     fullName: strikethrough
     summary: Represents the `format.font.strikethrough` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,10 +172,8 @@ properties:
     package: excel!
     fullName: subscript
     summary: Represents the `format.font.subscript` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,10 +185,8 @@ properties:
     package: excel!
     fullName: superscript
     summary: Represents the `format.font.superscript` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,10 +198,8 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: Represents the `format.font.tintAndShade` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,17 +211,11 @@ properties:
     package: excel!
     fullName: underline
     summary: Represents the `format.font.underline` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" |
-        "SingleAccountant" | "DoubleAccountant";
+      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" |
-          "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+        type: <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

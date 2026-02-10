@@ -3,13 +3,9 @@ name: Word.Interfaces.TableCollectionLoadOptions
 uid: word!Word.Interfaces.TableCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableCollectionLoadOptions
-summary: >-
-  Contains the collection of the document's
-  [Word.Table](xref:word!Word.Table:class) objects.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Contains the collection of the document's [Word.Table](xref:word!Word.Table:class) objects.
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,14 +27,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#alignment:member
     package: word!
     fullName: alignment
-    summary: >-
-      For EACH ITEM in the collection: Specifies the alignment of the table
-      against the page column. The value can be `left`<!-- -->, `centered`<!--
-      -->, or `right`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the alignment of the table against the page column. The value can be `left`<!-- -->, `centered`<!-- -->, or `right`<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      For EACH ITEM in the collection: Gets the font. Use this to get and set
-      font name, size, color, and other properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,10 +54,8 @@ properties:
     package: word!
     fullName: headerRowCount
     summary: 'For EACH ITEM in the collection: Specifies the number of header rows.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,14 +66,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#horizontalAlignment:member
     package: word!
     fullName: horizontalAlignment
-    summary: >-
-      For EACH ITEM in the collection: Specifies the horizontal alignment of
-      every cell in the table. The value can be `left`<!-- -->, `centered`<!--
-      -->, `right`<!-- -->, or `justified`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the horizontal alignment of every cell in the table. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#isUniform:member
     package: word!
     fullName: isUniform
-    summary: >-
-      For EACH ITEM in the collection: Indicates whether all of the table rows
-      are uniform.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Indicates whether all of the table rows are uniform.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,13 +92,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#nestingLevel:member
     package: word!
     fullName: nestingLevel
-    summary: >-
-      For EACH ITEM in the collection: Gets the nesting level of the table.
-      Top-level tables have level 1.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,10 +106,8 @@ properties:
     package: word!
     fullName: parentBody
     summary: 'For EACH ITEM in the collection: Gets the parent body of the table.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,63 +115,38 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />
   - name: parentContentControl
-    uid: >-
-      word!Word.Interfaces.TableCollectionLoadOptions#parentContentControl:member
+    uid: word!Word.Interfaces.TableCollectionLoadOptions#parentContentControl:member
     package: word!
     fullName: parentContentControl
-    summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the table. Throws an `ItemNotFound` error if there isn't a parent content
-      control.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn''t a parent content control.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentContentControlOrNullObject
-    uid: >-
-      word!Word.Interfaces.TableCollectionLoadOptions#parentContentControlOrNullObject:member
+    uid: word!Word.Interfaces.TableCollectionLoadOptions#parentContentControlOrNullObject:member
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains
-      the table. If there isn't a parent content control, then this method will
-      return an object with its `isNullObject` property set to `true`<!-- -->.
-      For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the content control that contains the table. If there isn''t a parent content control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        parentContentControlOrNullObject?:
-        Word.Interfaces.ContentControlLoadOptions;
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />
   - name: parentTable
     uid: word!Word.Interfaces.TableCollectionLoadOptions#parentTable:member
     package: word!
     fullName: parentTable
-    summary: >-
-      For EACH ITEM in the collection: Gets the table that contains this table.
-      Throws an `ItemNotFound` error if it isn't contained in a table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table that contains this table. Throws an `ItemNotFound` error if it isn''t contained in a table.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,14 +157,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#parentTableCell:member
     package: word!
     fullName: parentTableCell
-    summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains this
-      table. Throws an `ItemNotFound` error if it isn't contained in a table
-      cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table cell that contains this table. Throws an `ItemNotFound` error if it isn''t contained in a table cell.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,21 +167,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />
   - name: parentTableCellOrNullObject
-    uid: >-
-      word!Word.Interfaces.TableCollectionLoadOptions#parentTableCellOrNullObject:member
+    uid: word!Word.Interfaces.TableCollectionLoadOptions#parentTableCellOrNullObject:member
     package: word!
     fullName: parentTableCellOrNullObject
-    summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains this
-      table. If it isn't contained in a table cell, then this method will return
-      an object with its `isNullObject` property set to `true`<!-- -->. For
-      further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table cell that contains this table. If it isn''t contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -252,21 +180,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />
   - name: parentTableOrNullObject
-    uid: >-
-      word!Word.Interfaces.TableCollectionLoadOptions#parentTableOrNullObject:member
+    uid: word!Word.Interfaces.TableCollectionLoadOptions#parentTableOrNullObject:member
     package: word!
     fullName: parentTableOrNullObject
-    summary: >-
-      For EACH ITEM in the collection: Gets the table that contains this table.
-      If it isn't contained in a table, then this method will return an object
-      with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Gets the table that contains this table. If it isn''t contained in a table, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,10 +197,8 @@ properties:
     package: word!
     fullName: rowCount
     summary: 'For EACH ITEM in the collection: Gets the number of rows in the table.'
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,13 +209,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#shadingColor:member
     package: word!
     fullName: shadingColor
-    summary: >-
-      For EACH ITEM in the collection: Specifies the shading color. Color is
-      specified in "\#RRGGBB" format or by using the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the shading color. Color is specified in "\#RRGGBB" format or by using the color name.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,15 +222,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#style:member
     package: word!
     fullName: style
-    summary: >-
-      For EACH ITEM in the collection: Specifies the style name for the table.
-      Use this property for custom styles and localized style names. To use the
-      built-in styles that are portable between locales, see the "styleBuiltIn"
-      property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -328,13 +235,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#styleBandedColumns:member
     package: word!
     fullName: styleBandedColumns
-    summary: >-
-      For EACH ITEM in the collection: Specifies whether the table has banded
-      columns.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies whether the table has banded columns.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -345,13 +248,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#styleBandedRows:member
     package: word!
     fullName: styleBandedRows
-    summary: >-
-      For EACH ITEM in the collection: Specifies whether the table has banded
-      rows.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies whether the table has banded rows.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -362,15 +261,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#styleBuiltIn:member
     package: word!
     fullName: styleBuiltIn
-    summary: >-
-      For EACH ITEM in the collection: Specifies the built-in style name for the
-      table. Use this property for built-in styles that are portable between
-      locales. To use custom styles or localized style names, see the "style"
-      property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -381,13 +274,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#styleFirstColumn:member
     package: word!
     fullName: styleFirstColumn
-    summary: >-
-      For EACH ITEM in the collection: Specifies whether the table has a first
-      column with a special style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies whether the table has a first column with a special style.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -398,13 +287,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#styleLastColumn:member
     package: word!
     fullName: styleLastColumn
-    summary: >-
-      For EACH ITEM in the collection: Specifies whether the table has a last
-      column with a special style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies whether the table has a last column with a special style.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -415,13 +300,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#styleTotalRow:member
     package: word!
     fullName: styleTotalRow
-    summary: >-
-      For EACH ITEM in the collection: Specifies whether the table has a total
-      (last) row with a special style.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies whether the table has a total (last) row with a special style.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -432,13 +313,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#values:member
     package: word!
     fullName: values
-    summary: >-
-      For EACH ITEM in the collection: Specifies the text values in the table,
-      as a 2D JavaScript array.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the text values in the table, as a 2D JavaScript array.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -449,14 +326,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      For EACH ITEM in the collection: Specifies the vertical alignment of every
-      cell in the table. The value can be `top`<!-- -->, `center`<!-- -->, or
-      `bottom`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the vertical alignment of every cell in the table. The value can be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -467,13 +339,9 @@ properties:
     uid: word!Word.Interfaces.TableCollectionLoadOptions#width:member
     package: word!
     fullName: width
-    summary: >-
-      For EACH ITEM in the collection: Specifies the width of the table in
-      points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Specifies the width of the table in points.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

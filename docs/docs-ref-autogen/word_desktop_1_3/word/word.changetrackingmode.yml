@@ -4,22 +4,15 @@ uid: word!Word.ChangeTrackingMode:enum
 package: word!
 fullName: Word.ChangeTrackingMode
 summary: Represents the possible change tracking modes.
-remarks: >-
-  \[ [API set: WordApi
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
   // Gets the current change tracking mode.
-
   await Word.run(async (context) => {
     const document: Word.Document = context.document;
     document.load("changeTrackingMode");
@@ -33,9 +26,8 @@ remarks: >-
       console.log("No changes are being tracked.");
     }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -45,7 +37,7 @@ fields:
     summary: |-
       ChangeTracking is turned off.
 
-      * \[Api set: WordApi 1.4\]
+      \* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Off"'
   - name: trackAll
     uid: word!Word.ChangeTrackingMode.trackAll:member
@@ -53,7 +45,7 @@ fields:
     summary: |-
       ChangeTracking is turned on for everyone.
 
-      * \[Api set: WordApi 1.4\]
+      \* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackAll"'
   - name: trackMineOnly
     uid: word!Word.ChangeTrackingMode.trackMineOnly:member
@@ -61,5 +53,5 @@ fields:
     summary: |-
       Tracking is turned on for my changes only.
 
-      * \[Api set: WordApi 1.4\]
+      \* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackMineOnly"'

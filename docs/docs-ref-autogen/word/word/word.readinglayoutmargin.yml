@@ -4,22 +4,18 @@ uid: word!Word.ReadingLayoutMargin:enum
 package: word!
 fullName: Word.ReadingLayoutMargin
 summary: Specifies the margin options in reading layout view in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: automatic
     uid: word!Word.ReadingLayoutMargin.automatic:member
     package: word!
-    summary: >-
-      Microsoft Word determines automatically whether to show or hide the
-      margins based on the available space.
+    summary: |-
+      Microsoft Word determines automatically whether to show or hide the margins based on the available space.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Automatic"'
   - name: full
     uid: word!Word.ReadingLayoutMargin.full:member
@@ -27,7 +23,7 @@ fields:
     summary: |-
       Shows margins.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Full"'
   - name: suppress
     uid: word!Word.ReadingLayoutMargin.suppress:member
@@ -35,5 +31,5 @@ fields:
     summary: |-
       Hides margins.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Suppress"'

@@ -3,25 +3,19 @@ name: Word.OleVerb
 uid: word!Word.OleVerb:enum
 package: word!
 fullName: Word.OleVerb
-summary: >-
-  Specifies the action associated with the verb that the OLE object should
-  perform.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies the action associated with the verb that the OLE object should perform.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: discardUndoState
     uid: word!Word.OleVerb.discardUndoState:member
     package: word!
-    summary: >-
-      Forces the object to discard any undo state that it might be maintaining;
-      note that the object remains active, however.
+    summary: |-
+      Forces the object to discard any undo state that it might be maintaining; note that the object remains active, however.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DiscardUndoState"'
   - name: hide
     uid: word!Word.OleVerb.hide:member
@@ -29,17 +23,15 @@ fields:
     summary: |-
       Removes the object's user interface from view.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hide"'
   - name: inPlaceActivate
     uid: word!Word.OleVerb.inPlaceActivate:member
     package: word!
-    summary: >-
-      Runs the object and installs its window, but doesn't install any
-      user-interface tools.
+    summary: |-
+      Runs the object and installs its window, but doesn't install any user-interface tools.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InPlaceActivate"'
   - name: open
     uid: word!Word.OleVerb.open:member
@@ -47,7 +39,7 @@ fields:
     summary: |-
       Opens the object in a separate window.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Open"'
   - name: primary
     uid: word!Word.OleVerb.primary:member
@@ -55,25 +47,21 @@ fields:
     summary: |-
       Performs the verb that is invoked when the user double-clicks the object.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Primary"'
   - name: show
     uid: word!Word.OleVerb.show:member
     package: word!
-    summary: >-
-      Shows the object to the user for editing or viewing. Use it to show a
-      newly inserted object for initial editing.
+    summary: |-
+      Shows the object to the user for editing or viewing. Use it to show a newly inserted object for initial editing.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Show"'
   - name: uiActivate
     uid: word!Word.OleVerb.uiActivate:member
     package: word!
-    summary: >-
-      Activates the object in place and displays any user-interface tools that
-      the object needs, such as menus or toolbars.
+    summary: |-
+      Activates the object in place and displays any user-interface tools that the object needs, such as menus or toolbars.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"UiActivate"'

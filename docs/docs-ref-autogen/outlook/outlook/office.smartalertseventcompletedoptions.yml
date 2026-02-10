@@ -3,34 +3,18 @@ name: Office.SmartAlertsEventCompletedOptions
 uid: outlook!Office.SmartAlertsEventCompletedOptions:interface
 package: outlook!
 fullName: Office.SmartAlertsEventCompletedOptions
-summary: >-
-  Specifies the behavior of a [Smart Alerts
-  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events)
-  when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
-remarks: >-
-  \[ [API set: Mailbox
-  1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+summary: Specifies the behavior of a [Smart Alerts add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events) when it completes processing an `OnMessageSend` or `OnAppointmentSend` event.
+remarks: |-
+  \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+  \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-  **[Minimum permission level
-  (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **restricted**
-
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
-
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
   #### Examples
 
-
   ```TypeScript
-
-  // The following example checks whether a location is specified in an
-  appointment before it's sent.
-
+  // The following example checks whether a location is specified in an appointment before it's sent.
   function onAppointmentSendHandler(event) {
       Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
           const event = asyncResult.asyncContext;
@@ -60,9 +44,8 @@ remarks: >-
           }
       });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -71,31 +54,14 @@ properties:
     uid: outlook!Office.SmartAlertsEventCompletedOptions#allowEvent:member
     package: outlook!
     fullName: allowEvent
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler, this value indicates if the
-      handled event should continue execution or be canceled. For example, an
-      add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can
-      set `allowEvent` to `false` to cancel the sending of an item. For a
-      complete sample, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
-      -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled. For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the sending of an item. For a complete sample, see the [Smart Alerts walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->.
+    remarks: |-
+      \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,65 +72,25 @@ properties:
     uid: outlook!Office.SmartAlertsEventCompletedOptions#cancelLabel:member
     package: outlook!
     fullName: cancelLabel
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `false`<!-- -->, this property customizes the text of a button in the
-      Smart Alerts dialog. Custom text must be 20 characters or less.
+    summary: |-
+      When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property customizes the text of a button in the Smart Alerts dialog. Custom text must be 20 characters or less.
 
+      For an example, see the [Smart Alerts walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!-- -->.
+    remarks: |-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      For an example, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
-      -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      \*\*Important\*\*:
 
+      The customizable button in the Smart Alerts dialog varies depending on the Outlook client and its version.
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      - In Outlook on the web, on Mac (in preview starting in Version 16.105 (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the `cancelLabel` property customizes the text of the \*\*Take Action\*\* button. The \*\*Take Action\*\* button only appears on the Smart Alerts dialog if the `commandId` option is configured in the `event.completed` call. The option must be configured if you want to customize the text of the dialog button. In this implementation, the \*\*Don't Send\*\* button cancels the item being sent. Its text and functionality can't be customized. If you previously customized the text of the \*\*Don't Send\*\* button without assigning it a task pane or function command, your custom text won't take effect in the latest Outlook client versions. If you previously assigned a task pane or function command to the \*\*Don't Send\*\* button, no additional action is needed to implement the \*\*Take Action\*\* button in the latest versions. The default or customized \*\*Take Action\*\* button will automatically appear the next time a user receives a Smart Alerts dialog. Although no implementation changes are needed, we recommend notifying users of this updated experience.
 
-
-      **Important**:
-
-
-      The customizable button in the Smart Alerts dialog varies depending on the
-      Outlook client and its version.
-
-
-      - In Outlook on the web, on Mac (in preview starting in Version 16.105
-      (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows
-      starting in Version 2412 (Build 18324.20000), the `cancelLabel` property
-      customizes the text of the **Take Action** button. The **Take
-      Action** button only appears on the Smart Alerts dialog if the
-      `commandId` option is configured in the `event.completed` call. The option
-      must be configured if you want to customize the text of the dialog button.
-      In this implementation, the **Don't Send** button cancels the item
-      being sent. Its text and functionality can't be customized. If you
-      previously customized the text of the **Don't Send** button without
-      assigning it a task pane or function command, your custom text won't take
-      effect in the latest Outlook client versions. If you previously assigned a
-      task pane or function command to the **Don't Send** button, no
-      additional action is needed to implement the **Take Action** button in
-      the latest versions. The default or customized **Take Action** button
-      will automatically appear the next time a user receives a Smart Alerts
-      dialog. Although no implementation changes are needed, we recommend
-      notifying users of this updated experience.
-
-
-      - In classic Outlook on Windows (prior to Version 2412 (Build 18324.20000)
-      and Outlook on Mac (prior to Version 16.105 (Build 25121117)), the
-      `cancelLabel` property customizes the text of the **Don't Send**
-      button. The **Don't Send** button cancels the item being sent.
-
+      - In classic Outlook on Windows (prior to Version 2412 (Build 18324.20000) and Outlook on Mac (prior to Version 16.105 (Build 25121117)), the `cancelLabel` property customizes the text of the \*\*Don't Send\*\* button. The \*\*Don't Send\*\* button cancels the item being sent.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,99 +101,37 @@ properties:
     uid: outlook!Office.SmartAlertsEventCompletedOptions#commandId:member
     package: outlook!
     fullName: commandId
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `false`<!-- -->, this property specifies the ID of the task pane or
-      function that runs from a button in the Smart Alerts dialog.
+    summary: |-
+      When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property specifies the ID of the task pane or function that runs from a button in the Smart Alerts dialog.
 
+      For an example, see the [Smart Alerts walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!-- -->.
+    remarks: |-
+      \[ [API set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function command support)](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      For an example, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
-      -->.
-    remarks: >-
-      \[ [API set: Mailbox 1.14 (task pane support), Mailbox 1.15 (function
-      command
-      support)](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      \*\*Important\*\*:
 
+      The `commandId` value must match the task pane or function ID specified in the manifest of your add-in. The markup depends on the type of manifest your add-in uses.
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      - \*\*Add-in only manifest\*\*: The `id` attribute of the [Control](https://learn.microsoft.com/javascript/api/manifest/control) element representing the task pane or function.
 
+      - \*\*Unified manifest for Microsoft 365\*\*: The "id" property of the task pane or function command in the "controls" array.
 
-      **Important**:
+      The button in the Smart Alerts dialog that opens a task pane or runs a function varies depending on the Outlook client and version. In Outlook on the web, on Mac (in preview starting in Version 16.105 (Build 25121117)), new Outlook on Windows, and classic Outlook on Windows starting in Version 2412 (Build 18324.20000), the \*\*Take Action\*\* button opens a task pane or runs a function. In this implementation, the \*\*Don't Send\*\* button cancels the item being sent. Its text and functionality can't be customized. In earlier supported versions of classic Outlook on Windows (versions prior to Version 2412 (Build 18324.20000) that support [Mailbox requirement set 1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!-- -->), and Outlook on Mac, the \*\*Don't Send\*\* button opens a task pane or runs a function.
 
+      If you've already customized the text and functionality of the \*\*Don't Send\*\* button in your Smart Alerts add-in prior to Version 2412 (Build 18324.20000) of classic Outlook on Windows or prior to Version 16.105 (Build 25121117) of Outlook on Mac, no additional action is needed to implement the \*\*Take Action\*\* button in the latest supported versions. The default or customized \*\*Take Action\*\* button will automatically appear the next time a user receives a Smart Alerts dialog. Although no implementation changes are needed, we recommend notifying users of this updated experience.
 
-      The `commandId` value must match the task pane or function ID specified in
-      the manifest of your add-in. The markup depends on the type of manifest
-      your add-in uses.
+      If you specify a command ID that doesn't exist, depending on your Outlook client, the \*\*Take Action\*\* or \*\*Don't Send\*\* button simply cancels the item being sent.
 
+      If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
 
-      - **Add-in only manifest**: The `id` attribute of the
-      [Control](https://learn.microsoft.com/javascript/api/manifest/control)
-      element representing the task pane or function.
+      When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client. Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
 
-
-      - **Unified manifest for Microsoft 365**: The "id" property of the
-      task pane or function command in the "controls" array.
-
-
-      The button in the Smart Alerts dialog that opens a task pane or runs a
-      function varies depending on the Outlook client and version. In Outlook on
-      the web, on Mac (in preview starting in Version 16.105 (Build 25121117)),
-      new Outlook on Windows, and classic Outlook on Windows starting in Version
-      2412 (Build 18324.20000), the **Take Action** button opens a task pane
-      or runs a function. In this implementation, the **Don't Send** button
-      cancels the item being sent. Its text and functionality can't be
-      customized. In earlier supported versions of classic Outlook on Windows
-      (versions prior to Version 2412 (Build 18324.20000) that support [Mailbox
-      requirement set
-      1.14](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets#version-support-for-requirement-sets-in-classic-outlook-on-windows)<!--
-      -->), and Outlook on Mac, the **Don't Send** button opens a task pane
-      or runs a function.
-
-
-      If you've already customized the text and functionality of the **Don't
-      Send** button in your Smart Alerts add-in prior to Version 2412 (Build
-      18324.20000) of classic Outlook on Windows or prior to Version 16.105
-      (Build 25121117) of Outlook on Mac, no additional action is needed to
-      implement the **Take Action** button in the latest supported versions.
-      The default or customized **Take Action** button will automatically
-      appear the next time a user receives a Smart Alerts dialog. Although no
-      implementation changes are needed, we recommend notifying users of this
-      updated experience.
-
-
-      If you specify a command ID that doesn't exist, depending on your Outlook
-      client, the **Take Action** or **Don't Send** button simply
-      cancels the item being sent.
-
-
-      If you specify the `contextData` option in your `event.completed` call,
-      you must also assign a task pane or function ID to the `commandId` option.
-      Otherwise, the JSON data assigned to `contextData` is ignored.
-
-
-      When you configure a button in the Smart Alerts dialog to run a function,
-      a button for the function is also added to the ribbon or action bar of the
-      Outlook client. Use the `contextData` option to distinguish when a user
-      runs the function from the Smart Alerts dialog.
-
-
-      Programming a button in the Smart Alerts dialog to run a function is
-      available for preview in Outlook on Mac starting in Version 16.105 (Build
-      25121117). To test this feature, join the [Microsoft 365 Insider
-      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756)
-      and select the **Beta Channel** option to access Office beta builds.
-
+      Programming a button in the Smart Alerts dialog to run a function is available for preview in Outlook on Mac starting in Version 16.105 (Build 25121117). To test this feature, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the \*\*Beta Channel\*\* option to access Office beta builds.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,69 +142,28 @@ properties:
     uid: outlook!Office.SmartAlertsEventCompletedOptions#contextData:member
     package: outlook!
     fullName: contextData
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `false`<!-- -->, this property specifies any JSON data passed to the
-      add-in for processing when the applicable button is selected from the
-      Smart Alerts dialog.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property specifies any JSON data passed to the add-in for processing when the applicable button is selected from the Smart Alerts dialog.
+    remarks: |-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
+      \*\*Important\*\*:
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      - In Outlook on Windows, the `any` type is supported starting in Version 2402 (Build 17308.20000). In earlier versions of Outlook on Windows, only the `string` type is supported.
 
+      - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane or function ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
 
-      **Important**:
+      - The dialog button that passes the `contextData` value to the add-in varies depending on the Outlook client and its version. For more information, see [Customize the text and functionality of a button in the dialog](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!-- -->.
 
+      - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using `JSON.parse()` once you retrieve it.
 
-      - In Outlook on Windows, the `any` type is supported starting in Version
-      2402 (Build 17308.20000). In earlier versions of Outlook on Windows, only
-      the `string` type is supported.
+      - When you configure a button in the Smart Alerts dialog to run a function, a button for the function is also added to the ribbon or action bar of the Outlook client. Use the `contextData` option to distinguish when a user runs the function from the Smart Alerts dialog.
 
-
-      - If you specify the `contextData` option in your `event.completed` call,
-      you must also assign a task pane or function ID to the `commandId` option.
-      Otherwise, the JSON data assigned to `contextData` is ignored.
-
-
-      - The dialog button that passes the `contextData` value to the add-in
-      varies depending on the Outlook client and its version. For more
-      information, see [Customize the text and functionality of a button in the
-      dialog](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#customize-the-text-and-functionality-of-a-button-in-the-dialog-optional)<!--
-      -->.
-
-
-      - To retrieve the value of the `contextData` property, you must call
-      `Office.context.mailbox.item.getInitializationContextAsync` in the
-      JavaScript implementation of your task pane. If you create a JSON string
-      using `JSON.stringify()` and assign it to the `contextData` property, you
-      must parse the string using `JSON.parse()` once you retrieve it.
-
-
-      - When you configure a button in the Smart Alerts dialog to run a
-      function, a button for the function is also added to the ribbon or action
-      bar of the Outlook client. Use the `contextData` option to distinguish
-      when a user runs the function from the Smart Alerts dialog.
-
-
-      - To prevent the task pane of a Smart Alerts add-in from relaunching if
-      it's already open, implement a handler for the
-      `Office.EventType.InitializationContextChanged` event. You can then pass
-      the [event
-      arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true)
-      to the `contextData` property.
-
+      - To prevent the task pane of a Smart Alerts add-in from relaunching if it's already open, implement a handler for the `Office.EventType.InitializationContextChanged` event. You can then pass the [event arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true) to the `contextData` property.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -351,32 +174,16 @@ properties:
     uid: outlook!Office.SmartAlertsEventCompletedOptions#errorMessage:member
     package: outlook!
     fullName: errorMessage
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `false`<!-- -->, this property sets the error message displayed to the
-      user. For an example, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
-      -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets the error message displayed to the user. For an example, see the [Smart Alerts walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->.
+    remarks: |-
+      \[ [API set: Mailbox 1.12](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
-
-      **Important**: The error message must be 500 characters or less.
-
+      \*\*Important\*\*: The error message must be 500 characters or less.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -384,59 +191,27 @@ properties:
       return:
         type: string
   - name: errorMessageMarkdown
-    uid: >-
-      outlook!Office.SmartAlertsEventCompletedOptions#errorMessageMarkdown:member
+    uid: outlook!Office.SmartAlertsEventCompletedOptions#errorMessageMarkdown:member
     package: outlook!
     fullName: errorMessageMarkdown
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `false`<!-- -->, this property sets the error message displayed to the
-      user. The error message is formatted using Markdown. For an example, see
-      the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
-      -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets the error message displayed to the user. The error message is formatted using Markdown. For an example, see the [Smart Alerts walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->.
+    remarks: |-
+      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
+      \*\*Important\*\*
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
-
-      **Important**
-
-
-      - The `errorMessageMarkdown` property is available for preview in Outlook
-      on Mac starting in Version 16.103 (Build 25102433). To test the property,
-      join the [Microsoft 365 Insider
-      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756)
-      and select the **Beta Channel** option to access Office beta builds.
-
+      - The `errorMessageMarkdown` property is available for preview in Outlook on Mac starting in Version 16.103 (Build 25102433). To test the property, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the \*\*Beta Channel\*\* option to access Office beta builds.
 
       - The formatted error message must be 500 characters or less.
 
+      - For guidance on supported Markdown elements, see [Limitations to formatting the dialog message using Markdown](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#limitations-to-formatting-the-dialog-message-using-markdown)<!-- -->.
 
-      - For guidance on supported Markdown elements, see [Limitations to
-      formatting the dialog message using
-      Markdown](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#limitations-to-formatting-the-dialog-message-using-markdown)<!--
-      -->.
-
-
-      - If you format the dialog message using the `errorMessageMarkdown`
-      property, we recommend you also add a plaintext version of the message
-      using the `errorMessage` property. This ensures that the message is
-      displayed properly in Outlook clients that don't support Markdown.
-
+      - If you format the dialog message using the `errorMessageMarkdown` property, we recommend you also add a plaintext version of the message using the `errorMessage` property. This ensures that the message is displayed properly in Outlook clients that don't support Markdown.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -447,44 +222,22 @@ properties:
     uid: outlook!Office.SmartAlertsEventCompletedOptions#sendModeOverride:member
     package: outlook!
     fullName: sendModeOverride
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `false`<!-- -->, this property overrides the [send mode
-      option](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options)
-      specified in the manifest at runtime.
+    summary: |-
+      When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property overrides the [send mode option](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#available-send-mode-options) specified in the manifest at runtime.
 
+      For an example, see the [Smart Alerts walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#override-the-send-mode-option-at-runtime-optional)<!-- -->.
+    remarks: |-
+      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      For an example, see the [Smart Alerts
-      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#override-the-send-mode-option-at-runtime-optional)<!--
-      -->.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
 
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      **[Minimum permission level
-      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **restricted**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
-
-      **Important**: Currently, `sendModeOverride` can only be set to the
-      [prompt
-      user](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user)
-      option.
-
+      \*\*Important\*\*: Currently, `sendModeOverride` can only be set to the [prompt user](https://learn.microsoft.com/office/dev/add-ins/outlook/onmessagesend-onappointmentsend-events#prompt-user) option.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'sendModeOverride?: MailboxEnums.SendModeOverride | string;'
       return:
-        type: >-
-          <xref uid="outlook!Office.MailboxEnums.SendModeOverride:enum" /> |
-          string
+        type: <xref uid="outlook!Office.MailboxEnums.SendModeOverride:enum" /> | string

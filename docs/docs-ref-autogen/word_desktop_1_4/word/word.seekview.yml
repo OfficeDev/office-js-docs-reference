@@ -4,10 +4,8 @@ uid: word!Word.SeekView:enum
 package: word!
 fullName: Word.SeekView
 summary: Specifies the seek view options in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Current page footer.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CurrentPageFooter"'
   - name: currentPageHeader
     uid: word!Word.SeekView.currentPageHeader:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Current page header.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CurrentPageHeader"'
   - name: endnotes
     uid: word!Word.SeekView.endnotes:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Endnotes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Endnotes"'
   - name: evenPagesFooter
     uid: word!Word.SeekView.evenPagesFooter:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Even pages footer.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EvenPagesFooter"'
   - name: evenPagesHeader
     uid: word!Word.SeekView.evenPagesHeader:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Even pages header.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EvenPagesHeader"'
   - name: firstPageFooter
     uid: word!Word.SeekView.firstPageFooter:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       First page footer.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FirstPageFooter"'
   - name: firstPageHeader
     uid: word!Word.SeekView.firstPageHeader:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       First page header.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FirstPageHeader"'
   - name: footnotes
     uid: word!Word.SeekView.footnotes:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Footnotes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footnotes"'
   - name: mainDocument
     uid: word!Word.SeekView.mainDocument:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       Main document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MainDocument"'
   - name: primaryFooter
     uid: word!Word.SeekView.primaryFooter:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Primary footer.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PrimaryFooter"'
   - name: primaryHeader
     uid: word!Word.SeekView.primaryHeader:member
@@ -97,5 +95,5 @@ fields:
     summary: |-
       Primary header.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PrimaryHeader"'

@@ -4,19 +4,13 @@ uid: excel!Excel.ClearApplyTo:enum
 package: excel!
 fullName: Excel.ClearApplyTo
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Orders");
@@ -41,9 +35,8 @@ remarks: >-
 
       await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -53,7 +46,7 @@ fields:
     summary: |-
       Clears everything in the range.
 
-      * \[Api set: ExcelApi 1.1\]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"All"'
   - name: contents
     uid: excel!Excel.ClearApplyTo.contents:member
@@ -61,7 +54,7 @@ fields:
     summary: |-
       Clears the contents of the range, leaving formatting intact.
 
-      * \[Api set: ExcelApi 1.1\]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contents"'
   - name: formats
     uid: excel!Excel.ClearApplyTo.formats:member
@@ -69,7 +62,7 @@ fields:
     summary: |-
       Clears all formatting for the range, leaving values intact.
 
-      * \[Api set: ExcelApi 1.1\]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'
   - name: hyperlinks
     uid: excel!Excel.ClearApplyTo.hyperlinks:member
@@ -77,15 +70,13 @@ fields:
     summary: |-
       Clears all hyperlinks, but leaves all content and formatting intact.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Hyperlinks"'
   - name: removeHyperlinks
     uid: excel!Excel.ClearApplyTo.removeHyperlinks:member
     package: excel!
-    summary: >-
-      Removes hyperlinks and formatting for the cell but leaves content,
-      conditional formats, and data validation intact.
+    summary: |-
+      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
 
-
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RemoveHyperlinks"'

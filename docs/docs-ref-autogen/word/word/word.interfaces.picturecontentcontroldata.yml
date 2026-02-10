@@ -3,11 +3,9 @@ name: Word.Interfaces.PictureContentControlData
 uid: word!Word.Interfaces.PictureContentControlData:interface
 package: word!
 fullName: Word.Interfaces.PictureContentControlData
-summary: >-
-  An interface describing the data returned by calling
-  `pictureContentControl.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `pictureContentControl.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,31 +15,21 @@ properties:
     package: word!
     fullName: appearance
     summary: Specifies the appearance of the content control.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" |
-        "Hidden";
+      content: 'appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";'
       return:
-        type: >-
-          <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox"
-          | "Tags" | "Hidden"
+        type: <xref uid="word!Word.ContentControlAppearance:enum" /> | "BoundingBox" | "Tags" | "Hidden"
   - name: color
     uid: word!Word.Interfaces.PictureContentControlData#color:member
     package: word!
     fullName: color
-    summary: >-
-      Specifies the red-green-blue (RGB) value of the color of the content
-      control. You can provide the value in the '\#RRGGBB' format.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the red-green-blue (RGB) value of the color of the content control. You can provide the value in the '\#RRGGBB' format.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,10 +41,8 @@ properties:
     package: word!
     fullName: id
     summary: Returns the identification for the content control.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.PictureContentControlData#isTemporary:member
     package: word!
     fullName: isTemporary
-    summary: >-
-      Specifies whether to remove the content control from the active document
-      when the user edits the contents of the control.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies whether to remove the content control from the active document when the user edits the contents of the control.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,36 +66,22 @@ properties:
     uid: word!Word.Interfaces.PictureContentControlData#level:member
     package: word!
     fullName: level
-    summary: >-
-      Returns the level of the content control—whether the content control
-      surrounds text, paragraphs, table cells, or table rows; or if it is
-      inline.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        level?: Word.ContentControlLevel | "Inline" | "Paragraph" | "Row" |
-        "Cell";
+      content: 'level?: Word.ContentControlLevel | "Inline" | "Paragraph" | "Row" | "Cell";'
       return:
-        type: >-
-          <xref uid="word!Word.ContentControlLevel:enum" /> | "Inline" |
-          "Paragraph" | "Row" | "Cell"
+        type: <xref uid="word!Word.ContentControlLevel:enum" /> | "Inline" | "Paragraph" | "Row" | "Cell"
   - name: lockContentControl
     uid: word!Word.Interfaces.PictureContentControlData#lockContentControl:member
     package: word!
     fullName: lockContentControl
-    summary: >-
-      Specifies if the content control is locked (can't be deleted). `true`
-      means that the user can't delete it from the active document, `false`
-      means it can be deleted.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies if the content control is locked (can't be deleted). `true` means that the user can't delete it from the active document, `false` means it can be deleted.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,14 +92,9 @@ properties:
     uid: word!Word.Interfaces.PictureContentControlData#lockContents:member
     package: word!
     fullName: lockContents
-    summary: >-
-      Specifies if the contents of the content control are locked (not
-      editable). `true` means the user can't edit the contents, `false` means
-      the contents are editable.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies if the contents of the content control are locked (not editable). `true` means the user can't edit the contents, `false` means the contents are editable.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,13 +105,9 @@ properties:
     uid: word!Word.Interfaces.PictureContentControlData#placeholderText:member
     package: word!
     fullName: placeholderText
-    summary: >-
-      Returns a `BuildingBlock` object that represents the placeholder text for
-      the content control.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `BuildingBlock` object that represents the placeholder text for the content control.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,13 +118,9 @@ properties:
     uid: word!Word.Interfaces.PictureContentControlData#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the contents of the content
-      control in the active document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `Range` object that represents the contents of the content control in the active document.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,17 +128,12 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.RangeData:interface" />
   - name: showingPlaceholderText
-    uid: >-
-      word!Word.Interfaces.PictureContentControlData#showingPlaceholderText:member
+    uid: word!Word.Interfaces.PictureContentControlData#showingPlaceholderText:member
     package: word!
     fullName: showingPlaceholderText
-    summary: >-
-      Returns whether the placeholder text for the content control is being
-      displayed.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns whether the placeholder text for the content control is being displayed.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,10 +145,8 @@ properties:
     package: word!
     fullName: tag
     summary: Specifies a tag to identify the content control.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,10 +158,8 @@ properties:
     package: word!
     fullName: title
     summary: Specifies the title for the content control.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,13 +170,9 @@ properties:
     uid: word!Word.Interfaces.PictureContentControlData#xmlMapping:member
     package: word!
     fullName: xmlMapping
-    summary: >-
-      Returns an `XmlMapping` object that represents the mapping of the content
-      control to XML data in the data store of the document.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns an `XmlMapping` object that represents the mapping of the content control to XML data in the data store of the document.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

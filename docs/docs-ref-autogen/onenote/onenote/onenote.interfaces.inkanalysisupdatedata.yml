@@ -3,11 +3,9 @@ name: OneNote.Interfaces.InkAnalysisUpdateData
 uid: onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisUpdateData
-summary: >-
-  An interface for updating data on the `InkAnalysis` object, for use in
-  `inkAnalysis.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `InkAnalysis` object, for use in `inkAnalysis.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: onenote!
     fullName: page
     summary: Gets the parent page object.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

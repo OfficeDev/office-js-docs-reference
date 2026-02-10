@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.TableRowData
 uid: powerpoint!PowerPoint.Interfaces.TableRowData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableRowData
-summary: >-
-  An interface describing the data returned by calling `tableRow.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

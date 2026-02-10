@@ -4,40 +4,21 @@ uid: outlook!Office.SensitivityLabelDetails:interface
 package: outlook!
 fullName: Office.SensitivityLabelDetails
 summary: Represents the properties of available sensitivity labels in Outlook.
-remarks: >-
-  \[ [API set: Mailbox
-  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+remarks: |-
+  \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read/write item**
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
+  \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
-
-
-  **Important**: To use the sensitivity label feature in your add-in, you
-  must have a Microsoft 365 E5 subscription.
-
-
-  To learn more about how to manage sensitivity labels in your add-in, see
-  [Manage the sensitivity label of your message or appointment in compose
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!--
-  -->.
-
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message or appointment in compose mode](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
   #### Examples
 
-
   ```TypeScript
-
-  // Check whether the catalog of sensitivity labels is enabled on the current
-  mailbox.
-
+  // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
   Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
       // If the catalog is enabled, get all available sensitivity labels.
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
@@ -62,9 +43,8 @@ remarks: >-
           console.log("Action failed with error: " + asyncResult.error.message);
       }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -73,13 +53,9 @@ properties:
     uid: outlook!Office.SensitivityLabelDetails#children:member
     package: outlook!
     fullName: children
-    summary: >-
-      The
-      [sublabels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels)
-      of the sensitivity label. Returns `null` if a label doesn't have any
-      sublabels.
+    summary: The [sublabels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels) of the sensitivity label. Returns `null` if a label doesn't have any sublabels.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,7 +68,7 @@ properties:
     fullName: color
     summary: The color of the sensitivity label.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +81,7 @@ properties:
     fullName: id
     summary: The unique identifier (GUID) of the sensitivity label.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,7 +94,7 @@ properties:
     fullName: name
     summary: The name of the sensitivity label.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +107,7 @@ properties:
     fullName: tooltip
     summary: The description of the sensitivity label.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

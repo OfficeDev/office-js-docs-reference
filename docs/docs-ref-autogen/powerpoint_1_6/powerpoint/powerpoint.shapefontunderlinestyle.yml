@@ -4,29 +4,18 @@ uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeFontUnderlineStyle
 summary: The type of underline applied to a font.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
   // This function gets the collection of shapes on the first slide,
-
   // and adds a brace pair, {}, to the collection, while specifying its
-
   // location and size. Then it names the shape, sets its text and font
-
   // color, and centers it inside the braces.
-
   await PowerPoint.run(async (context) => {
     const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
     const braces: PowerPoint.Shape = shapes.addGeometricShape(PowerPoint.GeometricShapeType.bracePair, {
@@ -44,9 +33,8 @@ remarks: >-
 
     return context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -56,7 +44,7 @@ fields:
     summary: |-
       Underlining of text with a line containing dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Dash"'
   - name: dashHeavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dashHeavy:member
@@ -64,7 +52,7 @@ fields:
     summary: |-
       Underlining of text with a thick line containing dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DashHeavy"'
   - name: dashLong
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dashLong:member
@@ -72,7 +60,7 @@ fields:
     summary: |-
       Underlining of text with a line containing long dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DashLong"'
   - name: dashLongHeavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dashLongHeavy:member
@@ -80,7 +68,7 @@ fields:
     summary: |-
       Underlining of text with a thick line containing long dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DashLongHeavy"'
   - name: dotDash
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDash:member
@@ -88,7 +76,7 @@ fields:
     summary: |-
       Underlining of text with a line containing dots and dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DotDash"'
   - name: dotDashHeavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDashHeavy:member
@@ -96,7 +84,7 @@ fields:
     summary: |-
       Underlining of text with a thick line containing dots and dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DotDashHeavy"'
   - name: dotDotDash
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDotDash:member
@@ -104,7 +92,7 @@ fields:
     summary: |-
       Underlining of text with a line containing double dots and dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DotDotDash"'
   - name: dotDotDashHeavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDotDashHeavy:member
@@ -112,7 +100,7 @@ fields:
     summary: |-
       Underlining of text with a thick line containing double dots and dashes.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DotDotDashHeavy"'
   - name: dotted
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotted:member
@@ -120,7 +108,7 @@ fields:
     summary: |-
       Underlining of text with a dotted line.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Dotted"'
   - name: dottedHeavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.dottedHeavy:member
@@ -128,7 +116,7 @@ fields:
     summary: |-
       Underlining of text with a thick, dotted line.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DottedHeavy"'
   - name: double
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.double:member
@@ -136,7 +124,7 @@ fields:
     summary: |-
       Underlining of text with double lines.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Double"'
   - name: heavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.heavy:member
@@ -144,7 +132,7 @@ fields:
     summary: |-
       Underlining of text with a thick line.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Heavy"'
   - name: none
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.none:member
@@ -152,7 +140,7 @@ fields:
     summary: |-
       No underlining.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"None"'
   - name: single
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.single:member
@@ -160,7 +148,7 @@ fields:
     summary: |-
       Regular single line underlining.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Single"'
   - name: wavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.wavy:member
@@ -168,7 +156,7 @@ fields:
     summary: |-
       Underlining of text with a wavy line.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Wavy"'
   - name: wavyDouble
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.wavyDouble:member
@@ -176,7 +164,7 @@ fields:
     summary: |-
       Underlining of text with double wavy lines.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"WavyDouble"'
   - name: wavyHeavy
     uid: powerpoint!PowerPoint.ShapeFontUnderlineStyle.wavyHeavy:member
@@ -184,5 +172,5 @@ fields:
     summary: |-
       Underlining of text with a thick, wavy line.
 
-      * \[Api set: PowerPointApi 1.4\]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"WavyHeavy"'

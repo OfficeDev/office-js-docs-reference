@@ -3,24 +3,14 @@ name: Word.ShapeTextWrapType
 uid: word!Word.ShapeTextWrapType:enum
 package: word!
 fullName: Word.ShapeTextWrapType
-summary: >-
-  Specifies how to wrap document text around a shape. For more details, see the
-  "Text Wrapping" tab of [Layout
-  options](https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc)<!--
-  -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies how to wrap document text around a shape. For more details, see the "Text Wrapping" tab of [Layout options](https://support.microsoft.com/office/a0f53857-b501-46c6-ba8b-68ba51e0e3cc)<!-- -->.
+remarks: |-
+  \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
   await Word.run(async (context) => {
     // Sets text wrap properties of the first text box.
@@ -41,9 +31,8 @@ remarks: >-
 
     console.log("The first text box's text wrap properties were updated:", textWrap);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -53,7 +42,7 @@ fields:
     summary: |-
       Places shape behind text.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Behind"'
   - name: front
     uid: word!Word.ShapeTextWrapType.front:member
@@ -61,7 +50,7 @@ fields:
     summary: |-
       Places shape in front of text.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Front"'
   - name: inline
     uid: word!Word.ShapeTextWrapType.inline:member
@@ -69,7 +58,7 @@ fields:
     summary: |-
       Places the shape in line with text.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inline"'
   - name: square
     uid: word!Word.ShapeTextWrapType.square:member
@@ -77,7 +66,7 @@ fields:
     summary: |-
       Wraps text squarely around the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Square"'
   - name: through
     uid: word!Word.ShapeTextWrapType.through:member
@@ -85,7 +74,7 @@ fields:
     summary: |-
       Wraps text around and through the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Through"'
   - name: tight
     uid: word!Word.ShapeTextWrapType.tight:member
@@ -93,7 +82,7 @@ fields:
     summary: |-
       Wraps text close to the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tight"'
   - name: topBottom
     uid: word!Word.ShapeTextWrapType.topBottom:member
@@ -101,5 +90,5 @@ fields:
     summary: |-
       Places text above and below the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TopBottom"'

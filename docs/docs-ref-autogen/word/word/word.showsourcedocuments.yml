@@ -4,10 +4,8 @@ uid: word!Word.ShowSourceDocuments:enum
 package: word!
 fullName: Word.ShowSourceDocuments
 summary: Specifies the source documents to show.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Specifies that both the original and revised source documents are shown.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Both"'
   - name: none
     uid: word!Word.ShowSourceDocuments.none:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Specifies that no source documents are shown.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: original
     uid: word!Word.ShowSourceDocuments.original:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Specifies that the original source document is shown.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Original"'
   - name: revised
     uid: word!Word.ShowSourceDocuments.revised:member
@@ -41,5 +39,5 @@ fields:
     summary: |-
       Specifies that the revised source document is shown.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Revised"'

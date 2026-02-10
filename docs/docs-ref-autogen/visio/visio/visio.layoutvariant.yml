@@ -4,11 +4,8 @@ uid: visio!Visio.LayoutVariant:enum
 package: visio!
 fullName: Visio.LayoutVariant
 summary: Represents the type of layout.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -18,7 +15,7 @@ fields:
     summary: |-
       Use Flowchart with BottomToTop orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_BottomToTop"'
   - name: flowchart_LeftToRight
     uid: visio!Visio.LayoutVariant.flowchart_LeftToRight:member
@@ -26,7 +23,7 @@ fields:
     summary: |-
       Use Flowchart with LeftToRight orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_LeftToRight"'
   - name: flowchart_RightToLeft
     uid: visio!Visio.LayoutVariant.flowchart_RightToLeft:member
@@ -34,7 +31,7 @@ fields:
     summary: |-
       Use Flowchart with RightToLeft orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_RightToLeft"'
   - name: flowchart_TopToBottom
     uid: visio!Visio.LayoutVariant.flowchart_TopToBottom:member
@@ -42,7 +39,7 @@ fields:
     summary: |-
       Use Flowchart with TopToBottom orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Flowchart_TopToBottom"'
   - name: pageDefault
     uid: visio!Visio.LayoutVariant.pageDefault:member
@@ -50,7 +47,7 @@ fields:
     summary: |-
       Use the Page default layout.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"PageDefault"'
   - name: unknown
     uid: visio!Visio.LayoutVariant.unknown:member
@@ -58,7 +55,7 @@ fields:
     summary: |-
       Invalid layout.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Unknown"'
   - name: wideTree_DownThenLeft
     uid: visio!Visio.LayoutVariant.wideTree_DownThenLeft:member
@@ -66,7 +63,7 @@ fields:
     summary: |-
       Use WideTree with DownThenLeft orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_DownThenLeft"'
   - name: wideTree_DownThenRight
     uid: visio!Visio.LayoutVariant.wideTree_DownThenRight:member
@@ -74,7 +71,7 @@ fields:
     summary: |-
       Use WideTree with DownThenRight orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_DownThenRight"'
   - name: wideTree_LeftThenDown
     uid: visio!Visio.LayoutVariant.wideTree_LeftThenDown:member
@@ -82,7 +79,7 @@ fields:
     summary: |-
       Use WideTree with LeftThenDown orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_LeftThenDown"'
   - name: wideTree_RightThenDown
     uid: visio!Visio.LayoutVariant.wideTree_RightThenDown:member
@@ -90,5 +87,5 @@ fields:
     summary: |-
       Use WideTree with RightThenDown orientation.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"WideTree_RightThenDown"'

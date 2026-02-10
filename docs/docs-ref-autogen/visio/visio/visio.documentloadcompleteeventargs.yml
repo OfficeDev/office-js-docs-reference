@@ -3,20 +3,13 @@ name: Visio.DocumentLoadCompleteEventArgs
 uid: visio!Visio.DocumentLoadCompleteEventArgs:interface
 package: visio!
 fullName: Visio.DocumentLoadCompleteEventArgs
-summary: >-
-  Provides information about the success or failure of the DocumentLoadComplete
-  event.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
+summary: Provides information about the success or failure of the DocumentLoadComplete event.
+remarks: |-
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 
   #### Examples
 
-
   ```TypeScript
-
   Visio.run(session, function (ctx) {
       const document1 = ctx.document;
       eventResult1 = document1.onDocumentLoadComplete.add(
@@ -33,9 +26,8 @@ remarks: >-
           console.log("Debug info: " + JSON.stringify(error.debugInfo));
       }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -45,11 +37,8 @@ properties:
     package: visio!
     fullName: success
     summary: Gets the success or failure of the DocumentLoadComplete event.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

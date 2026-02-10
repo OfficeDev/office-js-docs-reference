@@ -3,11 +3,9 @@ name: OneNote.Interfaces.InkAnalysisWordUpdateData
 uid: onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordUpdateData
-summary: >-
-  An interface for updating data on the `InkAnalysisWord` object, for use in
-  `inkAnalysisWord.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `InkAnalysisWord` object, for use in `inkAnalysisWord.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,16 +15,11 @@ properties:
     package: onenote!
     fullName: line
     summary: Reference to the parent InkAnalysisLine.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface"
-          />
+        type: <xref uid="onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface" />

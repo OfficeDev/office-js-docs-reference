@@ -3,13 +3,9 @@ name: Word.DeleteCells
 uid: word!Word.DeleteCells:enum
 package: word!
 fullName: Word.DeleteCells
-summary: >-
-  Specifies a range of cells to be deleted from a table in a delete cells action
-  or the behavior of the remaining cells after the deletion has occurred.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies a range of cells to be deleted from a table in a delete cells action or the behavior of the remaining cells after the deletion has occurred.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +15,7 @@ fields:
     summary: |-
       Delete the entire column of cells from the table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EntireColumn"'
   - name: entireRow
     uid: word!Word.DeleteCells.entireRow:member
@@ -27,25 +23,21 @@ fields:
     summary: |-
       Delete the entire row of cells from the table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EntireRow"'
   - name: shiftLeft
     uid: word!Word.DeleteCells.shiftLeft:member
     package: word!
-    summary: >-
-      Shift remaining cells left in the row where the deletion occurred after a
-      cell or range of cells has been deleted.
+    summary: |-
+      Shift remaining cells left in the row where the deletion occurred after a cell or range of cells has been deleted.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftLeft"'
   - name: shiftUp
     uid: word!Word.DeleteCells.shiftUp:member
     package: word!
-    summary: >-
-      Shift remaining cells up in the column where the deletion occurred after a
-      cell or range of cells has been deleted.
+    summary: |-
+      Shift remaining cells up in the column where the deletion occurred after a cell or range of cells has been deleted.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftUp"'

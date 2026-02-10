@@ -3,15 +3,9 @@ name: PowerPoint.SlideBackgroundGradientFillOptions
 uid: powerpoint!PowerPoint.SlideBackgroundGradientFillOptions:interface
 package: powerpoint!
 fullName: PowerPoint.SlideBackgroundGradientFillOptions
-summary: >-
-  Represents the available options for setting a
-  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
-  gradient fill.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+summary: Represents the available options for setting a [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) gradient fill.
+remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,19 +15,11 @@ properties:
     package: powerpoint!
     fullName: type
     summary: If provided, specifies the type of gradient fill.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" |
-        "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
+      content: 'type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum"
-          /> | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" |
-          "ShadeFromTitle"
+        type: <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum" /> | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle"

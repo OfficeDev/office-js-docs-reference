@@ -3,29 +3,16 @@ name: Office.DroppedItemDetails
 uid: outlook!Office.DroppedItemDetails:interface
 package: outlook!
 fullName: Office.DroppedItemDetails
-summary: >-
-  Provides the contents and details of the message or file attachment being
-  dragged and dropped into an add-in's task pane.
-remarks: >-
-  \[ [API set: Mailbox
-  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Provides the contents and details of the message or file attachment being dragged and dropped into an add-in's task pane.
+remarks: |-
+  \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-  To learn more about the drag-and-drop feature and how to implement it across
-  various Outlook clients, see [Drag and drop messages and attachments into the
-  task pane of an Outlook
-  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!--
-  -->.
-
+  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and drop messages and attachments into the task pane of an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
 
   function dragAndDropEventHandler(event) {
       Office.context.mailbox.addHandlerAsync(Office.EventType.DragAndDropEvent, (event) => {
@@ -49,9 +36,8 @@ remarks: >-
       }
     });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -61,16 +47,11 @@ properties:
     package: outlook!
     fullName: fileContent
     summary: Gets the contents of the file being dragged and dropped.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-      For guidance on how to retrieve data from a `Blob`<!-- -->, see the [File
-      API documentation](https://developer.mozilla.org/docs/Web/API/Blob)<!--
-      -->.
-
+      For guidance on how to retrieve data from a `Blob`<!-- -->, see the [File API documentation](https://developer.mozilla.org/docs/Web/API/Blob)<!-- -->.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,11 +63,8 @@ properties:
     package: outlook!
     fullName: name
     summary: Gets the name of the file being dragged and dropped.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,15 +76,11 @@ properties:
     package: outlook!
     fullName: type
     summary: Gets the type of the file being dragged and dropped.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-      **Important**: When a message is dragged into an add-in's task pane,
-      it's dropped as a .eml file.
-
+      \*\*Important\*\*: When a message is dragged into an add-in's task pane, it's dropped as a .eml file.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

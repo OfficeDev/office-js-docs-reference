@@ -4,10 +4,8 @@ uid: excel!Excel.TableSource:enum
 package: excel!
 fullName: Excel.TableSource
 summary: Specifies the data source type for a table.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       An external data source, such as Microsoft SharePoint Foundation.
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"External"'
   - name: model
     uid: excel!Excel.TableSource.model:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       A Power Pivot model.
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Model"'
   - name: query
     uid: excel!Excel.TableSource.query:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       A Power Query query data source.
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Query"'
   - name: range
     uid: excel!Excel.TableSource.range:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       A range object in this worksheet.
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Range"'
   - name: xml
     uid: excel!Excel.TableSource.xml:member
@@ -49,5 +47,5 @@ fields:
     summary: |-
       An XML data source.
 
-      * \[Api set: ExcelApi BETA (PREVIEW ONLY)\]
+      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Xml"'

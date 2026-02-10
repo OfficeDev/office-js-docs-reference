@@ -4,22 +4,18 @@ uid: word!Word.TableCellInsertionLocation:enum
 package: word!
 fullName: Word.TableCellInsertionLocation
 summary: Specifies where and what type of cells to add to an existing table.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: shiftColumnRight
     uid: word!Word.TableCellInsertionLocation.shiftColumnRight:member
     package: word!
-    summary: >-
-      Inserts an entire column to the left of the column that contains the
-      selection.
+    summary: |-
+      Inserts an entire column to the left of the column that contains the selection.
 
-
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftColumnRight"'
   - name: shiftDown
     uid: word!Word.TableCellInsertionLocation.shiftDown:member
@@ -27,7 +23,7 @@ fields:
     summary: |-
       Inserts new cells above the selected cells.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftDown"'
   - name: shiftRight
     uid: word!Word.TableCellInsertionLocation.shiftRight:member
@@ -35,7 +31,7 @@ fields:
     summary: |-
       Inserts new cells to the left of the selected cells.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftRight"'
   - name: shiftRowDown
     uid: word!Word.TableCellInsertionLocation.shiftRowDown:member
@@ -43,5 +39,5 @@ fields:
     summary: |-
       Inserts an entire row above the row that contains the selection.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShiftRowDown"'

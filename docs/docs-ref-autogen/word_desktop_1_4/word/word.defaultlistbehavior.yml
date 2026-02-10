@@ -4,10 +4,8 @@ uid: word!Word.DefaultListBehavior:enum
 package: word!
 fullName: Word.DefaultListBehavior
 summary: Specifies the default list behavior for a list.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Use Web-oriented formatting as introduced in Microsoft Word 2000.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word2000"'
   - name: word2002
     uid: word!Word.DefaultListBehavior.word2002:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Use formatting compatible with Microsoft Word 2002.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word2002"'
   - name: word97
     uid: word!Word.DefaultListBehavior.word97:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Use formatting compatible with Microsoft Word 97.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word97"'

@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.SlideBackgroundUpdateData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundUpdateData
-summary: >-
-  An interface for updating data on the `SlideBackground` object, for use in
-  `slideBackground.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `SlideBackground` object, for use in `slideBackground.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

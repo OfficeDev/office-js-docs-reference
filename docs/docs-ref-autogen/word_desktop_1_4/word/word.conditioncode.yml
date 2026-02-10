@@ -4,10 +4,8 @@ uid: word!Word.ConditionCode:enum
 package: word!
 fullName: Word.ConditionCode
 summary: Specifies the area of a table to which to apply special style formatting.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Applies formatting to first cell in the last row of the table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BottomLeftCell"'
   - name: bottomRightCell
     uid: word!Word.ConditionCode.bottomRightCell:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Applies formatting to the last cell in the table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BottomRightCell"'
   - name: evenColumnBanding
     uid: word!Word.ConditionCode.evenColumnBanding:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Applies formatting to even-numbered columns.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EvenColumnBanding"'
   - name: evenRowBanding
     uid: word!Word.ConditionCode.evenRowBanding:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Applies formatting to even-numbered rows.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EvenRowBanding"'
   - name: firstColumn
     uid: word!Word.ConditionCode.firstColumn:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Applies formatting to the first column in a table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FirstColumn"'
   - name: firstRow
     uid: word!Word.ConditionCode.firstRow:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Applies formatting to the first row in a table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FirstRow"'
   - name: lastColumn
     uid: word!Word.ConditionCode.lastColumn:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       Applies formatting to the last column in a table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LastColumn"'
   - name: lastRow
     uid: word!Word.ConditionCode.lastRow:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Applies formatting to the last row in a table.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LastRow"'
   - name: oddColumnBanding
     uid: word!Word.ConditionCode.oddColumnBanding:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       Applies formatting to odd-numbered columns.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OddColumnBanding"'
   - name: oddRowBanding
     uid: word!Word.ConditionCode.oddRowBanding:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Applies formatting to odd-numbered rows.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OddRowBanding"'
   - name: topLeftCell
     uid: word!Word.ConditionCode.topLeftCell:member
@@ -97,7 +95,7 @@ fields:
     summary: |-
       Applies formatting to the first cell in the first row.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TopLeftCell"'
   - name: topRightCell
     uid: word!Word.ConditionCode.topRightCell:member
@@ -105,5 +103,5 @@ fields:
     summary: |-
       Applies formatting to the last cell in the first row.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TopRightCell"'

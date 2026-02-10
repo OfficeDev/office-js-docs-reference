@@ -3,11 +3,9 @@ name: Word.Interfaces.CritiqueAnnotationData
 uid: word!Word.Interfaces.CritiqueAnnotationData:interface
 package: word!
 fullName: Word.Interfaces.CritiqueAnnotationData
-summary: >-
-  An interface describing the data returned by calling
-  `critiqueAnnotation.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `critiqueAnnotation.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: word!
     fullName: critique
     summary: Gets the critique that was passed when the annotation was inserted.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

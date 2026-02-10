@@ -3,14 +3,9 @@ name: Word.TableOfContentsMarkEntryOptions
 uid: word!Word.TableOfContentsMarkEntryOptions:interface
 package: word!
 fullName: Word.TableOfContentsMarkEntryOptions
-summary: >-
-  Specifies the options for inserting a [Table of Contents Entry (TC)
-  field](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)<!--
-  -->.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies the options for inserting a [Table of Contents Entry (TC) field](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)<!-- -->.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,16 +14,9 @@ properties:
     uid: word!Word.TableOfContentsMarkEntryOptions#entry:member
     package: word!
     fullName: entry
-    summary: >-
-      If provided, specifies the text that appears in a table of contents or
-      table of figures. To indicate a subentry, include the main entry text and
-      the subentry text, separated by a colon (":") (e.g., "Introduction:The
-      Product"). When the `entryAutoText` property is set, this property is
-      ignored.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the text that appears in a table of contents or table of figures. To indicate a subentry, include the main entry text and the subentry text, separated by a colon (":") (e.g., "Introduction:The Product"). When the `entryAutoText` property is set, this property is ignored.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,14 +27,9 @@ properties:
     uid: word!Word.TableOfContentsMarkEntryOptions#entryAutoText:member
     package: word!
     fullName: entryAutoText
-    summary: >-
-      If provided, specifies the AutoText entry name that includes text for the
-      table of figures, or table of contents. When this property is used, the
-      `entry` property is ignored.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the AutoText entry name that includes text for the table of figures, or table of contents. When this property is used, the `entry` property is ignored.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,13 +40,9 @@ properties:
     uid: word!Word.TableOfContentsMarkEntryOptions#level:member
     package: word!
     fullName: level
-    summary: >-
-      If provided, specifies the level for the entry in a table of contents or
-      table of figures and should be a value from 1 to 9.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the level for the entry in a table of contents or table of figures and should be a value from 1 to 9.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,13 +53,9 @@ properties:
     uid: word!Word.TableOfContentsMarkEntryOptions#tableId:member
     package: word!
     fullName: tableId
-    summary: >-
-      If provided, specifies a one-letter identifier for a table of contents or
-      table of figures (e.g., "i" for an "illustration").
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies a one-letter identifier for a table of contents or table of figures (e.g., "i" for an "illustration").
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

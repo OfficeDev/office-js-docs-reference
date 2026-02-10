@@ -4,10 +4,8 @@ uid: excel!Excel.CalculationState:enum
 package: excel!
 fullName: Excel.CalculationState
 summary: Represents the state of calculation across the entire Excel application.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Calculations in progress.
 
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Calculating"'
   - name: done
     uid: excel!Excel.CalculationState.done:member
@@ -25,15 +23,13 @@ fields:
     summary: |-
       Calculations complete.
 
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Done"'
   - name: pending
     uid: excel!Excel.CalculationState.pending:member
     package: excel!
-    summary: >-
-      Changes that trigger calculation have been made, but a recalculation has
-      not yet been performed.
+    summary: |-
+      Changes that trigger calculation have been made, but a recalculation has not yet been performed.
 
-
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Pending"'

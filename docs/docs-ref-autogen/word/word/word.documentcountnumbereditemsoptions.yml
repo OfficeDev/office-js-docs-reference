@@ -3,13 +3,9 @@ name: Word.DocumentCountNumberedItemsOptions
 uid: word!Word.DocumentCountNumberedItemsOptions:interface
 package: word!
 fullName: Word.DocumentCountNumberedItemsOptions
-summary: >-
-  Provides configuration options for the
-  [Document.countNumberedItems](xref:word!Word.Document:class) method.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Provides configuration options for the [Document.countNumberedItems](xref:word!Word.Document:class) method.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,13 +14,9 @@ properties:
     uid: word!Word.DocumentCountNumberedItemsOptions#level:member
     package: word!
     fullName: level
-    summary: >-
-      If provided, specifies the level of numbering to count. If omitted, all
-      levels are counted.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the level of numbering to count. If omitted, all levels are counted.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,18 +27,12 @@ properties:
     uid: word!Word.DocumentCountNumberedItemsOptions#numberType:member
     package: word!
     fullName: numberType
-    summary: >-
-      If provided, specifies the type of numbered items to count. The default
-      value is `allNumbers`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the type of numbered items to count. The default value is `allNumbers`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'numberType?: Word.NumberType | "Paragraph" | "ListNum" | "AllNumbers";'
       return:
-        type: >-
-          <xref uid="word!Word.NumberType:enum" /> | "Paragraph" | "ListNum" |
-          "AllNumbers"
+        type: <xref uid="word!Word.NumberType:enum" /> | "Paragraph" | "ListNum" | "AllNumbers"

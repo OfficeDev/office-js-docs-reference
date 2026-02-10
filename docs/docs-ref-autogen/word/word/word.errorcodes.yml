@@ -4,15 +4,11 @@ uid: word!Word.ErrorCodes:enum
 package: word!
 fullName: Word.ErrorCodes
 summary: ''
-remarks: >-
+remarks: |-
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
 
   async function tryCatch(callback) {
     try {
@@ -26,9 +22,8 @@ remarks: >-
       }
     }
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -4,24 +4,17 @@ uid: office!Office.PlatformType:enum
 package: office!
 fullName: Office.PlatformType
 summary: Specifies the OS or other platform on which the Office application is running.
-remarks: >-
-  **Important**: In Outlook, this enum is available starting with Mailbox
-  requirement set 1.5.
-
+remarks: |-
+  \*\*Important\*\*: In Outlook, this enum is available starting with Mailbox requirement set 1.5.
 
   #### Examples
 
-
   ```TypeScript
-
   const contextInfo = Office.context.diagnostics;
-
   const platformType: Office.PlatformType = contextInfo.platform;
-
   console.log("Platform: " + platformType);
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -40,14 +33,10 @@ fields:
   - name: OfficeOnline
     uid: office!Office.PlatformType.OfficeOnline:member
     package: office!
-    summary: >-
+    summary: |-
       The platform is Office on the web (in a browser).
 
-
-      **Important**: In Outlook, `OfficeOnline` is returned if an add-is is
-      running in Outlook on the web or in [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->.
+      \*\*Important\*\*: In Outlook, `OfficeOnline` is returned if an add-is is running in Outlook on the web or in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->.
   - name: PC
     uid: office!Office.PlatformType.PC:member
     package: office!

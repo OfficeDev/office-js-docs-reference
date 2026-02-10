@@ -4,10 +4,8 @@ uid: word!Word.XmlNodeLevel:enum
 package: word!
 fullName: Word.XmlNodeLevel
 summary: Specifies the level of an XML node.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Cell node level.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Cell"'
   - name: inline
     uid: word!Word.XmlNodeLevel.inline:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Inline node level.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inline"'
   - name: paragraph
     uid: word!Word.XmlNodeLevel.paragraph:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Paragraph node level.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraph"'
   - name: row
     uid: word!Word.XmlNodeLevel.row:member
@@ -41,5 +39,5 @@ fields:
     summary: |-
       Row node level.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Row"'

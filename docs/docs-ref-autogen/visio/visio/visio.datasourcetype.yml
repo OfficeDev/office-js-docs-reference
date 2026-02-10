@@ -4,11 +4,8 @@ uid: visio!Visio.DataSourceType:enum
 package: visio!
 fullName: Visio.DataSourceType
 summary: Represents the type of source for the data connection.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -18,7 +15,7 @@ fields:
     summary: |-
       Microsoft Excel workbook.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Excel"'
   - name: unknown
     uid: visio!Visio.DataSourceType.unknown:member
@@ -26,5 +23,5 @@ fields:
     summary: |-
       Unknown Data Source.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"Unknown"'

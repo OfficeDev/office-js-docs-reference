@@ -3,11 +3,9 @@ name: Word.Interfaces.DocumentData
 uid: word!Word.Interfaces.DocumentData:interface
 package: word!
 fullName: Word.Interfaces.DocumentData
-summary: >-
-  An interface describing the data returned by calling `document.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `document.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.DocumentData#body:member
     package: word!
     fullName: body
-    summary: >-
-      Gets the `Body` object of the main document. The body is the text that
-      excludes headers, footers, footnotes, textboxes, etc.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the `Body` object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,14 +27,9 @@ properties:
     uid: word!Word.Interfaces.DocumentData#contentControls:member
     package: word!
     fullName: contentControls
-    summary: >-
-      Gets the collection of `ContentControl` objects in the document. This
-      includes content controls in the body of the document, headers, footers,
-      textboxes, etc.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the collection of `ContentControl` objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.DocumentData#saved:member
     package: word!
     fullName: saved
-    summary: >-
-      Indicates whether the changes in the document have been saved. A value of
-      `true` indicates that the document hasn't changed since it was saved.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Indicates whether the changes in the document have been saved. A value of `true` indicates that the document hasn't changed since it was saved.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,10 +54,8 @@ properties:
     package: word!
     fullName: sections
     summary: Gets the collection of `Section` objects in the document.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

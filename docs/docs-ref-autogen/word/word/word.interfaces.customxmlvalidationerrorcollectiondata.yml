@@ -3,11 +3,9 @@ name: Word.Interfaces.CustomXmlValidationErrorCollectionData
 uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlValidationErrorCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlValidationErrorCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customXmlValidationErrorCollection.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,12 +16,10 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.CustomXmlValidationErrorData[];'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CustomXmlValidationErrorData:interface" />[]
+        type: <xref uid="word!Word.Interfaces.CustomXmlValidationErrorData:interface" />[]

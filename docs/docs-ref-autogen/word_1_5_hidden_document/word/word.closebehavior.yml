@@ -4,28 +4,20 @@ uid: word!Word.CloseBehavior:enum
 package: word!
 fullName: Word.CloseBehavior
 summary: Specifies the close behavior for `Document.close`<!-- -->.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/save-close.yaml
 
   // Closes the document after saving.
-
   await Word.run(async (context) => {
     context.document.close(Word.CloseBehavior.save);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -35,7 +27,7 @@ fields:
     summary: |-
       Saves the changes before closing the document.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Save"'
   - name: skipSave
     uid: word!Word.CloseBehavior.skipSave:member
@@ -43,5 +35,5 @@ fields:
     summary: |-
       Discard the possible changes when closing the document.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SkipSave"'

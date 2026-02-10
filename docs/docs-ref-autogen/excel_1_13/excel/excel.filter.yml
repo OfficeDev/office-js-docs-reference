@@ -4,10 +4,8 @@ uid: excel!Excel.Filter:class
 package: excel!
 fullName: Excel.Filter
 summary: Manages the filtering of a table's column.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +14,9 @@ properties:
     uid: excel!Excel.Filter#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,10 +28,8 @@ properties:
     package: excel!
     fullName: criteria
     summary: The currently applied filter on the given column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,10 +42,8 @@ methods:
     package: excel!
     fullName: apply(criteria)
     summary: Apply the given filter criteria on the given column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,13 +59,9 @@ methods:
     uid: excel!Excel.Filter#applyBottomItemsFilter:member(1)
     package: excel!
     fullName: applyBottomItemsFilter(count)
-    summary: >-
-      Apply a "Bottom Item" filter to the column for the given number of
-      elements.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Apply a "Bottom Item" filter to the column for the given number of elements.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,13 +77,9 @@ methods:
     uid: excel!Excel.Filter#applyBottomPercentFilter:member(1)
     package: excel!
     fullName: applyBottomPercentFilter(percent)
-    summary: >-
-      Apply a "Bottom Percent" filter to the column for the given percentage of
-      elements.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Apply a "Bottom Percent" filter to the column for the given percentage of elements.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,10 +96,8 @@ methods:
     package: excel!
     fullName: applyCellColorFilter(color)
     summary: Apply a "Cell Color" filter to the column for the given color.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,16 +114,12 @@ methods:
     package: excel!
     fullName: applyCustomFilter(criteria1, criteria2, oper)
     summary: Apply an "Icon" filter to the column for the given criteria strings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyCustomFilter(criteria1: string, criteria2?: string, oper?:
-        Excel.FilterOperator): void;
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: Excel.FilterOperator): void;'
       parameters:
         - id: criteria1
           description: The first criteria string.
@@ -150,9 +128,7 @@ methods:
           description: Optional. The second criteria string.
           type: string
         - id: oper
-          description: >-
-            Optional. The operator that describes how the two criteria are
-            joined.
+          description: Optional. The operator that describes how the two criteria are joined.
           type: <xref uid="excel!Excel.FilterOperator:enum" />
       return:
         type: void
@@ -162,16 +138,12 @@ methods:
     package: excel!
     fullName: applyCustomFilter(criteria1, criteria2, oper)
     summary: Apply an "Icon" filter to the column for the given criteria strings.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" |
-        "Or"): void;
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" | "Or"): void;'
       parameters:
         - id: criteria1
           description: The first criteria string.
@@ -180,9 +152,7 @@ methods:
           description: Optional. The second criteria string.
           type: string
         - id: oper
-          description: >-
-            Optional. The operator that describes how the two criteria are
-            joined.
+          description: Optional. The operator that describes how the two criteria are joined.
           type: '"And" | "Or"'
       return:
         type: void
@@ -192,10 +162,8 @@ methods:
     package: excel!
     fullName: applyDynamicFilter(criteria)
     summary: Apply a "Dynamic" filter to the column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,43 +180,16 @@ methods:
     package: excel!
     fullName: applyDynamicFilter(criteria)
     summary: Apply a "Dynamic" filter to the column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyDynamicFilter(criteria: "Unknown" | "AboveAverage" |
-        "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
-        "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
-        "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
-        "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay"
-        | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" |
-        "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" |
-        "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
-        "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" |
-        "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" |
-        "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
-        "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
+      content: 'applyDynamicFilter(criteria: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;'
       parameters:
         - id: criteria
           description: The dynamic criteria to apply.
-          type: >-
-            "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
-            "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" |
-            "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
-            "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" |
-            "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
-            "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" |
-            "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" |
-            "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
-            "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" |
-            "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" |
-            "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" |
-            "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" |
-            "YearToDate" | "Yesterday"
+          type: '"Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"'
       return:
         type: void
         description: ''
@@ -257,10 +198,8 @@ methods:
     package: excel!
     fullName: applyFontColorFilter(color)
     summary: Apply a "Font Color" filter to the column for the given color.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,10 +216,8 @@ methods:
     package: excel!
     fullName: applyIconFilter(icon)
     summary: Apply an "Icon" filter to the column for the given icon.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,10 +234,8 @@ methods:
     package: excel!
     fullName: applyTopItemsFilter(count)
     summary: Apply a "Top Item" filter to the column for the given number of elements.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -316,13 +251,9 @@ methods:
     uid: excel!Excel.Filter#applyTopPercentFilter:member(1)
     package: excel!
     fullName: applyTopPercentFilter(percent)
-    summary: >-
-      Apply a "Top Percent" filter to the column for the given percentage of
-      elements.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Apply a "Top Percent" filter to the column for the given percentage of elements.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -339,22 +270,16 @@ methods:
     package: excel!
     fullName: applyValuesFilter(values)
     summary: Apply a "Values" filter to the column for the given values.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
       parameters:
         - id: values
-          description: >-
-            The list of values to show. This must be an array of strings or an
-            array of `Excel.FilterDateTime` objects.
-          type: >-
-            Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface"
-            />&gt;
+          description: The list of values to show. This must be an array of strings or an array of `Excel.FilterDateTime` objects.
+          type: Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface" />&gt;
       return:
         type: void
         description: ''
@@ -363,10 +288,8 @@ methods:
     package: excel!
     fullName: clear()
     summary: Clear the filter on the given column.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -378,11 +301,9 @@ methods:
     uid: excel!Excel.Filter#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -398,20 +319,16 @@ methods:
     uid: excel!Excel.Filter#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Filter;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Filter:class" />
@@ -420,11 +337,9 @@ methods:
     uid: excel!Excel.Filter#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -435,11 +350,7 @@ methods:
                 }): Excel.Filter;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -452,16 +363,9 @@ methods:
     uid: excel!Excel.Filter#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.Filter` object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.FilterData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Filter` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

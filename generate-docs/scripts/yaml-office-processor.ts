@@ -243,7 +243,7 @@ async function processYamlFile(
   }
 
   // Process nested items in arrays
-  const arrayNames = ['properties', 'methods', 'events', 'enumValues', 'typeParameters'];
+  const arrayNames = ['properties', 'methods', 'events', 'functions', 'fields', 'typeParameters'];
   for (const arrayName of arrayNames) {
     if (Array.isArray(doc[arrayName])) {
       for (const item of doc[arrayName]) {

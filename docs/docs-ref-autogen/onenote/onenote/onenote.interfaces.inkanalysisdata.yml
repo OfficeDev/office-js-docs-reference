@@ -3,11 +3,9 @@ name: OneNote.Interfaces.InkAnalysisData
 uid: onenote!OneNote.Interfaces.InkAnalysisData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisData
-summary: >-
-  An interface describing the data returned by calling
-  `inkAnalysis.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `inkAnalysis.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the InkAnalysis object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +28,8 @@ properties:
     package: onenote!
     fullName: page
     summary: Gets the parent page object. Read-only.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

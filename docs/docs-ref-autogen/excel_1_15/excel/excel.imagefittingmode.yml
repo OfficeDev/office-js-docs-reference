@@ -4,25 +4,23 @@ uid: excel!Excel.ImageFittingMode:enum
 package: excel!
 fullName: Excel.ImageFittingMode
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: fill
     uid: excel!Excel.ImageFittingMode.fill:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.2\]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Fill"'
   - name: fit
     uid: excel!Excel.ImageFittingMode.fit:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.2\]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Fit"'
   - name: fitAndCenter
     uid: excel!Excel.ImageFittingMode.fitAndCenter:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.2\]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FitAndCenter"'

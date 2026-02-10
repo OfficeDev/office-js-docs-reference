@@ -4,10 +4,8 @@ uid: word!Word.StylisticSet:enum
 package: word!
 fullName: Word.StylisticSet
 summary: Specifies the stylistic set to apply to the font.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Default stylistic set.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Default"'
   - name: set01
     uid: word!Word.StylisticSet.set01:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Stylistic set 01.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set01"'
   - name: set02
     uid: word!Word.StylisticSet.set02:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Stylistic set 02.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set02"'
   - name: set03
     uid: word!Word.StylisticSet.set03:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Stylistic set 03.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set03"'
   - name: set04
     uid: word!Word.StylisticSet.set04:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Stylistic set 04.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set04"'
   - name: set05
     uid: word!Word.StylisticSet.set05:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Stylistic set 05.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set05"'
   - name: set06
     uid: word!Word.StylisticSet.set06:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       Stylistic set 06.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set06"'
   - name: set07
     uid: word!Word.StylisticSet.set07:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Stylistic set 07.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set07"'
   - name: set08
     uid: word!Word.StylisticSet.set08:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       Stylistic set 08.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set08"'
   - name: set09
     uid: word!Word.StylisticSet.set09:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Stylistic set 09.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set09"'
   - name: set10
     uid: word!Word.StylisticSet.set10:member
@@ -97,7 +95,7 @@ fields:
     summary: |-
       Stylistic set 10.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set10"'
   - name: set11
     uid: word!Word.StylisticSet.set11:member
@@ -105,7 +103,7 @@ fields:
     summary: |-
       Stylistic set 11.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set11"'
   - name: set12
     uid: word!Word.StylisticSet.set12:member
@@ -113,7 +111,7 @@ fields:
     summary: |-
       Stylistic set 12.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set12"'
   - name: set13
     uid: word!Word.StylisticSet.set13:member
@@ -121,7 +119,7 @@ fields:
     summary: |-
       Stylistic set 13.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set13"'
   - name: set14
     uid: word!Word.StylisticSet.set14:member
@@ -129,7 +127,7 @@ fields:
     summary: |-
       Stylistic set 14.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set14"'
   - name: set15
     uid: word!Word.StylisticSet.set15:member
@@ -137,7 +135,7 @@ fields:
     summary: |-
       Stylistic set 15.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set15"'
   - name: set16
     uid: word!Word.StylisticSet.set16:member
@@ -145,7 +143,7 @@ fields:
     summary: |-
       Stylistic set 16.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set16"'
   - name: set17
     uid: word!Word.StylisticSet.set17:member
@@ -153,7 +151,7 @@ fields:
     summary: |-
       Stylistic set 17.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set17"'
   - name: set18
     uid: word!Word.StylisticSet.set18:member
@@ -161,7 +159,7 @@ fields:
     summary: |-
       Stylistic set 18.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set18"'
   - name: set19
     uid: word!Word.StylisticSet.set19:member
@@ -169,7 +167,7 @@ fields:
     summary: |-
       Stylistic set 19.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set19"'
   - name: set20
     uid: word!Word.StylisticSet.set20:member
@@ -177,5 +175,5 @@ fields:
     summary: |-
       Stylistic set 20.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set20"'

@@ -4,11 +4,8 @@ uid: powerpoint!PowerPoint.Interfaces.BordersLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BordersLoadOptions
 summary: Represents the borders for a table cell.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,12 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BordersLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,106 +28,76 @@ properties:
     package: powerpoint!
     fullName: bottom
     summary: Gets the bottom border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'bottom?: PowerPoint.Interfaces.BorderLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
   - name: diagonalDown
     uid: powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalDown:member
     package: powerpoint!
     fullName: diagonalDown
     summary: Gets the diagonal border (top-left to bottom-right).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'diagonalDown?: PowerPoint.Interfaces.BorderLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
   - name: diagonalUp
     uid: powerpoint!PowerPoint.Interfaces.BordersLoadOptions#diagonalUp:member
     package: powerpoint!
     fullName: diagonalUp
     summary: Gets the diagonal border (bottom-left to top-right).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'diagonalUp?: PowerPoint.Interfaces.BorderLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
   - name: left
     uid: powerpoint!PowerPoint.Interfaces.BordersLoadOptions#left:member
     package: powerpoint!
     fullName: left
     summary: Gets the left border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'left?: PowerPoint.Interfaces.BorderLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
   - name: right
     uid: powerpoint!PowerPoint.Interfaces.BordersLoadOptions#right:member
     package: powerpoint!
     fullName: right
     summary: Gets the right border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'right?: PowerPoint.Interfaces.BorderLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
   - name: top
     uid: powerpoint!PowerPoint.Interfaces.BordersLoadOptions#top:member
     package: powerpoint!
     fullName: top
     summary: Gets the top border.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'top?: PowerPoint.Interfaces.BorderLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface" />

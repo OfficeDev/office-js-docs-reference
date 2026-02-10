@@ -4,23 +4,15 @@ uid: powerpoint!PowerPoint.TextRun:interface
 package: powerpoint!
 fullName: PowerPoint.TextRun
 summary: Represents a sequence of one or more characters with the same font attributes.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
   // Specifies the text runs of the cells in a table.
-
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -62,9 +54,8 @@ remarks: >-
     });
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -73,14 +64,9 @@ properties:
     uid: powerpoint!PowerPoint.TextRun#font:member
     package: powerpoint!
     fullName: font
-    summary: >-
-      The font attributes (such as font name, font size, and color) applied to
-      this text run.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: The font attributes (such as font name, font size, and color) applied to this text run.
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,11 +78,8 @@ properties:
     package: powerpoint!
     fullName: text
     summary: The text of this text run.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

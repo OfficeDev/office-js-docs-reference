@@ -3,16 +3,9 @@ name: Word.Interfaces.BookmarkLoadOptions
 uid: word!Word.Interfaces.BookmarkLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.BookmarkLoadOptions
-summary: >-
-  Represents a single bookmark in a document, selection, or range. The
-  `Bookmark` object is a member of the `Bookmark` collection. The
-  [Word.BookmarkCollection](xref:word!Word.BookmarkCollection:class) includes
-  all the bookmarks listed in the **Bookmark** dialog box (**Insert**
-  menu).
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents a single bookmark in a document, selection, or range. The `Bookmark` object is a member of the `Bookmark` collection. The [Word.BookmarkCollection](xref:word!Word.BookmarkCollection:class) includes all the bookmarks listed in the \*\*Bookmark\*\* dialog box (\*\*Insert\*\* menu).
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.BookmarkLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,10 +28,8 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,10 +41,8 @@ properties:
     package: word!
     fullName: isColumn
     summary: Returns `true` if the bookmark is a table column.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,10 +54,8 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Returns `true` if the bookmark is empty.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,10 +67,8 @@ properties:
     package: word!
     fullName: name
     summary: Returns the name of the `Bookmark` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.BookmarkLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns a `Range` object that represents the portion of the document
-      that's contained in the `Bookmark` object.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `Range` object that represents the portion of the document that's contained in the `Bookmark` object.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,10 +93,8 @@ properties:
     package: word!
     fullName: start
     summary: Specifies the starting character position of the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,10 +106,8 @@ properties:
     package: word!
     fullName: storyType
     summary: Returns the story type for the bookmark.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

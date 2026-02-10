@@ -4,10 +4,8 @@ uid: word!Word.TemplateType:enum
 package: word!
 fullName: Word.TemplateType
 summary: Specifies the type of template.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents the attached template type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Attached"'
   - name: global
     uid: word!Word.TemplateType.global:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents the global template type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Global"'
   - name: normal
     uid: word!Word.TemplateType.normal:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Represents the normal template type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Normal"'

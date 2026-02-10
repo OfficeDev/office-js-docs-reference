@@ -4,10 +4,10 @@ uid: excel!Excel.Interfaces.ChartLeaderLinesFormatUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartLeaderLinesFormatUpdateData
 summary: >-
-  An interface for updating data on the `ChartLeaderLinesFormat` object, for use
-  in `chartLeaderLinesFormat.set({ ... })`<!-- -->.
+  An interface for updating data on the `ChartLeaderLinesFormat` object, for use in `chartLeaderLinesFormat.set({ ...
+  })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

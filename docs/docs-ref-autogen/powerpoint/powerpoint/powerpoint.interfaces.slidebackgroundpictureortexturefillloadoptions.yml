@@ -1,33 +1,22 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions
-uid: >-
-  powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions:interface
+uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions
-summary: >-
-  Represents
-  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
-  picture or texture fill properties.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+summary: Represents [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) picture or texture fill properties.
+remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions#$all:member
+    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,18 +24,12 @@ properties:
       return:
         type: boolean
   - name: transparency
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions#transparency:member
+    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillLoadOptions#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: >-
-      Specifies the transparency percentage of the fill as a value from 0.0
-      (opaque) through 1.0 (clear).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

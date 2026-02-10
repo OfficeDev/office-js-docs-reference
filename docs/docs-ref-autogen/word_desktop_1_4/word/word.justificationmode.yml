@@ -4,10 +4,8 @@ uid: word!Word.JustificationMode:enum
 package: word!
 fullName: Word.JustificationMode
 summary: Specifies the character spacing adjustment for a document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,17 +15,15 @@ fields:
     summary: |-
       Compresses the character spacing.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Compress"'
   - name: compressKana
     uid: word!Word.JustificationMode.compressKana:member
     package: word!
-    summary: >-
-      Compresses the character spacing using rules of the kana syllabaries,
-      Hiragana and Katakana.
+    summary: |-
+      Compresses the character spacing using rules of the kana syllabaries, Hiragana and Katakana.
 
-
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CompressKana"'
   - name: expand
     uid: word!Word.JustificationMode.expand:member
@@ -35,5 +31,5 @@ fields:
     summary: |-
       Expands the character spacing
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Expand"'

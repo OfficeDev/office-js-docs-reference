@@ -3,13 +3,9 @@ name: Excel.ConditionalIconCriterion
 uid: excel!Excel.ConditionalIconCriterion:interface
 package: excel!
 fullName: Excel.ConditionalIconCriterion
-summary: >-
-  Represents an icon criterion which contains a type, value, an operator, and an
-  optional custom icon, if not using an icon set.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents an icon criterion which contains a type, value, an operator, and an optional custom icon, if not using an icon set.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,13 +14,9 @@ properties:
     uid: excel!Excel.ConditionalIconCriterion#customIcon:member
     package: excel!
     fullName: customIcon
-    summary: >-
-      The custom icon for the current criterion, if different from the default
-      icon set, else `null` will be returned.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The custom icon for the current criterion, if different from the default icon set, else `null` will be returned.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,19 +28,13 @@ properties:
     package: excel!
     fullName: formula
     summary: A number or a formula depending on the type.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -88,9 +74,8 @@ properties:
 
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,22 +86,14 @@ properties:
     uid: excel!Excel.ConditionalIconCriterion#operator:member
     package: excel!
     fullName: operator
-    summary: >-
-      `greaterThan` or `greaterThanOrEqual` for each of the rule types for the
-      icon conditional format.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: '`greaterThan` or `greaterThanOrEqual` for each of the rule types for the icon conditional format.'
+    remarks: |-
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -156,37 +133,26 @@ properties:
 
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        operator: Excel.ConditionalIconCriterionOperator | "Invalid" |
-        "GreaterThan" | "GreaterThanOrEqual";
+      content: 'operator: Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalIconCriterionOperator:enum" /> |
-          "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
+        type: <xref uid="excel!Excel.ConditionalIconCriterionOperator:enum" /> | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
   - name: type
     uid: excel!Excel.ConditionalIconCriterion#type:member
     package: excel!
     fullName: type
     summary: What the icon conditional formula should be based on.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -226,16 +192,11 @@ properties:
 
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type: Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" |
-        "Percent" | "Formula" | "Percentile";
+      content: 'type: Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalFormatIconRuleType:enum" /> |
-          "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"
+        type: <xref uid="excel!Excel.ConditionalFormatIconRuleType:enum" /> | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"

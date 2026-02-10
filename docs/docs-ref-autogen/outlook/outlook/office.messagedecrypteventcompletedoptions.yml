@@ -3,36 +3,18 @@ name: Office.MessageDecryptEventCompletedOptions
 uid: outlook!Office.MessageDecryptEventCompletedOptions:interface
 package: outlook!
 fullName: Office.MessageDecryptEventCompletedOptions
-summary: >-
-  Specifies the behavior of an [encryption
-  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)
-  after it completes processing an
-  [OnMessageRead](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
-  event.
-remarks: >-
-  \[ [API set: Mailbox
-  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+summary: Specifies the behavior of an [encryption add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption) after it completes processing an [OnMessageRead](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields) event.
+remarks: |-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read/write item**
-
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Message Read
-
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
   #### Examples
 
-
   ```TypeScript
-
-  // This sample handles the OnMessageRead event to decrypt the body and
-  attachments of a message.
-
+  // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
   function onMessageReadHandler(event) {
       // Your code to decrypt the contents of a message would appear here.
       ...
@@ -88,9 +70,8 @@ remarks: >-
           }
       );
   }
-
   ```
-
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -99,28 +80,14 @@ properties:
     uid: outlook!Office.MessageDecryptEventCompletedOptions#allowEvent:member
     package: outlook!
     fullName: allowEvent
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler, this value indicates if the
-      `OnMessageRead` event should continue to run or be canceled. If the
-      `allowEvent` property is set to `true`<!-- -->, the decrypted contents of
-      the message is displayed.
-    remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler, this value indicates if the `OnMessageRead` event should continue to run or be canceled. If the `allowEvent` property is set to `true`<!-- -->, the decrypted contents of the message is displayed.
+    remarks: |-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -131,27 +98,14 @@ properties:
     uid: outlook!Office.MessageDecryptEventCompletedOptions#attachments:member
     package: outlook!
     fullName: attachments
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `true`<!-- -->, this property sets the decrypted attachments of the
-      message.
-    remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `true`<!-- -->, this property sets the decrypted attachments of the message.
+    remarks: |-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -162,41 +116,20 @@ properties:
     uid: outlook!Office.MessageDecryptEventCompletedOptions#contextData:member
     package: outlook!
     fullName: contextData
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `true`<!-- -->, this property specifies any JSON data passed to the
-      add-in for processing.
-    remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `true`<!-- -->, this property specifies any JSON data passed to the add-in for processing.
+    remarks: |-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
+      \*\*Important\*\*:
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
+      - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync`<!-- -->. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using `JSON.parse()` once you retrieve it.
 
-
-      **Important**:
-
-
-      - To retrieve the value of the `contextData` property, you must call
-      `Office.context.mailbox.item.getInitializationContextAsync`<!-- -->. If
-      you create a JSON string using `JSON.stringify()` and assign it to the
-      `contextData` property, you must parse the string using `JSON.parse()`
-      once you retrieve it.
-
-
-      - You can use the `contextData` property to store custom internet headers
-      to decrypt messages in reply and forward scenarios.
-
+      - You can use the `contextData` property to store custom internet headers to decrypt messages in reply and forward scenarios.
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -207,31 +140,16 @@ properties:
     uid: outlook!Office.MessageDecryptEventCompletedOptions#emailBody:member
     package: outlook!
     fullName: emailBody
-    summary: >-
-      When you use the [completed
-      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
-      to signal completion of an event handler and set its `allowEvent` property
-      to `true`<!-- -->, this property sets the decrypted contents of the body
-      of the message.
-    remarks: >-
-      \[ [API set: Mailbox
-      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal completion of an event handler and set its `allowEvent` property to `true`<!-- -->, this property sets the decrypted contents of the body of the message.
+    remarks: |-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Read
-
-
-      **Important**: If the `emailBody` property isn't specified, an empty
-      body is returned.
-
+      \*\*Important\*\*: If the `emailBody` property isn't specified, an empty body is returned.
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

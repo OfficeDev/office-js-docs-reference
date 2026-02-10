@@ -5,7 +5,11 @@
       "Bash(node -e:*)",
       "Bash(xargs:*)",
       "Bash(ls:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(node yaml-office-processor.js:*)",
+      "Bash(tee:*)",
+      "Bash(node -p \"const uid = ''custom-functions-runtime!CustomFunctions.associate:function\\(1\\)''; const result = uid.replace\\(/^[^.]+\\\\!/, ''''\\); console.log\\(''Input:'', uid\\); console.log\\(''Output:'', result\\); result\")",
+      "Bash(node -p:*)"
     ]
   }
 }

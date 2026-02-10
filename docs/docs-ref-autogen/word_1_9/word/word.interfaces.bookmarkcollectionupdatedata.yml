@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.BookmarkCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BookmarkCollectionUpdateData
 summary: >-
-  An interface for updating data on the `BookmarkCollection` object, for use in
-  `bookmarkCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the `BookmarkCollection` object, for use in `bookmarkCollection.set({ ... })`<!--
+  -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

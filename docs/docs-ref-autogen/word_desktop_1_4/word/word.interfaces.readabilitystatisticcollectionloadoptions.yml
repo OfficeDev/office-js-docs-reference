@@ -3,14 +3,9 @@ name: Word.Interfaces.ReadabilityStatisticCollectionLoadOptions
 uid: word!Word.Interfaces.ReadabilityStatisticCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.ReadabilityStatisticCollectionLoadOptions
-summary: >-
-  Represents a collection of
-  [Word.ReadabilityStatistic](xref:word!Word.ReadabilityStatistic:class) objects
-  for the document or range.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents a collection of [Word.ReadabilityStatistic](xref:word!Word.ReadabilityStatistic:class) objects for the document or range.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.ReadabilityStatisticCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.ReadabilityStatisticCollectionLoadOptions#name:member
     package: word!
     fullName: name
-    summary: >-
-      For EACH ITEM in the collection: Returns the name of the readability
-      statistic.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Returns the name of the readability statistic.'
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,17 +37,12 @@ properties:
       return:
         type: boolean
   - name: value
-    uid: >-
-      word!Word.Interfaces.ReadabilityStatisticCollectionLoadOptions#value:member
+    uid: word!Word.Interfaces.ReadabilityStatisticCollectionLoadOptions#value:member
     package: word!
     fullName: value
-    summary: >-
-      For EACH ITEM in the collection: Returns the value of the grammar
-      statistic.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'For EACH ITEM in the collection: Returns the value of the grammar statistic.'
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

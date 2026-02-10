@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.TableCellData
 uid: powerpoint!PowerPoint.Interfaces.TableCellData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellData
-summary: >-
-  An interface describing the data returned by calling `tableCell.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `tableCell.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

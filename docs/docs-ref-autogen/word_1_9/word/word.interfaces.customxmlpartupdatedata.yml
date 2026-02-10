@@ -3,11 +3,9 @@ name: Word.Interfaces.CustomXmlPartUpdateData
 uid: word!Word.Interfaces.CustomXmlPartUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlPart` object, for use in
-  `customXmlPart.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CustomXmlPart` object, for use in `customXmlPart.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

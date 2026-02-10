@@ -4,10 +4,8 @@ uid: excel!Excel.SubtotalLocationType:enum
 package: excel!
 fullName: Excel.SubtotalLocationType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Subtotals are at the bottom.
 
-      * \[Api set: ExcelApi 1.8\]
+      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AtBottom"'
   - name: atTop
     uid: excel!Excel.SubtotalLocationType.atTop:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Subtotals are at the top.
 
-      * \[Api set: ExcelApi 1.8\]
+      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AtTop"'
   - name: 'off'
     uid: excel!Excel.SubtotalLocationType.off:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Subtotals are off.
 
-      * \[Api set: ExcelApi 1.8\]
+      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Off"'

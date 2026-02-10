@@ -4,23 +4,15 @@ uid: word!Word.TableRow:class
 package: word!
 fullName: Word.TableRow
 summary: Represents a row in a Word document.
-remarks: >-
-  \[ [API set: WordApi
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-  // Gets content alignment details about the first cell of the first table in
-  the document.
-
+  // Gets content alignment details about the first cell of the first table in the document.
   await Word.run(async (context) => {
     const firstTable: Word.Table = context.document.body.tables.getFirst();
     const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
@@ -30,9 +22,8 @@ remarks: >-
 
     console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,10 +33,8 @@ properties:
     package: word!
     fullName: cellCount
     summary: Gets the number of cells in the row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,23 +46,15 @@ properties:
     package: word!
     fullName: cells
     summary: Gets cells.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-      // Gets content alignment details about the first cell of the first table
-      in the document.
-
+      // Gets content alignment details about the first cell of the first table in the document.
       await Word.run(async (context) => {
         const firstTable: Word.Table = context.document.body.tables.getFirst();
         const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
@@ -83,9 +64,8 @@ properties:
 
         console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,11 +76,9 @@ properties:
     uid: word!Word.TableRow#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,10 +90,8 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the table row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,10 +103,8 @@ properties:
     package: word!
     fullName: fields
     summary: Gets the collection of `Field` objects in the table row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,13 +115,9 @@ properties:
     uid: word!Word.TableRow#font:member
     package: word!
     fullName: font
-    summary: >-
-      Gets the font. Use this to get and set font name, size, color, and other
-      properties.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the font. Use this to get and set font name, size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,10 +129,8 @@ properties:
     package: word!
     fullName: footnotes
     summary: Gets the collection of footnotes in the table row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,35 +141,22 @@ properties:
     uid: word!Word.TableRow#horizontalAlignment:member
     package: word!
     fullName: horizontalAlignment
-    summary: >-
-      Specifies the horizontal alignment of every cell in the row. The value can
-      be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the horizontal alignment of every cell in the row. The value can be `left`<!-- -->, `centered`<!-- -->, `right`<!-- -->, or `justified`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" |
-        "Centered" | "Right" | "Justified";
+      content: 'horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
-        type: >-
-          <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left"
-          | "Centered" | "Right" | "Justified"
+        type: <xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - name: isHeader
     uid: word!Word.TableRow#isHeader:member
     package: word!
     fullName: isHeader
-    summary: >-
-      Checks whether the row is a header row. To set the number of header rows,
-      use `headerRowCount` on the `Table` object.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the `Table` object.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,10 +168,8 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets parent table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,10 +181,8 @@ properties:
     package: word!
     fullName: preferredHeight
     summary: Specifies the preferred height of the row in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,10 +194,8 @@ properties:
     package: word!
     fullName: range
     summary: Returns the `Range` object that represents the table row.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,10 +207,8 @@ properties:
     package: word!
     fullName: rowIndex
     summary: Gets the index of the row in its parent table.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -272,13 +219,9 @@ properties:
     uid: word!Word.TableRow#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns the `ShadingUniversal` object that represents the shading of the
-      table row.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the `ShadingUniversal` object that represents the shading of the table row.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,13 +232,9 @@ properties:
     uid: word!Word.TableRow#shadingColor:member
     package: word!
     fullName: shadingColor
-    summary: >-
-      Specifies the shading color. Color is specified in "\#RRGGBB" format or by
-      using the color name.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -307,10 +246,8 @@ properties:
     package: word!
     fullName: values
     summary: Specifies the text values in the row, as a 2D JavaScript array.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,33 +258,23 @@ properties:
     uid: word!Word.TableRow#verticalAlignment:member
     package: word!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of the cells in the row. The value can be
-      `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the vertical alignment of the cells in the row. The value can be `top`<!-- -->, `center`<!-- -->, or `bottom`<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" |
-        "Bottom";
+      content: 'verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
-        type: >-
-          <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" |
-          "Center" | "Bottom"
+        type: <xref uid="word!Word.VerticalAlignment:enum" /> | "Mixed" | "Top" | "Center" | "Bottom"
 methods:
   - name: clear()
     uid: word!Word.TableRow#clear:member(1)
     package: word!
     fullName: clear()
     summary: Clears the contents of the row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -360,19 +287,15 @@ methods:
     package: word!
     fullName: convertToText(options)
     summary: Converts the table row to text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'convertToText(options?: Word.TableConvertToTextOptions): Word.Range;'
       parameters:
         - id: options
-          description: >-
-            Optional. An object that specifies the options for converting the
-            table row to text.
+          description: Optional. An object that specifies the options for converting the table row to text.
           type: <xref uid="word!Word.TableConvertToTextOptions:interface" />
       return:
         type: <xref uid="word!Word.Range:class" />
@@ -382,10 +305,8 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the entire row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -398,23 +319,15 @@ methods:
     package: word!
     fullName: getBorder(borderLocation)
     summary: Gets the border style of the cells in the row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-      // Gets border details about the first row of the first table in the
-      document.
-
+      // Gets border details about the first row of the first table in the document.
       await Word.run(async (context) => {
         const firstTable: Word.Table = context.document.body.tables.getFirst();
         const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
@@ -425,9 +338,8 @@ methods:
 
         console.log(`Details about the ${borderLocation} border of the first table's first row:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -444,23 +356,16 @@ methods:
     package: word!
     fullName: getBorder(borderLocation)
     summary: Gets the border style of the cells in the row.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" |
-        "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"):
-        Word.TableBorder;
+      content: 'getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;'
       parameters:
         - id: borderLocation
           description: The border location.
-          type: >-
-            "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" |
-            "InsideVertical" | "Inside" | "Outside" | "All"
+          type: '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
       return:
         type: <xref uid="word!Word.TableBorder:class" />
         description: ''
@@ -469,23 +374,15 @@ methods:
     package: word!
     fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
-
-
-      // Gets cell padding details about the first row of the first table in the
-      document.
-
+      // Gets cell padding details about the first row of the first table in the document.
       await Word.run(async (context) => {
         const firstTable: Word.Table = context.document.body.tables.getFirst();
         const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
@@ -497,20 +394,15 @@ methods:
           `Cell padding details about the ${cellPaddingLocation} border of the first table's first row: ${cellPadding.value} points`
         );
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getCellPadding(cellPaddingLocation: Word.CellPaddingLocation):
-        OfficeExtension.ClientResult<number>;
+      content: 'getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -520,21 +412,15 @@ methods:
     package: word!
     fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" |
-        "Right"): OfficeExtension.ClientResult<number>;
+      content: 'getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;
@@ -543,13 +429,9 @@ methods:
     uid: word!Word.TableRow#getNext:member(1)
     package: word!
     fullName: getNext()
-    summary: >-
-      Gets the next row. Throws an `ItemNotFound` error if this row is the last
-      one.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the next row. Throws an `ItemNotFound` error if this row is the last one.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -561,16 +443,9 @@ methods:
     uid: word!Word.TableRow#getNextOrNullObject:member(1)
     package: word!
     fullName: getNextOrNullObject()
-    summary: >-
-      Gets the next row. If this row is the last one, then this method will
-      return an object with its `isNullObject` property set to `true`<!-- -->.
-      For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the next row. If this row is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -583,10 +458,8 @@ methods:
     package: word!
     fullName: insertContentControl()
     summary: Inserts a content control on the row.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -598,36 +471,22 @@ methods:
     uid: word!Word.TableRow#insertRows:member(1)
     package: word!
     fullName: insertRows(insertLocation, rowCount, values)
-    summary: >-
-      Inserts rows using this row as a template. If values are specified,
-      inserts the values into the new rows.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertRows(insertLocation: Word.InsertLocation.before |
-        Word.InsertLocation.after | "Before" | "After", rowCount: number,
-        values?: string[][]): Word.TableRowCollection;
+      content: 'insertRows(insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", rowCount: number, values?: string[][]): Word.TableRowCollection;'
       parameters:
         - id: insertLocation
-          description: >-
-            Where the new rows should be inserted, relative to the current row.
-            It must be `before` or `after`<!-- -->.
-          type: >-
-            <xref uid="word!Word.InsertLocation.before:member" /> | <xref
-            uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
+          description: Where the new rows should be inserted, relative to the current row. It must be `before` or `after`<!-- -->.
+          type: <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" /> | "Before" | "After"
         - id: rowCount
           description: Number of rows to add.
           type: number
         - id: values
-          description: >-
-            Optional. Strings to insert in the new rows, specified as a 2D
-            array. The number of cells in each row must not exceed the number of
-            cells in the existing row.
+          description: Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
           type: string[][]
       return:
         type: <xref uid="word!Word.TableRowCollection:class" />
@@ -636,11 +495,9 @@ methods:
     uid: word!Word.TableRow#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -656,20 +513,16 @@ methods:
     uid: word!Word.TableRow#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.TableRow;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TableRow:class" />
@@ -678,11 +531,9 @@ methods:
     uid: word!Word.TableRow#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -693,11 +544,7 @@ methods:
                 }): Word.TableRow;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -711,10 +558,8 @@ methods:
     package: word!
     fullName: merge()
     summary: Merges the row into one cell.
-    remarks: >-
-      \[ [API set: WordApi
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -726,13 +571,9 @@ methods:
     uid: word!Word.TableRow#search:member(1)
     package: word!
     fullName: search(searchText, searchOptions)
-    summary: >-
-      Performs a search with the specified search options on the scope of the
-      row. The search results are a collection of `Range` objects.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Performs a search with the specified search options on the scope of the row. The search results are a collection of `Range` objects.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -770,19 +611,15 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the row and navigates the Word UI to it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'select(selectionMode?: Word.SelectionMode): void;'
       parameters:
         - id: selectionMode
-          description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!--
-            -->, or `end`<!-- -->. `select` is the default.
+          description: Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the default.
           type: <xref uid="word!Word.SelectionMode:enum" />
       return:
         type: void
@@ -792,19 +629,15 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: Selects the row and navigates the Word UI to it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       parameters:
         - id: selectionMode
-          description: >-
-            Optional. The selection mode must be `select`<!-- -->, `start`<!--
-            -->, or `end`<!-- -->. `select` is the default.
+          description: Optional. The selection mode must be `select`<!-- -->, `start`<!-- -->, or `end`<!-- -->. `select` is the default.
           type: '"Select" | "Start" | "End"'
       return:
         type: void
@@ -813,29 +646,19 @@ methods:
     uid: word!Word.TableRow#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.TableRowUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.TableRowUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="word!Word.Interfaces.TableRowUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -844,11 +667,9 @@ methods:
     uid: word!Word.TableRow#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -865,21 +686,15 @@ methods:
     package: word!
     fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setCellPadding(cellPaddingLocation: Word.CellPaddingLocation,
-        cellPadding: number): void;
+      content: 'setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: <xref uid="word!Word.CellPaddingLocation:enum" />
         - id: cellPadding
           description: The cell padding.
@@ -892,21 +707,15 @@ methods:
     package: word!
     fullName: setCellPadding(cellPaddingLocation, cellPadding)
     summary: Sets cell padding in points.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right",
-        cellPadding: number): void;
+      content: 'setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
       parameters:
         - id: cellPaddingLocation
-          description: >-
-            The cell padding location must be `top`<!-- -->, `left`<!-- -->,
-            `bottom`<!-- -->, or `right`<!-- -->.
+          description: The cell padding location must be `top`<!-- -->, `left`<!-- -->, `bottom`<!-- -->, or `right`<!-- -->.
           type: '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
           description: The cell padding.
@@ -919,10 +728,8 @@ methods:
     package: word!
     fullName: setHeight(rowHeight, heightRule)
     summary: Sets the height of the row.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -942,16 +749,12 @@ methods:
     package: word!
     fullName: setHeight(rowHeight, heightRule)
     summary: Sets the height of the row.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setHeight(rowHeight: number, heightRule: "Auto" | "AtLeast" |
-        "Exactly"): void;
+      content: 'setHeight(rowHeight: number, heightRule: "Auto" | "AtLeast" | "Exactly"): void;'
       parameters:
         - id: rowHeight
           description: The height of the row, in points.
@@ -967,19 +770,15 @@ methods:
     package: word!
     fullName: setLeftIndent(leftIndent, rulerStyle)
     summary: Sets the left indent for the table row.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setLeftIndent(leftIndent: number, rulerStyle: Word.RulerStyle): void;'
       parameters:
         - id: leftIndent
-          description: >-
-            The distance (in points) between the current left edge of the table
-            row and the desired left edge.
+          description: The distance (in points) between the current left edge of the table row and the desired left edge.
           type: number
         - id: rulerStyle
           description: The ruler style to apply.
@@ -992,21 +791,15 @@ methods:
     package: word!
     fullName: setLeftIndent(leftIndent, rulerStyle)
     summary: Sets the left indent for the table row.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setLeftIndent(leftIndent: number, rulerStyle: "None" | "Proportional" |
-        "FirstColumn" | "SameWidth"): void;
+      content: 'setLeftIndent(leftIndent: number, rulerStyle: "None" | "Proportional" | "FirstColumn" | "SameWidth"): void;'
       parameters:
         - id: leftIndent
-          description: >-
-            The distance (in points) between the current left edge of the table
-            row and the desired left edge.
+          description: The distance (in points) between the current left edge of the table row and the desired left edge.
           type: number
         - id: rulerStyle
           description: The ruler style to apply.
@@ -1018,16 +811,9 @@ methods:
     uid: word!Word.TableRow#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.TableRow` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.TableRowData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1039,18 +825,9 @@ methods:
     uid: word!Word.TableRow#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1062,16 +839,9 @@ methods:
     uid: word!Word.TableRow#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

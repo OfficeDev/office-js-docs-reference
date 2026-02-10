@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.TableRowData
 uid: powerpoint!PowerPoint.Interfaces.TableRowData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableRowData
-summary: >-
-  An interface describing the data returned by calling `tableRow.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: powerpoint!
     fullName: currentHeight
     summary: Retrieves the current height of the row in points.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,15 +27,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableRowData#height:member
     package: powerpoint!
     fullName: height
-    summary: >-
-      Specifies the height of the row in points. If the set row height is less
-      than the minimum height, the row height will be increased to the minimum
-      height.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the height of the row in points. If the set row height is less than the minimum height, the row height will be increased to the minimum height.
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,14 +40,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableRowData#rowIndex:member
     package: powerpoint!
     fullName: rowIndex
-    summary: >-
-      Returns the index number of the row within the rows collection of the
-      table. Zero-indexed.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Returns the index number of the row within the rows collection of the table. Zero-indexed.
+    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

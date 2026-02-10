@@ -4,10 +4,8 @@ uid: word!Word.ListTemplateGalleryType:enum
 package: word!
 fullName: Word.ListTemplateGalleryType
 summary: Describes the types of list template galleries available.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents the bullet list gallery.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bullets"'
   - name: number
     uid: word!Word.ListTemplateGalleryType.number:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents the number list gallery.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Number"'
   - name: outlineNumbered
     uid: word!Word.ListTemplateGalleryType.outlineNumbered:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Represents the outline number list gallery.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineNumbered"'

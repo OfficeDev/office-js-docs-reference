@@ -4,24 +4,15 @@ uid: outlook!Office.MailboxEnums.AttachmentContentFormat:enum
 package: outlook!
 fullName: Office.MailboxEnums.AttachmentContentFormat
 summary: Specifies the formatting that applies to an attachment's content.
-remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: |-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
-
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
 
   function handleAttachmentsCallback(result) {
     // Identifies whether the attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
@@ -48,9 +39,8 @@ remarks: >-
 
     console.log(result.value.content);
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -67,14 +57,10 @@ fields:
   - name: Eml
     uid: outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member
     package: outlook!
-    summary: >-
-      The content of the attachment is returned as a string representing an .eml
-      formatted file.
+    summary: The content of the attachment is returned as a string representing an .eml formatted file.
     value: '"eml"'
   - name: ICalendar
     uid: outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member
     package: outlook!
-    summary: >-
-      The content of the attachment is returned as a string representing an
-      .icalendar formatted file.
+    summary: The content of the attachment is returned as a string representing an .icalendar formatted file.
     value: '"iCalendar"'

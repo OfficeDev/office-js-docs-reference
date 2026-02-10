@@ -3,13 +3,9 @@ name: Word.RevisionsView
 uid: word!Word.RevisionsView:enum
 package: word!
 fullName: Word.RevisionsView
-summary: >-
-  Specifies whether Word displays the original version of a document or a
-  version with revisions and formatting changes applied.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies whether Word displays the original version of a document or a version with revisions and formatting changes applied.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +15,7 @@ fields:
     summary: |-
       Final view.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Final"'
   - name: original
     uid: word!Word.RevisionsView.original:member
@@ -27,5 +23,5 @@ fields:
     summary: |-
       Original view.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Original"'

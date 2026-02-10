@@ -3,11 +3,9 @@ name: Word.Interfaces.ReviewerData
 uid: word!Word.Interfaces.ReviewerData:interface
 package: word!
 fullName: Word.Interfaces.ReviewerData
-summary: >-
-  An interface describing the data returned by calling `reviewer.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `reviewer.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

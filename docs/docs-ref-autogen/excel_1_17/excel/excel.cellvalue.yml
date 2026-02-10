@@ -4,41 +4,15 @@ uid: excel!Excel.CellValue:type
 package: excel!
 fullName: Excel.CellValue
 summary: Represents the value in a cell.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-
-
-  Learn more about the types in this type alias through the following links. 
-
-
-  [Excel.ArrayCellValue](/javascript/api/excel/excel.arraycellvalue),
-  [Excel.BooleanCellValue](/javascript/api/excel/excel.booleancellvalue),
-  [Excel.DoubleCellValue](/javascript/api/excel/excel.doublecellvalue),
-  [Excel.EntityCellValue](/javascript/api/excel/excel.entitycellvalue),
-  [Excel.EmptyCellValue](/javascript/api/excel/excel.emptycellvalue),
-  [Excel.ErrorCellValue](/javascript/api/excel/excel.errorcellvalue),
-  [Excel.LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue),
-  [Excel.ReferenceCellValue](/javascript/api/excel/excel.referencecellvalue),
-  [Excel.StringCellValue](/javascript/api/excel/excel.stringcellvalue),
-  [Excel.ValueTypeNotAvailableCellValue](/javascript/api/excel/excel.valuetypenotavailablecellvalue),
-  [Excel.WebImageCellValue](/javascript/api/excel/excel.webimagecellvalue),
-  [Excel.CellValueExtraProperties](/javascript/api/excel/excel.cellvalueextraproperties)
-
+remarks: |-
+  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
 
   // This function inserts a web image into the currently selected cell.
-
   await Excel.run(async (context) => {
     // Retrieve image data from the task pane and then clear the input fields.
     const imageUrl = (document.getElementById("url") as HTMLInputElement).value;
@@ -67,13 +41,8 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
-syntax: >-
-  export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue |
-  EntityCellValue | EmptyCellValue | ErrorCellValue | LinkedEntityCellValue |
-  ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue |
-  WebImageCellValue) & CellValueExtraProperties;
+syntax: export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;

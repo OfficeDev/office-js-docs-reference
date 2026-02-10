@@ -4,10 +4,8 @@ uid: excel!Excel.ChartAxisCategoryType:enum
 package: excel!
 fullName: Excel.ChartAxisCategoryType
 summary: Specifies the type of the category axis.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Excel controls the axis type.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Automatic"'
   - name: dateAxis
     uid: excel!Excel.ChartAxisCategoryType.dateAxis:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Axis groups data on a time scale.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DateAxis"'
   - name: textAxis
     uid: excel!Excel.ChartAxisCategoryType.textAxis:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Axis groups data by an arbitrary set of categories.
 
-      * \[Api set: ExcelApi 1.7\]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TextAxis"'

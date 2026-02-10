@@ -3,11 +3,9 @@ name: Excel.Interfaces.ChartTitleUpdateData
 uid: excel!Excel.Interfaces.ChartTitleUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartTitleUpdateData
-summary: >-
-  An interface for updating data on the `ChartTitle` object, for use in
-  `chartTitle.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ChartTitle` object, for use in `chartTitle.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,30 +14,22 @@ properties:
     uid: excel!Excel.Interfaces.ChartTitleUpdateData#format:member
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart title, which includes fill and font
-      formatting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents the formatting of a chart title, which includes fill and font formatting.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartTitleFormatUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface" />
+        type: <xref uid="excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface" />
   - name: overlay
     uid: excel!Excel.Interfaces.ChartTitleUpdateData#overlay:member
     package: excel!
     fullName: overlay
     summary: Specifies if the chart title will overlay the chart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,10 +41,8 @@ properties:
     package: excel!
     fullName: text
     summary: Specifies the chart's title text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,10 +54,8 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the chart title is visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

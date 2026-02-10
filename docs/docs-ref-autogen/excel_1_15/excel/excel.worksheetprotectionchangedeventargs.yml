@@ -3,14 +3,9 @@ name: Excel.WorksheetProtectionChangedEventArgs
 uid: excel!Excel.WorksheetProtectionChangedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetProtectionChangedEventArgs
-summary: >-
-  Provides information about the worksheet that raised the protection status
-  changed event, which fires when the protection status is updated in a
-  worksheet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Provides information about the worksheet that raised the protection status changed event, which fires when the protection status is updated in a worksheet.
+remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,23 +15,15 @@ properties:
     package: excel!
     fullName: isProtected
     summary: Gets the current protection status of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
-
-
-      async function checkProtection(event:
-      Excel.WorksheetProtectionChangedEventArgs) {
+      async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet
           // and information about the changed worksheet.
           await Excel.run(async (context) => {
@@ -48,9 +35,8 @@ properties:
               console.log("    Source of change event: " + source + ".");
           });
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,23 +48,15 @@ properties:
     package: excel!
     fullName: source
     summary: The source of the event. It can be local or remote (through co-authoring).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
-
-
-      async function checkProtection(event:
-      Excel.WorksheetProtectionChangedEventArgs) {
+      async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet
           // and information about the changed worksheet.
           await Excel.run(async (context) => {
@@ -90,9 +68,8 @@ properties:
               console.log("    Source of change event: " + source + ".");
           });
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,11 +81,8 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,23 +94,15 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the protection status is changed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
-
-
-      async function checkProtection(event:
-      Excel.WorksheetProtectionChangedEventArgs) {
+      async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet
           // and information about the changed worksheet.
           await Excel.run(async (context) => {
@@ -148,9 +114,8 @@ properties:
               console.log("    Source of change event: " + source + ".");
           });
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

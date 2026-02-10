@@ -4,10 +4,8 @@ uid: word!Word.CompatibilityMode:enum
 package: word!
 fullName: Word.CompatibilityMode
 summary: Specifies the compatibility mode that Word uses when opening the document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Current Word version compatibility mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Current"'
   - name: word2003
     uid: word!Word.CompatibilityMode.word2003:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Word 2003 compatibility mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word2003"'
   - name: word2007
     uid: word!Word.CompatibilityMode.word2007:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Word 2007 compatibility mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word2007"'
   - name: word2010
     uid: word!Word.CompatibilityMode.word2010:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Word 2010 compatibility mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word2010"'
   - name: word2013
     uid: word!Word.CompatibilityMode.word2013:member
@@ -49,5 +47,5 @@ fields:
     summary: |-
       Word 2013 compatibility mode.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Word2013"'

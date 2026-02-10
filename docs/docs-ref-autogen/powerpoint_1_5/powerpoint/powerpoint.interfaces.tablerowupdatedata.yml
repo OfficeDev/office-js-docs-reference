@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.TableRowUpdateData
 uid: powerpoint!PowerPoint.Interfaces.TableRowUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableRowUpdateData
-summary: >-
-  An interface for updating data on the `TableRow` object, for use in
-  `tableRow.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

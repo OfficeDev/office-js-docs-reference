@@ -3,11 +3,9 @@ name: Excel.Interfaces.WorksheetCustomPropertyData
 uid: excel!Excel.Interfaces.WorksheetCustomPropertyData:interface
 package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyData
-summary: >-
-  An interface describing the data returned by calling
-  `worksheetCustomProperty.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `worksheetCustomProperty.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,15 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.WorksheetCustomPropertyData#key:member
     package: excel!
     fullName: key
-    summary: >-
-      Gets the key of the custom property. Custom property keys are
-      case-insensitive. The key is limited to 255 characters (larger values will
-      cause an `InvalidArgument` error to be thrown.)
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an `InvalidArgument` error to be thrown.)
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,11 +28,8 @@ properties:
     package: excel!
     fullName: value
     summary: Specifies the value of the custom property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

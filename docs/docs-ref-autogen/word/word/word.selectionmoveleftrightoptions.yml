@@ -3,13 +3,9 @@ name: Word.SelectionMoveLeftRightOptions
 uid: word!Word.SelectionMoveLeftRightOptions:interface
 package: word!
 fullName: Word.SelectionMoveLeftRightOptions
-summary: >-
-  Represents the options for the [Selection.moveLeft and
-  Selection.moveRight](xref:word!Word.Selection:class) methods.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the options for the [Selection.moveLeft and Selection.moveRight](xref:word!Word.Selection:class) methods.
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,13 +14,9 @@ properties:
     uid: word!Word.SelectionMoveLeftRightOptions#count:member
     package: word!
     fullName: count
-    summary: >-
-      If provided, specifies the number of units the selection is to be moved.
-      The default value is 1.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the number of units the selection is to be moved. The default value is 1.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,16 +27,9 @@ properties:
     uid: word!Word.SelectionMoveLeftRightOptions#extend:member
     package: word!
     fullName: extend
-    summary: >-
-      If provided, specifies the type of movement. The movement direction (left
-      or right) is according to the calling method. If set to `move`<!-- -->,
-      the selection is collapsed to the endpoint and moved in the appropriate
-      direction. If set to `extend`<!-- -->, the selection is extended in the
-      appropriate direction. The default value is `move`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the type of movement. The movement direction (left or right) is according to the calling method. If set to `move`<!-- -->, the selection is collapsed to the endpoint and moved in the appropriate direction. If set to `extend`<!-- -->, the selection is extended in the appropriate direction. The default value is `move`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,24 +40,12 @@ properties:
     uid: word!Word.SelectionMoveLeftRightOptions#unit:member
     package: word!
     fullName: unit
-    summary: >-
-      If provided, specifies the unit by which the selection is to be moved. The
-      default value is `character`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the unit by which the selection is to be moved. The default value is `character`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" |
-        "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row"
-        | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" |
-        "Item";
+      content: 'unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item";'
       return:
-        type: >-
-          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
-          "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
-          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
-          "ParagraphFormat" | "Table" | "Item"
+        type: <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"

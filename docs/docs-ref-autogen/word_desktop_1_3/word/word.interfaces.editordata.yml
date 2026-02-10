@@ -3,11 +3,9 @@ name: Word.Interfaces.EditorData
 uid: word!Word.Interfaces.EditorData:interface
 package: word!
 fullName: Word.Interfaces.EditorData
-summary: >-
-  An interface describing the data returned by calling `editor.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `editor.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

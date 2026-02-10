@@ -4,10 +4,8 @@ uid: word!Word.SectionStart:enum
 package: word!
 fullName: Word.SectionStart
 summary: Specifies the type of section break for the specified item.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Continuous section break.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Continuous"'
   - name: evenPage
     uid: word!Word.SectionStart.evenPage:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Even page section break.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EvenPage"'
   - name: newColumn
     uid: word!Word.SectionStart.newColumn:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       New column section break.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NewColumn"'
   - name: newPage
     uid: word!Word.SectionStart.newPage:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       New page section break.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NewPage"'
   - name: oddPage
     uid: word!Word.SectionStart.oddPage:member
@@ -49,5 +47,5 @@ fields:
     summary: |-
       Odd page section break.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OddPage"'

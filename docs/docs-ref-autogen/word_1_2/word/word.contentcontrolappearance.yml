@@ -4,23 +4,15 @@ uid: word!Word.ContentControlAppearance:enum
 package: word!
 fullName: Word.ContentControlAppearance
 summary: Represents the content control appearance.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
-
-
-  // Adds title and colors to odd and even content controls and changes their
-  appearance.
-
+  // Adds title and colors to odd and even content controls and changes their appearance.
   await Word.run(async (context) => {
     // Get the complete sentence (as range) associated with the insertion point.
     let evenContentControls = context.document.contentControls.getByTag("even");
@@ -52,21 +44,18 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: boundingBox
     uid: word!Word.ContentControlAppearance.boundingBox:member
     package: word!
-    summary: >-
-      Represents a content control shown as a shaded rectangle or bounding box
-      (with optional title).
+    summary: |-
+      Represents a content control shown as a shaded rectangle or bounding box (with optional title).
 
-
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BoundingBox"'
   - name: hidden
     uid: word!Word.ContentControlAppearance.hidden:member
@@ -74,7 +63,7 @@ fields:
     summary: |-
       Represents a content control that isn't shown.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hidden"'
   - name: tags
     uid: word!Word.ContentControlAppearance.tags:member
@@ -82,5 +71,5 @@ fields:
     summary: |-
       Represents a content control shown as start and end markers.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tags"'

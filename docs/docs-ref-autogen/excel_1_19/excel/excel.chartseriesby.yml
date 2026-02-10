@@ -3,24 +3,14 @@ name: Excel.ChartSeriesBy
 uid: excel!Excel.ChartSeriesBy:enum
 package: excel!
 fullName: Excel.ChartSeriesBy
-summary: >-
-  Specifies whether the series are by rows or by columns. In Excel on desktop,
-  the "auto" option will inspect the source data shape to automatically guess
-  whether the data is by rows or columns. In Excel on the web, "auto" will
-  simply default to "columns".
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Specifies whether the series are by rows or by columns. In Excel on desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
+remarks: |-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
   await Excel.run(async (context) => {
     // Create a new worksheet called "Sample" and activate it.
@@ -56,30 +46,26 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: auto
     uid: excel!Excel.ChartSeriesBy.auto:member
     package: excel!
-    summary: >-
-      In Excel on desktop, the "auto" option will inspect the source data shape
-      to automatically guess whether the data is by rows or columns. In Excel on
-      the web, "auto" will simply default to "columns".
+    summary: |-
+      In Excel on desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
 
-
-      * \[Api set: ExcelApi 1.1\]
+      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Auto"'
   - name: columns
     uid: excel!Excel.ChartSeriesBy.columns:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Columns"'
   - name: rows
     uid: excel!Excel.ChartSeriesBy.rows:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.1\]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Rows"'

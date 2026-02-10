@@ -3,11 +3,9 @@ name: Excel.Interfaces.ChartMapOptionsData
 uid: excel!Excel.Interfaces.ChartMapOptionsData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartMapOptionsData
-summary: >-
-  An interface describing the data returned by calling
-  `chartMapOptions.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartMapOptions.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

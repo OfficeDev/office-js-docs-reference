@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.CoauthorCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthorCollectionUpdateData
 summary: >-
-  An interface for updating data on the `CoauthorCollection` object, for use in
-  `coauthorCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the `CoauthorCollection` object, for use in `coauthorCollection.set({ ... })`<!--
+  -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

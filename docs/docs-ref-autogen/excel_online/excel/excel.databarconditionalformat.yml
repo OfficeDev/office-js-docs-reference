@@ -4,10 +4,8 @@ uid: excel!Excel.DataBarConditionalFormat:class
 package: excel!
 fullName: Excel.DataBarConditionalFormat
 summary: Represents an Excel conditional data bar type.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,14 +14,9 @@ properties:
     uid: excel!Excel.DataBarConditionalFormat#axisColor:member
     package: excel!
     fullName: axisColor
-    summary: >-
-      HTML color code representing the color of the Axis line, in the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value
-      is "" (an empty string) if no axis is present or set.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: HTML color code representing the color of the Axis line, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value is "" (an empty string) if no axis is present or set.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,38 +28,26 @@ properties:
     package: excel!
     fullName: axisFormat
     summary: Representation of how the axis is determined for an Excel data bar.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        axisFormat: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" |
-        "CellMidPoint";
+      content: 'axisFormat: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalDataBarAxisFormat:enum" /> |
-          "Automatic" | "None" | "CellMidPoint"
+        type: <xref uid="excel!Excel.ConditionalDataBarAxisFormat:enum" /> | "Automatic" | "None" | "CellMidPoint"
   - name: barDirection
     uid: excel!Excel.DataBarConditionalFormat#barDirection:member
     package: excel!
     fullName: barDirection
     summary: Specifies the direction that the data bar graphic should be based on.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
@@ -77,28 +58,21 @@ properties:
 
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        barDirection: Excel.ConditionalDataBarDirection | "Context" |
-        "LeftToRight" | "RightToLeft";
+      content: 'barDirection: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ConditionalDataBarDirection:enum" /> |
-          "Context" | "LeftToRight" | "RightToLeft"
+        type: <xref uid="excel!Excel.ConditionalDataBarDirection:enum" /> | "Context" | "LeftToRight" | "RightToLeft"
   - name: context
     uid: excel!Excel.DataBarConditionalFormat#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,15 +83,9 @@ properties:
     uid: excel!Excel.DataBarConditionalFormat#lowerBoundRule:member
     package: excel!
     fullName: lowerBoundRule
-    summary: >-
-      The rule for what constitutes the lower bound (and how to calculate it, if
-      applicable) for a data bar. The `ConditionalDataBarRule` object must be
-      set as a JSON object (use `x.lowerBoundRule = {...}` instead of
-      `x.lowerBoundRule.formula = ...`<!-- -->).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The rule for what constitutes the lower bound (and how to calculate it, if applicable) for a data bar. The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`<!-- -->).
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,10 +97,8 @@ properties:
     package: excel!
     fullName: negativeFormat
     summary: Representation of all values to the left of the axis in an Excel data bar.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,13 +109,9 @@ properties:
     uid: excel!Excel.DataBarConditionalFormat#positiveFormat:member
     package: excel!
     fullName: positiveFormat
-    summary: >-
-      Representation of all values to the right of the axis in an Excel data
-      bar.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Representation of all values to the right of the axis in an Excel data bar.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,13 +122,9 @@ properties:
     uid: excel!Excel.DataBarConditionalFormat#showDataBarOnly:member
     package: excel!
     fullName: showDataBarOnly
-    summary: >-
-      If `true`<!-- -->, hides the values from the cells where the data bar is
-      applied.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: If `true`<!-- -->, hides the values from the cells where the data bar is applied.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,15 +135,9 @@ properties:
     uid: excel!Excel.DataBarConditionalFormat#upperBoundRule:member
     package: excel!
     fullName: upperBoundRule
-    summary: >-
-      The rule for what constitutes the upper bound (and how to calculate it, if
-      applicable) for a data bar. The `ConditionalDataBarRule` object must be
-      set as a JSON object (use `x.upperBoundRule = {...}` instead of
-      `x.upperBoundRule.formula = ...`<!-- -->).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`<!-- -->).
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,24 +149,17 @@ methods:
     uid: excel!Excel.DataBarConditionalFormat#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DataBarConditionalFormatLoadOptions):
-        Excel.DataBarConditionalFormat;
+      content: 'load(options?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface"
-            />
+          type: <xref uid="excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.DataBarConditionalFormat:class" />
         description: ''
@@ -222,20 +167,16 @@ methods:
     uid: excel!Excel.DataBarConditionalFormat#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.DataBarConditionalFormat;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.DataBarConditionalFormat:class" />
@@ -244,11 +185,9 @@ methods:
     uid: excel!Excel.DataBarConditionalFormat#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,11 +198,7 @@ methods:
                 }): Excel.DataBarConditionalFormat;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -276,32 +211,19 @@ methods:
     uid: excel!Excel.DataBarConditionalFormat#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface"
-            />
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+          type: <xref uid="excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -310,11 +232,9 @@ methods:
     uid: excel!Excel.DataBarConditionalFormat#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -330,24 +250,14 @@ methods:
     uid: excel!Excel.DataBarConditionalFormat#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Excel.DataBarConditionalFormat` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.DataBarConditionalFormatData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.DataBarConditionalFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataBarConditionalFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.DataBarConditionalFormatData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.DataBarConditionalFormatData:interface" />
+        type: <xref uid="excel!Excel.Interfaces.DataBarConditionalFormatData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

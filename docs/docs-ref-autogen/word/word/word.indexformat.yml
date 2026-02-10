@@ -4,10 +4,8 @@ uid: word!Word.IndexFormat:enum
 package: word!
 fullName: Word.IndexFormat
 summary: Specifies the format for an index.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Bulleted format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bulleted"'
   - name: classic
     uid: word!Word.IndexFormat.classic:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Classic format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Classic"'
   - name: fancy
     uid: word!Word.IndexFormat.fancy:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Fancy format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Fancy"'
   - name: formal
     uid: word!Word.IndexFormat.formal:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Formal format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Formal"'
   - name: modern
     uid: word!Word.IndexFormat.modern:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Modern format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Modern"'
   - name: simple
     uid: word!Word.IndexFormat.simple:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Simple format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Simple"'
   - name: template
     uid: word!Word.IndexFormat.template:member
@@ -65,5 +63,5 @@ fields:
     summary: |-
       Template format.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Template"'

@@ -3,11 +3,9 @@ name: Word.Interfaces.CoauthoringUpdateUpdateData
 uid: word!Word.Interfaces.CoauthoringUpdateUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringUpdateUpdateData
-summary: >-
-  An interface for updating data on the `CoauthoringUpdate` object, for use in
-  `coauthoringUpdate.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CoauthoringUpdate` object, for use in `coauthoringUpdate.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

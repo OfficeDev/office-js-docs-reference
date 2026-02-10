@@ -4,22 +4,15 @@ uid: word!Word.TrackedChange:class
 package: word!
 fullName: Word.TrackedChange
 summary: Represents a tracked change in a Word document.
-remarks: >-
-  \[ [API set: WordApi
-  1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
   // Gets the next (second) tracked change.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -36,9 +29,8 @@ remarks: >-
 
     console.log(nextTrackedChange);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -48,10 +40,8 @@ properties:
     package: word!
     fullName: author
     summary: Gets the author of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +52,9 @@ properties:
     uid: word!Word.TrackedChange#context:member
     package: word!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,10 +66,8 @@ properties:
     package: word!
     fullName: date
     summary: Gets the date of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,10 +79,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,42 +92,29 @@ properties:
     package: word!
     fullName: type
     summary: Gets the type of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: Word.TrackedChangeType | "None" | "Added" | "Deleted" |
-        "Formatted";
+      content: 'readonly type: Word.TrackedChangeType | "None" | "Added" | "Deleted" | "Formatted";'
       return:
-        type: >-
-          <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" |
-          "Deleted" | "Formatted"
+        type: <xref uid="word!Word.TrackedChangeType:enum" /> | "None" | "Added" | "Deleted" | "Formatted"
 methods:
   - name: accept()
     uid: word!Word.TrackedChange#accept:member(1)
     package: word!
     fullName: accept()
     summary: Accepts the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
       // Accepts the first tracked change.
-
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -155,9 +126,8 @@ methods:
         trackedChange.accept();
         console.log("Accepted the first tracked change.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,25 +139,16 @@ methods:
     uid: word!Word.TrackedChange#getNext:member(1)
     package: word!
     fullName: getNext()
-    summary: >-
-      Gets the next tracked change. Throws an `ItemNotFound` error if this
-      tracked change is the last one.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the next tracked change. Throws an `ItemNotFound` error if this tracked change is the last one.
+    remarks: |-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
       // Gets the next (second) tracked change.
-
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -204,9 +165,8 @@ methods:
 
         console.log(nextTrackedChange);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,16 +178,9 @@ methods:
     uid: word!Word.TrackedChange#getNextOrNullObject:member(1)
     package: word!
     fullName: getNextOrNullObject()
-    summary: >-
-      Gets the next tracked change. If this tracked change is the last one, then
-      this method will return an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the next tracked change. If this tracked change is the last one, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,22 +193,15 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: Gets the range of the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
       // Gets the range of the first tracked change.
-
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -268,27 +214,16 @@ methods:
 
         console.log("range.text: " + range.text);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getRange(rangeLocation?: Word.RangeLocation.whole |
-        Word.RangeLocation.start | Word.RangeLocation.end | "Whole" | "Start" |
-        "End"): Word.Range;
+      content: 'getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole" | "Start" | "End"): Word.Range;'
       parameters:
         - id: rangeLocation
-          description: >-
-            Optional. Specifies the part of the tracked change to get the range
-            for. If not specified, the whole range of the tracked change is
-            returned.
-          type: >-
-            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref
-            uid="word!Word.RangeLocation.start:member" /> | <xref
-            uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" |
-            "End"
+          description: Optional. Specifies the part of the tracked change to get the range for. If not specified, the whole range of the tracked change is returned.
+          type: <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> | <xref uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" | "End"
       return:
         type: <xref uid="word!Word.Range:class" />
         description: ''
@@ -296,23 +231,17 @@ methods:
     uid: word!Word.TrackedChange#load:member(1)
     package: word!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Word.Interfaces.TrackedChangeLoadOptions):
-        Word.TrackedChange;
+      content: 'load(options?: Word.Interfaces.TrackedChangeLoadOptions): Word.TrackedChange;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="word!Word.Interfaces.TrackedChangeLoadOptions:interface"
-            />
+          type: <xref uid="word!Word.Interfaces.TrackedChangeLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.TrackedChange:class" />
         description: ''
@@ -320,20 +249,16 @@ methods:
     uid: word!Word.TrackedChange#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.TrackedChange;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TrackedChange:class" />
@@ -342,11 +267,9 @@ methods:
     uid: word!Word.TrackedChange#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -357,11 +280,7 @@ methods:
                 }): Word.TrackedChange;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -375,22 +294,15 @@ methods:
     package: word!
     fullName: reject()
     summary: Rejects the tracked change.
-    remarks: >-
-      \[ [API set: WordApi
-      1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi 1.6](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-tracked-changes.yaml
 
       // Rejects the first tracked change.
-
       await Word.run(async (context) => {
         const body: Word.Body = context.document.body;
         const trackedChanges: Word.TrackedChangeCollection = body.getTrackedChanges();
@@ -402,9 +314,8 @@ methods:
         trackedChange.reject();
         console.log("Rejected the first tracked change.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -416,17 +327,9 @@ methods:
     uid: word!Word.TrackedChange#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Word.TrackedChange`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Word.Interfaces.TrackedChangeData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TrackedChange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TrackedChangeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -438,18 +341,9 @@ methods:
     uid: word!Word.TrackedChange#track:member(1)
     package: word!
     fullName: track()
-    summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you're using this object across `.sync` calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
-      error when setting a property or invoking a method on the object, you need
-      to add the object to the tracked object collection when the object was
-      first created. If this object is part of a collection, you should also
-      track the parent collection.
+    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -461,16 +355,9 @@ methods:
     uid: word!Word.TrackedChange#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. Having many tracked objects slows down the host application, so
-      please remember to free any objects you add, once you're done using them.
-      You'll need to call `context.sync()` before the memory release takes
-      effect.
+    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

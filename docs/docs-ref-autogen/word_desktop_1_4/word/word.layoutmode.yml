@@ -4,10 +4,8 @@ uid: word!Word.LayoutMode:enum
 package: word!
 fullName: Word.LayoutMode
 summary: Specifies how text is laid out in the layout mode for the current document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Default layout mode.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Default"'
   - name: genko
     uid: word!Word.LayoutMode.genko:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Genko layout mode.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Genko"'
   - name: grid
     uid: word!Word.LayoutMode.grid:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Grid layout mode.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Grid"'
   - name: lineGrid
     uid: word!Word.LayoutMode.lineGrid:member
@@ -41,5 +39,5 @@ fields:
     summary: |-
       Line grid layout mode.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LineGrid"'

@@ -4,10 +4,8 @@ uid: word!Word.RevisionsMarkup:enum
 package: word!
 fullName: Word.RevisionsMarkup
 summary: Specifies the extent of markup visible in the document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       All markup.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"All"'
   - name: none
     uid: word!Word.RevisionsMarkup.none:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       No markup.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: simple
     uid: word!Word.RevisionsMarkup.simple:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Simple markup.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Simple"'

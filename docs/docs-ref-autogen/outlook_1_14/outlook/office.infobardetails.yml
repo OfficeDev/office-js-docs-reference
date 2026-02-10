@@ -3,33 +3,18 @@ name: Office.InfobarDetails
 uid: outlook!Office.InfobarDetails:interface
 package: outlook!
 fullName: Office.InfobarDetails
-summary: >-
-  Provides additional details about the notification message that raised the
-  `Office.EventType.InfobarClicked` event.
-remarks: >-
-  \[ [API set: Mailbox
-  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
-
+summary: Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.
+remarks: |-
+  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
   /*
-
-  * This snippet activates when a notification message is dismissed from an
-  Outlook message or appointment.
-
-  * The event handler logs the custom action and notification type to the
-  console.
-
+  * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+  * The event handler logs the custom action and notification type to the console.
   */
-
-  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
-  eventHandler, callback);
-
+  Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
 
   function eventHandler(event) {
       const infobarDetails = event.infobarDetails;
@@ -53,9 +38,8 @@ remarks: >-
               break;
       }
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -65,11 +49,8 @@ properties:
     package: outlook!
     fullName: actionType
     summary: The action type. Currently, "Dismiss" is the only supported action.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,11 +62,8 @@ properties:
     package: outlook!
     fullName: infobarType
     summary: The notification type.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

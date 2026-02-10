@@ -4,11 +4,8 @@ uid: powerpoint!PowerPoint.BulletType:enum
 package: powerpoint!
 fullName: PowerPoint.BulletType
 summary: Specifies the type of a bullet.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -18,7 +15,7 @@ fields:
     summary: |-
       No bullets.
 
-      * \[Api set: PowerPointApi 1.10\]
+      \* \[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"None"'
   - name: numbered
     uid: powerpoint!PowerPoint.BulletType.numbered:member
@@ -26,7 +23,7 @@ fields:
     summary: |-
       Numbered bullet (e.g., 1, 2, 3 or a, b, c).
 
-      * \[Api set: PowerPointApi 1.10\]
+      \* \[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Numbered"'
   - name: unnumbered
     uid: powerpoint!PowerPoint.BulletType.unnumbered:member
@@ -34,7 +31,7 @@ fields:
     summary: |-
       Symbol-based bullet (e.g., disc, circle, square).
 
-      * \[Api set: PowerPointApi 1.10\]
+      \* \[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Unnumbered"'
   - name: unsupported
     uid: powerpoint!PowerPoint.BulletType.unsupported:member
@@ -42,5 +39,5 @@ fields:
     summary: |-
       Type is unsupported.
 
-      * \[Api set: PowerPointApi 1.10\]
+      \* \[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Unsupported"'

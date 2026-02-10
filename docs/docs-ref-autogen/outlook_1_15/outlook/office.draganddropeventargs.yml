@@ -3,30 +3,16 @@ name: Office.DragAndDropEventArgs
 uid: outlook!Office.DragAndDropEventArgs:interface
 package: outlook!
 fullName: Office.DragAndDropEventArgs
-summary: >-
-  Provides details about the mouse pointer position and the messages or file
-  attachments being dragged and dropped into an add-in's task pane when the
-  `Office.EventType.DragAndDropEvent` event is raised.
-remarks: >-
-  \[ [API set: Mailbox
-  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Provides details about the mouse pointer position and the messages or file attachments being dragged and dropped into an add-in's task pane when the `Office.EventType.DragAndDropEvent` event is raised.
+remarks: |-
+  \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-
-  To learn more about the drag-and-drop feature and how to implement it across
-  various Outlook clients, see [Drag and drop messages and attachments into the
-  task pane of an Outlook
-  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!--
-  -->.
-
+  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and drop messages and attachments into the task pane of an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
 
   function dragAndDropEventHandler(event) {
       Office.context.mailbox.addHandlerAsync(Office.EventType.DragAndDropEvent, (event) => {
@@ -50,9 +36,8 @@ remarks: >-
       }
     });
   }
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -61,38 +46,25 @@ properties:
     uid: outlook!Office.DragAndDropEventArgs#dragAndDropEventData:member
     package: outlook!
     fullName: dragAndDropEventData
-    summary: >-
-      Gets the details about the mouse pointer position within an add-in's task
-      pane and the messages or file attachments being dragged and dropped into
-      the task pane.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
-
+    summary: Gets the details about the mouse pointer position within an add-in's task pane and the messages or file attachments being dragged and dropped into the task pane.
+    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dragAndDropEventData: DragoverEventData | DropEventData;'
       return:
-        type: >-
-          <xref uid="outlook!Office.DragoverEventData:interface" /> | <xref
-          uid="outlook!Office.DropEventData:interface" />
+        type: <xref uid="outlook!Office.DragoverEventData:interface" /> | <xref uid="outlook!Office.DropEventData:interface" />
   - name: type
     uid: outlook!Office.DragAndDropEventArgs#type:member
     package: outlook!
     fullName: type
-    summary: >-
-      Gets the type of the event. For details, see
-      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
-      -->.
+    summary: |-
+      Gets the type of the event. For details, see [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
 
-
-      \[ [API set: Mailbox
-      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

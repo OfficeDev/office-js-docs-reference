@@ -3,11 +3,9 @@ name: Word.Interfaces.CustomPropertyData
 uid: word!Word.Interfaces.CustomPropertyData:interface
 package: word!
 fullName: Word.Interfaces.CustomPropertyData
-summary: >-
-  An interface describing the data returned by calling
-  `customProperty.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customProperty.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: word!
     fullName: key
     summary: Gets the key of the custom property.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,37 +27,22 @@ properties:
     uid: word!Word.Interfaces.CustomPropertyData#type:member
     package: word!
     fullName: type
-    summary: >-
-      Gets the value type of the custom property. Possible values are: String,
-      Number, Date, Boolean.
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: 'Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Word.DocumentPropertyType | "String" | "Number" | "Date" |
-        "Boolean";
+      content: 'type?: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean";'
       return:
-        type: >-
-          <xref uid="word!Word.DocumentPropertyType:enum" /> | "String" |
-          "Number" | "Date" | "Boolean"
+        type: <xref uid="word!Word.DocumentPropertyType:enum" /> | "String" | "Number" | "Date" | "Boolean"
   - name: value
     uid: word!Word.Interfaces.CustomPropertyData#value:member
     package: word!
     fullName: value
-    summary: >-
-      Specifies the value of the custom property. Note that even though Word on
-      the web and the docx file format allow these properties to be arbitrarily
-      long, the desktop version of Word will truncate string values to 255
-      16-bit chars (possibly creating invalid unicode by breaking up a surrogate
-      pair).
-    remarks: >-
-      \[ [API set: WordApi
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

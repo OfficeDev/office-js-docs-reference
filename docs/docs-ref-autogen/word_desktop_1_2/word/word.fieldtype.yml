@@ -4,22 +4,15 @@ uid: word!Word.FieldType:enum
 package: word!
 fullName: Word.FieldType
 summary: Represents the type of [Word.Field](xref:word!Word.Field:class) object.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
   // Inserts a Date field before selection.
-
   await Word.run(async (context) => {
     const range: Word.Range = context.document.getSelection().getRange();
 
@@ -34,9 +27,8 @@ remarks: >-
       console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
     }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -46,7 +38,7 @@ fields:
     summary: |-
       Represents that the field type is Add-in.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Addin"'
   - name: addressBlock
     uid: word!Word.FieldType.addressBlock:member
@@ -54,7 +46,7 @@ fields:
     summary: |-
       Represents that the field type is AddressBlock.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AddressBlock"'
   - name: advance
     uid: word!Word.FieldType.advance:member
@@ -62,7 +54,7 @@ fields:
     summary: |-
       Represents that the field type is Advance.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Advance"'
   - name: ask
     uid: word!Word.FieldType.ask:member
@@ -70,7 +62,7 @@ fields:
     summary: |-
       Represents that the field type is Ask.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ask"'
   - name: author
     uid: word!Word.FieldType.author:member
@@ -78,7 +70,7 @@ fields:
     summary: |-
       Represents that the field type is Author.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Author"'
   - name: autoText
     uid: word!Word.FieldType.autoText:member
@@ -86,7 +78,7 @@ fields:
     summary: |-
       Represents that the field type is AutoText.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AutoText"'
   - name: autoTextList
     uid: word!Word.FieldType.autoTextList:member
@@ -94,7 +86,7 @@ fields:
     summary: |-
       Represents that the field type is AutoTextList.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AutoTextList"'
   - name: barCode
     uid: word!Word.FieldType.barCode:member
@@ -102,7 +94,7 @@ fields:
     summary: |-
       Represents that the field type is Barcode.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BarCode"'
   - name: bibliography
     uid: word!Word.FieldType.bibliography:member
@@ -110,7 +102,7 @@ fields:
     summary: |-
       Represents that the field type is Bibliography.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bibliography"'
   - name: bidiOutline
     uid: word!Word.FieldType.bidiOutline:member
@@ -118,7 +110,7 @@ fields:
     summary: |-
       Represents that the field type is BidiOutline.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BidiOutline"'
   - name: citation
     uid: word!Word.FieldType.citation:member
@@ -126,7 +118,7 @@ fields:
     summary: |-
       Represents that the field type is Citation.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Citation"'
   - name: comments
     uid: word!Word.FieldType.comments:member
@@ -134,7 +126,7 @@ fields:
     summary: |-
       Represents that the field type is Comments.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Comments"'
   - name: compare
     uid: word!Word.FieldType.compare:member
@@ -142,7 +134,7 @@ fields:
     summary: |-
       Represents that the field type is Compare.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Compare"'
   - name: createDate
     uid: word!Word.FieldType.createDate:member
@@ -150,7 +142,7 @@ fields:
     summary: |-
       Represents that the field type is CreateDate.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CreateDate"'
   - name: data
     uid: word!Word.FieldType.data:member
@@ -158,7 +150,7 @@ fields:
     summary: |-
       Represents that the field type is Data.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Data"'
   - name: database
     uid: word!Word.FieldType.database:member
@@ -166,7 +158,7 @@ fields:
     summary: |-
       Represents that the field type is Database.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Database"'
   - name: date
     uid: word!Word.FieldType.date:member
@@ -174,7 +166,7 @@ fields:
     summary: |-
       Represents that the field type is Date.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Date"'
   - name: displayBarcode
     uid: word!Word.FieldType.displayBarcode:member
@@ -182,7 +174,7 @@ fields:
     summary: |-
       Represents that the field type is DisplayBarcode.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DisplayBarcode"'
   - name: docProperty
     uid: word!Word.FieldType.docProperty:member
@@ -190,7 +182,7 @@ fields:
     summary: |-
       Represents that the field type is DocumentProperty
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DocProperty"'
   - name: docVariable
     uid: word!Word.FieldType.docVariable:member
@@ -198,7 +190,7 @@ fields:
     summary: |-
       Represents that the field type is DocumentVariable.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DocVariable"'
   - name: editTime
     uid: word!Word.FieldType.editTime:member
@@ -206,7 +198,7 @@ fields:
     summary: |-
       Represents that the field type is EditTime.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EditTime"'
   - name: embedded
     uid: word!Word.FieldType.embedded:member
@@ -214,7 +206,7 @@ fields:
     summary: |-
       Represents that the field type is Embedded.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Embedded"'
   - name: empty
     uid: word!Word.FieldType.empty:member
@@ -222,7 +214,7 @@ fields:
     summary: |-
       Represents that the field type is Empty.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Empty"'
   - name: eq
     uid: word!Word.FieldType.eq:member
@@ -230,7 +222,7 @@ fields:
     summary: |-
       Represents that the field type is Equation.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EQ"'
   - name: expression
     uid: word!Word.FieldType.expression:member
@@ -238,7 +230,7 @@ fields:
     summary: |-
       Represents that the field type is Expression.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Expression"'
   - name: fileName
     uid: word!Word.FieldType.fileName:member
@@ -246,7 +238,7 @@ fields:
     summary: |-
       Represents that the field type is FileName.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FileName"'
   - name: fileSize
     uid: word!Word.FieldType.fileSize:member
@@ -254,7 +246,7 @@ fields:
     summary: |-
       Represents that the field type is FileSize.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FileSize"'
   - name: fillIn
     uid: word!Word.FieldType.fillIn:member
@@ -262,7 +254,7 @@ fields:
     summary: |-
       Represents that the field type is FillIn.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FillIn"'
   - name: formCheckbox
     uid: word!Word.FieldType.formCheckbox:member
@@ -270,7 +262,7 @@ fields:
     summary: |-
       Represents that the field type is FormCheckbox.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FormCheckbox"'
   - name: formDropdown
     uid: word!Word.FieldType.formDropdown:member
@@ -278,7 +270,7 @@ fields:
     summary: |-
       Represents that the field type is FormDropdown.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FormDropdown"'
   - name: formText
     uid: word!Word.FieldType.formText:member
@@ -286,7 +278,7 @@ fields:
     summary: |-
       Represents that the field type is FormText.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FormText"'
   - name: gotoButton
     uid: word!Word.FieldType.gotoButton:member
@@ -294,7 +286,7 @@ fields:
     summary: |-
       Represents that the field type is GotoButton.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"GotoButton"'
   - name: greetingLine
     uid: word!Word.FieldType.greetingLine:member
@@ -302,7 +294,7 @@ fields:
     summary: |-
       Represents that the field type is GreetingLine.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"GreetingLine"'
   - name: hyperlink
     uid: word!Word.FieldType.hyperlink:member
@@ -310,7 +302,7 @@ fields:
     summary: |-
       Represents that the field type is Hyperlink.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hyperlink"'
   - name: if
     uid: word!Word.FieldType.if:member
@@ -318,7 +310,7 @@ fields:
     summary: |-
       Represents that the field type is If.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"If"'
   - name: import
     uid: word!Word.FieldType.import:member
@@ -326,7 +318,7 @@ fields:
     summary: |-
       Represents that the field type is Import.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Import"'
   - name: include
     uid: word!Word.FieldType.include:member
@@ -334,7 +326,7 @@ fields:
     summary: |-
       Represents that the field type is Include.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Include"'
   - name: includePicture
     uid: word!Word.FieldType.includePicture:member
@@ -342,7 +334,7 @@ fields:
     summary: |-
       Represents that the field type is IncludePicture.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"IncludePicture"'
   - name: includeText
     uid: word!Word.FieldType.includeText:member
@@ -350,7 +342,7 @@ fields:
     summary: |-
       Represents that the field type is IncludeText.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"IncludeText"'
   - name: index
     uid: word!Word.FieldType.index:member
@@ -358,7 +350,7 @@ fields:
     summary: |-
       Represents that the field type is Index.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Index"'
   - name: info
     uid: word!Word.FieldType.info:member
@@ -366,7 +358,7 @@ fields:
     summary: |-
       Represents that the field type is Information.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Info"'
   - name: keywords
     uid: word!Word.FieldType.keywords:member
@@ -374,7 +366,7 @@ fields:
     summary: |-
       Represents that the field type is Keywords.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Keywords"'
   - name: lastSavedBy
     uid: word!Word.FieldType.lastSavedBy:member
@@ -382,7 +374,7 @@ fields:
     summary: |-
       Represents that the field type is LastSavedBy.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LastSavedBy"'
   - name: link
     uid: word!Word.FieldType.link:member
@@ -390,7 +382,7 @@ fields:
     summary: |-
       Represents that the field type is Link.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Link"'
   - name: listNum
     uid: word!Word.FieldType.listNum:member
@@ -398,7 +390,7 @@ fields:
     summary: |-
       Represents that the field type is ListNumber.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ListNum"'
   - name: macroButton
     uid: word!Word.FieldType.macroButton:member
@@ -406,7 +398,7 @@ fields:
     summary: |-
       Represents that the field type is MacroButton.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MacroButton"'
   - name: mergeBarcode
     uid: word!Word.FieldType.mergeBarcode:member
@@ -414,7 +406,7 @@ fields:
     summary: |-
       Represents that the field type is MergeBarcode.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MergeBarcode"'
   - name: mergeField
     uid: word!Word.FieldType.mergeField:member
@@ -422,7 +414,7 @@ fields:
     summary: |-
       Represents that the field type is MergeField.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MergeField"'
   - name: mergeRec
     uid: word!Word.FieldType.mergeRec:member
@@ -430,7 +422,7 @@ fields:
     summary: |-
       Represents that the field type is MergeRecord.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MergeRec"'
   - name: mergeSeq
     uid: word!Word.FieldType.mergeSeq:member
@@ -438,7 +430,7 @@ fields:
     summary: |-
       Represents that the field type is MergeSequence.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MergeSeq"'
   - name: next
     uid: word!Word.FieldType.next:member
@@ -446,7 +438,7 @@ fields:
     summary: |-
       Represents that the field type is Next.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Next"'
   - name: nextIf
     uid: word!Word.FieldType.nextIf:member
@@ -454,7 +446,7 @@ fields:
     summary: |-
       Represents that the field type is NextIf.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NextIf"'
   - name: noteRef
     uid: word!Word.FieldType.noteRef:member
@@ -462,7 +454,7 @@ fields:
     summary: |-
       Represents that the field type is NoteReference.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NoteRef"'
   - name: numChars
     uid: word!Word.FieldType.numChars:member
@@ -470,7 +462,7 @@ fields:
     summary: |-
       Represents that the field type is NumberOfCharacters.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NumChars"'
   - name: numPages
     uid: word!Word.FieldType.numPages:member
@@ -478,7 +470,7 @@ fields:
     summary: |-
       Represents that the field type is NumberOfPages.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NumPages"'
   - name: numWords
     uid: word!Word.FieldType.numWords:member
@@ -486,7 +478,7 @@ fields:
     summary: |-
       Represents that the field type is NumberOfWords.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NumWords"'
   - name: ocx
     uid: word!Word.FieldType.ocx:member
@@ -494,7 +486,7 @@ fields:
     summary: |-
       Represents that the field type is ActiveXControl.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OCX"'
   - name: others
     uid: word!Word.FieldType.others:member
@@ -502,7 +494,7 @@ fields:
     summary: |-
       Represents the field types not supported by the Office JavaScript API.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Others"'
   - name: page
     uid: word!Word.FieldType.page:member
@@ -510,7 +502,7 @@ fields:
     summary: |-
       Represents that the field type is Page.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Page"'
   - name: pageRef
     uid: word!Word.FieldType.pageRef:member
@@ -518,7 +510,7 @@ fields:
     summary: |-
       Represents that the field type is PageReference.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PageRef"'
   - name: print
     uid: word!Word.FieldType.print:member
@@ -526,7 +518,7 @@ fields:
     summary: |-
       Represents that the field type is Print.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Print"'
   - name: printDate
     uid: word!Word.FieldType.printDate:member
@@ -534,7 +526,7 @@ fields:
     summary: |-
       Represents that the field type is PrintDate.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PrintDate"'
   - name: private
     uid: word!Word.FieldType.private:member
@@ -542,7 +534,7 @@ fields:
     summary: |-
       Represents that the field type is Private.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Private"'
   - name: quote
     uid: word!Word.FieldType.quote:member
@@ -550,7 +542,7 @@ fields:
     summary: |-
       Represents that the field type is Quote.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Quote"'
   - name: rd
     uid: word!Word.FieldType.rd:member
@@ -558,7 +550,7 @@ fields:
     summary: |-
       Represents that the field type is ReferencedDocument.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RD"'
   - name: ref
     uid: word!Word.FieldType.ref:member
@@ -566,7 +558,7 @@ fields:
     summary: |-
       Represents that the field type is Reference.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ref"'
   - name: revNum
     uid: word!Word.FieldType.revNum:member
@@ -574,7 +566,7 @@ fields:
     summary: |-
       Represents that the field type is RevisionNumber.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RevNum"'
   - name: saveDate
     uid: word!Word.FieldType.saveDate:member
@@ -582,7 +574,7 @@ fields:
     summary: |-
       Represents that the field type is SaveDate.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SaveDate"'
   - name: section
     uid: word!Word.FieldType.section:member
@@ -590,7 +582,7 @@ fields:
     summary: |-
       Represents that the field type is Section.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Section"'
   - name: sectionPages
     uid: word!Word.FieldType.sectionPages:member
@@ -598,7 +590,7 @@ fields:
     summary: |-
       Represents that the field type is SectionPages.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SectionPages"'
   - name: seq
     uid: word!Word.FieldType.seq:member
@@ -606,7 +598,7 @@ fields:
     summary: |-
       Represents that the field type is Sequence.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Seq"'
   - name: set
     uid: word!Word.FieldType.set:member
@@ -614,7 +606,7 @@ fields:
     summary: |-
       Represents that the field type is Set.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Set"'
   - name: shape
     uid: word!Word.FieldType.shape:member
@@ -622,7 +614,7 @@ fields:
     summary: |-
       Represents that the field type is Shape.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Shape"'
   - name: skipIf
     uid: word!Word.FieldType.skipIf:member
@@ -630,7 +622,7 @@ fields:
     summary: |-
       Represents that the field type is SkipIf.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SkipIf"'
   - name: styleRef
     uid: word!Word.FieldType.styleRef:member
@@ -638,7 +630,7 @@ fields:
     summary: |-
       Represents that the field type is StyleReference.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"StyleRef"'
   - name: subject
     uid: word!Word.FieldType.subject:member
@@ -646,7 +638,7 @@ fields:
     summary: |-
       Represents that the field type is Subject.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Subject"'
   - name: subscriber
     uid: word!Word.FieldType.subscriber:member
@@ -654,7 +646,7 @@ fields:
     summary: |-
       Represents that the field type is Subscriber.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Subscriber"'
   - name: symbol
     uid: word!Word.FieldType.symbol:member
@@ -662,7 +654,7 @@ fields:
     summary: |-
       Represents that the field type is Symbol.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Symbol"'
   - name: ta
     uid: word!Word.FieldType.ta:member
@@ -670,7 +662,7 @@ fields:
     summary: |-
       Represents that the field type is TableOfAuthoritiesEntry.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TA"'
   - name: tc
     uid: word!Word.FieldType.tc:member
@@ -678,7 +670,7 @@ fields:
     summary: |-
       Represents that the field type is TableOfContentsEntry.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TC"'
   - name: template
     uid: word!Word.FieldType.template:member
@@ -686,7 +678,7 @@ fields:
     summary: |-
       Represents that the field type is Template.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Template"'
   - name: time
     uid: word!Word.FieldType.time:member
@@ -694,7 +686,7 @@ fields:
     summary: |-
       Represents that the field type is Time.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Time"'
   - name: title
     uid: word!Word.FieldType.title:member
@@ -702,7 +694,7 @@ fields:
     summary: |-
       Represents that the field type is Title.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Title"'
   - name: toa
     uid: word!Word.FieldType.toa:member
@@ -710,7 +702,7 @@ fields:
     summary: |-
       Represents that the field type is TableOfAuthorities.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TOA"'
   - name: toc
     uid: word!Word.FieldType.toc:member
@@ -718,7 +710,7 @@ fields:
     summary: |-
       Represents that the field type is TableOfContents.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TOC"'
   - name: undefined
     uid: word!Word.FieldType.undefined:member
@@ -726,7 +718,7 @@ fields:
     summary: |-
       Represents that the field type is Undefined.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Undefined"'
   - name: userAddress
     uid: word!Word.FieldType.userAddress:member
@@ -734,7 +726,7 @@ fields:
     summary: |-
       Represents that the field type is UserAddress.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"UserAddress"'
   - name: userInitials
     uid: word!Word.FieldType.userInitials:member
@@ -742,7 +734,7 @@ fields:
     summary: |-
       Represents that the field type is UserInitials.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"UserInitials"'
   - name: userName
     uid: word!Word.FieldType.userName:member
@@ -750,7 +742,7 @@ fields:
     summary: |-
       Represents that the field type is UserName.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"UserName"'
   - name: xe
     uid: word!Word.FieldType.xe:member
@@ -758,5 +750,5 @@ fields:
     summary: |-
       Represents that the field type is IndexEntry.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"XE"'

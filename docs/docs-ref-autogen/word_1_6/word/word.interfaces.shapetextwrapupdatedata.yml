@@ -3,11 +3,9 @@ name: Word.Interfaces.ShapeTextWrapUpdateData
 uid: word!Word.Interfaces.ShapeTextWrapUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShapeTextWrapUpdateData
-summary: >-
-  An interface for updating data on the `ShapeTextWrap` object, for use in
-  `shapeTextWrap.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ShapeTextWrap` object, for use in `shapeTextWrap.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

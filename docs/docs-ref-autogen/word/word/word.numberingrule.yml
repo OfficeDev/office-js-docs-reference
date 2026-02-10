@@ -4,10 +4,8 @@ uid: word!Word.NumberingRule:enum
 package: word!
 fullName: Word.NumberingRule
 summary: Specifies the numbering rule to apply.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Restart numbering continuously.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RestartContinuous"'
   - name: restartPage
     uid: word!Word.NumberingRule.restartPage:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Restart numbering at the beginning of each page.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RestartPage"'
   - name: restartSection
     uid: word!Word.NumberingRule.restartSection:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Restart numbering at the beginning of each section.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RestartSection"'

@@ -4,23 +4,15 @@ uid: powerpoint!PowerPoint.TableCellProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableCellProperties
 summary: Represents the table cell properties to update.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
   // Specifies the font formatting and fill colors of the cells in a table.
-
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -54,9 +46,8 @@ remarks: >-
     });
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -66,23 +57,15 @@ properties:
     package: powerpoint!
     fullName: borders
     summary: Specifies the border formatting of the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Specifies a table's borders.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -104,9 +87,8 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,23 +100,15 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Specifies the fill formatting of the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Specifies the font formatting and fill colors of the cells in a table.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -168,9 +142,8 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,23 +155,15 @@ properties:
     package: powerpoint!
     fullName: font
     summary: Specifies the font formatting of the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Specifies the font formatting and fill colors of the cells in a table.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -232,9 +197,8 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,24 +210,15 @@ properties:
     package: powerpoint!
     fullName: horizontalAlignment
     summary: Specifies the horizontal alignment of the text in the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the horizontal and vertical alignments of the cells in a
-      table.
-
+      // Specifies the horizontal and vertical alignments of the cells in a table.
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -281,43 +236,28 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" |
-        "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
-        "ThaiDistributed" | undefined;
+      content: 'horizontalAlignment?: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | undefined;'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
-          | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" |
-          "Distributed" | "ThaiDistributed" | undefined
+        type: <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" /> | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | undefined
   - name: indentLevel
     uid: powerpoint!PowerPoint.TableCellProperties#indentLevel:member
     package: powerpoint!
     fullName: indentLevel
     summary: Specifies the indent level of the text in the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Specifying the indents for a table.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -336,9 +276,8 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,11 +289,8 @@ properties:
     package: powerpoint!
     fullName: margins
     summary: Specifies the margin settings in the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -365,17 +301,12 @@ properties:
     uid: powerpoint!PowerPoint.TableCellProperties#text:member
     package: powerpoint!
     fullName: text
-    summary: >-
+    summary: |-
       Specifies the text content of the table cell.
 
-
-      If a portion of the text requires different formatting, use the `textRuns`
-      property instead.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+      If a portion of the text requires different formatting, use the `textRuns` property instead.
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -386,28 +317,16 @@ properties:
     uid: powerpoint!PowerPoint.TableCellProperties#textRuns:member
     package: powerpoint!
     fullName: textRuns
-    summary: >-
-      Specifies the contents of the table cell as an array of
-      [PowerPoint.TextRun](xref:powerpoint!PowerPoint.TextRun:interface)
-      objects. Each `TextRun` object represents a sequence of one or more
-      characters that share the same font attributes.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the contents of the table cell as an array of [PowerPoint.TextRun](xref:powerpoint!PowerPoint.TextRun:interface) objects. Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Specifies the text runs of the cells in a table.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -449,9 +368,8 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -463,24 +381,15 @@ properties:
     package: powerpoint!
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of the text in the table cell.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
-
-      // Specifies the horizontal and vertical alignments of the cells in a
-      table.
-
+      // Specifies the horizontal and vertical alignments of the cells in a table.
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -498,18 +407,11 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle"
-        | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered" |
-        undefined;
+      content: 'verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered" | undefined;'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.TextVerticalAlignment:enum" /> |
-          "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" |
-          "BottomCentered" | undefined
+        type: <xref uid="powerpoint!PowerPoint.TextVerticalAlignment:enum" /> | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered" | undefined

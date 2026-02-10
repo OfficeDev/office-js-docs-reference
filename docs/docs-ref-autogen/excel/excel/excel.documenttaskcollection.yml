@@ -4,10 +4,8 @@ uid: excel!Excel.DocumentTaskCollection:class
 package: excel!
 fullName: Excel.DocumentTaskCollection
 summary: Represents a collection of tasks.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -16,11 +14,9 @@ properties:
     uid: excel!Excel.DocumentTaskCollection#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,7 +29,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -46,11 +42,8 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of tasks in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -63,11 +56,8 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a task using its ID.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -78,19 +68,14 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.DocumentTask:class" />
-        description: >-
-          The task with the given ID. If there is no task with the given ID,
-          then an `ItemNotFound` exception is thrown.
+        description: The task with the given ID. If there is no task with the given ID, then an `ItemNotFound` exception is thrown.
   - name: getItemAt(index)
     uid: excel!Excel.DocumentTaskCollection#getItemAt:member(1)
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a task by its index in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -107,11 +92,8 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: Gets a task using its ID.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -122,36 +104,22 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.DocumentTask:class" />
-        description: >-
-          The task with the given ID. If there is no task with the given ID,
-          then this method returns an object with its `isNullObject` property
-          set to `true`<!-- -->. For further information, see [*OrNullObject
-          methods and
-          properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-          -->.
+        description: The task with the given ID. If there is no task with the given ID, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
   - name: load(options)
     uid: excel!Excel.DocumentTaskCollection#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.DocumentTaskCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskCollection;
+      content: 'load(options?: Excel.Interfaces.DocumentTaskCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskCollection;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions:interface"
-            /> & <xref
-            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: <xref uid="excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.DocumentTaskCollection:class" />
         description: ''
@@ -159,20 +127,16 @@ methods:
     uid: excel!Excel.DocumentTaskCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.DocumentTaskCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.DocumentTaskCollection:class" />
@@ -181,24 +145,16 @@ methods:
     uid: excel!Excel.DocumentTaskCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.DocumentTaskCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DocumentTaskCollection;'
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.DocumentTaskCollection:class" />
@@ -207,25 +163,14 @@ methods:
     uid: excel!Excel.DocumentTaskCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `Excel.DocumentTaskCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.DocumentTaskCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.DocumentTaskCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.DocumentTaskCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.DocumentTaskCollectionData:interface" />
+        type: <xref uid="excel!Excel.Interfaces.DocumentTaskCollectionData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

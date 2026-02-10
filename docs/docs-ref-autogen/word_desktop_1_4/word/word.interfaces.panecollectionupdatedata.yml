@@ -3,11 +3,9 @@ name: Word.Interfaces.PaneCollectionUpdateData
 uid: word!Word.Interfaces.PaneCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.PaneCollectionUpdateData
-summary: >-
-  An interface for updating data on the `PaneCollection` object, for use in
-  `paneCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `PaneCollection` object, for use in `paneCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

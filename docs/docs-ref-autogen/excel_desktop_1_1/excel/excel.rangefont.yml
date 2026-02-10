@@ -3,13 +3,9 @@ name: Excel.RangeFont
 uid: excel!Excel.RangeFont:class
 package: excel!
 fullName: Excel.RangeFont
-summary: >-
-  This object represents the font attributes (font name, font size, color, etc.)
-  for an object.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: This object represents the font attributes (font name, font size, color, etc.) for an object.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,10 +15,8 @@ properties:
     package: excel!
     fullName: bold
     summary: Represents the bold status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,13 +27,9 @@ properties:
     uid: excel!Excel.RangeFont#color:member
     package: excel!
     fullName: color
-    summary: >-
-      HTML color code representation of the text color (e.g., \#FF0000
-      represents Red).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: HTML color code representation of the text color (e.g., \#FF0000 represents Red).
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,11 +40,9 @@ properties:
     uid: excel!Excel.RangeFont#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,10 +54,8 @@ properties:
     package: excel!
     fullName: italic
     summary: Specifies the italic status of the font.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,29 +66,21 @@ properties:
     uid: excel!Excel.RangeFont#name:member
     package: excel!
     fullName: name
-    summary: >-
-      Font name (e.g., "Calibri"). The name's length should not be greater than
-      31 characters.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       // Change the font of the selected range to "Impact".
-
       await Excel.run(async (context) => {
         const selection = context.workbook.getSelectedRange();
         selection.format.font.name = "Impact";
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,10 +92,8 @@ properties:
     package: excel!
     fullName: size
     summary: Font size.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,13 +104,9 @@ properties:
     uid: excel!Excel.RangeFont#strikethrough:member
     package: excel!
     fullName: strikethrough
-    summary: >-
-      Specifies the strikethrough status of font. A `null` value indicates that
-      the entire range doesn't have a uniform strikethrough setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the strikethrough status of font. A `null` value indicates that the entire range doesn't have a uniform strikethrough setting.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,15 +117,9 @@ properties:
     uid: excel!Excel.RangeFont#subscript:member
     package: excel!
     fullName: subscript
-    summary: >-
-      Specifies the subscript status of font. Returns `true` if all the fonts of
-      the range are subscript. Returns `false` if all the fonts of the range are
-      superscript or normal (neither superscript, nor subscript). Returns `null`
-      otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the subscript status of font. Returns `true` if all the fonts of the range are subscript. Returns `false` if all the fonts of the range are superscript or normal (neither superscript, nor subscript). Returns `null` otherwise.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,15 +130,9 @@ properties:
     uid: excel!Excel.RangeFont#superscript:member
     package: excel!
     fullName: superscript
-    summary: >-
-      Specifies the superscript status of font. Returns `true` if all the fonts
-      of the range are superscript. Returns `false` if all the fonts of the
-      range are subscript or normal (neither superscript, nor subscript).
-      Returns `null` otherwise.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the superscript status of font. Returns `true` if all the fonts of the range are superscript. Returns `false` if all the fonts of the range are subscript or normal (neither superscript, nor subscript). Returns `null` otherwise.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,15 +143,9 @@ properties:
     uid: excel!Excel.RangeFont#tintAndShade:member
     package: excel!
     fullName: tintAndShade
-    summary: >-
-      Specifies a double that lightens or darkens a color for the range font.
-      The value is between -1 (darkest) and 1 (brightest), with 0 for the
-      original color. A `null` value indicates that the entire range doesn't
-      have a uniform font `tintAndShade` setting.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies a double that lightens or darkens a color for the range font. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A `null` value indicates that the entire range doesn't have a uniform font `tintAndShade` setting.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,33 +156,23 @@ properties:
     uid: excel!Excel.RangeFont#underline:member
     package: excel!
     fullName: underline
-    summary: >-
-      Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for
-      details.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        underline: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" |
-        "SingleAccountant" | "DoubleAccountant";
+      content: 'underline: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
-        type: >-
-          <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" |
-          "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+        type: <xref uid="excel!Excel.RangeUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
 methods:
   - name: load(options)
     uid: excel!Excel.RangeFont#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,20 +188,16 @@ methods:
     uid: excel!Excel.RangeFont#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFont;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeFont:class" />
@@ -280,11 +220,9 @@ methods:
     uid: excel!Excel.RangeFont#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,11 +233,7 @@ methods:
                 }): Excel.RangeFont;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -312,29 +246,19 @@ methods:
     uid: excel!Excel.RangeFont#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.RangeFontUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.RangeFontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="excel!Excel.Interfaces.RangeFontUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -343,11 +267,9 @@ methods:
     uid: excel!Excel.RangeFont#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -363,16 +285,9 @@ methods:
     uid: excel!Excel.RangeFont#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.RangeFont` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.RangeFontData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.RangeFont` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

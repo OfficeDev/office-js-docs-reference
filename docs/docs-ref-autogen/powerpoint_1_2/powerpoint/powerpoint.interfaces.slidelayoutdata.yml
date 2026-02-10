@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.SlideLayoutData
 uid: powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutData
-summary: >-
-  An interface describing the data returned by calling
-  `slideLayout.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideLayout.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

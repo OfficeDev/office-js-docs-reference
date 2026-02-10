@@ -3,11 +3,9 @@ name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
 uid: excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyUpdateData
-summary: >-
-  An interface for updating data on the `WorksheetCustomProperty` object, for
-  use in `worksheetCustomProperty.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `WorksheetCustomProperty` object, for use in `worksheetCustomProperty.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: excel!
     fullName: value
     summary: Specifies the value of the custom property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

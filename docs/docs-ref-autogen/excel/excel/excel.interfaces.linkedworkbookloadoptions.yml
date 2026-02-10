@@ -3,15 +3,9 @@ name: Excel.Interfaces.LinkedWorkbookLoadOptions
 uid: excel!Excel.Interfaces.LinkedWorkbookLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.LinkedWorkbookLoadOptions
-summary: >-
-  Contains information about a linked workbook. If a workbook has links pointing
-  to data in another workbook, the second workbook is linked to the first
-  workbook. In this scenario, the second workbook is called the "linked
-  workbook".
-remarks: >-
-  \[ [API set: ExcelApiOnline
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Contains information about a linked workbook. If a workbook has links pointing to data in another workbook, the second workbook is linked to the first workbook. In this scenario, the second workbook is called the "linked workbook".
+remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,12 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.LinkedWorkbookLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,13 +27,9 @@ properties:
     uid: excel!Excel.Interfaces.LinkedWorkbookLoadOptions#id:member
     package: excel!
     fullName: id
-    summary: >-
-      The original URL pointing to the linked workbook. It is unique across all
-      linked workbooks in the collection.
-    remarks: >-
-      \[ [API set: ExcelApiOnline
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

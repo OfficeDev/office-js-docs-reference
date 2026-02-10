@@ -4,16 +4,11 @@ uid: word!Word.Interfaces.SelectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.SelectionLoadOptions
 summary: Represents a selected range or the insertion point in a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-  Note: [Range](xref:word!Word.Range:class) objects share many of the same
-  methods and properties as `Selection` objects. Using `Range` objects is
-  preferable for manipulating a document when there isn't a reason to physically
-  change the current selection.
-
+  Note: [Range](xref:word!Word.Range:class) objects share many of the same methods and properties as `Selection` objects. Using `Range` objects is preferable for manipulating a document when there isn't a reason to physically change the current selection.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,12 +17,9 @@ properties:
     uid: word!Word.Interfaces.SelectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,10 +31,8 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,10 +44,8 @@ properties:
     package: word!
     fullName: fitTextWidth
     summary: Specifies the width in which Word fits the text in the current selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,13 +56,9 @@ properties:
     uid: word!Word.Interfaces.SelectionLoadOptions#font:member
     package: word!
     fullName: font
-    summary: >-
-      Returns the `Font` object that represents the character formatting of the
-      selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the `Font` object that represents the character formatting of the selection.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,13 +69,9 @@ properties:
     uid: word!Word.Interfaces.SelectionLoadOptions#formattedText:member
     package: word!
     fullName: formattedText
-    summary: >-
-      Specifies a `Range` object that includes the formatted text in the range
-      or selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a `Range` object that includes the formatted text in the range or selection.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,14 +82,9 @@ properties:
     uid: word!Word.Interfaces.SelectionLoadOptions#hasNoProofing:member
     package: word!
     fullName: hasNoProofing
-    summary: >-
-      Returns whether the spelling and grammar checker ignores the selected
-      text. If the selected text contains a mix of proofed and un-proofed
-      content, this API returns `null`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns whether the spelling and grammar checker ignores the selected text. If the selected text contains a mix of proofed and un-proofed content, this API returns `null`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,10 +96,8 @@ properties:
     package: word!
     fullName: isActive
     summary: Returns whether the selection in the specified window or pane is active.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,10 +109,8 @@ properties:
     package: word!
     fullName: isColumnSelectModeActive
     summary: Specifies whether column selection mode is active.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,10 +122,8 @@ properties:
     package: word!
     fullName: isEndOfRowMark
     summary: Returns whether the selection is at the end-of-row mark in a table.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,10 +135,8 @@ properties:
     package: word!
     fullName: isExtendModeActive
     summary: Specifies whether Extend mode is active.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,15 +144,12 @@ properties:
       return:
         type: boolean
   - name: isInsertionPointAtEndOfLine
-    uid: >-
-      word!Word.Interfaces.SelectionLoadOptions#isInsertionPointAtEndOfLine:member
+    uid: word!Word.Interfaces.SelectionLoadOptions#isInsertionPointAtEndOfLine:member
     package: word!
     fullName: isInsertionPointAtEndOfLine
     summary: Returns whether the insertion point is at the end of a line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,10 +161,8 @@ properties:
     package: word!
     fullName: isStartActive
     summary: Specifies whether the beginning of the selection is active.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,10 +174,8 @@ properties:
     package: word!
     fullName: languageDetected
     summary: Specifies whether Word has detected the language of the selected text.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,10 +187,8 @@ properties:
     package: word!
     fullName: languageId
     summary: Returns the language for the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,10 +200,8 @@ properties:
     package: word!
     fullName: languageIdFarEast
     summary: Returns the East Asian language for the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,13 +212,9 @@ properties:
     uid: word!Word.Interfaces.SelectionLoadOptions#languageIdOther:member
     package: word!
     fullName: languageIdOther
-    summary: >-
-      Returns the language for the selection that isn't classified as an East
-      Asian language.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the language for the selection that isn't classified as an East Asian language.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,10 +226,8 @@ properties:
     package: word!
     fullName: orientation
     summary: Specifies the orientation of text in the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -288,13 +238,9 @@ properties:
     uid: word!Word.Interfaces.SelectionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      Returns the `Range` object for the portion of the document contained in
-      the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the `Range` object for the portion of the document contained in the selection.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -305,30 +251,22 @@ properties:
     uid: word!Word.Interfaces.SelectionLoadOptions#shading:member
     package: word!
     fullName: shading
-    summary: >-
-      Returns the `ShadingUniversal` object for the shading formatting for the
-      selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the `ShadingUniversal` object for the shading formatting for the selection.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'shading?: Word.Interfaces.ShadingUniversalLoadOptions;'
       return:
-        type: >-
-          <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface"
-          />
+        type: <xref uid="word!Word.Interfaces.ShadingUniversalLoadOptions:interface" />
   - name: start
     uid: word!Word.Interfaces.SelectionLoadOptions#start:member
     package: word!
     fullName: start
     summary: Specifies the starting character position of the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -340,10 +278,8 @@ properties:
     package: word!
     fullName: storyLength
     summary: Returns the number of characters in the story that contains the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -355,10 +291,8 @@ properties:
     package: word!
     fullName: storyType
     summary: Returns the story type for the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,10 +304,8 @@ properties:
     package: word!
     fullName: text
     summary: Specifies the text in the selection.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -385,10 +317,8 @@ properties:
     package: word!
     fullName: type
     summary: Returns the selection type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

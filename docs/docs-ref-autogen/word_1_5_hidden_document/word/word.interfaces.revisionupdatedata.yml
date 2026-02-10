@@ -3,11 +3,9 @@ name: Word.Interfaces.RevisionUpdateData
 uid: word!Word.Interfaces.RevisionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RevisionUpdateData
-summary: >-
-  An interface for updating data on the `Revision` object, for use in
-  `revision.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Revision` object, for use in `revision.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

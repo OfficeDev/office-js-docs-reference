@@ -3,11 +3,9 @@ name: Excel.Interfaces.ChartDataLabelAnchorData
 uid: excel!Excel.Interfaces.ChartDataLabelAnchorData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelAnchorData
-summary: >-
-  An interface describing the data returned by calling
-  `chartDataLabelAnchor.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartDataLabelAnchor.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,15 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelAnchorData#left:member
     package: excel!
     fullName: left
-    summary: >-
-      Specifies the distance, in points, from the anchor to the left edge of the
-      chart data label. Note that when getting the value, it may differ slightly
-      from the set value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Specifies the distance, in points, from the anchor to the left edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,15 +27,9 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataLabelAnchorData#top:member
     package: excel!
     fullName: top
-    summary: >-
-      Specifies the distance, in points, from the anchor to the top edge of the
-      chart data label. Note that when getting the value, it may differ slightly
-      from the set value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Specifies the distance, in points, from the anchor to the top edge of the chart data label. Note that when getting the value, it may differ slightly from the set value.
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

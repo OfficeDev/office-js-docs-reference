@@ -4,37 +4,19 @@ uid: outlook!Office.MailboxEnums.CategoryColor:enum
 package: outlook!
 fullName: Office.MailboxEnums.CategoryColor
 summary: Specifies the category color.
-remarks: >-
-  \[ [API set: Mailbox
-  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: |-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  \*\*Important\*\*: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each preset apply to Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac (starting in Version 16.78).
 
-
-  **Important**: The actual color depends on how the Outlook client renders
-  it. In this case, the colors noted on each preset apply to Outlook on the web,
-  on Windows
-  ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
-  and classic), and on Mac (starting in Version 16.78).
-
-
-  Earlier versions of Outlook on Mac had a bug that displayed incorrect preset
-  colors. This has now been fixed starting in Version 16.78. If you've recently
-  updated your Outlook client, you need to adjust the category colors in your
-  add-in to match the updated preset values.
-
+  Earlier versions of Outlook on Mac had a bug that displayed incorrect preset colors. This has now been fixed starting in Version 16.78. If you've recently updated your Outlook client, you need to adjust the category colors in your add-in to match the updated preset values.
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
   const masterCategoriesToAdd = [
     {
@@ -43,18 +25,15 @@ remarks: >-
     }
   ];
 
-
-  Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd,
-  function(asyncResult) {
+  Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function(asyncResult) {
     if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
       console.log("Successfully added categories to master list");
     } else {
       console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
     }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

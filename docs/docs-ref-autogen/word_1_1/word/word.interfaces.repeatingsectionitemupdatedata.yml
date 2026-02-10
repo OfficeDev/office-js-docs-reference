@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.RepeatingSectionItemUpdateData:interface
 package: word!
 fullName: Word.Interfaces.RepeatingSectionItemUpdateData
 summary: >-
-  An interface for updating data on the `RepeatingSectionItem` object, for use
-  in `repeatingSectionItem.set({ ... })`<!-- -->.
+  An interface for updating data on the `RepeatingSectionItem` object, for use in `repeatingSectionItem.set({ ...
+  })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

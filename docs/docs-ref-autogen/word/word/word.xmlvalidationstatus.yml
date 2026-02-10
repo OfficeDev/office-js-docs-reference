@@ -4,10 +4,8 @@ uid: word!Word.XmlValidationStatus:enum
 package: word!
 fullName: Word.XmlValidationStatus
 summary: Specifies the validation status of an XML node.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       The node has a custom (user-defined) validation error.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Custom"'
   - name: ok
     uid: word!Word.XmlValidationStatus.ok:member
@@ -25,5 +23,5 @@ fields:
     summary: |-
       The node is valid.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ok"'

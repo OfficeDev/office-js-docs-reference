@@ -4,10 +4,8 @@ uid: word!Word.Interfaces.AnnotationLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.AnnotationLoadOptions
 summary: Represents an annotation attached to a paragraph.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.AnnotationLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,29 +28,21 @@ properties:
     package: word!
     fullName: critiqueAnnotation
     summary: Gets the `CritiqueAnnotation` object.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'critiqueAnnotation?: Word.Interfaces.CritiqueAnnotationLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
+        type: <xref uid="word!Word.Interfaces.CritiqueAnnotationLoadOptions:interface" />
   - name: id
     uid: word!Word.Interfaces.AnnotationLoadOptions#id:member
     package: word!
     fullName: id
-    summary: >-
-      Gets the unique identifier, which is meant to be used for easier tracking
-      of `Annotation` objects.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the unique identifier, which is meant to be used for easier tracking of `Annotation` objects.
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,10 +54,8 @@ properties:
     package: word!
     fullName: state
     summary: Gets the state of the annotation.
-    remarks: >-
-      \[ [API set: WordApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,9 @@ name: Word.Interfaces.CustomXmlPrefixMappingData
 uid: word!Word.Interfaces.CustomXmlPrefixMappingData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPrefixMappingData
-summary: >-
-  An interface describing the data returned by calling
-  `customXmlPrefixMapping.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `customXmlPrefixMapping.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

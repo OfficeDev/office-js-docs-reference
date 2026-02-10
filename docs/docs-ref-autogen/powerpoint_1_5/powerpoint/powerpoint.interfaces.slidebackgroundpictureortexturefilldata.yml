@@ -1,14 +1,11 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData
-uid: >-
-  powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData:interface
+uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundPictureOrTextureFillData
-summary: >-
-  An interface describing the data returned by calling
-  `slideBackgroundPictureOrTextureFill.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideBackgroundPictureOrTextureFill.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

@@ -4,10 +4,8 @@ uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue:interface
 package: excel!
 fullName: Excel.JavaScriptCustomFunctionReferenceCellValue
 summary: Represents a reference to a JavaScript custom function.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,14 +14,9 @@ properties:
     uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue#basicType:member
     package: excel!
     fullName: basicType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a
-      cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,17 +27,9 @@ properties:
     uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue#basicValue:member
     package: excel!
     fullName: basicValue
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell
-      with this value. When accessed through a `valuesAsJson` property, this
-      string value aligns with the en-US locale. When accessed through a
-      `valuesAsJsonLocal` property, this string value aligns with the user's
-      display locale.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,36 +41,21 @@ properties:
     package: excel!
     fullName: functionType
     summary: Represents the type of `FunctionCellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        functionType: FunctionCellValueType.javaScriptReference |
-        "JavaScriptReference";
+      content: 'functionType: FunctionCellValueType.javaScriptReference | "JavaScriptReference";'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.FunctionCellValueType.javaScriptReference:member" />
-          | "JavaScriptReference"
+        type: <xref uid="excel!Excel.FunctionCellValueType.javaScriptReference:member" /> | "JavaScriptReference"
   - name: id
     uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue#id:member
     package: excel!
     fullName: id
-    summary: >-
-      Represents the ID of the custom function. For more information, see
-      [Autogenerate JSON metadata for custom functions:
-      ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'Represents the ID of the custom function. For more information, see [Autogenerate JSON metadata for custom functions: ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!-- -->.'
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,16 +66,9 @@ properties:
     uid: excel!Excel.JavaScriptCustomFunctionReferenceCellValue#namespace:member
     package: excel!
     fullName: namespace
-    summary: >-
-      Represents the namespace used by the custom function. For more
-      information, see [Manifest reference:
-      Namespace](https://learn.microsoft.com/javascript/api/manifest/namespace)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'Represents the namespace used by the custom function. For more information, see [Manifest reference: Namespace](https://learn.microsoft.com/javascript/api/manifest/namespace)<!-- -->.'
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,11 +80,8 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

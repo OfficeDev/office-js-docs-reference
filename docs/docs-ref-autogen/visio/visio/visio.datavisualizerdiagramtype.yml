@@ -4,48 +4,43 @@ uid: visio!Visio.DataVisualizerDiagramType:enum
 package: visio!
 fullName: Visio.DataVisualizerDiagramType
 summary: DiagramType for Data Visualizer diagrams.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: audit
     uid: visio!Visio.DataVisualizerDiagramType.audit:member
     package: visio!
-    summary: '* \[Api set: 1.1\]'
+    summary: '\* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"Audit"'
   - name: basicFlowchart
     uid: visio!Visio.DataVisualizerDiagramType.basicFlowchart:member
     package: visio!
-    summary: '* \[Api set: 1.1\]'
+    summary: '\* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"BasicFlowchart"'
   - name: crossFunctionalFlowchart_Horizontal
-    uid: >-
-      visio!Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Horizontal:member
+    uid: visio!Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Horizontal:member
     package: visio!
-    summary: '* \[Api set: 1.1\]'
+    summary: '\* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"CrossFunctionalFlowchart_Horizontal"'
   - name: crossFunctionalFlowchart_Vertical
-    uid: >-
-      visio!Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Vertical:member
+    uid: visio!Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Vertical:member
     package: visio!
-    summary: '* \[Api set: 1.1\]'
+    summary: '\* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"CrossFunctionalFlowchart_Vertical"'
   - name: network
     uid: visio!Visio.DataVisualizerDiagramType.network:member
     package: visio!
-    summary: '* \[Api set: 1.1\]'
+    summary: '\* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"Network"'
   - name: orgChart
     uid: visio!Visio.DataVisualizerDiagramType.orgChart:member
     package: visio!
-    summary: '* \[Api set: 1.1\]'
+    summary: '\* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"OrgChart"'
   - name: unknown
     uid: visio!Visio.DataVisualizerDiagramType.unknown:member
     package: visio!
-    summary: '* \[Api set: 1.1\]'
+    summary: '\* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     value: '"Unknown"'

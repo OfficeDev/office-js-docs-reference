@@ -4,10 +4,8 @@ uid: word!Word.PresetGradientType:enum
 package: word!
 fullName: Word.PresetGradientType
 summary: Specifies which predefined gradient to use to fill a shape.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       A metallic gradient resembling brass.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Brass"'
   - name: calmWater
     uid: word!Word.PresetGradientType.calmWater:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       A soft, tranquil gradient resembling calm water.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CalmWater"'
   - name: chrome
     uid: word!Word.PresetGradientType.chrome:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       A sleek, reflective chrome gradient.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Chrome"'
   - name: chromeII
     uid: word!Word.PresetGradientType.chromeII:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       A variation of the chrome gradient with alternate highlights.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ChromeII"'
   - name: daybreak
     uid: word!Word.PresetGradientType.daybreak:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       A light gradient representing the colors of daybreak.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Daybreak"'
   - name: desert
     uid: word!Word.PresetGradientType.desert:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       A warm, sandy gradient inspired by desert tones.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Desert"'
   - name: earlySunset
     uid: word!Word.PresetGradientType.earlySunset:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       A warm gradient resembling an early sunset.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EarlySunset"'
   - name: fire
     uid: word!Word.PresetGradientType.fire:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       A vivid gradient with fiery tones.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Fire"'
   - name: fog
     uid: word!Word.PresetGradientType.fog:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       A muted gradient with fog-like softness.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Fog"'
   - name: gold
     uid: word!Word.PresetGradientType.gold:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       A shiny, metallic gold gradient.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Gold"'
   - name: goldII
     uid: word!Word.PresetGradientType.goldII:member
@@ -97,7 +95,7 @@ fields:
     summary: |-
       A variation of the gold gradient with different tones.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"GoldII"'
   - name: horizon
     uid: word!Word.PresetGradientType.horizon:member
@@ -105,7 +103,7 @@ fields:
     summary: |-
       A gradient that mimics the colors of the horizon.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Horizon"'
   - name: lateSunset
     uid: word!Word.PresetGradientType.lateSunset:member
@@ -113,7 +111,7 @@ fields:
     summary: |-
       A deeper, richer gradient resembling a late sunset.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LateSunset"'
   - name: mahogany
     uid: word!Word.PresetGradientType.mahogany:member
@@ -121,17 +119,15 @@ fields:
     summary: |-
       A rich, reddish-brown gradient like mahogany wood.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mahogany"'
   - name: mixed
     uid: word!Word.PresetGradientType.mixed:member
     package: word!
-    summary: >-
-      Mixed gradient type. Used when multiple shapes with different preset
-      gradients are selected.
+    summary: |-
+      Mixed gradient type. Used when multiple shapes with different preset gradients are selected.
 
-
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: moss
     uid: word!Word.PresetGradientType.moss:member
@@ -139,7 +135,7 @@ fields:
     summary: |-
       A natural green gradient inspired by moss.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Moss"'
   - name: nightfall
     uid: word!Word.PresetGradientType.nightfall:member
@@ -147,7 +143,7 @@ fields:
     summary: |-
       A dark gradient evoking the colors of nightfall.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Nightfall"'
   - name: ocean
     uid: word!Word.PresetGradientType.ocean:member
@@ -155,7 +151,7 @@ fields:
     summary: |-
       A cool gradient reflecting ocean hues.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Ocean"'
   - name: parchment
     uid: word!Word.PresetGradientType.parchment:member
@@ -163,7 +159,7 @@ fields:
     summary: |-
       A warm, aged paper-like gradient.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Parchment"'
   - name: peacock
     uid: word!Word.PresetGradientType.peacock:member
@@ -171,7 +167,7 @@ fields:
     summary: |-
       A vibrant gradient with peacock feather colors.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Peacock"'
   - name: rainbow
     uid: word!Word.PresetGradientType.rainbow:member
@@ -179,7 +175,7 @@ fields:
     summary: |-
       A colorful gradient resembling a rainbow.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Rainbow"'
   - name: rainbowII
     uid: word!Word.PresetGradientType.rainbowII:member
@@ -187,7 +183,7 @@ fields:
     summary: |-
       A variation of the rainbow gradient with different color emphasis.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RainbowII"'
   - name: sapphire
     uid: word!Word.PresetGradientType.sapphire:member
@@ -195,7 +191,7 @@ fields:
     summary: |-
       A deep blue gradient inspired by sapphire.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Sapphire"'
   - name: silver
     uid: word!Word.PresetGradientType.silver:member
@@ -203,7 +199,7 @@ fields:
     summary: |-
       A smooth, metallic silver gradient.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Silver"'
   - name: wheat
     uid: word!Word.PresetGradientType.wheat:member
@@ -211,5 +207,5 @@ fields:
     summary: |-
       A light, golden gradient resembling wheat.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Wheat"'

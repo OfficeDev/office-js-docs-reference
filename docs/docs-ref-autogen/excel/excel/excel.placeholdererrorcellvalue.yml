@@ -3,13 +3,9 @@ name: Excel.PlaceholderErrorCellValue
 uid: excel!Excel.PlaceholderErrorCellValue:interface
 package: excel!
 fullName: Excel.PlaceholderErrorCellValue
-summary: >-
-  Represents the value of a cell containing a \#BUSY! error. This type of error
-  is used as a placeholder while the value of a cell is downloaded.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents the value of a cell containing a \#BUSY! error. This type of error is used as a placeholder while the value of a cell is downloaded.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,14 +14,9 @@ properties:
     uid: excel!Excel.PlaceholderErrorCellValue#basicType:member
     package: excel!
     fullName: basicType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a
-      cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,17 +27,9 @@ properties:
     uid: excel!Excel.PlaceholderErrorCellValue#basicValue:member
     package: excel!
     fullName: basicValue
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell
-      with this value. When accessed through a `valuesAsJson` property, this
-      string value aligns with the en-US locale. When accessed through a
-      `valuesAsJsonLocal` property, this string value aligns with the user's
-      display locale.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,51 +41,34 @@ properties:
     package: excel!
     fullName: errorType
     summary: Represents the type of `ErrorCellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'errorType?: ErrorCellValueType.placeholder | "Placeholder";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ErrorCellValueType.placeholder:member" /> |
-          "Placeholder"
+        type: <xref uid="excel!Excel.ErrorCellValueType.placeholder:member" /> | "Placeholder"
   - name: target
     uid: excel!Excel.PlaceholderErrorCellValue#target:member
     package: excel!
     fullName: target
-    summary: >-
-      `PlaceholderErrorCellValue` is used during processing, while data is
-      downloaded. The `target` property represents the data that is downloading,
-      the data for which the `PlaceholderErrorCellValue` object is a
-      placeholder.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: '`PlaceholderErrorCellValue` is used during processing, while data is downloaded. The `target` property represents the data that is downloading, the data for which the `PlaceholderErrorCellValue` object is a placeholder.'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'target: LinkedEntityCellValue | WebImageCellValue;'
       return:
-        type: >-
-          <xref uid="excel!Excel.LinkedEntityCellValue:interface" /> | <xref
-          uid="excel!Excel.WebImageCellValue:interface" />
+        type: <xref uid="excel!Excel.LinkedEntityCellValue:interface" /> | <xref uid="excel!Excel.WebImageCellValue:interface" />
   - name: type
     uid: excel!Excel.PlaceholderErrorCellValue#type:member
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

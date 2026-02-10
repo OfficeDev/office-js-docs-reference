@@ -4,32 +4,23 @@ uid: powerpoint!PowerPoint.Slide:class
 package: powerpoint!
 fullName: PowerPoint.Slide
 summary: Represents a single slide of a presentation.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
   // Reselects shapes that were saved previously.
-
   await PowerPoint.run(async (context) => {
     const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedSlideSelection[0]);
     await context.sync();
     slide1.setSelectedShapes(savedShapeSelection);
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -39,11 +30,8 @@ properties:
     package: powerpoint!
     fullName: background
     summary: Gets the background of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,11 +42,9 @@ properties:
     uid: powerpoint!PowerPoint.Slide#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,11 +56,8 @@ properties:
     package: powerpoint!
     fullName: customXmlParts
     summary: Returns a collection of custom XML parts in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,23 +69,15 @@ properties:
     package: powerpoint!
     fullName: hyperlinks
     summary: Returns a collection of hyperlinks in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.6](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/hyperlinks/manage-hyperlinks.yaml
 
       // Sets a hyperlink on the first selected shape.
-
       await PowerPoint.run(async (context) => {
         const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
         const shape: PowerPoint.Shape = context.presentation.getSelectedShapes().getItemAt(0).load("id,type");
@@ -123,9 +98,8 @@ properties:
           `Added link "${hyperlink.address}" (screen tip: "${hyperlink.screenTip}") to the first selected shape (ID: ${shape.id}, type: ${shape.type}).`,
         );
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,11 +111,8 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,14 +123,9 @@ properties:
     uid: powerpoint!PowerPoint.Slide#index:member
     package: powerpoint!
     fullName: index
-    summary: >-
-      Returns the zero-based index of the slide representing its position in the
-      presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Returns the zero-based index of the slide representing its position in the presentation.
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,11 +137,8 @@ properties:
     package: powerpoint!
     fullName: layout
     summary: Gets the layout of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,11 +150,8 @@ properties:
     package: powerpoint!
     fullName: shapes
     summary: Returns a collection of shapes in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,11 +163,8 @@ properties:
     package: powerpoint!
     fullName: slideMaster
     summary: Gets the `SlideMaster` object that represents the slide's default content.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,11 +176,8 @@ properties:
     package: powerpoint!
     fullName: tags
     summary: Returns a collection of tags in the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,11 +189,8 @@ properties:
     package: powerpoint!
     fullName: themeColorScheme
     summary: Returns the `ThemeColorScheme` of the slide.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,23 +202,16 @@ methods:
     uid: powerpoint!PowerPoint.Slide#applyLayout:member(1)
     package: powerpoint!
     fullName: applyLayout(slideLayout)
-    summary: >-
-      Applies the specified layout to the slide, changing its design and
-      structure according to the chosen layout.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Applies the specified layout to the slide, changing its design and structure according to the chosen layout.
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'applyLayout(slideLayout: PowerPoint.SlideLayout): void;'
       parameters:
         - id: slideLayout
-          description: >-
-            The layout to be applied to the slide. This is typically an instance
-            of a predefined layout from the slide master.
+          description: The layout to be applied to the slide. This is typically an instance of a predefined layout from the slide master.
           type: <xref uid="powerpoint!PowerPoint.SlideLayout:class" />
       return:
         type: void
@@ -276,26 +220,16 @@ methods:
     uid: powerpoint!PowerPoint.Slide#delete:member(1)
     package: powerpoint!
     fullName: delete()
-    summary: >-
-      Deletes the slide from the presentation. Does nothing if the slide doesn't
-      exist.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Deletes the slide from the presentation. Does nothing if the slide doesn't exist.
+    remarks: |-
+      \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
 
       // Deletes the selected slides.
-
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
@@ -307,9 +241,8 @@ methods:
           slide.delete();
         });
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,30 +254,19 @@ methods:
     uid: powerpoint!PowerPoint.Slide#exportAsBase64:member(1)
     package: powerpoint!
     fullName: exportAsBase64()
-    summary: >-
-      Exports the slide to its own presentation file, returned as Base64-encoded
-      data.
+    summary: |-
+      Exports the slide to its own presentation file, returned as Base64-encoded data.
 
-
-      Note: This method is optimized to export a single slide. Exporting
-      multiple slides can impact performance.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+      Note: This method is optimized to export a single slide. Exporting multiple slides can impact performance.
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
 
       // Exports current slide.
-
       await PowerPoint.run(async (context) => {
         const slide = context.presentation.getSelectedSlides().getItemAt(0);
         const slideBase64DataResult = slide.exportAsBase64();
@@ -358,9 +280,8 @@ methods:
 
         console.log("Slide was exported.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -372,28 +293,16 @@ methods:
     uid: powerpoint!PowerPoint.Slide#getImageAsBase64:member(1)
     package: powerpoint!
     fullName: getImageAsBase64(options)
-    summary: >-
-      Renders an image of the slide. The image is scaled to fit into the desired
-      dimensions. If width and height aren't specified, the true size of the
-      slide is used. If only one of either width or height is specified, the
-      other will be calculated to preserve aspect ratio.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Renders an image of the slide. The image is scaled to fit into the desired dimensions. If width and height aren't specified, the true size of the slide is used. If only one of either width or height is specified, the other will be calculated to preserve aspect ratio.
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/export-import-slide.yaml
 
       // Exports current slide.
-
       await PowerPoint.run(async (context) => {
         const slide = context.presentation.getSelectedSlides().getItemAt(0);
         const slideBase64DataResult = slide.exportAsBase64();
@@ -407,15 +316,12 @@ methods:
 
         console.log("Slide was exported.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getImageAsBase64(options?: PowerPoint.SlideGetImageOptions):
-        OfficeExtension.ClientResult<string>;
+      content: 'getImageAsBase64(options?: PowerPoint.SlideGetImageOptions): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: options
           description: Optional. Options to specify the desired size of the slide image.
@@ -427,23 +333,17 @@ methods:
     uid: powerpoint!PowerPoint.Slide#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.SlideLoadOptions):
-        PowerPoint.Slide;
+      content: 'load(options?: PowerPoint.Interfaces.SlideLoadOptions): PowerPoint.Slide;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface" />
+          type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.Slide:class" />
         description: ''
@@ -451,20 +351,16 @@ methods:
     uid: powerpoint!PowerPoint.Slide#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Slide;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.Slide:class" />
@@ -473,11 +369,9 @@ methods:
     uid: powerpoint!PowerPoint.Slide#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -488,11 +382,7 @@ methods:
                 }): PowerPoint.Slide;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -506,11 +396,8 @@ methods:
     package: powerpoint!
     fullName: moveTo(slideIndex)
     summary: Moves the slide to a new position within the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -526,26 +413,16 @@ methods:
     uid: powerpoint!PowerPoint.Slide#setSelectedShapes:member(1)
     package: powerpoint!
     fullName: setSelectedShapes(shapeIds)
-    summary: >-
-      Selects the specified shapes. Existing shape selection is replaced with
-      the new selection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Selects the specified shapes. Existing shape selection is replaced with the new selection.
+    remarks: |-
+      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
       // Reselects shapes that were saved previously.
-
       await PowerPoint.run(async (context) => {
         const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedSlideSelection[0]);
         await context.sync();
@@ -553,12 +430,9 @@ methods:
         await context.sync();
       });
 
-
       ...
 
-
       // Selects the first two shapes on slide 1.
-
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
@@ -577,18 +451,15 @@ methods:
         slide1.setSelectedShapes([shape1.id, shape2.id]);
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setSelectedShapes(shapeIds: string[]): void;'
       parameters:
         - id: shapeIds
-          description: >-
-            List of shape IDs to select in the slide. If the list is empty, the
-            selection is cleared.
+          description: List of shape IDs to select in the slide. If the list is empty, the selection is cleared.
           type: string[]
       return:
         type: void
@@ -597,16 +468,9 @@ methods:
     uid: powerpoint!PowerPoint.Slide#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `PowerPoint.Slide`
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `PowerPoint.Interfaces.SlideData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Slide` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

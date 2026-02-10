@@ -4,13 +4,11 @@ uid: office!Office.Slide:interface
 package: office!
 fullName: Office.Slide
 summary: >-
-  Represents a single slide in a PowerPoint presentation. This interface is used
-  as part of the [Office.SlideRange](xref:office!Office.SlideRange:interface)
-  object returned by  when called with
-  [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)<!--
-  -->.
+  Represents a single slide in a PowerPoint presentation. This interface is used as part of the
+  [Office.SlideRange](xref:office!Office.SlideRange:interface) object returned by  when called with
+  [Office.CoercionType.SlideRange](xref:office!Office.CoercionType.SlideRange:member)<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +19,7 @@ properties:
     fullName: id
     summary: Gets the unique ID of the slide.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +32,7 @@ properties:
     fullName: index
     summary: Gets the 1-based index of the slide within the presentation.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +45,7 @@ properties:
     fullName: title
     summary: Gets the title of the slide.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,17 +3,9 @@ name: PowerPoint.Interfaces.PresentationLoadOptions
 uid: powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PresentationLoadOptions
-summary: >-
-  The `Presentation` object is the top-level object with one or more slides that
-  contain the contents of the presentation. To learn more about the PowerPoint
-  object model, see [PowerPoint JavaScript object
-  model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
-  -->.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+summary: The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation. To learn more about the PowerPoint object model, see [PowerPoint JavaScript object model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!-- -->.
+remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,12 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,11 +28,8 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the ID of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,30 +41,21 @@ properties:
     package: powerpoint!
     fullName: properties
     summary: Gets the properties of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'properties?: PowerPoint.Interfaces.DocumentPropertiesLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface"
-          />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.DocumentPropertiesLoadOptions:interface" />
   - name: title
     uid: powerpoint!PowerPoint.Interfaces.PresentationLoadOptions#title:member
     package: powerpoint!
     fullName: title
     summary: Returns the title of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

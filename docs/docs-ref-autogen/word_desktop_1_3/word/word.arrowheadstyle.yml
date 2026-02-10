@@ -4,10 +4,8 @@ uid: word!Word.ArrowheadStyle:enum
 package: word!
 fullName: Word.ArrowheadStyle
 summary: Specifies the style of the arrowhead at the end of a line.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents a diamond arrowhead style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Diamond"'
   - name: mixed
     uid: word!Word.ArrowheadStyle.mixed:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents a mixed arrowhead style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: none
     uid: word!Word.ArrowheadStyle.none:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Represents no arrowhead.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: open
     uid: word!Word.ArrowheadStyle.open:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Represents an open arrowhead style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Open"'
   - name: oval
     uid: word!Word.ArrowheadStyle.oval:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Represents an oval arrowhead style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Oval"'
   - name: stealth
     uid: word!Word.ArrowheadStyle.stealth:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Represents a stealth arrowhead style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Stealth"'
   - name: triangle
     uid: word!Word.ArrowheadStyle.triangle:member
@@ -65,5 +63,5 @@ fields:
     summary: |-
       Represents a triangle arrowhead style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Triangle"'

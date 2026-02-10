@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.SlideBackgroundGradientFillData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundGradientFillData
-summary: >-
-  An interface describing the data returned by calling
-  `slideBackgroundGradientFill.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideBackgroundGradientFill.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

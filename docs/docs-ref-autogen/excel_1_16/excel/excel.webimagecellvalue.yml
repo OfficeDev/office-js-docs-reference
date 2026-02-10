@@ -3,13 +3,9 @@ name: Excel.WebImageCellValue
 uid: excel!Excel.WebImageCellValue:interface
 package: excel!
 fullName: Excel.WebImageCellValue
-summary: >-
-  Represents the value of a cell containing an image downloaded from the
-  internet.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents the value of a cell containing an image downloaded from the internet.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,27 +14,16 @@ properties:
     uid: excel!Excel.WebImageCellValue#address:member
     package: excel!
     fullName: address
-    summary: >-
-      Represents the URL from which the image will be downloaded. This image
-      must be hosted on a server that supports HTTPS.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the URL from which the image will be downloaded. This image must be hosted on a server that supports HTTPS.
+    remarks: |-
+      \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
-
-
-      // This function retrieves the image URL from the selected cell and opens
-      that image in a new browser tab.
-
+      // This function retrieves the image URL from the selected cell and opens that image in a new browser tab.
       await Excel.run(async (context) => {
         // Load the active cell information.
         const activeCell = context.workbook.getActiveCell();
@@ -58,9 +43,8 @@ properties:
         // Open the image URL in a new browser tab.
         const tab = window.open(webImageData.address, "_blank");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,14 +55,9 @@ properties:
     uid: excel!Excel.WebImageCellValue#altText:member
     package: excel!
     fullName: altText
-    summary: >-
-      Represents the alternate text that can be used in accessibility scenarios
-      to describe what the image represents.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,14 +68,9 @@ properties:
     uid: excel!Excel.WebImageCellValue#attribution:member
     package: excel!
     fullName: attribution
-    summary: >-
-      Represents attribution information to describe the source and license
-      requirements for using this image.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents attribution information to describe the source and license requirements for using this image.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,14 +81,9 @@ properties:
     uid: excel!Excel.WebImageCellValue#basicType:member
     package: excel!
     fullName: basicType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a
-      cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,17 +94,9 @@ properties:
     uid: excel!Excel.WebImageCellValue#basicValue:member
     package: excel!
     fullName: basicValue
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell
-      with this value. When accessed through a `valuesAsJson` property, this
-      string value aligns with the en-US locale. When accessed through a
-      `valuesAsJsonLocal` property, this string value aligns with the user's
-      display locale.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,15 +107,9 @@ properties:
     uid: excel!Excel.WebImageCellValue#provider:member
     package: excel!
     fullName: provider
-    summary: >-
-      Represents information that describes the entity or individual who
-      provided the image. This information can be used for branding in image
-      cards.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents information that describes the entity or individual who provided the image. This information can be used for branding in image cards.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,14 +120,9 @@ properties:
     uid: excel!Excel.WebImageCellValue#relatedImagesAddress:member
     package: excel!
     fullName: relatedImagesAddress
-    summary: >-
-      Represents the URL of a webpage with images that are considered related to
-      this `WebImageCellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,23 +134,15 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-web-image.yaml
 
       // This function inserts a web image into the currently selected cell.
-
       await Excel.run(async (context) => {
         // Retrieve image data from the task pane and then clear the input fields.
         const imageUrl = (document.getElementById("url") as HTMLInputElement).value;
@@ -229,9 +171,8 @@ properties:
 
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

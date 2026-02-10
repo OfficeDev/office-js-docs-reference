@@ -4,10 +4,8 @@ uid: word!Word.LineFormatStyle:enum
 package: word!
 fullName: Word.LineFormatStyle
 summary: Specifies the style for a line.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents a mixed line style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: single
     uid: word!Word.LineFormatStyle.single:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents a single line style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Single"'
   - name: thickBetweenThin
     uid: word!Word.LineFormatStyle.thickBetweenThin:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Represents a thick line between two thin lines style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: word!Word.LineFormatStyle.thickThin:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Represents a thick-thin line style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThickThin"'
   - name: thinThick
     uid: word!Word.LineFormatStyle.thinThick:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Represents a thin-thick line style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThick"'
   - name: thinThin
     uid: word!Word.LineFormatStyle.thinThin:member
@@ -57,5 +55,5 @@ fields:
     summary: |-
       Represents a thin-thin line style.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ThinThin"'

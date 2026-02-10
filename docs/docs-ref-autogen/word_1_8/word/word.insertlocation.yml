@@ -4,29 +4,17 @@ uid: word!Word.InsertLocation:enum
 package: word!
 fullName: Word.InsertLocation
 summary: Represents the insertion location type.
-remarks: >-
-  \[ [API set: WordApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
-
-  To be used with an API call, such as `obj.insertSomething(newStuff,
-  location);`<!-- -->. If the location is `before` or `after`<!-- -->, the new
-  content will be outside of the modified object. If the location is `start` or
-  `end`<!-- -->, the new content will be included as part of the modified
-  object.
-
+  To be used with an API call, such as `obj.insertSomething(newStuff, location);`<!-- -->. If the location is `before` or `after`<!-- -->, the new content will be outside of the modified object. If the location is `start` or `end`<!-- -->, the new content will be included as part of the modified object.
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
 
   // Inserts a section without an associated page break.
-
   await Word.run(async (context) => {
     const body: Word.Body = context.document.body;
     body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
@@ -35,9 +23,8 @@ remarks: >-
 
     console.log("Inserted section without an associated page break.");
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -47,7 +34,7 @@ fields:
     summary: |-
       Add content after the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"After"'
   - name: before
     uid: word!Word.InsertLocation.before:member
@@ -55,7 +42,7 @@ fields:
     summary: |-
       Add content before the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Before"'
   - name: end
     uid: word!Word.InsertLocation.end:member
@@ -63,7 +50,7 @@ fields:
     summary: |-
       Append content to the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: replace
     uid: word!Word.InsertLocation.replace:member
@@ -71,7 +58,7 @@ fields:
     summary: |-
       Replace the contents of the current object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Replace"'
   - name: start
     uid: word!Word.InsertLocation.start:member
@@ -79,5 +66,5 @@ fields:
     summary: |-
       Prepend content to the contents of the calling object.
 
-      * \[Api set: WordApi 1.1\]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'

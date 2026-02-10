@@ -4,10 +4,8 @@ uid: word!Word.StatisticType:enum
 package: word!
 fullName: Word.StatisticType
 summary: Document statistic types.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Characters in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Characters"'
   - name: charactersWithSpaces
     uid: word!Word.StatisticType.charactersWithSpaces:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Characters including spaces.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CharactersWithSpaces"'
   - name: farEastCharacters
     uid: word!Word.StatisticType.farEastCharacters:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Far East (DBCS) characters.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FarEastCharacters"'
   - name: lines
     uid: word!Word.StatisticType.lines:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Lines in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Lines"'
   - name: pages
     uid: word!Word.StatisticType.pages:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Pages in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Pages"'
   - name: paragraphs
     uid: word!Word.StatisticType.paragraphs:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Paragraphs in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraphs"'
   - name: words
     uid: word!Word.StatisticType.words:member
@@ -65,5 +63,5 @@ fields:
     summary: |-
       Words in the document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Words"'

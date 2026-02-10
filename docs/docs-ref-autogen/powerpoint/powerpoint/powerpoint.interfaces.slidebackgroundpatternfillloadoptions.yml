@@ -1,33 +1,22 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions
-uid: >-
-  powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions:interface
+uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions
-summary: >-
-  Represents
-  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
-  pattern fill properties.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+summary: Represents [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) pattern fill properties.
+remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#$all:member
+    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,18 +24,12 @@ properties:
       return:
         type: boolean
   - name: backgroundColor
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#backgroundColor:member
+    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#backgroundColor:member
     package: powerpoint!
     fullName: backgroundColor
-    summary: >-
-      Specifies the background color in HTML color format (e.g., "\#FFFFFF" or
-      "white").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the background color in HTML color format (e.g., "\#FFFFFF" or "white").
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,18 +37,12 @@ properties:
       return:
         type: boolean
   - name: foregroundColor
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#foregroundColor:member
+    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#foregroundColor:member
     package: powerpoint!
     fullName: foregroundColor
-    summary: >-
-      Specifies the foreground color in HTML color format (e.g., "\#FFA500" or
-      "orange").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the foreground color in HTML color format (e.g., "\#FFA500" or "orange").
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,16 +50,12 @@ properties:
       return:
         type: boolean
   - name: pattern
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#pattern:member
+    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillLoadOptions#pattern:member
     package: powerpoint!
     fullName: pattern
     summary: Specifies the pattern type.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

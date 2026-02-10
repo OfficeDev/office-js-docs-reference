@@ -4,10 +4,8 @@ uid: word!Word.MergeTarget:enum
 package: word!
 fullName: Word.MergeTarget
 summary: Specifies the target document for merge operations.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents merging into the current document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Current"'
   - name: new
     uid: word!Word.MergeTarget.new:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents merging into a new document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"New"'
   - name: selected
     uid: word!Word.MergeTarget.selected:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Represents merging into the selected document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Selected"'

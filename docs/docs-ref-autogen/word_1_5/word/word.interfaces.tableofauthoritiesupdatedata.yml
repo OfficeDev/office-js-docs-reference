@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.TableOfAuthoritiesUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesUpdateData
 summary: >-
-  An interface for updating data on the `TableOfAuthorities` object, for use in
-  `tableOfAuthorities.set({ ... })`<!-- -->.
+  An interface for updating data on the `TableOfAuthorities` object, for use in `tableOfAuthorities.set({ ... })`<!--
+  -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

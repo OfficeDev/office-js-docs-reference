@@ -4,10 +4,10 @@ uid: onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.SectionGroupCollectionUpdateData
 summary: >-
-  An interface for updating data on the `SectionGroupCollection` object, for use
-  in `sectionGroupCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the `SectionGroupCollection` object, for use in `sectionGroupCollection.set({ ...
+  })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

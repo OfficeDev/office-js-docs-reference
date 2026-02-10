@@ -3,16 +3,9 @@ name: Excel.Workbook
 uid: excel!Excel.Workbook:class
 package: excel!
 fullName: Excel.Workbook
-summary: >-
-  Workbook is the top level object which contains related workbook objects such
-  as worksheets, tables, and ranges. To learn more about the workbook object
-  model, read [Work with workbooks using the Excel JavaScript
-  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!--
-  -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,10 +15,8 @@ properties:
     package: excel!
     fullName: application
     summary: Represents the Excel application instance that contains this workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,10 +28,8 @@ properties:
     package: excel!
     fullName: autoSave
     summary: Specifies if the workbook is in AutoSave mode.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,10 +41,8 @@ properties:
     package: excel!
     fullName: bindings
     summary: Represents a collection of bindings that are part of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,10 +54,8 @@ properties:
     package: excel!
     fullName: calculationEngineVersion
     summary: Returns a number about the version of Excel Calculation Engine.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,14 +66,9 @@ properties:
     uid: excel!Excel.Workbook#chartDataPointTrack:member
     package: excel!
     fullName: chartDataPointTrack
-    summary: >-
-      True if all charts in the workbook are tracking the actual data points to
-      which they are attached. False if the charts track the index of the data
-      points.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: True if all charts in the workbook are tracking the actual data points to which they are attached. False if the charts track the index of the data points.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,11 +80,8 @@ properties:
     package: excel!
     fullName: comments
     summary: Represents a collection of comments associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,11 +92,9 @@ properties:
     uid: excel!Excel.Workbook#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,10 +106,8 @@ properties:
     package: excel!
     fullName: customXmlParts
     summary: Represents the collection of custom XML parts contained by this workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,10 +119,8 @@ properties:
     package: excel!
     fullName: dataConnections
     summary: Represents all data connections in the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,13 +131,9 @@ properties:
     uid: excel!Excel.Workbook#functions:member
     package: excel!
     fullName: functions
-    summary: >-
-      Represents a collection of worksheet functions that can be used for
-      computation.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents a collection of worksheet functions that can be used for computation.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,14 +144,9 @@ properties:
     uid: excel!Excel.Workbook#isDirty:member
     package: excel!
     fullName: isDirty
-    summary: >-
-      Specifies if changes have been made since the workbook was last saved. You
-      can set this property to `true` if you want to close a modified workbook
-      without either saving it or being prompted to save it.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies if changes have been made since the workbook was last saved. You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,10 +158,8 @@ properties:
     package: excel!
     fullName: name
     summary: Gets the workbook name.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,13 +170,9 @@ properties:
     uid: excel!Excel.Workbook#names:member
     package: excel!
     fullName: names
-    summary: >-
-      Represents a collection of workbook-scoped named items (named ranges and
-      constants).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents a collection of workbook-scoped named items (named ranges and constants).
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,19 +184,13 @@ properties:
     package: excel!
     fullName: pivotTables
     summary: Represents a collection of PivotTables associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
 
       await Excel.run(async (context) => {
         // Get the names of all the PivotTables in the workbook.
@@ -254,9 +204,8 @@ properties:
           console.log(`\t${pivotTable.name}`);
         });
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,11 +217,8 @@ properties:
     package: excel!
     fullName: pivotTableStyles
     summary: Represents a collection of PivotTableStyles associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -284,10 +230,8 @@ properties:
     package: excel!
     fullName: previouslySaved
     summary: Specifies if the workbook has ever been saved locally or online.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,19 +243,13 @@ properties:
     package: excel!
     fullName: properties
     summary: Gets the workbook properties.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
 
       await Excel.run(async (context) => {
           let titleValue = "Excel document properties API";
@@ -337,9 +275,8 @@ properties:
 
           console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -351,10 +288,8 @@ properties:
     package: excel!
     fullName: protection
     summary: Returns the protection object for a workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -366,11 +301,8 @@ properties:
     package: excel!
     fullName: queries
     summary: Returns a collection of Power Query queries that are part of the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -382,10 +314,8 @@ properties:
     package: excel!
     fullName: readOnly
     summary: Returns `true` if the workbook is open in read-only mode.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -397,10 +327,8 @@ properties:
     package: excel!
     fullName: settings
     summary: Represents a collection of settings associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -412,11 +340,8 @@ properties:
     package: excel!
     fullName: slicers
     summary: Represents a collection of slicers associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -428,11 +353,8 @@ properties:
     package: excel!
     fullName: slicerStyles
     summary: Represents a collection of SlicerStyles associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -444,19 +366,13 @@ properties:
     package: excel!
     fullName: styles
     summary: Represents a collection of styles associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
 
       await Excel.run(async (context) => {
           let styles = context.workbook.styles;
@@ -478,9 +394,8 @@ properties:
 
           console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -492,10 +407,8 @@ properties:
     package: excel!
     fullName: tables
     summary: Represents a collection of tables associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -507,11 +420,8 @@ properties:
     package: excel!
     fullName: tableStyles
     summary: Represents a collection of TableStyles associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -523,11 +433,8 @@ properties:
     package: excel!
     fullName: timelineStyles
     summary: Represents a collection of TimelineStyles associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -538,14 +445,9 @@ properties:
     uid: excel!Excel.Workbook#usePrecisionAsDisplayed:member
     package: excel!
     fullName: usePrecisionAsDisplayed
-    summary: >-
-      True if calculations in this workbook will be done using only the
-      precision of the numbers as they're displayed. Data will permanently lose
-      accuracy when switching this property from `false` to `true`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: True if calculations in this workbook will be done using only the precision of the numbers as they're displayed. Data will permanently lose accuracy when switching this property from `false` to `true`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -557,10 +459,8 @@ properties:
     package: excel!
     fullName: worksheets
     summary: Represents a collection of worksheets associated with the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -573,27 +473,19 @@ methods:
     package: excel!
     fullName: close(closeBehavior)
     summary: Close current workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
 
       await Excel.run(async (context) => {
           context.workbook.close(Excel.CloseBehavior.save);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -610,11 +502,8 @@ methods:
     package: excel!
     fullName: close(closeBehavior)
     summary: Close current workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -631,19 +520,13 @@ methods:
     package: excel!
     fullName: getActiveCell()
     summary: Gets the currently active cell from the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
 
       await Excel.run(async (context) => {
 
@@ -655,9 +538,8 @@ methods:
           
           console.log("The active cell is " + activeCell.address);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -669,13 +551,9 @@ methods:
     uid: excel!Excel.Workbook#getActiveChart:member(1)
     package: excel!
     fullName: getActiveChart()
-    summary: >-
-      Gets the currently active chart in the workbook. If there is no active
-      chart, an `ItemNotFound` exception is thrown.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is thrown.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -687,17 +565,9 @@ methods:
     uid: excel!Excel.Workbook#getActiveChartOrNullObject:member(1)
     package: excel!
     fullName: getActiveChartOrNullObject()
-    summary: >-
-      Gets the currently active chart in the workbook. If there is no active
-      chart, then this method returns an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -709,14 +579,9 @@ methods:
     uid: excel!Excel.Workbook#getActiveSlicer:member(1)
     package: excel!
     fullName: getActiveSlicer()
-    summary: >-
-      Gets the currently active slicer in the workbook. If there is no active
-      slicer, an `ItemNotFound` exception is thrown.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -728,18 +593,9 @@ methods:
     uid: excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)
     package: excel!
     fullName: getActiveSlicerOrNullObject()
-    summary: >-
-      Gets the currently active slicer in the workbook. If there is no active
-      slicer, then this method returns an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Gets the currently active slicer in the workbook. If there is no active slicer, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -751,50 +607,35 @@ methods:
     uid: excel!Excel.Workbook#getIsActiveCollabSession:member(1)
     package: excel!
     fullName: getIsActiveCollabSession()
-    summary: >-
-      Returns `true` if the workbook is being edited by multiple users (through
-      co-authoring). Please be aware there might be some delay between when the
-      workbook status changes and when the changes are reflected on the result
-      of the method.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Returns `true` if the workbook is being edited by multiple users (through co-authoring). Please be aware there might be some delay between when the workbook status changes and when the changes are reflected on the result of the method.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;boolean&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
         description: ''
   - name: getSelectedRange()
     uid: excel!Excel.Workbook#getSelectedRange:member(1)
     package: excel!
     fullName: getSelectedRange()
-    summary: >-
-      Gets the currently selected single range from the workbook. If there are
-      multiple ranges selected, this method will throw an error.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
       await Excel.run(async (context) => { 
           const selectedRange = context.workbook.getSelectedRange();
           selectedRange.load('address');
           await context.sync();
           console.log(selectedRange.address);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -806,23 +647,14 @@ methods:
     uid: excel!Excel.Workbook#getSelectedRanges:member(1)
     package: excel!
     fullName: getSelectedRanges()
-    summary: >-
-      Gets the currently selected one or more ranges from the workbook. Unlike
-      `getSelectedRange()`<!-- -->, this method returns a `RangeAreas` object
-      that represents all the selected ranges.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the currently selected one or more ranges from the workbook. Unlike `getSelectedRange()`<!-- -->, this method returns a `RangeAreas` object that represents all the selected ranges.
+    remarks: |-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
 
       await Excel.run(async (context) => {
 
@@ -831,9 +663,8 @@ methods:
 
           await context.sync();
       })
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -845,43 +676,23 @@ methods:
     uid: excel!Excel.Workbook#insertWorksheetsFromBase64:member(1)
     package: excel!
     fullName: insertWorksheetsFromBase64(base64File, options)
-    summary: >-
-      Inserts the specified worksheets from a source workbook into the current
-      workbook.
+    summary: |-
+      Inserts the specified worksheets from a source workbook into the current workbook.
 
+      The `extensionHardening` Windows registry key affects this API. The file extension defined by the `base64File` param must match the real file type of the inserted file. If `extensionHardening` is set to deny mismatches and the file extension does not match the real file type, this API throws the following error: "This operation is not allowed due to the extension hardening policy."
+    remarks: |-
+      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
-      The `extensionHardening` Windows registry key affects this API. The file
-      extension defined by the `base64File` param must match the real file type
-      of the inserted file. If `extensionHardening` is set to deny mismatches
-      and the file extension does not match the real file type, this API throws
-      the following error: "This operation is not allowed due to the extension
-      hardening policy."
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
-
-      This API is currently only supported for Office on Windows, Mac, and the
-      web. In Excel on the web, this API doesn't support inserting charts,
-      comments, PivotTables, or slicers.
-
+      This API is currently only supported for Office on Windows, Mac, and the web. In Excel on the web, this API doesn't support inserting charts, comments, PivotTables, or slicers.
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
 
       // Retrieve the file and set up an HTML FileReader element. 
-
       const myFile = document.getElementById("file") as HTMLInputElement;
-
       const reader = new FileReader();
-
 
       reader.onload = (event) => {
           // Remove the metadata before the Base64-encoded string.
@@ -889,15 +700,10 @@ methods:
           externalWorkbook = reader.result.toString().substr(startIndex + 7);
       };
 
-
-      // Read the file as a data URL so that we can parse the Base64-encoded
-      string.
-
+      // Read the file as a data URL so that we can parse the Base64-encoded string.
       reader.readAsDataURL(myFile.files[0]);
 
-
       ...
-
 
       await Excel.run(async (context) => {
           // Retrieve the source workbook.
@@ -914,42 +720,29 @@ methods:
           workbook.insertWorksheetsFromBase64(externalWorkbook, options);
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertWorksheetsFromBase64(base64File: string, options?:
-        Excel.InsertWorksheetOptions): OfficeExtension.ClientResult<string[]>;
+      content: 'insertWorksheetsFromBase64(base64File: string, options?: Excel.InsertWorksheetOptions): OfficeExtension.ClientResult<string[]>;'
       parameters:
         - id: base64File
-          description: >-
-            Required. The Base64-encoded string representing the source workbook
-            file.
+          description: Required. The Base64-encoded string representing the source workbook file.
           type: string
         - id: options
-          description: >-
-            Optional. The options that define which worksheets to insert and
-            where in the workbook the new worksheets will be inserted. By
-            default, all the worksheets from the source workbook are inserted at
-            the end of the current workbook.
+          description: Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
           type: <xref uid="excel!Excel.InsertWorksheetOptions:interface" />
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: An array of IDs corresponding to each newly inserted worksheet.
   - name: load(options)
     uid: excel!Excel.Workbook#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -965,20 +758,16 @@ methods:
     uid: excel!Excel.Workbook#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Workbook:class" />
@@ -987,11 +776,9 @@ methods:
     uid: excel!Excel.Workbook#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1002,11 +789,7 @@ methods:
                 }): Excel.Workbook;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -1020,36 +803,26 @@ methods:
     package: excel!
     fullName: save(saveBehavior)
     summary: Save current workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
 
       await Excel.run(async (context) => {
           context.workbook.save(Excel.SaveBehavior.save);
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'save(saveBehavior?: Excel.SaveBehavior): void;'
       parameters:
         - id: saveBehavior
-          description: >-
-            The save behavior must be "Save" or "Prompt". Default value is
-            "Save".
+          description: The save behavior must be "Save" or "Prompt". Default value is "Save".
           type: <xref uid="excel!Excel.SaveBehavior:enum" />
       return:
         type: void
@@ -1059,20 +832,15 @@ methods:
     package: excel!
     fullName: save(saveBehavior)
     summary: Save current workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'save(saveBehavior?: "Save" | "Prompt"): void;'
       parameters:
         - id: saveBehavior
-          description: >-
-            The save behavior must be "Save" or "Prompt". Default value is
-            "Save".
+          description: The save behavior must be "Save" or "Prompt". Default value is "Save".
           type: '"Save" | "Prompt"'
       return:
         type: void
@@ -1081,29 +849,19 @@ methods:
     uid: excel!Excel.Workbook#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.WorkbookUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -1112,11 +870,9 @@ methods:
     uid: excel!Excel.Workbook#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1132,16 +888,9 @@ methods:
     uid: excel!Excel.Workbook#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.Workbook` object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Workbook` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1154,35 +903,23 @@ events:
     uid: excel!Excel.Workbook#onActivated:member
     package: excel!
     fullName: onActivated
-    summary: >-
-      Occurs when the workbook is activated. Note: This event will not fire when
-      the workbook is opened.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'Occurs when the workbook is activated. Note: This event will not fire when the workbook is opened.'
+    remarks: |-
+      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
 
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
-
-
-      async function workbookActivated(event: Excel.WorkbookActivatedEventArgs)
-      {
+      async function workbookActivated(event: Excel.WorkbookActivatedEventArgs) {
         await Excel.run(async (context) => {
           // Callback function for when the workbook is activated.
           console.log("The workbook was activated.");
         });
       }
 
-
       ...
-
 
       await Excel.run(async (context) => {
         const workbook = context.workbook;
@@ -1193,56 +930,38 @@ events:
         await context.sync();
         console.log("Added event handler for workbook activated.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onActivated:
-        OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
   - name: onAutoSaveSettingChanged
     uid: excel!Excel.Workbook#onAutoSaveSettingChanged:member
     package: excel!
     fullName: onAutoSaveSettingChanged
     summary: Occurs when the AutoSave setting is changed on the workbook.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onAutoSaveSettingChanged:
-        OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;
+      content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface"
-          />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: excel!Excel.Workbook#onSelectionChanged:member
     package: excel!
     fullName: onSelectionChanged
     summary: Occurs when the selection in the document is changed.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
+        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

@@ -3,25 +3,16 @@ name: Word.CritiqueColorScheme
 uid: word!Word.CritiqueColorScheme:enum
 package: word!
 fullName: Word.CritiqueColorScheme
-summary: >-
-  Represents the color scheme of a critique in the document, affecting underline
-  and highlight.
-remarks: >-
-  \[ [API set: WordApi
-  1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the color scheme of a critique in the document, affecting underline and highlight.
+remarks: |-
+  \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
 
   // Adds annotations to the selected paragraph.
-
   await Word.run(async (context) => {
     const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
     const options: Word.CritiquePopupOptions = {
@@ -70,9 +61,8 @@ remarks: >-
 
     console.log("Annotations inserted:", annotationIds.value);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -82,7 +72,7 @@ fields:
     summary: |-
       Berry color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Berry"'
   - name: blue
     uid: word!Word.CritiqueColorScheme.blue:member
@@ -90,7 +80,7 @@ fields:
     summary: |-
       Blue color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Blue"'
   - name: green
     uid: word!Word.CritiqueColorScheme.green:member
@@ -98,7 +88,7 @@ fields:
     summary: |-
       Green color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Green"'
   - name: lavender
     uid: word!Word.CritiqueColorScheme.lavender:member
@@ -106,7 +96,7 @@ fields:
     summary: |-
       Lavender color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Lavender"'
   - name: red
     uid: word!Word.CritiqueColorScheme.red:member
@@ -114,5 +104,5 @@ fields:
     summary: |-
       Red color.
 
-      * \[Api set: WordApi 1.7\]
+      \* \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Red"'

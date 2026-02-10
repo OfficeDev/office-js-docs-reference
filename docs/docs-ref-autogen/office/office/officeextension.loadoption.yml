@@ -3,51 +3,29 @@ name: OfficeExtension.LoadOption
 uid: office!OfficeExtension.LoadOption:interface
 package: office!
 fullName: OfficeExtension.LoadOption
-summary: >-
-  Specifies which properties of an object should be loaded. This load happens
-  when the sync() method is executed. This synchronizes the states between
-  Office objects and corresponding JavaScript proxy objects.
-remarks: >-
-  For Word, the preferred method for specifying the properties and paging
-  information is by using a string literal. The first two examples show the
-  preferred way to request the text and font size properties for paragraphs in a
-  paragraph collection:
-
+summary: Specifies which properties of an object should be loaded. This load happens when the sync() method is executed. This synchronizes the states between Office objects and corresponding JavaScript proxy objects.
+remarks: |-
+  For Word, the preferred method for specifying the properties and paging information is by using a string literal. The first two examples show the preferred way to request the text and font size properties for paragraphs in a paragraph collection:
 
   `context.load(paragraphs, 'text, font/size');`
 
-
   `paragraphs.load('text, font/size');`
-
 
   Here is a similar example using object notation (includes paging):
 
+  `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
-  `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50,
-  skip: 0});`
+  `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
-
-  `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip:
-  0});`
-
-
-  Note that if we don't specify the specific properties on the font object in
-  the select statement, the expand statement by itself would indicate that all
-  of the font properties are loaded.
-
+  Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would indicate that all of the font properties are loaded.
 
   #### Examples
 
-
   ```TypeScript
-
   // This example shows how to get the paragraphs in the Word document
-
   // along with their text and font size properties.
 
-
   // Run a batch operation against the Word object model.
-
   Word.run(function (context) {
       // Create a proxy object for the paragraphs collection.
       const paragraphs = context.document.body.paragraphs;
@@ -63,16 +41,14 @@ remarks: >-
           // Insert code that works with the paragraphs loaded by context.load().
       })
   })
-
   .catch(function (error) {
       console.log('Error: ' + JSON.stringify(error));
       if (error instanceof OfficeExtension.Error) {
           console.log('Debug info: ' + JSON.stringify(error.debugInfo));
       }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -81,11 +57,9 @@ properties:
     uid: office!OfficeExtension.LoadOption#expand:member
     package: office!
     fullName: expand
-    summary: >-
-      A comma-delimited string, or array of strings, that specifies the
-      navigation properties to load.
+    summary: A comma-delimited string, or array of strings, that specifies the navigation properties to load.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,11 +70,9 @@ properties:
     uid: office!OfficeExtension.LoadOption#select:member
     package: office!
     fullName: select
-    summary: >-
-      A comma-delimited string, or array of strings, that specifies the
-      properties to load.
+    summary: A comma-delimited string, or array of strings, that specifies the properties to load.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,13 +83,9 @@ properties:
     uid: office!OfficeExtension.LoadOption#skip:member
     package: office!
     fullName: skip
-    summary: >-
-      Only usable on collection types. Specifies the number of items in the
-      collection that are to be skipped and not included in the result. If top
-      is specified, the result set will start after skipping the specified
-      number of items.
+    summary: Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result. If top is specified, the result set will start after skipping the specified number of items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,20 +96,13 @@ properties:
     uid: office!OfficeExtension.LoadOption#top:member
     package: office!
     fullName: top
-    summary: >-
-      Only usable on collection types. Specifies the maximum number of
-      collection items that can be included in the result.
-    remarks: >-
+    summary: Only usable on collection types. Specifies the maximum number of collection items that can be included in the result.
+    remarks: |-
       #### Examples
 
-
       ```TypeScript
-
-      // This OneNote example shows how to get the page title and indentation
-      level
-
+      // This OneNote example shows how to get the page title and indentation level
       // of the top five pages in the current section.
-
       OneNote.run(function (context) {
           // Get the pages in the current section.
           const pages = context.application.getActiveSection().pages;
@@ -164,7 +125,7 @@ properties:
               })
           });
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

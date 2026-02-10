@@ -4,20 +4,18 @@ uid: excel!Excel.ChartAxisScaleType:enum
 package: excel!
 fullName: Excel.ChartAxisScaleType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: linear
     uid: excel!Excel.ChartAxisScaleType.linear:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.7\]'
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Linear"'
   - name: logarithmic
     uid: excel!Excel.ChartAxisScaleType.logarithmic:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.7\]'
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Logarithmic"'

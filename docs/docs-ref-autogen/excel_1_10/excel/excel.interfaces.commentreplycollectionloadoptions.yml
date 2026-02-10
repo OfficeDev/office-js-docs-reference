@@ -4,10 +4,8 @@ uid: excel!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
 summary: Represents a collection of comment reply objects that are part of the comment.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,18 +24,12 @@ properties:
       return:
         type: boolean
   - name: authorEmail
-    uid: >-
-      excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member
+    uid: excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member
     package: excel!
     fullName: authorEmail
-    summary: >-
-      For EACH ITEM in the collection: Gets the email of the comment reply's
-      author.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: Gets the email of the comment reply''s author.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,14 +40,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorName:member
     package: excel!
     fullName: authorName
-    summary: >-
-      For EACH ITEM in the collection: Gets the name of the comment reply's
-      author.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: Gets the name of the comment reply''s author.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,14 +53,9 @@ properties:
     uid: excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#content:member
     package: excel!
     fullName: content
-    summary: >-
-      For EACH ITEM in the collection: The comment reply's content. The string
-      is plain text.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: The comment reply''s content. The string is plain text.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,18 +63,12 @@ properties:
       return:
         type: boolean
   - name: creationDate
-    uid: >-
-      excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member
+    uid: excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member
     package: excel!
     fullName: creationDate
-    summary: >-
-      For EACH ITEM in the collection: Gets the creation time of the comment
-      reply.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'For EACH ITEM in the collection: Gets the creation time of the comment reply.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,11 +80,8 @@ properties:
     package: excel!
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the comment reply identifier.'
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

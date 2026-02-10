@@ -4,10 +4,8 @@ uid: word!Word.ExportRange:enum
 package: word!
 fullName: Word.ExportRange
 summary: Specifies the range to export from a Word document.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Exports the entire document.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AllDocument"'
   - name: currentPage
     uid: word!Word.ExportRange.currentPage:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Exports the current page.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CurrentPage"'
   - name: fromTo
     uid: word!Word.ExportRange.fromTo:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Exports a specific range of pages.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FromTo"'
   - name: selection
     uid: word!Word.ExportRange.selection:member
@@ -41,5 +39,5 @@ fields:
     summary: |-
       Exports the current selection.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Selection"'

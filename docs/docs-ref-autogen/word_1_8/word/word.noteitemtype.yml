@@ -4,23 +4,15 @@ uid: word!Word.NoteItemType:enum
 package: word!
 fullName: Word.NoteItemType
 summary: Note item type.
-remarks: >-
-  \[ [API set: WordApi
-  1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
-
-
-  // Gets the referenced note's item type and body type, which are both
-  "Footnote".
-
+  // Gets the referenced note's item type and body type, which are both "Footnote".
   await Word.run(async (context) => {
     const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
     footnotes.load("items");
@@ -36,9 +28,8 @@ remarks: >-
 
     console.log(`Body type of note: ${item.body.type}`);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -48,7 +39,7 @@ fields:
     summary: |-
       Endnote type.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Endnote"'
   - name: footnote
     uid: word!Word.NoteItemType.footnote:member
@@ -56,5 +47,5 @@ fields:
     summary: |-
       Footnote type.
 
-      * \[Api set: WordApi 1.5\]
+      \* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Footnote"'

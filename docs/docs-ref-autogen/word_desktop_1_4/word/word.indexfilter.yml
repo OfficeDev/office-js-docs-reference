@@ -4,10 +4,8 @@ uid: word!Word.IndexFilter:enum
 package: word!
 fullName: Word.IndexFilter
 summary: Specifies the filter type for an index.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Aiueo filter is applied.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Aiueo"'
   - name: akasatana
     uid: word!Word.IndexFilter.akasatana:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Akasatana filter is applied.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Akasatana"'
   - name: chosung
     uid: word!Word.IndexFilter.chosung:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Chosung filter is applied.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Chosung"'
   - name: full
     uid: word!Word.IndexFilter.full:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Full filter is applied.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Full"'
   - name: low
     uid: word!Word.IndexFilter.low:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Low filter is applied.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Low"'
   - name: medium
     uid: word!Word.IndexFilter.medium:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Medium filter is applied.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Medium"'
   - name: none
     uid: word!Word.IndexFilter.none:member
@@ -65,5 +63,5 @@ fields:
     summary: |-
       No filter is applied.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'

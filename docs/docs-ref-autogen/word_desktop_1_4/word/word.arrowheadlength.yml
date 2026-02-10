@@ -4,10 +4,8 @@ uid: word!Word.ArrowheadLength:enum
 package: word!
 fullName: Word.ArrowheadLength
 summary: Specifies the length of the arrowhead at the end of a line.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents a long arrowhead length.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Long"'
   - name: medium
     uid: word!Word.ArrowheadLength.medium:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents a medium arrowhead length.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Medium"'
   - name: mixed
     uid: word!Word.ArrowheadLength.mixed:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Represents a mixed arrowhead length.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: short
     uid: word!Word.ArrowheadLength.short:member
@@ -41,5 +39,5 @@ fields:
     summary: |-
       Represents a short arrowhead length.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Short"'

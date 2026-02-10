@@ -3,11 +3,7 @@ name: Excel.RequestContext
 uid: excel!Excel.RequestContext:class
 package: excel!
 fullName: Excel.RequestContext
-summary: >-
-  The RequestContext object facilitates requests to the Excel application. Since
-  the Office add-in and the Excel application run in two different processes,
-  the request context is required to get access to the Excel object model from
-  the add-in.
+summary: The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
 remarks: |-
   #### Examples
 
@@ -19,7 +15,7 @@ remarks: |-
     // Interact with the Excel workbook...
   });
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,7 +26,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +42,7 @@ properties:
     fullName: application
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,11 +53,9 @@ properties:
     uid: excel!Excel.RequestContext#runtime:member
     package: excel!
     fullName: runtime
-    summary: >-
-      \[ [API set: ExcelApi
-      1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +68,7 @@ properties:
     fullName: workbook
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

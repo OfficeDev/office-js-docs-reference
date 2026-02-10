@@ -5,7 +5,7 @@ package: office!
 fullName: Office.SetBindingDataOptions
 summary: Provides options for how to set the data in a binding.
 remarks: If the rows option is used, the value must be "thisRow".
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,11 +15,10 @@ properties:
     package: office!
     fullName: asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,17 +30,15 @@ properties:
     package: office!
     fullName: cellFormat
     summary: >-
-      Use only with binding type table and when a TableData object is passed for
-      the data parameter. An array of objects that specify a range of columns,
-      rows, or cells and specify, as key-value pairs, the cell formatting to
-      apply to that range.
+      Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects
+      that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to
+      that range.
 
 
-      Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}},
-      {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle:
-      "bold"}}]`
+      Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
+      {borderColor: "white", fontStyle: "bold"}}]`
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,11 +49,9 @@ properties:
     uid: office!Office.SetBindingDataOptions#coercionType:member
     package: office!
     fullName: coercionType
-    summary: >-
-      Explicitly sets the shape of the data object. If not supplied is inferred
-      from the data type.
+    summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,11 +62,9 @@ properties:
     uid: office!Office.SetBindingDataOptions#columns:member
     package: office!
     fullName: columns
-    summary: >-
-      Only for table bindings in content add-ins for Access. Array of strings.
-      Specifies the column names.
+    summary: Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Microsoft Access is no longer supported.
@@ -84,10 +77,10 @@ properties:
     package: office!
     fullName: rows
     summary: >-
-      Only for table bindings in content add-ins for Access. Specifies the
-      pre-defined string "thisRow" to get data in the currently selected row.
+      Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
+      the currently selected row.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Microsoft Access is no longer supported.
@@ -100,11 +93,10 @@ properties:
     package: office!
     fullName: startColumn
     summary: >-
-      Specifies the zero-based starting column for a subset of the data. Only
-      for table or matrix bindings. If omitted, data is set starting in the
-      first column.
+      Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted,
+      data is set starting in the first column.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,11 +108,10 @@ properties:
     package: office!
     fullName: startRow
     summary: >-
-      Specifies the zero-based starting row for a subset of the data in the
-      binding. Only for table or matrix bindings. If omitted, data is set
-      starting in the first row.
+      Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings.
+      If omitted, data is set starting in the first row.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,11 +123,10 @@ properties:
     package: office!
     fullName: tableOptions
     summary: >-
-      For an inserted table, a list of key-value pairs that specify table
-      formatting options, such as header row, total row, and banded rows.
-      Example: `{bandedRows: true,  filterButton: false}`
+      For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
+      row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,14 +3,9 @@ name: Word.Interfaces.CustomXmlValidationErrorLoadOptions
 uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlValidationErrorLoadOptions
-summary: >-
-  Represents a single validation error in a
-  [Word.CustomXmlValidationErrorCollection](xref:word!Word.CustomXmlValidationErrorCollection:class)
-  object.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents a single validation error in a [Word.CustomXmlValidationErrorCollection](xref:word!Word.CustomXmlValidationErrorCollection:class) object.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -19,12 +14,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#errorCode:member
     package: word!
     fullName: errorCode
-    summary: >-
-      Gets an integer representing the validation error in the
-      `CustomXmlValidationError` object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets an integer representing the validation error in the `CustomXmlValidationError` object.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -52,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#name:member
     package: word!
     fullName: name
-    summary: >-
-      Gets the name of the error in the `CustomXmlValidationError` object. If no
-      errors exist, the property returns `"Nothing"`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the name of the error in the `CustomXmlValidationError` object. If no errors exist, the property returns `"Nothing"`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -69,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#node:member
     package: word!
     fullName: node
-    summary: >-
-      Gets the node associated with this `CustomXmlValidationError` object, if
-      any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -87,10 +67,8 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text in the `CustomXmlValidationError` object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -101,13 +79,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlValidationErrorLoadOptions#type:member
     package: word!
     fullName: type
-    summary: >-
-      Gets the type of error generated from the `CustomXmlValidationError`
-      object.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the type of error generated from the `CustomXmlValidationError` object.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -4,10 +4,8 @@ uid: excel!Excel.ArrayCellValue:interface
 package: excel!
 fullName: Excel.ArrayCellValue
 summary: Represents a 2D array of cell values.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,14 +14,9 @@ properties:
     uid: excel!Excel.ArrayCellValue#basicType:member
     package: excel!
     fullName: basicType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a
-      cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,17 +27,9 @@ properties:
     uid: excel!Excel.ArrayCellValue#basicValue:member
     package: excel!
     fullName: basicValue
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell
-      with this value. When accessed through a `valuesAsJson` property, this
-      string value aligns with the en-US locale. When accessed through a
-      `valuesAsJsonLocal` property, this string value aligns with the user's
-      display locale.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,14 +40,9 @@ properties:
     uid: excel!Excel.ArrayCellValue#elements:member
     package: excel!
     fullName: elements
-    summary: >-
-      Represents the elements of the array. May not directly contain an
-      `ArrayCellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the elements of the array. May not directly contain an `ArrayCellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,14 +53,9 @@ properties:
     uid: excel!Excel.ArrayCellValue#referencedValues:member
     package: excel!
     fullName: referencedValues
-    summary: >-
-      Represents the cell values which are referenced within
-      `ArrayCellValue.elements`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the cell values which are referenced within `ArrayCellValue.elements`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,16 +67,11 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: CellValueType.array | ReferenceValueType.array | "Array";'
       return:
-        type: >-
-          <xref uid="excel!Excel.CellValueType.array:member" /> | <xref
-          uid="excel!Excel.ReferenceValueType.array:member" /> | "Array"
+        type: <xref uid="excel!Excel.CellValueType.array:member" /> | <xref uid="excel!Excel.ReferenceValueType.array:member" /> | "Array"

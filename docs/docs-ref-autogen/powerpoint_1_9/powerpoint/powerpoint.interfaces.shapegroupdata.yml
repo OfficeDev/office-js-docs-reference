@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.ShapeGroupData
 uid: powerpoint!PowerPoint.Interfaces.ShapeGroupData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeGroupData
-summary: >-
-  An interface describing the data returned by calling `shapeGroup.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `shapeGroup.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape group.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

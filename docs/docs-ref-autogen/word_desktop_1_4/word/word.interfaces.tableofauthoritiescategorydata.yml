@@ -3,11 +3,9 @@ name: Word.Interfaces.TableOfAuthoritiesCategoryData
 uid: word!Word.Interfaces.TableOfAuthoritiesCategoryData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesCategoryData
-summary: >-
-  An interface describing the data returned by calling
-  `tableOfAuthoritiesCategory.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableOfAuthoritiesCategory.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,15 +14,9 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesCategoryData#name:member
     package: word!
     fullName: name
-    summary: >-
-      Specifies the name of this table of authorities category. Changing the
-      name of the category doesn't change the index in the collection. The value
-      for [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class)
-      will remain the same.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the name of this table of authorities category. Changing the name of the category doesn't change the index in the collection. The value for [TableOfAuthorities.category](xref:word!Word.TableOfAuthorities:class) will remain the same.
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

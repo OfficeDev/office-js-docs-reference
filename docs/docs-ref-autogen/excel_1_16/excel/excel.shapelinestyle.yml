@@ -4,10 +4,8 @@ uid: excel!Excel.ShapeLineStyle:enum
 package: excel!
 fullName: Excel.ShapeLineStyle
 summary: The style for a line.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Single line.
 
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Single"'
   - name: thickBetweenThin
     uid: excel!Excel.ShapeLineStyle.thickBetweenThin:member
@@ -25,29 +23,23 @@ fields:
     summary: |-
       Thick line with a thin line on each side.
 
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: excel!Excel.ShapeLineStyle.thickThin:member
     package: excel!
-    summary: >-
-      Thick line next to thin line. For horizontal lines, the thick line is
-      above the thin line. For vertical lines, the thick line is to the left of
-      the thin line.
+    summary: |-
+      Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the thick line is to the left of the thin line.
 
-
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ThickThin"'
   - name: thinThick
     uid: excel!Excel.ShapeLineStyle.thinThick:member
     package: excel!
-    summary: >-
-      Thick line next to thin line. For horizontal lines, the thick line is
-      below the thin line. For vertical lines, the thick line is to the right of
-      the thin line.
+    summary: |-
+      Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the thick line is to the right of the thin line.
 
-
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ThinThick"'
   - name: thinThin
     uid: excel!Excel.ShapeLineStyle.thinThin:member
@@ -55,5 +47,5 @@ fields:
     summary: |-
       Two thin lines.
 
-      * \[Api set: ExcelApi 1.9\]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ThinThin"'

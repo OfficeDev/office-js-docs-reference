@@ -3,24 +3,14 @@ name: Office.DelayDeliveryTime
 uid: outlook!Office.DelayDeliveryTime:interface
 package: outlook!
 fullName: Office.DelayDeliveryTime
-summary: >-
-  The `DelayDeliveryTime` object enables you to manage the delayed delivery date
-  and time of a message.
-remarks: >-
-  \[ [API set: Mailbox
-  1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-  \]
+summary: The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.
+remarks: |-
+  \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: **read item**
-
-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
-
+  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,45 +20,24 @@ methods:
     package: outlook!
     fullName: getAsync(options, callback)
     summary: Gets the delivery date and time of a message.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<Date | 0>) => void): void;
+      content: 'getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<Date | 0>) => void): void;'
       parameters:
         - id: options
-          description: >-
-            An object literal that contains one or more of the following
-            properties:- `asyncContext`<!-- -->: Developers can provide any
-            object they wish to access in the callback function.
+          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The
-            delivery date and time of a message is returned in the
-            `asyncResult.value` property. If a delivery date hasn't been set on
-            a message yet, `0` is returned instead.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;Date | 0&gt;) =&gt; void
+          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date | 0&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -77,33 +46,19 @@ methods:
     package: outlook!
     fullName: getAsync(callback)
     summary: Gets the delivery date and time of a message.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
-
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
       // This snippet gets the delivery date and time of a message.
-
       Office.context.mailbox.item.delayDeliveryTime.getAsync((asyncResult) => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
           console.log(asyncResult.error.message);
@@ -118,27 +73,16 @@ methods:
           console.log(`Message delivery date and time: ${date.toString()}`);
         }
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getAsync(callback?: (asyncResult: Office.AsyncResult<Date | 0>) =>
-        void): void;
+      content: 'getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<Date | 0>) => void): void;'
       parameters:
         - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The
-            delivery date and time of a message is returned in the
-            `asyncResult.value` property. If a delivery date hasn't been set on
-            a message yet, `0` is returned instead.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;Date | 0&gt;) =&gt; void
+          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date | 0&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -147,81 +91,37 @@ methods:
     package: outlook!
     fullName: setAsync(datetime, options, callback)
     summary: Sets the delivery date and time of a message.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
+      \*\*Important\*\*:
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      - When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server. This allows the message to be sent even if the Outlook client isn't running. In classic Outlook on Windows, the message doesn't appear in the \*\*Outbox\*\* folder, so you won't be able to edit the message or cancel its delivery after selecting \*\*Send\*\*. You'll only be able to review the message from the \*\*Sent Items\*\* folder. In Outlook on the web, on Mac, and in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the message appears in the \*\*Drafts\*\* folder until the scheduled delivery time. While it's in the \*\*Drafts\*\* folder, you'll be able to edit the message before it's sent. To learn more, see [Manage the delivery date and time of a message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!-- -->.
 
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
-      **Important**:
+      \*\*Errors\*\*:
 
-
-      - When `item.delayDeliveryTime.setAsync` is used to schedule the delivery
-      of a message, the delay is processed on the server. This allows the
-      message to be sent even if the Outlook client isn't running. In classic
-      Outlook on Windows, the message doesn't appear in the **Outbox**
-      folder, so you won't be able to edit the message or cancel its delivery
-      after selecting **Send**. You'll only be able to review the message
-      from the **Sent Items** folder. In Outlook on the web, on Mac, and in
-      [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->, the message appears in the **Drafts** folder until the scheduled
-      delivery time. While it's in the **Drafts** folder, you'll be able to
-      edit the message before it's sent. To learn more, see [Manage the delivery
-      date and time of a
-      message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!--
-      -->.
-
-
-      - The `setAsync` method isn't supported on a message that's currently
-      loaded using the `loadItemByIdAsync` method. For more information, see
-      [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
-      -->.
-
-
-      **Errors**:
-
-
-      - `InvalidFormatError` - The format of the specified data object is not
-      valid.
-
+      - `InvalidFormatError` - The format of the specified data object is not valid.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setAsync(datetime: Date, options: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+      content: 'setAsync(datetime: Date, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: datetime
           description: The future date and time when the message should be sent.
           type: Date
         - id: options
-          description: >-
-            An object literal that contains one or more of the following
-            properties:- `asyncContext`<!-- -->: Developers can provide any
-            object they wish to access in the callback function.
+          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any
-            errors encountered will be provided in the `asyncResult.error`
-            property.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -230,64 +130,27 @@ methods:
     package: outlook!
     fullName: setAsync(datetime, callback)
     summary: Sets the delivery date and time of a message.
-    remarks: >-
-      \[ [API set: Mailbox
-      1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
-      \]
+    remarks: |-
+      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
+      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: **read/write item**
+      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
+      \*\*Important\*\*:
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      - When `item.delayDeliveryTime.setAsync` is used to schedule the delivery of a message, the delay is processed on the server. This allows the message to be sent even if the Outlook client isn't running. In classic Outlook on Windows, the message doesn't appear in the \*\*Outbox\*\* folder, so you won't be able to edit the message or cancel its delivery after selecting \*\*Send\*\*. You'll only be able to review the message from the \*\*Sent Items\*\* folder. In Outlook on the web, on Mac, and in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the message appears in the \*\*Drafts\*\* folder until the scheduled delivery time. While it's in the \*\*Drafts\*\* folder, you'll be able to edit the message before it's sent. To learn more, see [Manage the delivery date and time of a message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!-- -->.
 
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
-      **Important**:
+      \*\*Errors\*\*:
 
-
-      - When `item.delayDeliveryTime.setAsync` is used to schedule the delivery
-      of a message, the delay is processed on the server. This allows the
-      message to be sent even if the Outlook client isn't running. In classic
-      Outlook on Windows, the message doesn't appear in the **Outbox**
-      folder, so you won't be able to edit the message or cancel its delivery
-      after selecting **Send**. You'll only be able to review the message
-      from the **Sent Items** folder. In Outlook on the web, on Mac, and in
-      [new Outlook on
-      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
-      -->, the message appears in the **Drafts** folder until the scheduled
-      delivery time. While it's in the **Drafts** folder, you'll be able to
-      edit the message before it's sent. To learn more, see [Manage the delivery
-      date and time of a
-      message](https://learn.microsoft.com/office/dev/add-ins/outlook/delay-delivery)<!--
-      -->.
-
-
-      - The `setAsync` method isn't supported on a message that's currently
-      loaded using the `loadItemByIdAsync` method. For more information, see
-      [Activate your Outlook add-in on multiple
-      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
-      -->.
-
-
-      **Errors**:
-
-
-      - `InvalidFormatError` - The format of the specified data object is not
-      valid.
-
+      - `InvalidFormatError` - The format of the specified data object is not valid.
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
       function setDeliveryDate(minutes) {
         // This snippet sets the delivery date and time of a message.
@@ -307,29 +170,19 @@ methods:
           }
         });
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setAsync(datetime: Date, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+      content: 'setAsync(datetime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: datetime
           description: The future date and time when the message should be sent.
           type: Date
         - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any
-            errors encountered will be provided in the `asyncResult.error`
-            property.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

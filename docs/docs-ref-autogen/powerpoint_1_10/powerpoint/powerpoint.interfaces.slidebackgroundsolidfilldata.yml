@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.SlideBackgroundSolidFillData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundSolidFillData
-summary: >-
-  An interface describing the data returned by calling
-  `slideBackgroundSolidFill.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideBackgroundSolidFill.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,14 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData#color:member
     package: powerpoint!
     fullName: color
-    summary: >-
-      Specifies the fill color in HTML color format (e.g., "\#FFA500" or
-      "orange").
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the fill color in HTML color format (e.g., "\#FFA500" or "orange").
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,18 +24,12 @@ properties:
       return:
         type: string
   - name: transparency
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData#transparency:member
+    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: >-
-      Specifies the transparency percentage of the fill as a value from 0.0
-      (opaque) through 1.0 (clear).
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

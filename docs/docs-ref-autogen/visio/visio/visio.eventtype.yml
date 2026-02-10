@@ -4,11 +4,8 @@ uid: visio!Visio.EventType:enum
 package: visio!
 fullName: Visio.EventType
 summary: EventType represents the type of the events Host supports.
-remarks: >-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-
+remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -18,5 +15,5 @@ fields:
     summary: |-
       DataVisualizer diagram operation complete Event.
 
-      * \[Api set: 1.1\]
+      \* \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     value: '"DataVisualizerDiagramOperationCompleted"'

@@ -3,13 +3,9 @@ name: Word.SectionDirection
 uid: word!Word.SectionDirection:enum
 package: word!
 fullName: Word.SectionDirection
-summary: >-
-  Specifies how Word displays the reading order and alignment for the specified
-  sections.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies how Word displays the reading order and alignment for the specified sections.
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +15,7 @@ fields:
     summary: |-
       Left-to-right reading order.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: word!Word.SectionDirection.rightToLeft:member
@@ -27,5 +23,5 @@ fields:
     summary: |-
       Right-to-left reading order.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RightToLeft"'

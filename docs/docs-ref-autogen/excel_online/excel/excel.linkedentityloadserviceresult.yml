@@ -3,13 +3,9 @@ name: Excel.LinkedEntityLoadServiceResult
 uid: excel!Excel.LinkedEntityLoadServiceResult:interface
 package: excel!
 fullName: Excel.LinkedEntityLoadServiceResult
-summary: >-
-  Represents the result of a request to `@linkedEntityLoadService` custom
-  function to load `LinkedEntityCellValue` objects.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents the result of a request to `@linkedEntityLoadService` custom function to load `LinkedEntityCellValue` objects.
+remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,15 +14,9 @@ properties:
     uid: excel!Excel.LinkedEntityLoadServiceResult#entities:member
     package: excel!
     fullName: entities
-    summary: >-
-      Represents the loaded `LinkedEntityCellValue` objects. The loaded objects
-      must be returned in the same order as the `entities` property of
-      `LinkedEntityLoadServiceRequest`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the loaded `LinkedEntityCellValue` objects. The loaded objects must be returned in the same order as the `entities` property of `LinkedEntityLoadServiceRequest`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

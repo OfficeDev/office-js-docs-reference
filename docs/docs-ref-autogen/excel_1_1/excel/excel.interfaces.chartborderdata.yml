@@ -3,11 +3,9 @@ name: Excel.Interfaces.ChartBorderData
 uid: excel!Excel.Interfaces.ChartBorderData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartBorderData
-summary: >-
-  An interface describing the data returned by calling
-  `chartBorder.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartBorder.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

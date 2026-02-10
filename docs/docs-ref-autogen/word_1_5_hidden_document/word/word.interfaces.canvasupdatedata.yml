@@ -3,11 +3,9 @@ name: Word.Interfaces.CanvasUpdateData
 uid: word!Word.Interfaces.CanvasUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CanvasUpdateData
-summary: >-
-  An interface for updating data on the `Canvas` object, for use in
-  `canvas.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Canvas` object, for use in `canvas.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

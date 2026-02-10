@@ -3,11 +3,9 @@ name: Word.Interfaces.ShadingUniversalData
 uid: word!Word.Interfaces.ShadingUniversalData:interface
 package: word!
 fullName: Word.Interfaces.ShadingUniversalData
-summary: >-
-  An interface describing the data returned by calling
-  `shadingUniversal.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `shadingUniversal.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

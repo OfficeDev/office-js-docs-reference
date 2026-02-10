@@ -4,10 +4,8 @@ uid: word!Word.ShadowType:enum
 package: word!
 fullName: Word.ShadowType
 summary: Specifies the type of shadow displayed with a shape.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Represents a mixed shadow type.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: type1
     uid: word!Word.ShadowType.type1:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Represents shadow type 1.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type1"'
   - name: type10
     uid: word!Word.ShadowType.type10:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Represents shadow type 10.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type10"'
   - name: type11
     uid: word!Word.ShadowType.type11:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Represents shadow type 11.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type11"'
   - name: type12
     uid: word!Word.ShadowType.type12:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Represents shadow type 12.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type12"'
   - name: type13
     uid: word!Word.ShadowType.type13:member
@@ -57,7 +55,7 @@ fields:
     summary: |-
       Represents shadow type 13.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type13"'
   - name: type14
     uid: word!Word.ShadowType.type14:member
@@ -65,7 +63,7 @@ fields:
     summary: |-
       Represents shadow type 14.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type14"'
   - name: type15
     uid: word!Word.ShadowType.type15:member
@@ -73,7 +71,7 @@ fields:
     summary: |-
       Represents shadow type 15.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type15"'
   - name: type16
     uid: word!Word.ShadowType.type16:member
@@ -81,7 +79,7 @@ fields:
     summary: |-
       Represents shadow type 16.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type16"'
   - name: type17
     uid: word!Word.ShadowType.type17:member
@@ -89,7 +87,7 @@ fields:
     summary: |-
       Represents shadow type 17.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type17"'
   - name: type18
     uid: word!Word.ShadowType.type18:member
@@ -97,7 +95,7 @@ fields:
     summary: |-
       Represents shadow type 18.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type18"'
   - name: type19
     uid: word!Word.ShadowType.type19:member
@@ -105,7 +103,7 @@ fields:
     summary: |-
       Represents shadow type 19.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type19"'
   - name: type2
     uid: word!Word.ShadowType.type2:member
@@ -113,7 +111,7 @@ fields:
     summary: |-
       Represents shadow type 2.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type2"'
   - name: type20
     uid: word!Word.ShadowType.type20:member
@@ -121,7 +119,7 @@ fields:
     summary: |-
       Represents shadow type 20.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type20"'
   - name: type21
     uid: word!Word.ShadowType.type21:member
@@ -129,7 +127,7 @@ fields:
     summary: |-
       Represents shadow type 21.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type21"'
   - name: type22
     uid: word!Word.ShadowType.type22:member
@@ -137,7 +135,7 @@ fields:
     summary: |-
       Represents shadow type 22.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type22"'
   - name: type23
     uid: word!Word.ShadowType.type23:member
@@ -145,7 +143,7 @@ fields:
     summary: |-
       Represents shadow type 23.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type23"'
   - name: type24
     uid: word!Word.ShadowType.type24:member
@@ -153,7 +151,7 @@ fields:
     summary: |-
       Represents shadow type 24.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type24"'
   - name: type25
     uid: word!Word.ShadowType.type25:member
@@ -161,7 +159,7 @@ fields:
     summary: |-
       Represents shadow type 25.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type25"'
   - name: type26
     uid: word!Word.ShadowType.type26:member
@@ -169,7 +167,7 @@ fields:
     summary: |-
       Represents shadow type 26.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type26"'
   - name: type27
     uid: word!Word.ShadowType.type27:member
@@ -177,7 +175,7 @@ fields:
     summary: |-
       Represents shadow type 27.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type27"'
   - name: type28
     uid: word!Word.ShadowType.type28:member
@@ -185,7 +183,7 @@ fields:
     summary: |-
       Represents shadow type 28.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type28"'
   - name: type29
     uid: word!Word.ShadowType.type29:member
@@ -193,7 +191,7 @@ fields:
     summary: |-
       Represents shadow type 29.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type29"'
   - name: type3
     uid: word!Word.ShadowType.type3:member
@@ -201,7 +199,7 @@ fields:
     summary: |-
       Represents shadow type 3.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type3"'
   - name: type30
     uid: word!Word.ShadowType.type30:member
@@ -209,7 +207,7 @@ fields:
     summary: |-
       Represents shadow type 30.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type30"'
   - name: type31
     uid: word!Word.ShadowType.type31:member
@@ -217,7 +215,7 @@ fields:
     summary: |-
       Represents shadow type 31.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type31"'
   - name: type32
     uid: word!Word.ShadowType.type32:member
@@ -225,7 +223,7 @@ fields:
     summary: |-
       Represents shadow type 32.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type32"'
   - name: type33
     uid: word!Word.ShadowType.type33:member
@@ -233,7 +231,7 @@ fields:
     summary: |-
       Represents shadow type 33.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type33"'
   - name: type34
     uid: word!Word.ShadowType.type34:member
@@ -241,7 +239,7 @@ fields:
     summary: |-
       Represents shadow type 34.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type34"'
   - name: type35
     uid: word!Word.ShadowType.type35:member
@@ -249,7 +247,7 @@ fields:
     summary: |-
       Represents shadow type 35.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type35"'
   - name: type36
     uid: word!Word.ShadowType.type36:member
@@ -257,7 +255,7 @@ fields:
     summary: |-
       Represents shadow type 36.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type36"'
   - name: type37
     uid: word!Word.ShadowType.type37:member
@@ -265,7 +263,7 @@ fields:
     summary: |-
       Represents shadow type 37.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type37"'
   - name: type38
     uid: word!Word.ShadowType.type38:member
@@ -273,7 +271,7 @@ fields:
     summary: |-
       Represents shadow type 38.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type38"'
   - name: type39
     uid: word!Word.ShadowType.type39:member
@@ -281,7 +279,7 @@ fields:
     summary: |-
       Represents shadow type 39.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type39"'
   - name: type4
     uid: word!Word.ShadowType.type4:member
@@ -289,7 +287,7 @@ fields:
     summary: |-
       Represents shadow type 4.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type4"'
   - name: type40
     uid: word!Word.ShadowType.type40:member
@@ -297,7 +295,7 @@ fields:
     summary: |-
       Represents shadow type 40.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type40"'
   - name: type41
     uid: word!Word.ShadowType.type41:member
@@ -305,7 +303,7 @@ fields:
     summary: |-
       Represents shadow type 41.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type41"'
   - name: type42
     uid: word!Word.ShadowType.type42:member
@@ -313,7 +311,7 @@ fields:
     summary: |-
       Represents shadow type 42.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type42"'
   - name: type43
     uid: word!Word.ShadowType.type43:member
@@ -321,7 +319,7 @@ fields:
     summary: |-
       Represents shadow type 43.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type43"'
   - name: type5
     uid: word!Word.ShadowType.type5:member
@@ -329,7 +327,7 @@ fields:
     summary: |-
       Represents shadow type 5.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type5"'
   - name: type6
     uid: word!Word.ShadowType.type6:member
@@ -337,7 +335,7 @@ fields:
     summary: |-
       Represents shadow type 6.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type6"'
   - name: type7
     uid: word!Word.ShadowType.type7:member
@@ -345,7 +343,7 @@ fields:
     summary: |-
       Represents shadow type 7.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type7"'
   - name: type8
     uid: word!Word.ShadowType.type8:member
@@ -353,7 +351,7 @@ fields:
     summary: |-
       Represents shadow type 8.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type8"'
   - name: type9
     uid: word!Word.ShadowType.type9:member
@@ -361,5 +359,5 @@ fields:
     summary: |-
       Represents shadow type 9.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Type9"'

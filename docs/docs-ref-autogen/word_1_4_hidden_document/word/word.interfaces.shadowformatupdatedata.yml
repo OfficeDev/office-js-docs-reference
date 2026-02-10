@@ -3,11 +3,9 @@ name: Word.Interfaces.ShadowFormatUpdateData
 uid: word!Word.Interfaces.ShadowFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ShadowFormatUpdateData
-summary: >-
-  An interface for updating data on the `ShadowFormat` object, for use in
-  `shadowFormat.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `ShadowFormat` object, for use in `shadowFormat.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

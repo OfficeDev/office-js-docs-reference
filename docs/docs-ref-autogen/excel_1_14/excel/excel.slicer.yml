@@ -4,10 +4,8 @@ uid: excel!Excel.Slicer:class
 package: excel!
 fullName: Excel.Slicer
 summary: Represents a `Slicer` object in the workbook.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -17,11 +15,8 @@ properties:
     package: excel!
     fullName: caption
     summary: Represents the caption of the slicer.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,11 +27,9 @@ properties:
     uid: excel!Excel.Slicer#context:member
     package: excel!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,15 +40,9 @@ properties:
     uid: excel!Excel.Slicer#height:member
     package: excel!
     fullName: height
-    summary: >-
-      Specifies the height, in points, of the slicer. Throws an
-      `InvalidArgument` exception when set with a negative value or zero as an
-      input.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Specifies the height, in points, of the slicer. Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,11 +54,8 @@ properties:
     package: excel!
     fullName: id
     summary: Represents the unique ID of the slicer.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,14 +66,9 @@ properties:
     uid: excel!Excel.Slicer#isFilterCleared:member
     package: excel!
     fullName: isFilterCleared
-    summary: >-
-      Value is `true` if all filters currently applied on the slicer are
-      cleared.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Value is `true` if all filters currently applied on the slicer are cleared.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,15 +79,9 @@ properties:
     uid: excel!Excel.Slicer#left:member
     package: excel!
     fullName: left
-    summary: >-
-      Represents the distance, in points, from the left side of the slicer to
-      the left of the worksheet. Throws an `InvalidArgument` error when set with
-      a negative value as an input.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an `InvalidArgument` error when set with a negative value as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,11 +93,8 @@ properties:
     package: excel!
     fullName: name
     summary: Represents the name of the slicer.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,11 +106,8 @@ properties:
     package: excel!
     fullName: slicerItems
     summary: Represents the collection of slicer items that are part of the slicer.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,56 +118,35 @@ properties:
     uid: excel!Excel.Slicer#sortBy:member
     package: excel!
     fullName: sortBy
-    summary: >-
-      Specifies the sort order of the items in the slicer. Possible values are:
-      "DataSourceOrder", "Ascending", "Descending".
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'Specifies the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        sortBy: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" |
-        "Descending";
+      content: 'sortBy: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
       return:
-        type: >-
-          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
-          "Ascending" | "Descending"
+        type: <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" | "Ascending" | "Descending"
   - name: style
     uid: excel!Excel.Slicer#style:member
     package: excel!
     fullName: style
-    summary: >-
-      Constant value that represents the slicer style. Possible values are:
-      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
-      through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
-      A custom user-defined style present in the workbook can also be specified.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: 'Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.'
+    remarks: |-
+      \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
 
       await Excel.run(async (context) => {
           const slicer = context.workbook.slicers.getItem("Fruit Slicer");
           slicer.style = "SlicerStyleLight6";
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,15 +157,9 @@ properties:
     uid: excel!Excel.Slicer#top:member
     package: excel!
     fullName: top
-    summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the
-      top of the worksheet. Throws an `InvalidArgument` error when set with a
-      negative value as an input.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an `InvalidArgument` error when set with a negative value as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,15 +170,9 @@ properties:
     uid: excel!Excel.Slicer#width:member
     package: excel!
     fullName: width
-    summary: >-
-      Represents the width, in points, of the slicer. Throws an
-      `InvalidArgument` error when set with a negative value or zero as an
-      input.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents the width, in points, of the slicer. Throws an `InvalidArgument` error when set with a negative value or zero as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,11 +184,8 @@ properties:
     package: excel!
     fullName: worksheet
     summary: Represents the worksheet containing the slicer.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,29 +198,21 @@ methods:
     package: excel!
     fullName: clearFilters()
     summary: Clears all the filters currently applied on the slicer.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
 
       await Excel.run(async (context) => {
           const slicer = context.workbook.slicers.getItem("Fruit Slicer");
           slicer.clearFilters();
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,29 +225,21 @@ methods:
     package: excel!
     fullName: delete()
     summary: Deletes the slicer.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
 
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();
           sheet.slicers.getItemAt(0).delete();
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,29 +252,22 @@ methods:
     package: excel!
     fullName: getSelectedItems()
     summary: Returns an array of selected items' keys.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSelectedItems(): OfficeExtension.ClientResult<string[]>;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class"
-          />&lt;string[]&gt;
+        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;
         description: ''
   - name: load(options)
     uid: excel!Excel.Slicer#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -375,20 +283,16 @@ methods:
     uid: excel!Excel.Slicer#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.Slicer;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.Slicer:class" />
@@ -397,11 +301,9 @@ methods:
     uid: excel!Excel.Slicer#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -412,11 +314,7 @@ methods:
                 }): Excel.Slicer;
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: |-
             {
                         select?: string;
@@ -429,32 +327,22 @@ methods:
     uid: excel!Excel.Slicer#selectItems:member(1)
     package: excel!
     fullName: selectItems(items)
-    summary: >-
-      Selects slicer items based on their keys. The previous selections are
-      cleared. All items will be selected by default if the array is empty.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Selects slicer items based on their keys. The previous selections are cleared. All items will be selected by default if the array is empty.
+    remarks: |-
+      \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
 
       await Excel.run(async (context) => {
           const slicer = context.workbook.slicers.getItem("Fruit Slicer");
           slicer.selectItems(["Lemon", "Lime", "Orange"]);
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -470,29 +358,19 @@ methods:
     uid: excel!Excel.Slicer#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.SlicerUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.SlicerUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
-          description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
           type: <xref uid="excel!Excel.Interfaces.SlicerUpdateData:interface" />
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -501,11 +379,9 @@ methods:
     uid: excel!Excel.Slicer#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -521,16 +397,9 @@ methods:
     uid: excel!Excel.Slicer#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original `Excel.Slicer` object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.SlicerData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.Slicer` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

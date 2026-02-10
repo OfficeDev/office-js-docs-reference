@@ -4,10 +4,8 @@ uid: word!Word.TabLeader:enum
 package: word!
 fullName: Word.TabLeader
 summary: Specifies the tab leader style.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Dashes are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Dashes"'
   - name: dots
     uid: word!Word.TabLeader.dots:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Dots are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Dots"'
   - name: heavy
     uid: word!Word.TabLeader.heavy:member
@@ -33,7 +31,7 @@ fields:
     summary: |-
       Heavy lines are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Heavy"'
   - name: lines
     uid: word!Word.TabLeader.lines:member
@@ -41,7 +39,7 @@ fields:
     summary: |-
       Lines are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Lines"'
   - name: middleDot
     uid: word!Word.TabLeader.middleDot:member
@@ -49,7 +47,7 @@ fields:
     summary: |-
       Middle dots are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MiddleDot"'
   - name: spaces
     uid: word!Word.TabLeader.spaces:member
@@ -57,5 +55,5 @@ fields:
     summary: |-
       Spaces are used as the tab leader.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Spaces"'

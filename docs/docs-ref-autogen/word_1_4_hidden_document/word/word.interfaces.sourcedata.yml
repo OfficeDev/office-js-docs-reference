@@ -3,11 +3,9 @@ name: Word.Interfaces.SourceData
 uid: word!Word.Interfaces.SourceData:interface
 package: word!
 fullName: Word.Interfaces.SourceData
-summary: >-
-  An interface describing the data returned by calling `source.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `source.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

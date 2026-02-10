@@ -3,11 +3,9 @@ name: Excel.Interfaces.ChartPivotOptionsData
 uid: excel!Excel.Interfaces.ChartPivotOptionsData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartPivotOptionsData
-summary: >-
-  An interface describing the data returned by calling
-  `chartPivotOptions.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartPivotOptions.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,15 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.ChartPivotOptionsData#showAxisFieldButtons:member
     package: excel!
     fullName: showAxisFieldButtons
-    summary: >-
-      Specifies whether to display the axis field buttons on a PivotChart. The
-      `showAxisFieldButtons` property corresponds to the "Show Axis Field
-      Buttons" command on the "Field Buttons" drop-down list of the "Analyze"
-      tab, which is available when a PivotChart is selected.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies whether to display the axis field buttons on a PivotChart. The `showAxisFieldButtons` property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,10 +28,8 @@ properties:
     package: excel!
     fullName: showLegendFieldButtons
     summary: Specifies whether to display the legend field buttons on a PivotChart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,17 +37,12 @@ properties:
       return:
         type: boolean
   - name: showReportFilterFieldButtons
-    uid: >-
-      excel!Excel.Interfaces.ChartPivotOptionsData#showReportFilterFieldButtons:member
+    uid: excel!Excel.Interfaces.ChartPivotOptionsData#showReportFilterFieldButtons:member
     package: excel!
     fullName: showReportFilterFieldButtons
-    summary: >-
-      Specifies whether to display the report filter field buttons on a
-      PivotChart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies whether to display the report filter field buttons on a PivotChart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,10 +54,8 @@ properties:
     package: excel!
     fullName: showValueFieldButtons
     summary: Specifies whether to display the show value field buttons on a PivotChart.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,10 +4,8 @@ uid: excel!Excel.Interfaces.RangeViewLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.RangeViewLoadOptions
 summary: RangeView represents a set of visible cells of the parent range.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,10 +28,8 @@ properties:
     package: excel!
     fullName: cellAddresses
     summary: Represents the cell addresses of the `RangeView`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,10 +41,8 @@ properties:
     package: excel!
     fullName: columnCount
     summary: The number of visible columns.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,13 +53,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#formulas:member
     package: excel!
     fullName: formulas
-    summary: >-
-      Represents the formula in A1-style notation. If a cell has no formula, its
-      value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,15 +66,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#formulasLocal:member
     package: excel!
     fullName: formulasLocal
-    summary: >-
-      Represents the formula in A1-style notation, in the user's language and
-      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
-      would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
-      value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is returned instead.
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,13 +79,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#formulasR1C1:member
     package: excel!
     fullName: formulasR1C1
-    summary: >-
-      Represents the formula in R1C1-style notation. If a cell has no formula,
-      its value is returned instead.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,10 +93,8 @@ properties:
     package: excel!
     fullName: index
     summary: Returns a value that represents the index of the `RangeView`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,10 +106,8 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: Represents Excel's number format code for the given cell.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,10 +119,8 @@ properties:
     package: excel!
     fullName: rowCount
     summary: The number of visible rows.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,14 +131,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#text:member
     package: excel!
     fullName: text
-    summary: >-
-      Text values of the specified range. The text value will not depend on the
-      cell width. The \# sign substitution that happens in Excel UI will not
-      affect the text value returned by the API.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Text values of the specified range. The text value will not depend on the cell width. The \# sign substitution that happens in Excel UI will not affect the text value returned by the API.
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,14 +144,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#values:member
     package: excel!
     fullName: values
-    summary: >-
-      Represents the raw values of the specified range view. The data returned
-      could be of type string, number, or a Boolean. Cells that contain an error
-      will return the error string.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Represents the raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cells that contain an error will return the error string.
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,19 +157,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#valuesAsJson:member
     package: excel!
     fullName: valuesAsJson
-    summary: >-
-      A JSON representation of the values in the cells in this range. Unlike
-      `RangeView.values`<!-- -->, `RangeView.valuesAsJson` supports all data
-      types which can be in a cell. Examples include formatted number values and
-      web images, in addition to the standard Boolean, number, and string
-      values. Data returned from this API always aligns with the en-US locale.
-      To retrieve data in the user's display locale, use
-      `RangeView.valuesAsJsonLocal`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: A JSON representation of the values in the cells in this range. Unlike `RangeView.values`<!-- -->, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values. Data returned from this API always aligns with the en-US locale. To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,19 +170,9 @@ properties:
     uid: excel!Excel.Interfaces.RangeViewLoadOptions#valuesAsJsonLocal:member
     package: excel!
     fullName: valuesAsJsonLocal
-    summary: >-
-      A JSON representation of the values in the cells in this range. Unlike
-      `RangeView.values`<!-- -->, `RangeView.valuesAsJsonLocal` supports all
-      data types which can be in a cell. Examples include formatted number
-      values and web images, in addition to the standard Boolean, number, and
-      string values. Data returned from this API always aligns with the user's
-      display locale. To retrieve data independent of locale, use
-      `RangeView.valuesAsJson`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: A JSON representation of the values in the cells in this range. Unlike `RangeView.values`<!-- -->, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values. Data returned from this API always aligns with the user's display locale. To retrieve data independent of locale, use `RangeView.valuesAsJson`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,10 +184,8 @@ properties:
     package: excel!
     fullName: valueTypes
     summary: Represents the type of data of each cell.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

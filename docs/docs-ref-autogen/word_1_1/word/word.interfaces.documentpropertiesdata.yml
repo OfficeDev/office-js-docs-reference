@@ -3,11 +3,9 @@ name: Word.Interfaces.DocumentPropertiesData
 uid: word!Word.Interfaces.DocumentPropertiesData:interface
 package: word!
 fullName: Word.Interfaces.DocumentPropertiesData
-summary: >-
-  An interface describing the data returned by calling
-  `documentProperties.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

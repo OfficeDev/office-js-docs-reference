@@ -4,19 +4,13 @@ uid: excel!Excel.ArrowheadWidth:enum
 package: excel!
 fullName: Excel.ArrowheadWidth
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
 
   await Excel.run(async (context) => {
       const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -31,24 +25,23 @@ remarks: >-
 
       await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: medium
     uid: excel!Excel.ArrowheadWidth.medium:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Medium"'
   - name: narrow
     uid: excel!Excel.ArrowheadWidth.narrow:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Narrow"'
   - name: wide
     uid: excel!Excel.ArrowheadWidth.wide:member
     package: excel!
-    summary: '* \[Api set: ExcelApi 1.9\]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Wide"'

@@ -3,11 +3,9 @@ name: Word.Interfaces.InlinePictureData
 uid: word!Word.Interfaces.InlinePictureData:interface
 package: word!
 fullName: Word.Interfaces.InlinePictureData
-summary: >-
-  An interface describing the data returned by calling
-  `inlinePicture.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `inlinePicture.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.InlinePictureData#altTextDescription:member
     package: word!
     fullName: altTextDescription
-    summary: >-
-      Specifies a string that represents the alternative text associated with
-      the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a string that represents the alternative text associated with the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +28,8 @@ properties:
     package: word!
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,10 +41,8 @@ properties:
     package: word!
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,13 +53,9 @@ properties:
     uid: word!Word.Interfaces.InlinePictureData#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: >-
-      Specifies a hyperlink on the image. Use a '\#' to separate the address
-      part from the optional location part.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,33 +67,21 @@ properties:
     package: word!
     fullName: imageFormat
     summary: Gets the format of the inline image.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" |
-        "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" |
-        "Pict" | "Pdf" | "Svg";
+      content: 'imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";'
       return:
-        type: >-
-          <xref uid="word!Word.ImageFormat:enum" /> | "Unsupported" |
-          "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" |
-          "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
+        type: <xref uid="word!Word.ImageFormat:enum" /> | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
   - name: lockAspectRatio
     uid: word!Word.Interfaces.InlinePictureData#lockAspectRatio:member
     package: word!
     fullName: lockAspectRatio
-    summary: >-
-      Specifies a value that indicates whether the inline image retains its
-      original proportions when you resize it.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,10 +93,8 @@ properties:
     package: word!
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
-    remarks: >-
-      \[ [API set: WordApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

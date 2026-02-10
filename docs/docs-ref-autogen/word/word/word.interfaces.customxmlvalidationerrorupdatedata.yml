@@ -3,11 +3,9 @@ name: Word.Interfaces.CustomXmlValidationErrorUpdateData
 uid: word!Word.Interfaces.CustomXmlValidationErrorUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlValidationErrorUpdateData
-summary: >-
-  An interface for updating data on the `CustomXmlValidationError` object, for
-  use in `customXmlValidationError.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `CustomXmlValidationError` object, for use in `customXmlValidationError.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.CustomXmlValidationErrorUpdateData#node:member
     package: word!
     fullName: node
-    summary: >-
-      Gets the node associated with this `CustomXmlValidationError` object, if
-      any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Gets the node associated with this `CustomXmlValidationError` object, if any exist. If no nodes exist, the property returns `Nothing`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -4,27 +4,15 @@ uid: office-runtime!OfficeRuntime.Storage:interface
 package: office-runtime!
 fullName: OfficeRuntime.Storage
 summary: Asynchronous, global, and persistent key-value storage.
-remarks: >-
-  \[ [API set: SharedRuntime 1.1, Mailbox
-  1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+remarks: |-
+  \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+  This interface is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-  This interface is available in the [SharedRuntime 1.1 requirement
-  set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-  for Excel, PowerPoint, and Word add-ins. It's also available starting in
-  [Mailbox requirement set
-  1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-  for Outlook.
-
-
-  **Important**: In Outlook, support is only available with the [event-based
-  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-  feature implemented in Outlook on Windows. This interface isn't supported in
-  Outlook on Mac or on the web.
-
+  \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This interface isn't supported in Outlook on Mac or on the web.
 
   Storage limit is 10 MB per domain, which may be shared by multiple add-ins.
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,36 +21,18 @@ methods:
     uid: office-runtime!OfficeRuntime.Storage#getItem:member(1)
     package: office-runtime!
     fullName: getItem(key)
-    summary: >-
-      Retrieves an item from storage based on its key. Returns a Promise. In the
-      event the Promise does not resolve, returns null.
-    remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.
+    remarks: |-
+      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+      This method is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-      This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-      for Excel, PowerPoint, and Word add-ins. It's also available starting in
-      [Mailbox requirement set
-      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-      for Outlook.
-
-
-      **Important**: In Outlook, support is only available with the
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-      feature implemented in Outlook on Windows. This method isn't supported in
-      Outlook on Mac or on the web.
-
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This method isn't supported in Outlook on Mac or on the web.
 
       #### Examples
 
-
       ```TypeScript
-
       // Retrieve a value from the shared runtime storage by its key.
-
       async function getItem() {
           const key = document.getElementById('readKey').value.trim();
 
@@ -74,9 +44,8 @@ methods:
               console.log(`Item retrieved successfully - Key: "${key}"\nValue: "${value}"`);
           }
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,36 +61,18 @@ methods:
     uid: office-runtime!OfficeRuntime.Storage#getItems:member(1)
     package: office-runtime!
     fullName: getItems(keys)
-    summary: >-
-      Retrieves multiple items from storage based on their key. Returns a
-      Promise. In the event the Promise does not resolve, returns null.
-    remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.
+    remarks: |-
+      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+      This method is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-      This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-      for Excel, PowerPoint, and Word add-ins. It's also available starting in
-      [Mailbox requirement set
-      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-      for Outlook.
-
-
-      **Important**: In Outlook, support is only available with the
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-      feature implemented in Outlook on Windows. This method isn't supported in
-      Outlook on Mac or on the web.
-
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This method isn't supported in Outlook on Mac or on the web.
 
       #### Examples
 
-
       ```TypeScript
-
       // Retrieve a set of default values from the shared runtime storage.
-
       async function getDefaultSettings() {
         const keysToRetrieve = [
             'username',
@@ -136,9 +87,8 @@ methods:
             console.log(`"${key}": "${value}"`);
         }
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,33 +105,17 @@ methods:
     package: office-runtime!
     fullName: getKeys()
     summary: Retrieves an array of all keys from storage. Returns a Promise.
-    remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: |-
+      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+      This method is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-      This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-      for Excel, PowerPoint, and Word add-ins. It's also available starting in
-      [Mailbox requirement set
-      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-      for Outlook.
-
-
-      **Important**: In Outlook, support is only available with the
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-      feature implemented in Outlook on Windows. This method isn't supported in
-      Outlook on Mac or on the web.
-
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This method isn't supported in Outlook on Mac or on the web.
 
       #### Examples
 
-
       ```TypeScript
-
       // Retrieve all keys currently stored in the shared runtime storage.
-
       async function getAllKeys() {
         const keys = await OfficeRuntime.storage.getKeys();
 
@@ -192,9 +126,8 @@ methods:
           console.log(`Found ${keys.length} key(s):\n\n${keys.toString()}`);
         }
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,33 +140,17 @@ methods:
     package: office-runtime!
     fullName: removeItem(key)
     summary: Removes an item from storage based on its key. Returns a Promise.
-    remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: |-
+      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+      This method is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-      This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-      for Excel, PowerPoint, and Word add-ins. It's also available starting in
-      [Mailbox requirement set
-      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-      for Outlook.
-
-
-      **Important**: In Outlook, support is only available with the
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-      feature implemented in Outlook on Windows. This method isn't supported in
-      Outlook on Mac or on the web.
-
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This method isn't supported in Outlook on Mac or on the web.
 
       #### Examples
 
-
       ```TypeScript
-
       // Delete an item from the shared runtime storage by its key.
-
       async function removeItem() {
           const key = document.getElementById('deleteKey').value.trim();
               
@@ -247,9 +164,8 @@ methods:
             console.log(`Item "${key}" removed successfully`);
           }
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -266,41 +182,24 @@ methods:
     package: office-runtime!
     fullName: removeItems(keys)
     summary: Removes multiple items from storage. Returns a Promise.
-    remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: |-
+      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+      This method is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-      This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-      for Excel, PowerPoint, and Word add-ins. It's also available starting in
-      [Mailbox requirement set
-      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-      for Outlook.
-
-
-      **Important**: In Outlook, support is only available with the
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-      feature implemented in Outlook on Windows. This method isn't supported in
-      Outlook on Mac or on the web.
-
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This method isn't supported in Outlook on Mac or on the web.
 
       #### Examples
 
-
       ```TypeScript
-
       // Delete all the items from the shared runtime storage.
-
       async function clearAllStorage() {
         const keys = await OfficeRuntime.storage.getKeys();
         await OfficeRuntime.storage.removeItems(keys);
         console.log(`All ${keys.length} items cleared from storage`);
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -316,45 +215,26 @@ methods:
     uid: office-runtime!OfficeRuntime.Storage#setItem:member(1)
     package: office-runtime!
     fullName: setItem(key, value)
-    summary: >-
-      Sets a key-value pair into storage or updates an existing key-value pair.
-      Returns a Promise.
-    remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
+    remarks: |-
+      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+      This method is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-      This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-      for Excel, PowerPoint, and Word add-ins. It's also available starting in
-      [Mailbox requirement set
-      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-      for Outlook.
-
-
-      **Important**: In Outlook, support is only available with the
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-      feature implemented in Outlook on Windows. This method isn't supported in
-      Outlook on Mac or on the web.
-
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This method isn't supported in Outlook on Mac or on the web.
 
       #### Examples
 
-
       ```TypeScript
-
       // Save a key-value pair in the shared runtime storage.
-
       async function storeValue() {
         const key = document.getElementById('createKey').value.trim();
         const value = document.getElementById('createValue').value.trim();
 
         await OfficeRuntime.storage.setItem(key, value);
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -373,36 +253,18 @@ methods:
     uid: office-runtime!OfficeRuntime.Storage#setItems:member(1)
     package: office-runtime!
     fullName: setItems(keyValues)
-    summary: >-
-      Sets multiple items into storage or updates multiple items within storage.
-      Returns a Promise.
-    remarks: >-
-      \[ [API set: SharedRuntime 1.1, Mailbox
-      1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
+    remarks: |-
+      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
+      This method is available in the [SharedRuntime 1.1 requirement set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set 1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) for Outlook.
 
-      This method is available in the [SharedRuntime 1.1 requirement
-      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-      for Excel, PowerPoint, and Word add-ins. It's also available starting in
-      [Mailbox requirement set
-      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
-      for Outlook.
-
-
-      **Important**: In Outlook, support is only available with the
-      [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-      feature implemented in Outlook on Windows. This method isn't supported in
-      Outlook on Mac or on the web.
-
+      \*\*Important\*\*: In Outlook, support is only available with the [event-based activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on Windows. This method isn't supported in Outlook on Mac or on the web.
 
       #### Examples
 
-
       ```TypeScript
-
       // Save multiple key-value pairs in the shared runtime storage.
-
       async function setDefaultSettings() {
         const demoData = {
             'username': 'JohnDoe',
@@ -414,9 +276,8 @@ methods:
 
         await OfficeRuntime.storage.setItems(demoData);
       }
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

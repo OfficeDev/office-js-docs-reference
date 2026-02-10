@@ -4,19 +4,13 @@ uid: word!Word.ShapeAutoSize:enum
 package: word!
 fullName: Word.ShapeAutoSize
 summary: Determines the type of automatic sizing allowed.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
   await Word.run(async (context) => {
     // Sets text frame properties of the first text box in the main document.
@@ -36,9 +30,8 @@ remarks: >-
 
     console.log("The first text box's text frame properties were updated:", textFrame);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -48,7 +41,7 @@ fields:
     summary: |-
       A combination of automatic sizing schemes are used.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Mixed"'
   - name: none
     uid: word!Word.ShapeAutoSize.none:member
@@ -56,7 +49,7 @@ fields:
     summary: |-
       No autosizing.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: shapeToFitText
     uid: word!Word.ShapeAutoSize.shapeToFitText:member
@@ -64,7 +57,7 @@ fields:
     summary: |-
       The shape is adjusted to fit the text.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ShapeToFitText"'
   - name: textToFitShape
     uid: word!Word.ShapeAutoSize.textToFitShape:member
@@ -72,5 +65,5 @@ fields:
     summary: |-
       The text is adjusted to fit the shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TextToFitShape"'

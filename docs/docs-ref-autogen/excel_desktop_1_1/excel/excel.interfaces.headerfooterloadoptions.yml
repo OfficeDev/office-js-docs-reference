@@ -4,10 +4,8 @@ uid: excel!Excel.Interfaces.HeaderFooterLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.HeaderFooterLoadOptions
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,12 +14,9 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,14 +27,9 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooter:member
     package: excel!
     fullName: centerFooter
-    summary: >-
-      The center footer of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: 'The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,34 +40,22 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooterPicture:member
     package: excel!
     fullName: centerFooterPicture
-    summary: >-
-      Gets a `HeaderFooterPicture` object that represents the picture for the
-      center section of the footer.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets a `HeaderFooterPicture` object that represents the picture for the center section of the footer.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'centerFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface" />
   - name: centerHeader
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeader:member
     package: excel!
     fullName: centerHeader
-    summary: >-
-      The center header of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: 'The center header of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,34 +66,22 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeaderPicture:member
     package: excel!
     fullName: centerHeaderPicture
-    summary: >-
-      Gets a `HeaderFooterPicture` object that represents the picture for the
-      center section of the header.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets a `HeaderFooterPicture` object that represents the picture for the center section of the header.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'centerHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface" />
   - name: leftFooter
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooter:member
     package: excel!
     fullName: leftFooter
-    summary: >-
-      The left footer of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: 'The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,34 +92,22 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooterPicture:member
     package: excel!
     fullName: leftFooterPicture
-    summary: >-
-      Gets a `HeaderFooterPicture` object that represents the picture for the
-      left section of the footer.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets a `HeaderFooterPicture` object that represents the picture for the left section of the footer.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'leftFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface" />
   - name: leftHeader
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeader:member
     package: excel!
     fullName: leftHeader
-    summary: >-
-      The left header of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: 'The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,34 +118,22 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeaderPicture:member
     package: excel!
     fullName: leftHeaderPicture
-    summary: >-
-      Gets a `HeaderFooterPicture` object that represents the picture for the
-      left section of the header.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets a `HeaderFooterPicture` object that represents the picture for the left section of the header.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'leftHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface" />
   - name: rightFooter
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooter:member
     package: excel!
     fullName: rightFooter
-    summary: >-
-      The right footer of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: 'The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,34 +144,22 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooterPicture:member
     package: excel!
     fullName: rightFooterPicture
-    summary: >-
-      Gets a `HeaderFooterPicture` object that represents the picture for the
-      right section of the footer.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets a `HeaderFooterPicture` object that represents the picture for the right section of the footer.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rightFooterPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface" />
   - name: rightHeader
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeader:member
     package: excel!
     fullName: rightHeader
-    summary: >-
-      The right header of the worksheet. To apply font formatting or insert a
-      variable value, use format codes specified here:
-      https://msdn.microsoft.com/library/bb225426.aspx.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: 'The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/library/bb225426.aspx.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,19 +170,12 @@ properties:
     uid: excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeaderPicture:member
     package: excel!
     fullName: rightHeaderPicture
-    summary: >-
-      Gets a `HeaderFooterPicture` object that represents the picture for the
-      right section of the header.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets a `HeaderFooterPicture` object that represents the picture for the right section of the header.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rightHeaderPicture?: Excel.Interfaces.HeaderFooterPictureLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface"
-          />
+        type: <xref uid="excel!Excel.Interfaces.HeaderFooterPictureLoadOptions:interface" />

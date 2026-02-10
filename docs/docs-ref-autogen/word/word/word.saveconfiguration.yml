@@ -4,19 +4,13 @@ uid: word!Word.SaveConfiguration:enum
 package: word!
 fullName: Word.SaveConfiguration
 summary: Specifies the save options.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
 
   await Word.run(async (context) => {
     // Closes the document window, prompting to save if this is a new document.
@@ -25,9 +19,8 @@ remarks: >-
     console.log("About to close the document window...");
     window.close(closeOptions);
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -37,7 +30,7 @@ fields:
     summary: |-
       Specifies not to save changes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DoNotSaveChanges"'
   - name: promptToSaveChanges
     uid: word!Word.SaveConfiguration.promptToSaveChanges:member
@@ -45,7 +38,7 @@ fields:
     summary: |-
       Specifies to prompt to save changes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"PromptToSaveChanges"'
   - name: saveChanges
     uid: word!Word.SaveConfiguration.saveChanges:member
@@ -53,5 +46,5 @@ fields:
     summary: |-
       Specifies to save changes.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SaveChanges"'

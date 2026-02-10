@@ -4,10 +4,8 @@ uid: word!Word.ListTemplateApplyOptions:interface
 package: word!
 fullName: Word.ListTemplateApplyOptions
 summary: Represents options for applying a list template to a range.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.ListTemplateApplyOptions#applyLevel:member
     package: word!
     fullName: applyLevel
-    summary: >-
-      If provided, specifies the level to apply in the list template. The
-      default value is 1.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the level to apply in the list template. The default value is 1.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,34 +27,22 @@ properties:
     uid: word!Word.ListTemplateApplyOptions#applyTo:member
     package: word!
     fullName: applyTo
-    summary: >-
-      If provided, specifies which part of the list to apply the template to.
-      The default value is `wholeList`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies which part of the list to apply the template to. The default value is `wholeList`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        applyTo?: Word.ListApplyTo | "WholeList" | "ThisPointForward" |
-        "Selection";
+      content: 'applyTo?: Word.ListApplyTo | "WholeList" | "ThisPointForward" | "Selection";'
       return:
-        type: >-
-          <xref uid="word!Word.ListApplyTo:enum" /> | "WholeList" |
-          "ThisPointForward" | "Selection"
+        type: <xref uid="word!Word.ListApplyTo:enum" /> | "WholeList" | "ThisPointForward" | "Selection"
   - name: continuePreviousList
     uid: word!Word.ListTemplateApplyOptions#continuePreviousList:member
     package: word!
     fullName: continuePreviousList
-    summary: >-
-      If provided, specifies whether to continue the previous list. The default
-      value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to continue the previous list. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,20 +53,12 @@ properties:
     uid: word!Word.ListTemplateApplyOptions#defaultListBehavior:member
     package: word!
     fullName: defaultListBehavior
-    summary: >-
-      If provided, specifies the default list behavior. The default value is
-      `word97`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the default list behavior. The default value is `word97`<!-- -->.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        defaultListBehavior?: Word.DefaultListBehavior | "Word97" | "Word2000" |
-        "Word2002";
+      content: 'defaultListBehavior?: Word.DefaultListBehavior | "Word97" | "Word2000" | "Word2002";'
       return:
-        type: >-
-          <xref uid="word!Word.DefaultListBehavior:enum" /> | "Word97" |
-          "Word2000" | "Word2002"
+        type: <xref uid="word!Word.DefaultListBehavior:enum" /> | "Word97" | "Word2000" | "Word2002"

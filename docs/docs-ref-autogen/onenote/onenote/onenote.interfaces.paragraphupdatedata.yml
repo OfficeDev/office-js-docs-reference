@@ -3,11 +3,9 @@ name: OneNote.Interfaces.ParagraphUpdateData
 uid: onenote!OneNote.Interfaces.ParagraphUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.ParagraphUpdateData
-summary: >-
-  An interface for updating data on the `Paragraph` object, for use in
-  `paragraph.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,14 +14,9 @@ properties:
     uid: onenote!OneNote.Interfaces.ParagraphUpdateData#image:member
     package: onenote!
     fullName: image
-    summary: >-
-      Gets the Image object in the Paragraph. Throws an exception if
-      ParagraphType is not Image.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,14 +27,9 @@ properties:
     uid: onenote!OneNote.Interfaces.ParagraphUpdateData#table:member
     package: onenote!
     fullName: table
-    summary: >-
-      Gets the Table object in the Paragraph. Throws an exception if
-      ParagraphType is not Table.
-    remarks: >-
-      \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
-      \]
-
+    summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

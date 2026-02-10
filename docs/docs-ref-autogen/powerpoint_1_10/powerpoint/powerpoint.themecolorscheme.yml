@@ -4,11 +4,8 @@ uid: powerpoint!PowerPoint.ThemeColorScheme:class
 package: powerpoint!
 fullName: PowerPoint.ThemeColorScheme
 summary: Represents a theme color scheme.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -17,11 +14,9 @@ properties:
     uid: powerpoint!PowerPoint.ThemeColorScheme#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,17 +29,12 @@ methods:
     package: powerpoint!
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getThemeColor(color: PowerPoint.ThemeColor):
-        OfficeExtension.ClientResult<string>;
+      content: 'getThemeColor(color: PowerPoint.ThemeColor): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: color
           description: The theme color.
@@ -57,26 +47,16 @@ methods:
     package: powerpoint!
     fullName: getThemeColor(color)
     summary: Gets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" |
-        "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" |
-        "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"):
-        OfficeExtension.ClientResult<string>;
+      content: 'getThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: color
           description: The theme color.
-          type: >-
-            "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" |
-            "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" |
-            "Hyperlink" | "Light1" | "Light2"
+          type: '"Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"'
       return:
         type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;
         description: The color value in \#RRGGBB format (e.g., "FFA500").
@@ -85,11 +65,8 @@ methods:
     package: powerpoint!
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,9 +76,7 @@ methods:
           description: The theme color.
           type: <xref uid="powerpoint!PowerPoint.ThemeColor:enum" />
         - id: rgbColor
-          description: >-
-            The color value in \#RRGGBB format (e.g., "FFA500") or as a named
-            HTML color (e.g., "orange").
+          description: The color value in \#RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").
           type: string
       return:
         type: void
@@ -111,30 +86,18 @@ methods:
     package: powerpoint!
     fullName: setThemeColor(color, rgbColor)
     summary: Sets the color value for the specified `ThemeColor`<!-- -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" |
-        "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" |
-        "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2", rgbColor:
-        string): void;
+      content: 'setThemeColor(color: "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2", rgbColor: string): void;'
       parameters:
         - id: color
           description: The theme color.
-          type: >-
-            "Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" |
-            "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" |
-            "Hyperlink" | "Light1" | "Light2"
+          type: '"Mixed" | "None" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Dark1" | "Dark2" | "FollowedHyperlink" | "Hyperlink" | "Light1" | "Light2"'
         - id: rgbColor
-          description: >-
-            The color value in \#RRGGBB format (e.g., "FFA500") or as a named
-            HTML color (e.g., "orange").
+          description: The color value in \#RRGGBB format (e.g., "FFA500") or as a named HTML color (e.g., "orange").
           type: string
       return:
         type: void
@@ -143,17 +106,9 @@ methods:
     uid: powerpoint!PowerPoint.ThemeColorScheme#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `PowerPoint.ThemeColorScheme` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `PowerPoint.Interfaces.ThemeColorSchemeData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.ThemeColorScheme` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ThemeColorSchemeData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

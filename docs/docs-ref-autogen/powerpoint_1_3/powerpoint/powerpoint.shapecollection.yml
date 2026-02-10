@@ -4,23 +4,15 @@ uid: powerpoint!PowerPoint.ShapeCollection:class
 package: powerpoint!
 fullName: PowerPoint.ShapeCollection
 summary: Represents the collection of shapes.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
 
   // Changes the transparency of every geometric shape in the slide.
-
   await PowerPoint.run(async (context) => {
     // Get the type of shape for every shape in the collection.
     const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
@@ -35,9 +27,8 @@ remarks: >-
     });
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,11 +37,9 @@ properties:
     uid: powerpoint!PowerPoint.ShapeCollection#context:member
     package: powerpoint!
     fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +52,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,23 +65,15 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of shapes in the collection.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: |-
+      \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Gets the table from a shape.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
@@ -118,9 +99,8 @@ methods:
           } else console.log("Selected shape isn't table.");
         } else console.log("No shape selected.");
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,14 +112,9 @@ methods:
     uid: powerpoint!PowerPoint.ShapeCollection#getItem:member(1)
     package: powerpoint!
     fullName: getItem(key)
-    summary: >-
-      Gets a shape using its unique ID. An error is thrown if the shape doesn't
-      exist.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Gets a shape using its unique ID. An error is thrown if the shape doesn't exist.
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,30 +125,19 @@ methods:
           type: string
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
-        description: >-
-          The shape with the unique ID. If such a shape doesn't exist, an error
-          is thrown.
+        description: The shape with the unique ID. If such a shape doesn't exist, an error is thrown.
   - name: getItemAt(index)
     uid: powerpoint!PowerPoint.ShapeCollection#getItemAt:member(1)
     package: powerpoint!
     fullName: getItemAt(index)
-    summary: >-
-      Gets a shape using its zero-based index in the collection. An error is
-      thrown if the index is out of range.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
+    remarks: |-
+      \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
       await PowerPoint.run(async function (context) {
         const slide: PowerPoint.Slide = context.presentation.slides.getItemAt(0);
@@ -189,9 +153,8 @@ methods:
 
         console.log("Added key " + JSON.stringify(myShapeTag.key) + " with value " + JSON.stringify(myShapeTag.value));
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,24 +165,14 @@ methods:
           type: number
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
-        description: >-
-          The shape at the given index. An error is thrown if index is out of
-          range.
+        description: The shape at the given index. An error is thrown if index is out of range.
   - name: getItemOrNullObject(id)
     uid: powerpoint!PowerPoint.ShapeCollection#getItemOrNullObject:member(1)
     package: powerpoint!
     fullName: getItemOrNullObject(id)
-    summary: >-
-      Gets a shape using its unique ID. If such a shape doesn't exist, an object
-      with an `isNullObject` property set to true is returned. For further
-      information, see [*OrNullObject methods and
-      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
-      -->.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: Gets a shape using its unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,34 +183,22 @@ methods:
           type: string
       return:
         type: <xref uid="powerpoint!PowerPoint.Shape:class" />
-        description: >-
-          The shape with the unique ID. If such a shape doesn't exist, an object
-          with an `isNullObject` property set to true is returned.
+        description: The shape with the unique ID. If such a shape doesn't exist, an object with an `isNullObject` property set to true is returned.
   - name: load(options)
     uid: powerpoint!PowerPoint.ShapeCollection#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.ShapeCollectionLoadOptions &
-        PowerPoint.Interfaces.CollectionLoadOptions):
-        PowerPoint.ShapeCollection;
+      content: 'load(options?: PowerPoint.Interfaces.ShapeCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.ShapeCollection;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface"
-            /> & <xref
-            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
-            />
+          type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface" /> & <xref uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeCollection:class" />
         description: ''
@@ -265,35 +206,26 @@ methods:
     uid: powerpoint!PowerPoint.ShapeCollection#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.ShapeCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeCollection:class" />
-        description: >-
+        description: |-
           #### Examples
 
-
           ```TypeScript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
-
+          // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
 
           // Changes the transparency of every geometric shape in the slide.
-
           await PowerPoint.run(async (context) => {
             // Get the type of shape for every shape in the collection.
             const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
@@ -308,30 +240,21 @@ methods:
             });
             await context.sync();
           });
-
           ```
   - name: load(propertyNamesAndPaths)
     uid: powerpoint!PowerPoint.ShapeCollection#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        PowerPoint.ShapeCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.ShapeCollection;'
       parameters:
         - id: propertyNamesAndPaths
-          description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.ShapeCollection:class" />
@@ -340,26 +263,14 @@ methods:
     uid: powerpoint!PowerPoint.ShapeCollection#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that's passed to it.) Whereas the original
-      `PowerPoint.ShapeCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `PowerPoint.Interfaces.ShapeCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.ShapeCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface"
-          />
+        type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

@@ -4,10 +4,8 @@ uid: excel!Excel.FilterCriteria:interface
 package: excel!
 fullName: Excel.FilterCriteria
 summary: Represents the filtering criteria applied to a column.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: excel!Excel.FilterCriteria#color:member
     package: excel!
     fullName: color
-    summary: >-
-      The HTML color string used to filter cells. Used with `cellColor` and
-      `fontColor` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The HTML color string used to filter cells. Used with `cellColor` and `fontColor` filtering.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,18 +27,12 @@ properties:
     uid: excel!Excel.FilterCriteria#criterion1:member
     package: excel!
     fullName: criterion1
-    summary: >-
-      The first criterion used to filter data. Used as an operator in the case
-      of `custom` filtering. For example "<!-- -->&gt;<!-- -->50" for numbers
-      greater than 50, or "=*s" for values ending in "s".
+    summary: |-
+      The first criterion used to filter data. Used as an operator in the case of `custom` filtering. For example "<!-- -->&gt;<!-- -->50" for numbers greater than 50, or "=\*s" for values ending in "s".
 
-
-      Used as a number in the case of top/bottom items/percents (e.g., "5" for
-      the top 5 items if `filterOn` is set to `topItems`<!-- -->).
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+      Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if `filterOn` is set to `topItems`<!-- -->).
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,13 +43,9 @@ properties:
     uid: excel!Excel.FilterCriteria#criterion2:member
     package: excel!
     fullName: criterion2
-    summary: >-
-      The second criterion used to filter data. Only used as an operator in the
-      case of `custom` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The second criterion used to filter data. Only used as an operator in the case of `custom` filtering.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,69 +56,30 @@ properties:
     uid: excel!Excel.FilterCriteria#dynamicCriteria:member
     package: excel!
     fullName: dynamicCriteria
-    summary: >-
-      The dynamic criteria from the `Excel.DynamicFilterCriteria` set to apply
-      on this column. Used with `dynamic` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The dynamic criteria from the `Excel.DynamicFilterCriteria` set to apply on this column. Used with `dynamic` filtering.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        dynamicCriteria?: Excel.DynamicFilterCriteria | "Unknown" |
-        "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
-        "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
-        "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
-        "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay"
-        | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" |
-        "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" |
-        "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
-        "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" |
-        "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" |
-        "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
-        "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";
+      content: 'dynamicCriteria?: Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";'
       return:
-        type: >-
-          <xref uid="excel!Excel.DynamicFilterCriteria:enum" /> | "Unknown" |
-          "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
-          "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
-          "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
-          "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" |
-          "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" |
-          "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" |
-          "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" |
-          "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" |
-          "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear"
-          | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth"
-          | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" |
-          "YearToDate" | "Yesterday"
+        type: <xref uid="excel!Excel.DynamicFilterCriteria:enum" /> | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
   - name: filterOn
     uid: excel!Excel.FilterCriteria#filterOn:member
     package: excel!
     fullName: filterOn
-    summary: >-
-      The property used by the filter to determine whether the values should
-      stay visible.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The property used by the filter to determine whether the values should stay visible.
+    remarks: |-
+      \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
       // This function adds a percentage AutoFilter to the active worksheet 
-
       // and applies the filter to a column of the used range.
-
       await Excel.run(async (context) => {
           // Retrieve the active worksheet and the used range on that worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -148,30 +93,21 @@ properties:
 
           await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        filterOn: Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor"
-        | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" |
-        "Icon" | "Custom";
+      content: 'filterOn: Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom";'
       return:
-        type: >-
-          <xref uid="excel!Excel.FilterOn:enum" /> | "BottomItems" |
-          "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
-          "TopItems" | "TopPercent" | "Icon" | "Custom"
+        type: <xref uid="excel!Excel.FilterOn:enum" /> | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"
   - name: icon
     uid: excel!Excel.FilterCriteria#icon:member
     package: excel!
     fullName: icon
     summary: The icon used to filter cells. Used with `icon` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,13 +118,9 @@ properties:
     uid: excel!Excel.FilterCriteria#operator:member
     package: excel!
     fullName: operator
-    summary: >-
-      The operator used to combine criterion 1 and 2 when using `custom`
-      filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: The operator used to combine criterion 1 and 2 when using `custom` filtering.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,15 +132,11 @@ properties:
     package: excel!
     fullName: values
     summary: The set of values to be used as part of `values` filtering.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'values?: Array<string | FilterDatetime>;'
       return:
-        type: >-
-          Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface"
-          />&gt;
+        type: Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface" />&gt;

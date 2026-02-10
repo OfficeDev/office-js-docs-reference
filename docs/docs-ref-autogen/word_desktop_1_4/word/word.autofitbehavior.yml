@@ -4,10 +4,8 @@ uid: word!Word.AutoFitBehavior:enum
 package: word!
 fullName: Word.AutoFitBehavior
 summary: Specifies how a table is resized to fit its contents or the window.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -17,7 +15,7 @@ fields:
     summary: |-
       Automatically resizes the table columns to fit the contents.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Content"'
   - name: fixedSize
     uid: word!Word.AutoFitBehavior.fixedSize:member
@@ -25,7 +23,7 @@ fields:
     summary: |-
       Disables automatic resizing. The table retains its current size.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FixedSize"'
   - name: window
     uid: word!Word.AutoFitBehavior.window:member
@@ -33,5 +31,5 @@ fields:
     summary: |-
       Automatically resizes the table to fit the window width.
 
-      * \[Api set: WordApiDesktop 1.4\]
+      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Window"'

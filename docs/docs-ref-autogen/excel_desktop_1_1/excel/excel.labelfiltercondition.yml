@@ -3,24 +3,14 @@ name: Excel.LabelFilterCondition
 uid: excel!Excel.LabelFilterCondition:enum
 package: excel!
 fullName: Excel.LabelFilterCondition
-summary: >-
-  Enum representing all accepted conditions by which a label filter can be
-  applied. Used to configure the type of PivotFilter that is applied to the
-  field. `PivotFilter.criteria.exclusive` can be set to `true` to invert many of
-  these conditions.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Enum representing all accepted conditions by which a label filter can be applied. Used to configure the type of PivotFilter that is applied to the field. `PivotFilter.criteria.exclusive` can be set to `true` to invert many of these conditions.
+remarks: |-
+  \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
 
   await Excel.run(async (context) => {
     // Add a PivotFilter to filter based on the strings of item labels.
@@ -43,76 +33,60 @@ remarks: >-
 
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
   - name: beginsWith
     uid: excel!Excel.LabelFilterCondition.beginsWith:member
     package: excel!
-    summary: >-
+    summary: |-
       Label begins with substring criterion.
 
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
 
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
-
-
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BeginsWith"'
   - name: between
     uid: excel!Excel.LabelFilterCondition.between:member
     package: excel!
-    summary: >-
+    summary: |-
       Between `lowerBound` and `upperBound` criteria.
 
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
 
-      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->.
-      Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
-
-
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Between"'
   - name: contains
     uid: excel!Excel.LabelFilterCondition.contains:member
     package: excel!
-    summary: >-
+    summary: |-
       Label contains substring criterion.
 
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
 
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
-
-
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contains"'
   - name: endsWith
     uid: excel!Excel.LabelFilterCondition.endsWith:member
     package: excel!
-    summary: >-
+    summary: |-
       Label ends with substring criterion.
 
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
 
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
-
-
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"EndsWith"'
   - name: equals
     uid: excel!Excel.LabelFilterCondition.equals:member
     package: excel!
-    summary: >-
+    summary: |-
       Equals comparator criterion.
 
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
 
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
-
-
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Equals"'
   - name: greaterThan
     uid: excel!Excel.LabelFilterCondition.greaterThan:member
@@ -122,7 +96,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GreaterThan"'
   - name: greaterThanOrEqualTo
     uid: excel!Excel.LabelFilterCondition.greaterThanOrEqualTo:member
@@ -132,7 +106,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GreaterThanOrEqualTo"'
   - name: lessThan
     uid: excel!Excel.LabelFilterCondition.lessThan:member
@@ -142,7 +116,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LessThan"'
   - name: lessThanOrEqualTo
     uid: excel!Excel.LabelFilterCondition.lessThanOrEqualTo:member
@@ -152,7 +126,7 @@ fields:
 
       Required Criteria: {`comparator`<!-- -->}<!-- -->.
 
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LessThanOrEqualTo"'
   - name: unknown
     uid: excel!Excel.LabelFilterCondition.unknown:member
@@ -160,5 +134,5 @@ fields:
     summary: |-
       `LabelFilterCondition` is unknown or unsupported.
 
-      * \[Api set: ExcelApi 1.12\]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

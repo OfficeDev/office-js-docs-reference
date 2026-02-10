@@ -7,10 +7,10 @@ summary: >-
   Represents a group of controls on a ribbon tab.
 
 
-  **Requirement set**: [RibbonApi
+  \*\*Requirement set\*\*: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,19 +19,14 @@ properties:
     uid: office!Office.Group#controls:member
     package: office!
     fullName: controls
-    summary: >-
-      Specifies one or more of the controls in the group, such as menu items,
-      buttons, etc.
+    summary: Specifies one or more of the controls in the group, such as menu items, buttons, etc.
     remarks: >-
-      When the `Group` object is part of an
-      [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
-      object passed to the `requestUpdate` method of
-      [Office.Ribbon](xref:office!Office.Ribbon:interface)<!-- -->, the
-      `controls` properties of the various
-      [Office.Group](xref:office!Office.Group:interface) objects specify which
-      controls have their enabled status changed; the `controls` property of the
-      `Group` object's parent `Tab` object is ignored.
-
+      When the `Group` object is part of an [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
+      object passed to the `requestUpdate` method of [Office.Ribbon](xref:office!Office.Ribbon:interface)<!-- -->, the
+      `controls` properties of the various [Office.Group](xref:office!Office.Group:interface) objects specify which
+      controls have their enabled status changed; the `controls` property of the `Group` object's parent `Tab` object is
+      ignored.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +39,7 @@ properties:
     fullName: id
     summary: Identifier of the group as specified in the manifest.
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

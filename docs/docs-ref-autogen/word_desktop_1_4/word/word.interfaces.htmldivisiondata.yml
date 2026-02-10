@@ -3,11 +3,9 @@ name: Word.Interfaces.HtmlDivisionData
 uid: word!Word.Interfaces.HtmlDivisionData:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionData
-summary: >-
-  An interface describing the data returned by calling
-  `htmlDivision.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `htmlDivision.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: word!
     fullName: leftIndent
     summary: Specifies the left indent value (in points) for this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,10 +28,8 @@ properties:
     package: word!
     fullName: rightIndent
     summary: Specifies the right indent (in points) for this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,10 +41,8 @@ properties:
     package: word!
     fullName: spaceAfter
     summary: Specifies the amount of spacing (in points) after this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,10 +54,8 @@ properties:
     package: word!
     fullName: spaceBefore
     summary: Specifies the spacing (in points) before this HTML division.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

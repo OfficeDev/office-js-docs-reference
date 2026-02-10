@@ -3,15 +3,9 @@ name: Excel.CellBorderCollection
 uid: excel!Excel.CellBorderCollection:interface
 package: excel!
 fullName: Excel.CellBorderCollection
-summary: >-
-  Represents the `format.borders` properties of `getCellProperties`<!-- -->,
-  `getRowProperties`<!-- -->, and `getColumnProperties`<!-- -->, or the
-  `format.borders` input parameter of `setCellProperties`<!-- -->,
-  `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: Represents the `format.borders` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and `getColumnProperties`<!-- -->, or the `format.borders` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,10 +15,8 @@ properties:
     package: excel!
     fullName: bottom
     summary: Represents the `format.borders.bottom` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,10 +28,8 @@ properties:
     package: excel!
     fullName: diagonalDown
     summary: Represents the `format.borders.diagonalDown` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,10 +41,8 @@ properties:
     package: excel!
     fullName: diagonalUp
     summary: Represents the `format.borders.diagonalUp` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,10 +54,8 @@ properties:
     package: excel!
     fullName: horizontal
     summary: Represents the `format.borders.horizontal` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,10 +67,8 @@ properties:
     package: excel!
     fullName: left
     summary: Represents the `format.borders.left` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,10 +80,8 @@ properties:
     package: excel!
     fullName: right
     summary: Represents the `format.borders.right` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,10 +93,8 @@ properties:
     package: excel!
     fullName: top
     summary: Represents the `format.borders.top` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,10 +106,8 @@ properties:
     package: excel!
     fullName: vertical
     summary: Represents the `format.borders.vertical` property.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

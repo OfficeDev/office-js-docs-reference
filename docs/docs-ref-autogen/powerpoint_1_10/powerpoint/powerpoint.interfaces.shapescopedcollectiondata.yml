@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.ShapeScopedCollectionData
 uid: powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `shapeScopedCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `shapeScopedCollection.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

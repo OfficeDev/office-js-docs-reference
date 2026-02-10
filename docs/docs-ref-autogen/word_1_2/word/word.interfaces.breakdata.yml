@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.BreakData
 summary: An interface describing the data returned by calling `break.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface

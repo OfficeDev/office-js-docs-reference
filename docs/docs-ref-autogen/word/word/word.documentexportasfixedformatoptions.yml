@@ -3,13 +3,9 @@ name: Word.DocumentExportAsFixedFormatOptions
 uid: word!Word.DocumentExportAsFixedFormatOptions:interface
 package: word!
 fullName: Word.DocumentExportAsFixedFormatOptions
-summary: >-
-  Provides configuration options for the
-  [Document.exportAsFixedFormat](xref:word!Word.Document:class) method.
-remarks: >-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Provides configuration options for the [Document.exportAsFixedFormat](xref:word!Word.Document:class) method.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,13 +14,9 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#bitmapMissingFonts:member
     package: word!
     fullName: bitmapMissingFonts
-    summary: >-
-      If provided, specifies whether to bitmap missing fonts. The default value
-      is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to bitmap missing fonts. The default value is `true`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,34 +27,22 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#createBookmarks:member
     package: word!
     fullName: createBookmarks
-    summary: >-
-      If provided, specifies the bookmark creation mode. The default value is
-      `none`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the bookmark creation mode. The default value is `none`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        createBookmarks?: Word.ExportCreateBookmarks | "None" | "Headings" |
-        "WordBookmarks";
+      content: 'createBookmarks?: Word.ExportCreateBookmarks | "None" | "Headings" | "WordBookmarks";'
       return:
-        type: >-
-          <xref uid="word!Word.ExportCreateBookmarks:enum" /> | "None" |
-          "Headings" | "WordBookmarks"
+        type: <xref uid="word!Word.ExportCreateBookmarks:enum" /> | "None" | "Headings" | "WordBookmarks"
   - name: documentStructureTags
     uid: word!Word.DocumentExportAsFixedFormatOptions#documentStructureTags:member
     package: word!
     fullName: documentStructureTags
-    summary: >-
-      If provided, specifies whether to include document structure tags. The
-      default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to include document structure tags. The default value is `true`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -70,17 +50,12 @@ properties:
       return:
         type: boolean
   - name: fixedFormatExtensionClassPointer
-    uid: >-
-      word!Word.DocumentExportAsFixedFormatOptions#fixedFormatExtensionClassPointer:member
+    uid: word!Word.DocumentExportAsFixedFormatOptions#fixedFormatExtensionClassPointer:member
     package: word!
     fullName: fixedFormatExtensionClassPointer
-    summary: >-
-      If provided, specifies the extension class pointer. The default value is
-      `null`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the extension class pointer. The default value is `null`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -91,13 +66,9 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#from:member
     package: word!
     fullName: from
-    summary: >-
-      If provided, specifies the starting page number. The default value is
-      `1`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the starting page number. The default value is `1`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -108,13 +79,9 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#includeDocProps:member
     package: word!
     fullName: includeDocProps
-    summary: >-
-      If provided, specifies whether to include document properties. The default
-      value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to include document properties. The default value is `true`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -125,33 +92,22 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#item:member
     package: word!
     fullName: item
-    summary: >-
-      If provided, specifies the item to export. The default value is
-      `documentContent`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the item to export. The default value is `documentContent`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'item?: Word.ExportItem | "DocumentContent" | "DocumentWithMarkup";'
       return:
-        type: >-
-          <xref uid="word!Word.ExportItem:enum" /> | "DocumentContent" |
-          "DocumentWithMarkup"
+        type: <xref uid="word!Word.ExportItem:enum" /> | "DocumentContent" | "DocumentWithMarkup"
   - name: keepInformationRightsManagement
-    uid: >-
-      word!Word.DocumentExportAsFixedFormatOptions#keepInformationRightsManagement:member
+    uid: word!Word.DocumentExportAsFixedFormatOptions#keepInformationRightsManagement:member
     package: word!
     fullName: keepInformationRightsManagement
-    summary: >-
-      If provided, specifies whether to keep Information Rights Management (IRM)
-      settings. The default value is `true`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to keep Information Rights Management (IRM) settings. The default value is `true`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -162,13 +118,9 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#openAfterExport:member
     package: word!
     fullName: openAfterExport
-    summary: >-
-      If provided, specifies whether to open the file after export. The default
-      value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to open the file after export. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -179,13 +131,9 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#optimizeFor:member
     package: word!
     fullName: optimizeFor
-    summary: >-
-      If provided, specifies the optimization target for the export. The default
-      value is `print`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the optimization target for the export. The default value is `print`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -196,34 +144,22 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#range:member
     package: word!
     fullName: range
-    summary: >-
-      If provided, specifies the range to export. The default value is
-      `allDocument`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the range to export. The default value is `allDocument`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        range?: Word.ExportRange | "AllDocument" | "Selection" | "CurrentPage" |
-        "FromTo";
+      content: 'range?: Word.ExportRange | "AllDocument" | "Selection" | "CurrentPage" | "FromTo";'
       return:
-        type: >-
-          <xref uid="word!Word.ExportRange:enum" /> | "AllDocument" |
-          "Selection" | "CurrentPage" | "FromTo"
+        type: <xref uid="word!Word.ExportRange:enum" /> | "AllDocument" | "Selection" | "CurrentPage" | "FromTo"
   - name: to
     uid: word!Word.DocumentExportAsFixedFormatOptions#to:member
     package: word!
     fullName: to
-    summary: >-
-      If provided, specifies the ending page number. The default value is the
-      last page of the document.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies the ending page number. The default value is the last page of the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -234,14 +170,9 @@ properties:
     uid: word!Word.DocumentExportAsFixedFormatOptions#useIso19005_1:member
     package: word!
     fullName: useIso19005_1
-    summary: >-
-      If provided, specifies whether to use [ISO 19005-1
-      compliance](https://www.iso.org/standard/38920.html)<!-- -->. The default
-      value is `false`<!-- -->.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: If provided, specifies whether to use [ISO 19005-1 compliance](https://www.iso.org/standard/38920.html)<!-- -->. The default value is `false`<!-- -->.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:

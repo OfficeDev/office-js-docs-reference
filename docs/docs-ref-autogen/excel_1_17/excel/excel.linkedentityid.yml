@@ -3,13 +3,9 @@ name: Excel.LinkedEntityId
 uid: excel!Excel.LinkedEntityId:interface
 package: excel!
 fullName: Excel.LinkedEntityId
-summary: >-
-  The linked entity ID object represents a set of properties that describes a
-  service and culture for locating this service defined value.
-remarks: >-
-  \[ [API set: ExcelApi
-  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+summary: The linked entity ID object represents a set of properties that describes a service and culture for locating this service defined value.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,14 +14,9 @@ properties:
     uid: excel!Excel.LinkedEntityId#culture:member
     package: excel!
     fullName: culture
-    summary: >-
-      Represents which language culture was used to create this `CellValue`<!--
-      -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents which language culture was used to create this `CellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,14 +27,9 @@ properties:
     uid: excel!Excel.LinkedEntityId#domainId:member
     package: excel!
     fullName: domainId
-    summary: >-
-      Represents a domain specific to a service used to create the
-      `CellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents a domain specific to a service used to create the `CellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,14 +40,9 @@ properties:
     uid: excel!Excel.LinkedEntityId#entityId:member
     package: excel!
     fullName: entityId
-    summary: >-
-      Represents an identifier specific to a service used to create the
-      `CellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    summary: Represents an identifier specific to a service used to create the `CellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +54,8 @@ properties:
     package: excel!
     fullName: serviceId
     summary: Represents which service was used to create the `CellValue`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi
-      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

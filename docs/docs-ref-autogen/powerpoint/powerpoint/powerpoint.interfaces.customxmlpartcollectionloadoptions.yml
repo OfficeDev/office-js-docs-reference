@@ -4,26 +4,19 @@ uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions:interfa
 package: powerpoint!
 fullName: PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions
 summary: A collection of custom XML parts.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: >-
-      Specifying `$all` for the load options loads all the scalar properties
-      (such as `Range.address`<!-- -->) but not the navigational properties
-      (such as `Range.format.fill.color`<!-- -->).
+    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,16 +24,12 @@ properties:
       return:
         type: boolean
   - name: id
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#id:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#id:member
     package: powerpoint!
     fullName: id
     summary: 'For EACH ITEM in the collection: The ID of the custom XML part.'
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,16 +37,12 @@ properties:
       return:
         type: boolean
   - name: namespaceUri
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member
+    uid: powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member
     package: powerpoint!
     fullName: namespaceUri
     summary: 'For EACH ITEM in the collection: The namespace URI of the custom XML part.'
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

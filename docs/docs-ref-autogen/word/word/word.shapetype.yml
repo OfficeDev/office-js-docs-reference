@@ -4,19 +4,13 @@ uid: word!Word.ShapeType:enum
 package: word!
 fullName: Word.ShapeType
 summary: Represents the shape type.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+remarks: |-
+  \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/45-shapes/manage-shapes-text-boxes.yaml
 
   await Word.run(async (context) => {
     // Gets text boxes in the main document.
@@ -37,9 +31,8 @@ remarks: >-
       console.log("No shapes found in the main document.");
     }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -49,7 +42,7 @@ fields:
     summary: |-
       Canvas shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Canvas"'
   - name: geometricShape
     uid: word!Word.ShapeType.geometricShape:member
@@ -57,7 +50,7 @@ fields:
     summary: |-
       Geometric shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"GeometricShape"'
   - name: group
     uid: word!Word.ShapeType.group:member
@@ -65,7 +58,7 @@ fields:
     summary: |-
       Group shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Group"'
   - name: picture
     uid: word!Word.ShapeType.picture:member
@@ -73,7 +66,7 @@ fields:
     summary: |-
       Picture shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Picture"'
   - name: textBox
     uid: word!Word.ShapeType.textBox:member
@@ -81,7 +74,7 @@ fields:
     summary: |-
       Text box shape.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TextBox"'
   - name: unsupported
     uid: word!Word.ShapeType.unsupported:member
@@ -89,5 +82,5 @@ fields:
     summary: |-
       Unsupported shape type.
 
-      * \[Api set: WordApiDesktop 1.2\]
+      \* \[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Unsupported"'

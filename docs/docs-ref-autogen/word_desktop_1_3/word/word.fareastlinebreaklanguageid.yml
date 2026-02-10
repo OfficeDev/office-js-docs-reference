@@ -3,13 +3,9 @@ name: Word.FarEastLineBreakLanguageId
 uid: word!Word.FarEastLineBreakLanguageId:enum
 package: word!
 fullName: Word.FarEastLineBreakLanguageId
-summary: >-
-  Represents the East Asian language to use when breaking lines of text in the
-  specified document or template.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Represents the East Asian language to use when breaking lines of text in the specified document or template.
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +15,7 @@ fields:
     summary: |-
       Represents Japanese language.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Japanese"'
   - name: korean
     uid: word!Word.FarEastLineBreakLanguageId.korean:member
@@ -27,7 +23,7 @@ fields:
     summary: |-
       Represents Korean language.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Korean"'
   - name: simplifiedChinese
     uid: word!Word.FarEastLineBreakLanguageId.simplifiedChinese:member
@@ -35,7 +31,7 @@ fields:
     summary: |-
       Represents Simplified Chinese language.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SimplifiedChinese"'
   - name: traditionalChinese
     uid: word!Word.FarEastLineBreakLanguageId.traditionalChinese:member
@@ -43,5 +39,5 @@ fields:
     summary: |-
       Represents Traditional Chinese language.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TraditionalChinese"'

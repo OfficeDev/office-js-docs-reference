@@ -3,11 +3,9 @@ name: Word.Interfaces.WindowCollectionUpdateData
 uid: word!Word.Interfaces.WindowCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.WindowCollectionUpdateData
-summary: >-
-  An interface for updating data on the `WindowCollection` object, for use in
-  `windowCollection.set({ ... })`<!-- -->.
+summary: An interface for updating data on the `WindowCollection` object, for use in `windowCollection.set({ ... })`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +16,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,13 +3,9 @@ name: Word.EmphasisMark
 uid: word!Word.EmphasisMark:enum
 package: word!
 fullName: Word.EmphasisMark
-summary: >-
-  Specifies the type of emphasis mark to use for a character or designated
-  character string.
-remarks: >-
-  \[ [API set: WordApiDesktop
-  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+summary: Specifies the type of emphasis mark to use for a character or designated character string.
+remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,7 +15,7 @@ fields:
     summary: |-
       No emphasis mark.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: overComma
     uid: word!Word.EmphasisMark.overComma:member
@@ -27,7 +23,7 @@ fields:
     summary: |-
       Emphasis mark over a comma.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OverComma"'
   - name: overSolidCircle
     uid: word!Word.EmphasisMark.overSolidCircle:member
@@ -35,7 +31,7 @@ fields:
     summary: |-
       Emphasis mark over a solid circle.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OverSolidCircle"'
   - name: overWhiteCircle
     uid: word!Word.EmphasisMark.overWhiteCircle:member
@@ -43,7 +39,7 @@ fields:
     summary: |-
       Emphasis mark over a white circle.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OverWhiteCircle"'
   - name: underSolidCircle
     uid: word!Word.EmphasisMark.underSolidCircle:member
@@ -51,5 +47,5 @@ fields:
     summary: |-
       Emphasis mark under a solid circle.
 
-      * \[Api set: WordApiDesktop 1.3\]
+      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"UnderSolidCircle"'

@@ -3,22 +3,13 @@ name: Office.ValueFormat
 uid: office!Office.ValueFormat:enum
 package: office!
 fullName: Office.ValueFormat
-summary: >-
-  Specifies whether values, such as numbers and dates, returned by the invoked
-  method are returned with their formatting applied.
-remarks: >-
-  For example, if the valueFormat parameter is specified as "formatted", a
-  number formatted as currency, or a date formatted as mm/dd/yy in the Office
-  application will have its formatting preserved. If the valueFormat parameter
-  is specified as "unformatted", a date will be returned in its underlying
-  sequential serial number form.
-
+summary: Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their formatting applied.
+remarks: |-
+  For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the Office application will have its formatting preserved. If the valueFormat parameter is specified as "unformatted", a date will be returned in its underlying sequential serial number form.
 
   #### Examples
 
-
   ```TypeScript
-
   /* Set the selection options. These will:
    - Pass the string "myContext" to the callback.
    - Include both visible and hidden data.
@@ -31,9 +22,7 @@ remarks: >-
       valueFormat: Office.ValueFormat.Formatted
   }
 
-
   // Get the selected data in the Office document as text.
-
   Office.context.document.getSelectedDataAsync(
       Office.CoercionType.Text,
       options,
@@ -44,9 +33,8 @@ remarks: >-
               console.log(`The selected data is "${asyncResult.value}".`);
           }
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -4,23 +4,15 @@ uid: powerpoint!PowerPoint.TableRowProperties:interface
 package: powerpoint!
 fullName: PowerPoint.TableRowProperties
 summary: Provides the table row properties.
-remarks: >-
-  \[ [API set: PowerPointApi
-  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-  \]
-
+remarks: |-
+  \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
   #### Examples
 
-
   ```TypeScript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
   // Specifies the column widths and row heights of a table.
-
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -31,9 +23,8 @@ remarks: >-
     });
     await context.sync();
   });
-
   ```
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -42,31 +33,19 @@ properties:
     uid: powerpoint!PowerPoint.TableRowProperties#rowHeight:member
     package: powerpoint!
     fullName: rowHeight
-    summary: >-
+    summary: |-
       Represents the desired height of each row in points, or is undefined.
 
-
-      When a table is being added, for rows whose height is undefined, the row
-      height will be calculated by evenly dividing the remaining height of the
-      table amongst those rows. If the table doesn't have a defined height, a
-      default row height will be used.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+      When a table is being added, for rows whose height is undefined, the row height will be calculated by evenly dividing the remaining height of the table amongst those rows. If the table doesn't have a defined height, a default row height will be used.
+    remarks: |-
+      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
       #### Examples
 
-
       ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
-
+      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
 
       // Specifies the column widths and row heights of a table.
-
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -77,9 +56,8 @@ properties:
         });
         await context.sync();
       });
-
       ```
-
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

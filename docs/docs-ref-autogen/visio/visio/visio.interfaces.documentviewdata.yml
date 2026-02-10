@@ -3,11 +3,9 @@ name: Visio.Interfaces.DocumentViewData
 uid: visio!Visio.Interfaces.DocumentViewData:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentViewData
-summary: >-
-  An interface describing the data returned by calling
-  `documentView.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `documentView.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: visio!
     fullName: disableHyperlinks
     summary: Disable Hyperlinks.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +28,8 @@ properties:
     package: visio!
     fullName: disablePan
     summary: Disable Pan.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,11 +41,8 @@ properties:
     package: visio!
     fullName: disablePanZoomWindow
     summary: Disable PanZoomWindow.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,11 +54,8 @@ properties:
     package: visio!
     fullName: disableZoom
     summary: Disable Zoom.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,11 +67,8 @@ properties:
     package: visio!
     fullName: hideDiagramBoundary
     summary: Hide Diagram Boundary.
-    remarks: >-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
-
+    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

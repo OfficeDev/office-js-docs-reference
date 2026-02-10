@@ -3,11 +3,9 @@ name: PowerPoint.Interfaces.DocumentPropertiesData
 uid: powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.DocumentPropertiesData
-summary: >-
-  An interface describing the data returned by calling
-  `documentProperties.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,11 +15,8 @@ properties:
     package: powerpoint!
     fullName: author
     summary: The author of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +28,8 @@ properties:
     package: powerpoint!
     fullName: category
     summary: The category of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,14 +40,9 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#comments:member
     package: powerpoint!
     fullName: comments
-    summary: >-
-      The Comments field in the metadata of the presentation. These have no
-      connection to comments made in slides.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    summary: The Comments field in the metadata of the presentation. These have no connection to comments made in slides.
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,11 +54,8 @@ properties:
     package: powerpoint!
     fullName: company
     summary: The company of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,16 +63,12 @@ properties:
       return:
         type: string
   - name: creationDate
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#creationDate:member
+    uid: powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#creationDate:member
     package: powerpoint!
     fullName: creationDate
     summary: The creation date of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,10 +80,8 @@ properties:
     package: powerpoint!
     fullName: keywords
     summary: The keywords of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,11 +93,8 @@ properties:
     package: powerpoint!
     fullName: lastAuthor
     summary: The last author of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,11 +106,8 @@ properties:
     package: powerpoint!
     fullName: manager
     summary: The manager of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,16 +115,12 @@ properties:
       return:
         type: string
   - name: revisionNumber
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#revisionNumber:member
+    uid: powerpoint!PowerPoint.Interfaces.DocumentPropertiesData#revisionNumber:member
     package: powerpoint!
     fullName: revisionNumber
     summary: The revision number of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,11 +132,8 @@ properties:
     package: powerpoint!
     fullName: subject
     summary: The subject of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,11 +145,8 @@ properties:
     package: powerpoint!
     fullName: title
     summary: The title of the presentation.
-    remarks: >-
-      \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
-      \]
-
+    remarks: '\[ [API set: PowerPointApi 1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

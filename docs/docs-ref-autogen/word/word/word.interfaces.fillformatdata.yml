@@ -3,11 +3,9 @@ name: Word.Interfaces.FillFormatData
 uid: word!Word.Interfaces.FillFormatData:interface
 package: word!
 fullName: Word.Interfaces.FillFormatData
-summary: >-
-  An interface describing the data returned by calling `fillFormat.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `fillFormat.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,13 +14,9 @@ properties:
     uid: word!Word.Interfaces.FillFormatData#backgroundColor:member
     package: word!
     fullName: backgroundColor
-    summary: >-
-      Returns a `ColorFormat` object that represents the background color for
-      the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ColorFormat` object that represents the background color for the fill.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,13 +27,9 @@ properties:
     uid: word!Word.Interfaces.FillFormatData#foregroundColor:member
     package: word!
     fullName: foregroundColor
-    summary: >-
-      Returns a `ColorFormat` object that represents the foreground color for
-      the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `ColorFormat` object that represents the foreground color for the fill.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,13 +40,9 @@ properties:
     uid: word!Word.Interfaces.FillFormatData#gradientAngle:member
     package: word!
     fullName: gradientAngle
-    summary: >-
-      Specifies the angle of the gradient fill. The valid range of values is
-      from 0 to 359.9.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the angle of the gradient fill. The valid range of values is from 0 to 359.9.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,33 +54,21 @@ properties:
     package: word!
     fullName: gradientColorType
     summary: Gets the gradient color type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        gradientColorType?: Word.GradientColorType | "Mixed" | "OneColor" |
-        "TwoColors" | "PresetColors" | "MultiColor";
+      content: 'gradientColorType?: Word.GradientColorType | "Mixed" | "OneColor" | "TwoColors" | "PresetColors" | "MultiColor";'
       return:
-        type: >-
-          <xref uid="word!Word.GradientColorType:enum" /> | "Mixed" | "OneColor"
-          | "TwoColors" | "PresetColors" | "MultiColor"
+        type: <xref uid="word!Word.GradientColorType:enum" /> | "Mixed" | "OneColor" | "TwoColors" | "PresetColors" | "MultiColor"
   - name: gradientDegree
     uid: word!Word.Interfaces.FillFormatData#gradientDegree:member
     package: word!
     fullName: gradientDegree
-    summary: >-
-      Returns how dark or light a one-color gradient fill is. A value of 0 means
-      that black is mixed in with the shape's foreground color to form the
-      gradient. A value of 1 means that white is mixed in. Values between 0 and
-      1 mean that a darker or lighter shade of the foreground color is mixed in.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns how dark or light a one-color gradient fill is. A value of 0 means that black is mixed in with the shape's foreground color to form the gradient. A value of 1 means that white is mixed in. Values between 0 and 1 mean that a darker or lighter shade of the foreground color is mixed in.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,33 +80,21 @@ properties:
     package: word!
     fullName: gradientStyle
     summary: Returns the gradient style for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        gradientStyle?: Word.GradientStyle | "Mixed" | "Horizontal" | "Vertical"
-        | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" |
-        "FromCenter";
+      content: 'gradientStyle?: Word.GradientStyle | "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter";'
       return:
-        type: >-
-          <xref uid="word!Word.GradientStyle:enum" /> | "Mixed" | "Horizontal" |
-          "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" |
-          "FromTitle" | "FromCenter"
+        type: <xref uid="word!Word.GradientStyle:enum" /> | "Mixed" | "Horizontal" | "Vertical" | "DiagonalUp" | "DiagonalDown" | "FromCorner" | "FromTitle" | "FromCenter"
   - name: gradientVariant
     uid: word!Word.Interfaces.FillFormatData#gradientVariant:member
     package: word!
     fullName: gradientVariant
-    summary: >-
-      Returns the gradient variant for the fill as an integer value from 1 to 4
-      for most gradient fills.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns the gradient variant for the fill as an integer value from 1 to 4 for most gradient fills.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,10 +106,8 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the object, or the formatting applied to it, is visible.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,112 +118,48 @@ properties:
     uid: word!Word.Interfaces.FillFormatData#pattern:member
     package: word!
     fullName: pattern
-    summary: >-
-      Returns a `PatternType` value that represents the pattern applied to the
-      fill or line.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Returns a `PatternType` value that represents the pattern applied to the fill or line.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" |
-        "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" |
-        "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" |
-        "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" |
-        "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" |
-        "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" |
-        "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" |
-        "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" |
-        "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" |
-        "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" |
-        "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" |
-        "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" |
-        "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" |
-        "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" |
-        "UpwardDiagonal" | "DiagonalCross";
+      content: 'pattern?: Word.PatternType | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross";'
       return:
-        type: >-
-          <xref uid="word!Word.PatternType:enum" /> | "Mixed" | "Percent5" |
-          "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" |
-          "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" |
-          "Percent90" | "DarkHorizontal" | "DarkVertical" |
-          "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" |
-          "Trellis" | "LightHorizontal" | "LightVertical" |
-          "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" |
-          "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" |
-          "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" |
-          "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" |
-          "LargeConfetti" | "LargeGrid" | "HorizontalBrick" |
-          "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" |
-          "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" |
-          "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" |
-          "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" |
-          "DiagonalCross"
+        type: <xref uid="word!Word.PatternType:enum" /> | "Mixed" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "DarkHorizontal" | "DarkVertical" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "SmallCheckerBoard" | "Trellis" | "LightHorizontal" | "LightVertical" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "SmallGrid" | "DottedDiamond" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedUpwardDiagonal" | "DashedDownwardDiagonal" | "NarrowVertical" | "NarrowHorizontal" | "DashedVertical" | "DashedHorizontal" | "LargeConfetti" | "LargeGrid" | "HorizontalBrick" | "LargeCheckerBoard" | "SmallConfetti" | "ZigZag" | "SolidDiamond" | "DiagonalBrick" | "OutlinedDiamond" | "Plaid" | "Sphere" | "Weave" | "DottedGrid" | "Divot" | "Shingle" | "Wave" | "Horizontal" | "Vertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "DiagonalCross"
   - name: presetGradientType
     uid: word!Word.Interfaces.FillFormatData#presetGradientType:member
     package: word!
     fullName: presetGradientType
     summary: Returns the preset gradient type for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        presetGradientType?: Word.PresetGradientType | "Mixed" | "EarlySunset" |
-        "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean"
-        | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" |
-        "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" |
-        "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire";
+      content: 'presetGradientType?: Word.PresetGradientType | "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire";'
       return:
-        type: >-
-          <xref uid="word!Word.PresetGradientType:enum" /> | "Mixed" |
-          "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" |
-          "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock"
-          | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" |
-          "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" |
-          "Sapphire"
+        type: <xref uid="word!Word.PresetGradientType:enum" /> | "Mixed" | "EarlySunset" | "LateSunset" | "Nightfall" | "Daybreak" | "Horizon" | "Desert" | "Ocean" | "CalmWater" | "Fire" | "Fog" | "Moss" | "Peacock" | "Wheat" | "Parchment" | "Mahogany" | "Rainbow" | "RainbowII" | "Gold" | "GoldII" | "Brass" | "Chrome" | "ChromeII" | "Silver" | "Sapphire"
   - name: presetTexture
     uid: word!Word.Interfaces.FillFormatData#presetTexture:member
     package: word!
     fullName: presetTexture
     summary: Gets the preset texture.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        presetTexture?: Word.PresetTexture | "Mixed" | "Papyrus" | "Canvas" |
-        "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" |
-        "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" |
-        "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" |
-        "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" |
-        "Cork" | "Walnut" | "Oak" | "MediumWood";
+      content: 'presetTexture?: Word.PresetTexture | "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood";'
       return:
-        type: >-
-          <xref uid="word!Word.PresetTexture:enum" /> | "Mixed" | "Papyrus" |
-          "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" |
-          "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble"
-          | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" |
-          "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" |
-          "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood"
+        type: <xref uid="word!Word.PresetTexture:enum" /> | "Mixed" | "Papyrus" | "Canvas" | "Denim" | "WovenMat" | "WaterDroplets" | "PaperBag" | "FishFossil" | "Sand" | "GreenMarble" | "WhiteMarble" | "BrownMarble" | "Granite" | "Newsprint" | "RecycledPaper" | "Parchment" | "Stationery" | "BlueTissuePaper" | "PinkTissuePaper" | "PurpleMesh" | "Bouquet" | "Cork" | "Walnut" | "Oak" | "MediumWood"
   - name: rotateWithObject
     uid: word!Word.Interfaces.FillFormatData#rotateWithObject:member
     package: word!
     fullName: rotateWithObject
     summary: Specifies whether the fill rotates with the shape.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,34 +170,22 @@ properties:
     uid: word!Word.Interfaces.FillFormatData#textureAlignment:member
     package: word!
     fullName: textureAlignment
-    summary: >-
-      Specifies the alignment (the origin of the coordinate grid) for the tiling
-      of the texture fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the alignment (the origin of the coordinate grid) for the tiling of the texture fill.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        textureAlignment?: Word.TextureAlignment | "Mixed" | "TopLeft" | "Top" |
-        "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" |
-        "BottomRight";
+      content: 'textureAlignment?: Word.TextureAlignment | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" | "BottomRight";'
       return:
-        type: >-
-          <xref uid="word!Word.TextureAlignment:enum" /> | "Mixed" | "TopLeft" |
-          "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" |
-          "Bottom" | "BottomRight"
+        type: <xref uid="word!Word.TextureAlignment:enum" /> | "Mixed" | "TopLeft" | "Top" | "TopRight" | "Left" | "Center" | "Right" | "BottomLeft" | "Bottom" | "BottomRight"
   - name: textureHorizontalScale
     uid: word!Word.Interfaces.FillFormatData#textureHorizontalScale:member
     package: word!
     fullName: textureHorizontalScale
     summary: Specifies the horizontal scaling factor for the texture fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,10 +197,8 @@ properties:
     package: word!
     fullName: textureName
     summary: Returns the name of the custom texture file for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -328,10 +210,8 @@ properties:
     package: word!
     fullName: textureOffsetX
     summary: Specifies the horizontal offset of the texture from the origin in points.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -343,10 +223,8 @@ properties:
     package: word!
     fullName: textureOffsetY
     summary: Specifies the vertical offset of the texture.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -358,10 +236,8 @@ properties:
     package: word!
     fullName: textureTile
     summary: Specifies whether the texture is tiled.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -373,29 +249,21 @@ properties:
     package: word!
     fullName: textureType
     summary: Returns the texture type for the fill.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'textureType?: Word.TextureType | "Mixed" | "Preset" | "UserDefined";'
       return:
-        type: >-
-          <xref uid="word!Word.TextureType:enum" /> | "Mixed" | "Preset" |
-          "UserDefined"
+        type: <xref uid="word!Word.TextureType:enum" /> | "Mixed" | "Preset" | "UserDefined"
   - name: textureVerticalScale
     uid: word!Word.Interfaces.FillFormatData#textureVerticalScale:member
     package: word!
     fullName: textureVerticalScale
-    summary: >-
-      Specifies the vertical scaling factor for the texture fill as a value
-      between 0.0 and 1.0.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the vertical scaling factor for the texture fill as a value between 0.0 and 1.0.
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -406,13 +274,9 @@ properties:
     uid: word!Word.Interfaces.FillFormatData#transparency:member
     package: word!
     fullName: transparency
-    summary: >-
-      Specifies the degree of transparency of the fill for a shape as a value
-      between 0.0 (opaque) and 1.0 (clear).
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    summary: Specifies the degree of transparency of the fill for a shape as a value between 0.0 (opaque) and 1.0 (clear).
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -424,17 +288,11 @@ properties:
     package: word!
     fullName: type
     summary: Gets the fill format type.
-    remarks: >-
-      \[ [API set: WordApiDesktop
-      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
+    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Word.FillType | "Mixed" | "Solid" | "Patterned" | "Gradient" |
-        "Textured" | "Background" | "Picture";
+      content: 'type?: Word.FillType | "Mixed" | "Solid" | "Patterned" | "Gradient" | "Textured" | "Background" | "Picture";'
       return:
-        type: >-
-          <xref uid="word!Word.FillType:enum" /> | "Mixed" | "Solid" |
-          "Patterned" | "Gradient" | "Textured" | "Background" | "Picture"
+        type: <xref uid="word!Word.FillType:enum" /> | "Mixed" | "Solid" | "Patterned" | "Gradient" | "Textured" | "Background" | "Picture"

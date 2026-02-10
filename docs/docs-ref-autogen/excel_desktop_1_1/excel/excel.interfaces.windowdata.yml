@@ -3,11 +3,9 @@ name: Excel.Interfaces.WindowData
 uid: excel!Excel.Interfaces.WindowData:interface
 package: excel!
 fullName: Excel.Interfaces.WindowData
-summary: >-
-  An interface describing the data returned by calling `window.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `window.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,10 +15,8 @@ properties:
     package: excel!
     fullName: activeCell
     summary: Gets the active cell in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,10 +28,8 @@ properties:
     package: excel!
     fullName: activePane
     summary: Gets the active pane in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,10 +41,8 @@ properties:
     package: excel!
     fullName: activeWorksheet
     summary: Gets the active worksheet in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,10 +54,8 @@ properties:
     package: excel!
     fullName: autoFilterDateGroupingEnabled
     summary: Specifies whether AutoFilter date grouping is enabled in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,10 +67,8 @@ properties:
     package: excel!
     fullName: enableResize
     summary: Specifies whether resizing is enabled for the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,10 +80,8 @@ properties:
     package: excel!
     fullName: freezePanes
     summary: Specifies whether panes are frozen in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,10 +93,8 @@ properties:
     package: excel!
     fullName: height
     summary: Specifies the height of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,10 +106,8 @@ properties:
     package: excel!
     fullName: index
     summary: Gets the index of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,10 +119,8 @@ properties:
     package: excel!
     fullName: isVisible
     summary: Specifies whether the window is visible.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,13 +131,9 @@ properties:
     uid: excel!Excel.Interfaces.WindowData#left:member
     package: excel!
     fullName: left
-    summary: >-
-      Specifies the distance, in points, from the left edge of the computer
-      screen to the left edge of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the distance, in points, from the left edge of the computer screen to the left edge of the window.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,10 +145,8 @@ properties:
     package: excel!
     fullName: name
     summary: Specifies the name of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,10 +158,8 @@ properties:
     package: excel!
     fullName: panes
     summary: Gets a collection of panes associated with the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -199,10 +171,8 @@ properties:
     package: excel!
     fullName: scrollColumn
     summary: Specifies the scroll column of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,10 +184,8 @@ properties:
     package: excel!
     fullName: scrollRow
     summary: Specifies the scroll row of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,10 +197,8 @@ properties:
     package: excel!
     fullName: showFormulas
     summary: Specifies whether formulas are shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,10 +210,8 @@ properties:
     package: excel!
     fullName: showGridlines
     summary: Specifies whether gridlines are shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,10 +223,8 @@ properties:
     package: excel!
     fullName: showHeadings
     summary: Specifies whether headings are shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,10 +236,8 @@ properties:
     package: excel!
     fullName: showHorizontalScrollBar
     summary: Specifies whether the horizontal scroll bar is shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,10 +249,8 @@ properties:
     package: excel!
     fullName: showOutline
     summary: Specifies whether outline is shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -303,14 +261,9 @@ properties:
     uid: excel!Excel.Interfaces.WindowData#showRightToLeft:member
     package: excel!
     fullName: showRightToLeft
-    summary: >-
-      Gets the right-to-left layout value of the window. True means that the
-      window is using right-to-left layout, false means that the window is using
-      left-to-right layout.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Gets the right-to-left layout value of the window. True means that the window is using right-to-left layout, false means that the window is using left-to-right layout.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -322,10 +275,8 @@ properties:
     package: excel!
     fullName: showRuler
     summary: Specifies whether the ruler is shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,10 +288,8 @@ properties:
     package: excel!
     fullName: showVerticalScrollBar
     summary: Specifies whether the vertical scroll bar is shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -352,10 +301,8 @@ properties:
     package: excel!
     fullName: showWhitespace
     summary: Specifies whether whitespace is shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,10 +314,8 @@ properties:
     package: excel!
     fullName: showWorkbookTabs
     summary: Specifies whether workbook tabs are shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -382,10 +327,8 @@ properties:
     package: excel!
     fullName: showZeros
     summary: Specifies whether zeroes are shown in the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -397,10 +340,8 @@ properties:
     package: excel!
     fullName: split
     summary: Specifies the split state of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -412,10 +353,8 @@ properties:
     package: excel!
     fullName: splitColumn
     summary: Specifies the split column of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -427,10 +366,8 @@ properties:
     package: excel!
     fullName: splitHorizontal
     summary: Specifies the horizontal split of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -442,10 +379,8 @@ properties:
     package: excel!
     fullName: splitRow
     summary: Specifies the split row of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -457,10 +392,8 @@ properties:
     package: excel!
     fullName: splitVertical
     summary: Specifies the vertical split of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -472,10 +405,8 @@ properties:
     package: excel!
     fullName: tabRatio
     summary: Specifies the tab ratio of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -486,14 +417,9 @@ properties:
     uid: excel!Excel.Interfaces.WindowData#top:member
     package: excel!
     fullName: top
-    summary: >-
-      Specifies the distance, in points, from the top edge of the window to the
-      top edge of the usable area (below the menus, any toolbars docked at the
-      top, and the formula bar).
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies the distance, in points, from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -505,29 +431,21 @@ properties:
     package: excel!
     fullName: type
     summary: Specifies the type of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard"
-        | "workbook";
+      content: 'type?: Excel.WindowType | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook";'
       return:
-        type: >-
-          <xref uid="excel!Excel.WindowType:enum" /> | "chartAsWindow" |
-          "chartInPlace" | "clipboard" | "workbook"
+        type: <xref uid="excel!Excel.WindowType:enum" /> | "chartAsWindow" | "chartInPlace" | "clipboard" | "workbook"
   - name: usableHeight
     uid: excel!Excel.Interfaces.WindowData#usableHeight:member
     package: excel!
     fullName: usableHeight
     summary: Gets the usable height of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -539,10 +457,8 @@ properties:
     package: excel!
     fullName: usableWidth
     summary: Gets the usable width of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -554,29 +470,21 @@ properties:
     package: excel!
     fullName: view
     summary: Specifies the view of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        view?: Excel.WindowView | "normalView" | "pageBreakPreview" |
-        "pageLayoutView";
+      content: 'view?: Excel.WindowView | "normalView" | "pageBreakPreview" | "pageLayoutView";'
       return:
-        type: >-
-          <xref uid="excel!Excel.WindowView:enum" /> | "normalView" |
-          "pageBreakPreview" | "pageLayoutView"
+        type: <xref uid="excel!Excel.WindowView:enum" /> | "normalView" | "pageBreakPreview" | "pageLayoutView"
   - name: visibleRange
     uid: excel!Excel.Interfaces.WindowData#visibleRange:member
     package: excel!
     fullName: visibleRange
     summary: Gets the visible range of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -588,10 +496,8 @@ properties:
     package: excel!
     fullName: width
     summary: Specifies the display width of the window.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -603,10 +509,8 @@ properties:
     package: excel!
     fullName: windowNumber
     summary: Gets the window number.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -618,29 +522,21 @@ properties:
     package: excel!
     fullName: windowState
     summary: Specifies the window state.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'windowState?: Excel.WindowState | "maximized" | "minimized" | "normal";'
       return:
-        type: >-
-          <xref uid="excel!Excel.WindowState:enum" /> | "maximized" |
-          "minimized" | "normal"
+        type: <xref uid="excel!Excel.WindowState:enum" /> | "maximized" | "minimized" | "normal"
   - name: zoom
     uid: excel!Excel.Interfaces.WindowData#zoom:member
     package: excel!
     fullName: zoom
-    summary: >-
-      Specifies an integer value that represents the display size of the window.
-      It can be set to a percentage between 10 and 400.
-    remarks: >-
-      \[ [API set: ExcelApiDesktop
-      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
+    summary: Specifies an integer value that represents the display size of the window. It can be set to a percentage between 10 and 400.
+    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

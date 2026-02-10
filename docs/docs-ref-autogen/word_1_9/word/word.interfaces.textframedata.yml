@@ -3,11 +3,9 @@ name: Word.Interfaces.TextFrameData
 uid: word!Word.Interfaces.TextFrameData:interface
 package: word!
 fullName: Word.Interfaces.TextFrameData
-summary: >-
-  An interface describing the data returned by calling `textFrame.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `textFrame.toJSON()`<!-- -->.
 remarks: ''
-
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
