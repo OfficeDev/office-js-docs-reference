@@ -9,7 +9,11 @@
       "Bash(node yaml-office-processor.js:*)",
       "Bash(tee:*)",
       "Bash(node -p \"const uid = ''custom-functions-runtime!CustomFunctions.associate:function\\(1\\)''; const result = uid.replace\\(/^[^.]+\\\\!/, ''''\\); console.log\\(''Input:'', uid\\); console.log\\(''Output:'', result\\); result\")",
-      "Bash(node -p:*)"
+      "Bash(node -p:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(C:/GitHub/office-js-docs-reference/generate-docs/node_modules/.bin/api-documenter yaml --help)",
+      "Bash(node postprocessor.js:*)",
+      "Bash(./GenerateDocs.sh:*)"
     ]
   }
 }
