@@ -184,6 +184,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartSeriesCollection:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

@@ -147,6 +147,22 @@ async function main(): Promise<void> {
   console.log(`  Processed ${totalFiles} files across ${totalFolders} folders\n`);
 }
 
+function shouldReportUnusedSnippets(folderName: string): boolean {
+  // Only report unused snippets for main/preview versions
+  // Skip versioned folders (e.g., excel_1_1, word_1_2, outlook_1_3)
+  // Skip platform-specific folders (e.g., excel_online, word_desktop_1_1)
+
+  // Pattern: folder_number or folder_platform or folder_number_hidden
+  const versionedPattern = /_\d+(_\d+)?(_hidden)?(_document)?$/;
+  const platformPattern = /_(online|desktop|release|preview)(_\d+(_\d+)?)?$/;
+
+  if (versionedPattern.test(folderName) || platformPattern.test(folderName)) {
+    return false;
+  }
+
+  return true;
+}
+
 async function processFolderIfExists(folderName: string): Promise<{ filesProcessed: number } | null> {
   const folderPath = path.join(YAML_BASE_PATH, folderName);
 
@@ -166,7 +182,10 @@ async function processFolderIfExists(folderName: string): Promise<{ filesProcess
     await processYamlFile(filePath, snippetsAll, usedSnippets);
   }
 
-  reportUnusedSnippets(snippets, usedSnippets, folderName);
+  // Only report unused snippets for preview/main versions, not versioned subsets
+  if (shouldReportUnusedSnippets(folderName)) {
+    reportUnusedSnippets(snippets, usedSnippets, folderName);
+  }
 
   return { filesProcessed: yamlFiles.length };
 }
@@ -293,23 +312,26 @@ function injectExamples(
   // Generate example text
   const examplesSection = generateExampleSnippetText(snippetCode);
 
+  // Check if examples already exist
+  if (item.remarks?.includes('#### Examples') ||
+      item.syntax?.return?.description?.includes('#### Examples')) {
+    return false;
+  }
+
   // Inject into remarks (preferred) or syntax.return.description (fallback)
-  if (item.remarks) {
-    if (!item.remarks.includes('#### Examples')) {
-      item.remarks += examplesSection;
-      return true;
+  // Only use remarks if it has actual content (not just whitespace)
+  if (item.remarks && item.remarks.trim()) {
+    item.remarks += examplesSection;
+    return true;
+  } else if (item.syntax?.return) {
+    // Prefer return.description over creating empty remarks
+    if (!item.syntax.return.description) {
+      item.syntax.return.description = '';
     }
-  } else if (item.syntax?.return?.description !== undefined) {
-    if (!item.syntax.return.description.includes('#### Examples')) {
-      if (item.syntax.return.description === '') {
-        item.syntax.return.description = examplesSection.substring(2); // Remove leading \n\n
-      } else {
-        item.syntax.return.description += examplesSection;
-      }
-      return true;
-    }
+    item.syntax.return.description += examplesSection;
+    return true;
   } else {
-    // Create new remarks field
+    // Only create new remarks as last resort
     item.remarks = examplesSection.substring(2); // Remove leading \n\n
     return true;
   }

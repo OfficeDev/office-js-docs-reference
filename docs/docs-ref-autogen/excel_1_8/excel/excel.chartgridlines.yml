@@ -104,6 +104,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartGridlines:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

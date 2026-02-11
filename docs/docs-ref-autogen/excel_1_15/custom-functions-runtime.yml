@@ -34,6 +34,8 @@ functions:
       return:
         type: void
         description: >-
+
+
           #### Examples
 
 
@@ -85,6 +87,8 @@ functions:
       return:
         type: void
         description: >-
+
+
           #### Examples
 
 

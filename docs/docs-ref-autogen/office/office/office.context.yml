@@ -285,23 +285,7 @@ properties:
     summary: >-
       Gets an object that represents the document the content or task pane
       add-in is interacting with.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      // Extension initialization code.
-      let _document;
-
-      // The initialize function is required for all add-ins.
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
-          $(document).ready(function () {
-          // After the DOM is loaded, code specific to the add-in can run.
-          // Initialize instance variables to access API objects.
-          _document = Office.context.document;
-          });
-      }
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -309,6 +293,25 @@ properties:
       content: 'document: Office.Document;'
       return:
         type: <xref uid="office!Office.Document:interface" />
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Extension initialization code.
+          let _document;
+
+          // The initialize function is required for all add-ins.
+          Office.initialize = function () {
+              // Checks for the DOM to load using the jQuery ready method.
+              $(document).ready(function () {
+              // After the DOM is loaded, code specific to the add-in can run.
+              // Initialize instance variables to access API objects.
+              _document = Office.context.document;
+              });
+          }
+          ```
   - name: host
     uid: office!Office.Context#host:member
     package: office!
@@ -350,13 +353,7 @@ properties:
     package: office!
     fullName: license
     summary: Gets the license information for the user's Office installation.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      const license = Office.context.license;
-      console.log(`Office license: ${license}`);
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -364,6 +361,15 @@ properties:
       content: 'license: object;'
       return:
         type: object
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          const license = Office.context.license;
+          console.log(`Office license: ${license}`);
+          ```
   - name: mailbox
     uid: office!Office.Context#mailbox:member
     package: office!
@@ -418,32 +424,7 @@ properties:
     package: office!
     fullName: officeTheme
     summary: Provides access to the properties for Office theme colors.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      function applyOfficeTheme() {
-          // Identify the current Office theme in use.
-          const currentOfficeTheme = Office.context.officeTheme.themeId;
-
-          if (currentOfficeTheme === Office.ThemeId.Colorful || currentOfficeTheme === Office.ThemeId.White) {
-              console.log("No changes required.");
-          }
-
-          // Get the colors of the current Office theme.
-          const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
-          const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-          const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
-          const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
-
-          // Apply theme colors to a CSS class.
-          $("body").css("background-color", bodyBackgroundColor);
-
-          if (Office.context.officeTheme.isDarkTheme) {
-              $("h1").css("color", controlForegroundColor);
-          }
-      }
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -451,6 +432,34 @@ properties:
       content: 'officeTheme: OfficeTheme;'
       return:
         type: <xref uid="office!Office.OfficeTheme:interface" />
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          function applyOfficeTheme() {
+              // Identify the current Office theme in use.
+              const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+              if (currentOfficeTheme === Office.ThemeId.Colorful || currentOfficeTheme === Office.ThemeId.White) {
+                  console.log("No changes required.");
+              }
+
+              // Get the colors of the current Office theme.
+              const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+              const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+              const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+              const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+              // Apply theme colors to a CSS class.
+              $("body").css("background-color", bodyBackgroundColor);
+
+              if (Office.context.officeTheme.isDarkTheme) {
+                  $("h1").css("color", controlForegroundColor);
+              }
+          }
+          ```
   - name: partitionKey
     uid: office!Office.Context#partitionKey:member
     package: office!
@@ -585,28 +594,7 @@ properties:
     summary: >-
       Provides a method for determining what requirement sets are supported on
       the current Office application and platform.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
-      if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
-          const cellProperties: Excel.SettableCellProperties[][] =
-          colors2D.map(row =>
-              row.map(color =>
-                  ({
-                      format: {
-                          fill: {
-                              color: color
-                          }
-                      }
-                  })
-              )
-          );
-          sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
-      }
-      ...
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -614,6 +602,36 @@ properties:
       content: 'requirements: RequirementSetSupport;'
       return:
         type: <xref uid="office!Office.RequirementSetSupport:interface" />
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // To use the setCellProperties API, check if ExcelApi 1.9 is
+          supported.
+
+          if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+              const cellProperties: Excel.SettableCellProperties[][] =
+              colors2D.map(row =>
+                  row.map(color =>
+                      ({
+                          format: {
+                              fill: {
+                                  color: color
+                              }
+                          }
+                      })
+                  )
+              );
+              sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+          }
+
+          ...
+
+          ```
   - name: roamingSettings
     uid: office!Office.Context#roamingSettings:member
     package: office!
@@ -771,23 +789,7 @@ properties:
     summary: >-
       Provides objects and methods that you can use to create and manipulate UI
       components, such as dialog boxes.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      // Open a dialog and register an event handler.
-      Office.context.ui.displayDialogAsync(
-          "https://www.contoso.com/myDialog.html",
-          { height: 30, width: 20 },
-          (asyncResult) => {
-              const dialog = asyncResult.value;
-              dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
-                  dialog.close();
-                  processMessage(arg);
-              });
-          }
-      );
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -795,6 +797,25 @@ properties:
       content: 'ui: UI;'
       return:
         type: <xref uid="office!Office.UI:interface" />
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // Open a dialog and register an event handler.
+          Office.context.ui.displayDialogAsync(
+              "https://www.contoso.com/myDialog.html",
+              { height: 30, width: 20 },
+              (asyncResult) => {
+                  const dialog = asyncResult.value;
+                  dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                      dialog.close();
+                      processMessage(arg);
+                  });
+              }
+          );
+          ```
   - name: urls
     uid: office!Office.Context#urls:member
     package: office!

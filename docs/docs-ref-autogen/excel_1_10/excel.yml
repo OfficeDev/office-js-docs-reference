@@ -950,6 +950,8 @@ functions:
       return:
         type: Promise&lt;void&gt;
         description: >-
+
+
           #### Examples
 
 
@@ -1048,6 +1050,8 @@ functions:
       return:
         type: Promise&lt;T&gt;
         description: >-
+
+
           #### Examples
 
 

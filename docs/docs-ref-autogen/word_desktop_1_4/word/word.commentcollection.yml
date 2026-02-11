@@ -61,34 +61,7 @@ properties:
     package: word!
     fullName: items
     summary: Gets the loaded child items in this collection.
-    remarks: >-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-
-      // Replies to the first active comment in the selected content.
-
-      await Word.run(async (context) => {
-        const text = (document.getElementById("reply-text") as HTMLInputElement).value;
-        const comments: Word.CommentCollection = context.document.getSelection().getComments();
-        comments.load("items");
-        await context.sync();
-
-        const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
-        if (firstActiveComment) {
-          const reply: Word.CommentReply = firstActiveComment.reply(text);
-          console.log("Reply added.");
-        } else {
-          console.warn("No active comment was found in the selection, so couldn't reply.");
-        }
-      });
-
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -96,6 +69,36 @@ properties:
       content: 'readonly items: Word.Comment[];'
       return:
         type: <xref uid="word!Word.Comment:class" />[]
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+          // Replies to the first active comment in the selected content.
+
+          await Word.run(async (context) => {
+            const text = (document.getElementById("reply-text") as HTMLInputElement).value;
+            const comments: Word.CommentCollection = context.document.getSelection().getComments();
+            comments.load("items");
+            await context.sync();
+
+            const firstActiveComment: Word.Comment = comments.items.find((item) => item.resolved !== true);
+            if (firstActiveComment) {
+              const reply: Word.CommentReply = firstActiveComment.reply(text);
+              console.log("Reply added.");
+            } else {
+              console.warn("No active comment was found in the selection, so couldn't reply.");
+            }
+          });
+
+          ```
 methods:
   - name: getFirst()
     uid: word!Word.CommentCollection#getFirst:member(1)

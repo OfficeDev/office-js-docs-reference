@@ -521,6 +521,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.Style:class" />
         description: >-
+
+
           #### Examples
 
 

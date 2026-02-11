@@ -692,6 +692,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.Table:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

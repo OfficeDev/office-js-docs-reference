@@ -420,6 +420,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.Application:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

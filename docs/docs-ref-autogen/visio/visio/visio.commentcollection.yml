@@ -106,6 +106,8 @@ methods:
       return:
         type: <xref uid="visio!Visio.CommentCollection:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

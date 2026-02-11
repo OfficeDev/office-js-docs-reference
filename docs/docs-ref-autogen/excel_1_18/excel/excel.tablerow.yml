@@ -225,6 +225,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.TableRow:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

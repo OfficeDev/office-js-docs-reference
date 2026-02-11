@@ -29,27 +29,7 @@ properties:
       property applies to only an attendee of an appointment, as represented by
       the `optionalAttendees` or `requiredAttendees` property. This property
       returns undefined in other scenarios.
-    remarks: >-
-      #### Examples
-
-
-      ```TypeScript
-
-      // The following sample provides the responses from required attendees.
-
-      // Note that this sample needs the add-in to be in Appointment Read
-      (Attendee) mode.
-
-      const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
-
-      console.log("There are " + requiredAttendees.length + " required
-      attendees.")
-
-      requiredAttendees.forEach(function (requiredAttendee) {
-          console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
-      });
-
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -57,18 +37,37 @@ properties:
       content: 'appointmentResponse: MailboxEnums.ResponseType | string;'
       return:
         type: <xref uid="outlook!Office.MailboxEnums.ResponseType:enum" /> | string
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // The following sample provides the responses from required
+          attendees.
+
+          // Note that this sample needs the add-in to be in Appointment Read
+          (Attendee) mode.
+
+          const requiredAttendees =
+          Office.context.mailbox.item.requiredAttendees;
+
+          console.log("There are " + requiredAttendees.length + " required
+          attendees.")
+
+          requiredAttendees.forEach(function (requiredAttendee) {
+              console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
+          });
+
+          ```
   - name: displayName
     uid: outlook!Office.EmailAddressDetails#displayName:member
     package: outlook!
     fullName: displayName
     summary: Gets the display name associated with an email address.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      const organizerName = Office.context.mailbox.item.organizer.displayName;
-      console.log("Organizer: " + organizerName);
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -76,23 +75,26 @@ properties:
       content: 'displayName: string;'
       return:
         type: string
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          const organizerName =
+          Office.context.mailbox.item.organizer.displayName;
+
+          console.log("Organizer: " + organizerName);
+
+          ```
   - name: emailAddress
     uid: outlook!Office.EmailAddressDetails#emailAddress:member
     package: outlook!
     fullName: emailAddress
     summary: Gets the SMTP email address.
-    remarks: >-
-      #### Examples
-
-
-      ```TypeScript
-
-      const organizerAddress =
-      Office.context.mailbox.item.organizer.emailAddress;
-
-      console.log("Organizer's email address: " + organizerAddress);
-
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -100,6 +102,20 @@ properties:
       content: 'emailAddress: string;'
       return:
         type: string
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          const organizerAddress =
+          Office.context.mailbox.item.organizer.emailAddress;
+
+          console.log("Organizer's email address: " + organizerAddress);
+
+          ```
   - name: recipientType
     uid: outlook!Office.EmailAddressDetails#recipientType:member
     package: outlook!

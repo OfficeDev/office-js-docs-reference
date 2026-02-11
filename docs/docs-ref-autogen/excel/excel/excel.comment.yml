@@ -390,6 +390,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.Comment:class" />
         description: >-
+
+
           #### Examples
 
 

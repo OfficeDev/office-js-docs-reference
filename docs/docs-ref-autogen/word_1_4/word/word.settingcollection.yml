@@ -55,34 +55,7 @@ properties:
     package: word!
     fullName: items
     summary: Gets the loaded child items in this collection.
-    remarks: >-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
-
-
-      // Gets all custom settings this add-in set on this document.
-
-      await Word.run(async (context) => {
-        const settings: Word.SettingCollection = context.document.settings;
-        settings.load("items");
-        await context.sync();
-
-        if (settings.items.length == 0) {
-          console.log("There are no settings.");
-        } else {
-          console.log("All settings:");
-          for (let i = 0; i < settings.items.length; i++) {
-            console.log(settings.items[i]);
-          }
-        }
-      });
-
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -90,6 +63,36 @@ properties:
       content: 'readonly items: Word.Setting[];'
       return:
         type: <xref uid="word!Word.Setting:class" />[]
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+          // Gets all custom settings this add-in set on this document.
+
+          await Word.run(async (context) => {
+            const settings: Word.SettingCollection = context.document.settings;
+            settings.load("items");
+            await context.sync();
+
+            if (settings.items.length == 0) {
+              console.log("There are no settings.");
+            } else {
+              console.log("All settings:");
+              for (let i = 0; i < settings.items.length; i++) {
+                console.log(settings.items[i]);
+              }
+            }
+          });
+
+          ```
 methods:
   - name: add(key, value)
     uid: word!Word.SettingCollection#add:member(1)

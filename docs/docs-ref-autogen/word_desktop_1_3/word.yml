@@ -771,6 +771,8 @@ functions:
       return:
         type: Promise&lt;T&gt;
         description: >-
+
+
           #### Examples
 
 

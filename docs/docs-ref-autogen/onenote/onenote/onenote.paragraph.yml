@@ -772,6 +772,8 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.Paragraph:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

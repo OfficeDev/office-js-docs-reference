@@ -2597,6 +2597,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.Range:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript
@@ -2872,6 +2874,8 @@ methods:
       return:
         type: void
         description: >-
+
+
           #### Examples
 
 
@@ -3177,6 +3181,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.Range:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

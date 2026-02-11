@@ -171,6 +171,8 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.RichText:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

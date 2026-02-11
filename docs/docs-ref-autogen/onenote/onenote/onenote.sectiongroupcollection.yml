@@ -204,6 +204,8 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.SectionGroupCollection:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

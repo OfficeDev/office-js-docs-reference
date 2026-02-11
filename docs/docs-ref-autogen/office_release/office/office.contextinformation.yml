@@ -19,13 +19,7 @@ properties:
     package: office!
     fullName: host
     summary: Gets the Office application in which the add-in is running.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      const contextInfo = Office.context.diagnostics;
-      console.log("Office application: " + contextInfo.host);
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -33,6 +27,15 @@ properties:
       content: 'host: Office.HostType;'
       return:
         type: <xref uid="office!Office.HostType:enum" />
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          const contextInfo = Office.context.diagnostics;
+          console.log("Office application: " + contextInfo.host);
+          ```
   - name: platform
     uid: office!Office.ContextInformation#platform:member
     package: office!
@@ -67,13 +70,7 @@ properties:
     package: office!
     fullName: version
     summary: Gets the version of Office on which the add-in is running.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      const contextInfo = Office.context.diagnostics;
-      console.log("Office version: " + contextInfo.version);
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -81,3 +78,12 @@ properties:
       content: 'version: string;'
       return:
         type: string
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          const contextInfo = Office.context.diagnostics;
+          console.log("Office version: " + contextInfo.version);
+          ```

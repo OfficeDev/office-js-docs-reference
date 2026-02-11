@@ -32,22 +32,7 @@ properties:
     package: excel!
     fullName: items
     summary: Gets the loaded child items in this collection.
-    remarks: |-
-      #### Examples
-
-      ```TypeScript
-      // This function retrieves the query collection in a workbook, 
-      // loads the query items in that collection, and then
-      // logs the name of each query to the console.
-      await Excel.run(async (context) => {
-          const queries = context.workbook.queries; 
-          queries.load("items"); 
-          await context.sync(); 
-
-          console.log("Name of each query: ")
-          console.log("  " + queries.items.map((query) => query.name).join("\n  "));
-      });
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -55,6 +40,24 @@ properties:
       content: 'readonly items: Excel.Query[];'
       return:
         type: <xref uid="excel!Excel.Query:class" />[]
+        description: |-
+
+
+          #### Examples
+
+          ```TypeScript
+          // This function retrieves the query collection in a workbook, 
+          // loads the query items in that collection, and then
+          // logs the name of each query to the console.
+          await Excel.run(async (context) => {
+              const queries = context.workbook.queries; 
+              queries.load("items"); 
+              await context.sync(); 
+
+              console.log("Name of each query: ")
+              console.log("  " + queries.items.map((query) => query.name).join("\n  "));
+          });
+          ```
 methods:
   - name: getCount()
     uid: excel!Excel.QueryCollection#getCount:member(1)

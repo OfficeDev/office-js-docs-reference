@@ -90,42 +90,7 @@ properties:
     package: office!
     fullName: id
     summary: Identifier of the tab as specified in the manifest.
-    remarks: >-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Office.Tab objects are properties of ribbon updater objects that are
-      passed to the 
-
-      // Office.ribbon.requestUpdate method. The following shows how to set the
-      visibility of 
-
-      // a custom contextual tab.
-
-
-      async function showDataTab() {
-          await Office.ribbon.requestUpdate({
-              tabs: [
-                  {
-                      id: "CtxTab1",
-                      visible: true
-                  }
-              ]});
-      }
-
-
-      // The the following does the same thing in TypeScript.
-
-
-      const showDataTab = async () => {
-          const myContextualTab: Office.Tab = { id: "CtxTab1", visible: true };
-          const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
-          await Office.ribbon.requestUpdate(ribbonUpdater);
-      }
-
-      ```
+    remarks: ''
 
     isPreview: false
     isDeprecated: false
@@ -133,6 +98,44 @@ properties:
       content: 'id: string;'
       return:
         type: string
+        description: >-
+
+
+          #### Examples
+
+
+          ```TypeScript
+
+          // Office.Tab objects are properties of ribbon updater objects that
+          are passed to the 
+
+          // Office.ribbon.requestUpdate method. The following shows how to set
+          the visibility of 
+
+          // a custom contextual tab.
+
+
+          async function showDataTab() {
+              await Office.ribbon.requestUpdate({
+                  tabs: [
+                      {
+                          id: "CtxTab1",
+                          visible: true
+                      }
+                  ]});
+          }
+
+
+          // The the following does the same thing in TypeScript.
+
+
+          const showDataTab = async () => {
+              const myContextualTab: Office.Tab = { id: "CtxTab1", visible: true };
+              const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
+              await Office.ribbon.requestUpdate(ribbonUpdater);
+          }
+
+          ```
   - name: visible
     uid: office!Office.Tab#visible:member
     package: office!

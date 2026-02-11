@@ -213,6 +213,8 @@ methods:
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideLayoutCollection:class" />
         description: >-
+
+
           #### Examples
 
 

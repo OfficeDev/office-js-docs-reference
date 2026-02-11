@@ -299,6 +299,8 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.Image:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

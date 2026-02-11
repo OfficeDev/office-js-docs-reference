@@ -1333,6 +1333,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.ChartSeries:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

@@ -98,6 +98,8 @@ methods:
       return:
         type: void
         description: >-
+
+
           #### Examples
 
 
@@ -162,6 +164,8 @@ methods:
       return:
         type: void
         description: >-
+
+
           #### Examples
 
 

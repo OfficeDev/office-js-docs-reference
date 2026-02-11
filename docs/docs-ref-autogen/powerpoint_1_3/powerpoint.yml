@@ -165,6 +165,8 @@ functions:
       return:
         type: Promise&lt;void&gt;
         description: >-
+
+
           #### Examples
 
 
@@ -221,6 +223,8 @@ functions:
       return:
         type: <xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
         description: >-
+
+
           #### Examples
 
 

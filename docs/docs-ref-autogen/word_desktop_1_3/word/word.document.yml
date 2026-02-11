@@ -1361,6 +1361,8 @@ methods:
       return:
         type: <xref uid="word!Word.Document:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

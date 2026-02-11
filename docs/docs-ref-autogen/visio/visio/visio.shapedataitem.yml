@@ -117,6 +117,8 @@ methods:
       return:
         type: <xref uid="visio!Visio.ShapeDataItem:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

@@ -206,6 +206,8 @@ methods:
       return:
         type: <xref uid="onenote!OneNote.PageCollection:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

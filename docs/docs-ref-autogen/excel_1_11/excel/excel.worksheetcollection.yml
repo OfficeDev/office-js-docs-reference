@@ -349,6 +349,8 @@ methods:
       return:
         type: <xref uid="excel!Excel.WorksheetCollection:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript

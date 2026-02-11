@@ -115,6 +115,8 @@ methods:
       return:
         type: <xref uid="visio!Visio.Hyperlink:class" />
         description: |-
+
+
           #### Examples
 
           ```TypeScript
