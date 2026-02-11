@@ -8305,13 +8305,13 @@ office-runtime,OfficeRuntime.DisplayWebDialogOptions,"onMessage",Property,Great,
 office-runtime,OfficeRuntime.DisplayWebDialogOptions,"onRuntimeError",Property,Great,false
 office-runtime,OfficeRuntime.DisplayWebDialogOptions,"width",Property,Excellent,false
 office-runtime,OfficeRuntime.Storage,N/A,Interface,Fine,false
-office-runtime,OfficeRuntime.Storage,"getItem(key)",Method,Excellent,false
-office-runtime,OfficeRuntime.Storage,"getItems(keys)",Method,Excellent,false
-office-runtime,OfficeRuntime.Storage,"getKeys()",Method,Great,false
-office-runtime,OfficeRuntime.Storage,"removeItem(key)",Method,Good,false
-office-runtime,OfficeRuntime.Storage,"removeItems(keys)",Method,Good,false
-office-runtime,OfficeRuntime.Storage,"setItem(key, value)",Method,Great,false
-office-runtime,OfficeRuntime.Storage,"setItems(keyValues)",Method,Great,false
+office-runtime,OfficeRuntime.Storage,"getItem(key)",Method,Excellent,true
+office-runtime,OfficeRuntime.Storage,"getItems(keys)",Method,Excellent,true
+office-runtime,OfficeRuntime.Storage,"getKeys()",Method,Great,true
+office-runtime,OfficeRuntime.Storage,"removeItem(key)",Method,Good,true
+office-runtime,OfficeRuntime.Storage,"removeItems(keys)",Method,Good,true
+office-runtime,OfficeRuntime.Storage,"setItem(key, value)",Method,Great,true
+office-runtime,OfficeRuntime.Storage,"setItems(keyValues)",Method,Great,true
 office-runtime,N/A,N/A,Package,Missing,false
 office-runtime,N/A,"OfficeRuntime.displayWebDialog(url, options)",Method,Fine,true
 onenote,OneNote.Application,N/A,Class,Good,false
