@@ -391,12 +391,18 @@ function getApiSetUrl(uid: string): string {
     return REQUIREMENT_SET_URLS.default;
   }
 
-  const lowerUid = uid.toLowerCase();
+  // Extract package name from UID (e.g., "onenote!OneNote.InkWord:class" -> "onenote")
+  // This prevents false matches like "word" matching in "InkWord"
+  const packageMatch = uid.match(/^([^!]+)!/);
+  if (!packageMatch) {
+    return REQUIREMENT_SET_URLS.default;
+  }
 
-  for (const key of Object.keys(REQUIREMENT_SET_URLS)) {
-    if (key !== 'default' && lowerUid.includes(key)) {
-      return REQUIREMENT_SET_URLS[key];
-    }
+  const packageName = packageMatch[1].toLowerCase();
+
+  // Check if the package name matches any known product
+  if (REQUIREMENT_SET_URLS[packageName]) {
+    return REQUIREMENT_SET_URLS[packageName];
   }
 
   return REQUIREMENT_SET_URLS.default;

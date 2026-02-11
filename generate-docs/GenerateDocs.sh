@@ -661,7 +661,7 @@ if [ ! -d "yaml/office" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/office --output-folder ./yaml/office
 fi
 if [ ! -d "yaml/office_release" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/office_release --output-folder ./yaml/office_release 2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/office_release --output-folder ./yaml/office_release
 fi
 
 if [ ! -d "yaml/office-runtime" ]; then
@@ -672,70 +672,70 @@ if [ ! -d "yaml/excel" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel --output-folder ./yaml/excel
 fi
 if [ ! -d "yaml/excel_1_1" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_1 --output-folder ./yaml/excel_1_1 2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_1 --output-folder ./yaml/excel_1_1
 fi
 if [ ! -d "yaml/excel_1_2" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_2 --output-folder ./yaml/excel_1_2  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_2 --output-folder ./yaml/excel_1_2 
 fi
 if [ ! -d "yaml/excel_1_3" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_3 --output-folder ./yaml/excel_1_3  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_3 --output-folder ./yaml/excel_1_3 
 fi
 if [ ! -d "yaml/excel_1_4" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_4 --output-folder ./yaml/excel_1_4  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_4 --output-folder ./yaml/excel_1_4 
 fi
 if [ ! -d "yaml/excel_1_5" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_5 --output-folder ./yaml/excel_1_5  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_5 --output-folder ./yaml/excel_1_5 
 fi
 if [ ! -d "yaml/excel_1_6" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_6 --output-folder ./yaml/excel_1_6  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_6 --output-folder ./yaml/excel_1_6 
 fi
 if [ ! -d "yaml/excel_1_7" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_7 --output-folder ./yaml/excel_1_7  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_7 --output-folder ./yaml/excel_1_7 
 fi
 if [ ! -d "yaml/excel_1_8" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_8 --output-folder ./yaml/excel_1_8  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_8 --output-folder ./yaml/excel_1_8 
 fi
 if [ ! -d "yaml/excel_1_9" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_9 --output-folder ./yaml/excel_1_9  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_9 --output-folder ./yaml/excel_1_9 
 fi
 if [ ! -d "yaml/excel_1_10" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_10 --output-folder ./yaml/excel_1_10  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_10 --output-folder ./yaml/excel_1_10 
 fi
 if [ ! -d "yaml/excel_1_11" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_11 --output-folder ./yaml/excel_1_11  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_11 --output-folder ./yaml/excel_1_11 
 fi
 if [ ! -d "yaml/excel_1_12" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_12 --output-folder ./yaml/excel_1_12  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_12 --output-folder ./yaml/excel_1_12 
 fi
 if [ ! -d "yaml/excel_1_13" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_13 --output-folder ./yaml/excel_1_13  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_13 --output-folder ./yaml/excel_1_13 
 fi
 if [ ! -d "yaml/excel_1_14" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_14 --output-folder ./yaml/excel_1_14  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_14 --output-folder ./yaml/excel_1_14 
 fi
 if [ ! -d "yaml/excel_1_15" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_15 --output-folder ./yaml/excel_1_15  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_15 --output-folder ./yaml/excel_1_15 
 fi
 if [ ! -d "yaml/excel_1_16" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_16 --output-folder ./yaml/excel_1_16  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_16 --output-folder ./yaml/excel_1_16 
 fi
 if [ ! -d "yaml/excel_1_17" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_17 --output-folder ./yaml/excel_1_17  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_17 --output-folder ./yaml/excel_1_17 
 fi
 if [ ! -d "yaml/excel_1_18" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_18 --output-folder ./yaml/excel_1_18  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_18 --output-folder ./yaml/excel_1_18 
 fi
 if [ ! -d "yaml/excel_1_19" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_19 --output-folder ./yaml/excel_1_19  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_19 --output-folder ./yaml/excel_1_19 
 fi
 if [ ! -d "yaml/excel_1_20" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_20 --output-folder ./yaml/excel_1_20  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_20 --output-folder ./yaml/excel_1_20 
 fi
 if [ ! -d "yaml/excel_desktop_1_1" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_desktop_1_1 --output-folder ./yaml/excel_desktop_1_1  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_desktop_1_1 --output-folder ./yaml/excel_desktop_1_1 
 fi
 if [ ! -d "yaml/excel_online" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_online --output-folder ./yaml/excel_online  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_online --output-folder ./yaml/excel_online 
 fi
 if [ ! -d "yaml/onenote" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/onenote --output-folder ./yaml/onenote 
@@ -744,82 +744,82 @@ if [ ! -d "yaml/outlook" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook --output-folder ./yaml/outlook 
 fi
 if [ ! -d "yaml/outlook_1_1" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_1 --output-folder ./yaml/outlook_1_1  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_1 --output-folder ./yaml/outlook_1_1 
 fi
 if [ ! -d "yaml/outlook_1_2" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_2 --output-folder ./yaml/outlook_1_2  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_2 --output-folder ./yaml/outlook_1_2 
 fi
 if [ ! -d "yaml/outlook_1_3" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_3 --output-folder ./yaml/outlook_1_3  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_3 --output-folder ./yaml/outlook_1_3 
 fi
 if [ ! -d "yaml/outlook_1_4" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_4 --output-folder ./yaml/outlook_1_4  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_4 --output-folder ./yaml/outlook_1_4 
 fi
 if [ ! -d "yaml/outlook_1_5" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_5 --output-folder ./yaml/outlook_1_5  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_5 --output-folder ./yaml/outlook_1_5 
 fi
 if [ ! -d "yaml/outlook_1_6" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_6 --output-folder ./yaml/outlook_1_6  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_6 --output-folder ./yaml/outlook_1_6 
 fi
 if [ ! -d "yaml/outlook_1_7" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_7 --output-folder ./yaml/outlook_1_7  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_7 --output-folder ./yaml/outlook_1_7 
 fi
 if [ ! -d "yaml/outlook_1_8" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_8 --output-folder ./yaml/outlook_1_8  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_8 --output-folder ./yaml/outlook_1_8 
 fi
 if [ ! -d "yaml/outlook_1_9" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_9 --output-folder ./yaml/outlook_1_9  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_9 --output-folder ./yaml/outlook_1_9 
 fi
 if [ ! -d "yaml/outlook_1_10" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_10 --output-folder ./yaml/outlook_1_10  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_10 --output-folder ./yaml/outlook_1_10 
 fi
 if [ ! -d "yaml/outlook_1_11" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_11 --output-folder ./yaml/outlook_1_11  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_11 --output-folder ./yaml/outlook_1_11 
 fi
 if [ ! -d "yaml/outlook_1_12" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_12 --output-folder ./yaml/outlook_1_12  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_12 --output-folder ./yaml/outlook_1_12 
 fi
 if [ ! -d "yaml/outlook_1_13" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_13 --output-folder ./yaml/outlook_1_13  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_13 --output-folder ./yaml/outlook_1_13 
 fi
 if [ ! -d "yaml/outlook_1_14" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_14 --output-folder ./yaml/outlook_1_14  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_14 --output-folder ./yaml/outlook_1_14 
 fi
 if [ ! -d "yaml/outlook_1_15" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_15 --output-folder ./yaml/outlook_1_15  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_15 --output-folder ./yaml/outlook_1_15 
 fi
 if [ ! -d "yaml/powerpoint" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint --output-folder ./yaml/powerpoint 
 fi
 if [ ! -d "yaml/powerpoint_1_1" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_1 --output-folder ./yaml/powerpoint_1_1  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_1 --output-folder ./yaml/powerpoint_1_1 
 fi
 if [ ! -d "yaml/powerpoint_1_2" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_2 --output-folder ./yaml/powerpoint_1_2  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_2 --output-folder ./yaml/powerpoint_1_2 
 fi
 if [ ! -d "yaml/powerpoint_1_3" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_3 --output-folder ./yaml/powerpoint_1_3  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_3 --output-folder ./yaml/powerpoint_1_3 
 fi
 if [ ! -d "yaml/powerpoint_1_4" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_4 --output-folder ./yaml/powerpoint_1_4  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_4 --output-folder ./yaml/powerpoint_1_4 
 fi
 if [ ! -d "yaml/powerpoint_1_5" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_5 --output-folder ./yaml/powerpoint_1_5  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_5 --output-folder ./yaml/powerpoint_1_5 
 fi
 if [ ! -d "yaml/powerpoint_1_6" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_6 --output-folder ./yaml/powerpoint_1_6  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_6 --output-folder ./yaml/powerpoint_1_6 
 fi
 if [ ! -d "yaml/powerpoint_1_7" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_7 --output-folder ./yaml/powerpoint_1_7  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_7 --output-folder ./yaml/powerpoint_1_7 
 fi
 if [ ! -d "yaml/powerpoint_1_8" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_8 --output-folder ./yaml/powerpoint_1_8  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_8 --output-folder ./yaml/powerpoint_1_8 
 fi
 if [ ! -d "yaml/powerpoint_1_9" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_9 --output-folder ./yaml/powerpoint_1_9  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_9 --output-folder ./yaml/powerpoint_1_9 
 fi
 if [ ! -d "yaml/powerpoint_1_10" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_10 --output-folder ./yaml/powerpoint_1_10  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_10 --output-folder ./yaml/powerpoint_1_10 
 fi
 if [ ! -d "yaml/visio" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/visio --output-folder ./yaml/visio 
@@ -828,55 +828,55 @@ if [ ! -d "yaml/word" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word --output-folder ./yaml/word 
 fi
 if [ ! -d "yaml/word_1_1" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_1 --output-folder ./yaml/word_1_1  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_1 --output-folder ./yaml/word_1_1 
 fi
 if [ ! -d "yaml/word_1_2" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_2 --output-folder ./yaml/word_1_2  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_2 --output-folder ./yaml/word_1_2 
 fi
 if [ ! -d "yaml/word_1_3" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_3 --output-folder ./yaml/word_1_3  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_3 --output-folder ./yaml/word_1_3 
 fi
 if [ ! -d "yaml/word_1_4" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_4 --output-folder ./yaml/word_1_4  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_4 --output-folder ./yaml/word_1_4 
 fi
 if [ ! -d "yaml/word_1_5" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_5 --output-folder ./yaml/word_1_5  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_5 --output-folder ./yaml/word_1_5 
 fi
 if [ ! -d "yaml/word_1_6" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_6 --output-folder ./yaml/word_1_6  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_6 --output-folder ./yaml/word_1_6 
 fi
 if [ ! -d "yaml/word_1_7" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_7 --output-folder ./yaml/word_1_7  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_7 --output-folder ./yaml/word_1_7 
 fi
 if [ ! -d "yaml/word_1_8" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_8 --output-folder ./yaml/word_1_8  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_8 --output-folder ./yaml/word_1_8 
 fi
 if [ ! -d "yaml/word_1_9" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_9 --output-folder ./yaml/word_1_9  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_9 --output-folder ./yaml/word_1_9 
 fi
 if [ ! -d "yaml/word_1_3_hidden_document" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_3_hidden_document --output-folder ./yaml/word_1_3_hidden_document  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_3_hidden_document --output-folder ./yaml/word_1_3_hidden_document 
 fi
 if [ ! -d "yaml/word_1_4_hidden_document" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_4_hidden_document --output-folder ./yaml/word_1_4_hidden_document  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_4_hidden_document --output-folder ./yaml/word_1_4_hidden_document 
 fi
 if [ ! -d "yaml/word_1_5_hidden_document" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_5_hidden_document --output-folder ./yaml/word_1_5_hidden_document  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_5_hidden_document --output-folder ./yaml/word_1_5_hidden_document 
 fi
 if [ ! -d "yaml/word_desktop_1_1" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_1 --output-folder ./yaml/word_desktop_1_1  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_1 --output-folder ./yaml/word_desktop_1_1 
 fi
 if [ ! -d "yaml/word_desktop_1_2" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_2 --output-folder ./yaml/word_desktop_1_2  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_2 --output-folder ./yaml/word_desktop_1_2 
 fi
 if [ ! -d "yaml/word_desktop_1_3" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_3 --output-folder ./yaml/word_desktop_1_3  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_3 --output-folder ./yaml/word_desktop_1_3 
 fi
 if [ ! -d "yaml/word_desktop_1_4" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_4 --output-folder ./yaml/word_desktop_1_4  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_4 --output-folder ./yaml/word_desktop_1_4 
 fi
 if [ ! -d "yaml/word_online" ]; then
-    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_online --output-folder ./yaml/word_online  2>/dev/null
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_online --output-folder ./yaml/word_online 
 fi
 
 echo ""

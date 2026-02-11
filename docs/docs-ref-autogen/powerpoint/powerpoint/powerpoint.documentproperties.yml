@@ -133,7 +133,8 @@ properties:
     summary: The keywords of the presentation.
     remarks: >-
       \[ [API set: PowerPointApi
-      1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.7](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

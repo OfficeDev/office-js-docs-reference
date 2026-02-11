@@ -6,7 +6,7 @@ fullName: OneNote.Interfaces.InkWordCollectionLoadOptions
 summary: Represents a collection of InkWord objects.
 remarks: >-
   \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -37,7 +37,8 @@ properties:
       Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -54,7 +55,8 @@ properties:
       ink word. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -71,7 +73,8 @@ properties:
       word.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -91,7 +94,8 @@ properties:
       ink word, in order of likelihood. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false

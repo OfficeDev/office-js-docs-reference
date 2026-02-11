@@ -6,7 +6,7 @@ fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
 summary: Represents a collection of InkAnalysisWord objects.
 remarks: >-
   \[ [API set: OneNoteApi
-  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -38,7 +38,8 @@ properties:
       object. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -56,7 +57,8 @@ properties:
       inkAnalysisWord. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -72,7 +74,8 @@ properties:
     summary: 'For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.'
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -93,7 +96,8 @@ properties:
       were recognized as part of this ink analysis word. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
@@ -111,7 +115,8 @@ properties:
       ink word, in order of likelihood. Read-only.
     remarks: >-
       \[ [API set: OneNoteApi
-      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
 
     isPreview: false
     isDeprecated: false
