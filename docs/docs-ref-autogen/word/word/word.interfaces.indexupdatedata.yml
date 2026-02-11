@@ -3,9 +3,11 @@ name: Word.Interfaces.IndexUpdateData
 uid: word!Word.Interfaces.IndexUpdateData:interface
 package: word!
 fullName: Word.Interfaces.IndexUpdateData
-summary: An interface for updating data on the `Index` object, for use in `index.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Index` object, for use in `index.set({
+  ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.IndexUpdateData#range:member
     package: word!
     fullName: range
-    summary: Returns a `Range` object that represents the portion of the document that is contained within the index.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `Range` object that represents the portion of the document that
+      is contained within the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,12 +33,20 @@ properties:
     uid: word!Word.Interfaces.IndexUpdateData#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: Specifies the leader character between entries in the index and their associated page numbers.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the leader character between entries in the index and their
+      associated page numbers.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'tabLeader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";'
+      content: >-
+        tabLeader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
+        "Heavy" | "MiddleDot";
       return:
-        type: <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot"
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"

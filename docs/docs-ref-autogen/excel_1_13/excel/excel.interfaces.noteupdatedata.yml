@@ -3,9 +3,11 @@ name: Excel.Interfaces.NoteUpdateData
 uid: excel!Excel.Interfaces.NoteUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.NoteUpdateData
-summary: An interface for updating data on the `Note` object, for use in `note.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Note` object, for use in `note.set({
+  ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

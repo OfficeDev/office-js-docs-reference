@@ -4,8 +4,11 @@ uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellLoadOptions
 summary: Represents a table.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +17,12 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,21 +34,31 @@ properties:
     package: powerpoint!
     fullName: borders
     summary: Gets the collection of borders for the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: PowerPoint.Interfaces.BordersLoadOptions;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.BordersLoadOptions:interface" />
   - name: columnCount
     uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#columnCount:member
     package: powerpoint!
     fullName: columnCount
-    summary: Gets the number of table columns this cell spans across. Will be greater than or equal to 1.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the number of table columns this cell spans across. Will be greater
+      than or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +70,11 @@ properties:
     package: powerpoint!
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,34 +86,52 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Gets the fill color of the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface"
+          />
   - name: font
     uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#font:member
     package: powerpoint!
     fullName: font
     summary: Gets the font of the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'font?: PowerPoint.Interfaces.ShapeFontLoadOptions;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface"
+          />
   - name: horizontalAlignment
-    uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#horizontalAlignment:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#horizontalAlignment:member
     package: powerpoint!
     fullName: horizontalAlignment
-    summary: Specifies the horizontal alignment of the text in the table cell. Returns `null` if the cell text contains different alignments.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the horizontal alignment of the text in the table cell. Returns
+      `null` if the cell text contains different alignments.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +142,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#indentLevel:member
     package: powerpoint!
     fullName: indentLevel
-    summary: Specifies the indent level of the text in the table cell. Returns `null` if the cell text contains different indent levels.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the indent level of the text in the table cell. Returns `null`
+      if the cell text contains different indent levels.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,21 +161,31 @@ properties:
     package: powerpoint!
     fullName: margins
     summary: Gets the set of margins in the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'margins?: PowerPoint.Interfaces.MarginsLoadOptions;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.MarginsLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.MarginsLoadOptions:interface" />
   - name: rowCount
     uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#rowCount:member
     package: powerpoint!
     fullName: rowCount
-    summary: Gets the number of table rows this cell spans across. Will be greater than or equal to 1.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the number of table rows this cell spans across. Will be greater than
+      or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,8 +197,11 @@ properties:
     package: powerpoint!
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,8 +213,11 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,9 +228,16 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#textRuns:member
     package: powerpoint!
     fullName: textRuns
-    summary: Specifies the contents of the table cell as an array of [PowerPoint.TextRun](xref:powerpoint!PowerPoint.TextRun:interface) objects. Each `TextRun` object represents a sequence of one or more characters that share the same font attributes.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the contents of the table cell as an array of
+      [PowerPoint.TextRun](xref:powerpoint!PowerPoint.TextRun:interface)
+      objects. Each `TextRun` object represents a sequence of one or more
+      characters that share the same font attributes.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,12 +245,16 @@ properties:
       return:
         type: boolean
   - name: verticalAlignment
-    uid: powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#verticalAlignment:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableCellLoadOptions#verticalAlignment:member
     package: powerpoint!
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of the text in the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

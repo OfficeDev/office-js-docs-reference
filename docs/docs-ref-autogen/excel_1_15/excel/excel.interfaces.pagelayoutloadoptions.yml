@@ -3,9 +3,14 @@ name: Excel.Interfaces.PageLayoutLoadOptions
 uid: excel!Excel.Interfaces.PageLayoutLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.PageLayoutLoadOptions
-summary: Represents layout and print settings that are not dependent on any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents layout and print settings that are not dependent on any
+  printer-specific implementation. These settings include margins, orientation,
+  page numbering, title rows, and print area.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +19,12 @@ properties:
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +36,10 @@ properties:
     package: excel!
     fullName: blackAndWhite
     summary: The worksheet's black and white print option.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +51,10 @@ properties:
     package: excel!
     fullName: bottomMargin
     summary: The worksheet's bottom page margin to use for printing in points.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +65,13 @@ properties:
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#centerHorizontally:member
     package: excel!
     fullName: centerHorizontally
-    summary: The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The worksheet's center horizontally flag. This flag determines whether the
+      worksheet will be centered horizontally when it's printed.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +82,13 @@ properties:
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#centerVertically:member
     package: excel!
     fullName: centerVertically
-    summary: The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The worksheet's center vertically flag. This flag determines whether the
+      worksheet will be centered vertically when it's printed.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +99,13 @@ properties:
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#draftMode:member
     package: excel!
     fullName: draftMode
-    summary: The worksheet's draft mode option. If `true`<!-- -->, the sheet will be printed without graphics.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The worksheet's draft mode option. If `true`<!-- -->, the sheet will be
+      printed without graphics.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +116,13 @@ properties:
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#firstPageNumber:member
     package: excel!
     fullName: firstPageNumber
-    summary: The worksheet's first page number to print. A `null` value represents "auto" page numbering.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The worksheet's first page number to print. A `null` value represents
+      "auto" page numbering.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,8 +134,10 @@ properties:
     package: excel!
     fullName: footerMargin
     summary: The worksheet's footer margin, in points, for use when printing.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,8 +149,10 @@ properties:
     package: excel!
     fullName: headerMargin
     summary: The worksheet's header margin, in points, for use when printing.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,21 +164,27 @@ properties:
     package: excel!
     fullName: headersFooters
     summary: Header and footer configuration for the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface" />
   - name: leftMargin
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#leftMargin:member
     package: excel!
     fullName: leftMargin
     summary: The worksheet's left margin, in points, for use when printing.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,8 +196,10 @@ properties:
     package: excel!
     fullName: orientation
     summary: The worksheet's orientation of the page.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,8 +211,10 @@ properties:
     package: excel!
     fullName: paperSize
     summary: The worksheet's paper size of the page.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,8 +226,10 @@ properties:
     package: excel!
     fullName: printComments
     summary: Specifies if the worksheet's comments should be displayed when printing.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,8 +241,10 @@ properties:
     package: excel!
     fullName: printErrors
     summary: The worksheet's print errors option.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,8 +256,10 @@ properties:
     package: excel!
     fullName: printGridlines
     summary: Specifies if the worksheet's gridlines will be printed.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,8 +271,10 @@ properties:
     package: excel!
     fullName: printHeadings
     summary: Specifies if the worksheet's headings will be printed.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,9 +285,13 @@ properties:
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#printOrder:member
     package: excel!
     fullName: printOrder
-    summary: The worksheet's page print order option. This specifies the order to use for processing the page number printed.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The worksheet's page print order option. This specifies the order to use
+      for processing the page number printed.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,8 +303,10 @@ properties:
     package: excel!
     fullName: rightMargin
     summary: The worksheet's right margin, in points, for use when printing.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,8 +318,10 @@ properties:
     package: excel!
     fullName: topMargin
     summary: The worksheet's top margin, in points, for use when printing.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,9 +332,14 @@ properties:
     uid: excel!Excel.Interfaces.PageLayoutLoadOptions#zoom:member
     package: excel!
     fullName: zoom
-    summary: The worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`<!-- -->).
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The worksheet's print zoom options. The `PageLayoutZoomOptions` object
+      must be set as a JSON object (use `x.zoom = {...}` instead of
+      `x.zoom.scale = ...`<!-- -->).
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

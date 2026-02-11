@@ -4,15 +4,24 @@ uid: outlook!Office.MailboxEnums.AttachmentType:enum
 package: outlook!
 fullName: Office.MailboxEnums.AttachmentType
 summary: Specifies the attachment's type.
-remarks: |-
-  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
 
   Office.context.mailbox.item.getAttachmentsAsync((result) => {
     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -56,20 +65,31 @@ remarks: |-
       console.log("No attachments on this message.");
     }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: Cloud
     uid: outlook!Office.MailboxEnums.AttachmentType.Cloud:member
     package: outlook!
-    summary: |-
+    summary: >-
       The attachment is stored in a cloud location, such as OneDrive.
 
-      \*\*Important\*\*: In Read mode, the `id` property of the attachment's [AttachmentDetails](https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetails) object contains a URL to the file. From requirement set 1.8, the `url` property included in the attachment's [AttachmentDetailsCompose](https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose) object contains a URL to the file in Compose mode.
 
-      The `cloud` attachment type isn't supported by the `displayNewMessageForm`<!-- -->, `displayNewMessageFormAsync`<!-- -->, `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->, `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
+      **Important**: In Read mode, the `id` property of the attachment's
+      [AttachmentDetails](https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetails)
+      object contains a URL to the file. From requirement set 1.8, the `url`
+      property included in the attachment's
+      [AttachmentDetailsCompose](https://learn.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose)
+      object contains a URL to the file in Compose mode.
+
+
+      The `cloud` attachment type isn't supported by the
+      `displayNewMessageForm`<!-- -->, `displayNewMessageFormAsync`<!-- -->,
+      `displayReplyAllForm`<!-- -->, `displayReplyAllFormAsync`<!-- -->,
+      `displayReplyForm`<!-- -->, and `displayReplyFormAsync` methods.
     value: '"cloud"'
   - name: File
     uid: outlook!Office.MailboxEnums.AttachmentType.File:member

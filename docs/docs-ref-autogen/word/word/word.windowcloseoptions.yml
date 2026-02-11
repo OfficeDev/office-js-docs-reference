@@ -3,14 +3,22 @@ name: Word.WindowCloseOptions
 uid: word!Word.WindowCloseOptions:interface
 package: word!
 fullName: Word.WindowCloseOptions
-summary: The options that define whether to save changes before closing and whether to route the document.
-remarks: |-
-  \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: >-
+  The options that define whether to save changes before closing and whether to
+  route the document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/close-document-window.yaml
+
 
   await Word.run(async (context) => {
     // Closes the document window, prompting to save if this is a new document.
@@ -19,8 +27,9 @@ remarks: |-
     console.log("About to close the document window...");
     window.close(closeOptions);
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,9 +38,14 @@ properties:
     uid: word!Word.WindowCloseOptions#routeDocument:member
     package: word!
     fullName: routeDocument
-    summary: If provided, specifies whether to route the document to the next recipient. If the document doesn't have a routing slip attached, this property is ignored.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to route the document to the next
+      recipient. If the document doesn't have a routing slip attached, this
+      property is ignored.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,12 +56,21 @@ properties:
     uid: word!Word.WindowCloseOptions#saveChanges:member
     package: word!
     fullName: saveChanges
-    summary: If provided, specifies the save action for the document. For available values, see [Word.SaveConfiguration](xref:word!Word.SaveConfiguration:enum)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the save action for the document. For available
+      values, see
+      [Word.SaveConfiguration](xref:word!Word.SaveConfiguration:enum)<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'saveChanges?: Word.SaveConfiguration | "DoNotSaveChanges" | "SaveChanges" | "PromptToSaveChanges";'
+      content: >-
+        saveChanges?: Word.SaveConfiguration | "DoNotSaveChanges" |
+        "SaveChanges" | "PromptToSaveChanges";
       return:
-        type: <xref uid="word!Word.SaveConfiguration:enum" /> | "DoNotSaveChanges" | "SaveChanges" | "PromptToSaveChanges"
+        type: >-
+          <xref uid="word!Word.SaveConfiguration:enum" /> | "DoNotSaveChanges" |
+          "SaveChanges" | "PromptToSaveChanges"

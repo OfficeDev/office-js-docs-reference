@@ -3,9 +3,14 @@ name: Word.GoToOptions
 uid: word!Word.GoToOptions:interface
 package: word!
 fullName: Word.GoToOptions
-summary: Represents the options for the [Selection.goTo](xref:word!Word.Selection:class) and [Document.goTo](xref:word!Word.Document:class) methods.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the options for the
+  [Selection.goTo](xref:word!Word.Selection:class) and
+  [Document.goTo](xref:word!Word.Document:class) methods.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,9 +19,13 @@ properties:
     uid: word!Word.GoToOptions#count:member
     package: word!
     fullName: count
-    summary: If provided, specifies the number of the item in the document. Only positive values are valid. The default value is 1.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the number of the item in the document. Only
+      positive values are valid. The default value is 1.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -27,35 +36,58 @@ properties:
     uid: word!Word.GoToOptions#direction:member
     package: word!
     fullName: direction
-    summary: If provided, specifies the direction the range or selection is moved to. The default value is `next`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the direction the range or selection is moved to.
+      The default value is `next`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'direction?: Word.GoToDirection | "First" | "Last" | "Next" | "Previous";'
       return:
-        type: <xref uid="word!Word.GoToDirection:enum" /> | "First" | "Last" | "Next" | "Previous"
+        type: >-
+          <xref uid="word!Word.GoToDirection:enum" /> | "First" | "Last" |
+          "Next" | "Previous"
   - name: item
     uid: word!Word.GoToOptions#item:member
     package: word!
     fullName: item
-    summary: If provided, specifies the kind of item the range or selection is moved to. The default value is `page`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the kind of item the range or selection is moved
+      to. The default value is `page`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'item?: Word.GoToItem | "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError";'
+      content: >-
+        item?: Word.GoToItem | "Bookmark" | "Comment" | "Endnote" | "Field" |
+        "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" |
+        "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" |
+        "GrammaticalError" | "ProofreadingError";
       return:
-        type: <xref uid="word!Word.GoToItem:enum" /> | "Bookmark" | "Comment" | "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" | "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" | "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError"
+        type: >-
+          <xref uid="word!Word.GoToItem:enum" /> | "Bookmark" | "Comment" |
+          "Endnote" | "Field" | "Footnote" | "Graphic" | "Heading" | "Line" |
+          "Page" | "Section" | "Table" | "EmbeddedObject" | "Equation" |
+          "Percent" | "SpellingError" | "GrammaticalError" | "ProofreadingError"
   - name: name
     uid: word!Word.GoToOptions#name:member
     package: word!
     fullName: name
-    summary: If provided, specifies the name if the `item` property is set to [Word.GoToItem](xref:word!Word.GoToItem:enum) type `bookmark`<!-- -->, `comment`<!-- -->, `field`<!-- -->, or `object`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the name if the `item` property is set to
+      [Word.GoToItem](xref:word!Word.GoToItem:enum) type `bookmark`<!-- -->,
+      `comment`<!-- -->, `field`<!-- -->, or `object`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:

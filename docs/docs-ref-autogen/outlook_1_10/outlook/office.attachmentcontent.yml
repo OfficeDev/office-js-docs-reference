@@ -4,16 +4,26 @@ uid: outlook!Office.AttachmentContent:interface
 package: outlook!
 fullName: Office.AttachmentContent
 summary: Represents the content of an attachment on a message or appointment item.
-remarks: |-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 
   #### Examples
 
+
   ```TypeScript
+
   Office.context.mailbox.item.getAttachmentsAsync((result) => {
       if (result.value.length > 0) {
           for (let i = 0 ; i < result.value.length ; i++) {
@@ -21,6 +31,7 @@ remarks: |-
           }
       }
   });
+
 
   function handleAttachmentsCallback(result) {
       // Identify if an attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
@@ -48,8 +59,9 @@ remarks: |-
       // Log the content of the attachments as a string.
       console.log(result.value.content);
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -60,7 +72,7 @@ properties:
     fullName: content
     summary: The content of an attachment as a string.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,23 +83,37 @@ properties:
     uid: outlook!Office.AttachmentContent#format:member
     package: outlook!
     fullName: format
-    summary: |-
+    summary: >-
       The string format to use for an attachment's content.
+
 
       For file attachments, the formatting is a Base64-encoded string.
 
-      For item attachments that represent messages and were attached by drag-and-drop or "Attach Item", the formatting is a string representing an .eml formatted file.
 
-      For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item", the formatting is a string representing an .icalendar file.
+      For item attachments that represent messages and were attached by
+      drag-and-drop or "Attach Item", the formatting is a string representing an
+      .eml formatted file.
 
-      \*\*Important\*\*: If a message or calendar item was attached by drag-and-drop in Outlook on the web or [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, then `getAttachmentContentAsync` throws an error.
+
+      For item attachments that represent calendar items and were attached by
+      drag-and-drop or "Attach Item", the formatting is a string representing an
+      .icalendar file.
+
+
+      **Important**: If a message or calendar item was attached by
+      drag-and-drop in Outlook on the web or [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, then `getAttachmentContentAsync` throws an error.
+
 
       For cloud attachments, the formatting is a URL string.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format: MailboxEnums.AttachmentContentFormat | string;'
       return:
-        type: <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum" /> | string
+        type: >-
+          <xref uid="outlook!Office.MailboxEnums.AttachmentContentFormat:enum"
+          /> | string

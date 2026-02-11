@@ -4,13 +4,19 @@ uid: excel!Excel.VerticalAlignment:enum
 package: excel!
 fullName: Excel.VerticalAlignment
 summary: ''
-remarks: |-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
 
   await Excel.run(async (context) => {
       let worksheet = context.workbook.worksheets.getItem("Sample");
@@ -21,33 +27,44 @@ remarks: |-
 
       await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: bottom
     uid: excel!Excel.VerticalAlignment.bottom:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Bottom"'
   - name: center
     uid: excel!Excel.VerticalAlignment.center:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Center"'
   - name: distributed
     uid: excel!Excel.VerticalAlignment.distributed:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Distributed"'
   - name: justify
     uid: excel!Excel.VerticalAlignment.justify:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Justify"'
   - name: top
     uid: excel!Excel.VerticalAlignment.top:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Top"'

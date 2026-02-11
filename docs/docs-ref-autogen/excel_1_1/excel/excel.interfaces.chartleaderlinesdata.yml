@@ -3,9 +3,11 @@ name: Excel.Interfaces.ChartLeaderLinesData
 uid: excel!Excel.Interfaces.ChartLeaderLinesData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartLeaderLinesData
-summary: An interface describing the data returned by calling `chartLeaderLines.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `chartLeaderLines.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

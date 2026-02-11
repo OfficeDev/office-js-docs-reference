@@ -4,15 +4,22 @@ uid: word!Word.CritiquePopupOptions:interface
 package: word!
 fullName: Word.CritiquePopupOptions
 summary: Properties defining the behavior of the pop-up menu for a given critique.
-remarks: |-
-  \[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: WordApi
+  1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-annotations.yaml
+
 
   // Adds annotations to the selected paragraph.
+
   await Word.run(async (context) => {
     const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
     const options: Word.CritiquePopupOptions = {
@@ -61,8 +68,9 @@ remarks: |-
 
     console.log("Annotations inserted:", annotationIds.value);
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -71,9 +79,13 @@ properties:
     uid: word!Word.CritiquePopupOptions#brandingTextResourceId:member
     package: word!
     fullName: brandingTextResourceId
-    summary: Specifies the manifest resource ID of the string to use for branding. This branding text appears next to your add-in icon in the pop-up menu.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the manifest resource ID of the string to use for branding. This
+      branding text appears next to your add-in icon in the pop-up menu.
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,8 +97,10 @@ properties:
     package: word!
     fullName: subtitleResourceId
     summary: Specifies the manifest resource ID of the string to use as the subtitle.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,8 +112,10 @@ properties:
     package: word!
     fullName: suggestions
     summary: Specifies the suggestions to display in the critique pop-up menu.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,8 +127,10 @@ properties:
     package: word!
     fullName: titleResourceId
     summary: Specifies the manifest resource ID of the string to use as the title.
-    remarks: '\[ [API set: WordApi 1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.8](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

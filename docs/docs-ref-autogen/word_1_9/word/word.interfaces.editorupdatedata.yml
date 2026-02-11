@@ -3,9 +3,11 @@ name: Word.Interfaces.EditorUpdateData
 uid: word!Word.Interfaces.EditorUpdateData:interface
 package: word!
 fullName: Word.Interfaces.EditorUpdateData
-summary: An interface for updating data on the `Editor` object, for use in `editor.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Editor` object, for use in
+  `editor.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

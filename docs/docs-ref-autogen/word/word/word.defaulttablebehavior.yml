@@ -4,24 +4,30 @@ uid: word!Word.DefaultTableBehavior:enum
 package: word!
 fullName: Word.DefaultTableBehavior
 summary: Specifies the default behavior when inserting a new table.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 fields:
   - name: disableAutoFit
     uid: word!Word.DefaultTableBehavior.disableAutoFit:member
     package: word!
-    summary: |-
+    summary: >-
       Disables AutoFit.
 
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DisableAutoFit"'
   - name: enableAutoFit
     uid: word!Word.DefaultTableBehavior.enableAutoFit:member
     package: word!
-    summary: |-
+    summary: >-
       Enables AutoFit.
 
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EnableAutoFit"'

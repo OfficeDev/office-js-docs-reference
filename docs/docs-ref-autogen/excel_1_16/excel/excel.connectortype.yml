@@ -4,13 +4,19 @@ uid: excel!Excel.ConnectorType:enum
 package: excel!
 fullName: Excel.ConnectorType
 summary: ''
-remarks: |-
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
 
   await Excel.run(async (context) => {
       const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -18,23 +24,30 @@ remarks: |-
       line.name = "StraightLine";
       await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: curve
     uid: excel!Excel.ConnectorType.curve:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Curve"'
   - name: elbow
     uid: excel!Excel.ConnectorType.elbow:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Elbow"'
   - name: straight
     uid: excel!Excel.ConnectorType.straight:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Straight"'

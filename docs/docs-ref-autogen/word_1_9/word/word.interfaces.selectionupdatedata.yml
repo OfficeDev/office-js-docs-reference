@@ -3,9 +3,11 @@ name: Word.Interfaces.SelectionUpdateData
 uid: word!Word.Interfaces.SelectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.SelectionUpdateData
-summary: An interface for updating data on the `Selection` object, for use in `selection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Selection` object, for use in
+  `selection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

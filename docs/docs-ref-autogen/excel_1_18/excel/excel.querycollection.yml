@@ -4,8 +4,10 @@ uid: excel!Excel.QueryCollection:class
 package: excel!
 fullName: Excel.QueryCollection
 summary: Represents the collection of queries in the workbook.
-remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +16,11 @@ properties:
     uid: excel!Excel.QueryCollection#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +48,7 @@ properties:
           console.log("  " + queries.items.map((query) => query.name).join("\n  "));
       });
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,14 +61,21 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of queries in the workbook.
-    remarks: |-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       // This function retrieves the query collection in a workbook and then 
+
       // logs the number of queries in the collection to the console.
+
       await Excel.run(async (context) => { 
         const queries = context.workbook.queries; 
         const count = queries.getCount();
@@ -72,8 +83,9 @@ methods:
 
         console.log("Query count: " + count.value);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,8 +98,11 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a query from the collection based on its name.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,22 +113,32 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.Query:class" />
-        description: The query with the given name. If there is no query by that name, then an error is thrown.
+        description: >-
+          The query with the given name. If there is no query by that name, then
+          an error is thrown.
   - name: load(options)
     uid: excel!Excel.QueryCollection#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.QueryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.QueryCollection;'
+      content: >-
+        load(options?: Excel.Interfaces.QueryCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.QueryCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="excel!Excel.Interfaces.QueryCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.QueryCollectionLoadOptions:interface" />
+            & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface"
+            />
       return:
         type: <xref uid="excel!Excel.QueryCollection:class" />
         description: ''
@@ -121,16 +146,20 @@ methods:
     uid: excel!Excel.QueryCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.QueryCollection;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.QueryCollection:class" />
@@ -139,16 +168,24 @@ methods:
     uid: excel!Excel.QueryCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.QueryCollection;'
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.QueryCollection;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.QueryCollection:class" />
@@ -157,9 +194,17 @@ methods:
     uid: excel!Excel.QueryCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.QueryCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.QueryCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.QueryCollection`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.QueryCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties
+      from the collection's items.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

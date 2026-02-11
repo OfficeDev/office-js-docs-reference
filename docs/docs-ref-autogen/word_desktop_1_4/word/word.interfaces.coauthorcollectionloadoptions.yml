@@ -3,9 +3,13 @@ name: Word.Interfaces.CoauthorCollectionLoadOptions
 uid: word!Word.Interfaces.CoauthorCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CoauthorCollectionLoadOptions
-summary: Contains a collection of [Word.Coauthor](xref:word!Word.Coauthor:class) objects.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Contains a collection of [Word.Coauthor](xref:word!Word.Coauthor:class)
+  objects.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: word!Word.Interfaces.CoauthorCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +35,10 @@ properties:
     package: word!
     fullName: emailAddress
     summary: 'For EACH ITEM in the collection: Gets the email address of the coauthor.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +49,13 @@ properties:
     uid: word!Word.Interfaces.CoauthorCollectionLoadOptions#id:member
     package: word!
     fullName: id
-    summary: 'For EACH ITEM in the collection: Gets the unique identifier for the `Coauthor` object.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the unique identifier for the
+      `Coauthor` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +66,13 @@ properties:
     uid: word!Word.Interfaces.CoauthorCollectionLoadOptions#isMe:member
     package: word!
     fullName: isMe
-    summary: 'For EACH ITEM in the collection: Gets whether this author represents the current user.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets whether this author represents the
+      current user.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +84,10 @@ properties:
     package: word!
     fullName: name
     summary: 'For EACH ITEM in the collection: Gets the display name of the coauthor.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,9 +3,11 @@ name: OneNote.Interfaces.InkAnalysisParagraphCollectionData
 uid: onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionData
-summary: An interface describing the data returned by calling `inkAnalysisParagraphCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `inkAnalysisParagraphCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,10 +18,13 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisParagraphData[];'
       return:
-        type: <xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface" />[]
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface"
+          />[]

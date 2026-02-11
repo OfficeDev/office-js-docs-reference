@@ -4,17 +4,28 @@ uid: outlook!Office.MailboxEnums.ComposeType:enum
 package: outlook!
 fullName: Office.MailboxEnums.ComposeType
 summary: Specifies a message's compose type.
-remarks: |-
-  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: Mailbox
+  1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
+
 
   // Get the compose type of the current message.
+
   Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {
     if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
       console.log(
@@ -27,8 +38,9 @@ remarks: |-
       console.error(asyncResult.error);
     }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:

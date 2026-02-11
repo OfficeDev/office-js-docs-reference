@@ -3,19 +3,31 @@ name: PowerPoint.ShapeZOrder
 uid: powerpoint!PowerPoint.ShapeZOrder:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeZOrder
-summary: Use with `setZOrder` to move the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
-remarks: |-
-  \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+summary: >-
+  Use with `setZOrder` to move the specified shape up or down the collection's
+  z-order, which shifts it in front of or behind other shapes.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
 
   // Sends the shape to the back.
+
   changeZOrder(PowerPoint.ShapeZOrder.sendToBack);
 
+
   ...
+
 
   async function changeZOrder(operation: PowerPoint.ShapeZOrder) {
     // Changes the z-order position of the selected shapes.
@@ -65,40 +77,53 @@ remarks: |-
       }
     });
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: bringForward
     uid: powerpoint!PowerPoint.ShapeZOrder.bringForward:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Brings the shape forward one spot in the z-order.
 
-      \* \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"BringForward"'
   - name: bringToFront
     uid: powerpoint!PowerPoint.ShapeZOrder.bringToFront:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Brings the shape to the front of the z-order.
 
-      \* \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"BringToFront"'
   - name: sendBackward
     uid: powerpoint!PowerPoint.ShapeZOrder.sendBackward:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Sends the shape backward one spot in the z-order.
 
-      \* \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"SendBackward"'
   - name: sendToBack
     uid: powerpoint!PowerPoint.ShapeZOrder.sendToBack:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Sends the shape to the back of the z-order.
 
-      \* \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"SendToBack"'

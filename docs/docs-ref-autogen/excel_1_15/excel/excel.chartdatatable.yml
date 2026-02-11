@@ -4,8 +4,10 @@ uid: excel!Excel.ChartDataTable:class
 package: excel!
 fullName: Excel.ChartDataTable
 summary: Represents the data table object of a chart.
-remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +16,11 @@ properties:
     uid: excel!Excel.ChartDataTable#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,16 +31,27 @@ properties:
     uid: excel!Excel.ChartDataTable#format:member
     package: excel!
     fullName: format
-    summary: Represents the format of a chart data table, which includes fill, font, and border format.
-    remarks: |-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the format of a chart data table, which includes fill, font,
+      and border format.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
-      // This function adjusts the display and format of a chart data table that already exists on the worksheet.
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+
+      // This function adjusts the display and format of a chart data table that
+      already exists on the worksheet.
+
       await Excel.run(async (context) => {
         // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
         const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
@@ -58,8 +73,9 @@ properties:
         chartDataTableFormat.border.color = "blue";
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,15 +87,24 @@ properties:
     package: excel!
     fullName: showHorizontalBorder
     summary: Specifies whether to display the horizontal border of the data table.
-    remarks: |-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
-      // This function adjusts the display and format of a chart data table that already exists on the worksheet.
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+
+      // This function adjusts the display and format of a chart data table that
+      already exists on the worksheet.
+
       await Excel.run(async (context) => {
         // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
         const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
@@ -101,8 +126,9 @@ properties:
         chartDataTableFormat.border.color = "blue";
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,15 +140,24 @@ properties:
     package: excel!
     fullName: showLegendKey
     summary: Specifies whether to show the legend key of the data table.
-    remarks: |-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
-      // This function adjusts the display and format of a chart data table that already exists on the worksheet.
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+
+      // This function adjusts the display and format of a chart data table that
+      already exists on the worksheet.
+
       await Excel.run(async (context) => {
         // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
         const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
@@ -144,8 +179,9 @@ properties:
         chartDataTableFormat.border.color = "blue";
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,15 +193,24 @@ properties:
     package: excel!
     fullName: showOutlineBorder
     summary: Specifies whether to display the outline border of the data table.
-    remarks: |-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
-      // This function adjusts the display and format of a chart data table that already exists on the worksheet.
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+
+      // This function adjusts the display and format of a chart data table that
+      already exists on the worksheet.
+
       await Excel.run(async (context) => {
         // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
         const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
@@ -187,8 +232,9 @@ properties:
         chartDataTableFormat.border.color = "blue";
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,15 +246,24 @@ properties:
     package: excel!
     fullName: showVerticalBorder
     summary: Specifies whether to display the vertical border of the data table.
-    remarks: |-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
-      // This function adjusts the display and format of a chart data table that already exists on the worksheet.
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+
+      // This function adjusts the display and format of a chart data table that
+      already exists on the worksheet.
+
       await Excel.run(async (context) => {
         // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
         const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
@@ -230,8 +285,9 @@ properties:
         chartDataTableFormat.border.color = "blue";
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,15 +299,24 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies whether to show the data table of the chart.
-    remarks: |-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
-      // This function adds a data table to a chart that already exists on the worksheet. 
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+
+      // This function adds a data table to a chart that already exists on the
+      worksheet. 
+
       await Excel.run(async (context) => {
         // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
         const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
@@ -262,8 +327,9 @@ properties:
         chartDataTable.visible = true;
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -275,17 +341,23 @@ methods:
     uid: excel!Excel.ChartDataTable#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.ChartDataTableLoadOptions): Excel.ChartDataTable;'
+      content: >-
+        load(options?: Excel.Interfaces.ChartDataTableLoadOptions):
+        Excel.ChartDataTable;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="excel!Excel.Interfaces.ChartDataTableLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataTableLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.ChartDataTable:class" />
         description: ''
@@ -293,16 +365,20 @@ methods:
     uid: excel!Excel.ChartDataTable#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.ChartDataTable;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.ChartDataTable:class" />
@@ -311,9 +387,11 @@ methods:
     uid: excel!Excel.ChartDataTable#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -324,7 +402,11 @@ methods:
                 }): Excel.ChartDataTable;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -337,19 +419,31 @@ methods:
     uid: excel!Excel.ChartDataTable#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ChartDataTableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.ChartDataTableUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-          type: <xref uid="excel!Excel.Interfaces.ChartDataTableUpdateData:interface" />
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.ChartDataTableUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -358,9 +452,11 @@ methods:
     uid: excel!Excel.ChartDataTable#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -376,9 +472,17 @@ methods:
     uid: excel!Excel.ChartDataTable#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.ChartDataTable` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataTableData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.ChartDataTable`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.ChartDataTableData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

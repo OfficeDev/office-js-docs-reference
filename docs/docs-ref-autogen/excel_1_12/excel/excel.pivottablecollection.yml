@@ -3,9 +3,13 @@ name: Excel.PivotTableCollection
 uid: excel!Excel.PivotTableCollection:class
 package: excel!
 fullName: Excel.PivotTableCollection
-summary: Represents a collection of all the PivotTables that are part of the workbook or worksheet.
-remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents a collection of all the PivotTables that are part of the workbook
+  or worksheet.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +18,11 @@ properties:
     uid: excel!Excel.PivotTableCollection#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +35,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,14 +47,22 @@ methods:
     uid: excel!Excel.PivotTableCollection#add:member(1)
     package: excel!
     fullName: add(name, source, destination)
-    summary: Add a PivotTable based on the specified source data and insert it at the top-left cell of the destination range.
-    remarks: |-
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Add a PivotTable based on the specified source data and insert it at the
+      top-left cell of the destination range.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
 
       await Excel.run(async (context) => {
           const rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
@@ -57,21 +71,31 @@ methods:
 
           await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'add(name: string, source: Range | string | Table, destination: Range | string): Excel.PivotTable;'
+      content: >-
+        add(name: string, source: Range | string | Table, destination: Range |
+        string): Excel.PivotTable;
       parameters:
         - id: name
           description: The name of the new PivotTable.
           type: string
         - id: source
-          description: The source data for the new PivotTable, this can either be a range (or string address including the worksheet name) or a table.
-          type: <xref uid="excel!Excel.Range:class" /> | string | <xref uid="excel!Excel.Table:class" />
+          description: >-
+            The source data for the new PivotTable, this can either be a range
+            (or string address including the worksheet name) or a table.
+          type: >-
+            <xref uid="excel!Excel.Range:class" /> | string | <xref
+            uid="excel!Excel.Table:class" />
         - id: destination
-          description: The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).
+          description: >-
+            The cell in the upper-left corner of the PivotTable report's
+            destination range (the range on the worksheet where the resulting
+            report will be placed).
           type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: <xref uid="excel!Excel.PivotTable:class" />
@@ -81,8 +105,10 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of pivot tables in the collection.
-    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,23 +121,32 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: Gets a PivotTable by name.
-    remarks: |-
-      \[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-refresh.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-refresh.yaml
+
 
       // This function refreshes the "Farm Sales" PivotTable,
+
       // which updates the PivotTable with changes made to the source table.
+
       await Excel.run(async (context) => {
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
         pivotTable.refresh();
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,9 +162,16 @@ methods:
     uid: excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a PivotTable by name. If the PivotTable does not exist, then this
+      method returns an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,17 +187,25 @@ methods:
     uid: excel!Excel.PivotTableCollection#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;'
+      content: >-
+        load(options?: Excel.Interfaces.PivotTableCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.PivotTableCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.PivotTableCollection:class" />
         description: ''
@@ -163,16 +213,20 @@ methods:
     uid: excel!Excel.PivotTableCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotTableCollection;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.PivotTableCollection:class" />
@@ -181,16 +235,24 @@ methods:
     uid: excel!Excel.PivotTableCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotTableCollection;'
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.PivotTableCollection;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.PivotTableCollection:class" />
@@ -200,8 +262,10 @@ methods:
     package: excel!
     fullName: refreshAll()
     summary: Refreshes all the pivot tables in the collection.
-    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,14 +277,25 @@ methods:
     uid: excel!Excel.PivotTableCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.PivotTableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Excel.PivotTableCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.PivotTableCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotTableCollectionData;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.PivotTableCollectionData:interface" />
+        type: >-
+          <xref uid="excel!Excel.Interfaces.PivotTableCollectionData:interface"
+          />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

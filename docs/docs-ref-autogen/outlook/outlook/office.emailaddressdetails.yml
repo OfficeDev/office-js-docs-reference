@@ -3,12 +3,19 @@ name: Office.EmailAddressDetails
 uid: outlook!Office.EmailAddressDetails:interface
 package: outlook!
 fullName: Office.EmailAddressDetails
-summary: Provides the email properties of the sender or specified recipients of an email message or appointment.
-remarks: |-
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+summary: >-
+  Provides the email properties of the sender or specified recipients of an
+  email message or appointment.
+remarks: >-
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
-example: []
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,20 +24,33 @@ properties:
     uid: outlook!Office.EmailAddressDetails#appointmentResponse:member
     package: outlook!
     fullName: appointmentResponse
-    summary: Gets the response that an attendee returned for an appointment. This property applies to only an attendee of an appointment, as represented by the `optionalAttendees` or `requiredAttendees` property. This property returns undefined in other scenarios.
-    remarks: |-
+    summary: >-
+      Gets the response that an attendee returned for an appointment. This
+      property applies to only an attendee of an appointment, as represented by
+      the `optionalAttendees` or `requiredAttendees` property. This property
+      returns undefined in other scenarios.
+    remarks: >-
       #### Examples
 
+
       ```TypeScript
+
       // The following sample provides the responses from required attendees.
-      // Note that this sample needs the add-in to be in Appointment Read (Attendee) mode.
+
+      // Note that this sample needs the add-in to be in Appointment Read
+      (Attendee) mode.
+
       const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
-      console.log("There are " + requiredAttendees.length + " required attendees.")
+
+      console.log("There are " + requiredAttendees.length + " required
+      attendees.")
+
       requiredAttendees.forEach(function (requiredAttendee) {
           console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,7 +69,7 @@ properties:
       const organizerName = Office.context.mailbox.item.organizer.displayName;
       console.log("Organizer: " + organizerName);
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,14 +81,19 @@ properties:
     package: outlook!
     fullName: emailAddress
     summary: Gets the SMTP email address.
-    remarks: |-
+    remarks: >-
       #### Examples
 
+
       ```TypeScript
-      const organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+
+      const organizerAddress =
+      Office.context.mailbox.item.organizer.emailAddress;
+
       console.log("Organizer's email address: " + organizerAddress);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,23 +105,43 @@ properties:
     package: outlook!
     fullName: recipientType
     summary: Gets the email address type of a recipient.
-    remarks: |-
-      \*\*Important\*\*:
+    remarks: >-
+      **Important**:
 
-      - A `recipientType` property value isn't returned by the [Office.context.mailbox.item.from.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1)) and [Office.context.mailbox.item.organizer.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1)) methods. The email sender or appointment organizer is always a user whose email address is on the Exchange server.
 
-      - While composing a mail item, when you switch to a sender account that's on a different domain than that of the previously selected sender account, the value of the `recipientType` property for existing recipients isn't updated and will still be based on the domain of the previously selected account. To get the correct recipient types after switching accounts, you must first remove the existing recipients, then add them back to the mail item.
+      - A `recipientType` property value isn't returned by the
+      [Office.context.mailbox.item.from.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1))
+      and
+      [Office.context.mailbox.item.organizer.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1))
+      methods. The email sender or appointment organizer is always a user whose
+      email address is on the Exchange server.
+
+
+      - While composing a mail item, when you switch to a sender account that's
+      on a different domain than that of the previously selected sender account,
+      the value of the `recipientType` property for existing recipients isn't
+      updated and will still be based on the domain of the previously selected
+      account. To get the correct recipient types after switching accounts, you
+      must first remove the existing recipients, then add them back to the mail
+      item.
+
 
       #### Examples
 
+
       ```TypeScript
+
       const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
-      console.log("There are " + requiredAttendees.length + " required attendees.")
+
+      console.log("There are " + requiredAttendees.length + " required
+      attendees.")
+
       requiredAttendees.forEach(function (requiredAttendee) {
           console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

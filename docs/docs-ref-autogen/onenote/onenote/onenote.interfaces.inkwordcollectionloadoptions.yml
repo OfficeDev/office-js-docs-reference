@@ -4,8 +4,10 @@ uid: onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.InkWordCollectionLoadOptions
 summary: Represents a collection of InkWord objects.
-remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#$all:member
     package: onenote!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +32,13 @@ properties:
     uid: onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#id:member
     package: onenote!
     fullName: id
-    summary: 'For EACH ITEM in the collection: Gets the ID of the InkWord object. Read-only.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the ID of the InkWord object.
+      Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +49,13 @@ properties:
     uid: onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#languageId:member
     package: onenote!
     fullName: languageId
-    summary: 'For EACH ITEM in the collection: The ID of the recognized language in this ink word. Read-only.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: The ID of the recognized language in this
+      ink word. Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,22 +66,33 @@ properties:
     uid: onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#paragraph:member
     package: onenote!
     fullName: paragraph
-    summary: 'For EACH ITEM in the collection: The parent paragraph containing the ink word.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: The parent paragraph containing the ink
+      word.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />
+        type: >-
+          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
+          />
   - name: wordAlternates
-    uid: onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#wordAlternates:member
+    uid: >-
+      onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#wordAlternates:member
     package: onenote!
     fullName: wordAlternates
-    summary: 'For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood. Read-only.'
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: The words that were recognized in this
+      ink word, in order of likelihood. Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

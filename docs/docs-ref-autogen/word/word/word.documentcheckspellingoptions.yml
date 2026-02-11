@@ -3,9 +3,13 @@ name: Word.DocumentCheckSpellingOptions
 uid: word!Word.DocumentCheckSpellingOptions:interface
 package: word!
 fullName: Word.DocumentCheckSpellingOptions
-summary: Provides configuration options for the [Document.checkSpelling](xref:word!Word.Document:class) method.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Provides configuration options for the
+  [Document.checkSpelling](xref:word!Word.Document:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,9 +18,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#alwaysSuggest:member
     package: word!
     fullName: alwaysSuggest
-    summary: If provided, specifies whether to always suggest spelling corrections. The default value is `true`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to always suggest spelling corrections. The
+      default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -27,9 +35,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary:member
     package: word!
     fullName: customDictionary
-    summary: If provided, specifies the custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the custom dictionary to use for spell checking.
+      The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -40,9 +52,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary10:member
     package: word!
     fullName: customDictionary10
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -53,9 +69,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary2:member
     package: word!
     fullName: customDictionary2
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,9 +86,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary3:member
     package: word!
     fullName: customDictionary3
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -79,9 +103,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary4:member
     package: word!
     fullName: customDictionary4
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -92,9 +120,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary5:member
     package: word!
     fullName: customDictionary5
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -105,9 +137,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary6:member
     package: word!
     fullName: customDictionary6
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -118,9 +154,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary7:member
     package: word!
     fullName: customDictionary7
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -131,9 +171,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary8:member
     package: word!
     fullName: customDictionary8
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -144,9 +188,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#customDictionary9:member
     package: word!
     fullName: customDictionary9
-    summary: If provided, specifies an additional custom dictionary to use for spell checking. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies an additional custom dictionary to use for spell
+      checking. The default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -157,9 +205,13 @@ properties:
     uid: word!Word.DocumentCheckSpellingOptions#ignoreUppercase:member
     package: word!
     fullName: ignoreUppercase
-    summary: If provided, specifies whether to ignore uppercase words during spell checking. The default value is `false`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to ignore uppercase words during spell
+      checking. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:

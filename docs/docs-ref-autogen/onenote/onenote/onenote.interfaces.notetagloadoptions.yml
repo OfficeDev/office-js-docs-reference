@@ -4,8 +4,10 @@ uid: onenote!OneNote.Interfaces.NoteTagLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.NoteTagLoadOptions
 summary: A container for the NoteTag in a paragraph.
-remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: onenote!OneNote.Interfaces.NoteTagLoadOptions#$all:member
     package: onenote!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +33,11 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the Id of the NoteTag object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +49,11 @@ properties:
     package: onenote!
     fullName: status
     summary: Gets the status of the NoteTag object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +65,11 @@ properties:
     package: onenote!
     fullName: type
     summary: Gets the type of the NoteTag object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

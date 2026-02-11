@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.GraphicData
 uid: powerpoint!PowerPoint.Interfaces.GraphicData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.GraphicData
-summary: An interface describing the data returned by calling `graphic.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `graphic.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

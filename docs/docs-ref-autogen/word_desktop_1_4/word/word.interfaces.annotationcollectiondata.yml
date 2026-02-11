@@ -3,9 +3,11 @@ name: Word.Interfaces.AnnotationCollectionData
 uid: word!Word.Interfaces.AnnotationCollectionData:interface
 package: word!
 fullName: Word.Interfaces.AnnotationCollectionData
-summary: An interface describing the data returned by calling `annotationCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `annotationCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

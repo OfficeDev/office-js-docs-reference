@@ -3,9 +3,11 @@ name: Excel.Interfaces.ChartDataTableData
 uid: excel!Excel.Interfaces.ChartDataTableData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartDataTableData
-summary: An interface describing the data returned by calling `chartDataTable.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `chartDataTable.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,22 +16,32 @@ properties:
     uid: excel!Excel.Interfaces.ChartDataTableData#format:member
     package: excel!
     fullName: format
-    summary: Represents the format of a chart data table, which includes fill, font, and border format.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the format of a chart data table, which includes fill, font,
+      and border format.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartDataTableFormatData;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.ChartDataTableFormatData:interface" />
+        type: >-
+          <xref uid="excel!Excel.Interfaces.ChartDataTableFormatData:interface"
+          />
   - name: showHorizontalBorder
     uid: excel!Excel.Interfaces.ChartDataTableData#showHorizontalBorder:member
     package: excel!
     fullName: showHorizontalBorder
     summary: Specifies whether to display the horizontal border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +53,11 @@ properties:
     package: excel!
     fullName: showLegendKey
     summary: Specifies whether to show the legend key of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +69,11 @@ properties:
     package: excel!
     fullName: showOutlineBorder
     summary: Specifies whether to display the outline border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +85,11 @@ properties:
     package: excel!
     fullName: showVerticalBorder
     summary: Specifies whether to display the vertical border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +101,11 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies whether to show the data table of the chart.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

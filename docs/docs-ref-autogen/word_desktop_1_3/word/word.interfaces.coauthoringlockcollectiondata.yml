@@ -3,9 +3,11 @@ name: Word.Interfaces.CoauthoringLockCollectionData
 uid: word!Word.Interfaces.CoauthoringLockCollectionData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockCollectionData
-summary: An interface describing the data returned by calling `coauthoringLockCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `coauthoringLockCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

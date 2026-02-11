@@ -4,15 +4,23 @@ uid: powerpoint!PowerPoint.BindingType:enum
 package: powerpoint!
 fullName: PowerPoint.BindingType
 summary: Represents the possible binding types.
-remarks: |-
-  \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/binding-to-shapes.yaml
+
 
   // Inserts an image with binding.
+
   await PowerPoint.run(async (context) => {
     const bindingId = (document.getElementById("temp-binding-id") as HTMLInputElement).value;
     const slide = context.presentation.getSelectedSlides().getItemAt(0);
@@ -41,16 +49,20 @@ remarks: |-
       bindingsDropdown.selectedIndex = foundIndex;
     }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: shape
     uid: powerpoint!PowerPoint.BindingType.shape:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Represents a shape binding.
 
-      \* \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Shape"'

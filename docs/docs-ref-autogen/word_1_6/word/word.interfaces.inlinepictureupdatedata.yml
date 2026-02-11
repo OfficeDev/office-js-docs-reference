@@ -3,9 +3,11 @@ name: Word.Interfaces.InlinePictureUpdateData
 uid: word!Word.Interfaces.InlinePictureUpdateData:interface
 package: word!
 fullName: Word.Interfaces.InlinePictureUpdateData
-summary: An interface for updating data on the `InlinePicture` object, for use in `inlinePicture.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `InlinePicture` object, for use in
+  `inlinePicture.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.InlinePictureUpdateData#altTextDescription:member
     package: word!
     fullName: altTextDescription
-    summary: Specifies a string that represents the alternative text associated with the inline image.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a string that represents the alternative text associated with
+      the inline image.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +34,10 @@ properties:
     package: word!
     fullName: altTextTitle
     summary: Specifies a string that contains the title for the inline image.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +49,10 @@ properties:
     package: word!
     fullName: height
     summary: Specifies a number that describes the height of the inline image.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +63,13 @@ properties:
     uid: word!Word.Interfaces.InlinePictureUpdateData#hyperlink:member
     package: word!
     fullName: hyperlink
-    summary: Specifies a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a hyperlink on the image. Use a '\#' to separate the address
+      part from the optional location part.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +80,13 @@ properties:
     uid: word!Word.Interfaces.InlinePictureUpdateData#lockAspectRatio:member
     package: word!
     fullName: lockAspectRatio
-    summary: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a value that indicates whether the inline image retains its
+      original proportions when you resize it.
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +98,10 @@ properties:
     package: word!
     fullName: width
     summary: Specifies a number that describes the width of the inline image.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

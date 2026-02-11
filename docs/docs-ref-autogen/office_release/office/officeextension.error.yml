@@ -3,9 +3,11 @@ name: OfficeExtension.Error
 uid: office!OfficeExtension.Error:class
 package: office!
 fullName: OfficeExtension.Error
-summary: The error object returned by `context.sync()`<!-- -->, if a promise is rejected due to an error while processing the request.
+summary: >-
+  The error object returned by `context.sync()`<!-- -->, if a promise is
+  rejected due to an error while processing the request.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,7 +18,7 @@ properties:
     fullName: code
     summary: Error code string, such as "InvalidArgument".
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +29,11 @@ properties:
     uid: office!OfficeExtension.Error#debugInfo:member
     package: office!
     fullName: debugInfo
-    summary: Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`<!-- -->).
+    summary: >-
+      Debug info (useful for detailed logging of the error, i.e., via
+      `JSON.stringify(...)`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: innerError
     summary: Inner error, if applicable.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: message
     summary: The error message passed through from the Office application.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +72,7 @@ properties:
     fullName: name
     summary: 'Error name: "OfficeExtension.Error".'
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +85,7 @@ properties:
     fullName: stack
     summary: Stack trace, if applicable.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,22 +96,39 @@ properties:
     uid: office!OfficeExtension.Error#traceMessages:member
     package: office!
     fullName: traceMessages
-    summary: Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`<!-- -->. If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error.
-    remarks: |-
+    summary: >-
+      Trace messages (if any) that were added via a `context.trace()` invocation
+      before calling `context.sync()`<!-- -->. If there was an error, this
+      contains all trace messages that were executed before the error occurred.
+      These messages can help you monitor the program execution sequence and
+      detect the case of the error.
+    remarks: >-
       #### Examples
 
+
       ```TypeScript
+
       // The following example shows how you can instrument a batch of commands
+
       // to determine where an error occurred. The first batch successfully
+
       // inserts the first two paragraphs into the document and cause no errors.
+
       // The second batch successfully inserts the third and fourth paragraphs
+
       // but fails in the call to insert the fifth paragraph. All other commands
+
       // after the failed command in the batch are not executed, including the
+
       // command that adds the fifth trace message. In this case, the error
+
       // occurred after the fourth paragraph was inserted, and before adding the
+
       // fifth trace message.
 
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
@@ -147,9 +168,12 @@ properties:
           }
       });
 
-      // Output: "Trace messages: 3rd paragraph successful,4th paragraph successful"
+
+      // Output: "Trace messages: 3rd paragraph successful,4th paragraph
+      successful"
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

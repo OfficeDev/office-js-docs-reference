@@ -4,8 +4,10 @@ uid: word!Word.WindowPageScrollOptions:interface
 package: word!
 fullName: Word.WindowPageScrollOptions
 summary: The options for scrolling through the specified pane or window page by page.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,15 @@ properties:
     uid: word!Word.WindowPageScrollOptions#down:member
     package: word!
     fullName: down
-    summary: If provided, specifies the number of pages to scroll the window down. If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three pages.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the number of pages to scroll the window down. If
+      `down` and `up` are both provided, the contents of the window are scrolled
+      by the difference of the property values. For example, if `down` is 3 and
+      `up` is 6, the contents are scrolled up three pages.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +35,15 @@ properties:
     uid: word!Word.WindowPageScrollOptions#up:member
     package: word!
     fullName: up
-    summary: If provided, specifies the number of pages to scroll the window up. If `down` and `up` are both provided, the contents of the window are scrolled by the difference of the property values. For example, if `down` is 3 and `up` is 6, the contents are scrolled up three pages.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the number of pages to scroll the window up. If
+      `down` and `up` are both provided, the contents of the window are scrolled
+      by the difference of the property values. For example, if `down` is 3 and
+      `up` is 6, the contents are scrolled up three pages.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

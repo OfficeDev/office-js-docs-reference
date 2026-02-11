@@ -3,9 +3,15 @@ name: PowerPoint.Interfaces.ParagraphFormatLoadOptions
 uid: powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ParagraphFormatLoadOptions
-summary: Represents the paragraph formatting properties of a text that is attached to the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!-- -->.
-remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the paragraph formatting properties of a text that is attached to
+  the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!--
+  -->.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +20,12 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,25 +33,44 @@ properties:
       return:
         type: boolean
   - name: bulletFormat
-    uid: powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions#bulletFormat:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions#bulletFormat:member
     package: powerpoint!
     fullName: bulletFormat
-    summary: Represents the bullet format of the paragraph. See [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class) for details.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the bullet format of the paragraph. See
+      [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'bulletFormat?: PowerPoint.Interfaces.BulletFormatLoadOptions;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface"
+          />
   - name: horizontalAlignment
-    uid: powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions#horizontalAlignment:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions#horizontalAlignment:member
     package: powerpoint!
     fullName: horizontalAlignment
-    summary: Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum) for details.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the horizontal alignment of the paragraph. Returns 'null' if
+      the 'TextRange' includes text fragments with different horizontal
+      alignment values. See
+      [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

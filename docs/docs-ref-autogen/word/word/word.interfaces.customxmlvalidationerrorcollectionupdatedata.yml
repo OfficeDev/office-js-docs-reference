@@ -4,24 +4,27 @@ uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData
 summary: >-
-  An interface for updating data on the `CustomXmlValidationErrorCollection` object, for use in
-  `customXmlValidationErrorCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the `CustomXmlValidationErrorCollection`
+  object, for use in `customXmlValidationErrorCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData#items:member
+    uid: >-
+      word!Word.Interfaces.CustomXmlValidationErrorCollectionUpdateData#items:member
     package: word!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.CustomXmlValidationErrorData[];'
       return:
-        type: <xref uid="word!Word.Interfaces.CustomXmlValidationErrorData:interface" />[]
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.CustomXmlValidationErrorData:interface" />[]

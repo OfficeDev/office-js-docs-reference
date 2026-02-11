@@ -1,22 +1,33 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions
-uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions:interface
+uid: >-
+  powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions
-summary: Represents [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) gradient fill properties.
-remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents
+  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
+  gradient fill properties.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions#$all:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,12 +35,16 @@ properties:
       return:
         type: boolean
   - name: type
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions#type:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillLoadOptions#type:member
     package: powerpoint!
     fullName: type
     summary: Specifies the type of gradient fill.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

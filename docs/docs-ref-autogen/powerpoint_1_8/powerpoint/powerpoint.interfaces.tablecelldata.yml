@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.TableCellData
 uid: powerpoint!PowerPoint.Interfaces.TableCellData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellData
-summary: An interface describing the data returned by calling `tableCell.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `tableCell.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableCellData#columnCount:member
     package: powerpoint!
     fullName: columnCount
-    summary: Gets the number of table columns this cell spans across. Will be greater than or equal to 1.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the number of table columns this cell spans across. Will be greater
+      than or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +35,11 @@ properties:
     package: powerpoint!
     fullName: columnIndex
     summary: Gets the zero-based column index of the cell within the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +50,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableCellData#rowCount:member
     package: powerpoint!
     fullName: rowCount
-    summary: Gets the number of table rows this cell spans across. Will be greater than or equal to 1.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the number of table rows this cell spans across. Will be greater than
+      or equal to 1.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +69,11 @@ properties:
     package: powerpoint!
     fullName: rowIndex
     summary: Gets the zero-based row index of the cell within the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +85,11 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

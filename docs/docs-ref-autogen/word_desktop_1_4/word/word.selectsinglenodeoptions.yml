@@ -3,9 +3,14 @@ name: Word.SelectSingleNodeOptions
 uid: word!Word.SelectSingleNodeOptions:interface
 package: word!
 fullName: Word.SelectSingleNodeOptions
-summary: Provides configuration options for the [XmlNode.selectSingleNode](xref:word!Word.XmlNode:class) and [Document.selectSingleNode](xref:word!Word.Document:class) methods.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Provides configuration options for the
+  [XmlNode.selectSingleNode](xref:word!Word.XmlNode:class) and
+  [Document.selectSingleNode](xref:word!Word.Document:class) methods.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +19,13 @@ properties:
     uid: word!Word.SelectSingleNodeOptions#fastSearchSkippingTextNodes:member
     package: word!
     fullName: fastSearchSkippingTextNodes
-    summary: If provided, specifies whether to skip text nodes in the search. The default value is `false`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to skip text nodes in the search. The
+      default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +36,13 @@ properties:
     uid: word!Word.SelectSingleNodeOptions#prefixMapping:member
     package: word!
     fullName: prefixMapping
-    summary: If provided, specifies the prefix mapping for the XPath expression. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the prefix mapping for the XPath expression. The
+      default value is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

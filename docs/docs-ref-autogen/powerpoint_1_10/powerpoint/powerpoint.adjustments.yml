@@ -4,8 +4,11 @@ uid: powerpoint!PowerPoint.Adjustments:class
 package: powerpoint!
 fullName: PowerPoint.Adjustments
 summary: Represents the adjustment values for a shape.
-remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +17,11 @@ properties:
     uid: powerpoint!PowerPoint.Adjustments#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +33,11 @@ properties:
     package: powerpoint!
     fullName: count
     summary: Specifies the number of adjustment points.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,9 +49,14 @@ methods:
     uid: powerpoint!PowerPoint.Adjustments#get:member(1)
     package: powerpoint!
     fullName: get(index)
-    summary: Gets the adjustment value at the specified zero-based index. Throws an `InvalidArgument` exception when the index is out of range.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the adjustment value at the specified zero-based index. Throws an
+      `InvalidArgument` exception when the index is out of range.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,17 +72,24 @@ methods:
     uid: powerpoint!PowerPoint.Adjustments#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.AdjustmentsLoadOptions): PowerPoint.Adjustments;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.AdjustmentsLoadOptions):
+        PowerPoint.Adjustments;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.AdjustmentsLoadOptions:interface"
+            />
       return:
         type: <xref uid="powerpoint!PowerPoint.Adjustments:class" />
         description: ''
@@ -77,16 +97,20 @@ methods:
     uid: powerpoint!PowerPoint.Adjustments#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Adjustments;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.Adjustments:class" />
@@ -95,9 +119,11 @@ methods:
     uid: powerpoint!PowerPoint.Adjustments#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,7 +134,11 @@ methods:
                 }): PowerPoint.Adjustments;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -121,9 +151,14 @@ methods:
     uid: powerpoint!PowerPoint.Adjustments#set:member(1)
     package: powerpoint!
     fullName: set(index, value)
-    summary: Sets the adjustment value at the specified zero-based index. Throws an `InvalidArgument` exception when the index is out of range.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Sets the adjustment value at the specified zero-based index. Throws an
+      `InvalidArgument` exception when the index is out of range.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,14 +177,24 @@ methods:
     uid: powerpoint!PowerPoint.Adjustments#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Adjustments` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.AdjustmentsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `PowerPoint.Adjustments`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `PowerPoint.Interfaces.AdjustmentsData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.AdjustmentsData;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.AdjustmentsData:interface" />
+        type: >-
+          <xref uid="powerpoint!PowerPoint.Interfaces.AdjustmentsData:interface"
+          />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

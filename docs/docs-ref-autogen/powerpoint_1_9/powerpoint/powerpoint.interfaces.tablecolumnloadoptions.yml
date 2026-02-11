@@ -4,8 +4,11 @@ uid: powerpoint!PowerPoint.Interfaces.TableColumnLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableColumnLoadOptions
 summary: Represents a column in a table.
-remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +17,12 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableColumnLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableColumnLoadOptions#columnIndex:member
     package: powerpoint!
     fullName: columnIndex
-    summary: Returns the index number of the column within the column collection of the table. Zero-indexed.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns the index number of the column within the column collection of the
+      table. Zero-indexed.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +51,15 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.TableColumnLoadOptions#width:member
     package: powerpoint!
     fullName: width
-    summary: Retrieves the width of the column in points. If the set column width is less than the minimum width, the column width will be increased to the minimum width.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Retrieves the width of the column in points. If the set column width is
+      less than the minimum width, the column width will be increased to the
+      minimum width.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

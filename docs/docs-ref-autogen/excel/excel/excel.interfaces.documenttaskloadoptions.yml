@@ -4,8 +4,10 @@ uid: excel!Excel.Interfaces.DocumentTaskLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.DocumentTaskLoadOptions
 summary: Represents a task.
-remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: excel!Excel.Interfaces.DocumentTaskLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -28,8 +33,11 @@ properties:
     package: excel!
     fullName: assignees
     summary: Returns a collection of assignees of the task.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -41,8 +49,11 @@ properties:
     package: excel!
     fullName: comment
     summary: Gets the comment associated with the task.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -54,8 +65,11 @@ properties:
     package: excel!
     fullName: completedBy
     summary: Gets the most recent user to have completed the task.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -67,8 +81,11 @@ properties:
     package: excel!
     fullName: completedDateTime
     summary: Gets the date and time that the task was completed. All dates are in UTC.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -80,8 +97,11 @@ properties:
     package: excel!
     fullName: createdBy
     summary: Gets the user who created the task.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -93,8 +113,11 @@ properties:
     package: excel!
     fullName: createdDateTime
     summary: Gets the date and time that the task was created. All dates are in UTC.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -106,8 +129,11 @@ properties:
     package: excel!
     fullName: id
     summary: Gets the ID of the task.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -118,9 +144,14 @@ properties:
     uid: excel!Excel.Interfaces.DocumentTaskLoadOptions#percentComplete:member
     package: excel!
     fullName: percentComplete
-    summary: Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the completion percentage of the task. This is a value between 0
+      and 100, where 100 represents a completed task.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -131,9 +162,14 @@ properties:
     uid: excel!Excel.Interfaces.DocumentTaskLoadOptions#priority:member
     package: excel!
     fullName: priority
-    summary: Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the priority of the task. This is a value between 0 and 10,
+      where 0 represents the highest priority.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -145,8 +181,11 @@ properties:
     package: excel!
     fullName: startAndDueDateTime
     summary: Specifies the date and time the task should start and is due.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -158,8 +197,11 @@ properties:
     package: excel!
     fullName: title
     summary: Specifies title of the task.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:

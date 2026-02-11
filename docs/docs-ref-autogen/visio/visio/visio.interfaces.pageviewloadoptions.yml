@@ -4,8 +4,11 @@ uid: visio!Visio.Interfaces.PageViewLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.PageViewLoadOptions
 summary: Represents the PageView class.
-remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-example: []
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +17,12 @@ properties:
     uid: visio!Visio.Interfaces.PageViewLoadOptions#$all:member
     package: visio!
     fullName: $all
-    summary: 'Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.: `Range.format.fill.color`<!-- -->).'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,14 @@ properties:
     uid: visio!Visio.Interfaces.PageViewLoadOptions#zoom:member
     package: visio!
     fullName: zoom
-    summary: Gets and sets the page's zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    summary: >-
+      Gets and sets the page's zoom level. The value can be between 10 and 400
+      and denotes the percentage of zoom.
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

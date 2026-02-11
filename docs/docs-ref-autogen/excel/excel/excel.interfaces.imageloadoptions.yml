@@ -3,9 +3,13 @@ name: Excel.Interfaces.ImageLoadOptions
 uid: excel!Excel.Interfaces.ImageLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ImageLoadOptions
-summary: Represents an image in the worksheet. To get the corresponding `Shape` object, use `Image.shape`<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents an image in the worksheet. To get the corresponding `Shape` object,
+  use `Image.shape`<!-- -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: excel!Excel.Interfaces.ImageLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +34,13 @@ properties:
     uid: excel!Excel.Interfaces.ImageLoadOptions#brightness:member
     package: excel!
     fullName: brightness
-    summary: Specifies the brightness of the image. The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).
-    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the brightness of the image. The value for this property must be
+      a number from 0.0 (dimmest) to 1.0 (brightest).
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +52,10 @@ properties:
     package: excel!
     fullName: colorType
     summary: Specifies the type of color transformation applied to the image.
-    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +66,13 @@ properties:
     uid: excel!Excel.Interfaces.ImageLoadOptions#contrast:member
     package: excel!
     fullName: contrast
-    summary: Specifies the contrast of the image. The value for this property must be a number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
-    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the contrast of the image. The value for this property must be a
+      number from 0.0 (the least contrast) to 1.0 (the greatest contrast).
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +83,13 @@ properties:
     uid: excel!Excel.Interfaces.ImageLoadOptions#cropBottom:member
     package: excel!
     fullName: cropBottom
-    summary: Specifies the number of points that are cropped off the bottom of the image.
-    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the number of points that are cropped off the bottom of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +100,13 @@ properties:
     uid: excel!Excel.Interfaces.ImageLoadOptions#cropLeft:member
     package: excel!
     fullName: cropLeft
-    summary: Specifies the number of points that are cropped off the left side of the image.
-    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the number of points that are cropped off the left side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +117,13 @@ properties:
     uid: excel!Excel.Interfaces.ImageLoadOptions#cropRight:member
     package: excel!
     fullName: cropRight
-    summary: Specifies the number of points that are cropped off the right side of the image.
-    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the number of points that are cropped off the right side of the
+      image.
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,8 +135,10 @@ properties:
     package: excel!
     fullName: cropTop
     summary: Specifies the number of points that are cropped off the top of the image.
-    remarks: '\[ [API set: ExcelApiDesktop 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApiDesktop
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,8 +150,10 @@ properties:
     package: excel!
     fullName: format
     summary: Returns the format of the image.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,8 +165,10 @@ properties:
     package: excel!
     fullName: id
     summary: Specifies the shape identifier for the image object.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,8 +180,10 @@ properties:
     package: excel!
     fullName: shape
     summary: Returns the `Shape` object associated with the image.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

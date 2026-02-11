@@ -3,9 +3,13 @@ name: Word.SelectionNextOptions
 uid: word!Word.SelectionNextOptions:interface
 package: word!
 fullName: Word.SelectionNextOptions
-summary: Represents the options for the [Selection.next](xref:word!Word.Selection:class) method.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the options for the
+  [Selection.next](xref:word!Word.Selection:class) method.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,13 @@ properties:
     uid: word!Word.SelectionNextOptions#count:member
     package: word!
     fullName: count
-    summary: If provided, specifies the number of units by which you want to move ahead. The default value is 1.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the number of units by which you want to move
+      ahead. The default value is 1.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,12 +35,24 @@ properties:
     uid: word!Word.SelectionNextOptions#unit:member
     package: word!
     fullName: unit
-    summary: If provided, specifies the type of units by which to move the selection. The default value is `character`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the type of units by which to move the selection.
+      The default value is `character`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item";'
+      content: >-
+        unit?: Word.OperationUnit | "Character" | "Word" | "Sentence" |
+        "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row"
+        | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" |
+        "Item";
       return:
-        type: <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" | "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" | "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" | "ParagraphFormat" | "Table" | "Item"
+        type: >-
+          <xref uid="word!Word.OperationUnit:enum" /> | "Character" | "Word" |
+          "Sentence" | "Paragraph" | "Line" | "Story" | "Screen" | "Section" |
+          "Column" | "Row" | "Window" | "Cell" | "CharacterFormat" |
+          "ParagraphFormat" | "Table" | "Item"

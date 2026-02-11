@@ -4,17 +4,28 @@ uid: outlook!Office.LocationDetails:interface
 package: outlook!
 fullName: Office.LocationDetails
 summary: Represents a location. Read-only.
-remarks: |-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 
   #### Examples
 
+
   ```TypeScript
+
   Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
 
   function callbackFunction(asyncResult) {
       asyncResult.value.forEach(function (place) {
@@ -25,8 +36,9 @@ remarks: |-
           }
       });
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -37,7 +49,7 @@ properties:
     fullName: displayName
     summary: The location's display name.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,9 +60,11 @@ properties:
     uid: outlook!Office.LocationDetails#emailAddress:member
     package: outlook!
     fullName: emailAddress
-    summary: The email address associated with the location. Only locations of type `Room` have an email address.
+    summary: >-
+      The email address associated with the location. Only locations of type
+      `Room` have an email address.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +77,7 @@ properties:
     fullName: locationIdentifier
     summary: The `LocationIdentifier` of the location.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

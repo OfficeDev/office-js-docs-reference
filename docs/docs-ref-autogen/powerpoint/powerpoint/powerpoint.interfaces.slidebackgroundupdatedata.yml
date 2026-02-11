@@ -3,20 +3,28 @@ name: PowerPoint.Interfaces.SlideBackgroundUpdateData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundUpdateData
-summary: An interface for updating data on the `SlideBackground` object, for use in `slideBackground.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `SlideBackground` object, for use in
+  `slideBackground.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: areBackgroundGraphicsHidden
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData#areBackgroundGraphicsHidden:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData#areBackgroundGraphicsHidden:member
     package: powerpoint!
     fullName: areBackgroundGraphicsHidden
-    summary: Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the slide layout background fill hides or displays
+      background graphic objects from the slide master.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,12 +32,16 @@ properties:
       return:
         type: boolean
   - name: isMasterBackgroundFollowed
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData#isMasterBackgroundFollowed:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundUpdateData#isMasterBackgroundFollowed:member
     package: powerpoint!
     fullName: isMasterBackgroundFollowed
     summary: Specifies if the slide background follows the slide master background.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

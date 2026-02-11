@@ -3,9 +3,15 @@ name: PowerPoint.Interfaces.BulletFormatLoadOptions
 uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BulletFormatLoadOptions
-summary: Represents the bullet formatting properties of a text that is attached to the [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)<!-- -->.
-remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the bullet formatting properties of a text that is attached to the
+  [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)<!--
+  -->.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +20,12 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +36,17 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#style:member
     package: powerpoint!
     fullName: style
-    summary: Specifies the style of the bullets in the paragraph. See [PowerPoint.BulletStyle](xref:powerpoint!PowerPoint.BulletStyle:enum) for details. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet formatting properties.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the style of the bullets in the paragraph. See
+      [PowerPoint.BulletStyle](xref:powerpoint!PowerPoint.BulletStyle:enum) for
+      details. Returns `null` if the
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet formatting properties.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +57,17 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#type:member
     package: powerpoint!
     fullName: type
-    summary: Specifies the type of the bullets in the paragraph. See [PowerPoint.BulletType](xref:powerpoint!PowerPoint.BulletType:enum) for details. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet formatting properties.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the type of the bullets in the paragraph. See
+      [PowerPoint.BulletType](xref:powerpoint!PowerPoint.BulletType:enum) for
+      details. Returns `null` if the
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet formatting properties.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +78,15 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#visible:member
     package: powerpoint!
     fullName: visible
-    summary: Specifies if the bullets in the paragraph are visible. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet visibility values.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if the bullets in the paragraph are visible. Returns `null` if
+      the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet visibility values.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

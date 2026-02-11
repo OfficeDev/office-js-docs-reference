@@ -3,15 +3,24 @@ name: Office.MailboxEnums.DelegatePermissions
 uid: outlook!Office.MailboxEnums.DelegatePermissions:enum
 package: outlook!
 fullName: Office.MailboxEnums.DelegatePermissions
-summary: This bitmask represents a delegate's permissions on a shared folder, or a user's permissions on a shared mailbox.
-remarks: |-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  This bitmask represents a delegate's permissions on a shared folder, or a
+  user's permissions on a shared mailbox.
+remarks: >-
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 
   #### Examples
 
+
   ```TypeScript
+
   Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
       if (result.status === Office.AsyncResultStatus.Failed) {
           console.error("The current folder or mailbox isn't shared.");
@@ -26,8 +35,9 @@ remarks: |-
           // Perform the necessary operations.
       }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:

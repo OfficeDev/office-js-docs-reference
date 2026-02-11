@@ -18,7 +18,7 @@ remarks: |-
       // Other startup tasks.
   });
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:

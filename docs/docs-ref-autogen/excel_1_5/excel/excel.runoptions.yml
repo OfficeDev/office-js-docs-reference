@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.RunOptions
 summary: ''
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,20 +15,25 @@ properties:
     package: excel!
     fullName: delayForCellEdit
     summary: >-
-      Determines whether Excel will delay the batch request until the user exits cell edit mode.
+      Determines whether Excel will delay the batch request until the user exits
+      cell edit mode.
 
 
-      When `false`<!-- -->, if the user is in cell edit when the batch request is processed by the host, the batch
-      automatically fails. When `true`<!-- -->, the batch request is executed immediately if the user is not in cell
-      edit mode, but if the user is in cell edit mode then the batch request is delayed until the user exits cell edit
-      mode. The default behavior with no `delayForCellEdit` property specified is equivalent to when it is `false`<!--
-      -->.
+      When `false`<!-- -->, if the user is in cell edit when the batch request
+      is processed by the host, the batch automatically fails. When `true`<!--
+      -->, the batch request is executed immediately if the user is not in cell
+      edit mode, but if the user is in cell edit mode then the batch request is
+      delayed until the user exits cell edit mode. The default behavior with no
+      `delayForCellEdit` property specified is equivalent to when it is
+      `false`<!-- -->.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'delayForCellEdit?: boolean;'
       return:
         type: boolean
-extends: <xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref uid="excel!Excel.Session:interface" />&gt;
+extends: >-
+  <xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref
+  uid="excel!Excel.Session:interface" />&gt;

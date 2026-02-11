@@ -4,8 +4,11 @@ uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BorderLoadOptions
 summary: Represents the properties for a table cell border.
-remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +17,12 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#color:member
     package: powerpoint!
     fullName: color
-    summary: Represents the line color in the hexadecimal format \#RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the line color in the hexadecimal format \#RRGGBB (e.g.,
+      "FFA500") or as a named HTML color value (e.g., "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +52,11 @@ properties:
     package: powerpoint!
     fullName: dashStyle
     summary: Represents the dash style of the line.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +67,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BorderLoadOptions#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear).
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the transparency percentage of the line as a value from 0.0
+      (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +86,11 @@ properties:
     package: powerpoint!
     fullName: weight
     summary: Represents the weight of the line, in points.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,14 +3,22 @@ name: Office.OfficeThemeChangedEventArgs
 uid: outlook!Office.OfficeThemeChangedEventArgs:interface
 package: outlook!
 fullName: Office.OfficeThemeChangedEventArgs
-summary: Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
-remarks: |-
-  \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Provides the updated Office theme that raised the
+  `Office.EventType.OfficeThemeChanged` event.
+remarks: >-
+  \[ [API set: Mailbox
+  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Adds an event handler for the OfficeThemeChanged event.
+
   Office.onReady(() => {
       document.addEventListener('DOMContentLoaded', () => {
           // Get a reference to the mailbox and use it to add an event handler.
@@ -26,14 +34,17 @@ remarks: |-
       });
   });
 
+
   // Handles the OfficeThemeChanged event.
+
   function officeThemeChangedHandler(event) {
       console.log(`Event: ${event.type}`);
       const currentTheme = event.officeTheme;
       // Perform operations based on the current theme.
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -43,21 +54,30 @@ properties:
     package: outlook!
     fullName: officeTheme
     summary: Gets the updated Office theme.
-    remarks: '\[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'officeTheme: CommonAPI.OfficeTheme;'
+      content: 'officeTheme: Office.OfficeTheme;'
       return:
         type: <xref uid="office!Office.OfficeTheme:interface" />
   - name: type
     uid: outlook!Office.OfficeThemeChangedEventArgs#type:member
     package: outlook!
     fullName: type
-    summary: Gets the type of the event. For details, refer to [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-    remarks: '\[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

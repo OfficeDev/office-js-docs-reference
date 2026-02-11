@@ -4,32 +4,40 @@ uid: word!Word.FontBias:enum
 package: word!
 fullName: Word.FontBias
 summary: Specifies the font bias to use when formatting East Asian text.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: farEast
     uid: word!Word.FontBias.farEast:member
     package: word!
-    summary: |-
+    summary: >-
       Uses the font bias for Far East text.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FarEast"'
   - name: noSpecified
     uid: word!Word.FontBias.noSpecified:member
     package: word!
-    summary: |-
+    summary: >-
       No font bias specified.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"NoSpecified"'
   - name: standard
     uid: word!Word.FontBias.standard:member
     package: word!
-    summary: |-
+    summary: >-
       Uses the default font bias.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Standard"'

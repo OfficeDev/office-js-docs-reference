@@ -3,9 +3,11 @@ name: Excel.Interfaces.PivotLayoutData
 uid: excel!Excel.Interfaces.PivotLayoutData:interface
 package: excel!
 fullName: Excel.Interfaces.PivotLayoutData
-summary: An interface describing the data returned by calling `pivotLayout.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `pivotLayout.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,22 +16,30 @@ properties:
     uid: excel!Excel.Interfaces.PivotLayoutData#layoutType:member
     package: excel!
     fullName: layoutType
-    summary: This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      This property indicates the PivotLayoutType of all fields on the
+      PivotTable. If fields have different states, this will be null.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
-        type: <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" | "Tabular" | "Outline"
+        type: >-
+          <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" |
+          "Tabular" | "Outline"
   - name: showColumnGrandTotals
     uid: excel!Excel.Interfaces.PivotLayoutData#showColumnGrandTotals:member
     package: excel!
     fullName: showColumnGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for columns.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +51,10 @@ properties:
     package: excel!
     fullName: showRowGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for rows.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,12 +65,20 @@ properties:
     uid: excel!Excel.Interfaces.PivotLayoutData#subtotalLocation:member
     package: excel!
     fullName: subtotalLocation
-    summary: This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different states, this will be `null`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      This property indicates the `SubtotalLocationType` of all fields on the
+      PivotTable. If fields have different states, this will be `null`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+      content: >-
+        subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" |
+        "Off";
       return:
-        type: <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" | "AtBottom" | "Off"
+        type: >-
+          <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" |
+          "AtBottom" | "Off"

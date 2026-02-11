@@ -4,8 +4,10 @@ uid: excel!Excel.WorksheetCalculatedEventArgs:interface
 package: excel!
 fullName: Excel.WorksheetCalculatedEventArgs
 summary: Provides information about the worksheet that raised the calculated event.
-remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,15 @@ properties:
     uid: excel!Excel.WorksheetCalculatedEventArgs#address:member
     package: excel!
     fullName: address
-    summary: The address of the range that completed calculation. If multiple ranges completed calculation, the string is a comma-separated list of those range addresses.
-    remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The address of the range that completed calculation. If multiple ranges
+      completed calculation, the string is a comma-separated list of those range
+      addresses.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +36,10 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +51,10 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the calculation occurred.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,23 +3,34 @@ name: PowerPoint.Interfaces.SlideBackgroundGradientFillData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundGradientFillData
-summary: An interface describing the data returned by calling `slideBackgroundGradientFill.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `slideBackgroundGradientFill.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: type
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData#type:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundGradientFillData#type:member
     package: powerpoint!
     fullName: type
     summary: Specifies the type of gradient fill.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";'
+      content: >-
+        type?: PowerPoint.SlideBackgroundGradientFillType | "Unsupported" |
+        "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle";
       return:
-        type: <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum" /> | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" | "ShadeFromTitle"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.SlideBackgroundGradientFillType:enum"
+          /> | "Unsupported" | "Linear" | "Radial" | "Rectangular" | "Path" |
+          "ShadeFromTitle"

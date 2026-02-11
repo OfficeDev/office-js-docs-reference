@@ -3,9 +3,11 @@ name: OneNote.Interfaces.SectionGroupData
 uid: onenote!OneNote.Interfaces.SectionGroupData:interface
 package: onenote!
 fullName: OneNote.Interfaces.SectionGroupData
-summary: An interface describing the data returned by calling `sectionGroup.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `sectionGroup.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,11 @@ properties:
     package: onenote!
     fullName: clientUrl
     summary: The client url of the section group. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +33,11 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the section group. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +49,11 @@ properties:
     package: onenote!
     fullName: name
     summary: Gets the name of the section group. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +65,11 @@ properties:
     package: onenote!
     fullName: sectionGroups
     summary: The collection of section groups in the section group. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +81,11 @@ properties:
     package: onenote!
     fullName: sections
     summary: The collection of sections in the section group. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

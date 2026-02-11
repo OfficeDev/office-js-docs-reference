@@ -5,7 +5,7 @@ package: word!
 fullName: Word.Interfaces.PageData
 summary: An interface describing the data returned by calling `page.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +14,13 @@ properties:
     uid: word!Word.Interfaces.PageData#height:member
     package: word!
     fullName: height
-    summary: Gets the height, in points, of the paper defined in the Page Setup dialog box.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the height, in points, of the paper defined in the Page Setup dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +31,13 @@ properties:
     uid: word!Word.Interfaces.PageData#index:member
     package: word!
     fullName: index
-    summary: Gets the index of the page. The page index is 1-based and independent of the user's custom page numbering.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the index of the page. The page index is 1-based and independent of
+      the user's custom page numbering.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +48,13 @@ properties:
     uid: word!Word.Interfaces.PageData#width:member
     package: word!
     fullName: width
-    summary: Gets the width, in points, of the paper defined in the Page Setup dialog box.
-    remarks: '\[ [API set: WordApiDesktop 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the width, in points, of the paper defined in the Page Setup dialog
+      box.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

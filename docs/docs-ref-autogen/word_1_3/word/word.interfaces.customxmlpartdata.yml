@@ -3,9 +3,11 @@ name: Word.Interfaces.CustomXmlPartData
 uid: word!Word.Interfaces.CustomXmlPartData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartData
-summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlPart.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

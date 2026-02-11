@@ -4,8 +4,11 @@ uid: visio!Visio.Interfaces.DocumentLoadOptions:interface
 package: visio!
 fullName: Visio.Interfaces.DocumentLoadOptions
 summary: Represents the Document class.
-remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-example: []
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +17,12 @@ properties:
     uid: visio!Visio.Interfaces.DocumentLoadOptions#$all:member
     package: visio!
     fullName: $all
-    summary: 'Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.: `Range.format.fill.color`<!-- -->).'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties
+      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
+      `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +34,11 @@ properties:
     package: visio!
     fullName: application
     summary: Represents a Visio application instance that contains this document.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,11 +50,16 @@ properties:
     package: visio!
     fullName: view
     summary: Returns the DocumentView object.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'view?: Visio.Interfaces.DocumentViewLoadOptions;'
       return:
-        type: <xref uid="visio!Visio.Interfaces.DocumentViewLoadOptions:interface" />
+        type: >-
+          <xref uid="visio!Visio.Interfaces.DocumentViewLoadOptions:interface"
+          />

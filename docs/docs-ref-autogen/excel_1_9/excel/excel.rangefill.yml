@@ -4,8 +4,10 @@ uid: excel!Excel.RangeFill:class
 package: excel!
 fullName: Excel.RangeFill
 summary: Represents the background of a range object.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +16,13 @@ properties:
     uid: excel!Excel.RangeFill#color:member
     package: excel!
     fullName: color
-    summary: HTML color code representing the color of the background, in the form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      HTML color code representing the color of the background, in the form
+      \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,11 @@ properties:
     uid: excel!Excel.RangeFill#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,22 +48,41 @@ properties:
     uid: excel!Excel.RangeFill#pattern:member
     package: excel!
     fullName: pattern
-    summary: The pattern of a range. See `Excel.FillPattern` for details. LinearGradient and RectangularGradient are not supported. A `null` value indicates that the entire range doesn't have a uniform pattern setting.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The pattern of a range. See `Excel.FillPattern` for details.
+      LinearGradient and RectangularGradient are not supported. A `null` value
+      indicates that the entire range doesn't have a uniform pattern setting.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";'
+      content: >-
+        pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" |
+        "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" |
+        "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" |
+        "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" |
+        "LinearGradient" | "RectangularGradient";
       return:
-        type: <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
+        type: >-
+          <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" |
+          "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
+          "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical"
+          | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8"
+          | "LinearGradient" | "RectangularGradient"
   - name: patternColor
     uid: excel!Excel.RangeFill#patternColor:member
     package: excel!
     fullName: patternColor
-    summary: The HTML color code representing the color of the range pattern, in the form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The HTML color code representing the color of the range pattern, in the
+      form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +93,15 @@ properties:
     uid: excel!Excel.RangeFill#patternTintAndShade:member
     package: excel!
     fullName: patternTintAndShade
-    summary: Specifies a double that lightens or darkens a pattern color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A `null` value indicates that the range doesn't have uniform `patternTintAndShade` settings.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a double that lightens or darkens a pattern color for the range
+      fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the
+      original color. A `null` value indicates that the range doesn't have
+      uniform `patternTintAndShade` settings.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +112,15 @@ properties:
     uid: excel!Excel.RangeFill#tintAndShade:member
     package: excel!
     fullName: tintAndShade
-    summary: Specifies a double that lightens or darkens a color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A `null` value indicates that the range doesn't have uniform `tintAndShade` settings.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a double that lightens or darkens a color for the range fill.
+      The value is between -1 (darkest) and 1 (brightest), with 0 for the
+      original color. A `null` value indicates that the range doesn't have
+      uniform `tintAndShade` settings.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,12 +133,16 @@ methods:
     package: excel!
     fullName: clear()
     summary: Resets the range background.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "F:G";
@@ -109,8 +152,9 @@ methods:
           rangeFill.clear();
           await context.sync(); 
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,9 +166,11 @@ methods:
     uid: excel!Excel.RangeFill#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,16 +186,20 @@ methods:
     uid: excel!Excel.RangeFill#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFill;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.RangeFill:class" />
@@ -172,9 +222,11 @@ methods:
     uid: excel!Excel.RangeFill#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,7 +237,11 @@ methods:
                 }): Excel.RangeFill;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -198,19 +254,29 @@ methods:
     uid: excel!Excel.RangeFill#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.RangeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.RangeFillUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
           type: <xref uid="excel!Excel.Interfaces.RangeFillUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -219,9 +285,11 @@ methods:
     uid: excel!Excel.RangeFill#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,9 +305,16 @@ methods:
     uid: excel!Excel.RangeFill#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.RangeFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.RangeFill` object
+      is an API object, the `toJSON` method returns a plain JavaScript object
+      (typed as `Excel.Interfaces.RangeFillData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

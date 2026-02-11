@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.AnnotationCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.AnnotationCollectionUpdateData
 summary: >-
-  An interface for updating data on the `AnnotationCollection` object, for use in `annotationCollection.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `AnnotationCollection` object, for use
+  in `annotationCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

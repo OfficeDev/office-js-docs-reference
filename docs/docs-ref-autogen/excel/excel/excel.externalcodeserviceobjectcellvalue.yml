@@ -3,9 +3,13 @@ name: Excel.ExternalCodeServiceObjectCellValue
 uid: excel!Excel.ExternalCodeServiceObjectCellValue:interface
 package: excel!
 fullName: Excel.ExternalCodeServiceObjectCellValue
-summary: Represents the value of a cell containing an External Code Service Object, such as Python code formula.
-remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the value of a cell containing an External Code Service Object,
+  such as Python code formula.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,22 +18,36 @@ properties:
     uid: excel!Excel.ExternalCodeServiceObjectCellValue#basicType:member
     package: excel!
     fullName: basicType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the value that would be returned by `Range.valueTypes` for a
+      cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";'
+      content: >-
+        basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" |
+        "String";
       return:
-        type: <xref uid="excel!Excel.RangeValueType:enum" /> | "Boolean" | "Double" | "Error" | "Empty" | "String"
+        type: >-
+          <xref uid="excel!Excel.RangeValueType:enum" /> | "Boolean" | "Double"
+          | "Error" | "Empty" | "String"
   - name: basicValue
     uid: excel!Excel.ExternalCodeServiceObjectCellValue#basicValue:member
     package: excel!
     fullName: basicValue
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell
+      with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -41,8 +59,11 @@ properties:
     package: excel!
     fullName: language
     summary: Represents the runtime language of this external code service.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -54,8 +75,11 @@ properties:
     package: excel!
     fullName: preview
     summary: Represents the preview value shown in the cell.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,9 +90,14 @@ properties:
     uid: excel!Excel.ExternalCodeServiceObjectCellValue#provider:member
     package: excel!
     fullName: provider
-    summary: Represents information about the service that provided the data in this `ExternalCodeServiceObjectCellValue`<!-- -->. This field isn't writable.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents information about the service that provided the data in this
+      `ExternalCodeServiceObjectCellValue`<!-- -->. This field isn't writable.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -80,8 +109,11 @@ properties:
     package: excel!
     fullName: Python_str
     summary: Represents the output of the `str()` function when used on this object.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -93,8 +125,11 @@ properties:
     package: excel!
     fullName: Python_type
     summary: Represents the full type name of this object.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -106,8 +141,11 @@ properties:
     package: excel!
     fullName: Python_typeName
     summary: Represents the short type name of this object.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -119,11 +157,18 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'type: CellValueType.externalCodeServiceObject | "ExternalCodeServiceObject";'
+      content: >-
+        type: CellValueType.externalCodeServiceObject |
+        "ExternalCodeServiceObject";
       return:
-        type: <xref uid="excel!Excel.CellValueType.externalCodeServiceObject:member" /> | "ExternalCodeServiceObject"
+        type: >-
+          <xref uid="excel!Excel.CellValueType.externalCodeServiceObject:member"
+          /> | "ExternalCodeServiceObject"

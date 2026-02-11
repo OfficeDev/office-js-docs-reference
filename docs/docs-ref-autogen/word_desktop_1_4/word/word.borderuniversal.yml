@@ -3,9 +3,13 @@ name: Word.BorderUniversal
 uid: word!Word.BorderUniversal:class
 package: word!
 fullName: Word.BorderUniversal
-summary: Represents the `BorderUniversal` object, which manages borders for a range, paragraph, table, or frame.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the `BorderUniversal` object, which manages borders for a range,
+  paragraph, table, or frame.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,21 +19,108 @@ properties:
     package: word!
     fullName: artStyle
     summary: Specifies the graphical page-border design for the document.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'artStyle: Word.PageBorderArt | "Apples" | "MapleMuffins" | "CakeSlice" | "CandyCorn" | "IceCreamCones" | "ChampagneBottle" | "PartyGlass" | "ChristmasTree" | "Trees" | "PalmsColor" | "Balloons3Colors" | "BalloonsHotAir" | "PartyFavor" | "ConfettiStreamers" | "Hearts" | "HeartBalloon" | "Stars3D" | "StarsShadowed" | "Stars" | "Sun" | "Earth2" | "Earth1" | "PeopleHats" | "Sombrero" | "Pencils" | "Packages" | "Clocks" | "Firecrackers" | "Rings" | "MapPins" | "Confetti" | "CreaturesButterfly" | "CreaturesLadyBug" | "CreaturesFish" | "BirdsFlight" | "ScaredCat" | "Bats" | "FlowersRoses" | "FlowersRedRose" | "Poinsettias" | "Holly" | "FlowersTiny" | "FlowersPansy" | "FlowersModern2" | "FlowersModern1" | "WhiteFlowers" | "Vine" | "FlowersDaisies" | "FlowersBlockPrint" | "DecoArchColor" | "Fans" | "Film" | "Lightning1" | "Compass" | "DoubleD" | "ClassicalWave" | "ShadowedSquares" | "TwistedLines1" | "Waveline" | "Quadrants" | "CheckedBarColor" | "Swirligig" | "PushPinNote1" | "PushPinNote2" | "Pumpkin1" | "EggsBlack" | "Cup" | "HeartGray" | "GingerbreadMan" | "BabyPacifier" | "BabyRattle" | "Cabins" | "HouseFunky" | "StarsBlack" | "Snowflakes" | "SnowflakeFancy" | "Skyrocket" | "Seattle" | "MusicNotes" | "PalmsBlack" | "MapleLeaf" | "PaperClips" | "ShorebirdTracks" | "People" | "PeopleWaving" | "EclipsingSquares2" | "Hypnotic" | "DiamondsGray" | "DecoArch" | "DecoBlocks" | "CirclesLines" | "Papyrus" | "Woodwork" | "WeavingBraid" | "WeavingRibbon" | "WeavingAngles" | "ArchedScallops" | "Safari" | "CelticKnotwork" | "CrazyMaze" | "EclipsingSquares1" | "Birds" | "FlowersTeacup" | "Northwest" | "Southwest" | "Tribal6" | "Tribal4" | "Tribal3" | "Tribal2" | "Tribal5" | "XIllusions" | "ZanyTriangles" | "Pyramids" | "PyramidsAbove" | "ConfettiGrays" | "ConfettiOutline" | "ConfettiWhite" | "Mosaic" | "Lightning2" | "HeebieJeebies" | "LightBulb" | "Gradient" | "TriangleParty" | "TwistedLines2" | "Moons" | "Ovals" | "DoubleDiamonds" | "ChainLink" | "Triangles" | "Tribal1" | "MarqueeToothed" | "SharksTeeth" | "Sawtooth" | "SawtoothGray" | "PostageStamp" | "WeavingStrips" | "ZigZag" | "CrossStitch" | "Gems" | "CirclesRectangles" | "CornerTriangles" | "CreaturesInsects" | "ZigZagStitch" | "Checkered" | "CheckedBarBlack" | "Marquee" | "BasicWhiteDots" | "BasicWideMidline" | "BasicWideOutline" | "BasicWideInline" | "BasicThinLines" | "BasicWhiteDashes" | "BasicWhiteSquares" | "BasicBlackSquares" | "BasicBlackDashes" | "BasicBlackDots" | "StarsTop" | "CertificateBanner" | "Handmade1" | "Handmade2" | "TornPaper" | "TornPaperBlack" | "CouponCutoutDashes" | "CouponCutoutDots";'
+      content: >-
+        artStyle: Word.PageBorderArt | "Apples" | "MapleMuffins" | "CakeSlice" |
+        "CandyCorn" | "IceCreamCones" | "ChampagneBottle" | "PartyGlass" |
+        "ChristmasTree" | "Trees" | "PalmsColor" | "Balloons3Colors" |
+        "BalloonsHotAir" | "PartyFavor" | "ConfettiStreamers" | "Hearts" |
+        "HeartBalloon" | "Stars3D" | "StarsShadowed" | "Stars" | "Sun" |
+        "Earth2" | "Earth1" | "PeopleHats" | "Sombrero" | "Pencils" | "Packages"
+        | "Clocks" | "Firecrackers" | "Rings" | "MapPins" | "Confetti" |
+        "CreaturesButterfly" | "CreaturesLadyBug" | "CreaturesFish" |
+        "BirdsFlight" | "ScaredCat" | "Bats" | "FlowersRoses" | "FlowersRedRose"
+        | "Poinsettias" | "Holly" | "FlowersTiny" | "FlowersPansy" |
+        "FlowersModern2" | "FlowersModern1" | "WhiteFlowers" | "Vine" |
+        "FlowersDaisies" | "FlowersBlockPrint" | "DecoArchColor" | "Fans" |
+        "Film" | "Lightning1" | "Compass" | "DoubleD" | "ClassicalWave" |
+        "ShadowedSquares" | "TwistedLines1" | "Waveline" | "Quadrants" |
+        "CheckedBarColor" | "Swirligig" | "PushPinNote1" | "PushPinNote2" |
+        "Pumpkin1" | "EggsBlack" | "Cup" | "HeartGray" | "GingerbreadMan" |
+        "BabyPacifier" | "BabyRattle" | "Cabins" | "HouseFunky" | "StarsBlack" |
+        "Snowflakes" | "SnowflakeFancy" | "Skyrocket" | "Seattle" | "MusicNotes"
+        | "PalmsBlack" | "MapleLeaf" | "PaperClips" | "ShorebirdTracks" |
+        "People" | "PeopleWaving" | "EclipsingSquares2" | "Hypnotic" |
+        "DiamondsGray" | "DecoArch" | "DecoBlocks" | "CirclesLines" | "Papyrus"
+        | "Woodwork" | "WeavingBraid" | "WeavingRibbon" | "WeavingAngles" |
+        "ArchedScallops" | "Safari" | "CelticKnotwork" | "CrazyMaze" |
+        "EclipsingSquares1" | "Birds" | "FlowersTeacup" | "Northwest" |
+        "Southwest" | "Tribal6" | "Tribal4" | "Tribal3" | "Tribal2" | "Tribal5"
+        | "XIllusions" | "ZanyTriangles" | "Pyramids" | "PyramidsAbove" |
+        "ConfettiGrays" | "ConfettiOutline" | "ConfettiWhite" | "Mosaic" |
+        "Lightning2" | "HeebieJeebies" | "LightBulb" | "Gradient" |
+        "TriangleParty" | "TwistedLines2" | "Moons" | "Ovals" | "DoubleDiamonds"
+        | "ChainLink" | "Triangles" | "Tribal1" | "MarqueeToothed" |
+        "SharksTeeth" | "Sawtooth" | "SawtoothGray" | "PostageStamp" |
+        "WeavingStrips" | "ZigZag" | "CrossStitch" | "Gems" |
+        "CirclesRectangles" | "CornerTriangles" | "CreaturesInsects" |
+        "ZigZagStitch" | "Checkered" | "CheckedBarBlack" | "Marquee" |
+        "BasicWhiteDots" | "BasicWideMidline" | "BasicWideOutline" |
+        "BasicWideInline" | "BasicThinLines" | "BasicWhiteDashes" |
+        "BasicWhiteSquares" | "BasicBlackSquares" | "BasicBlackDashes" |
+        "BasicBlackDots" | "StarsTop" | "CertificateBanner" | "Handmade1" |
+        "Handmade2" | "TornPaper" | "TornPaperBlack" | "CouponCutoutDashes" |
+        "CouponCutoutDots";
       return:
-        type: <xref uid="word!Word.PageBorderArt:enum" /> | "Apples" | "MapleMuffins" | "CakeSlice" | "CandyCorn" | "IceCreamCones" | "ChampagneBottle" | "PartyGlass" | "ChristmasTree" | "Trees" | "PalmsColor" | "Balloons3Colors" | "BalloonsHotAir" | "PartyFavor" | "ConfettiStreamers" | "Hearts" | "HeartBalloon" | "Stars3D" | "StarsShadowed" | "Stars" | "Sun" | "Earth2" | "Earth1" | "PeopleHats" | "Sombrero" | "Pencils" | "Packages" | "Clocks" | "Firecrackers" | "Rings" | "MapPins" | "Confetti" | "CreaturesButterfly" | "CreaturesLadyBug" | "CreaturesFish" | "BirdsFlight" | "ScaredCat" | "Bats" | "FlowersRoses" | "FlowersRedRose" | "Poinsettias" | "Holly" | "FlowersTiny" | "FlowersPansy" | "FlowersModern2" | "FlowersModern1" | "WhiteFlowers" | "Vine" | "FlowersDaisies" | "FlowersBlockPrint" | "DecoArchColor" | "Fans" | "Film" | "Lightning1" | "Compass" | "DoubleD" | "ClassicalWave" | "ShadowedSquares" | "TwistedLines1" | "Waveline" | "Quadrants" | "CheckedBarColor" | "Swirligig" | "PushPinNote1" | "PushPinNote2" | "Pumpkin1" | "EggsBlack" | "Cup" | "HeartGray" | "GingerbreadMan" | "BabyPacifier" | "BabyRattle" | "Cabins" | "HouseFunky" | "StarsBlack" | "Snowflakes" | "SnowflakeFancy" | "Skyrocket" | "Seattle" | "MusicNotes" | "PalmsBlack" | "MapleLeaf" | "PaperClips" | "ShorebirdTracks" | "People" | "PeopleWaving" | "EclipsingSquares2" | "Hypnotic" | "DiamondsGray" | "DecoArch" | "DecoBlocks" | "CirclesLines" | "Papyrus" | "Woodwork" | "WeavingBraid" | "WeavingRibbon" | "WeavingAngles" | "ArchedScallops" | "Safari" | "CelticKnotwork" | "CrazyMaze" | "EclipsingSquares1" | "Birds" | "FlowersTeacup" | "Northwest" | "Southwest" | "Tribal6" | "Tribal4" | "Tribal3" | "Tribal2" | "Tribal5" | "XIllusions" | "ZanyTriangles" | "Pyramids" | "PyramidsAbove" | "ConfettiGrays" | "ConfettiOutline" | "ConfettiWhite" | "Mosaic" | "Lightning2" | "HeebieJeebies" | "LightBulb" | "Gradient" | "TriangleParty" | "TwistedLines2" | "Moons" | "Ovals" | "DoubleDiamonds" | "ChainLink" | "Triangles" | "Tribal1" | "MarqueeToothed" | "SharksTeeth" | "Sawtooth" | "SawtoothGray" | "PostageStamp" | "WeavingStrips" | "ZigZag" | "CrossStitch" | "Gems" | "CirclesRectangles" | "CornerTriangles" | "CreaturesInsects" | "ZigZagStitch" | "Checkered" | "CheckedBarBlack" | "Marquee" | "BasicWhiteDots" | "BasicWideMidline" | "BasicWideOutline" | "BasicWideInline" | "BasicThinLines" | "BasicWhiteDashes" | "BasicWhiteSquares" | "BasicBlackSquares" | "BasicBlackDashes" | "BasicBlackDots" | "StarsTop" | "CertificateBanner" | "Handmade1" | "Handmade2" | "TornPaper" | "TornPaperBlack" | "CouponCutoutDashes" | "CouponCutoutDots"
+        type: >-
+          <xref uid="word!Word.PageBorderArt:enum" /> | "Apples" |
+          "MapleMuffins" | "CakeSlice" | "CandyCorn" | "IceCreamCones" |
+          "ChampagneBottle" | "PartyGlass" | "ChristmasTree" | "Trees" |
+          "PalmsColor" | "Balloons3Colors" | "BalloonsHotAir" | "PartyFavor" |
+          "ConfettiStreamers" | "Hearts" | "HeartBalloon" | "Stars3D" |
+          "StarsShadowed" | "Stars" | "Sun" | "Earth2" | "Earth1" | "PeopleHats"
+          | "Sombrero" | "Pencils" | "Packages" | "Clocks" | "Firecrackers" |
+          "Rings" | "MapPins" | "Confetti" | "CreaturesButterfly" |
+          "CreaturesLadyBug" | "CreaturesFish" | "BirdsFlight" | "ScaredCat" |
+          "Bats" | "FlowersRoses" | "FlowersRedRose" | "Poinsettias" | "Holly" |
+          "FlowersTiny" | "FlowersPansy" | "FlowersModern2" | "FlowersModern1" |
+          "WhiteFlowers" | "Vine" | "FlowersDaisies" | "FlowersBlockPrint" |
+          "DecoArchColor" | "Fans" | "Film" | "Lightning1" | "Compass" |
+          "DoubleD" | "ClassicalWave" | "ShadowedSquares" | "TwistedLines1" |
+          "Waveline" | "Quadrants" | "CheckedBarColor" | "Swirligig" |
+          "PushPinNote1" | "PushPinNote2" | "Pumpkin1" | "EggsBlack" | "Cup" |
+          "HeartGray" | "GingerbreadMan" | "BabyPacifier" | "BabyRattle" |
+          "Cabins" | "HouseFunky" | "StarsBlack" | "Snowflakes" |
+          "SnowflakeFancy" | "Skyrocket" | "Seattle" | "MusicNotes" |
+          "PalmsBlack" | "MapleLeaf" | "PaperClips" | "ShorebirdTracks" |
+          "People" | "PeopleWaving" | "EclipsingSquares2" | "Hypnotic" |
+          "DiamondsGray" | "DecoArch" | "DecoBlocks" | "CirclesLines" |
+          "Papyrus" | "Woodwork" | "WeavingBraid" | "WeavingRibbon" |
+          "WeavingAngles" | "ArchedScallops" | "Safari" | "CelticKnotwork" |
+          "CrazyMaze" | "EclipsingSquares1" | "Birds" | "FlowersTeacup" |
+          "Northwest" | "Southwest" | "Tribal6" | "Tribal4" | "Tribal3" |
+          "Tribal2" | "Tribal5" | "XIllusions" | "ZanyTriangles" | "Pyramids" |
+          "PyramidsAbove" | "ConfettiGrays" | "ConfettiOutline" |
+          "ConfettiWhite" | "Mosaic" | "Lightning2" | "HeebieJeebies" |
+          "LightBulb" | "Gradient" | "TriangleParty" | "TwistedLines2" | "Moons"
+          | "Ovals" | "DoubleDiamonds" | "ChainLink" | "Triangles" | "Tribal1" |
+          "MarqueeToothed" | "SharksTeeth" | "Sawtooth" | "SawtoothGray" |
+          "PostageStamp" | "WeavingStrips" | "ZigZag" | "CrossStitch" | "Gems" |
+          "CirclesRectangles" | "CornerTriangles" | "CreaturesInsects" |
+          "ZigZagStitch" | "Checkered" | "CheckedBarBlack" | "Marquee" |
+          "BasicWhiteDots" | "BasicWideMidline" | "BasicWideOutline" |
+          "BasicWideInline" | "BasicThinLines" | "BasicWhiteDashes" |
+          "BasicWhiteSquares" | "BasicBlackSquares" | "BasicBlackDashes" |
+          "BasicBlackDots" | "StarsTop" | "CertificateBanner" | "Handmade1" |
+          "Handmade2" | "TornPaper" | "TornPaperBlack" | "CouponCutoutDashes" |
+          "CouponCutoutDots"
   - name: artWidth
     uid: word!Word.BorderUniversal#artWidth:member
     package: word!
     fullName: artWidth
-    summary: Specifies the width (in points) of the graphical page border specified in the `artStyle` property.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the width (in points) of the graphical page border specified in
+      the `artStyle` property.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +131,13 @@ properties:
     uid: word!Word.BorderUniversal#color:member
     package: word!
     fullName: color
-    summary: Specifies the color for the `BorderUniversal` object. You can provide the value in the '\#RRGGBB' format.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the color for the `BorderUniversal` object. You can provide the
+      value in the '\#RRGGBB' format.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,22 +148,36 @@ properties:
     uid: word!Word.BorderUniversal#colorIndex:member
     package: word!
     fullName: colorIndex
-    summary: Specifies the color for the `BorderUniversal` or [Word.Font](xref:word!Word.Font:class) object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the color for the `BorderUniversal` or
+      [Word.Font](xref:word!Word.Font:class) object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'colorIndex: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";'
+      content: >-
+        colorIndex: Word.ColorIndex | "Auto" | "Black" | "Blue" | "Turquoise" |
+        "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" |
+        "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" |
+        "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor";
       return:
-        type: <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" | "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" | "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" | "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
+        type: >-
+          <xref uid="word!Word.ColorIndex:enum" /> | "Auto" | "Black" | "Blue" |
+          "Turquoise" | "BrightGreen" | "Pink" | "Red" | "Yellow" | "White" |
+          "DarkBlue" | "Teal" | "Green" | "Violet" | "DarkRed" | "DarkYellow" |
+          "Gray50" | "Gray25" | "ClassicRed" | "ClassicBlue" | "ByAuthor"
   - name: context
     uid: word!Word.BorderUniversal#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +189,10 @@ properties:
     package: word!
     fullName: inside
     summary: Returns `true` if an inside border can be applied to the specified object.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,8 +204,10 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies whether the border is visible.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,43 +219,71 @@ properties:
     package: word!
     fullName: lineStyle
     summary: Specifies the line style of the border.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'lineStyle: Word.BorderLineStyle | "None" | "Single" | "Dot" | "DashSmallGap" | "DashLargeGap" | "DashDot" | "DashDotDot" | "Double" | "Triple" | "ThinThickSmallGap" | "ThickThinSmallGap" | "ThinThickThinSmallGap" | "ThinThickMedGap" | "ThickThinMedGap" | "ThinThickThinMedGap" | "ThinThickLargeGap" | "ThickThinLargeGap" | "ThinThickThinLargeGap" | "SingleWavy" | "DoubleWavy" | "DashDotStroked" | "Emboss3D" | "Engrave3D" | "Outset" | "Inset";'
+      content: >-
+        lineStyle: Word.BorderLineStyle | "None" | "Single" | "Dot" |
+        "DashSmallGap" | "DashLargeGap" | "DashDot" | "DashDotDot" | "Double" |
+        "Triple" | "ThinThickSmallGap" | "ThickThinSmallGap" |
+        "ThinThickThinSmallGap" | "ThinThickMedGap" | "ThickThinMedGap" |
+        "ThinThickThinMedGap" | "ThinThickLargeGap" | "ThickThinLargeGap" |
+        "ThinThickThinLargeGap" | "SingleWavy" | "DoubleWavy" | "DashDotStroked"
+        | "Emboss3D" | "Engrave3D" | "Outset" | "Inset";
       return:
-        type: <xref uid="word!Word.BorderLineStyle:enum" /> | "None" | "Single" | "Dot" | "DashSmallGap" | "DashLargeGap" | "DashDot" | "DashDotDot" | "Double" | "Triple" | "ThinThickSmallGap" | "ThickThinSmallGap" | "ThinThickThinSmallGap" | "ThinThickMedGap" | "ThickThinMedGap" | "ThinThickThinMedGap" | "ThinThickLargeGap" | "ThickThinLargeGap" | "ThinThickThinLargeGap" | "SingleWavy" | "DoubleWavy" | "DashDotStroked" | "Emboss3D" | "Engrave3D" | "Outset" | "Inset"
+        type: >-
+          <xref uid="word!Word.BorderLineStyle:enum" /> | "None" | "Single" |
+          "Dot" | "DashSmallGap" | "DashLargeGap" | "DashDot" | "DashDotDot" |
+          "Double" | "Triple" | "ThinThickSmallGap" | "ThickThinSmallGap" |
+          "ThinThickThinSmallGap" | "ThinThickMedGap" | "ThickThinMedGap" |
+          "ThinThickThinMedGap" | "ThinThickLargeGap" | "ThickThinLargeGap" |
+          "ThinThickThinLargeGap" | "SingleWavy" | "DoubleWavy" |
+          "DashDotStroked" | "Emboss3D" | "Engrave3D" | "Outset" | "Inset"
   - name: lineWidth
     uid: word!Word.BorderUniversal#lineWidth:member
     package: word!
     fullName: lineWidth
     summary: Specifies the line width of an object's border.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'lineWidth: Word.LineWidth | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600";'
+      content: >-
+        lineWidth: Word.LineWidth | "Pt025" | "Pt050" | "Pt075" | "Pt100" |
+        "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600";
       return:
-        type: <xref uid="word!Word.LineWidth:enum" /> | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600"
+        type: >-
+          <xref uid="word!Word.LineWidth:enum" /> | "Pt025" | "Pt050" | "Pt075"
+          | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600"
 methods:
   - name: load(options)
     uid: word!Word.BorderUniversal#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Word.Interfaces.BorderUniversalLoadOptions): Word.BorderUniversal;'
+      content: >-
+        load(options?: Word.Interfaces.BorderUniversalLoadOptions):
+        Word.BorderUniversal;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="word!Word.Interfaces.BorderUniversalLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.BorderUniversalLoadOptions:interface" />
       return:
         type: <xref uid="word!Word.BorderUniversal:class" />
         description: ''
@@ -150,16 +291,20 @@ methods:
     uid: word!Word.BorderUniversal#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.BorderUniversal;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.BorderUniversal:class" />
@@ -168,9 +313,11 @@ methods:
     uid: word!Word.BorderUniversal#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +328,11 @@ methods:
                 }): Word.BorderUniversal;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -194,19 +345,31 @@ methods:
     uid: word!Word.BorderUniversal#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.BorderUniversalUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.BorderUniversalUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-          type: <xref uid="word!Word.Interfaces.BorderUniversalUpdateData:interface" />
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="word!Word.Interfaces.BorderUniversalUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -215,9 +378,11 @@ methods:
     uid: word!Word.BorderUniversal#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -233,9 +398,17 @@ methods:
     uid: word!Word.BorderUniversal#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.BorderUniversal` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BorderUniversalData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.BorderUniversal`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.BorderUniversalData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,9 +420,18 @@ methods:
     uid: word!Word.BorderUniversal#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -261,9 +443,16 @@ methods:
     uid: word!Word.BorderUniversal#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

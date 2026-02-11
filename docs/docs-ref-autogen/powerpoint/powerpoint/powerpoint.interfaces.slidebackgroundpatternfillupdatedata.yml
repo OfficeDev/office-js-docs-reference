@@ -1,22 +1,31 @@
 ### YamlMime:TSType
 name: PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData
-uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData:interface
+uid: >-
+  powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData
-summary: An interface for updating data on the `SlideBackgroundPatternFill` object, for use in `slideBackgroundPatternFill.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `SlideBackgroundPatternFill` object, for
+  use in `slideBackgroundPatternFill.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: backgroundColor
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#backgroundColor:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#backgroundColor:member
     package: powerpoint!
     fullName: backgroundColor
-    summary: Specifies the background color in HTML color format (e.g., "\#FFFFFF" or "white").
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the background color in HTML color format (e.g., "\#FFFFFF" or
+      "white").
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,12 +33,18 @@ properties:
       return:
         type: string
   - name: foregroundColor
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#foregroundColor:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#foregroundColor:member
     package: powerpoint!
     fullName: foregroundColor
-    summary: Specifies the foreground color in HTML color format (e.g., "\#FFA500" or "orange").
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the foreground color in HTML color format (e.g., "\#FFA500" or
+      "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,15 +52,50 @@ properties:
       return:
         type: string
   - name: pattern
-    uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#pattern:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.SlideBackgroundPatternFillUpdateData#pattern:member
     package: powerpoint!
     fullName: pattern
     summary: Specifies the pattern type.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'pattern?: PowerPoint.SlideBackgroundPatternFillType | "Unsupported" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "Horizontal" | "Vertical" | "LightHorizontal" | "LightVertical" | "DarkHorizontal" | "DarkVertical" | "NarrowHorizontal" | "NarrowVertical" | "DashedHorizontal" | "DashedVertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedDownwardDiagonal" | "DashedUpwardDiagonal" | "DiagonalCross" | "SmallCheckerBoard" | "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" | "DottedGrid" | "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" | "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond" | "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" | "Trellis" | "ZigZag";'
+      content: >-
+        pattern?: PowerPoint.SlideBackgroundPatternFillType | "Unsupported" |
+        "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" |
+        "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" |
+        "Percent80" | "Percent90" | "Horizontal" | "Vertical" |
+        "LightHorizontal" | "LightVertical" | "DarkHorizontal" | "DarkVertical"
+        | "NarrowHorizontal" | "NarrowVertical" | "DashedHorizontal" |
+        "DashedVertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" |
+        "LightDownwardDiagonal" | "LightUpwardDiagonal" | "DarkDownwardDiagonal"
+        | "DarkUpwardDiagonal" | "WideDownwardDiagonal" | "WideUpwardDiagonal" |
+        "DashedDownwardDiagonal" | "DashedUpwardDiagonal" | "DiagonalCross" |
+        "SmallCheckerBoard" | "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" |
+        "DottedGrid" | "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" |
+        "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond" |
+        "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" | "Trellis"
+        | "ZigZag";
       return:
-        type: <xref uid="powerpoint!PowerPoint.SlideBackgroundPatternFillType:enum" /> | "Unsupported" | "Percent5" | "Percent10" | "Percent20" | "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" | "Percent70" | "Percent75" | "Percent80" | "Percent90" | "Horizontal" | "Vertical" | "LightHorizontal" | "LightVertical" | "DarkHorizontal" | "DarkVertical" | "NarrowHorizontal" | "NarrowVertical" | "DashedHorizontal" | "DashedVertical" | "Cross" | "DownwardDiagonal" | "UpwardDiagonal" | "LightDownwardDiagonal" | "LightUpwardDiagonal" | "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "WideDownwardDiagonal" | "WideUpwardDiagonal" | "DashedDownwardDiagonal" | "DashedUpwardDiagonal" | "DiagonalCross" | "SmallCheckerBoard" | "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" | "DottedGrid" | "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" | "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond" | "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" | "Trellis" | "ZigZag"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.SlideBackgroundPatternFillType:enum"
+          /> | "Unsupported" | "Percent5" | "Percent10" | "Percent20" |
+          "Percent25" | "Percent30" | "Percent40" | "Percent50" | "Percent60" |
+          "Percent70" | "Percent75" | "Percent80" | "Percent90" | "Horizontal" |
+          "Vertical" | "LightHorizontal" | "LightVertical" | "DarkHorizontal" |
+          "DarkVertical" | "NarrowHorizontal" | "NarrowVertical" |
+          "DashedHorizontal" | "DashedVertical" | "Cross" | "DownwardDiagonal" |
+          "UpwardDiagonal" | "LightDownwardDiagonal" | "LightUpwardDiagonal" |
+          "DarkDownwardDiagonal" | "DarkUpwardDiagonal" | "WideDownwardDiagonal"
+          | "WideUpwardDiagonal" | "DashedDownwardDiagonal" |
+          "DashedUpwardDiagonal" | "DiagonalCross" | "SmallCheckerBoard" |
+          "LargeCheckerBoard" | "SmallGrid" | "LargeGrid" | "DottedGrid" |
+          "SmallConfetti" | "LargeConfetti" | "HorizontalBrick" |
+          "DiagonalBrick" | "SolidDiamond" | "OutlinedDiamond" | "DottedDiamond"
+          | "Plaid" | "Sphere" | "Weave" | "Divot" | "Shingle" | "Wave" |
+          "Trellis" | "ZigZag"

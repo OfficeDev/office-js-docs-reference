@@ -3,9 +3,11 @@ name: Word.Interfaces.XmlNodeUpdateData
 uid: word!Word.Interfaces.XmlNodeUpdateData:interface
 package: word!
 fullName: Word.Interfaces.XmlNodeUpdateData
-summary: An interface for updating data on the `XmlNode` object, for use in `xmlNode.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `XmlNode` object, for use in
+  `xmlNode.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

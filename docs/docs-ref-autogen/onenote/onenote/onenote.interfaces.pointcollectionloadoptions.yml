@@ -4,8 +4,10 @@ uid: onenote!OneNote.Interfaces.PointCollectionLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.PointCollectionLoadOptions
 summary: Represents a collection of Point objects.
-remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: onenote!OneNote.Interfaces.PointCollectionLoadOptions#$all:member
     package: onenote!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +32,14 @@ properties:
     uid: onenote!OneNote.Interfaces.PointCollectionLoadOptions#id:member
     package: onenote!
     fullName: id
-    summary: 'For EACH ITEM in the collection: Gets the ID of the Point object. Read-only.'
-    remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the ID of the Point object.
+      Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +52,7 @@ properties:
     fullName: x
     summary: 'For EACH ITEM in the collection: X'
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +65,7 @@ properties:
     fullName: 'y'
     summary: 'For EACH ITEM in the collection: Y'
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

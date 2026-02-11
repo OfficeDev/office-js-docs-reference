@@ -3,9 +3,11 @@ name: Excel.IconCollections
 uid: excel!Excel.IconCollections:interface
 package: excel!
 fullName: Excel.IconCollections
-summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: fiveArrows
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: fiveArrowsGray
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +44,7 @@ properties:
     fullName: fiveBoxes
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +57,7 @@ properties:
     fullName: fiveQuarters
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +70,7 @@ properties:
     fullName: fiveRating
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +83,7 @@ properties:
     fullName: fourArrows
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +96,7 @@ properties:
     fullName: fourArrowsGray
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +109,7 @@ properties:
     fullName: fourRating
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +122,7 @@ properties:
     fullName: fourRedToBlack
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +135,7 @@ properties:
     fullName: fourTrafficLights
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +148,7 @@ properties:
     fullName: threeArrows
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +161,7 @@ properties:
     fullName: threeArrowsGray
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +174,7 @@ properties:
     fullName: threeFlags
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,7 +187,7 @@ properties:
     fullName: threeSigns
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,7 +200,7 @@ properties:
     fullName: threeStars
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -211,7 +213,7 @@ properties:
     fullName: threeSymbols
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,7 +226,7 @@ properties:
     fullName: threeSymbols2
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +239,7 @@ properties:
     fullName: threeTrafficLights1
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,7 +252,7 @@ properties:
     fullName: threeTrafficLights2
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -263,7 +265,7 @@ properties:
     fullName: threeTriangles
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

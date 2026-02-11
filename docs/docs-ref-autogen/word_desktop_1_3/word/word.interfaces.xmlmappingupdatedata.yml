@@ -3,9 +3,11 @@ name: Word.Interfaces.XmlMappingUpdateData
 uid: word!Word.Interfaces.XmlMappingUpdateData:interface
 package: word!
 fullName: Word.Interfaces.XmlMappingUpdateData
-summary: An interface for updating data on the `XmlMapping` object, for use in `xmlMapping.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `XmlMapping` object, for use in
+  `xmlMapping.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.XmlMappingUpdateData#customXmlNode:member
     package: word!
     fullName: customXmlNode
-    summary: Returns a `CustomXmlNode` object that represents the custom XML node in the data store that the content control in the document maps to.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `CustomXmlNode` object that represents the custom XML node in
+      the data store that the content control in the document maps to.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,13 @@ properties:
     uid: word!Word.Interfaces.XmlMappingUpdateData#customXmlPart:member
     package: word!
     fullName: customXmlPart
-    summary: Returns a `CustomXmlPart` object that represents the custom XML part to which the content control in the document maps.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a `CustomXmlPart` object that represents the custom XML part to
+      which the content control in the document maps.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

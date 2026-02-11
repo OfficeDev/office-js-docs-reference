@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.TableStyleSettingsData
 uid: powerpoint!PowerPoint.Interfaces.TableStyleSettingsData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableStyleSettingsData
-summary: An interface describing the data returned by calling `tableStyleSettings.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `tableStyleSettings.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -4,8 +4,10 @@ uid: excel!Excel.DateTimeDataValidation:interface
 package: excel!
 fullName: Excel.DateTimeDataValidation
 summary: Represents the date data validation criteria.
-remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,20 @@ properties:
     uid: excel!Excel.DateTimeDataValidation#formula1:member
     package: excel!
     fullName: formula1
-    summary: 'Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand. When setting the value, it can be passed in as a Date, a Range object, or a string formula (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.'
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the right-hand operand when the operator property is set to a
+      binary operator such as GreaterThan (the left-hand operand is the value
+      the user tries to enter in the cell). With the ternary operators Between
+      and NotBetween, specifies the lower bound operand. When setting the value,
+      it can be passed in as a Date, a Range object, or a string formula (where
+      the string is either a stringified date/time in ISO8601 format, a cell
+      reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving
+      the value, it will always be returned as a string formula, for example:
+      "=10", "=A1", "=SUM(A1:B5)", etc.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +40,18 @@ properties:
     uid: excel!Excel.DateTimeDataValidation#formula2:member
     package: excel!
     fullName: formula2
-    summary: 'With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan. When setting the value, it can be passed in as a Date, a Range object, or a string (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.'
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      With the ternary operators Between and NotBetween, specifies the upper
+      bound operand. Is not used with the binary operators, such as GreaterThan.
+      When setting the value, it can be passed in as a Date, a Range object, or
+      a string (where the string is either a stringified date/time in ISO8601
+      format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
+      When retrieving the value, it will always be returned as a string formula,
+      for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,11 +63,19 @@ properties:
     package: excel!
     fullName: operator
     summary: The operator to use for validating the data.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'operator: Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo";'
+      content: >-
+        operator: Excel.DataValidationOperator | "Between" | "NotBetween" |
+        "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
+        "GreaterThanOrEqualTo" | "LessThanOrEqualTo";
       return:
-        type: <xref uid="excel!Excel.DataValidationOperator:enum" /> | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+        type: >-
+          <xref uid="excel!Excel.DataValidationOperator:enum" /> | "Between" |
+          "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
+          "GreaterThanOrEqualTo" | "LessThanOrEqualTo"

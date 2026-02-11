@@ -4,15 +4,23 @@ uid: powerpoint!PowerPoint.Table:class
 package: powerpoint!
 fullName: PowerPoint.Table
 summary: Represents a table.
-remarks: |-
-  \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
 
   // Updates a table's values.
+
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -32,8 +40,9 @@ remarks: |-
 
     await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,8 +52,11 @@ properties:
     package: powerpoint!
     fullName: columnCount
     summary: Gets the number of columns in the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,8 +68,11 @@ properties:
     package: powerpoint!
     fullName: columns
     summary: Gets the collection of columns in the table.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,9 +83,11 @@ properties:
     uid: powerpoint!PowerPoint.Table#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,8 +99,11 @@ properties:
     package: powerpoint!
     fullName: rowCount
     summary: Gets the number of rows in the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,8 +115,11 @@ properties:
     package: powerpoint!
     fullName: rows
     summary: Gets the collection of rows in the table.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,8 +131,11 @@ properties:
     package: powerpoint!
     fullName: styleSettings
     summary: Gets the table style settings.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,8 +147,11 @@ properties:
     package: powerpoint!
     fullName: values
     summary: Gets all of the values in the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,8 +164,11 @@ methods:
     package: powerpoint!
     fullName: clear(options)
     summary: Clears table values and formatting.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,15 +185,23 @@ methods:
     package: powerpoint!
     fullName: getCellOrNullObject(rowIndex, columnIndex)
     summary: Gets the cell at the specified `rowIndex` and `columnIndex`<!-- -->.
-    remarks: |-
-      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
 
       // Updates a table's values.
+
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -181,12 +221,15 @@ methods:
 
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getCellOrNullObject(rowIndex: number, columnIndex: number): PowerPoint.TableCell;'
+      content: >-
+        getCellOrNullObject(rowIndex: number, columnIndex: number):
+        PowerPoint.TableCell;
       parameters:
         - id: rowIndex
           description: The zero-based row index of the cell.
@@ -196,28 +239,42 @@ methods:
           type: number
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCell:class" />
-        description: The cell at the specified row and column. If the cell is part of a merged area and not the top left cell of the merged area, an object with the `isNullObject` property set to `true` is returned. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
+        description: >-
+          The cell at the specified row and column. If the cell is part of a
+          merged area and not the top left cell of the merged area, an object
+          with the `isNullObject` property set to `true` is returned. For
+          further information, see [*OrNullObject methods and
+          properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+          -->.
   - name: getMergedAreas()
     uid: powerpoint!PowerPoint.Table#getMergedAreas:member(1)
     package: powerpoint!
     fullName: getMergedAreas()
     summary: Gets a collection of cells that represent the merged areas of the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getMergedAreas(): PowerPoint.TableCellCollection;'
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCellCollection:class" />
-        description: a `TableCellCollection` with cells that represent the merged areas of the table.
+        description: >-
+          a `TableCellCollection` with cells that represent the merged areas of
+          the table.
   - name: getShape()
     uid: powerpoint!PowerPoint.Table#getShape:member(1)
     package: powerpoint!
     fullName: getShape()
     summary: Gets the shape object for the table.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,17 +286,23 @@ methods:
     uid: powerpoint!PowerPoint.Table#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.TableLoadOptions): PowerPoint.Table;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.TableLoadOptions):
+        PowerPoint.Table;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.TableLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.TableLoadOptions:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.Table:class" />
         description: ''
@@ -247,16 +310,20 @@ methods:
     uid: powerpoint!PowerPoint.Table#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Table;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.Table:class" />
@@ -265,9 +332,11 @@ methods:
     uid: powerpoint!PowerPoint.Table#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,7 +347,11 @@ methods:
                 }): PowerPoint.Table;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -291,13 +364,21 @@ methods:
     uid: powerpoint!PowerPoint.Table#mergeCells:member(1)
     package: powerpoint!
     fullName: mergeCells(rowIndex, columnIndex, rowCount, columnCount)
-    summary: Creates a merged area starting at the cell specified by rowIndex and columnIndex. The merged area spans across a specified number of rows and columns.
-    remarks: '\[ [API set: PowerPointApi 1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Creates a merged area starting at the cell specified by rowIndex and
+      columnIndex. The merged area spans across a specified number of rows and
+      columns.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.9](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'mergeCells(rowIndex: number, columnIndex: number, rowCount: number, columnCount: number): void;'
+      content: >-
+        mergeCells(rowIndex: number, columnIndex: number, rowCount: number,
+        columnCount: number): void;
       parameters:
         - id: rowIndex
           description: The zero-based row index of the cell to start the merged area.
@@ -306,10 +387,14 @@ methods:
           description: The zero-based column index of the cell to start the merged area.
           type: number
         - id: rowCount
-          description: The number of rows to merge with the starting cell. Must be greater than 0.
+          description: >-
+            The number of rows to merge with the starting cell. Must be greater
+            than 0.
           type: number
         - id: columnCount
-          description: The number of columns to merge with the starting cell. Must be greater than 0.
+          description: >-
+            The number of columns to merge with the starting cell. Must be
+            greater than 0.
           type: number
       return:
         type: void
@@ -318,9 +403,16 @@ methods:
     uid: powerpoint!PowerPoint.Table#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `PowerPoint.Table`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `PowerPoint.Interfaces.TableData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,9 +3,13 @@ name: Excel.BindingCollection
 uid: excel!Excel.BindingCollection:class
 package: excel!
 fullName: Excel.BindingCollection
-summary: Represents the collection of all the binding objects that are part of the workbook.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the collection of all the binding objects that are part of the
+  workbook.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +18,11 @@ properties:
     uid: excel!Excel.BindingCollection#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +34,10 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of bindings in the collection.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +50,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,15 +63,21 @@ methods:
     package: excel!
     fullName: add(range, bindingType, id)
     summary: Add a new binding to a particular Range.
-    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'add(range: Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
+      content: >-
+        add(range: Range | string, bindingType: Excel.BindingType, id: string):
+        Excel.Binding;
       parameters:
         - id: range
-          description: Range to bind the binding to. May be a `Range` object or a string. If string, must contain the full address, including the sheet name
+          description: >-
+            Range to bind the binding to. May be a `Range` object or a string.
+            If string, must contain the full address, including the sheet name
           type: <xref uid="excel!Excel.Range:class" /> | string
         - id: bindingType
           description: Type of binding. See `Excel.BindingType`<!-- -->.
@@ -79,15 +93,21 @@ methods:
     package: excel!
     fullName: add(range, bindingType, id)
     summary: Add a new binding to a particular Range.
-    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'add(range: Range | string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;'
+      content: >-
+        add(range: Range | string, bindingType: "Range" | "Table" | "Text", id:
+        string): Excel.Binding;
       parameters:
         - id: range
-          description: Range to bind the binding to. May be a `Range` object or a string. If string, must contain the full address, including the sheet name
+          description: >-
+            Range to bind the binding to. May be a `Range` object or a string.
+            If string, must contain the full address, including the sheet name
           type: <xref uid="excel!Excel.Range:class" /> | string
         - id: bindingType
           description: Type of binding. See `Excel.BindingType`<!-- -->.
@@ -102,13 +122,20 @@ methods:
     uid: excel!Excel.BindingCollection#addFromNamedItem:member(1)
     package: excel!
     fullName: addFromNamedItem(name, bindingType, id)
-    summary: Add a new binding based on a named item in the workbook. If the named item references to multiple areas, the `InvalidReference` error will be returned.
-    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Add a new binding based on a named item in the workbook. If the named item
+      references to multiple areas, the `InvalidReference` error will be
+      returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addFromNamedItem(name: string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
+      content: >-
+        addFromNamedItem(name: string, bindingType: Excel.BindingType, id:
+        string): Excel.Binding;
       parameters:
         - id: name
           description: Name from which to create binding.
@@ -126,13 +153,20 @@ methods:
     uid: excel!Excel.BindingCollection#addFromNamedItem:member(2)
     package: excel!
     fullName: addFromNamedItem(name, bindingType, id)
-    summary: Add a new binding based on a named item in the workbook. If the named item references to multiple areas, the `InvalidReference` error will be returned.
-    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Add a new binding based on a named item in the workbook. If the named item
+      references to multiple areas, the `InvalidReference` error will be
+      returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addFromNamedItem(name: string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;'
+      content: >-
+        addFromNamedItem(name: string, bindingType: "Range" | "Table" | "Text",
+        id: string): Excel.Binding;
       parameters:
         - id: name
           description: Name from which to create binding.
@@ -150,13 +184,19 @@ methods:
     uid: excel!Excel.BindingCollection#addFromSelection:member(1)
     package: excel!
     fullName: addFromSelection(bindingType, id)
-    summary: Add a new binding based on the current selection. If the selection has multiple areas, the `InvalidReference` error will be returned.
-    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Add a new binding based on the current selection. If the selection has
+      multiple areas, the `InvalidReference` error will be returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addFromSelection(bindingType: Excel.BindingType, id: string): Excel.Binding;'
+      content: >-
+        addFromSelection(bindingType: Excel.BindingType, id: string):
+        Excel.Binding;
       parameters:
         - id: bindingType
           description: Type of binding. See `Excel.BindingType`<!-- -->.
@@ -171,13 +211,19 @@ methods:
     uid: excel!Excel.BindingCollection#addFromSelection:member(2)
     package: excel!
     fullName: addFromSelection(bindingType, id)
-    summary: Add a new binding based on the current selection. If the selection has multiple areas, the `InvalidReference` error will be returned.
-    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Add a new binding based on the current selection. If the selection has
+      multiple areas, the `InvalidReference` error will be returned.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addFromSelection(bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;'
+      content: >-
+        addFromSelection(bindingType: "Range" | "Table" | "Text", id: string):
+        Excel.Binding;
       parameters:
         - id: bindingType
           description: Type of binding. See `Excel.BindingType`<!-- -->.
@@ -193,12 +239,16 @@ methods:
     package: excel!
     fullName: getItem(id)
     summary: Gets a binding object by ID.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       async function onBindingDataChanged(eventArgs) {
           await Excel.run(async (context) => { 
               // Highlight the table related to the binding in orange to indicate data has been changed.
@@ -208,8 +258,9 @@ methods:
               console.log("The value in this table got changed!");
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -226,12 +277,16 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a binding object based on its position in the items array.
-    remarks: |-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await Excel.run(async (context) => { 
           const lastPosition = context.workbook.bindings.count - 1;
           const binding = context.workbook.bindings.getItemAt(lastPosition);
@@ -240,8 +295,9 @@ methods:
 
           console.log(binding.type);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -257,17 +313,25 @@ methods:
     uid: excel!Excel.BindingCollection#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;'
+      content: >-
+        load(options?: Excel.Interfaces.BindingCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="excel!Excel.Interfaces.BindingCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.BindingCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.BindingCollection:class" />
         description: ''
@@ -275,16 +339,20 @@ methods:
     uid: excel!Excel.BindingCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.BindingCollection;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.BindingCollection:class" />
@@ -306,16 +374,24 @@ methods:
     uid: excel!Excel.BindingCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.BindingCollection;'
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.BindingCollection;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.BindingCollection:class" />
@@ -324,9 +400,18 @@ methods:
     uid: excel!Excel.BindingCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Excel.BindingCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Excel.Interfaces.BindingCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's
+      items.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

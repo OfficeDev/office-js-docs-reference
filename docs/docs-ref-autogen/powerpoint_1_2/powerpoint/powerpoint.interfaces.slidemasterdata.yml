@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.SlideMasterData
 uid: powerpoint!PowerPoint.Interfaces.SlideMasterData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterData
-summary: An interface describing the data returned by calling `slideMaster.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `slideMaster.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

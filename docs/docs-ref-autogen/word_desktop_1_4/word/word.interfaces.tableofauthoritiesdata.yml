@@ -3,9 +3,11 @@ name: Word.Interfaces.TableOfAuthoritiesData
 uid: word!Word.Interfaces.TableOfAuthoritiesData:interface
 package: word!
 fullName: Word.Interfaces.TableOfAuthoritiesData
-summary: An interface describing the data returned by calling `tableOfAuthorities.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `tableOfAuthorities.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#bookmark:member
     package: word!
     fullName: bookmark
-    summary: Specifies the name of the bookmark from which to collect table of authorities entries.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the name of the bookmark from which to collect table of
+      authorities entries.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,17 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#category:member
     package: word!
     fullName: category
-    summary: Specifies the category of entries to be included in the table of authorities. Values 0 through 16 correspond to the items listed in the Category box of the Table of Authorities dialog. To learn how to access this through the Word UI, see [Create a table of authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the category of entries to be included in the table of
+      authorities. Values 0 through 16 correspond to the items listed in the
+      Category box of the Table of Authorities dialog. To learn how to access
+      this through the Word UI, see [Create a table of
+      authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +54,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#entrySeparator:member
     package: word!
     fullName: entrySeparator
-    summary: Specifies a separator of up to five characters. This appears between the table of authorities entry and its page number.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between the
+      table of authorities entry and its page number.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +68,17 @@ properties:
       return:
         type: string
   - name: isCategoryHeaderIncluded
-    uid: word!Word.Interfaces.TableOfAuthoritiesData#isCategoryHeaderIncluded:member
+    uid: >-
+      word!Word.Interfaces.TableOfAuthoritiesData#isCategoryHeaderIncluded:member
     package: word!
     fullName: isCategoryHeaderIncluded
-    summary: Specifies whether the category name for a group of entries appears in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the category name for a group of entries appears in the
+      table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +89,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#isEntryFormattingKept:member
     package: word!
     fullName: isEntryFormattingKept
-    summary: Specifies whether the entries in the table of authorities are displayed with their formatting in the table.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the entries in the table of authorities are displayed
+      with their formatting in the table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +106,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#isPassimUsed:member
     package: word!
     fullName: isPassimUsed
-    summary: Specifies whether references to the same authority that are repeated on five or more pages are replaced with "Passim".
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether references to the same authority that are repeated on
+      five or more pages are replaced with "Passim".
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +123,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#pageNumberSeparator:member
     package: word!
     fullName: pageNumberSeparator
-    summary: Specifies a separator of up to five characters. This appears between individual page references in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between
+      individual page references in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +140,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#pageRangeSeparator:member
     package: word!
     fullName: pageRangeSeparator
-    summary: Specifies a separator of up to five characters. This appears between ranges of pages in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between
+      ranges of pages in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +157,14 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#sequenceName:member
     package: word!
     fullName: sequenceName
-    summary: Specifies the [Sequence (SEQ) field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be) identifier for the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the [Sequence (SEQ)
+      field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be)
+      identifier for the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +175,13 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#sequenceSeparator:member
     package: word!
     fullName: sequenceSeparator
-    summary: Specifies a separator of up to five characters. This appears between the sequence number and the page number in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between the
+      sequence number and the page number in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,12 +192,20 @@ properties:
     uid: word!Word.Interfaces.TableOfAuthoritiesData#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: Specifies the leader character that appears between entries and their associated page numbers in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the leader character that appears between entries and their
+      associated page numbers in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'tabLeader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";'
+      content: >-
+        tabLeader?: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
+        "Heavy" | "MiddleDot";
       return:
-        type: <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot"
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"

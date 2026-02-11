@@ -4,8 +4,10 @@ uid: excel!Excel.PivotLayout:class
 package: excel!
 fullName: Excel.PivotLayout
 summary: Represents the visual layout of the PivotTable.
-remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,17 +16,30 @@ properties:
     uid: excel!Excel.PivotLayout#altTextDescription:member
     package: excel!
     fullName: altTextDescription
-    summary: |-
+    summary: >-
       The alt text description of the PivotTable.
 
-      Alt text provides alternative, text-based representations of the information contained in the PivotTable. This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table. A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
-    remarks: |-
-      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      Alt text provides alternative, text-based representations of the
+      information contained in the PivotTable. This information is useful for
+      people with vision or cognitive impairments who may not be able to see or
+      understand the table. A title can be read to a person with a disability
+      and is used to determine whether they wish to hear the description of the
+      content.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Set the alt text for the displayed PivotTable.
@@ -37,8 +52,9 @@ properties:
 
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,12 +65,21 @@ properties:
     uid: excel!Excel.PivotLayout#altTextTitle:member
     package: excel!
     fullName: altTextTitle
-    summary: |-
+    summary: >-
       The alt text title of the PivotTable.
 
-      Alt text provides alternative, text-based representations of the information contained in the PivotTable. This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table. A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
-    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+
+      Alt text provides alternative, text-based representations of the
+      information contained in the PivotTable. This information is useful for
+      people with vision or cognitive impairments who may not be able to see or
+      understand the table. A title can be read to a person with a disability
+      and is used to determine whether they wish to hear the description of the
+      content.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,9 +90,13 @@ properties:
     uid: excel!Excel.PivotLayout#autoFormat:member
     package: excel!
     fullName: autoFormat
-    summary: Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if formatting will be automatically formatted when it's
+      refreshed or when fields are moved.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,9 +107,11 @@ properties:
     uid: excel!Excel.PivotLayout#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,14 +122,26 @@ properties:
     uid: excel!Excel.PivotLayout#emptyCellText:member
     package: excel!
     fullName: emptyCellText
-    summary: The text that is automatically filled into any empty cell in the PivotTable if `fillEmptyCells == true`<!-- -->. Note that this value persists if `fillEmptyCells` is set to `false`<!-- -->, and that setting this value does not set that property to `true`<!-- -->. By default, this is an empty string.
-    remarks: |-
-      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      The text that is automatically filled into any empty cell in the
+      PivotTable if `fillEmptyCells == true`<!-- -->. Note that this value
+      persists if `fillEmptyCells` is set to `false`<!-- -->, and that setting
+      this value does not set that property to `true`<!-- -->. By default, this
+      is an empty string.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Set a default value for an empty cell in the PivotTable. This doesn't include cells left blank by the layout.
@@ -111,8 +154,9 @@ properties:
         pivotLayout.getDataBodyRange().format.horizontalAlignment = Excel.HorizontalAlignment.right;
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,8 +168,11 @@ properties:
     package: excel!
     fullName: enableFieldList
     summary: Specifies if the field list can be shown in the UI.
-    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,14 +183,25 @@ properties:
     uid: excel!Excel.PivotLayout#fillEmptyCells:member
     package: excel!
     fullName: fillEmptyCells
-    summary: Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`<!-- -->. Default is `false`<!-- -->. Note that the value of `emptyCellText` persists when this property is set to `false`<!-- -->.
-    remarks: |-
-      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies whether empty cells in the PivotTable should be populated with
+      the `emptyCellText`<!-- -->. Default is `false`<!-- -->. Note that the
+      value of `emptyCellText` persists when this property is set to `false`<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Toggle whether empty cells are filled with a default value.
@@ -159,8 +217,9 @@ properties:
         pivotLayout.fillEmptyCells = fillToSet;
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,14 +230,22 @@ properties:
     uid: excel!Excel.PivotLayout#layoutType:member
     package: excel!
     fullName: layoutType
-    summary: This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
-    remarks: |-
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      This property indicates the PivotLayoutType of all fields on the
+      PivotTable. If fields have different states, this will be null.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Change the PivotLayout.type to a new type.
@@ -198,21 +265,27 @@ properties:
         await context.sync();
         console.log("Pivot layout is now " + pivotTable.layout.layoutType);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
-        type: <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" | "Tabular" | "Outline"
+        type: >-
+          <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" |
+          "Tabular" | "Outline"
   - name: pivotStyle
     uid: excel!Excel.PivotLayout#pivotStyle:member
     package: excel!
     fullName: pivotStyle
     summary: The style applied to the PivotTable.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -223,14 +296,23 @@ properties:
     uid: excel!Excel.PivotLayout#preserveFormatting:member
     package: excel!
     fullName: preserveFormatting
-    summary: Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
-    remarks: |-
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies if formatting is preserved when the report is refreshed or
+      recalculated by operations such as pivoting, sorting, or changing page
+      field items.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Set whether the PivotTable keeps the established format after it is refreshed and recalculated.
@@ -246,8 +328,9 @@ properties:
         pivotLayout.preserveFormatting = preserveFormattingToSet;
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,13 +342,19 @@ properties:
     package: excel!
     fullName: showColumnGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for columns.
-    remarks: |-
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Turn the grand totals on and off for the rows and columns.
@@ -285,8 +374,9 @@ properties:
 
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,14 +387,23 @@ properties:
     uid: excel!Excel.PivotLayout#showFieldHeaders:member
     package: excel!
     fullName: showFieldHeaders
-    summary: Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
-    remarks: |-
-      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies whether the PivotTable displays field headers (field captions
+      and filter drop-downs).
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Turn the field headers on and off for the row and column hierarchies.
@@ -318,8 +417,9 @@ properties:
         pivotLayout.showFieldHeaders = showHeaders;
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -331,13 +431,19 @@ properties:
     package: excel!
     fullName: showRowGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for rows.
-    remarks: |-
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Turn the grand totals on and off for the rows and columns.
@@ -357,8 +463,9 @@ properties:
 
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -369,28 +476,47 @@ properties:
     uid: excel!Excel.PivotLayout#subtotalLocation:member
     package: excel!
     fullName: subtotalLocation
-    summary: This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different states, this will be `null`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      This property indicates the `SubtotalLocationType` of all fields on the
+      PivotTable. If fields have different states, this will be `null`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'subtotalLocation: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+      content: >-
+        subtotalLocation: Excel.SubtotalLocationType | "AtTop" | "AtBottom" |
+        "Off";
       return:
-        type: <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" | "AtBottom" | "Off"
+        type: >-
+          <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" |
+          "AtBottom" | "Off"
 methods:
   - name: displayBlankLineAfterEachItem(display)
     uid: excel!Excel.PivotLayout#displayBlankLineAfterEachItem:member(1)
     package: excel!
     fullName: displayBlankLineAfterEachItem(display)
-    summary: Sets whether or not to display a blank line after each item. This is set at the global level for the PivotTable and applied to individual PivotFields. This function overwrites the setting for all fields in the PivotTable to the value of `display` parameter.
-    remarks: |-
-      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Sets whether or not to display a blank line after each item. This is set
+      at the global level for the PivotTable and applied to individual
+      PivotFields. This function overwrites the setting for all fields in the
+      PivotTable to the value of `display` parameter.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Add a blank row after each PivotItem in the row hierarchy.
@@ -402,8 +528,9 @@ methods:
 
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -419,13 +546,24 @@ methods:
     uid: excel!Excel.PivotLayout#getCell:member(1)
     package: excel!
     fullName: getCell(dataHierarchy, rowItems, columnItems)
-    summary: Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies. The returned cell is the intersection of the given row and column that contains the data from the given hierarchy. This method is the inverse of calling `getPivotItems` and `getDataHierarchy` on a particular cell.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a unique cell in the PivotTable based on a data hierarchy and the row
+      and column items of their respective hierarchies. The returned cell is the
+      intersection of the given row and column that contains the data from the
+      given hierarchy. This method is the inverse of calling `getPivotItems` and
+      `getDataHierarchy` on a particular cell.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getCell(dataHierarchy: DataPivotHierarchy | string, rowItems: Array<PivotItem | string>, columnItems: Array<PivotItem | string>): Excel.Range;'
+      content: >-
+        getCell(dataHierarchy: DataPivotHierarchy | string, rowItems:
+        Array<PivotItem | string>, columnItems: Array<PivotItem | string>):
+        Excel.Range;
       parameters:
         - id: dataHierarchy
           description: The `dataHierarchy` that provides the data item to find.
@@ -444,8 +582,10 @@ methods:
     package: excel!
     fullName: getColumnLabelRange()
     summary: Returns the range where the PivotTable's column labels reside.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -458,13 +598,19 @@ methods:
     package: excel!
     fullName: getDataBodyRange()
     summary: Returns the range where the PivotTable's data values reside.
-    remarks: |-
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
 
       await Excel.run(async (context) => {
           const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -482,8 +628,9 @@ methods:
           masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
           await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -495,9 +642,13 @@ methods:
     uid: excel!Excel.PivotLayout#getDataHierarchy:member(1)
     package: excel!
     fullName: getDataHierarchy(cell)
-    summary: Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the DataHierarchy that is used to calculate the value in a specified
+      range within the PivotTable.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -508,14 +659,18 @@ methods:
           type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: <xref uid="excel!Excel.DataPivotHierarchy:class" />
-        description: The DataPivotHierarchy object used to calculate the value in the specified cell.
+        description: >-
+          The DataPivotHierarchy object used to calculate the value in the
+          specified cell.
   - name: getFilterAxisRange()
     uid: excel!Excel.PivotLayout#getFilterAxisRange:member(1)
     package: excel!
     fullName: getFilterAxisRange()
     summary: Returns the range of the PivotTable's filter area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -527,51 +682,73 @@ methods:
     uid: excel!Excel.PivotLayout#getPivotItems:member(1)
     package: excel!
     fullName: getPivotItems(axis, cell)
-    summary: Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the PivotItems from an axis that make up the value in a specified
+      range within the PivotTable.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getPivotItems(axis: Excel.PivotAxis, cell: Range | string): Excel.PivotItemCollection;'
+      content: >-
+        getPivotItems(axis: Excel.PivotAxis, cell: Range | string):
+        Excel.PivotItemCollection;
       parameters:
         - id: axis
-          description: The axis from which to get the PivotItems. Must be either "row" or "column."
+          description: >-
+            The axis from which to get the PivotItems. Must be either "row" or
+            "column."
           type: <xref uid="excel!Excel.PivotAxis:enum" />
         - id: cell
           description: A single cell within the PivotTable's data body.
           type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: <xref uid="excel!Excel.PivotItemCollection:class" />
-        description: A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
+        description: >-
+          A PivotItemCollection of the PivotItems that are used to calculate the
+          values in the specified row.
   - name: getPivotItems(axis, cell)
     uid: excel!Excel.PivotLayout#getPivotItems:member(2)
     package: excel!
     fullName: getPivotItems(axis, cell)
-    summary: Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the PivotItems from an axis that make up the value in a specified
+      range within the PivotTable.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getPivotItems(axis: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string): Excel.PivotItemCollection;'
+      content: >-
+        getPivotItems(axis: "Unknown" | "Row" | "Column" | "Data" | "Filter",
+        cell: Range | string): Excel.PivotItemCollection;
       parameters:
         - id: axis
-          description: The axis from which to get the PivotItems. Must be either "row" or "column."
+          description: >-
+            The axis from which to get the PivotItems. Must be either "row" or
+            "column."
           type: '"Unknown" | "Row" | "Column" | "Data" | "Filter"'
         - id: cell
           description: A single cell within the PivotTable's data body.
           type: <xref uid="excel!Excel.Range:class" /> | string
       return:
         type: <xref uid="excel!Excel.PivotItemCollection:class" />
-        description: A PivotItemCollection of the PivotItems that are used to calculate the values in the specified row.
+        description: >-
+          A PivotItemCollection of the PivotItems that are used to calculate the
+          values in the specified row.
   - name: getRange()
     uid: excel!Excel.PivotLayout#getRange:member(1)
     package: excel!
     fullName: getRange()
     summary: Returns the range the PivotTable exists on, excluding the filter area.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -584,8 +761,10 @@ methods:
     package: excel!
     fullName: getRowLabelRange()
     summary: Returns the range where the PivotTable's row labels reside.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -597,17 +776,23 @@ methods:
     uid: excel!Excel.PivotLayout#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.PivotLayoutLoadOptions): Excel.PivotLayout;'
+      content: >-
+        load(options?: Excel.Interfaces.PivotLayoutLoadOptions):
+        Excel.PivotLayout;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="excel!Excel.Interfaces.PivotLayoutLoadOptions:interface" />
+          type: >-
+            <xref uid="excel!Excel.Interfaces.PivotLayoutLoadOptions:interface"
+            />
       return:
         type: <xref uid="excel!Excel.PivotLayout:class" />
         description: ''
@@ -615,16 +800,20 @@ methods:
     uid: excel!Excel.PivotLayout#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.PivotLayout;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.PivotLayout:class" />
@@ -633,9 +822,11 @@ methods:
     uid: excel!Excel.PivotLayout#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -646,7 +837,11 @@ methods:
                 }): Excel.PivotLayout;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -659,14 +854,23 @@ methods:
     uid: excel!Excel.PivotLayout#repeatAllItemLabels:member(1)
     package: excel!
     fullName: repeatAllItemLabels(repeatLabels)
-    summary: Sets the "repeat all item labels" setting across all fields in the PivotTable.
-    remarks: |-
-      \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Sets the "repeat all item labels" setting across all fields in the
+      PivotTable.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
+
 
       await Excel.run(async (context) => {
         // Repeat the PivotItem labels for each row used by another level of the row hierarchy.
@@ -678,15 +882,18 @@ methods:
 
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'repeatAllItemLabels(repeatLabels: boolean): void;'
       parameters:
         - id: repeatLabels
-          description: True turns on the label-repetition display setting. False turns it off.
+          description: >-
+            True turns on the label-repetition display setting. False turns it
+            off.
           type: boolean
       return:
         type: void
@@ -695,19 +902,31 @@ methods:
     uid: excel!Excel.PivotLayout#set:member(1)
     package: excel!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.PivotLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.PivotLayoutUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-          type: <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData:interface" />
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref uid="excel!Excel.Interfaces.PivotLayoutUpdateData:interface"
+            />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -716,9 +935,11 @@ methods:
     uid: excel!Excel.PivotLayout#set:member(2)
     package: excel!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -734,16 +955,23 @@ methods:
     uid: excel!Excel.PivotLayout#setAutoSortOnCell:member(1)
     package: excel!
     fullName: setAutoSortOnCell(cell, sortBy)
-    summary: Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Sets the PivotTable to automatically sort using the specified cell to
+      automatically select all necessary criteria and context. This behaves
+      identically to applying an autosort from the UI.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setAutoSortOnCell(cell: Range | string, sortBy: Excel.SortBy): void;'
       parameters:
         - id: cell
-          description: A single cell to use get the criteria from for applying the autosort.
+          description: >-
+            A single cell to use get the criteria from for applying the
+            autosort.
           type: <xref uid="excel!Excel.Range:class" /> | string
         - id: sortBy
           description: The direction of the sort.
@@ -755,16 +983,25 @@ methods:
     uid: excel!Excel.PivotLayout#setAutoSortOnCell:member(2)
     package: excel!
     fullName: setAutoSortOnCell(cell, sortBy)
-    summary: Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Sets the PivotTable to automatically sort using the specified cell to
+      automatically select all necessary criteria and context. This behaves
+      identically to applying an autosort from the UI.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAutoSortOnCell(cell: Range | string, sortBy: "Ascending" | "Descending"): void;'
+      content: >-
+        setAutoSortOnCell(cell: Range | string, sortBy: "Ascending" |
+        "Descending"): void;
       parameters:
         - id: cell
-          description: A single cell to use get the criteria from for applying the autosort.
+          description: >-
+            A single cell to use get the criteria from for applying the
+            autosort.
           type: <xref uid="excel!Excel.Range:class" /> | string
         - id: sortBy
           description: The direction of the sort.
@@ -777,16 +1014,26 @@ methods:
     package: excel!
     fullName: setStyle(style)
     summary: Sets the style applied to the PivotTable.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'setStyle(style: string | PivotTableStyle | BuiltInPivotTableStyle): void;'
+      content: >-
+        setStyle(style: string | PivotTableStyle | BuiltInPivotTableStyle):
+        void;
       parameters:
         - id: style
-          description: The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
-          type: string | <xref uid="excel!Excel.PivotTableStyle:class" /> | <xref uid="excel!Excel.BuiltInPivotTableStyle:enum" />
+          description: >-
+            The style to apply to the PivotTable. An `InvalidArgumentException`
+            is thrown if a string is provided that does not match the name of
+            any style.
+          type: >-
+            string | <xref uid="excel!Excel.PivotTableStyle:class" /> | <xref
+            uid="excel!Excel.BuiltInPivotTableStyle:enum" />
       return:
         type: void
         description: ''
@@ -794,9 +1041,16 @@ methods:
     uid: excel!Excel.PivotLayout#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.PivotLayout` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.PivotLayout`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.PivotLayoutData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

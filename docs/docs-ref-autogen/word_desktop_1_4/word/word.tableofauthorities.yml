@@ -4,8 +4,10 @@ uid: word!Word.TableOfAuthorities:class
 package: word!
 fullName: Word.TableOfAuthorities
 summary: Represents a table of authorities in a Word document.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.TableOfAuthorities#bookmark:member
     package: word!
     fullName: bookmark
-    summary: Specifies the name of the bookmark from which to collect table of authorities entries.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the name of the bookmark from which to collect table of
+      authorities entries.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,17 @@ properties:
     uid: word!Word.TableOfAuthorities#category:member
     package: word!
     fullName: category
-    summary: Specifies the category of entries to be included in the table of authorities. Values 0 through 16 correspond to the items listed in the Category box of the Table of Authorities dialog. To learn how to access this through the Word UI, see [Create a table of authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the category of entries to be included in the table of
+      authorities. Values 0 through 16 correspond to the items listed in the
+      Category box of the Table of Authorities dialog. To learn how to access
+      this through the Word UI, see [Create a table of
+      authorities](https://support.microsoft.com/office/ddd126ae-52bc-4299-9558-06dd0e4fe8c0)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +54,11 @@ properties:
     uid: word!Word.TableOfAuthorities#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +69,13 @@ properties:
     uid: word!Word.TableOfAuthorities#entrySeparator:member
     package: word!
     fullName: entrySeparator
-    summary: Specifies a separator of up to five characters. This appears between the table of authorities entry and its page number.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between the
+      table of authorities entry and its page number.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +86,13 @@ properties:
     uid: word!Word.TableOfAuthorities#isCategoryHeaderIncluded:member
     package: word!
     fullName: isCategoryHeaderIncluded
-    summary: Specifies whether the category name for a group of entries appears in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the category name for a group of entries appears in the
+      table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +103,13 @@ properties:
     uid: word!Word.TableOfAuthorities#isEntryFormattingKept:member
     package: word!
     fullName: isEntryFormattingKept
-    summary: Specifies whether the entries in the table of authorities are displayed with their formatting in the table.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the entries in the table of authorities are displayed
+      with their formatting in the table.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +120,13 @@ properties:
     uid: word!Word.TableOfAuthorities#isPassimUsed:member
     package: word!
     fullName: isPassimUsed
-    summary: Specifies whether references to the same authority that are repeated on five or more pages are replaced with "Passim".
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether references to the same authority that are repeated on
+      five or more pages are replaced with "Passim".
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +137,13 @@ properties:
     uid: word!Word.TableOfAuthorities#pageNumberSeparator:member
     package: word!
     fullName: pageNumberSeparator
-    summary: Specifies a separator of up to five characters. This appears between individual page references in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between
+      individual page references in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +154,13 @@ properties:
     uid: word!Word.TableOfAuthorities#pageRangeSeparator:member
     package: word!
     fullName: pageRangeSeparator
-    summary: Specifies a separator of up to five characters. This appears between ranges of pages in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between
+      ranges of pages in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,8 +172,10 @@ properties:
     package: word!
     fullName: range
     summary: Gets the portion of a document that is this table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,9 +186,14 @@ properties:
     uid: word!Word.TableOfAuthorities#sequenceName:member
     package: word!
     fullName: sequenceName
-    summary: Specifies the [Sequence (SEQ) field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be) identifier for the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the [Sequence (SEQ)
+      field](https://support.microsoft.com/office/062a387b-dfc9-4ef8-8235-29ee113d59be)
+      identifier for the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,9 +204,13 @@ properties:
     uid: word!Word.TableOfAuthorities#sequenceSeparator:member
     package: word!
     fullName: sequenceSeparator
-    summary: Specifies a separator of up to five characters. This appears between the sequence number and the page number in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a separator of up to five characters. This appears between the
+      sequence number and the page number in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,23 +221,33 @@ properties:
     uid: word!Word.TableOfAuthorities#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: Specifies the leader character that appears between entries and their associated page numbers in the table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the leader character that appears between entries and their
+      associated page numbers in the table of authorities.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'tabLeader: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot";'
+      content: >-
+        tabLeader: Word.TabLeader | "Spaces" | "Dots" | "Dashes" | "Lines" |
+        "Heavy" | "MiddleDot";
       return:
-        type: <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes" | "Lines" | "Heavy" | "MiddleDot"
+        type: >-
+          <xref uid="word!Word.TabLeader:enum" /> | "Spaces" | "Dots" | "Dashes"
+          | "Lines" | "Heavy" | "MiddleDot"
 methods:
   - name: delete()
     uid: word!Word.TableOfAuthorities#delete:member(1)
     package: word!
     fullName: delete()
     summary: Deletes this table of authorities.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,17 +259,24 @@ methods:
     uid: word!Word.TableOfAuthorities#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Word.Interfaces.TableOfAuthoritiesLoadOptions): Word.TableOfAuthorities;'
+      content: >-
+        load(options?: Word.Interfaces.TableOfAuthoritiesLoadOptions):
+        Word.TableOfAuthorities;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="word!Word.Interfaces.TableOfAuthoritiesLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.TableOfAuthoritiesLoadOptions:interface"
+            />
       return:
         type: <xref uid="word!Word.TableOfAuthorities:class" />
         description: ''
@@ -216,16 +284,20 @@ methods:
     uid: word!Word.TableOfAuthorities#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.TableOfAuthorities;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.TableOfAuthorities:class" />
@@ -234,9 +306,11 @@ methods:
     uid: word!Word.TableOfAuthorities#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -247,7 +321,11 @@ methods:
                 }): Word.TableOfAuthorities;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -260,19 +338,31 @@ methods:
     uid: word!Word.TableOfAuthorities#set:member(1)
     package: word!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.TableOfAuthoritiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.TableOfAuthoritiesUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-          type: <xref uid="word!Word.Interfaces.TableOfAuthoritiesUpdateData:interface" />
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="word!Word.Interfaces.TableOfAuthoritiesUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -281,9 +371,11 @@ methods:
     uid: word!Word.TableOfAuthorities#set:member(2)
     package: word!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,9 +391,17 @@ methods:
     uid: word!Word.TableOfAuthorities#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.TableOfAuthorities` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableOfAuthoritiesData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.TableOfAuthorities` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `Word.Interfaces.TableOfAuthoritiesData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,9 +413,18 @@ methods:
     uid: word!Word.TableOfAuthorities#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,9 +436,16 @@ methods:
     uid: word!Word.TableOfAuthorities#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

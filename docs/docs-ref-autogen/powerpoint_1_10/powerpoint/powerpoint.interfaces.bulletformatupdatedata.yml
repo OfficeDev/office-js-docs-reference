@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.BulletFormatUpdateData
 uid: powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BulletFormatUpdateData
-summary: An interface for updating data on the `BulletFormat` object, for use in `bulletFormat.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `BulletFormat` object, for use in
+  `bulletFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,35 +16,106 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData#style:member
     package: powerpoint!
     fullName: style
-    summary: Specifies the style of the bullets in the paragraph. See [PowerPoint.BulletStyle](xref:powerpoint!PowerPoint.BulletStyle:enum) for details. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet formatting properties.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the style of the bullets in the paragraph. See
+      [PowerPoint.BulletStyle](xref:powerpoint!PowerPoint.BulletStyle:enum) for
+      details. Returns `null` if the
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet formatting properties.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'style?: PowerPoint.BulletStyle | "Unsupported" | "AlphabetLowercasePeriod" | "AlphabetUppercasePeriod" | "ArabicNumeralParenthesisRight" | "ArabicNumeralPeriod" | "RomanLowercaseParenthesesBoth" | "RomanLowercaseParenthesisRight" | "RomanLowercasePeriod" | "RomanUppercasePeriod" | "AlphabetLowercaseParenthesesBoth" | "AlphabetLowercaseParenthesisRight" | "AlphabetUppercaseParenthesesBoth" | "AlphabetUppercaseParenthesisRight" | "ArabicNumeralParenthesesBoth" | "ArabicNumeralPlain" | "RomanUppercaseParenthesesBoth" | "RomanUppercaseParenthesisRight" | "SimplifiedChinesePlain" | "SimplifiedChinesePeriod" | "CircleNumberDoubleBytePlain" | "CircleNumberWideDoubleByteWhitePlain" | "CircleNumberWideDoubleByteBlackPlain" | "TraditionalChinesePlain" | "TraditionalChinesePeriod" | "ArabicAlphabetDash" | "ArabicAbjadDash" | "HebrewAlphabetDash" | "KanjiKoreanPlain" | "KanjiKoreanPeriod" | "ArabicDoubleBytePlain" | "ArabicDoubleBytePeriod" | "ThaiAlphabetPeriod" | "ThaiAlphabetParenthesisRight" | "ThaiAlphabetParenthesesBoth" | "ThaiNumeralPeriod" | "ThaiNumeralParenthesisRight" | "ThaiNumeralParenthesesBoth" | "HindiAlphabetPeriod" | "HindiNumeralPeriod" | "KanjiSimplifiedChineseDoubleBytePeriod" | "HindiNumeralParenthesisRight" | "HindiAlphabet1Period" | null;'
+      content: >-
+        style?: PowerPoint.BulletStyle | "Unsupported" |
+        "AlphabetLowercasePeriod" | "AlphabetUppercasePeriod" |
+        "ArabicNumeralParenthesisRight" | "ArabicNumeralPeriod" |
+        "RomanLowercaseParenthesesBoth" | "RomanLowercaseParenthesisRight" |
+        "RomanLowercasePeriod" | "RomanUppercasePeriod" |
+        "AlphabetLowercaseParenthesesBoth" | "AlphabetLowercaseParenthesisRight"
+        | "AlphabetUppercaseParenthesesBoth" |
+        "AlphabetUppercaseParenthesisRight" | "ArabicNumeralParenthesesBoth" |
+        "ArabicNumeralPlain" | "RomanUppercaseParenthesesBoth" |
+        "RomanUppercaseParenthesisRight" | "SimplifiedChinesePlain" |
+        "SimplifiedChinesePeriod" | "CircleNumberDoubleBytePlain" |
+        "CircleNumberWideDoubleByteWhitePlain" |
+        "CircleNumberWideDoubleByteBlackPlain" | "TraditionalChinesePlain" |
+        "TraditionalChinesePeriod" | "ArabicAlphabetDash" | "ArabicAbjadDash" |
+        "HebrewAlphabetDash" | "KanjiKoreanPlain" | "KanjiKoreanPeriod" |
+        "ArabicDoubleBytePlain" | "ArabicDoubleBytePeriod" |
+        "ThaiAlphabetPeriod" | "ThaiAlphabetParenthesisRight" |
+        "ThaiAlphabetParenthesesBoth" | "ThaiNumeralPeriod" |
+        "ThaiNumeralParenthesisRight" | "ThaiNumeralParenthesesBoth" |
+        "HindiAlphabetPeriod" | "HindiNumeralPeriod" |
+        "KanjiSimplifiedChineseDoubleBytePeriod" |
+        "HindiNumeralParenthesisRight" | "HindiAlphabet1Period" | null;
       return:
-        type: <xref uid="powerpoint!PowerPoint.BulletStyle:enum" /> | "Unsupported" | "AlphabetLowercasePeriod" | "AlphabetUppercasePeriod" | "ArabicNumeralParenthesisRight" | "ArabicNumeralPeriod" | "RomanLowercaseParenthesesBoth" | "RomanLowercaseParenthesisRight" | "RomanLowercasePeriod" | "RomanUppercasePeriod" | "AlphabetLowercaseParenthesesBoth" | "AlphabetLowercaseParenthesisRight" | "AlphabetUppercaseParenthesesBoth" | "AlphabetUppercaseParenthesisRight" | "ArabicNumeralParenthesesBoth" | "ArabicNumeralPlain" | "RomanUppercaseParenthesesBoth" | "RomanUppercaseParenthesisRight" | "SimplifiedChinesePlain" | "SimplifiedChinesePeriod" | "CircleNumberDoubleBytePlain" | "CircleNumberWideDoubleByteWhitePlain" | "CircleNumberWideDoubleByteBlackPlain" | "TraditionalChinesePlain" | "TraditionalChinesePeriod" | "ArabicAlphabetDash" | "ArabicAbjadDash" | "HebrewAlphabetDash" | "KanjiKoreanPlain" | "KanjiKoreanPeriod" | "ArabicDoubleBytePlain" | "ArabicDoubleBytePeriod" | "ThaiAlphabetPeriod" | "ThaiAlphabetParenthesisRight" | "ThaiAlphabetParenthesesBoth" | "ThaiNumeralPeriod" | "ThaiNumeralParenthesisRight" | "ThaiNumeralParenthesesBoth" | "HindiAlphabetPeriod" | "HindiNumeralPeriod" | "KanjiSimplifiedChineseDoubleBytePeriod" | "HindiNumeralParenthesisRight" | "HindiAlphabet1Period" | null
+        type: >-
+          <xref uid="powerpoint!PowerPoint.BulletStyle:enum" /> | "Unsupported"
+          | "AlphabetLowercasePeriod" | "AlphabetUppercasePeriod" |
+          "ArabicNumeralParenthesisRight" | "ArabicNumeralPeriod" |
+          "RomanLowercaseParenthesesBoth" | "RomanLowercaseParenthesisRight" |
+          "RomanLowercasePeriod" | "RomanUppercasePeriod" |
+          "AlphabetLowercaseParenthesesBoth" |
+          "AlphabetLowercaseParenthesisRight" |
+          "AlphabetUppercaseParenthesesBoth" |
+          "AlphabetUppercaseParenthesisRight" | "ArabicNumeralParenthesesBoth" |
+          "ArabicNumeralPlain" | "RomanUppercaseParenthesesBoth" |
+          "RomanUppercaseParenthesisRight" | "SimplifiedChinesePlain" |
+          "SimplifiedChinesePeriod" | "CircleNumberDoubleBytePlain" |
+          "CircleNumberWideDoubleByteWhitePlain" |
+          "CircleNumberWideDoubleByteBlackPlain" | "TraditionalChinesePlain" |
+          "TraditionalChinesePeriod" | "ArabicAlphabetDash" | "ArabicAbjadDash"
+          | "HebrewAlphabetDash" | "KanjiKoreanPlain" | "KanjiKoreanPeriod" |
+          "ArabicDoubleBytePlain" | "ArabicDoubleBytePeriod" |
+          "ThaiAlphabetPeriod" | "ThaiAlphabetParenthesisRight" |
+          "ThaiAlphabetParenthesesBoth" | "ThaiNumeralPeriod" |
+          "ThaiNumeralParenthesisRight" | "ThaiNumeralParenthesesBoth" |
+          "HindiAlphabetPeriod" | "HindiNumeralPeriod" |
+          "KanjiSimplifiedChineseDoubleBytePeriod" |
+          "HindiNumeralParenthesisRight" | "HindiAlphabet1Period" | null
   - name: type
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData#type:member
     package: powerpoint!
     fullName: type
-    summary: Specifies the type of the bullets in the paragraph. See [PowerPoint.BulletType](xref:powerpoint!PowerPoint.BulletType:enum) for details. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet formatting properties.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the type of the bullets in the paragraph. See
+      [PowerPoint.BulletType](xref:powerpoint!PowerPoint.BulletType:enum) for
+      details. Returns `null` if the
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet formatting properties.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: PowerPoint.BulletType | "Unsupported" | "None" | "Numbered" | "Unnumbered" | null;'
+      content: >-
+        type?: PowerPoint.BulletType | "Unsupported" | "None" | "Numbered" |
+        "Unnumbered" | null;
       return:
-        type: <xref uid="powerpoint!PowerPoint.BulletType:enum" /> | "Unsupported" | "None" | "Numbered" | "Unnumbered" | null
+        type: >-
+          <xref uid="powerpoint!PowerPoint.BulletType:enum" /> | "Unsupported" |
+          "None" | "Numbered" | "Unnumbered" | null
   - name: visible
     uid: powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData#visible:member
     package: powerpoint!
     fullName: visible
-    summary: Specifies if the bullets in the paragraph are visible. Returns `null` if the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) includes text fragments with different bullet visibility values.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if the bullets in the paragraph are visible. Returns `null` if
+      the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)
+      includes text fragments with different bullet visibility values.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

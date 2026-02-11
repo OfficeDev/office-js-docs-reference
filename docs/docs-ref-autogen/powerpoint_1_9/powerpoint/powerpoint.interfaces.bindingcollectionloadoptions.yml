@@ -3,9 +3,14 @@ name: PowerPoint.Interfaces.BindingCollectionLoadOptions
 uid: powerpoint!PowerPoint.Interfaces.BindingCollectionLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BindingCollectionLoadOptions
-summary: Represents the collection of all the binding objects that are part of the presentation.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the collection of all the binding objects that are part of the
+  presentation.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +19,12 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BindingCollectionLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +36,11 @@ properties:
     package: powerpoint!
     fullName: id
     summary: 'For EACH ITEM in the collection: Represents the binding identifier.'
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +51,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.BindingCollectionLoadOptions#type:member
     package: powerpoint!
     fullName: type
-    summary: 'For EACH ITEM in the collection: Returns the type of the binding. See `BindingType` for details.'
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Returns the type of the binding. See
+      `BindingType` for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

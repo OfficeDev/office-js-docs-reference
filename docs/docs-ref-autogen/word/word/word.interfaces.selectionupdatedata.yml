@@ -3,9 +3,11 @@ name: Word.Interfaces.SelectionUpdateData
 uid: word!Word.Interfaces.SelectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.SelectionUpdateData
-summary: An interface for updating data on the `Selection` object, for use in `selection.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Selection` object, for use in
+  `selection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: end
     summary: Specifies the ending character position of the selection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: word!
     fullName: fitTextWidth
     summary: Specifies the width in which Word fits the text in the current selection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +47,10 @@ properties:
     package: word!
     fullName: isColumnSelectModeActive
     summary: Specifies whether column selection mode is active.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +62,10 @@ properties:
     package: word!
     fullName: isExtendModeActive
     summary: Specifies whether Extend mode is active.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +77,10 @@ properties:
     package: word!
     fullName: isStartActive
     summary: Specifies whether the beginning of the selection is active.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +92,10 @@ properties:
     package: word!
     fullName: languageDetected
     summary: Specifies whether Word has detected the language of the selected text.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,21 +107,31 @@ properties:
     package: word!
     fullName: orientation
     summary: Specifies the orientation of text in the selection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'orientation?: Word.TextOrientation | "Horizontal" | "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" | "Vertical";'
+      content: >-
+        orientation?: Word.TextOrientation | "Horizontal" | "Upward" |
+        "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" |
+        "Vertical";
       return:
-        type: <xref uid="word!Word.TextOrientation:enum" /> | "Horizontal" | "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast" | "Vertical"
+        type: >-
+          <xref uid="word!Word.TextOrientation:enum" /> | "Horizontal" |
+          "Upward" | "Downward" | "VerticalFarEast" | "HorizontalRotatedFarEast"
+          | "Vertical"
   - name: start
     uid: word!Word.Interfaces.SelectionUpdateData#start:member
     package: word!
     fullName: start
     summary: Specifies the starting character position of the selection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,8 +143,10 @@ properties:
     package: word!
     fullName: text
     summary: Specifies the text in the selection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

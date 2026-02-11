@@ -3,18 +3,28 @@ name: Office.AppointmentRead
 uid: outlook!Office.AppointmentRead:interface
 package: outlook!
 fullName: Office.AppointmentRead
-summary: |-
-  The appointment attendee mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
+summary: >-
+  The appointment attendee mode of
+  [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
-  \*\*Important\*\*: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item) page.
+
+  **Important**: This is an internal Outlook object, not directly exposed
+  through existing interfaces. You should treat this as a mode of
+  `Office.context.mailbox.item`<!-- -->. For more information, refer to the
+  [Object
+  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item)
+  page.
+
 
   Parent interfaces:
 
+
   - [ItemRead](xref:outlook!Office.ItemRead:interface)
+
 
   - [Appointment](xref:outlook!Office.Appointment:interface)
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -24,23 +34,42 @@ properties:
     package: outlook!
     fullName: attachments
     summary: Gets the item's attachments as an array.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
 
-      \*\*Important\*\*:
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!-- -->.
 
-      - Attachments added using the \*\*Upload and share\*\* option aren't returned.
+      **Important**:
+
+
+      - Certain types of files are blocked by Outlook due to potential security
+      issues and are therefore not returned. For more information, see [Blocked
+      attachments in
+      Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!--
+      -->.
+
+
+      - Attachments added using the **Upload and share** option aren't
+      returned.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
+
 
       const item = Office.context.mailbox.item;
+
 
       if (item.attachments.length > 0) {
           for (let i = 0; i < item.attachments.length; i++) {
@@ -54,8 +83,9 @@ properties:
       } else {
           console.log("This mail item doesn't contain any attachments.");
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,17 +97,29 @@ properties:
     package: outlook!
     fullName: body
     summary: Gets an object that provides methods for manipulating the body of an item.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
+
       // This example gets the body of the item as plain text.
+
       Office.context.mailbox.item.body.getAsync(
           Office.CoercionType.Text,
           { asyncContext: "This is passed to the callback" },
@@ -86,14 +128,18 @@ properties:
           }
       );
 
-      // The following is an example of the result parameter passed to the callback function.
+
+      // The following is an example of the result parameter passed to the
+      callback function.
+
       {
           "value": "TEXT of whole body (including message threads that appear below the current body)",
           "status": "succeeded",
           "asyncContext": "This is passed to the callback"
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,17 +151,30 @@ properties:
     package: outlook!
     fullName: categories
     summary: Gets an object that provides methods for managing the item's categories.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -131,10 +190,14 @@ properties:
         }
       });
 
+
       ...
 
+
       // Note: In order for you to successfully add a category,
+
       // it must be in the mailbox categories master list.
+
 
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -157,7 +220,9 @@ properties:
         }
       });
 
+
       ...
+
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -179,8 +244,9 @@ properties:
           console.error(asyncResult.error);
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,19 +258,31 @@ properties:
     package: outlook!
     fullName: dateTimeCreated
     summary: Gets the date and time that an item was created.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
 
-      console.log(`Creation date and time: ${Office.context.mailbox.item.dateTimeCreated}`);
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
+
+
+      console.log(`Creation date and time:
+      ${Office.context.mailbox.item.dateTimeCreated}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,23 +294,43 @@ properties:
     package: outlook!
     fullName: dateTimeModified
     summary: Gets the date and time that an item was last modified.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Important**: This property isn't supported in Outlook on Android or
+      on iOS. For more information on supported APIs in Outlook mobile, see
+      [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
 
-      console.log(`Date and time item last modified: ${Office.context.mailbox.item.dateTimeModified}`);
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
+
+
+      console.log(`Date and time item last modified:
+      ${Office.context.mailbox.item.dateTimeModified}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,27 +341,49 @@ properties:
     uid: outlook!Office.AppointmentRead#end:member
     package: outlook!
     fullName: end
-    summary: |-
+    summary: >-
       Gets the date and time that the appointment is to end.
 
-      The `end` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
 
-      When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on the client to UTC for the server.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The `end` property is a `Date` object expressed as a Coordinated Universal
+      Time (UTC) date and time value. You can use the `convertToLocalClientTime`
+      method to convert the `end` property value to the client's local date and
+      time.
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      When you use the `Time.setAsync` method to set the end time, you should
+      use the `convertToUtcClientTime` method to convert the local time on the
+      client to UTC for the server.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-end-read.yaml
+
 
       const time = Office.context.mailbox.item.end;
+
       const localTime = Office.context.mailbox.convertToLocalClientTime(time);
-      console.log(`Appointment ends (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
+      console.log(`Appointment ends (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,23 +394,48 @@ properties:
     uid: outlook!Office.AppointmentRead#enhancedLocation:member
     package: outlook!
     fullName: enhancedLocation
-    summary: |-
+    summary: >-
       Gets the locations of an appointment.
 
-      The `enhancedLocation` property returns an [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object that allows you to get the set of locations (each represented by a [LocationDetails](xref:outlook!Office.LocationDetails:interface) object) associated with the appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The `enhancedLocation` property returns an
+      [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object
+      that allows you to get the set of locations (each represented by a
+      [LocationDetails](xref:outlook!Office.LocationDetails:interface) object)
+      associated with the appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
 
-      \*\*Important\*\*: To manage the locations of an appointment in Outlook clients that don't support Mailbox requirement set 1.8, use the `location` property instead. For guidance on selecting the right location API for your scenario, see [Get or set the location when composing an appointmnt in Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!-- -->.
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Important**: To manage the locations of an appointment in Outlook
+      clients that don't support Mailbox requirement set 1.8, use the `location`
+      property instead. For guidance on selecting the right location API for
+      your scenario, see [Get or set the location when composing an appointmnt
+      in
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+      -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
 
       Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -309,8 +454,9 @@ properties:
           console.log("There are no locations.");
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -322,20 +468,33 @@ properties:
     package: outlook!
     fullName: isAllDayEvent
     summary: Returns a boolean value indicating whether the event is all day.
-    remarks: |-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
+
       const isAllDayEvent = Office.context.mailbox.item.isAllDayEvent;
+
       console.log("Is this an all-day event? " + isAllDayEvent);
+
       ```
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -346,25 +505,40 @@ properties:
     uid: outlook!Office.AppointmentRead#itemClass:member
     package: outlook!
     fullName: itemClass
-    summary: |-
+    summary: >-
       Gets the Exchange Web Services item class of the selected appointment.
 
-      Returns `IPM.Appointment` for non-recurring appointments and `IPM.Appointment.Occurrence` for recurring appointments.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      Returns `IPM.Appointment` for non-recurring appointments and
+      `IPM.Appointment.Occurrence` for recurring appointments.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: You can create custom classes that extend a default item class. For example, `IPM.Appointment.Contoso`<!-- -->.
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Important**: You can create custom classes that extend a default
+      item class. For example, `IPM.Appointment.Contoso`<!-- -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-class-read.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-class-read.yaml
+
 
       console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -375,35 +549,65 @@ properties:
     uid: outlook!Office.AppointmentRead#itemId:member
     package: outlook!
     fullName: itemId
-    summary: Gets the [Exchange Web Services (EWS) item identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange) of the current item.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    summary: >-
+      Gets the [Exchange Web Services (EWS) item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
+      of the current item.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
 
-      \*\*Important\*\*:
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - The `itemId` property isn't available in compose mode. If an item identifier is required, the `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the item identifier in the `asyncResult.value` parameter in the callback function. If the item is already saved, you can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
 
-      - The item ID returned isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!-- -->.
+      **Important**:
+
+
+      - The `itemId` property isn't available in compose mode. If an item
+      identifier is required, the `Office.context.mailbox.item.saveAsync` method
+      can be used to save the item to the store, which will return the item
+      identifier in the `asyncResult.value` parameter in the callback function.
+      If the item is already saved, you can call the
+      `Office.context.mailbox.item.getItemIdAsync` method instead.
+
+
+      - The item ID returned isn't identical to the Outlook Entry ID or the ID
+      used by the Outlook REST API. Before making REST API calls using this
+      value, it should be converted using
+      `Office.context.mailbox.convertToRestId`<!-- -->.
+
 
       #### Examples
 
+
       ```TypeScript
+
       // The following code checks for the presence of an item
+
       // identifier. If the `itemId` property returns `null` or
+
       // `undefined`, it saves the item to the store and gets the
+
       // item identifier from the asynchronous result.
+
       // **Important**: `saveAsync` was introduced with requirement set 1.3
+
       // so you can't get the `itemId` in Compose mode in earlier sets.
+
       let itemId = Office.context.mailbox.item.itemId;
+
       if (itemId === null || itemId == undefined) {
           Office.context.mailbox.item.saveAsync(function(result) {
               itemId = result.value;
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -414,21 +618,35 @@ properties:
     uid: outlook!Office.AppointmentRead#itemType:member
     package: outlook!
     fullName: itemType
-    summary: |-
+    summary: >-
       Gets the type of item that an instance represents.
 
-      The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object instance is a message or an appointment.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      The `itemType` property returns one of the `ItemType` enumeration values,
+      indicating whether the item object instance is a message or an
+      appointment.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
+
 
       const itemType = Office.context.mailbox.item.itemType;
+
       switch (itemType) {
           case Office.MailboxEnums.ItemType.Appointment:
               console.log(`Current item is an ${itemType}.`);
@@ -437,8 +655,9 @@ properties:
               console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
               break;
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -449,27 +668,52 @@ properties:
     uid: outlook!Office.AppointmentRead#location:member
     package: outlook!
     fullName: location
-    summary: |-
+    summary: >-
       Gets the location of an appointment.
 
-      The `location` property returns a string that contains the location of the appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The `location` property returns a string that contains the location of the
+      appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
 
-      \*\*Important\*\*: The `enhancedLocation` property was introduced in Mailbox requirement set 1.8. Use the `enhancedLocation` property to better identify and manage appointment locations, especially if you need to determine the location type. For guidance on selecting the right location API for your scenario, see [Get or set the location when composing an appointmnt in Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!-- -->.
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Important**: The `enhancedLocation` property was introduced in
+      Mailbox requirement set 1.8. Use the `enhancedLocation` property to better
+      identify and manage appointment locations, especially if you need to
+      determine the location type. For guidance on selecting the right location
+      API for your scenario, see [Get or set the location when composing an
+      appointmnt in
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/get-or-set-the-location-of-an-appointment)<!--
+      -->.
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-location-read.yaml
 
-      console.log(`Appointment location: ${Office.context.mailbox.item.location}`);
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-location-read.yaml
+
+
+      console.log(`Appointment location:
+      ${Office.context.mailbox.item.location}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -480,23 +724,40 @@ properties:
     uid: outlook!Office.AppointmentRead#normalizedSubject:member
     package: outlook!
     fullName: normalizedSubject
-    summary: |-
-      Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
+    summary: >-
+      Gets the subject of an item, with all prefixes removed (including RE: and
+      FWD:).
 
-      The `normalizedSubject` property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the `subject` property.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      The `normalizedSubject` property gets the subject of the item, with any
+      standard prefixes (such as RE: and FW:) that are added by email programs.
+      To get the subject of the item with the prefixes intact, use the `subject`
+      property.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
 
-      console.log(`Normalized subject: ${Office.context.mailbox.item.normalizedSubject}`);
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
+
+
+      console.log(`Normalized subject:
+      ${Office.context.mailbox.item.normalizedSubject}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -508,32 +769,59 @@ properties:
     package: outlook!
     fullName: notificationMessages
     summary: Gets the notification messages for an item.
-    remarks: |-
-      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - To learn about the different types of notification messages you can implement, see [Create notifications for your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      **Important**:
+
+
+      - To learn about the different types of notification messages you can
+      implement, see [Create notifications for your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
+      -->.
+
+
+      - This property isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
 
       // Adds a progress indicator to the mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
       const details =
         {
           type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, (result) => {
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+      (result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
           console.log(`Failed to add progress notification with id = ${id}. Try using a different ID.`);
           return;
@@ -541,10 +829,15 @@ properties:
         console.log(`Added progress notification with id = ${id}.`);
       });
 
+
       ...
 
+
       // Adds an informational notification to the mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
       const details =
         {
           type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
@@ -552,7 +845,8 @@ properties:
           icon: "PG.Icon.16",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, (result) => {
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+      (result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
           console.log(`Failed to add informational notification with id = ${id}. Try using a different ID.`);
           return;
@@ -560,10 +854,15 @@ properties:
         console.log(`Added informational notification with id = ${id}.`);
       });
 
+
       ...
 
+
       // Adds a persistent information notification to the mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
       const details =
         {
           type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
@@ -571,7 +870,8 @@ properties:
           icon: "PG.Icon.16",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, (result) => {
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+      (result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
           console.log(`Failed to add persistent informational notification with id = ${id}. Try using a different ID.`);
           return;
@@ -579,10 +879,15 @@ properties:
         console.log(`Added persistent informational notification with id = ${id}.`);
       });
 
+
       ...
 
-      // Gets all the notification messages and their keys for the current mail item.
-      Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult) => {
+
+      // Gets all the notification messages and their keys for the current mail
+      item.
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync((asyncResult)
+      => {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
           console.log(asyncResult.error.message);
           return;
@@ -590,10 +895,15 @@ properties:
         console.log(JSON.stringify(asyncResult.value));
       });
 
+
       ...
 
+
       // Replaces a notification message of a given key with another message.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
         {
@@ -612,17 +922,23 @@ properties:
 
       ...
 
+
       // Removes a notification message from the current mail item.
-      const id = (document.getElementById("notificationId") as HTMLInputElement).value;
-      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result) => {
+
+      const id = (document.getElementById("notificationId") as
+      HTMLInputElement).value;
+
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, (result)
+      => {
         if (result.status === Office.AsyncResultStatus.Failed) {
           console.log(`Failed to remove notification with id = ${id}. ${result.error.message}.`);
           return;
         }
         console.log(`Removed notification with id = ${id}.`);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -633,30 +949,53 @@ properties:
     uid: outlook!Office.AppointmentRead#optionalAttendees:member
     package: outlook!
     fullName: optionalAttendees
-    summary: |-
-      Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
+    summary: >-
+      Provides access to the optional attendees of an event. The type of object
+      and level of access depend on the mode of the current item.
 
-      The `optionalAttendees` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
+
+      The `optionalAttendees` property returns an array that contains an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
+      object for each optional attendee to the meeting. The maximum number of
+      attendees returned varies per Outlook client.
+
 
       - Windows (new and classic): 500 attendees
 
-      - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 attendees
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 attendees
+
 
       - Android, classic Mac UI, iOS: 100 attendees
 
-      - New Mac UI, web browser: No limit
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      - New Mac UI, web browser: No limit
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-optional-attendees-appointment-attendee.yaml
 
-      const apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-optional-attendees-appointment-attendee.yaml
+
+
+      const apptOptionalAttendees =
+      Office.context.mailbox.item.optionalAttendees;
+
       console.log("Optional attendees:");
+
       for (let i = 0; i < apptOptionalAttendees.length; i++) {
         console.log(
           apptOptionalAttendees[i].displayName +
@@ -666,8 +1005,9 @@ properties:
             apptOptionalAttendees[i].appointmentResponse
         );
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -679,20 +1019,33 @@ properties:
     package: outlook!
     fullName: organizer
     summary: Gets the meeting organizer's email properties.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-attendee.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-attendee.yaml
+
 
       const apptOrganizer = Office.context.mailbox.item.organizer;
-      console.log("Organizer: " + apptOrganizer.displayName + " (" + apptOrganizer.emailAddress + ")");
+
+      console.log("Organizer: " + apptOrganizer.displayName + " (" +
+      apptOrganizer.emailAddress + ")");
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -703,27 +1056,52 @@ properties:
     uid: outlook!Office.AppointmentRead#recurrence:member
     package: outlook!
     fullName: recurrence
-    summary: |-
-      Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
+    summary: >-
+      Gets the recurrence pattern of an appointment. Gets the recurrence pattern
+      of a meeting request.
 
-      The `recurrence` property returns a [Recurrence](xref:outlook!Office.Recurrence:interface) object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments.
 
-      \*\*Note\*\*: Meeting requests have an `itemClass` value of `IPM.Schedule.Meeting.Request`<!-- -->.
+      The `recurrence` property returns a
+      [Recurrence](xref:outlook!Office.Recurrence:interface) object for
+      recurring appointments or meetings requests if an item is a series or an
+      instance in a series. `null` is returned for single appointments and
+      meeting requests of single appointments.
 
-      \*\*Note\*\*: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      **Note**: Meeting requests have an `itemClass` value of
+      `IPM.Schedule.Meeting.Request`<!-- -->.
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      **Note**: If the recurrence object is null, this indicates that the
+      object is a single appointment or a meeting request of a single
+      appointment and NOT a part of a series.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-recurrence-read.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-recurrence-read.yaml
+
 
       const recurrence = Office.context.mailbox.item.recurrence;
+
 
       if (recurrence === undefined) {
         console.log("This item is a message but not a meeting request.");
@@ -732,8 +1110,9 @@ properties:
       } else {
         console.log(JSON.stringify(recurrence));
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -744,32 +1123,58 @@ properties:
     uid: outlook!Office.AppointmentRead#requiredAttendees:member
     package: outlook!
     fullName: requiredAttendees
-    summary: |-
-      Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.
+    summary: >-
+      Provides access to the required attendees of an event. The type of object
+      and level of access depend on the mode of the current item.
 
-      The `requiredAttendees` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
+
+      The `requiredAttendees` property returns an array that contains an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
+      object for each required attendee to the meeting. The maximum number of
+      attendees returned varies per Outlook client.
+
 
       - Windows (new and classic): 500 attendees
 
-      - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
+
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
+
 
       - Android, classic Mac UI, iOS: 100 attendees
 
+
       - New Mac UI, web browser: No limit
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
 
-      \*\*Important\*\*: In Outlook on the web and on Windows (new and classic), the appointment organizer is included in the object returned by the `requiredAttendees` property.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Important**: In Outlook on the web and on Windows (new and classic),
+      the appointment organizer is included in the object returned by the
+      `requiredAttendees` property.
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-required-attendees-appointment-attendee.yaml
 
-      const apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-required-attendees-appointment-attendee.yaml
+
+
+      const apptRequiredAttendees =
+      Office.context.mailbox.item.requiredAttendees;
+
       console.log("Required attendees:");
+
       for (let i = 0; i < apptRequiredAttendees.length; i++) {
         console.log(
           apptRequiredAttendees[i].displayName +
@@ -779,8 +1184,9 @@ properties:
             apptRequiredAttendees[i].appointmentResponse
         );
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -792,53 +1198,102 @@ properties:
     package: outlook!
     fullName: sensitivity
     summary: Provides the sensitivity value of the appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: Outlook on the web, [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, and Outlook on Mac only support Normal and Private sensitivity levels.
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Important**: Outlook on the web, [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, and Outlook on Mac only support Normal and Private sensitivity
+      levels.
+
 
       #### Examples
 
+
       ```TypeScript
+
       const sensitivity = Office.context.mailbox.item.sensitivity;
+
       console.log("Sensitivity: " + sensitivity);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'sensitivity: MailboxEnums.AppointmentSensitivityType;'
       return:
-        type: <xref uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />
+        type: >-
+          <xref
+          uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />
   - name: seriesId
     uid: outlook!Office.AppointmentRead#seriesId:member
     package: outlook!
     fullName: seriesId
-    summary: |-
+    summary: >-
       Gets the ID of the series that an instance belongs to.
 
-      In Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), and on Mac, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
 
-      \*\*Note\*\*: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!-- -->. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
+      In Outlook on the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+      and classic), and on Mac, the `seriesId` returns the Exchange Web Services
+      (EWS) ID of the parent (series) item that this item belongs to. However,
+      on iOS and Android, the seriesId returns the REST ID of the parent item.
 
-      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      **Note**: The identifier returned by the `seriesId` property is the
+      same as the Exchange Web Services item identifier. The `seriesId` property
+      is not identical to the Outlook IDs used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using
+      `Office.context.mailbox.convertToRestId`<!-- -->. For more details, see
+      [Use the Outlook REST APIs from an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!--
+      -->.
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      The `seriesId` property returns `null` for items that do not have parent
+      items such as single appointments, series items, or meeting requests and
+      returns `undefined` for any other items that are not meeting requests.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-series-id.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-series-id.yaml
+
 
       const seriesId = Office.context.mailbox.item.seriesId;
+
 
       if (seriesId === undefined) {
         console.log("This is a message that's not a meeting request.");
@@ -847,8 +1302,9 @@ properties:
       } else {
         console.log("This is an instance belonging to series with ID " + seriesId);
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -859,25 +1315,44 @@ properties:
     uid: outlook!Office.AppointmentRead#start:member
     package: outlook!
     fullName: start
-    summary: |-
+    summary: >-
       Gets the date and time that the appointment is to begin.
 
-      The `start` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      The `start` property is a `Date` object expressed as a Coordinated
+      Universal Time (UTC) date and time value. You can use the
+      `convertToLocalClientTime` method to convert the value to the client's
+      local date and time.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-start-read.yaml
+
 
       const time = Office.context.mailbox.item.start;
+
       const localTime = Office.context.mailbox.convertToLocalClientTime(time);
-      console.log(`Appointment starts (local): ${localTime.month + 1}/${localTime.date}/${localTime.year}, ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
+      console.log(`Appointment starts (local): ${localTime.month +
+      1}/${localTime.date}/${localTime.year},
+      ${localTime.hours}:${localTime.minutes}:${localTime.seconds}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -888,25 +1363,41 @@ properties:
     uid: outlook!Office.AppointmentRead#subject:member
     package: outlook!
     fullName: subject
-    summary: |-
+    summary: >-
       Gets the description that appears in the subject field of an item.
 
-      The `subject` property gets or sets the entire subject of the item, as sent by the email server.
 
-      The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading prefixes such as RE: and FW:.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The `subject` property gets or sets the entire subject of the item, as
+      sent by the email server.
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      The `subject` property returns a string. Use the `normalizedSubject`
+      property to get the subject minus any leading prefixes such as RE: and
+      FW:.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-subject-read.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-subject-read.yaml
+
 
       console.log(`Subject: ${Office.context.mailbox.item.subject}`);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -918,20 +1409,35 @@ methods:
     uid: outlook!Office.AppointmentRead#addHandlerAsync:member(1)
     package: outlook!
     fullName: addHandlerAsync(eventType, handler, options, callback)
-    summary: |-
-      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane implementation.
+    summary: >-
+      Adds an event handler for a supported event. **Note**: Events are only
+      available with task pane implementation.
 
-      For supported events, refer to the Item object model [events section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For supported events, refer to the Item object model [events
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
+
       function myHandlerFunction(eventarg) {
           if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
               const attachment = eventarg.attachmentDetails;
@@ -940,26 +1446,44 @@ methods:
           }
       }
 
-      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+
+      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+      myHandlerFunction, myCallback);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        addHandlerAsync(eventType: Office.EventType | string, handler: any,
+        options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
           type: <xref uid="office!Office.EventType:enum" /> | string
         - id: handler
-          description: The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
+          description: >-
+            The function to handle the event. The function must accept a single
+            parameter, which is an object literal. The `type` property on the
+            parameter will match the `eventType` parameter passed to
+            `addHandlerAsync`<!-- -->.
           type: any
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -967,31 +1491,54 @@ methods:
     uid: outlook!Office.AppointmentRead#addHandlerAsync:member(2)
     package: outlook!
     fullName: addHandlerAsync(eventType, handler, callback)
-    summary: |-
-      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane implementation.
+    summary: >-
+      Adds an event handler for a supported event. **Note**: Events are only
+      available with task pane implementation.
 
-      For supported events, refer to the Item object model [events section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For supported events, refer to the Item object model [events
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        addHandlerAsync(eventType: Office.EventType | string, handler: any,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
           type: <xref uid="office!Office.EventType:enum" /> | string
         - id: handler
-          description: The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
+          description: >-
+            The function to handle the event. The function must accept a single
+            parameter, which is an object literal. The `type` property on the
+            parameter will match the `eventType` parameter passed to
+            `addHandlerAsync`<!-- -->.
           type: any
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -999,34 +1546,70 @@ methods:
     uid: outlook!Office.AppointmentRead#displayReplyAllForm:member(1)
     package: outlook!
     fullName: displayReplyAllForm(formData)
-    summary: Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes either the sender and all recipients
+      of the selected message or the organizer and all attendees of the selected
+      appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyAllForm` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
-      Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with <b>some bold text</b>.");
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
+
+
+      Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with
+      <b>some bold text</b>.");
+
 
       ...
 
+
       // Define attachments.
+
       const base64Attachment = {
         base64file:
           "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",
@@ -1034,19 +1617,23 @@ methods:
         name: "script_lab.png",
         type: Office.MailboxEnums.AttachmentType.Base64
       };
+
       const fileAttachment = {
         inLine: true,
         name: "dog.jpg",
         type: Office.MailboxEnums.AttachmentType.File,
         url: "https://i.imgur.com/9S36xvA.jpg"
       };
+
       const itemAttachment = {
         itemId: Office.context.mailbox.item.itemId,
         name: "test_email.msg",
         type: Office.MailboxEnums.AttachmentType.Item
       };
 
+
       // Create the reply with attachments.
+
       Office.context.mailbox.item.displayReplyAllForm({
         htmlBody:
           "This is a reply with an inline Base64-encoded attachment, an inline image, and an item attachment.<br><img src='cid:script_lab.png'><br><img src='cid:dog.jpg'>",
@@ -1060,15 +1647,20 @@ methods:
           console.log("Created a reply-all form with attachments.");
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'displayReplyAllForm(formData: string | ReplyFormData): void;'
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
       return:
         type: void
@@ -1077,38 +1669,74 @@ methods:
     uid: outlook!Office.AppointmentRead#displayReplyAllFormAsync:member(1)
     package: outlook!
     fullName: displayReplyAllFormAsync(formData, options, callback)
-    summary: Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes either the sender and all recipients
+      of the selected message or the organizer and all attendees of the selected
+      appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyAllFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
-      Office.context.mailbox.item.displayReplyAllFormAsync("This is a reply ALL with <b>some bold text</b>.", function(
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
+
+
+      Office.context.mailbox.item.displayReplyAllFormAsync("This is a reply ALL
+      with <b>some bold text</b>.", function(
         asyncResult
       ) {
         console.log(JSON.stringify(asyncResult));
       });
 
+
       ...
 
+
       // Define attachments.
+
       const base64Attachment = {
         base64file:
           "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",
@@ -1116,20 +1744,25 @@ methods:
         name: "script_lab.png",
         type: Office.MailboxEnums.AttachmentType.Base64
       };
+
       const fileAttachment = {
         inLine: true,
         name: "dog.jpg",
         type: Office.MailboxEnums.AttachmentType.File,
         url: "https://i.imgur.com/9S36xvA.jpg"
       };
+
       const itemAttachment = {
         itemId: Office.context.mailbox.item.itemId,
         name: "test_email.msg",
         type: Office.MailboxEnums.AttachmentType.Item
       };
 
+
       // The async version was introduced in requirement set 1.9.
+
       // It provides a callback when the new appointment form has been created.
+
       Office.context.mailbox.item.displayReplyAllFormAsync(
         {
           htmlBody:
@@ -1145,22 +1778,38 @@ methods:
           console.log("Created a reply-all form with attachments.");
         }
       );
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyAllFormAsync(formData: string | ReplyFormData, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyAllFormAsync(formData: string | ReplyFormData, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1168,35 +1817,73 @@ methods:
     uid: outlook!Office.AppointmentRead#displayReplyAllFormAsync:member(2)
     package: outlook!
     fullName: displayReplyAllFormAsync(formData, callback)
-    summary: Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes either the sender and all recipients
+      of the selected message or the organizer and all attendees of the selected
+      appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-    example: []
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyAllFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyAllFormAsync(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyAllFormAsync(formData: string | ReplyFormData, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1204,34 +1891,69 @@ methods:
     uid: outlook!Office.AppointmentRead#displayReplyForm:member(1)
     package: outlook!
     fullName: displayReplyForm(formData)
-    summary: Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes only the sender of the selected
+      message or the organizer of the selected appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits, `displayReplyForm`
+      throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
-      Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
+
+
+      Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
+      text in italics</i>.");
+
 
       ...
 
+
       // Define attachments.
+
       const base64Attachment = {
         base64file:
           "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",
@@ -1239,19 +1961,23 @@ methods:
         name: "script_lab.png",
         type: Office.MailboxEnums.AttachmentType.Base64
       };
+
       const fileAttachment = {
         inLine: true,
         name: "dog.jpg",
         type: Office.MailboxEnums.AttachmentType.File,
         url: "https://i.imgur.com/9S36xvA.jpg"
       };
+
       const itemAttachment = {
         itemId: Office.context.mailbox.item.itemId,
         name: "test_email.msg",
         type: Office.MailboxEnums.AttachmentType.Item
       };
 
+
       // Create the reply with attachments.
+
       Office.context.mailbox.item.displayReplyForm({
         htmlBody:
           "This is a reply with an inline Base64-encoded attachment, an inline image, and an item attachment.<br><img src='cid:script_lab.png'><br><img src='cid:dog.jpg'>",
@@ -1265,15 +1991,20 @@ methods:
           console.log("Created a reply with attachments.");
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'displayReplyForm(formData: string | ReplyFormData): void;'
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
       return:
         type: void
@@ -1282,38 +2013,73 @@ methods:
     uid: outlook!Office.AppointmentRead#displayReplyFormAsync:member(1)
     package: outlook!
     fullName: displayReplyFormAsync(formData, options, callback)
-    summary: Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes only the sender of the selected
+      message or the organizer of the selected appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
-      Office.context.mailbox.item.displayReplyFormAsync("This is a reply with <i>some text in italics</i>.", function(
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
+
+
+      Office.context.mailbox.item.displayReplyFormAsync("This is a reply with
+      <i>some text in italics</i>.", function(
         asyncResult
       ) {
         console.log(JSON.stringify(asyncResult));
       });
 
+
       ...
 
+
       // Define attachments.
+
       const base64Attachment = {
         base64file:
           "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",
@@ -1321,20 +2087,25 @@ methods:
         name: "script_lab.png",
         type: Office.MailboxEnums.AttachmentType.Base64
       };
+
       const fileAttachment = {
         inLine: true,
         name: "dog.jpg",
         type: Office.MailboxEnums.AttachmentType.File,
         url: "https://i.imgur.com/9S36xvA.jpg"
       };
+
       const itemAttachment = {
         itemId: Office.context.mailbox.item.itemId,
         name: "test_email.msg",
         type: Office.MailboxEnums.AttachmentType.Item
       };
 
+
       // The async version was introduced in requirement set 1.9.
+
       // It provides a callback when the new appointment form has been created.
+
       Office.context.mailbox.item.displayReplyFormAsync(
         {
           htmlBody:
@@ -1350,22 +2121,38 @@ methods:
           console.log("Created reply with attachments.");
         }
       );
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyFormAsync(formData: string | ReplyFormData, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyFormAsync(formData: string | ReplyFormData, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1373,35 +2160,72 @@ methods:
     uid: outlook!Office.AppointmentRead#displayReplyFormAsync:member(2)
     package: outlook!
     fullName: displayReplyFormAsync(formData, callback)
-    summary: Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes only the sender of the selected
+      message or the organizer of the selected appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-    example: []
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyFormAsync(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyFormAsync(formData: string | ReplyFormData, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1409,61 +2233,118 @@ methods:
     uid: outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)
     package: outlook!
     fullName: getAttachmentContentAsync(attachmentId, options, callback)
-    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an
+      `AttachmentContent` object.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get the attachment's identifier from an [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that identifier to retrieve the attachment.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - In Outlook on the web and the [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `getAttachmentContentAsync` doesn't support attachments that were added using the \*\*Upload and share\*\* option.
 
-      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      **Important**:
 
-      \*\*Errors\*\*:
 
-      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
+      - The `getAttachmentContentAsync` method gets the attachment with the
+      specified identifier from the item. As a best practice, you should get the
+      attachment's identifier from an
+      [item.attachments](xref:outlook!Office.MessageRead%23attachments:member)
+      call, then in the same session, use that identifier to retrieve the
+      attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, `getAttachmentContentAsync` doesn't support attachments that were
+      added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on
+      Windows, the attachment identifier is valid only within the same session.
+      A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue
+      in a separate window.
+
+
+      **Errors**:
+
+
+      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't
+      supported. Unsupported types include embedded images in Rich Text Format,
+      or item attachment types other than email or calendar items (such as a
+      contact or task item).
+
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
 
+
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
 
-      // Gets the attachments of the current message or appointment in read mode. The item.attachments call can only be used in read mode.
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
+
+
+      // Gets the attachments of the current message or appointment in read
+      mode. The item.attachments call can only be used in read mode.
+
       const item = Office.context.mailbox.item;
+
       const attachments = item.attachments;
+
       if (attachments.length <= 0) {
         console.log("Mail item has no attachments.");
         return;
       }
 
+
       for (let i = 0; i < attachments.length; i++) {
         // Log the attachment type and its contents to the console.
         item.getAttachmentContentAsync(attachments[i].id, handleAttachmentsCallback);
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAttachmentContentAsync(attachmentId: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentContent>) => void): void;'
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
           type: string
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If
+            the call fails, the `asyncResult.error` property will contain an
+            error code with the reason for the failure.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -1471,39 +2352,81 @@ methods:
     uid: outlook!Office.AppointmentRead#getAttachmentContentAsync:member(2)
     package: outlook!
     fullName: getAttachmentContentAsync(attachmentId, callback)
-    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an
+      `AttachmentContent` object.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get the attachment's identifier from an [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that identifier to retrieve the attachment.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - In Outlook on the web and the [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `getAttachmentContentAsync` doesn't support attachments that were added using the \*\*Upload and share\*\* option.
 
-      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      **Important**:
 
-      \*\*Errors\*\*:
 
-      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
+      - The `getAttachmentContentAsync` method gets the attachment with the
+      specified identifier from the item. As a best practice, you should get the
+      attachment's identifier from an
+      [item.attachments](xref:outlook!Office.MessageRead%23attachments:member)
+      call, then in the same session, use that identifier to retrieve the
+      attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, `getAttachmentContentAsync` doesn't support attachments that were
+      added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on
+      Windows, the attachment identifier is valid only within the same session.
+      A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue
+      in a separate window.
+
+
+      **Errors**:
+
+
+      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't
+      supported. Unsupported types include embedded images in Rich Text Format,
+      or item attachment types other than email or calendar items (such as a
+      contact or task item).
+
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentContent>) => void): void;'
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
           type: string
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If
+            the call fails, the `asyncResult.error` property will contain an
+            error code with the reason for the failure.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -1511,20 +2434,38 @@ methods:
     uid: outlook!Office.AppointmentRead#getEntities:member(1)
     package: outlook!
     fullName: getEntities()
-    summary: |-
+    summary: >-
       Gets the entities found in the selected item's body.
 
-      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      **Warning**: Entity-based contextual Outlook add-ins are now retired.
+      However, regular expression rules are still supported. We recommend
+      updating your contextual add-in to use regular expression rules as an
+      alternative solution. For guidance on how to implement these rules, see
+      [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
+    customDeprecatedMessage: >-
+      Use [regular expression
+      rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'getEntities(): Entities;'
       return:
@@ -1534,73 +2475,158 @@ methods:
     uid: outlook!Office.AppointmentRead#getEntitiesByType:member(1)
     package: outlook!
     fullName: getEntitiesByType(entityType)
-    summary: |-
-      Gets an array of all the entities of the specified entity type found in the selected item's body.
+    summary: >-
+      Gets an array of all the entities of the specified entity type found in
+      the selected item's body.
 
-      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*restricted\*\*
+      **Warning**: Entity-based contextual Outlook add-ins are now retired.
+      However, regular expression rules are still supported. We recommend
+      updating your contextual add-in to use regular expression rules as an
+      alternative solution. For guidance on how to implement these rules, see
+      [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
+    customDeprecatedMessage: >-
+      Use [regular expression
+      rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
-      content: 'getEntitiesByType(entityType: MailboxEnums.EntityType | string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;'
+      content: >-
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string):
+        Array<string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion>;
       parameters:
         - id: entityType
           description: One of the `EntityType` enumeration values.
           type: <xref uid="outlook!Office.MailboxEnums.EntityType:enum" /> | string
       return:
-        type: Array&lt;string | <xref uid="outlook!Office.Contact:interface" /> | <xref uid="outlook!Office.MeetingSuggestion:interface" /> | <xref uid="outlook!Office.PhoneNumber:interface" /> | <xref uid="outlook!Office.TaskSuggestion:interface" />&gt;
-        description: If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the `entityType` parameter.
+        type: >-
+          Array&lt;string | <xref uid="outlook!Office.Contact:interface" /> |
+          <xref uid="outlook!Office.MeetingSuggestion:interface" /> | <xref
+          uid="outlook!Office.PhoneNumber:interface" /> | <xref
+          uid="outlook!Office.TaskSuggestion:interface" />&gt;
+        description: >-
+          If the value passed in `entityType` is not a valid member of the
+          `EntityType` enumeration, the method returns null. If no entities of
+          the specified type are present in the item's body, the method returns
+          an empty array. Otherwise, the type of the objects in the returned
+          array depends on the type of entity requested in the `entityType`
+          parameter.
   - name: getFilteredEntitiesByName(name)
     uid: outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)
     package: outlook!
     fullName: getFilteredEntitiesByName(name)
-    summary: |-
-      Returns well-known entities in the selected item that pass the named filter defined in an add-in only manifest file.
+    summary: >-
+      Returns well-known entities in the selected item that pass the named
+      filter defined in an add-in only manifest file.
 
-      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      **Warning**: Entity-based contextual Outlook add-ins are now retired.
+      However, regular expression rules are still supported. We recommend
+      updating your contextual add-in to use regular expression rules as an
+      alternative solution. For guidance on how to implement these rules, see
+      [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
+    customDeprecatedMessage: >-
+      Use [regular expression
+      rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
-      content: 'getFilteredEntitiesByName(name: string): Array<string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion>;'
+      content: >-
+        getFilteredEntitiesByName(name: string): Array<string | Contact |
+        MeetingSuggestion | PhoneNumber | TaskSuggestion>;
       parameters:
         - id: name
-          description: The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
+          description: >-
+            The name of the `ItemHasKnownEntity` rule element that defines the
+            filter to match.
           type: string
       return:
-        type: Array&lt;string | <xref uid="outlook!Office.Contact:interface" /> | <xref uid="outlook!Office.MeetingSuggestion:interface" /> | <xref uid="outlook!Office.PhoneNumber:interface" /> | <xref uid="outlook!Office.TaskSuggestion:interface" />&gt;
-        description: The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the add-in manifest file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the manifest with a `FilterName` element value that matches the `name` parameter, the method returns `null`<!-- -->. If the `name` parameter matches an `ItemHasKnownEntity` element in the manifest, but there are no entities in the current item that match, the method returns an empty array.
+        type: >-
+          Array&lt;string | <xref uid="outlook!Office.Contact:interface" /> |
+          <xref uid="outlook!Office.MeetingSuggestion:interface" /> | <xref
+          uid="outlook!Office.PhoneNumber:interface" /> | <xref
+          uid="outlook!Office.TaskSuggestion:interface" />&gt;
+        description: >-
+          The entities that match the regular expression defined in the
+          `ItemHasKnownEntity` rule element in the add-in manifest file with the
+          specified `FilterName` element value. If there's no
+          `ItemHasKnownEntity` element in the manifest with a `FilterName`
+          element value that matches the `name` parameter, the method returns
+          `null`<!-- -->. If the `name` parameter matches an
+          `ItemHasKnownEntity` element in the manifest, but there are no
+          entities in the current item that match, the method returns an empty
+          array.
   - name: getInitializationContextAsync(options, callback)
     uid: outlook!Office.AppointmentRead#getInitializationContextAsync:member(1)
     package: outlook!
     fullName: getInitializationContextAsync(options, callback)
-    summary: Gets initialization data passed when the add-in is [activated by an actionable message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an
+      actionable
+      message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Get the initialization context (if present).
-      Office.context.mailbox.item.getInitializationContextAsync((asyncResult) => {
+
+      Office.context.mailbox.item.getInitializationContextAsync((asyncResult) =>
+      {
           if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
               if (asyncResult.value.length > 0) {
                   // The value is a string, parse to an object.
@@ -1613,19 +2639,32 @@ methods:
               // Handle the error.
           }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getInitializationContextAsync(options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string (or an empty string if there's no initialization context) in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. On success, the initialization context
+            data is provided as a string (or an empty string if there's no
+            initialization context) in the `asyncResult.value` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1633,22 +2672,43 @@ methods:
     uid: outlook!Office.AppointmentRead#getInitializationContextAsync:member(2)
     package: outlook!
     fullName: getInitializationContextAsync(callback)
-    summary: Gets initialization data passed when the add-in is [activated by an actionable message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an
+      actionable
+      message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getInitializationContextAsync(callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string (or an empty string if there's no initialization context) in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. On success, the initialization context
+            data is provided as a string (or an empty string if there's no
+            initialization context) in the `asyncResult.value` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1656,100 +2716,213 @@ methods:
     uid: outlook!Office.AppointmentRead#getRegExMatches:member(1)
     package: outlook!
     fullName: getRegExMatches()
-    summary: Returns string values in the selected item that match the regular expressions defined in an add-in only manifest file.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Returns string values in the selected item that match the regular
+      expressions defined in an add-in only manifest file.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - This method is used with the [activation rules feature for Outlook add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
-      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      - Entity-based contextual Outlook add-ins are now retired. However,
+      regular expression rules are still supported. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual
+      Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!--
+      -->, which isn't supported by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body
+      property of an item, the regular expression should further filter the body
+      and shouldn't attempt to return the entire body of the item. Using a
+      regular expression such as `.*` to obtain the entire body of an item
+      doesn't always return the expected results. Instead, use the
+      `Body.getAsync` method to retrieve the entire body.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
 
       // This API only works when you click on the highlighted word "ScriptLab".
+
       console.log(Office.context.mailbox.item.getRegExMatches());
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRegExMatches(): any;'
       return:
         type: any
-        description: An object that contains arrays of strings that match the regular expressions defined in the add-in manifest file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that's specified by that rule. The `PropertyName` simple type defines the supported properties.
+        description: >-
+          An object that contains arrays of strings that match the regular
+          expressions defined in the add-in manifest file. The name of each
+          array is equal to the corresponding value of the RegExName attribute
+          of the matching `ItemHasRegularExpressionMatch` rule. For an
+          `ItemHasRegularExpressionMatch` rule, a matching string has to occur
+          in the property of the item that's specified by that rule. The
+          `PropertyName` simple type defines the supported properties.
   - name: getRegExMatchesByName(name)
     uid: outlook!Office.AppointmentRead#getRegExMatchesByName:member(1)
     package: outlook!
     fullName: getRegExMatchesByName(name)
-    summary: Returns string values in the selected item that match the named regular expression defined in an add-in only manifest file.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Returns string values in the selected item that match the named regular
+      expression defined in an add-in only manifest file.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - This method is used with the [activation rules feature for Outlook add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
-      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
+      **Important**:
 
-      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+      - Entity-based contextual Outlook add-ins are now retired. However,
+      regular expression rules are still supported. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual
+      Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!--
+      -->, which isn't supported by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body
+      property of an item, the regular expression should further filter the body
+      and shouldn't attempt to return the entire body of the item. Using a
+      regular expression such as `.*` to obtain the entire body of an item
+      doesn't always return the expected results. Instead, use the
+      `Body.getAsync` method to retrieve the entire body.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
 
       // This API only works when you click on the highlighted word "ScriptLab".
+
       console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRegExMatchesByName(name: string): string[];'
       parameters:
         - id: name
-          description: The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
+          description: >-
+            The name of the `ItemHasRegularExpressionMatch` rule element that
+            defines the filter to match.
           type: string
       return:
         type: string[]
-        description: An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the add-in manifest file, with the specified `RegExName` element value.
+        description: >-
+          An array that contains the strings that match the regular expression
+          defined in the `ItemHasRegularExpressionMatch` rule element in the
+          add-in manifest file, with the specified `RegExName` element value.
   - name: getSelectedEntities()
     uid: outlook!Office.AppointmentRead#getSelectedEntities:member(1)
     package: outlook!
     fullName: getSelectedEntities()
-    summary: |-
-      Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
+    summary: >-
+      Gets the entities found in a highlighted match a user has selected.
+      Highlighted matches apply to contextual add-ins.
 
-      \*\*Warning\*\*: Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      **Warning**: Entity-based contextual Outlook add-ins are now retired.
+      However, regular expression rules are still supported. We recommend
+      updating your contextual add-in to use regular expression rules as an
+      alternative solution. For guidance on how to implement these rules, see
+      [Contextual Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: Use [regular expression rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins) instead.
+    customDeprecatedMessage: >-
+      Use [regular expression
+      rules](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)
+      instead.
     syntax:
       content: 'getSelectedEntities(): Entities;'
       return:
@@ -1759,72 +2932,148 @@ methods:
     uid: outlook!Office.AppointmentRead#getSelectedRegExMatches:member(1)
     package: outlook!
     fullName: getSelectedRegExMatches()
-    summary: Returns string values in a highlighted match that match the regular expressions defined in an add-in only manifest file. Highlighted matches apply to contextual add-ins.
-    remarks: |-
-      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Returns string values in a highlighted match that match the regular
+      expressions defined in an add-in only manifest file. Highlighted matches
+      apply to contextual add-ins.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - This method is used with the [activation rules feature for Outlook add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
-      - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **Important**:
 
-      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular expression such as .\* to obtain the entire body of an item doesn't always return the expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
+
+      - Entity-based contextual Outlook add-ins are now retired. However,
+      regular expression rules are still supported. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual
+      Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!--
+      -->, which isn't supported by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
+
+
+      - This method isn't supported in Outlook on iOS or Android. For more
+      information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body
+      property of an item, the regular expression should further filter the body
+      and shouldn't attempt to return the entire body of the item. Using a
+      regular expression such as .* to obtain the entire body of an item
+      doesn't always return the expected results. Instead, use the
+      `Body.getAsync` method to retrieve the entire body.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-regex-matches/contextual.yaml
+
 
       const matches = Office.context.mailbox.item.getSelectedRegExMatches();
+
       if (matches) {
           console.log(matches);
       } else {
           console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSelectedRegExMatches(): any;'
       return:
         type: any
-        description: An object that contains arrays of strings that match the regular expressions defined in the add-in manifest file. The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that's specified by that rule. The `PropertyName` simple type defines the supported properties.
+        description: >-
+          An object that contains arrays of strings that match the regular
+          expressions defined in the add-in manifest file. The name of each
+          array is equal to the corresponding value of the `RegExName` attribute
+          of the matching `ItemHasRegularExpressionMatch` rule. For an
+          `ItemHasRegularExpressionMatch` rule, a matching string has to occur
+          in the property of the item that's specified by that rule. The
+          `PropertyName` simple type defines the supported properties.
   - name: getSharedPropertiesAsync(options, callback)
     uid: outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)
     package: outlook!
     fullName: getSharedPropertiesAsync(options, callback)
-    summary: |-
-      Gets the properties of an appointment or message in a shared folder or shared mailbox.
+    summary: >-
+      Gets the properties of an appointment or message in a shared folder or
+      shared mailbox.
 
-      For more information around using this API, see [Enable shared folders and shared mailbox scenarios in an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For more information around using this API, see [Enable shared folders and
+      shared mailbox scenarios in an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      shared mailbox
+      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
 
-      \*\*Note\*\*: This method isn't supported in Outlook on iOS or on Android.
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;'
+      content: >-
+        getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback:
+        (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;
       parameters:
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            which is an `Office.AsyncResult` object. The `asyncResult.value`
+            property provides the properties of the shared item.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -1832,23 +3081,43 @@ methods:
     uid: outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(2)
     package: outlook!
     fullName: getSharedPropertiesAsync(callback)
-    summary: |-
-      Gets the properties of an appointment or message in a shared folder or shared mailbox.
+    summary: >-
+      Gets the properties of an appointment or message in a shared folder or
+      shared mailbox.
 
-      For more information around using this API, see [Enable shared folders and shared mailbox scenarios in an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For more information around using this API, see [Enable shared folders and
+      shared mailbox scenarios in an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      shared mailbox
+      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
 
-      \*\*Note\*\*: This method isn't supported in Outlook on iOS or on Android.
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Note**: This method isn't supported in Outlook on iOS or on Android.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
 
       Office.context.mailbox.item.getSharedPropertiesAsync((result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
@@ -1860,16 +3129,26 @@ methods:
         console.log(`Permissions: ${sharedProperties.delegatePermissions}`);
         console.log(`Target mailbox: ${sharedProperties.targetMailbox}`);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;'
+      content: >-
+        getSharedPropertiesAsync(callback: (asyncResult:
+        Office.AsyncResult<SharedProperties>) => void): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            which is an `Office.AsyncResult` object. The `asyncResult.value`
+            property provides the properties of the shared item.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -1877,25 +3156,52 @@ methods:
     uid: outlook!Office.AppointmentRead#loadCustomPropertiesAsync:member(1)
     package: outlook!
     fullName: loadCustomPropertiesAsync(callback, userContext)
-    summary: |-
-      Asynchronously loads custom properties for this add-in on the selected item.
+    summary: >-
+      Asynchronously loads custom properties for this add-in on the selected
+      item.
 
-      Custom properties are stored as key-value pairs on a per-app, per-item basis. This method returns a [CustomProperties](xref:outlook!Office.CustomProperties:interface) object in the callback, which provides methods to access the custom properties specific to the current item and the current add-in. Custom properties aren't encrypted on the item, so this shouldn't be used as secure storage.
 
-      The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property. This object can be used to get, set, save, and remove custom properties from the mail item.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      Custom properties are stored as key-value pairs on a per-app, per-item
+      basis. This method returns a
+      [CustomProperties](xref:outlook!Office.CustomProperties:interface) object
+      in the callback, which provides methods to access the custom properties
+      specific to the current item and the current add-in. Custom properties
+      aren't encrypted on the item, so this shouldn't be used as secure storage.
 
-      To learn more about custom properties, see [Get and set add-in metadata for an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The custom properties are provided as a `CustomProperties` object in the
+      `asyncResult.value` property. This object can be used to get, set, save,
+      and remove custom properties from the mail item.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      To learn more about custom properties, see [Get and set add-in metadata
+      for an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!--
+      -->.
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
 
       Office.context.mailbox.item.loadCustomPropertiesAsync((result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
@@ -1906,18 +3212,30 @@ methods:
         customProps = result.value;
         console.log("Loaded the CustomProperties object.");
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;'
+      content: >-
+        loadCustomPropertiesAsync(callback: (asyncResult:
+        Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;)
+            =&gt; void
         - id: userContext
-          description: Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the `asyncResult.asyncContext` property in the callback function.
+          description: >-
+            Optional. Developers can provide any object they wish to access in
+            the callback function. This object can be accessed by the
+            `asyncResult.asyncContext` property in the callback function.
           type: any
       return:
         type: void
@@ -1926,31 +3244,54 @@ methods:
     uid: outlook!Office.AppointmentRead#removeHandlerAsync:member(1)
     package: outlook!
     fullName: removeHandlerAsync(eventType, options, callback)
-    summary: |-
-      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane implementation.
+    summary: >-
+      Removes the event handlers for a supported event type. **Note**:
+      Events are only available with task pane implementation.
 
-      For supported events, refer to the Item object model [events section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For supported events, refer to the Item object model [events
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType | string, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
           type: <xref uid="office!Office.EventType:enum" /> | string
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1958,21 +3299,37 @@ methods:
     uid: outlook!Office.AppointmentRead#removeHandlerAsync:member(2)
     package: outlook!
     fullName: removeHandlerAsync(eventType, callback)
-    summary: |-
-      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane implementation.
+    summary: >-
+      Removes the event handlers for a supported event type. **Note**:
+      Events are only available with task pane implementation.
 
-      For supported events, refer to the Item object model [events section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For supported events, refer to the Item object model [events
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item#events)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
 
       #### Examples
 
+
       ```TypeScript
-      Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked, (asyncResult) => {
+
+      Office.context.mailbox.item.removeHandlerAsync(Office.EventType.InfobarClicked,
+      (asyncResult) => {
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
               console.error("Failed to remove event handler: " + asyncResult.error.message);
               return;
@@ -1980,19 +3337,27 @@ methods:
 
           console.log("Event handler removed successfully.");
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType | string, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
           type: <xref uid="office!Office.EventType:enum" /> | string
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''

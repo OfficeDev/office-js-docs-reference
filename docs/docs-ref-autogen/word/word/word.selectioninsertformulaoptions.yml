@@ -3,9 +3,13 @@ name: Word.SelectionInsertFormulaOptions
 uid: word!Word.SelectionInsertFormulaOptions:interface
 package: word!
 fullName: Word.SelectionInsertFormulaOptions
-summary: Represents the options for the [Selection.insertFormula](xref:word!Word.Selection:class) method.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the options for the
+  [Selection.insertFormula](xref:word!Word.Selection:class) method.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,18 +18,41 @@ properties:
     uid: word!Word.SelectionInsertFormulaOptions#formula:member
     package: word!
     fullName: formula
-    summary: |-
-      If provided, specifies the mathematical formula you want the [= (Formula) field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d) to evaluate. The `formula` property is optional only if the selection is in a cell and there is at least one cell that contains a value above or to the left of the cell that contains the insertion point. If the cells above the insertion point contain values, the inserted field is `{=SUM(ABOVE)}`<!-- -->; if the cells to the left of the insertion point contain values, the inserted field is `{=SUM(LEFT)}`<!-- -->. If both the cells above the insertion point and the cells to the left of it contain values, Microsoft Word uses the following rules to determine which `SUM` function to insert.
+    summary: >-
+      If provided, specifies the mathematical formula you want the [= (Formula)
+      field](https://support.microsoft.com/office/32d5c9de-3516-4ec3-80ed-d1fc2b5bc21d)
+      to evaluate. The `formula` property is optional only if the selection is
+      in a cell and there is at least one cell that contains a value above or to
+      the left of the cell that contains the insertion point. If the cells above
+      the insertion point contain values, the inserted field is
+      `{=SUM(ABOVE)}`<!-- -->; if the cells to the left of the insertion point
+      contain values, the inserted field is `{=SUM(LEFT)}`<!-- -->. If both the
+      cells above the insertion point and the cells to the left of it contain
+      values, Microsoft Word uses the following rules to determine which `SUM`
+      function to insert.
 
-      - If the cell immediately above the insertion point contains a value, Word inserts `{=SUM(ABOVE)}`<!-- -->.
 
-      - If the cell immediately above the insertion point doesn't contain a value but the cell immediately to the left of the insertion point does, Word inserts `{=SUM(LEFT)}`<!-- -->.
+      - If the cell immediately above the insertion point contains a value, Word
+      inserts `{=SUM(ABOVE)}`<!-- -->.
 
-      - If neither cell immediately above the insertion point nor the cell immediately below it contains a value, Word inserts `{=SUM(ABOVE)}`<!-- -->.
 
-      - If you don't specify the `formula` property and all the cells above and to the left of the insertion point are empty, using the `= (Formula)` field causes an error.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+      - If the cell immediately above the insertion point doesn't contain a
+      value but the cell immediately to the left of the insertion point does,
+      Word inserts `{=SUM(LEFT)}`<!-- -->.
+
+
+      - If neither cell immediately above the insertion point nor the cell
+      immediately below it contains a value, Word inserts `{=SUM(ABOVE)}`<!--
+      -->.
+
+
+      - If you don't specify the `formula` property and all the cells above and
+      to the left of the insertion point are empty, using the `= (Formula)`
+      field causes an error.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,9 +63,13 @@ properties:
     uid: word!Word.SelectionInsertFormulaOptions#numberFormat:member
     package: word!
     fullName: numberFormat
-    summary: If provided, specifies the format for the result of the `= (Formula)` field.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the format for the result of the `= (Formula)`
+      field.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

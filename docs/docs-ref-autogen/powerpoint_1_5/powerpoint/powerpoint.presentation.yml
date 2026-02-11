@@ -3,14 +3,26 @@ name: PowerPoint.Presentation
 uid: powerpoint!PowerPoint.Presentation:class
 package: powerpoint!
 fullName: PowerPoint.Presentation
-summary: The `Presentation` object is the top-level object with one or more slides that contain the contents of the presentation. To learn more about the PowerPoint object model, see [PowerPoint JavaScript object model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!-- -->.
-remarks: |-
-  \[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+summary: >-
+  The `Presentation` object is the top-level object with one or more slides that
+  contain the contents of the presentation. To learn more about the PowerPoint
+  object model, see [PowerPoint JavaScript object
+  model](https://learn.microsoft.com/office/dev/add-ins/powerpoint/core-concepts)<!--
+  -->.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
 
   await PowerPoint.run(async function(context) {
       // Get the ID of the first selected slide.
@@ -27,8 +39,9 @@ remarks: |-
       presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
       await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -37,9 +50,11 @@ properties:
     uid: powerpoint!PowerPoint.Presentation#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,8 +66,11 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the ID of the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,9 +81,14 @@ properties:
     uid: powerpoint!PowerPoint.Presentation#slideMasters:member
     package: powerpoint!
     fullName: slideMasters
-    summary: Returns the collection of `SlideMaster` objects that are in the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns the collection of `SlideMaster` objects that are in the
+      presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,8 +100,11 @@ properties:
     package: powerpoint!
     fullName: slides
     summary: Returns an ordered collection of slides in the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,8 +116,11 @@ properties:
     package: powerpoint!
     fullName: tags
     summary: Returns a collection of tags attached to the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,8 +132,11 @@ properties:
     package: powerpoint!
     fullName: title
     summary: Returns the title of the presentation.
-    remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,16 +148,26 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#getSelectedShapes:member(1)
     package: powerpoint!
     fullName: getSelectedShapes()
-    summary: Returns the selected shapes in the current slide of the presentation. If no shapes are selected, an empty collection is returned.
-    remarks: |-
-      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: >-
+      Returns the selected shapes in the current slide of the presentation. If
+      no shapes are selected, an empty collection is returned.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
 
       // Arranges the selected shapes in a line from left to right.
+
       await PowerPoint.run(async (context) => {
         const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
         const shapeCount = shapes.getCount();
@@ -147,9 +189,13 @@ methods:
         if (currentTop > slideHeight - 200) currentTop = 0;
       });
 
+
       ...
 
-      // Gets the shapes you selected on the slide and displays their IDs on the task pane.
+
+      // Gets the shapes you selected on the slide and displays their IDs on the
+      task pane.
+
       await PowerPoint.run(async (context) => {
         let finalTable = "";
         const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
@@ -169,9 +215,12 @@ methods:
         outputSpan.innerHTML += finalTable;
       });
 
+
       ...
 
+
       // Saves which shapes are selected so that they can be reselected later.
+
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
@@ -191,8 +240,9 @@ methods:
           savedShapeSelection.push(shape.id);
         });
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,16 +254,27 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#getSelectedSlides:member(1)
     package: powerpoint!
     fullName: getSelectedSlides()
-    summary: Returns the selected slides in the current view of the presentation. The first item in the collection is the active slide that is visible in the editing area. If no slides are selected, an empty collection is returned.
-    remarks: |-
-      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: >-
+      Returns the selected slides in the current view of the presentation. The
+      first item in the collection is the active slide that is visible in the
+      editing area. If no slides are selected, an empty collection is returned.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
 
       // Gets the selected slides and displays their IDs on the task pane.
+
       await PowerPoint.run(async (context) => {
         let finalTable = "";
         context.presentation.load("slides");
@@ -248,9 +309,13 @@ methods:
         outputSpan.innerHTML += finalTable;
       });
 
+
       ...
 
-      // Saves which slides are currently selected so they can be reselected later.
+
+      // Saves which slides are currently selected so they can be reselected
+      later.
+
       await PowerPoint.run(async (context) => {
         let finalTable = "";
         context.presentation.load("slides");
@@ -273,8 +338,9 @@ methods:
         outputSpan.innerHTML = ""
         outputSpan.innerHTML += finalTable;
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,16 +352,29 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#getSelectedTextRange:member(1)
     package: powerpoint!
     fullName: getSelectedTextRange()
-    summary: Returns the selected [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the current view of the presentation. Throws an exception if no text is selected.
-    remarks: |-
-      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: >-
+      Returns the selected
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the
+      current view of the presentation. Throws an exception if no text is
+      selected.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
 
-      // Gets the selected text range and prints data about the range on the task pane.
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+
+      // Gets the selected text range and prints data about the range on the
+      task pane.
+
       await PowerPoint.run(async (context) => {
         const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
         try {
@@ -330,9 +409,12 @@ methods:
         outputSpan.innerHTML += finalTable;
       });
 
+
       ...
 
+
       // Sets the range selection to the range that was saved previously.
+
       await PowerPoint.run(async (context) => {
         const slide1: PowerPoint.Slide = context.presentation.slides.getItem(savedTextSlideSelection[0]);
         const shape1: PowerPoint.Shape = slide1.shapes.getItem(savedTextShapeSelection[0]);
@@ -343,8 +425,9 @@ methods:
         textRange.setSelected();
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -353,12 +436,23 @@ methods:
         type: <xref uid="powerpoint!PowerPoint.TextRange:class" />
         description: ''
   - name: getSelectedTextRangeOrNullObject()
-    uid: powerpoint!PowerPoint.Presentation#getSelectedTextRangeOrNullObject:member(1)
+    uid: >-
+      powerpoint!PowerPoint.Presentation#getSelectedTextRangeOrNullObject:member(1)
     package: powerpoint!
     fullName: getSelectedTextRangeOrNullObject()
-    summary: Returns the selected [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the current view of the presentation. If no text is selected, an object with an `isNullObject` property set to `true` is returned. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns the selected
+      [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the
+      current view of the presentation. If no text is selected, an object with
+      an `isNullObject` property set to `true` is returned. For further
+      information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -370,14 +464,23 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#insertSlidesFromBase64:member(1)
     package: powerpoint!
     fullName: insertSlidesFromBase64(base64File, options)
-    summary: Inserts the specified slides from a presentation into the current presentation.
-    remarks: |-
-      \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: >-
+      Inserts the specified slides from a presentation into the current
+      presentation.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
 
       await PowerPoint.run(async function(context) {
           // Get the ID of the first selected slide.
@@ -394,18 +497,23 @@ methods:
           presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
           await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;'
+      content: >-
+        insertSlidesFromBase64(base64File: string, options?:
+        PowerPoint.InsertSlideOptions): void;
       parameters:
         - id: base64File
           description: The Base64-encoded string representing the source presentation file.
           type: string
         - id: options
-          description: The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
+          description: >-
+            The options that define which slides will be inserted, where the new
+            slides will go, and which presentation's formatting will be used.
           type: <xref uid="powerpoint!PowerPoint.InsertSlideOptions:interface" />
       return:
         type: void
@@ -414,17 +522,24 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.PresentationLoadOptions): PowerPoint.Presentation;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.PresentationLoadOptions):
+        PowerPoint.Presentation;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface"
+            />
       return:
         type: <xref uid="powerpoint!PowerPoint.Presentation:class" />
         description: ''
@@ -432,16 +547,20 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Presentation;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.Presentation:class" />
@@ -450,9 +569,11 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -463,7 +584,11 @@ methods:
                 }): PowerPoint.Presentation;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -476,24 +601,37 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#setSelectedSlides:member(1)
     package: powerpoint!
     fullName: setSelectedSlides(slideIds)
-    summary: Selects the slides in the current view of the presentation. Existing slide selection is replaced with the new selection.
-    remarks: |-
-      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: >-
+      Selects the slides in the current view of the presentation. Existing slide
+      selection is replaced with the new selection.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
 
       // Sets selection to the slides that were saved.
+
       await PowerPoint.run(async (context) => {
         context.presentation.setSelectedSlides(savedSlideSelection);
         await context.sync();
       });
 
+
       ...
 
+
       // Selects slides 2, 4, and 5.
+
       await PowerPoint.run(async (context) => {
         context.presentation.load("slides");
         await context.sync();
@@ -513,15 +651,18 @@ methods:
         context.presentation.setSelectedSlides([slide2.id, slide4.id, slide5.id]);
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setSelectedSlides(slideIds: string[]): void;'
       parameters:
         - id: slideIds
-          description: List of slide IDs to select in the presentation. If the list is empty, selection is cleared.
+          description: >-
+            List of slide IDs to select in the presentation. If the list is
+            empty, selection is cleared.
           type: string[]
       return:
         type: void
@@ -530,14 +671,24 @@ methods:
     uid: powerpoint!PowerPoint.Presentation#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Presentation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `PowerPoint.Presentation` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.PresentationData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.PresentationData;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.PresentationData:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.PresentationData:interface" />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

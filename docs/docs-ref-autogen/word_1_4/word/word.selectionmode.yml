@@ -3,14 +3,22 @@ name: Word.SelectionMode
 uid: word!Word.SelectionMode:enum
 package: word!
 fullName: Word.SelectionMode
-summary: Represents where the cursor (insertion point) is set in the document after a selection.
-remarks: |-
-  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+summary: >-
+  Represents where the cursor (insertion point) is set in the document after a
+  selection.
+remarks: >-
+  \[ [API set: WordApi
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
 
   await Word.run(async (context) => {
     // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -18,32 +26,41 @@ remarks: |-
 
     await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: end
     uid: word!Word.SelectionMode.end:member
     package: word!
-    summary: |-
-      The cursor is at the end of the selection (just after the end of the selected range).
+    summary: >-
+      The cursor is at the end of the selection (just after the end of the
+      selected range).
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: select
     uid: word!Word.SelectionMode.select:member
     package: word!
-    summary: |-
+    summary: >-
       The entire range is selected.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Select"'
   - name: start
     uid: word!Word.SelectionMode.start:member
     package: word!
-    summary: |-
-      The cursor is at the beginning of the selection (just before the start of the selected range).
+    summary: >-
+      The cursor is at the beginning of the selection (just before the start of
+      the selected range).
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApi
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'

@@ -4,15 +4,23 @@ uid: powerpoint!PowerPoint.FillProperties:interface
 package: powerpoint!
 fullName: PowerPoint.FillProperties
 summary: Represents the fill formatting of a table cell.
-remarks: |-
-  \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
 
   // Specifies the font formatting and fill colors of the cells in a table.
+
   await PowerPoint.run(async (context) => {
     const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -46,8 +54,9 @@ remarks: |-
     });
     await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -56,16 +65,26 @@ properties:
     uid: powerpoint!PowerPoint.FillProperties#color:member
     package: powerpoint!
     fullName: color
-    summary: Represents the shape fill color in the hexadecimal format \#RRGGBB (e.g., "FFA500") or as a named HTML color value (e.g., "orange").
-    remarks: |-
-      \[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: >-
+      Represents the shape fill color in the hexadecimal format \#RRGGBB (e.g.,
+      "FFA500") or as a named HTML color value (e.g., "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/add-modify-tables.yaml
+
 
       // Specifies the font formatting and fill colors of the cells in a table.
+
       await PowerPoint.run(async (context) => {
         const shapes = context.presentation.getSelectedSlides().getItemAt(0).shapes;
 
@@ -99,8 +118,9 @@ properties:
         });
         await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,9 +131,14 @@ properties:
     uid: powerpoint!PowerPoint.FillProperties#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0
+      (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

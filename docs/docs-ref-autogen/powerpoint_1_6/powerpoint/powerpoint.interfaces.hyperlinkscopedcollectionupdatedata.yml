@@ -4,24 +4,27 @@ uid: powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData:interf
 package: powerpoint!
 fullName: PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData
 summary: >-
-  An interface for updating data on the `HyperlinkScopedCollection` object, for use in `hyperlinkScopedCollection.set({
-  ... })`<!-- -->.
+  An interface for updating data on the `HyperlinkScopedCollection` object, for
+  use in `hyperlinkScopedCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData#items:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.HyperlinkScopedCollectionUpdateData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: PowerPoint.Interfaces.HyperlinkData[];'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface" />[]
+        type: >-
+          <xref uid="powerpoint!PowerPoint.Interfaces.HyperlinkData:interface"
+          />[]

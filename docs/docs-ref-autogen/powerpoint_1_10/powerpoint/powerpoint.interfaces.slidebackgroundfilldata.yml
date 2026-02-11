@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.SlideBackgroundFillData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundFillData
-summary: An interface describing the data returned by calling `slideBackgroundFill.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `slideBackgroundFill.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,12 +16,22 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundFillData#type:member
     package: powerpoint!
     fullName: type
-    summary: Returns the fill type of the slide background. See [PowerPoint.SlideBackgroundFillType](xref:powerpoint!PowerPoint.SlideBackgroundFillType:enum) for details.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns the fill type of the slide background. See
+      [PowerPoint.SlideBackgroundFillType](xref:powerpoint!PowerPoint.SlideBackgroundFillType:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: PowerPoint.SlideBackgroundFillType | "Unsupported" | "Solid" | "Gradient" | "PictureOrTexture" | "Pattern";'
+      content: >-
+        type?: PowerPoint.SlideBackgroundFillType | "Unsupported" | "Solid" |
+        "Gradient" | "PictureOrTexture" | "Pattern";
       return:
-        type: <xref uid="powerpoint!PowerPoint.SlideBackgroundFillType:enum" /> | "Unsupported" | "Solid" | "Gradient" | "PictureOrTexture" | "Pattern"
+        type: >-
+          <xref uid="powerpoint!PowerPoint.SlideBackgroundFillType:enum" /> |
+          "Unsupported" | "Solid" | "Gradient" | "PictureOrTexture" | "Pattern"

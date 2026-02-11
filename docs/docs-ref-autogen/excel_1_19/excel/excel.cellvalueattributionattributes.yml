@@ -3,9 +3,14 @@ name: Excel.CellValueAttributionAttributes
 uid: excel!Excel.CellValueAttributionAttributes:interface
 package: excel!
 fullName: Excel.CellValueAttributionAttributes
-summary: The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
-remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  The attribution attributes object represents the set of details that can be
+  used to describe where information came from, if the information comes from a
+  public source.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +19,14 @@ properties:
     uid: excel!Excel.CellValueAttributionAttributes#licenseAddress:member
     package: excel!
     fullName: licenseAddress
-    summary: Represents a URL to a license or source that describes how this property can be used.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents a URL to a license or source that describes how this property
+      can be used.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +38,11 @@ properties:
     package: excel!
     fullName: licenseText
     summary: Represents a name for the license that governs this property.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +54,11 @@ properties:
     package: excel!
     fullName: sourceAddress
     summary: Represents a URL to the source of the `CellValue`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +70,11 @@ properties:
     package: excel!
     fullName: sourceText
     summary: Represents a name for the source of the `CellValue`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

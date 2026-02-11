@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.ShapeGroupData
 uid: powerpoint!PowerPoint.Interfaces.ShapeGroupData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeGroupData
-summary: An interface describing the data returned by calling `shapeGroup.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `shapeGroup.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,14 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.ShapeGroupData#creationId:member
     package: powerpoint!
     fullName: creationId
-    summary: Gets the creation ID of the shape group. Returns `null` if the shape group has no creation ID.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the creation ID of the shape group. Returns `null` if the shape group
+      has no creation ID.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +35,11 @@ properties:
     package: powerpoint!
     fullName: id
     summary: Gets the unique ID of the shape group.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

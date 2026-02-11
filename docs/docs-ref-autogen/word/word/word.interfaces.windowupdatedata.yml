@@ -3,9 +3,11 @@ name: Word.Interfaces.WindowUpdateData
 uid: word!Word.Interfaces.WindowUpdateData:interface
 package: word!
 fullName: Word.Interfaces.WindowUpdateData
-summary: An interface for updating data on the `Window` object, for use in `window.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Window` object, for use in
+  `window.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: areRulersDisplayed
     summary: Specifies whether rulers are displayed for the window or pane.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +31,13 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#areThumbnailsDisplayed:member
     package: word!
     fullName: areThumbnailsDisplayed
-    summary: Specifies whether thumbnail images of the pages in a document are displayed along the left side of the Microsoft Word document window.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether thumbnail images of the pages in a document are
+      displayed along the left side of the Microsoft Word document window.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +48,13 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#caption:member
     package: word!
     fullName: caption
-    summary: Specifies the caption text for the window that is displayed in the title bar of the document or application window.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the caption text for the window that is displayed in the title
+      bar of the document or application window.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +65,13 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#horizontalPercentScrolled:member
     package: word!
     fullName: horizontalPercentScrolled
-    summary: Specifies the horizontal scroll position as a percentage of the document width.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the horizontal scroll position as a percentage of the document
+      width.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,22 +82,34 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#imeMode:member
     package: word!
     fullName: imeMode
-    summary: Specifies the default start-up mode for the Japanese Input Method Editor (IME).
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the default start-up mode for the Japanese Input Method Editor
+      (IME).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'imeMode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul";'
+      content: >-
+        imeMode?: Word.ImeMode | "NoControl" | "On" | "Off" | "Hiragana" |
+        "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" |
+        "Hangul";
       return:
-        type: <xref uid="word!Word.ImeMode:enum" /> | "NoControl" | "On" | "Off" | "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" | "HangulFull" | "Hangul"
+        type: >-
+          <xref uid="word!Word.ImeMode:enum" /> | "NoControl" | "On" | "Off" |
+          "Hiragana" | "Katakana" | "KatakanaHalf" | "AlphaFull" | "Alpha" |
+          "HangulFull" | "Hangul"
   - name: isDocumentMapVisible
     uid: word!Word.Interfaces.WindowUpdateData#isDocumentMapVisible:member
     package: word!
     fullName: isDocumentMapVisible
     summary: Specifies whether the document map is visible.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +120,13 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#isEnvelopeVisible:member
     package: word!
     fullName: isEnvelopeVisible
-    summary: Specifies whether the email message header is visible in the document window. The default value is `false`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the email message header is visible in the document
+      window. The default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,12 +134,15 @@ properties:
       return:
         type: boolean
   - name: isHorizontalScrollBarDisplayed
-    uid: word!Word.Interfaces.WindowUpdateData#isHorizontalScrollBarDisplayed:member
+    uid: >-
+      word!Word.Interfaces.WindowUpdateData#isHorizontalScrollBarDisplayed:member
     package: word!
     fullName: isHorizontalScrollBarDisplayed
     summary: Specifies whether a horizontal scroll bar is displayed for the window.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +153,13 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#isLeftScrollBarDisplayed:member
     package: word!
     fullName: isLeftScrollBarDisplayed
-    summary: Specifies whether the vertical scroll bar appears on the left side of the document window.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the vertical scroll bar appears on the left side of the
+      document window.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +170,13 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#isRightRulerDisplayed:member
     package: word!
     fullName: isRightRulerDisplayed
-    summary: Specifies whether the vertical ruler appears on the right side of the document window in print layout view.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the vertical ruler appears on the right side of the
+      document window in print layout view.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,8 +188,10 @@ properties:
     package: word!
     fullName: isSplit
     summary: Specifies whether the window is split into multiple panes.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,8 +203,10 @@ properties:
     package: word!
     fullName: isVerticalRulerDisplayed
     summary: Specifies whether a vertical ruler is displayed for the window or pane.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,8 +218,10 @@ properties:
     package: word!
     fullName: isVerticalScrollBarDisplayed
     summary: Specifies whether a vertical scroll bar is displayed for the window.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,8 +233,10 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies whether the window is visible.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,8 +248,10 @@ properties:
     package: word!
     fullName: next
     summary: Gets the next document window in the collection of open document windows.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,8 +263,10 @@ properties:
     package: word!
     fullName: previous
     summary: Gets the previous document window in the collection open document windows.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,22 +277,32 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#showSourceDocuments:member
     package: word!
     fullName: showSourceDocuments
-    summary: Specifies how Microsoft Word displays source documents after a compare and merge process.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies how Microsoft Word displays source documents after a compare and
+      merge process.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'showSourceDocuments?: Word.ShowSourceDocuments | "None" | "Original" | "Revised" | "Both";'
+      content: >-
+        showSourceDocuments?: Word.ShowSourceDocuments | "None" | "Original" |
+        "Revised" | "Both";
       return:
-        type: <xref uid="word!Word.ShowSourceDocuments:enum" /> | "None" | "Original" | "Revised" | "Both"
+        type: >-
+          <xref uid="word!Word.ShowSourceDocuments:enum" /> | "None" |
+          "Original" | "Revised" | "Both"
   - name: splitVertical
     uid: word!Word.Interfaces.WindowUpdateData#splitVertical:member
     package: word!
     fullName: splitVertical
     summary: Specifies the vertical split percentage for the window.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,21 +314,27 @@ properties:
     package: word!
     fullName: state
     summary: Specifies the state of the document window or task window.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'state?: Word.WindowState | "Normal" | "Maximize" | "Minimize";'
       return:
-        type: <xref uid="word!Word.WindowState:enum" /> | "Normal" | "Maximize" | "Minimize"
+        type: >-
+          <xref uid="word!Word.WindowState:enum" /> | "Normal" | "Maximize" |
+          "Minimize"
   - name: styleAreaWidth
     uid: word!Word.Interfaces.WindowUpdateData#styleAreaWidth:member
     package: word!
     fullName: styleAreaWidth
     summary: Specifies the width of the style area in points.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,9 +345,13 @@ properties:
     uid: word!Word.Interfaces.WindowUpdateData#verticalPercentScrolled:member
     package: word!
     fullName: verticalPercentScrolled
-    summary: Specifies the vertical scroll position as a percentage of the document length.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the vertical scroll position as a percentage of the document
+      length.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

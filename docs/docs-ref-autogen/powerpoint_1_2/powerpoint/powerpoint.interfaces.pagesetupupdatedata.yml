@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.PageSetupUpdateData
 uid: powerpoint!PowerPoint.Interfaces.PageSetupUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PageSetupUpdateData
-summary: An interface for updating data on the `PageSetup` object, for use in `pageSetup.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `PageSetup` object, for use in
+  `pageSetup.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

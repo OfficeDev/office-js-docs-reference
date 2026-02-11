@@ -3,9 +3,11 @@ name: Word.Interfaces.HtmlDivisionUpdateData
 uid: word!Word.Interfaces.HtmlDivisionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.HtmlDivisionUpdateData
-summary: An interface for updating data on the `HtmlDivision` object, for use in `htmlDivision.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `HtmlDivision` object, for use in
+  `htmlDivision.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: leftIndent
     summary: Specifies the left indent value (in points) for this HTML division.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: word!
     fullName: rightIndent
     summary: Specifies the right indent (in points) for this HTML division.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +47,10 @@ properties:
     package: word!
     fullName: spaceAfter
     summary: Specifies the amount of spacing (in points) after this HTML division.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +62,10 @@ properties:
     package: word!
     fullName: spaceBefore
     summary: Specifies the spacing (in points) before this HTML division.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

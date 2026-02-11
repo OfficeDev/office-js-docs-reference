@@ -3,9 +3,11 @@ name: Word.Interfaces.CustomXmlPartData
 uid: word!Word.Interfaces.CustomXmlPartData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlPartData
-summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlPart.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the custom XML part.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

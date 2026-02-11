@@ -3,9 +3,15 @@ name: PowerPoint.SlideBackgroundSolidFill
 uid: powerpoint!PowerPoint.SlideBackgroundSolidFill:class
 package: powerpoint!
 fullName: PowerPoint.SlideBackgroundSolidFill
-summary: Represents [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class) solid fill properties.
-remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents
+  [PowerPoint.SlideBackground](xref:powerpoint!PowerPoint.SlideBackground:class)
+  solid fill properties.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +20,14 @@ properties:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFill#color:member
     package: powerpoint!
     fullName: color
-    summary: Specifies the fill color in HTML color format (e.g., "\#FFA500" or "orange").
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the fill color in HTML color format (e.g., "\#FFA500" or
+      "orange").
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +38,11 @@ properties:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFill#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +53,14 @@ properties:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFill#transparency:member
     package: powerpoint!
     fullName: transparency
-    summary: Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the transparency percentage of the fill as a value from 0.0
+      (opaque) through 1.0 (clear).
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,17 +72,25 @@ methods:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFill#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.SlideBackgroundSolidFillLoadOptions): PowerPoint.SlideBackgroundSolidFill;'
+      content: >-
+        load(options?:
+        PowerPoint.Interfaces.SlideBackgroundSolidFillLoadOptions):
+        PowerPoint.SlideBackgroundSolidFill;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillLoadOptions:interface"
+            />
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideBackgroundSolidFill:class" />
         description: ''
@@ -72,16 +98,22 @@ methods:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFill#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): PowerPoint.SlideBackgroundSolidFill;'
+      content: >-
+        load(propertyNames?: string | string[]):
+        PowerPoint.SlideBackgroundSolidFill;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideBackgroundSolidFill:class" />
@@ -90,9 +122,11 @@ methods:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFill#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +137,11 @@ methods:
                 }): PowerPoint.SlideBackgroundSolidFill;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -116,14 +154,26 @@ methods:
     uid: powerpoint!PowerPoint.SlideBackgroundSolidFill#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SlideBackgroundSolidFill` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideBackgroundSolidFillData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `PowerPoint.SlideBackgroundSolidFill` object is an API object, the
+      `toJSON` method returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.SlideBackgroundSolidFillData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideBackgroundSolidFillData;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideBackgroundSolidFillData:interface"
+          />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

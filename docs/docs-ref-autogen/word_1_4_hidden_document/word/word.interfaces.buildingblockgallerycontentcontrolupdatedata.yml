@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.BuildingBlockGalleryContentControlUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockGalleryContentControlUpdateData
 summary: >-
-  An interface for updating data on the `BuildingBlockGalleryContentControl` object, for use in
-  `buildingBlockGalleryContentControl.set({ ... })`<!-- -->.
+  An interface for updating data on the `BuildingBlockGalleryContentControl`
+  object, for use in `buildingBlockGalleryContentControl.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -3,9 +3,11 @@ name: Word.Interfaces.CoauthoringLockData
 uid: word!Word.Interfaces.CoauthoringLockData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockData
-summary: An interface describing the data returned by calling `coauthoringLock.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `coauthoringLock.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: owner
     summary: Gets the owner of the lock.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +31,13 @@ properties:
     uid: word!Word.Interfaces.CoauthoringLockData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringLock` object.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `CoauthoringLock` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,11 +49,17 @@ properties:
     package: word!
     fullName: type
     summary: Gets a `CoauthoringLockType` value that represents the lock type.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.CoauthoringLockType | "None" | "Reservation" | "Ephemeral" | "Changed";'
+      content: >-
+        type?: Word.CoauthoringLockType | "None" | "Reservation" | "Ephemeral" |
+        "Changed";
       return:
-        type: <xref uid="word!Word.CoauthoringLockType:enum" /> | "None" | "Reservation" | "Ephemeral" | "Changed"
+        type: >-
+          <xref uid="word!Word.CoauthoringLockType:enum" /> | "None" |
+          "Reservation" | "Ephemeral" | "Changed"

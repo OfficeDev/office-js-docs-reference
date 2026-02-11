@@ -3,12 +3,19 @@ name: Office.UserProfile
 uid: outlook!Office.UserProfile:interface
 package: outlook!
 fullName: Office.UserProfile
-summary: Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
-remarks: |-
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+summary: >-
+  Information about the user associated with the mailbox. This includes their
+  account type, display name, email address, and time zone.
+remarks: >-
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
-example: []
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose or Read
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,18 +25,28 @@ properties:
     package: outlook!
     fullName: displayName
     summary: Gets the user's display name.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Example: Allie Bellew
+
       console.log(Office.context.mailbox.userProfile.displayName);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,18 +58,28 @@ properties:
     package: outlook!
     fullName: emailAddress
     summary: Gets the user's SMTP email address.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Example: allieb@contoso.com
+
       console.log(Office.context.mailbox.userProfile.emailAddress);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,22 +90,37 @@ properties:
     uid: outlook!Office.UserProfile#timeZone:member
     package: outlook!
     fullName: timeZone
-    summary: |-
+    summary: >-
       Gets the user's time zone in Windows format.
 
-      The system time zone is usually returned. However, in Outlook on the web and in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->), the default time zone in the calendar preferences is returned instead.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose or Read
+      The system time zone is usually returned. However, in Outlook on the web
+      and in [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->), the default time zone in the calendar preferences is returned
+      instead.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
+
 
       #### Examples
 
+
       ```TypeScript
+
       // Example: Pacific Standard Time
+
       console.log(Office.context.mailbox.userProfile.timeZone);
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

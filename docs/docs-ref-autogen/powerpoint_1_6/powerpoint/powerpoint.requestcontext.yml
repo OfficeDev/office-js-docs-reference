@@ -3,7 +3,11 @@ name: PowerPoint.RequestContext
 uid: powerpoint!PowerPoint.RequestContext:class
 package: powerpoint!
 fullName: PowerPoint.RequestContext
-summary: The RequestContext object facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the request context is required to get access to the PowerPoint object model from the add-in.
+summary: >-
+  The RequestContext object facilitates requests to the PowerPoint application.
+  Since the Office add-in and the PowerPoint application run in two different
+  processes, the request context is required to get access to the PowerPoint
+  object model from the add-in.
 remarks: |-
   #### Examples
 
@@ -15,7 +19,7 @@ remarks: |-
     // Interact with the PowerPoint presentation...
   });
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -26,7 +30,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +46,7 @@ properties:
     fullName: application
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +59,7 @@ properties:
     fullName: presentation
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

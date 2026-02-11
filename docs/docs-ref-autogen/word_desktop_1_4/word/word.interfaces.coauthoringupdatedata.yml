@@ -3,9 +3,11 @@ name: Word.Interfaces.CoauthoringUpdateData
 uid: word!Word.Interfaces.CoauthoringUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringUpdateData
-summary: An interface describing the data returned by calling `coauthoringUpdate.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `coauthoringUpdate.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.CoauthoringUpdateData#range:member
     package: word!
     fullName: range
-    summary: Gets a `Range` object that represents the portion of the document that's contained in the `CoauthoringUpdate` object.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets a `Range` object that represents the portion of the document that's
+      contained in the `CoauthoringUpdate` object.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,17 +4,24 @@ uid: office!Office.TaskPane:interface
 package: office!
 fullName: Office.TaskPane
 summary: Provides methods to manage the task pane of an add-in.
-remarks: |-
-  \*\*Requirement set\*\*: [TaskPaneApi 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+remarks: >-
+  **Requirement set**: [TaskPaneApi
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Adjust the width of the task pane.
+
   const width = 500;
+
   Office.extensionLifeCycle.taskpane.setWidth(width);
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -24,26 +31,40 @@ methods:
     package: office!
     fullName: setWidth(width)
     summary: Sets the width of the task pane of an add-in in pixels.
-    remarks: |-
-      \*\*Requirement set\*\*: [TaskPaneApi 1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
+    remarks: >-
+      **Requirement set**: [TaskPaneApi
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/task-pane-api-requirement-sets)
 
-      \*\*Important\*\*: The default width of the task pane of an add-in varies depending on the platform.
 
-      - \*\*Web (Excel)\*\*: 350 px
+      **Important**: The default width of the task pane of an add-in varies
+      depending on the platform.
 
-      - \*\*Web (Word)\*\*: 330 px
 
-      - \*\*Windows, Mac\*\*: 51 px
+      - **Web (Excel)**: 350 px
 
-      If you pass a width beyond the minimum and maximum constraints, the task pane isn't resized and no error is shown.
-    example: []
+
+      - **Web (Word)**: 330 px
+
+
+      - **Windows, Mac**: 51 px
+
+
+      If you pass a width beyond the minimum and maximum constraints, the task
+      pane isn't resized and no error is shown.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'setWidth(width: number): void;'
       parameters:
         - id: width
-          description: The width of a task pane in pixels. The minimum and maximum constraints vary by platform. In Excel on the web, the width must be between 350 and 500 px (inclusive). In Word on the web, the width must be between 330 and 500 px (inclusive). In Office on Windows and on Mac, the width must be between 51 px and 50% of the client window.
+          description: >-
+            The width of a task pane in pixels. The minimum and maximum
+            constraints vary by platform. In Excel on the web, the width must be
+            between 350 and 500 px (inclusive). In Word on the web, the width
+            must be between 330 and 500 px (inclusive). In Office on Windows and
+            on Mac, the width must be between 51 px and 50% of the client
+            window.
           type: number
       return:
         type: void

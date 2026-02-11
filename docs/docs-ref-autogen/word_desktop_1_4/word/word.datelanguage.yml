@@ -4,24 +4,30 @@ uid: word!Word.DateLanguage:enum
 package: word!
 fullName: Word.DateLanguage
 summary: Specifies the language to use for date formatting.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: bidirectional
     uid: word!Word.DateLanguage.bidirectional:member
     package: word!
-    summary: |-
+    summary: >-
       Uses the bidirectional date/time format.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Bidirectional"'
   - name: latin
     uid: word!Word.DateLanguage.latin:member
     package: word!
-    summary: |-
+    summary: >-
       Uses the latin date/time format.
 
-      \* \[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Latin"'

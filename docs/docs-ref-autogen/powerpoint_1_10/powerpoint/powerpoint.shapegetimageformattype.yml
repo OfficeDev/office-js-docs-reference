@@ -4,16 +4,22 @@ uid: powerpoint!PowerPoint.ShapeGetImageFormatType:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeGetImageFormatType
 summary: Represents the format of an image.
-remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: png
     uid: powerpoint!PowerPoint.ShapeGetImageFormatType.png:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       The picture is in PNG format.
 
-      \* \[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Png"'

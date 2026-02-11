@@ -3,9 +3,15 @@ name: Excel.LinkedWorkbook
 uid: excel!Excel.LinkedWorkbook:class
 package: excel!
 fullName: Excel.LinkedWorkbook
-summary: Contains information about a linked workbook. If a workbook has links pointing to data in another workbook, the second workbook is linked to the first workbook. In this scenario, the second workbook is called the "linked workbook".
-remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Contains information about a linked workbook. If a workbook has links pointing
+  to data in another workbook, the second workbook is linked to the first
+  workbook. In this scenario, the second workbook is called the "linked
+  workbook".
+remarks: >-
+  \[ [API set: ExcelApiOnline
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +20,11 @@ properties:
     uid: excel!Excel.LinkedWorkbook#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +35,13 @@ properties:
     uid: excel!Excel.LinkedWorkbook#id:member
     package: excel!
     fullName: id
-    summary: The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
-    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The original URL pointing to the linked workbook. It is unique across all
+      linked workbooks in the collection.
+    remarks: >-
+      \[ [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,9 +53,15 @@ methods:
     uid: excel!Excel.LinkedWorkbook#breakLinks:member(1)
     package: excel!
     fullName: breakLinks()
-    summary: Makes a request to break the links pointing to the linked workbook. Links in formulas are replaced with the latest fetched data. The current `LinkedWorkbook` object is invalidated and removed from `LinkedWorkbookCollection`<!-- -->.
-    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Makes a request to break the links pointing to the linked workbook. Links
+      in formulas are replaced with the latest fetched data. The current
+      `LinkedWorkbook` object is invalidated and removed from
+      `LinkedWorkbookCollection`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,17 +73,23 @@ methods:
     uid: excel!Excel.LinkedWorkbook#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.LinkedWorkbookLoadOptions): Excel.LinkedWorkbook;'
+      content: >-
+        load(options?: Excel.Interfaces.LinkedWorkbookLoadOptions):
+        Excel.LinkedWorkbook;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="excel!Excel.Interfaces.LinkedWorkbookLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.LinkedWorkbookLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.LinkedWorkbook:class" />
         description: ''
@@ -73,16 +97,20 @@ methods:
     uid: excel!Excel.LinkedWorkbook#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Excel.LinkedWorkbook;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.LinkedWorkbook:class" />
@@ -91,9 +119,11 @@ methods:
     uid: excel!Excel.LinkedWorkbook#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +134,11 @@ methods:
                 }): Excel.LinkedWorkbook;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -118,8 +152,10 @@ methods:
     package: excel!
     fullName: refresh()
     summary: Makes a request to refresh the data retrieved from the linked workbook.
-    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApiOnline
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +167,17 @@ methods:
     uid: excel!Excel.LinkedWorkbook#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.LinkedWorkbook` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedWorkbookData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Excel.LinkedWorkbook`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Excel.Interfaces.LinkedWorkbookData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

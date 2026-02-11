@@ -3,9 +3,13 @@ name: Word.DocumentFollowHyperlinkOptions
 uid: word!Word.DocumentFollowHyperlinkOptions:interface
 package: word!
 fullName: Word.DocumentFollowHyperlinkOptions
-summary: Provides configuration options for the [Document.followHyperlink](xref:word!Word.Document:class) method.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Provides configuration options for the
+  [Document.followHyperlink](xref:word!Word.Document:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,9 +18,13 @@ properties:
     uid: word!Word.DocumentFollowHyperlinkOptions#addHistory:member
     package: word!
     fullName: addHistory
-    summary: If provided, specifies whether to add the link to the browsing history. The default value is `true`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to add the link to the browsing history.
+      The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -27,9 +35,13 @@ properties:
     uid: word!Word.DocumentFollowHyperlinkOptions#address:member
     package: word!
     fullName: address
-    summary: If provided, specifies the hyperlink address to follow. The default value is an empty string.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the hyperlink address to follow. The default value
+      is an empty string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -40,9 +52,13 @@ properties:
     uid: word!Word.DocumentFollowHyperlinkOptions#extraInfo:member
     package: word!
     fullName: extraInfo
-    summary: If provided, specifies additional information to pass with the request. The default value is an empty string.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies additional information to pass with the request.
+      The default value is an empty string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -53,9 +69,13 @@ properties:
     uid: word!Word.DocumentFollowHyperlinkOptions#headerInfo:member
     package: word!
     fullName: headerInfo
-    summary: If provided, specifies header information for the HTTP request. The default value is an empty string.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies header information for the HTTP request. The
+      default value is an empty string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,9 +86,13 @@ properties:
     uid: word!Word.DocumentFollowHyperlinkOptions#httpMethod:member
     package: word!
     fullName: httpMethod
-    summary: If provided, specifies the HTTP method to use for the request. The default value is "GET".
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the HTTP method to use for the request. The default
+      value is "GET".
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -79,9 +103,13 @@ properties:
     uid: word!Word.DocumentFollowHyperlinkOptions#newWindow:member
     package: word!
     fullName: newWindow
-    summary: If provided, specifies whether to open the link in a new window. The default value is `false`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to open the link in a new window. The
+      default value is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -92,9 +120,13 @@ properties:
     uid: word!Word.DocumentFollowHyperlinkOptions#subAddress:member
     package: word!
     fullName: subAddress
-    summary: If provided, specifies the sub-address within the document. The default value is an empty string.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the sub-address within the document. The default
+      value is an empty string.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:

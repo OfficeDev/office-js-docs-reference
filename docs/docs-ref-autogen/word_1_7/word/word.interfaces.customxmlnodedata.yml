@@ -3,9 +3,11 @@ name: Word.Interfaces.CustomXmlNodeData
 uid: word!Word.Interfaces.CustomXmlNodeData:interface
 package: word!
 fullName: Word.Interfaces.CustomXmlNodeData
-summary: An interface describing the data returned by calling `customXmlNode.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `customXmlNode.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

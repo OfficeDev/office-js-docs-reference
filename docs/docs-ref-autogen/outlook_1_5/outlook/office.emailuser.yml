@@ -4,15 +4,24 @@ uid: outlook!Office.EmailUser:interface
 package: outlook!
 fullName: Office.EmailUser
 summary: Represents an email account on an Exchange Server.
-remarks: |-
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+remarks: >-
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Read
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Add recipients to the To field of an email.
+
   const recipients: Office.EmailUser[] = [
       {
           "displayName": "Allie Bellew",
@@ -24,6 +33,7 @@ remarks: |-
       }
   ];
 
+
   Office.context.mailbox.item.to.addAsync(recipients, (result) => {
       if (result.status === Office.AsyncResultStatus.Failed) {
           console.log(result.error.message);
@@ -32,8 +42,9 @@ remarks: |-
 
       console.log("Recipients added to the To field.");
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -44,7 +55,7 @@ properties:
     fullName: displayName
     summary: Gets the display name associated with an email address.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +68,7 @@ properties:
     fullName: emailAddress
     summary: Gets the SMTP email address.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

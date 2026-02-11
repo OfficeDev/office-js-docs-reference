@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.ThreeDimensionalFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ThreeDimensionalFormatUpdateData
 summary: >-
-  An interface for updating data on the `ThreeDimensionalFormat` object, for use in `threeDimensionalFormat.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `ThreeDimensionalFormat` object, for use
+  in `threeDimensionalFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

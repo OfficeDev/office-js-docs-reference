@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.ImageData
 summary: An interface describing the data returned by calling `image.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,21 +15,29 @@ properties:
     package: excel!
     fullName: format
     summary: Returns the format of the image.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'format?: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";'
+      content: >-
+        format?: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" |
+        "PNG" | "SVG";
       return:
-        type: <xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
+        type: >-
+          <xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
+          "JPEG" | "GIF" | "PNG" | "SVG"
   - name: id
     uid: excel!Excel.Interfaces.ImageData#id:member
     package: excel!
     fullName: id
     summary: Specifies the shape identifier for the image object.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

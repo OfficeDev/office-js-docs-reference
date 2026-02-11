@@ -4,8 +4,11 @@ uid: visio!Visio.TaskPaneStateChangedEventArgs:interface
 package: visio!
 fullName: Visio.TaskPaneStateChangedEventArgs
 summary: Provides information about the TaskPaneStateChanged event.
-remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-example: []
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +18,11 @@ properties:
     package: visio!
     fullName: isVisible
     summary: Current state of the task pane.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +34,18 @@ properties:
     package: visio!
     fullName: paneType
     summary: Type of the TaskPane.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'paneType: Visio.TaskPaneType | "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings";'
+      content: >-
+        paneType: Visio.TaskPaneType | "None" | "DataVisualizerProcessMappings"
+        | "DataVisualizerOrgChartMappings";
       return:
-        type: <xref uid="visio!Visio.TaskPaneType:enum" /> | "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings"
+        type: >-
+          <xref uid="visio!Visio.TaskPaneType:enum" /> | "None" |
+          "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings"

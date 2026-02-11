@@ -3,9 +3,13 @@ name: Excel.Interfaces.RangeFormatLoadOptions
 uid: excel!Excel.Interfaces.RangeFormatLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.RangeFormatLoadOptions
-summary: A format object encapsulating the range's font, fill, borders, alignment, and other properties.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  A format object encapsulating the range's font, fill, borders, alignment, and
+  other properties.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,21 +35,28 @@ properties:
     package: excel!
     fullName: borders
     summary: Collection of border objects that apply to the overall range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface"
+          />
   - name: fill
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member
     package: excel!
     fullName: fill
     summary: Returns the fill object defined on the overall range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +68,10 @@ properties:
     package: excel!
     fullName: font
     summary: Returns the font object defined on the overall range.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +82,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#horizontalAlignment:member
     package: excel!
     fullName: horizontalAlignment
-    summary: Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the horizontal alignment for the specified object. See
+      `Excel.HorizontalAlignment` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +99,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#verticalAlignment:member
     package: excel!
     fullName: verticalAlignment
-    summary: Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the vertical alignment for the specified object. See
+      `Excel.VerticalAlignment` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +116,13 @@ properties:
     uid: excel!Excel.Interfaces.RangeFormatLoadOptions#wrapText:member
     package: excel!
     fullName: wrapText
-    summary: Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if Excel wraps the text in the object. A `null` value indicates
+      that the entire range doesn't have a uniform wrap setting
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

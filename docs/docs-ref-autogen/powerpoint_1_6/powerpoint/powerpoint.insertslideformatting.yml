@@ -4,13 +4,20 @@ uid: powerpoint!PowerPoint.InsertSlideFormatting:enum
 package: powerpoint!
 fullName: PowerPoint.InsertSlideFormatting
 summary: Specifies the formatting options for when slides are inserted.
-remarks: |-
-  \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
+
 
   await PowerPoint.run(async function(context) {
       // Get the ID of the first selected slide.
@@ -27,24 +34,31 @@ remarks: |-
       presentation.insertSlidesFromBase64(chosenFileBase64, insertOptions);
       await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: keepSourceFormatting
     uid: powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Copy the source theme into the target presentation and use that theme.
 
-      \* \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"KeepSourceFormatting"'
   - name: useDestinationTheme
     uid: powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Use the existing theme in the target presentation.
 
-      \* \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"UseDestinationTheme"'

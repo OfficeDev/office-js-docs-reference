@@ -3,9 +3,11 @@ name: Word.Interfaces.HeadingStyleUpdateData
 uid: word!Word.Interfaces.HeadingStyleUpdateData:interface
 package: word!
 fullName: Word.Interfaces.HeadingStyleUpdateData
-summary: An interface for updating data on the `HeadingStyle` object, for use in `headingStyle.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `HeadingStyle` object, for use in
+  `headingStyle.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

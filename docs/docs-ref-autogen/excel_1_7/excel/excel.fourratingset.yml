@@ -3,9 +3,11 @@ name: Excel.FourRatingSet
 uid: excel!Excel.FourRatingSet:interface
 package: excel!
 fullName: Excel.FourRatingSet
-summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+summary: >-
+  \[ [API set: ExcelApi
+  1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: fourBars
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +31,7 @@ properties:
     fullName: oneBar
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +44,7 @@ properties:
     fullName: threeBars
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +57,7 @@ properties:
     fullName: twoBars
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,40 +4,56 @@ uid: word!Word.RulerStyle:enum
 package: word!
 fullName: Word.RulerStyle
 summary: Specifies the way Word adjusts the table when the left indent is changed.
-remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: firstColumn
     uid: word!Word.RulerStyle.firstColumn:member
     package: word!
-    summary: |-
-      Adjusts the left edge of the first column only, preserving the positions of the other columns and the right edge of the table.
+    summary: >-
+      Adjusts the left edge of the first column only, preserving the positions
+      of the other columns and the right edge of the table.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FirstColumn"'
   - name: none
     uid: word!Word.RulerStyle.none:member
     package: word!
-    summary: |-
-      Adjusts the left edge of row or rows, preserving the width of all columns by shifting them to the left or right. This is the default value.
+    summary: >-
+      Adjusts the left edge of row or rows, preserving the width of all columns
+      by shifting them to the left or right. This is the default value.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: proportional
     uid: word!Word.RulerStyle.proportional:member
     package: word!
-    summary: |-
-      Adjusts the left edge of the first column, preserving the position of the right edge of the table by proportionally adjusting the widths of all the cells in the specified row or rows.
+    summary: >-
+      Adjusts the left edge of the first column, preserving the position of the
+      right edge of the table by proportionally adjusting the widths of all the
+      cells in the specified row or rows.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Proportional"'
   - name: sameWidth
     uid: word!Word.RulerStyle.sameWidth:member
     package: word!
-    summary: |-
-      Adjusts the left edge of the first column, preserving the position of the right edge of the table by setting the widths of all the cells in the specified row or rows to the same value.
+    summary: >-
+      Adjusts the left edge of the first column, preserving the position of the
+      right edge of the table by setting the widths of all the cells in the
+      specified row or rows to the same value.
 
-      \* \[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      * \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SameWidth"'

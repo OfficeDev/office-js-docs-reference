@@ -3,9 +3,11 @@ name: Word.Interfaces.CoauthoringLockData
 uid: word!Word.Interfaces.CoauthoringLockData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringLockData
-summary: An interface describing the data returned by calling `coauthoringLock.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `coauthoringLock.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

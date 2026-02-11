@@ -4,8 +4,10 @@ uid: onenote!OneNote.Interfaces.TableRowLoadOptions:interface
 package: onenote!
 fullName: OneNote.Interfaces.TableRowLoadOptions
 summary: Represents a row in a table.
-remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: onenote!OneNote.Interfaces.TableRowLoadOptions#$all:member
     package: onenote!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +33,11 @@ properties:
     package: onenote!
     fullName: cellCount
     summary: Gets the number of cells in the row. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,21 +49,30 @@ properties:
     package: onenote!
     fullName: cells
     summary: Gets the cells in the row.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;'
       return:
-        type: <xref uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface"
+          />
   - name: id
     uid: onenote!OneNote.Interfaces.TableRowLoadOptions#id:member
     package: onenote!
     fullName: id
     summary: Gets the ID of the row. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +84,11 @@ properties:
     package: onenote!
     fullName: parentTable
     summary: Gets the parent table.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +100,11 @@ properties:
     package: onenote!
     fullName: rowIndex
     summary: Gets the index of the row in its parent table. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

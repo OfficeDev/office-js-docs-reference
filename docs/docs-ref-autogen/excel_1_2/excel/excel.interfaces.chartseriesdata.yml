@@ -3,9 +3,11 @@ name: Excel.Interfaces.ChartSeriesData
 uid: excel!Excel.Interfaces.ChartSeriesData:interface
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesData
-summary: An interface describing the data returned by calling `chartSeries.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `chartSeries.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: excel!Excel.Interfaces.ChartSeriesData#format:member
     package: excel!
     fullName: format
-    summary: Represents the formatting of a chart series, which includes fill and line formatting.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the formatting of a chart series, which includes fill and line
+      formatting.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,13 @@ properties:
     uid: excel!Excel.Interfaces.ChartSeriesData#name:member
     package: excel!
     fullName: name
-    summary: Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the name of a series in a chart. The name's length should not be
+      greater than 255 characters.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +51,10 @@ properties:
     package: excel!
     fullName: points
     summary: Returns a collection of all points in the series.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

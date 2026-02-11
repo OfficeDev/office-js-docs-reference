@@ -3,25 +3,36 @@ name: Excel.PythonMarshalMode
 uid: excel!Excel.PythonMarshalMode:enum
 package: excel!
 fullName: Excel.PythonMarshalMode
-summary: Specifies what an =PY formula returns, such as an Excel value or a Python object.
-remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Specifies what an =PY formula returns, such as an Excel value or a Python
+  object.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 fields:
   - name: excelValue
     uid: excel!Excel.PythonMarshalMode.excelValue:member
     package: excel!
-    summary: |-
+    summary: >-
       Specifies that the result of an =PY formula should be an Excel value.
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"ExcelValue"'
   - name: pythonObject
     uid: excel!Excel.PythonMarshalMode.pythonObject:member
     package: excel!
-    summary: |-
-      Specifies that the result of an =PY formula should be a reference to an object in the Python service.
+    summary: >-
+      Specifies that the result of an =PY formula should be a reference to an
+      object in the Python service.
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"PythonObject"'

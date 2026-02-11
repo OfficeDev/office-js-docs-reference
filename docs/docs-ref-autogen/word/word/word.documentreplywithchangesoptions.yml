@@ -3,9 +3,13 @@ name: Word.DocumentReplyWithChangesOptions
 uid: word!Word.DocumentReplyWithChangesOptions:interface
 package: word!
 fullName: Word.DocumentReplyWithChangesOptions
-summary: Provides configuration options for the [Document.replyWithChanges](xref:word!Word.Document:class) method.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Provides configuration options for the
+  [Document.replyWithChanges](xref:word!Word.Document:class) method.
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,9 +18,13 @@ properties:
     uid: word!Word.DocumentReplyWithChangesOptions#includeAttachment:member
     package: word!
     fullName: includeAttachment
-    summary: If provided, specifies whether to include the document as an attachment. The default value is `true`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to include the document as an attachment.
+      The default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -27,9 +35,13 @@ properties:
     uid: word!Word.DocumentReplyWithChangesOptions#recipients:member
     package: word!
     fullName: recipients
-    summary: If provided, specifies the recipients of the reply. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the recipients of the reply. The default value is
+      "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -40,9 +52,13 @@ properties:
     uid: word!Word.DocumentReplyWithChangesOptions#showMessage:member
     package: word!
     fullName: showMessage
-    summary: If provided, specifies whether to show the message before sending. The default value is `true`<!-- -->.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies whether to show the message before sending. The
+      default value is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -53,9 +69,13 @@ properties:
     uid: word!Word.DocumentReplyWithChangesOptions#subject:member
     package: word!
     fullName: subject
-    summary: If provided, specifies the subject of the reply email. The default value is "" (empty string).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      If provided, specifies the subject of the reply email. The default value
+      is "" (empty string).
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:

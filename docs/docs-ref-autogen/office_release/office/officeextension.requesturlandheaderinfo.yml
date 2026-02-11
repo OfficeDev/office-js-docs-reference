@@ -5,7 +5,7 @@ package: office!
 fullName: OfficeExtension.RequestUrlAndHeaderInfo
 summary: Request URL and headers
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +16,7 @@ properties:
     fullName: headers
     summary: Request headers
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ properties:
     fullName: url
     summary: Request URL
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,9 +3,17 @@ name: Word.ListTemplateGalleryCollection
 uid: word!Word.ListTemplateGalleryCollection:class
 package: word!
 fullName: Word.ListTemplateGalleryCollection
-summary: Contains a collection of [Word.ListTemplateGallery](xref:word!Word.ListTemplateGallery:class) objects available through the three bullets-and-numbering buttons on the \*\*Home\*\* tab (see [Define new bullets, numbers, and multilevel lists](https://support.microsoft.com/office/6c06ef65-27ad-4893-80c9-0b944cb81f5f) for how to access in the Word UI).
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Contains a collection of
+  [Word.ListTemplateGallery](xref:word!Word.ListTemplateGallery:class) objects
+  available through the three bullets-and-numbering buttons on the **Home**
+  tab (see [Define new bullets, numbers, and multilevel
+  lists](https://support.microsoft.com/office/6c06ef65-27ad-4893-80c9-0b944cb81f5f)
+  for how to access in the Word UI).
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +22,11 @@ properties:
     uid: word!Word.ListTemplateGalleryCollection#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +39,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,8 +52,10 @@ methods:
     package: word!
     fullName: getByType(type)
     summary: Gets a `ListTemplateGallery` object by its type in the collection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,12 +72,16 @@ methods:
     package: word!
     fullName: getByType(type)
     summary: Gets a `ListTemplateGallery` object by its type in the collection.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getByType(type: "Bullets" | "Number" | "OutlineNumbered"): Word.ListTemplateGallery;'
+      content: >-
+        getByType(type: "Bullets" | "Number" | "OutlineNumbered"):
+        Word.ListTemplateGallery;
       parameters:
         - id: type
           description: The type of list template gallery to retrieve.
@@ -78,8 +94,10 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a `ListTemplateGallery` object by its index in the collection.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -95,16 +113,22 @@ methods:
     uid: word!Word.ListTemplateGalleryCollection#load:member(1)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): Word.ListTemplateGalleryCollection;'
+      content: >-
+        load(propertyNames?: string | string[]):
+        Word.ListTemplateGalleryCollection;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.ListTemplateGalleryCollection:class" />
@@ -113,16 +137,24 @@ methods:
     uid: word!Word.ListTemplateGalleryCollection#load:member(2)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ListTemplateGalleryCollection;'
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Word.ListTemplateGalleryCollection;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="word!Word.ListTemplateGalleryCollection:class" />
@@ -131,23 +163,44 @@ methods:
     uid: word!Word.ListTemplateGalleryCollection#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.ListTemplateGalleryCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListTemplateGalleryCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Word.ListTemplateGalleryCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `Word.Interfaces.ListTemplateGalleryCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the
+      collection's items.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.ListTemplateGalleryCollectionData;'
       return:
-        type: <xref uid="word!Word.Interfaces.ListTemplateGalleryCollectionData:interface" />
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.ListTemplateGalleryCollectionData:interface"
+          />
         description: ''
   - name: track()
     uid: word!Word.ListTemplateGalleryCollection#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,9 +212,16 @@ methods:
     uid: word!Word.ListTemplateGalleryCollection#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

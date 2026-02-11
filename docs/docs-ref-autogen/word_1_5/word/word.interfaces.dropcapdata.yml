@@ -3,9 +3,11 @@ name: Word.Interfaces.DropCapData
 uid: word!Word.Interfaces.DropCapData:interface
 package: word!
 fullName: Word.Interfaces.DropCapData
-summary: An interface describing the data returned by calling `dropCap.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `dropCap.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

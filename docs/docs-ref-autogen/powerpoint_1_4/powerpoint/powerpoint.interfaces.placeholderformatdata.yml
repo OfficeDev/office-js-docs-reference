@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.PlaceholderFormatData
 uid: powerpoint!PowerPoint.Interfaces.PlaceholderFormatData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.PlaceholderFormatData
-summary: An interface describing the data returned by calling `placeholderFormat.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `placeholderFormat.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

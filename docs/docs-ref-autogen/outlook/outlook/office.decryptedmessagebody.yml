@@ -4,19 +4,36 @@ uid: outlook!Office.DecryptedMessageBody:interface
 package: outlook!
 fullName: Office.DecryptedMessageBody
 summary: Represents the body of a decrypted message.
-remarks: |-
-  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: Mailbox
+  preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read/write item**
 
-  To learn how to develop an encryption add-in in Outlook, see [Create an encryption Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)<!-- -->.
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Message Read
+
+
+  To learn how to develop an encryption add-in in Outlook, see [Create an
+  encryption Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/encryption-decryption)<!--
+  -->.
+
 
   #### Examples
 
+
   ```TypeScript
-  // This sample handles the OnMessageRead event to decrypt the body and attachments of a message.
+
+  // This sample handles the OnMessageRead event to decrypt the body and
+  attachments of a message.
+
   function onMessageReadHandler(event) {
       // Your code to decrypt the contents of a message would appear here.
       ...
@@ -82,8 +99,9 @@ remarks: |-
           }
       );
   }
+
   ```
-example: []
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -92,18 +110,29 @@ properties:
     uid: outlook!Office.DecryptedMessageBody#coercionType:member
     package: outlook!
     fullName: coercionType
-    summary: Specifies the format of the body of a message. The body of a message can be formatted as `Office.CoercionType.Html` or `Office.CoercionType.Text`<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Specifies the format of the body of a message. The body of a message can
+      be formatted as `Office.CoercionType.Html` or
+      `Office.CoercionType.Text`<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'coercionType: CommonAPI.CoercionType;'
+      content: 'coercionType: Office.CoercionType;'
       return:
         type: <xref uid="office!Office.CoercionType:enum" />
   - name: content
@@ -111,13 +140,21 @@ properties:
     package: outlook!
     fullName: content
     summary: Specifies the content displayed in the body of the message.
-    remarks: |-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: true
     isDeprecated: false
     syntax:

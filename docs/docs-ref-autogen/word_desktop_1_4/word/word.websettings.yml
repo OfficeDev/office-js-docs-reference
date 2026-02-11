@@ -4,8 +4,10 @@ uid: word!Word.WebSettings:class
 package: word!
 fullName: Word.WebSettings
 summary: Represents the settings for saving a Word document as a webpage.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.WebSettings#allowPng:member
     package: word!
     fullName: allowPng
-    summary: Specifies whether PNG is allowed as an image format when saving a document as a webpage. Default is `false`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether PNG is allowed as an image format when saving a document
+      as a webpage. Default is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,11 @@ properties:
     uid: word!Word.WebSettings#context:member
     package: word!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,22 +48,119 @@ properties:
     uid: word!Word.WebSettings#encoding:member
     package: word!
     fullName: encoding
-    summary: Specifies the document encoding (code page or character set) to be used by the web browser when viewing the saved document.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the document encoding (code page or character set) to be used by
+      the web browser when viewing the saved document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'encoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8";'
+      content: >-
+        encoding: Word.DocumentEncoding | "Thai" | "JapaneseShiftJis" |
+        "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" |
+        "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" |
+        "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" |
+        "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" |
+        "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" |
+        "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" |
+        "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" |
+        "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" |
+        "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" |
+        "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" |
+        "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" |
+        "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" |
+        "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" |
+        "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" |
+        "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" |
+        "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2"
+        | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" |
+        "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" |
+        "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" |
+        "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" |
+        "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" |
+        "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" |
+        "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" |
+        "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" |
+        "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+        "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+        "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+        "EbcdicUsCanadaAndTraditionalChinese" |
+        "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+        "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+        "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+        "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+        "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+        "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+        "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" |
+        "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+        "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+        "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+        "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+        "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" |
+        "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+        "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+        "SimplifiedChineseGb18030" | "Utf7" | "Utf8";
       return:
-        type: <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" | "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" | "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian" | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" | "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" | "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" | "KoreanAutoDetect" | "TraditionalChineseAutoDetect" | "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" | "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" | "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" | "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" | "Iso885915Latin9" | "Iso88598HebrewLogical" | "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" | "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese" | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" | "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew" | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" | "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" | "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational" | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" | "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" | "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" | "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" | "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" | "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" | "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" | "EbcdicJapaneseKatakanaExtendedAndJapanese" | "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" | "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" | "EbcdicUsCanadaAndTraditionalChinese" | "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" | "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" | "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" | "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" | "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" | "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" | "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali" | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" | "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" | "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" | "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" | "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian" | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" | "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" | "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
+        type: >-
+          <xref uid="word!Word.DocumentEncoding:enum" /> | "Thai" |
+          "JapaneseShiftJis" | "SimplifiedChineseGbk" | "Korean" |
+          "TraditionalChineseBig5" | "UnicodeLittleEndian" | "UnicodeBigEndian"
+          | "CentralEuropean" | "Cyrillic" | "Western" | "Greek" | "Turkish" |
+          "Hebrew" | "Arabic" | "Baltic" | "Vietnamese" | "AutoDetect" |
+          "JapaneseAutoDetect" | "SimplifiedChineseAutoDetect" |
+          "KoreanAutoDetect" | "TraditionalChineseAutoDetect" |
+          "CyrillicAutoDetect" | "GreekAutoDetect" | "ArabicAutoDetect" |
+          "Iso88591Latin1" | "Iso88592CentralEurope" | "Iso88593Latin3" |
+          "Iso88594Baltic" | "Iso88595Cyrillic" | "Iso88596Arabic" |
+          "Iso88597Greek" | "Iso88598Hebrew" | "Iso88599Turkish" |
+          "Iso885915Latin9" | "Iso88598HebrewLogical" |
+          "Iso2022JpNoHalfwidthKatakana" | "Iso2022JpJisX02021984" |
+          "Iso2022JpJisX02011989" | "Iso2022Kr" | "Iso2022CnTraditionalChinese"
+          | "Iso2022CnSimplifiedChinese" | "MacRoman" | "MacJapanese" |
+          "MacTraditionalChineseBig5" | "MacKorean" | "MacArabic" | "MacHebrew"
+          | "MacGreek1" | "MacCyrillic" | "MacSimplifiedChineseGb2312" |
+          "MacRomania" | "MacUkraine" | "MacLatin2" | "MacIcelandic" |
+          "MacTurkish" | "MacCroatia" | "EbcdicUsCanada" | "EbcdicInternational"
+          | "EbcdicMultilingualRoeceLatin2" | "EbcdicGreekModern" |
+          "EbcdicTurkishLatin5" | "EbcdicGermany" | "EbcdicDenmarkNorway" |
+          "EbcdicFinlandSweden" | "EbcdicItaly" | "EbcdicLatinAmericaSpain" |
+          "EbcdicUnitedKingdom" | "EbcdicJapaneseKatakanaExtended" |
+          "EbcdicFrance" | "EbcdicArabic" | "EbcdicGreek" | "EbcdicHebrew" |
+          "EbcdicKoreanExtended" | "EbcdicThai" | "EbcdicIcelandic" |
+          "EbcdicTurkish" | "EbcdicRussian" | "EbcdicSerbianBulgarian" |
+          "EbcdicJapaneseKatakanaExtendedAndJapanese" |
+          "EbcdicUsCanadaAndJapanese" | "EbcdicKoreanExtendedAndKorean" |
+          "EbcdicSimplifiedChineseExtendedAndSimplifiedChinese" |
+          "EbcdicUsCanadaAndTraditionalChinese" |
+          "EbcdicJapaneseLatinExtendedAndJapanese" | "OemUnitedStates" |
+          "OemGreek437G" | "OemBaltic" | "OemMultilingualLatinI" |
+          "OemMultilingualLatinIi" | "OemCyrillic" | "OemTurkish" |
+          "OemPortuguese" | "OemIcelandic" | "OemHebrew" | "OemCanadianFrench" |
+          "OemArabic" | "OemNordic" | "OemCyrillicIi" | "OemModernGreek" |
+          "EucJapanese" | "EucChineseSimplifiedChinese" | "EucKorean" |
+          "EucTaiwaneseTraditionalChinese" | "IsciiDevanagari" | "IsciiBengali"
+          | "IsciiTamil" | "IsciiTelugu" | "IsciiAssamese" | "IsciiOriya" |
+          "IsciiKannada" | "IsciiMalayalam" | "IsciiGujarati" | "IsciiPunjabi" |
+          "ArabicAsmo" | "ArabicTransparentAsmo" | "KoreanJohab" | "TaiwanCns" |
+          "TaiwanTca" | "TaiwanEten" | "TaiwanIbm5550" | "TaiwanTeleText" |
+          "TaiwanWang" | "Ia5Irv" | "Ia5German" | "Ia5Swedish" | "Ia5Norwegian"
+          | "UsaAscii" | "T61" | "Iso6937NonSpacingAccent" | "Koi8R" |
+          "ExtAlphaLowercase" | "Koi8U" | "Europa3" | "HzGbSimplifiedChinese" |
+          "SimplifiedChineseGb18030" | "Utf7" | "Utf8"
   - name: folderSuffix
     uid: word!Word.WebSettings#folderSuffix:member
     package: word!
     fullName: folderSuffix
-    summary: Gets the folder suffix used when saving a document as a webpage with long file names and supporting files in a separate folder.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the folder suffix used when saving a document as a webpage with long
+      file names and supporting files in a separate folder.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +171,13 @@ properties:
     uid: word!Word.WebSettings#organizeInFolder:member
     package: word!
     fullName: organizeInFolder
-    summary: Specifies whether supporting files are organized in a separate folder when saving the document as a webpage. Default is `true`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether supporting files are organized in a separate folder when
+      saving the document as a webpage. Default is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +188,13 @@ properties:
     uid: word!Word.WebSettings#pixelsPerInch:member
     package: word!
     fullName: pixelsPerInch
-    summary: Specifies the density (pixels per inch) of graphics images and table cells on a webpage.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the density (pixels per inch) of graphics images and table cells
+      on a webpage.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,9 +205,14 @@ properties:
     uid: word!Word.WebSettings#relyOnCSS:member
     package: word!
     fullName: relyOnCSS
-    summary: Specifies whether cascading style sheets (CSS) are used for font formatting when viewing a saved document in a web browser. Default is `true`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether cascading style sheets (CSS) are used for font
+      formatting when viewing a saved document in a web browser. Default is
+      `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +223,13 @@ properties:
     uid: word!Word.WebSettings#relyOnVectorMarkupLanguage:member
     package: word!
     fullName: relyOnVectorMarkupLanguage
-    summary: Specifies whether image files are not generated from drawing objects when saving a document as a webpage. Default is `false`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether image files are not generated from drawing objects when
+      saving a document as a webpage. Default is `false`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,35 +240,55 @@ properties:
     uid: word!Word.WebSettings#screenSize:member
     package: word!
     fullName: screenSize
-    summary: Specifies the ideal minimum screen size (width by height, in pixels) for viewing the saved document in a web browser.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the ideal minimum screen size (width by height, in pixels) for
+      viewing the saved document in a web browser.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'screenSize: Word.ScreenSize | "Size544x376" | "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" | "Size1920x1200";'
+      content: >-
+        screenSize: Word.ScreenSize | "Size544x376" | "Size640x480" |
+        "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" |
+        "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" |
+        "Size1920x1200";
       return:
-        type: <xref uid="word!Word.ScreenSize:enum" /> | "Size544x376" | "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" | "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" | "Size1800x1440" | "Size1920x1200"
+        type: >-
+          <xref uid="word!Word.ScreenSize:enum" /> | "Size544x376" |
+          "Size640x480" | "Size720x512" | "Size800x600" | "Size1024x768" |
+          "Size1152x882" | "Size1152x900" | "Size1280x1024" | "Size1600x1200" |
+          "Size1800x1440" | "Size1920x1200"
   - name: targetBrowser
     uid: word!Word.WebSettings#targetBrowser:member
     package: word!
     fullName: targetBrowser
     summary: Specifies the target browser for documents viewed in a web browser.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'targetBrowser: Word.TargetBrowser | "V3" | "V4" | "Ie4" | "Ie5" | "Ie6";'
       return:
-        type: <xref uid="word!Word.TargetBrowser:enum" /> | "V3" | "V4" | "Ie4" | "Ie5" | "Ie6"
+        type: >-
+          <xref uid="word!Word.TargetBrowser:enum" /> | "V3" | "V4" | "Ie4" |
+          "Ie5" | "Ie6"
   - name: useLongFileNames
     uid: word!Word.WebSettings#useLongFileNames:member
     package: word!
     fullName: useLongFileNames
-    summary: Specifies whether long file names are used when saving the document as a webpage. Default is `true`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether long file names are used when saving the document as a
+      webpage. Default is `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,13 +300,17 @@ methods:
     uid: word!Word.WebSettings#load:member(1)
     package: word!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Word.Interfaces.WebSettingsLoadOptions): Word.WebSettings;'
+      content: >-
+        load(options?: Word.Interfaces.WebSettingsLoadOptions):
+        Word.WebSettings;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
@@ -176,16 +322,20 @@ methods:
     uid: word!Word.WebSettings#load:member(2)
     package: word!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.WebSettings;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="word!Word.WebSettings:class" />
@@ -194,9 +344,11 @@ methods:
     uid: word!Word.WebSettings#load:member(3)
     package: word!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,7 +359,11 @@ methods:
                 }): Word.WebSettings;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -220,9 +376,16 @@ methods:
     uid: word!Word.WebSettings#toJSON:member(1)
     package: word!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Word.WebSettings` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.WebSettingsData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `Word.WebSettings`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `Word.Interfaces.WebSettingsData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,9 +397,18 @@ methods:
     uid: word!Word.WebSettings#track:member(1)
     package: word!
     fullName: track()
-    summary: Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in
+      the document. This call is a shorthand for
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath"
+      error when setting a property or invoking a method on the object, you need
+      to add the object to the tracked object collection when the object was
+      first created. If this object is part of a collection, you should also
+      track the parent collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -248,9 +420,16 @@ methods:
     uid: word!Word.WebSettings#untrack:member(1)
     package: word!
     fullName: untrack()
-    summary: Release the memory associated with this object, if it has previously been tracked. This call is shorthand for [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!-- -->. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+    summary: >-
+      Release the memory associated with this object, if it has previously been
+      tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so
+      please remember to free any objects you add, once you're done using them.
+      You'll need to call `context.sync()` before the memory release takes
+      effect.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,9 +441,13 @@ methods:
     uid: word!Word.WebSettings#useDefaultFolderSuffix:member(1)
     package: word!
     fullName: useDefaultFolderSuffix()
-    summary: Sets the folder suffix for the specified document to the default suffix for the language support you have selected or installed.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Sets the folder suffix for the specified document to the default suffix
+      for the language support you have selected or installed.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

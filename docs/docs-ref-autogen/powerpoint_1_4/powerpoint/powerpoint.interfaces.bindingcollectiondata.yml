@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.BindingCollectionData
 uid: powerpoint!PowerPoint.Interfaces.BindingCollectionData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.BindingCollectionData
-summary: An interface describing the data returned by calling `bindingCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `bindingCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,10 +18,12 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: PowerPoint.Interfaces.BindingData[];'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.BindingData:interface" />[]
+        type: >-
+          <xref uid="powerpoint!PowerPoint.Interfaces.BindingData:interface"
+          />[]

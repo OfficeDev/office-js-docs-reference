@@ -3,9 +3,11 @@ name: Word.Interfaces.ListTemplateGalleryCollectionData
 uid: word!Word.Interfaces.ListTemplateGalleryCollectionData:interface
 package: word!
 fullName: Word.Interfaces.ListTemplateGalleryCollectionData
-summary: An interface describing the data returned by calling `listTemplateGalleryCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `listTemplateGalleryCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,10 +18,12 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: Word.Interfaces.ListTemplateGalleryData[];'
       return:
-        type: <xref uid="word!Word.Interfaces.ListTemplateGalleryData:interface" />[]
+        type: >-
+          <xref uid="word!Word.Interfaces.ListTemplateGalleryData:interface"
+          />[]

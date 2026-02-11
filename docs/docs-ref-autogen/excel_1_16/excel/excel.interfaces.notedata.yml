@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.NoteData
 summary: An interface describing the data returned by calling `note.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

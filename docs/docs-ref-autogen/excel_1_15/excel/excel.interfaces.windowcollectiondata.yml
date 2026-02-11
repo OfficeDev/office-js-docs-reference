@@ -3,9 +3,11 @@ name: Excel.Interfaces.WindowCollectionData
 uid: excel!Excel.Interfaces.WindowCollectionData:interface
 package: excel!
 fullName: Excel.Interfaces.WindowCollectionData
-summary: An interface describing the data returned by calling `windowCollection.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `windowCollection.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

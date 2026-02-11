@@ -5,7 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.PointData
 summary: An interface describing the data returned by calling `point.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +15,11 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the Point object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +32,7 @@ properties:
     fullName: x
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +45,7 @@ properties:
     fullName: 'y'
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

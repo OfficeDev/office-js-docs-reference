@@ -4,8 +4,10 @@ uid: excel!Excel.TableChangedEventArgs:interface
 package: excel!
 fullName: Excel.TableChangedEventArgs
 summary: Provides information about the table that raised the changed event.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: excel!Excel.TableChangedEventArgs#address:member
     package: excel!
     fullName: address
-    summary: Gets the address that represents the changed area of a table on a specific worksheet.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the address that represents the changed area of a table on a specific
+      worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,27 +33,47 @@ properties:
     uid: excel!Excel.TableChangedEventArgs#changeType:member
     package: excel!
     fullName: changeType
-    summary: Gets the change type that represents how the changed event is triggered. See `Excel.DataChangeType` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the change type that represents how the changed event is triggered.
+      See `Excel.DataChangeType` for details.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted";'
+      content: >-
+        changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" |
+        "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" |
+        "CellInserted" | "CellDeleted";
       return:
-        type: <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"
+        type: >-
+          <xref uid="excel!Excel.DataChangeType:enum" /> | "Unknown" |
+          "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
+          "ColumnDeleted" | "CellInserted" | "CellDeleted"
   - name: details
     uid: excel!Excel.TableChangedEventArgs#details:member
     package: excel!
     fullName: details
-    summary: Gets the information about the change detail. This property can be retrieved when the changed event is triggered on a single cell. If the changed event is triggered on multiple cells, this property cannot be retrieved.
-    remarks: |-
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the information about the change detail. This property can be
+      retrieved when the changed event is triggered on a single cell. If the
+      changed event is triggered on multiple cells, this property cannot be
+      retrieved.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-change-event-details.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-change-event-details.yaml
+
 
       async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
           await Excel.run(async (context) => {
@@ -58,8 +84,9 @@ properties:
                 + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,8 +98,10 @@ properties:
     package: excel!
     fullName: source
     summary: Gets the source of the event. See `Excel.EventSource` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,13 +113,19 @@ properties:
     package: excel!
     fullName: tableId
     summary: Gets the ID of the table in which the data changed.
-    remarks: |-
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
 
       async function onChange(event) {
           await Excel.run(async (context) => {
@@ -105,8 +140,9 @@ properties:
               console.log("Worksheet Id : " + worksheet.name);
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,8 +154,10 @@ properties:
     package: excel!
     fullName: type
     summary: Gets the type of the event. See `Excel.EventType` for details.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,13 +169,19 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: Gets the ID of the worksheet in which the data changed.
-    remarks: |-
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
 
       async function onChange(event) {
           await Excel.run(async (context) => {
@@ -152,8 +196,9 @@ properties:
               console.log("Worksheet Id : " + worksheet.name);
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,12 +210,15 @@ methods:
     uid: excel!Excel.TableChangedEventArgs#getRange:member(1)
     package: excel!
     fullName: getRange(ctx)
-    summary: |-
-      Gets the range that represents the changed area of a table on a specific worksheet.
+    summary: >-
+      Gets the range that represents the changed area of a table on a specific
+      worksheet.
 
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,12 +234,15 @@ methods:
     uid: excel!Excel.TableChangedEventArgs#getRangeOrNullObject:member(1)
     package: excel!
     fullName: getRangeOrNullObject(ctx)
-    summary: |-
-      Gets the range that represents the changed area of a table on a specific worksheet. It might return null object.
+    summary: >-
+      Gets the range that represents the changed area of a table on a specific
+      worksheet. It might return null object.
 
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

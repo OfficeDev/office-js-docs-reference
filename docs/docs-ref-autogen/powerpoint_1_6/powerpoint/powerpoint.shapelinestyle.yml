@@ -4,15 +4,23 @@ uid: powerpoint!PowerPoint.ShapeLineStyle:enum
 package: powerpoint!
 fullName: PowerPoint.ShapeLineStyle
 summary: Specifies the style for a line.
-remarks: |-
-  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shapes-by-type.yaml
+
 
   // Changes the dash style of every line in the slide.
+
   await PowerPoint.run(async (context) => {
     // Get the type of shape for every shape in the collection.
     const shapes: PowerPoint.ShapeCollection = context.presentation.slides.getItemAt(0).shapes;
@@ -28,48 +36,68 @@ remarks: |-
     });
     await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: single
     uid: powerpoint!PowerPoint.ShapeLineStyle.single:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Single line.
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"Single"'
   - name: thickBetweenThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickBetweenThin:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Thick line with a thin line on each side.
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thickThin:member
     package: powerpoint!
-    summary: |-
-      Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the thick line is to the left of the thin line.
+    summary: >-
+      Thick line next to thin line. For horizontal lines, the thick line is
+      above the thin line. For vertical lines, the thick line is to the left of
+      the thin line.
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThickThin"'
   - name: thinThick
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThick:member
     package: powerpoint!
-    summary: |-
-      Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the thick line is to the right of the thin line.
+    summary: >-
+      Thick line next to thin line. For horizontal lines, the thick line is
+      below the thin line. For vertical lines, the thick line is to the right of
+      the thin line.
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThinThick"'
   - name: thinThin
     uid: powerpoint!PowerPoint.ShapeLineStyle.thinThin:member
     package: powerpoint!
-    summary: |-
+    summary: >-
       Two thin lines.
 
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+      * \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
     value: '"ThinThin"'

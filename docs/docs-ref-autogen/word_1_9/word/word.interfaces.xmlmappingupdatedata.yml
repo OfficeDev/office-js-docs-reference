@@ -3,9 +3,11 @@ name: Word.Interfaces.XmlMappingUpdateData
 uid: word!Word.Interfaces.XmlMappingUpdateData:interface
 package: word!
 fullName: Word.Interfaces.XmlMappingUpdateData
-summary: An interface for updating data on the `XmlMapping` object, for use in `xmlMapping.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `XmlMapping` object, for use in
+  `xmlMapping.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

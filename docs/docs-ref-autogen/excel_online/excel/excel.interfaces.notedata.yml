@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.NoteData
 summary: An interface describing the data returned by calling `note.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +15,11 @@ properties:
     package: excel!
     fullName: authorName
     summary: Gets the author of the note.
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +31,11 @@ properties:
     package: excel!
     fullName: content
     summary: Specifies the text of the note.
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +46,14 @@ properties:
     uid: excel!Excel.Interfaces.NoteData#height:member
     package: excel!
     fullName: height
-    summary: 'Specifies the height of the note. Note: This property is not supported in Excel on the web.'
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the height of the note. Note: This property is not supported in
+      Excel on the web.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +64,14 @@ properties:
     uid: excel!Excel.Interfaces.NoteData#visible:member
     package: excel!
     fullName: visible
-    summary: 'Specifies the visibility of the note. A value of `true` means the note is shown. Note: This property is not supported in Excel on the web.'
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the visibility of the note. A value of `true` means the note is
+      shown. Note: This property is not supported in Excel on the web.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +82,14 @@ properties:
     uid: excel!Excel.Interfaces.NoteData#width:member
     package: excel!
     fullName: width
-    summary: 'Specifies the width of the note. Note: This property is not supported in Excel on the web.'
-    remarks: '\[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the width of the note. Note: This property is not supported in
+      Excel on the web.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

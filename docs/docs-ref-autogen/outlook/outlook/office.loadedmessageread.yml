@@ -3,24 +3,49 @@ name: Office.LoadedMessageRead
 uid: outlook!Office.LoadedMessageRead:interface
 package: outlook!
 fullName: Office.LoadedMessageRead
-summary: Represents a message in read mode that's currently loaded. A `LoadedMessageRead` object is returned when `Office.context.mailbox.loadItemByIdAsync` is called on a message in read mode.
-remarks: |-
-  \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Represents a message in read mode that's currently loaded. A
+  `LoadedMessageRead` object is returned when
+  `Office.context.mailbox.loadItemByIdAsync` is called on a message in read
+  mode.
+remarks: >-
+  \[ [API set: Mailbox
+  1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read/write item**
 
-  \*\*Important\*\*:
 
-  - When implementing the [item multi-select feature](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->, determine if you can already access the required properties of the selected item through the `Office.context.mailbox.getSelectedItemsAsync` call. If you can, you don't need to call `loadItemByIdAsync`<!-- -->.
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Message Read
 
-  - Only one mail item can be loaded at a time. When you implement `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after processing the item. This must be done before calling `loadItemByIdAsync` on another item.
+
+  **Important**:
+
+
+  - When implementing the [item multi-select
+  feature](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+  -->, determine if you can already access the required properties of the
+  selected item through the `Office.context.mailbox.getSelectedItemsAsync` call.
+  If you can, you don't need to call `loadItemByIdAsync`<!-- -->.
+
+
+  - Only one mail item can be loaded at a time. When you implement
+  `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after processing the
+  item. This must be done before calling `loadItemByIdAsync` on another item.
+
 
   #### Examples
 
+
   ```TypeScript
+
   // Gets the sender's email address of each selected message.
+
   async function getSenderEmailAddress(item) {
       const itemId = item.itemId;
       await new Promise((resolve) => {
@@ -46,8 +71,9 @@ remarks: |-
           });
       });
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -57,17 +83,30 @@ properties:
     package: outlook!
     fullName: attachments
     summary: Gets the item's attachments as an array.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*:
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!-- -->.
 
-      - Attachments added using the \*\*Upload and share\*\* option aren't returned.
-    example: []
+      **Important**:
+
+
+      - Certain types of files are blocked by Outlook due to potential security
+      issues and are therefore not returned. For more information, see [Blocked
+      attachments in
+      Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!--
+      -->.
+
+
+      - Attachments added using the **Upload and share** option aren't
+      returned.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,15 +118,25 @@ properties:
     package: outlook!
     fullName: body
     summary: Gets the item's body and its format.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: Only the `getAsync` and `getTypeAsync` methods of the Body object are supported.
-    example: []
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**: Only the `getAsync` and `getTypeAsync` methods of the
+      Body object are supported.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,13 +148,21 @@ properties:
     package: outlook!
     fullName: categories
     summary: Gets an object that provides methods to manage the item's categories.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,21 +173,35 @@ properties:
     uid: outlook!Office.LoadedMessageRead#cc:member
     package: outlook!
     fullName: cc
-    summary: |-
-      Gets recipients on the \*\*Cc\*\* (carbon copy) line of a message.
+    summary: >-
+      Gets recipients on the **Cc** (carbon copy) line of a message.
 
-      The `cc` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the \*\*Cc\*\* line of the message. The maximum number of recipients returned varies per Outlook client.
+
+      The `cc` property returns an array that contains an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
+      object for each recipient listed on the **Cc** line of the message.
+      The maximum number of recipients returned varies per Outlook client.
+
 
       - Windows (classic): 500 recipients
 
-      - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
 
-      - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,15 +212,26 @@ properties:
     uid: outlook!Office.LoadedMessageRead#conversationId:member
     package: outlook!
     fullName: conversationId
-    summary: |-
-      Gets an identifier for the email conversation that contains a particular message.
+    summary: >-
+      Gets an identifier for the email conversation that contains a particular
+      message.
 
-      You can get an integer for this property if your mail app is activated in read forms or responses in compose forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation ID for that message will change and that value you obtained earlier will no longer apply.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      You can get an integer for this property if your mail app is activated in
+      read forms or responses in compose forms. If subsequently the user changes
+      the subject of the reply message, upon sending the reply, the conversation
+      ID for that message will change and that value you obtained earlier will
+      no longer apply.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,11 +243,16 @@ properties:
     package: outlook!
     fullName: dateTimeCreated
     summary: Gets the date and time that an item was created.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,15 +264,28 @@ properties:
     package: outlook!
     fullName: dateTimeModified
     summary: Gets the date and time that an item was last modified.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-    example: []
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
+
+
+      **Important**: This property isn't supported in Outlook on Android or
+      on iOS. For more information on supported APIs in Outlook mobile, see
+      [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,17 +296,29 @@ properties:
     uid: outlook!Office.LoadedMessageRead#end:member
     package: outlook!
     fullName: end
-    summary: |-
+    summary: >-
       Gets the date and time that the appointment is to end.
 
-      The `end` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
 
-      When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on the client to UTC for the server.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The `end` property is a `Date` object expressed as a Coordinated Universal
+      Time (UTC) date and time value. You can use the `convertToLocalClientTime`
+      method to convert the `end` property value to the client's local date and
+      time.
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      When you use the `Time.setAsync` method to set the end time, you should
+      use the `convertToUtcClientTime` method to convert the local time on the
+      client to UTC for the server.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,17 +333,35 @@ properties:
       Gets the email address of the sender of a message.
 
       The `from` property returns an `EmailAddressDetails` object.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*:
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with \*\*Send on behalf\*\* permissions. In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate. If the delegate has both \*\*Send on behalf\*\* and \*\*Send as\*\* permissions, the \*\*Send as\*\* permission applies. For information about mailbox delegation, see [Manage permissions for recipients in Exchange Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!-- -->.
 
-      - The `recipientType` property of the `EmailAddressDetails` object in the `from` property is undefined.
-    example: []
+      **Important**:
+
+
+      - The `from` and `sender` properties represent the same person unless the
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the email address of the mailbox
+      owner or shared mailbox, and the `sender` property returns the address of
+      the delegate. If the delegate has both **Send on behalf** and **Send
+      as** permissions, the **Send as** permission applies. For
+      information about mailbox delegation, see [Manage permissions for
+      recipients in Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
+
+
+      - The `recipientType` property of the `EmailAddressDetails` object in the
+      `from` property is undefined.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,17 +373,36 @@ properties:
     package: outlook!
     fullName: internetMessageId
     summary: Gets the internet message identifier of a message.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*: In the \*\*Sent Items\*\* folder, the `internetMessageId` may not be available yet on recently sent items. In that case, consider using one of the following options depending on your Exchange environment.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - For Exchange Online, use [Microsoft Graph](https://learn.microsoft.com/office/dev/add-ins/outlook/microsoft-graph) to get the [internetMessageId](https://learn.microsoft.com/graph/api/resources/message) property.
 
-      - For Exchange Server (on-premises), use [Exchange Web Services](https://learn.microsoft.com/office/dev/add-ins/outlook/web-services) to get the [InternetMessageId](https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid) property from the server.
-    example: []
+      **Important**: In the **Sent Items** folder, the
+      `internetMessageId` may not be available yet on recently sent items. In
+      that case, consider using one of the following options depending on your
+      Exchange environment.
+
+
+      - For Exchange Online, use [Microsoft
+      Graph](https://learn.microsoft.com/office/dev/add-ins/outlook/microsoft-graph)
+      to get the
+      [internetMessageId](https://learn.microsoft.com/graph/api/resources/message)
+      property.
+
+
+      - For Exchange Server (on-premises), use [Exchange Web
+      Services](https://learn.microsoft.com/office/dev/add-ins/outlook/web-services)
+      to get the
+      [InternetMessageId](https://learn.microsoft.com/exchange/client-developer/web-service-reference/internetmessageid)
+      property from the server.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -265,19 +414,37 @@ properties:
     package: outlook!
     fullName: itemClass
     summary: Gets the Exchange Web Services item class of the selected message.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*:
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**:
+
 
       The following table lists the default item classes for messages.
 
-      <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr> <td>IPM.Note</td> <td>New messages and message replies</td> </tr> <tr> <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr> <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td> </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline meeting requests</td> </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Pos</td> <td>Responses to accept meeting requests</td> </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively accept meeting requests</td> </tr> </table>
 
-      You can create custom classes that extend a default item class. For example, `IPM.Note.Contoso`<!-- -->.
-    example: []
+      <table> <tr> <th>Item class</th> <th>Description</th> </tr> <tr>
+      <td>IPM.Note</td> <td>New messages and message replies</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Request</td> <td>Meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Canceled</td> <td>Meeting cancellations</td>
+      </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Neg</td> <td>Responses to decline
+      meeting requests</td> </tr> <tr> <td>IPM.Schedule.Meeting.Resp.Pos</td>
+      <td>Responses to accept meeting requests</td> </tr> <tr>
+      <td>IPM.Schedule.Meeting.Resp.Tent</td> <td>Responses to tentatively
+      accept meeting requests</td> </tr> </table>
+
+
+      You can create custom classes that extend a default item class. For
+      example, `IPM.Note.Contoso`<!-- -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -288,18 +455,40 @@ properties:
     uid: outlook!Office.LoadedMessageRead#itemId:member
     package: outlook!
     fullName: itemId
-    summary: Gets the [Exchange Web Services item identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange) for the current item.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    summary: >-
+      Gets the [Exchange Web Services item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)
+      for the current item.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*:
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - The `itemId` property isn't available in compose mode. If an item identifier is required, the `Office.context.mailbox.item.saveAsync` method can be used to save the item to the store, which will return the item identifier in the `asyncResult.value` parameter in the callback function. If the item is already saved, you can call the `Office.context.mailbox.item.getItemIdAsync` method instead.
 
-      - The identifier returned by the `itemId` property is the same as the [Exchange Web Services item identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!-- -->. The `itemId` property isn't identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!-- -->.
-    example: []
+      **Important**:
+
+
+      - The `itemId` property isn't available in compose mode. If an item
+      identifier is required, the `Office.context.mailbox.item.saveAsync` method
+      can be used to save the item to the store, which will return the item
+      identifier in the `asyncResult.value` parameter in the callback function.
+      If the item is already saved, you can call the
+      `Office.context.mailbox.item.getItemIdAsync` method instead.
+
+
+      - The identifier returned by the `itemId` property is the same as the
+      [Exchange Web Services item
+      identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
+      -->. The `itemId` property isn't identical to the Outlook Entry ID or the
+      ID used by the Outlook REST API. Before making REST API calls using this
+      value, it should be converted using
+      `Office.context.mailbox.convertToRestId`<!-- -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -310,15 +499,23 @@ properties:
     uid: outlook!Office.LoadedMessageRead#itemType:member
     package: outlook!
     fullName: itemType
-    summary: |-
+    summary: >-
       Gets the type of item that an instance represents.
 
-      The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object instance is a message or an appointment.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      The `itemType` property returns one of the `ItemType` enumeration values,
+      indicating whether the item object instance is a message or an
+      appointment.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -329,15 +526,22 @@ properties:
     uid: outlook!Office.LoadedMessageRead#location:member
     package: outlook!
     fullName: location
-    summary: |-
+    summary: >-
       Gets the location of a meeting request.
 
-      The `location` property returns a string that contains the location of the appointment.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      The `location` property returns a string that contains the location of the
+      appointment.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -348,15 +552,25 @@ properties:
     uid: outlook!Office.LoadedMessageRead#normalizedSubject:member
     package: outlook!
     fullName: normalizedSubject
-    summary: |-
-      Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
+    summary: >-
+      Gets the subject of an item, with all prefixes removed (including RE: and
+      FWD:).
 
-      The `normalizedSubject` property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the `subject` property.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      The `normalizedSubject` property gets the subject of the item, with any
+      standard prefixes (such as RE: and FW:) that are added by email programs.
+      To get the subject of the item with the prefixes intact, use the `subject`
+      property.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -368,19 +582,34 @@ properties:
     package: outlook!
     fullName: notificationMessages
     summary: Gets the notification messages of the item.
-    remarks: |-
-      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - To learn about the different types of notification messages you can implement, see [Create notifications for your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - Only the `getAllAsync` method of the NotificationMessages object is supported.
-    example: []
+
+      **Important**:
+
+
+      - To learn about the different types of notification messages you can
+      implement, see [Create notifications for your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/notifications)<!--
+      -->.
+
+
+      - Only the `getAllAsync` method of the NotificationMessages object is
+      supported.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -391,25 +620,48 @@ properties:
     uid: outlook!Office.LoadedMessageRead#recurrence:member
     package: outlook!
     fullName: recurrence
-    summary: |-
-      Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose modes for appointment items. Read mode for meeting request items.
+    summary: >-
+      Gets the recurrence pattern of an appointment. Gets the recurrence pattern
+      of a meeting request. Read and compose modes for appointment items. Read
+      mode for meeting request items.
 
-      The `recurrence` property returns a `Recurrence` object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that aren't meeting requests.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The `recurrence` property returns a `Recurrence` object for recurring
+      appointments or meetings requests if an item is a series or an instance in
+      a series. `null` is returned for single appointments and meeting requests
+      of single appointments. `undefined` is returned for messages that aren't
+      meeting requests.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*:
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      - Meeting requests have an itemClass value of `IPM.Schedule.Meeting.Request`<!-- -->.
 
-      - If the `recurrence` object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and \*not\* a part of a series.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - Only the propeties and the `getAsync` method of the Recurrence object are supported.
-    example: []
+
+      **Important**:
+
+
+      - Meeting requests have an itemClass value of
+      `IPM.Schedule.Meeting.Request`<!-- -->.
+
+
+      - If the `recurrence` object is null, this indicates that the object is a
+      single appointment or a meeting request of a single appointment and
+      *not* a part of a series.
+
+
+      - Only the propeties and the `getAsync` method of the Recurrence object
+      are supported.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -421,17 +673,35 @@ properties:
     package: outlook!
     fullName: sender
     summary: Gets the email address of the sender of an email message.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*:
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - The `from` and `sender` properties represent the same person unless the message is sent by a delegate with \*\*Send on behalf\*\* permissions. In this case, the `from` property returns the email address of the mailbox owner or shared mailbox, and the `sender` property returns the address of the delegate. If the delegate has both \*\*Send on behalf\*\* and \*\*Send as\*\* permissions, the \*\*Send as\*\* permission applies. For information about mailbox delegation, see [Manage permissions for recipients in Exchange Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!-- -->.
 
-      - The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is undefined.
-    example: []
+      **Important**:
+
+
+      - The `from` and `sender` properties represent the same person unless the
+      message is sent by a delegate with **Send on behalf** permissions. In
+      this case, the `from` property returns the email address of the mailbox
+      owner or shared mailbox, and the `sender` property returns the address of
+      the delegate. If the delegate has both **Send on behalf** and **Send
+      as** permissions, the **Send as** permission applies. For
+      information about mailbox delegation, see [Manage permissions for
+      recipients in Exchange
+      Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)<!--
+      -->.
+
+
+      - The `recipientType` property of the `EmailAddressDetails` object in the
+      `sender` property is undefined.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -442,23 +712,47 @@ properties:
     uid: outlook!Office.LoadedMessageRead#seriesId:member
     package: outlook!
     fullName: seriesId
-    summary: |-
+    summary: >-
       Gets the ID of the series that an instance belongs to.
 
-      In Outlook on the web and on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to.
-    remarks: |-
-      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      In Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+      and classic), the `seriesId` returns the Exchange Web Services (EWS) ID of
+      the parent (series) item that this item belongs to.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*:
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      - The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier. The `seriesId` property isn't identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!-- -->. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
-      - The `seriesId` property returns `null` for items that don't have parent items such as single appointments, series items, or meeting requests and returns `undefined` for any other items that aren't meeting requests.
-    example: []
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**:
+
+
+      - The identifier returned by the `seriesId` property is the same as the
+      Exchange Web Services item identifier. The `seriesId` property isn't
+      identical to the Outlook IDs used by the Outlook REST API. Before making
+      REST API calls using this value, it should be converted using
+      `Office.context.mailbox.convertToRestId`<!-- -->. For more details, see
+      [Use the Outlook REST APIs from an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!--
+      -->.
+
+
+      - The `seriesId` property returns `null` for items that don't have parent
+      items such as single appointments, series items, or meeting requests and
+      returns `undefined` for any other items that aren't meeting requests.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -469,15 +763,24 @@ properties:
     uid: outlook!Office.LoadedMessageRead#start:member
     package: outlook!
     fullName: start
-    summary: |-
+    summary: >-
       Gets the date and time that the appointment is to begin.
 
-      The `start` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      The `start` property is a `Date` object expressed as a Coordinated
+      Universal Time (UTC) date and time value. You can use the
+      `convertToLocalClientTime` method to convert the value to the client's
+      local date and time.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -488,17 +791,27 @@ properties:
     uid: outlook!Office.LoadedMessageRead#subject:member
     package: outlook!
     fullName: subject
-    summary: |-
+    summary: >-
       Gets the description that appears in the subject field of an item.
 
-      The `subject` property gets the entire subject of the item, as sent by the email server.
 
-      The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading prefixes such as RE: and FW:.
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The `subject` property gets the entire subject of the item, as sent by the
+      email server.
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      The `subject` property returns a string. Use the `normalizedSubject`
+      property to get the subject minus any leading prefixes such as RE: and
+      FW:.
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -509,21 +822,37 @@ properties:
     uid: outlook!Office.LoadedMessageRead#to:member
     package: outlook!
     fullName: to
-    summary: |-
-      Gets the recipients on the \*\*To\*\* line of a message. Provides access to the recipients on the \*\*To\*\* line of a message. The type of object and level of access depend on the mode of the current item.
+    summary: >-
+      Gets the recipients on the **To** line of a message. Provides access
+      to the recipients on the **To** line of a message. The type of object
+      and level of access depend on the mode of the current item.
 
-      The `to` property returns an array that contains an [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the \*\*To\*\* line of the message. The maximum number of recipients returned varies per Outlook client.
+
+      The `to` property returns an array that contains an
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface)
+      object for each recipient listed on the **To** line of the message.
+      The maximum number of recipients returned varies per Outlook client.
+
 
       - Windows (classic): 500 recipients
 
-      - Windows (classic - in preview starting in Version 2511 (Build 19426.20000)): 1,000 recipients
 
-      - Web browser, Windows (new): 20 recipients (collapsed view), 500 recipients (expanded view)
-    remarks: |-
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      - Windows (classic - in preview starting in Version 2511 (Build
+      19426.20000)): 1,000 recipients
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      - Web browser, Windows (new): 20 recipients (collapsed view), 500
+      recipients (expanded view)
+    remarks: >-
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -535,36 +864,73 @@ methods:
     uid: outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member(1)
     package: outlook!
     fullName: displayReplyAllFormAsync(formData, options, callback)
-    summary: Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes either the sender and all recipients
+      of the selected message or the organizer and all attendees of the selected
+      appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-    example: []
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyAllFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyAllFormAsync(formData: string | ReplyFormData, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyAllFormAsync(formData: string | ReplyFormData, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -572,33 +938,66 @@ methods:
     uid: outlook!Office.LoadedMessageRead#displayReplyAllFormAsync:member(2)
     package: outlook!
     fullName: displayReplyAllFormAsync(formData, callback)
-    summary: Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes either the sender and all recipients
+      of the selected message or the organizer and all attendees of the selected
+      appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - If any of the string parameters exceed their limits, `displayReplyAllFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-    example: []
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyAllFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyAllFormAsync(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyAllFormAsync(formData: string | ReplyFormData, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -606,36 +1005,72 @@ methods:
     uid: outlook!Office.LoadedMessageRead#displayReplyFormAsync:member(1)
     package: outlook!
     fullName: displayReplyFormAsync(formData, options, callback)
-    summary: Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes only the sender of the selected
+      message or the organizer of the selected appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-    example: []
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyFormAsync(formData: string | ReplyFormData, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyFormAsync(formData: string | ReplyFormData, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -643,33 +1078,65 @@ methods:
     uid: outlook!Office.LoadedMessageRead#displayReplyFormAsync:member(2)
     package: outlook!
     fullName: displayReplyFormAsync(formData, callback)
-    summary: Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
-    remarks: |-
-      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Displays a reply form that includes only the sender of the selected
+      message or the organizer of the selected appointment.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on the web and [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - If any of the string parameters exceed their limits, `displayReplyFormAsync` throws an exception.
 
-      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-    example: []
+      **Important**:
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, the reply form is displayed as a pop-out form in the 3-column view
+      and a pop-up form in the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits,
+      `displayReplyFormAsync` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter,
+      Outlook attempts to download all attachments and attach them to the reply
+      form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayReplyFormAsync(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        displayReplyFormAsync(formData: string | ReplyFormData, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: formData
-          description: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or attachment data and a callback function.
+          description: >-
+            A string that contains text and HTML and that represents the body of
+            the reply form. The string is limited to 32 KB OR a
+            [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object
+            that contains body or attachment data and a callback function.
           type: string | <xref uid="outlook!Office.ReplyFormData:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -677,28 +1144,56 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getAllInternetHeadersAsync:member(1)
     package: outlook!
     fullName: getAllInternetHeadersAsync(options, callback)
-    summary: |-
+    summary: >-
       Gets all the internet headers for the message as a string.
 
-      To learn more, see [Get and set internet headers on a message in an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      To learn more, see [Get and set internet headers on a message in an
+      Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAllInternetHeadersAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getAllInternetHeadersAsync(options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. On success, the internet headers data is provided in the `asyncResult.value` property as a string. Refer to [RFC 2183](https://tools.ietf.org/html/rfc2183) for the formatting information of the returned string value. If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. On
+            success, the internet headers data is provided in the
+            `asyncResult.value` property as a string. Refer to [RFC
+            2183](https://tools.ietf.org/html/rfc2183) for the formatting
+            information of the returned string value. If the call fails, the
+            `asyncResult.error` property will contain an error code with the
+            reason for the failure.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -706,25 +1201,50 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getAllInternetHeadersAsync:member(2)
     package: outlook!
     fullName: getAllInternetHeadersAsync(callback)
-    summary: |-
+    summary: >-
       Gets all the internet headers for the message as a string.
 
-      To learn more, see [Get and set internet headers on a message in an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      To learn more, see [Get and set internet headers on a message in an
+      Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getAllInternetHeadersAsync(callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. On success, the internet headers data is provided in the `asyncResult.value` property as a string. Refer to [RFC 2183](https://tools.ietf.org/html/rfc2183) for the formatting information of the returned string value. If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. On
+            success, the internet headers data is provided in the
+            `asyncResult.value` property as a string. Refer to [RFC
+            2183](https://tools.ietf.org/html/rfc2183) for the formatting
+            information of the returned string value. If the call fails, the
+            `asyncResult.error` property will contain an error code with the
+            reason for the failure.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -733,24 +1253,45 @@ methods:
     package: outlook!
     fullName: getAsFileAsync(options, callback)
     summary: Gets the current message in EML format encoded in Base64.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsFileAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getAsFileAsync(options: Office.AsyncContextOptions, callback:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The Base64-encoded EML format of the message is returned in the `asyncResult.value` property. Any errors encountered are returned in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the callback
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            which is an `Office.AsyncResult` object. The Base64-encoded EML
+            format of the message is returned in the `asyncResult.value`
+            property. Any errors encountered are returned in the
+            `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -759,21 +1300,39 @@ methods:
     package: outlook!
     fullName: getAsFileAsync(callback)
     summary: Gets the current message in EML format encoded in Base64.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsFileAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getAsFileAsync(callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The Base64-encoded EML format of the message is returned in the `asyncResult.value` property. Any errors encountered are returned in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the callback
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            which is an `Office.AsyncResult` object. The Base64-encoded EML
+            format of the message is returned in the `asyncResult.value`
+            property. Any errors encountered are returned in the
+            `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -781,42 +1340,88 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getAttachmentContentAsync:member(1)
     package: outlook!
     fullName: getAttachmentContentAsync(attachmentId, options, callback)
-    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an
+      `AttachmentContent` object.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get the attachment's identifier from an [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that identifier to retrieve the attachment.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - In Outlook on the web and the [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `getAttachmentContentAsync` doesn't support attachments that were added using the \*\*Upload and share\*\* option.
 
-      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      **Important**:
 
-      \*\*Errors\*\*:
 
-      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
+      - The `getAttachmentContentAsync` method gets the attachment with the
+      specified identifier from the item. As a best practice, you should get the
+      attachment's identifier from an
+      [item.attachments](xref:outlook!Office.MessageRead%23attachments:member)
+      call, then in the same session, use that identifier to retrieve the
+      attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, `getAttachmentContentAsync` doesn't support attachments that were
+      added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on
+      Windows, the attachment identifier is valid only within the same session.
+      A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue
+      in a separate window.
+
+
+      **Errors**:
+
+
+      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't
+      supported. Unsupported types include embedded images in Rich Text Format,
+      or item attachment types other than email or calendar items (such as a
+      contact or task item).
+
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAttachmentContentAsync(attachmentId: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentContent>) => void): void;'
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
           type: string
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If
+            the call fails, the `asyncResult.error` property will contain an
+            error code with the reason for the failure.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -824,39 +1429,81 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getAttachmentContentAsync:member(2)
     package: outlook!
     fullName: getAttachmentContentAsync(attachmentId, callback)
-    summary: Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an
+      `AttachmentContent` object.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get the attachment's identifier from an [item.attachments](xref:outlook!Office.MessageRead%23attachments:member) call, then in the same session, use that identifier to retrieve the attachment.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - In Outlook on the web and the [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `getAttachmentContentAsync` doesn't support attachments that were added using the \*\*Upload and share\*\* option.
 
-      - In Outlook on the web, on mobile devices, and in the new Outlook on Windows, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      **Important**:
 
-      \*\*Errors\*\*:
 
-      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
+      - The `getAttachmentContentAsync` method gets the attachment with the
+      specified identifier from the item. As a best practice, you should get the
+      attachment's identifier from an
+      [item.attachments](xref:outlook!Office.MessageRead%23attachments:member)
+      call, then in the same session, use that identifier to retrieve the
+      attachment.
+
+
+      - In Outlook on the web and the [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->, `getAttachmentContentAsync` doesn't support attachments that were
+      added using the **Upload and share** option.
+
+
+      - In Outlook on the web, on mobile devices, and in the new Outlook on
+      Windows, the attachment identifier is valid only within the same session.
+      A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue
+      in a separate window.
+
+
+      **Errors**:
+
+
+      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't
+      supported. Unsupported types include embedded images in Rich Text Format,
+      or item attachment types other than email or calendar items (such as a
+      contact or task item).
+
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentContent>) => void): void;'
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
           type: string
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If
+            the call fails, the `asyncResult.error` property will contain an
+            error code with the reason for the failure.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.AttachmentContent:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -864,25 +1511,49 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getInitializationContextAsync:member(1)
     package: outlook!
     fullName: getInitializationContextAsync(options, callback)
-    summary: Gets initialization data passed when the add-in is [activated by an actionable message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an
+      actionable
+      message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getInitializationContextAsync(options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string (or an empty string if there's no initialization context) in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. On success, the initialization context
+            data is provided as a string (or an empty string if there's no
+            initialization context) in the `asyncResult.value` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -890,22 +1561,43 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getInitializationContextAsync:member(2)
     package: outlook!
     fullName: getInitializationContextAsync(callback)
-    summary: Gets initialization data passed when the add-in is [activated by an actionable message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an
+      actionable
+      message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getInitializationContextAsync(callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string (or an empty string if there's no initialization context) in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->. On success, the initialization context
+            data is provided as a string (or an empty string if there's no
+            initialization context) in the `asyncResult.value` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -913,113 +1605,248 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getRegExMatches:member(1)
     package: outlook!
     fullName: getRegExMatches()
-    summary: Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Returns string values in the selected item that match the regular
+      expressions defined in an XML manifest file.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - This method is used with the [activation rules feature for Outlook add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
-      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
-    example: []
+      **Important**:
+
+
+      - Entity-based contextual Outlook add-ins are now retired. However,
+      regular expression rules are still supported. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual
+      Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!--
+      -->, which isn't supported by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body
+      property of an item, the regular expression should further filter the body
+      and shouldn't attempt to return the entire body of the item. Using a
+      regular expression such as `.*` to obtain the entire body of an item
+      doesn't always return the expected results. Instead, use the
+      `Body.getAsync` method to retrieve the entire body.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRegExMatches(): any;'
       return:
         type: any
-        description: An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
+        description: >-
+          An object that contains arrays of strings that match the regular
+          expressions defined in the manifest XML file. The name of each array
+          is equal to the corresponding value of the RegExName attribute of the
+          matching `ItemHasRegularExpressionMatch` rule or the `FilterName`
+          attribute of the matching `ItemHasKnownEntity` rule. For an
+          `ItemHasRegularExpressionMatch` rule, a matching string has to occur
+          in the property of the item that is specified by that rule. The
+          `PropertyName` simple type defines the supported properties.
   - name: getRegExMatchesByName(name)
     uid: outlook!Office.LoadedMessageRead#getRegExMatchesByName:member(1)
     package: outlook!
     fullName: getRegExMatchesByName(name)
-    summary: Returns string values in the selected item that match the named regular expression defined in an XML manifest file.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Returns string values in the selected item that match the named regular
+      expression defined in an XML manifest file.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Appointment Attendee
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Appointment Attendee
 
-      - This method is used with the [activation rules feature for Outlook add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
-      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
-    example: []
+      **Important**:
+
+
+      - Entity-based contextual Outlook add-ins are now retired. However,
+      regular expression rules are still supported. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual
+      Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!--
+      -->, which isn't supported by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body
+      property of an item, the regular expression should further filter the body
+      and shouldn't attempt to return the entire body of the item. Using a
+      regular expression such as `.*` to obtain the entire body of an item
+      doesn't always return the expected results. Instead, use the
+      `Body.getAsync` method to retrieve the entire body.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRegExMatchesByName(name: string): string[];'
       parameters:
         - id: name
-          description: The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
+          description: >-
+            The name of the `ItemHasRegularExpressionMatch` rule element that
+            defines the filter to match.
           type: string
       return:
         type: string[]
-        description: An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the manifest XML file, with the specified `RegExName` element value.
+        description: >-
+          An array that contains the strings that match the regular expression
+          defined in the `ItemHasRegularExpressionMatch` rule element in the
+          manifest XML file, with the specified `RegExName` element value.
   - name: getSelectedRegExMatches()
     uid: outlook!Office.LoadedMessageRead#getSelectedRegExMatches:member(1)
     package: outlook!
     fullName: getSelectedRegExMatches()
-    summary: Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file. Highlighted matches apply to contextual add-ins.
-    remarks: |-
-      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      Returns string values in a highlighted match that match the regular
+      expressions defined in an XML manifest file. Highlighted matches apply to
+      contextual add-ins.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - Entity-based contextual Outlook add-ins are now retired. However, regular expression rules are still supported. We recommend updating your contextual add-in to use regular expression rules as an alternative solution. For guidance on how to implement these rules, see [Contextual Outlook add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - This method is used with the [activation rules feature for Outlook add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!-- -->, which isn't supported by the [unified manifest for Microsoft 365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
-      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular expression such as .\* to obtain the entire body of an item doesn't always return the expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.
-    example: []
+      **Important**:
+
+
+      - Entity-based contextual Outlook add-ins are now retired. However,
+      regular expression rules are still supported. We recommend updating your
+      contextual add-in to use regular expression rules as an alternative
+      solution. For guidance on how to implement these rules, see [Contextual
+      Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/contextual-outlook-add-ins)<!--
+      -->.
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/javascript/api/manifest/rule)<!--
+      -->, which isn't supported by the [unified manifest for Microsoft
+      365](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!--
+      -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body
+      property of an item, the regular expression should further filter the body
+      and shouldn't attempt to return the entire body of the item. Using a
+      regular expression such as .* to obtain the entire body of an item
+      doesn't always return the expected results. Instead, use the
+      `Body.getAsync` method to retrieve the entire body.
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSelectedRegExMatches(): any;'
       return:
         type: any
-        description: An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
+        description: >-
+          An object that contains arrays of strings that match the regular
+          expressions defined in the manifest XML file. The name of each array
+          is equal to the corresponding value of the `RegExName` attribute of
+          the matching `ItemHasRegularExpressionMatch` rule or the `FilterName`
+          attribute of the matching `ItemHasKnownEntity` rule. For an
+          `ItemHasRegularExpressionMatch` rule, a matching string has to occur
+          in the property of the item that is specified by that rule. The
+          `PropertyName` simple type defines the supported properties.
   - name: getSharedPropertiesAsync(options, callback)
     uid: outlook!Office.LoadedMessageRead#getSharedPropertiesAsync:member(1)
     package: outlook!
     fullName: getSharedPropertiesAsync(options, callback)
-    summary: |-
-      Gets the properties of an appointment or message in a shared folder or shared mailbox.
+    summary: >-
+      Gets the properties of an appointment or message in a shared folder or
+      shared mailbox.
 
-      For more information around using this API, see [Enable shared folders and shared mailbox scenarios in an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For more information around using this API, see [Enable shared folders and
+      shared mailbox scenarios in an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      shared mailbox
+      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;'
+      content: >-
+        getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback:
+        (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;
       parameters:
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            which is an `Office.AsyncResult` object. The `asyncResult.value`
+            property provides the properties of the shared item.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -1027,25 +1854,48 @@ methods:
     uid: outlook!Office.LoadedMessageRead#getSharedPropertiesAsync:member(2)
     package: outlook!
     fullName: getSharedPropertiesAsync(callback)
-    summary: |-
-      Gets the properties of an appointment or message in a shared folder or shared mailbox.
+    summary: >-
+      Gets the properties of an appointment or message in a shared folder or
+      shared mailbox.
 
-      For more information around using this API, see [Enable shared folders and shared mailbox scenarios in an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!-- -->.
-    remarks: |-
-      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      For more information around using this API, see [Enable shared folders and
+      shared mailbox scenarios in an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for
+      shared mailbox
+      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;'
+      content: >-
+        getSharedPropertiesAsync(callback: (asyncResult:
+        Office.AsyncResult<SharedProperties>) => void): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            which is an `Office.AsyncResult` object. The `asyncResult.value`
+            property provides the properties of the shared item.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.SharedProperties:interface" />&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -1053,33 +1903,68 @@ methods:
     uid: outlook!Office.LoadedMessageRead#loadCustomPropertiesAsync:member(1)
     package: outlook!
     fullName: loadCustomPropertiesAsync(callback, userContext)
-    summary: |-
-      Asynchronously loads custom properties for this add-in on the selected item.
+    summary: >-
+      Asynchronously loads custom properties for this add-in on the selected
+      item.
 
-      Custom properties are stored as key-value pairs on a per-app, per-item basis. This method returns a [CustomProperties](xref:outlook!Office.CustomProperties:interface) object in the callback, which provides methods to access the custom properties specific to the current item and the current add-in. Custom properties aren't encrypted on the item, so this shouldn't be used as secure storage.
 
-      The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property. This object can be used to get custom properties from the mail item.
-    remarks: |-
-      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      Custom properties are stored as key-value pairs on a per-app, per-item
+      basis. This method returns a
+      [CustomProperties](xref:outlook!Office.CustomProperties:interface) object
+      in the callback, which provides methods to access the custom properties
+      specific to the current item and the current add-in. Custom properties
+      aren't encrypted on the item, so this shouldn't be used as secure storage.
 
-      To learn more about custom properties, see [Get and set add-in metadata for an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      The custom properties are provided as a `CustomProperties` object in the
+      `asyncResult.value` property. This object can be used to get custom
+      properties from the mail item.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
 
-      \*\*Important\*\*: Only the `get` and `getAll` methods of the CustomProperties object are supported.
-    example: []
+      To learn more about custom properties, see [Get and set add-in metadata
+      for an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!--
+      -->.
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**: Only the `get` and `getAll` methods of the
+      CustomProperties object are supported.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;'
+      content: >-
+        loadCustomPropertiesAsync(callback: (asyncResult:
+        Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;)
+            =&gt; void
         - id: userContext
-          description: Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the `asyncResult.asyncContext` property in the callback function.
+          description: >-
+            Optional. Developers can provide any object they wish to access in
+            the callback function. This object can be accessed by the
+            `asyncResult.asyncContext` property in the callback function.
           type: any
       return:
         type: void
@@ -1088,31 +1973,59 @@ methods:
     uid: outlook!Office.LoadedMessageRead#unloadAsync:member(1)
     package: outlook!
     fullName: unloadAsync(options, callback)
-    summary: When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be loaded for processing.
-    remarks: |-
-      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When multiple mail items are selected, closes the currently loaded item,
+      so that another selected mail item can be loaded for processing.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
-      \*\*Important\*\*:
 
-      - To learn more about processing multiple selected messages, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
 
-      - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after processing on it. This must be done before calling `loadItemByIdAsync` on another selected item.
-    example: []
+
+      **Important**:
+
+
+      - To learn more about processing multiple selected messages, see [Activate
+      your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
+
+      - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->,
+      you must call `unloadAsync` after processing on it. This must be done
+      before calling `loadItemByIdAsync` on another selected item.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'unloadAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        unloadAsync(options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: options
-          description: An object literal that contains the `asyncContext` property. Assign any object you wish to access in the callback function to the `asyncContext` property.
+          description: >-
+            An object literal that contains the `asyncContext` property. Assign
+            any object you wish to access in the callback function to the
+            `asyncContext` property.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            callback parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1120,28 +2033,53 @@ methods:
     uid: outlook!Office.LoadedMessageRead#unloadAsync:member(2)
     package: outlook!
     fullName: unloadAsync(callback)
-    summary: When multiple mail items are selected, closes the currently loaded item, so that another selected mail item can be loaded for processing.
-    remarks: |-
-      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When multiple mail items are selected, closes the currently loaded item,
+      so that another selected mail item can be loaded for processing.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
-      \*\*Important\*\*:
 
-      - To learn more about processing multiple selected messages, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Compose
 
-      - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->, you must call `unloadAsync` after processing on it. This must be done before calling `loadItemByIdAsync` on another selected item.
-    example: []
+
+      **Important**:
+
+
+      - To learn more about processing multiple selected messages, see [Activate
+      your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
+
+      - When a selected mail item is loaded using `loadItemByIdAsync`<!-- -->,
+      you must call `unloadAsync` after processing on it. This must be done
+      before calling `loadItemByIdAsync` on another selected item.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'unloadAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        unloadAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void):
+        void;
       parameters:
         - id: callback
-          description: Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            callback parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''

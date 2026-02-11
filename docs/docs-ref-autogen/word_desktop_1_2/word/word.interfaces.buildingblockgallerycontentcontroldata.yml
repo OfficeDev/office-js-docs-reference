@@ -3,9 +3,11 @@ name: Word.Interfaces.BuildingBlockGalleryContentControlData
 uid: word!Word.Interfaces.BuildingBlockGalleryContentControlData:interface
 package: word!
 fullName: Word.Interfaces.BuildingBlockGalleryContentControlData
-summary: An interface describing the data returned by calling `buildingBlockGalleryContentControl.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `buildingBlockGalleryContentControl.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

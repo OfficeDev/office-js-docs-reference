@@ -4,8 +4,10 @@ uid: word!Word.Interfaces.TableOfFiguresLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.TableOfFiguresLoadOptions
 summary: Represents a table of figures in a Word document.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -24,12 +29,17 @@ properties:
       return:
         type: boolean
   - name: areBuiltInHeadingStylesUsed
-    uid: word!Word.Interfaces.TableOfFiguresLoadOptions#areBuiltInHeadingStylesUsed:member
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresLoadOptions#areBuiltInHeadingStylesUsed:member
     package: word!
     fullName: areBuiltInHeadingStylesUsed
-    summary: Specifies whether built-in heading styles are used for the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether built-in heading styles are used for the table of
+      figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +50,14 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#areFieldsUsed:member
     package: word!
     fullName: areFieldsUsed
-    summary: Specifies whether [Table of Contents Entry (TC) fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3) are included in the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether [Table of Contents Entry (TC)
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      are included in the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +65,17 @@ properties:
       return:
         type: boolean
   - name: areHyperlinksUsedOnWeb
-    uid: word!Word.Interfaces.TableOfFiguresLoadOptions#areHyperlinksUsedOnWeb:member
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresLoadOptions#areHyperlinksUsedOnWeb:member
     package: word!
     fullName: areHyperlinksUsedOnWeb
-    summary: Specifies whether entries in the table of figures should be formatted as hyperlinks when publishing to the web.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether entries in the table of figures should be formatted as
+      hyperlinks when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +83,17 @@ properties:
       return:
         type: boolean
   - name: arePageNumbersHiddenOnWeb
-    uid: word!Word.Interfaces.TableOfFiguresLoadOptions#arePageNumbersHiddenOnWeb:member
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresLoadOptions#arePageNumbersHiddenOnWeb:member
     package: word!
     fullName: arePageNumbersHiddenOnWeb
-    summary: Specifies whether the page numbers in the table of figures should be hidden when publishing to the web.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the page numbers in the table of figures should be
+      hidden when publishing to the web.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,12 +101,15 @@ properties:
       return:
         type: boolean
   - name: arePageNumbersIncluded
-    uid: word!Word.Interfaces.TableOfFiguresLoadOptions#arePageNumbersIncluded:member
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresLoadOptions#arePageNumbersIncluded:member
     package: word!
     fullName: arePageNumbersIncluded
     summary: Specifies whether page numbers are included in the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,12 +117,17 @@ properties:
       return:
         type: boolean
   - name: arePageNumbersRightAligned
-    uid: word!Word.Interfaces.TableOfFiguresLoadOptions#arePageNumbersRightAligned:member
+    uid: >-
+      word!Word.Interfaces.TableOfFiguresLoadOptions#arePageNumbersRightAligned:member
     package: word!
     fullName: arePageNumbersRightAligned
-    summary: Specifies whether page numbers are aligned with the right margin in the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether page numbers are aligned with the right margin in the
+      table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,9 +138,13 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#captionLabel:member
     package: word!
     fullName: captionLabel
-    summary: Specifies the label that identifies the items to be included in the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the label that identifies the items to be included in the table
+      of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +155,13 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#isLabelIncluded:member
     package: word!
     fullName: isLabelIncluded
-    summary: Specifies whether the caption label and caption number are included in the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the caption label and caption number are included in the
+      table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +172,13 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#lowerHeadingLevel:member
     package: word!
     fullName: lowerHeadingLevel
-    summary: Specifies the ending heading level for the table of figures. Must be a value from 1 to 9 and greater than `upperHeadingLevel`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the ending heading level for the table of figures. Must be a
+      value from 1 to 9 and greater than `upperHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,8 +190,10 @@ properties:
     package: word!
     fullName: range
     summary: Gets the portion of a document that is this table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,9 +204,13 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: Specifies the character between entries and their page numbers in the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the character between entries and their page numbers in the
+      table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,9 +221,14 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#tableId:member
     package: word!
     fullName: tableId
-    summary: Specifies a one-letter identifier from [TC fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3) that's used for the table of figures.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a one-letter identifier from [TC
+      fields](https://support.microsoft.com/office/01e5dd8a-4730-4bc2-8594-23d7329e25c3)
+      that's used for the table of figures.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,9 +239,13 @@ properties:
     uid: word!Word.Interfaces.TableOfFiguresLoadOptions#upperHeadingLevel:member
     package: word!
     fullName: upperHeadingLevel
-    summary: Specifies the starting heading level for the table of figures. Must be a value from 1 to 9 and smaller than `lowerHeadingLevel`<!-- -->.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the starting heading level for the table of figures. Must be a
+      value from 1 to 9 and smaller than `lowerHeadingLevel`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

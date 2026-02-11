@@ -4,8 +4,10 @@ uid: excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
 summary: Encapsulates the format properties for the chart axis.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: excel!Excel.Interfaces.ChartAxisFormatLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +32,13 @@ properties:
     uid: excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member
     package: excel!
     fullName: font
-    summary: Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the font attributes (font name, font size, color, etc.) for a
+      chart axis element.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,11 +50,15 @@ properties:
     package: excel!
     fullName: line
     summary: Specifies chart line formatting.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />

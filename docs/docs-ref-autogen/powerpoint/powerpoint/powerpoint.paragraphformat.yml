@@ -3,16 +3,27 @@ name: PowerPoint.ParagraphFormat
 uid: powerpoint!PowerPoint.ParagraphFormat:class
 package: powerpoint!
 fullName: PowerPoint.ParagraphFormat
-summary: Represents the paragraph formatting properties of a text that is attached to the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!-- -->.
-remarks: |-
-  \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+summary: >-
+  Represents the paragraph formatting properties of a text that is attached to
+  the [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!--
+  -->.
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
 
   // Gets navigational (complex) properties of the selected text range.
+
   await PowerPoint.run(async (context) => {
     const textRange: PowerPoint.TextRange = context.presentation.getSelectedTextRange();
     textRange.load("font,paragraphFormat/bulletFormat,paragraphFormat/horizontalAlignment");
@@ -36,8 +47,9 @@ remarks: |-
     console.log(`\tbulletFormat.visible: ${textRange.paragraphFormat.bulletFormat.visible}`);
     console.log(`\thorizontalAlignment: ${textRange.paragraphFormat.horizontalAlignment}`);
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,9 +58,15 @@ properties:
     uid: powerpoint!PowerPoint.ParagraphFormat#bulletFormat:member
     package: powerpoint!
     fullName: bulletFormat
-    summary: Represents the bullet format of the paragraph. See [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class) for details.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the bullet format of the paragraph. See
+      [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,9 +77,11 @@ properties:
     uid: powerpoint!PowerPoint.ParagraphFormat#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,22 +92,39 @@ properties:
     uid: powerpoint!PowerPoint.ParagraphFormat#horizontalAlignment:member
     package: powerpoint!
     fullName: horizontalAlignment
-    summary: Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum) for details.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the horizontal alignment of the paragraph. Returns 'null' if
+      the 'TextRange' includes text fragments with different horizontal
+      alignment values. See
+      [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)
+      for details.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null;'
+      content: >-
+        horizontalAlignment: PowerPoint.ParagraphHorizontalAlignment | "Left" |
+        "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
+        "ThaiDistributed" | null;
       return:
-        type: <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" /> | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed" | null
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum" />
+          | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" |
+          "Distributed" | "ThaiDistributed" | null
   - name: indentLevel
     uid: powerpoint!PowerPoint.ParagraphFormat#indentLevel:member
     package: powerpoint!
     fullName: indentLevel
     summary: Represents the indent level of the paragraph.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,17 +136,24 @@ methods:
     uid: powerpoint!PowerPoint.ParagraphFormat#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.ParagraphFormatLoadOptions): PowerPoint.ParagraphFormat;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.ParagraphFormatLoadOptions):
+        PowerPoint.ParagraphFormat;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface"
+            />
       return:
         type: <xref uid="powerpoint!PowerPoint.ParagraphFormat:class" />
         description: ''
@@ -117,16 +161,20 @@ methods:
     uid: powerpoint!PowerPoint.ParagraphFormat#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.ParagraphFormat;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.ParagraphFormat:class" />
@@ -135,9 +183,11 @@ methods:
     uid: powerpoint!PowerPoint.ParagraphFormat#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,7 +198,11 @@ methods:
                 }): PowerPoint.ParagraphFormat;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -161,14 +215,25 @@ methods:
     uid: powerpoint!PowerPoint.ParagraphFormat#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.ParagraphFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ParagraphFormatData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `PowerPoint.ParagraphFormat` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.ParagraphFormatData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.ParagraphFormatData;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface"
+          />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

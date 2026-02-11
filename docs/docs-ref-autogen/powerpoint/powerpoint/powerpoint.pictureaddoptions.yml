@@ -3,9 +3,14 @@ name: PowerPoint.PictureAddOptions
 uid: powerpoint!PowerPoint.PictureAddOptions:interface
 package: powerpoint!
 fullName: PowerPoint.PictureAddOptions
-summary: Represents the available options when adding a picture (represented by a [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class) object).
-remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the available options when adding a picture (represented by a
+  [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class) object).
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,9 +19,15 @@ properties:
     uid: powerpoint!PowerPoint.PictureAddOptions#height:member
     package: powerpoint!
     fullName: height
-    summary: Specifies the height, in points, of the picture. When not provided, the default value is 72 points (1 inch). Throws an `InvalidArgument` exception when set with a negative value.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the height, in points, of the picture. When not provided, the
+      default value is 72 points (1 inch). Throws an `InvalidArgument` exception
+      when set with a negative value.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -27,9 +38,14 @@ properties:
     uid: powerpoint!PowerPoint.PictureAddOptions#left:member
     package: powerpoint!
     fullName: left
-    summary: Specifies the distance, in points, from the left side of the picture to the left side of the slide. When not provided, the default value is 0.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the distance, in points, from the left side of the picture to
+      the left side of the slide. When not provided, the default value is 0.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -40,9 +56,14 @@ properties:
     uid: powerpoint!PowerPoint.PictureAddOptions#top:member
     package: powerpoint!
     fullName: top
-    summary: Specifies the distance, in points, from the top edge of the picture to the top edge of the slide. When not provided, the default value is 0.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the distance, in points, from the top edge of the picture to the
+      top edge of the slide. When not provided, the default value is 0.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -53,9 +74,15 @@ properties:
     uid: powerpoint!PowerPoint.PictureAddOptions#width:member
     package: powerpoint!
     fullName: width
-    summary: Specifies the width, in points, of the picture. When not provided, the default value is 72 points (1 inch). Throws an `InvalidArgument` exception when set with a negative value.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the width, in points, of the picture. When not provided, the
+      default value is 72 points (1 inch). Throws an `InvalidArgument` exception
+      when set with a negative value.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:

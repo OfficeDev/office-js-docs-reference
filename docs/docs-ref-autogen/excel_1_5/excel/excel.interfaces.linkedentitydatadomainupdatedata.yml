@@ -4,10 +4,10 @@ uid: excel!Excel.Interfaces.LinkedEntityDataDomainUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.LinkedEntityDataDomainUpdateData
 summary: >-
-  An interface for updating data on the `LinkedEntityDataDomain` object, for use in `linkedEntityDataDomain.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `LinkedEntityDataDomain` object, for use
+  in `linkedEntityDataDomain.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

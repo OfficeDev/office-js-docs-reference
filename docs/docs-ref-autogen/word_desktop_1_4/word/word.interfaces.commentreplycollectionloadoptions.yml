@@ -3,9 +3,14 @@ name: Word.Interfaces.CommentReplyCollectionLoadOptions
 uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.CommentReplyCollectionLoadOptions
-summary: Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all comment replies in one comment thread.
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  Contains a collection of
+  [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all
+  comment replies in one comment thread.
+remarks: >-
+  \[ [API set: WordApi
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +19,12 @@ properties:
     uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +35,13 @@ properties:
     uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member
     package: word!
     fullName: authorEmail
-    summary: 'For EACH ITEM in the collection: Gets the email of the comment reply''s author.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the email of the comment reply's
+      author.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +52,13 @@ properties:
     uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#authorName:member
     package: word!
     fullName: authorName
-    summary: 'For EACH ITEM in the collection: Gets the name of the comment reply''s author.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the name of the comment reply's
+      author.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +69,13 @@ properties:
     uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#content:member
     package: word!
     fullName: content
-    summary: 'For EACH ITEM in the collection: Specifies the comment reply''s content. The string is plain text.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the comment reply's content.
+      The string is plain text.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,22 +86,32 @@ properties:
     uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#contentRange:member
     package: word!
     fullName: contentRange
-    summary: 'For EACH ITEM in the collection: Specifies the commentReply''s content range.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the commentReply's content
+      range.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
       return:
-        type: <xref uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />
   - name: creationDate
     uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member
     package: word!
     fullName: creationDate
-    summary: 'For EACH ITEM in the collection: Gets the creation date of the comment reply.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the creation date of the comment
+      reply.
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,8 +123,10 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the comment reply.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,12 +134,15 @@ properties:
       return:
         type: boolean
   - name: parentComment
-    uid: word!Word.Interfaces.CommentReplyCollectionLoadOptions#parentComment:member
+    uid: >-
+      word!Word.Interfaces.CommentReplyCollectionLoadOptions#parentComment:member
     package: word!
     fullName: parentComment
     summary: 'For EACH ITEM in the collection: Gets the parent comment of this reply.'
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApi
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

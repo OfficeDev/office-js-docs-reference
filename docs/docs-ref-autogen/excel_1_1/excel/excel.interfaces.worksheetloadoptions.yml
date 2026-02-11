@@ -3,9 +3,16 @@ name: Excel.Interfaces.WorksheetLoadOptions
 uid: excel!Excel.Interfaces.WorksheetLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.WorksheetLoadOptions
-summary: An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet object model, read [Work with worksheets using the Excel JavaScript API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  An Excel worksheet is a grid of cells. It can contain data, tables, charts,
+  etc. To learn more about the worksheet object model, read [Work with
+  worksheets using the Excel JavaScript
+  API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!--
+  -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +21,12 @@ properties:
     uid: excel!Excel.Interfaces.WorksheetLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,21 +38,30 @@ properties:
     package: excel!
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.ChartCollectionLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.ChartCollectionLoadOptions:interface" />
   - name: id
     uid: excel!Excel.Interfaces.WorksheetLoadOptions#id:member
     package: excel!
     fullName: id
-    summary: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Returns a value that uniquely identifies the worksheet in a given
+      workbook. The value of the identifier remains the same even when the
+      worksheet is renamed or moved.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +72,13 @@ properties:
     uid: excel!Excel.Interfaces.WorksheetLoadOptions#name:member
     package: excel!
     fullName: name
-    summary: The display name of the worksheet. The name must be fewer than 32 characters.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      The display name of the worksheet. The name must be fewer than 32
+      characters.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +90,10 @@ properties:
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,21 +105,27 @@ properties:
     package: excel!
     fullName: tables
     summary: Collection of tables that are part of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.TableCollectionLoadOptions:interface" />
   - name: visibility
     uid: excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member
     package: excel!
     fullName: visibility
     summary: The visibility of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,8 +4,11 @@ uid: powerpoint!PowerPoint.TableCellCollection:class
 package: powerpoint!
 fullName: PowerPoint.TableCellCollection
 summary: Represents a collection of table cells.
-remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +17,11 @@ properties:
     uid: powerpoint!PowerPoint.TableCellCollection#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,8 +47,11 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of table cells in the collection.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,19 +63,34 @@ methods:
     uid: powerpoint!PowerPoint.TableCellCollection#getItemAtOrNullObject:member(1)
     package: powerpoint!
     fullName: getItemAtOrNullObject(row, column)
-    summary: Gets the table cell using its zero-based index in the collection. If the `TableCell` doesn't exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the table cell using its zero-based index in the collection. If the
+      `TableCell` doesn't exist, then this method returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getItemAtOrNullObject(row: number, column: number): PowerPoint.TableCell;'
+      content: >-
+        getItemAtOrNullObject(row: number, column: number):
+        PowerPoint.TableCell;
       parameters:
         - id: row
-          description: Row index value of the table cell to be retrieved, as a zero-based index.
+          description: >-
+            Row index value of the table cell to be retrieved, as a zero-based
+            index.
           type: number
         - id: column
-          description: Column index value of the table cell to be retrieved, as a zero-based index.
+          description: >-
+            Column index value of the table cell to be retrieved, as a
+            zero-based index.
           type: number
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCell:class" />
@@ -76,17 +99,27 @@ methods:
     uid: powerpoint!PowerPoint.TableCellCollection#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.TableCellCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.TableCellCollection;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.TableCellCollectionLoadOptions &
+        PowerPoint.Interfaces.CollectionLoadOptions):
+        PowerPoint.TableCellCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions:interface" /> & <xref uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionLoadOptions:interface"
+            /> & <xref
+            uid="powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface"
+            />
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCellCollection:class" />
         description: ''
@@ -94,16 +127,20 @@ methods:
     uid: powerpoint!PowerPoint.TableCellCollection#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.TableCellCollection;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCellCollection:class" />
@@ -112,16 +149,24 @@ methods:
     uid: powerpoint!PowerPoint.TableCellCollection#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TableCellCollection;'
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        PowerPoint.TableCellCollection;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="powerpoint!PowerPoint.TableCellCollection:class" />
@@ -130,14 +175,26 @@ methods:
     uid: powerpoint!PowerPoint.TableCellCollection#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TableCellCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `PowerPoint.TableCellCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.TableCellCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the
+      collection's items.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.TableCellCollectionData;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionData:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.TableCellCollectionData:interface"
+          />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

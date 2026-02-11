@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.ShapeFontData
 uid: powerpoint!PowerPoint.Interfaces.ShapeFontData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeFontData
-summary: An interface describing the data returned by calling `shapeFont.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `shapeFont.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

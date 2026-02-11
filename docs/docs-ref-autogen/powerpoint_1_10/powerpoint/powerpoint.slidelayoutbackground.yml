@@ -4,19 +4,28 @@ uid: powerpoint!PowerPoint.SlideLayoutBackground:class
 package: powerpoint!
 fullName: PowerPoint.SlideLayoutBackground
 summary: Represents the background of a slide layout.
-remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi
+  1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: areBackgroundGraphicsHidden
-    uid: powerpoint!PowerPoint.SlideLayoutBackground#areBackgroundGraphicsHidden:member
+    uid: >-
+      powerpoint!PowerPoint.SlideLayoutBackground#areBackgroundGraphicsHidden:member
     package: powerpoint!
     fullName: areBackgroundGraphicsHidden
-    summary: Specifies whether the slide layout background fill hides or displays background graphic objects from the slide master.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies whether the slide layout background fill hides or displays
+      background graphic objects from the slide master.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +36,11 @@ properties:
     uid: powerpoint!PowerPoint.SlideLayoutBackground#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +52,11 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Returns the fill formatting of the background.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,12 +64,18 @@ properties:
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideBackgroundFill:class" />
   - name: isMasterBackgroundFollowed
-    uid: powerpoint!PowerPoint.SlideLayoutBackground#isMasterBackgroundFollowed:member
+    uid: >-
+      powerpoint!PowerPoint.SlideLayoutBackground#isMasterBackgroundFollowed:member
     package: powerpoint!
     fullName: isMasterBackgroundFollowed
-    summary: Specifies if the slide layout background follows the slide master background.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies if the slide layout background follows the slide master
+      background.
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,17 +87,24 @@ methods:
     uid: powerpoint!PowerPoint.SlideLayoutBackground#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions): PowerPoint.SlideLayoutBackground;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions):
+        PowerPoint.SlideLayoutBackground;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundLoadOptions:interface"
+            />
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideLayoutBackground:class" />
         description: ''
@@ -85,16 +112,22 @@ methods:
     uid: powerpoint!PowerPoint.SlideLayoutBackground#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): PowerPoint.SlideLayoutBackground;'
+      content: >-
+        load(propertyNames?: string | string[]):
+        PowerPoint.SlideLayoutBackground;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.SlideLayoutBackground:class" />
@@ -103,9 +136,11 @@ methods:
     uid: powerpoint!PowerPoint.SlideLayoutBackground#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +151,11 @@ methods:
                 }): PowerPoint.SlideLayoutBackground;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -130,8 +169,11 @@ methods:
     package: powerpoint!
     fullName: reset()
     summary: Resets the fill formatting of the slide layout background.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,14 +185,25 @@ methods:
     uid: powerpoint!PowerPoint.SlideLayoutBackground#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.SlideLayoutBackground` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideLayoutBackgroundData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `PowerPoint.SlideLayoutBackground` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as
+      `PowerPoint.Interfaces.SlideLayoutBackgroundData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideLayoutBackgroundData;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundData:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.SlideLayoutBackgroundData:interface"
+          />
         description: ''
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

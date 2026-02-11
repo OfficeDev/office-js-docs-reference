@@ -3,12 +3,16 @@ name: Excel.LinkedEntityDataDomainCreateOptions
 uid: excel!Excel.LinkedEntityDataDomainCreateOptions:interface
 package: excel!
 fullName: Excel.LinkedEntityDataDomainCreateOptions
-summary: Represents options that are used to create the `LinkedEntityDataDomain` object being added to the `LinkedEntityDataDomainCollection`<!-- -->.
-remarks: |-
-  \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: >-
+  Represents options that are used to create the `LinkedEntityDataDomain` object
+  being added to the `LinkedEntityDataDomainCollection`<!-- -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   This interface isn't supported in Excel on the web.
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,11 +22,14 @@ properties:
     package: excel!
     fullName: dataProvider
     summary: Specifies the name of the data provider for the linked entity data domain.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,12 +40,17 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainCreateOptions#id:member
     package: excel!
     fullName: id
-    summary: Specifies the ID of the linked entity data domain. This ID must be unique across all linked entity data domains defined by this Office Add-in.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies the ID of the linked entity data domain. This ID must be unique
+      across all linked entity data domains defined by this Office Add-in.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,12 +61,21 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainCreateOptions#loadFunctionId:member
     package: excel!
     fullName: loadFunctionId
-    summary: 'Specifies the ID of the custom function that will be called on demand to resolve or refresh the `LinkedEntityCellValue` objects of this linked entity data domain. For further information, see [Autogenerate JSON metadata for custom functions: ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!-- -->.'
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies the ID of the custom function that will be called on demand to
+      resolve or refresh the `LinkedEntityCellValue` objects of this linked
+      entity data domain. For further information, see [Autogenerate JSON
+      metadata for custom functions:
+      ID](https://learn.microsoft.com/office/dev/add-ins/excel/custom-functions-json-autogeneration#id)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,12 +86,18 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainCreateOptions#name:member
     package: excel!
     fullName: name
-    summary: Specifies the name of the linked entity data domain. This name must be unique across all linked entity data domains defined by this Office Add-in.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies the name of the linked entity data domain. This name must be
+      unique across all linked entity data domains defined by this Office
+      Add-in.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,15 +105,25 @@ properties:
       return:
         type: string
   - name: periodicRefreshInterval
-    uid: excel!Excel.LinkedEntityDataDomainCreateOptions#periodicRefreshInterval:member
+    uid: >-
+      excel!Excel.LinkedEntityDataDomainCreateOptions#periodicRefreshInterval:member
     package: excel!
     fullName: periodicRefreshInterval
-    summary: Specifies the frequency, in seconds, at which `LinkedEntityCellValue` objects of this linked entity data domain are refreshed automatically. The minimum valid value is 300. This property is required if the `supportedRefreshModes` array contains the value "Periodic". This property only applies if the `refreshMode` of the linked entity data domain is set to "Periodic".
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies the frequency, in seconds, at which `LinkedEntityCellValue`
+      objects of this linked entity data domain are refreshed automatically. The
+      minimum valid value is 300. This property is required if the
+      `supportedRefreshModes` array contains the value "Periodic". This property
+      only applies if the `refreshMode` of the linked entity data domain is set
+      to "Periodic".
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,15 +131,28 @@ properties:
       return:
         type: number
   - name: supportedRefreshModes
-    uid: excel!Excel.LinkedEntityDataDomainCreateOptions#supportedRefreshModes:member
+    uid: >-
+      excel!Excel.LinkedEntityDataDomainCreateOptions#supportedRefreshModes:member
     package: excel!
     fullName: supportedRefreshModes
-    summary: Specifies all the refresh modes supported by the linked entity data domain. The default value is `["Manual"]`<!-- -->, which is always supported even if not specified. The refresh mode saved in the workbook is loaded as the default refresh mode of the linked entity data domain on the next workbook open. If the refresh mode was not saved in the workbook, the first value in the array is set as the default refresh mode of the linked entity data domain. If the array has the value "Periodic", the `periodicRefreshInterval` property must also be set for the linked entity data domain.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Specifies all the refresh modes supported by the linked entity data
+      domain. The default value is `["Manual"]`<!-- -->, which is always
+      supported even if not specified. The refresh mode saved in the workbook is
+      loaded as the default refresh mode of the linked entity data domain on the
+      next workbook open. If the refresh mode was not saved in the workbook, the
+      first value in the array is set as the default refresh mode of the linked
+      entity data domain. If the array has the value "Periodic", the
+      `periodicRefreshInterval` property must also be set for the linked entity
+      data domain.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This property isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

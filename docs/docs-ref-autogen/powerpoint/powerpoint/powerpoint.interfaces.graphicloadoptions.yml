@@ -4,8 +4,11 @@ uid: powerpoint!PowerPoint.Interfaces.GraphicLoadOptions:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.GraphicLoadOptions
 summary: Represents a graphic object in PowerPoint.
-remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: true
 isDeprecated: false
 type: interface
@@ -14,9 +17,12 @@ properties:
     uid: powerpoint!PowerPoint.Interfaces.GraphicLoadOptions#$all:member
     package: powerpoint!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -28,11 +34,16 @@ properties:
     package: powerpoint!
     fullName: shape
     summary: Returns the `Shape` object associated with the graphic.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'shape?: PowerPoint.Interfaces.ShapeLoadOptions;'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface" />
+        type: >-
+          <xref
+          uid="powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface" />

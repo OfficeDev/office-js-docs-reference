@@ -4,24 +4,27 @@ uid: powerpoint!PowerPoint.Interfaces.TableColumnCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableColumnCollectionUpdateData
 summary: >-
-  An interface for updating data on the `TableColumnCollection` object, for use in `tableColumnCollection.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `TableColumnCollection` object, for use
+  in `tableColumnCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: powerpoint!PowerPoint.Interfaces.TableColumnCollectionUpdateData#items:member
+    uid: >-
+      powerpoint!PowerPoint.Interfaces.TableColumnCollectionUpdateData#items:member
     package: powerpoint!
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'items?: PowerPoint.Interfaces.TableColumnData[];'
       return:
-        type: <xref uid="powerpoint!PowerPoint.Interfaces.TableColumnData:interface" />[]
+        type: >-
+          <xref uid="powerpoint!PowerPoint.Interfaces.TableColumnData:interface"
+          />[]

@@ -3,9 +3,11 @@ name: Word.Interfaces.ReviewerUpdateData
 uid: word!Word.Interfaces.ReviewerUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ReviewerUpdateData
-summary: An interface for updating data on the `Reviewer` object, for use in `reviewer.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `Reviewer` object, for use in
+  `reviewer.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: word!
     fullName: isVisible
     summary: Specifies if the `Reviewer` object is visible.
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

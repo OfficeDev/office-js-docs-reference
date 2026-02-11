@@ -3,16 +3,29 @@ name: Office.DroppedItems
 uid: outlook!Office.DroppedItems:interface
 package: outlook!
 fullName: Office.DroppedItems
-summary: Provides the messages or file attachments being dragged and dropped into an add-in's task pane.
-remarks: |-
-  \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Provides the messages or file attachments being dragged and dropped into an
+  add-in's task pane.
+remarks: >-
+  \[ [API set: Mailbox
+  1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  To learn more about the drag-and-drop feature and how to implement it across various Outlook clients, see [Drag and drop messages and attachments into the task pane of an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!-- -->.
+
+  To learn more about the drag-and-drop feature and how to implement it across
+  various Outlook clients, see [Drag and drop messages and attachments into the
+  task pane of an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/drag-drop-items)<!--
+  -->.
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/80-events/drag-drop-item.yaml
+
 
   function dragAndDropEventHandler(event) {
       Office.context.mailbox.addHandlerAsync(Office.EventType.DragAndDropEvent, (event) => {
@@ -36,8 +49,9 @@ remarks: |-
       }
     });
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -46,9 +60,14 @@ properties:
     uid: outlook!Office.DroppedItems#files:member
     package: outlook!
     fullName: files
-    summary: Gets an array of the messages or file attachments being dragged and dropped into an add-in's task pane.
-    remarks: '\[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets an array of the messages or file attachments being dragged and
+      dropped into an add-in's task pane.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,8 +4,10 @@ uid: excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
 summary: Represents an object containing values and types of a named item.
-remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: ExcelApi
+  1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,12 @@ properties:
     uid: excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +33,10 @@ properties:
     package: excel!
     fullName: types
     summary: Represents the types for each item in the named item array
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +48,10 @@ properties:
     package: excel!
     fullName: values
     summary: Represents the values of each item in the named item array.
-    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +62,19 @@ properties:
     uid: excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#valuesAsJson:member
     package: excel!
     fullName: valuesAsJson
-    summary: A JSON representation of the values in this named item array. Unlike `NamedItemArrayValues.values`<!-- -->, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values. Data returned from this API always aligns with the en-US locale. To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      A JSON representation of the values in this named item array. Unlike
+      `NamedItemArrayValues.values`<!-- -->, `NamedItemArrayValues.valuesAsJson`
+      supports all data types which can be in a cell. Examples include formatted
+      number values and web images, in addition to the standard Boolean, number,
+      and string values. Data returned from this API always aligns with the
+      en-US locale. To retrieve data in the user's display locale, use
+      `NamedItemArrayValues.valuesAsJsonLocal`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,12 +82,24 @@ properties:
       return:
         type: boolean
   - name: valuesAsJsonLocal
-    uid: excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#valuesAsJsonLocal:member
+    uid: >-
+      excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#valuesAsJsonLocal:member
     package: excel!
     fullName: valuesAsJsonLocal
-    summary: A JSON representation of the values in this named item array. Unlike `NamedItemArrayValues.values`<!-- -->, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard Boolean, number, and string values. Data returned from this API always aligns with the user's display locale. To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      A JSON representation of the values in this named item array. Unlike
+      `NamedItemArrayValues.values`<!-- -->,
+      `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can
+      be in a cell. Examples include formatted number values and web images, in
+      addition to the standard Boolean, number, and string values. Data returned
+      from this API always aligns with the user's display locale. To retrieve
+      data independent of locale, use `NamedItemArrayValues.valuesAsJson`<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

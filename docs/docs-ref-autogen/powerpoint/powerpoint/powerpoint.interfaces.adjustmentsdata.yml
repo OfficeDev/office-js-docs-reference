@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.AdjustmentsData
 uid: powerpoint!PowerPoint.Interfaces.AdjustmentsData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.AdjustmentsData
-summary: An interface describing the data returned by calling `adjustments.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `adjustments.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,11 @@ properties:
     package: powerpoint!
     fullName: count
     summary: Specifies the number of adjustment points.
-    remarks: '\[ [API set: PowerPointApi 1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,13 +4,19 @@ uid: excel!Excel.ConditionalFormatType:enum
 package: excel!
 fullName: Excel.ConditionalFormatType
 summary: ''
-remarks: |-
-  \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: ExcelApi
+  1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-advanced.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-advanced.yaml
+
 
   await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -45,48 +51,65 @@ remarks: |-
 
       await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: cellValue
     uid: excel!Excel.ConditionalFormatType.cellValue:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CellValue"'
   - name: colorScale
     uid: excel!Excel.ConditionalFormatType.colorScale:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ColorScale"'
   - name: containsText
     uid: excel!Excel.ConditionalFormatType.containsText:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ContainsText"'
   - name: custom
     uid: excel!Excel.ConditionalFormatType.custom:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Custom"'
   - name: dataBar
     uid: excel!Excel.ConditionalFormatType.dataBar:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataBar"'
   - name: iconSet
     uid: excel!Excel.ConditionalFormatType.iconSet:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"IconSet"'
   - name: presetCriteria
     uid: excel!Excel.ConditionalFormatType.presetCriteria:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"PresetCriteria"'
   - name: topBottom
     uid: excel!Excel.ConditionalFormatType.topBottom:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TopBottom"'

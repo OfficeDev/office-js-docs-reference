@@ -3,7 +3,11 @@ name: Visio.RequestContext
 uid: visio!Visio.RequestContext:class
 package: visio!
 fullName: Visio.RequestContext
-summary: The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+summary: >-
+  The RequestContext object facilitates requests to the Visio application. Since
+  the Office add-in and the Visio application run in two different processes,
+  the request context is required to get access to the Visio object model from
+  the add-in.
 remarks: |-
   #### Examples
 
@@ -22,7 +26,7 @@ remarks: |-
       }
   });
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -33,7 +37,7 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,7 +53,7 @@ properties:
     fullName: document
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

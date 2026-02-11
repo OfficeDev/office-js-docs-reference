@@ -3,9 +3,11 @@ name: Word.Interfaces.ReflectionFormatUpdateData
 uid: word!Word.Interfaces.ReflectionFormatUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ReflectionFormatUpdateData
-summary: An interface for updating data on the `ReflectionFormat` object, for use in `reflectionFormat.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `ReflectionFormat` object, for use in
+  `reflectionFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatUpdateData#blur:member
     package: word!
     fullName: blur
-    summary: Specifies the degree of blur effect applied to the `ReflectionFormat` object as a value between 0.0 and 100.0.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the degree of blur effect applied to the `ReflectionFormat`
+      object as a value between 0.0 and 100.0.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,13 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatUpdateData#offset:member
     package: word!
     fullName: offset
-    summary: Specifies the amount of separation, in points, of the reflected image from the shape.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the amount of separation, in points, of the reflected image from
+      the shape.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +50,13 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatUpdateData#size:member
     package: word!
     fullName: size
-    summary: Specifies the size of the reflection as a percentage of the reflected shape from 0 to 100.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the size of the reflection as a percentage of the reflected
+      shape from 0 to 100.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +67,13 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatUpdateData#transparency:member
     package: word!
     fullName: transparency
-    summary: Specifies the degree of transparency for the reflection effect as a value between 0.0 (opaque) and 1.0 (clear).
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the degree of transparency for the reflection effect as a value
+      between 0.0 (opaque) and 1.0 (clear).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,12 +84,21 @@ properties:
     uid: word!Word.Interfaces.ReflectionFormatUpdateData#type:member
     package: word!
     fullName: type
-    summary: Specifies a `ReflectionType` value that represents the type and direction of the lighting for a shape reflection.
-    remarks: '\[ [API set: WordApiDesktop 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies a `ReflectionType` value that represents the type and direction
+      of the lighting for a shape reflection.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.ReflectionType | "Mixed" | "None" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9";'
+      content: >-
+        type?: Word.ReflectionType | "Mixed" | "None" | "Type1" | "Type2" |
+        "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9";
       return:
-        type: <xref uid="word!Word.ReflectionType:enum" /> | "Mixed" | "None" | "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" | "Type8" | "Type9"
+        type: >-
+          <xref uid="word!Word.ReflectionType:enum" /> | "Mixed" | "None" |
+          "Type1" | "Type2" | "Type3" | "Type4" | "Type5" | "Type6" | "Type7" |
+          "Type8" | "Type9"

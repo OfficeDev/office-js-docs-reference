@@ -4,12 +4,17 @@ uid: visio!Visio.PageLoadCompleteEventArgs:interface
 package: visio!
 fullName: Visio.PageLoadCompleteEventArgs
 summary: Provides information about the page that raised the PageLoadComplete event.
-remarks: |-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: >-
+  \[ [API set:
+  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+  \]
+
 
   #### Examples
 
+
   ```TypeScript
+
   Visio.run(session, function (ctx) {
       const document1= ctx.document;
       eventResult1 = document1.onPageLoadComplete.add(
@@ -26,8 +31,9 @@ remarks: |-
           console.log("Debug info: " + JSON.stringify(error.debugInfo));
       }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -37,8 +43,11 @@ properties:
     package: visio!
     fullName: pageName
     summary: Gets the name of the page that raised the PageLoad event.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,8 +59,11 @@ properties:
     package: visio!
     fullName: success
     summary: Gets the success or failure of the PageLoadComplete event.
-    remarks: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    example: []
+    remarks: >-
+      \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

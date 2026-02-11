@@ -3,12 +3,15 @@ name: Excel.ColumnPropertiesLoadOptions
 uid: excel!Excel.ColumnPropertiesLoadOptions:interface
 package: excel!
 fullName: Excel.ColumnPropertiesLoadOptions
-summary: |-
-  Represents which column properties to load, when used as part of a "range.getColumnProperties" method.
+summary: >-
+  Represents which column properties to load, when used as part of a
+  "range.getColumnProperties" method.
 
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,12 +20,14 @@ properties:
     uid: excel!Excel.ColumnPropertiesLoadOptions#columnHidden:member
     package: excel!
     fullName: columnHidden
-    summary: |-
+    summary: >-
       Specifies whether to load on the `columnHidden` property.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,12 +38,14 @@ properties:
     uid: excel!Excel.ColumnPropertiesLoadOptions#columnIndex:member
     package: excel!
     fullName: columnIndex
-    summary: |-
+    summary: >-
       Specifies whether to load on the `columnIndex` property.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,12 +56,14 @@ properties:
     uid: excel!Excel.ColumnPropertiesLoadOptions#format:member
     package: excel!
     fullName: format
-    summary: |-
+    summary: >-
       Specifies whether to load on the `format` property.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,8 +72,9 @@ properties:
                     columnWidth?: boolean;
                 };
       return:
-        type: |-
-          <xref uid="excel!Excel.CellPropertiesFormatLoadOptions:interface" /> & {
+        type: >-
+          <xref uid="excel!Excel.CellPropertiesFormatLoadOptions:interface" /> &
+          {
                       columnWidth?: boolean;
                   }
 extends: <xref uid="excel!Excel.CellPropertiesLoadOptions:interface" />

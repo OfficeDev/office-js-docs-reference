@@ -3,9 +3,11 @@ name: Word.Interfaces.BorderData
 uid: word!Word.Interfaces.BorderData:interface
 package: word!
 fullName: Word.Interfaces.BorderData
-summary: An interface describing the data returned by calling `border.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `border.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,13 @@ properties:
     uid: word!Word.Interfaces.BorderData#color:member
     package: word!
     fullName: color
-    summary: Specifies the color for the border. Color is specified in ‘\#RRGGBB’ format or by using the color name.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Specifies the color for the border. Color is specified in ‘\#RRGGBB’
+      format or by using the color name.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,34 +34,58 @@ properties:
     package: word!
     fullName: location
     summary: Gets the location of the border.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'location?: Word.BorderLocation | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All";'
+      content: >-
+        location?: Word.BorderLocation | "Top" | "Left" | "Bottom" | "Right" |
+        "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All";
       return:
-        type: <xref uid="word!Word.BorderLocation:enum" /> | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"
+        type: >-
+          <xref uid="word!Word.BorderLocation:enum" /> | "Top" | "Left" |
+          "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside"
+          | "Outside" | "All"
   - name: type
     uid: word!Word.Interfaces.BorderData#type:member
     package: word!
     fullName: type
     summary: Specifies the border type for the border.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";'
+      content: >-
+        type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" |
+        "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" |
+        "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+        "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge"
+        | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
+        "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
-        type: <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
+        type: >-
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single"
+          | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
+          "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall"
+          | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" |
+          "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+          "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
   - name: visible
     uid: word!Word.Interfaces.BorderData#visible:member
     package: word!
     fullName: visible
     summary: Specifies whether the border is visible.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,11 +97,18 @@ properties:
     package: word!
     fullName: width
     summary: Specifies the width for the border.
-    remarks: '\[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'width?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";'
+      content: >-
+        width?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" |
+        "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
       return:
-        type: <xref uid="word!Word.BorderWidth:enum" /> | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed"
+        type: >-
+          <xref uid="word!Word.BorderWidth:enum" /> | "None" | "Pt025" | "Pt050"
+          | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600"
+          | "Mixed"

@@ -3,31 +3,71 @@ name: Office.InternetHeaders
 uid: outlook!Office.InternetHeaders:interface
 package: outlook!
 fullName: Office.InternetHeaders
-summary: |-
-  The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange and is converted to a MIME message.
+summary: >-
+  The `InternetHeaders` object represents custom internet headers that are
+  preserved after the message item leaves Exchange and is converted to a MIME
+  message.
+
 
   Internet headers are stored as string key-value pairs on a per-item basis.
 
-  \*\*Note\*\*: This object is intended for you to set and get your custom headers on a message item. To learn more, see [Get and set internet headers on a message in an Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!-- -->.
-remarks: |-
-  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+  **Note**: This object is intended for you to set and get your custom
+  headers on a message item. To learn more, see [Get and set internet headers on
+  a message in an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!--
+  -->.
+remarks: >-
+  \[ [API set: Mailbox
+  1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-  \*\*Important\*\*: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
 
-  \*\*Recommended practices\*\*:
 
-  Currently, internet headers are a finite resource on a user's mailbox. When the quota is exhausted, you can't create any more internet headers on that mailbox, which can result in unexpected behavior from clients that rely on this to function.
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
 
-  Apply the following guidelines when you create internet headers in your add-in.
 
-  - Create the minimum number of headers required. The header quota is based on the total size of headers applied to a message. In Exchange Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator. For further information on header limits, see [Exchange Online message limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits) and [Exchange Server message limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!-- -->.
+  **Important**: The internet headers API is supported in Outlook on Android
+  and on iOS starting in Version 4.2405.0. To learn more about features
+  supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported
+  in Outlook on mobile
+  devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+  -->.
 
-  - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable manner (for example, based on user input or a timestamp).
-example: []
+
+  **Recommended practices**:
+
+
+  Currently, internet headers are a finite resource on a user's mailbox. When
+  the quota is exhausted, you can't create any more internet headers on that
+  mailbox, which can result in unexpected behavior from clients that rely on
+  this to function.
+
+
+  Apply the following guidelines when you create internet headers in your
+  add-in.
+
+
+  - Create the minimum number of headers required. The header quota is based on
+  the total size of headers applied to a message. In Exchange Online, the header
+  limit is capped at 256 KB, while in an Exchange on-premises environment, the
+  limit is determined by your organization's administrator. For further
+  information on header limits, see [Exchange Online message
+  limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
+  and [Exchange Server message
+  limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
+  -->.
+
+
+  - Name headers so that you can reuse and update their values later. As such,
+  avoid naming headers in a variable manner (for example, based on user input or
+  a timestamp).
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -36,23 +76,47 @@ methods:
     uid: outlook!Office.InternetHeaders#getAsync:member(1)
     package: outlook!
     fullName: getAsync(names, options, callback)
-    summary: |-
-      Given an array of internet header names, this method returns a record containing those internet headers and their values. If the add-in requests a header that isn't available, that header won't be returned in the results.
+    summary: >-
+      Given an array of internet header names, this method returns a record
+      containing those internet headers and their values. If the add-in requests
+      a header that isn't available, that header won't be returned in the
+      results.
 
-      \*\*Note\*\*: This method is intended to return the values of the custom headers you set using the `setAsync` method.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      **Note**: This method is intended to return the values of the custom
+      headers you set using the `setAsync` method.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      \*\*Important\*\*: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: The internet headers API is supported in Outlook on
+      Android and on iOS starting in Version 4.2405.0. To learn more about
+      features supported in Outlook on mobile devices, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
 
       Office.context.mailbox.item.internetHeaders.getAsync(
         ["preferred-fruit", "preferred-vegetable", "best-vegetable", "nonexistent-header"],
@@ -64,22 +128,37 @@ methods:
           }
         }
       );
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(names: string[], options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<Record<string, string>>) => void): void;'
+      content: >-
+        getAsync(names: string[], options: Office.AsyncContextOptions, callback:
+        (asyncResult: Office.AsyncResult<Record<string, string>>) => void):
+        void;
       parameters:
         - id: names
           description: The names of the internet headers to be returned.
           type: string[]
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. The string key-value pairs of internet headers are returned in the `asyncResult.value` property. Any errors encountered are provided in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            of type `Office.AsyncResult`<!-- -->. The string key-value pairs of
+            internet headers are returned in the `asyncResult.value` property.
+            Any errors encountered are provided in the `asyncResult.error`
+            property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;Record&lt;string, string&gt;&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -87,30 +166,59 @@ methods:
     uid: outlook!Office.InternetHeaders#getAsync:member(2)
     package: outlook!
     fullName: getAsync(names, callback)
-    summary: |-
-      Given an array of internet header names, this method returns a record containing those internet headers and their values. If the add-in requests a header that isn't available, that header won't be returned in the results.
+    summary: >-
+      Given an array of internet header names, this method returns a record
+      containing those internet headers and their values. If the add-in requests
+      a header that isn't available, that header won't be returned in the
+      results.
 
-      \*\*Note\*\*: This method is intended to return the values of the custom headers you set using the `setAsync` method.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+      **Note**: This method is intended to return the values of the custom
+      headers you set using the `setAsync` method.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      \*\*Important\*\*: The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: The internet headers API is supported in Outlook on
+      Android and on iOS starting in Version 4.2405.0. To learn more about
+      features supported in Outlook on mobile devices, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(names: string[], callback: (asyncResult: CommonAPI.AsyncResult<Record<string, string>>) => void): void;'
+      content: >-
+        getAsync(names: string[], callback: (asyncResult:
+        Office.AsyncResult<Record<string, string>>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be returned.
           type: string[]
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. The string key-value pairs of internet headers are returned in the `asyncResult.value` property. Any errors encountered are provided in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            of type `Office.AsyncResult`<!-- -->. The string key-value pairs of
+            internet headers are returned in the `asyncResult.value` property.
+            Any errors encountered are provided in the `asyncResult.error`
+            property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;Record&lt;string, string&gt;&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -118,27 +226,55 @@ methods:
     uid: outlook!Office.InternetHeaders#removeAsync:member(1)
     package: outlook!
     fullName: removeAsync(names, options, callback)
-    summary: |-
-      Given an array of internet header names, this method removes the specified headers from the internet header collection.
+    summary: >-
+      Given an array of internet header names, this method removes the specified
+      headers from the internet header collection.
 
-      \*\*Note\*\*: This method is intended to remove the custom headers you set using the `setAsync` method.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
+      **Note**: This method is intended to remove the custom headers you set
+      using the `setAsync` method.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      \*\*Important\*\*:
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
-      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
-      - The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS
+      starting in Version 4.2405.0. To learn more about features supported in
+      Outlook on mobile devices, see [Outlook JavaScript APIs supported in
+      Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
+      - The `removeAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
 
       Office.context.mailbox.item.internetHeaders.removeAsync(
         ["best-vegetable", "nonexistent-header"],
@@ -150,22 +286,34 @@ methods:
           }
         }
       );
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(names: string[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        removeAsync(names: string[], options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be removed.
           type: string[]
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any
+            errors encountered are provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -173,34 +321,65 @@ methods:
     uid: outlook!Office.InternetHeaders#removeAsync:member(2)
     package: outlook!
     fullName: removeAsync(names, callback)
-    summary: |-
-      Given an array of internet header names, this method removes the specified headers from the internet header collection.
+    summary: >-
+      Given an array of internet header names, this method removes the specified
+      headers from the internet header collection.
 
-      \*\*Note\*\*: This method is intended to remove the custom headers you set using the `setAsync` method.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
+      **Note**: This method is intended to remove the custom headers you set
+      using the `setAsync` method.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-      \*\*Important\*\*:
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
-      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
-      - The `removeAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-    example: []
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS
+      starting in Version 4.2405.0. To learn more about features supported in
+      Outlook on mobile devices, see [Outlook JavaScript APIs supported in
+      Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
+      - The `removeAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(names: string[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        removeAsync(names: string[], callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be removed.
           type: string[]
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any
+            errors encountered are provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -208,31 +387,70 @@ methods:
     uid: outlook!Office.InternetHeaders#setAsync:member(1)
     package: outlook!
     fullName: setAsync(headers, options, callback)
-    summary: |-
+    summary: >-
       Sets the specified internet headers to the specified values.
 
-      The `setAsync` method creates a new header if the specified header doesn't already exist; otherwise, the existing value is replaced with the new value.
 
-      \*\*Note\*\*: This method is intended to set the values of your custom headers.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      The `setAsync` method creates a new header if the specified header doesn't
+      already exist; otherwise, the existing value is replaced with the new
+      value.
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **Note**: This method is intended to set the values of your custom
+      headers.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*Important\*\*:
 
-      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
-      - The header quota is based on the total size of headers applied to a message. In Exchange Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator. For further information on header limits, see [Exchange Online message limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits) and [Exchange Server message limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!-- -->.
 
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS
+      starting in Version 4.2405.0. To learn more about features supported in
+      Outlook on mobile devices, see [Outlook JavaScript APIs supported in
+      Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
+      - The header quota is based on the total size of headers applied to a
+      message. In Exchange Online, the header limit is capped at 256 KB, while
+      in an Exchange on-premises environment, the limit is determined by your
+      organization's administrator. For further information on header limits,
+      see [Exchange Online message
+      limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
+      and [Exchange Server message
+      limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
+      -->.
+
+
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
+
 
       Office.context.mailbox.item.internetHeaders.setAsync(
         { "preferred-fruit": "orange", "preferred-vegetable": "broccoli", "best-vegetable": "spinach" },
@@ -245,22 +463,38 @@ methods:
         }
 
       );
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(headers: Record<string, string>, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(headers: Record<string, string>, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: headers
-          description: The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names and values being the corresponding header value strings.
+          description: >-
+            The names and corresponding values of the headers to be set. This
+            should be a record object with its keys being internet header names
+            and values being the corresponding header value strings.
           type: Record&lt;string, string&gt;
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any
+            errors encountered are provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -268,38 +502,83 @@ methods:
     uid: outlook!Office.InternetHeaders#setAsync:member(2)
     package: outlook!
     fullName: setAsync(headers, callback)
-    summary: |-
+    summary: >-
       Sets the specified internet headers to the specified values.
 
-      The `setAsync` method creates a new header if the specified header doesn't already exist; otherwise, the existing value is replaced with the new value.
 
-      \*\*Note\*\*: This method is intended to set the values of your custom headers.
-    remarks: |-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      The `setAsync` method creates a new header if the specified header doesn't
+      already exist; otherwise, the existing value is replaced with the new
+      value.
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **Note**: This method is intended to set the values of your custom
+      headers.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*Important\*\*:
 
-      - The internet headers API is supported in Outlook on Android and on iOS starting in Version 4.2405.0. To learn more about features supported in Outlook on mobile devices, see [Outlook JavaScript APIs supported in Outlook on mobile devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
-      - The header quota is based on the total size of headers applied to a message. In Exchange Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator. For further information on header limits, see [Exchange Online message limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits) and [Exchange Server message limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!-- -->.
 
-      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
-    example: []
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**:
+
+
+      - The internet headers API is supported in Outlook on Android and on iOS
+      starting in Version 4.2405.0. To learn more about features supported in
+      Outlook on mobile devices, see [Outlook JavaScript APIs supported in
+      Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
+      - The header quota is based on the total size of headers applied to a
+      message. In Exchange Online, the header limit is capped at 256 KB, while
+      in an Exchange on-premises environment, the limit is determined by your
+      organization's administrator. For further information on header limits,
+      see [Exchange Online message
+      limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
+      and [Exchange Server message
+      limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
+      -->.
+
+
+      - The `setAsync` method isn't supported on a message that's currently
+      loaded using the `loadItemByIdAsync` method. For more information, see
+      [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!--
+      -->.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(headers: Record<string, string>, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(headers: Record<string, string>, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: headers
-          description: The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names and values being the corresponding header value strings.
+          description: >-
+            The names and corresponding values of the headers to be set. This
+            should be a record object with its keys being internet header names
+            and values being the corresponding header value strings.
           type: Record&lt;string, string&gt;
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any
+            errors encountered are provided in the `asyncResult.error` property.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''

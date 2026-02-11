@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.TemplateCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TemplateCollectionUpdateData
 summary: >-
-  An interface for updating data on the `TemplateCollection` object, for use in `templateCollection.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `TemplateCollection` object, for use in
+  `templateCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

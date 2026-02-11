@@ -4,14 +4,18 @@ uid: office!OfficeExtension.EventHandlerResult:class
 package: office!
 fullName: OfficeExtension.EventHandlerResult
 summary: >-
-  Enables the removal of an event handler. Returned by the `EventHandlers.add` method.
+  Enables the removal of an event handler. Returned by the `EventHandlers.add`
+  method.
 
 
-  \*\*Note\*\*: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
-  handler was added in must be used when removing the handler. More information can be found in [Remove an event
-  handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!-- -->.
+  **Note**: The same
+  [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class)
+  object that the handler was added in must be used when removing the handler.
+  More information can be found in [Remove an event
+  handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,11 +26,13 @@ constructors:
     fullName: (constructor)(context, handlers, handler)
     summary: Constructs a new instance of the `EventHandlerResult` class
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);'
+      content: >-
+        constructor(context: ClientRequestContext, handlers: EventHandlers<T>,
+        handler: (args: T) => Promise<any>);
       parameters:
         - id: context
           description: ''
@@ -44,7 +50,7 @@ properties:
     fullName: context
     summary: The request context associated with the object
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,7 +64,7 @@ methods:
     fullName: remove()
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

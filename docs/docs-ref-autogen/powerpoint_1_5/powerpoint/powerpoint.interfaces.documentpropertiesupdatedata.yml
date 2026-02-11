@@ -4,10 +4,10 @@ uid: powerpoint!PowerPoint.Interfaces.DocumentPropertiesUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.DocumentPropertiesUpdateData
 summary: >-
-  An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`<!--
-  -->.
+  An interface for updating data on the `DocumentProperties` object, for use in
+  `documentProperties.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

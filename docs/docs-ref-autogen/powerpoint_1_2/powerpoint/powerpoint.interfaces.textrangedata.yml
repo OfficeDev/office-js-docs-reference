@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.TextRangeData
 uid: powerpoint!PowerPoint.Interfaces.TextRangeData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TextRangeData
-summary: An interface describing the data returned by calling `textRange.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `textRange.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -3,7 +3,10 @@ name: OfficeExtension.ClientResult
 uid: office!OfficeExtension.ClientResult:class
 package: office!
 fullName: OfficeExtension.ClientResult
-summary: Contains the result for methods that return primitive types. The object's value property is retrieved from the document after `context.sync()` is invoked.
+summary: >-
+  Contains the result for methods that return primitive types. The object's
+  value property is retrieved from the document after `context.sync()` is
+  invoked.
 remarks: |-
   #### Examples
 
@@ -20,7 +23,7 @@ remarks: |-
       console.log(countResult.value);
   });
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -29,9 +32,11 @@ properties:
     uid: office!OfficeExtension.ClientResult#value:member
     package: office!
     fullName: value
-    summary: The value of the result that is retrieved from the document after `context.sync()` is invoked.
+    summary: >-
+      The value of the result that is retrieved from the document after
+      `context.sync()` is invoked.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

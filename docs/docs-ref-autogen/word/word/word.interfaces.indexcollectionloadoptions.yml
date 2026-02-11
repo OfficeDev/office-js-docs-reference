@@ -3,9 +3,13 @@ name: Word.Interfaces.IndexCollectionLoadOptions
 uid: word!Word.Interfaces.IndexCollectionLoadOptions:interface
 package: word!
 fullName: Word.Interfaces.IndexCollectionLoadOptions
-summary: A collection of [Word.Index](xref:word!Word.Index:class) objects that represents all the indexes in the document.
-remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
+summary: >-
+  A collection of [Word.Index](xref:word!Word.Index:class) objects that
+  represents all the indexes in the document.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#$all:member
     package: word!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +34,14 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#filter:member
     package: word!
     fullName: filter
-    summary: 'For EACH ITEM in the collection: Gets a value that represents how Microsoft Word classifies the first character of entries in the index. See `IndexFilter` for available values.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets a value that represents how
+      Microsoft Word classifies the first character of entries in the index. See
+      `IndexFilter` for available values.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +52,16 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#headingSeparator:member
     package: word!
     fullName: headingSeparator
-    summary: 'For EACH ITEM in the collection: Gets the text between alphabetical groups (entries that start with the same letter) in the index. Corresponds to the \*\*<!-- -->\\<!-- -->h\*\* switch for an [INDEX field](https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e)<!-- -->.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the text between alphabetical groups
+      (entries that start with the same letter) in the index. Corresponds to the
+      **<!-- -->\\<!-- -->h** switch for an [INDEX
+      field](https://support.microsoft.com/office/adafcf4a-cb30-43f6-85c7-743da1635d9e)<!--
+      -->.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +72,13 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#indexLanguage:member
     package: word!
     fullName: indexLanguage
-    summary: 'For EACH ITEM in the collection: Gets a `LanguageId` value that represents the sorting language to use for the index.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets a `LanguageId` value that represents
+      the sorting language to use for the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +89,13 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#numberOfColumns:member
     package: word!
     fullName: numberOfColumns
-    summary: 'For EACH ITEM in the collection: Gets the number of columns for each page of the index.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets the number of columns for each page
+      of the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +106,13 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#range:member
     package: word!
     fullName: range
-    summary: 'For EACH ITEM in the collection: Returns a `Range` object that represents the portion of the document that is contained within the index.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Returns a `Range` object that represents
+      the portion of the document that is contained within the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,12 +120,17 @@ properties:
       return:
         type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
   - name: rightAlignPageNumbers
-    uid: word!Word.Interfaces.IndexCollectionLoadOptions#rightAlignPageNumbers:member
+    uid: >-
+      word!Word.Interfaces.IndexCollectionLoadOptions#rightAlignPageNumbers:member
     package: word!
     fullName: rightAlignPageNumbers
-    summary: 'For EACH ITEM in the collection: Specifies if page numbers are aligned with the right margin in the index.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies if page numbers are aligned
+      with the right margin in the index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,12 +138,18 @@ properties:
       return:
         type: boolean
   - name: separateAccentedLetterHeadings
-    uid: word!Word.Interfaces.IndexCollectionLoadOptions#separateAccentedLetterHeadings:member
+    uid: >-
+      word!Word.Interfaces.IndexCollectionLoadOptions#separateAccentedLetterHeadings:member
     package: word!
     fullName: separateAccentedLetterHeadings
-    summary: 'For EACH ITEM in the collection: Gets if the index contains separate headings for accented letters (for example, words that begin with "À" are under one heading and words that begin with "A" are under another).'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Gets if the index contains separate
+      headings for accented letters (for example, words that begin with "À" are
+      under one heading and words that begin with "A" are under another).
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,9 +160,13 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#sortBy:member
     package: word!
     fullName: sortBy
-    summary: 'For EACH ITEM in the collection: Specifies the sorting criteria for the index.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the sorting criteria for the
+      index.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,9 +177,13 @@ properties:
     uid: word!Word.Interfaces.IndexCollectionLoadOptions#tabLeader:member
     package: word!
     fullName: tabLeader
-    summary: 'For EACH ITEM in the collection: Specifies the leader character between entries in the index and their associated page numbers.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      For EACH ITEM in the collection: Specifies the leader character between
+      entries in the index and their associated page numbers.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,8 +195,10 @@ properties:
     package: word!
     fullName: type
     summary: 'For EACH ITEM in the collection: Gets the index type.'
-    remarks: '\[ [API set: WordApiDesktop 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

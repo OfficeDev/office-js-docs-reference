@@ -3,12 +3,18 @@ name: Excel.LinkedEntityDataDomainCollection
 uid: excel!Excel.LinkedEntityDataDomainCollection:class
 package: excel!
 fullName: Excel.LinkedEntityDataDomainCollection
-summary: Represents a collection of `LinkedEntityDataDomain` objects. The collection can contain linked entity data domains such as stocks, geography, or currencies defined by service data providers, such as Bing or Power BI, or linked entity data domains defined by Office Add-ins.
-remarks: |-
-  \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+summary: >-
+  Represents a collection of `LinkedEntityDataDomain` objects. The collection
+  can contain linked entity data domains such as stocks, geography, or
+  currencies defined by service data providers, such as Bing or Power BI, or
+  linked entity data domains defined by Office Add-ins.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   This class isn't supported in Excel on the web.
-example: []
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -17,9 +23,11 @@ properties:
     uid: excel!Excel.LinkedEntityDataDomainCollection#context:member
     package: excel!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +40,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,20 +52,30 @@ methods:
     uid: excel!Excel.LinkedEntityDataDomainCollection#add:member(1)
     package: excel!
     fullName: add(options)
-    summary: Adds a linked entity data domain object defined by the Office Add-in to the collection. Once the linked entity data domain is added, it can be used to create `LinkedEntityCellValue` objects.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Adds a linked entity data domain object defined by the Office Add-in to
+      the collection. Once the linked entity data domain is added, it can be
+      used to create `LinkedEntityCellValue` objects.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'add(options: Excel.LinkedEntityDataDomainCreateOptions): void;'
       parameters:
         - id: options
-          description: Options that are used to create the linked entity data domain to be added.
-          type: <xref uid="excel!Excel.LinkedEntityDataDomainCreateOptions:interface" />
+          description: >-
+            Options that are used to create the linked entity data domain to be
+            added.
+          type: >-
+            <xref
+            uid="excel!Excel.LinkedEntityDataDomainCreateOptions:interface" />
       return:
         type: void
         description: ''
@@ -66,11 +84,14 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of linked entity data domains in the collection.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,11 +104,14 @@ methods:
     package: excel!
     fullName: getItem(id)
     summary: Gets a linked entity data domain by its `id`<!-- -->.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,17 +122,23 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomain:class" />
-        description: The linked entity data domain with the given `id`<!-- -->. If there are multiple linked entity data domains with the same `id`<!-- -->, the one defined by this Office Add-in will be returned.
+        description: >-
+          The linked entity data domain with the given `id`<!-- -->. If there
+          are multiple linked entity data domains with the same `id`<!-- -->,
+          the one defined by this Office Add-in will be returned.
   - name: getItemAt(index)
     uid: excel!Excel.LinkedEntityDataDomainCollection#getItemAt:member(1)
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a linked entity data domain by its index in the collection.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,11 +155,14 @@ methods:
     package: excel!
     fullName: getItemByName(name)
     summary: Gets a linked entity data domain by its `name`<!-- -->.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,17 +173,30 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomain:class" />
-        description: The linked entity data domain with the given `name`<!-- -->. If there are multiple linked entity data domains with the same `name`<!-- -->, the one defined by this Office Add-in will be returned.
+        description: >-
+          The linked entity data domain with the given `name`<!-- -->. If there
+          are multiple linked entity data domains with the same `name`<!-- -->,
+          the one defined by this Office Add-in will be returned.
   - name: getItemByNameOrNullObject(name)
-    uid: excel!Excel.LinkedEntityDataDomainCollection#getItemByNameOrNullObject:member(1)
+    uid: >-
+      excel!Excel.LinkedEntityDataDomainCollection#getItemByNameOrNullObject:member(1)
     package: excel!
     fullName: getItemByNameOrNullObject(name)
-    summary: Gets a linked entity data domain by its `name`<!-- -->. If the linked entity data domain does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a linked entity data domain by its `name`<!-- -->. If the linked
+      entity data domain does not exist, then this method returns an object with
+      its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,17 +207,29 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomain:class" />
-        description: The linked entity data domain with the given `name`<!-- -->. If there are multiple linked entity data domains with the same `name`<!-- -->, the one defined by this Office Add-in will be returned.
+        description: >-
+          The linked entity data domain with the given `name`<!-- -->. If there
+          are multiple linked entity data domains with the same `name`<!-- -->,
+          the one defined by this Office Add-in will be returned.
   - name: getItemOrNullObject(id)
     uid: excel!Excel.LinkedEntityDataDomainCollection#getItemOrNullObject:member(1)
     package: excel!
     fullName: getItemOrNullObject(id)
-    summary: Gets a linked entity data domain by its `id`<!-- -->. If the linked entity data domain does not exist, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!-- -->.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a linked entity data domain by its `id`<!-- -->. If the linked entity
+      data domain does not exist, then this method returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,22 +240,35 @@ methods:
           type: string
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomain:class" />
-        description: The linked entity data domain with the given `id`<!-- -->. If there are multiple linked entity data domains with the same `id`<!-- -->, the one defined by this Office Add-in will be returned.
+        description: >-
+          The linked entity data domain with the given `id`<!-- -->. If there
+          are multiple linked entity data domains with the same `id`<!-- -->,
+          the one defined by this Office Add-in will be returned.
   - name: load(options)
     uid: excel!Excel.LinkedEntityDataDomainCollection#load:member(1)
     package: excel!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: Excel.Interfaces.LinkedEntityDataDomainCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.LinkedEntityDataDomainCollection;'
+      content: >-
+        load(options?:
+        Excel.Interfaces.LinkedEntityDataDomainCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions):
+        Excel.LinkedEntityDataDomainCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionLoadOptions:interface" /> & <xref uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionLoadOptions:interface"
+            /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomainCollection:class" />
         description: ''
@@ -205,16 +276,22 @@ methods:
     uid: excel!Excel.LinkedEntityDataDomainCollection#load:member(2)
     package: excel!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): Excel.LinkedEntityDataDomainCollection;'
+      content: >-
+        load(propertyNames?: string | string[]):
+        Excel.LinkedEntityDataDomainCollection;
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomainCollection:class" />
@@ -223,16 +300,24 @@ methods:
     uid: excel!Excel.LinkedEntityDataDomainCollection#load:member(3)
     package: excel!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedEntityDataDomainCollection;'
+      content: >-
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
+        Excel.LinkedEntityDataDomainCollection;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: <xref uid="office!OfficeExtension.LoadOption:interface" />
       return:
         type: <xref uid="excel!Excel.LinkedEntityDataDomainCollection:class" />
@@ -241,12 +326,18 @@ methods:
     uid: excel!Excel.LinkedEntityDataDomainCollection#refreshAll:member(1)
     package: excel!
     fullName: refreshAll()
-    summary: Refreshes all `LinkedEntityCellValue` objects of all linked entity data domains in this collection. The refresh request can fail if the data providers are busy or temporarily inaccessible.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Refreshes all `LinkedEntityCellValue` objects of all linked entity data
+      domains in this collection. The refresh request can fail if the data
+      providers are busy or temporarily inaccessible.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This method isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,63 +349,102 @@ methods:
     uid: excel!Excel.LinkedEntityDataDomainCollection#toJSON:member(1)
     package: excel!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `Excel.LinkedEntityDataDomainCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedEntityDataDomainCollectionData`<!-- -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original
+      `Excel.LinkedEntityDataDomainCollection` object is an API object, the
+      `toJSON` method returns a plain JavaScript object (typed as
+      `Excel.Interfaces.LinkedEntityDataDomainCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties
+      from the collection's items.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.LinkedEntityDataDomainCollectionData;'
       return:
-        type: <xref uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData:interface" />
+        type: >-
+          <xref
+          uid="excel!Excel.Interfaces.LinkedEntityDataDomainCollectionData:interface"
+          />
         description: ''
 events:
   - name: onLinkedEntityDataDomainAdded
-    uid: excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member
+    uid: >-
+      excel!Excel.LinkedEntityDataDomainCollection#onLinkedEntityDataDomainAdded:member
     package: excel!
     fullName: onLinkedEntityDataDomainAdded
     summary: Occurs when a new linked entity data domain is added to the workbook.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This event isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onLinkedEntityDataDomainAdded: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainAddedEventArgs>;'
+      content: >-
+        readonly onLinkedEntityDataDomainAdded:
+        OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainAddedEventArgs>;
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface" />&gt;
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.LinkedEntityDataDomainAddedEventArgs:interface"
+          />&gt;
   - name: onRefreshCompleted
     uid: excel!Excel.LinkedEntityDataDomainCollection#onRefreshCompleted:member
     package: excel!
     fullName: onRefreshCompleted
-    summary: Occurs when the request to refresh `LinkedEntityCellValue` objects of a linked entity data domain is completed.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    summary: >-
+      Occurs when the request to refresh `LinkedEntityCellValue` objects of a
+      linked entity data domain is completed.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This event isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onRefreshCompleted: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshCompletedEventArgs>;'
+      content: >-
+        readonly onRefreshCompleted:
+        OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshCompletedEventArgs>;
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface" />&gt;
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.LinkedEntityDataDomainRefreshCompletedEventArgs:interface"
+          />&gt;
   - name: onRefreshModeChanged
     uid: excel!Excel.LinkedEntityDataDomainCollection#onRefreshModeChanged:member
     package: excel!
     fullName: onRefreshModeChanged
     summary: Occurs when the `refreshMode` of a linked entity data domain is changed.
-    remarks: |-
-      \[ [API set: ExcelApi 1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.19](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
 
       This event isn't supported in Excel on the web.
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onRefreshModeChanged: OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs>;'
+      content: >-
+        readonly onRefreshModeChanged:
+        OfficeExtension.EventHandlers<Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs>;
       return:
-        type: <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface" />&gt;
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.LinkedEntityDataDomainRefreshModeChangedEventArgs:interface"
+          />&gt;
 extends: <xref uid="office!OfficeExtension.ClientObject:class" />

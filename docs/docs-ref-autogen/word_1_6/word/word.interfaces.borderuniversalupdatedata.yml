@@ -3,9 +3,11 @@ name: Word.Interfaces.BorderUniversalUpdateData
 uid: word!Word.Interfaces.BorderUniversalUpdateData:interface
 package: word!
 fullName: Word.Interfaces.BorderUniversalUpdateData
-summary: An interface for updating data on the `BorderUniversal` object, for use in `borderUniversal.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `BorderUniversal` object, for use in
+  `borderUniversal.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

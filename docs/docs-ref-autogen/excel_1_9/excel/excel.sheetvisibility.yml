@@ -4,13 +4,19 @@ uid: excel!Excel.SheetVisibility:enum
 package: excel!
 fullName: Excel.SheetVisibility
 summary: ''
-remarks: |-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: ExcelApi
+  1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-visibility.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-visibility.yaml
+
 
   await Excel.run(async (context) => {
 
@@ -27,23 +33,30 @@ remarks: |-
           console.log("Cannot hide the only visible worksheet");
       }
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: hidden
     uid: excel!Excel.SheetVisibility.hidden:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Hidden"'
   - name: veryHidden
     uid: excel!Excel.SheetVisibility.veryHidden:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"VeryHidden"'
   - name: visible
     uid: excel!Excel.SheetVisibility.visible:member
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: >-
+      * \[ [API set: ExcelApi
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Visible"'

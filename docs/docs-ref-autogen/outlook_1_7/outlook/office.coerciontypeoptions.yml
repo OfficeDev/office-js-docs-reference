@@ -4,16 +4,26 @@ uid: outlook!Office.CoercionTypeOptions:interface
 package: outlook!
 fullName: Office.CoercionTypeOptions
 summary: Provides an option for the data format.
-remarks: |-
+remarks: >-
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/append-text-on-send.yaml
 
-  // This snippet appends text to the end of the message or appointment's body once it's sent.
-  const text = (document.getElementById("text-field") as HTMLInputElement).value;
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/append-text-on-send.yaml
 
-  // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the appendOnSendAsync call.
+
+  // This snippet appends text to the end of the message or appointment's body
+  once it's sent.
+
+  const text = (document.getElementById("text-field") as
+  HTMLInputElement).value;
+
+
+  // It's recommended to call getTypeAsync and pass its returned value to the
+  options.coercionType parameter of the appendOnSendAsync call.
+
   Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
     if (asyncResult.status === Office.AsyncResultStatus.Failed) {
       console.log("Action failed with error: " + asyncResult.error.message);
@@ -30,8 +40,9 @@ remarks: |-
       console.log(`"${text}" will be appended to the body once the message or appointment is sent. Send the mail item to test this feature.`);
     });
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -42,10 +53,10 @@ properties:
     fullName: coercionType
     summary: The desired data format.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'coercionType?: CommonAPI.CoercionType | string;'
+      content: 'coercionType?: Office.CoercionType | string;'
       return:
         type: <xref uid="office!Office.CoercionType:enum" /> | string

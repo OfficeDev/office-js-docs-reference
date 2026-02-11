@@ -3,9 +3,13 @@ name: Excel.Interfaces.LineLoadOptions
 uid: excel!Excel.Interfaces.LineLoadOptions:interface
 package: excel!
 fullName: Excel.Interfaces.LineLoadOptions
-summary: Represents a line inside a worksheet. To get the corresponding `Shape` object, use `Line.shape`<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents a line inside a worksheet. To get the corresponding `Shape` object,
+  use `Line.shape`<!-- -->.
+remarks: >-
+  \[ [API set: ExcelApi
+  1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +18,12 @@ properties:
     uid: excel!Excel.Interfaces.LineLoadOptions#$all:member
     package: excel!
     fullName: $all
-    summary: Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not the navigational properties (such as `Range.format.fill.color`<!-- -->).
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +34,13 @@ properties:
     uid: excel!Excel.Interfaces.LineLoadOptions#beginArrowheadLength:member
     package: excel!
     fullName: beginArrowheadLength
-    summary: Represents the length of the arrowhead at the beginning of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the length of the arrowhead at the beginning of the specified
+      line.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,9 +51,13 @@ properties:
     uid: excel!Excel.Interfaces.LineLoadOptions#beginArrowheadStyle:member
     package: excel!
     fullName: beginArrowheadStyle
-    summary: Represents the style of the arrowhead at the beginning of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the style of the arrowhead at the beginning of the specified
+      line.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +68,13 @@ properties:
     uid: excel!Excel.Interfaces.LineLoadOptions#beginArrowheadWidth:member
     package: excel!
     fullName: beginArrowheadWidth
-    summary: Represents the width of the arrowhead at the beginning of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the width of the arrowhead at the beginning of the specified
+      line.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,9 +85,13 @@ properties:
     uid: excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member
     package: excel!
     fullName: beginConnectedShape
-    summary: Represents the shape to which the beginning of the specified line is attached.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the shape to which the beginning of the specified line is
+      attached.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,9 +102,14 @@ properties:
     uid: excel!Excel.Interfaces.LineLoadOptions#beginConnectedSite:member
     package: excel!
     fullName: beginConnectedSite
-    summary: Represents the connection site to which the beginning of a connector is connected. Returns `null` when the beginning of the line is not attached to any shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the connection site to which the beginning of a connector is
+      connected. Returns `null` when the beginning of the line is not attached
+      to any shape.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,8 +121,10 @@ properties:
     package: excel!
     fullName: connectorType
     summary: Represents the connector type for the line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,8 +136,10 @@ properties:
     package: excel!
     fullName: endArrowheadLength
     summary: Represents the length of the arrowhead at the end of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,8 +151,10 @@ properties:
     package: excel!
     fullName: endArrowheadStyle
     summary: Represents the style of the arrowhead at the end of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,8 +166,10 @@ properties:
     package: excel!
     fullName: endArrowheadWidth
     summary: Represents the width of the arrowhead at the end of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,8 +181,10 @@ properties:
     package: excel!
     fullName: endConnectedShape
     summary: Represents the shape to which the end of the specified line is attached.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,9 +195,14 @@ properties:
     uid: excel!Excel.Interfaces.LineLoadOptions#endConnectedSite:member
     package: excel!
     fullName: endConnectedSite
-    summary: Represents the connection site to which the end of a connector is connected. Returns `null` when the end of the line is not attached to any shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Represents the connection site to which the end of a connector is
+      connected. Returns `null` when the end of the line is not attached to any
+      shape.
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,8 +214,10 @@ properties:
     package: excel!
     fullName: id
     summary: Specifies the shape identifier.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,8 +229,10 @@ properties:
     package: excel!
     fullName: isBeginConnected
     summary: Specifies if the beginning of the specified line is connected to a shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,8 +244,10 @@ properties:
     package: excel!
     fullName: isEndConnected
     summary: Specifies if the end of the specified line is connected to a shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,8 +259,10 @@ properties:
     package: excel!
     fullName: shape
     summary: Returns the `Shape` object associated with the line.
-    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:

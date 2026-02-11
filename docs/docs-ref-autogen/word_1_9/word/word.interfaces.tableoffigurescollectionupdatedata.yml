@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.TableOfFiguresCollectionUpdateData:interface
 package: word!
 fullName: Word.Interfaces.TableOfFiguresCollectionUpdateData
 summary: >-
-  An interface for updating data on the `TableOfFiguresCollection` object, for use in `tableOfFiguresCollection.set({
-  ... })`<!-- -->.
+  An interface for updating data on the `TableOfFiguresCollection` object, for
+  use in `tableOfFiguresCollection.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

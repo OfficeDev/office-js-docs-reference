@@ -3,18 +3,36 @@ name: Office.SpamReportingEventCompletedOptions
 uid: outlook!Office.SpamReportingEventCompletedOptions:interface
 package: outlook!
 fullName: Office.SpamReportingEventCompletedOptions
-summary: Specifies the behavior of an [integrated spam-reporting add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting) after it completes processing a [SpamReporting](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields) event.
-remarks: |-
-  \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Specifies the behavior of an [integrated spam-reporting
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)
+  after it completes processing a
+  [SpamReporting](https://learn.microsoft.com/javascript/api/office/office.eventtype#fields)
+  event.
+remarks: >-
+  \[ [API set: Mailbox
+  1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Message Read
+
 
   #### Examples
 
+
   ```TypeScript
-  // The following example handles a SpamReporting event to process a reported spam or phishing message.
+
+  // The following example handles a SpamReporting event to process a reported
+  spam or phishing message.
+
   function onSpamReport(event) {
       // Gets the Base64-encoded EML format of a reported message.
       Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
@@ -44,8 +62,9 @@ remarks: |-
           });
       });
   }
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -54,31 +73,75 @@ properties:
     uid: outlook!Office.SpamReportingEventCompletedOptions#commandId:member
     package: outlook!
     fullName: commandId
-    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal that a reported message has finished processing, this property specifies the ID of the task pane that opens after the message is processed.
-    remarks: |-
-      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal that a reported message has finished processing, this property
+      specifies the ID of the task pane that opens after the message is
+      processed.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - To learn how to implement the `commandId` property in your spam-reporting add-in, see [Open a task pane after reporting a message](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - The `commandId` value must match the task pane ID specified in the manifest of your add-in. In the unified manifest for Microsoft 365, the ID is specified in the "id" property of the ["extensions.ribbons.tabs.groups.controls"](https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-custom-group-controls-item#id) object that represents the task pane. In an add-in only manifest, the ID is specified in the `id` attribute of the [Control](https://learn.microsoft.com/javascript/api/manifest/control) element that represents the task pane.
 
-      - If you configure the `commandId` option in the `event.completed` call, a post-processing dialog isn't shown to the user even if the `showPostProcessingDialog` option is specified in the call.
+      **Important**:
 
-      - To ensure that the task pane of your spam-reporting add-in opens after a message is reported, you must set the `moveItemTo` option of the `event.completed` call to `Office.MailboxEnums.MoveSpamItemTo.NoMove`<!-- -->.
 
-      - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
+      - To learn how to implement the `commandId` property in your
+      spam-reporting add-in, see [Open a task pane after reporting a
+      message](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message)<!--
+      -->.
 
-      - The `commandId` option is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this option, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the \*\*Beta Channel\*\* option to access Office beta builds.
+
+      - The `commandId` value must match the task pane ID specified in the
+      manifest of your add-in. In the unified manifest for Microsoft 365, the ID
+      is specified in the "id" property of the
+      ["extensions.ribbons.tabs.groups.controls"](https://learn.microsoft.com/microsoft-365/extensibility/schema/extension-common-custom-group-controls-item#id)
+      object that represents the task pane. In an add-in only manifest, the ID
+      is specified in the `id` attribute of the
+      [Control](https://learn.microsoft.com/javascript/api/manifest/control)
+      element that represents the task pane.
+
+
+      - If you configure the `commandId` option in the `event.completed` call, a
+      post-processing dialog isn't shown to the user even if the
+      `showPostProcessingDialog` option is specified in the call.
+
+
+      - To ensure that the task pane of your spam-reporting add-in opens after a
+      message is reported, you must set the `moveItemTo` option of the
+      `event.completed` call to `Office.MailboxEnums.MoveSpamItemTo.NoMove`<!--
+      -->.
+
+
+      - If you implement a task pane to open after a reported message is
+      processed, when the `event.completed` call occurs, any task pane that's
+      open or pinned is closed.
+
+
+      - The `commandId` option is available for preview in Outlook on Mac
+      starting in Version 16.103 (Build 25101816). To test this option, join the
+      [Microsoft 365 Insider
+      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756)
+      and select the **Beta Channel** option to access Office beta builds.
+
 
       #### Examples
 
+
       ```TypeScript
+
       function onSpamReport(event) {
           // Run operations to process the reported message.
 
@@ -95,8 +158,9 @@ properties:
               moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,35 +171,85 @@ properties:
     uid: outlook!Office.SpamReportingEventCompletedOptions#contextData:member
     package: outlook!
     fullName: contextData
-    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal that a reported message has finished processing, this property specifies any JSON data passed to the add-in's task pane after the message is processed.
-    remarks: |-
-      \[ [API set: Mailbox 1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal that a reported message has finished processing, this property
+      specifies any JSON data passed to the add-in's task pane after the message
+      is processed.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - To learn how to implement the `contextData` property in your spam-reporting add-in, see [Open a task pane after reporting a message](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message)<!-- -->.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - If you specify the `contextData` option in your `event.completed` call, you must also assign a task pane ID to the `commandId` option. Otherwise, the JSON data assigned to `contextData` is ignored.
 
-      - If you configure the `commandId` and `contextData` options in the `event.completed` call, a post-processing dialog isn't shown to the user even if the `showPostProcessingDialog` option is specified in the call.
+      **Important**:
 
-      - To ensure that the task pane of your spam-reporting add-in opens and receives context data after a message is reported, you must set the `moveItemTo` option of the `event.completed` call to `Office.MailboxEnums.MoveSpamItemTo.NoMove`<!-- -->.
 
-      - If you implement a task pane to open after a reported message is processed, when the `event.completed` call occurs, any task pane that's open or pinned is closed.
+      - To learn how to implement the `contextData` property in your
+      spam-reporting add-in, see [Open a task pane after reporting a
+      message](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting#open-a-task-pane-after-reporting-a-message)<!--
+      -->.
 
-      - To prevent the task pane of a spam-reporting add-in from relaunching if it's already open, implement a handler for the `Office.EventType.InitializationContextChanged` event. You can then pass the [event arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true) to the `contextData` property.
 
-      - To retrieve the value of the `contextData` property, you must call `Office.context.mailbox.item.getInitializationContextAsync` in the JavaScript implementation of your task pane. If you create a JSON string using `JSON.stringify()` and assign it to the `contextData` property, you must parse the string using `JSON.parse()` once you retrieve it.
+      - If you specify the `contextData` option in your `event.completed` call,
+      you must also assign a task pane ID to the `commandId` option. Otherwise,
+      the JSON data assigned to `contextData` is ignored.
 
-      - The `contextData` option is available for preview in Outlook on Mac starting in Version 16.103 (Build 25101816). To test this option, join the [Microsoft 365 Insider program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756) and select the \*\*Beta Channel\*\* option to access Office beta builds.
+
+      - If you configure the `commandId` and `contextData` options in the
+      `event.completed` call, a post-processing dialog isn't shown to the user
+      even if the `showPostProcessingDialog` option is specified in the call.
+
+
+      - To ensure that the task pane of your spam-reporting add-in opens and
+      receives context data after a message is reported, you must set the
+      `moveItemTo` option of the `event.completed` call to
+      `Office.MailboxEnums.MoveSpamItemTo.NoMove`<!-- -->.
+
+
+      - If you implement a task pane to open after a reported message is
+      processed, when the `event.completed` call occurs, any task pane that's
+      open or pinned is closed.
+
+
+      - To prevent the task pane of a spam-reporting add-in from relaunching if
+      it's already open, implement a handler for the
+      `Office.EventType.InitializationContextChanged` event. You can then pass
+      the [event
+      arguments](https://learn.microsoft.com/javascript/api/outlook/office.initializationcontextchangedeventargs?view=outlook-js-1.15&preserve-view=true)
+      to the `contextData` property.
+
+
+      - To retrieve the value of the `contextData` property, you must call
+      `Office.context.mailbox.item.getInitializationContextAsync` in the
+      JavaScript implementation of your task pane. If you create a JSON string
+      using `JSON.stringify()` and assign it to the `contextData` property, you
+      must parse the string using `JSON.parse()` once you retrieve it.
+
+
+      - The `contextData` option is available for preview in Outlook on Mac
+      starting in Version 16.103 (Build 25101816). To test this option, join the
+      [Microsoft 365 Insider
+      program](https://techcommunity.microsoft.com/kb/microsoft-365-insider-kb/join-the-microsoft-365-insider-program-on-macos/4401756)
+      and select the **Beta Channel** option to access Office beta builds.
+
 
       #### Examples
 
+
       ```TypeScript
+
       function onSpamReport(event) {
           // Run operations to process the reported message.
 
@@ -152,8 +266,9 @@ properties:
               moveItemTo: Office.MailboxEnums.MoveSpamItemTo.NoMove
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,20 +279,40 @@ properties:
     uid: outlook!Office.SpamReportingEventCompletedOptions#folderName:member
     package: outlook!
     fullName: folderName
-    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal that a reported message has finished processing, this property specifies the Outlook mailbox folder to which the message will be moved.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal that a reported message has finished processing, this property
+      specifies the Outlook mailbox folder to which the message will be moved.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - If the specified folder doesn't exist yet, it will be created before the message is moved.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - If the `postProcessingAction` property is set to `moveToCustomFolder`<!-- -->, the `folderName` property must be specified. Otherwise, the reported message is moved to the \*\*Junk Email\*\* folder of the mailbox. If `postProcessingAction` is set to another action other than `moveToCustomFolder`<!-- -->, the `folderName` property is ignored.
-    example: []
+
+      **Important**:
+
+
+      - If the specified folder doesn't exist yet, it will be created before the
+      message is moved.
+
+
+      - If the `postProcessingAction` property is set to
+      `moveToCustomFolder`<!-- -->, the `folderName` property must be specified.
+      Otherwise, the reported message is moved to the **Junk Email** folder
+      of the mailbox. If `postProcessingAction` is set to another action other
+      than `moveToCustomFolder`<!-- -->, the `folderName` property is ignored.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,22 +323,55 @@ properties:
     uid: outlook!Office.SpamReportingEventCompletedOptions#moveItemTo:member
     package: outlook!
     fullName: moveItemTo
-    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal that a reported message has finished processing, this property specifies whether the message is moved to a different folder in the mailbox.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal that a reported message has finished processing, this property
+      specifies whether the message is moved to a different folder in the
+      mailbox.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - You can only use this property in a spam-reporting add-in in Outlook on the web, on Windows ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic (starting in Version 2308, Build 16724.10000)), and on Mac. If you're using an earlier build of classic Outlook on Windows that supports the integrated spam-reporting feature, use the `postProcessingAction` property instead.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - If the property is set to `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`<!-- -->, you must specify the name of the folder to which the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `moveItemTo` property will default to `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported message to the \*\*Junk Email\*\* folder.
 
-      - If you configure the `commandId` and `contextData` options in the `event.completed` call to open a task pane after a user selects the \*\*Report\*\* option from the preprocessing dialog, you must set the `moveItemTo` option to `Office.MailboxEnums.MoveSpamItemTo.NoMove`<!-- -->. Otherwise, the task pane won't open.
-    example: []
+      **Important**:
+
+
+      - You can only use this property in a spam-reporting add-in in Outlook on
+      the web, on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)
+      and classic (starting in Version 2308, Build 16724.10000)), and on Mac. If
+      you're using an earlier build of classic Outlook on Windows that supports
+      the integrated spam-reporting feature, use the `postProcessingAction`
+      property instead.
+
+
+      - If the property is set to
+      `Office.MailboxEnums.MoveSpamItemTo.CustomFolder`<!-- -->, you must
+      specify the name of the folder to which the message will be moved in the
+      `folderName` property of the `event.completed` call. Otherwise, the
+      `moveItemTo` property will default to
+      `Office.MailboxEnums.MoveSpamItemTo.JunkFolder` and move the reported
+      message to the **Junk Email** folder.
+
+
+      - If you configure the `commandId` and `contextData` options in the
+      `event.completed` call to open a task pane after a user selects the
+      **Report** option from the preprocessing dialog, you must set the
+      `moveItemTo` option to `Office.MailboxEnums.MoveSpamItemTo.NoMove`<!--
+      -->. Otherwise, the task pane won't open.
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,14 +382,27 @@ properties:
     uid: outlook!Office.SpamReportingEventCompletedOptions#onErrorDeleteItem:member
     package: outlook!
     fullName: onErrorDeleteItem
-    summary: When set to `true`<!-- -->, deletes a reported message if an error occurs while the message is processed. If this property is set to `false` or isn't specified in the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))<!-- -->, the reported message remains in its current mailbox folder.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When set to `true`<!-- -->, deletes a reported message if an error occurs
+      while the message is processed. If this property is set to `false` or
+      isn't specified in the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))<!--
+      -->, the reported message remains in its current mailbox folder.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
-    example: []
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,38 +410,76 @@ properties:
       return:
         type: boolean
   - name: postProcessingAction
-    uid: outlook!Office.SpamReportingEventCompletedOptions#postProcessingAction:member
+    uid: >-
+      outlook!Office.SpamReportingEventCompletedOptions#postProcessingAction:member
     package: outlook!
     fullName: postProcessingAction
-    summary: |-
-      When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal that a reported message has finished processing, this property specifies whether the message is moved to a different folder in the mailbox. The following post-processing actions are available.
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal that a reported message has finished processing, this property
+      specifies whether the message is moved to a different folder in the
+      mailbox. The following post-processing actions are available.
 
-      - `delete` - Moves the reported message to the \*\*Deleted Items\*\* folder of the mailbox.
 
-      - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder in the `folderName` property.
+      - `delete` - Moves the reported message to the **Deleted Items**
+      folder of the mailbox.
 
-      - `moveToSpamFolder` - Moves the reported message to the \*\*Junk Email\*\* folder of the mailbox.
+
+      - `moveToCustomFolder` - Moves the reported message to a specified folder.
+      You must specify the name of the folder in the `folderName` property.
+
+
+      - `moveToSpamFolder` - Moves the reported message to the **Junk
+      Email** folder of the mailbox.
+
 
       - `noMove` - Leaves the reported message in its current folder.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*:
 
-      - In Outlook on Windows, you can only use this property in earlier builds that support the integrated spam-reporting feature. If you're on Version 2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
 
-      - This property isn't supported in Outlook on the web, on Mac, or in [new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->. Use the `moveItemTo` property instead.
 
-      - If the property is set to `moveToCustomFolder`<!-- -->, you must specify the name of the folder to which the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the \*\*Junk Email\*\* folder.
+      **Important**:
+
+
+      - In Outlook on Windows, you can only use this property in earlier builds
+      that support the integrated spam-reporting feature. If you're on Version
+      2308 (Build 16724.10000) or later, use the `moveItemTo` property instead.
+
+
+      - This property isn't supported in Outlook on the web, on Mac, or in [new
+      Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!--
+      -->. Use the `moveItemTo` property instead.
+
+
+      - If the property is set to `moveToCustomFolder`<!-- -->, you must specify
+      the name of the folder to which the message will be moved in the
+      `folderName` property of the `event.completed` call. Otherwise, the
+      `postProcessingAction` property will default to `moveToSpamFolder` and
+      move the reported message to the **Junk Email** folder.
+
 
       #### Examples
 
+
       ```TypeScript
-      // The following example handles a SpamReporting event to process a reported spam or phishing message.
+
+      // The following example handles a SpamReporting event to process a
+      reported spam or phishing message.
+
       function onSpamReport(event) {
           // Gets the Base64-encoded EML format of a reported message.
           Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
@@ -286,8 +505,9 @@ properties:
               });
           });
       }
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,19 +515,41 @@ properties:
       return:
         type: string
   - name: showPostProcessingDialog
-    uid: outlook!Office.SpamReportingEventCompletedOptions#showPostProcessingDialog:member
+    uid: >-
+      outlook!Office.SpamReportingEventCompletedOptions#showPostProcessingDialog:member
     package: outlook!
     fullName: showPostProcessingDialog
-    summary: When you use the [completed method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1)) to signal that a reported message has finished processing, this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property must contain a title and a description. If this property isn't specified, a dialog isn't shown to the user once their reported message is processed.
-    remarks: |-
-      \[ [API set: Mailbox 1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/outlook/office.mailboxevent#outlook-office-mailboxevent-completed-member(1))
+      to signal that a reported message has finished processing, this property
+      indicates if a post-processing dialog is shown to the user. The JSON
+      object assigned to this property must contain a title and a description.
+      If this property isn't specified, a dialog isn't shown to the user once
+      their reported message is processed.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.14](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Message Read
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: If you configure the `commandId` and `contextData` options in the `event.completed` call to open a task pane after a user selects the \*\*Report\*\* option from the preprocessing dialog, a post-processing dialog isn't shown to the user. This behavior applies even if the `showPostProcessingDialog` is specified in the `event.completed` call.
-    example: []
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**: If you configure the `commandId` and `contextData`
+      options in the `event.completed` call to open a task pane after a user
+      selects the **Report** option from the preprocessing dialog, a
+      post-processing dialog isn't shown to the user. This behavior applies even
+      if the `showPostProcessingDialog` is specified in the `event.completed`
+      call.
+
     isPreview: false
     isDeprecated: false
     syntax:

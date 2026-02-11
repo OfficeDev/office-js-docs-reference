@@ -3,9 +3,11 @@ name: Word.Interfaces.WebSettingsData
 uid: word!Word.Interfaces.WebSettingsData:interface
 package: word!
 fullName: Word.Interfaces.WebSettingsData
-summary: An interface describing the data returned by calling `webSettings.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `webSettings.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

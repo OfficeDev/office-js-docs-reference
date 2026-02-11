@@ -3,9 +3,11 @@ name: OneNote.Interfaces.PageContentUpdateData
 uid: onenote!OneNote.Interfaces.PageContentUpdateData:interface
 package: onenote!
 fullName: OneNote.Interfaces.PageContentUpdateData
-summary: An interface for updating data on the `PageContent` object, for use in `pageContent.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `PageContent` object, for use in
+  `pageContent.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,9 +16,14 @@ properties:
     uid: onenote!OneNote.Interfaces.PageContentUpdateData#image:member
     package: onenote!
     fullName: image
-    summary: Gets the Image in the PageContent object. Throws an exception if PageContentType isn't Image.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the Image in the PageContent object. Throws an exception if
+      PageContentType isn't Image.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +35,11 @@ properties:
     package: onenote!
     fullName: left
     summary: Gets or sets the left (X-axis) position of the PageContent object.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +51,11 @@ properties:
     package: onenote!
     fullName: top
     summary: Gets or sets the top (Y-axis) position of the PageContent object.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.SlideBackgroundData
 uid: powerpoint!PowerPoint.Interfaces.SlideBackgroundData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideBackgroundData
-summary: An interface describing the data returned by calling `slideBackground.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `slideBackground.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -3,9 +3,11 @@ name: Excel.Interfaces.DataPivotHierarchyUpdateData
 uid: excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface
 package: excel!
 fullName: Excel.Interfaces.DataPivotHierarchyUpdateData
-summary: An interface for updating data on the `DataPivotHierarchy` object, for use in `dataPivotHierarchy.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `DataPivotHierarchy` object, for use in
+  `dataPivotHierarchy.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,10 @@ properties:
     package: excel!
     fullName: field
     summary: Returns the PivotFields associated with the DataPivotHierarchy.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +32,10 @@ properties:
     package: excel!
     fullName: name
     summary: Name of the DataPivotHierarchy.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +47,10 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: Number format of the DataPivotHierarchy.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +62,10 @@ properties:
     package: excel!
     fullName: position
     summary: Position of the DataPivotHierarchy.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +77,10 @@ properties:
     package: excel!
     fullName: showAs
     summary: Specifies if the data should be shown as a specific summary calculation.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,11 +92,20 @@ properties:
     package: excel!
     fullName: summarizeBy
     summary: Specifies if all items of the DataPivotHierarchy are shown.
-    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: ExcelApi
+      1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";'
+      content: >-
+        summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" |
+        "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers"
+        | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
       return:
-        type: <xref uid="excel!Excel.AggregationFunction:enum" /> | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"
+        type: >-
+          <xref uid="excel!Excel.AggregationFunction:enum" /> | "Unknown" |
+          "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product"
+          | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" |
+          "Variance" | "VarianceP"

@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.DocumentPropertiesData
 uid: powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.DocumentPropertiesData
-summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `documentProperties.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

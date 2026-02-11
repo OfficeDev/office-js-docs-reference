@@ -3,9 +3,11 @@ name: Word.Interfaces.CoauthoringUpdateData
 uid: word!Word.Interfaces.CoauthoringUpdateData:interface
 package: word!
 fullName: Word.Interfaces.CoauthoringUpdateData
-summary: An interface describing the data returned by calling `coauthoringUpdate.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling
+  `coauthoringUpdate.toJSON()`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

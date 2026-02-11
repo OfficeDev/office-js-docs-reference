@@ -4,15 +4,22 @@ uid: excel!Excel.CellControlType:enum
 package: excel!
 fullName: Excel.CellControlType
 summary: Represents the type of cell control.
-remarks: |-
-  \[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: ExcelApi
+  1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
 
   #### Examples
 
+
   ```TypeScript
-  // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
+
 
   // Add checkboxes to the table.
+
   await Excel.run(async (context) => {
     const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -25,40 +32,55 @@ remarks: |-
     };
     await context.sync();
   });
+
   ```
-example: []
+
 isPreview: false
 isDeprecated: false
 fields:
   - name: checkbox
     uid: excel!Excel.CellControlType.checkbox:member
     package: excel!
-    summary: |-
+    summary: >-
       Type representing a checkbox control.
 
-      \* \[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Checkbox"'
   - name: empty
     uid: excel!Excel.CellControlType.empty:member
     package: excel!
-    summary: |-
+    summary: >-
       Type representing an empty control.
 
-      \* \[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Empty"'
   - name: mixed
     uid: excel!Excel.CellControlType.mixed:member
     package: excel!
-    summary: |-
+    summary: >-
       Type representing a query that results in a mix of control results.
 
-      \* \[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Mixed"'
   - name: unknown
     uid: excel!Excel.CellControlType.unknown:member
     package: excel!
-    summary: |-
-      Type representing an unknown control. This represents a control that was added in a future version of Excel, and the current version of Excel doesn't know how to display this control.
+    summary: >-
+      Type representing an unknown control. This represents a control that was
+      added in a future version of Excel, and the current version of Excel
+      doesn't know how to display this control.
 
-      \* \[ [API set: ExcelApi 1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi
+      1.18](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Unknown"'

@@ -4,10 +4,10 @@ uid: word!Word.Interfaces.ContentControlListItemUpdateData:interface
 package: word!
 fullName: Word.Interfaces.ContentControlListItemUpdateData
 summary: >-
-  An interface for updating data on the `ContentControlListItem` object, for use in `contentControlListItem.set({ ...
-  })`<!-- -->.
+  An interface for updating data on the `ContentControlListItem` object, for use
+  in `contentControlListItem.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface

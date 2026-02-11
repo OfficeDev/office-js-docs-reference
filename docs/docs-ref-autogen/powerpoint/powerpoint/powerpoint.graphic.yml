@@ -4,8 +4,11 @@ uid: powerpoint!PowerPoint.Graphic:class
 package: powerpoint!
 fullName: PowerPoint.Graphic
 summary: Represents a graphic object in PowerPoint.
-remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+  \]
+
 isPreview: true
 isDeprecated: false
 type: class
@@ -14,9 +17,11 @@ properties:
     uid: powerpoint!PowerPoint.Graphic#context:member
     package: powerpoint!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -28,8 +33,11 @@ properties:
     package: powerpoint!
     fullName: shape
     summary: Returns the `Shape` object associated with the graphic.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -43,7 +51,7 @@ methods:
     fullName: convertToShape()
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -55,17 +63,24 @@ methods:
     uid: powerpoint!PowerPoint.Graphic#load:member(1)
     package: powerpoint!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'load(options?: PowerPoint.Interfaces.GraphicLoadOptions): PowerPoint.Graphic;'
+      content: >-
+        load(options?: PowerPoint.Interfaces.GraphicLoadOptions):
+        PowerPoint.Graphic;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="powerpoint!PowerPoint.Interfaces.GraphicLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="powerpoint!PowerPoint.Interfaces.GraphicLoadOptions:interface"
+            />
       return:
         type: <xref uid="powerpoint!PowerPoint.Graphic:class" />
         description: ''
@@ -73,16 +88,20 @@ methods:
     uid: powerpoint!PowerPoint.Graphic#load:member(2)
     package: powerpoint!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Graphic;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="powerpoint!PowerPoint.Graphic:class" />
@@ -91,9 +110,11 @@ methods:
     uid: powerpoint!PowerPoint.Graphic#load:member(3)
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:
@@ -104,7 +125,11 @@ methods:
                 }): PowerPoint.Graphic;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -117,9 +142,17 @@ methods:
     uid: powerpoint!PowerPoint.Graphic#toJSON:member(1)
     package: powerpoint!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `PowerPoint.Graphic` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.GraphicData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `PowerPoint.Graphic`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `PowerPoint.Interfaces.GraphicData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: true
     isDeprecated: false
     syntax:

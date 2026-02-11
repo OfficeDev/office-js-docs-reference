@@ -3,9 +3,11 @@ name: OneNote.Interfaces.NotebookData
 uid: onenote!OneNote.Interfaces.NotebookData:interface
 package: onenote!
 fullName: OneNote.Interfaces.NotebookData
-summary: An interface describing the data returned by calling `notebook.toJSON()`<!-- -->.
+summary: >-
+  An interface describing the data returned by calling `notebook.toJSON()`<!--
+  -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,11 @@ properties:
     package: onenote!
     fullName: baseUrl
     summary: The URL of the site where this notebook is located. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,8 +33,11 @@ properties:
     package: onenote!
     fullName: clientUrl
     summary: The client URL of the notebook. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,8 +49,11 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the notebook. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,9 +64,14 @@ properties:
     uid: onenote!OneNote.Interfaces.NotebookData#isVirtual:member
     package: onenote!
     fullName: isVirtual
-    summary: '''\* True if the notebook isn''t created by the user (i.e., ''Misplaced Sections''). Read-only.'
-    remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      '* True if the notebook isn't created by the user (i.e., 'Misplaced
+      Sections'). Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,8 +83,11 @@ properties:
     package: onenote!
     fullName: name
     summary: Gets the name of the notebook. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,8 +99,11 @@ properties:
     package: onenote!
     fullName: sectionGroups
     summary: The section groups in the notebook. Read only
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,8 +115,11 @@ properties:
     package: onenote!
     fullName: sections
     summary: The sections of the notebook. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,9 +3,13 @@ name: OneNote.Application
 uid: onenote!OneNote.Application:class
 package: onenote!
 fullName: OneNote.Application
-summary: Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the active notebook, and the active section.
-remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
+summary: >-
+  Represents the top-level object that contains all globally addressable OneNote
+  objects such as notebooks, the active notebook, and the active section.
+remarks: >-
+  \[ [API set: OneNoteApi
+  1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,9 +18,11 @@ properties:
     uid: onenote!OneNote.Application#context:member
     package: onenote!
     fullName: context
-    summary: The request context associated with the object. This connects the add-in's process to the Office host application's process.
+    summary: >-
+      The request context associated with the object. This connects the add-in's
+      process to the Office host application's process.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,9 +33,15 @@ properties:
     uid: onenote!OneNote.Application#notebooks:member
     package: onenote!
     fullName: notebooks
-    summary: Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the collection of notebooks that are open in the OneNote application
+      instance. In OneNote Online, only one notebook at a time is open in the
+      application instance. Read-only.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,13 +53,20 @@ methods:
     uid: onenote!OneNote.Application#getActiveNotebook:member(1)
     package: onenote!
     fullName: getActiveNotebook()
-    summary: Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the active notebook if one exists. If no notebook is active, throws
+      ItemNotFound.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
               
           // Get the active notebook.
@@ -65,8 +84,9 @@ methods:
           console.log("Notebook ID: " + notebook.id);
                   
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,13 +98,20 @@ methods:
     uid: onenote!OneNote.Application#getActiveNotebookOrNull:member(1)
     package: onenote!
     fullName: getActiveNotebookOrNull()
-    summary: Gets the active notebook if one exists. If no notebook is active, returns null.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the active notebook if one exists. If no notebook is active, returns
+      null.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // Get the active notebook.
@@ -103,8 +130,9 @@ methods:
               console.log("Notebook ID: " + notebook.id);
           }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,13 +144,20 @@ methods:
     uid: onenote!OneNote.Application#getActiveOutline:member(1)
     package: onenote!
     fullName: getActiveOutline()
-    summary: Gets the active outline if one exists, If no outline is active, throws ItemNotFound.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the active outline if one exists, If no outline is active, throws
+      ItemNotFound.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // get active outline.
@@ -137,8 +172,9 @@ methods:
           // Show some properties.
           console.log("outline id: " + outline.id);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -151,12 +187,17 @@ methods:
     package: onenote!
     fullName: getActiveOutlineOrNull()
     summary: Gets the active outline if one exists, otherwise returns null.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // get active outline.
@@ -171,8 +212,9 @@ methods:
               console.log("outline id: " + outline.id);
           }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,13 +226,20 @@ methods:
     uid: onenote!OneNote.Application#getActivePage:member(1)
     package: onenote!
     fullName: getActivePage()
-    summary: Gets the active page if one exists. If no page is active, throws ItemNotFound.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the active page if one exists. If no page is active, throws
+      ItemNotFound.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
               
           // Get the active page.
@@ -207,8 +256,9 @@ methods:
           console.log("Page title: " + page.title);
           console.log("Page ID: " + page.id);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,12 +271,17 @@ methods:
     package: onenote!
     fullName: getActivePageOrNull()
     summary: Gets the active page if one exists. If no page is active, returns null.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // Get the active page.
@@ -245,8 +300,9 @@ methods:
               console.log("Page ID: " + page.id);
           }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,9 +314,14 @@ methods:
     uid: onenote!OneNote.Application#getActiveParagraph:member(1)
     package: onenote!
     fullName: getActiveParagraph()
-    summary: Gets the active Paragraph if one exists, If no Paragraph is active, throws ItemNotFound.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    summary: >-
+      Gets the active Paragraph if one exists, If no Paragraph is active, throws
+      ItemNotFound.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,8 +334,11 @@ methods:
     package: onenote!
     fullName: getActiveParagraphOrNull()
     summary: Gets the active Paragraph if one exists, otherwise returns null.
-    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,13 +350,20 @@ methods:
     uid: onenote!OneNote.Application#getActiveSection:member(1)
     package: onenote!
     fullName: getActiveSection()
-    summary: Gets the active section if one exists. If no section is active, throws ItemNotFound.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the active section if one exists. If no section is active, throws
+      ItemNotFound.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
               
           // Get the active section.
@@ -309,8 +380,9 @@ methods:
           console.log("Section name: " + section.name);
           console.log("Section ID: " + section.id);
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -322,13 +394,20 @@ methods:
     uid: onenote!OneNote.Application#getActiveSectionOrNull:member(1)
     package: onenote!
     fullName: getActiveSectionOrNull()
-    summary: Gets the active section if one exists. If no section is active, returns null.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the active section if one exists. If no section is active, returns
+      null.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // Get the active section.
@@ -346,8 +425,9 @@ methods:
               console.log("Section ID: " + section.id);
           }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -361,7 +441,7 @@ methods:
     fullName: getDecimalSeparator()
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -374,8 +454,11 @@ methods:
     package: onenote!
     fullName: getSelectedInkStrokes()
     summary: Gets the currently selected ink strokes.
-    remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -389,13 +472,15 @@ methods:
     fullName: getWindowSize()
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getWindowSize(): OfficeExtension.ClientResult<number[]>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;number[]&gt;
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;number[]&gt;
         description: ''
   - name: insertAndEmbedLinkAtCurrentPosition(url)
     uid: onenote!OneNote.Application#insertAndEmbedLinkAtCurrentPosition:member(1)
@@ -403,7 +488,7 @@ methods:
     fullName: insertAndEmbedLinkAtCurrentPosition(url)
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -421,7 +506,7 @@ methods:
     fullName: insertHtmlAtCurrentPosition(html)
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -439,29 +524,37 @@ methods:
     fullName: isViewingDeletedNotes()
     summary: ''
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'isViewingDeletedNotes(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: <xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
         description: ''
   - name: load(options)
     uid: onenote!OneNote.Application#load:member(1)
     package: onenote!
     fullName: load(options)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(options?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;'
+      content: >-
+        load(options?: OneNote.Interfaces.ApplicationLoadOptions):
+        OneNote.Application;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: <xref uid="onenote!OneNote.Interfaces.ApplicationLoadOptions:interface" />
+          type: >-
+            <xref
+            uid="onenote!OneNote.Interfaces.ApplicationLoadOptions:interface" />
       return:
         type: <xref uid="onenote!OneNote.Application:class" />
         description: ''
@@ -469,16 +562,20 @@ methods:
     uid: onenote!OneNote.Application#load:member(2)
     package: onenote!
     fullName: load(propertyNames)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): OneNote.Application;'
       parameters:
         - id: propertyNames
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: >-
+            A comma-delimited string or an array of strings that specify the
+            properties to load.
           type: string | string[]
       return:
         type: <xref uid="onenote!OneNote.Application:class" />
@@ -487,9 +584,11 @@ methods:
     uid: onenote!OneNote.Application#load:member(3)
     package: onenote!
     fullName: load(propertyNamesAndPaths)
-    summary: Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+    summary: >-
+      Queues up a command to load the specified properties of the object. You
+      must call `context.sync()` before reading the properties.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -500,7 +599,11 @@ methods:
                 }): OneNote.Application;
       parameters:
         - id: propertyNamesAndPaths
-          description: '`propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.'
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that
+            specifies the properties to load, and `propertyNamesAndPaths.expand`
+            is a comma-delimited string that specifies the navigation properties
+            to load.
           type: |-
             {
                         select?: string;
@@ -514,12 +617,17 @@ methods:
     package: onenote!
     fullName: navigateToPage(page)
     summary: Opens the specified page in the application instance.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
               
           // Get the pages in the current section.
@@ -541,8 +649,9 @@ methods:
           // Run the queued command.
           await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,13 +667,21 @@ methods:
     uid: onenote!OneNote.Application#navigateToPageWithClientUrl:member(1)
     package: onenote!
     fullName: navigateToPageWithClientUrl(url)
-    summary: Gets the specified page, and opens it in the application instance. Navigation may still not be carried out when no fails. Caller should validate the returned page if so desired.
-    remarks: |-
-      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the specified page, and opens it in the application instance.
+      Navigation may still not be carried out when no fails. Caller should
+      validate the returned page if so desired.
+    remarks: >-
+      \[ [API set: OneNoteApi
+      1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets)
+      \]
+
 
       #### Examples
 
+
       ```TypeScript
+
       await OneNote.run(async (context) => {
 
           // Get the pages in the current section.
@@ -586,8 +703,9 @@ methods:
           // Run the queued command.
           await context.sync();
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -603,19 +721,31 @@ methods:
     uid: onenote!OneNote.Application#set:member(1)
     package: onenote!
     fullName: set(properties, options)
-    summary: Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass
+      either a plain object with the appropriate properties, or another API
+      object of the same type.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      content: >-
+        set(properties: Interfaces.ApplicationUpdateData, options?:
+        OfficeExtension.UpdateOptions): void;
       parameters:
         - id: properties
-          description: A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-          type: <xref uid="onenote!OneNote.Interfaces.ApplicationUpdateData:interface" />
+          description: >-
+            A JavaScript object with properties that are structured
+            isomorphically to the properties of the object on which the method
+            is called.
+          type: >-
+            <xref
+            uid="onenote!OneNote.Interfaces.ApplicationUpdateData:interface" />
         - id: options
-          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          description: >-
+            Provides an option to suppress errors if the properties object tries
+            to set any read-only properties.
           type: <xref uid="office!OfficeExtension.UpdateOptions:interface" />
       return:
         type: void
@@ -624,9 +754,11 @@ methods:
     uid: onenote!OneNote.Application#set:member(2)
     package: onenote!
     fullName: set(properties)
-    summary: Sets multiple properties on the object at the same time, based on an existing loaded object.
+    summary: >-
+      Sets multiple properties on the object at the same time, based on an
+      existing loaded object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -642,9 +774,17 @@ methods:
     uid: onenote!OneNote.Application#toJSON:member(1)
     package: onenote!
     fullName: toJSON()
-    summary: Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's passed to it.) Whereas the original `OneNote.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded child properties from the original object.
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful
+      output when an API object is passed to `JSON.stringify()`<!-- -->.
+      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
+      object that's passed to it.) Whereas the original `OneNote.Application`
+      object is an API object, the `toJSON` method returns a plain JavaScript
+      object (typed as `OneNote.Interfaces.ApplicationData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original
+      object.
     remarks: ''
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:

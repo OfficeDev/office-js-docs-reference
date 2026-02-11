@@ -3,19 +3,31 @@ name: Office.SessionData
 uid: outlook!Office.SessionData:interface
 package: outlook!
 fullName: Office.SessionData
-summary: |-
+summary: >-
   Provides methods to manage an item's session data.
 
-  Session data is specific to a single mail item. It isn't shared among multiple items even if the same add-in is used to set or retrieve data.
-remarks: |-
-  \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
-  \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
+  Session data is specific to a single mail item. It isn't shared among multiple
+  items even if the same add-in is used to set or retrieve data.
+remarks: >-
+  \[ [API set: Mailbox
+  1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+  \]
 
-  \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
 
-  \*\*Important\*\*: For each mail item, the entire SessionData object is limited to 50,000 characters per add-in.
-example: []
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Compose
+
+
+  **Important**: For each mail item, the entire SessionData object is
+  limited to 50,000 characters per add-in.
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,17 +37,30 @@ methods:
     package: outlook!
     fullName: clearAsync(options, callback)
     summary: Clears all session data key-value pairs.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
 
       Office.context.mailbox.item.sessionData.clearAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -44,19 +69,30 @@ methods:
           console.log("Failed to clear sessionData. Error: " + JSON.stringify(asyncResult.error));
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'clearAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        clearAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -65,21 +101,36 @@ methods:
     package: outlook!
     fullName: clearAsync(callback)
     summary: Clears all session data key-value pairs.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'clearAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        clearAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void):
+        void;
       parameters:
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -88,35 +139,57 @@ methods:
     package: outlook!
     fullName: getAllAsync(callback)
     summary: Gets all session data key-value pairs.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
 
       #### Examples
 
-      ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
-      Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
+
+      Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult)
+      {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("The sessionData is " + JSON.stringify(asyncResult.value));
         } else {
           console.log("Failed to get all sessionData. Error: " + JSON.stringify(asyncResult.error));
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAllAsync(callback: (asyncResult: CommonAPI.AsyncResult<object>) => void): void;'
+      content: >-
+        getAllAsync(callback: (asyncResult: Office.AsyncResult<object>) =>
+        void): void;
       parameters:
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;object&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter, `asyncResult`<!-- -->,
+            which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;object&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -125,17 +198,30 @@ methods:
     package: outlook!
     fullName: getAsync(name, callback)
     summary: Gets the session data value of the specified key.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
 
       Office.context.mailbox.item.sessionData.getAsync(
         "Date",
@@ -146,19 +232,27 @@ methods:
           console.log("Failed to get sessionData. Error: " + JSON.stringify(asyncResult.error));
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(name: string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: >-
+        getAsync(name: string, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: name
           description: The session data key.
           type: string
         - id: callback
-          description: When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          description: >-
+            When the method completes, the function passed in the `callback`
+            parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;string&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -167,17 +261,30 @@ methods:
     package: outlook!
     fullName: removeAsync(name, options, callback)
     summary: Removes a session data key-value pair.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
 
       Office.context.mailbox.item.sessionData.removeAsync(
         "Date",
@@ -189,22 +296,33 @@ methods:
           }
         }
       );
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(name: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        removeAsync(name: string, options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: name
           description: The session data key.
           type: string
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -213,24 +331,39 @@ methods:
     package: outlook!
     fullName: removeAsync(name, callback)
     summary: Removes a session data key-value pair.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read/write item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
-    example: []
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(name: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        removeAsync(name: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: name
           description: The session data key.
           type: string
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter,
+            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -239,19 +372,40 @@ methods:
     package: outlook!
     fullName: setAsync(name, value, options, callback)
     summary: Sets a session data key-value pair.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in. In classic Outlook on Windows, you can preview an increased character limit of up to 2,621,440 characters per add-in. To test the updated limit, join the [Microsoft 365 Insider program](https://aka.ms/MSFT365InsiderProgram)<!-- -->, then choose the Beta Channel in the classic Outlook on Windows client. Your client must be on Version 2510 (Build 19317.20000) or later.
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: In Outlook clients that support Mailbox 1.15 or
+      earlier, the entire SessionData object for each mail item is limited to
+      50,000 characters per add-in. In classic Outlook on Windows, you can
+      preview an increased character limit of up to 2,621,440 characters per
+      add-in. To test the updated limit, join the [Microsoft 365 Insider
+      program](https://aka.ms/MSFT365InsiderProgram)<!-- -->, then choose the
+      Beta Channel in the classic Outlook on Windows client. Your client must be
+      on Version 2510 (Build 19317.20000) or later.
+
 
       #### Examples
 
+
       ```TypeScript
-      // Link to full sample: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
+
 
       Office.context.mailbox.item.sessionData.setAsync(
         "Date",
@@ -263,12 +417,16 @@ methods:
           console.log("Failed to set sessionData. Error: " + JSON.stringify(asyncResult.error));
         }
       });
+
       ```
-    example: []
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(name: string, value: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(name: string, value: string, options:
+        Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: name
           description: The session data key.
@@ -277,11 +435,19 @@ methods:
           description: The session data value as a string.
           type: string
         - id: options
-          description: 'An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers can provide any object they wish to access in the callback function.'
+          description: >-
+            An object literal that contains one or more of the following
+            properties:- `asyncContext`<!-- -->: Developers can provide any
+            object they wish to access in the callback function.
           type: <xref uid="office!Office.AsyncContextOptions:interface" />
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -290,19 +456,37 @@ methods:
     package: outlook!
     fullName: setAsync(name, value, callback)
     summary: Sets a session data key-value pair.
-    remarks: |-
-      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    remarks: >-
+      \[ [API set: Mailbox
+      1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
 
-      \*\*[Minimum permission level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*: \*\*read item\*\*
 
-      \*\*[Applicable Outlook mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*: Compose
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
-      \*\*Important\*\*: In Outlook clients that support Mailbox 1.15 or earlier, the entire SessionData object for each mail item is limited to 50,000 characters per add-in. In classic Outlook on Windows, you can preview an increased character limit of up to 2,621,440 characters per add-in. To test the updated limit, join the [Microsoft 365 Insider program](https://aka.ms/MSFT365InsiderProgram)<!-- -->, then choose the Beta Channel in the classic Outlook on Windows client. Your client must be on Version 2510 (Build 19317.20000) or later.
-    example: []
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: In Outlook clients that support Mailbox 1.15 or
+      earlier, the entire SessionData object for each mail item is limited to
+      50,000 characters per add-in. In classic Outlook on Windows, you can
+      preview an increased character limit of up to 2,621,440 characters per
+      add-in. To test the updated limit, join the [Microsoft 365 Insider
+      program](https://aka.ms/MSFT365InsiderProgram)<!-- -->, then choose the
+      Beta Channel in the classic Outlook on Windows client. Your client must be
+      on Version 2510 (Build 19317.20000) or later.
+
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(name: string, value: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: >-
+        setAsync(name: string, value: string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: name
           description: The session data key.
@@ -311,8 +495,13 @@ methods:
           description: The session data value as a string.
           type: string
         - id: callback
-          description: Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`<!-- -->.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          description: >-
+            Optional. When the method completes, the function passed in the
+            `callback` parameter is called with a single parameter of type
+            `Office.AsyncResult`<!-- -->.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
+            />&lt;void&gt;) =&gt; void
       return:
         type: void
         description: ''

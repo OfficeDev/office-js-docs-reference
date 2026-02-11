@@ -3,9 +3,11 @@ name: PowerPoint.Interfaces.TableCellUpdateData
 uid: powerpoint!PowerPoint.Interfaces.TableCellUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.TableCellUpdateData
-summary: An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`<!-- -->.
+summary: >-
+  An interface for updating data on the `TableCell` object, for use in
+  `tableCell.set({ ... })`<!-- -->.
 remarks: ''
-example: []
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,8 +17,11 @@ properties:
     package: powerpoint!
     fullName: text
     summary: Specifies the text content of the table cell.
-    remarks: '\[ [API set: PowerPointApi 1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
+    remarks: >-
+      \[ [API set: PowerPointApi
+      1.8](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+      \]
+
     isPreview: false
     isDeprecated: false
     syntax:
