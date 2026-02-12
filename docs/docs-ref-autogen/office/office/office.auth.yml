@@ -10,8 +10,6 @@ summary: >-
   user's Microsoft Graph data without requiring the user to sign in a second
   time.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

@@ -7,7 +7,7 @@ summary: >-
   Specifies changes to the ribbon, such as the enabled or disabled status of a
   button.
 remarks: >-
-  **Requirement set**: [RibbonAPI
+  **Requirement set**: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 isPreview: false

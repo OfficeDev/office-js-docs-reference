@@ -1877,8 +1877,7 @@ properties:
     summary: Specifies whether revision marks are printed with the document.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2045,8 +2044,7 @@ properties:
       the document.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2612,8 +2610,7 @@ properties:
     summary: Specifies whether changes are tracked in the document.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2781,8 +2778,7 @@ methods:
     summary: Accepts all tracked changes in the document.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -2798,8 +2794,7 @@ methods:
     summary: Accepts all revisions in the document that are displayed on the screen.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -4257,8 +4252,7 @@ methods:
     summary: Rejects all tracked changes in the document.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -4274,8 +4268,7 @@ methods:
     summary: Rejects all revisions in the document that are displayed on the screen.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

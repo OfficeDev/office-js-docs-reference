@@ -6,8 +6,7 @@ fullName: Word.HtmlDivision
 summary: ''
 remarks: >-
   \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -48,8 +47,7 @@ properties:
     summary: Specifies the left indent value (in points) for this HTML division.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -66,8 +64,7 @@ properties:
       contained in this HTML division.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -82,8 +79,7 @@ properties:
     summary: Specifies the right indent (in points) for this HTML division.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -98,8 +94,7 @@ properties:
     summary: Specifies the amount of spacing (in points) after this HTML division.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -114,8 +109,7 @@ properties:
     summary: Specifies the spacing (in points) before this HTML division.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -131,8 +125,7 @@ methods:
     summary: Deletes this HTML division.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -150,8 +143,7 @@ methods:
       current HTML division.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false

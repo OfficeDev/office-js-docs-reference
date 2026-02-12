@@ -8279,7 +8279,7 @@ office,OfficeExtension.UpdateOptions,N/A,Interface,Great,true
 office,OfficeExtension.UpdateOptions,"throwOnReadOnly",Property,Excellent,false
 office,N/A,N/A,Package,Missing,false
 office,N/A,"Office.initialize(reason)",Method,Excellent,true
-office,N/A,"Office.isSetSupported(name, minVersion)",Method,Excellent,false
+office,N/A,"Office.isSetSupported(name, minVersion)",Method,Deprecated,false
 office,N/A,"Office.onReady(callback)",Method,Excellent,true
 office,N/A,"Office.select(expression, callback)",Method,Great,true
 office,N/A,"Office.useShortNamespace(useShortNamespace)",Method,Fine,true

@@ -16,8 +16,6 @@ summary: >-
 
   Only task pane add-ins for Outlook support Mailbox API set event types.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

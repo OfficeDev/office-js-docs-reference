@@ -288,7 +288,7 @@ export declare namespace Office {
      */
     export function initialize(reason: InitializationReason): void;
     /**
-     * **WARNING**: This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
+     * @deprecated This API returns inaccurate values when used on desktop applications. Use `Office.context.requirements.isSetSupported` instead.
      * 
      * Checks if the specified requirement set is supported by the Office application.
      * @param name - Set name; e.g., "MatrixBindings".

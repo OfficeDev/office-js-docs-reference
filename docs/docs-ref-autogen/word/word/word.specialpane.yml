@@ -199,8 +199,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Revisions"'
   - name: revisionsHoriz
     uid: word!Word.SpecialPane.revisionsHoriz:member
@@ -210,8 +209,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RevisionsHoriz"'
   - name: revisionsVert
     uid: word!Word.SpecialPane.revisionsVert:member
@@ -221,6 +219,5 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"RevisionsVert"'

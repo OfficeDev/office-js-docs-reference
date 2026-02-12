@@ -12,8 +12,6 @@ summary: >-
   executes, it receives an AsyncResult object that you can access from the
   `callback` function's only parameter.
 remarks: >-
-
-
   #### Examples
 
 

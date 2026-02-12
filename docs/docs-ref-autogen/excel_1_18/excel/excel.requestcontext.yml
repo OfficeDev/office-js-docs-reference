@@ -9,8 +9,6 @@ summary: >-
   the request context is required to get access to the Excel object model from
   the add-in.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript
