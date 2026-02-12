@@ -13,8 +13,6 @@ summary: >-
   Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!--
   -->.
 remarks: >-
-
-
   #### Examples
 
 
@@ -39,7 +37,7 @@ methods:
     fullName: addHandlerAsync(eventType, handler, options, callback)
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: [DialogAPI
+      **Requirement set**: [DialogApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
@@ -92,7 +90,7 @@ methods:
     fullName: addHandlerAsync(eventType, handler, callback)
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: [DialogAPI
+      **Requirement set**: [DialogApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
@@ -180,7 +178,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -238,7 +236,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -390,7 +388,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -490,7 +488,7 @@ methods:
 
 
       -
-      [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
+      [DialogApi](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
       - [Mailbox
@@ -546,7 +544,7 @@ methods:
     fullName: openBrowserWindow(url)
     summary: Opens a browser window and loads the specified URL.
     remarks: >-
-      **Requirement set**: [OpenBrowserWindowAPI
+      **Requirement set**: [OpenBrowserWindowApi
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets)
 
 

@@ -7,8 +7,6 @@ summary: >-
   Specifies whether filtering from the Office application is applied when the
   data is retrieved.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

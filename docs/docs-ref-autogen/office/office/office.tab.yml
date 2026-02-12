@@ -11,7 +11,7 @@ summary: >-
   tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
   -->.
 remarks: >-
-  **Requirement set**: [RibbonAPI
+  **Requirement set**: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
@@ -76,7 +76,7 @@ properties:
       `Tab` object is ignored.
 
 
-      **Requirement set**: [RibbonAPI
+      **Requirement set**: [RibbonApi
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
     isPreview: false
@@ -144,7 +144,7 @@ properties:
       Specifies whether the tab is visible on the ribbon. Used only with
       contextual tabs.
     remarks: >-
-      **Requirement set**: [RibbonAPI
+      **Requirement set**: [RibbonApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 

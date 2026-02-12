@@ -7,7 +7,7 @@ summary: >-
   An interface that contains all the functionality provided to manage the state
   of the Office ribbon.
 remarks: >-
-  **Requirement set**: [RibbonAPI
+  **Requirement set**: [RibbonApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 isPreview: false
@@ -22,7 +22,7 @@ methods:
       Registers a custom contextual tab with Office and defines the tab's
       controls.
     remarks: >-
-      **Requirement set**: [RibbonAPI
+      **Requirement set**: [RibbonApi
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
@@ -77,7 +77,7 @@ methods:
     fullName: requestUpdate(input)
     summary: Sends a request to Office to update the ribbon.
     remarks: >-
-      **Requirement set**: [RibbonAPI
+      **Requirement set**: [RibbonApi
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 

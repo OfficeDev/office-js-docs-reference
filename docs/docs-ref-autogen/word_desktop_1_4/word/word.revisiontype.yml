@@ -6,8 +6,7 @@ fullName: Word.RevisionType
 summary: Specifies the revision type.
 remarks: >-
   \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -20,8 +19,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CellDeletion"'
   - name: cellInsertion
     uid: word!Word.RevisionType.cellInsertion:member
@@ -31,8 +29,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CellInsertion"'
   - name: cellMerge
     uid: word!Word.RevisionType.cellMerge:member
@@ -42,8 +39,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CellMerge"'
   - name: cellSplit
     uid: word!Word.RevisionType.cellSplit:member
@@ -53,8 +49,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CellSplit"'
   - name: conflict
     uid: word!Word.RevisionType.conflict:member
@@ -64,8 +59,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Conflict"'
   - name: conflictDelete
     uid: word!Word.RevisionType.conflictDelete:member
@@ -75,8 +69,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ConflictDelete"'
   - name: conflictInsert
     uid: word!Word.RevisionType.conflictInsert:member
@@ -86,8 +79,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ConflictInsert"'
   - name: delete
     uid: word!Word.RevisionType.delete:member
@@ -97,8 +89,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Delete"'
   - name: displayField
     uid: word!Word.RevisionType.displayField:member
@@ -108,8 +99,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DisplayField"'
   - name: insert
     uid: word!Word.RevisionType.insert:member
@@ -119,8 +109,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Insert"'
   - name: movedFrom
     uid: word!Word.RevisionType.movedFrom:member
@@ -130,8 +119,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MovedFrom"'
   - name: movedTo
     uid: word!Word.RevisionType.movedTo:member
@@ -141,8 +129,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"MovedTo"'
   - name: none
     uid: word!Word.RevisionType.none:member
@@ -152,8 +139,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: paragraphNumber
     uid: word!Word.RevisionType.paragraphNumber:member
@@ -163,8 +149,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphNumber"'
   - name: paragraphProperty
     uid: word!Word.RevisionType.paragraphProperty:member
@@ -174,8 +159,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ParagraphProperty"'
   - name: property
     uid: word!Word.RevisionType.property:member
@@ -185,8 +169,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Property"'
   - name: reconcile
     uid: word!Word.RevisionType.reconcile:member
@@ -196,8 +179,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Reconcile"'
   - name: replace
     uid: word!Word.RevisionType.replace:member
@@ -207,8 +189,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Replace"'
   - name: sectionProperty
     uid: word!Word.RevisionType.sectionProperty:member
@@ -218,8 +199,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SectionProperty"'
   - name: style
     uid: word!Word.RevisionType.style:member
@@ -229,8 +209,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Style"'
   - name: styleDefinition
     uid: word!Word.RevisionType.styleDefinition:member
@@ -240,8 +219,7 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"StyleDefinition"'
   - name: tableProperty
     uid: word!Word.RevisionType.tableProperty:member
@@ -251,6 +229,5 @@ fields:
 
 
       * \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TableProperty"'
