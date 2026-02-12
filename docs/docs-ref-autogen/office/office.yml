@@ -225,17 +225,18 @@ functions:
   - name: Office.isSetSupported(name, minVersion)
     uid: office!Office.isSetSupported:function(1)
     package: office!
-    summary: >-
-      **WARNING**: This API returns inaccurate values when used on desktop
-      applications. Use `Office.context.requirements.isSetSupported` instead.
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This API returns inaccurate values when used on desktop applications. Use
+      `Office.context.requirements.isSetSupported` instead.
 
 
       Checks if the specified requirement set is supported by the Office
       application.
-    remarks: ''
-
-    isPreview: false
-    isDeprecated: false
     syntax:
       content: >-
         export function isSetSupported(name: string, minVersion?: string):
