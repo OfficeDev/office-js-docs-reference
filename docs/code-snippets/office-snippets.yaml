@@ -1087,19 +1087,6 @@ Office.Context:interface:
     console.log("Office application: " + contextInfo.host);
     console.log("Office version: " + contextInfo.version);
     console.log("Platform: " + contextInfo.platform);
-Office.Context#auth:member:
-  - |-
-    // Get an access token.
-    const authContext = Office.context.auth;
-    authContext.getAccessTokenAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log("Error obtaining token", result.error);
-            return;
-        }
-
-        const token = result.value;
-        console.log(token);
-    });
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
