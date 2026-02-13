@@ -11,7 +11,7 @@ summary: >-
   commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)<!--
   -->.
 remarks: >-
-  **Requirement set**: [ContextMenuAPI
+  **Requirement set**: [ContextMenuApi
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
 
 isPreview: false
@@ -24,7 +24,7 @@ methods:
     fullName: requestUpdate(input)
     summary: Sends a request to Office to update the context menu.
     remarks: >-
-      **Requirement set**: [ContextMenuAPI
+      **Requirement set**: [ContextMenuApi
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/context-menu-api-requirement-sets)
 
 

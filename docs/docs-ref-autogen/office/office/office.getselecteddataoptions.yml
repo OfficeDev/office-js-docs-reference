@@ -7,8 +7,6 @@ summary: >-
   Provides options for customizing what data is returned and how it is
   formatted.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

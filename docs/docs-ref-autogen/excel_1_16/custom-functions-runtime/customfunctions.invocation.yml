@@ -5,8 +5,6 @@ package: custom-functions-runtime!
 fullName: CustomFunctions.Invocation
 summary: Provides information about the invocation of a custom function.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

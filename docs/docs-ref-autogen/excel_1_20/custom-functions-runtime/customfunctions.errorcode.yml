@@ -12,8 +12,6 @@ summary: >-
   display in the error indicator menu, which is accessed by hovering over the
   error flag on each cell with an error.
 remarks: |-
-
-
   #### Examples
 
   ```TypeScript

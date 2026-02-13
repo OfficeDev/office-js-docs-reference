@@ -8,8 +8,7 @@ summary: >-
   represent the changes marked with revision marks in a range or document.
 remarks: >-
   \[ [API set: WordApiDesktop
-  1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 isPreview: false
 isDeprecated: false
@@ -53,8 +52,7 @@ methods:
       revision marks, and incorporates the changes into the document.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
@@ -72,8 +70,7 @@ methods:
       collection.
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: true
     isDeprecated: false
@@ -167,8 +164,7 @@ methods:
     summary: Rejects all the tracked changes in the document or range.
     remarks: >-
       \[ [API set: WordApiDesktop
-      1.4](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
     isPreview: false
     isDeprecated: false
