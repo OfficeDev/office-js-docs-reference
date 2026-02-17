@@ -266,6 +266,10 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionUpdateData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
+        export interface ShapeScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface for updating data on the `Border` object, for use in `border.set({ ... })`. */
         export interface BorderUpdateData {
             
@@ -367,10 +371,6 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `TagCollection` object, for use in `tagCollection.set({ ... })`. */
         export interface TagCollectionUpdateData {
             items?: PowerPoint.Interfaces.TagData[];
-        }
-        /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
-        export interface ShapeScopedCollectionUpdateData {
-            items?: PowerPoint.Interfaces.ShapeData[];
         }
         /** An interface for updating data on the `ShapeLineFormat` object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
@@ -525,6 +525,10 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
+        export interface ShapeScopedCollectionData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface describing the data returned by calling `border.toJSON()`. */
         export interface BorderData {
             
@@ -667,10 +671,6 @@ export declare namespace PowerPoint {
         export interface SlideData {
             
             
-        }
-        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
-        export interface ShapeScopedCollectionData {
-            items?: PowerPoint.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
         export interface ShapeGroupData {

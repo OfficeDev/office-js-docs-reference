@@ -2499,176 +2499,113 @@ export declare namespace Office {
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
-     * The `AppointmentForm` object is used to access the currently selected appointment.
+     * Represents the details of the form for creating a new appointment.
      *
      * @remarks
      *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+     * [Api set: Mailbox 1.1]
      *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface AppointmentForm {
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
+         * Sets the body of the appointment.
          *
          * @remarks
+         *
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
-        body: Body | string;
+        body?: string;
         /**
-         * Gets or sets the date and time that the appointment is to end.
-         *
-         * The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to
-         * convert the `end` property value to the client's local date and time.
-         *
-         * *Read mode*
-         *
-         * The `end` property returns a `Date` object.
-         *
-         * *Compose mode*
-         *
-         * The `end` property returns a `Time` object.
-         *
-         * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on
-         * the client to UTC for the server.
+         * Sets the date and time that the appointment is to end.
          *
          * @remarks
          *
+        * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
-        end: Time | Date;
+        end?: Date | number;
         /**
-        * Gets or sets the location of an appointment.
-        *
-        * *Read mode*
-        *
-        * The `location` property returns a string that contains the location of the appointment.
-        *
-        * *Compose mode*
-        *
-        * The `location` property returns a `Location` object that provides methods that are used to get and set the location of the appointment.
+        * Sets the location of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       location: Location | string;
+       location?: string;
        /**
-        * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
-        *
-        * *Read mode*
-        *
-        * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-        * each optional attendee to the meeting. Collection size limits:
-        *
-        * - Web browser, new Mac UI, Android: No limit
-        *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * *Compose mode*
-        *
-        * The `optionalAttendees` property returns a `Recipients` object that provides methods to get or update the
-        * optional attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
-        * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+        * Sets the optional attendees of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       optionalAttendees: Recipients[] | EmailAddressDetails[];
+       optionalAttendees?: string[] | EmailAddressDetails[];
        /**
-        * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
+        * Sets the resources of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       resources: string[];
+       resources?: string[];
        /**
-        * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.
-        *
-        * *Read mode*
-        *
-        * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-        * each required attendee to the meeting. Collection size limits:
-        *
-        * - Web browser, new Mac UI, Android: No limit
-        *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * *Compose mode*
-        *
-        * The `requiredAttendees` property returns a `Recipients` object that provides methods to get or update the
-        * required attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
-        * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+        * Sets the required attendees of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       requiredAttendees: Recipients[] | EmailAddressDetails[];
+       requiredAttendees?: string[] | EmailAddressDetails[];
        /**
-        * Gets or sets the date and time that the appointment is to begin.
-        *
-        * The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method
-        * to convert the value to the client's local date and time.
-        *
-        * *Read mode*
-        *
-        * The `start` property returns a `Date` object.
-        *
-        * *Compose mode*
-        *
-        * The `start` property returns a `Time` object.
-        *
-        * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on
-        * the client to UTC for the server.
+        * Sets the date and time that the appointment is to begin.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       start: Time | Date;
+       start?: Date | number;
        /**
-        * Gets or sets the description that appears in the subject field of an item.
-        *
-        * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
-        *
-        * *Read mode*
-        *
-        * The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading prefixes such as RE: and FW:.
-        *
-        * *Compose mode*
-        *
-        * The `subject` property returns a `Subject` object that provides methods to get and set the subject.
+        * Sets the description that appears in the Title field of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       subject: Subject | string;
+       subject?: string;
     }
     /**
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -6567,39 +6504,9 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
-         * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
-         *
-         *        `toRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **To** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `ccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Cc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `bccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Bcc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `subject`: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
-         *
-         *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
-         *
-         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
-         *
-         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
-         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
-         *
-         *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
-         *
-         *        `attachments.url`: Only used if the attachment type is set to `file`. The URI of the location for the file. **Important**: This link must be
-         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
-         *        be accessible on a private network as long as it doesn't need further authentication.
-         *
-         *        `attachments.isInline`: Only used if the attachment type is set to `file`. If true, indicates that the attachment will be shown inline as an image
-         *        in the message body and won't be displayed in the attachment list.
-         *
-         *        `attachments.itemId`: Only used if the attachment type is set to `item`. The EWS item ID of the existing e-mail you want to attach to the new message.
-         *        This is a string up to 100 characters.
+         * @param parameters - A `MessageForm` object containing the content to be added to the new message form. All properties are optional.
          */
-        displayNewMessageForm(parameters: any): void;
+        displayNewMessageForm(parameters: MessageForm): void;
         /**
          * Displays a form for creating a new message.
          *
@@ -6615,43 +6522,13 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
-         * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
-         *
-         *        `toRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **To** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `ccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Cc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `bccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Bcc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `subject`: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
-         *
-         *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
-         *
-         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
-         *
-         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
-         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
-         *
-         *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
-         *
-         *        `attachments.url`: Only used if the attachment type is set to `file`. The URI of the location for the file. **Important**: This link must be
-         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
-         *        be accessible on a private network as long as it doesn't need further authentication.
-         *
-         *        `attachments.isInline`: Only used if the attachment type is set to `file`. If true, indicates that the attachment will be shown inline as an image
-         *        in the message body and won't be displayed in the attachment list.
-         *
-         *        `attachments.itemId`: Only used if the attachment type is set to `item`. The EWS item ID of the existing e-mail you want to attach to the new message.
-         *        This is a string up to 100 characters.
+         * @param parameters - A `MessageForm` object containing the content to be added to the new message form. All properties are optional.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-        displayNewMessageFormAsync(parameters: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        displayNewMessageFormAsync(parameters: MessageForm, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Displays a form for creating a new message.
          *
@@ -6667,41 +6544,11 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
-         * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
-         *
-         *        `toRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **To** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `ccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Cc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `bccRecipients`: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object
-         *        for each of the recipients on the **Bcc** line. The array is limited to a maximum of 100 entries.
-         *
-         *        `subject`: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
-         *
-         *        `htmlBody`: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
-         *
-         *        `attachments`: An array of JSON objects that are either file or Exchange item attachments.
-         *
-         *        `attachments.type`: Indicates the type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` for a file attachment or
-         *        `Office.MailboxEnums.AttachmentType.Item` for an Exchange item attachment.
-         *
-         *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
-         *
-         *        `attachments.url`: Only used if the attachment type is set to `file`. The URI of the location for the file. **Important**: This link must be
-         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
-         *        be accessible on a private network as long as it doesn't need further authentication.
-         *
-         *        `attachments.isInline`: Only used if the attachment type is set to `file`. If true, indicates that the attachment will be shown inline as an image
-         *        in the message body and won't be displayed in the attachment list.
-         *
-         *        `attachments.itemId`: Only used if the attachment type is set to `item`. The EWS item ID of the existing e-mail you want to attach to the new message.
-         *        This is a string up to 100 characters.
+         * @param parameters - A `MessageForm` object containing the content to be added to the new message form. All properties are optional.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-        displayNewMessageFormAsync(parameters: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        displayNewMessageFormAsync(parameters: MessageForm, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Gets a string that contains a token used to call REST APIs or Exchange Web Services (EWS).
          *
@@ -8490,6 +8337,182 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
+     * Represents the details of the form for composing a new message.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.6]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+     */
+    export interface MessageForm {
+        /**
+         * Sets the attachments of the message. An attachment must be a file attachment (`Office.MailboxEnums.AttachmentType.File`) or an Outlook item attachment
+         * (`Office.MailboxEnums.AttachmentType.Item`).
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        attachments?: MessageFormAttachment[];
+        /**
+         * Sets the recipients in the Bcc field of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `bccRecipients` array is limited to a maximum of 100 recipients.
+         */
+        bccRecipients?: string[] | EmailAddressDetails[];
+        /**
+         * Sets the recipients in the Cc field of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `ccRecipients` array is limited to a maximum of 100 recipients.
+         */
+        ccRecipients?: string[] | EmailAddressDetails[];
+        /**
+         * Sets the body of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The body content is limited to a maximum size of 32 KB.
+         */
+        htmlBody?: string;
+        /**
+         * Sets the subject of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The subject is limited to a maximum of 255 characters.
+         */
+        subject?: string;
+        /**
+         * Sets the recipients in the To field of the message.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `toRecipients` array is limited to a maximum of 100 recipients.
+         */
+        toRecipients?: string[] | EmailAddressDetails[];
+    }
+    /**
+     * A file or Outlook item attachment. Used when displaying a new message form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.6]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+     */
+    export interface MessageFormAttachment {
+        /**
+         * The type of attachment. Must be `Office.MailboxEnums.AttachmentType.File` or `Office.MailboxEnums.AttachmentType.Item`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The `base64` and `cloud` attachment types aren't supported.
+         */
+        type: MailboxEnums.AttachmentType | string;
+        /**
+         * The name of the attachment. The name can be up to 255 characters in length.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        name: string;
+        /**
+         * The URI of the location for the file. Only specify if the `type` property is set to `Office.MailboxEnums.AttachmentType.File`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: The link must be publicly accessible without need for authentication by Exchange Online servers. However, with
+         * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
+         */
+        url?: string;
+        /**
+         * If true, indicates that the attachment will be shown inline in the message body and won't be displayed in the attachment list.
+         * Only specify if the `type` property is set to `Office.MailboxEnums.AttachmentType.File`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        isInline?: boolean;
+        /**
+         * The Exchange Web Services (EWS) item ID of the attachment. The item ID is a string of up to 100 characters.
+         * Only specify if the `type` property is set to `Office.MailboxEnums.AttachmentType.Item`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.6]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         */
+        itemId?: string;
     }
     /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -10583,12 +10606,26 @@ export declare namespace Office {
     }
     /**
      * A file or item attachment. Used when displaying a reply form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.1]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface ReplyFormAttachment {
         /**
          * Indicates the type of attachment.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
          * **Important**:
          *
@@ -10601,10 +10638,26 @@ export declare namespace Office {
         type: MailboxEnums.AttachmentType;
         /**
          * A string that contains the name of the attachment, up to 255 characters in length.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         name: string;
         /**
          * The URI of the location for the file. Only use if `type` is set to `file`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
          * **Important**: This link must be publicly accessible without need for authentication by Exchange Online servers. However, with
          * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
@@ -10613,34 +10666,89 @@ export declare namespace Office {
         /**
          * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
          * Only use if `type` is set to `base64` or `file`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         inLine?: boolean;
         /**
          * The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         itemId?: string;
         
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.1]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface ReplyFormData {
         /**
          * A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         htmlBody?: string;
         /**
          * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are Base64-encoded files, Exchange items, or file attachments.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         attachments?: ReplyFormAttachment[];
         /**
          * When the reply display call completes, the function passed in the callback parameter is called with a single parameter,
          * `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;
         /**
-         * An object literal that contains the following property:-
-         * `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object that you want to access in the callback function.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         options?: CommonAPI.AsyncContextOptions;
     }

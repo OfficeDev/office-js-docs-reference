@@ -13,6 +13,29 @@ remarks: >-
   \[ [API set: ExcelApi
   1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
+
+
+  await Excel.run(async (context) => {
+
+      let myWorkbook = context.workbook;
+      let activeCell = myWorkbook.getActiveCell();
+      activeCell.load("address");
+
+      await context.sync();
+      
+      console.log("The active cell is " + activeCell.address);
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
