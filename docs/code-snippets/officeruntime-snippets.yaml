@@ -3,7 +3,7 @@ OfficeRuntime.Auth:interface:
     // Get the auth context object and use it to get an
     // access token.
     const authContext = OfficeRuntime.context.auth;
-    const accessToken = authContext.getAccessTokenAsync();
+    const accessToken = await authContext.getAccessToken();
 OfficeRuntime.Auth#getAccessToken:member(1):
   - |-
     async function getUserData() {
