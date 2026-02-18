@@ -581,13 +581,12 @@ Office.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
-    const ssoOptions = {
-        allowSignInPrompt: true,
-        allowConsentPrompt: true,
-        forMSGraphAccess: true,
-    };
     try {
-        const token = await Office.auth.getAccessToken(ssoOptions);
+        const accessToken = await Office.auth.getAccessToken({
+              allowSignInPrompt: true,
+              allowConsentPrompt: true,
+              forMSGraphAccess: true,
+        });
         // Use the token to make an API call.
     } catch (error) {
         console.log("Error obtaining token", error);

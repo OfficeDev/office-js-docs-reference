@@ -2245,15 +2245,16 @@ Office.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
-    const authContext = Office.context.auth;
-    authContext.getAccessTokenAsync(function(result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-            const token = result.value;
-            console.log(token);
-        } else {
-            console.log("Error obtaining token", result.error);
-        }
-    });
+    try {
+        const accessToken = await Office.auth.getAccessToken({
+              allowSignInPrompt: true,
+              allowConsentPrompt: true,
+              forMSGraphAccess: true,
+        });
+        // Use the token to make an API call.
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAuthContext:member(1):
   - |-
     try{
@@ -2275,7 +2276,7 @@ Office.Auth#getAccessToken:member(1):
     }
 Office.Auth#getAccessTokenAsync:member(1):
   - |-
-    Office.context.auth.getAccessTokenAsync(function(result) {
+    Office.auth.getAccessTokenAsync(function(result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
             const token = result.value;
             // ...
@@ -2751,19 +2752,6 @@ Office.Context:interface:
     console.log("Office application: " + contextInfo.host);
     console.log("Office version: " + contextInfo.version);
     console.log("Platform: " + contextInfo.platform);
-Office.Context#auth:member:
-  - |-
-    // Get an access token.
-    const authContext = Office.context.auth;
-    authContext.getAccessTokenAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log("Error obtaining token", result.error);
-            return;
-        }
-
-        const token = result.value;
-        console.log(token);
-    });
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
@@ -6579,7 +6567,7 @@ OfficeRuntime.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
-    const authContext = OfficeRuntime.context.auth;
+    const authContext = OfficeRuntime.auth;
     const accessToken = authContext.getAccessTokenAsync();
 OfficeRuntime.Auth#getAccessToken:member(1):
   - |-
