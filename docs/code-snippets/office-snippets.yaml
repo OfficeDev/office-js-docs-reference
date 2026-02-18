@@ -581,7 +581,7 @@ Office.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
-    const authContext = Office.context.auth;
+    const authContext = Office.auth;
     authContext.getAccessTokenAsync(function(result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
             const token = result.value;
@@ -611,7 +611,7 @@ Office.Auth#getAccessToken:member(1):
     }
 Office.Auth#getAccessTokenAsync:member(1):
   - |-
-    Office.context.auth.getAccessTokenAsync(function(result) {
+    Office.auth.getAccessTokenAsync(function(result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
             const token = result.value;
             // ...
@@ -1090,7 +1090,7 @@ Office.Context:interface:
 Office.Context#auth:member:
   - |-
     // Get an access token.
-    const authContext = Office.context.auth;
+    const authContext = Office.auth;
     authContext.getAccessTokenAsync((result) => {
         if (result.status === Office.AsyncResultStatus.Failed) {
             console.log("Error obtaining token", result.error);
