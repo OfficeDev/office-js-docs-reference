@@ -145,6 +145,10 @@ items:
             uid: outlook!Office.MeetingSuggestion:interface
           - name: MessageCompose
             uid: outlook!Office.MessageCompose:interface
+          - name: MessageForm
+            uid: outlook!Office.MessageForm:interface
+          - name: MessageFormAttachment
+            uid: outlook!Office.MessageFormAttachment:interface
           - name: MessageRead
             uid: outlook!Office.MessageRead:interface
           - name: NotificationMessageAction

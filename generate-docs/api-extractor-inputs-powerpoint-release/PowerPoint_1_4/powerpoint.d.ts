@@ -893,19 +893,19 @@ export declare namespace PowerPoint {
      */
     enum ConnectorType {
         /**
-         * Straight connector type
+         * Straight connector type.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         straight = "Straight",
         /**
-         * Elbow connector type
+         * Elbow connector type.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         elbow = "Elbow",
         /**
-         * Curve connector type
+         * Curve connector type.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
@@ -919,1063 +919,1063 @@ export declare namespace PowerPoint {
      */
     enum GeometricShapeType {
         /**
-         * Straight Line from Top-Right Corner to Bottom-Left Corner of the Shape
+         * Straight line from top-right corner to bottom-left corner of the shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         lineInverse = "LineInverse",
         /**
-         * Isosceles Triangle
+         * Isosceles triangle geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         triangle = "Triangle",
         /**
-         * Right Triangle
+         * Right triangle geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         rightTriangle = "RightTriangle",
         /**
-         * Rectangle
+         * Rectangle geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         rectangle = "Rectangle",
         /**
-         * Diamond
+         * Diamond geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         diamond = "Diamond",
         /**
-         * Parallelogram
+         * Parallelogram geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         parallelogram = "Parallelogram",
         /**
-         * Trapezoid
+         * Trapezoid geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         trapezoid = "Trapezoid",
         /**
-         * Trapezoid which may have Non-Equal Sides
+         * Trapezoid geometric shape which may have non-equal sides.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         nonIsoscelesTrapezoid = "NonIsoscelesTrapezoid",
         /**
-         * Pentagon
+         * Pentagon geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         pentagon = "Pentagon",
         /**
-         * Hexagon
+         * Hexagon geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         hexagon = "Hexagon",
         /**
-         * Heptagon
+         * Heptagon geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         heptagon = "Heptagon",
         /**
-         * Octagon
+         * Octagon geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         octagon = "Octagon",
         /**
-         * Decagon
+         * Decagon geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         decagon = "Decagon",
         /**
-         * Dodecagon
+         * Dodecagon geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         dodecagon = "Dodecagon",
         /**
-         * Star: 4 Points
+         * Star: 4 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star4 = "Star4",
         /**
-         * Star: 5 Points
+         * Star: 5 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star5 = "Star5",
         /**
-         * Star: 6 Points
+         * Star: 6 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star6 = "Star6",
         /**
-         * Star: 7 Points
+         * Star: 7 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star7 = "Star7",
         /**
-         * Star: 8 Points
+         * Star: 8 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star8 = "Star8",
         /**
-         * Star: 10 Points
+         * Star: 10 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star10 = "Star10",
         /**
-         * Star: 12 Points
+         * Star: 12 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star12 = "Star12",
         /**
-         * Star: 16 Points
+         * Star: 16 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star16 = "Star16",
         /**
-         * Star: 24 Points
+         * Star: 24 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star24 = "Star24",
         /**
-         * Star: 32 Points
+         * Star: 32 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         star32 = "Star32",
         /**
-         * Rectangle: Rounded Corners
+         * Rectangle geometric shape: rounded corners.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         roundRectangle = "RoundRectangle",
         /**
-         * Rectangle: Single Corner Rounded
+         * Rectangle geometric shape: single corner rounded.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         round1Rectangle = "Round1Rectangle",
         /**
-         * Rectangle: Top Corners Rounded
+         * Rectangle geometric shape: top corners rounded.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         round2SameRectangle = "Round2SameRectangle",
         /**
-         * Rectangle: Diagonal Corners Rounded
+         * Rectangle geometric shape: diagonal corners rounded.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         round2DiagonalRectangle = "Round2DiagonalRectangle",
         /**
-         * Rectangle: Top Corners One Rounded and One Snipped
+         * Rectangle geometric shape: top corners one rounded and one snipped.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         snipRoundRectangle = "SnipRoundRectangle",
         /**
-         * Rectangle: Single Corner Snipped
+         * Rectangle geometric shape: single corner snipped.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         snip1Rectangle = "Snip1Rectangle",
         /**
-         * Rectangle: Top Corners Snipped
+         * Rectangle geometric shape: top corners snipped.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         snip2SameRectangle = "Snip2SameRectangle",
         /**
-         * Rectangle: Diagonal Corners Snipped
+         * Rectangle geometric shape: diagonal corners snipped.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         snip2DiagonalRectangle = "Snip2DiagonalRectangle",
         /**
-         * Plaque
+         * Plaque geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         plaque = "Plaque",
         /**
-         * Oval
+         * Oval geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         ellipse = "Ellipse",
         /**
-         * Teardrop
+         * Teardrop geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         teardrop = "Teardrop",
         /**
-         * Arrow: Pentagon
+         * Arrow: pentagon.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         homePlate = "HomePlate",
         /**
-         * Arrow: Chevron
+         * Arrow: chevron.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         chevron = "Chevron",
         /**
-         * Partial Circle
+         * Partial circle geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         pieWedge = "PieWedge",
         /**
-         * Partial Circle with Adjustable Spanning Area
+         * Partial circle geometric shape with adjustable spanning area.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         pie = "Pie",
         /**
-         * Block Arc
+         * Block arc geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         blockArc = "BlockArc",
         /**
-         * Circle: Hollow
+         * Circle geometric shape: hollow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         donut = "Donut",
         /**
-         * "Not Allowed" Symbol
+         * "Not allowed" symbol.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         noSmoking = "NoSmoking",
         /**
-         * Arrow: Right
+         * Arrow: right.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         rightArrow = "RightArrow",
         /**
-         * Arrow: Left
+         * Arrow: left.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftArrow = "LeftArrow",
         /**
-         * Arrow: Up
+         * Arrow: up.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         upArrow = "UpArrow",
         /**
-         * Arrow: Down
+         * Arrow: down.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         downArrow = "DownArrow",
         /**
-         * Arrow: Striped Right
+         * Arrow: striped right.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         stripedRightArrow = "StripedRightArrow",
         /**
-         * Arrow: Notched Right
+         * Arrow: notched right.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         notchedRightArrow = "NotchedRightArrow",
         /**
-         * Arrow: Bent-Up
+         * Arrow: bent-up.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         bentUpArrow = "BentUpArrow",
         /**
-         * Arrow: Left-Right
+         * Arrow: left-right.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftRightArrow = "LeftRightArrow",
         /**
-         * Arrow: Up-Down
+         * Arrow: up-down.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         upDownArrow = "UpDownArrow",
         /**
-         * Arrow: Left-Up
+         * Arrow: left-up.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftUpArrow = "LeftUpArrow",
         /**
-         * Arrow: Left-Right-Up
+         * Arrow: left-right-up.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftRightUpArrow = "LeftRightUpArrow",
         /**
-         * Arrow: Quad
+         * Arrow: quad.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         quadArrow = "QuadArrow",
         /**
-         * Callout: Left Arrow
+         * Callout: left arrow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftArrowCallout = "LeftArrowCallout",
         /**
-         * Callout: Right Arrow
+         * Callout: right arrow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         rightArrowCallout = "RightArrowCallout",
         /**
-         * Callout: Up Arrow
+         * Callout: up arrow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         upArrowCallout = "UpArrowCallout",
         /**
-         * Callout: Down Arrow
+         * Callout: down arrow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         downArrowCallout = "DownArrowCallout",
         /**
-         * Callout: Left-Right Arrow
+         * Callout: left-right arrow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftRightArrowCallout = "LeftRightArrowCallout",
         /**
-         * Callout: Up-Down Arrow
+         * Callout: up-down arrow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         upDownArrowCallout = "UpDownArrowCallout",
         /**
-         * Callout: Quad Arrow
+         * Callout: quad arrow.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         quadArrowCallout = "QuadArrowCallout",
         /**
-         * Arrow: Bent
+         * Arrow: bent.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         bentArrow = "BentArrow",
         /**
-         * Arrow: U-Turn
+         * Arrow: U-turn.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         uturnArrow = "UturnArrow",
         /**
-         * Arrow: Circular
+         * Arrow: circular.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         circularArrow = "CircularArrow",
         /**
-         * Arrow: Circular with Opposite Arrow Direction
+         * Arrow: circular with opposite arrow direction.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftCircularArrow = "LeftCircularArrow",
         /**
-         * Arrow: Circular with Two Arrows in Both Directions
+         * Arrow: circular with two arrows in both directions.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftRightCircularArrow = "LeftRightCircularArrow",
         /**
-         * Arrow: Curved Right
+         * Arrow: curved right.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         curvedRightArrow = "CurvedRightArrow",
         /**
-         * Arrow: Curved Left
+         * Arrow: curved left.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         curvedLeftArrow = "CurvedLeftArrow",
         /**
-         * Arrow: Curved Up
+         * Arrow: curved up.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         curvedUpArrow = "CurvedUpArrow",
         /**
-         * Arrow: Curved Down
+         * Arrow: curved down.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         curvedDownArrow = "CurvedDownArrow",
         /**
-         * Arrow: Curved Right Arrow with Varying Width
+         * Arrow: curved right arrow with varying width.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         swooshArrow = "SwooshArrow",
         /**
-         * Cube
+         * Cube geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         cube = "Cube",
         /**
-         * Cylinder
+         * Cylinder geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         can = "Can",
         /**
-         * Lightning Bolt
+         * Lightning bolt.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         lightningBolt = "LightningBolt",
         /**
-         * Heart
+         * Heart geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         heart = "Heart",
         /**
-         * Sun
+         * Sun.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         sun = "Sun",
         /**
-         * Moon
+         * Moon geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         moon = "Moon",
         /**
-         * Smiley Face
+         * Smiley face.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         smileyFace = "SmileyFace",
         /**
-         * Explosion: 8 Points
+         * Explosion: 8 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         irregularSeal1 = "IrregularSeal1",
         /**
-         * Explosion: 14 Points
+         * Explosion: 14 points.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         irregularSeal2 = "IrregularSeal2",
         /**
-         * Rectangle: Folded Corner
+         * Rectangle geometric shape: folded corner.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         foldedCorner = "FoldedCorner",
         /**
-         * Rectangle: Beveled
+         * Rectangle geometric shape: beveled.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         bevel = "Bevel",
         /**
-         * Frame
+         * Frame geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         frame = "Frame",
         /**
-         * Half Frame
+         * Half frame geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         halfFrame = "HalfFrame",
         /**
-         * L-Shape
+         * L-shape geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         corner = "Corner",
         /**
-         * Diagonal Stripe
+         * Diagonal stripe geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         diagonalStripe = "DiagonalStripe",
         /**
-         * Chord
+         * Chord geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         chord = "Chord",
         /**
-         * Arc
+         * Arc geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         arc = "Arc",
         /**
-         * Left Bracket
+         * Left bracket.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftBracket = "LeftBracket",
         /**
-         * Right Bracket
+         * Right bracket.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         rightBracket = "RightBracket",
         /**
-         * Left Brace
+         * Left brace.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftBrace = "LeftBrace",
         /**
-         * Right Brace
+         * Right brace.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         rightBrace = "RightBrace",
         /**
-         * Double Bracket
+         * Double bracket.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         bracketPair = "BracketPair",
         /**
-         * Double Brace
+         * Double brace.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         bracePair = "BracePair",
         /**
-         * Callout: Line with No Border
+         * Callout: line with no border.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         callout1 = "Callout1",
         /**
-         * Callout: Bent Line with No Border
+         * Callout: bent line with no border.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         callout2 = "Callout2",
         /**
-         * Callout: Double Bent Line with No Border
+         * Callout: double bent line with no border.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         callout3 = "Callout3",
         /**
-         * Callout: Line with Accent Bar
+         * Callout: line with accent bar.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         accentCallout1 = "AccentCallout1",
         /**
-         * Callout: Bent Line with Accent Bar
+         * Callout: bent line with accent bar.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         accentCallout2 = "AccentCallout2",
         /**
-         * Callout: Double Bent Line with Accent Bar
+         * Callout: double bent line with accent bar.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         accentCallout3 = "AccentCallout3",
         /**
-         * Callout: Line
+         * Callout: line.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         borderCallout1 = "BorderCallout1",
         /**
-         * Callout: Bent Line
+         * Callout: bent line.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         borderCallout2 = "BorderCallout2",
         /**
-         * Callout: Double Bent Line
+         * Callout: double bent line.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         borderCallout3 = "BorderCallout3",
         /**
-         * Callout: Line with Border and Accent Bar
+         * Callout: line with border and accent bar.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         accentBorderCallout1 = "AccentBorderCallout1",
         /**
-         * Callout: Bent Line with Border and Accent Bar
+         * Callout: bent line with border and accent bar.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         accentBorderCallout2 = "AccentBorderCallout2",
         /**
-         * Callout: Double Bent Line with Border and Accent Bar
+         * Callout: double bent line with border and accent bar.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         accentBorderCallout3 = "AccentBorderCallout3",
         /**
-         * Speech Bubble: Rectangle
+         * Speech bubble: rectangle.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         wedgeRectCallout = "WedgeRectCallout",
         /**
-         * Speech Bubble: Rectangle with Corners Rounded
+         * Speech bubble: rectangle with corners rounded.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         wedgeRRectCallout = "WedgeRRectCallout",
         /**
-         * Speech Bubble: Oval
+         * Speech bubble: oval.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         wedgeEllipseCallout = "WedgeEllipseCallout",
         /**
-         * Thought Bubble: Cloud
+         * Thought bubble: cloud.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         cloudCallout = "CloudCallout",
         /**
-         * Cloud
+         * Cloud.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         cloud = "Cloud",
         /**
-         * Ribbon: Tilted Down
+         * Ribbon: tilted down.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         ribbon = "Ribbon",
         /**
-         * Ribbon: Tilted Up
+         * Ribbon: tilted up.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         ribbon2 = "Ribbon2",
         /**
-         * Ribbon: Curved and Tilted Down
+         * Ribbon: curved and tilted down.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         ellipseRibbon = "EllipseRibbon",
         /**
-         * Ribbon: Curved and Tilted Up
+         * Ribbon: curved and tilted up.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         ellipseRibbon2 = "EllipseRibbon2",
         /**
-         * Ribbon: Straight with Both Left and Right Arrows
+         * Ribbon: straight with both left and right arrows.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         leftRightRibbon = "LeftRightRibbon",
         /**
-         * Scroll: Vertical
+         * Scroll: vertical.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         verticalScroll = "VerticalScroll",
         /**
-         * Scroll: Horizontal
+         * Scroll: horizontal.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         horizontalScroll = "HorizontalScroll",
         /**
-         * Wave
+         * Wave geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         wave = "Wave",
         /**
-         * Double Wave
+         * Double wave geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         doubleWave = "DoubleWave",
         /**
-         * Cross
+         * Cross geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         plus = "Plus",
         /**
-         * Flowchart: Process
+         * Flowchart: process.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartProcess = "FlowChartProcess",
         /**
-         * Flowchart: Decision
+         * Flowchart: decision.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartDecision = "FlowChartDecision",
         /**
-         * Flowchart: Data
+         * Flowchart: data.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartInputOutput = "FlowChartInputOutput",
         /**
-         * Flowchart: Predefined Process
+         * Flowchart: predefined process.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartPredefinedProcess = "FlowChartPredefinedProcess",
         /**
-         * Flowchart: Internal Storage
+         * Flowchart: internal storage.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartInternalStorage = "FlowChartInternalStorage",
         /**
-         * Flowchart: Document
+         * Flowchart: document.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartDocument = "FlowChartDocument",
         /**
-         * Flowchart: Multidocument
+         * Flowchart: multidocument.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartMultidocument = "FlowChartMultidocument",
         /**
-         * Flowchart: Terminator
+         * Flowchart: terminator.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartTerminator = "FlowChartTerminator",
         /**
-         * Flowchart: Preparation
+         * Flowchart: preparation.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartPreparation = "FlowChartPreparation",
         /**
-         * Flowchart: Manual Input
+         * Flowchart: manual input.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartManualInput = "FlowChartManualInput",
         /**
-         * Flowchart: Manual Operation
+         * Flowchart: manual operation.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartManualOperation = "FlowChartManualOperation",
         /**
-         * Flowchart: Connector
+         * Flowchart: connector.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartConnector = "FlowChartConnector",
         /**
-         * Flowchart: Card
+         * Flowchart: card.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartPunchedCard = "FlowChartPunchedCard",
         /**
-         * Flowchart: Punched Tape
+         * Flowchart: punched tape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartPunchedTape = "FlowChartPunchedTape",
         /**
-         * Flowchart: Summing Junction
+         * Flowchart: summing junction.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartSummingJunction = "FlowChartSummingJunction",
         /**
-         * Flowchart: Or
+         * Flowchart: or.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartOr = "FlowChartOr",
         /**
-         * Flowchart: Collate
+         * Flowchart: collate.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartCollate = "FlowChartCollate",
         /**
-         * Flowchart: Sort
+         * Flowchart: sort.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartSort = "FlowChartSort",
         /**
-         * Flowchart: Extract
+         * Flowchart: extract.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartExtract = "FlowChartExtract",
         /**
-         * Flowchart: Merge
+         * Flowchart: merge.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartMerge = "FlowChartMerge",
         /**
-         * FlowChart: Offline Storage
+         * Flowchart: offline storage.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartOfflineStorage = "FlowChartOfflineStorage",
         /**
-         * Flowchart: Stored Data
+         * Flowchart: stored data.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartOnlineStorage = "FlowChartOnlineStorage",
         /**
-         * Flowchart: Sequential Access Storage
+         * Flowchart: sequential access storage.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartMagneticTape = "FlowChartMagneticTape",
         /**
-         * Flowchart: Magnetic Disk
+         * Flowchart: magnetic disk.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartMagneticDisk = "FlowChartMagneticDisk",
         /**
-         * Flowchart: Direct Access Storage
+         * Flowchart: direct access storage.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartMagneticDrum = "FlowChartMagneticDrum",
         /**
-         * Flowchart: Display
+         * Flowchart: display.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartDisplay = "FlowChartDisplay",
         /**
-         * Flowchart: Delay
+         * Flowchart: delay.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartDelay = "FlowChartDelay",
         /**
-         * Flowchart: Alternate Process
+         * Flowchart: alternate process.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartAlternateProcess = "FlowChartAlternateProcess",
         /**
-         * Flowchart: Off-page Connector
+         * Flowchart: off-page connector.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         flowChartOffpageConnector = "FlowChartOffpageConnector",
         /**
-         * Action Button: Blank
+         * Action button: blank.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonBlank = "ActionButtonBlank",
         /**
-         * Action Button: Go Home
+         * Action button: go home.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonHome = "ActionButtonHome",
         /**
-         * Action Button: Help
+         * Action button: help.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonHelp = "ActionButtonHelp",
         /**
-         * Action Button: Get Information
+         * Action button: get information.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonInformation = "ActionButtonInformation",
         /**
-         * Action Button: Go Forward or Next
+         * Action button: go forward or next.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonForwardNext = "ActionButtonForwardNext",
         /**
-         * Action Button: Go Back or Previous
+         * Action button: go back or previous.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonBackPrevious = "ActionButtonBackPrevious",
         /**
-         * Action Button: Go to End
+         * Action button: go to end.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonEnd = "ActionButtonEnd",
         /**
-         * Action Button: Go to Beginning
+         * Action button: go to beginning.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonBeginning = "ActionButtonBeginning",
         /**
-         * Action Button: Return
+         * Action button: return.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonReturn = "ActionButtonReturn",
         /**
-         * Action Button: Document
+         * Action button: document.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonDocument = "ActionButtonDocument",
         /**
-         * Action Button: Sound
+         * Action button: sound.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonSound = "ActionButtonSound",
         /**
-         * Action Button: Video
+         * Action button: video.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         actionButtonMovie = "ActionButtonMovie",
         /**
-         * Gear: A Gear with Six Teeth
+         * Gear: a gear with six teeth.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         gear6 = "Gear6",
         /**
-         * Gear: A Gear with Nine Teeth
+         * Gear: a gear with nine teeth.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         gear9 = "Gear9",
         /**
-         * Funnel
+         * Funnel geometric shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         funnel = "Funnel",
         /**
-         * Plus Sign
+         * Plus sign.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         mathPlus = "MathPlus",
         /**
-         * Minus Sign
+         * Minus sign.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         mathMinus = "MathMinus",
         /**
-         * Multiplication Sign
+         * Multiplication sign.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         mathMultiply = "MathMultiply",
         /**
-         * Division Sign
+         * Division sign.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         mathDivide = "MathDivide",
         /**
-         * Equals
+         * Equals.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         mathEqual = "MathEqual",
         /**
-         * Not Equal
+         * Not equal.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         mathNotEqual = "MathNotEqual",
         /**
-         * Four Right Triangles that Define a Rectangular Shape
+         * Four right triangles that define a rectangular shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         cornerTabs = "CornerTabs",
         /**
-         * Four Small Squares that Define a Rectangular Shape.
+         * Four small squares that define a rectangular shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         squareTabs = "SquareTabs",
         /**
-         * Four Quarter Circles that Define a Rectangular Shape.
+         * Four quarter circles that define a rectangular shape.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         plaqueTabs = "PlaqueTabs",
         /**
-         * A Rectangle Divided into Four Parts Along Diagonal Lines.
+         * A rectangle divided into four parts along diagonal lines.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         chartX = "ChartX",
         /**
-         * A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal Lines.
+         * A rectangle divided into six parts along a vertical line and diagonal lines.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
         chartStar = "ChartStar",
         /**
-         * A Rectangle Divided Vertically and Horizontally into Four Quarters.
+         * A rectangle divided vertically and horizontally into four quarters.
          * @remarks
          * [Api set: PowerPointApi 1.4]
          */
@@ -2023,6 +2023,7 @@ export declare namespace PowerPoint {
          */
         width?: number;
     }
+    
     /**
      * Specifies the dash style for a line.
      *
@@ -2829,7 +2830,6 @@ export declare namespace PowerPoint {
     
     
     
-    
     /**
      * Specifies the style for a line.
      *
@@ -3502,6 +3502,10 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionUpdateData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
+        export interface ShapeScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface for updating data on the `Border` object, for use in `border.set({ ... })`. */
         export interface BorderUpdateData {
             
@@ -3621,10 +3625,6 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the `TagCollection` object, for use in `tagCollection.set({ ... })`. */
         export interface TagCollectionUpdateData {
             items?: PowerPoint.Interfaces.TagData[];
-        }
-        /** An interface for updating data on the `ShapeScopedCollection` object, for use in `shapeScopedCollection.set({ ... })`. */
-        export interface ShapeScopedCollectionUpdateData {
-            items?: PowerPoint.Interfaces.ShapeData[];
         }
         /** An interface for updating data on the `ShapeLineFormat` object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
@@ -3959,6 +3959,10 @@ export declare namespace PowerPoint {
         export interface HyperlinkCollectionData {
             items?: PowerPoint.Interfaces.HyperlinkData[];
         }
+        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
+        export interface ShapeScopedCollectionData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface describing the data returned by calling `border.toJSON()`. */
         export interface BorderData {
             
@@ -4161,10 +4165,6 @@ export declare namespace PowerPoint {
              */
             id?: string;
             
-        }
-        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
-        export interface ShapeScopedCollectionData {
-            items?: PowerPoint.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
         export interface ShapeGroupData {
@@ -4591,6 +4591,7 @@ export declare namespace PowerPoint {
         
         
         
+        
         /**
          * Represents the fill formatting of a shape object.
          *
@@ -4904,7 +4905,6 @@ export declare namespace PowerPoint {
             id?: boolean;
             
         }
-        
         
         /**
          * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.

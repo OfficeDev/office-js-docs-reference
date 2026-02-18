@@ -50,7 +50,7 @@ fields:
     uid: powerpoint!PowerPoint.ConnectorType.curve:member
     package: powerpoint!
     summary: >-
-      Curve connector type
+      Curve connector type.
 
 
       * \[ [API set: PowerPointApi
@@ -61,7 +61,7 @@ fields:
     uid: powerpoint!PowerPoint.ConnectorType.elbow:member
     package: powerpoint!
     summary: >-
-      Elbow connector type
+      Elbow connector type.
 
 
       * \[ [API set: PowerPointApi
@@ -72,7 +72,7 @@ fields:
     uid: powerpoint!PowerPoint.ConnectorType.straight:member
     package: powerpoint!
     summary: >-
-      Straight connector type
+      Straight connector type.
 
 
       * \[ [API set: PowerPointApi

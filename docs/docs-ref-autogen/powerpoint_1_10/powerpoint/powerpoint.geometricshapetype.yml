@@ -48,7 +48,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout1:member
     package: powerpoint!
     summary: >-
-      Callout: Line with Border and Accent Bar
+      Callout: line with border and accent bar.
 
 
       * \[ [API set: PowerPointApi
@@ -59,7 +59,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout2:member
     package: powerpoint!
     summary: >-
-      Callout: Bent Line with Border and Accent Bar
+      Callout: bent line with border and accent bar.
 
 
       * \[ [API set: PowerPointApi
@@ -70,7 +70,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout3:member
     package: powerpoint!
     summary: >-
-      Callout: Double Bent Line with Border and Accent Bar
+      Callout: double bent line with border and accent bar.
 
 
       * \[ [API set: PowerPointApi
@@ -81,7 +81,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.accentCallout1:member
     package: powerpoint!
     summary: >-
-      Callout: Line with Accent Bar
+      Callout: line with accent bar.
 
 
       * \[ [API set: PowerPointApi
@@ -92,7 +92,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.accentCallout2:member
     package: powerpoint!
     summary: >-
-      Callout: Bent Line with Accent Bar
+      Callout: bent line with accent bar.
 
 
       * \[ [API set: PowerPointApi
@@ -103,7 +103,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.accentCallout3:member
     package: powerpoint!
     summary: >-
-      Callout: Double Bent Line with Accent Bar
+      Callout: double bent line with accent bar.
 
 
       * \[ [API set: PowerPointApi
@@ -114,7 +114,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonBackPrevious:member
     package: powerpoint!
     summary: >-
-      Action Button: Go Back or Previous
+      Action button: go back or previous.
 
 
       * \[ [API set: PowerPointApi
@@ -125,7 +125,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonBeginning:member
     package: powerpoint!
     summary: >-
-      Action Button: Go to Beginning
+      Action button: go to beginning.
 
 
       * \[ [API set: PowerPointApi
@@ -136,7 +136,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonBlank:member
     package: powerpoint!
     summary: >-
-      Action Button: Blank
+      Action button: blank.
 
 
       * \[ [API set: PowerPointApi
@@ -147,7 +147,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonDocument:member
     package: powerpoint!
     summary: >-
-      Action Button: Document
+      Action button: document.
 
 
       * \[ [API set: PowerPointApi
@@ -158,7 +158,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonEnd:member
     package: powerpoint!
     summary: >-
-      Action Button: Go to End
+      Action button: go to end.
 
 
       * \[ [API set: PowerPointApi
@@ -169,7 +169,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonForwardNext:member
     package: powerpoint!
     summary: >-
-      Action Button: Go Forward or Next
+      Action button: go forward or next.
 
 
       * \[ [API set: PowerPointApi
@@ -180,7 +180,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonHelp:member
     package: powerpoint!
     summary: >-
-      Action Button: Help
+      Action button: help.
 
 
       * \[ [API set: PowerPointApi
@@ -191,7 +191,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonHome:member
     package: powerpoint!
     summary: >-
-      Action Button: Go Home
+      Action button: go home.
 
 
       * \[ [API set: PowerPointApi
@@ -202,7 +202,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonInformation:member
     package: powerpoint!
     summary: >-
-      Action Button: Get Information
+      Action button: get information.
 
 
       * \[ [API set: PowerPointApi
@@ -213,7 +213,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonMovie:member
     package: powerpoint!
     summary: >-
-      Action Button: Video
+      Action button: video.
 
 
       * \[ [API set: PowerPointApi
@@ -224,7 +224,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonReturn:member
     package: powerpoint!
     summary: >-
-      Action Button: Return
+      Action button: return.
 
 
       * \[ [API set: PowerPointApi
@@ -235,7 +235,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.actionButtonSound:member
     package: powerpoint!
     summary: >-
-      Action Button: Sound
+      Action button: sound.
 
 
       * \[ [API set: PowerPointApi
@@ -246,7 +246,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.arc:member
     package: powerpoint!
     summary: >-
-      Arc
+      Arc geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -257,7 +257,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.bentArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Bent
+      Arrow: bent.
 
 
       * \[ [API set: PowerPointApi
@@ -268,7 +268,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.bentUpArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Bent-Up
+      Arrow: bent-up.
 
 
       * \[ [API set: PowerPointApi
@@ -279,7 +279,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.bevel:member
     package: powerpoint!
     summary: >-
-      Rectangle: Beveled
+      Rectangle geometric shape: beveled.
 
 
       * \[ [API set: PowerPointApi
@@ -290,7 +290,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.blockArc:member
     package: powerpoint!
     summary: >-
-      Block Arc
+      Block arc geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -301,7 +301,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.borderCallout1:member
     package: powerpoint!
     summary: >-
-      Callout: Line
+      Callout: line.
 
 
       * \[ [API set: PowerPointApi
@@ -312,7 +312,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.borderCallout2:member
     package: powerpoint!
     summary: >-
-      Callout: Bent Line
+      Callout: bent line.
 
 
       * \[ [API set: PowerPointApi
@@ -323,7 +323,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.borderCallout3:member
     package: powerpoint!
     summary: >-
-      Callout: Double Bent Line
+      Callout: double bent line.
 
 
       * \[ [API set: PowerPointApi
@@ -334,7 +334,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.bracePair:member
     package: powerpoint!
     summary: >-
-      Double Brace
+      Double brace.
 
 
       * \[ [API set: PowerPointApi
@@ -345,7 +345,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.bracketPair:member
     package: powerpoint!
     summary: >-
-      Double Bracket
+      Double bracket.
 
 
       * \[ [API set: PowerPointApi
@@ -356,7 +356,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.callout1:member
     package: powerpoint!
     summary: >-
-      Callout: Line with No Border
+      Callout: line with no border.
 
 
       * \[ [API set: PowerPointApi
@@ -367,7 +367,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.callout2:member
     package: powerpoint!
     summary: >-
-      Callout: Bent Line with No Border
+      Callout: bent line with no border.
 
 
       * \[ [API set: PowerPointApi
@@ -378,7 +378,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.callout3:member
     package: powerpoint!
     summary: >-
-      Callout: Double Bent Line with No Border
+      Callout: double bent line with no border.
 
 
       * \[ [API set: PowerPointApi
@@ -389,7 +389,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.can:member
     package: powerpoint!
     summary: >-
-      Cylinder
+      Cylinder geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -400,7 +400,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.chartPlus:member
     package: powerpoint!
     summary: >-
-      A Rectangle Divided Vertically and Horizontally into Four Quarters.
+      A rectangle divided vertically and horizontally into four quarters.
 
 
       * \[ [API set: PowerPointApi
@@ -411,8 +411,8 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.chartStar:member
     package: powerpoint!
     summary: >-
-      A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal
-      Lines.
+      A rectangle divided into six parts along a vertical line and diagonal
+      lines.
 
 
       * \[ [API set: PowerPointApi
@@ -423,7 +423,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.chartX:member
     package: powerpoint!
     summary: >-
-      A Rectangle Divided into Four Parts Along Diagonal Lines.
+      A rectangle divided into four parts along diagonal lines.
 
 
       * \[ [API set: PowerPointApi
@@ -434,7 +434,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.chevron:member
     package: powerpoint!
     summary: >-
-      Arrow: Chevron
+      Arrow: chevron.
 
 
       * \[ [API set: PowerPointApi
@@ -445,7 +445,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.chord:member
     package: powerpoint!
     summary: >-
-      Chord
+      Chord geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -456,7 +456,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.circularArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Circular
+      Arrow: circular.
 
 
       * \[ [API set: PowerPointApi
@@ -467,7 +467,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.cloud:member
     package: powerpoint!
     summary: >-
-      Cloud
+      Cloud.
 
 
       * \[ [API set: PowerPointApi
@@ -478,7 +478,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.cloudCallout:member
     package: powerpoint!
     summary: >-
-      Thought Bubble: Cloud
+      Thought bubble: cloud.
 
 
       * \[ [API set: PowerPointApi
@@ -489,7 +489,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.corner:member
     package: powerpoint!
     summary: >-
-      L-Shape
+      L-shape geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -500,7 +500,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.cornerTabs:member
     package: powerpoint!
     summary: >-
-      Four Right Triangles that Define a Rectangular Shape
+      Four right triangles that define a rectangular shape.
 
 
       * \[ [API set: PowerPointApi
@@ -511,7 +511,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.cube:member
     package: powerpoint!
     summary: >-
-      Cube
+      Cube geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -522,7 +522,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedDownArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Curved Down
+      Arrow: curved down.
 
 
       * \[ [API set: PowerPointApi
@@ -533,7 +533,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedLeftArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Curved Left
+      Arrow: curved left.
 
 
       * \[ [API set: PowerPointApi
@@ -544,7 +544,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedRightArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Curved Right
+      Arrow: curved right.
 
 
       * \[ [API set: PowerPointApi
@@ -555,7 +555,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.curvedUpArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Curved Up
+      Arrow: curved up.
 
 
       * \[ [API set: PowerPointApi
@@ -566,7 +566,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.decagon:member
     package: powerpoint!
     summary: >-
-      Decagon
+      Decagon geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -577,7 +577,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.diagonalStripe:member
     package: powerpoint!
     summary: >-
-      Diagonal Stripe
+      Diagonal stripe geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -588,7 +588,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.diamond:member
     package: powerpoint!
     summary: >-
-      Diamond
+      Diamond geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -599,7 +599,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.dodecagon:member
     package: powerpoint!
     summary: >-
-      Dodecagon
+      Dodecagon geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -610,7 +610,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.donut:member
     package: powerpoint!
     summary: >-
-      Circle: Hollow
+      Circle geometric shape: hollow.
 
 
       * \[ [API set: PowerPointApi
@@ -621,7 +621,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.doubleWave:member
     package: powerpoint!
     summary: >-
-      Double Wave
+      Double wave geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -632,7 +632,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.downArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Down
+      Arrow: down.
 
 
       * \[ [API set: PowerPointApi
@@ -643,7 +643,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.downArrowCallout:member
     package: powerpoint!
     summary: >-
-      Callout: Down Arrow
+      Callout: down arrow.
 
 
       * \[ [API set: PowerPointApi
@@ -654,7 +654,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.ellipse:member
     package: powerpoint!
     summary: >-
-      Oval
+      Oval geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -665,7 +665,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon:member
     package: powerpoint!
     summary: >-
-      Ribbon: Curved and Tilted Down
+      Ribbon: curved and tilted down.
 
 
       * \[ [API set: PowerPointApi
@@ -676,7 +676,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon2:member
     package: powerpoint!
     summary: >-
-      Ribbon: Curved and Tilted Up
+      Ribbon: curved and tilted up.
 
 
       * \[ [API set: PowerPointApi
@@ -687,7 +687,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartAlternateProcess:member
     package: powerpoint!
     summary: >-
-      Flowchart: Alternate Process
+      Flowchart: alternate process.
 
 
       * \[ [API set: PowerPointApi
@@ -698,7 +698,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartCollate:member
     package: powerpoint!
     summary: >-
-      Flowchart: Collate
+      Flowchart: collate.
 
 
       * \[ [API set: PowerPointApi
@@ -709,7 +709,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartConnector:member
     package: powerpoint!
     summary: >-
-      Flowchart: Connector
+      Flowchart: connector.
 
 
       * \[ [API set: PowerPointApi
@@ -720,7 +720,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDecision:member
     package: powerpoint!
     summary: >-
-      Flowchart: Decision
+      Flowchart: decision.
 
 
       * \[ [API set: PowerPointApi
@@ -731,7 +731,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDelay:member
     package: powerpoint!
     summary: >-
-      Flowchart: Delay
+      Flowchart: delay.
 
 
       * \[ [API set: PowerPointApi
@@ -742,7 +742,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDisplay:member
     package: powerpoint!
     summary: >-
-      Flowchart: Display
+      Flowchart: display.
 
 
       * \[ [API set: PowerPointApi
@@ -753,7 +753,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartDocument:member
     package: powerpoint!
     summary: >-
-      Flowchart: Document
+      Flowchart: document.
 
 
       * \[ [API set: PowerPointApi
@@ -764,7 +764,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartExtract:member
     package: powerpoint!
     summary: >-
-      Flowchart: Extract
+      Flowchart: extract.
 
 
       * \[ [API set: PowerPointApi
@@ -775,7 +775,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartInputOutput:member
     package: powerpoint!
     summary: >-
-      Flowchart: Data
+      Flowchart: data.
 
 
       * \[ [API set: PowerPointApi
@@ -786,7 +786,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartInternalStorage:member
     package: powerpoint!
     summary: >-
-      Flowchart: Internal Storage
+      Flowchart: internal storage.
 
 
       * \[ [API set: PowerPointApi
@@ -797,7 +797,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDisk:member
     package: powerpoint!
     summary: >-
-      Flowchart: Magnetic Disk
+      Flowchart: magnetic disk.
 
 
       * \[ [API set: PowerPointApi
@@ -808,7 +808,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDrum:member
     package: powerpoint!
     summary: >-
-      Flowchart: Direct Access Storage
+      Flowchart: direct access storage.
 
 
       * \[ [API set: PowerPointApi
@@ -819,7 +819,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticTape:member
     package: powerpoint!
     summary: >-
-      Flowchart: Sequential Access Storage
+      Flowchart: sequential access storage.
 
 
       * \[ [API set: PowerPointApi
@@ -830,7 +830,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartManualInput:member
     package: powerpoint!
     summary: >-
-      Flowchart: Manual Input
+      Flowchart: manual input.
 
 
       * \[ [API set: PowerPointApi
@@ -841,7 +841,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartManualOperation:member
     package: powerpoint!
     summary: >-
-      Flowchart: Manual Operation
+      Flowchart: manual operation.
 
 
       * \[ [API set: PowerPointApi
@@ -852,7 +852,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMerge:member
     package: powerpoint!
     summary: >-
-      Flowchart: Merge
+      Flowchart: merge.
 
 
       * \[ [API set: PowerPointApi
@@ -863,7 +863,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartMultidocument:member
     package: powerpoint!
     summary: >-
-      Flowchart: Multidocument
+      Flowchart: multidocument.
 
 
       * \[ [API set: PowerPointApi
@@ -874,7 +874,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOfflineStorage:member
     package: powerpoint!
     summary: >-
-      FlowChart: Offline Storage
+      Flowchart: offline storage.
 
 
       * \[ [API set: PowerPointApi
@@ -885,7 +885,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOffpageConnector:member
     package: powerpoint!
     summary: >-
-      Flowchart: Off-page Connector
+      Flowchart: off-page connector.
 
 
       * \[ [API set: PowerPointApi
@@ -896,7 +896,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOnlineStorage:member
     package: powerpoint!
     summary: >-
-      Flowchart: Stored Data
+      Flowchart: stored data.
 
 
       * \[ [API set: PowerPointApi
@@ -907,7 +907,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartOr:member
     package: powerpoint!
     summary: >-
-      Flowchart: Or
+      Flowchart: or.
 
 
       * \[ [API set: PowerPointApi
@@ -918,7 +918,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPredefinedProcess:member
     package: powerpoint!
     summary: >-
-      Flowchart: Predefined Process
+      Flowchart: predefined process.
 
 
       * \[ [API set: PowerPointApi
@@ -929,7 +929,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPreparation:member
     package: powerpoint!
     summary: >-
-      Flowchart: Preparation
+      Flowchart: preparation.
 
 
       * \[ [API set: PowerPointApi
@@ -940,7 +940,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartProcess:member
     package: powerpoint!
     summary: >-
-      Flowchart: Process
+      Flowchart: process.
 
 
       * \[ [API set: PowerPointApi
@@ -951,7 +951,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedCard:member
     package: powerpoint!
     summary: >-
-      Flowchart: Card
+      Flowchart: card.
 
 
       * \[ [API set: PowerPointApi
@@ -962,7 +962,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedTape:member
     package: powerpoint!
     summary: >-
-      Flowchart: Punched Tape
+      Flowchart: punched tape.
 
 
       * \[ [API set: PowerPointApi
@@ -973,7 +973,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartSort:member
     package: powerpoint!
     summary: >-
-      Flowchart: Sort
+      Flowchart: sort.
 
 
       * \[ [API set: PowerPointApi
@@ -984,7 +984,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartSummingJunction:member
     package: powerpoint!
     summary: >-
-      Flowchart: Summing Junction
+      Flowchart: summing junction.
 
 
       * \[ [API set: PowerPointApi
@@ -995,7 +995,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.flowChartTerminator:member
     package: powerpoint!
     summary: >-
-      Flowchart: Terminator
+      Flowchart: terminator.
 
 
       * \[ [API set: PowerPointApi
@@ -1006,7 +1006,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.foldedCorner:member
     package: powerpoint!
     summary: >-
-      Rectangle: Folded Corner
+      Rectangle geometric shape: folded corner.
 
 
       * \[ [API set: PowerPointApi
@@ -1017,7 +1017,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.frame:member
     package: powerpoint!
     summary: >-
-      Frame
+      Frame geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1028,7 +1028,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.funnel:member
     package: powerpoint!
     summary: >-
-      Funnel
+      Funnel geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1039,7 +1039,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.gear6:member
     package: powerpoint!
     summary: >-
-      Gear: A Gear with Six Teeth
+      Gear: a gear with six teeth.
 
 
       * \[ [API set: PowerPointApi
@@ -1050,7 +1050,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.gear9:member
     package: powerpoint!
     summary: >-
-      Gear: A Gear with Nine Teeth
+      Gear: a gear with nine teeth.
 
 
       * \[ [API set: PowerPointApi
@@ -1061,7 +1061,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.halfFrame:member
     package: powerpoint!
     summary: >-
-      Half Frame
+      Half frame geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1072,7 +1072,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.heart:member
     package: powerpoint!
     summary: >-
-      Heart
+      Heart geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1083,7 +1083,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.heptagon:member
     package: powerpoint!
     summary: >-
-      Heptagon
+      Heptagon geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1094,7 +1094,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.hexagon:member
     package: powerpoint!
     summary: >-
-      Hexagon
+      Hexagon geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1105,7 +1105,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.homePlate:member
     package: powerpoint!
     summary: >-
-      Arrow: Pentagon
+      Arrow: pentagon.
 
 
       * \[ [API set: PowerPointApi
@@ -1116,7 +1116,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.horizontalScroll:member
     package: powerpoint!
     summary: >-
-      Scroll: Horizontal
+      Scroll: horizontal.
 
 
       * \[ [API set: PowerPointApi
@@ -1127,7 +1127,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.irregularSeal1:member
     package: powerpoint!
     summary: >-
-      Explosion: 8 Points
+      Explosion: 8 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1138,7 +1138,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.irregularSeal2:member
     package: powerpoint!
     summary: >-
-      Explosion: 14 Points
+      Explosion: 14 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1149,7 +1149,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Left
+      Arrow: left.
 
 
       * \[ [API set: PowerPointApi
@@ -1160,7 +1160,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftArrowCallout:member
     package: powerpoint!
     summary: >-
-      Callout: Left Arrow
+      Callout: left arrow.
 
 
       * \[ [API set: PowerPointApi
@@ -1171,7 +1171,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftBrace:member
     package: powerpoint!
     summary: >-
-      Left Brace
+      Left brace.
 
 
       * \[ [API set: PowerPointApi
@@ -1182,7 +1182,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftBracket:member
     package: powerpoint!
     summary: >-
-      Left Bracket
+      Left bracket.
 
 
       * \[ [API set: PowerPointApi
@@ -1193,7 +1193,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftCircularArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Circular with Opposite Arrow Direction
+      Arrow: circular with opposite arrow direction.
 
 
       * \[ [API set: PowerPointApi
@@ -1204,7 +1204,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Left-Right
+      Arrow: left-right.
 
 
       * \[ [API set: PowerPointApi
@@ -1215,7 +1215,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightArrowCallout:member
     package: powerpoint!
     summary: >-
-      Callout: Left-Right Arrow
+      Callout: left-right arrow.
 
 
       * \[ [API set: PowerPointApi
@@ -1226,7 +1226,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightCircularArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Circular with Two Arrows in Both Directions
+      Arrow: circular with two arrows in both directions.
 
 
       * \[ [API set: PowerPointApi
@@ -1237,7 +1237,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightRibbon:member
     package: powerpoint!
     summary: >-
-      Ribbon: Straight with Both Left and Right Arrows
+      Ribbon: straight with both left and right arrows.
 
 
       * \[ [API set: PowerPointApi
@@ -1248,7 +1248,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftRightUpArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Left-Right-Up
+      Arrow: left-right-up.
 
 
       * \[ [API set: PowerPointApi
@@ -1259,7 +1259,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.leftUpArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Left-Up
+      Arrow: left-up.
 
 
       * \[ [API set: PowerPointApi
@@ -1270,7 +1270,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.lightningBolt:member
     package: powerpoint!
     summary: >-
-      Lightning Bolt
+      Lightning bolt.
 
 
       * \[ [API set: PowerPointApi
@@ -1281,7 +1281,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.lineInverse:member
     package: powerpoint!
     summary: >-
-      Straight Line from Top-Right Corner to Bottom-Left Corner of the Shape
+      Straight line from top-right corner to bottom-left corner of the shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1292,7 +1292,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.mathDivide:member
     package: powerpoint!
     summary: >-
-      Division Sign
+      Division sign.
 
 
       * \[ [API set: PowerPointApi
@@ -1303,7 +1303,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.mathEqual:member
     package: powerpoint!
     summary: >-
-      Equals
+      Equals.
 
 
       * \[ [API set: PowerPointApi
@@ -1314,7 +1314,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.mathMinus:member
     package: powerpoint!
     summary: >-
-      Minus Sign
+      Minus sign.
 
 
       * \[ [API set: PowerPointApi
@@ -1325,7 +1325,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.mathMultiply:member
     package: powerpoint!
     summary: >-
-      Multiplication Sign
+      Multiplication sign.
 
 
       * \[ [API set: PowerPointApi
@@ -1336,7 +1336,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.mathNotEqual:member
     package: powerpoint!
     summary: >-
-      Not Equal
+      Not equal.
 
 
       * \[ [API set: PowerPointApi
@@ -1347,7 +1347,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.mathPlus:member
     package: powerpoint!
     summary: >-
-      Plus Sign
+      Plus sign.
 
 
       * \[ [API set: PowerPointApi
@@ -1358,7 +1358,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.moon:member
     package: powerpoint!
     summary: >-
-      Moon
+      Moon geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1369,7 +1369,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.nonIsoscelesTrapezoid:member
     package: powerpoint!
     summary: >-
-      Trapezoid which may have Non-Equal Sides
+      Trapezoid geometric shape which may have non-equal sides.
 
 
       * \[ [API set: PowerPointApi
@@ -1380,7 +1380,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.noSmoking:member
     package: powerpoint!
     summary: >-
-      "Not Allowed" Symbol
+      "Not allowed" symbol.
 
 
       * \[ [API set: PowerPointApi
@@ -1391,7 +1391,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.notchedRightArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Notched Right
+      Arrow: notched right.
 
 
       * \[ [API set: PowerPointApi
@@ -1402,7 +1402,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.octagon:member
     package: powerpoint!
     summary: >-
-      Octagon
+      Octagon geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1413,7 +1413,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.parallelogram:member
     package: powerpoint!
     summary: >-
-      Parallelogram
+      Parallelogram geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1424,7 +1424,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.pentagon:member
     package: powerpoint!
     summary: >-
-      Pentagon
+      Pentagon geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1435,7 +1435,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.pie:member
     package: powerpoint!
     summary: >-
-      Partial Circle with Adjustable Spanning Area
+      Partial circle geometric shape with adjustable spanning area.
 
 
       * \[ [API set: PowerPointApi
@@ -1446,7 +1446,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.pieWedge:member
     package: powerpoint!
     summary: >-
-      Partial Circle
+      Partial circle geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1457,7 +1457,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.plaque:member
     package: powerpoint!
     summary: >-
-      Plaque
+      Plaque geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1468,7 +1468,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.plaqueTabs:member
     package: powerpoint!
     summary: >-
-      Four Quarter Circles that Define a Rectangular Shape.
+      Four quarter circles that define a rectangular shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1479,7 +1479,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.plus:member
     package: powerpoint!
     summary: >-
-      Cross
+      Cross geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1490,7 +1490,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.quadArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Quad
+      Arrow: quad.
 
 
       * \[ [API set: PowerPointApi
@@ -1501,7 +1501,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.quadArrowCallout:member
     package: powerpoint!
     summary: >-
-      Callout: Quad Arrow
+      Callout: quad arrow.
 
 
       * \[ [API set: PowerPointApi
@@ -1512,7 +1512,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.rectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle
+      Rectangle geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1523,7 +1523,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.ribbon:member
     package: powerpoint!
     summary: >-
-      Ribbon: Tilted Down
+      Ribbon: tilted down.
 
 
       * \[ [API set: PowerPointApi
@@ -1534,7 +1534,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.ribbon2:member
     package: powerpoint!
     summary: >-
-      Ribbon: Tilted Up
+      Ribbon: tilted up.
 
 
       * \[ [API set: PowerPointApi
@@ -1545,7 +1545,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.rightArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Right
+      Arrow: right.
 
 
       * \[ [API set: PowerPointApi
@@ -1556,7 +1556,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.rightArrowCallout:member
     package: powerpoint!
     summary: >-
-      Callout: Right Arrow
+      Callout: right arrow.
 
 
       * \[ [API set: PowerPointApi
@@ -1567,7 +1567,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.rightBrace:member
     package: powerpoint!
     summary: >-
-      Right Brace
+      Right brace.
 
 
       * \[ [API set: PowerPointApi
@@ -1578,7 +1578,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.rightBracket:member
     package: powerpoint!
     summary: >-
-      Right Bracket
+      Right bracket.
 
 
       * \[ [API set: PowerPointApi
@@ -1589,7 +1589,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.rightTriangle:member
     package: powerpoint!
     summary: >-
-      Right Triangle
+      Right triangle geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1600,7 +1600,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.round1Rectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Single Corner Rounded
+      Rectangle geometric shape: single corner rounded.
 
 
       * \[ [API set: PowerPointApi
@@ -1611,7 +1611,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.round2DiagonalRectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Diagonal Corners Rounded
+      Rectangle geometric shape: diagonal corners rounded.
 
 
       * \[ [API set: PowerPointApi
@@ -1622,7 +1622,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.round2SameRectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Top Corners Rounded
+      Rectangle geometric shape: top corners rounded.
 
 
       * \[ [API set: PowerPointApi
@@ -1633,7 +1633,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.roundRectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Rounded Corners
+      Rectangle geometric shape: rounded corners.
 
 
       * \[ [API set: PowerPointApi
@@ -1644,7 +1644,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.smileyFace:member
     package: powerpoint!
     summary: >-
-      Smiley Face
+      Smiley face.
 
 
       * \[ [API set: PowerPointApi
@@ -1655,7 +1655,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.snip1Rectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Single Corner Snipped
+      Rectangle geometric shape: single corner snipped.
 
 
       * \[ [API set: PowerPointApi
@@ -1666,7 +1666,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.snip2DiagonalRectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Diagonal Corners Snipped
+      Rectangle geometric shape: diagonal corners snipped.
 
 
       * \[ [API set: PowerPointApi
@@ -1677,7 +1677,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.snip2SameRectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Top Corners Snipped
+      Rectangle geometric shape: top corners snipped.
 
 
       * \[ [API set: PowerPointApi
@@ -1688,7 +1688,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.snipRoundRectangle:member
     package: powerpoint!
     summary: >-
-      Rectangle: Top Corners One Rounded and One Snipped
+      Rectangle geometric shape: top corners one rounded and one snipped.
 
 
       * \[ [API set: PowerPointApi
@@ -1699,7 +1699,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.squareTabs:member
     package: powerpoint!
     summary: >-
-      Four Small Squares that Define a Rectangular Shape.
+      Four small squares that define a rectangular shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1710,7 +1710,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star10:member
     package: powerpoint!
     summary: >-
-      Star: 10 Points
+      Star: 10 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1721,7 +1721,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star12:member
     package: powerpoint!
     summary: >-
-      Star: 12 Points
+      Star: 12 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1732,7 +1732,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star16:member
     package: powerpoint!
     summary: >-
-      Star: 16 Points
+      Star: 16 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1743,7 +1743,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star24:member
     package: powerpoint!
     summary: >-
-      Star: 24 Points
+      Star: 24 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1754,7 +1754,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star32:member
     package: powerpoint!
     summary: >-
-      Star: 32 Points
+      Star: 32 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1765,7 +1765,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star4:member
     package: powerpoint!
     summary: >-
-      Star: 4 Points
+      Star: 4 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1776,7 +1776,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star5:member
     package: powerpoint!
     summary: >-
-      Star: 5 Points
+      Star: 5 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1787,7 +1787,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star6:member
     package: powerpoint!
     summary: >-
-      Star: 6 Points
+      Star: 6 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1798,7 +1798,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star7:member
     package: powerpoint!
     summary: >-
-      Star: 7 Points
+      Star: 7 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1809,7 +1809,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.star8:member
     package: powerpoint!
     summary: >-
-      Star: 8 Points
+      Star: 8 points.
 
 
       * \[ [API set: PowerPointApi
@@ -1820,7 +1820,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.stripedRightArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Striped Right
+      Arrow: striped right.
 
 
       * \[ [API set: PowerPointApi
@@ -1831,7 +1831,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.sun:member
     package: powerpoint!
     summary: >-
-      Sun
+      Sun.
 
 
       * \[ [API set: PowerPointApi
@@ -1842,7 +1842,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.swooshArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Curved Right Arrow with Varying Width
+      Arrow: curved right arrow with varying width.
 
 
       * \[ [API set: PowerPointApi
@@ -1853,7 +1853,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.teardrop:member
     package: powerpoint!
     summary: >-
-      Teardrop
+      Teardrop geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1864,7 +1864,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.trapezoid:member
     package: powerpoint!
     summary: >-
-      Trapezoid
+      Trapezoid geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1875,7 +1875,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.triangle:member
     package: powerpoint!
     summary: >-
-      Isosceles Triangle
+      Isosceles triangle geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1886,7 +1886,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.upArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Up
+      Arrow: up.
 
 
       * \[ [API set: PowerPointApi
@@ -1897,7 +1897,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.upArrowCallout:member
     package: powerpoint!
     summary: >-
-      Callout: Up Arrow
+      Callout: up arrow.
 
 
       * \[ [API set: PowerPointApi
@@ -1908,7 +1908,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.upDownArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: Up-Down
+      Arrow: up-down.
 
 
       * \[ [API set: PowerPointApi
@@ -1919,7 +1919,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.upDownArrowCallout:member
     package: powerpoint!
     summary: >-
-      Callout: Up-Down Arrow
+      Callout: up-down arrow.
 
 
       * \[ [API set: PowerPointApi
@@ -1930,7 +1930,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.uturnArrow:member
     package: powerpoint!
     summary: >-
-      Arrow: U-Turn
+      Arrow: U-turn.
 
 
       * \[ [API set: PowerPointApi
@@ -1941,7 +1941,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.verticalScroll:member
     package: powerpoint!
     summary: >-
-      Scroll: Vertical
+      Scroll: vertical.
 
 
       * \[ [API set: PowerPointApi
@@ -1952,7 +1952,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.wave:member
     package: powerpoint!
     summary: >-
-      Wave
+      Wave geometric shape.
 
 
       * \[ [API set: PowerPointApi
@@ -1963,7 +1963,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.wedgeEllipseCallout:member
     package: powerpoint!
     summary: >-
-      Speech Bubble: Oval
+      Speech bubble: oval.
 
 
       * \[ [API set: PowerPointApi
@@ -1974,7 +1974,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.wedgeRectCallout:member
     package: powerpoint!
     summary: >-
-      Speech Bubble: Rectangle
+      Speech bubble: rectangle.
 
 
       * \[ [API set: PowerPointApi
@@ -1985,7 +1985,7 @@ fields:
     uid: powerpoint!PowerPoint.GeometricShapeType.wedgeRRectCallout:member
     package: powerpoint!
     summary: >-
-      Speech Bubble: Rectangle with Corners Rounded
+      Speech bubble: rectangle with corners rounded.
 
 
       * \[ [API set: PowerPointApi

@@ -1,0 +1,208 @@
+### YamlMime:TSType
+name: Office.MessageForm
+uid: outlook!Office.MessageForm:interface
+package: outlook!
+fullName: Office.MessageForm
+summary: Represents the details of the form for composing a new message.
+remarks: >-
+  \[ [API set: Mailbox
+  1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attachments
+    uid: outlook!Office.MessageForm#attachments:member
+    package: outlook!
+    fullName: attachments
+    summary: >-
+      Sets the attachments of the message. An attachment must be a file
+      attachment (`Office.MailboxEnums.AttachmentType.File`<!-- -->) or an
+      Outlook item attachment (`Office.MailboxEnums.AttachmentType.Item`<!--
+      -->).
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attachments?: MessageFormAttachment[];'
+      return:
+        type: <xref uid="outlook!Office.MessageFormAttachment:interface" />[]
+  - name: bccRecipients
+    uid: outlook!Office.MessageForm#bccRecipients:member
+    package: outlook!
+    fullName: bccRecipients
+    summary: Sets the recipients in the Bcc field of the message.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
+      **Important**: The `bccRecipients` array is limited to a maximum of
+      100 recipients.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bccRecipients?: string[] | EmailAddressDetails[];'
+      return:
+        type: >-
+          string[] | <xref uid="outlook!Office.EmailAddressDetails:interface"
+          />[]
+  - name: ccRecipients
+    uid: outlook!Office.MessageForm#ccRecipients:member
+    package: outlook!
+    fullName: ccRecipients
+    summary: Sets the recipients in the Cc field of the message.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
+      **Important**: The `ccRecipients` array is limited to a maximum of 100
+      recipients.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ccRecipients?: string[] | EmailAddressDetails[];'
+      return:
+        type: >-
+          string[] | <xref uid="outlook!Office.EmailAddressDetails:interface"
+          />[]
+  - name: htmlBody
+    uid: outlook!Office.MessageForm#htmlBody:member
+    package: outlook!
+    fullName: htmlBody
+    summary: Sets the body of the message.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
+      **Important**: The body content is limited to a maximum size of 32 KB.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'htmlBody?: string;'
+      return:
+        type: string
+  - name: subject
+    uid: outlook!Office.MessageForm#subject:member
+    package: outlook!
+    fullName: subject
+    summary: Sets the subject of the message.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
+      **Important**: The subject is limited to a maximum of 255 characters.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: string;'
+      return:
+        type: string
+  - name: toRecipients
+    uid: outlook!Office.MessageForm#toRecipients:member
+    package: outlook!
+    fullName: toRecipients
+    summary: Sets the recipients in the To field of the message.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
+      **Important**: The `toRecipients` array is limited to a maximum of 100
+      recipients.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toRecipients?: string[] | EmailAddressDetails[];'
+      return:
+        type: >-
+          string[] | <xref uid="outlook!Office.EmailAddressDetails:interface"
+          />[]

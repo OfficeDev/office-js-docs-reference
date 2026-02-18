@@ -9,7 +9,14 @@
 ||[location](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-location-member)|Gets or sets the location of an appointment.|
 ||[removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-removeattachmentasync-member(1))|Removes an attachment from a message or appointment.|
 ||[removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-removeattachmentasync-member(1))|Removes an attachment from a message or appointment.|
-|[AppointmentForm](/javascript/api/outlook/office.appointmentform)|[body](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-body-member)|Gets an object that provides methods for manipulating the body of an item.|
+|[AppointmentForm](/javascript/api/outlook/office.appointmentform)|[body](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-body-member)|Sets the body of the appointment.|
+||[end](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-end-member)|Sets the date and time that the appointment is to end.|
+||[location](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-location-member)|Sets the location of the appointment.|
+||[optionalAttendees](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-optionalattendees-member)|Sets the optional attendees of the appointment.|
+||[requiredAttendees](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-requiredattendees-member)|Sets the required attendees of the appointment.|
+||[resources](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-resources-member)|Sets the resources of the appointment.|
+||[start](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-start-member)|Sets the date and time that the appointment is to begin.|
+||[subject](/javascript/api/outlook/office.appointmentform#outlook-office-appointmentform-subject-member)|Sets the description that appears in the Title field of the appointment.|
 |[AppointmentRead](/javascript/api/outlook/office.appointmentread)|[body](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-body-member)|Gets an object that provides methods for manipulating the body of an item.|
 ||[dateTimeModified](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-datetimemodified-member)|Gets the date and time that an item was last modified.|
 ||[displayReplyAllForm(formData: string \| ReplyFormData)](/javascript/api/outlook/office.appointmentread#outlook-office-appointmentread-displayreplyallform-member(1))|Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the|
@@ -83,6 +90,15 @@
 ||[getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<EmailAddressDetails[]\>) =\> void)](/javascript/api/outlook/office.recipients#outlook-office-recipients-getasync-member(1))|Gets a recipient list for an appointment or message.|
 ||[setAsync(recipients: Array\<string \| EmailUser \| EmailAddressDetails\>, callback: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))|Sets a recipient list for an appointment or message.|
 ||[setAsync(recipients: Array\<string \| EmailUser \| EmailAddressDetails\>, options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.recipients#outlook-office-recipients-setasync-member(1))|Sets a recipient list for an appointment or message.|
+|[ReplyFormAttachment](/javascript/api/outlook/office.replyformattachment)|[inLine](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-inline-member)|If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.|
+||[itemId](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-itemid-member)|The EWS item ID of the attachment.|
+||[name](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-name-member)|A string that contains the name of the attachment, up to 255 characters in length.|
+||[type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)|Indicates the type of attachment.|
+||[url](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-url-member)|The URI of the location for the file.|
+|[ReplyFormData](/javascript/api/outlook/office.replyformdata)|[attachments](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-attachments-member)|An array of ReplyFormAttachment that are Base64-encoded files, Exchange items, or file attachments.|
+||[callback](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-callback-member)|When the reply display call completes, the function passed in the callback parameter is called with a single parameter,|
+||[htmlBody](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-htmlbody-member)|A string that contains text and HTML and that represents the body of the reply form.|
+||[options](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-options-member)|An object literal that contains the `asyncContext` property.|
 |[RoamingSettings](/javascript/api/outlook/office.roamingsettings)|[get(name: string)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-get-member(1))|Retrieves the specified setting.|
 ||[remove(name: string)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-remove-member(1))|Removes the specified setting.|
 ||[saveAsync(callback?: (asyncResult: Office.AsyncResult\<void\>) =\> void)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-saveasync-member(1))|Saves the settings.|
