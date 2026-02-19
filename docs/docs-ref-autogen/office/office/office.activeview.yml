@@ -12,7 +12,7 @@ remarks: |-
   ```TypeScript
   // Get whether the current view is edit or read.
   Office.context.document.getActiveViewAsync(function (asyncResult) {
-      if (asyncResult.status == "failed") {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
           showMessage("Action failed with error: " + asyncResult.error.message);
       } else {
           const activeView : Office.ActiveView = asyncResult.value;

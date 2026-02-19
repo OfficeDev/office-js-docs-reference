@@ -39,8 +39,8 @@ properties:
               });
           }
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
   - name: rowCount
@@ -68,8 +68,8 @@ properties:
               });
           }
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
 extends: <xref uid="office!Office.Binding:interface" />

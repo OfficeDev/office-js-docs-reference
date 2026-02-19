@@ -197,7 +197,7 @@ methods:
       Office.actions.replaceShortcuts(customShortcuts)
           .then(() => { console.log("Keyboard shortcuts successfully registered."); })
           .catch((error) => {
-              if (error.code == "InvalidOperation") {
+              if (error.code === "InvalidOperation") {
                   console.log("ActionId does not exist or shortcut combination is invalid.");
               }
       });

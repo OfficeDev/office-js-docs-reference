@@ -41,8 +41,8 @@ properties:
           }
 
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
   - name: id
@@ -72,8 +72,8 @@ properties:
               });
           }
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
   - name: namespaceManager
@@ -196,7 +196,7 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
+      function write(message) {
           document.getElementById('message').innerText += message;
       }
 
@@ -219,7 +219,7 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
+      function write(message) {
           document.getElementById('message').innerText += message;
       }
 
@@ -242,7 +242,7 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
+      function write(message) {
           document.getElementById('message').innerText += message;
       }
 
@@ -344,8 +344,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -441,8 +441,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -534,8 +534,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```

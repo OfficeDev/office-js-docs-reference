@@ -156,8 +156,8 @@ properties:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -266,8 +266,8 @@ properties:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -715,7 +715,7 @@ properties:
       Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) =>
       {
           // If the catalog is enabled, get all available sensitivity labels.
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value === true) {
               Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
                   if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                       const catalog = asyncResult.value;
