@@ -124,7 +124,7 @@ Office.ActiveView:enum:
   - |-
     // Get whether the current view is edit or read.
     Office.context.document.getActiveViewAsync(function (asyncResult) {
-        if (asyncResult.status === "failed") {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
             showMessage("Action failed with error: " + asyncResult.error.message);
         } else {
             const activeView : Office.ActiveView = asyncResult.value;
@@ -804,7 +804,7 @@ Office.Binding#getDataAsync:member(2):
               rowCount: 1, 
               columnCount: 1 },  
             function (result) { 
-                if (result.status === 'succeeded') {
+                if (result.status === Office.AsyncResultStatus.Succeeded) {
                     write("Image to find: " + result.value.rows[0][0]); 
                 } 
                 else {
@@ -828,11 +828,12 @@ Office.Binding#getDataAsync:member(2):
               rowCount: 1, 
               columnCount: 1 },  
             function (result) { 
-                if (result.status === 'succeeded') {
+                if (result.status === Office.AsyncResultStatus.Succeeded) {
                     write("Image to find: " + result.value[1][0]); 
                 } 
-                else
-                    write(result.error.message); 
+                else {
+                    write(result.error.message);
+                }
         }); 
     }
     // Function that writes to a div with id='message' on the page.
@@ -867,7 +868,7 @@ Office.Binding#setDataAsync:member(2):
     function writeHtmlData() {
         Office.select("bindings#myBinding").setDataAsync(
             "<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 write('Error: ' + asyncResult.error.message);
             }
         });
@@ -884,7 +885,7 @@ Office.Binding#setDataAsync:member(2):
     function writeBoundDataMatrix() {
         Office.select("bindings#myBinding").setDataAsync(
             [['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 write('Error: ' + asyncResult.error.message);
             } else {
                 write('Bound data: ' + asyncResult.value);
@@ -958,7 +959,7 @@ Office.Bindings#addFromNamedItemAsync:member(1):
     function bindNamedItem() {
         Office.context.document.bindings.addFromNamedItemAsync(
             "myRange", "matrix", {id:'myMatrix'}, function (result) {
-            if (result.status === 'succeeded') {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
                 write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
                 }
             else
@@ -976,7 +977,7 @@ Office.Bindings#addFromNamedItemAsync:member(1):
     function bindNamedItem() {
         Office.context.document.bindings.addFromNamedItemAsync(
             "Table1", "table", {id:'myTable'}, function (result) {
-            if (result.status === 'succeeded') {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
                 write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
                 }
             else
@@ -2361,7 +2362,7 @@ Office.Document#getActiveViewAsync:member(2):
     function getFileView() {
         // Get whether the current view is edit or read.
         Office.context.document.getActiveViewAsync(function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 showMessage("Action failed with error: " + asyncResult.error.message);
             }
             else {
@@ -2376,7 +2377,7 @@ Office.Document#getFileAsync:member(1):
     function getDocumentAsCompressed() {
         Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
             function (result) {
-                if (result.status === "succeeded") {
+                if (result.status === Office.AsyncResultStatus.Succeeded) {
                     // If the getFileAsync call succeeded, then
                     // result.value will return a valid File Object.
                     const myFile = result.value;
@@ -2395,7 +2396,7 @@ Office.Document#getFileAsync:member(1):
 
     function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
         file.getSliceAsync(nextSlice, function (sliceResult) {
-            if (sliceResult.status === "succeeded") {
+            if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
                 if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
                     return;
                 }
@@ -2439,7 +2440,7 @@ Office.Document#getFileAsync:member(1):
     // The following example gets the document in PDF format.
     Office.context.document.getFileAsync(Office.FileType.Pdf,
         function(result) {
-            if (result.status === "succeeded") {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
                 const myFile = result.value;
                 const sliceCount = myFile.sliceCount;
                 app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
@@ -2520,7 +2521,7 @@ Office.Document#goToByIdAsync:member(2):
     function gotoBinding() {
         // Create a new table binding for the selected table.
         Office.context.document.bindings.addFromSelectionAsync("table",{ id: "MyTableBinding" }, function (asyncResult) {
-        if (asyncResult.status === "failed") {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   showMessage("Action failed with error: " + asyncResult.error.message);
               }
               else {
@@ -2530,7 +2531,7 @@ Office.Document#goToByIdAsync:member(2):
 
         // Go to binding by id.
         Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 showMessage("Action failed with error: " + asyncResult.error.message);
             }
             else {
@@ -2547,7 +2548,7 @@ Office.Document#goToByIdAsync:member(2):
     // 3. Display the value on the add-in's page.
     function goToTable() {
         Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 showMessage("Action failed with error: " + asyncResult.error.message);
             }
             else {
@@ -2568,7 +2569,7 @@ Office.Document#goToByIdAsync:member(2):
     function gotoSelectedSlide() {
         //Get currently selected slide's id
         Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 app.showNotification("Action failed with error: " + asyncResult.error.message);
             }
             else {
@@ -2578,7 +2579,7 @@ Office.Document#goToByIdAsync:member(2):
         });
         //Go to slide by id.
         Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 app.showNotification("Action failed with error: " + asyncResult.error.message);
             }
             else {
@@ -2600,7 +2601,7 @@ Office.Document#goToByIdAsync:member(2):
         const goToNext = Office.Index.Next;
 
         Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
-            if (asyncResult.status === "failed") {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 showMessage("Action failed with error: " + asyncResult.error.message);
             }
             else {
@@ -2849,7 +2850,7 @@ Office.Error#code:member:
     function setText() {
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
-                if (asyncResult.status === "failed") {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     const error = asyncResult.error;
                     write(error.name + ": " + error.code + " - " + error.message);
                 }
@@ -2866,7 +2867,7 @@ Office.Error#message:member:
     function setText() {
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
-                if (asyncResult.status === "failed") {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     const error = asyncResult.error;
                     write(error.name + ": " + error.message);
                 }
@@ -2883,7 +2884,7 @@ Office.Error#name:member:
     function setText() {
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
-                if (asyncResult.status === "failed") {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     const error = asyncResult.error;
                     write(error.name + ": " + error.message);
                 }
@@ -2901,7 +2902,7 @@ Office.FileType:enum:
     function getDocumentAsCompressed() {
         Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
             function (result) {
-                if (result.status === "succeeded") {
+                if (result.status === Office.AsyncResultStatus.Succeeded) {
                     // If the getFileAsync call succeeded, then
                     // result.value will return a valid File Object.
                     const myFile = result.value;
@@ -2920,7 +2921,7 @@ Office.FileType:enum:
 
     function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
         file.getSliceAsync(nextSlice, function (sliceResult) {
-            if (sliceResult.status === "succeeded") {
+            if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
                 if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
                     return;
                 }
