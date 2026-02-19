@@ -2,13 +2,14 @@ OfficeRuntime.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
-    const authContext = OfficeRuntime.auth;
-    const accessToken = await authContext.getAccessToken();
+    const auth = OfficeRuntime.auth;
+    const accessToken = await auth.getAccessToken();
 OfficeRuntime.Auth#getAccessToken:member(1):
   - |-
     async function getUserData() {
       try {
-          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+          const auth = OfficeRuntime.auth;
+          let userTokenEncoded = await auth.getAccessToken();
           let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
           console.log(userToken.name); // user name
           console.log(userToken.preferred_username); // email

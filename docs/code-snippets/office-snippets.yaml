@@ -582,7 +582,8 @@ Office.Auth:interface:
     // Get the auth context object and use it to get an
     // access token.
     try {
-        const accessToken = await Office.auth.getAccessToken({
+        const auth = Office.auth;
+        const accessToken = await auth.getAccessToken({
               allowSignInPrompt: true,
               allowConsentPrompt: true,
               forMSGraphAccess: true,
@@ -602,7 +603,8 @@ Office.Auth#getAuthContext:member(1):
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
-        const accessToken = await Office.auth.getAccessToken({
+        const auth = Office.auth;
+        const accessToken = await auth.getAccessToken({
             allowSignInPrompt: true,
             allowConsentPrompt: true,
             forMSGraphAccess: true,

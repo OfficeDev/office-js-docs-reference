@@ -16,7 +16,8 @@ remarks: |-
   // Get the auth context object and use it to get an
   // access token.
   try {
-      const accessToken = await Office.auth.getAccessToken({
+      const auth = Office.auth;
+      const accessToken = await auth.getAccessToken({
             allowSignInPrompt: true,
             allowConsentPrompt: true,
             forMSGraphAccess: true,
@@ -89,7 +90,8 @@ methods:
       ```TypeScript
 
       try{
-          const accessToken = await Office.auth.getAccessToken({
+          const auth = Office.auth;
+          const accessToken = await auth.getAccessToken({
               allowSignInPrompt: true,
               allowConsentPrompt: true,
               forMSGraphAccess: true,

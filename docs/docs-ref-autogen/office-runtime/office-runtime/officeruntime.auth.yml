@@ -74,7 +74,8 @@ methods:
 
       async function getUserData() {
         try {
-            let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+            const auth = OfficeRuntime.auth;
+            let userTokenEncoded = await auth.getAccessToken();
             let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
             console.log(userToken.name); // user name
             console.log(userToken.preferred_username); // email
