@@ -74,25 +74,6 @@ properties:
       platforms other than iOS, you can use the commerceAllowed property to
       control when that link is displayed.
 
-
-      #### Examples
-
-
-      ```TypeScript
-
-      // Check if the add-in is running on an iPad.
-
-      const allowCommerce = Office.context.commerceAllowed;
-
-      const isTouchEnabled = Office.context.touchEnabled;
-
-      if (!allowCommerce && isTouchEnabled) {
-          // Add-in is running on an iPad.
-          // Do something.
-      }
-
-      ```
-
     isPreview: false
     isDeprecated: false
     syntax:

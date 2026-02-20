@@ -2247,29 +2247,33 @@ Office.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
-    const authContext = Office.context.auth;
-    authContext.getAccessTokenAsync(function(result) {
-        if (result.status === Office.AsyncResultStatus.Succeeded) {
-            const token = result.value;
-            console.log(token);
-        } else {
-            console.log("Error obtaining token", result.error);
-        }
-    });
+    try {
+        const auth = Office.auth;
+        const accessToken = await auth.getAccessToken({
+              allowSignInPrompt: true,
+              allowConsentPrompt: true,
+              forMSGraphAccess: true,
+        });
+        // Use the token to make an API call.
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
-        const accessToken = await Office.auth.getAccessToken({
+        const auth = Office.auth;
+        const accessToken = await auth.getAccessToken({
             allowSignInPrompt: true,
             allowConsentPrompt: true,
             forMSGraphAccess: true,
         });
+        // Use the token to make an API call.
     } catch (error) {
         console.log("Error obtaining token", error);
     }
 Office.Auth#getAccessTokenAsync:member(1):
   - |-
-    Office.context.auth.getAccessTokenAsync(function(result) {
+    Office.auth.getAccessTokenAsync(function(result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
             const token = result.value;
             // ...
@@ -2755,28 +2759,6 @@ Office.Context:interface:
     console.log("Office application: " + contextInfo.host);
     console.log("Office version: " + contextInfo.version);
     console.log("Platform: " + contextInfo.platform);
-Office.Context#auth:member:
-  - |-
-    // Get an access token.
-    const authContext = Office.context.auth;
-    authContext.getAccessTokenAsync((result) => {
-        if (result.status === Office.AsyncResultStatus.Failed) {
-            console.log("Error obtaining token", result.error);
-            return;
-        }
-
-        const token = result.value;
-        console.log(token);
-    });
-Office.Context#commerceAllowed:member:
-  - |-
-    // Check if the add-in is running on an iPad.
-    const allowCommerce = Office.context.commerceAllowed;
-    const isTouchEnabled = Office.context.touchEnabled;
-    if (!allowCommerce && isTouchEnabled) {
-        // Add-in is running on an iPad.
-        // Do something.
-    }
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
@@ -6656,13 +6638,14 @@ OfficeRuntime.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
     // access token.
-    const authContext = OfficeRuntime.context.auth;
-    const accessToken = authContext.getAccessTokenAsync();
+    const auth = OfficeRuntime.auth;
+    const accessToken = await auth.getAccessToken();
 OfficeRuntime.Auth#getAccessToken:member(1):
   - |-
     async function getUserData() {
       try {
-          let userTokenEncoded = await OfficeRuntime.auth.getAccessToken();
+          const auth = OfficeRuntime.auth;
+          let userTokenEncoded = await auth.getAccessToken();
           let userToken = jwt_decode(userTokenEncoded); // Using the https://www.npmjs.com/package/jwt-decode library.
           console.log(userToken.name); // user name
           console.log(userToken.preferred_username); // email

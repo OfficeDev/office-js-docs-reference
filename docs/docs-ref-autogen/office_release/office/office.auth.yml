@@ -15,15 +15,17 @@ remarks: |-
   ```TypeScript
   // Get the auth context object and use it to get an
   // access token.
-  const authContext = Office.context.auth;
-  authContext.getAccessTokenAsync(function(result) {
-      if (result.status === Office.AsyncResultStatus.Succeeded) {
-          const token = result.value;
-          console.log(token);
-      } else {
-          console.log("Error obtaining token", result.error);
-      }
-  });
+  try {
+      const auth = Office.auth;
+      const accessToken = await auth.getAccessToken({
+            allowSignInPrompt: true,
+            allowConsentPrompt: true,
+            forMSGraphAccess: true,
+      });
+      // Use the token to make an API call.
+  } catch (error) {
+      console.log("Error obtaining token", error);
+  }
   ```
 
 isPreview: false
@@ -88,11 +90,13 @@ methods:
       ```TypeScript
 
       try{
-          const accessToken = await Office.auth.getAccessToken({
+          const auth = Office.auth;
+          const accessToken = await auth.getAccessToken({
               allowSignInPrompt: true,
               allowConsentPrompt: true,
               forMSGraphAccess: true,
           });
+          // Use the token to make an API call.
       } catch (error) {
           console.log("Error obtaining token", error);
       }
@@ -146,7 +150,7 @@ methods:
 
       ```TypeScript
 
-      Office.context.auth.getAccessTokenAsync(function(result) {
+      Office.auth.getAccessTokenAsync(function(result) {
           if (result.status === Office.AsyncResultStatus.Succeeded) {
               const token = result.value;
               // ...
