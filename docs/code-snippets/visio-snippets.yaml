@@ -105,6 +105,20 @@ Visio.Document#getActivePage:member(1):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.Document#pages:member:
+  - |-
+    Visio.run(session, function (ctx) {
+        const pages = ctx.document.pages;
+        const pageCount = pages.getCount();
+        return ctx.sync().then(function () {
+            console.log("Pages Count: " +pageCount.value);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Visio.Document#setActivePage:member(1):
   - |-
     Visio.run(session, function (ctx) {
@@ -124,20 +138,6 @@ Visio.Document#startDataRefresh:member(1):
         const document = ctx.document;
         document.startDataRefresh();
         return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-Visio.Document#pages:member:
-  - |-
-    Visio.run(session, function (ctx) {
-        const pages = ctx.document.pages;
-        const pageCount = pages.getCount();
-        return ctx.sync().then(function () {
-            console.log("Pages Count: " +pageCount.value);
-        });
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -460,12 +460,12 @@ Visio.ShapeMouseLeaveEventArgs:interface:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView#highlight:member:
+Visio.ShapeView#addOverlay:member(1):
   - |-
     Visio.run(session, function (ctx) {
         const activePage = ctx.document.getActivePage();
         const shape = activePage.shapes.getItem(0);
-        shape.view.highlight = { color: "#E7E7E7", width: 100 };
+        const overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -473,12 +473,12 @@ Visio.ShapeView#highlight:member:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView#addOverlay:member(1):
+Visio.ShapeView#highlight:member:
   - |-
     Visio.run(session, function (ctx) {
         const activePage = ctx.document.getActivePage();
         const shape = activePage.shapes.getItem(0);
-        const overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
+        shape.view.highlight = { color: "#E7E7E7", width: 100 };
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);

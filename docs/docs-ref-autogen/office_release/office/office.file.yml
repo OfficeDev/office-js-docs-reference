@@ -185,7 +185,7 @@ methods:
                   // Got one slice, store it in a temporary array.
                   fileSlices.push(result.value.data);
 
-                  if (fileSlices.length == expectedSliceCount) {
+                  if (fileSlices.length === expectedSliceCount) {
                       console.log("All slices have been received.");
                       file.closeAsync();
 

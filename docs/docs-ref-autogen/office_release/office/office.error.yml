@@ -46,17 +46,18 @@ properties:
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
-                      if (asyncResult.status === "failed")
+                      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                           const error = asyncResult.error;
-                      write(error.name + ": " + error.code + " - " + error.message);
+                          write(error.name + ": " + error.code + " - " + error.message);
+                      }
                   });
           }
 
 
           // Function that writes to a div with id='message' on the page.
 
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
 
           ```
@@ -87,17 +88,18 @@ properties:
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
-                      if (asyncResult.status === "failed")
+                      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                           const error = asyncResult.error;
-                      write(error.name + ": " + error.message);
+                          write(error.name + ": " + error.message);
+                      }
                   });
           }
 
 
           // Function that writes to a div with id='message' on the page.
 
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
 
           ```
@@ -128,17 +130,18 @@ properties:
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
-                      if (asyncResult.status === "failed")
+                      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                           const error = asyncResult.error;
-                      write(error.name + ": " + error.message);
+                          write(error.name + ": " + error.message);
+                      }
                   });
           }
 
 
           // Function that writes to a div with id='message' on the page.
 
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
 
           ```

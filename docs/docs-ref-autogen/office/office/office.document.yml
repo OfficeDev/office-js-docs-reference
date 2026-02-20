@@ -49,8 +49,8 @@ properties:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -87,8 +87,8 @@ properties:
           }
 
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
   - name: mode
@@ -119,8 +119,8 @@ properties:
 
           // Function that writes to a div with id='message' on the page.
 
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
 
           ```
@@ -214,8 +214,8 @@ properties:
           }
 
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
 methods:
@@ -305,8 +305,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -546,10 +546,10 @@ methods:
                       }
                       else {
                           const viewType = result.value.viewType;
-                          if (viewType == 6 ||   // ResourceForm
-                              viewType == 7 ||   // ResourceSheet
-                              viewType == 8 ||   // ResourceGraph
-                              viewType == 15) {  // ResourceUsage
+                          if (viewType === 6 ||   // ResourceForm
+                              viewType === 7 ||   // ResourceSheet
+                              viewType === 8 ||   // ResourceGraph
+                              viewType === 15) {  // ResourceUsage
                               $('#get-info').removeAttr('disabled');
                           }
                           else {
@@ -688,7 +688,7 @@ methods:
       function getFileView() {
           // Get whether the current view is edit or read.
           Office.context.document.getActiveViewAsync(function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   showMessage("Action failed with error: " + asyncResult.error.message);
               }
               else {
@@ -792,7 +792,7 @@ methods:
       function getDocumentAsCompressed() {
           Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
               function (result) {
-                  if (result.status == "succeeded") {
+                  if (result.status === Office.AsyncResultStatus.Succeeded) {
                       // If the getFileAsync call succeeded, then
                       // result.value will return a valid File Object.
                       const myFile = result.value;
@@ -813,7 +813,7 @@ methods:
       function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices,
       docDataSlices, slicesReceived) {
           file.getSliceAsync(nextSlice, function (sliceResult) {
-              if (sliceResult.status == "succeeded") {
+              if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
                   if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
                       return;
                   }
@@ -822,7 +822,7 @@ methods:
                   // (Or you can do something else, such as
                   // send it to a third-party server.)
                   docDataSlices[sliceResult.value.index] = sliceResult.value.data;
-                  if (++slicesReceived == sliceCount) {
+                  if (++slicesReceived === sliceCount) {
                     // All slices have been received.
                     file.closeAsync();
                     onGotAllSlices(docDataSlices);
@@ -860,7 +860,7 @@ methods:
 
       Office.context.document.getFileAsync(Office.FileType.Pdf,
           function(result) {
-              if (result.status == "succeeded") {
+              if (result.status === Office.AsyncResultStatus.Succeeded) {
                   const myFile = result.value;
                   const sliceCount = myFile.sliceCount;
                   app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
@@ -1057,7 +1057,7 @@ methods:
           // Get the URL of the current file.
           Office.context.document.getFilePropertiesAsync(function (asyncResult) {
               const fileUrl = asyncResult.value.url;
-              if (fileUrl == "") {
+              if (fileUrl === "") {
                   showMessage("The file hasn't been saved yet. Save the file and try again");
               }
               else {
@@ -1233,7 +1233,7 @@ methods:
                           function (result) {
                               if (result.status === Office.AsyncResultStatus.Succeeded) {
                                   resourceGuids.push(result.value);
-                                  if (index == maxResourceIndex) {
+                                  if (index === maxResourceIndex) {
                                       defer.resolve();
                                       $('#message').html(resourceGuids.toString());
                                   }
@@ -1397,7 +1397,7 @@ methods:
                           function (result) {
                               if (result.status === Office.AsyncResultStatus.Succeeded) {
                                   taskGuids.push(result.value);
-                                  if (index == maxTaskIndex) {
+                                  if (index === maxTaskIndex) {
                                       defer.resolve();
                                       $('#message').html(taskGuids.toString());
                                   }
@@ -1531,7 +1531,7 @@ methods:
 
                   // Get each field, and then display the field values in the add-in.
                   function getField() {
-                      if (index == fields.length) {
+                      if (index === fields.length) {
                           let output = '';
                           for (let i = 0; i < fieldValues.length; i++) {
                               output += fieldValues[i] + '<br />';
@@ -1718,7 +1718,7 @@ methods:
                           function (result) {
                               if (result.status === Office.AsyncResultStatus.Succeeded) {
                                   resourceGuids.push(result.value);
-                                  if (index == maxResourceIndex) {
+                                  if (index === maxResourceIndex) {
                                       defer.resolve();
                                       $('#message').html(resourceGuids.toString());
                                   }
@@ -1999,8 +1999,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -3426,7 +3426,7 @@ methods:
                           function (result) {
                               if (result.status === Office.AsyncResultStatus.Succeeded) {
                                   taskGuids.push(result.value);
-                                  if (index == maxTaskIndex) {
+                                  if (index === maxTaskIndex) {
                                       defer.resolve();
                                       $('#message').html(taskGuids.toString());
                                   }
@@ -3589,7 +3589,7 @@ methods:
 
                   // Get each field, and then display the field values in the add-in.
                   function getField() {
-                      if (index == targetFields.length) {
+                      if (index === targetFields.length) {
                           for (let i = 0; i < fieldValues.length; i++) {
                               output += fieldValues[i] + '<br />';
                           }
@@ -3807,7 +3807,7 @@ methods:
       function gotoBinding() {
           // Create a new table binding for the selected table.
           Office.context.document.bindings.addFromSelectionAsync("table",{ id: "MyTableBinding" }, function (asyncResult) {
-          if (asyncResult.status == "failed") {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     showMessage("Action failed with error: " + asyncResult.error.message);
                 }
                 else {
@@ -3817,7 +3817,7 @@ methods:
 
           // Go to binding by id.
           Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   showMessage("Action failed with error: " + asyncResult.error.message);
               }
               else {
@@ -3842,7 +3842,7 @@ methods:
 
       function goToTable() {
           Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   showMessage("Action failed with error: " + asyncResult.error.message);
               }
               else {
@@ -3877,7 +3877,7 @@ methods:
       function gotoSelectedSlide() {
           //Get currently selected slide's id
           Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   app.showNotification("Action failed with error: " + asyncResult.error.message);
               }
               else {
@@ -3887,7 +3887,7 @@ methods:
           });
           //Go to slide by id.
           Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   app.showNotification("Action failed with error: " + asyncResult.error.message);
               }
               else {
@@ -3918,7 +3918,7 @@ methods:
           const goToNext = Office.Index.Next;
 
           Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   showMessage("Action failed with error: " + asyncResult.error.message);
               }
               else {
@@ -4487,8 +4487,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -4518,8 +4518,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -4550,8 +4550,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -4573,8 +4573,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
