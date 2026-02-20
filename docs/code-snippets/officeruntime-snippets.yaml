@@ -42,7 +42,6 @@ OfficeRuntime.displayWebDialog:function(1):
         });
       });
     }
-
 OfficeRuntime.Auth:interface:
   - |-
     // Get the auth context object and use it to get an
