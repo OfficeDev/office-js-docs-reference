@@ -7,6 +7,20 @@ summary: >-
   A ReplyFormData object that contains body or attachment data and a callback
   function. Used when displaying a reply form.
 remarks: >-
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
+
+
   #### Examples
 
 
@@ -74,7 +88,20 @@ properties:
       An array of
       [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface)
       that are Base64-encoded files, Exchange items, or file attachments.
-    remarks: ''
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -90,7 +117,20 @@ properties:
       When the reply display call completes, the function passed in the callback
       parameter is called with a single parameter, `asyncResult`<!-- -->, which
       is an `Office.AsyncResult` object.
-    remarks: ''
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -107,7 +147,20 @@ properties:
     summary: >-
       A string that contains text and HTML and that represents the body of the
       reply form. The string is limited to 32 KB.
-    remarks: ''
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -120,10 +173,23 @@ properties:
     package: outlook!
     fullName: options
     summary: >-
-      An object literal that contains the following property:-
-      `asyncContext`<!-- -->: Developers can provide any object they wish to
-      access in the callback function.
-    remarks: ''
+      An object literal that contains the `asyncContext` property. Use the
+      `asyncContext` property to specify any object that you want to access in
+      the callback function.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
     isPreview: false
     isDeprecated: false

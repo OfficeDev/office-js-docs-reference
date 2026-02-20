@@ -5,6 +5,20 @@ package: outlook!
 fullName: Office.ReplyFormAttachment
 summary: A file or item attachment. Used when displaying a reply form.
 remarks: >-
+  \[ [API set: Mailbox
+  1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
+
+
   #### Examples
 
 
@@ -76,6 +90,16 @@ properties:
       1.15](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +114,20 @@ properties:
       If true, indicates that the attachment will be shown inline in the message
       body and shouldn't be displayed in the attachment list. Only use if `type`
       is set to `base64` or `file`<!-- -->.
-    remarks: ''
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -105,7 +142,20 @@ properties:
     summary: >-
       The EWS item ID of the attachment. This is a string up to 100 characters.
       Only use if `type` is set to `item`<!-- -->.
-    remarks: ''
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -120,7 +170,20 @@ properties:
     summary: >-
       A string that contains the name of the attachment, up to 255 characters in
       length.
-    remarks: ''
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
     isPreview: false
     isDeprecated: false
@@ -134,6 +197,21 @@ properties:
     fullName: type
     summary: Indicates the type of attachment.
     remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
       **Important**:
 
 
@@ -161,13 +239,26 @@ properties:
     summary: >-
       The URI of the location for the file. Only use if `type` is set to
       `file`<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
 
       **Important**: This link must be publicly accessible without need for
       authentication by Exchange Online servers. However, with on-premises
       Exchange, the link can be accessible on a private network as long as it
       doesn't need further authentication.
-    remarks: ''
 
     isPreview: false
     isDeprecated: false

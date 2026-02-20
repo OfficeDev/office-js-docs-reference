@@ -1,0 +1,179 @@
+### YamlMime:TSType
+name: Office.MessageFormAttachment
+uid: outlook!Office.MessageFormAttachment:interface
+package: outlook!
+fullName: Office.MessageFormAttachment
+summary: A file or Outlook item attachment. Used when displaying a new message form.
+remarks: >-
+  \[ [API set: Mailbox
+  1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **read item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+  -->**: Read
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isInline
+    uid: outlook!Office.MessageFormAttachment#isInline:member
+    package: outlook!
+    fullName: isInline
+    summary: >-
+      If true, indicates that the attachment will be shown inline in the message
+      body and won't be displayed in the attachment list. Only specify if the
+      `type` property is set to `Office.MailboxEnums.AttachmentType.File`<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isInline?: boolean;'
+      return:
+        type: boolean
+  - name: itemId
+    uid: outlook!Office.MessageFormAttachment#itemId:member
+    package: outlook!
+    fullName: itemId
+    summary: >-
+      The Exchange Web Services (EWS) item ID of the attachment. The item ID is
+      a string of up to 100 characters. Only specify if the `type` property is
+      set to `Office.MailboxEnums.AttachmentType.Item`<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemId?: string;'
+      return:
+        type: string
+  - name: name
+    uid: outlook!Office.MessageFormAttachment#name:member
+    package: outlook!
+    fullName: name
+    summary: >-
+      The name of the attachment. The name can be up to 255 characters in
+      length.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: type
+    uid: outlook!Office.MessageFormAttachment#type:member
+    package: outlook!
+    fullName: type
+    summary: >-
+      The type of attachment. Must be `Office.MailboxEnums.AttachmentType.File`
+      or `Office.MailboxEnums.AttachmentType.Item`<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
+      **Important**: The `base64` and `cloud` attachment types aren't
+      supported.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: MailboxEnums.AttachmentType | string;'
+      return:
+        type: >-
+          <xref uid="outlook!Office.MailboxEnums.AttachmentType:enum" /> |
+          string
+  - name: url
+    uid: outlook!Office.MessageFormAttachment#url:member
+    package: outlook!
+    fullName: url
+    summary: >-
+      The URI of the location for the file. Only specify if the `type` property
+      is set to `Office.MailboxEnums.AttachmentType.File`<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox
+      1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
+
+
+      **Important**: The link must be publicly accessible without need for
+      authentication by Exchange Online servers. However, with on-premises
+      Exchange, the link can be accessible on a private network as long as it
+      doesn't need further authentication.
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'url?: string;'
+      return:
+        type: string

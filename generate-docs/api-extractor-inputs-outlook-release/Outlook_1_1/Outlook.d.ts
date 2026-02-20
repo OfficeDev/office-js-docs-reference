@@ -792,176 +792,113 @@ export declare namespace Office {
         
     }
     /**
-     * The `AppointmentForm` object is used to access the currently selected appointment.
+     * Represents the details of the form for creating a new appointment.
      *
      * @remarks
      *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
+     * [Api set: Mailbox 1.1]
      *
-     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface AppointmentForm {
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
+         * Sets the body of the appointment.
          *
          * @remarks
+         *
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
-        body: Body | string;
+        body?: string;
         /**
-         * Gets or sets the date and time that the appointment is to end.
-         *
-         * The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to
-         * convert the `end` property value to the client's local date and time.
-         *
-         * *Read mode*
-         *
-         * The `end` property returns a `Date` object.
-         *
-         * *Compose mode*
-         *
-         * The `end` property returns a `Time` object.
-         *
-         * When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to convert the local time on
-         * the client to UTC for the server.
+         * Sets the date and time that the appointment is to end.
          *
          * @remarks
          *
+        * [Api set: Mailbox 1.1]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
-        end: Time | Date;
+        end?: Date | number;
         /**
-        * Gets or sets the location of an appointment.
-        *
-        * *Read mode*
-        *
-        * The `location` property returns a string that contains the location of the appointment.
-        *
-        * *Compose mode*
-        *
-        * The `location` property returns a `Location` object that provides methods that are used to get and set the location of the appointment.
+        * Sets the location of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       location: Location | string;
+       location?: string;
        /**
-        * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
-        *
-        * *Read mode*
-        *
-        * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-        * each optional attendee to the meeting. Collection size limits:
-        *
-        * - Web browser, new Mac UI, Android: No limit
-        *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * *Compose mode*
-        *
-        * The `optionalAttendees` property returns a `Recipients` object that provides methods to get or update the
-        * optional attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
-        * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+        * Sets the optional attendees of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       optionalAttendees: Recipients[] | EmailAddressDetails[];
+       optionalAttendees?: string[] | EmailAddressDetails[];
        /**
-        * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
+        * Sets the resources of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       resources: string[];
+       resources?: string[];
        /**
-        * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.
-        *
-        * *Read mode*
-        *
-        * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-        * each required attendee to the meeting. Collection size limits:
-        *
-        * - Web browser, new Mac UI, Android: No limit
-        *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * *Compose mode*
-        *
-        * The `requiredAttendees` property returns a `Recipients` object that provides methods to get or update the
-        * required attendees for a meeting. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many
-        * recipients you can get or update. See the {@link Office.Recipients | Recipients} object for more details.
+        * Sets the required attendees of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       requiredAttendees: Recipients[] | EmailAddressDetails[];
+       requiredAttendees?: string[] | EmailAddressDetails[];
        /**
-        * Gets or sets the date and time that the appointment is to begin.
-        *
-        * The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method
-        * to convert the value to the client's local date and time.
-        *
-        * *Read mode*
-        *
-        * The `start` property returns a `Date` object.
-        *
-        * *Compose mode*
-        *
-        * The `start` property returns a `Time` object.
-        *
-        * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on
-        * the client to UTC for the server.
+        * Sets the date and time that the appointment is to begin.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       start: Time | Date;
+       start?: Date | number;
        /**
-        * Gets or sets the description that appears in the subject field of an item.
-        *
-        * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
-        *
-        * *Read mode*
-        *
-        * The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading prefixes such as RE: and FW:.
-        *
-        * *Compose mode*
-        *
-        * The `subject` property returns a `Subject` object that provides methods to get and set the subject.
+        * Sets the description that appears in the Title field of the appointment.
         *
         * @remarks
         *
+        * [Api set: Mailbox 1.1]
+        *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
         *
-        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+        * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
         */
-       subject: Subject | string;
+       subject?: string;
     }
     /**
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -3478,6 +3415,8 @@ export declare namespace Office {
         
         
     }
+    
+    
     /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
      *
@@ -4404,12 +4343,26 @@ export declare namespace Office {
     
     /**
      * A file or item attachment. Used when displaying a reply form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.1]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface ReplyFormAttachment {
         /**
          * Indicates the type of attachment.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
          * **Important**:
          *
@@ -4422,10 +4375,26 @@ export declare namespace Office {
         type: MailboxEnums.AttachmentType;
         /**
          * A string that contains the name of the attachment, up to 255 characters in length.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         name: string;
         /**
          * The URI of the location for the file. Only use if `type` is set to `file`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
          * **Important**: This link must be publicly accessible without need for authentication by Exchange Online servers. However, with
          * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
@@ -4434,34 +4403,89 @@ export declare namespace Office {
         /**
          * If true, indicates that the attachment will be shown inline in the message body and shouldn't be displayed in the attachment list.
          * Only use if `type` is set to `base64` or `file`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         inLine?: boolean;
         /**
          * The EWS item ID of the attachment. This is a string up to 100 characters. Only use if `type` is set to `item`.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         itemId?: string;
         
     }
     /**
      * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
+     *
+     * @remarks
+     *
+     * [Api set: Mailbox 1.1]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface ReplyFormData {
         /**
          * A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         htmlBody?: string;
         /**
          * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are Base64-encoded files, Exchange items, or file attachments.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         attachments?: ReplyFormAttachment[];
         /**
          * When the reply display call completes, the function passed in the callback parameter is called with a single parameter,
          * `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;
         /**
-         * An object literal that contains the following property:-
-         * `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * An object literal that contains the `asyncContext` property. Use the `asyncContext` property to specify any object that you want to access in the callback function.
+         *
+         * @remarks
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          */
         options?: CommonAPI.AsyncContextOptions;
     }

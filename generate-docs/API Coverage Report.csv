@@ -561,9 +561,9 @@ excel,Excel.CardLayoutStandardProperties,"mainImage",Property,Great,false
 excel,Excel.CardLayoutStandardProperties,"sections",Property,Good,false
 excel,Excel.CardLayoutStandardProperties,"subTitle",Property,Great,false
 excel,Excel.CardLayoutStandardProperties,"title",Property,Excellent,false
-excel,Excel.CardLayoutTableSection,N/A,Interface,Fine,false
+excel,Excel.CardLayoutTableSection,N/A,Interface,Fine,true
 excel,Excel.CardLayoutTableSection,"layout",Property,Great,false
-excel,Excel.CardLayoutTwoColumnSection,N/A,Interface,Fine,false
+excel,Excel.CardLayoutTwoColumnSection,N/A,Interface,Fine,true
 excel,Excel.CardLayoutTwoColumnSection,"layout",Property,Great,false
 excel,Excel.CellBorder,N/A,Interface,Great,true
 excel,Excel.CellBorder,"color",Property,Great,false
@@ -1953,11 +1953,11 @@ excel,Excel.ConditionalCellValueRule,N/A,Interface,Fine,false
 excel,Excel.ConditionalCellValueRule,"formula1",Property,Great,true
 excel,Excel.ConditionalCellValueRule,"formula2",Property,Great,false
 excel,Excel.ConditionalCellValueRule,"operator",Property,Great,true
-excel,Excel.ConditionalColorScaleCriteria,N/A,Interface,Fine,false
+excel,Excel.ConditionalColorScaleCriteria,N/A,Interface,Fine,true
 excel,Excel.ConditionalColorScaleCriteria,"maximum",Property,Great,false
 excel,Excel.ConditionalColorScaleCriteria,"midpoint",Property,Excellent,false
 excel,Excel.ConditionalColorScaleCriteria,"minimum",Property,Great,false
-excel,Excel.ConditionalColorScaleCriterion,N/A,Interface,Fine,false
+excel,Excel.ConditionalColorScaleCriterion,N/A,Interface,Fine,true
 excel,Excel.ConditionalColorScaleCriterion,"color",Property,Excellent,false
 excel,Excel.ConditionalColorScaleCriterion,"formula",Property,Great,false
 excel,Excel.ConditionalColorScaleCriterion,"type",Property,Great,false
@@ -6763,7 +6763,7 @@ excel,Excel.WindowView,N/A,Enum,Good,false
 excel,Excel.WindowView,"normalView",EnumField,Great,false
 excel,Excel.WindowView,"pageBreakPreview",EnumField,Great,false
 excel,Excel.WindowView,"pageLayoutView",EnumField,Great,false
-excel,Excel.Workbook,N/A,Class,Great,false
+excel,Excel.Workbook,N/A,Class,Great,true
 excel,Excel.Workbook,"application",Property,Great,false
 excel,Excel.Workbook,"autoSave",Property,Great,false
 excel,Excel.Workbook,"bindings",Property,Great,false
@@ -9079,14 +9079,14 @@ outlook,Office.AppointmentCompose,"sendAsync(callback)",Method,Fine,true
 outlook,Office.AppointmentCompose,"setSelectedDataAsync(data, options, callback)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"setSelectedDataAsync(data, callback)",Method,Excellent,false
 outlook,Office.AppointmentForm,N/A,Interface,Fine,true
-outlook,Office.AppointmentForm,"body",Property,Great,false
-outlook,Office.AppointmentForm,"end",Property,Excellent,false
-outlook,Office.AppointmentForm,"location",Property,Excellent,false
+outlook,Office.AppointmentForm,"body",Property,Good,false
+outlook,Office.AppointmentForm,"end",Property,Great,false
+outlook,Office.AppointmentForm,"location",Property,Good,false
 outlook,Office.AppointmentForm,"optionalAttendees",Property,Excellent,false
 outlook,Office.AppointmentForm,"requiredAttendees",Property,Excellent,false
-outlook,Office.AppointmentForm,"resources",Property,Excellent,false
-outlook,Office.AppointmentForm,"start",Property,Excellent,false
-outlook,Office.AppointmentForm,"subject",Property,Excellent,false
+outlook,Office.AppointmentForm,"resources",Property,Good,false
+outlook,Office.AppointmentForm,"start",Property,Great,false
+outlook,Office.AppointmentForm,"subject",Property,Great,false
 outlook,Office.AppointmentRead,N/A,Interface,Great,false
 outlook,Office.AppointmentRead,"attachments",Property,Great,true
 outlook,Office.AppointmentRead,"body",Property,Great,true
@@ -9847,6 +9847,19 @@ outlook,Office.MessageDecryptEventCompletedOptions,"allowEvent",Property,Excelle
 outlook,Office.MessageDecryptEventCompletedOptions,"attachments",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"contextData",Property,Excellent,false
 outlook,Office.MessageDecryptEventCompletedOptions,"emailBody",Property,Excellent,false
+outlook,Office.MessageForm,N/A,Interface,Fine,false
+outlook,Office.MessageForm,"attachments",Property,Excellent,false
+outlook,Office.MessageForm,"bccRecipients",Property,Great,false
+outlook,Office.MessageForm,"ccRecipients",Property,Great,false
+outlook,Office.MessageForm,"htmlBody",Property,Good,false
+outlook,Office.MessageForm,"subject",Property,Good,false
+outlook,Office.MessageForm,"toRecipients",Property,Great,false
+outlook,Office.MessageFormAttachment,N/A,Interface,Good,false
+outlook,Office.MessageFormAttachment,"isInline",Property,Excellent,false
+outlook,Office.MessageFormAttachment,"itemId",Property,Excellent,false
+outlook,Office.MessageFormAttachment,"name",Property,Great,false
+outlook,Office.MessageFormAttachment,"type",Property,Excellent,false
+outlook,Office.MessageFormAttachment,"url",Property,Excellent,false
 outlook,Office.MessageRead,N/A,Interface,Great,true
 outlook,Office.MessageRead,"attachments",Property,Great,true
 outlook,Office.MessageRead,"body",Property,Great,true
