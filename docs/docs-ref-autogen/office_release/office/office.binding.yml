@@ -75,8 +75,8 @@ properties:
 
           // Function that writes to a div with id='message' on the page.
 
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
 
           ```
@@ -111,8 +111,8 @@ properties:
 
           // Function that writes to a div with id='message' on the page.
 
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
 
           ```
@@ -143,10 +143,10 @@ properties:
           }) 
 
 
-          // Function that writes to a div with id='message' on the page. 
+          // Function that writes to a div with id='message' on the page.
 
-          function write(message){ 
-              document.getElementById('message').innerText += message;  
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
 
           ```
@@ -251,8 +251,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -279,8 +279,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -460,8 +460,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -491,18 +491,19 @@ methods:
                 rowCount: 1, 
                 columnCount: 1 },  
               function (result) { 
-                  if (result.status == 'succeeded') { 
+                  if (result.status === Office.AsyncResultStatus.Succeeded) {
                       write("Image to find: " + result.value.rows[0][0]); 
                   } 
-                  else 
-                      write(result.error.message); 
+                  else {
+                      write(result.error.message);
+                  }
           }); 
-      }     
+      }
 
-      // Function that writes to a div with id='message' on the page. 
+      // Function that writes to a div with id='message' on the page.
 
-      function write(message){ 
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -523,18 +524,19 @@ methods:
                 rowCount: 1, 
                 columnCount: 1 },  
               function (result) { 
-                  if (result.status == 'succeeded') { 
+                  if (result.status === Office.AsyncResultStatus.Succeeded) {
                       write("Image to find: " + result.value[1][0]); 
                   } 
-                  else 
-                      write(result.error.message); 
+                  else {
+                      write(result.error.message);
+                  }
           }); 
-      }     
+      }
 
-      // Function that writes to a div with id='message' on the page. 
+      // Function that writes to a div with id='message' on the page.
 
-      function write(message){ 
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -1021,7 +1023,7 @@ methods:
       function writeHtmlData() {
           Office.select("bindings#myBinding").setDataAsync(
               "<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   write('Error: ' + asyncResult.error.message);
               }
           });
@@ -1030,8 +1032,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -1046,7 +1048,7 @@ methods:
       function writeBoundDataMatrix() {
           Office.select("bindings#myBinding").setDataAsync(
               [['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   write('Error: ' + asyncResult.error.message);
               } else {
                   write('Bound data: ' + asyncResult.value);
@@ -1056,8 +1058,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -1091,7 +1093,7 @@ methods:
           // Set myTable in the binding.
           Office.select("bindings#myBinding").setDataAsync(myTable, { coercionType: "table" }, 
               function (asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write('Error: '+ asyncResult.error.message);
               } else {
                   write('Bound data: ' + asyncResult.value);
@@ -1108,12 +1110,12 @@ methods:
           newTable.rows = [["M"],["M"],["F"]];
           Office.select("bindings#myBinding").setDataAsync(newTable, { coercionType: "table", startColumn:2 }, 
               function (asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write('Error: '+ asyncResult.error.message);
               } else {
                   write('Bound data: ' + asyncResult.value);
-              }     
-          });   
+              }
+          });
       }
 
 

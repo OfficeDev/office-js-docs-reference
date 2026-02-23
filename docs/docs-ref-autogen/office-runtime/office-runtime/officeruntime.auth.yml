@@ -21,9 +21,9 @@ remarks: >-
 
   // access token.
 
-  const authContext = OfficeRuntime.auth;
+  const auth = OfficeRuntime.auth;
 
-  const accessToken = authContext.getAccessTokenAsync();
+  const accessToken = await auth.getAccessToken();
 
   ```
 

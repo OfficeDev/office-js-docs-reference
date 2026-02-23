@@ -19,7 +19,7 @@ remarks: >-
   function getDocumentAsCompressed() {
       Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
           function (result) {
-              if (result.status == "succeeded") {
+              if (result.status === Office.AsyncResultStatus.Succeeded) {
                   // If the getFileAsync call succeeded, then
                   // result.value will return a valid File Object.
                   const myFile = result.value;
@@ -40,7 +40,7 @@ remarks: >-
   function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices,
   docDataSlices, slicesReceived) {
       file.getSliceAsync(nextSlice, function (sliceResult) {
-          if (sliceResult.status == "succeeded") {
+          if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
               if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
                   return;
               }
@@ -49,7 +49,7 @@ remarks: >-
               // (Or you can do something else, such as
               // send it to a third-party server.)
               docDataSlices[sliceResult.value.index] = sliceResult.value.data;
-              if (++slicesReceived == sliceCount) {
+              if (++slicesReceived === sliceCount) {
                 // All slices have been received.
                 file.closeAsync();
                 onGotAllSlices(docDataSlices);

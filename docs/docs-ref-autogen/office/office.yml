@@ -192,21 +192,23 @@ functions:
       Office.initialize = function (reason) {
           // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
-          // After the DOM is loaded, code specific to the add-in can run.
-          // Display initialization reason.
-          if (reason == "inserted")
-          write("The add-in was just inserted.");
+              // After the DOM is loaded, code specific to the add-in can run.
+              // Display initialization reason.
+              if (reason === Office.InitializationReason.Inserted) {
+                  write("The add-in was just inserted.");
+              }
 
-          if (reason == "documentOpened")
-          write("The add-in is already part of the document.");
+              if (reason === Office.InitializationReason.DocumentOpened) {
+                  write("The add-in is already part of the document.");
+              }
           });
       }
 
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -435,8 +437,8 @@ functions:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```

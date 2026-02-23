@@ -96,6 +96,7 @@ methods:
               allowConsentPrompt: true,
               forMSGraphAccess: true,
           });
+          // Use the token to make an API call.
       } catch (error) {
           console.log("Error obtaining token", error);
       }

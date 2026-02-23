@@ -205,17 +205,6 @@ Office.AppointmentTimeChangedEventArgs:interface:
         console.log(`Start time: ${event.start}`);
         console.log(`End time: ${event.end}`);
     }
-Office.AttachmentsChangedEventArgs:interface:
-  - |-
-    // Handles the OnMessageAttachmentsChanged event.
-    function onMessageAttachmentsChangedHandler(event) {
-        console.log(`Event: ${event.type}`);
-
-        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-            const attachment = event.attachmentDetails;
-            // Perform operations on the attachment that was added.
-        }
-    }
 Office.AttachmentContent:interface:
   - |-
     Office.context.mailbox.item.getAttachmentsAsync((result) => {
@@ -251,6 +240,17 @@ Office.AttachmentContent:interface:
 
         // Log the content of the attachments as a string.
         console.log(result.value.content);
+    }
+Office.AttachmentsChangedEventArgs:interface:
+  - |-
+    // Handles the OnMessageAttachmentsChanged event.
+    function onMessageAttachmentsChangedHandler(event) {
+        console.log(`Event: ${event.type}`);
+
+        if (event.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = event.attachmentDetails;
+            // Perform operations on the attachment that was added.
+        }
     }
 Office.Body#setAsync:member(1):
   - |-
@@ -575,6 +575,36 @@ Office.InfobarClickedEventArgs:interface:
         console.log(`Notification type: ${infobarDetails.infobarType}`);
         console.log(`Action type: ${infobarDetails.actionType}`);
     }
+Office.InfobarDetails:interface:
+  - |-
+    /*
+    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+    * The event handler logs the custom action and notification type to the console.
+    */
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
 Office.InitializationContextChangedEventArgs:interface:
   - |-
     // This sample adds an event handler for the InitializationContextChanged event.
@@ -832,36 +862,6 @@ Office.MailboxEnums.DelegatePermissions:enum:
         }
     });
 Office.MailboxEnums.InfobarActionType:enum:
-  - |-
-    /*
-    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
-    * The event handler logs the custom action and notification type to the console.
-    */
-    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
-
-    function eventHandler(event) {
-        const infobarDetails = event.infobarDetails;
-
-        // Log the custom action type.
-        console.log(`Custom action type: ${infobarDetails.actionType}`);
-
-        // Log the notification type.
-        switch (infobarDetails.infobarType) {
-            case Office.MailboxEnums.InfobarType.Error:
-                console.log("Notification type: Error message");
-                break;
-            case Office.MailboxEnums.InfobarType.Informational:
-                console.log("Notification type: Informational message");
-                break;
-            case Office.MailboxEnums.InfobarType.Insight:
-                console.log("Notification type: Informational message with available actions from the task pane");
-                break;
-            case Office.MailboxEnums.InfobarType.ProgressIndicator:
-                console.log("Notification type: Progress indicator");
-                break;
-        }
-    }
-Office.InfobarDetails:interface:
   - |-
     /*
     * This snippet activates when a notification message is dismissed from an Outlook message or appointment.

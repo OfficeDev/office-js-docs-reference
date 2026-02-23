@@ -7233,7 +7233,7 @@ office,Office.CoercionType,"Table",EnumField,Excellent,false
 office,Office.CoercionType,"Text",EnumField,Excellent,false
 office,Office.CoercionType,"XmlSvg",EnumField,Excellent,false
 office,Office.Context,N/A,Interface,Good,true
-office,Office.Context,"commerceAllowed",Property,Excellent,true
+office,Office.Context,"commerceAllowed",Property,Excellent,false
 office,Office.Context,"contentLanguage",Property,Excellent,true
 office,Office.Context,"diagnostics",Property,Great,true
 office,Office.Context,"displayLanguage",Property,Excellent,true
@@ -7496,7 +7496,7 @@ office,Office.Index,"First",EnumField,Fine,false
 office,Office.Index,"Last",EnumField,Fine,false
 office,Office.Index,"Next",EnumField,Fine,false
 office,Office.Index,"Previous",EnumField,Good,false
-office,Office.InitializationReason,N/A,Enum,Great,false
+office,Office.InitializationReason,N/A,Enum,Great,true
 office,Office.InitializationReason,"DocumentOpened",EnumField,Great,false
 office,Office.InitializationReason,"Inserted",EnumField,Great,false
 office,Office.IPromiseConstructor,N/A,Interface,Missing,false
