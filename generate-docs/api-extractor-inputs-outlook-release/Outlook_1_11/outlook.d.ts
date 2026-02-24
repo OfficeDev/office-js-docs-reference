@@ -6396,11 +6396,11 @@ export declare namespace Office {
          *
          * <table>
          *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
-         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
-         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
-         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
          * </table>
          *
          * @param eventType - The event that should invoke the handler.
@@ -6425,11 +6425,11 @@ export declare namespace Office {
          *
          * <table>
          *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
-         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
-         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
-         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
          * </table>
          *
          * @param eventType - The event that should invoke the handler.
@@ -7215,11 +7215,11 @@ export declare namespace Office {
          *
          * <table>
          *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
-         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
-         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
-         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
          * </table>
          *
          * @param eventType - The event that should revoke the handler.
@@ -7242,11 +7242,11 @@ export declare namespace Office {
          *
          * <table>
          *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
-         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
-         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
-         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
-         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         *  <tr><td><code>DragAndDropEvent</code></td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>ItemChanged</code></td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+         *  <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed in Outlook.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+         *  <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are selected or deselected.</td><td><a href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
          * </table>
          *
          * @param eventType - The event that should revoke the handler.
