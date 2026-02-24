@@ -13,10 +13,10 @@ summary: >-
 
   - This is an internal Outlook object, not directly exposed through existing
   interfaces. You should treat this as a mode of
-  `Office.context.mailbox.item`<!-- -->. For more information, refer to the
-  [Object
-  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item)
-  page.
+  `Office.context.mailbox.item`<!-- -->. For more information, refer to [Outlook
+  Item object
+  model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model)<!--
+  -->.
 
 
   - When calling `Office.context.mailbox.item` on a message, note that the
@@ -1484,13 +1484,8 @@ methods:
     package: outlook!
     fullName: addHandlerAsync(eventType, handler, options, callback)
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only
-      available with task pane implementation.
-
-
-      For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events)<!--
-      -->.
+      Adds an event handler for a supported event. Events are only available in
+      task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -1505,6 +1500,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**: For a list of events supported on a mail item, see
+      [Outlook Item object
+      model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events)<!--
+      -->.
 
 
       #### Examples
@@ -1566,13 +1567,8 @@ methods:
     package: outlook!
     fullName: addHandlerAsync(eventType, handler, callback)
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only
-      available with task pane implementation.
-
-
-      For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events)<!--
-      -->.
+      Adds an event handler for a supported event. Events are only available in
+      task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -1587,6 +1583,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**: For a list of events supported on a mail item, see
+      [Outlook Item object
+      model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events)<!--
+      -->.
 
     isPreview: false
     isDeprecated: false
@@ -3460,13 +3462,8 @@ methods:
     package: outlook!
     fullName: removeHandlerAsync(eventType, options, callback)
     summary: >-
-      Removes the event handlers for a supported event type. **Note**:
-      Events are only available with task pane implementation.
-
-
-      For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events)<!--
-      -->.
+      Removes the event handlers for a supported event type. Events are only
+      available in task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -3481,6 +3478,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**: For a list of events supported on a mail item, see
+      [Outlook Item object
+      model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events)<!--
+      -->.
 
     isPreview: false
     isDeprecated: false
@@ -3515,13 +3518,8 @@ methods:
     package: outlook!
     fullName: removeHandlerAsync(eventType, callback)
     summary: >-
-      Removes the event handlers for a supported event type. **Note**:
-      Events are only available with task pane implementation.
-
-
-      For supported events, refer to the Item object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events)<!--
-      -->.
+      Removes the event handlers for a supported event type. Events are only
+      available in task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -3536,6 +3534,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      **Important**: For a list of events supported on a mail item, see
+      [Outlook Item object
+      model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model#events)<!--
+      -->.
 
 
       #### Examples

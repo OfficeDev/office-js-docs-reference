@@ -9,6 +9,8 @@ summary: >-
   the request context is required to get access to the Visio object model from
   the add-in.
 remarks: |-
+
+
   #### Examples
 
   ```TypeScript
