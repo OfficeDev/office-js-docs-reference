@@ -90,7 +90,7 @@ properties:
       that are Base64-encoded files, Exchange items, or file attachments.
     remarks: >-
       \[ [API set: Mailbox
-      1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
+      1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
       \]
 
 

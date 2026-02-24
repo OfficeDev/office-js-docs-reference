@@ -418,8 +418,8 @@ export declare namespace Office {
      * The subclass of {@link Office.Item | Item} dealing with appointments.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -433,8 +433,8 @@ export declare namespace Office {
      * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Parent interfaces:
      *
@@ -1198,8 +1198,8 @@ export declare namespace Office {
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Parent interfaces:
      *
@@ -2993,9 +2993,6 @@ export declare namespace Office {
      * The item namespace is used to access the currently selected message, meeting request, or appointment.
      * You can determine the type of the item by using the `itemType` property.
      *
-     * To see the full member list, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
-     *
      * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
      *
      * - {@link Office.AppointmentCompose | AppointmentCompose}
@@ -3018,8 +3015,8 @@ export declare namespace Office {
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -3033,8 +3030,8 @@ export declare namespace Office {
      * The read mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -3324,10 +3321,7 @@ export declare namespace Office {
         userProfile: UserProfile;
 
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -3335,6 +3329,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
+         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         * </table>
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -3345,10 +3350,7 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox#events | events section}.
+         * Adds an event handler for a supported event. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -3356,6 +3358,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
+         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         * </table>
          *
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -3907,10 +3920,7 @@ export declare namespace Office {
          */
         makeEwsRequestAsync(data: any, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -3918,6 +3928,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
+         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         * </table>
          *
          * @param eventType - The event that should revoke the handler.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3926,10 +3947,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
-         * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
-         *
-         * For supported events, refer to the Mailbox object model
-         * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox#events | events section}.
+         * Removes the event handlers for a supported event type. Events are only available in task pane add-ins.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -3937,6 +3955,17 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: The following events are supported on the `Mailbox` object.
+         *
+         * <table>
+         *  <tr><th>Event</th><th>Description</th><th>Minimum requirement set</th></tr>
+         *  <tr><td>`DragAndDropEvent`</td><td>A message or file attachment in the Outlook client window is dragged then dropped into the task pane of an add-in.
+         *   This event is only supported in Outlook on the web and the new Outlook on Windows.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`ItemChanged`</td><td>A different Outlook item is selected for viewing while the task pane is pinned.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5 | 1.5}</td></tr>
+         *  <tr><td>`OfficeThemeChanged`</td><td>The OfficeTheme is changed in Outlook.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | 1.14}</td></tr>
+         *  <tr><td>`SelectedItemsChanged`</td><td>One or more messages are selected or deselected.</td><td>{@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13 | 1.13}</td></tr>
+         * </table>
          *
          * @param eventType - The event that should revoke the handler.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
@@ -4040,8 +4069,8 @@ export declare namespace Office {
      * A subclass of {@link Office.Item | Item} for messages.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -4057,8 +4086,8 @@ export declare namespace Office {
      * **Important**:
      *
      * - This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
      * For guidance on how to configure the Reading Pane, see
@@ -4881,8 +4910,8 @@ export declare namespace Office {
      * **Important**:
      *
      * - This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.6/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
      * For guidance on how to configure the Reading Pane, see
@@ -6261,7 +6290,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox 1.1]
+         * [Api set: Mailbox 1.2]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *

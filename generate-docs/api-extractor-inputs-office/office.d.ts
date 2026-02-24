@@ -4737,10 +4737,17 @@ export declare namespace Office {
          * - `item`: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
          *
          * - `userProfile`: Provides information about the user in an Outlook add-in.
+         *
+         * To learn more about the `Mailbox` object, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/apis#mailbox-object | Outlook add-in APIs}.
          */
         mailbox: Outlook.Mailbox;
         /**
          * Provides access to the properties for Office theme colors.
+         *
+         * @remarks
+         *
+         * **Important**: In Outlook, `officeTheme` is supported starting in {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
+         * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
          */
         officeTheme: OfficeTheme;
         /**
@@ -4778,6 +4785,8 @@ export declare namespace Office {
          * that add-in when it is running from any client application used to access that mailbox.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
@@ -7613,7 +7622,7 @@ export declare namespace Office {
      * </table>
      *
      * **Important**: In Outlook, the Office theme API is supported starting in
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
      * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
      */
     export interface OfficeTheme {
