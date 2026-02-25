@@ -79,6 +79,37 @@ properties:
       **Requirement set**: [RibbonApi
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      /**
+       * Shows or hides a contextual tab.
+       */
+      async function setContextualTabVisibility(visible: boolean) {
+          await Office.ribbon.requestUpdate({
+              tabs: [
+                  {
+                      id: "ContextualTab1",
+                      visible: visible,
+                      groups: [
+                      {
+                          id: "TableToolsGroup",
+                          controls: [
+                              { id: "FormatTableButton", enabled: true },
+                              { id: "SortTableButton", enabled: true },
+                          ],
+                      },
+                      ],
+                  },
+              ],
+          });
+      }
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

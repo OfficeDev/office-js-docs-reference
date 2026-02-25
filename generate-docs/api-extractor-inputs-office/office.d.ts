@@ -459,7 +459,7 @@ export declare namespace Office {
          * Return a JSON object that contains an array of the IDs, titles, and indexes of the selected slides. For example,
          * `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
          *
-         * **Note**: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedData method to get the current
+         * **Note**: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedDataAsync method to get the current
          * slide or selected range of slides.
          */
         SlideRange,
@@ -602,7 +602,7 @@ export declare namespace Office {
         /**
          * Occurs when data within the binding is changed in Excel or Word.
          * 
-         * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object.
+         * To add an event handler for the `BindingDataChanged` event of a binding, use the `addHandlerAsync` method of the `Binding` object.
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
          */
         BindingDataChanged,
@@ -3222,7 +3222,7 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          *
-         * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
+         * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in a manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
          */
         getShortcuts(): Promise<{[actionId: string]: string|null}>;
         /**
@@ -3735,7 +3735,7 @@ export declare namespace Office {
         forMSGraphAccess?: boolean;
     }
     /**
-     * Represents the user information which can be passed to msal.js.
+     * Represents the user information which can be passed to the Microsoft Authentication Library for JavaScript (MSAL.js).
      */
     export interface AuthContext {
         /**
@@ -4737,10 +4737,17 @@ export declare namespace Office {
          * - `item`: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
          *
          * - `userProfile`: Provides information about the user in an Outlook add-in.
+         *
+         * To learn more about the `Mailbox` object, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/apis#mailbox-object | Outlook add-in APIs}.
          */
         mailbox: Outlook.Mailbox;
         /**
          * Provides access to the properties for Office theme colors.
+         *
+         * @remarks
+         *
+         * **Important**: In Outlook, `officeTheme` is supported starting in {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | Mailbox requirement set 1.14}.
+         * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
          */
         officeTheme: OfficeTheme;
         /**
@@ -4778,6 +4785,8 @@ export declare namespace Office {
          * that add-in when it is running from any client application used to access that mailbox.
          *
          * @remarks
+         *
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
@@ -5920,7 +5929,7 @@ export declare namespace Office {
          */
         getFilePropertiesAsync(callback?: (result: AsyncResult<Office.FileProperties>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `Text` coercion type.
          *
          * @remarks
          *
@@ -5932,7 +5941,7 @@ export declare namespace Office {
          *
          * **Supported applications**: Excel, PowerPoint, Project, Word
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -5942,7 +5951,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the selected data as a string. If the selection does not contain text, returns an empty string.</td>
+         *     <td>Access the selected data as a string. If the selection doesn't contain text, returns an empty string.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
@@ -5950,24 +5959,24 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.Text`.
          *
-         * @param options - Provides options for customizing what data is returned and how it is formatted.
+         * @param options - Provides options for customizing what data is returned and how it's formatted.
          *
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string containing the selected text.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.Text, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `Table` coercion type.
          *
          * @remarks
          *
@@ -5979,7 +5988,7 @@ export declare namespace Office {
          *
          * **Supported applications**: Excel, Word
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -5989,7 +5998,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the selected data as a {@link Office.TableData} object. Returns null if no table is selected.</td>
+         *     <td>Access the selected data as a {@link Office.TableData} object. Returns `null` if no table is selected.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
@@ -5997,22 +6006,22 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.Table`.
-         * @param options - Provides options for customizing what data is returned and how it is formatted.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param options - Provides options for customizing what data is returned and how it's formatted.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a {@link Office.TableData} object containing the data in the current selection.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.Table, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<TableData>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `Matrix` coercion type.
          *
          * @remarks
          *
@@ -6024,7 +6033,7 @@ export declare namespace Office {
          *
          * **Supported applications**: Excel, Word
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6042,22 +6051,22 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.Matrix`.
-         * @param options - Provides options for customizing what data is returned and how it is formatted.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param options - Provides options for customizing what data is returned and how it's formatted.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array of arrays containing the data in the current selection.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.Matrix, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<any[][]>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `SlideRange` coercion type.
          *
          * @remarks
          *
@@ -6065,7 +6074,7 @@ export declare namespace Office {
          *
          * **Supported application**: PowerPoint
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6083,17 +6092,17 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.SlideRange`.
-         * @param options - Provides options for customizing what data is returned and how it is formatted.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param options - Provides options for customizing what data is returned and how it's formatted.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a {@link Office.SlideRange} object containing the selected slides.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.SlideRange, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<SlideRange>) => void): void;
@@ -6153,7 +6162,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6163,7 +6172,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the selected data. The type depends on the coercionType parameter specified in the call.</td>
+         *     <td>Access the selected data. The type depends on the <code>coercionType</code> parameter specified in the call.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
@@ -6171,27 +6180,27 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
-         * For other coercion types or when the coercion type is not known at compile time, use the generic version of this method
+         * For other coercion types or when the coercion type isn't known at compile time, use the generic version of this method
          * and specify the type parameter explicitly.
          *
          * @param coercionType - The type of data structure to return. See the Remarks section for each application's supported coercion types.
-         * @param options - Provides options for customizing what data is returned and how it is formatted.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param options - Provides options for customizing what data is returned and how it's formatted.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the data in the current selection.
-         *                  This is returned in the data structure or format you specified with the coercionType parameter.
+         *                  This is returned in the data structure or format you specified with the `coercionType` parameter.
          *                  (See Remarks for more information about data coercion.)
          */
         getSelectedDataAsync<T>(coercionType: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result: AsyncResult<T>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `Text` coercion type.
          *
          * @remarks
          *
@@ -6203,7 +6212,7 @@ export declare namespace Office {
          *
          * **Supported applications**: Excel, PowerPoint, Project, Word
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6221,21 +6230,21 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.Text`.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string containing the selected text.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.Text, callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `Table` coercion type.
          *
          * @remarks
          *
@@ -6247,7 +6256,7 @@ export declare namespace Office {
          *
          * **Supported applications**: Excel, Word
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6257,7 +6266,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the selected data as a {@link Office.TableData} object. Returns null if no table is selected.</td>
+         *     <td>Access the selected data as a {@link Office.TableData} object. Returns `null` if no table is selected.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
@@ -6265,21 +6274,21 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.Table`.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a {@link Office.TableData} object containing the data in the current selection.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.Table, callback?: (result: AsyncResult<TableData>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `Matrix` coercion type.
          *
          * @remarks
          *
@@ -6291,7 +6300,7 @@ export declare namespace Office {
          *
          * **Supported applications**: Excel, Word
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6309,21 +6318,21 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.Matrix`.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array of arrays containing the data in the current selection.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.Matrix, callback?: (result: AsyncResult<any[][]>) => void): void;
         /**
-         * Reads the data contained in the current selection in the document.
+         * Reads the data contained in the current selection in the document using the `SlideRange` coercion type.
          *
          * @remarks
          *
@@ -6331,7 +6340,7 @@ export declare namespace Office {
          *
          * **Supported application**: PowerPoint
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6349,16 +6358,16 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
          * @param coercionType - Must be `Office.CoercionType.SlideRange`.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a {@link Office.SlideRange} object containing the selected slides.
          */
         getSelectedDataAsync(coercionType: Office.CoercionType.SlideRange, callback?: (result: AsyncResult<SlideRange>) => void): void;
@@ -6418,7 +6427,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
+         * In the `callback` function that's passed to the `getSelectedDataAsync` method, you can use the properties of the `AsyncResult` object to return
          * the following information.
          *
          * <table>
@@ -6428,7 +6437,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access the selected data. The type depends on the coercionType parameter specified in the call.</td>
+         *     <td>Access the selected data. The type depends on the `coercionType` parameter specified in the call.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
@@ -6436,11 +6445,11 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -6448,9 +6457,9 @@ export declare namespace Office {
          * and specify the type parameter explicitly.
          *
          * @param coercionType - The type of data structure to return. See the Remarks section for each application's supported coercion types.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
+         * @param callback - Optional. A function that's invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the data in the current selection.
-         *                  This is returned in the data structure or format you specified with the coercionType parameter.
+         *                  This is returned in the data structure or format you specified with the `coercionType` parameter.
          *                  (See Remarks for more information about data coercion.)
          */
         getSelectedDataAsync<T>(coercionType: Office.CoercionType, callback?: (result: AsyncResult<T>) => void): void;
@@ -6576,7 +6585,7 @@ export declare namespace Office {
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If </code>data</code> is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
+         *     <td>If <code>data</code> is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
          *   </tr>
          *   <tr>
          *     <td></td>
@@ -6759,7 +6768,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>Word</td>
-         *     <td>If there's no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
+         *     <td>If there's no selection and the insertion point is at a valid location, the specified <code>data</code> is inserted at the insertion point</td>
          *     <td>If <code>data</code> is a string, the specified text is inserted.</td>
          *   </tr>
          *   <tr>
@@ -6945,7 +6954,7 @@ export declare namespace Office {
         getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
          * Project documents only. Get resource field for provided resource ID. (e.g., ResourceName)
-         * @param resourceId - Either a string or value of the Resource ID.
+         * @param resourceId - Either a string or value of the resource ID.
          * @param fieldId - Resource Fields.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
@@ -6976,7 +6985,7 @@ export declare namespace Office {
          */
         getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
         /**
-         * Project documents only. Get the current selected Task's Id.
+         * Project documents only. Get the current selected Task's ID.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the GUID of the resource as a string.
          *
@@ -7008,7 +7017,7 @@ export declare namespace Office {
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the following properties:
          *                  `taskName` - The name of the task.
-         *                  `wssTaskId` - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is 0.
+         *                  `wssTaskId` - The ID of the task in the synchronized SharePoint task list. If the project isn't synchronized with a SharePoint task list, the value is 0.
          *                  `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
          *
          */
@@ -7044,7 +7053,7 @@ export declare namespace Office {
          */
         getTaskFieldAsync(taskId: string, fieldId: number, callback?: (result: AsyncResult<any>) => void): void;
         /**
-         * Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.
+         * Project documents only. Get the WSS URL and list name for the Tasks List, the MPP is synced too.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result contains the following properties:
@@ -7168,7 +7177,7 @@ export declare namespace Office {
          *
          * **Important**: This API works only in Project on Windows desktop.
          *
-         * @param resourceId - Either a string or value of the Resource ID.
+         * @param resourceId - Either a string or value of the resource ID.
          * @param fieldId - Resource Fields.
          * @param fieldValue - Value of the target field.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -7613,7 +7622,7 @@ export declare namespace Office {
      * </table>
      *
      * **Important**: In Outlook, the Office theme API is supported starting in
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14 | Mailbox requirement set 1.14}.
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14 | Mailbox requirement set 1.14}.
      * It isn't supported in Outlook add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/develop/event-based-activation | event-based activation}.
      */
     export interface OfficeTheme {
@@ -7896,29 +7905,29 @@ export declare namespace Office {
      *
      * **Applications**: Excel, PowerPoint, Word
      *
-     * The settings created by using the methods of the Settings object are saved per add-in and per document.
+     * The settings created by using the methods of the `Settings` object are saved per add-in and per document.
      * That is, they are available only to the add-in that created them, and only from the document in which they are saved.
      *
      * The name of a setting is a string, while the value can be a string, number, boolean, null, object, or array.
      *
-     * The Settings object is automatically loaded as part of the Document object, and is available by calling the settings property of that object
+     * The `Settings` object is automatically loaded as part of the `Document` object, and is available by calling the settings property of that object
      * when the add-in is activated.
      *
-     * The developer is responsible for calling the saveAsync method after adding or deleting settings to save the settings in the document.
+     * The developer is responsible for calling the `saveAsync` method after adding or deleting settings to save the settings in the document.
      */
     export interface Settings {
         /**
-         * Adds an event handler for the settingsChanged event.
+         * Adds an event handler for the `settingsChanged` event.
          *
-         * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but
+         * **Important**: Your add-in's code can register a handler for the `settingsChanged` event when the add-in is running with any Excel client, but
          * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel on the web, and more than one user is editing the
-         * spreadsheet (coauthoring). Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
+         * spreadsheet (coauthoring). Therefore, effectively the `settingsChanged` event is supported only in Excel on the web in coauthoring scenarios.
          *
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
-         * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
+         * You can add multiple event handlers for the specified `eventType` as long as the name of each event handler function is unique.
          *
          * @param eventType - Specifies the type of event to add. Required.
          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.SettingsChangedEventArgs}. Required.
@@ -7940,27 +7949,27 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          */
         addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Adds an event handler for the settingsChanged event.
+         * Adds an event handler for the `settingsChanged` event.
          *
-         * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but
+         * **Important**: Your add-in's code can register a handler for the `settingsChanged` event when the add-in is running with any Excel client, but
          * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel on the web, and more than one user is editing the
-         * spreadsheet (coauthoring). Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
+         * spreadsheet (coauthoring). Therefore, effectively the `settingsChanged` event is supported only in Excel on the web in coauthoring scenarios.
          *
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
-         * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
+         * You can add multiple event handlers for the specified `eventType` as long as the name of each event handler function is unique.
          *
          * @param eventType - Specifies the type of event to add. Required.
          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.SettingsChangedEventArgs}. Required.
@@ -7981,11 +7990,11 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          */
@@ -8011,10 +8020,10 @@ export declare namespace Office {
          * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against
          * the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user
          * opened it, the settings values used by each user can get out of sync. This can happen whenever an instance of the add-in calls the
-         * Settings.saveAsync method to persist all of that user's settings to the document. Calling the refreshAsync method from the event handler
-         * for the settingsChanged event of the add-in will refresh the settings values for all users.
+         * `Settings.saveAsync` method to persist all of that user's settings to the document. Calling the `refreshAsync` method from the event handler
+         * for the `settingsChanged` event of the add-in will refresh the settings values for all users.
          *
-         * In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following
+         * In the callback function passed to the `refreshAsync` method, you can use the properties of the `AsyncResult` object to return the following
          * information.
          *
          * <table>
@@ -8024,7 +8033,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.value</code></td>
-         *     <td>Access a Settings object with the refreshed values.</td>
+         *     <td>Access a <code>Settings</code> object with the refreshed values.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.status</code></td>
@@ -8032,11 +8041,11 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -8047,33 +8056,33 @@ export declare namespace Office {
         /**
          * Removes the specified setting.
          *
-         * **Important**: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of
-         * the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must
-         * call the Settings.saveAsync method.
+         * **Important**: Be aware that the `Settings.remove` method affects only the in-memory copy of the settings property bag. To persist the removal of
+         * the specified setting in the document, at some point after calling the `Settings.remove` method and before the add-in is closed, you must
+         * call the `Settings.saveAsync` method.
          *
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          *
-         * null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings property bag.
+         * `null` is a valid value for a setting. Therefore, assigning `null` to the setting will not remove it from the settings property bag.
          *
          * @param settingName - The case-sensitive name of the setting to remove.
          */
         remove(name: string): void;
         /**
-         * Removes an event handler for the settingsChanged event.
+         * Removes an event handler for the `settingsChanged` event.
          *
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
-         * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType
+         * If the optional handler parameter is omitted when calling the `removeHandlerAsync` method, all event handlers for the specified `eventType`
          * will be removed.
          *
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback
+         * When the function you passed to the callback parameter executes, it receives an `AsyncResult` object that you can access from the callback
          * function's only parameter.
          *
-         * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the
+         * In the callback function passed to the `removeHandlerAsync` method, you can use the properties of the `AsyncResult` object to return the
          * following information.
          *
          * <table>
@@ -8091,11 +8100,11 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -8105,19 +8114,19 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Removes an event handler for the settingsChanged event.
+         * Removes an event handler for the `settingsChanged` event.
          *
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
-         * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType
+         * If the optional handler parameter is omitted when calling the `removeHandlerAsync` method, all event handlers for the specified `eventType`
          * will be removed.
          *
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback
+         * When the function you passed to the callback parameter executes, it receives an `AsyncResult` object that you can access from the callback
          * function's only parameter.
          *
-         * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the
+         * In the callback function passed to the `removeHandlerAsync` method, you can use the properties of the `AsyncResult` object to return the
          * following information.
          *
          * <table>
@@ -8135,11 +8144,11 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -8155,11 +8164,11 @@ export declare namespace Office {
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          *
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the
-         * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are
-         * available the next time the add-in is used, use the saveAsync method.
+         * `set` and `get` methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are
+         * available the next time the add-in is used, use the `saveAsync` method.
          *
-         * **Note**: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file
-         * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful
+         * **Note**: The `saveAsync` method persists the in-memory settings property bag into the document file. However, the changes to the document file
+         * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The `refreshAsync` method is only useful
          * in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to
          * all instances.
          *
@@ -8178,11 +8187,11 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -8198,11 +8207,11 @@ export declare namespace Office {
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          *
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the
-         * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are
-         * available the next time the add-in is used, use the saveAsync method.
+         * `set` and `get` methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are
+         * available the next time the add-in is used, use the `saveAsync` method.
          *
-         * **Note**: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file
-         * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful
+         * **Note**: The `saveAsync` method persists the in-memory settings property bag into the document file. However, the changes to the document file
+         * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The `refreshAsync` method is only useful
          * in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to
          * all instances.
          *
@@ -8221,11 +8230,11 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.error</code></td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td>Access an <code>Error</code> object that provides error information if the operation failed.</td>
          *   </tr>
          *   <tr>
          *     <td><code>AsyncResult.asyncContext</code></td>
-         *     <td>Define an item of any type that's returned in the AsyncResult object without being altered.</td>
+         *     <td>Define an item of any type that's returned in the <code>AsyncResult</code> object without being altered.</td>
          *   </tr>
          * </table>
          *
@@ -8235,17 +8244,17 @@ export declare namespace Office {
         /**
          * Sets or creates the specified setting.
          *
-         * **Important**: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag.
+         * **Important**: Be aware that the `Settings.set` method affects only the in-memory copy of the settings property bag.
          * To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point
-         * after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in
+         * after calling the `Settings.set` method and before the add-in is closed, you must call the `Settings.saveAsync` method to persist settings in
          * the document.
          *
          * @remarks
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          *
-         * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name
-         * in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as
+         * The `set` method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name
+         * in the in-memory copy of the settings property bag. After you call the `Settings.saveAsync` method, the value is stored in the document as
          * the serialized JSON representation of its data type.
          *
          * @param settingName - The case-sensitive name of the setting to set or create.

@@ -4126,6 +4126,31 @@ Office.GetSelectedDataOptions:interface:
                 console.log(`The selected data is "${asyncResult.value}".`);
             }
     });
+Office.Group:interface:
+  - |-
+    /**
+     * Shows or hides a contextual tab.
+     */
+    async function setContextualTabVisibility(visible: boolean) {
+        // Define a tab group of controls.
+        const group: Office.Group = {
+            id: "TableToolsGroup",
+            controls: [
+                // The controls if the group...
+            ],
+        };
+        
+        // Update the ribbon to show or hide a tab with the specified group of controls.
+        await Office.ribbon.requestUpdate({
+            tabs: [
+                {
+                    id: "contextTab1",
+                    visible: visible,
+                    groups: [group],
+                },
+            ],
+        });
+    }
 Office.HostType:enum:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -4441,6 +4466,30 @@ Office.Tab:interface:
         const myContextualTab = { id: "CtxTab1", visible: true };
         const ribbonUpdater = { tabs: [ myContextualTab ] };
         await Office.ribbon.requestUpdate(ribbonUpdater);
+    }
+Office.Tab#groups:member:
+  - |-
+    /**
+     * Shows or hides a contextual tab.
+     */
+    async function setContextualTabVisibility(visible: boolean) {
+        await Office.ribbon.requestUpdate({
+            tabs: [
+                {
+                    id: "ContextualTab1",
+                    visible: visible,
+                    groups: [
+                    {
+                        id: "TableToolsGroup",
+                        controls: [
+                            { id: "FormatTableButton", enabled: true },
+                            { id: "SortTableButton", enabled: true },
+                        ],
+                    },
+                    ],
+                },
+            ],
+        });
     }
 Office.Tab#id:member:
   - |-

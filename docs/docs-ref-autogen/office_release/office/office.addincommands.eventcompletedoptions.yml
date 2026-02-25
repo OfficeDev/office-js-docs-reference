@@ -103,6 +103,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'allowEvent: boolean;'
+      content: 'allowEvent?: boolean;'
       return:
         type: boolean

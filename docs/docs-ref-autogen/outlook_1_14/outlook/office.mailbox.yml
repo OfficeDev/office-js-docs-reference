@@ -492,13 +492,8 @@ methods:
     package: outlook!
     fullName: addHandlerAsync(eventType, handler, options, callback)
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only
-      available with task pane implementation.
-
-
-      For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
-      -->.
+      Adds an event handler for a supported event. Events are only available in
+      task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -513,6 +508,28 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The following events are supported on the `Mailbox`
+      object.
+
+
+      <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement
+      set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or
+      file attachment in the Outlook client window is dragged then dropped into
+      the task pane of an add-in. This event is only supported in Outlook on the
+      web and the new Outlook on Windows.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>ItemChanged</code></td><td>A different Outlook item is
+      selected for viewing while the task pane is pinned.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed
+      in Outlook.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+      <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are
+      selected or deselected.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+      </table>
 
 
       #### Examples
@@ -585,13 +602,8 @@ methods:
     package: outlook!
     fullName: addHandlerAsync(eventType, handler, callback)
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only
-      available with task pane implementation.
-
-
-      For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
-      -->.
+      Adds an event handler for a supported event. Events are only available in
+      task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -606,6 +618,28 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The following events are supported on the `Mailbox`
+      object.
+
+
+      <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement
+      set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or
+      file attachment in the Outlook client window is dragged then dropped into
+      the task pane of an add-in. This event is only supported in Outlook on the
+      web and the new Outlook on Windows.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>ItemChanged</code></td><td>A different Outlook item is
+      selected for viewing while the task pane is pinned.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed
+      in Outlook.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+      <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are
+      selected or deselected.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+      </table>
 
     isPreview: false
     isDeprecated: false
@@ -3005,13 +3039,8 @@ methods:
     package: outlook!
     fullName: removeHandlerAsync(eventType, options, callback)
     summary: >-
-      Removes the event handlers for a supported event type. **Note**:
-      Events are only available with task pane implementation.
-
-
-      For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
-      -->.
+      Removes the event handlers for a supported event type. Events are only
+      available in task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -3026,6 +3055,28 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The following events are supported on the `Mailbox`
+      object.
+
+
+      <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement
+      set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or
+      file attachment in the Outlook client window is dragged then dropped into
+      the task pane of an add-in. This event is only supported in Outlook on the
+      web and the new Outlook on Windows.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>ItemChanged</code></td><td>A different Outlook item is
+      selected for viewing while the task pane is pinned.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed
+      in Outlook.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+      <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are
+      selected or deselected.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+      </table>
 
     isPreview: false
     isDeprecated: false
@@ -3059,13 +3110,8 @@ methods:
     package: outlook!
     fullName: removeHandlerAsync(eventType, callback)
     summary: >-
-      Removes the event handlers for a supported event type. **Note**:
-      Events are only available with task pane implementation.
-
-
-      For supported events, refer to the Mailbox object model [events
-      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.14/office.context.mailbox#events)<!--
-      -->.
+      Removes the event handlers for a supported event type. Events are only
+      available in task pane add-ins.
     remarks: >-
       \[ [API set: Mailbox
       1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets)
@@ -3080,6 +3126,28 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: The following events are supported on the `Mailbox`
+      object.
+
+
+      <table> <tr><th>Event</th><th>Description</th><th>Minimum requirement
+      set</th></tr> <tr><td><code>DragAndDropEvent</code></td><td>A message or
+      file attachment in the Outlook client window is dragged then dropped into
+      the task pane of an add-in. This event is only supported in Outlook on the
+      web and the new Outlook on Windows.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>ItemChanged</code></td><td>A different Outlook item is
+      selected for viewing while the task pane is pinned.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-5">1.5</a></td></tr>
+      <tr><td><code>OfficeThemeChanged</code></td><td>The OfficeTheme is changed
+      in Outlook.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-14">1.14</a></td></tr>
+      <tr><td><code>SelectedItemsChanged</code></td><td>One or more messages are
+      selected or deselected.</td><td><a
+      href="https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13">1.13</a></td></tr>
+      </table>
 
 
       #### Examples
