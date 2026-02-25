@@ -117,8 +117,9 @@ fields:
 
 
       **Note**: Only applies to data in PowerPoint when calling the
-      [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedData
-      method to get the current slide or selected range of slides.
+      [Document](xref:office!Office.Document:interface)<!--
+      -->.getSelectedDataAsync method to get the current slide or selected range
+      of slides.
   - name: Table
     uid: office!Office.CoercionType.Table:member
     package: office!

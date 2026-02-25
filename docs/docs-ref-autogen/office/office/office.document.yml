@@ -1794,7 +1794,7 @@ methods:
         (result: AsyncResult<string>) => void): void;
       parameters:
         - id: resourceId
-          description: Either a string or value of the Resource ID.
+          description: Either a string or value of the resource ID.
           type: string
         - id: fieldId
           description: Resource Fields.
@@ -1923,7 +1923,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(1)
     package: office!
     fullName: getSelectedDataAsync(coercionType, options, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `Text` coercion type.
     remarks: >-
       **Requirement sets**:
 
@@ -1939,21 +1941,21 @@ methods:
       **Supported applications**: Excel, PowerPoint, Project, Word
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
       <td><code>AsyncResult.value</code></td> <td>Access the selected data as a
-      string. If the selection does not contain text, returns an empty
+      string. If the selection doesn't contain text, returns an empty
       string.</td> </tr> <tr> <td><code>AsyncResult.status</code></td>
       <td>Determine the success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
 
       #### Examples
@@ -2018,13 +2020,13 @@ methods:
           type: <xref uid="office!Office.CoercionType.Text:member" />
         - id: options
           description: >-
-            Provides options for customizing what data is returned and how it is
+            Provides options for customizing what data is returned and how it's
             formatted.
           type: <xref uid="office!Office.GetSelectedDataOptions:interface" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is a string containing the
             selected text.
@@ -2095,21 +2097,21 @@ methods:
       <td><ul><li>Excel on Windows and on Mac</li></ul></td> </tr> </table>
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
       <td><code>AsyncResult.value</code></td> <td>Access the selected data. The
-      type depends on the coercionType parameter specified in the call.</td>
+      type depends on the `coercionType` parameter specified in the call.</td>
       </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
       success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
 
       For other coercion types or when the coercion type is not known at compile
@@ -2130,12 +2132,12 @@ methods:
           type: <xref uid="office!Office.CoercionType:enum" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is the data in the current
             selection. This is returned in the data structure or format you
-            specified with the coercionType parameter. (See Remarks for more
+            specified with the `coercionType` parameter. (See Remarks for more
             information about data coercion.)
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface"
@@ -2147,7 +2149,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(2)
     package: office!
     fullName: getSelectedDataAsync(coercionType, options, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `Table` coercion type.
     remarks: >-
       **Requirement sets**:
 
@@ -2163,22 +2167,22 @@ methods:
       **Supported applications**: Excel, Word
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
       <td><code>AsyncResult.value</code></td> <td>Access the selected data as a
       [Office.TableData](xref:office!Office.TableData:class) object. Returns
-      null if no table is selected.</td> </tr> <tr>
+      `null` if no table is selected.</td> </tr> <tr>
       <td><code>AsyncResult.status</code></td> <td>Determine the success or
       failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -2193,13 +2197,13 @@ methods:
           type: <xref uid="office!Office.CoercionType.Table:member" />
         - id: options
           description: >-
-            Provides options for customizing what data is returned and how it is
+            Provides options for customizing what data is returned and how it's
             formatted.
           type: <xref uid="office!Office.GetSelectedDataOptions:interface" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is a
             [Office.TableData](xref:office!Office.TableData:class) object
@@ -2214,7 +2218,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(3)
     package: office!
     fullName: getSelectedDataAsync(coercionType, options, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `Matrix` coercion type.
     remarks: >-
       **Requirement sets**:
 
@@ -2230,9 +2236,9 @@ methods:
       **Supported applications**: Excel, Word
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
@@ -2240,11 +2246,11 @@ methods:
       array of arrays. Returns an empty array if no data is selected.</td> </tr>
       <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or
       failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -2259,13 +2265,13 @@ methods:
           type: <xref uid="office!Office.CoercionType.Matrix:member" />
         - id: options
           description: >-
-            Provides options for customizing what data is returned and how it is
+            Provides options for customizing what data is returned and how it's
             formatted.
           type: <xref uid="office!Office.GetSelectedDataOptions:interface" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is an array of arrays
             containing the data in the current selection.
@@ -2279,7 +2285,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(4)
     package: office!
     fullName: getSelectedDataAsync(coercionType, options, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `SlideRange` coercion type.
     remarks: >-
       **Requirement set**:
       [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
@@ -2288,9 +2296,9 @@ methods:
       **Supported application**: PowerPoint
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
@@ -2299,11 +2307,11 @@ methods:
       containing the IDs, titles, and indexes of the selected slides.</td> </tr>
       <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or
       failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -2318,13 +2326,13 @@ methods:
           type: <xref uid="office!Office.CoercionType.SlideRange:member" />
         - id: options
           description: >-
-            Provides options for customizing what data is returned and how it is
+            Provides options for customizing what data is returned and how it's
             formatted.
           type: <xref uid="office!Office.GetSelectedDataOptions:interface" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is a
             [Office.SlideRange](xref:office!Office.SlideRange:interface) object
@@ -2396,24 +2404,24 @@ methods:
       <td><ul><li>Excel on Windows and on Mac</li></ul></td> </tr> </table>
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
       <td><code>AsyncResult.value</code></td> <td>Access the selected data. The
-      type depends on the coercionType parameter specified in the call.</td>
-      </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the
-      success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      type depends on the <code>coercionType</code> parameter specified in the
+      call.</td> </tr> <tr> <td><code>AsyncResult.status</code></td>
+      <td>Determine the success or failure of the operation.</td> </tr> <tr>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
 
-      For other coercion types or when the coercion type is not known at compile
+      For other coercion types or when the coercion type isn't known at compile
       time, use the generic version of this method and specify the type
       parameter explicitly.
 
@@ -2432,17 +2440,17 @@ methods:
           type: <xref uid="office!Office.CoercionType:enum" />
         - id: options
           description: >-
-            Provides options for customizing what data is returned and how it is
+            Provides options for customizing what data is returned and how it's
             formatted.
           type: <xref uid="office!Office.GetSelectedDataOptions:interface" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is the data in the current
             selection. This is returned in the data structure or format you
-            specified with the coercionType parameter. (See Remarks for more
+            specified with the `coercionType` parameter. (See Remarks for more
             information about data coercion.)
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface"
@@ -2454,7 +2462,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(6)
     package: office!
     fullName: getSelectedDataAsync(coercionType, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `Text` coercion type.
     remarks: >-
       **Requirement sets**:
 
@@ -2470,9 +2480,9 @@ methods:
       **Supported applications**: Excel, PowerPoint, Project, Word
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
@@ -2480,11 +2490,11 @@ methods:
       string. If the selection does not contain text, returns an empty
       string.</td> </tr> <tr> <td><code>AsyncResult.status</code></td>
       <td>Determine the success or failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -2498,8 +2508,8 @@ methods:
           type: <xref uid="office!Office.CoercionType.Text:member" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is a string containing the
             selected text.
@@ -2513,7 +2523,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(7)
     package: office!
     fullName: getSelectedDataAsync(coercionType, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `Table` coercion type.
     remarks: >-
       **Requirement sets**:
 
@@ -2529,22 +2541,22 @@ methods:
       **Supported applications**: Excel, Word
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
       <td><code>AsyncResult.value</code></td> <td>Access the selected data as a
       [Office.TableData](xref:office!Office.TableData:class) object. Returns
-      null if no table is selected.</td> </tr> <tr>
+      `null` if no table is selected.</td> </tr> <tr>
       <td><code>AsyncResult.status</code></td> <td>Determine the success or
       failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -2558,8 +2570,8 @@ methods:
           type: <xref uid="office!Office.CoercionType.Table:member" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is a
             [Office.TableData](xref:office!Office.TableData:class) object
@@ -2574,7 +2586,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(8)
     package: office!
     fullName: getSelectedDataAsync(coercionType, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `Matrix` coercion type.
     remarks: >-
       **Requirement sets**:
 
@@ -2590,9 +2604,9 @@ methods:
       **Supported applications**: Excel, Word
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
@@ -2600,11 +2614,11 @@ methods:
       array of arrays. Returns an empty array if no data is selected.</td> </tr>
       <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or
       failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -2618,8 +2632,8 @@ methods:
           type: <xref uid="office!Office.CoercionType.Matrix:member" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is an array of arrays
             containing the data in the current selection.
@@ -2633,7 +2647,9 @@ methods:
     uid: office!Office.Document#getSelectedDataAsync:member(9)
     package: office!
     fullName: getSelectedDataAsync(coercionType, callback)
-    summary: Reads the data contained in the current selection in the document.
+    summary: >-
+      Reads the data contained in the current selection in the document using
+      the `SlideRange` coercion type.
     remarks: >-
       **Requirement set**:
       [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
@@ -2642,9 +2658,9 @@ methods:
       **Supported application**: PowerPoint
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the `callback` function that's passed to the `getSelectedDataAsync`
+      method, you can use the properties of the `AsyncResult` object to return
+      the following information.
 
 
       <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr>
@@ -2653,11 +2669,11 @@ methods:
       containing the IDs, titles, and indexes of the selected slides.</td> </tr>
       <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or
       failure of the operation.</td> </tr> <tr>
-      <td><code>AsyncResult.error</code></td> <td>Access an Error object that
-      provides error information if the operation failed.</td> </tr> <tr>
-      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any
-      type that's returned in the AsyncResult object without being altered.</td>
-      </tr> </table>
+      <td><code>AsyncResult.error</code></td> <td>Access an <code>Error</code>
+      object that provides error information if the operation failed.</td> </tr>
+      <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of
+      any type that's returned in the <code>AsyncResult</code> object without
+      being altered.</td> </tr> </table>
 
     isPreview: false
     isDeprecated: false
@@ -2671,8 +2687,8 @@ methods:
           type: <xref uid="office!Office.CoercionType.SlideRange:member" />
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
+            Optional. A function that's invoked when the callback returns, whose
+            only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
             -->. The `value` property of the result is a
             [Office.SlideRange](xref:office!Office.SlideRange:interface) object
@@ -2885,7 +2901,7 @@ methods:
     uid: office!Office.Document#getSelectedTaskAsync:member(2)
     package: office!
     fullName: getSelectedTaskAsync(callback)
-    summary: Project documents only. Get the current selected Task's Id.
+    summary: Project documents only. Get the current selected Task's ID.
     remarks: ''
 
     isPreview: false
@@ -3152,7 +3168,7 @@ methods:
             -->. The `value` property of the result contains the following
             properties: `taskName` - The name of the task. `wssTaskId` - The ID
             of the task in the synchronized SharePoint task list. If the project
-            is not synchronized with a SharePoint task list, the value is 0.
+            isn't synchronized with a SharePoint task list, the value is 0.
             `resourceNames` - The comma-separated list of the names of resources
             that are assigned to the task.
           type: >-
@@ -3626,7 +3642,7 @@ methods:
     package: office!
     fullName: getWSSUrlAsync(options, callback)
     summary: >-
-      Project documents only. Get the WSS Url and list name for the Tasks List,
+      Project documents only. Get the WSS URL and list name for the Tasks List,
       the MPP is synced too.
     remarks: ''
 
@@ -4188,7 +4204,7 @@ methods:
         AsyncResult<void>) => void): void;
       parameters:
         - id: resourceId
-          description: Either a string or value of the Resource ID.
+          description: Either a string or value of the resource ID.
           type: string
         - id: fieldId
           description: Resource Fields.
@@ -4373,7 +4389,7 @@ methods:
       specified text is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If
       <code>data</code> is an array of arrays ("matrix") or a TableData object,
       a new Word table is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If
-      </code>data</code> is HTML, the specified HTML is inserted.
+      <code>data</code> is HTML, the specified HTML is inserted.
       (**Important**: If any of the HTML you insert is invalid, Word won't
       raise an error. Word will insert as much of the HTML as it can and omits
       any invalid data).</td> </tr> <tr> <td></td> <td></td> <td>If
@@ -4757,9 +4773,9 @@ methods:
 
       <table> <tr> <th>Application</th> <th>Condition</th> <th>Behavior</th>
       </tr> <tr> <td>Word</td> <td>If there's no selection and the insertion
-      point is at a valid location, the specified `data` is inserted at the
-      insertion point</td> <td>If <code>data</code> is a string, the specified
-      text is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If
+      point is at a valid location, the specified <code>data</code> is inserted
+      at the insertion point</td> <td>If <code>data</code> is a string, the
+      specified text is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If
       <code>data</code> is an array of arrays ("matrix") or a TableData object,
       a new Word table is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If
       <code>data</code> is HTML, the specified HTML is inserted.

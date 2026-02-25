@@ -3,7 +3,9 @@ name: Office.AuthContext
 uid: office!Office.AuthContext:interface
 package: office!
 fullName: Office.AuthContext
-summary: Represents the user information which can be passed to msal.js.
+summary: >-
+  Represents the user information which can be passed to the Microsoft
+  Authentication Library for JavaScript (MSAL.js).
 remarks: ''
 
 isPreview: false

@@ -162,7 +162,7 @@ methods:
         type: 'Promise&lt;{[actionId: string]: string|null}&gt;'
         description: >-
           A promise that resolves to an object of shortcuts, with keys being the
-          IDs of the actions (as defined in an manifest) and values being the
+          IDs of the actions (as defined in a manifest) and values being the
           shortcut combinations. For example, `{"SetItalic": "Ctrl+1",
           "SetBold": "Ctrl+2", "SetUnderline": null}`<!-- -->.
   - name: replaceShortcuts(shortcuts)

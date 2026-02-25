@@ -415,7 +415,7 @@ methods:
     fullName: getNodesAsync(xPath, callback)
     summary: >-
       Asynchronously gets any CustomXmlNodes in this custom XML part which match
-      the specified XPath. / *
+      the specified XPath.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
