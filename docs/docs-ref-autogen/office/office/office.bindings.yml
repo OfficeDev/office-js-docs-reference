@@ -93,7 +93,7 @@ methods:
       function bindNamedItem() {
           Office.context.document.bindings.addFromNamedItemAsync(
               "myRange", "matrix", {id:'myMatrix'}, function (result) {
-              if (result.status == 'succeeded'){
+              if (result.status === Office.AsyncResultStatus.Succeeded) {
                   write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
                   }
               else
@@ -104,8 +104,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -117,7 +117,7 @@ methods:
       function bindNamedItem() {
           Office.context.document.bindings.addFromNamedItemAsync(
               "Table1", "table", {id:'myTable'}, function (result) {
-              if (result.status == 'succeeded'){
+              if (result.status === Office.AsyncResultStatus.Succeeded) {
                   write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
                   }
               else
@@ -128,8 +128,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
 
@@ -153,8 +153,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -305,8 +305,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -434,8 +434,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -614,8 +614,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -726,8 +726,8 @@ methods:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```
@@ -841,10 +841,10 @@ methods:
           write("Released MyBinding!"); 
       }); 
 
-      // Function that writes to a div with id='message' on the page. 
+      // Function that writes to a div with id='message' on the page.
 
-      function write(message){ 
-          document.getElementById('message').innerText += message;  
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```

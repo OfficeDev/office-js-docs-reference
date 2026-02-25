@@ -103,8 +103,8 @@ properties:
               write(asyncResult.asyncContext + asyncResult.value);
           }
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
   - name: diagnostics
@@ -168,7 +168,7 @@ properties:
           ```TypeScript
           function getData() {
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(asyncResult.error.message);
                   }
                   else {
@@ -177,8 +177,8 @@ properties:
               });
           }
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
   - name: status
@@ -205,7 +205,7 @@ properties:
           ```TypeScript
           function getData() {
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(asyncResult.error.message);
                   }
                   else {
@@ -214,8 +214,8 @@ properties:
               });
           }
           // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
+          function write(message) {
+              document.getElementById('message').innerText += message;
           }
           ```
   - name: value
@@ -243,7 +243,7 @@ properties:
 
       function getData() {
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                   write(asyncResult.error.message);
               }
               else {
@@ -254,8 +254,8 @@ properties:
 
       // Function that writes to a div with id='message' on the page.
 
-      function write(message){
-          document.getElementById('message').innerText += message; 
+      function write(message) {
+          document.getElementById('message').innerText += message;
       }
 
       ```

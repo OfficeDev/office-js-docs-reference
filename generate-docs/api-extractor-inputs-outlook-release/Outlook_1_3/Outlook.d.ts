@@ -418,8 +418,8 @@ export declare namespace Office {
      * The subclass of {@link Office.Item | Item} dealing with appointments.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -433,8 +433,8 @@ export declare namespace Office {
      * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Parent interfaces:
      *
@@ -1198,8 +1198,8 @@ export declare namespace Office {
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Parent interfaces:
      *
@@ -2738,9 +2738,6 @@ export declare namespace Office {
      * The item namespace is used to access the currently selected message, meeting request, or appointment.
      * You can determine the type of the item by using the `itemType` property.
      *
-     * To see the full member list, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
-     *
      * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
      *
      * - {@link Office.AppointmentCompose | AppointmentCompose}
@@ -2763,8 +2760,8 @@ export declare namespace Office {
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -2778,8 +2775,8 @@ export declare namespace Office {
      * The read mode of {@link Office.Item | Office.context.mailbox.item}.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -3565,8 +3562,8 @@ export declare namespace Office {
      * A subclass of {@link Office.Item | Item} for messages.
      *
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * Child interfaces:
      *
@@ -3582,8 +3579,8 @@ export declare namespace Office {
      * **Important**:
      *
      * - This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
      * For guidance on how to configure the Reading Pane, see
@@ -4232,8 +4229,8 @@ export declare namespace Office {
      * **Important**:
      *
      * - This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.3/office.context.mailbox.item | Object Model} page.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to
+     * {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-item-object-model | Outlook Item object model}.
      *
      * - When calling `Office.context.mailbox.item` on a message, note that the Reading Pane in the Outlook client must be turned on.
      * For guidance on how to configure the Reading Pane, see
@@ -5559,7 +5556,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * [Api set: Mailbox 1.1]
+         * [Api set: Mailbox 1.2]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
@@ -6008,7 +6005,6 @@ export declare namespace Office {
         timeZone: string;
     }
 }
-
 
 ////////////////////////////////////////////////////////////////
 /////////////////////// End Exchange APIs //////////////////////

@@ -7233,7 +7233,7 @@ office,Office.CoercionType,"Table",EnumField,Excellent,false
 office,Office.CoercionType,"Text",EnumField,Excellent,false
 office,Office.CoercionType,"XmlSvg",EnumField,Excellent,false
 office,Office.Context,N/A,Interface,Good,true
-office,Office.Context,"commerceAllowed",Property,Excellent,true
+office,Office.Context,"commerceAllowed",Property,Excellent,false
 office,Office.Context,"contentLanguage",Property,Excellent,true
 office,Office.Context,"diagnostics",Property,Great,true
 office,Office.Context,"displayLanguage",Property,Excellent,true
@@ -7496,7 +7496,7 @@ office,Office.Index,"First",EnumField,Fine,false
 office,Office.Index,"Last",EnumField,Fine,false
 office,Office.Index,"Next",EnumField,Fine,false
 office,Office.Index,"Previous",EnumField,Good,false
-office,Office.InitializationReason,N/A,Enum,Great,false
+office,Office.InitializationReason,N/A,Enum,Great,true
 office,Office.InitializationReason,"DocumentOpened",EnumField,Great,false
 office,Office.InitializationReason,"Inserted",EnumField,Great,false
 office,Office.IPromiseConstructor,N/A,Interface,Missing,false
@@ -9046,8 +9046,8 @@ outlook,Office.AppointmentCompose,"addFileAttachmentAsync(uri, attachmentName, o
 outlook,Office.AppointmentCompose,"addFileAttachmentAsync(uri, attachmentName, callback)",Method,Good,false
 outlook,Office.AppointmentCompose,"addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"addFileAttachmentFromBase64Async(base64File, attachmentName, callback)",Method,Excellent,true
-outlook,Office.AppointmentCompose,"addHandlerAsync(eventType, handler, options, callback)",Method,Great,true
-outlook,Office.AppointmentCompose,"addHandlerAsync(eventType, handler, callback)",Method,Great,false
+outlook,Office.AppointmentCompose,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,true
+outlook,Office.AppointmentCompose,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
 outlook,Office.AppointmentCompose,"addItemAttachmentAsync(itemId, attachmentName, options, callback)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"addItemAttachmentAsync(itemId, attachmentName, callback)",Method,Excellent,false
 outlook,Office.AppointmentCompose,"close()",Method,Excellent,true
@@ -9070,8 +9070,8 @@ outlook,Office.AppointmentCompose,"isClientSignatureEnabledAsync(callback)",Meth
 outlook,Office.AppointmentCompose,"loadCustomPropertiesAsync(callback, userContext)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"removeAttachmentAsync(attachmentId, options, callback)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"removeAttachmentAsync(attachmentId, callback)",Method,Excellent,false
-outlook,Office.AppointmentCompose,"removeHandlerAsync(eventType, options, callback)",Method,Great,false
-outlook,Office.AppointmentCompose,"removeHandlerAsync(eventType, callback)",Method,Great,true
+outlook,Office.AppointmentCompose,"removeHandlerAsync(eventType, options, callback)",Method,Good,false
+outlook,Office.AppointmentCompose,"removeHandlerAsync(eventType, callback)",Method,Good,true
 outlook,Office.AppointmentCompose,"saveAsync(options, callback)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"saveAsync(callback)",Method,Excellent,true
 outlook,Office.AppointmentCompose,"sendAsync(options, callback)",Method,Fine,true
@@ -9110,8 +9110,8 @@ outlook,Office.AppointmentRead,"sensitivity",Property,Great,true
 outlook,Office.AppointmentRead,"seriesId",Property,Excellent,true
 outlook,Office.AppointmentRead,"start",Property,Excellent,true
 outlook,Office.AppointmentRead,"subject",Property,Excellent,true
-outlook,Office.AppointmentRead,"addHandlerAsync(eventType, handler, options, callback)",Method,Great,true
-outlook,Office.AppointmentRead,"addHandlerAsync(eventType, handler, callback)",Method,Great,false
+outlook,Office.AppointmentRead,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,true
+outlook,Office.AppointmentRead,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
 outlook,Office.AppointmentRead,"displayReplyAllForm(formData)",Method,Good,true
 outlook,Office.AppointmentRead,"displayReplyAllFormAsync(formData, options, callback)",Method,Good,true
 outlook,Office.AppointmentRead,"displayReplyAllFormAsync(formData, callback)",Method,Good,false
@@ -9132,8 +9132,8 @@ outlook,Office.AppointmentRead,"getSelectedRegExMatches()",Method,Great,true
 outlook,Office.AppointmentRead,"getSharedPropertiesAsync(options, callback)",Method,Great,false
 outlook,Office.AppointmentRead,"getSharedPropertiesAsync(callback)",Method,Great,true
 outlook,Office.AppointmentRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Excellent,true
-outlook,Office.AppointmentRead,"removeHandlerAsync(eventType, options, callback)",Method,Great,false
-outlook,Office.AppointmentRead,"removeHandlerAsync(eventType, callback)",Method,Great,true
+outlook,Office.AppointmentRead,"removeHandlerAsync(eventType, options, callback)",Method,Good,false
+outlook,Office.AppointmentRead,"removeHandlerAsync(eventType, callback)",Method,Good,true
 outlook,Office.AppointmentTimeChangedEventArgs,N/A,Interface,Good,true
 outlook,Office.AppointmentTimeChangedEventArgs,"end",Property,Good,false
 outlook,Office.AppointmentTimeChangedEventArgs,"start",Property,Great,false
@@ -9421,8 +9421,8 @@ outlook,Office.Mailbox,"item",Property,Excellent,false
 outlook,Office.Mailbox,"masterCategories",Property,Excellent,true
 outlook,Office.Mailbox,"restUrl",Property,Great,true
 outlook,Office.Mailbox,"userProfile",Property,Great,false
-outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, options, callback)",Method,Great,true
-outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, callback)",Method,Great,false
+outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,true
+outlook,Office.Mailbox,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
 outlook,Office.Mailbox,"convertToEwsId(id, restVersion)",Method,Fine,true
 outlook,Office.Mailbox,"convertToLocalClientTime(timeValue)",Method,Excellent,true
 outlook,Office.Mailbox,"convertToRestId(id, restVersion)",Method,Fine,true
@@ -9450,8 +9450,8 @@ outlook,Office.Mailbox,"getUserIdentityTokenAsync(callback, userContext)",Method
 outlook,Office.Mailbox,"loadItemByIdAsync(itemId, options, callback)",Method,Good,true
 outlook,Office.Mailbox,"loadItemByIdAsync(itemId, callback)",Method,Good,false
 outlook,Office.Mailbox,"makeEwsRequestAsync(data, callback, userContext)",Method,Great,true
-outlook,Office.Mailbox,"removeHandlerAsync(eventType, options, callback)",Method,Great,false
-outlook,Office.Mailbox,"removeHandlerAsync(eventType, callback)",Method,Great,true
+outlook,Office.Mailbox,"removeHandlerAsync(eventType, options, callback)",Method,Good,false
+outlook,Office.Mailbox,"removeHandlerAsync(eventType, callback)",Method,Good,true
 outlook,Office.MailboxEnums.ActionType,N/A,Enum,Good,true
 outlook,Office.MailboxEnums.ActionType,"ShowTaskPane",EnumField,Good,false
 outlook,Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Great,true
@@ -9802,8 +9802,8 @@ outlook,Office.MessageCompose,"addFileAttachmentAsync(uri, attachmentName, optio
 outlook,Office.MessageCompose,"addFileAttachmentAsync(uri, attachmentName, callback)",Method,Good,false
 outlook,Office.MessageCompose,"addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)",Method,Excellent,true
 outlook,Office.MessageCompose,"addFileAttachmentFromBase64Async(base64File, attachmentName, callback)",Method,Excellent,true
-outlook,Office.MessageCompose,"addHandlerAsync(eventType, handler, options, callback)",Method,Great,true
-outlook,Office.MessageCompose,"addHandlerAsync(eventType, handler, callback)",Method,Great,false
+outlook,Office.MessageCompose,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,true
+outlook,Office.MessageCompose,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
 outlook,Office.MessageCompose,"addItemAttachmentAsync(itemId, attachmentName, options, callback)",Method,Excellent,true
 outlook,Office.MessageCompose,"addItemAttachmentAsync(itemId, attachmentName, callback)",Method,Excellent,false
 outlook,Office.MessageCompose,"close()",Method,Excellent,true
@@ -9834,8 +9834,8 @@ outlook,Office.MessageCompose,"isClientSignatureEnabledAsync(callback)",Method,E
 outlook,Office.MessageCompose,"loadCustomPropertiesAsync(callback, userContext)",Method,Excellent,true
 outlook,Office.MessageCompose,"removeAttachmentAsync(attachmentId, options, callback)",Method,Excellent,true
 outlook,Office.MessageCompose,"removeAttachmentAsync(attachmentId, callback)",Method,Excellent,false
-outlook,Office.MessageCompose,"removeHandlerAsync(eventType, options, callback)",Method,Great,false
-outlook,Office.MessageCompose,"removeHandlerAsync(eventType, callback)",Method,Great,true
+outlook,Office.MessageCompose,"removeHandlerAsync(eventType, options, callback)",Method,Good,false
+outlook,Office.MessageCompose,"removeHandlerAsync(eventType, callback)",Method,Good,true
 outlook,Office.MessageCompose,"saveAsync(options, callback)",Method,Fine,true
 outlook,Office.MessageCompose,"saveAsync(callback)",Method,Fine,true
 outlook,Office.MessageCompose,"sendAsync(options, callback)",Method,Fine,true
@@ -9884,8 +9884,8 @@ outlook,Office.MessageRead,"seriesId",Property,Excellent,true
 outlook,Office.MessageRead,"start",Property,Excellent,true
 outlook,Office.MessageRead,"subject",Property,Excellent,true
 outlook,Office.MessageRead,"to",Property,Great,true
-outlook,Office.MessageRead,"addHandlerAsync(eventType, handler, options, callback)",Method,Great,true
-outlook,Office.MessageRead,"addHandlerAsync(eventType, handler, callback)",Method,Great,false
+outlook,Office.MessageRead,"addHandlerAsync(eventType, handler, options, callback)",Method,Fine,true
+outlook,Office.MessageRead,"addHandlerAsync(eventType, handler, callback)",Method,Fine,false
 outlook,Office.MessageRead,"displayReplyAllForm(formData)",Method,Good,true
 outlook,Office.MessageRead,"displayReplyAllFormAsync(formData, options, callback)",Method,Good,true
 outlook,Office.MessageRead,"displayReplyAllFormAsync(formData, callback)",Method,Good,false
@@ -9910,8 +9910,8 @@ outlook,Office.MessageRead,"getSelectedRegExMatches()",Method,Great,true
 outlook,Office.MessageRead,"getSharedPropertiesAsync(options, callback)",Method,Great,false
 outlook,Office.MessageRead,"getSharedPropertiesAsync(callback)",Method,Great,true
 outlook,Office.MessageRead,"loadCustomPropertiesAsync(callback, userContext)",Method,Excellent,true
-outlook,Office.MessageRead,"removeHandlerAsync(eventType, options, callback)",Method,Great,false
-outlook,Office.MessageRead,"removeHandlerAsync(eventType, callback)",Method,Great,true
+outlook,Office.MessageRead,"removeHandlerAsync(eventType, options, callback)",Method,Good,false
+outlook,Office.MessageRead,"removeHandlerAsync(eventType, callback)",Method,Good,true
 outlook,Office.NotificationMessageAction,N/A,Interface,Fine,true
 outlook,Office.NotificationMessageAction,"actionText",Property,Good,false
 outlook,Office.NotificationMessageAction,"actionType",Property,Excellent,false

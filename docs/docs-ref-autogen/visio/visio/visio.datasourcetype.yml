@@ -20,8 +20,7 @@ fields:
 
 
       * \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Excel"'
   - name: unknown
     uid: visio!Visio.DataSourceType.unknown:member

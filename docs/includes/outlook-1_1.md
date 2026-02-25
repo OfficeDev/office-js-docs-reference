@@ -95,8 +95,7 @@
 ||[name](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-name-member)|A string that contains the name of the attachment, up to 255 characters in length.|
 ||[type](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-type-member)|Indicates the type of attachment.|
 ||[url](/javascript/api/outlook/office.replyformattachment#outlook-office-replyformattachment-url-member)|The URI of the location for the file.|
-|[ReplyFormData](/javascript/api/outlook/office.replyformdata)|[attachments](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-attachments-member)|An array of ReplyFormAttachment that are Base64-encoded files, Exchange items, or file attachments.|
-||[callback](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-callback-member)|When the reply display call completes, the function passed in the callback parameter is called with a single parameter,|
+|[ReplyFormData](/javascript/api/outlook/office.replyformdata)|[callback](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-callback-member)|When the reply display call completes, the function passed in the callback parameter is called with a single parameter,|
 ||[htmlBody](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-htmlbody-member)|A string that contains text and HTML and that represents the body of the reply form.|
 ||[options](/javascript/api/outlook/office.replyformdata#outlook-office-replyformdata-options-member)|An object literal that contains the `asyncContext` property.|
 |[RoamingSettings](/javascript/api/outlook/office.roamingsettings)|[get(name: string)](/javascript/api/outlook/office.roamingsettings#outlook-office-roamingsettings-get-member(1))|Retrieves the specified setting.|
