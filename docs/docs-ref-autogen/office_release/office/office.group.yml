@@ -21,7 +21,7 @@ remarks: |-
       const group: Office.Group = {
           id: "TableToolsGroup",
           controls: [
-              // The controls if the group...
+              // The controls of the group...
           ],
       };
       
