@@ -7164,7 +7164,7 @@ office,Office.Auth,"getAccessToken(options)",Method,Excellent,true
 office,Office.Auth,"getAccessTokenAsync(options, callback)",Method,Deprecated,true
 office,Office.Auth,"getAccessTokenAsync(callback)",Method,Deprecated,false
 office,Office.Auth,"getAuthContext()",Method,Good,true
-office,Office.AuthContext,N/A,Interface,Fine,false
+office,Office.AuthContext,N/A,Interface,Good,false
 office,Office.AuthContext,"authorityBaseUrl",Property,Great,false
 office,Office.AuthContext,"authorityType",Property,Excellent,false
 office,Office.AuthContext,"loginHint",Property,Excellent,false
@@ -7371,12 +7371,12 @@ office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",M
 office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
 office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
 office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Good,false
 office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
-office,Office.Document,"getSelectedDataAsync(coercionType, options, callback)",Method,Fine,false
 office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
 office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
 office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
-office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Fine,false
+office,Office.Document,"getSelectedDataAsync(coercionType, callback)",Method,Good,false
 office,Office.Document,"getSelectedResourceAsync(options, callback)",Method,Fine,false
 office,Office.Document,"getSelectedResourceAsync(callback)",Method,Fine,true
 office,Office.Document,"getSelectedTaskAsync(options, callback)",Method,Fine,false
@@ -7480,7 +7480,7 @@ office,Office.GoToType,"Binding",EnumField,Great,false
 office,Office.GoToType,"Index",EnumField,Great,false
 office,Office.GoToType,"NamedItem",EnumField,Great,false
 office,Office.GoToType,"Slide",EnumField,Good,false
-office,Office.Group,N/A,Interface,Good,false
+office,Office.Group,N/A,Interface,Good,true
 office,Office.Group,"controls",Property,Excellent,false
 office,Office.Group,"id",Property,Great,false
 office,Office.HostType,N/A,Enum,Good,true
@@ -8141,7 +8141,7 @@ office,Office.StartupBehavior,"load",EnumField,Good,false
 office,Office.StartupBehavior,"none",EnumField,Great,false
 office,Office.Tab,N/A,Interface,Excellent,true
 office,Office.Tab,"controls",Property,Excellent,false
-office,Office.Tab,"groups",Property,Great,false
+office,Office.Tab,"groups",Property,Great,true
 office,Office.Tab,"id",Property,Great,true
 office,Office.Tab,"visible",Property,Excellent,true
 office,Office.Table,N/A,Enum,Excellent,false

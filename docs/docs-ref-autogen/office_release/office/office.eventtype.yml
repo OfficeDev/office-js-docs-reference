@@ -106,8 +106,8 @@ fields:
 
 
       To add an event handler for the `BindingDataChanged` event of a binding,
-      use the `addHandlerAsync` method of the Binding object. The event handler
-      receives an argument of type
+      use the `addHandlerAsync` method of the `Binding` object. The event
+      handler receives an argument of type
       [Office.BindingDataChangedEventArgs](xref:office!Office.BindingDataChangedEventArgs:interface)<!--
       -->.
   - name: BindingSelectionChanged
@@ -118,8 +118,8 @@ fields:
 
 
       To add an event handler for the `BindingSelectionChanged` event of a
-      binding, use the `addHandlerAsync` method of the Binding object. The event
-      handler receives an argument of type
+      binding, use the `addHandlerAsync` method of the `Binding` object. The
+      event handler receives an argument of type
       [Office.BindingSelectionChangedEventArgs](xref:office!Office.BindingSelectionChangedEventArgs:interface)<!--
       -->.
   - name: DialogEventReceived

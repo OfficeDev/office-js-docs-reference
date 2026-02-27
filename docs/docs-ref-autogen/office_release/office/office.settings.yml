@@ -19,9 +19,9 @@ remarks: >-
   boolean, null, object, or array.
 
 
-  The Settings object is automatically loaded as part of the `Document` object,
-  and is available by calling the settings property of that object when the
-  add-in is activated.
+  The `Settings` object is automatically loaded as part of the `Document`
+  object, and is available by calling the settings property of that object when
+  the add-in is activated.
 
 
   The developer is responsible for calling the `saveAsync` method after adding
