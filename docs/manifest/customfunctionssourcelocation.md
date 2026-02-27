@@ -9,8 +9,9 @@ ms.localizationpriority: medium
 
 Defines the location of a resource needed by the following elements.
 
+- `LaunchEvent` extension point in Excel, Outlook, PowerPoint, and Word.
 - **\<Script\>** or **\<Page\>** elements used by custom functions in Excel.
-- **\<ReportPhishingCustomization\>** element, `DetectedEntity` extension point, `LaunchEvent` extension point, or `Module` extension point in Outlook.
+- **\<ReportPhishingCustomization\>** element, `DetectedEntity` extension point, or `Module` extension point in Outlook.
 
 > [!IMPORTANT]
 > This article only refers to the **\<SourceLocation\>** that's a child of the following:
@@ -39,7 +40,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 ## Contained in
 
-- [ExtensionPoint](extensionpoint.md) ([DetectedEntity](extensionpoint.md#detectedentity), [LaunchEvent](extensionpoint.md#launchevent), and [Module](extensionpoint.md#module) mail add-ins)
+- [ExtensionPoint](extensionpoint.md) ([DetectedEntity](extensionpoint.md#detectedentity), [LaunchEvent](extensionpoint.md#launchevent), and [Module](extensionpoint.md#module) add-ins)
 - [Page](page.md)
 - [ReportPhishingCustomization](reportphishingcustomization.md) (Mail add-ins)
 - [Script](script.md)
