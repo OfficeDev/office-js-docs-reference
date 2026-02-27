@@ -41,7 +41,7 @@ This extension point enables an add-in to activate based on supported events in 
 |  Element |  Description  |
 |:-----|:-----|
 | [LaunchEvents](launchevents.md) |  List of [LaunchEvent](launchevent.md) for event-based activation.  |
-| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.  |
+| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.<br><br>**Important**: The `resid` value of the **\<SourceLocation\>** element must match the `resid` value of the **\<Runtime\>** element that represents the [browser runtime](/office/dev/add-ins/testing/runtimes#types-of-runtimes). For example, if your runtime is defined as `<Runtime resid="WebViewRuntime.Url">`, specify `<SourceLocation resid="WebViewRuntime.Url"/>`  |
 
 #### Example
 

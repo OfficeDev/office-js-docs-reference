@@ -49,7 +49,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 | Attribute | Required | Description |
 |:----------|:--------:|:------------|
-| **resid** | Yes | The name of a URL resource defined in the **\<Resources\>** section of the manifest. Can be no more than 32 characters.<br><br>**Important**: The `resid` value of the **\<SourceLocation\>** element in a `LaunchEvent` extension point must match the `resid` value of the **\<Runtime\>** element that represents the [browser runtime](/office/dev/add-ins/testing/runtimes#types-of-runtimes). For example, if your runtime is defined as `<Runtime resid="WebViewRuntime.Url">`, specify `<SourceLocation resid="WebViewRuntime.Url"/>` in the `LaunchEvent` extension point. |
+| **resid** | Yes | The name of a URL resource defined in the **\<Resources\>** section of the manifest. Can be no more than 32 characters.<br><br>**Important**: The `resid` value of the **\<SourceLocation\>** element in a `LaunchEvent` extension point or **\<ReportPhishingCustomization\>** element must match the `resid` value of the **\<Runtime\>** element that represents the [browser runtime](/office/dev/add-ins/testing/runtimes#types-of-runtimes). For example, if your runtime is defined as `<Runtime resid="WebViewRuntime.Url">`, specify `<SourceLocation resid="WebViewRuntime.Url"/>`. |
 
 ## Child elements
 
