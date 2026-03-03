@@ -5648,7 +5648,7 @@ excel,Excel.RowPropertiesLoadOptions,N/A,Interface,Good,false
 excel,Excel.RowPropertiesLoadOptions,"format",Property,Excellent,false
 excel,Excel.RowPropertiesLoadOptions,"rowHidden",Property,Excellent,false
 excel,Excel.RowPropertiesLoadOptions,"rowIndex",Property,Excellent,false
-excel,Excel.RunOptions,N/A,Interface,Missing,false
+excel,Excel.RunOptions,N/A,Interface,Missing,true
 excel,Excel.RunOptions,"delayForCellEdit",Property,Excellent,false
 excel,Excel.RunOptions,"mergeUndoGroup",Property,Excellent,false
 excel,Excel.Runtime,N/A,Class,Fine,false
@@ -13569,7 +13569,7 @@ word,Word.Document,"deleteAllInkAnnotations()",Method,Fine,false
 word,Word.Document,"deleteBookmark(name)",Method,Good,false
 word,Word.Document,"detectLanguage()",Method,Fine,false
 word,Word.Document,"endReview(options)",Method,Fine,false
-word,Word.Document,"exportAsFixedFormat(outputFileName, exportFormat, options)",Method,Fine,false
+word,Word.Document,"exportAsFixedFormat(outputFileName, exportFormat, options)",Method,Fine,true
 word,Word.Document,"exportAsFixedFormat(outputFileName, exportFormat, options)",Method,Fine,false
 word,Word.Document,"exportAsFixedFormat2(outputFileName, exportFormat, options)",Method,Fine,false
 word,Word.Document,"exportAsFixedFormat2(outputFileName, exportFormat, options)",Method,Fine,false
@@ -13891,7 +13891,7 @@ word,Word.DocumentExportAsFixedFormat3Options,"optimizeForImageQuality",Property
 word,Word.DocumentExportAsFixedFormat3Options,"range",Property,Excellent,false
 word,Word.DocumentExportAsFixedFormat3Options,"to",Property,Excellent,false
 word,Word.DocumentExportAsFixedFormat3Options,"useIso19005_1",Property,Excellent,false
-word,Word.DocumentExportAsFixedFormatOptions,N/A,Interface,Good,false
+word,Word.DocumentExportAsFixedFormatOptions,N/A,Interface,Good,true
 word,Word.DocumentExportAsFixedFormatOptions,"bitmapMissingFonts",Property,Excellent,false
 word,Word.DocumentExportAsFixedFormatOptions,"createBookmarks",Property,Excellent,false
 word,Word.DocumentExportAsFixedFormatOptions,"documentStructureTags",Property,Excellent,false
@@ -14126,10 +14126,10 @@ word,Word.ExportCreateBookmarks,N/A,Enum,Good,false
 word,Word.ExportCreateBookmarks,"headings",EnumField,Excellent,false
 word,Word.ExportCreateBookmarks,"none",EnumField,Great,false
 word,Word.ExportCreateBookmarks,"wordBookmarks",EnumField,Excellent,false
-word,Word.ExportFormat,N/A,Enum,Good,false
+word,Word.ExportFormat,N/A,Enum,Good,true
 word,Word.ExportFormat,"pdf",EnumField,Great,false
 word,Word.ExportFormat,"xps",EnumField,Great,false
-word,Word.ExportItem,N/A,Enum,Good,false
+word,Word.ExportItem,N/A,Enum,Good,true
 word,Word.ExportItem,"documentContent",EnumField,Great,false
 word,Word.ExportItem,"documentWithMarkup",EnumField,Great,false
 word,Word.ExportOptimizeFor,N/A,Enum,Good,false
