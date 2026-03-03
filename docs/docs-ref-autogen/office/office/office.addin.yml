@@ -182,6 +182,11 @@ methods:
     fullName: showAsTaskpane()
     summary: Shows the task pane associated with the add-in.
     remarks: >-
+      This method applies only to centrally deployed or sideloaded add-ins. For
+      add-ins published in the Microsoft Marketplace, the method is ignored and
+      the task pane doesn't open.
+
+
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
