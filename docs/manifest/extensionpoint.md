@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 07/11/2025
+ms.date: 02/27/2026
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +41,7 @@ This extension point enables an add-in to activate based on supported events in 
 |  Element |  Description  |
 |:-----|:-----|
 | [LaunchEvents](launchevents.md) |  List of [LaunchEvent](launchevent.md) for event-based activation.  |
-| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.  |
+| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.<br><br>**Important**: The `resid` value of the **\<SourceLocation\>** element must match the `resid` value of the **\<Runtime\>** element that represents the [browser runtime](/office/dev/add-ins/testing/runtimes#types-of-runtimes). For example, if your runtime is defined as `<Runtime resid="WebViewRuntime.Url">`, specify `<SourceLocation resid="WebViewRuntime.Url"/>`  |
 
 #### Example
 
@@ -51,7 +51,7 @@ This extension point enables an add-in to activate based on supported events in 
     <LaunchEvent Type="OnNewMessageCompose" FunctionName="onMessageComposeHandler"/>
     <LaunchEvent Type="OnNewAppointmentOrganizer" FunctionName="onAppointmentComposeHandler"/>
   </LaunchEvents>
-  <!-- Identifies the runtime to be used (also referenced by the Runtime element). -->
+  <!-- Identifies the runtime to be used. The resid value must match the resid value of the Runtime element that represents the browser runtime. -->
   <SourceLocation resid="WebViewRuntime.Url"/>
 </ExtensionPoint>
 ```
