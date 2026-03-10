@@ -2230,6 +2230,40 @@ properties:
       \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-formula.yaml
+
+
+      // Inserts a formula field without specifying the formula expression.
+
+      // Word determines the formula automatically based on adjacent cell
+      values:
+
+      // if there are values above the cell, it inserts =SUM(ABOVE);
+
+      // if there are values to the left, it inserts =SUM(LEFT).
+
+      // The selection must be in a table cell with at least one adjacent cell
+      that contains a value.
+
+      await Word.run(async (context) => {
+        const options: Word.SelectionInsertFormulaOptions = {
+          numberFormat: "#,##0.00",
+        };
+        context.document.selection.insertFormula(options);
+        await context.sync();
+
+        console.log("Inserted formula (auto-determined by Word) with number format.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

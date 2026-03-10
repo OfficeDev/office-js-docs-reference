@@ -1002,6 +1002,35 @@ properties:
       \[ [API set: WordApiDesktop
       1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+      // Gets the range covering the entire body and reads list formatting
+      properties.
+
+      await Word.run(async (context) => {
+        const bodyRange: Word.Range = context.document.body.getRange();
+        const listFormat: Word.ListFormat = bodyRange.listFormat;
+        listFormat.load("isSingleList, listType, listLevelNumber, listString, listValue");
+        await context.sync();
+
+        console.log("List format info for the body range:");
+        console.log(`- Is single list: ${listFormat.isSingleList}`);
+        console.log(`- List type: ${listFormat.listType}`);
+        console.log(`- List level number (first paragraph): ${listFormat.listLevelNumber}`);
+        console.log(`- List string (first paragraph): "${listFormat.listString}"`);
+        console.log(`- List value (first paragraph): ${listFormat.listValue}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

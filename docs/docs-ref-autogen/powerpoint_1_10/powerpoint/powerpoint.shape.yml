@@ -909,6 +909,40 @@ methods:
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-as-image.yaml
+
+
+      // Gets an image of the first selected shape using default options
+
+      // (PNG format at the shape's original size).
+
+      await PowerPoint.run(async (context) => {
+        const shapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        await context.sync();
+
+        if (shapeCount.value === 0) {
+          console.warn("No shapes are selected. Please select a shape and try again.");
+          return;
+        }
+
+        const shape: PowerPoint.Shape = shapes.getItemAt(0);
+        // Call getImageAsBase64 with no options - returns PNG at the shape's true size.
+        const imageResult: OfficeExtension.ClientResult<string> = shape.getImageAsBase64();
+        await context.sync();
+
+        displayImage(imageResult.value, "Default (original size, PNG)");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:

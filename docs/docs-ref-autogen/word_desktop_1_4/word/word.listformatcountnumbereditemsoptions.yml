@@ -8,6 +8,34 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/format-list-range.yaml
+
+
+  // Counts only the level-2 (sub-level) numbered paragraphs in the body range.
+
+  await Word.run(async (context) => {
+    const bodyRange: Word.Range = context.document.body.getRange();
+    const listFormat: Word.ListFormat = bodyRange.listFormat;
+
+    const options: Word.ListFormatCountNumberedItemsOptions = {
+      level: 2,
+      numberType: Word.NumberType.paragraph,
+    };
+    const count: OfficeExtension.ClientResult<number> = listFormat.countNumberedItems(options);
+    await context.sync();
+
+    console.log(`Level-2 item count: ${count.value}`);
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
