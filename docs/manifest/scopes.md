@@ -30,7 +30,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  **\<Scope\>** |  Yes     |   The name of a permission; for example, Files.Read.All or profile. The possible values are the scopes you set when you register the add-in in the Microsoft Identity platform. See [Add a scope](office/dev/add-ins/develop/register-sso-add-in-aad-v2#add-a-scope).|
+|  **\<Scope\>** |  Yes     |   The name of a permission; for example, Files.Read.All or profile. The possible values are the permissions you set when you register the add-in in the Microsoft Identity platform. See [Add a Microsoft Graph permissions](office/dev/add-ins/develop/register-sso-add-in-aad-v2#add-microsoft-graph-permissions).|
 
 ## Example
 
