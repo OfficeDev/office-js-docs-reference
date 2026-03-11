@@ -761,12 +761,12 @@ export declare namespace Word {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.CommentContentRange): void;
         /**
-         * Inserts text into at the specified location. **Note**: For the modern comment, the content range tracked across context turns to empty if any revision to the comment is posted through the UI.
+         * Inserts text at the specified location. **Note**: For the modern comment, the content range tracked across context turns to empty if any revision to the comment is posted through the UI.
          *
          * @remarks
          * [Api set: WordApi 1.4]
          *
-         * @param text - The text to be inserted in to the `CommentContentRange`.
+         * @param text - The text to be inserted into the `CommentContentRange` object.
          * @param insertLocation - The value must be `replace`, `start`, `end`, `before`, or `after`.
          */
         insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.CommentContentRange;

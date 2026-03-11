@@ -10682,7 +10682,7 @@ powerpoint,PowerPoint.Shape,"width",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"zOrderPosition",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"delete()",Method,Good,true
 powerpoint,PowerPoint.Shape,"getGraphicOrNullObject()",Method,Excellent,false
-powerpoint,PowerPoint.Shape,"getImageAsBase64(options)",Method,Fine,false
+powerpoint,PowerPoint.Shape,"getImageAsBase64(options)",Method,Fine,true
 powerpoint,PowerPoint.Shape,"getParentSlide()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"getParentSlideLayout()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"getParentSlideLayoutOrNullObject()",Method,Excellent,false
@@ -10782,9 +10782,9 @@ powerpoint,PowerPoint.ShapeFontUnderlineStyle,"single",EnumField,Great,false
 powerpoint,PowerPoint.ShapeFontUnderlineStyle,"wavy",EnumField,Great,false
 powerpoint,PowerPoint.ShapeFontUnderlineStyle,"wavyDouble",EnumField,Great,false
 powerpoint,PowerPoint.ShapeFontUnderlineStyle,"wavyHeavy",EnumField,Great,false
-powerpoint,PowerPoint.ShapeGetImageFormatType,N/A,Enum,Good,false
+powerpoint,PowerPoint.ShapeGetImageFormatType,N/A,Enum,Good,true
 powerpoint,PowerPoint.ShapeGetImageFormatType,"png",EnumField,Great,false
-powerpoint,PowerPoint.ShapeGetImageOptions,N/A,Interface,Excellent,false
+powerpoint,PowerPoint.ShapeGetImageOptions,N/A,Interface,Excellent,true
 powerpoint,PowerPoint.ShapeGetImageOptions,"format",Property,Great,false
 powerpoint,PowerPoint.ShapeGetImageOptions,"height",Property,Excellent,false
 powerpoint,PowerPoint.ShapeGetImageOptions,"width",Property,Excellent,false
@@ -11951,7 +11951,7 @@ word,Word.Body,"getComments()",Method,Fine,true
 word,Word.Body,"getContentControls(options)",Method,Fine,false
 word,Word.Body,"getHtml()",Method,Excellent,true
 word,Word.Body,"getOoxml()",Method,Fine,true
-word,Word.Body,"getRange(rangeLocation)",Method,Fine,false
+word,Word.Body,"getRange(rangeLocation)",Method,Fine,true
 word,Word.Body,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 word,Word.Body,"getReviewedText(changeTrackingVersion)",Method,Fine,false
 word,Word.Body,"getTrackedChanges()",Method,Fine,true
@@ -13508,7 +13508,7 @@ word,Word.Document,"saved",Property,Excellent,false
 word,Word.Document,"saveEncoding",Property,Great,false
 word,Word.Document,"saveFormat",Property,Good,false
 word,Word.Document,"sections",Property,Great,false
-word,Word.Document,"selection",Property,Excellent,false
+word,Word.Document,"selection",Property,Excellent,true
 word,Word.Document,"sentences",Property,Excellent,false
 word,Word.Document,"settings",Property,Great,true
 word,Word.Document,"spellingErrors",Property,Excellent,false
@@ -15540,7 +15540,7 @@ word,Word.ListCollection,"load(propertyNamesAndPaths)",Method,Great,false
 word,Word.ListCollection,"toJSON()",Method,Excellent,false
 word,Word.ListCollection,"track()",Method,Excellent,false
 word,Word.ListCollection,"untrack()",Method,Excellent,false
-word,Word.ListFormat,N/A,Class,Fine,false
+word,Word.ListFormat,N/A,Class,Fine,true
 word,Word.ListFormat,"context",Property,Excellent,false
 word,Word.ListFormat,"isSingleList",Property,Great,false
 word,Word.ListFormat,"isSingleListTemplate",Property,Great,false
@@ -15560,7 +15560,7 @@ word,Word.ListFormat,"applyOutlineNumberDefault(defaultListBehavior)",Method,Fin
 word,Word.ListFormat,"canContinuePreviousList(listTemplate)",Method,Fine,false
 word,Word.ListFormat,"convertNumbersToText(numberType)",Method,Fine,false
 word,Word.ListFormat,"convertNumbersToText(numberType)",Method,Fine,false
-word,Word.ListFormat,"countNumberedItems(options)",Method,Fine,false
+word,Word.ListFormat,"countNumberedItems(options)",Method,Fine,true
 word,Word.ListFormat,"listIndent()",Method,Fine,false
 word,Word.ListFormat,"listOutdent()",Method,Fine,false
 word,Word.ListFormat,"load(options)",Method,Great,false
@@ -15573,7 +15573,7 @@ word,Word.ListFormat,"set(properties)",Method,Fine,false
 word,Word.ListFormat,"toJSON()",Method,Excellent,false
 word,Word.ListFormat,"track()",Method,Excellent,false
 word,Word.ListFormat,"untrack()",Method,Excellent,false
-word,Word.ListFormatCountNumberedItemsOptions,N/A,Interface,Fine,false
+word,Word.ListFormatCountNumberedItemsOptions,N/A,Interface,Fine,true
 word,Word.ListFormatCountNumberedItemsOptions,"level",Property,Great,false
 word,Word.ListFormatCountNumberedItemsOptions,"numberType",Property,Excellent,false
 word,Word.ListItem,N/A,Class,Fine,true
@@ -15762,7 +15762,7 @@ word,Word.NumberSpacing,N/A,Enum,Good,false
 word,Word.NumberSpacing,"default",EnumField,Great,false
 word,Word.NumberSpacing,"proportional",EnumField,Great,false
 word,Word.NumberSpacing,"tabular",EnumField,Great,false
-word,Word.NumberType,N/A,Enum,Good,false
+word,Word.NumberType,N/A,Enum,Good,true
 word,Word.NumberType,"allNumbers",EnumField,Excellent,false
 word,Word.NumberType,"listNum",EnumField,Great,false
 word,Word.NumberType,"paragraph",EnumField,Great,false
@@ -15799,7 +15799,7 @@ word,Word.OleVerb,"open",EnumField,Great,false
 word,Word.OleVerb,"primary",EnumField,Excellent,false
 word,Word.OleVerb,"show",EnumField,Great,false
 word,Word.OleVerb,"uiActivate",EnumField,Excellent,false
-word,Word.OperationUnit,N/A,Enum,Good,false
+word,Word.OperationUnit,N/A,Enum,Good,true
 word,Word.OperationUnit,"cell",EnumField,Excellent,false
 word,Word.OperationUnit,"character",EnumField,Excellent,false
 word,Word.OperationUnit,"characterFormat",EnumField,Excellent,false
@@ -16670,7 +16670,7 @@ word,Word.Range,"languageDetected",Property,Excellent,false
 word,Word.Range,"languageId",Property,Great,false
 word,Word.Range,"languageIdFarEast",Property,Great,false
 word,Word.Range,"languageIdOther",Property,Excellent,false
-word,Word.Range,"listFormat",Property,Excellent,false
+word,Word.Range,"listFormat",Property,Excellent,true
 word,Word.Range,"lists",Property,Great,false
 word,Word.Range,"pages",Property,Great,false
 word,Word.Range,"paragraphs",Property,Great,false
@@ -17140,7 +17140,7 @@ word,Word.SeekView,"footnotes",EnumField,Great,false
 word,Word.SeekView,"mainDocument",EnumField,Great,false
 word,Word.SeekView,"primaryFooter",EnumField,Great,false
 word,Word.SeekView,"primaryHeader",EnumField,Great,false
-word,Word.Selection,N/A,Class,Fine,false
+word,Word.Selection,N/A,Class,Fine,true
 word,Word.Selection,"borders",Property,Excellent,false
 word,Word.Selection,"characters",Property,Excellent,false
 word,Word.Selection,"comments",Property,Excellent,false
@@ -17198,8 +17198,8 @@ word,Word.Selection,"expand(unit)",Method,Poor,false
 word,Word.Selection,"expandToWholeStory()",Method,Fine,false
 word,Word.Selection,"extend(character)",Method,Great,false
 word,Word.Selection,"extend(character)",Method,Great,false
-word,Word.Selection,"getNextRange(options)",Method,Good,false
-word,Word.Selection,"getPreviousRange(options)",Method,Good,false
+word,Word.Selection,"getNextRange(options)",Method,Good,true
+word,Word.Selection,"getPreviousRange(options)",Method,Good,true
 word,Word.Selection,"goTo(options)",Method,Great,false
 word,Word.Selection,"goToNext(what)",Method,Excellent,false
 word,Word.Selection,"goToNext(what)",Method,Excellent,false
@@ -17212,7 +17212,7 @@ word,Word.Selection,"insertCells(shiftCells)",Method,Fine,false
 word,Word.Selection,"insertColumnsLeft()",Method,Fine,false
 word,Word.Selection,"insertColumnsRight()",Method,Fine,false
 word,Word.Selection,"insertDateTime(options)",Method,Good,false
-word,Word.Selection,"insertFormula(options)",Method,Good,false
+word,Word.Selection,"insertFormula(options)",Method,Good,true
 word,Word.Selection,"insertNewPage()",Method,Fine,false
 word,Word.Selection,"insertParagraphAfter()",Method,Fine,false
 word,Word.Selection,"insertParagraphBefore()",Method,Fine,false
@@ -17297,7 +17297,7 @@ word,Word.SelectionInsertDateTimeOptions,"dateLanguage",Property,Excellent,false
 word,Word.SelectionInsertDateTimeOptions,"dateTimeFormat",Property,Excellent,false
 word,Word.SelectionInsertDateTimeOptions,"insertAsField",Property,Excellent,false
 word,Word.SelectionInsertDateTimeOptions,"insertAsFullWidth",Property,Excellent,false
-word,Word.SelectionInsertFormulaOptions,N/A,Interface,Fine,false
+word,Word.SelectionInsertFormulaOptions,N/A,Interface,Fine,true
 word,Word.SelectionInsertFormulaOptions,"formula",Property,Excellent,false
 word,Word.SelectionInsertFormulaOptions,"numberFormat",Property,Great,false
 word,Word.SelectionInsertSymbolOptions,N/A,Interface,Fine,false
@@ -17322,10 +17322,10 @@ word,Word.SelectionMoveUpDownOptions,N/A,Interface,Good,false
 word,Word.SelectionMoveUpDownOptions,"count",Property,Excellent,false
 word,Word.SelectionMoveUpDownOptions,"extend",Property,Excellent,false
 word,Word.SelectionMoveUpDownOptions,"unit",Property,Excellent,false
-word,Word.SelectionNextOptions,N/A,Interface,Fine,false
+word,Word.SelectionNextOptions,N/A,Interface,Fine,true
 word,Word.SelectionNextOptions,"count",Property,Excellent,false
 word,Word.SelectionNextOptions,"unit",Property,Excellent,false
-word,Word.SelectionPreviousOptions,N/A,Interface,Fine,false
+word,Word.SelectionPreviousOptions,N/A,Interface,Fine,true
 word,Word.SelectionPreviousOptions,"count",Property,Excellent,false
 word,Word.SelectionPreviousOptions,"unit",Property,Excellent,false
 word,Word.SelectionType,N/A,Enum,Good,false

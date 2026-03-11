@@ -185,7 +185,7 @@ methods:
     package: word!
     fullName: insertText(text, insertLocation)
     summary: >-
-      Inserts text into at the specified location. **Note**: For the modern
+      Inserts text at the specified location. **Note**: For the modern
       comment, the content range tracked across context turns to empty if any
       revision to the comment is posted through the UI.
     remarks: >-
@@ -200,7 +200,7 @@ methods:
         | "Start" | "End" | "Before" | "After"): Word.CommentContentRange;
       parameters:
         - id: text
-          description: The text to be inserted in to the `CommentContentRange`<!-- -->.
+          description: The text to be inserted into the `CommentContentRange` object.
           type: string
         - id: insertLocation
           description: >-

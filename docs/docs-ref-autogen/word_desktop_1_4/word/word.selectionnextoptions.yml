@@ -10,6 +10,32 @@ remarks: >-
   \[ [API set: WordApiDesktop
   1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/get-previous-next-range.yaml
+
+
+  // Gets the range of the next word relative to the current selection.
+
+  await Word.run(async (context) => {
+    const options: Word.SelectionNextOptions = {
+      unit: Word.OperationUnit.word,
+      count: 1,
+    };
+    const nextRange: Word.Range = context.document.selection.getNextRange(options);
+    nextRange.load("text");
+    await context.sync();
+
+    console.log(`Next word: "${nextRange.text}"`);
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
