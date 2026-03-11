@@ -1,7 +1,7 @@
 ---
 title: Scopes element in the manifest file
 description: The Scopes element contains permissions the add-in needs to connect to an external resource.
-ms.date: 03/12/2026
+ms.date: 03/13/2026
 ms.localizationpriority: medium
 ---
 
