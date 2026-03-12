@@ -185,6 +185,48 @@ methods:
       1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-shape-by-id.yaml
+
+
+      // Uses getItemOrNullObject to find a shape by ID within the selected
+      shapes.
+
+      // If the ID is not found in the selected shapes, the returned object's
+      isNullObject property is true.
+
+      await PowerPoint.run(async (context) => {
+        const shapeId = (document.getElementById("shape-id-input") as HTMLInputElement).value.trim();
+        if (!shapeId) {
+          console.log("Enter a shape ID in the text box first.");
+          return;
+        }
+
+        const selectedShapes: PowerPoint.ShapeScopedCollection = context.presentation.getSelectedShapes();
+
+        // getItemOrNullObject returns a Shape object without throwing if the ID isn't found.
+        const shape: PowerPoint.Shape = selectedShapes.getItemOrNullObject(shapeId);
+        shape.load("id,name,type");
+        await context.sync();
+
+        if (shape.isNullObject) {
+          console.log(`Shape ID "${shapeId}" was not found in the selected shapes.`);
+        } else {
+          console.log(`Shape found in the selected shapes.`);
+          console.log(`  ID: ${shape.id}`);
+          console.log(`  Name: "${shape.name}"`);
+          console.log(`  Type: ${shape.type}`);
+        }
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
