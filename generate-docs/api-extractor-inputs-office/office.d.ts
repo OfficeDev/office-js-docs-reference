@@ -3207,7 +3207,7 @@ export declare namespace Office {
          * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
          * To learn how to specify a valid action ID and a key combination, see {@link https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)
          * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered.
-         * Otherwise, the promise will be rejected with error code and error message. An "InvalidOperation" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.
+         * Otherwise, the promise will be rejected with an error code and error message. An `OfficeExtension.ErrorCodes.invalidArgument` error code is returned if any action ID in `shortcuts` doesn't exist, or if shortcut combination is invalid.
          */
         replaceShortcuts(shortcuts: {[actionId: string]: string}): Promise<void>;
         /**

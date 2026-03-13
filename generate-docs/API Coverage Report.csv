@@ -10683,7 +10683,7 @@ powerpoint,PowerPoint.Shape,"zOrderPosition",Property,Excellent,true
 powerpoint,PowerPoint.Shape,"delete()",Method,Good,true
 powerpoint,PowerPoint.Shape,"getGraphicOrNullObject()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"getImageAsBase64(options)",Method,Fine,true
-powerpoint,PowerPoint.Shape,"getParentSlide()",Method,Excellent,false
+powerpoint,PowerPoint.Shape,"getParentSlide()",Method,Excellent,true
 powerpoint,PowerPoint.Shape,"getParentSlideLayout()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"getParentSlideLayoutOrNullObject()",Method,Excellent,false
 powerpoint,PowerPoint.Shape,"getParentSlideMaster()",Method,Excellent,false
@@ -10836,7 +10836,7 @@ powerpoint,PowerPoint.ShapeScopedCollection,"items",Property,Great,false
 powerpoint,PowerPoint.ShapeScopedCollection,"getCount()",Method,Fine,true
 powerpoint,PowerPoint.ShapeScopedCollection,"getItem(key)",Method,Great,false
 powerpoint,PowerPoint.ShapeScopedCollection,"getItemAt(index)",Method,Excellent,false
-powerpoint,PowerPoint.ShapeScopedCollection,"getItemOrNullObject(id)",Method,Excellent,false
+powerpoint,PowerPoint.ShapeScopedCollection,"getItemOrNullObject(id)",Method,Excellent,true
 powerpoint,PowerPoint.ShapeScopedCollection,"group()",Method,Excellent,false
 powerpoint,PowerPoint.ShapeScopedCollection,"load(options)",Method,Great,false
 powerpoint,PowerPoint.ShapeScopedCollection,"load(propertyNames)",Method,Great,false
@@ -11155,7 +11155,7 @@ powerpoint,PowerPoint.SlideScopedCollection,"exportAsBase64Presentation()",Metho
 powerpoint,PowerPoint.SlideScopedCollection,"getCount()",Method,Fine,false
 powerpoint,PowerPoint.SlideScopedCollection,"getItem(key)",Method,Fine,false
 powerpoint,PowerPoint.SlideScopedCollection,"getItemAt(index)",Method,Fine,false
-powerpoint,PowerPoint.SlideScopedCollection,"getItemOrNullObject(id)",Method,Excellent,false
+powerpoint,PowerPoint.SlideScopedCollection,"getItemOrNullObject(id)",Method,Excellent,true
 powerpoint,PowerPoint.SlideScopedCollection,"load(options)",Method,Great,false
 powerpoint,PowerPoint.SlideScopedCollection,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.SlideScopedCollection,"load(propertyNamesAndPaths)",Method,Great,false
@@ -11418,7 +11418,7 @@ powerpoint,PowerPoint.TextFrame,"topMargin",Property,Great,false
 powerpoint,PowerPoint.TextFrame,"verticalAlignment",Property,Excellent,false
 powerpoint,PowerPoint.TextFrame,"wordWrap",Property,Great,false
 powerpoint,PowerPoint.TextFrame,"deleteText()",Method,Fine,false
-powerpoint,PowerPoint.TextFrame,"getParentShape()",Method,Great,false
+powerpoint,PowerPoint.TextFrame,"getParentShape()",Method,Great,true
 powerpoint,PowerPoint.TextFrame,"load(options)",Method,Great,false
 powerpoint,PowerPoint.TextFrame,"load(propertyNames)",Method,Great,false
 powerpoint,PowerPoint.TextFrame,"load(propertyNamesAndPaths)",Method,Great,false
@@ -11431,7 +11431,7 @@ powerpoint,PowerPoint.TextRange,"length",Property,Excellent,false
 powerpoint,PowerPoint.TextRange,"paragraphFormat",Property,Excellent,true
 powerpoint,PowerPoint.TextRange,"start",Property,Excellent,false
 powerpoint,PowerPoint.TextRange,"text",Property,Great,false
-powerpoint,PowerPoint.TextRange,"getParentTextFrame()",Method,Great,false
+powerpoint,PowerPoint.TextRange,"getParentTextFrame()",Method,Great,true
 powerpoint,PowerPoint.TextRange,"getSubstring(start, length)",Method,Good,false
 powerpoint,PowerPoint.TextRange,"load(options)",Method,Great,false
 powerpoint,PowerPoint.TextRange,"load(propertyNames)",Method,Great,false
