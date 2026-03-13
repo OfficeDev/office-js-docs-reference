@@ -1,13 +1,13 @@
 ---
 title: Scopes element in the manifest file
 description: The Scopes element contains permissions the add-in needs to connect to an external resource.
-ms.date: 02/25/2022
+ms.date: 03/13/2026
 ms.localizationpriority: medium
 ---
 
 # Scopes element
 
-Contains permissions that the add-in needs to an external resource, such as Microsoft Graph. When Microsoft Graph is the resource, AppSource uses the Scopes element to create a consent dialog box. When users install the add-in from the Store, they are prompted to grant the add-in the specified permissions to the user's Microsoft Graph data.
+Contains permissions that the add-in needs to an external resource, such as Microsoft Graph. When Microsoft Graph is the resource, Microsoft Marketplace uses the element to create a consent dialog box. When users install the add-in from the marketplace, they are prompted to grant the add-in the specified permissions to the user's Microsoft Graph data.
 
 **Add-in type:** Task pane, Mail, Content
 
@@ -30,7 +30,7 @@ For more information, see [Version overrides in the add-in only manifest](/offic
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  **\<Scope\>** |  Yes     |   The name of a permission; for example, Files.Read.All or profile. |
+|  **\<Scope\>** |  Yes     |   The name of a permission; for example, Files.Read.All or profile. The possible values are the permissions you set when you register the add-in in the Microsoft Identity platform. See [Add a Microsoft Graph permissions](/office/dev/add-ins/develop/register-sso-add-in-aad-v2#add-microsoft-graph-permissions).|
 
 ## Example
 
