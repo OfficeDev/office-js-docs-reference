@@ -4347,7 +4347,7 @@ Office.Settings#addHandlerAsync:member(2):
         Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
     }
 
-    function MyHandler(eventArgs) {
+    function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
         write('Event raised: ' + eventArgs.type);
         doSomethingWithSettings(eventArgs.settings);
     }
@@ -4384,17 +4384,7 @@ Office.Settings#remove:member(1):
 Office.Settings#removeHandlerAsync:member(2):
   - |-
     function removeSettingsChangedEventHandler() {
-        Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
-    }
-
-    function MyHandler(eventArgs) {
-        write('Event raised: ' + eventArgs.type);
-        doSomethingWithSettings(eventArgs.settings);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message) {
-        document.getElementById('message').innerText += message;
+        Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged);
     }
 Office.Settings#saveAsync:member(2):
   - |-
@@ -4411,6 +4401,21 @@ Office.Settings#set:member(1):
   - |-
     function setMySetting() {
         Office.context.document.settings.set('mySetting', 'mySetting value');
+    }
+Office.SettingsChangedEventArgs:interface:
+  - |-
+    function addSelectionChangedEventHandler() {
+        Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+    }
+
+    function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithSettings(eventArgs.settings);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message) {
+        document.getElementById('message').innerText += message;
     }
 Office.Slice:interface:
   - |-
