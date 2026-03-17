@@ -7,7 +7,47 @@ summary: >-
   Specifies a cell, or row, or column, by its zero-based row and/or column
   number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
   (zero-based) row in the 4th (zero-based) column.
-remarks: ''
+remarks: >-
+  #### Examples
+
+
+  ```TypeScript
+
+  // Use RangeCoordinates to target specific cells when applying formatting.
+
+  // Both row and column are zero-based. Omitting one targets the entire row or
+  column.
+
+  const specificCell: Office.RangeCoordinates = { row: 0, column: 1 };
+
+  const entireRow: Office.RangeCoordinates = { row: 2 };
+
+
+  const cellFormats: Office.RangeFormatConfiguration[] = [
+      { cells: specificCell, format: { fontStyle: "bold" } },
+      { cells: entireRow, format: { fontColor: "red" } }
+  ];
+
+
+  const tableData = new Office.TableData();
+
+  tableData.headers = [["Product", "Price"]];
+
+  tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry",
+  "$2.00"]];
+
+
+  Office.context.document.setSelectedDataAsync(
+      tableData,
+      { cellFormat: cellFormats },
+      function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error("Error: " + asyncResult.error.message);
+          }
+      }
+  );
+
+  ```
 
 isPreview: false
 isDeprecated: false
