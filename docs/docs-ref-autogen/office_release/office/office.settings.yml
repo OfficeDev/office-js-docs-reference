@@ -134,7 +134,7 @@ methods:
       }
 
 
-      function MyHandler(eventArgs) {
+      function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
           write('Event raised: ' + eventArgs.type);
           doSomethingWithSettings(eventArgs.settings);
       }
@@ -459,20 +459,7 @@ methods:
       ```TypeScript
 
       function removeSettingsChangedEventHandler() {
-          Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
-      }
-
-
-      function MyHandler(eventArgs) {
-          write('Event raised: ' + eventArgs.type);
-          doSomethingWithSettings(eventArgs.settings);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message) {
-          document.getElementById('message').innerText += message;
+          Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged);
       }
 
       ```

@@ -4,7 +4,45 @@ uid: office!Office.RangeFormatConfiguration:interface
 package: office!
 fullName: Office.RangeFormatConfiguration
 summary: Specifies a range and its formatting.
-remarks: ''
+remarks: >-
+  #### Examples
+
+
+  ```TypeScript
+
+  // Apply formatting to specific cells when writing table data to the
+  selection.
+
+  // The cells property accepts an Office.Table enum value or a RangeCoordinates
+  object.
+
+  // The format property specifies formatting as key-value pairs.
+
+  const cellFormats: Office.RangeFormatConfiguration[] = [
+      { cells: Office.Table.Headers, format: { fontColor: "red" } },
+      { cells: { row: 2, column: 1 }, format: { borderColor: "blue", fontStyle: "bold" } }
+  ];
+
+
+  const tableData = new Office.TableData();
+
+  tableData.headers = [["Product", "Price"]];
+
+  tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry",
+  "$2.00"]];
+
+
+  Office.context.document.setSelectedDataAsync(
+      tableData,
+      { cellFormat: cellFormats },
+      function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.error("Error: " + asyncResult.error.message);
+          }
+      }
+  );
+
+  ```
 
 isPreview: false
 isDeprecated: false
