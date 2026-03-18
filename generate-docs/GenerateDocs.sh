@@ -885,6 +885,12 @@ pushd scripts
 node yaml-office-processor.js
 popd
 
+echo ""
+echo "Generating Outlook item object model tables..."
+pushd scripts
+node generate-item-object-model.js
+popd
+
 pushd scripts
 node postprocessor.js
 popd
