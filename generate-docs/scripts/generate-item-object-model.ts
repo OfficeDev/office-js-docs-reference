@@ -55,11 +55,11 @@ const PRIMITIVES = new Set(["string", "number", "boolean", "void", "date", "any"
  */
 const REQUIREMENT_SET_OVERRIDES: Record<string, string> = {
     "addFileAttachmentAsync":
-        "[1.1](outlook-requirement-set-1-1.md)<br>(classic Windows, Mac)" +
-        "<br><br>[1.8](outlook-requirement-set-1-8.md)<br>(Web, new Windows)",
+        "[1.1](/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-1)<br>(classic Windows, Mac)" +
+        "<br><br>[1.8](/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-8)<br>(Web, new Windows)",
     "getSharedPropertiesAsync":
-        "[1.8](outlook-requirement-set-1-8.md)<br>(shared folder support)" +
-        "<br><br>[1.13](outlook-requirement-set-1-13.md)<br>(shared mailbox support)",
+        "[1.8](/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-8)<br>(shared folder support)" +
+        "<br><br>[1.13](/javascript/api/requirement-sets/outlook/outlook-requirement-set-1-13)<br>(shared mailbox support)",
 };
 
 /** Directory for generated include files. */
@@ -353,11 +353,11 @@ function buildModeLink(interfaceName: string, memberName: string, memberKind: st
 
 function buildVersionLink(version: string): string {
     if (version === "Preview") {
-        return `[Preview](outlook-requirement-set-preview.md)`;
+        return `[Preview](/javascript/api/requirement-sets/outlook/outlook-requirement-set-preview)`;
     }
-    // "1.8" → "outlook-requirement-set-1-8.md"
+    // "1.8" → "outlook-requirement-set-1-8"
     const fileSuffix = version.replace(".", "-");
-    return `[${version}](outlook-requirement-set-${fileSuffix}.md)`;
+    return `[${version}](/javascript/api/requirement-sets/outlook/outlook-requirement-set-${fileSuffix})`;
 }
 
 function generatePropertiesTable(groups: GroupedMember[], versionedInterfaces: Map<string, Map<string, ApiInterface>>, outlookVersions: string[]): string {
