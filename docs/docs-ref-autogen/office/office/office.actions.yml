@@ -229,6 +229,7 @@ methods:
           A promise that resolves when every custom shortcut assignment in
           `shortcuts` has been registered. Even if there is a conflict with
           existing shortcuts, the customized shortcut will be registered.
-          Otherwise, the promise will be rejected with error code and error
-          message. An "InvalidOperation" error code is returned if any action ID
-          in `shortcuts` does not exist, or if shortcut combination is invalid.
+          Otherwise, the promise will be rejected with an error code and error
+          message. An `OfficeExtension.ErrorCodes.invalidArgument` error code is
+          returned if any action ID in `shortcuts` doesn't exist, or if shortcut
+          combination is invalid.

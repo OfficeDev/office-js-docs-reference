@@ -8070,10 +8070,10 @@ office,Office.ProjectViewTypes,"TaskSheet",EnumField,Good,false
 office,Office.ProjectViewTypes,"TaskUsage",EnumField,Good,false
 office,Office.ProjectViewTypes,"TeamPlanner",EnumField,Good,false
 office,Office.ProjectViewTypes,"Timeline",EnumField,Good,false
-office,Office.RangeCoordinates,N/A,Interface,Good,false
+office,Office.RangeCoordinates,N/A,Interface,Good,true
 office,Office.RangeCoordinates,"column",Property,Excellent,false
 office,Office.RangeCoordinates,"row",Property,Excellent,false
-office,Office.RangeFormatConfiguration,N/A,Interface,Fine,false
+office,Office.RangeFormatConfiguration,N/A,Interface,Fine,true
 office,Office.RangeFormatConfiguration,"cells",Property,Excellent,false
 office,Office.RangeFormatConfiguration,"format",Property,Great,false
 office,Office.RemoveHandlerOptions,N/A,Interface,Fine,false
@@ -8123,7 +8123,7 @@ office,Office.Settings,"removeHandlerAsync(eventType, callback)",Method,Fine,tru
 office,Office.Settings,"saveAsync(options, callback)",Method,Fine,false
 office,Office.Settings,"saveAsync(callback)",Method,Fine,true
 office,Office.Settings,"set(name, value)",Method,Excellent,true
-office,Office.SettingsChangedEventArgs,N/A,Interface,Excellent,false
+office,Office.SettingsChangedEventArgs,N/A,Interface,Excellent,true
 office,Office.SettingsChangedEventArgs,"settings",Property,Excellent,false
 office,Office.SettingsChangedEventArgs,"type",Property,Excellent,false
 office,Office.Slice,N/A,Interface,Good,true

@@ -5896,6 +5896,54 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.RangeCoordinates:interface:
+  - |-
+    // Use RangeCoordinates to target specific cells when applying formatting.
+    // Both row and column are zero-based. Omitting one targets the entire row or column.
+    const specificCell: Office.RangeCoordinates = { row: 0, column: 1 };
+    const entireRow: Office.RangeCoordinates = { row: 2 };
+
+    const cellFormats: Office.RangeFormatConfiguration[] = [
+        { cells: specificCell, format: { fontStyle: "bold" } },
+        { cells: entireRow, format: { fontColor: "red" } }
+    ];
+
+    const tableData = new Office.TableData();
+    tableData.headers = [["Product", "Price"]];
+    tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry", "$2.00"]];
+
+    Office.context.document.setSelectedDataAsync(
+        tableData,
+        { cellFormat: cellFormats },
+        function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Error: " + asyncResult.error.message);
+            }
+        }
+    );
+Office.RangeFormatConfiguration:interface:
+  - |-
+    // Apply formatting to specific cells when writing table data to the selection.
+    // The cells property accepts an Office.Table enum value or a RangeCoordinates object.
+    // The format property specifies formatting as key-value pairs.
+    const cellFormats: Office.RangeFormatConfiguration[] = [
+        { cells: Office.Table.Headers, format: { fontColor: "red" } },
+        { cells: { row: 2, column: 1 }, format: { borderColor: "blue", fontStyle: "bold" } }
+    ];
+
+    const tableData = new Office.TableData();
+    tableData.headers = [["Product", "Price"]];
+    tableData.rows = [["Apple", "$1.00"], ["Banana", "$0.50"], ["Cherry", "$2.00"]];
+
+    Office.context.document.setSelectedDataAsync(
+        tableData,
+        { cellFormat: cellFormats },
+        function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.error("Error: " + asyncResult.error.message);
+            }
+        }
+    );
 Office.RequirementSetSupport:interface:
   - |-
     const requirements : Office.RequirementSetSupport = Office.context.requirements; 
@@ -5964,7 +6012,7 @@ Office.Settings#addHandlerAsync:member(2):
         Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
     }
 
-    function MyHandler(eventArgs) {
+    function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
         write('Event raised: ' + eventArgs.type);
         doSomethingWithSettings(eventArgs.settings);
     }
@@ -6001,17 +6049,7 @@ Office.Settings#remove:member(1):
 Office.Settings#removeHandlerAsync:member(2):
   - |-
     function removeSettingsChangedEventHandler() {
-        Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
-    }
-
-    function MyHandler(eventArgs) {
-        write('Event raised: ' + eventArgs.type);
-        doSomethingWithSettings(eventArgs.settings);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message) {
-        document.getElementById('message').innerText += message;
+        Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged);
     }
 Office.Settings#saveAsync:member(2):
   - |-
@@ -6028,6 +6066,21 @@ Office.Settings#set:member(1):
   - |-
     function setMySetting() {
         Office.context.document.settings.set('mySetting', 'mySetting value');
+    }
+Office.SettingsChangedEventArgs:interface:
+  - |-
+    function addSelectionChangedEventHandler() {
+        Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+    }
+
+    function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithSettings(eventArgs.settings);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message) {
+        document.getElementById('message').innerText += message;
     }
 Office.Slice:interface:
   - |-

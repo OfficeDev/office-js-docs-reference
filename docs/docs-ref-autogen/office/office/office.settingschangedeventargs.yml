@@ -28,7 +28,24 @@ summary: >-
   opened in Excel on the web, and more than one user is editing the spreadsheet
   (coauthoring). Therefore, effectively the settingsChanged event is supported
   only in Excel on the web in coauthoring scenarios.
-remarks: ''
+remarks: |-
+  #### Examples
+
+  ```TypeScript
+  function addSelectionChangedEventHandler() {
+      Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+  }
+
+  function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
+      write('Event raised: ' + eventArgs.type);
+      doSomethingWithSettings(eventArgs.settings);
+  }
+
+  // Function that writes to a div with id='message' on the page.
+  function write(message) {
+      document.getElementById('message').innerText += message;
+  }
+  ```
 
 isPreview: false
 isDeprecated: false
