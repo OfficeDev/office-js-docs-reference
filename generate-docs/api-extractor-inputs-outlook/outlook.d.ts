@@ -2308,7 +2308,7 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -2326,7 +2326,7 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -4100,13 +4100,43 @@ export declare namespace Office {
          */
         contentId: string;
         /**
-         * Gets the index of the attachment.
+         * Gets the identifier of an attachment. The value varies depending on the Outlook client.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, the identifier is the Exchange Web Services (EWS) ID.
+         * For inline attachments, the initial identifier is a temporary attachment ID, prefixed with `addinId`, while the attachment is uploaded to the server.
+         * Once the upload completes, the attachment receives an EWS ID. For details, see the notes in the Remarks section.
+         *
+         * - In Outlook on Windows (classic) and on Mac, the identifier for inline and non-inline attachments is the index of the attachment.
+         *
+         * @remarks
+         *
+         * **Important**: Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
          */
         id: string;
         /**
          * Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.
          */
         isInline: boolean;
+        /**
+         * In Outlook on the web and the new Outlook on Windows, indicates whether an inline attachment in a message has been uploaded to the server and assigned an Exchange Web Services (EWS) ID.
+         *
+         * @remarks
+         *
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID in the `id` property and their `isServiceAccessible` property is set to `true`.
+         * The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on Windows (classic) and on Mac, the `isServiceAccessible` property always returns `false` since the attachment ID is the index of the attachment.
+         */
+        isServiceAccessible: boolean;
         /**
          * Gets the name of the attachment.
          *
@@ -7252,6 +7282,12 @@ export declare namespace Office {
          * - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - In Outlook on the web and the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
          *
@@ -7266,7 +7302,8 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param attachmentId - The identifier of the attachment you want to get.
+         * @param attachmentId - The identifier of the attachment you want to get. In Outlook on the web and the new Outlook on Windows, the temporary attachment ID that's
+         *                       locally generated for inline images that haven't been uploaded to the server yet are supported for the duration of the current compose session.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -7289,6 +7326,12 @@ export declare namespace Office {
          * - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - In Outlook on the web and the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
          *
@@ -7303,7 +7346,8 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param attachmentId - The identifier of the attachment you want to get.
+         * @param attachmentId - The identifier of the attachment you want to get. In Outlook on the web and the new Outlook on Windows, the temporary attachment ID that's
+         *                       locally generated for inline images that haven't been uploaded to the server yet are supported for the duration of the current compose session.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
          *                an error code with the reason for the failure.
@@ -7319,14 +7363,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -7339,12 +7391,20 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -10701,6 +10761,12 @@ export declare namespace Office {
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID in the `id` property and their `isServiceAccessible` property is set to `true`.
+         * The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
          *
          * - In recent builds of classic Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
@@ -10727,9 +10793,10 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                 If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of
-         *                 the error.
+         *                 type `Office.AsyncResult`. On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: CommonAPI.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -10748,6 +10815,12 @@ export declare namespace Office {
          *
          * - This method isn't supported in Outlook on iOS or Android. For more information on supported APIs in Outlook mobile, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID in the `id` property and their `isServiceAccessible` property is set to `true`.
+         * The temporary attachment ID is only supported for the duration of the current compose session. For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
          *
          * - Bitmap (BMP) images aren't supported if they're added as inline attachments.
          *
@@ -10772,9 +10845,10 @@ export declare namespace Office {
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                 If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of
-         *                 the error.
+         *                 type `Office.AsyncResult`. On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -10797,6 +10871,12 @@ export declare namespace Office {
          * - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
          * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
          *
@@ -10820,9 +10900,11 @@ export declare namespace Office {
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline as an image in the message body and won't be displayed in the attachment list.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                             type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                  If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.
+         *                 On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options: CommonAPI.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -10845,6 +10927,12 @@ export declare namespace Office {
          * - Adding an inline Base64 file to a message in compose mode is supported in Outlook on Android and on iOS. For more information on supported APIs in
          * Outlook mobile, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
          *
@@ -10865,9 +10953,11 @@ export declare namespace Office {
          *
          * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                             type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property.
-         *                  If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.
+         *                 On success, the attachment identifier is provided in the `asyncResult.value` property. The identifier varies depending on the Outlook client.
+         *                 In Outlook on the web and the new Outlook on Windows, the Exchange Web Services (EWS) ID is returned. If `isInline` is set to `true`, a temporary attachment ID prefixed with
+         *                 `addinId` is initially returned while the attachment is uploaded to the server. Once the upload completes, the attachment is then assigned an EWS ID. For details, see the notes in the Remarks section.
+         *                 In Outlook on Windows (classic) and on Mac, the index of the attachment is returned for inline and non-inline attachments. If uploading the attachment fails, a description of the error is provided in `asyncResult.error`.
          */
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -11150,6 +11240,12 @@ export declare namespace Office {
          * - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - In Outlook on the web and the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
          *
@@ -11164,7 +11260,8 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param attachmentId - The identifier of the attachment you want to get.
+         * @param attachmentId - The identifier of the attachment you want to get. In Outlook on the web and the new Outlook on Windows, the temporary attachment ID that's
+         *                       locally generated for inline images that haven't been uploaded to the server yet are supported for the duration of the current compose session.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -11187,6 +11284,12 @@ export declare namespace Office {
          * - The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
          * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
          *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
          * - In Outlook on the web and the {@link https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627 | new Outlook on Windows},
          * `getAttachmentContentAsync` doesn't support attachments that were added using the **Upload and share** option.
          *
@@ -11201,7 +11304,8 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param attachmentId - The identifier of the attachment you want to get.
+         * @param attachmentId - The identifier of the attachment you want to get. In Outlook on the web and the new Outlook on Windows, the temporary attachment ID that's
+         *                       locally generated for inline images that haven't been uploaded to the server yet are supported for the duration of the current compose session.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
          *                an error code with the reason for the failure.
@@ -11217,14 +11321,22 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects is returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
@@ -11237,12 +11349,20 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * **Important**: In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
+         * **Important**:
+         *
+         * - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or `addFileAttachmentFromBase64Async` with `isInline` set to `true` completes, inline images in messages in Outlook on the web and the new Outlook on Windows
+         * are locally assigned a temporary attachment ID while they're uploaded to the server. A temporary attachment ID is prefixed with `addinId`. Once the images are
+         * uploaded to the server, they are then assigned an Exchange Web Services (EWS) ID. The temporary attachment ID is only supported for the duration of the current compose session.
+         * For more information on the changes to how inline images are handled, see
+         * {@link https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/ | Changes to attachment IDs for inline images in Outlook add-ins}.
+         *
+         * - In Outlook on the web and the new Outlook on Windows, users can select the **Upload and share** option to upload an attachment to OneDrive and
          * include a link to the file in the mail item. However, since only a link is included, `getAttachmentsAsync` doesn't return this attachment.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
-         *                 the failure.
+         *                 the failure. If the call succeeds, an array of `AttachmentDetailsCompose` objects are returned in the `asyncResult.value` property.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**

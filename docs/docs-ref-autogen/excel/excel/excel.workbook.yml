@@ -1151,6 +1151,25 @@ methods:
       return:
         type: <xref uid="excel!Excel.RangeAreas:class" />
         description: ''
+  - name: inPreviewMode()
+    uid: excel!Excel.Workbook#inPreviewMode:member(1)
+    package: excel!
+    fullName: inPreviewMode()
+    summary: Returns whether the workbook is currently in preview mode.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'inPreviewMode(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class"
+          />&lt;boolean&gt;
+        description: ''
   - name: insertWorksheetsFromBase64(base64File, options)
     uid: excel!Excel.Workbook#insertWorksheetsFromBase64:member(1)
     package: excel!

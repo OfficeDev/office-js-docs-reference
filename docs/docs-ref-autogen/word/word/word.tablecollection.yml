@@ -27,7 +27,12 @@ remarks: >-
     firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
     await context.sync();
 
-    console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+    console.log(
+      `Details about the alignment of the first table:`,
+      `- Alignment of the table within the containing page column: ${firstTable.alignment}`,
+      `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`,
+      `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`,
+    );
   });
 
   ```

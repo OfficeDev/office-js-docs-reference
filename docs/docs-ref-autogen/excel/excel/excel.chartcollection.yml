@@ -146,8 +146,12 @@ methods:
         "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" |
         "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
         "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" |
-        "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns"
-        | "Rows"): Excel.Chart;
+        "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" |
+        "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" |
+        "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" |
+        "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" |
+        "XYScatterEx" | "BubbleEx", sourceData: Range, seriesBy?: "Auto" |
+        "Columns" | "Rows"): Excel.Chart;
       parameters:
         - id: type
           description: Represents the type of a chart. See `Excel.ChartType` for details.
@@ -175,7 +179,12 @@ methods:
             | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" |
             "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" |
             "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
-            "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+            "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel" |
+            "ColumnClusteredEx" | "ColumnStackedEx" | "ColumnStacked100Ex" |
+            "LineEx" | "LineStackedEx" | "LineStacked100Ex" | "PieEx" |
+            "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex"
+            | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" |
+            "BubbleEx"
         - id: sourceData
           description: The `Range` object corresponding to the source data.
           type: <xref uid="excel!Excel.Range:class" />

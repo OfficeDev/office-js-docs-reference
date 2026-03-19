@@ -127,13 +127,20 @@
 |[Window](/javascript/api/excel/excel.window)|[rangeSelection](/javascript/api/excel/excel.window#excel-excel-window-rangeselection-member)|Gets the range selection in the window.|
 |[Workbook](/javascript/api/excel/excel.workbook)|[autorunEventCompleted(AutorunEventCompletedOptions: Excel.AutorunEventCompletedOptions)](/javascript/api/excel/excel.workbook#excel-excel-workbook-autoruneventcompleted-member(1))|Notifies the host application that the add-in's code has finished running in an autorun event.|
 ||[externalCodeServiceTimeout](/javascript/api/excel/excel.workbook#excel-excel-workbook-externalcodeservicetimeout-member)|Specifies the maximum length of time, in seconds, allotted for a formula that depends on an external code service to complete.|
+||[inPreviewMode()](/javascript/api/excel/excel.workbook#excel-excel-workbook-inpreviewmode-member(1))|Returns whether the workbook is currently in preview mode.|
 ||[localImage](/javascript/api/excel/excel.workbook#excel-excel-workbook-localimage-member)|Returns the `LocalImage` object associated with the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#excel-excel-workbook-showpivotfieldlist-member)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#excel-excel-workbook-tasks-member)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#excel-excel-workbook-use1904datesystem-member)|True if the workbook uses the 1904 date system.|
-|[Worksheet](/javascript/api/excel/excel.worksheet)|[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
+|[Worksheet](/javascript/api/excel/excel.worksheet)|[onCalculationBusy](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-oncalculationbusy-member)|Occurs when cells in the worksheet are being calculated asynchronously.|
+||[onFiltered](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onfiltered-member)|Occurs when a filter is applied on a specific worksheet.|
 ||[tasks](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-tasks-member)|Returns a collection of tasks that are present in the worksheet.|
+|[WorksheetCalculationBusyEventArgs](/javascript/api/excel/excel.worksheetcalculationbusyeventargs)|[address](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-address-member)|The address of the ranges that began calculation.|
+||[source](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-source-member)|The source of the event.|
+||[type](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-type-member)|Gets the type of the event.|
+||[worksheetId](/javascript/api/excel/excel.worksheetcalculationbusyeventargs#excel-excel-worksheetcalculationbusyeventargs-worksheetid-member)|The ID of the worksheet within which the calculation occurred.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet \| string)](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-addfrombase64-member(1))|Inserts the specified worksheets of a workbook into the current workbook.|
+||[onCalculationBusy](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-oncalculationbusy-member)|Occurs when cells in the worksheet are being calculated asynchronously.|
 ||[onFiltered](/javascript/api/excel/excel.worksheetcollection#excel-excel-worksheetcollection-onfiltered-member)|Occurs when any worksheet's filter is applied in the workbook.|
 |[WorksheetFilteredEventArgs](/javascript/api/excel/excel.worksheetfilteredeventargs)|[type](/javascript/api/excel/excel.worksheetfilteredeventargs#excel-excel-worksheetfilteredeventargs-type-member)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetfilteredeventargs#excel-excel-worksheetfilteredeventargs-worksheetid-member)|Gets the ID of the worksheet in which the filter is applied.|

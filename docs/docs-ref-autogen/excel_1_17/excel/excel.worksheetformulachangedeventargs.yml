@@ -21,6 +21,12 @@ properties:
     summary: >-
       Gets an array of `FormulaChangedEventDetail` objects, which contain the
       details about the all of the changed formulas.
+
+
+      If the number of changed formulas or the size of the changed formula text
+      exceeds a size limit, `formulaDetails` returns undefined. This indicates
+      that something on the sheet has changed, but the details cannot be
+      reported.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

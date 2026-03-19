@@ -2781,7 +2781,9 @@ methods:
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->. If the call fails, the
             `asyncResult.error` property will contain an error code with the
-            reason for the failure.
+            reason for the failure. If the call succeeds, an array of
+            `AttachmentDetailsCompose` objects is returned in the
+            `asyncResult.value` property.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;<xref uid="outlook!Office.AttachmentDetailsCompose:interface"
@@ -2829,7 +2831,9 @@ methods:
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->. If the call fails, the
             `asyncResult.error` property will contain an error code with the
-            reason for the failure.
+            reason for the failure. If the call succeeds, an array of
+            `AttachmentDetailsCompose` objects is returned in the
+            `asyncResult.value` property.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;<xref uid="outlook!Office.AttachmentDetailsCompose:interface"

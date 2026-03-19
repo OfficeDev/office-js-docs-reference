@@ -138,6 +138,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Area"'
+  - name: areaEx
+    uid: excel!Excel.ChartType.areaEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"AreaEx"'
   - name: areaStacked
     uid: excel!Excel.ChartType.areaStacked:member
     package: excel!
@@ -152,6 +160,22 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AreaStacked100"'
+  - name: areaStacked100Ex
+    uid: excel!Excel.ChartType.areaStacked100Ex:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"AreaStacked100Ex"'
+  - name: areaStackedEx
+    uid: excel!Excel.ChartType.areaStackedEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"AreaStackedEx"'
   - name: barClustered
     uid: excel!Excel.ChartType.barClustered:member
     package: excel!
@@ -159,6 +183,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BarClustered"'
+  - name: barClusteredEx
+    uid: excel!Excel.ChartType.barClusteredEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"BarClusteredEx"'
   - name: barOfPie
     uid: excel!Excel.ChartType.barOfPie:member
     package: excel!
@@ -180,6 +212,22 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BarStacked100"'
+  - name: barStacked100Ex
+    uid: excel!Excel.ChartType.barStacked100Ex:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"BarStacked100Ex"'
+  - name: barStackedEx
+    uid: excel!Excel.ChartType.barStackedEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"BarStackedEx"'
   - name: boxwhisker
     uid: excel!Excel.ChartType.boxwhisker:member
     package: excel!
@@ -201,6 +249,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Bubble3DEffect"'
+  - name: bubbleEx
+    uid: excel!Excel.ChartType.bubbleEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"BubbleEx"'
   - name: columnClustered
     uid: excel!Excel.ChartType.columnClustered:member
     package: excel!
@@ -208,6 +264,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ColumnClustered"'
+  - name: columnClusteredEx
+    uid: excel!Excel.ChartType.columnClusteredEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ColumnClusteredEx"'
   - name: columnStacked
     uid: excel!Excel.ChartType.columnStacked:member
     package: excel!
@@ -222,6 +286,22 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ColumnStacked100"'
+  - name: columnStacked100Ex
+    uid: excel!Excel.ChartType.columnStacked100Ex:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ColumnStacked100Ex"'
+  - name: columnStackedEx
+    uid: excel!Excel.ChartType.columnStackedEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ColumnStackedEx"'
   - name: coneBarClustered
     uid: excel!Excel.ChartType.coneBarClustered:member
     package: excel!
@@ -327,6 +407,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Doughnut"'
+  - name: doughnutEx
+    uid: excel!Excel.ChartType.doughnutEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"DoughnutEx"'
   - name: doughnutExploded
     uid: excel!Excel.ChartType.doughnutExploded:member
     package: excel!
@@ -362,6 +450,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Line"'
+  - name: lineEx
+    uid: excel!Excel.ChartType.lineEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"LineEx"'
   - name: lineMarkers
     uid: excel!Excel.ChartType.lineMarkers:member
     package: excel!
@@ -397,6 +493,22 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LineStacked100"'
+  - name: lineStacked100Ex
+    uid: excel!Excel.ChartType.lineStacked100Ex:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"LineStacked100Ex"'
+  - name: lineStackedEx
+    uid: excel!Excel.ChartType.lineStackedEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"LineStackedEx"'
   - name: pareto
     uid: excel!Excel.ChartType.pareto:member
     package: excel!
@@ -411,6 +523,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Pie"'
+  - name: pieEx
+    uid: excel!Excel.ChartType.pieEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PieEx"'
   - name: pieExploded
     uid: excel!Excel.ChartType.pieExploded:member
     package: excel!
@@ -586,6 +706,14 @@ fields:
       * \[ [API set: ExcelApi
       1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"XYScatter"'
+  - name: xyscatterEx
+    uid: excel!Excel.ChartType.xyscatterEx:member
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"XYScatterEx"'
   - name: xyscatterLines
     uid: excel!Excel.ChartType.xyscatterLines:member
     package: excel!
