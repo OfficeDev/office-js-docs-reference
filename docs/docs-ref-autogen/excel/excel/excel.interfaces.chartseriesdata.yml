@@ -115,7 +115,11 @@ properties:
         "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" |
         "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
         "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" |
-        "Sunburst" | "Funnel";
+        "Sunburst" | "Funnel" | "ColumnClusteredEx" | "ColumnStackedEx" |
+        "ColumnStacked100Ex" | "LineEx" | "LineStackedEx" | "LineStacked100Ex" |
+        "PieEx" | "DoughnutEx" | "BarClusteredEx" | "BarStackedEx" |
+        "BarStacked100Ex" | "AreaEx" | "AreaStackedEx" | "AreaStacked100Ex" |
+        "XYScatterEx" | "BubbleEx";
       return:
         type: >-
           <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
@@ -141,7 +145,11 @@ properties:
           "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine"
           | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" |
           "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" |
-          "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+          "Treemap" | "Waterfall" | "Sunburst" | "Funnel" | "ColumnClusteredEx"
+          | "ColumnStackedEx" | "ColumnStacked100Ex" | "LineEx" |
+          "LineStackedEx" | "LineStacked100Ex" | "PieEx" | "DoughnutEx" |
+          "BarClusteredEx" | "BarStackedEx" | "BarStacked100Ex" | "AreaEx" |
+          "AreaStackedEx" | "AreaStacked100Ex" | "XYScatterEx" | "BubbleEx"
   - name: dataLabels
     uid: excel!Excel.Interfaces.ChartSeriesData#dataLabels:member
     package: excel!

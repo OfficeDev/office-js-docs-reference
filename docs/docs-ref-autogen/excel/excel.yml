@@ -1125,6 +1125,7 @@ interfaces:
   - excel!Excel.WorksheetActivatedEventArgs:interface
   - excel!Excel.WorksheetAddedEventArgs:interface
   - excel!Excel.WorksheetCalculatedEventArgs:interface
+  - excel!Excel.WorksheetCalculationBusyEventArgs:interface
   - excel!Excel.WorksheetChangedEventArgs:interface
   - excel!Excel.WorksheetColumnSortedEventArgs:interface
   - excel!Excel.WorksheetDeactivatedEventArgs:interface

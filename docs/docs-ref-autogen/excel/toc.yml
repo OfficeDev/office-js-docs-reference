@@ -1177,6 +1177,8 @@ items:
             uid: excel!Excel.WorksheetAddedEventArgs:interface
           - name: WorksheetCalculatedEventArgs
             uid: excel!Excel.WorksheetCalculatedEventArgs:interface
+          - name: WorksheetCalculationBusyEventArgs
+            uid: excel!Excel.WorksheetCalculationBusyEventArgs:interface
           - name: WorksheetChangedEventArgs
             uid: excel!Excel.WorksheetChangedEventArgs:interface
           - name: WorksheetCollection

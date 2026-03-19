@@ -30,7 +30,11 @@ remarks: >-
     firstCell.load(["horizontalAlignment", "verticalAlignment"]);
     await context.sync();
 
-    console.log(`Details about the alignment of the first table's first cell:`, `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`, `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`);
+    console.log(
+      `Details about the alignment of the first table's first cell:`,
+      `- Horizontal alignment of the cell's content: ${firstCell.horizontalAlignment}`,
+      `- Vertical alignment of the cell's content: ${firstCell.verticalAlignment}`,
+    );
   });
 
   ```

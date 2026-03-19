@@ -26,8 +26,9 @@
 ||[format](/javascript/api/outlook/office.attachmentcontent#outlook-office-attachmentcontent-format-member)|The string format to use for an attachment's content.|
 |[AttachmentDetailsCompose](/javascript/api/outlook/office.attachmentdetailscompose)|[attachmentType](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-attachmenttype-member)|Gets a value that indicates the attachment's type.|
 ||[contentId](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-contentid-member)|Gets the content identifier of an inline attachment.|
-||[id](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-id-member)|Gets the index of the attachment.|
+||[id](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-id-member)|Gets the identifier of an attachment.|
 ||[isInline](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-isinline-member)|Gets a value that indicates whether the attachment appears as an image in the body of the item instead of in the attachment list.|
+||[isServiceAccessible](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-isserviceaccessible-member)|In Outlook on the web and the new Outlook on Windows, indicates whether an inline attachment in a message has been uploaded to the server and assigned an Exchange Web Services (EWS) ID.|
 ||[name](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-name-member)|Gets the name of the attachment.|
 ||[size](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-size-member)|Gets the size of the attachment in bytes.|
 ||[url](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-url-member)|Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.|
