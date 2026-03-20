@@ -1872,6 +1872,12 @@ events:
       Occurs when one or more formulas are changed in this worksheet. This event
       is for when the formula itself changes, not the data value resulting from
       the formula's calculation.
+
+
+      The event is only triggered when the cell already contains a formula. The
+      new cell value may not include a formula. This event is not triggered when
+      a formula is entered into a cell that did not previously contain a
+      formula.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

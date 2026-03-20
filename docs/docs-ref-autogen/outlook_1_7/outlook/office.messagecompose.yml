@@ -844,6 +844,21 @@ methods:
       -->.
 
 
+      - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or
+      `addFileAttachmentFromBase64Async` with `isInline` set to `true`
+      completes, inline images in Outlook on the web and the new Outlook on
+      Windows are locally assigned a temporary attachment ID while they're
+      uploaded to the server. A temporary attachment ID is prefixed with
+      `addinId`<!-- -->. Once the images are uploaded to the server, they are
+      then assigned an Exchange Web Services (EWS) ID in the `id` property and
+      their `isServiceAccessible` property is set to `true`<!-- -->. The
+      temporary attachment ID is only supported for the duration of the current
+      compose session. For more information on the changes to how inline images
+      are handled, see [Changes to attachment IDs for inline images in Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!--
+      -->.
+
+
       - Bitmap (BMP) images aren't supported if they're added as inline
       attachments.
 
@@ -941,9 +956,17 @@ methods:
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->. On success, the attachment identifier
-            will be provided in the `asyncResult.value` property. If uploading
-            the attachment fails, the `asyncResult` object will contain an
-            `Error` object that provides a description of the error.
+            is provided in the `asyncResult.value` property. The identifier
+            varies depending on the Outlook client. In Outlook on the web and
+            the new Outlook on Windows, the Exchange Web Services (EWS) ID is
+            returned. If `isInline` is set to `true`<!-- -->, a temporary
+            attachment ID prefixed with `addinId` is initially returned while
+            the attachment is uploaded to the server. Once the upload completes,
+            the attachment is then assigned an EWS ID. For details, see the
+            notes in the Remarks section. In Outlook on Windows (classic) and on
+            Mac, the index of the attachment is returned for inline and
+            non-inline attachments. If uploading the attachment fails, a
+            description of the error is provided in `asyncResult.error`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void
@@ -984,6 +1007,21 @@ methods:
       information on supported APIs in Outlook mobile, see [Outlook JavaScript
       APIs supported in Outlook on mobile
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!--
+      -->.
+
+
+      - Starting March 30, 2026, after the call to `addFileAttachmentAsync` or
+      `addFileAttachmentFromBase64Async` with `isInline` set to `true`
+      completes, inline images in Outlook on the web and the new Outlook on
+      Windows are locally assigned a temporary attachment ID while they're
+      uploaded to the server. A temporary attachment ID is prefixed with
+      `addinId`<!-- -->. Once the images are uploaded to the server, they are
+      then assigned an Exchange Web Services (EWS) ID in the `id` property and
+      their `isServiceAccessible` property is set to `true`<!-- -->. The
+      temporary attachment ID is only supported for the duration of the current
+      compose session. For more information on the changes to how inline images
+      are handled, see [Changes to attachment IDs for inline images in Outlook
+      add-ins](https://devblogs.microsoft.com/microsoft365dev/changes-to-attachment-ids-for-inline-images-in-outlook-add-ins/)<!--
       -->.
 
 
@@ -1044,9 +1082,17 @@ methods:
             Optional. When the method completes, the function passed in the
             `callback` parameter is called with a single parameter of type
             `Office.AsyncResult`<!-- -->. On success, the attachment identifier
-            will be provided in the `asyncResult.value` property. If uploading
-            the attachment fails, the `asyncResult` object will contain an
-            `Error` object that provides a description of the error.
+            is provided in the `asyncResult.value` property. The identifier
+            varies depending on the Outlook client. In Outlook on the web and
+            the new Outlook on Windows, the Exchange Web Services (EWS) ID is
+            returned. If `isInline` is set to `true`<!-- -->, a temporary
+            attachment ID prefixed with `addinId` is initially returned while
+            the attachment is uploaded to the server. Once the upload completes,
+            the attachment is then assigned an EWS ID. For details, see the
+            notes in the Remarks section. In Outlook on Windows (classic) and on
+            Mac, the index of the attachment is returned for inline and
+            non-inline attachments. If uploading the attachment fails, a
+            description of the error is provided in `asyncResult.error`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface"
             />&lt;string&gt;) =&gt; void

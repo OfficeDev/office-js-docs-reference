@@ -1790,6 +1790,41 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
+  - name: onCalculationBusy
+    uid: excel!Excel.Worksheet#onCalculationBusy:member
+    package: excel!
+    fullName: onCalculationBusy
+    summary: >-
+      Occurs when cells in the worksheet are being calculated asynchronously.
+
+
+      This event is triggered at the end of a calculation cycle, similar to the
+      `onCalculated` event. Ordinarily, when calculation completes for a cell,
+      the `onCalculated` event is triggered. However, if the calculation places
+      a transient pending value (such as "\#BUSY!") in the cell, then
+      `onCalculationBusy` is triggered instead to indicate that the cell's state
+      has changed, although calculation of the final value is not yet complete.
+      When a subsequent calculation cycle completes the calculation for that
+      cell, the `onCalculated` event is then triggered.
+
+
+      Formula features such as JavaScript User-Defined Functions and =PY
+      formulas may trigger this event.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly onCalculationBusy:
+        OfficeExtension.EventHandlers<Excel.WorksheetCalculationBusyEventArgs>;
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetCalculationBusyEventArgs:interface" />&gt;
   - name: onChanged
     uid: excel!Excel.Worksheet#onChanged:member
     package: excel!
@@ -1969,6 +2004,12 @@ events:
       Occurs when one or more formulas are changed in this worksheet. This event
       is for when the formula itself changes, not the data value resulting from
       the formula's calculation.
+
+
+      The event is only triggered when the cell already contains a formula. The
+      new cell value may not include a formula. This event is not triggered when
+      a formula is entered into a cell that did not previously contain a
+      formula.
     remarks: >-
       \[ [API set: ExcelApi
       1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)

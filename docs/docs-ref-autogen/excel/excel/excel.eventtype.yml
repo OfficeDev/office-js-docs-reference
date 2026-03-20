@@ -182,6 +182,54 @@ fields:
       * \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinkedWorkbookWorkbookLinksChanged"'
+  - name: namedItemAdded
+    uid: excel!Excel.EventType.namedItemAdded:member
+    package: excel!
+    summary: >-
+      NamedItemAdded represents the type of event registered when a NamedItem
+      has been added to a NamedItemCollection.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"NamedItemAdded"'
+  - name: namedItemDeleted
+    uid: excel!Excel.EventType.namedItemDeleted:member
+    package: excel!
+    summary: >-
+      NamedItemDeleted represents the type of event registered when a NamedItem
+      has been deleted from a NamedItemCollection.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"NamedItemDeleted"'
+  - name: pivotTableAdded
+    uid: excel!Excel.EventType.pivotTableAdded:member
+    package: excel!
+    summary: >-
+      PivotTableAdded represents the type of event registered when a PivotTable
+      has been added to a PivotTableCollection.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PivotTableAdded"'
+  - name: pivotTableDeleted
+    uid: excel!Excel.EventType.pivotTableDeleted:member
+    package: excel!
+    summary: >-
+      PivotTableDeleted represents the type of event registered when a
+      PivotTable has been deleted from a PivotTableCollection.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PivotTableDeleted"'
   - name: queryQueryRefreshCompleted
     uid: excel!Excel.EventType.queryQueryRefreshCompleted:member
     package: excel!
@@ -228,6 +276,18 @@ fields:
       * \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ShapeActivated"'
+  - name: shapeAdded
+    uid: excel!Excel.EventType.shapeAdded:member
+    package: excel!
+    summary: >-
+      ShapeAdded represents the type of event registered when a shape has been
+      added to a ShapeCollection.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ShapeAdded"'
   - name: shapeDeactivated
     uid: excel!Excel.EventType.shapeDeactivated:member
     package: excel!
@@ -239,6 +299,18 @@ fields:
       * \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ShapeDeactivated"'
+  - name: shapeDeleted
+    uid: excel!Excel.EventType.shapeDeleted:member
+    package: excel!
+    summary: >-
+      ShapeDeleted represents the type of event registered when a shape has been
+      deleted from a ShapeCollection.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"ShapeDeleted"'
   - name: tableAdded
     uid: excel!Excel.EventType.tableAdded:member
     package: excel!
@@ -350,6 +422,30 @@ fields:
       ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"WorkbookFormulaReferenceStyleChanged"'
+  - name: workbookNavigationObjectChanged
+    uid: excel!Excel.EventType.workbookNavigationObjectChanged:member
+    package: excel!
+    summary: >-
+      WorkbookNavigationObjectChanged represents the type of event registered
+      when a navigation object has changed on a workbook.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"WorkbookNavigationObjectChanged"'
+  - name: workbookPreviewDirtied
+    uid: excel!Excel.EventType.workbookPreviewDirtied:member
+    package: excel!
+    summary: >-
+      `WorkbookPreviewDirtied` represents the type of event registered when
+      workbook preview mode has been dirtied.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"WorkbookPreviewDirtied"'
   - name: worksheetActivated
     uid: excel!Excel.EventType.worksheetActivated:member
     package: excel!
@@ -386,6 +482,19 @@ fields:
       * \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"WorksheetCalculated"'
+  - name: worksheetCalculationBusy
+    uid: excel!Excel.EventType.worksheetCalculationBusy:member
+    package: excel!
+    summary: >-
+      `WorksheetCalculationBusy` represents the type of event registered on a
+      `Worksheet` or `WorksheetCollection` and occurs when a cell enters a busy
+      calculation state.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"WorksheetCalculationBusy"'
   - name: worksheetChanged
     uid: excel!Excel.EventType.worksheetChanged:member
     package: excel!
@@ -488,6 +597,18 @@ fields:
       * \[ [API set: ExcelApi
       1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"WorksheetNameChanged"'
+  - name: worksheetNavigationObjectChanged
+    uid: excel!Excel.EventType.worksheetNavigationObjectChanged:member
+    package: excel!
+    summary: >-
+      WorksheetNavigationObjectChanged represents the type of event registered
+      when a navigation object has changed on a worksheet.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"WorksheetNavigationObjectChanged"'
   - name: worksheetProtectionChanged
     uid: excel!Excel.EventType.worksheetProtectionChanged:member
     package: excel!

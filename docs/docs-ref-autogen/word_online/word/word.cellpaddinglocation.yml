@@ -27,7 +27,7 @@ remarks: >-
     await context.sync();
 
     console.log(
-      `Cell padding details about the ${cellPaddingLocation} border of the first table: ${cellPadding.value} points`
+      `Cell padding details about the ${cellPaddingLocation} border of the first table: ${cellPadding.value} points`,
     );
   });
 
