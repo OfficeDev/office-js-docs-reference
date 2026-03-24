@@ -267,6 +267,67 @@ properties:
       return:
         type: <xref uid="word!Word.SettingCollection:class" />
 methods:
+  - name: compare(filePath, documentCompareOptions)
+    uid: word!Word.Document#compare:member(1)
+    package: word!
+    fullName: compare(filePath, documentCompareOptions)
+    summary: >-
+      Displays revision marks that indicate where the specified document differs
+      from another document.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/compare-documents.yaml
+
+
+      // Compares the current document with a specified external document.
+
+      await Word.run(async (context) => {
+        // Absolute path of an online or local document.
+        const filePath = (document.getElementById("filePath") as HTMLInputElement).value;
+        // Options that configure the compare operation.
+        const options: Word.DocumentCompareOptions = {
+          compareTarget: Word.CompareTarget.compareTargetCurrent,
+          detectFormatChanges: false
+          // Other options you choose...
+          };
+        context.document.compare(filePath, options);
+
+        await context.sync();
+
+        console.log("Differences shown in the current document.");
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        compare(filePath: string, documentCompareOptions?:
+        Word.DocumentCompareOptions): void;
+      parameters:
+        - id: filePath
+          description: >-
+            The path of the document with which the specified document is
+            compared.
+          type: string
+        - id: documentCompareOptions
+          description: >-
+            Optional. The additional options that specifies the behavior of
+            comparing document.
+          type: <xref uid="word!Word.DocumentCompareOptions:interface" />
+      return:
+        type: void
+        description: ''
   - name: deleteBookmark(name)
     uid: word!Word.Document#deleteBookmark:member(1)
     package: word!

@@ -100,7 +100,7 @@ properties:
     uid: word!Word.Interfaces.BodyData#text:member
     package: word!
     fullName: text
-    summary: Gets the text of the body. Use the insertText method to insert text.
+    summary: Gets the text of the body. Use the `insertText` method to insert text.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

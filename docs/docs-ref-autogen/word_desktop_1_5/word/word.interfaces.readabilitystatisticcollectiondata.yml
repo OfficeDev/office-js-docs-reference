@@ -1,0 +1,29 @@
+### YamlMime:TSType
+name: Word.Interfaces.ReadabilityStatisticCollectionData
+uid: word!Word.Interfaces.ReadabilityStatisticCollectionData:interface
+package: word!
+fullName: Word.Interfaces.ReadabilityStatisticCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `readabilityStatisticCollection.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.ReadabilityStatisticCollectionData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.ReadabilityStatisticData[];'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.ReadabilityStatisticData:interface"
+          />[]

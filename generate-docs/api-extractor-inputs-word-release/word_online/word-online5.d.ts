@@ -3623,8 +3623,26 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentCreatedUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.DocumentCreated): void;
-        
-        
+        /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * @param name - A string representing the style name.
+         * @param type - The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, type: Word.StyleType): Word.Style;
+        /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * @param name - A string representing the style name.
+         * @param type - The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
          * Deletes a bookmark, if it exists, from the document.
          *
@@ -3652,9 +3670,40 @@ export declare namespace Word {
          * @param name - The case-insensitive bookmark name. Only alphanumeric and underscore characters are supported. It must begin with a letter but if you want to tag the bookmark as hidden, then start the name with an underscore character. Names can't be longer than 40 characters.
          */
         getBookmarkRangeOrNullObject(name: string): Word.Range;
-        
-        
-        
+        /**
+         * Gets the currently supported content controls in the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * Important: If specific types are provided in the options parameter, only content controls of supported types are returned.
+         * Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+         * With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
+        /**
+         * Gets a `StyleCollection` object that represents the whole style set of the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         */
+        getStyles(): Word.StyleCollection;
+        /**
+         * Inserts a document into the target document at a specific location with additional properties.
+                    Headers, footers, watermarks, and other section properties are copied by default.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
+         * @param base64File - The Base64-encoded content of a .docx file.
+         * @param insertLocation - The value must be `replace`, `start`, or `end`.
+         * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
+         */
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
         /**
          * Opens the document.
          *
@@ -12891,6 +12940,7 @@ export declare namespace Word {
     
     
     
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -13068,7 +13118,7 @@ export declare namespace Word {
         /** An interface for updating data on the `CommentContentRange` object, for use in `commentContentRange.set({ ... })`. */
         export interface CommentContentRangeUpdateData {
             /**
-             * Specifies a value that indicates whether the comment text is bold.
+             * Specifies whether the comment text is bold.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -13082,21 +13132,21 @@ export declare namespace Word {
              */
             hyperlink?: string;
             /**
-             * Specifies a value that indicates whether the comment text is italicized.
+             * Specifies whether the comment text is italicized.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             italic?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text has a strikethrough.
+             * Specifies whether the comment text has a strikethrough.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             strikeThrough?: boolean;
             /**
-             * Specifies a value that indicates the comment text's underline type. `none` if the comment text isn't underlined.
+             * Specifies the comment text's underline type. `none` if the comment text isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -15249,7 +15299,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
-             * Gets the text of the body. Use the insertText method to insert text.
+             * Gets the text of the body. Use the `insertText` method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -15435,7 +15485,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `commentContentRange.toJSON()`. */
         export interface CommentContentRangeData {
             /**
-             * Specifies a value that indicates whether the comment text is bold.
+             * Specifies whether the comment text is bold.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -15456,14 +15506,14 @@ export declare namespace Word {
              */
             isEmpty?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text is italicized.
+             * Specifies whether the comment text is italicized.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             italic?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text has a strikethrough.
+             * Specifies whether the comment text has a strikethrough.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -15477,7 +15527,7 @@ export declare namespace Word {
              */
             text?: string;
             /**
-             * Specifies a value that indicates the comment text's underline type. `none` if the comment text isn't underlined.
+             * Specifies the comment text's underline type. `none` if the comment text isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -18544,7 +18594,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * Gets the text of the body. Use the insertText method to insert text.
+             * Gets the text of the body. Use the `insertText` method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -18716,6 +18766,8 @@ export declare namespace Word {
             resolved?: boolean;
         }
         /**
+         * Represents a content range within a comment.
+         *
          * @remarks
          * [Api set: WordApi 1.4]
          */
@@ -18725,7 +18777,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text is bold.
+             * Specifies whether the comment text is bold.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -18746,14 +18798,14 @@ export declare namespace Word {
              */
             isEmpty?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text is italicized.
+             * Specifies whether the comment text is italicized.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             italic?: boolean;
             /**
-             * Specifies a value that indicates whether the comment text has a strikethrough.
+             * Specifies whether the comment text has a strikethrough.
              *
              * @remarks
              * [Api set: WordApi 1.4]
@@ -18767,7 +18819,7 @@ export declare namespace Word {
              */
             text?: boolean;
             /**
-             * Specifies a value that indicates the comment text's underline type. `none` if the comment text isn't underlined.
+             * Specifies the comment text's underline type. `none` if the comment text isn't underlined.
              *
              * @remarks
              * [Api set: WordApi 1.4]

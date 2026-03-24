@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: Word.ListTemplateAddOptions
+uid: word!Word.ListTemplateAddOptions:interface
+package: word!
+fullName: Word.ListTemplateAddOptions
+summary: >-
+  Represents the options for the
+  [ListTemplateCollection.add](xref:word!Word.ListTemplateCollection:class)
+  method.
+remarks: '\[Api set: WordApiDesktop 1.5\]'
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: word!Word.ListTemplateAddOptions#name:member
+    package: word!
+    fullName: name
+    summary: If provided, specifies the name of the list template to be added.
+    remarks: '\[Api set: WordApiDesktop 1.5\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: outlineNumbered
+    uid: word!Word.ListTemplateAddOptions#outlineNumbered:member
+    package: word!
+    fullName: outlineNumbered
+    summary: >-
+      If provided, specifies whether to apply outline numbering to the new list
+      template. The default value is `false`<!-- -->.
+    remarks: '\[Api set: WordApiDesktop 1.5\]'
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outlineNumbered?: boolean;'
+      return:
+        type: boolean

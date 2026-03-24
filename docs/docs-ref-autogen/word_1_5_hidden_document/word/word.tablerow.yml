@@ -537,6 +537,22 @@ methods:
       return:
         type: <xref uid="word!Word.TableRow:class" />
         description: ''
+  - name: insertContentControl()
+    uid: word!Word.TableRow#insertContentControl:member(1)
+    package: word!
+    fullName: insertContentControl()
+    summary: Inserts a content control on the row.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insertContentControl(): Word.ContentControl;'
+      return:
+        type: <xref uid="word!Word.ContentControl:class" />
+        description: ''
   - name: insertRows(insertLocation, rowCount, values)
     uid: word!Word.TableRow#insertRows:member(1)
     package: word!

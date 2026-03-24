@@ -92,6 +92,21 @@ properties:
       content: 'hyperlink?: boolean;'
       return:
         type: boolean
+  - name: imageFormat
+    uid: word!Word.Interfaces.InlinePictureLoadOptions#imageFormat:member
+    package: word!
+    fullName: imageFormat
+    summary: Gets the format of the inline image.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageFormat?: boolean;'
+      return:
+        type: boolean
   - name: lockAspectRatio
     uid: word!Word.Interfaces.InlinePictureLoadOptions#lockAspectRatio:member
     package: word!

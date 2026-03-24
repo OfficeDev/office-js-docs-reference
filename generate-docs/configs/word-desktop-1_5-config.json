@@ -1,0 +1,35 @@
+{
+    "excludedFieldPatterns":  [
+                                  "([a-zA-Z]+)(\\??:)([\\n]?([ |]*\"[\\w]*\"[|,\\n]*)+?)([ ]*[\\),])"
+                              ],
+    "excludedFieldNames":  [
+                               "load",
+                               "set",
+                               "toJSON",
+                               "context",
+                               "track",
+                               "untrack"
+                           ],
+    "excludedClassPatterns":  [
+                                  "LoadOptions$",
+                                  "Data$"
+                              ],
+    "includeStaticFields":  false,
+    "includeEnums": false,
+    "filterUnionAdditions": true,
+    "linkConfigs":  [
+                        {
+                            "pathPattern":  "javascript/api/word",
+                            "description":  "Standard URL pattern for Word APIs",
+                            "globalFunctionTemplate":  "/javascript/api/word/word#{fieldName}",
+                            "interfaceMemberTemplate":  "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}{suffix}",
+                            "classMemberTemplate":  "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}{suffix}",
+                            "typeAliasTemplate":  "/javascript/api/word/word.{className}",
+                            "name":  "Word Standard Pattern",
+                            "classTemplate":  "/javascript/api/word/word.{className}",
+                            "interfaceTemplate":  "/javascript/api/word/word.{className}",
+                            "enumMemberTemplate":  "/javascript/api/word/word.{className}#word-word-{className}-{fieldName}",
+                            "enumTemplate":  "/javascript/api/word/word.{className}"
+                        }
+                    ]
+}

@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Word.XmlValidationStatus
+uid: word!Word.XmlValidationStatus:enum
+package: word!
+fullName: Word.XmlValidationStatus
+summary: Specifies the validation status of an XML node.
+remarks: '\[Api set: WordApiDesktop 1.4\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: custom
+    uid: word!Word.XmlValidationStatus.custom:member
+    package: word!
+    summary: |-
+      The node has a custom (user-defined) validation error.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Custom"'
+  - name: ok
+    uid: word!Word.XmlValidationStatus.ok:member
+    package: word!
+    summary: |-
+      The node is valid.
+
+      * \[Api set: WordApiDesktop 1.4\]
+    value: '"Ok"'

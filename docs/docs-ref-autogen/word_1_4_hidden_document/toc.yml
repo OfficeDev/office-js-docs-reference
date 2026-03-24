@@ -27,6 +27,8 @@ items:
                 uid: word!Word.BorderLocation:enum
               - name: BorderType
                 uid: word!Word.BorderType:enum
+              - name: BorderWidth
+                uid: word!Word.BorderWidth:enum
               - name: BreakType
                 uid: word!Word.BreakType:enum
               - name: BuiltInStyleName
@@ -37,6 +39,8 @@ items:
                 uid: word!Word.ChangeTrackingMode:enum
               - name: ChangeTrackingVersion
                 uid: word!Word.ChangeTrackingVersion:enum
+              - name: CompareTarget
+                uid: word!Word.CompareTarget:enum
               - name: ContentControlAppearance
                 uid: word!Word.ContentControlAppearance:enum
               - name: ContentControlType
@@ -47,8 +51,14 @@ items:
                 uid: word!Word.ErrorCodes:enum
               - name: HeaderFooterType
                 uid: word!Word.HeaderFooterType:enum
+              - name: ImageFormat
+                uid: word!Word.ImageFormat:enum
+              - name: ImportedStylesConflictBehavior
+                uid: word!Word.ImportedStylesConflictBehavior:enum
               - name: InsertLocation
                 uid: word!Word.InsertLocation:enum
+              - name: ListBuiltInNumberStyle
+                uid: word!Word.ListBuiltInNumberStyle:enum
               - name: ListBullet
                 uid: word!Word.ListBullet:enum
               - name: ListLevelType
@@ -63,6 +73,10 @@ items:
                 uid: word!Word.SaveBehavior:enum
               - name: SelectionMode
                 uid: word!Word.SelectionMode:enum
+              - name: ShadingTextureType
+                uid: word!Word.ShadingTextureType:enum
+              - name: TrailingCharacter
+                uid: word!Word.TrailingCharacter:enum
               - name: UnderlineType
                 uid: word!Word.UnderlineType:enum
               - name: VerticalAlignment
@@ -71,6 +85,10 @@ items:
             uid: word!Word.Application:class
           - name: Body
             uid: word!Word.Body:class
+          - name: Border
+            uid: word!Word.Border:class
+          - name: BorderCollection
+            uid: word!Word.BorderCollection:class
           - name: Comment
             uid: word!Word.Comment:class
           - name: CommentCollection
@@ -97,6 +115,8 @@ items:
             uid: word!Word.CustomXmlPartScopedCollection:class
           - name: Document
             uid: word!Word.Document:class
+          - name: DocumentCompareOptions
+            uid: word!Word.DocumentCompareOptions:interface
           - name: DocumentCreated
             uid: word!Word.DocumentCreated:class
           - name: DocumentProperties
@@ -117,6 +137,12 @@ items:
             uid: word!Word.ListCollection:class
           - name: ListItem
             uid: word!Word.ListItem:class
+          - name: ListLevel
+            uid: word!Word.ListLevel:class
+          - name: ListLevelCollection
+            uid: word!Word.ListLevelCollection:class
+          - name: ListTemplate
+            uid: word!Word.ListTemplate:class
           - name: Paragraph
             uid: word!Word.Paragraph:class
           - name: ParagraphCollection
@@ -832,6 +858,10 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApiDesktop 1.5 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1-5-requirement-set.md
             displayName: Word
           - name: WordApiDesktop 1.4 requirement set
             href: >-

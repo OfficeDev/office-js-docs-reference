@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.TemplateCollectionData
+uid: word!Word.Interfaces.TemplateCollectionData:interface
+package: word!
+fullName: Word.Interfaces.TemplateCollectionData
+summary: >-
+  An interface describing the data returned by calling
+  `templateCollection.toJSON()`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.TemplateCollectionData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.TemplateData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.TemplateData:interface" />[]

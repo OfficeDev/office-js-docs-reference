@@ -1,0 +1,79 @@
+### YamlMime:TSEnum
+name: Word.RelativeVerticalPosition
+uid: word!Word.RelativeVerticalPosition:enum
+package: word!
+fullName: Word.RelativeVerticalPosition
+summary: >-
+  Represents what the vertical position of a shape is relative to. For more
+  information about margins, see [Change the margins in your Word
+  document](https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829)<!--
+  -->.
+remarks: '\[Api set: WordApiDesktop 1.2\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottomMargin
+    uid: word!Word.RelativeVerticalPosition.bottomMargin:member
+    package: word!
+    summary: |-
+      Relative to bottom margin.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"BottomMargin"'
+  - name: insideMargin
+    uid: word!Word.RelativeVerticalPosition.insideMargin:member
+    package: word!
+    summary: |-
+      Relative to inside margin.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"InsideMargin"'
+  - name: line
+    uid: word!Word.RelativeVerticalPosition.line:member
+    package: word!
+    summary: |-
+      Relative to line.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Line"'
+  - name: margin
+    uid: word!Word.RelativeVerticalPosition.margin:member
+    package: word!
+    summary: |-
+      Relative to margin.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Margin"'
+  - name: outsideMargin
+    uid: word!Word.RelativeVerticalPosition.outsideMargin:member
+    package: word!
+    summary: |-
+      Relative to outside margin.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"OutsideMargin"'
+  - name: page
+    uid: word!Word.RelativeVerticalPosition.page:member
+    package: word!
+    summary: |-
+      Relative to page.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Page"'
+  - name: paragraph
+    uid: word!Word.RelativeVerticalPosition.paragraph:member
+    package: word!
+    summary: |-
+      Relative to paragraph.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"Paragraph"'
+  - name: topMargin
+    uid: word!Word.RelativeVerticalPosition.topMargin:member
+    package: word!
+    summary: |-
+      Relative to top margin.
+
+      * \[Api set: WordApiDesktop 1.2\]
+    value: '"TopMargin"'

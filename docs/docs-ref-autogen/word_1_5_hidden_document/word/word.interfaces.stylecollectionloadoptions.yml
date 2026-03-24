@@ -48,6 +48,25 @@ properties:
       content: 'baseStyle?: boolean;'
       return:
         type: boolean
+  - name: borders
+    uid: word!Word.Interfaces.StyleCollectionLoadOptions#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      For EACH ITEM in the collection: Specifies a `BorderCollection` object
+      that represents all the borders for the style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borders?: Word.Interfaces.BorderCollectionLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.BorderCollectionLoadOptions:interface"
+          />
   - name: builtIn
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#builtIn:member
     package: word!
@@ -117,6 +136,23 @@ properties:
       content: 'linked?: boolean;'
       return:
         type: boolean
+  - name: listTemplate
+    uid: word!Word.Interfaces.StyleCollectionLoadOptions#listTemplate:member
+    package: word!
+    fullName: listTemplate
+    summary: >-
+      For EACH ITEM in the collection: Gets a `ListTemplate` object that
+      represents the list formatting for the style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'listTemplate?: Word.Interfaces.ListTemplateLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ListTemplateLoadOptions:interface" />
   - name: nameLocal
     uid: word!Word.Interfaces.StyleCollectionLoadOptions#nameLocal:member
     package: word!

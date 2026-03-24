@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableOfContentsCollectionUpdateData
+uid: word!Word.Interfaces.TableOfContentsCollectionUpdateData:interface
+package: word!
+fullName: Word.Interfaces.TableOfContentsCollectionUpdateData
+summary: >-
+  An interface for updating data on the `TableOfContentsCollection` object, for
+  use in `tableOfContentsCollection.set({ ... })`<!-- -->.
+remarks: ''
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: word!Word.Interfaces.TableOfContentsCollectionUpdateData#items:member
+    package: word!
+    fullName: items
+    summary: ''
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.TableOfContentsData[];'
+      return:
+        type: <xref uid="word!Word.Interfaces.TableOfContentsData:interface" />[]

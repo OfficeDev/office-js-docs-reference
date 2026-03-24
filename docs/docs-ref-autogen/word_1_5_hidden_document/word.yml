@@ -8,6 +8,7 @@ enums:
   - word!Word.BodyType:enum
   - word!Word.BorderLocation:enum
   - word!Word.BorderType:enum
+  - word!Word.BorderWidth:enum
   - word!Word.BreakType:enum
   - word!Word.BuiltInStyleName:enum
   - word!Word.CellPaddingLocation:enum
@@ -15,6 +16,7 @@ enums:
   - word!Word.ChangeTrackingState:enum
   - word!Word.ChangeTrackingVersion:enum
   - word!Word.CloseBehavior:enum
+  - word!Word.CompareTarget:enum
   - word!Word.ContentControlAppearance:enum
   - word!Word.ContentControlType:enum
   - word!Word.DocumentPropertyType:enum
@@ -24,7 +26,10 @@ enums:
   - word!Word.FieldKind:enum
   - word!Word.FieldType:enum
   - word!Word.HeaderFooterType:enum
+  - word!Word.ImageFormat:enum
+  - word!Word.ImportedStylesConflictBehavior:enum
   - word!Word.InsertLocation:enum
+  - word!Word.ListBuiltInNumberStyle:enum
   - word!Word.ListBullet:enum
   - word!Word.ListLevelType:enum
   - word!Word.ListNumbering:enum
@@ -34,12 +39,16 @@ enums:
   - word!Word.RangeLocation:enum
   - word!Word.SaveBehavior:enum
   - word!Word.SelectionMode:enum
+  - word!Word.ShadingTextureType:enum
   - word!Word.StyleType:enum
+  - word!Word.TrailingCharacter:enum
   - word!Word.UnderlineType:enum
   - word!Word.VerticalAlignment:enum
 classes:
   - word!Word.Application:class
   - word!Word.Body:class
+  - word!Word.Border:class
+  - word!Word.BorderCollection:class
   - word!Word.Comment:class
   - word!Word.CommentCollection:class
   - word!Word.CommentContentRange:class
@@ -63,6 +72,9 @@ classes:
   - word!Word.List:class
   - word!Word.ListCollection:class
   - word!Word.ListItem:class
+  - word!Word.ListLevel:class
+  - word!Word.ListLevelCollection:class
+  - word!Word.ListTemplate:class
   - word!Word.NoteItem:class
   - word!Word.NoteItemCollection:class
   - word!Word.Paragraph:class
@@ -93,6 +105,7 @@ interfaces:
   - word!Word.ContentControlExitedEventArgs:interface
   - word!Word.ContentControlOptions:interface
   - word!Word.ContentControlSelectionChangedEventArgs:interface
+  - word!Word.DocumentCompareOptions:interface
   - word!Word.InsertFileOptions:interface
   - word!Word.Interfaces.AnnotationCollectionData:interface
   - word!Word.Interfaces.AnnotationCollectionUpdateData:interface
@@ -110,8 +123,10 @@ interfaces:
   - word!Word.Interfaces.BookmarkData:interface
   - word!Word.Interfaces.BookmarkUpdateData:interface
   - word!Word.Interfaces.BorderCollectionData:interface
+  - word!Word.Interfaces.BorderCollectionLoadOptions:interface
   - word!Word.Interfaces.BorderCollectionUpdateData:interface
   - word!Word.Interfaces.BorderData:interface
+  - word!Word.Interfaces.BorderLoadOptions:interface
   - word!Word.Interfaces.BorderUniversalCollectionData:interface
   - word!Word.Interfaces.BorderUniversalCollectionUpdateData:interface
   - word!Word.Interfaces.BorderUniversalData:interface
@@ -279,8 +294,10 @@ interfaces:
   - word!Word.Interfaces.ListItemLoadOptions:interface
   - word!Word.Interfaces.ListItemUpdateData:interface
   - word!Word.Interfaces.ListLevelCollectionData:interface
+  - word!Word.Interfaces.ListLevelCollectionLoadOptions:interface
   - word!Word.Interfaces.ListLevelCollectionUpdateData:interface
   - word!Word.Interfaces.ListLevelData:interface
+  - word!Word.Interfaces.ListLevelLoadOptions:interface
   - word!Word.Interfaces.ListLevelUpdateData:interface
   - word!Word.Interfaces.ListLoadOptions:interface
   - word!Word.Interfaces.ListTemplateCollectionData:interface
@@ -289,6 +306,7 @@ interfaces:
   - word!Word.Interfaces.ListTemplateGalleryCollectionData:interface
   - word!Word.Interfaces.ListTemplateGalleryCollectionUpdateData:interface
   - word!Word.Interfaces.ListTemplateGalleryData:interface
+  - word!Word.Interfaces.ListTemplateLoadOptions:interface
   - word!Word.Interfaces.ListTemplateUpdateData:interface
   - word!Word.Interfaces.NoteItemCollectionData:interface
   - word!Word.Interfaces.NoteItemCollectionLoadOptions:interface

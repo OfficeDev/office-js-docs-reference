@@ -3324,6 +3324,7 @@ export declare namespace Word {
     
     
     
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -5004,7 +5005,7 @@ export declare namespace Word {
             style?: string;
             
             /**
-             * Gets the text of the body. Use the insertText method to insert text.
+             * Gets the text of the body. Use the `insertText` method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7056,7 +7057,7 @@ export declare namespace Word {
             style?: boolean;
             
             /**
-             * Gets the text of the body. Use the insertText method to insert text.
+             * Gets the text of the body. Use the `insertText` method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]

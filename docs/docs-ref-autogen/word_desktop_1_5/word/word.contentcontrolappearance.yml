@@ -1,0 +1,37 @@
+### YamlMime:TSEnum
+name: Word.ContentControlAppearance
+uid: word!Word.ContentControlAppearance:enum
+package: word!
+fullName: Word.ContentControlAppearance
+summary: Represents the content control appearance.
+remarks: '\[Api set: WordApi 1.1\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: boundingBox
+    uid: word!Word.ContentControlAppearance.boundingBox:member
+    package: word!
+    summary: >-
+      Represents a content control shown as a shaded rectangle or bounding box
+      (with optional title).
+
+
+      * \[Api set: WordApi 1.1\]
+    value: '"BoundingBox"'
+  - name: hidden
+    uid: word!Word.ContentControlAppearance.hidden:member
+    package: word!
+    summary: |-
+      Represents a content control that isn't shown.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Hidden"'
+  - name: tags
+    uid: word!Word.ContentControlAppearance.tags:member
+    package: word!
+    summary: |-
+      Represents a content control shown as start and end markers.
+
+      * \[Api set: WordApi 1.1\]
+    value: '"Tags"'
