@@ -1846,6 +1846,30 @@ methods:
       \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/55-selection/insert-symbol.yaml
+
+
+      // Inserts the copyright symbol © (Unicode U+00A9) at the selection.
+
+      await Word.run(async (context) => {
+        const options: Word.SelectionInsertSymbolOptions = {
+          unicode: true,
+        };
+        context.document.selection.insertSymbol(0x00a9, options);
+        await context.sync();
+
+        console.log("Inserted copyright symbol ©.");
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
