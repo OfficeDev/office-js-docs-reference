@@ -9,6 +9,30 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+  // Gets the background fill type of the first selected slide.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+    fill.load("type");
+    await context.sync();
+
+    const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+    console.log(`Background fill type: ${fillType}`);
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -55,6 +79,30 @@ properties:
       \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+      // Gets the background fill type of the first selected slide.
+
+      await PowerPoint.run(async (context) => {
+        const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+        const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+        fill.load("type");
+        await context.sync();
+
+        const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+        console.log(`Background fill type: ${fillType}`);
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

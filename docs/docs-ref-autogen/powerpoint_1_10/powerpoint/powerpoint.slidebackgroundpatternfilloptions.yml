@@ -12,6 +12,33 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+  // Sets the background of the first selected slide to a diagonal cross pattern
+  fill.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    slide.background.fill.setPatternFill({
+      foregroundColor: "#1F3864",
+      backgroundColor: "#D6E4F7",
+      pattern: PowerPoint.SlideBackgroundPatternFillType.diagonalCross,
+    } as PowerPoint.SlideBackgroundPatternFillOptions);
+    await context.sync();
+
+    console.log("Background set to diagonal cross pattern fill.");
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

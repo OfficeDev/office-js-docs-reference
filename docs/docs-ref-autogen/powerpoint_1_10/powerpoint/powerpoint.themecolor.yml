@@ -9,6 +9,37 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-theme-color-scheme.yaml
+
+
+  // Sets custom theme colors on the first slide and updates swatches if
+  present.
+
+  await PowerPoint.run(async (context) => {
+    const slide = context.presentation.slides.getItemAt(0);
+    const colorScheme: PowerPoint.ThemeColorScheme = slide.themeColorScheme;
+
+    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent1, "#C00000");
+    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent2, "#FF6600");
+    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent3, "#FFCC00");
+    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent4, "#92D050");
+    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent5, "#00B0F0");
+    colorScheme.setThemeColor(PowerPoint.ThemeColor.accent6, "#7030A0");
+    await context.sync();
+
+    await updateSwatches(context, slide);
+    console.log("Custom accent colors applied to slide 1.");
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 fields:
