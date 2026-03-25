@@ -12,6 +12,42 @@ remarks: >-
   1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
   \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+  // Gets the gradient fill properties of the first selected slide's background.
+
+  await PowerPoint.run(async (context) => {
+    const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+    const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+    fill.load("type");
+    await context.sync();
+
+    if (fill.type !== PowerPoint.SlideBackgroundFillType.gradient) {
+      console.warn("The slide background isn't a gradient fill.");
+      return;
+    }
+
+    const gradientFill: PowerPoint.SlideBackgroundGradientFill = slide.background.fill.getGradientFillOrNullObject();
+    gradientFill.load("type");
+    await context.sync();
+
+    if (gradientFill.isNullObject) {
+      console.warn("The slide background isn't a gradient fill.");
+    } else {
+      console.log("Gradient fill:", `- type: ${gradientFill.type}`);
+    }
+  });
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: class

@@ -44,6 +44,30 @@ properties:
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
 
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-background-fill.yaml
+
+
+      // Gets the background fill type of the first selected slide.
+
+      await PowerPoint.run(async (context) => {
+        const slide: PowerPoint.Slide = context.presentation.getSelectedSlides().getItemAt(0);
+        const fill: PowerPoint.SlideBackgroundFill = slide.background.fill;
+        fill.load("type");
+        await context.sync();
+
+        const fillType = fill.type as PowerPoint.SlideBackgroundFillType;
+        console.log(`Background fill type: ${fillType}`);
+      });
+
+      ```
+
     isPreview: false
     isDeprecated: false
     syntax:
@@ -239,6 +263,36 @@ properties:
       \[ [API set: PowerPointApi
       1.10](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-theme-color-scheme.yaml
+
+
+      // Gets the theme color scheme for the first slide and logs all theme
+      color values.
+
+      await PowerPoint.run(async (context) => {
+        const slide = context.presentation.slides.getItemAt(0);
+        const colorScheme: PowerPoint.ThemeColorScheme = slide.themeColorScheme;
+
+        // Queue up getThemeColor calls for each theme color.
+        const colorResults = themeColorNames.map((colorName) => colorScheme.getThemeColor(colorName));
+        await context.sync();
+
+        // Display the results.
+        console.log("Theme colors for slide 1:");
+        themeColorNames.forEach((colorName, index) => {
+          console.log(`  ${colorName}: ${colorResults[index].value}`);
+        });
+      });
+
+      ```
 
     isPreview: false
     isDeprecated: false

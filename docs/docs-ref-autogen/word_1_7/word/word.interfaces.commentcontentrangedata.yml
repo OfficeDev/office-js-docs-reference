@@ -16,7 +16,7 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeData#bold:member
     package: word!
     fullName: bold
-    summary: Specifies a value that indicates whether the comment text is bold.
+    summary: Specifies whether the comment text is bold.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -64,7 +64,7 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeData#italic:member
     package: word!
     fullName: italic
-    summary: Specifies a value that indicates whether the comment text is italicized.
+    summary: Specifies whether the comment text is italicized.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -79,9 +79,7 @@ properties:
     uid: word!Word.Interfaces.CommentContentRangeData#strikeThrough:member
     package: word!
     fullName: strikeThrough
-    summary: >-
-      Specifies a value that indicates whether the comment text has a
-      strikethrough.
+    summary: Specifies whether the comment text has a strikethrough.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -112,8 +110,8 @@ properties:
     package: word!
     fullName: underline
     summary: >-
-      Specifies a value that indicates the comment text's underline type. `none`
-      if the comment text isn't underlined.
+      Specifies the comment text's underline type. `none` if the comment text
+      isn't underlined.
     remarks: >-
       \[ [API set: WordApi
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
