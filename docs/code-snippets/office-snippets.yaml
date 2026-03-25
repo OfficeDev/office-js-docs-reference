@@ -1094,6 +1094,17 @@ Office.Context:interface:
     console.log("Office application: " + contextInfo.host);
     console.log("Office version: " + contextInfo.version);
     console.log("Platform: " + contextInfo.platform);
+Office.Context#commerceAllowed:member:
+    - |-
+        // Detect iPad users so your add-in can switch to an iPad-specific experience.
+        const isTouchEnabled = Office.context.touchEnabled;
+        const allowCommerce = Office.context.commerceAllowed;
+
+        // On iPad, touchEnabled returns true and commerceAllowed returns false.
+        if (isTouchEnabled && !allowCommerce) {
+                enableIPadInterface();
+                hideCommerceFeatures();
+        }
 Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
@@ -4341,6 +4352,23 @@ Office.RibbonUpdaterData#tabs:member:
         const ribbonUpdater: Office.RibbonUpdaterData = { tabs: [ myContextualTab ] };
         await Office.ribbon.requestUpdate(ribbonUpdater);
     }
+Office.SaveSettingsOptions:interface:
+  - |-
+    function persistSettingsWithContext() {
+        Office.context.document.settings.set('reportFormat', 'pdf');
+
+        const options: Office.SaveSettingsOptions = {
+            asyncContext: { settingName: 'reportFormat' }
+        };
+
+        Office.context.document.settings.saveAsync(options, function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+            } else {
+                console.log('Saved setting: ' + asyncResult.asyncContext.settingName);
+            }
+        });
+    }
 Office.Settings#addHandlerAsync:member(2):
   - |-
     function addSelectionChangedEventHandler() {
@@ -4409,13 +4437,8 @@ Office.SettingsChangedEventArgs:interface:
     }
 
     function MyHandler(eventArgs: Office.SettingsChangedEventArgs) {
-        write('Event raised: ' + eventArgs.type);
+        console.log('Event raised: ' + eventArgs.type);
         doSomethingWithSettings(eventArgs.settings);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message) {
-        document.getElementById('message').innerText += message;
     }
 Office.Slice:interface:
   - |-
