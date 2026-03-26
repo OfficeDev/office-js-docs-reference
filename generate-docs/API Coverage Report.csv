@@ -7265,7 +7265,7 @@ office,Office.CoercionType,"Table",EnumField,Excellent,false
 office,Office.CoercionType,"Text",EnumField,Excellent,false
 office,Office.CoercionType,"XmlSvg",EnumField,Excellent,false
 office,Office.Context,N/A,Interface,Good,true
-office,Office.Context,"commerceAllowed",Property,Excellent,false
+office,Office.Context,"commerceAllowed",Property,Excellent,true
 office,Office.Context,"contentLanguage",Property,Excellent,true
 office,Office.Context,"diagnostics",Property,Great,true
 office,Office.Context,"displayLanguage",Property,Excellent,true
@@ -8119,7 +8119,7 @@ office,Office.Ribbon,"requestCreateControls(tabDefinition)",Method,Fine,true
 office,Office.Ribbon,"requestUpdate(input)",Method,Fine,true
 office,Office.RibbonUpdaterData,N/A,Interface,Fine,false
 office,Office.RibbonUpdaterData,"tabs",Property,Great,true
-office,Office.SaveSettingsOptions,N/A,Interface,Fine,false
+office,Office.SaveSettingsOptions,N/A,Interface,Fine,true
 office,Office.SaveSettingsOptions,"asyncContext",Property,Excellent,false
 office,Office.SaveSettingsOptions,"overwriteIfStale",Property,Deprecated,false
 office,Office.SelectionMode,N/A,Enum,Excellent,false
@@ -12905,7 +12905,7 @@ word,Word.ContentControl,N/A,Class,Great,true
 word,Word.ContentControl,"appearance",Property,Excellent,false
 word,Word.ContentControl,"buildingBlockGalleryContentControl",Property,Excellent,false
 word,Word.ContentControl,"cannotDelete",Property,Excellent,false
-word,Word.ContentControl,"cannotEdit",Property,Excellent,false
+word,Word.ContentControl,"cannotEdit",Property,Great,false
 word,Word.ContentControl,"checkboxContentControl",Property,Excellent,true
 word,Word.ContentControl,"color",Property,Excellent,false
 word,Word.ContentControl,"comboBoxContentControl",Property,Excellent,true

@@ -81,8 +81,8 @@ properties:
     package: word!
     fullName: lockAspectRatio
     summary: >-
-      Specifies a value that indicates whether the inline image retains its
-      original proportions when you resize it.
+      Specifies whether the inline image retains its original proportions when
+      you resize it.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]

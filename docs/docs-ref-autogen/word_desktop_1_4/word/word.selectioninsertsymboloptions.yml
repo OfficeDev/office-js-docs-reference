@@ -53,7 +53,7 @@ properties:
     summary: >-
       If provided, specifies the font bias for symbols. This argument is useful
       for setting the correct font bias for East Asian characters. The default
-      value is `default`<!-- -->.
+      value is `standard`<!-- -->.
     remarks: >-
       \[ [API set: WordApiDesktop
       1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
