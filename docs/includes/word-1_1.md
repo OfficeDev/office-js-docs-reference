@@ -20,8 +20,8 @@
 ||[style](/javascript/api/word/word.body#word-word-body-style-member)|Specifies the style name for the body.|
 ||[text](/javascript/api/word/word.body#word-word-body-text-member)|Gets the text of the body.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[appearance](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-appearance-member)|Specifies the appearance of the content control.|
-||[cannotDelete](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-cannotdelete-member)|Specifies a value that indicates whether the user can delete the content control.|
-||[cannotEdit](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-cannotedit-member)|Specifies a value that indicates whether the user can edit the contents of the content control.|
+||[cannotDelete](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-cannotdelete-member)|Specifies whether the user can delete the content control.|
+||[cannotEdit](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-cannotedit-member)|Specifies whether the user can edit the contents of the content control.|
 ||[clear()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-clear-member(1))|Clears the contents of the content control.|
 ||[color](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-color-member)|Specifies the color of the content control.|
 ||[contentControls](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-contentcontrols-member)|Gets the collection of `ContentControl` objects in the content control.|
@@ -40,7 +40,7 @@
 ||[paragraphs](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-paragraphs-member)|Gets the collection of `Paragraph` objects in the content control.|
 ||[parentContentControl](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrol-member)|Gets the content control that contains the content control.|
 ||[placeholderText](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-placeholdertext-member)|Specifies the placeholder text of the content control.|
-||[removeWhenEdited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-removewhenedited-member)|Specifies a value that indicates whether the content control is removed after it's edited.|
+||[removeWhenEdited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-removewhenedited-member)|Specifies whether the content control is removed after it's edited.|
 ||[search(searchText: string, searchOptions?: Word.SearchOptions \| { ignorePunct?: boolean ignoreSpace?: boolean matchCase?: boolean matchPrefix?: boolean matchSuffix?: boolean matchWholeWord?: boolean matchWildcards?: boolean })](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-search-member(1))|Performs a search with the specified search options on the scope of the `ContentControl` object.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-select-member(1))|Selects the content control.|
 ||[style](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-style-member)|Specifies the style name for the content control.|
@@ -76,7 +76,7 @@
 ||[height](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-height-member)|Specifies a number that describes the height of the inline image.|
 ||[hyperlink](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-hyperlink-member)|Specifies a hyperlink on the image.|
 ||[insertContentControl()](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertcontentcontrol-member(1))|Wraps the inline picture with a rich text content control.|
-||[lockAspectRatio](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-lockaspectratio-member)|Specifies a value that indicates whether the inline image retains its original proportions when you resize it.|
+||[lockAspectRatio](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-lockaspectratio-member)|Specifies whether the inline image retains its original proportions when you resize it.|
 ||[parentContentControl](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrol-member)|Gets the content control that contains the inline image.|
 ||[width](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-width-member)|Specifies a number that describes the width of the inline image.|
 |[InlinePictureCollection](/javascript/api/word/word.inlinepicturecollection)|[items](/javascript/api/word/word.inlinepicturecollection#word-word-inlinepicturecollection-items-member)|Gets the loaded child items in this collection.|

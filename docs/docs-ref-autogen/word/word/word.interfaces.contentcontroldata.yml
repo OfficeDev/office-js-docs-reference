@@ -62,8 +62,8 @@ properties:
     package: word!
     fullName: cannotDelete
     summary: >-
-      Specifies a value that indicates whether the user can delete the content
-      control. Mutually exclusive with `removeWhenEdited`<!-- -->.
+      Specifies whether the user can delete the content control. Mutually
+      exclusive with `removeWhenEdited`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -78,9 +78,7 @@ properties:
     uid: word!Word.Interfaces.ContentControlData#cannotEdit:member
     package: word!
     fullName: cannotEdit
-    summary: >-
-      Specifies a value that indicates whether the user can edit the contents of
-      the content control.
+    summary: Specifies whether the user can edit the contents of the content control.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -361,8 +359,8 @@ properties:
     package: word!
     fullName: removeWhenEdited
     summary: >-
-      Specifies a value that indicates whether the content control is removed
-      after it's edited. Mutually exclusive with `cannotDelete`<!-- -->.
+      Specifies whether the content control is removed after it's edited.
+      Mutually exclusive with `cannotDelete`<!-- -->.
     remarks: >-
       \[ [API set: WordApi
       1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
