@@ -13,19 +13,19 @@
   "devDependencies": {
     "@types/fs-extra": "11.0.4",
     "@types/js-yaml": "4.0.9",
-    "@types/lodash": "4.17.23",
-    "@types/node": "25.2.0",
-    "@typescript-eslint/eslint-plugin": "^8.54.0",
-    "@typescript-eslint/parser": "^8.54.0",
+    "@types/lodash": "4.17.24",
+    "@types/node": "25.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
     "colors": "~1.4.0",
-    "eslint": "^10.0.0",
+    "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "fs-extra": "11.3.3",
-    "inquirer": "^8.2.6",
+    "fs-extra": "11.3.4",
+    "inquirer": "^8.2.7",
     "isomorphic-fetch": "^3.0.0",
     "js-yaml": "^4.1.1",
     "lodash": "^4.17.23"

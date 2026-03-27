@@ -128,7 +128,7 @@
 |[CustomXmlNodeCollection](/javascript/api/word/word.customxmlnodecollection)|[getCount()](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-getcount-member(1))|Returns the number of items in the collection.|
 ||[items](/javascript/api/word/word.customxmlnodecollection#word-word-customxmlnodecollection-items-member)|Gets the loaded child items in this collection.|
 |[CustomXmlPart](/javascript/api/word/word.customxmlpart)|[addNode(parent: Word.CustomXmlNode, options?: Word.CustomXmlAddNodeOptions)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-addnode-member(1))|Adds a node to the XML tree.|
-||[builtIn](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-builtin-member)|Gets a value that indicates whether the `CustomXmlPart` is built-in.|
+||[builtIn](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-builtin-member)|Gets whether the `CustomXmlPart` is built-in.|
 ||[documentElement](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-documentelement-member)|Gets the root element of a bound region of data in the document.|
 ||[loadXml(xml: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-loadxml-member(1))|Populates the `CustomXmlPart` object from an XML string.|
 ||[namespaceManager](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespacemanager-member)|Gets the set of namespace prefix mappings used against the current `CustomXmlPart` object.|
