@@ -1191,7 +1191,7 @@ excel,Excel.ChartErrorBarsType,"stError",EnumField,Great,false
 excel,Excel.ChartFill,N/A,Class,Fine,false
 excel,Excel.ChartFill,"context",Property,Excellent,false
 excel,Excel.ChartFill,"clear()",Method,Fine,true
-excel,Excel.ChartFill,"getSolidColor()",Method,Fine,false
+excel,Excel.ChartFill,"getSolidColor()",Method,Fine,true
 excel,Excel.ChartFill,"setSolidColor(color)",Method,Fine,true
 excel,Excel.ChartFill,"toJSON()",Method,Excellent,false
 excel,Excel.ChartFont,N/A,Class,Good,true
