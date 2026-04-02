@@ -44675,6 +44675,15 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ListTemplate[];
         /**
+         * Adds a new `ListTemplate` object. Note: This operation isn't allowed if the collection represents list templates from a {@link Word.ListTemplateGallery}.
+         *
+         * @remarks
+         * [Api set: WordApiDesktop 1.5]
+         *
+         * @param options - Optional. Options for adding a new list template.
+         */
+        add(options?: Word.ListTemplateAddOptions): Word.ListTemplate;
+        /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
@@ -44705,6 +44714,28 @@ export declare namespace Word {
         * Whereas the original `Word.ListTemplateCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListTemplateCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Word.Interfaces.ListTemplateCollectionData;
+    }
+    /**
+     * Represents the options for the {@link Word.ListTemplateCollection | ListTemplateCollection.add} method.
+     *
+     * @remarks
+     * [Api set: WordApiDesktop 1.5]
+     */
+    export interface ListTemplateAddOptions {
+        /**
+         * If provided, specifies the name of the list template to be added.
+         *
+         * @remarks
+         * [Api set: WordApiDesktop 1.5]
+         */
+        name?: string;
+        /**
+         * If provided, specifies whether to apply outline numbering to the new list template. The default value is `false`.
+         *
+         * @remarks
+         * [Api set: WordApiDesktop 1.5]
+         */
+        outlineNumbered?: boolean;
     }
     /**
      * Represents a gallery of list templates of the same {@link Word.ListTemplateGalleryType}.

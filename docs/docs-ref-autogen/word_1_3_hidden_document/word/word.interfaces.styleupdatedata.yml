@@ -11,3 +11,40 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
+properties:
+  - name: borders
+    uid: word!Word.Interfaces.StyleUpdateData#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Specifies a `BorderCollection` object that represents all the borders for
+      the style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borders?: Word.Interfaces.BorderCollectionUpdateData;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.BorderCollectionUpdateData:interface"
+          />
+  - name: listTemplate
+    uid: word!Word.Interfaces.StyleUpdateData#listTemplate:member
+    package: word!
+    fullName: listTemplate
+    summary: >-
+      Gets a `ListTemplate` object that represents the list formatting for the
+      style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'listTemplate?: Word.Interfaces.ListTemplateUpdateData;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ListTemplateUpdateData:interface" />

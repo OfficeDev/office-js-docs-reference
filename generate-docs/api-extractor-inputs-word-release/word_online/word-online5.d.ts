@@ -3623,8 +3623,26 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentCreatedUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.DocumentCreated): void;
-        
-        
+        /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * @param name - A string representing the style name.
+         * @param type - The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, type: Word.StyleType): Word.Style;
+        /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * @param name - A string representing the style name.
+         * @param type - The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, type: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
          * Deletes a bookmark, if it exists, from the document.
          *
@@ -3652,9 +3670,40 @@ export declare namespace Word {
          * @param name - The case-insensitive bookmark name. Only alphanumeric and underscore characters are supported. It must begin with a letter but if you want to tag the bookmark as hidden, then start the name with an underscore character. Names can't be longer than 40 characters.
          */
         getBookmarkRangeOrNullObject(name: string): Word.Range;
-        
-        
-        
+        /**
+         * Gets the currently supported content controls in the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * Important: If specific types are provided in the options parameter, only content controls of supported types are returned.
+         * Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+         * With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
+        /**
+         * Gets a `StyleCollection` object that represents the whole style set of the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         */
+        getStyles(): Word.StyleCollection;
+        /**
+         * Inserts a document into the target document at a specific location with additional properties.
+                    Headers, footers, watermarks, and other section properties are copied by default.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.5]
+         *
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         *
+         * @param base64File - The Base64-encoded content of a .docx file.
+         * @param insertLocation - The value must be `replace`, `start`, or `end`.
+         * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
+         */
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
         /**
          * Opens the document.
          *
@@ -12704,6 +12753,7 @@ export declare namespace Word {
          */
         cold = "Cold",
     }
+    
     
     
     

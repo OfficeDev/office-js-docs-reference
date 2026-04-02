@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.StyleType
+uid: word!Word.StyleType:enum
+package: word!
+fullName: Word.StyleType
+summary: Represents the type of style.
+remarks: '\[Api set: WordApi 1.5\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: character
+    uid: word!Word.StyleType.character:member
+    package: word!
+    summary: |-
+      Represents that the style is a character style.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Character"'
+  - name: list
+    uid: word!Word.StyleType.list:member
+    package: word!
+    summary: |-
+      Represents that the style is a list style. Currently supported on desktop.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"List"'
+  - name: paragraph
+    uid: word!Word.StyleType.paragraph:member
+    package: word!
+    summary: |-
+      Represents that the style is a paragraph style.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Paragraph"'
+  - name: table
+    uid: word!Word.StyleType.table:member
+    package: word!
+    summary: |-
+      Represents that the style is a table style.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Table"'

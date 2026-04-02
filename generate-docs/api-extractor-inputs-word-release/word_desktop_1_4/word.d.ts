@@ -44537,6 +44537,7 @@ export declare namespace Word {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ListTemplate[];
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -44569,6 +44570,7 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.ListTemplateCollectionData;
     }
+    
     /**
      * Represents a gallery of list templates of the same {@link Word.ListTemplateGalleryType}.
      *

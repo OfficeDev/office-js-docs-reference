@@ -1,0 +1,45 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListTemplateLoadOptions
+uid: word!Word.Interfaces.ListTemplateLoadOptions:interface
+package: word!
+fullName: Word.Interfaces.ListTemplateLoadOptions
+summary: Represents a list template.
+remarks: >-
+  \[ [API set: WordApiDesktop
+  1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: word!Word.Interfaces.ListTemplateLoadOptions#$all:member
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the load options loads all the scalar properties
+      (such as `Range.address`<!-- -->) but not the navigational properties
+      (such as `Range.format.fill.color`<!-- -->).
+    remarks: ''
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: outlineNumbered
+    uid: word!Word.Interfaces.ListTemplateLoadOptions#outlineNumbered:member
+    package: word!
+    fullName: outlineNumbered
+    summary: Specifies whether the list template is outline numbered.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outlineNumbered?: boolean;'
+      return:
+        type: boolean

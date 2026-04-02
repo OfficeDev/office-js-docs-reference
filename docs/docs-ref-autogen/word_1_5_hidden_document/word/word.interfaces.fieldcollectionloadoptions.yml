@@ -264,6 +264,24 @@ properties:
       content: 'result?: Word.Interfaces.RangeLoadOptions;'
       return:
         type: <xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />
+  - name: showCodes
+    uid: word!Word.Interfaces.FieldCollectionLoadOptions#showCodes:member
+    package: word!
+    fullName: showCodes
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the field codes are
+      displayed for the specified field. `true` if the field codes are
+      displayed, `false` otherwise.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showCodes?: boolean;'
+      return:
+        type: boolean
   - name: type
     uid: word!Word.Interfaces.FieldCollectionLoadOptions#type:member
     package: word!

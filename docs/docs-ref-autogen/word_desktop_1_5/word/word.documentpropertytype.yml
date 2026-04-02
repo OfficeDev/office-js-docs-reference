@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.DocumentPropertyType
+uid: word!Word.DocumentPropertyType:enum
+package: word!
+fullName: Word.DocumentPropertyType
+summary: Represents the document property type.
+remarks: '\[Api set: WordApi 1.3\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: boolean
+    uid: word!Word.DocumentPropertyType.boolean:member
+    package: word!
+    summary: |-
+      Represents a Boolean type.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"Boolean"'
+  - name: date
+    uid: word!Word.DocumentPropertyType.date:member
+    package: word!
+    summary: |-
+      Represents a date type.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"Date"'
+  - name: number
+    uid: word!Word.DocumentPropertyType.number:member
+    package: word!
+    summary: |-
+      Represents a number type.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"Number"'
+  - name: string
+    uid: word!Word.DocumentPropertyType.string:member
+    package: word!
+    summary: |-
+      Represents a string type.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"String"'

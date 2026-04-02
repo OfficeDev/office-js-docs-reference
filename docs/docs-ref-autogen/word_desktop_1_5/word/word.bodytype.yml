@@ -1,0 +1,83 @@
+### YamlMime:TSEnum
+name: Word.BodyType
+uid: word!Word.BodyType:enum
+package: word!
+fullName: Word.BodyType
+summary: Represents the types of `Body` objects.
+remarks: '\[Api set: WordApi 1.3\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: endnote
+    uid: word!Word.BodyType.endnote:member
+    package: word!
+    summary: |-
+      Endnote body.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Endnote"'
+  - name: footer
+    uid: word!Word.BodyType.footer:member
+    package: word!
+    summary: |-
+      Footer body.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"Footer"'
+  - name: footnote
+    uid: word!Word.BodyType.footnote:member
+    package: word!
+    summary: |-
+      Footnote body.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Footnote"'
+  - name: header
+    uid: word!Word.BodyType.header:member
+    package: word!
+    summary: |-
+      Header body.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"Header"'
+  - name: mainDoc
+    uid: word!Word.BodyType.mainDoc:member
+    package: word!
+    summary: |-
+      Main document body.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"MainDoc"'
+  - name: noteItem
+    uid: word!Word.BodyType.noteItem:member
+    package: word!
+    summary: |-
+      Note body e.g., endnote, footnote.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"NoteItem"'
+  - name: section
+    uid: word!Word.BodyType.section:member
+    package: word!
+    summary: |-
+      Section body.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"Section"'
+  - name: tableCell
+    uid: word!Word.BodyType.tableCell:member
+    package: word!
+    summary: |-
+      Table cell body.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"TableCell"'
+  - name: unknown
+    uid: word!Word.BodyType.unknown:member
+    package: word!
+    summary: |-
+      Unknown body type.
+
+      * \[Api set: WordApi 1.3\]
+    value: '"Unknown"'

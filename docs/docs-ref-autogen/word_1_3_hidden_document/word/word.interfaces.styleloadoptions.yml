@@ -28,3 +28,39 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: borders
+    uid: word!Word.Interfaces.StyleLoadOptions#borders:member
+    package: word!
+    fullName: borders
+    summary: >-
+      Specifies a `BorderCollection` object that represents all the borders for
+      the style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borders?: Word.Interfaces.BorderCollectionLoadOptions;'
+      return:
+        type: >-
+          <xref uid="word!Word.Interfaces.BorderCollectionLoadOptions:interface"
+          />
+  - name: listTemplate
+    uid: word!Word.Interfaces.StyleLoadOptions#listTemplate:member
+    package: word!
+    fullName: listTemplate
+    summary: >-
+      Gets a `ListTemplate` object that represents the list formatting for the
+      style.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'listTemplate?: Word.Interfaces.ListTemplateLoadOptions;'
+      return:
+        type: <xref uid="word!Word.Interfaces.ListTemplateLoadOptions:interface" />

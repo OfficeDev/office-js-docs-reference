@@ -114,6 +114,54 @@ properties:
       content: 'hyperlink: string;'
       return:
         type: string
+  - name: imageFormat
+    uid: word!Word.InlinePicture#imageFormat:member
+    package: word!
+    fullName: imageFormat
+    summary: Gets the format of the inline image.
+    remarks: >-
+      \[ [API set: WordApiDesktop
+      1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+
+      // Gets the first image in the document.
+
+      await Word.run(async (context) => {
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
+        firstPicture.load("width, height, imageFormat");
+
+        await context.sync();
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`, `Image format: ${firstPicture.imageFormat}`);
+        // Get the image encoded as Base64.
+        const base64 = firstPicture.getBase64ImageSrc();
+
+        await context.sync();
+        console.log(base64.value);
+      });
+
+      ```
+
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" |
+        "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" |
+        "Emf" | "Pict" | "Pdf" | "Svg";
+      return:
+        type: >-
+          <xref uid="word!Word.ImageFormat:enum" /> | "Unsupported" |
+          "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" |
+          "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
   - name: lockAspectRatio
     uid: word!Word.InlinePicture#lockAspectRatio:member
     package: word!

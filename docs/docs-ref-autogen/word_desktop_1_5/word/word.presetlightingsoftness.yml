@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Word.PresetLightingSoftness
+uid: word!Word.PresetLightingSoftness:enum
+package: word!
+fullName: Word.PresetLightingSoftness
+summary: Specifies the intensity of light used on a shape.
+remarks: '\[Api set: WordApiDesktop 1.3\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bright
+    uid: word!Word.PresetLightingSoftness.bright:member
+    package: word!
+    summary: |-
+      Represents bright lighting.
+
+      * \[Api set: WordApiDesktop 1.3\]
+    value: '"Bright"'
+  - name: dim
+    uid: word!Word.PresetLightingSoftness.dim:member
+    package: word!
+    summary: |-
+      Represents dim lighting.
+
+      * \[Api set: WordApiDesktop 1.3\]
+    value: '"Dim"'
+  - name: mixed
+    uid: word!Word.PresetLightingSoftness.mixed:member
+    package: word!
+    summary: |-
+      Represents a mixed lighting softness.
+
+      * \[Api set: WordApiDesktop 1.3\]
+    value: '"Mixed"'
+  - name: normal
+    uid: word!Word.PresetLightingSoftness.normal:member
+    package: word!
+    summary: |-
+      Represents normal lighting.
+
+      * \[Api set: WordApiDesktop 1.3\]
+    value: '"Normal"'

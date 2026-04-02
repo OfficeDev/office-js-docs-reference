@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Word.NoteItemType
+uid: word!Word.NoteItemType:enum
+package: word!
+fullName: Word.NoteItemType
+summary: Note item type.
+remarks: '\[Api set: WordApi 1.5\]'
+
+isPreview: false
+isDeprecated: false
+fields:
+  - name: endnote
+    uid: word!Word.NoteItemType.endnote:member
+    package: word!
+    summary: |-
+      Endnote type.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Endnote"'
+  - name: footnote
+    uid: word!Word.NoteItemType.footnote:member
+    package: word!
+    summary: |-
+      Footnote type.
+
+      * \[Api set: WordApi 1.5\]
+    value: '"Footnote"'
