@@ -8,6 +8,43 @@ remarks: >-
   \[ [API set: ExcelApi
   1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  async function registerEventHandler() {
+      await Excel.run(async (context) => {
+          // Register the onChanged comment event handler.
+          const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+          comments.onChanged.add(commentChanged);
+          await context.sync();
+      });
+  }
+
+
+  async function commentChanged(event: Excel.CommentChangedEventArgs) {
+      // Retrieve the changed comment using the comment ID.
+      // Note: This function assumes only a single comment is changed at a time.
+      await Excel.run(async (context) => {
+          const changedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+          // Load the changed comment's data.
+          changedComment.load(["content", "authorName", "creationDate"]);
+          await context.sync();
+
+          // Print out the changed comment's data.
+          console.log(`A comment was changed:`);
+          console.log(`    ID: ${event.commentDetails[0].commentId}`);
+          console.log(`    Updated comment content: ${changedComment.content}`);
+          console.log(`    Comment author: ${changedComment.authorName}`);
+          console.log(`    Creation date: ${changedComment.creationDate}`);
+      });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

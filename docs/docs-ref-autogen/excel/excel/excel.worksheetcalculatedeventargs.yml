@@ -8,6 +8,31 @@ remarks: >-
   \[ [API set: ExcelApi
   1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  async function registerOnCalculatedHandler() {
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          sheet.onCalculated.add(onCalculated);
+          await context.sync();
+      });
+  }
+
+
+  async function onCalculated(event: Excel.WorksheetCalculatedEventArgs) {
+      await Excel.run(async (context) => {
+          // `event.address` returns the address of the range that completed calculation.
+          // If multiple ranges completed calculation, the string is a comma-separated list of those range addresses.
+          console.log(`The Range ${event.address} has recalculated.`);
+      });
+  }
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

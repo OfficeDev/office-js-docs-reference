@@ -1869,12 +1869,12 @@ excel,Excel.Comment,"set(properties, options)",Method,Good,false
 excel,Excel.Comment,"set(properties)",Method,Fine,false
 excel,Excel.Comment,"toJSON()",Method,Excellent,false
 excel,Excel.Comment,"updateMentions(contentWithMentions)",Method,Fine,false
-excel,Excel.CommentAddedEventArgs,N/A,Interface,Fine,false
+excel,Excel.CommentAddedEventArgs,N/A,Interface,Fine,true
 excel,Excel.CommentAddedEventArgs,"commentDetails",Property,Excellent,false
 excel,Excel.CommentAddedEventArgs,"source",Property,Great,false
 excel,Excel.CommentAddedEventArgs,"type",Property,Great,false
 excel,Excel.CommentAddedEventArgs,"worksheetId",Property,Great,false
-excel,Excel.CommentChangedEventArgs,N/A,Interface,Good,false
+excel,Excel.CommentChangedEventArgs,N/A,Interface,Good,true
 excel,Excel.CommentChangedEventArgs,"changeType",Property,Great,false
 excel,Excel.CommentChangedEventArgs,"commentDetails",Property,Excellent,false
 excel,Excel.CommentChangedEventArgs,"source",Property,Great,false
@@ -1902,7 +1902,7 @@ excel,Excel.CommentCollection,"load(options)",Method,Great,false
 excel,Excel.CommentCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.CommentCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.CommentCollection,"toJSON()",Method,Excellent,false
-excel,Excel.CommentDeletedEventArgs,N/A,Interface,Fine,false
+excel,Excel.CommentDeletedEventArgs,N/A,Interface,Fine,true
 excel,Excel.CommentDeletedEventArgs,"commentDetails",Property,Excellent,false
 excel,Excel.CommentDeletedEventArgs,"source",Property,Great,false
 excel,Excel.CommentDeletedEventArgs,"type",Property,Great,false
@@ -5735,7 +5735,7 @@ excel,Excel.SettingCollection,"load(options)",Method,Great,false
 excel,Excel.SettingCollection,"load(propertyNames)",Method,Great,false
 excel,Excel.SettingCollection,"load(propertyNamesAndPaths)",Method,Great,false
 excel,Excel.SettingCollection,"toJSON()",Method,Excellent,false
-excel,Excel.SettingsChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.SettingsChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.SettingsChangedEventArgs,"settings",Property,Great,false
 excel,Excel.Shape,N/A,Class,Great,false
 excel,Excel.Shape,"altTextDescription",Property,Great,false
@@ -6852,7 +6852,7 @@ excel,Excel.Workbook,"save(saveBehavior)",Method,Poor,false
 excel,Excel.Workbook,"set(properties, options)",Method,Good,false
 excel,Excel.Workbook,"set(properties)",Method,Fine,false
 excel,Excel.Workbook,"toJSON()",Method,Excellent,false
-excel,Excel.WorkbookActivatedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorkbookActivatedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorkbookActivatedEventArgs,"type",Property,Great,false
 excel,Excel.WorkbookAutoSaveSettingChangedEventArgs,N/A,Interface,Fine,false
 excel,Excel.WorkbookAutoSaveSettingChangedEventArgs,"type",Property,Great,false
@@ -6952,7 +6952,7 @@ excel,Excel.WorksheetAddedEventArgs,N/A,Interface,Fine,false
 excel,Excel.WorksheetAddedEventArgs,"source",Property,Great,false
 excel,Excel.WorksheetAddedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetAddedEventArgs,"worksheetId",Property,Great,true
-excel,Excel.WorksheetCalculatedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetCalculatedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetCalculatedEventArgs,"address",Property,Excellent,false
 excel,Excel.WorksheetCalculatedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetCalculatedEventArgs,"worksheetId",Property,Great,false
@@ -7032,7 +7032,7 @@ excel,Excel.WorksheetFormatChangedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetFormatChangedEventArgs,"worksheetId",Property,Great,false
 excel,Excel.WorksheetFormatChangedEventArgs,"getRange(ctx)",Method,Great,false
 excel,Excel.WorksheetFormatChangedEventArgs,"getRangeOrNullObject(ctx)",Method,Great,false
-excel,Excel.WorksheetFormulaChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetFormulaChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetFormulaChangedEventArgs,"formulaDetails",Property,Excellent,false
 excel,Excel.WorksheetFormulaChangedEventArgs,"source",Property,Great,false
 excel,Excel.WorksheetFormulaChangedEventArgs,"type",Property,Great,false
@@ -7121,7 +7121,7 @@ excel,Excel.WorksheetRowSortedEventArgs,"worksheetId",Property,Great,false
 excel,Excel.WorksheetSearchCriteria,N/A,Interface,Fine,false
 excel,Excel.WorksheetSearchCriteria,"completeMatch",Property,Excellent,false
 excel,Excel.WorksheetSearchCriteria,"matchCase",Property,Excellent,false
-excel,Excel.WorksheetSelectionChangedEventArgs,N/A,Interface,Fine,false
+excel,Excel.WorksheetSelectionChangedEventArgs,N/A,Interface,Fine,true
 excel,Excel.WorksheetSelectionChangedEventArgs,"address",Property,Excellent,false
 excel,Excel.WorksheetSelectionChangedEventArgs,"type",Property,Great,false
 excel,Excel.WorksheetSelectionChangedEventArgs,"worksheetId",Property,Great,false

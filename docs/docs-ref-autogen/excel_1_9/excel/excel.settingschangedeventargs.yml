@@ -8,6 +8,38 @@ remarks: >-
   \[ [API set: ExcelApi
   1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  async function registerSettingsChangedHandler() {
+      await Excel.run(async (context) => {
+          // Register the onChanged setting event handler on the workbook.
+          const settings = context.workbook.settings; 
+          settings.onSettingsChanged.add(onChangedSetting);
+          await context.sync();
+      });
+  }
+
+
+  async function onChangedSetting(args: Excel.SettingsChangedEventArgs) {
+      await Excel.run(async (context) => {
+          const changedSetting = args.settings.getItem("NeedsReview");
+          changedSetting.load("value");
+
+          // Must sync with the context in the EventArgs object, 
+          // not the context that Office passes to Excel.run. 
+          await args.settings.context.sync();
+
+          console.log("Setting value is: " + changedSetting.value);
+          await context.sync();
+      });
+  } 
+
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface

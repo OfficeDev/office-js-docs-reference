@@ -609,6 +609,83 @@ Excel.ChartTitle#load:member(2):
         await context.sync();
         console.log("Char Title Changed");
     });
+Excel.CommentAddedEventArgs:interface:
+  - |-
+    async function registerEventHandler() {
+        await Excel.run(async (context) => {
+            // Register the onAdded comment event handler.
+            const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+            comments.onAdded.add(commentAdded);
+            await context.sync();
+        });
+    }
+
+    async function commentAdded(event: Excel.CommentAddedEventArgs) {
+        // Retrieve the added comment using the comment ID.
+        // Note: This function assumes only a single comment is added at a time.
+        await Excel.run(async (context) => {
+            const addedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+            // Load the added comment's data.
+            addedComment.load(["content", "authorName", "creationDate"]);
+            await context.sync();
+
+            // Print out the added comment's data.
+            console.log(`A comment was added:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+            console.log(`    Comment content: ${addedComment.content}`);
+            console.log(`    Comment author: ${addedComment.authorName}`);
+            console.log(`    Creation date: ${addedComment.creationDate}`);
+        });
+    }
+Excel.CommentChangedEventArgs:interface:
+  - |-
+    async function registerEventHandler() {
+        await Excel.run(async (context) => {
+            // Register the onChanged comment event handler.
+            const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+            comments.onChanged.add(commentChanged);
+            await context.sync();
+        });
+    }
+
+    async function commentChanged(event: Excel.CommentChangedEventArgs) {
+        // Retrieve the changed comment using the comment ID.
+        // Note: This function assumes only a single comment is changed at a time.
+        await Excel.run(async (context) => {
+            const changedComment = context.workbook.comments.getItem(event.commentDetails[0].commentId);
+
+            // Load the changed comment's data.
+            changedComment.load(["content", "authorName", "creationDate"]);
+            await context.sync();
+
+            // Print out the changed comment's data.
+            console.log(`A comment was changed:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+            console.log(`    Updated comment content: ${changedComment.content}`);
+            console.log(`    Comment author: ${changedComment.authorName}`);
+            console.log(`    Creation date: ${changedComment.creationDate}`);
+        });
+    }
+Excel.CommentDeletedEventArgs:interface:
+  - |-
+    async function registerEventHandlers() {
+        await Excel.run(async (context) => {
+            // Register the onDeleted comment event handler.
+            const comments = context.workbook.worksheets.getActiveWorksheet().comments;
+            comments.onDeleted.add(commentDeleted);
+            await context.sync();
+        });
+    }
+
+    async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
+        // Print out the deleted comment's ID.
+        // Note: This function assumes only a single comment is deleted at a time.
+        await Excel.run(async (context) => {
+            console.log(`A comment was deleted:`);
+            console.log(`    ID: ${event.commentDetails[0].commentId}`);
+        });
+    }
 Excel.ConditionalFormatCollection#getCount:member(1):
   - |-
     await Excel.run(async (context) => {
@@ -1147,6 +1224,30 @@ Excel.RequestContext:class:
       const workbook = context.workbook;
       // Interact with the Excel workbook...
     });
+Excel.SettingsChangedEventArgs:interface:
+  - |-
+    async function registerSettingsChangedHandler() {
+        await Excel.run(async (context) => {
+            // Register the onChanged setting event handler on the workbook.
+            const settings = context.workbook.settings; 
+            settings.onSettingsChanged.add(onChangedSetting);
+            await context.sync();
+        });
+    }
+
+    async function onChangedSetting(args: Excel.SettingsChangedEventArgs) {
+        await Excel.run(async (context) => {
+            const changedSetting = args.settings.getItem("NeedsReview");
+            changedSetting.load("value");
+
+            // Must sync with the context in the EventArgs object, 
+            // not the context that Office passes to Excel.run. 
+            await args.settings.context.sync();
+
+            console.log("Setting value is: " + changedSetting.value);
+            await context.sync();
+        });
+    } 
 Excel.Table#convertToRange:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -1452,6 +1553,23 @@ Excel.Workbook#getSelectedRange:member(1):
         await context.sync();
         console.log(selectedRange.address);
     });
+Excel.WorkbookActivatedEventArgs:interface:
+  - |-
+    async function registerEventHandler() {
+        await Excel.run(async (context) => {
+            // Register the workbook activated event handler.
+            const workbook = context.workbook;
+            workbook.onActivated.add(workbookActivated);
+            await context.sync();
+        });
+    }
+
+    async function workbookActivated(event: Excel.WorkbookActivatedEventArgs) {
+        await Excel.run(async (context) => {
+            // Callback function for when the workbook is activated.
+            console.log("The workbook was activated.");
+        });
+    }
 Excel.Worksheet:class:
   - |-
     // Get a Worksheet object by its name and activate it.
@@ -1619,6 +1737,23 @@ Excel.Worksheet#set:member(1):
 
       await context.sync();
     });
+Excel.WorksheetCalculatedEventArgs:interface:
+  - |-
+    async function registerOnCalculatedHandler() {
+        await Excel.run(async (context) => {
+            let sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.onCalculated.add(onCalculated);
+            await context.sync();
+        });
+    }
+
+    async function onCalculated(event: Excel.WorksheetCalculatedEventArgs) {
+        await Excel.run(async (context) => {
+            // `event.address` returns the address of the range that completed calculation.
+            // If multiple ranges completed calculation, the string is a comma-separated list of those range addresses.
+            console.log(`The Range ${event.address} has recalculated.`);
+        });
+    }
 Excel.WorksheetChangedEventArgs#details:member:
   - |-
     // This function would be used as an event handler for the Worksheet.onChanged event.
@@ -1662,7 +1797,58 @@ Excel.WorksheetCollection#load:member(2):
             console.log(worksheets.items[i].name);
         }
     });
+Excel.WorksheetFormulaChangedEventArgs:interface:
+  - |-
+    async function registerFormulaChangeHandler() {
+        await Excel.run(async (context) => {
+            // Register the formula changed event handler for the Sample worksheet.
+            let sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.onFormulaChanged.add(formulaChangeHandler);
+            await context.sync();
+        });
+    }
 
+    async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
+        await Excel.run(async (context) => {
+            // Retrieve details about the formula change event.
+            const cellAddress = event.formulaDetails[0].cellAddress;
+            const previousFormula = event.formulaDetails[0].previousFormula;
+            const source = event.source;
+            
+            // Print out the change event details.
+            console.log(
+                `The formula in cell ${cellAddress} changed. 
+                The previous formula was: ${previousFormula}. 
+                The source of the change was: ${source}.`
+            );
+        });
+    }
+Excel.WorksheetSelectionChangedEventArgs:interface:
+  - |-
+    async function registerEventHandlers() {
+          await Excel.run(async (context) => {
+            // Add a selection changed event handler for the worksheet.
+            let sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.onSelectionChanged.add(onWorksheetSelectionChange);
+
+            // Add a selection changed event handler for the worksheet collection.
+            context.workbook.worksheets.onSelectionChanged.add(onWorksheetCollectionSelectionChange);
+
+            await context.sync();
+          });
+        }
+
+        async function onWorksheetSelectionChange(args: Excel.WorksheetSelectionChangedEventArgs) {
+          await Excel.run(async (context) => {
+            console.log(`Worksheet event: The address of new selection is: ${args.address}`);
+          });
+        }
+
+        async function onWorksheetCollectionSelectionChange(args: Excel.WorksheetSelectionChangedEventArgs) {
+          await Excel.run(async (context) => {
+            console.log(`WorksheetCollection event: The address of new selection is: ${args.address}`);
+          });
+        }
 Office.initialize:function(1):
   - |-
     // You can use the value of the InitializationEnumeration to implement different logic for

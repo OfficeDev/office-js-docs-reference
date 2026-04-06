@@ -10,6 +10,38 @@ remarks: >-
   \[ [API set: ExcelApi
   1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
+
+  #### Examples
+
+
+  ```TypeScript
+
+  async function registerEventHandlers() {
+        await Excel.run(async (context) => {
+          // Add a selection changed event handler for the worksheet.
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          sheet.onSelectionChanged.add(onWorksheetSelectionChange);
+
+          // Add a selection changed event handler for the worksheet collection.
+          context.workbook.worksheets.onSelectionChanged.add(onWorksheetCollectionSelectionChange);
+
+          await context.sync();
+        });
+      }
+
+      async function onWorksheetSelectionChange(args: Excel.WorksheetSelectionChangedEventArgs) {
+        await Excel.run(async (context) => {
+          console.log(`Worksheet event: The address of new selection is: ${args.address}`);
+        });
+      }
+
+      async function onWorksheetCollectionSelectionChange(args: Excel.WorksheetSelectionChangedEventArgs) {
+        await Excel.run(async (context) => {
+          console.log(`WorksheetCollection event: The address of new selection is: ${args.address}`);
+        });
+      }
+  ```
+
 isPreview: false
 isDeprecated: false
 type: interface
