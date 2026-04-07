@@ -725,23 +725,6 @@ Excel.CustomConditionalFormat#rule:member:
 
         console.log("Added new custom conditional format highlighting all blank cells.");
     });
-Excel.FilterOn:enum:
-  - |-
-    // This function adds a custom AutoFilter to the active worksheet 
-    // and applies the filter to a column of the used range.
-    await Excel.run(async (context) => {
-        // Retrieve the active worksheet and the used range on that worksheet.
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-        const farmData = sheet.getUsedRange();
-
-        // Add a filter that will only show the rows with values that end with the letter "e" in column 1.
-        sheet.autoFilter.apply(farmData, 1, {
-            criterion1: "=*e",
-            filterOn: Excel.FilterOn.custom
-        });
-
-        await context.sync();
-    });
 Excel.NamedItem#getRange:member(1):
   - |-
     // Returns the Range object that is associated with the name.
@@ -1036,15 +1019,6 @@ Excel.Range#load:member(2):
         await context.sync();
         
         console.log(range.cellCount);
-    });
-Excel.Range#merge:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const sheetName = "Sheet1";
-        const rangeAddress = "A1:C3";
-        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.merge(true);
-        await context.sync(); 
     });
 Excel.Range#numberFormat:member:
   - |-
@@ -1342,16 +1316,6 @@ Excel.TableCollection#add:member(1):
         
         console.log(table.name);
     });
-Excel.TableCollection#getItem:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const table = context.workbook.tables.getItem(tableName);
-        table.load('name');
-        await context.sync();
-        
-        console.log(table.name);
-    });
 Excel.TableCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
@@ -1378,17 +1342,6 @@ Excel.TableColumn#delete:member(1):
         const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
         column.delete();
         await context.sync(); 
-    });
-Excel.TableColumn#getDataBodyRange:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableName = 'Table1';
-        const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-        const dataBodyRange = column.getDataBodyRange();
-        dataBodyRange.load('address');
-        await context.sync();
-        
-        console.log(dataBodyRange.address);
     });
 Excel.TableColumn#getHeaderRowRange:member(1):
   - |-
@@ -1443,14 +1396,6 @@ Excel.TableColumnCollection#add:member(1):
         await context.sync();
         
         console.log(column.name);
-    });
-Excel.TableColumnCollection#getItem:member(1):
-  - |-
-    await Excel.run(async (context) => { 
-        const tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
-        tableColumn.load('name');
-        await context.sync();
-        console.log(tableColumn.name);
     });
 Excel.TableColumnCollection#getItemAt:member(1):
   - |-
@@ -5870,73 +5815,6 @@ Office.FileProperties:interface:
                 showMessage(fileUrl);
             }
         });
-    }
-
-Office.FileType:enum:
-  - |-
-    // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
-    // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
-    function getDocumentAsCompressed() {
-        Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
-            function (result) {
-                if (result.status === Office.AsyncResultStatus.Succeeded) {
-                    // If the getFileAsync call succeeded, then
-                    // result.value will return a valid File Object.
-                    const myFile = result.value;
-                    const sliceCount = myFile.sliceCount;
-                    const docDataSlices = [];
-                    let slicesReceived = 0, gotAllSlices = true;
-                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
-
-                    // Get the file slices.
-                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
-                } else {
-                    app.showNotification("Error:", result.error.message);
-                }
-        });
-    }
-
-    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived) {
-        file.getSliceAsync(nextSlice, function (sliceResult) {
-            if (sliceResult.status === Office.AsyncResultStatus.Succeeded) {
-                if (!gotAllSlices) { /* Failed to get all slices, no need to continue. */
-                    return;
-                }
-
-                // Got one slice, store it in a temporary array.
-                // (Or you can do something else, such as
-                // send it to a third-party server.)
-                docDataSlices[sliceResult.value.index] = sliceResult.value.data;
-                if (++slicesReceived === sliceCount) {
-                  // All slices have been received.
-                  file.closeAsync();
-                  onGotAllSlices(docDataSlices);
-                }
-                else {
-                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docDataSlices, slicesReceived);
-                }
-            }
-                else {
-                    gotAllSlices = false;
-                    file.closeAsync();
-                    app.showNotification("getSliceAsync Error:", sliceResult.error.message);
-                }
-        });
-    }
-
-    function onGotAllSlices(docDataSlices) {
-        let docData = [];
-        for (let i = 0; i < docDataSlices.length; i++) {
-            docData = docData.concat(docDataSlices[i]);
-        }
-
-        let fileContent = new String();
-        for (let j = 0; j < docData.length; j++) {
-            fileContent += String.fromCharCode(docData[j]);
-        }
-
-        // Now all the file content is stored in 'fileContent' variable,
-        // you can do something with it, such as print, fax...
     }
 Office.FilterType:enum:
   - |-
@@ -10958,35 +10836,6 @@ Word.ContentControl#clear:member(1):
             console.log('Content control cleared of contents.');
         }
     });
-    
-Word.ContentControl#delete:member(1):
-  - |-
-    // Run a batch operation against the Word object model.
-    await Word.run(async (context) => {
-        
-        // Create a proxy object for the content controls collection.
-        const contentControls = context.document.contentControls;
-        
-        // Queue a command to load the content controls collection.
-        contentControls.load('text');
-         
-        // Synchronize the document state by executing the queued commands, 
-        // and return a promise to indicate task completion.
-        await context.sync();
-            
-        if (contentControls.items.length === 0) {
-            console.log("There isn't a content control in this document.");
-        } else {            
-            // Queue a command to delete the first content control. 
-            // The contents will remain in the document.
-            contentControls.items[0].delete(true);
-
-            // Synchronize the document state by executing the queued commands, 
-            // and return a promise to indicate task completion.
-            await context.sync();
-            console.log('Content control cleared of contents.'); 
-        }
-    });
 Word.ContentControl#getHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
@@ -11409,62 +11258,6 @@ Word.ContentControlCollection#load:member(1):
     // The Silly stories add-in sample shows how the load method is used
     // to load the content control collection with the tag and title properties.
     // https://aka.ms/sillystorywordaddin
-Word.ContentControlType:enum:
-  - |-
-    // Run a batch operation against the Word object model.
-    await Word.run(async (context) => {
-    
-        // Create a proxy object for the content controls collection.
-        const contentControls = context.document.contentControls;
-    
-        // Queue a command to load the id property for all of the content controls.
-        contentControls.load('id');
-    
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        await context.sync();
-        if (contentControls.items.length === 0) {
-            console.log('No content control found.');
-        }
-        else {
-            // Queue a command to load the properties on the first content control.
-            contentControls.items[0].load(  'appearance,' +
-                                            'cannotDelete,' +
-                                            'cannotEdit,' +
-                                            'color,' +
-                                            'id,' +
-                                            'placeHolderText,' +
-                                            'removeWhenEdited,' +
-                                            'title,' +
-                                            'text,' +
-                                            'type,' +
-                                            'style,' +
-                                            'tag,' +
-                                            'font/size,' +
-                                            'font/name,' +
-                                            'font/color');
-
-            // Synchronize the document state by executing the queued commands,
-            // and return a promise to indicate task completion.
-            await context.sync();
-            console.log('Property values of the first content control:' +
-                '   ----- appearance: ' + contentControls.items[0].appearance +
-                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
-                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
-                '   ----- color: ' + contentControls.items[0].color +
-                '   ----- id: ' + contentControls.items[0].id +
-                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
-                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
-                '   ----- title: ' + contentControls.items[0].title +
-                '   ----- text: ' + contentControls.items[0].text +
-                '   ----- type: ' + contentControls.items[0].type +
-                '   ----- style: ' + contentControls.items[0].style +
-                '   ----- tag: ' + contentControls.items[0].tag +
-                '   ----- font size: ' + contentControls.items[0].font.size +
-                '   ----- font name: ' + contentControls.items[0].font.name +
-                '   ----- font color: ' + contentControls.items[0].font.color);
-        }
-    });
 Word.Document#getSelection:member(1):
   - |-
     // Run a batch operation against the Word object model.
@@ -11509,33 +11302,6 @@ Word.Document#load:member(1):
             }
         } else {
             console.log('No content controls in this document.');
-        }
-    });
-Word.Document#save:member(1):
-  - |-
-    // Run a batch operation against the Word object model.
-    await Word.run(async (context) => {
-        
-        // Create a proxy object for the document.
-        const thisDocument = context.document;
-    
-        // Queue a command to load the document save state (on the saved property).
-        thisDocument.load('saved');    
-        
-        // Synchronize the document state by executing the queued commands, 
-        // and return a promise to indicate task completion.
-        await context.sync();
-            
-        if (thisDocument.saved === false) {
-            // Queue a command to save this document.
-            thisDocument.save();
-            
-            // Synchronize the document state by executing the queued commands, 
-            // and return a promise to indicate task completion.
-            await context.sync();
-            console.log('Saved the document');
-        } else {
-            console.log('The document has not changed since the last save.');
         }
     });
 Word.DocumentCreated#open:member(1):
@@ -11848,60 +11614,6 @@ Word.Paragraph#getPreviousOrNullObject:member(1):
         } else {
             console.log('The preceding paragraph is: ' + precedingParagraph.text);
         }
-    });
-Word.Paragraph#insertBreak:member(1):
-  - |-
-    // Run a batch operation against the Word object model.
-    await Word.run(async (context) => {
-    
-        // Create a proxy object for the paragraphs collection.
-        const paragraphs = context.document.body.paragraphs;
-    
-        // Queue a command to load the style property for the top 2 paragraphs.
-        // We never perform an empty load. We always must request a property.
-        paragraphs.load({select: 'style', top: 2} );
-    
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        await context.sync();
-    
-        // Queue a command to get the first paragraph.
-        const paragraph = paragraphs.items[0];
-
-        // Queue a command to insert a page break after the first paragraph.
-        paragraph.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        await context.sync();
-        console.log('Inserted a page break after the paragraph.');
-    });
-Word.Paragraph#insertContentControl:member(1):
-  - |-
-    // Run a batch operation against the Word object model.
-    await Word.run(async (context) => {
-    
-        // Create a proxy object for the paragraphs collection.
-        const paragraphs = context.document.body.paragraphs;
-    
-        // Queue a command to load the style property for the top 2 paragraphs.
-        // We never perform an empty load. We always must request a property.
-        paragraphs.load({select: 'style', top: 2} );
-    
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        await context.sync();
-    
-        // Queue a command to get the first paragraph.
-        const paragraph = paragraphs.items[0];
-
-        // Queue a command to wrap the first paragraph in a rich text content control.
-        paragraph.insertContentControl();
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        await context.sync();
-        console.log('Wrapped the first paragraph in a content control.');
     });
 Word.Paragraph#insertHtml:member(1):
   - |-

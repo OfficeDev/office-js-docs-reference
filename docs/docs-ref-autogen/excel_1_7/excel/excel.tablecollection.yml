@@ -169,19 +169,6 @@ methods:
 
       ```TypeScript
 
-      await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
-          table.load('name');
-          await context.sync();
-          
-          console.log(table.name);
-      });
-
-      ```
-
-      ```TypeScript
-
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-cell-control.yaml
 
